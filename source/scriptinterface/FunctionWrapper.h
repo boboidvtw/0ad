@@ -1,4 +1,4 @@
-/* Copyright (C) 2021 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -18,13 +18,15 @@
 #ifndef INCLUDED_FUNCTIONWRAPPER
 #define INCLUDED_FUNCTIONWRAPPER
 
-#include "Object.h"
 #include "ScriptConversions.h"
 #include "ScriptExceptions.h"
 #include "ScriptRequest.h"
 
+#include <fmt/format.h>
 #include <tuple>
 #include <type_traits>
+#include <stdexcept>
+#include <utility>
 
 class ScriptInterface;
 
@@ -36,7 +38,8 @@ class ScriptInterface;
  * and they are default-constructible (TODO: that can probably changed).
  * (This could be a namespace, but I like being able to specify public/private).
  */
-class ScriptFunction {
+class ScriptFunction
+{
 private:
 	ScriptFunction() = delete;
 	ScriptFunction(const ScriptFunction&) = delete;
@@ -79,6 +82,17 @@ private:
 	template<typename C, typename R, typename ...Types>
 	struct args_info<R(C::*)(Types ...) const> : public args_info<R(C::*)(Types ...)> {};
 
+	struct IteratorResultError : std::runtime_error
+	{
+		IteratorResultError(const std::string& property) :
+			IteratorResultError{property.c_str()}
+		{}
+		IteratorResultError(const char* property) :
+			std::runtime_error{fmt::format("Failed to get `{}` from an `IteratorResult`.", property)}
+		{}
+		using std::runtime_error::runtime_error;
+	};
+
 	///////////////////////////////////////////////////////////////////////////
 	///////////////////////////////////////////////////////////////////////////
 
@@ -86,10 +100,10 @@ private:
 	 * DoConvertFromJS takes a type, a JS argument, and converts.
 	 * The type T must be default constructible (except for HandleValue, which is handled specially).
 	 * (possible) TODO: this could probably be changed if FromJSVal had a different signature.
-	 * @param went_ok - true if the conversion succeeded and went_ok was true before, false otherwise.
+	 * @param wentOk - true if the conversion succeeded and wentOk was true before, false otherwise.
 	 */
 	template<size_t idx, typename T>
-	static std::tuple<T> DoConvertFromJS(const ScriptRequest& rq, JS::CallArgs& args, bool& went_ok)
+	static T DoConvertFromJS(const ScriptRequest& rq, JS::CallArgs& args, bool& wentOk)
 	{
 		// No need to convert JS values.
 		if constexpr (std::is_same_v<T, JS::HandleValue>)
@@ -97,12 +111,12 @@ private:
 			// Default-construct values that aren't passed by JS.
 			// TODO: this should perhaps be removed, as it's distinct from C++ default values and kind of tricky.
 			if (idx >= args.length())
-				return std::forward_as_tuple(JS::UndefinedHandleValue);
+				return JS::UndefinedHandleValue;
 			else
 			{
 				// GCC (at least < 9) & VS17 prints warnings if arguments are not used in some constexpr branch.
-				UNUSED2(rq); UNUSED2(args); UNUSED2(went_ok);
-				return std::forward_as_tuple(args[idx]); // This passes the null handle value if idx is beyond the length of args.
+				UNUSED2(rq); UNUSED2(args); UNUSED2(wentOk);
+				return args[idx]; // This passes the null handle value if idx is beyond the length of args.
 			}
 		}
 		else
@@ -110,73 +124,57 @@ private:
 			// Default-construct values that aren't passed by JS.
 			// TODO: this should perhaps be removed, as it's distinct from C++ default values and kind of tricky.
 			if (idx >= args.length())
-				return std::forward_as_tuple(T{});
+				return {};
 			else
 			{
 				T ret;
-				went_ok &= Script::FromJSVal<T>(rq, args[idx], ret);
-				return std::forward_as_tuple(ret);
+				wentOk &= Script::FromJSVal<T>(rq, args[idx], ret);
+				return ret;
 			}
 		}
 	}
 
 	/**
-	 * Recursive wrapper: calls DoConvertFromJS for type T and recurses.
+	 * Wrapper: calls DoConvertFromJS for each element in T.
 	 */
-	template<size_t idx, typename T, typename V, typename ...Types>
-	static std::tuple<T, V, Types...> DoConvertFromJS(const ScriptRequest& rq, JS::CallArgs& args, bool& went_ok)
+	template<typename... T, size_t... idx>
+	static std::tuple<T...> DoConvertFromJS(std::index_sequence<idx...>, const ScriptRequest& rq,
+		JS::CallArgs& args, bool& wentOk)
 	{
-		return std::tuple_cat(DoConvertFromJS<idx, T>(rq, args, went_ok), DoConvertFromJS<idx + 1, V, Types...>(rq, args, went_ok));
+		return {DoConvertFromJS<idx, T>(rq, args, wentOk)...};
 	}
 
 	/**
-	 * ConvertFromJS is a wrapper around DoConvertFromJS, and serves to:
-	 *  - unwrap the tuple types as a parameter pack
-	 *  - handle specific cases for the first argument (ScriptRequest, ...).
+	 * ConvertFromJS is a wrapper around DoConvertFromJS, and handles specific cases for the
+	 * first argument (ScriptRequest, ...).
 	 *
 	 * Trick: to unpack the types of the tuple as a parameter pack, we deduce them from the function signature.
 	 * To do that, we want the tuple in the arguments, but we don't want to actually have to default-instantiate,
 	 * so we'll pass a nullptr that's static_cast to what we want.
 	 */
 	template<typename ...Types>
-	static std::tuple<Types...> ConvertFromJS(const ScriptRequest& rq, JS::CallArgs& args, bool& went_ok, std::tuple<Types...>*)
+	static std::tuple<Types...> ConvertFromJS(const ScriptRequest& rq, JS::CallArgs& args, bool& wentOk,
+		std::tuple<Types...>*)
 	{
-		if constexpr (sizeof...(Types) == 0)
-		{
-			// GCC (at least < 9) & VS17 prints warnings if arguments are not used in some constexpr branch.
-			UNUSED2(rq); UNUSED2(args); UNUSED2(went_ok);
-			return {};
-		}
-		else
-			return DoConvertFromJS<0, Types...>(rq, args, went_ok);
+		return DoConvertFromJS<Types...>(std::index_sequence_for<Types...>(), rq, args, wentOk);
 	}
 
 	// Overloads for ScriptRequest& first argument.
 	template<typename ...Types>
-	static std::tuple<const ScriptRequest&, Types...> ConvertFromJS(const ScriptRequest& rq, JS::CallArgs& args, bool& went_ok, std::tuple<const ScriptRequest&, Types...>*)
+	static std::tuple<const ScriptRequest&, Types...> ConvertFromJS(const ScriptRequest& rq,
+		JS::CallArgs& args, bool& wentOk, std::tuple<const ScriptRequest&, Types...>*)
 	{
-		if constexpr (sizeof...(Types) == 0)
-		{
-			// GCC (at least < 9) & VS17 prints warnings if arguments are not used in some constexpr branch.
-			UNUSED2(args); UNUSED2(went_ok);
-			return std::forward_as_tuple(rq);
-		}
-		else
-			return std::tuple_cat(std::forward_as_tuple(rq), DoConvertFromJS<0, Types...>(rq, args, went_ok));
+		return std::tuple_cat(std::tie(rq), DoConvertFromJS<Types...>(
+			std::index_sequence_for<Types...>(), rq, args, wentOk));
 	}
 
 	// Overloads for ScriptInterface& first argument.
 	template<typename ...Types>
-	static std::tuple<const ScriptInterface&, Types...> ConvertFromJS(const ScriptRequest& rq, JS::CallArgs& args, bool& went_ok, std::tuple<const ScriptInterface&, Types...>*)
+	static std::tuple<const ScriptInterface&, Types...> ConvertFromJS(const ScriptRequest& rq,
+		JS::CallArgs& args, bool& wentOk, std::tuple<const ScriptInterface&, Types...>*)
 	{
-		if constexpr (sizeof...(Types) == 0)
-		{
-			// GCC (at least < 9) & VS17 prints warnings if arguments are not used in some constexpr branch.
-			UNUSED2(rq); UNUSED2(args); UNUSED2(went_ok);
-			return std::forward_as_tuple(rq.GetScriptInterface());
-		}
-		else
-			return std::tuple_cat(std::forward_as_tuple(rq.GetScriptInterface()), DoConvertFromJS<0, Types...>(rq, args, went_ok));
+		return std::tuple_cat(std::tie(rq.GetScriptInterface()),
+			DoConvertFromJS<Types...>(std::index_sequence_for<Types...>(), rq, args, wentOk));
 	}
 
 	///////////////////////////////////////////////////////////////////////////
@@ -205,20 +203,17 @@ private:
 	static inline IgnoreResult_t IgnoreResult;
 
 	/**
-	 * Recursive helper to call AssignOrToJSVal
+	 * Converts any number of arguments to a `JS::MutableHandleValueVector`.
+	 * If `idx` is empty this function does nothing. For that case there is a
+	 * `[[maybe_unused]]` on `argv`. GCC would issue a
+	 * "-Wunused-but-set-parameter" warning.
+	 * For references like `rq` this warning isn't issued.
 	 */
-	template<int i, typename T, typename... Ts>
-	static void AssignOrToJSValHelper(const ScriptRequest& rq, JS::MutableHandleValueVector argv, const T& a, const Ts&... params)
+	template<typename... Types, size_t... idx>
+	static void ToJSValVector(std::index_sequence<idx...>, const ScriptRequest& rq,
+		[[maybe_unused]] JS::MutableHandleValueVector argv, const Types&... params)
 	{
-		Script::ToJSVal(rq, argv[i], a);
-		AssignOrToJSValHelper<i+1>(rq, argv, params...);
-	}
-
-	template<int i, typename... Ts>
-	static void AssignOrToJSValHelper(const ScriptRequest& UNUSED(rq), JS::MutableHandleValueVector UNUSED(argv))
-	{
-		static_assert(sizeof...(Ts) == 0);
-		// Nop, for terminating the template recursion.
+		(Script::ToJSVal(rq, argv[idx], params), ...);
 	}
 
 	/**
@@ -234,23 +229,22 @@ private:
 		if (!JS_ValueToObject(rq.cx, val, &obj) || !obj)
 			return false;
 
-		// Check that the named function actually exists, to avoid ugly JS error reports
-		// when calling an undefined value
-		bool found;
-		if (!JS_HasProperty(rq.cx, obj, name, &found) || !found)
+		// Fetch the property explicitly - this avoids converting the arguments if it doesn't exist.
+		JS::RootedValue func(rq.cx);
+		if (!JS_GetProperty(rq.cx, obj, name, &func) || func.isUndefined())
 			return false;
 
 		JS::RootedValueVector argv(rq.cx);
 		ignore_result(argv.resize(sizeof...(Args)));
-		AssignOrToJSValHelper<0>(rq, &argv, args...);
+		ToJSValVector(std::index_sequence_for<Args...>{}, rq, &argv, args...);
 
 		bool success;
 		if constexpr (std::is_same_v<R, JS::MutableHandleValue>)
-			success = JS_CallFunctionName(rq.cx, obj, name, argv, ret);
+			success = JS_CallFunctionValue(rq.cx, obj, func, argv, ret);
 		else
 		{
 			JS::RootedValue jsRet(rq.cx);
-			success = JS_CallFunctionName(rq.cx, obj, name, argv, &jsRet);
+			success = JS_CallFunctionValue(rq.cx, obj, func, argv, &jsRet);
 			if constexpr (!std::is_same_v<R, IgnoreResult_t>)
 			{
 				if (success)
@@ -315,9 +309,10 @@ public:
 #pragma GCC diagnostic pop
 #endif
 
-		bool went_ok = true;
-		typename args_info<decltype(callable)>::arg_types outs = ConvertFromJS(rq, args, went_ok, static_cast<typename args_info<decltype(callable)>::arg_types*>(nullptr));
-		if (!went_ok)
+		bool wentOk = true;
+		typename args_info<decltype(callable)>::arg_types outs = ConvertFromJS(rq, args, wentOk,
+			static_cast<typename args_info<decltype(callable)>::arg_types*>(nullptr));
+		if (!wentOk)
 			return false;
 
 		/**
@@ -365,10 +360,64 @@ public:
 	}
 
 	/**
+	 * Call a JS function @a name, property of object @a val, with the argument @a args. Repeatetly
+	 * invokes @a yieldCallback with the yielded value.
+	 * @return the final value of the generator.
+	 */
+	template<typename Callback>
+	static JS::Value RunGenerator(const ScriptRequest& rq, JS::HandleValue val, const char* name,
+		JS::HandleValue arg, Callback yieldCallback)
+	{
+		JS::RootedValue generator{rq.cx};
+		if (!ScriptFunction::Call(rq, val, name, &generator, arg))
+			throw std::runtime_error{fmt::format("Failed to call the generator `{}`.", name)};
+
+		const auto continueGenerator = [&](const char* property, auto... args) -> JS::Value
+			{
+				JS::RootedValue iteratorResult{rq.cx};
+				if (!ScriptFunction::Call(rq, generator, property, &iteratorResult, args...))
+					throw std::runtime_error{fmt::format("Failed to call `{}`.", name)};
+				return iteratorResult;
+			};
+
+		JS::PersistentRootedValue error{rq.cx, JS::UndefinedValue()};
+		while (true)
+		{
+			JS::RootedValue iteratorResult{rq.cx, error.isUndefined() ? continueGenerator("next") :
+				continueGenerator("throw", std::exchange(error, JS::UndefinedValue()))};
+
+			try
+			{
+				JS::RootedObject iteratorResultObject{rq.cx, &iteratorResult.toObject()};
+
+				bool done;
+				if (!Script::FromJSProperty(rq, iteratorResult, "done", done, true))
+					throw IteratorResultError{"done"};
+
+				JS::RootedValue value{rq.cx};
+				if (!JS_GetProperty(rq.cx, iteratorResultObject, "value", &value))
+					throw IteratorResultError{"value"};
+
+				if (done)
+					return value;
+
+				yieldCallback(value);
+			}
+			catch (const std::exception& e)
+			{
+				JS::RootedValue global{rq.cx, rq.globalValue()};
+				if (!ScriptFunction::Call(rq, global, "Error", &error, e.what()))
+					throw std::runtime_error{"Failed to construct `Error`."};
+			}
+		}
+	}
+
+	/**
 	 * Return a function spec from a C++ function.
 	 */
-	template <auto callable, GetterFor<decltype(callable)> thisGetter = nullptr, u16 flags = JSPROP_ENUMERATE|JSPROP_READONLY|JSPROP_PERMANENT>
-	static JSFunctionSpec Wrap(const char* name)
+	template <auto callable, GetterFor<decltype(callable)> thisGetter = nullptr>
+	static JSFunctionSpec Wrap(const char* name,
+		const u16 flags = JSPROP_ENUMERATE | JSPROP_READONLY | JSPROP_PERMANENT)
 	{
 		return JS_FN(name, (&ToJSNative<callable, thisGetter>), args_info<decltype(callable)>::nb_args, flags);
 	}
@@ -376,8 +425,9 @@ public:
 	/**
 	 * Return a JSFunction from a C++ function.
 	 */
-	template <auto callable, GetterFor<decltype(callable)> thisGetter = nullptr, u16 flags = JSPROP_ENUMERATE|JSPROP_READONLY|JSPROP_PERMANENT>
-	static JSFunction* Create(const ScriptRequest& rq, const char* name)
+	template <auto callable, GetterFor<decltype(callable)> thisGetter = nullptr>
+	static JSFunction* Create(const ScriptRequest& rq, const char* name,
+		const u16 flags = JSPROP_ENUMERATE | JSPROP_READONLY | JSPROP_PERMANENT)
 	{
 		return JS_NewFunction(rq.cx, &ToJSNative<callable, thisGetter>, args_info<decltype(callable)>::nb_args, flags, name);
 	}
@@ -385,8 +435,9 @@ public:
 	/**
 	 * Register a function on the native scope (usually 'Engine').
 	 */
-	template <auto callable, GetterFor<decltype(callable)> thisGetter = nullptr, u16 flags = JSPROP_ENUMERATE|JSPROP_READONLY|JSPROP_PERMANENT>
-	static void Register(const ScriptRequest& rq, const char* name)
+	template <auto callable, GetterFor<decltype(callable)> thisGetter = nullptr>
+	static void Register(const ScriptRequest& rq, const char* name,
+		const u16 flags = JSPROP_ENUMERATE | JSPROP_READONLY | JSPROP_PERMANENT)
 	{
 		JS_DefineFunction(rq.cx, rq.nativeScope, name, &ToJSNative<callable, thisGetter>, args_info<decltype(callable)>::nb_args, flags);
 	}
@@ -396,8 +447,9 @@ public:
 	 * Prefer the version taking ScriptRequest unless you have a good reason not to.
 	 * @see Register
 	 */
-	template <auto callable, GetterFor<decltype(callable)> thisGetter = nullptr, u16 flags = JSPROP_ENUMERATE|JSPROP_READONLY|JSPROP_PERMANENT>
-	static void Register(JSContext* cx, JS::HandleObject scope, const char* name)
+	template <auto callable, GetterFor<decltype(callable)> thisGetter = nullptr>
+	static void Register(JSContext* cx, JS::HandleObject scope, const char* name,
+		const u16 flags = JSPROP_ENUMERATE | JSPROP_READONLY | JSPROP_PERMANENT)
 	{
 		JS_DefineFunction(cx, scope, name, &ToJSNative<callable, thisGetter>, args_info<decltype(callable)>::nb_args, flags);
 	}

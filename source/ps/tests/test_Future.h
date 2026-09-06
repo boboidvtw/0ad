@@ -1,4 +1,4 @@
-/* Copyright (C) 2021 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -27,22 +27,11 @@ class TestFuture : public CxxTest::TestSuite
 public:
 	void test_future_basic()
 	{
-		int counter = 0;
-		{
-			Future<void> noret;
-			std::function<void()> task = noret.Wrap([&counter]() mutable { counter++; });
-			task();
-			TS_ASSERT_EQUALS(counter, 1);
-		}
-
-		{
-			Future<void> noret;
-			{
-				std::function<void()> task = noret.Wrap([&counter]() mutable { counter++; });
-				// Auto-cancels the task.
-			}
-		}
-		TS_ASSERT_EQUALS(counter, 1);
+		bool executed{false};
+		Future<void> noret;
+		auto task = noret.Wrap([&]{ executed = true; });
+		task();
+		TS_ASSERT(executed);
 	}
 
 	void test_future_return()
@@ -50,14 +39,6 @@ public:
 		{
 			Future<int> future;
 			std::function<void()> task = future.Wrap([]() { return 1; });
-			task();
-			TS_ASSERT_EQUALS(future.Get(), 1);
-		}
-
-		// Convertible type.
-		{
-			Future<int> future;
-			std::function<void()> task = future.Wrap([]() -> u8 { return 1; });
 			task();
 			TS_ASSERT_EQUALS(future.Get(), 1);
 		}
@@ -80,21 +61,21 @@ public:
 		TS_ASSERT_EQUALS(destroyed, 0);
 		{
 			Future<NonDef> future;
-			std::function<void()> task = future.Wrap([]() { return 1; });
+			std::function<void()> task = future.Wrap([]() { return NonDef{1}; });
 			task();
 			TS_ASSERT_EQUALS(future.Get().value, 1);
 		}
 		TS_ASSERT_EQUALS(destroyed, 1);
 		{
 			Future<NonDef> future;
-			std::function<void()> task = future.Wrap([]() { return 1; });
+			std::function<void()> task = future.Wrap([]() { return NonDef{1}; });
 		}
 		TS_ASSERT_EQUALS(destroyed, 1);
 		/**
 		 * TODO: find a way to test this
 		{
 			Future<NonDef> future;
-			std::function<void()> task = future.Wrap([]() { return 1; });
+			std::function<void()> task = future.Wrap([]() { return NonDef{1}; });
 			future.CancelOrWait();
 			TS_ASSERT_THROWS(future.Get(), const Future<NonDef>::BadFutureAccess&);
 		}
@@ -131,5 +112,22 @@ public:
 		std::function<void()> task2 = std::move(task);
 		task2();
 		TS_ASSERT_EQUALS(future.Get(), 7);
+	}
+
+	void test_move_only_function()
+	{
+		Future<void> future;
+
+		class MoveOnlyType
+		{
+		public:
+			MoveOnlyType() = default;
+			MoveOnlyType(MoveOnlyType&) = delete;
+			MoveOnlyType& operator=(MoveOnlyType&) = delete;
+			MoveOnlyType(MoveOnlyType&&) = default;
+			MoveOnlyType& operator=(MoveOnlyType&&) = default;
+		};
+
+		future.Wrap([t = MoveOnlyType{}]{});
 	}
 };

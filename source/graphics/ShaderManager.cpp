@@ -1,4 +1,4 @@
-/* Copyright (C) 2023 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -31,10 +31,7 @@
 #include "ps/Filesystem.h"
 #include "ps/Profile.h"
 #include "ps/XML/Xeromyces.h"
-#include "ps/VideoMode.h"
 #include "renderer/backend/IDevice.h"
-#include "renderer/Renderer.h"
-#include "renderer/RenderingOptions.h"
 
 #define USE_SHADER_XML_VALIDATION 1
 
@@ -48,7 +45,8 @@
 
 TIMER_ADD_CLIENT(tc_ShaderValidation);
 
-CShaderManager::CShaderManager()
+CShaderManager::CShaderManager(Renderer::Backend::IDevice* device)
+	: m_Device(device)
 {
 #if USE_SHADER_XML_VALIDATION
 	{
@@ -75,7 +73,7 @@ CShaderProgramPtr CShaderManager::LoadProgram(const CStr& name, const CShaderDef
 	if (it != m_ProgramCache.end())
 		return it->second;
 
-	CShaderProgramPtr program = CShaderProgram::Create(name, defines);
+	CShaderProgramPtr program = CShaderProgram::Create(m_Device, name, defines);
 	if (program)
 	{
 		for (const VfsPath& path : program->GetFileDependencies())
@@ -156,10 +154,8 @@ bool CShaderManager::LoadTechnique(CShaderTechniquePtr& tech)
 	if (ret != PSRETURN_OK)
 		return false;
 
-	Renderer::Backend::IDevice* device = g_VideoMode.GetBackendDevice();
-
 	// By default we assume that we have techinques for every dummy shader.
-	if (device->GetBackend() == Renderer::Backend::Backend::DUMMY)
+	if (m_Device->GetBackend() == Renderer::Backend::Backend::DUMMY)
 	{
 		CShaderProgramPtr shaderProgram = LoadProgram(str_dummy.string(), tech->GetShaderDefines());
 		std::vector<CShaderPass> techPasses;
@@ -167,7 +163,7 @@ bool CShaderManager::LoadTechnique(CShaderTechniquePtr& tech)
 			Renderer::Backend::MakeDefaultGraphicsPipelineStateDesc();
 		passPipelineStateDesc.shaderProgram = shaderProgram->GetBackendShaderProgram();
 		techPasses.emplace_back(
-			device->CreateGraphicsPipelineState(passPipelineStateDesc), shaderProgram);
+			m_Device->CreateGraphicsPipelineState(passPipelineStateDesc), shaderProgram);
 		tech->SetPasses(std::move(techPasses));
 		return true;
 	}
@@ -177,6 +173,7 @@ bool CShaderManager::LoadTechnique(CShaderTechniquePtr& tech)
 #define AT(x) int at_##x = XeroFile.GetAttributeID(#x)
 	EL(blend);
 	EL(color);
+	EL(compute);
 	EL(cull);
 	EL(define);
 	EL(depth);
@@ -233,20 +230,20 @@ bool CShaderManager::LoadTechnique(CShaderTechniquePtr& tech)
 			{
 				if (attrs.GetNamedItem(at_shaders) == "arb")
 				{
-					if (device->GetBackend() != Renderer::Backend::Backend::GL_ARB ||
-						!device->GetCapabilities().ARBShaders)
+					if (m_Device->GetBackend() != Renderer::Backend::Backend::GL_ARB ||
+						!m_Device->GetCapabilities().ARBShaders)
 					{
 						isUsable = false;
 					}
 				}
 				else if (attrs.GetNamedItem(at_shaders) == "glsl")
 				{
-					if (device->GetBackend() != Renderer::Backend::Backend::GL)
+					if (m_Device->GetBackend() != Renderer::Backend::Backend::GL)
 						isUsable = false;
 				}
 				else if (attrs.GetNamedItem(at_shaders) == "spirv")
 				{
-					if (device->GetBackend() != Renderer::Backend::Backend::VULKAN)
+					if (m_Device->GetBackend() != Renderer::Backend::Backend::VULKAN)
 						isUsable = false;
 				}
 				else if (!attrs.GetNamedItem(at_context).empty())
@@ -272,6 +269,17 @@ bool CShaderManager::LoadTechnique(CShaderTechniquePtr& tech)
 	}
 
 	tech->SetSortByDistance(false);
+
+	const auto loadShaderProgramForTech = [&](const CStr& name, const CShaderDefines& defines)
+	{
+		CShaderProgramPtr shaderProgram = LoadProgram(name.c_str(), defines);
+		if (shaderProgram)
+		{
+			for (const VfsPath& shaderProgramPath : shaderProgram->GetFileDependencies())
+				AddTechniqueFileDependency(tech, shaderProgramPath);
+		}
+		return shaderProgram;
+	};
 
 	CShaderDefines techDefines = tech->GetShaderDefines();
 	XERO_ITER_EL((*usableTech), Child)
@@ -434,21 +442,32 @@ bool CShaderManager::LoadTechnique(CShaderTechniquePtr& tech)
 
 			// Load the shader program after we've read all the possibly-relevant <define>s.
 			CShaderProgramPtr shaderProgram =
-				LoadProgram(Child.GetAttributes().GetNamedItem(at_shader).c_str(), passDefines);
+				loadShaderProgramForTech(Child.GetAttributes().GetNamedItem(at_shader), passDefines);
 			if (shaderProgram)
 			{
-				for (const VfsPath& shaderProgramPath : shaderProgram->GetFileDependencies())
-					AddTechniqueFileDependency(tech, shaderProgramPath);
 				if (tech->GetPipelineStateDescCallback())
 					tech->GetPipelineStateDescCallback()(passPipelineStateDesc);
 				passPipelineStateDesc.shaderProgram = shaderProgram->GetBackendShaderProgram();
 				techPasses.emplace_back(
-					device->CreateGraphicsPipelineState(passPipelineStateDesc), shaderProgram);
+					m_Device->CreateGraphicsPipelineState(passPipelineStateDesc), shaderProgram);
+			}
+		}
+		else if (Child.GetNodeName() == el_compute)
+		{
+			CShaderProgramPtr shaderProgram =
+				loadShaderProgramForTech(Child.GetAttributes().GetNamedItem(at_shader), techDefines);
+			if (shaderProgram)
+			{
+				Renderer::Backend::SComputePipelineStateDesc computePipelineStateDesc{};
+				computePipelineStateDesc.shaderProgram = shaderProgram->GetBackendShaderProgram();
+				tech->SetComputePipelineState(
+					m_Device->CreateComputePipelineState(computePipelineStateDesc), shaderProgram);
 			}
 		}
 	}
 
-	tech->SetPasses(std::move(techPasses));
+	if (!techPasses.empty())
+		tech->SetPasses(std::move(techPasses));
 
 	return true;
 }

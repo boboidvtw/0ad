@@ -1,4 +1,4 @@
-/* Copyright (C) 2023 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -21,6 +21,7 @@
 
 #include "graphics/ShaderDefines.h"
 #include "ps/CLogger.h"
+#include "ps/containers/StaticVector.h"
 #include "ps/CStr.h"
 #include "ps/CStrInternStatic.h"
 #include "ps/Filesystem.h"
@@ -28,7 +29,9 @@
 #include "ps/XML/Xeromyces.h"
 #include "renderer/backend/vulkan/DescriptorManager.h"
 #include "renderer/backend/vulkan/Device.h"
+#include "renderer/backend/vulkan/RingCommandContext.h"
 #include "renderer/backend/vulkan/Texture.h"
+#include "renderer/backend/vulkan/Utilities.h"
 
 #include <algorithm>
 #include <limits>
@@ -63,9 +66,11 @@ VkShaderModule CreateShaderModule(CDevice* device, const VfsPath& path)
 	createInfo.pCode = reinterpret_cast<const uint32_t*>(file.GetBuffer());
 
 	VkShaderModule shaderModule;
-	if (vkCreateShaderModule(device->GetVkDevice(), &createInfo, nullptr, &shaderModule) != VK_SUCCESS)
+	const VkResult result = vkCreateShaderModule(device->GetVkDevice(), &createInfo, nullptr, &shaderModule);
+	if (result != VK_SUCCESS)
 	{
-		LOGERROR("Failed to create shader module from file: '%s'", path.string8());
+		LOGERROR("Failed to create shader module from file: '%s' %d (%s)",
+			path.string8(), static_cast<int>(result), Utilities::GetVkResultName(result));
 		return VK_NULL_HANDLE;
 	}
 	device->SetObjectName(VK_OBJECT_TYPE_SHADER_MODULE, shaderModule, path.string8().c_str());
@@ -166,6 +171,7 @@ std::unique_ptr<CShaderProgram> CShaderProgram::Create(
 #define EL(x) const int el_##x = programXeroFile.GetElementID(#x)
 #define AT(x) const int at_##x = programXeroFile.GetAttributeID(#x)
 	EL(binding);
+	EL(compute);
 	EL(descriptor_set);
 	EL(descriptor_sets);
 	EL(fragment);
@@ -222,6 +228,13 @@ std::unique_ptr<CShaderProgram> CShaderProgram::Create(
 			pushConstantDataFlags[(offset >> 2) + index] = stageFlags;
 		return true;
 	};
+
+	uint32_t texturesDescriptorSetSize = 0;
+	std::unordered_map<CStrIntern, uint32_t> textureMapping;
+
+	VkDescriptorType storageImageDescriptorType = VK_DESCRIPTOR_TYPE_MAX_ENUM;
+	uint32_t storageImageDescriptorSetSize = 0;
+	std::unordered_map<CStrIntern, uint32_t> storageImageMapping;
 
 	auto addDescriptorSets = [&](const XMBElement& element) -> bool
 	{
@@ -297,9 +310,26 @@ std::unique_ptr<CShaderProgram> CShaderProgram::Create(
 								return false;
 							}
 							const CStrIntern name{attributes.GetNamedItem(at_name)};
-							shaderProgram->m_TextureMapping[name] = binding;
-							shaderProgram->m_TexturesDescriptorSetSize =
-								std::max(shaderProgram->m_TexturesDescriptorSetSize, binding + 1);
+							textureMapping[name] = binding;
+							texturesDescriptorSetSize =
+								std::max(texturesDescriptorSetSize, binding + 1);
+						}
+						else if (type == "storageImage" || type == "storageBuffer")
+						{
+							const CStrIntern name{attributes.GetNamedItem(at_name)};
+							storageImageMapping[name] = binding;
+							storageImageDescriptorSetSize =
+								std::max(storageImageDescriptorSetSize, binding + 1);
+							const VkDescriptorType descriptorType = type == "storageBuffer"
+								? VK_DESCRIPTOR_TYPE_STORAGE_BUFFER
+								: VK_DESCRIPTOR_TYPE_STORAGE_IMAGE;
+							if (storageImageDescriptorType == VK_DESCRIPTOR_TYPE_MAX_ENUM)
+								storageImageDescriptorType = descriptorType;
+							else if (storageImageDescriptorType != descriptorType)
+							{
+								LOGERROR("Shader should have storages of the same type.");
+								return false;
+							}
 						}
 						else
 						{
@@ -317,6 +347,13 @@ std::unique_ptr<CShaderProgram> CShaderProgram::Create(
 	{
 		if (programChild.GetNodeName() == el_vertex)
 		{
+			if (shaderProgram->m_PipelineBindPoint != VK_PIPELINE_BIND_POINT_MAX_ENUM &&
+				shaderProgram->m_PipelineBindPoint != VK_PIPELINE_BIND_POINT_GRAPHICS)
+			{
+				LOGERROR("Shader program can't mix different pipelines: '%s'.", name.c_str());
+				return nullptr;
+			}
+			shaderProgram->m_PipelineBindPoint = VK_PIPELINE_BIND_POINT_GRAPHICS;
 			const VfsPath shaderModulePath =
 				L"shaders/" + programChild.GetAttributes().GetNamedItem(at_file).FromUTF8();
 			shaderProgram->m_FileDependencies.emplace_back(shaderModulePath);
@@ -378,6 +415,13 @@ std::unique_ptr<CShaderProgram> CShaderProgram::Create(
 		}
 		else if (programChild.GetNodeName() == el_fragment)
 		{
+			if (shaderProgram->m_PipelineBindPoint != VK_PIPELINE_BIND_POINT_MAX_ENUM &&
+				shaderProgram->m_PipelineBindPoint != VK_PIPELINE_BIND_POINT_GRAPHICS)
+			{
+				LOGERROR("Shader program can't mix different pipelines: '%s'.", name.c_str());
+				return nullptr;
+			}
+			shaderProgram->m_PipelineBindPoint = VK_PIPELINE_BIND_POINT_GRAPHICS;
 			const VfsPath shaderModulePath =
 				L"shaders/" + programChild.GetAttributes().GetNamedItem(at_file).FromUTF8();
 			shaderProgram->m_FileDependencies.emplace_back(shaderModulePath);
@@ -405,6 +449,42 @@ std::unique_ptr<CShaderProgram> CShaderProgram::Create(
 				}
 			}
 		}
+		else if (programChild.GetNodeName() == el_compute)
+		{
+			if (shaderProgram->m_PipelineBindPoint != VK_PIPELINE_BIND_POINT_MAX_ENUM &&
+				shaderProgram->m_PipelineBindPoint != VK_PIPELINE_BIND_POINT_COMPUTE)
+			{
+				LOGERROR("Shader program can't mix different pipelines: '%s'.", name.c_str());
+				return nullptr;
+			}
+			shaderProgram->m_PipelineBindPoint = VK_PIPELINE_BIND_POINT_COMPUTE;
+			const VfsPath shaderModulePath =
+				L"shaders/" + programChild.GetAttributes().GetNamedItem(at_file).FromUTF8();
+			shaderProgram->m_FileDependencies.emplace_back(shaderModulePath);
+			shaderProgram->m_ShaderModules.emplace_back(
+				CreateShaderModule(device, shaderModulePath));
+			if (shaderProgram->m_ShaderModules.back() == VK_NULL_HANDLE)
+				return nullptr;
+			VkPipelineShaderStageCreateInfo computeShaderStageInfo{};
+			computeShaderStageInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO;
+			computeShaderStageInfo.stage = VK_SHADER_STAGE_COMPUTE_BIT;
+			computeShaderStageInfo.module = shaderProgram->m_ShaderModules.back();
+			computeShaderStageInfo.pName = "main";
+			shaderProgram->m_Stages.emplace_back(std::move(computeShaderStageInfo));
+			XERO_ITER_EL(programChild, stageChild)
+			{
+				if (stageChild.GetNodeName() == el_push_constant)
+				{
+					if (!addPushConstant(stageChild, VK_SHADER_STAGE_COMPUTE_BIT))
+						return nullptr;
+				}
+				else if (stageChild.GetNodeName() == el_descriptor_sets)
+				{
+					if (!addDescriptorSets(stageChild))
+						return nullptr;
+				}
+			}
+		}
 	}
 
 	if (shaderProgram->m_Stages.empty())
@@ -412,6 +492,8 @@ std::unique_ptr<CShaderProgram> CShaderProgram::Create(
 		LOGERROR("Program should contain at least one stage.");
 		return nullptr;
 	}
+
+	ENSURE(shaderProgram->m_PipelineBindPoint != VK_PIPELINE_BIND_POINT_MAX_ENUM);
 
 	for (size_t index = 0; index < shaderProgram->m_PushConstants.size(); ++index)
 		shaderProgram->m_PushConstantMapping[shaderProgram->m_PushConstants[index].name] = index;
@@ -467,16 +549,18 @@ std::unique_ptr<CShaderProgram> CShaderProgram::Create(
 
 	std::vector<VkDescriptorSetLayout> layouts =
 		device->GetDescriptorManager().GetDescriptorSetLayouts();
-	if (shaderProgram->m_TexturesDescriptorSetSize > 0)
+	if (texturesDescriptorSetSize > 0)
 	{
 		ENSURE(!device->GetDescriptorManager().UseDescriptorIndexing());
-		shaderProgram->m_BoundTextures.resize(shaderProgram->m_TexturesDescriptorSetSize);
-		shaderProgram->m_BoundTexturesUID.resize(shaderProgram->m_TexturesDescriptorSetSize);
-		shaderProgram->m_BoundTexturesOutdated = true;
-		shaderProgram->m_TexturesDescriptorSetLayout =
-			device->GetDescriptorManager().GetSingleTypeDescritorSetLayout(
-				VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER, shaderProgram->m_TexturesDescriptorSetSize);
-		layouts.emplace_back(shaderProgram->m_TexturesDescriptorSetLayout);
+		shaderProgram->m_TextureBinding.emplace(
+			device, VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER, texturesDescriptorSetSize, std::move(textureMapping));
+		layouts.emplace_back(shaderProgram->m_TextureBinding->GetDescriptorSetLayout());
+	}
+	if (storageImageDescriptorSetSize > 0)
+	{
+		shaderProgram->m_StorageImageBinding.emplace(
+			device, storageImageDescriptorType, storageImageDescriptorSetSize, std::move(storageImageMapping));
+		layouts.emplace_back(shaderProgram->m_StorageImageBinding->GetDescriptorSetLayout());
 	}
 
 	VkPipelineLayoutCreateInfo pipelineLayoutCreateInfo{};
@@ -491,7 +575,8 @@ std::unique_ptr<CShaderProgram> CShaderProgram::Create(
 		&shaderProgram->m_PipelineLayout);
 	if (result != VK_SUCCESS)
 	{
-		LOGERROR("Failed to create a pipeline layout: %d", static_cast<int>(result));
+		LOGERROR("Failed to create a pipeline layout: %d (%s)",
+			static_cast<int>(result), Utilities::GetVkResultName(result));
 		return nullptr;
 	}
 
@@ -520,8 +605,10 @@ int32_t CShaderProgram::GetBindingSlot(const CStrIntern name) const
 		return it->second;
 	if (auto it = m_UniformMapping.find(name); it != m_UniformMapping.end())
 		return it->second + m_PushConstants.size();
-	if (auto it = m_TextureMapping.find(name); it != m_TextureMapping.end())
-		return it->second + m_PushConstants.size() + m_UniformMapping.size();
+	if (const int32_t bindingSlot = m_TextureBinding.has_value() ? m_TextureBinding->GetBindingSlot(name) : -1; bindingSlot != -1)
+		return bindingSlot + m_PushConstants.size() + m_UniformMapping.size();
+	if (const int32_t bindingSlot = m_StorageImageBinding.has_value() ? m_StorageImageBinding->GetBindingSlot(name) : -1; bindingSlot != -1)
+		return bindingSlot + m_PushConstants.size() + m_UniformMapping.size() + (m_TextureBinding.has_value() ? m_TextureBinding->GetBoundDeviceObjects().size() : 0);
 	return -1;
 }
 
@@ -544,19 +631,15 @@ void CShaderProgram::Bind()
 
 void CShaderProgram::Unbind()
 {
-	if (m_TexturesDescriptorSetSize > 0)
-	{
-		for (CTexture*& texture : m_BoundTextures)
-			texture = nullptr;
-		for (CTexture::UID& uid : m_BoundTexturesUID)
-			uid = 0;
-		m_BoundTexturesOutdated = true;
-	}
+	if (m_TextureBinding.has_value())
+		m_TextureBinding->Unbind();
+	if (m_StorageImageBinding.has_value())
+		m_StorageImageBinding->Unbind();
 }
 
-void CShaderProgram::PreDraw(VkCommandBuffer commandBuffer)
+void CShaderProgram::PreDraw(CRingCommandContext& commandContext)
 {
-	UpdateActiveDescriptorSet(commandBuffer);
+	BindOutdatedDescriptorSets(commandContext);
 	if (m_PushConstantDataMask)
 	{
 		for (uint32_t index = 0; index < 32;)
@@ -570,7 +653,7 @@ void CShaderProgram::PreDraw(VkCommandBuffer commandBuffer)
 			while (indexEnd < 32 && (m_PushConstantDataMask & (1 << indexEnd)) && m_PushConstantDataFlags[index] == m_PushConstantDataFlags[indexEnd])
 				++indexEnd;
 			vkCmdPushConstants(
-				commandBuffer, GetPipelineLayout(),
+				commandContext.GetCommandBuffer(), GetPipelineLayout(),
 				m_PushConstantDataFlags[index],
 				index * 4, (indexEnd - index) * 4, m_PushConstantData.data() + index * 4);
 			index = indexEnd;
@@ -579,22 +662,69 @@ void CShaderProgram::PreDraw(VkCommandBuffer commandBuffer)
 	}
 }
 
-void CShaderProgram::UpdateActiveDescriptorSet(
-	VkCommandBuffer commandBuffer)
+void CShaderProgram::PreDispatch(
+	CRingCommandContext& commandContext)
 {
-	if (m_BoundTexturesOutdated)
+	PreDraw(commandContext);
+
+	if (m_StorageImageBinding.has_value())
+		for (CTexture* texture : m_StorageImageBinding->GetBoundDeviceObjects())
+			if (texture)
+			{
+				if (!(texture->GetUsage() & ITexture::Usage::SAMPLED) && texture->IsInitialized())
+					continue;
+				VkImageLayout oldLayout = VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL;
+				if (!texture->IsInitialized())
+					oldLayout = VK_IMAGE_LAYOUT_UNDEFINED;
+				Utilities::SetTextureLayout(
+					commandContext.GetCommandBuffer(), texture,
+					oldLayout,
+					VK_IMAGE_LAYOUT_GENERAL,
+					VK_ACCESS_SHADER_READ_BIT, VK_ACCESS_SHADER_READ_BIT | VK_ACCESS_SHADER_WRITE_BIT,
+					VK_PIPELINE_STAGE_FRAGMENT_SHADER_BIT | VK_PIPELINE_STAGE_COMPUTE_SHADER_BIT,
+					VK_PIPELINE_STAGE_COMPUTE_SHADER_BIT);
+			}
+}
+
+void CShaderProgram::PostDispatch(CRingCommandContext& commandContext)
+{
+	if (m_StorageImageBinding.has_value())
+		for (CTexture* texture : m_StorageImageBinding->GetBoundDeviceObjects())
+			if (texture)
+			{
+				if (!(texture->GetUsage() & ITexture::Usage::SAMPLED) && texture->IsInitialized())
+					continue;
+				Utilities::SetTextureLayout(
+					commandContext.GetCommandBuffer(), texture,
+					VK_IMAGE_LAYOUT_GENERAL,
+					VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL,
+					VK_ACCESS_SHADER_READ_BIT | VK_ACCESS_SHADER_WRITE_BIT, VK_ACCESS_SHADER_READ_BIT,
+					VK_PIPELINE_STAGE_COMPUTE_SHADER_BIT,
+					VK_PIPELINE_STAGE_FRAGMENT_SHADER_BIT | VK_PIPELINE_STAGE_COMPUTE_SHADER_BIT);
+			}
+}
+
+void CShaderProgram::BindOutdatedDescriptorSets(
+	CRingCommandContext& commandContext)
+{
+	// TODO: combine calls after more sets to bind.
+	PS::StaticVector<std::tuple<uint32_t, VkDescriptorSet>, 2> descriptortSets;
+	if (m_TextureBinding.has_value() && m_TextureBinding->IsOutdated())
 	{
-		m_BoundTexturesOutdated = false;
+		constexpr uint32_t TEXTURE_BINDING_SET = 1u;
+		descriptortSets.emplace_back(TEXTURE_BINDING_SET, m_TextureBinding->UpdateAndReturnDescriptorSet());
+	}
+	if (m_StorageImageBinding.has_value() && m_StorageImageBinding->IsOutdated())
+	{
+		constexpr uint32_t STORAGE_IMAGE_BINDING_SET = 2u;
+		descriptortSets.emplace_back(STORAGE_IMAGE_BINDING_SET, m_StorageImageBinding->UpdateAndReturnDescriptorSet());
+	}
 
-		m_ActiveTexturesDescriptorSet =
-			m_Device->GetDescriptorManager().GetSingleTypeDescritorSet(
-				VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER, m_TexturesDescriptorSetLayout,
-				m_BoundTexturesUID, m_BoundTextures);
-		ENSURE(m_ActiveTexturesDescriptorSet != VK_NULL_HANDLE);
-
+	for (const auto [firstSet, descriptorSet] : descriptortSets)
+	{
 		vkCmdBindDescriptorSets(
-			commandBuffer, GetPipelineBindPoint(), GetPipelineLayout(),
-			1, 1, &m_ActiveTexturesDescriptorSet, 0, nullptr);
+			commandContext.GetCommandBuffer(), GetPipelineBindPoint(), GetPipelineLayout(),
+			firstSet, 1, &descriptorSet, 0, nullptr);
 	}
 }
 
@@ -682,14 +812,21 @@ void CShaderProgram::SetTexture(const int32_t bindingSlot, CTexture* texture)
 	else
 	{
 		ENSURE(bindingSlot >= static_cast<int32_t>(m_PushConstants.size() + m_UniformMapping.size()));
+		ENSURE(m_TextureBinding.has_value());
 		const uint32_t index = bindingSlot - (m_PushConstants.size() + m_UniformMapping.size());
-		if (m_BoundTexturesUID[index] != texture->GetUID())
-		{
-			m_BoundTextures[index] = texture;
-			m_BoundTexturesUID[index] = texture->GetUID();
-			m_BoundTexturesOutdated = true;
-		}
+		m_TextureBinding->SetObject(index, texture);
 	}
+}
+
+void CShaderProgram::SetStorageTexture(const int32_t bindingSlot, CTexture* texture)
+{
+	if (bindingSlot < 0)
+		return;
+	const int32_t offset = static_cast<int32_t>(m_PushConstants.size() + m_UniformMapping.size() + (m_TextureBinding.has_value() ? m_TextureBinding->GetBoundDeviceObjects().size() : 0));
+	ENSURE(bindingSlot >= offset);
+	ENSURE(m_StorageImageBinding.has_value());
+	const uint32_t index = bindingSlot - offset;
+	m_StorageImageBinding->SetObject(index, texture);
 }
 
 } // namespace Vulkan

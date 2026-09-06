@@ -1,4 +1,4 @@
-/* Copyright (C) 2023 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -28,7 +28,6 @@
 #include "ps/CLogger.h"
 #include "ps/CStrInternStatic.h"
 #include "ps/Game.h"
-#include "ps/VideoMode.h"
 #include "ps/World.h"
 #include "renderer/backend/IDevice.h"
 #include "renderer/Renderer.h"
@@ -69,7 +68,8 @@ struct WaveObject
 	float m_TimeDiff;
 };
 
-WaterManager::WaterManager()
+WaterManager::WaterManager(Renderer::Backend::IDevice* device)
+	: m_Device(device)
 {
 	// water
 	m_RenderWater = false; // disabled until textures are successfully loaded
@@ -214,8 +214,6 @@ int WaterManager::LoadWaterTextures()
 
 void WaterManager::RecreateOrLoadTexturesIfNeeded()
 {
-	Renderer::Backend::IDevice* backendDevice = g_VideoMode.GetBackendDevice();
-
 	// Use screen-sized textures for minimum artifacts.
 	const size_t newRefTextureSize = round_up_to_pow2(g_Renderer.GetHeight());
 
@@ -233,7 +231,7 @@ void WaterManager::RecreateOrLoadTexturesIfNeeded()
 	}
 
 	const Renderer::Backend::Format depthFormat =
-		backendDevice->GetPreferredDepthStencilFormat(
+		m_Device->GetPreferredDepthStencilFormat(
 			Renderer::Backend::ITexture::Usage::SAMPLED |
 				Renderer::Backend::ITexture::Usage::DEPTH_STENCIL_ATTACHMENT,
 			true, false);
@@ -244,7 +242,7 @@ void WaterManager::RecreateOrLoadTexturesIfNeeded()
 		g_RenderingOptions.GetWaterReflection();
 	if (needsReflectionTextures && !m_ReflectionTexture)
 	{
-		m_ReflectionTexture = backendDevice->CreateTexture2D("WaterReflectionTexture",
+		m_ReflectionTexture = m_Device->CreateTexture2D("WaterReflectionTexture",
 			Renderer::Backend::ITexture::Usage::SAMPLED |
 				Renderer::Backend::ITexture::Usage::COLOR_ATTACHMENT,
 			Renderer::Backend::Format::R8G8B8A8_UNORM, m_RefTextureSize, m_RefTextureSize,
@@ -252,7 +250,7 @@ void WaterManager::RecreateOrLoadTexturesIfNeeded()
 				Renderer::Backend::Sampler::Filter::LINEAR,
 				Renderer::Backend::Sampler::AddressMode::MIRRORED_REPEAT));
 
-		m_ReflFboDepthTexture = backendDevice->CreateTexture2D("WaterReflectionDepthTexture",
+		m_ReflFboDepthTexture = m_Device->CreateTexture2D("WaterReflectionDepthTexture",
 			Renderer::Backend::ITexture::Usage::SAMPLED |
 				Renderer::Backend::ITexture::Usage::DEPTH_STENCIL_ATTACHMENT,
 			depthFormat, m_RefTextureSize, m_RefTextureSize,
@@ -271,7 +269,7 @@ void WaterManager::RecreateOrLoadTexturesIfNeeded()
 		depthStencilAttachment.loadOp = Renderer::Backend::AttachmentLoadOp::CLEAR;
 		depthStencilAttachment.storeOp = Renderer::Backend::AttachmentStoreOp::STORE;
 
-		m_ReflectionFramebuffer = backendDevice->CreateFramebuffer("ReflectionFramebuffer",
+		m_ReflectionFramebuffer = m_Device->CreateFramebuffer("ReflectionFramebuffer",
 			&colorAttachment, &depthStencilAttachment);
 		if (!m_ReflectionFramebuffer)
 		{
@@ -286,7 +284,7 @@ void WaterManager::RecreateOrLoadTexturesIfNeeded()
 		g_RenderingOptions.GetWaterRefraction();
 	if (needsRefractionTextures && !m_RefractionTexture)
 	{
-		m_RefractionTexture = backendDevice->CreateTexture2D("WaterRefractionTexture",
+		m_RefractionTexture = m_Device->CreateTexture2D("WaterRefractionTexture",
 			Renderer::Backend::ITexture::Usage::SAMPLED |
 				Renderer::Backend::ITexture::Usage::COLOR_ATTACHMENT,
 			Renderer::Backend::Format::R8G8B8A8_UNORM, m_RefTextureSize, m_RefTextureSize,
@@ -294,7 +292,7 @@ void WaterManager::RecreateOrLoadTexturesIfNeeded()
 				Renderer::Backend::Sampler::Filter::LINEAR,
 				Renderer::Backend::Sampler::AddressMode::MIRRORED_REPEAT));
 
-		m_RefrFboDepthTexture = backendDevice->CreateTexture2D("WaterRefractionDepthTexture",
+		m_RefrFboDepthTexture = m_Device->CreateTexture2D("WaterRefractionDepthTexture",
 			Renderer::Backend::ITexture::Usage::SAMPLED |
 				Renderer::Backend::ITexture::Usage::DEPTH_STENCIL_ATTACHMENT,
 			depthFormat, m_RefTextureSize, m_RefTextureSize,
@@ -313,7 +311,7 @@ void WaterManager::RecreateOrLoadTexturesIfNeeded()
 		depthStencilAttachment.loadOp = Renderer::Backend::AttachmentLoadOp::CLEAR;
 		depthStencilAttachment.storeOp = Renderer::Backend::AttachmentStoreOp::STORE;
 
-		m_RefractionFramebuffer = backendDevice->CreateFramebuffer("RefractionFramebuffer",
+		m_RefractionFramebuffer = m_Device->CreateFramebuffer("RefractionFramebuffer",
 			&colorAttachment, &depthStencilAttachment);
 		if (!m_RefractionFramebuffer)
 		{
@@ -338,7 +336,7 @@ void WaterManager::RecreateOrLoadTexturesIfNeeded()
 		g_RenderingOptions.GetWaterFancyEffects();
 	if (needsFancyTextures && !m_FancyTexture)
 	{
-		m_FancyTexture = backendDevice->CreateTexture2D("WaterFancyTexture",
+		m_FancyTexture = m_Device->CreateTexture2D("WaterFancyTexture",
 			Renderer::Backend::ITexture::Usage::SAMPLED |
 				Renderer::Backend::ITexture::Usage::COLOR_ATTACHMENT,
 			Renderer::Backend::Format::R8G8B8A8_UNORM, g_Renderer.GetWidth(), g_Renderer.GetHeight(),
@@ -346,7 +344,7 @@ void WaterManager::RecreateOrLoadTexturesIfNeeded()
 				Renderer::Backend::Sampler::Filter::LINEAR,
 				Renderer::Backend::Sampler::AddressMode::REPEAT));
 
-		m_FancyTextureDepth = backendDevice->CreateTexture2D("WaterFancyDepthTexture",
+		m_FancyTextureDepth = m_Device->CreateTexture2D("WaterFancyDepthTexture",
 			Renderer::Backend::ITexture::Usage::DEPTH_STENCIL_ATTACHMENT,
 			depthFormat, g_Renderer.GetWidth(), g_Renderer.GetHeight(),
 			Renderer::Backend::Sampler::MakeDefaultSampler(
@@ -365,7 +363,7 @@ void WaterManager::RecreateOrLoadTexturesIfNeeded()
 		// We need to store depth for later rendering occluders.
 		depthStencilAttachment.storeOp = Renderer::Backend::AttachmentStoreOp::STORE;
 
-		m_FancyEffectsFramebuffer = backendDevice->CreateFramebuffer("FancyEffectsFramebuffer",
+		m_FancyEffectsFramebuffer = m_Device->CreateFramebuffer("FancyEffectsFramebuffer",
 			&colorAttachment, &depthStencilAttachment);
 
 		Renderer::Backend::SColorAttachment occludersColorAttachment{};
@@ -379,7 +377,7 @@ void WaterManager::RecreateOrLoadTexturesIfNeeded()
 		occludersDepthStencilAttachment.loadOp = Renderer::Backend::AttachmentLoadOp::LOAD;
 		occludersDepthStencilAttachment.storeOp = Renderer::Backend::AttachmentStoreOp::DONT_CARE;
 
-		m_FancyEffectsOccludersFramebuffer = backendDevice->CreateFramebuffer("FancyEffectsOccludersFramebuffer",
+		m_FancyEffectsOccludersFramebuffer = m_Device->CreateFramebuffer("FancyEffectsOccludersFramebuffer",
 			&occludersColorAttachment, &occludersDepthStencilAttachment);
 		if (!m_FancyEffectsFramebuffer || !m_FancyEffectsOccludersFramebuffer)
 		{
@@ -471,8 +469,8 @@ static inline void ComputeDirection(float* distanceMap, const u16* heightmap, fl
 // Calculate our binary heightmap from the terrain heightmap.
 void WaterManager::RecomputeDistanceHeightmap()
 {
-	CTerrain* terrain = g_Game->GetWorld()->GetTerrain();
-	if (!terrain || !terrain->GetHeightMap())
+	const CTerrain& terrain = g_Game->GetWorld()->GetTerrain();
+	if (!terrain.GetHeightMap())
 		return;
 
 	size_t SideSize = m_MapSize;
@@ -489,7 +487,7 @@ void WaterManager::RecomputeDistanceHeightmap()
 	// Create a manhattan-distance heightmap.
 	// This could be refined to only be done near the coast itself, but it's probably not necessary.
 
-	u16* heightmap = terrain->GetHeightMap();
+	const u16* const heightmap = terrain.GetHeightMap();
 
 	ComputeDirection<false>(m_DistanceHeightmap.get(), heightmap, m_WaterHeight, SideSize, maxLevel);
 	ComputeDirection<true>(m_DistanceHeightmap.get(), heightmap, m_WaterHeight, SideSize, maxLevel);
@@ -501,8 +499,8 @@ void WaterManager::CreateWaveMeshes()
 	if (m_MapSize == 0)
 		return;
 
-	CTerrain* terrain = g_Game->GetWorld()->GetTerrain();
-	if (!terrain || !terrain->GetHeightMap())
+	const CTerrain& terrain = g_Game->GetWorld()->GetTerrain();
+	if (!terrain.GetHeightMap())
 		return;
 
 	m_ShoreWaves.clear();
@@ -649,9 +647,10 @@ void WaterManager::CreateWaveMeshes()
 		}
 	}
 	// Generic indexes, max-length
-	m_ShoreWavesVBIndices = g_VBMan.AllocateChunk(
+	m_ShoreWavesVBIndices = g_Renderer.GetVertexBufferManager().AllocateChunk(
 		sizeof(u16), water_indices.size(),
-		Renderer::Backend::IBuffer::Type::INDEX, false,
+		Renderer::Backend::IBuffer::Type::INDEX,
+		Renderer::Backend::IBuffer::Usage::TRANSFER_DST,
 		nullptr, CVertexBufferManager::Group::WATER);
 	m_ShoreWavesVBIndices->m_Owner->UpdateChunkVertices(m_ShoreWavesVBIndices.Get(), &water_indices[0]);
 
@@ -704,15 +703,19 @@ void WaterManager::CreateWaveMeshes()
 					break;
 				}
 
-				if (terrain->GetExactGroundLevel(pos.X+perp.X*1.5f, pos.Y+perp.Y*1.5f) > m_WaterHeight)
+				if (terrain.GetExactGroundLevel(pos.X+perp.X*1.5f, pos.Y+perp.Y*1.5f)
+					> m_WaterHeight)
 					sign = -1;
 
-				avgDepth += terrain->GetExactGroundLevel(pos.X+sign*perp.X*20.0f, pos.Y+sign*perp.Y*20.0f) - m_WaterHeight;
+				avgDepth += terrain.GetExactGroundLevel(pos.X+sign*perp.X*20.0f,
+					pos.Y+sign*perp.Y*20.0f) - m_WaterHeight;
 
 				float localOutmost = -2.0f;
 				while (localOutmost < 0.0f)
 				{
-					float depth = terrain->GetExactGroundLevel(pos.X+sign*perp.X*localOutmost, pos.Y+sign*perp.Y*localOutmost) - m_WaterHeight;
+					const float depth = terrain.GetExactGroundLevel(
+						pos.X+sign*perp.X*localOutmost,
+						pos.Y+sign*perp.Y*localOutmost) - m_WaterHeight;
 					if (depth < 0.0f || depth > 0.6f)
 						localOutmost += 0.2f;
 					else
@@ -813,27 +816,31 @@ void WaterManager::CreateWaveMeshes()
 
 				for (size_t t = 0; t < 9; ++t)
 				{
-					float terrHeight = 0.05f + terrain->GetExactGroundLevel(pos.X+sign*perp.X*(perpT1[t]+outmost),
+					const float terrHeight = 0.05f + terrain.GetExactGroundLevel(
+						pos.X+sign*perp.X*(perpT1[t]+outmost),
 																			pos.Y+sign*perp.Y*(perpT1[t]+outmost));
 					point[t].m_BasePosition = CVector3D(pos.X+sign*perp.X*(perpT1[t]+outmost), baseHeight + heightT1[t]*sideNess + std::max(m_WaterHeight,terrHeight),
 														pos.Y+sign*perp.Y*(perpT1[t]+outmost));
 				}
 				for (size_t t = 0; t < 9; ++t)
 				{
-					float terrHeight = 0.05f + terrain->GetExactGroundLevel(pos.X+sign*perp.X*(perpT2[t]+outmost),
+					const float terrHeight = 0.05f + terrain.GetExactGroundLevel(
+						pos.X+sign*perp.X*(perpT2[t]+outmost),
 																			pos.Y+sign*perp.Y*(perpT2[t]+outmost));
 					point[t].m_ApexPosition = CVector3D(pos.X+sign*perp.X*(perpT2[t]+outmost), baseHeight + heightT1[t]*sideNess + std::max(m_WaterHeight,terrHeight),
 														pos.Y+sign*perp.Y*(perpT2[t]+outmost));
 				}
 				for (size_t t = 0; t < 9; ++t)
 				{
-					float terrHeight = 0.05f + terrain->GetExactGroundLevel(pos.X+sign*perp.X*(perpT3[t]+outmost*sideNess),
+					const float terrHeight = 0.05f + terrain.GetExactGroundLevel(
+						pos.X+sign*perp.X*(perpT3[t]+outmost*sideNess),
 																			pos.Y+sign*perp.Y*(perpT3[t]+outmost*sideNess));
 					point[t].m_SplashPosition = CVector3D(pos.X+sign*perp.X*(perpT3[t]+outmost*sideNess), baseHeight + heightT2[t]*sideNess + std::max(m_WaterHeight,terrHeight), pos.Y+sign*perp.Y*(perpT3[t]+outmost*sideNess));
 				}
 				for (size_t t = 0; t < 9; ++t)
 				{
-					float terrHeight = 0.05f + terrain->GetExactGroundLevel(pos.X+sign*perp.X*(perpT4[t]+outmost),
+					const float terrHeight = 0.05f + terrain.GetExactGroundLevel(
+						pos.X+sign*perp.X*(perpT4[t]+outmost),
 																			pos.Y+sign*perp.Y*(perpT4[t]+outmost));
 					point[t].m_RetreatPosition = CVector3D(pos.X+sign*perp.X*(perpT4[t]+outmost), baseHeight + heightT3[t]*sideNess + std::max(m_WaterHeight,terrHeight),
 														   pos.Y+sign*perp.Y*(perpT4[t]+outmost));
@@ -870,9 +877,10 @@ void WaterManager::CreateWaveMeshes()
 			}
 			j += width/2-1;
 
-			shoreWave->m_VBVertices = g_VBMan.AllocateChunk(
+			shoreWave->m_VBVertices = g_Renderer.GetVertexBufferManager().AllocateChunk(
 				sizeof(SWavesVertex), vertices.size(),
-				Renderer::Backend::IBuffer::Type::VERTEX, false,
+				Renderer::Backend::IBuffer::Type::VERTEX,
+				Renderer::Backend::IBuffer::Usage::TRANSFER_DST,
 				nullptr, CVertexBufferManager::Group::WATER);
 			shoreWave->m_VBVertices->m_Owner->UpdateChunkVertices(shoreWave->m_VBVertices.Get(), &vertices[0]);
 
@@ -972,8 +980,8 @@ void WaterManager::RecomputeWindStrength()
 	if (!m_WindStrength)
 		m_WindStrength = std::make_unique<float[]>(m_MapSize * m_MapSize);
 
-	CTerrain* terrain = g_Game->GetWorld()->GetTerrain();
-	if (!terrain || !terrain->GetHeightMap())
+	const CTerrain& terrain = g_Game->GetWorld()->GetTerrain();
+	if (!terrain.GetHeightMap())
 		return;
 
 	CVector2D windDir = CVector2D(cos(m_WindAngle), sin(m_WindAngle));
@@ -1044,7 +1052,7 @@ void WaterManager::RecomputeWindStrength()
 	{
 		// Starting velocity is 1.0 unless in shallow water.
 		m_WindStrength[point.Y * m_MapSize + point.X] = 1.f;
-		float depth = m_WaterHeight - terrain->GetVertexGroundLevel(point.X, point.Y);
+		const float depth = m_WaterHeight - terrain.GetVertexGroundLevel(point.X, point.Y);
 		if (depth > 0.f && depth < 2.f)
 			m_WindStrength[point.Y * m_MapSize + point.X] = depth / 2.f;
 		point.windStrength = m_WindStrength[point.Y * m_MapSize + point.X];
@@ -1058,8 +1066,9 @@ void WaterManager::RecomputeWindStrength()
 
 				// Adjust speed based on height difference, a positive height difference slowly increases speed (simulate venturi effect)
 				// and a lower height reduces speed (wind protection from hills/...)
-				float heightDiff = std::max(m_WaterHeight, terrain->GetVertexGroundLevel(point.X + movement[step].first, point.Y + movement[step].second)) -
-					std::max(m_WaterHeight, terrain->GetVertexGroundLevel(point.X, point.Y));
+				const float heightDiff = std::max(m_WaterHeight, terrain.GetVertexGroundLevel(
+					point.X + movement[step].first, point.Y + movement[step].second)) -
+					std::max(m_WaterHeight, terrain.GetVertexGroundLevel(point.X, point.Y));
 				if (heightDiff > 0.f)
 					point.windStrength = std::min(2.f, point.windStrength + std::min(4.f, heightDiff) / 40.f);
 				else
@@ -1129,7 +1138,7 @@ void WaterManager::UpdateQuality()
 bool WaterManager::WillRenderFancyWater() const
 {
 	return
-		m_RenderWater && g_VideoMode.GetBackendDevice()->GetBackend() != Renderer::Backend::Backend::GL_ARB &&
+		m_RenderWater && m_Device->GetBackend() != Renderer::Backend::Backend::GL_ARB &&
 		g_RenderingOptions.GetWaterEffects();
 }
 

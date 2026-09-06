@@ -40,6 +40,10 @@ std::unique_ptr<CFramebuffer> CFramebuffer::Create(
 	SColorAttachment* colorAttachment, SDepthStencilAttachment* depthStencilAttachment)
 {
 	ENSURE(colorAttachment || depthStencilAttachment);
+	if (colorAttachment)
+		ENSURE(colorAttachment->texture);
+	if (depthStencilAttachment)
+		ENSURE(depthStencilAttachment->texture);
 
 	if (colorAttachment && depthStencilAttachment)
 	{
@@ -53,6 +57,7 @@ std::unique_ptr<CFramebuffer> CFramebuffer::Create(
 
 	std::unique_ptr<CFramebuffer> framebuffer(new CFramebuffer());
 	framebuffer->m_Device = device;
+	framebuffer->m_UID = device->GenerateNextDeviceObjectUID();
 	if (colorAttachment)
 		framebuffer->m_ClearColor = colorAttachment->clearColor;
 

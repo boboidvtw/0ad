@@ -1,48 +1,52 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2022 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# Ales Novak
-# attilla1996
-# David Exner
-# David Nováček
-# Dernes Žižka
-# Devinate
-# Filip Procházka
-# fri
-# hoj boj
-# ike20
-# Jakub Jelen
-# Jan Hryz
-# Jaroslav Kajínek
-# Karolína Pokorná
-# Katie Trochimovičová
-# LiberteCzech
-# Lukáš Bačovský
-# Marek Mojžíš
-# Michal Škoula
-# Milan Stevanović
-# OndraK
-# Patrik Halfar
-# Peter Freund
-# Peter Stanislav
-# Petr Hála
-# Robin Kriebel
-# Rodeo65
-# Stanislas Dolcini
-# Tomáš Matýs
-# Tomáš Weber
-# Vit Pelcak
-# Vít Pelčák
-# Vojtěch Dubský
-# Vojtěch Valigura
+# Ales Novak, 2019
+# attilla1996, 2014
+# David Exner, 2014
+# David Nováček, 2020
+# Dernes Žižka, 2023
+# Devinate, 2014
+# Filip Procházka, 2015
+# fri, 2014
+# hoj boj, 2021
+# ike20, 2014
+# Jakub Jelen, 2017
+# Jan Hryz, 2021
+# Jaroslav Kajínek, 2022
+# Karolína Pokorná, 2021
+# Katie Trochimovičová, 2018
+# LiberteCzech, 2018
+# Lukáš Bačovský, 2020
+# Marek Mojžíš, 2023
+# Martin Orszulik, 2024
+# Michal Škoula, 2021
+# Mikošek Dabing, 2023
+# Milan Stevanović, 2021
+# OndraK, 2014
+# Patrik Halfar, 2022
+# Patrik Špaňo, 2024
+# fri, 2014-2021,2023
+# Peter Freund, 2023
+# Peter Stanislav, 2021
+# Petr Hála, 2014,2016-2017
+# Robin Kriebel, 2016-2017
+# Rodeo65, 2014
+# Stanislas Dolcini, 2022
+# Tomáš Matýs, 2021-2022,2024
+# Tomáš Weber, 2021
+# Vit Pelcak, 2014
+# Vít Pelčák, 2014
+# Vojtěch Dubský, 2021
+# Vojtěch Valigura, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2022-09-12 09:35+0000\n"
+"POT-Creation-Date: 2024-08-09 07:17+0000\n"
 "PO-Revision-Date: 2014-06-19 17:48+0000\n"
-"Last-Translator: fri, 2014-2021,2023\n"
+"Last-Translator: Patrik Špaňo, 2024\n"
 "Language-Team: Czech (http://app.transifex.com/wildfire-games/0ad/language/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -50,11 +54,11 @@ msgstr ""
 "Language: cs\n"
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
-#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:(caption):13
+#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:13
 msgid "AI Configuration"
 msgstr "Nastavení umělé inteligence"
 
-#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:(caption):29
+#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:29
 msgid "OK"
 msgstr "OK"
 
@@ -104,12 +108,12 @@ msgctxt "Match settings tab name"
 msgid "Map"
 msgstr "Mapa"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:28
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:29
 msgctxt "Match settings tab name"
 msgid "Player"
 msgstr "Hráč"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:40
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:41
 msgctxt "Match settings tab name"
 msgid "Game Type"
 msgstr "Druh hry"
@@ -158,23 +162,23 @@ msgctxt "team"
 msgid "None"
 msgstr "Žádný"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):6
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:6
 msgid "Player Name"
 msgstr "Jméno hráče"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):10
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:10
 msgid "Color"
 msgstr "Barva"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):14
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:14
 msgid "Player Placement"
 msgstr "Umístění hráče"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):18
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:18
 msgid "Civilization"
 msgstr "Civilizace"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):25
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:25
 msgid "Team"
 msgstr "Tým"
 
@@ -479,6 +483,14 @@ msgstr "Obtížnost"
 msgid "Select the difficulty of this scenario."
 msgstr "Vyberte obtížnost hry."
 
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WaterLevel.js:43
+msgid "Water level"
+msgstr "Hladina vody"
+
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WaterLevel.js:46
+msgid "Select the water level of this map."
+msgstr "Vyberte hladinu vody na této mapě."
+
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WorldPopulationCap.js:47
 msgid "World Population Cap"
 msgstr "Omezení na počet obyvatel světa"
@@ -588,19 +600,19 @@ msgstr "Trvání divu světa"
 msgid "Minutes until the player has achieved Wonder Victory"
 msgstr "Počet minut, než hráč zvítězí za postavení divu světa."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:36
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:17
 msgid "Back"
 msgstr "Zpět"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:39
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:20
 msgid "Return to the lobby."
 msgstr "Návrat k zájmové skupině."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:42
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:23
 msgid "Return to the main menu."
 msgstr "Vrátit se do hlavní nabídky."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CivInfoButton.js:48
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CivInfoButton.js:33
 #, javascript-format
 msgid ""
 "%(hotkey_civinfo)s / %(hotkey_structree)s: View Civilization Overview / Structure Tree\n"
@@ -611,27 +623,27 @@ msgstr "%(hotkey_civinfo)s / %(hotkey_structree)s: Zobrazit přehled civilizace 
 msgid "Show the multiplayer lobby in a dialog window."
 msgstr "Ukaž skupinu pro více hráčů v dialogovém okně."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:79
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:70
 msgid "I'm ready"
 msgstr "Jsem připraven"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:80
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:71
 msgid "Stay ready"
 msgstr "Zůstat připraven"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:81
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:72
 msgid "I'm not ready!"
 msgstr "Nejsem připraven!"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:85
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:76
 msgid "State that you are ready to play."
 msgstr "Oznamte, že jste připraven hrát."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:86
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:77
 msgid "Stay ready even when the game settings change."
 msgstr "Zůstat připraven, i když se změní nastavení hry."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:87
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:78
 msgid "State that you are not ready to play."
 msgstr "Oznamte, že nejste připraveni hrát."
 
@@ -644,15 +656,15 @@ msgstr "Obnoví všechny vybrané civilizace na počáteční hodnotu (náhodně
 msgid "Reset all teams to the default."
 msgstr "Nastavit znovu všechny týmy na výchozí herní hodnoty."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:65
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:56
 msgid "Start Game!"
 msgstr "Spustit hru!"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:68
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:59
 msgid "Start a new game with the current settings."
 msgstr "Začít novou hru s nynějším nastavením."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:71
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:62
 msgid ""
 "Start a new game with the current settings (disabled until all players are "
 "ready)."
@@ -711,7 +723,7 @@ msgstr "* %(username)s je připraven!"
 msgid "Game settings have been changed"
 msgstr "Nastavení hry byla změněna"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatPanel.xml:(caption):9
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatPanel.xml:9
 msgid "Send"
 msgstr "Poslat"
 
@@ -734,11 +746,11 @@ msgstr "\\[%(time)s]"
 msgid "HH:mm"
 msgstr "HH:mm"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:40
+#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:29
 msgid "Cheats enabled."
 msgstr "Švindlování povoleno."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:43
+#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:32
 msgid "Rated game."
 msgstr "Hodnocená hra."
 
@@ -755,19 +767,19 @@ msgstr "Není vybrána mapa."
 msgid "Click to view the list of available maps."
 msgstr "Klepněte pro zobrazení seznamu dostupných map."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/TipsPanel.xml:(caption):10
+#: gui/gamesetup/Pages/GameSetupPage/Panels/TipsPanel.xml:10
 msgid "Show this message in the future."
 msgstr "Zobrazit tuto zprávu později"
 
-#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:(caption):7
+#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:7
 msgid "Loading"
 msgstr "Načítá se"
 
-#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:(caption):11
+#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:11
 msgid "Loading map data. Please wait…"
 msgstr "Načítání mapy. Prosím o chvilku strpení..."
 
-#: gui/gamesetup/gamesetup.xml:(caption):17
+#: gui/gamesetup/gamesetup.xml:17
 msgid "Match Setup"
 msgstr "Nastavení zápasu"
 
@@ -820,11 +832,6 @@ msgstr "Nepodařilo se připojit k serveru."
 msgid "Connection failed"
 msgstr "Spojení selhalo"
 
-#: gui/gamesetup_mp/gamesetup_mp.js:193
-#, javascript-format
-msgid "Net message: %(message)s"
-msgstr "Síťová zpráva: %(message)s"
-
 #: gui/gamesetup_mp/gamesetup_mp.js:276
 msgid "Registering with server..."
 msgstr "Přihlašuje se k serveru..."
@@ -843,82 +850,79 @@ msgid "Cannot host game: %(message)s."
 msgstr "Nelze pořádat hru: %(message)s."
 
 #: gui/gamesetup_mp/gamesetup_mp.js:377 gui/gamesetup_mp/gamesetup_mp.js:406
-#: gui/gamesetup_mp/gamesetup_mp.js:435 gui/gamesetup_mp/gamesetup_mp.js:450
+#: gui/gamesetup_mp/gamesetup_mp.js:436 gui/gamesetup_mp/gamesetup_mp.js:451
 msgid "Error"
 msgstr "Chyba"
 
-#: gui/gamesetup_mp/gamesetup_mp.js:405 gui/gamesetup_mp/gamesetup_mp.js:449
+#: gui/gamesetup_mp/gamesetup_mp.js:405 gui/gamesetup_mp/gamesetup_mp.js:450
 #, javascript-format
 msgid "Cannot join game: %(message)s."
 msgstr "Nelze se připojit ke hře: %(message)s."
 
-#: gui/gamesetup_mp/gamesetup_mp.js:464
+#: gui/gamesetup_mp/gamesetup_mp.js:465
 #, javascript-format
 msgid "%(playername)s's game"
 msgstr "%(playername)s-ho hra"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):18
+#: gui/gamesetup_mp/gamesetup_mp.xml:18
 msgid "Multiplayer"
 msgstr "Hra více hráčů"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):24
+#: gui/gamesetup_mp/gamesetup_mp.xml:24
 msgid "Joining an existing game."
 msgstr "Připojuje se ke hře."
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):28
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):70
+#: gui/gamesetup_mp/gamesetup_mp.xml:28 gui/gamesetup_mp/gamesetup_mp.xml:70
 msgid "Player Name:"
 msgstr "Jméno hráče:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):38
+#: gui/gamesetup_mp/gamesetup_mp.xml:38
 msgid "Server Hostname or IP:"
 msgstr "Název hostitelského serveru nebo IP:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):48
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):95
+#: gui/gamesetup_mp/gamesetup_mp.xml:48 gui/gamesetup_mp/gamesetup_mp.xml:95
 msgid "Server Port:"
 msgstr "Přípojka (port) serveru:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):65
-msgid "Set up your server to host."
-msgstr "Nastavte váš hostitelský server."
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):83
-msgid "Server Name:"
-msgstr "Název serveru:"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):112
-msgid "Server Password:"
-msgstr "Heslo serveru:"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):128
-msgid "Use STUN to work around firewalls"
-msgstr "Použít STUN pro práci okolo firewallů"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):136
-msgid "Continue"
-msgstr "Pokračovat"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):141
-msgid "Cancel"
-msgstr "Zrušit"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):152
-msgid "Password:"
-msgstr "Heslo:"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):162
-msgid "Confirm"
-msgstr "Potvrdit"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):52
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):99
+#: gui/gamesetup_mp/gamesetup_mp.xml:52 gui/gamesetup_mp/gamesetup_mp.xml:99
 msgid "Leave blank to use the default port."
 msgstr "Ponechejte prázdné pro použití výchozí přípojky (port)."
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):113
+#: gui/gamesetup_mp/gamesetup_mp.xml:65
+msgid "Set up your server to host."
+msgstr "Nastavte váš hostitelský server."
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:83
+msgid "Server Name:"
+msgstr "Název serveru:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:112
+msgid "Server Password:"
+msgstr "Heslo serveru:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:113
 msgid "Leave blank to not require it."
 msgstr "Ponechte prázdné, abyste to nevyžadovali."
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:128
+msgid "Use STUN to work around firewalls"
+msgstr "Použít STUN pro práci okolo firewallů"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:136
+msgid "Continue"
+msgstr "Pokračovat"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:141
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:152
+msgid "Password:"
+msgstr "Heslo:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:162
+msgid "Confirm"
+msgstr "Potvrdit"
 
 #: gui/loading/ProgressBar.js:48
 #, javascript-format
@@ -989,7 +993,7 @@ msgstr "„Bohové pomohou těm, kteří si pomohou sami.“ \\n— Ezop („Her
 msgid ""
 "“It is thrifty to prepare today for the wants of tomorrow.” \\n— Aesop (“The"
 " Ant and the Grasshopper”)"
-msgstr "„Je hospodárné se vyzbrojit pro požadavky zítřka dnes.” \\n— Ezop („Mravenec a koník”)"
+msgstr "„Je hospodárné se dnes vyzbrojit pro požadavky zítřka.” \\n— Ezop („Mravenec a koník”)"
 
 #: gui/text/quotes.txt:9
 msgid "“Union gives strength.” \\n— Aesop (“The Bundle of Sticks”)"
@@ -1116,21 +1120,21 @@ msgid ""
 "covetously.” \\n— Anacharsis, a Scythian philosopher who traveled to Greece "
 "(Diogenes Laertius, “The Lives and Opinions of Eminent Philosophers”, "
 "“Anacharsis”, sec. 5)"
-msgstr ""
+msgstr "“Agora je zavedeným místem, kde se lidé navzájem podvádějí a chovají se chamtivě.” n— Anacharsis, skytský filozof, který cestoval do Řecka (Diogenes Laertius, “Životy a názory významných filozofů”, “Anacharsis”, oddíl 5)"
 
 #: gui/text/quotes.txt:29
 msgid ""
 "“It was not by taking care of the fields, but of ourselves, that we acquired"
 " those fields.” \\n— Anaxandridas II of Sparta (Plutarch, “Moralia”, "
 "“Sayings of Spartans”, 217a)"
-msgstr ""
+msgstr "“Nezískávali jsme je péčí o pole, ale sami sebou.” n— Anaxandridas II. ze Sparty (Plútarchos, “Moralia”, “Výroky Sparťanů”, 217a)"
 
 #: gui/text/quotes.txt:30
 msgid ""
 "“States are doomed when they are unable to distinguish good men from bad.” "
 "\\n— Antisthenes (Diogenes Laertius, “The Lives and Opinions of Eminent "
 "Philosophers”, “Antisthenes”, sec. 5)"
-msgstr ""
+msgstr "“Státy jsou odsouzeny k zániku, když nejsou schopny rozlišit dobré lidi od špatných.” n— Antisthenes (Diogenes Laertius, “Životy a názory významných filozofů”, “Antisthenes”, oddíl 5)"
 
 #: gui/text/quotes.txt:31
 msgid ""
@@ -1156,13 +1160,13 @@ msgid ""
 "“It is obligatory, especially for a philosopher, to sacrifice even one's "
 "closest personal ties in defense of the truth.” \\n— Aristotle (“Nicomachean"
 " Ethics”, I. 1096a.11)"
-msgstr ""
+msgstr "“Je povinné, obzvláště pak pro filozofa, obětovat i nejbližší osobní vazbu v obraně pravdy” \\n— Aristotle (“Nicomachean Ethics”, I. 1096a.11)"
 
 #: gui/text/quotes.txt:35
 msgid ""
 "“Happiness depends on leisure; for we are busy to have leisure, and make war"
 " to live in peace.” \\n— Aristotle (“Nicomachean Ethics”, X. 1177b.4)"
-msgstr ""
+msgstr "“Štěstí závisí na volném čase; protože jsme zaneprázdněni odpočinkem a válkou, abychom žili v míru.” \\n— Aristotle (“Nicomachean Ethics”, X. 1177b.4)"
 
 #: gui/text/quotes.txt:36
 msgid ""
@@ -1285,7 +1289,7 @@ msgstr ""
 
 #: gui/text/quotes.txt:51
 msgid "“Set a thief to catch a thief.” \\n— Callimachus (“Epigrams”, 44)"
-msgstr ""
+msgstr "“Pošlete zloděje, abyste chytili zloděje.” \\n— Kálimachos (“Epigramy”, 44)"
 
 #: gui/text/quotes.txt:52
 msgid ""
@@ -1326,7 +1330,7 @@ msgid ""
 "It was impossible for the weak or cowardly to retreat; man to man they "
 "fought like in single combat.” \\n— Curtius Rufus about the Battle of Issus "
 "(“Histories of Alexander the Great”, III. 11.5)"
-msgstr ""
+msgstr "“Poté krev opravdu tekla proudem, protože obě řady byly tak blízko, že štít narážel o štít a tasené meče si lidé vráželi do tváří. Pro slabé nebo zbabělé bylo nemožné ustoupit; muž proti muži bojovali jako v samostatném boji.” \\n— Quintus Curtius Rufus o bitvě u Issu (“Dějiny Alexandra Velikého”, III. 11.5)"
 
 #: gui/text/quotes.txt:58
 msgid ""
@@ -1356,7 +1360,7 @@ msgstr ""
 msgid ""
 "“By desiring little, a poor man makes himself rich.” \\n— Democritus "
 "(fragment)"
-msgstr ""
+msgstr "“Chudý člověk se obohacuje tím, že touží po maličkostech.” \\n— Démokritos (fragment)"
 
 #: gui/text/quotes.txt:62
 msgid ""
@@ -1447,7 +1451,7 @@ msgstr "\"Cizinče, jdi říct Sparťanům, že tady ležíme a posloucháme jej
 msgid ""
 "“A coward turns away, but a brave man's choice is danger.” \\n— Euripides "
 "(“Iphigenia in Tauris”)"
-msgstr ""
+msgstr "“Zbabělec se odvrátí, ale odvážný muž si zvolí nebezpečí.” \\n—Euripidés (“Iphigenie v Tauris”)"
 
 #: gui/text/quotes.txt:75
 msgid ""
@@ -1459,7 +1463,7 @@ msgstr ""
 msgid ""
 "“Cowards do not count in battle; they are there, but not in it.” \\n— "
 "Euripides (“Meleager”)"
-msgstr ""
+msgstr "\"Zbabělci se v bitvě nepočítají; Jsou tam, ale neúčastní se.\" \\n— Eurípidés (“Meleager”)"
 
 #: gui/text/quotes.txt:77
 msgid ""
@@ -2304,7 +2308,7 @@ msgid ""
 "“People are glad to obey the man whom they believe to be wiser than "
 "themselves in pursuing their interests.” \\n— Xenophon (“The Education of "
 "Cyrus”, 1.6.22)"
-msgstr ""
+msgstr "“ Lidé budou rádi poslouchat muže, o kterém se domnívají, že je moudřejší než oni sami, při prosazování svých zájmů.” \\n— Xenofón (“O Kýrově vychování”, 1.6.22)"
 
 #: gui/text/quotes.txt:193
 msgid ""

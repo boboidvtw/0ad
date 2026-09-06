@@ -1,20 +1,21 @@
 # Translation template for Pyrogenesis - Mod Selector.
-# Copyright (C) 2022 Wildfire Games
+# Copyright (C) 2024 Wildfire Games
 # This file is distributed under the same license as the Pyrogenesis - Mod Selector
 # project.
 # Translators:
-# Albin Nilsson
-# efef6ec5b435a041fce803c7f8af77d2_2341d43
-# Martin H
-# Mattias Münster
-# Peter Freund
-# theschitz
+# Albin Nilsson, 2021
+# Jonatan Nyberg, 2024
+# efef6ec5b435a041fce803c7f8af77d2_2341d43, 2020
+# Martin H, 2020
+# Mattias Münster, 2019
+# Peter Freund, 2023
+# theschitz, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2022-11-04 08:09+0000\n"
+"POT-Creation-Date: 2024-07-26 07:08+0000\n"
 "PO-Revision-Date: 2014-09-12 20:06+0000\n"
-"Last-Translator: Peter Freund, 2023\n"
+"Last-Translator: Jonatan Nyberg, 2024\n"
 "Language-Team: Swedish (http://app.transifex.com/wildfire-games/0ad/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -48,18 +49,18 @@ msgid "Save"
 msgstr "Spara"
 
 #: gui/colormixer/colormixer.js:91 gui/modio/modio.js:136
-#: gui/modmod/modmod.xml:(caption):197
+#: gui/modmod/modmod.xml:197
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: gui/common/functions_msgbox.js:55
+#: gui/common/functions_msgbox.js:44
 #, javascript-format
 msgid ""
 "Opening %(url)s\n"
 " in default web browser. Please wait…"
 msgstr "Öppnar %(url)s\ni standardwebbläsaren. Var god vänta..."
 
-#: gui/common/functions_msgbox.js:58
+#: gui/common/functions_msgbox.js:47
 msgid "Opening page"
 msgstr "Öppnar sidan"
 
@@ -153,21 +154,21 @@ msgstr "Inkompatibla moddar kommer att visas i rött i listan för aktiverade mo
 msgid "[/font]"
 msgstr "[/font]"
 
-#: gui/incompatible_mods/incompatible_mods.xml:(caption):12
+#: gui/incompatible_mods/incompatible_mods.xml:12
 msgid "Incompatible mods"
 msgstr "Inkompatibla mods"
 
-#: gui/incompatible_mods/incompatible_mods.xml:(caption):19
+#: gui/incompatible_mods/incompatible_mods.xml:19
 msgid "Ok"
 msgstr "Ok"
 
 #: gui/modio/Disclaimer.txt:1
-msgid "0 A.D. Empires Ascendant mod.io Disclaimer"
-msgstr "0 A.D. Empires Ascendant mod.io Varning"
+msgid "0 A.D. Empires Ascendant mod.io Disclaimer"
+msgstr ""
 
 #: gui/modio/Disclaimer.txt:3
-msgid "Document Date: 2018-10-12"
-msgstr "Dokumentets datum: 2018-10-12"
+msgid "Document Date: 2023-07-27"
+msgstr ""
 
 #: gui/modio/Disclaimer.txt:5
 msgid "You are about to connect to the mod.io online service."
@@ -330,74 +331,70 @@ msgstr "∞"
 msgid "%(number)s %(unit)s/s"
 msgstr "%(number)s %(unit)s/s"
 
-#: gui/modio/modio.xml:(caption):18
+#: gui/modio/modio.xml:18
 msgid "mod.io Mods"
 msgstr "mod.io mods"
 
-#: gui/modio/modio.xml:(caption):25 gui/modmod/modmod.xml:(caption):70
+#: gui/modio/modio.xml:25 gui/modmod/modmod.xml:70
 msgid "Available Mods"
 msgstr "Tillgängliga mods"
 
-#: gui/modio/modio.xml:(caption):82
-msgid "Filter valid mods"
-msgstr "Filtrera giltiga mods"
-
-#: gui/modio/modio.xml:(caption):88
-msgid "Back"
-msgstr "Tillbaka"
-
-#: gui/modio/modio.xml:(caption):93
-msgid "Refresh List"
-msgstr "Uppdatera lista"
-
-#: gui/modio/modio.xml:(caption):98
-msgid "Download"
-msgstr "Hämta"
-
-#: gui/modio/modio.xml:(heading):54 gui/modmod/modmod.xml:(heading):90
-#: gui/modmod/modmod.xml:(heading):131
-msgid "Name"
-msgstr "Namn"
-
-#: gui/modio/modio.xml:(heading):57 gui/modmod/modmod.xml:(heading):93
-#: gui/modmod/modmod.xml:(heading):134
-msgid "Version"
-msgstr "Version"
-
-#: gui/modio/modio.xml:(heading):60 gui/modmod/modmod.xml:(heading):99
-#: gui/modmod/modmod.xml:(heading):140
-msgid "Mod Label"
-msgstr "Modetikett"
-
-#: gui/modio/modio.xml:(heading):63
-msgid "File Size"
-msgstr "Storlek"
-
-#: gui/modio/modio.xml:(heading):66 gui/modmod/modmod.xml:(heading):102
-#: gui/modmod/modmod.xml:(heading):143
-msgid "Dependencies"
-msgstr "Beroenden "
-
-#: gui/modio/modio.xml:(placeholder_text):35
+#: gui/modio/modio.xml:35
 msgctxt "placeholder text for input field to filter mods"
 msgid "Filter"
 msgstr "Filter"
 
+#: gui/modio/modio.xml:54 gui/modmod/modmod.xml:90 gui/modmod/modmod.xml:131
+msgid "Name"
+msgstr "Namn"
+
+#: gui/modio/modio.xml:57 gui/modmod/modmod.xml:93 gui/modmod/modmod.xml:134
+msgid "Version"
+msgstr "Version"
+
+#: gui/modio/modio.xml:60 gui/modmod/modmod.xml:99 gui/modmod/modmod.xml:140
+msgid "Mod Label"
+msgstr "Modetikett"
+
+#: gui/modio/modio.xml:63
+msgid "File Size"
+msgstr "Storlek"
+
+#: gui/modio/modio.xml:66 gui/modmod/modmod.xml:102 gui/modmod/modmod.xml:143
+msgid "Dependencies"
+msgstr "Beroenden "
+
+#: gui/modio/modio.xml:82
+msgid "Filter valid mods"
+msgstr "Filtrera giltiga mods"
+
+#: gui/modio/modio.xml:88
+msgid "Back"
+msgstr "Tillbaka"
+
+#: gui/modio/modio.xml:93
+msgid "Refresh List"
+msgstr "Uppdatera lista"
+
+#: gui/modio/modio.xml:98
+msgid "Download"
+msgstr "Hämta"
+
 #: gui/modmod/help/help.txt:1
 msgid ""
-"0 A.D. is designed to be easily modded. Mods are distributed in the form of "
+"0 A.D. is designed to be easily modded. Mods are distributed in the form of "
 ".pyromod files, which can be opened like .zip files."
-msgstr "0 A.D. är designat för att enkelt moddas. Mods distribueras i form av .pyromod-filer, som kan öppnas som .zip-filer."
+msgstr ""
 
 #: gui/modmod/help/help.txt:3
 msgid ""
-"In order to install a mod, just open the file with 0 A.D. (either double-"
+"In order to install a mod, just open the file with 0 A.D. (either double-"
 "click on the file and choose to open it with the game, or run \"pyrogenesis "
 "file.pyromod\" in a terminal). The mod will then be available in the mod "
 "selector. You can enable it and disable it at will. You can delete the mod "
 "manually using your file browser if needed (see "
 "https://trac.wildfiregames.com/wiki/GameDataPaths)."
-msgstr "För att installera en mod, öppna bara filen med 0 A.D. (antingen genom att dubbelklicka på filen och välj att öppna den med spelet, eller kör \"pyrogenesis fil.pyromod\" i en terminal). Modden kommer då att finnas tillgänglig i modväljaren. Du kan aktivera och avaktivera den hur du vill. Du kan ta bort modden manuellt vid behov med din filhanterare (se https://trac.wildfiregames.com/wiki/GameDataPaths)."
+msgstr ""
 
 #: gui/modmod/help/help.txt:5
 msgid ""
@@ -408,25 +405,25 @@ msgstr "Se modding-guiden online för mer information om att modda spelet (klick
 #: gui/modmod/help/help.txt:7
 msgid ""
 "The mod.io service is developed by DBolical, the company behind IndieDB and "
-"ModDB. Those websites have spread the word about 0 A.D. and other indie "
+"ModDB. Those websites have spread the word about 0 A.D. and other indie "
 "projects for a long time! Today, mod.io allows us to list and download all "
 "the mods that were verified by the team. Click \"Download Mods\" to try it "
 "out and install some!"
-msgstr "Mod.io-tjänsten utvecklas av DBOlical, företaget bakom IndieDB och ModDB. Dessa hemsidor har spridit ordet om 0 A.D. och andra indieprojekt under lång tid! Idag tillåter mod.io oss att lista och hämta all mods som har verifierats av teamet. Klicka på \"Hämta mods\" för att prova och installera några!"
+msgstr ""
 
-#: gui/modmod/help/help.xml:(caption):13
+#: gui/modmod/help/help.xml:13
 msgid "Pyrogenesis Mod Selector"
 msgstr "Pyrogenesis Modväljare"
 
-#: gui/modmod/help/help.xml:(caption):21
+#: gui/modmod/help/help.xml:21
 msgid "Close"
 msgstr "Stäng"
 
-#: gui/modmod/help/help.xml:(caption):25
+#: gui/modmod/help/help.xml:25
 msgid "Modding Guide"
 msgstr "Modding-guide"
 
-#: gui/modmod/help/help.xml:(caption):29
+#: gui/modmod/help/help.xml:29
 msgid "Visit mod.io"
 msgstr "Besök mod.io"
 
@@ -441,7 +438,7 @@ msgstr "Aktivera"
 
 #: gui/modmod/modmod.js:167
 msgid "Dependencies not met"
-msgstr "Beroenden är inte mötta."
+msgstr "Beroenden är inte mötta"
 
 #: gui/modmod/modmod.js:449
 msgctxt "mod activation"
@@ -456,63 +453,39 @@ msgstr "Ingen mod har valts."
 msgid "Enable at least 0ad mod"
 msgstr "Aktivera minst 0ad moddet"
 
-#: gui/modmod/modmod.xml:(caption):12
+#: gui/modmod/modmod.xml:12
 msgid "Modifications"
 msgstr "Modifieringar"
 
-#: gui/modmod/modmod.xml:(caption):37
-msgid "Negate"
-msgstr "Upphäv"
-
-#: gui/modmod/modmod.xml:(caption):51
-msgid "Filter compatible"
-msgstr "Filtrera kompatibla"
-
-#: gui/modmod/modmod.xml:(caption):63
-msgid "Description"
-msgstr "Beskrivning"
-
-#: gui/modmod/modmod.xml:(caption):114
-msgid "Enabled Mods"
-msgstr "Aktivera mods"
-
-#: gui/modmod/modmod.xml:(caption):183
-msgid "Visit Website"
-msgstr "Besök webbplats"
-
-#: gui/modmod/modmod.xml:(caption):192
-msgid "Quit"
-msgstr "Avsluta"
-
-#: gui/modmod/modmod.xml:(caption):202
-msgid "Help"
-msgstr "Hjälp"
-
-#: gui/modmod/modmod.xml:(caption):207
-msgid "Download Mods"
-msgstr "Hämta mods"
-
-#: gui/modmod/modmod.xml:(caption):212
-msgid "Save Configuration"
-msgstr "Spara konfiguration"
-
-#: gui/modmod/modmod.xml:(caption):217
-msgid "Save and Restart"
-msgstr "Spara och Starta om"
-
-#: gui/modmod/modmod.xml:(heading):96 gui/modmod/modmod.xml:(heading):137
-msgid "(Folder)"
-msgstr "(Mapp)"
-
-#: gui/modmod/modmod.xml:(heading):105 gui/modmod/modmod.xml:(heading):146
-msgid "Website"
-msgstr "Webbplats"
-
-#: gui/modmod/modmod.xml:(placeholder_text):24
+#: gui/modmod/modmod.xml:24
 msgid "Filter"
 msgstr "Filter"
 
-#: gui/modmod/modmod.xml:(tooltip):115
+#: gui/modmod/modmod.xml:37
+msgid "Negate"
+msgstr "Upphäv"
+
+#: gui/modmod/modmod.xml:51
+msgid "Filter compatible"
+msgstr "Filtrera kompatibla"
+
+#: gui/modmod/modmod.xml:63
+msgid "Description"
+msgstr "Beskrivning"
+
+#: gui/modmod/modmod.xml:96 gui/modmod/modmod.xml:137
+msgid "(Folder)"
+msgstr "(Mapp)"
+
+#: gui/modmod/modmod.xml:105 gui/modmod/modmod.xml:146
+msgid "Website"
+msgstr "Webbplats"
+
+#: gui/modmod/modmod.xml:114
+msgid "Enabled Mods"
+msgstr "Aktivera mods"
+
+#: gui/modmod/modmod.xml:115
 msgid ""
 "Enabled mods are loaded from top to bottom. Mods loaded later might "
 "overwrite settings of mods loaded earlier. It is advisable to have more "
@@ -520,11 +493,35 @@ msgid ""
 "order."
 msgstr "Aktiverade moddar laddas ifrån topp till botten. Moddar som laddas senare kan skriva över inställningar gjorda av moddar som laddats tidigare. Det är rekommenderat att ha mer komplexa moddar laddade sist. Använd piltangenterna till höger för att ändra laddnings-ordningen."
 
-#: gui/modmod/modmod.xml:(tooltip):161 gui/modmod/modmod.xml:(tooltip):175
+#: gui/modmod/modmod.xml:161 gui/modmod/modmod.xml:175
 msgid ""
 "Change the order in which mods are launched. This should match the mods "
 "dependencies."
 msgstr "Ändra ordningen i vilken mods startas. Detta bör överensstämma med mods beroenden."
+
+#: gui/modmod/modmod.xml:183
+msgid "Visit Website"
+msgstr "Besök webbplats"
+
+#: gui/modmod/modmod.xml:192
+msgid "Quit"
+msgstr "Avsluta"
+
+#: gui/modmod/modmod.xml:202
+msgid "Help"
+msgstr "Hjälp"
+
+#: gui/modmod/modmod.xml:207
+msgid "Download Mods"
+msgstr "Hämta mods"
+
+#: gui/modmod/modmod.xml:212
+msgid "Save Configuration"
+msgstr "Spara konfiguration"
+
+#: gui/modmod/modmod.xml:217
+msgid "Save and Restart"
+msgstr "Spara och starta om"
 
 #: gui/modmod/modmodio.js:5
 msgid "Disclaimer"
@@ -554,14 +551,14 @@ msgstr "Visa online"
 msgid "Open %(url)s in the browser."
 msgstr "Öppnar %(url)s i webbläsaren."
 
-#: gui/termsdialog/termsdialog.xml:(caption):15
+#: gui/termsdialog/termsdialog.xml:15
 msgid "Language"
 msgstr "Språk"
 
-#: gui/termsdialog/termsdialog.xml:(caption):33
+#: gui/termsdialog/termsdialog.xml:33
 msgid "Decline"
 msgstr "Avböj"
 
-#: gui/termsdialog/termsdialog.xml:(caption):38
+#: gui/termsdialog/termsdialog.xml:38
 msgid "Accept"
 msgstr "Acceptera"

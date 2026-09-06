@@ -1,16 +1,16 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2023 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# sabretou
-# shreyash kore
+# sabretou, 2023-2024
+# shreyash kore, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2023-04-28 09:24+0000\n"
+"POT-Creation-Date: 2024-07-26 07:08+0000\n"
 "PO-Revision-Date: 2014-06-19 17:49+0000\n"
-"Last-Translator: sabretou <sabretou@gmail.com>, 2023\n"
+"Last-Translator: sabretou, 2023-2024\n"
 "Language-Team: Marathi (http://app.transifex.com/wildfire-games/0ad/language/mr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "This cheat requires a numeric parameter."
 msgstr ""
 
-#: gui/session/GameSpeedControl.xml:(tooltip):11
+#: gui/session/GameSpeedControl.xml:11
 msgid "Choose game speed"
 msgstr "खेळाचा वेग निवडा"
 
@@ -31,22 +31,22 @@ msgstr "खेळाचा वेग निवडा"
 msgid "Press %(hotkey)s to toggle this menu."
 msgstr ""
 
-#: gui/session/MenuButtons.js:32
+#: gui/session/MenuButtons.js:33
 msgid "Chat"
 msgstr "चॅट"
 
-#: gui/session/MenuButtons.js:53
+#: gui/session/MenuButtons.js:54
 msgid "Save"
 msgstr "सेव्ह"
 
-#: gui/session/MenuButtons.js:77
+#: gui/session/MenuButtons.js:78
 msgid "Summary"
-msgstr ""
+msgstr "सारांश"
 
-#: gui/session/MenuButtons.js:90
+#: gui/session/MenuButtons.js:91
 #, javascript-format
 msgid "Press %(hotkey)s to open the summary screen."
-msgstr ""
+msgstr "सारांश पडदा उघडण्यास %(hotkey)s दाबा"
 
 #: gui/session/MenuButtons.js:133
 msgid "Lobby"
@@ -57,35 +57,34 @@ msgstr "लॉबी"
 msgid ""
 "Press %(hotkey)s to open the multiplayer lobby page without leaving the "
 "game."
-msgstr ""
+msgstr "गेम न सोडता मल्टिप्लेयर लॉबी पान उघडण्यासाठी %(hotkey)s दाबा."
 
 #: gui/session/MenuButtons.js:161
 msgid "Options"
 msgstr "पर्याय"
 
-#: gui/session/MenuButtons.js:185
+#: gui/session/MenuButtons.js:180
 msgid "Hotkeys"
 msgstr "हॉटकी"
 
-#: gui/session/MenuButtons.js:220
+#: gui/session/MenuButtons.js:213
 msgid "Resume"
 msgstr "सुरू ठेवा"
 
-#: gui/session/MenuButtons.js:220
+#: gui/session/MenuButtons.js:213
 msgid "Pause"
 msgstr "विराम द्या"
 
-#: gui/session/MenuButtons.js:221
+#: gui/session/MenuButtons.js:214
 #, javascript-format
 msgid "Press %(hotkey)s to pause or resume the game."
-msgstr ""
+msgstr "गेम पॉझ करायला किंवा चालू ठेवायला %(hotkey)s दाबा."
 
-#: gui/session/MenuButtons.js:237
+#: gui/session/MenuButtons.js:230
 msgid "Resign"
 msgstr "राजीनामा"
 
-#: gui/session/MenuButtons.js:261
-#: gui/session/NetworkStatusOverlay.xml:(caption):9
+#: gui/session/MenuButtons.js:254 gui/session/NetworkStatusOverlay.xml:9
 msgid "Exit"
 msgstr "सोडा"
 
@@ -117,44 +116,44 @@ msgstr ""
 #: gui/session/NetworkStatusOverlay.js:47
 msgctxt "Separator for a list of client loading messages"
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #. Translation: The "x" means "times", with the mathematical meaning of
 #. multiplication.
 #: gui/session/OverlayCounterElapsedTime.js:33
 #, javascript-format
 msgid "%(time)s (%(speed)sx)"
-msgstr ""
+msgstr "%(time)s (%(speed)sx)"
 
 #: gui/session/PauseOverlay.js:40
 #: gui/session/message_box/OutOfSyncNetwork.js:20
 msgctxt "Separator for a list of players"
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: gui/session/PauseOverlay.js:45
 #, javascript-format
 msgid "Paused by %(players)s"
 msgstr "%(players)s यांनी पॉझ केला"
 
-#: gui/session/PauseOverlay.xml:(caption):7
+#: gui/session/PauseOverlay.xml:7
 msgid "Game Paused"
 msgstr "खेळ पॉझ केला आहे"
 
-#: gui/session/PauseOverlay.xml:(caption):11
+#: gui/session/PauseOverlay.xml:11
 msgid "Click to Resume Game"
-msgstr ""
+msgstr "गेम चालू ठेवण्यासाठी येथे क्लिक करा"
 
 #: gui/session/ResearchProgress.js:117 gui/session/selection_details.js:273
-#: gui/session/selection_details.js:291 gui/session/selection_panels.js:588
+#: gui/session/selection_details.js:291 gui/session/selection_panels.js:602
 msgctxt "countdown format"
 msgid "m:ss"
-msgstr ""
+msgstr "m:ss"
 
 #. Translation: String displayed when the research is paused. E.g. by being
 #. garrisoned or
 #. when not the first item in the queue.
-#: gui/session/ResearchProgress.js:120 gui/session/selection_panels.js:602
+#: gui/session/ResearchProgress.js:120 gui/session/selection_panels.js:616
 msgid "This item is paused."
 msgstr ""
 
@@ -206,11 +205,11 @@ msgstr "%(time)s %(message)s"
 #: gui/session/chat/ChatHistory.js:68
 #, javascript-format
 msgid "\\[%(time)s]"
-msgstr ""
+msgstr "\\[%(time)s]"
 
 #: gui/session/chat/ChatHistory.js:69
 msgid "HH:mm"
-msgstr ""
+msgstr "HH:mm"
 
 #: gui/session/chat/ChatHistory.js:89
 msgctxt "chat history filter"
@@ -324,27 +323,27 @@ msgstr "%(player)s हे खेळात सामील झाले आहे
 #: gui/session/chat/ChatMessageFormatPlayer.js:62
 #, javascript-format
 msgid "<%(user)s>"
-msgstr ""
+msgstr "<%(user)s>"
 
 #: gui/session/chat/ChatMessageFormatPlayer.js:161
 #, javascript-format
 msgid "(%(context)s) %(userTag)s %(message)s"
-msgstr ""
+msgstr "(%(context)s) %(userTag)s %(message)s"
 
 #: gui/session/chat/ChatMessageFormatPlayer.js:162
 #, javascript-format
 msgid "%(userTag)s %(message)s"
-msgstr ""
+msgstr "%(userTag)s %(message)s"
 
 #: gui/session/chat/ChatMessageFormatPlayer.js:165
 #, javascript-format
 msgid "(%(context)s) * %(user)s %(message)s"
-msgstr ""
+msgstr "(%(context)s) * %(user)s %(message)s"
 
 #: gui/session/chat/ChatMessageFormatPlayer.js:166
 #, javascript-format
 msgid "* %(user)s %(message)s"
-msgstr ""
+msgstr "* %(user)s %(message)s"
 
 #: gui/session/chat/ChatMessageFormatSimulation.js:16
 #, javascript-format
@@ -354,7 +353,7 @@ msgstr ""
 #: gui/session/chat/ChatMessageFormatSimulation.js:17
 #, javascript-format
 msgid "%(icon)sYou have been attacked by %(attacker)s!"
-msgstr ""
+msgstr "%(icon)sतुमच्यावर %(attacker)s कढून हल्ला झाला आहे!"
 
 #: gui/session/chat/ChatMessageFormatSimulation.js:27
 msgid "Click to focus on the attacked unit."
@@ -413,7 +412,7 @@ msgstr ""
 #: gui/session/chat/ChatMessageFormatSimulation.js:109
 #, javascript-format
 msgid "%(player)s is advancing to the %(phaseName)s."
-msgstr ""
+msgstr "%(player)s प्रगती करून या टप्प्याला पोहोचत आहे: %(phaseName)s."
 
 #: gui/session/chat/ChatMessageFormatSimulation.js:111
 #, javascript-format
@@ -423,67 +422,67 @@ msgstr ""
 #: gui/session/chat/ChatMessageFormatSimulation.js:114
 #, javascript-format
 msgid "%(player)s has reached the %(phaseName)s."
-msgstr ""
+msgstr "%(player)s हे या टप्प्याला पोहोचले आहेत: %(phaseName)s."
 
 #. Translation: This comma is used for separating first to penultimate
 #. elements in an
 #. enumeration.
 #: gui/session/chat/ChatMessageFormatSimulation.js:142
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: gui/session/chat/ChatMessageFormatSimulation.js:159
 #, javascript-format
 msgid "%(player)s has sent you %(amounts)s."
-msgstr ""
+msgstr "%(player)s यांनी तुम्हाला %(amounts)s पाठवले आहे."
 
 #: gui/session/chat/ChatMessageFormatSimulation.js:161
 #, javascript-format
 msgid "You have sent %(player2)s %(amounts)s."
-msgstr ""
+msgstr "तुम्ही %(player2)s यांना %(amounts)s पाठवले आहे."
 
 #: gui/session/chat/ChatMessageFormatSimulation.js:166
 #, javascript-format
 msgid "%(player)s has sent %(player2)s %(amounts)s."
-msgstr ""
+msgstr "%(player)s यांनी %(player2)s यांना %(amounts)s पाठवले आहे."
 
-#: gui/session/chat/chat_window.xml:(caption):19
+#: gui/session/chat/chat_window.xml:19
 msgctxt "chat input"
 msgid "Filter:"
 msgstr ""
 
-#: gui/session/chat/chat_window.xml:(caption):46
-msgctxt "chat input"
-msgid "To:"
-msgstr ""
-
-#: gui/session/chat/chat_window.xml:(caption):60
-msgctxt "chat input"
-msgid "Text:"
-msgstr ""
-
-#: gui/session/chat/chat_window.xml:(caption):72
-msgid "Cancel"
-msgstr "रद्द करा"
-
-#: gui/session/chat/chat_window.xml:(caption):86
-msgctxt "chat"
-msgid "History"
-msgstr ""
-
-#: gui/session/chat/chat_window.xml:(caption):91
-msgid "Send"
-msgstr ""
-
-#: gui/session/chat/chat_window.xml:(tooltip):29
+#: gui/session/chat/chat_window.xml:29
 msgctxt "chat input"
 msgid "Filter the chat history."
 msgstr ""
 
-#: gui/session/chat/chat_window.xml:(tooltip):55
+#: gui/session/chat/chat_window.xml:46
+msgctxt "chat input"
+msgid "To:"
+msgstr ""
+
+#: gui/session/chat/chat_window.xml:55
 msgctxt "chat input"
 msgid "Select chat addressee."
 msgstr ""
+
+#: gui/session/chat/chat_window.xml:60
+msgctxt "chat input"
+msgid "Text:"
+msgstr "मजकूर:"
+
+#: gui/session/chat/chat_window.xml:72
+msgid "Cancel"
+msgstr "रद्द करा"
+
+#: gui/session/chat/chat_window.xml:86
+msgctxt "chat"
+msgid "History"
+msgstr "इतिहास"
+
+#: gui/session/chat/chat_window.xml:91
+msgid "Send"
+msgstr "पाठवा"
 
 #: gui/session/developer_overlay/DeveloperOverlay.js:80
 msgid "The Developer Overlay was opened."
@@ -592,49 +591,49 @@ msgid ""
 "memory or crash."
 msgstr ""
 
-#: gui/session/dialogs/yes_no.xml:(caption):11
+#: gui/session/dialogs/yes_no.xml:11
 msgid "Question"
 msgstr "प्रश्न"
 
-#: gui/session/dialogs/yes_no.xml:(caption):15
+#: gui/session/dialogs/yes_no.xml:15
 msgid "Yes or no?"
 msgstr "होय का नाही?"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):15
+#: gui/session/diplomacy/DiplomacyDialog.xml:15
 msgid "Name"
 msgstr "नाव"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):18
+#: gui/session/diplomacy/DiplomacyDialog.xml:18
 msgid "Civilization"
 msgstr "संस्कृती"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):21
+#: gui/session/diplomacy/DiplomacyDialog.xml:21
 msgid "Team"
 msgstr "गट"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):24
+#: gui/session/diplomacy/DiplomacyDialog.xml:24
 msgid "Theirs"
 msgstr "त्यांचा"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):27
+#: gui/session/diplomacy/DiplomacyDialog.xml:27
 msgid "A"
 msgstr "मि."
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):31
+#: gui/session/diplomacy/DiplomacyDialog.xml:31
 msgid "N"
 msgstr "त."
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):35
+#: gui/session/diplomacy/DiplomacyDialog.xml:35
 msgid "E"
 msgstr "श."
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):39
+#: gui/session/diplomacy/DiplomacyDialog.xml:39
 msgid "Tribute"
 msgstr ""
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):90
-#: gui/session/objectives/ObjectivesDialog.xml:(caption):43
-#: gui/session/trade/TradeDialog.xml:(caption):22
+#: gui/session/diplomacy/DiplomacyDialog.xml:90
+#: gui/session/objectives/ObjectivesDialog.xml:43
+#: gui/session/trade/TradeDialog.xml:22
 msgid "Close"
 msgstr "बंद करा"
 
@@ -642,9 +641,9 @@ msgstr "बंद करा"
 #, javascript-format
 msgctxt "ceasefire"
 msgid "Remaining ceasefire time: %(time)s."
-msgstr ""
+msgstr "युद्धबंदीचा उरलेला वेळ: %(time)s."
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):85
+#: gui/session/diplomacy/DiplomacyDialog.xml:85
 #: gui/session/diplomacy/DiplomacyDialogColorsButton.js:30
 #: gui/session/minimap/MiniMapDiplomacyColorsButton.js:36
 msgid "Toggle Diplomacy Colors"
@@ -659,17 +658,17 @@ msgctxt "team"
 msgid "None"
 msgstr "काहीही नाही"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(tooltip):28
+#: gui/session/diplomacy/DiplomacyDialog.xml:28
 #: gui/session/diplomacy/playercontrols/DiplomacyPlayerText.js:78
 msgid "Ally"
 msgstr "मित्र"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(tooltip):32
+#: gui/session/diplomacy/DiplomacyDialog.xml:32
 #: gui/session/diplomacy/playercontrols/DiplomacyPlayerText.js:81
 msgid "Neutral"
 msgstr "तटस्थ"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(tooltip):36
+#: gui/session/diplomacy/DiplomacyDialog.xml:36
 #: gui/session/diplomacy/playercontrols/DiplomacyPlayerText.js:84
 msgid "Enemy"
 msgstr "शत्रू"
@@ -687,7 +686,7 @@ msgstr "अयशस्वी लाच आपल्याला खर्च �
 #: gui/session/diplomacy/playercontrols/StanceButton.js:60
 msgctxt "diplomatic stance selection"
 msgid "x"
-msgstr ""
+msgstr "x"
 
 #: gui/session/diplomacy/playercontrols/TributeButton.js:112
 #, javascript-format
@@ -722,14 +721,14 @@ msgstr "हटवा"
 msgid "Destroy everything currently selected?"
 msgstr "सध्या निवडलेल्या सर्व गोष्टी नष्ट करा?"
 
-#: gui/session/dialogs/yes_no.xml:(caption):24
+#: gui/session/dialogs/yes_no.xml:24
 #: gui/session/message_box/DeleteSelectionConfirmation.js:14
 #: gui/session/message_box/QuitConfirmationMenu.js:52
 #: gui/session/message_box/ResignConfirmation.js:9
 msgid "No"
 msgstr "नाही"
 
-#: gui/session/dialogs/yes_no.xml:(caption):19
+#: gui/session/dialogs/yes_no.xml:19
 #: gui/session/message_box/DeleteSelectionConfirmation.js:17
 #: gui/session/message_box/QuitConfirmationMenu.js:55
 #: gui/session/message_box/ResignConfirmation.js:12
@@ -746,7 +745,7 @@ msgstr ""
 #, javascript-format
 msgctxt "Out-Of-Sync"
 msgid "Players: %(players)s"
-msgstr ""
+msgstr "खेळाडू: %(players)s"
 
 #: gui/session/message_box/OutOfSyncNetwork.js:24
 msgctxt "Out-Of-Sync"
@@ -803,7 +802,7 @@ msgstr "पुष्टीकरण"
 
 #: gui/session/message_box/QuitConfirmation.js:9
 msgid "The game has finished, what do you want to do?"
-msgstr ""
+msgstr "गेम संपला आहे, आता तुम्ही काय करू इच्छिता?"
 
 #. Translation: Shown in the Dialog that shows up when the game finishes
 #: gui/session/message_box/QuitConfirmation.js:15
@@ -812,10 +811,10 @@ msgid "Stay"
 msgstr "थांबून राहा"
 
 #. Translation: Shown in the Dialog that shows up when the game finishes
-#: gui/session/message_box/QuitConfirmation.js:19
-#: gui/session/message_box/QuitConfirmationReplay.js:27
+#: gui/session/message_box/QuitConfirmation.js:20
+#: gui/session/message_box/QuitConfirmationReplay.js:28
 msgid "Quit and View Summary"
-msgstr ""
+msgstr "गेम सोडून सारांश पाहा"
 
 #: gui/session/message_box/QuitConfirmationDefeat.js:54
 msgid "VICTORIOUS!"
@@ -823,7 +822,7 @@ msgstr "विजयी!"
 
 #: gui/session/message_box/QuitConfirmationDefeat.js:55
 msgid "DEFEATED!"
-msgstr ""
+msgstr "पराभूत!"
 
 #: gui/session/message_box/QuitConfirmationDefeat.js:57
 msgid "Do you want to quit?"
@@ -858,7 +857,7 @@ msgstr "पुष्टीकरण"
 #: gui/session/message_box/QuitConfirmationReplay.js:17
 msgctxt "replayFinished"
 msgid "The replay has finished. What do you want to do?"
-msgstr ""
+msgstr "रीप्ले संपला आहे. आता तुम्ही काय करू इच्छिता?"
 
 #: gui/session/message_box/ResignConfirmation.js:6
 msgid "Are you sure you want to resign?"
@@ -870,21 +869,21 @@ msgstr "तुम्ही जिंकलात!"
 
 #: gui/session/messages.js:105
 msgid "You have been defeated!"
-msgstr ""
+msgstr "तुम्ही पराभूत झाला आहात!"
 
 #: gui/session/messages.js:410
 msgid "Click to quit this tutorial."
-msgstr ""
+msgstr "हे ट्यूटोरियल सोडण्यासाठी येथे क्लिक करा."
 
-#: gui/session/message_box/QuitConfirmation.js:24
-#: gui/session/message_box/QuitConfirmationReplay.js:32
+#: gui/session/message_box/QuitConfirmation.js:25
+#: gui/session/message_box/QuitConfirmationReplay.js:33
 #: gui/session/messages.js:411
 msgid "Quit"
 msgstr "सोडा"
 
 #: gui/session/messages.js:415
 msgid "Click when ready."
-msgstr ""
+msgstr "तयार झाल्यावर येथे क्लिक करा."
 
 #: gui/session/messages.js:419
 msgid "Follow the instructions."
@@ -902,7 +901,7 @@ msgstr ""
 msgid ""
 "Find idle worker\n"
 "Number of idle workers."
-msgstr ""
+msgstr "कार्यहीन कामगार शोधा\nकार्यहीन कामगारांची संख्या."
 
 #: gui/session/selection_details.js:65
 #, javascript-format
@@ -916,7 +915,7 @@ msgstr ""
 #: gui/session/chat/ChatAddressees.js:79 gui/session/selection_details.js:78
 #, javascript-format
 msgid "\\[OFFLINE] %(player)s"
-msgstr ""
+msgstr "\\[ऑफलाइन] %(player)s"
 
 #: gui/session/selection_details.js:84
 #, javascript-format
@@ -926,12 +925,12 @@ msgstr ""
 #: gui/session/selection_details.js:141
 #, javascript-format
 msgid "%(hitpoints)s / %(maxHitpoints)s"
-msgstr ""
+msgstr "%(hitpoints)s / %(maxHitpoints)s"
 
 #: gui/session/selection_details.js:182
 #, javascript-format
 msgid "%(capturePoints)s / %(maxCapturePoints)s"
-msgstr ""
+msgstr "%(capturePoints)s / %(maxCapturePoints)s"
 
 #: gui/session/selection_details.js:189
 msgid "Capture Points"
@@ -940,7 +939,7 @@ msgstr ""
 #: gui/session/selection_details.js:202
 #, javascript-format
 msgid "%(experience)s %(current)s / %(required)s"
-msgstr ""
+msgstr "%(experience)s %(current)s / %(required)s"
 
 #: gui/session/selection_details.js:203 gui/session/selection_details.js:209
 msgid "Experience:"
@@ -949,22 +948,22 @@ msgstr "अनुभव:"
 #: gui/session/selection_details.js:208
 #, javascript-format
 msgid "%(experience)s %(current)s"
-msgstr ""
+msgstr "%(experience)s %(current)s"
 
 #: gui/session/selection_details.js:218
 msgid "∞"
-msgstr ""
+msgstr "∞"
 
 #: gui/session/selection_details.js:219 gui/session/selection_details.js:249
 #: gui/session/selection_details.js:279
 #, javascript-format
 msgid "%(amount)s / %(max)s"
-msgstr ""
+msgstr "%(amount)s / %(max)s"
 
 #: gui/session/selection_details.js:231
 #, javascript-format
 msgid "%(resource)s:"
-msgstr ""
+msgstr "%(resource)s:"
 
 #: gui/session/selection_details.js:262 gui/session/unit_actions.js:685
 #: gui/session/unit_actions.js:694 gui/session/unit_actions.js:712
@@ -978,16 +977,16 @@ msgstr ""
 msgid ""
 "(%(number)s)\n"
 "%(time)s"
-msgstr ""
+msgstr "(%(number)s)\n%(time)s"
 
 #: gui/session/selection_details.js:283
 msgid "Current/max gatherers"
-msgstr ""
+msgstr "वर्तमान/कमाल गोळा करणारे"
 
 #: gui/session/selection_details.js:315
 #, javascript-format
 msgid "(%(secondaryName)s)"
-msgstr ""
+msgstr "(%(secondaryName)s)"
 
 #: gui/session/selection_details.js:462
 msgid "Capture Points:"
@@ -996,7 +995,7 @@ msgstr ""
 #: gui/session/selection_details.js:470
 #, javascript-format
 msgid "%(label)s: %(details)s\n"
-msgstr ""
+msgstr "%(label)s: %(details)s\n"
 
 #: gui/session/selection_details.js:471
 msgid "Garrison Size"
@@ -1005,7 +1004,7 @@ msgstr ""
 #: gui/session/selection_details.js:476
 #, javascript-format
 msgid "%(label)s %(details)s\n"
-msgstr ""
+msgstr "%(label)s %(details)s\n"
 
 #: gui/session/selection_details.js:477
 msgid "Carrying:"
@@ -1014,12 +1013,12 @@ msgstr "हे नेत आहे:"
 #: gui/session/selection_details.js:480 gui/session/selection_details.js:489
 #, javascript-format
 msgid "%(type)s %(amount)s"
-msgstr ""
+msgstr "%(type)s %(amount)s"
 
 #: gui/session/selection_details.js:485
 #, javascript-format
 msgid "%(label)s %(details)s"
-msgstr ""
+msgstr "%(label)s %(details)s"
 
 #: gui/session/selection_details.js:486
 msgid "Loot:"
@@ -1029,144 +1028,168 @@ msgstr "लूटः"
 #: gui/session/selection_details.js:547
 #, javascript-format
 msgid "%(gain)s (%(player)s)"
-msgstr ""
+msgstr "%(gain)s (%(player)s)"
 
 #. Translation: Used in the trading gain tooltip to concatenate profits of
 #. different players
 #: gui/session/selection_details.js:571
 msgid "+"
-msgstr ""
+msgstr "+"
 
 #: gui/session/selection_details.js:578
 msgctxt "Separation mark in an enumeration"
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: gui/session/selection_panels.js:65
 msgid "Raise an alert!"
 msgstr ""
 
-#: gui/session/selection_panels.js:68
-msgid "End of alert."
+#: gui/session/selection_panels.js:67
+msgid "Alert nearby Female Citizens to seek refuge."
 msgstr ""
 
-#: gui/session/selection_panels.js:277
+#: gui/session/selection_panels.js:69
+msgid "Alert nearby Traders to seek refuge."
+msgstr ""
+
+#: gui/session/selection_panels.js:71
+msgid "Alert nearby vulnerable units to seek refuge."
+msgstr ""
+
+#: gui/session/selection_panels.js:75
+msgid "End the alert."
+msgstr ""
+
+#: gui/session/selection_panels.js:77
+msgid "Unload nearby Female Citizens."
+msgstr ""
+
+#: gui/session/selection_panels.js:79
+msgid "Unload nearby Traders."
+msgstr ""
+
+#: gui/session/selection_panels.js:81
+msgid "Unload nearby vulnerable units."
+msgstr ""
+
+#: gui/session/selection_panels.js:291
 msgid "Default formation is disabled."
 msgstr ""
 
-#: gui/session/selection_panels.js:278
+#: gui/session/selection_panels.js:292
 msgid "Right-click to disable the default formation feature."
 msgstr ""
 
-#: gui/session/selection_panels.js:281
+#: gui/session/selection_panels.js:295
 msgid "This is the default formation, used for movement orders."
 msgstr ""
 
-#: gui/session/selection_panels.js:282
+#: gui/session/selection_panels.js:296
 msgid "Right-click to set this as the default formation."
 msgstr ""
 
-#: gui/session/selection_panels.js:338
+#: gui/session/selection_panels.js:352
 #, javascript-format
 msgid "Unload %(name)s"
 msgstr ""
 
-#: gui/session/selection_panels.js:339
+#: gui/session/selection_panels.js:353
 msgid "Single-click to unload 1. Shift-click to unload all of this type."
 msgstr ""
 
-#: gui/session/selection_panels.js:341 gui/session/selection_panels.js:919
+#: gui/session/selection_panels.js:355 gui/session/selection_panels.js:933
 #, javascript-format
 msgid "Player: %(playername)s"
-msgstr ""
+msgstr "खेळाडू: %(playername)s"
 
-#: gui/session/selection_panels.js:377
+#: gui/session/selection_panels.js:391
 msgid "Lock Gate"
 msgstr ""
 
-#: gui/session/selection_panels.js:383
+#: gui/session/selection_panels.js:397
 msgid "Unlock Gate"
 msgstr ""
 
-#: gui/session/selection_panels.js:434
+#: gui/session/selection_panels.js:448
 msgid "Pack"
 msgstr ""
 
-#: gui/session/selection_panels.js:442
+#: gui/session/selection_panels.js:456
 msgid "Unpack"
 msgstr ""
 
-#: gui/session/selection_panels.js:450
+#: gui/session/selection_panels.js:464
 msgid "Cancel Packing"
 msgstr ""
 
-#: gui/session/selection_panels.js:458
+#: gui/session/selection_panels.js:472
 msgid "Cancel Unpacking"
 msgstr ""
 
-#: gui/session/selection_panels.js:558
+#: gui/session/selection_panels.js:572
 msgid "The auto-queue will try to train this item later."
 msgstr ""
 
-#: gui/session/selection_panels.js:561
+#: gui/session/selection_panels.js:575
 msgid "Insufficient population capacity:"
 msgstr ""
 
-#: gui/session/selection_panels.js:562
+#: gui/session/selection_panels.js:576
 #, javascript-format
 msgid "%(population)s %(neededSlots)s"
-msgstr ""
+msgstr "%(population)s %(neededSlots)s"
 
-#: gui/session/selection_panels.js:784
+#: gui/session/selection_panels.js:798
 #, javascript-format
 msgid "%(number)s entity of class %(class)s"
 msgid_plural "%(number)s entities of class %(class)s"
 msgstr[0] ""
 msgstr[1] ""
 
-#: gui/session/selection_panels.js:790
+#: gui/session/selection_panels.js:804
 #, javascript-format
 msgid "Remaining: %(entityCounts)s"
-msgstr ""
+msgstr "उरलेले: %(entityCounts)s"
 
-#: gui/session/selection_panels.js:791
+#: gui/session/selection_panels.js:805
 msgctxt "Separator for a list of entity counts"
 msgid ", "
-msgstr ""
+msgstr ", "
 
-#: gui/session/selection_panels.js:843
+#: gui/session/selection_panels.js:857
 msgid "Cannot research while upgrading."
-msgstr ""
+msgstr "अपग्रेड करत असताना संशोधन करता येत नाही."
 
-#: gui/session/selection_panels.js:1073
+#: gui/session/selection_panels.js:1086
 msgid "Cannot train while upgrading."
-msgstr ""
+msgstr "अपग्रेड करत असताना तयार करता येत नाही."
 
-#: gui/session/selection_panels.js:1140
+#: gui/session/selection_panels.js:1153
 #, javascript-format
 msgid "Upgrade to a %(primaryName)s (%(secondaryName)s). %(tooltip)s"
 msgstr ""
 
-#: gui/session/selection_panels.js:1146
+#: gui/session/selection_panels.js:1159
 #, javascript-format
 msgid "Upgrade to a %(primaryName)s (%(secondaryName)s)."
 msgstr ""
 
-#: gui/session/selection_panels.js:1154
+#: gui/session/selection_panels.js:1167
 #, javascript-format
 msgid "Upgrade to a %(primaryName)s. %(tooltip)s"
 msgstr ""
 
-#: gui/session/selection_panels.js:1159
+#: gui/session/selection_panels.js:1172
 #, javascript-format
 msgid "Upgrade to a %(primaryName)s."
 msgstr ""
 
-#: gui/session/selection_panels.js:1196
+#: gui/session/selection_panels.js:1209
 msgid "Cancel Upgrading"
 msgstr ""
 
-#: gui/session/selection_panels.js:1211
+#: gui/session/selection_panels.js:1224
 msgid ""
 "Cannot upgrade when the entity is training, researching or already "
 "upgrading."
@@ -1209,7 +1232,7 @@ msgstr ""
 #: gui/session/selection_panels_helpers.js:75
 msgctxt "stance"
 msgid "Attack nearby opponents"
-msgstr ""
+msgstr "जवळच्या शत्रूवर हल्ला करा"
 
 #: gui/session/selection_panels_helpers.js:77
 msgctxt "stance"
@@ -1221,17 +1244,17 @@ msgstr ""
 #: gui/session/selection_panels_helpers.js:79
 msgctxt "stance"
 msgid "Flee if attacked"
-msgstr ""
+msgstr "हल्ला झाल्यास माघार घ्या"
 
 #: gui/session/selection_panels_helpers.js:81
 msgctxt "stance"
 msgid "Attack opponents in range, but don't move"
-msgstr ""
+msgstr "आवाक्यातल्या शत्रूवर हल्ला करा, पण हलू नका"
 
 #: gui/session/selection_panels_helpers.js:95
 #, javascript-format
 msgid "Current Count: %(count)s, Limit: %(limit)s."
-msgstr ""
+msgstr "वर्तमान मोजणी: %(count)s, मर्यादा: %(limit)s."
 
 #: gui/session/selection_panels_helpers.js:109
 #, javascript-format
@@ -1245,60 +1268,60 @@ msgstr ""
 
 #: gui/session/selection_panels_helpers.js:140
 msgid "Can be constructed only once."
-msgstr ""
+msgstr "केवळ एकदाच बांधले जाऊ शकते."
 
 #: gui/session/selection_panels_helpers.js:142
 #, javascript-format
 msgid "Could only be constructed %(limit)s time."
 msgid_plural "Could only be constructed %(limit)s times."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "केवळ %(limit)sदाच बांधले जाऊ शकते. "
+msgstr[1] "केवळ %(limit)s वेळा बांधले जाऊ शकते."
 
 #: gui/session/selection_panels_helpers.js:148
 #, javascript-format
 msgid "Can be constructed %(count)s more time."
 msgid_plural "Can be constructed %(count)s more times."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "अजून %(count)sदा बांधले जाऊ शकते."
+msgstr[1] "अजून %(count)s वेळा बांधले जाऊ शकते. "
 
 #: gui/session/selection_panels_helpers.js:155
 msgid "Could only be trained once."
 msgid_plural "Could only be trained %(limit)s times."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "केवळ एकदाच तयार करणे शक्य."
+msgstr[1] "अजून केवळ %(limit)s वेळा तयार करणे शक्य."
 
 #: gui/session/selection_panels_helpers.js:159
 msgid "Can be trained only once."
-msgstr ""
+msgstr "एकदाच तयार करता येतो."
 
 #: gui/session/selection_panels_helpers.js:161
 #, javascript-format
 msgid "Can be trained %(count)s more time."
 msgid_plural "Can be trained %(count)s more times."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "अजून %(count)s वेळा तयार करणे शक्य."
+msgstr[1] "अजून %(count)s वेळा तयार करणे शक्य."
 
 #: gui/session/selection_panels_helpers.js:168
 msgid "Could only be created once."
 msgid_plural "Could only be created %(limit)s times."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "केवळ एकदाच निर्मित केले जाऊ शकते."
+msgstr[1] "केवळ %(limit)s वेळा निर्मित केले जाऊ शकते."
 
 #: gui/session/selection_panels_helpers.js:172
 msgid "Can be created only once."
-msgstr ""
+msgstr "केवळ एकदाच निर्मित केले जाऊ शकते."
 
 #: gui/session/selection_panels_helpers.js:174
 #, javascript-format
 msgid "Can be created %(count)s more time."
 msgid_plural "Can be created %(count)s more times."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "अजून %(count)sदा निर्माण केले जाऊ शकते."
+msgstr[1] "अजून %(count)s वेळा निर्मित केले जाऊ शकते."
 
 #: gui/session/selection_panels_helpers.js:203
 #, javascript-format
 msgid "%(buildings)s*%(batchSize)s"
-msgstr ""
+msgstr "%(buildings)s*%(batchSize)s"
 
 #: gui/session/selection_panels_helpers.js:217
 #, javascript-format
@@ -1317,44 +1340,44 @@ msgstr ""
 
 #: gui/session/selection_panels_helpers.js:226
 msgid "Shift-click"
-msgstr ""
+msgstr "शिफ्ट-क्लिक"
 
-#: gui/session/selection_panels_left/garrison_panel.xml:(tooltip):16
-#: gui/session/selection_panels_middle/single_details_area.xml:(tooltip):64
+#: gui/session/selection_panels_left/garrison_panel.xml:16
+#: gui/session/selection_panels_middle/single_details_area.xml:64
 msgid "Health"
 msgstr "आरोग्य"
 
-#: gui/session/selection_panels_middle/single_details_area.xml:(tooltip):41
+#: gui/session/selection_panels_middle/single_details_area.xml:41
 msgid "Capture points"
 msgstr ""
 
-#: gui/session/selection_panels_middle/single_details_area.xml:(tooltip):84
+#: gui/session/selection_panels_middle/single_details_area.xml:84
 msgid "Attack and Resistance"
-msgstr ""
+msgstr "आक्रमणशक्ती आणि प्रतिकारशक्ती"
 
-#: gui/session/selection_panels_middle/single_details_area.xml:(tooltip):99
+#: gui/session/selection_panels_middle/single_details_area.xml:99
 msgid "Experience"
 msgstr "अनुभव"
 
-#: gui/session/selection_panels_middle/single_details_area.xml:(tooltip):107
+#: gui/session/selection_panels_middle/single_details_area.xml:107
 msgid "Rank"
 msgstr ""
 
-#: gui/session/selection_panels_right/queue_panel.xml:(tooltip):8
+#: gui/session/selection_panels_right/queue_panel.xml:8
 msgid "Production queue"
 msgstr ""
 
-#: gui/session/session_objects/selection_group_icons.xml:(tooltip):7
+#: gui/session/session_objects/selection_group_icons.xml:7
 msgid ""
 "Click to select grouped units, double-click to focus the grouped units and "
 "right-click to disband the group."
 msgstr ""
 
-#: gui/session/top_panel/BuildLabel.xml:(caption):6
+#: gui/session/top_panel/BuildLabel.xml:6
 msgid "Alpha XXVII: Agni"
-msgstr ""
+msgstr "Alpha XXVII: Agni"
 
-#: gui/session/top_panel/CivIcon.js:80
+#: gui/session/top_panel/CivIcon.js:68
 #, javascript-format
 msgid ""
 "%(civ)s\n"
@@ -1369,20 +1392,20 @@ msgstr ""
 
 #: gui/session/top_panel/CounterManager.js:104
 msgid "Unordered"
-msgstr ""
+msgstr "अक्रमित"
 
 #: gui/session/top_panel/CounterManager.js:106
 msgid "Descending"
-msgstr ""
+msgstr "उतरत्या क्रमात"
 
 #: gui/session/top_panel/CounterManager.js:107
 msgid "Ascending"
-msgstr ""
+msgstr "चढत्या क्रमात"
 
 #: gui/session/top_panel/CounterManager.js:132
 #, javascript-format
 msgid "%(playername)s: %(statValue)s"
-msgstr ""
+msgstr "%(playername)s: %(statValue)s"
 
 #. Translation: Do not insert spaces around the slash symbol for this exact
 #. string. Keep only
@@ -1391,51 +1414,51 @@ msgstr ""
 #: gui/session/top_panel/CounterPopulation.js:65
 #, javascript-format
 msgid "%(popCount)s/%(popLimit)s (%(popMax)s)"
-msgstr ""
+msgstr "%(popCount)s/%(popLimit)s (%(popMax)s)"
 
 #: gui/session/top_panel/CounterPopulation.js:63
 msgid "Population: current/limit (max)"
-msgstr ""
+msgstr "लोकसंख्या: वर्तमान/मर्यादा (कमाल)"
 
 #: gui/session/top_panel/CounterPopulation.js:70
 msgid "Gatherers: current"
 msgstr ""
 
-#: gui/session/top_panel/FollowPlayer.xml:(caption):15
-#: gui/session/top_panel/FollowPlayer.xml:(tooltip):11
+#: gui/session/top_panel/FollowPlayer.xml:11
+#: gui/session/top_panel/FollowPlayer.xml:15
 msgctxt "observer mode"
 msgid "Follow Player"
 msgstr ""
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):10
+#: gui/session/diplomacy/DiplomacyDialog.xml:10
 #: gui/session/top_panel/IconButtons/DiplomacyDialogButton.js:29
 msgid "Diplomacy"
-msgstr ""
+msgstr "मुत्सद्देगिरी"
 
-#: gui/session/top_panel/IconButtons/GameSpeedButton.xml:(tooltip):9
+#: gui/session/top_panel/IconButtons/GameSpeedButton.xml:9
 msgid "Game Speed"
 msgstr "खेळाची गती"
 
-#: gui/session/objectives/ObjectivesDialog.xml:(caption):15
+#: gui/session/objectives/ObjectivesDialog.xml:15
 #: gui/session/top_panel/IconButtons/ObjectivesDialogButton.js:23
 msgid "Objectives"
-msgstr ""
+msgstr "हेतू"
 
-#: gui/session/top_panel/MenuButton.xml:(caption):15
+#: gui/session/top_panel/MenuButton.xml:15
 msgid "Menu"
-msgstr ""
+msgstr "मेन्यू"
 
 #: gui/session/top_panel/PlayerViewControl.js:123
 msgid "Observer"
 msgstr "निरीक्षक"
 
-#: gui/session/top_panel/PlayerViewControl.xml:(caption):17
-msgid "Observer Mode"
-msgstr ""
-
-#: gui/session/top_panel/PlayerViewControl.xml:(tooltip):13
+#: gui/session/top_panel/PlayerViewControl.xml:13
 msgid "Choose player to view"
-msgstr ""
+msgstr "पाहण्यास खेळाडू निवडा"
+
+#: gui/session/top_panel/PlayerViewControl.xml:17
+msgid "Observer Mode"
+msgstr "दर्शक मोड"
 
 #: gui/session/trade/BarterButton.js:108
 #, javascript-format
@@ -1451,35 +1474,35 @@ msgstr "%(resource)s विकून टाका"
 #, javascript-format
 msgctxt "buy action"
 msgid "+%(amount)s"
-msgstr ""
+msgstr "+%(amount)s"
 
 #: gui/session/trade/BarterButton.js:111
 #, javascript-format
 msgctxt "sell action"
 msgid "-%(amount)s"
-msgstr ""
+msgstr "-%(amount)s"
 
-#: gui/session/trade/BarterPanel.xml:(caption):5
+#: gui/session/trade/BarterPanel.xml:5
 msgid "Barter"
 msgstr ""
 
-#: gui/session/trade/BarterPanel.xml:(caption):13
+#: gui/session/trade/BarterPanel.xml:13
 msgid "Sell:"
 msgstr "विकून टाका:"
 
-#: gui/session/trade/BarterPanel.xml:(caption):17
+#: gui/session/trade/BarterPanel.xml:17
 msgid "Buy:"
 msgstr "विकत घ्या:"
 
-#: gui/session/trade/BarterPanel.xml:(caption):21
+#: gui/session/trade/BarterPanel.xml:21
 msgid "No Markets Available"
-msgstr ""
+msgstr "बाजार उपलब्ध नाहीत"
 
 #: gui/session/trade/TradeButton.js:56
 #, javascript-format
 msgctxt "trading good ratio"
 msgid "%(amount)s%%"
-msgstr ""
+msgstr "%(amount)s%%"
 
 #: gui/session/trade/TradeButtonManager.js:80
 #, javascript-format
@@ -1498,13 +1521,13 @@ msgid ""
 "%(hotkey)s to temporarily multiply the traded amount by %(multiplier)s."
 msgstr ""
 
-#: gui/session/trade/TradePanel.xml:(caption):5
+#: gui/session/trade/TradePanel.xml:5
 msgid "Trade"
 msgstr "व्यापार"
 
-#: gui/session/trade/TradePanel.xml:(caption):14
+#: gui/session/trade/TradePanel.xml:14
 msgid "Resources:"
-msgstr ""
+msgstr "साधने:"
 
 #: gui/session/trade/TraderStatusTextLand.js:15
 #, javascript-format
@@ -1517,8 +1540,8 @@ msgstr[1] ""
 #, javascript-format
 msgid "%(numberOfLandTraders)s inactive"
 msgid_plural "%(numberOfLandTraders)s inactive"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(numberOfLandTraders)s निष्क्रिय"
+msgstr[1] "%(numberOfLandTraders)s निष्क्रिय"
 
 #: gui/session/trade/TraderStatusTextLand.js:30
 #, javascript-format
@@ -1548,43 +1571,43 @@ msgstr[1] ""
 #: gui/session/trade/TraderStatusTextLand.js:65
 #, javascript-format
 msgid "%(openingTradingString)s, and %(garrisonedString)s."
-msgstr ""
+msgstr "%(openingTradingString)s, आणि %(garrisonedString)s."
 
 #: gui/session/trade/TraderStatusTextLand.js:66
 #, javascript-format
 msgid ""
 "%(openingTradingString)s, %(garrisonedString)s, and %(inactiveString)s."
-msgstr ""
+msgstr "%(openingTradingString)s, %(garrisonedString)s, आणि %(inactiveString)s."
 
 #: gui/session/trade/TraderStatusTextLand.js:69
 #: gui/session/trade/TraderStatusTextShip.js:47
 #, javascript-format
 msgid "%(openingTradingString)s."
-msgstr ""
+msgstr "%(openingTradingString)s."
 
 #: gui/session/trade/TraderStatusTextLand.js:70
 #: gui/session/trade/TraderStatusTextShip.js:46
 #, javascript-format
 msgid "%(openingTradingString)s, and %(inactiveString)s."
-msgstr ""
+msgstr "%(openingTradingString)s, आणि %(inactiveString)s."
 
 #: gui/session/trade/TraderStatusTextLand.js:75
 #, javascript-format
 msgid "%(openingGarrisonedString)s."
-msgstr ""
+msgstr "%(openingGarrisonedString)s."
 
 #: gui/session/trade/TraderStatusTextLand.js:76
 #, javascript-format
 msgid "%(openingGarrisonedString)s, and %(inactiveString)s."
-msgstr ""
+msgstr "%(openingGarrisonedString)s, आणि %(inactiveString)s."
 
 #: gui/session/trade/TraderStatusTextLand.js:79
 #: gui/session/trade/TraderStatusTextShip.js:50
 #, javascript-format
 msgid "There is %(inactiveString)s."
 msgid_plural "There are %(inactiveString)s."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(inactiveString)s आहे."
+msgstr[1] " %(inactiveString)s आहेत."
 
 #: gui/session/trade/TraderStatusTextLand.js:80
 msgid "There are no land traders."
@@ -1594,28 +1617,28 @@ msgstr "जमीन व्यापारी नाहीत."
 #, javascript-format
 msgid "There is %(numberTrading)s merchant ship trading"
 msgid_plural "There are %(numberTrading)s merchant ships trading"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(numberTrading)s व्यापारी जहाज व्यापार करत आहे"
+msgstr[1] "%(numberTrading)s व्यापारी जहाज व्यापार करत आहेत"
 
 #: gui/session/trade/TraderStatusTextShip.js:24
 #, javascript-format
 msgid "%(numberOfShipTraders)s inactive"
 msgid_plural "%(numberOfShipTraders)s inactive"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(numberOfShipTraders)s निष्क्रिय"
+msgstr[1] "%(numberOfShipTraders)s निष्क्रिय"
 
 #: gui/session/trade/TraderStatusTextShip.js:29
 #, javascript-format
 msgid "%(numberOfShipTraders)s merchant ship inactive"
 msgid_plural "%(numberOfShipTraders)s merchant ships inactive"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(numberOfShipTraders)s व्यापारी जहाज निष्क्रिय"
+msgstr[1] "%(numberOfShipTraders)s व्यापारी जहाज निष्क्रिय"
 
 #: gui/session/trade/TraderStatusTextShip.js:51
 msgid "There are no merchant ships."
 msgstr "व्यापारी जहाज नाहीत."
 
-#: gui/session/tutorial_panel.xml:(caption):11
+#: gui/session/tutorial_panel.xml:11
 msgid "Ready"
 msgstr "तयार"
 
@@ -1662,7 +1685,7 @@ msgstr ""
 #: gui/session/unit_actions.js:1186
 #, javascript-format
 msgid "Expected gain: %(gain)s"
-msgstr ""
+msgstr "अपेक्षित फायदा: %(gain)s"
 
 #: gui/session/unit_actions.js:1320
 msgid "This entity cannot be controlled."
@@ -1730,14 +1753,13 @@ msgid "Remove guard"
 msgstr ""
 
 #: gui/session/top_panel/IconButtons/TradeDialogButton.js:31
-#: gui/session/trade/TradeDialog.xml:(caption):9
-#: gui/session/unit_actions.js:1698
+#: gui/session/trade/TradeDialog.xml:9 gui/session/unit_actions.js:1698
 msgid "Barter & Trade"
 msgstr ""
 
 #: gui/session/unit_actions.js:1718
 msgid "Patrol"
-msgstr ""
+msgstr "गस्त घाला"
 
 #: gui/session/unit_actions.js:1719
 msgid "Attack all encountered enemy units while avoiding structures."

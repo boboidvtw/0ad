@@ -1,4 +1,4 @@
-/* Copyright (C) 2022 Wildfire Games.
+/* Copyright (C) 2023 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -26,6 +26,8 @@
 #include "scriptinterface/ScriptTypes.h"
 #include "simulation2/system/Entity.h"
 
+#include <memory>
+
 class CTerrain;
 class WaterManager;
 class SkyManager;
@@ -38,7 +40,6 @@ class CSimContext;
 class CTerrainTextureEntry;
 class CGameView;
 class CXMLReader;
-class CMapGenerator;
 class ScriptContext;
 class ScriptInterface;
 
@@ -73,9 +74,6 @@ private:
 	// UnpackCinema: unpack the cinematic tracks from the input stream
 	int UnpackCinema();
 
-	// UnpackMap: unpack the given data from the raw data stream into local variables
-	int UnpackMap();
-
 	// ApplyData: take all the input data, and rebuild the scene from it
 	int ApplyData();
 	int ApplyTerrainData();
@@ -90,7 +88,8 @@ private:
 	int LoadRMSettings();
 
 	// Generate random map
-	int GenerateMap();
+	int StartMapGeneration(const CStrW& scriptFile);
+	int PollMapGeneration();
 
 	// Parse script data into terrain
 	int ParseTerrain();
@@ -106,7 +105,7 @@ private:
 
 
 	// size of map
-	ssize_t m_PatchesPerSide;
+	ssize_t m_PatchesPerSide{0};
 	// heightmap for map
 	std::vector<u16> m_Heightmap;
 	// list of terrain textures used by map
@@ -119,11 +118,11 @@ private:
 	CStrW m_Script;
 
 	// random map data
-	CStrW m_ScriptFile;
 	JS::PersistentRootedValue m_ScriptSettings;
 	JS::PersistentRootedValue m_MapData;
 
-	CMapGenerator* m_MapGen;
+	struct GeneratorState;
+	std::unique_ptr<GeneratorState> m_GeneratorState;
 
 	CFileUnpacker unpacker;
 	CTerrain* pTerrain;
@@ -145,10 +144,11 @@ private:
 	CVector3D m_StartingCamera;
 
 	// UnpackTerrain generator state
-	size_t cur_terrain_tex;
+	// It's important to initialize it to 0 - resets generator state
+	size_t cur_terrain_tex{0};
 	size_t num_terrain_tex;
 
-	CXMLReader* xml_reader;
+	CXMLReader* xml_reader{nullptr};
 };
 
 /**

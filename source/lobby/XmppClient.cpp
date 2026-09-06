@@ -1,4 +1,4 @@
-/* Copyright (C) 2021 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -821,9 +821,10 @@ void XmppClient::handleMessage(const glooxwrapper::Message& msg, glooxwrapper::M
 
 	CreateGUIMessage(
 		"chat",
-		"private-message",
+		msg.subtype() == gloox::Message::MessageType::Headline ? "headline" : "private-message",
 		ComputeTimestamp(msg),
 		"from", msg.from().resource(),
+		"subject", msg.subject(),
 		"text", msg.body());
 }
 
@@ -866,7 +867,13 @@ bool XmppClient::handleIq(const glooxwrapper::IQ& iq)
 		}
 		if (gq)
 		{
-			if (iq.from().full() == m_xpartamuppId && gq->m_Command == "register" && g_NetServer && !g_NetServer->GetUseSTUN())
+			if (iq.from().full() != m_xpartamuppId)
+			{
+				LOGWARNING("XmppClient: Received game list response from unexpected sender: %s", iq.from().full());
+				return true;
+			}
+
+			if (gq->m_Command == "register" && g_NetServer && !g_NetServer->GetUseSTUN())
 			{
 				if (gq->m_GameList.empty())
 				{
@@ -894,6 +901,12 @@ bool XmppClient::handleIq(const glooxwrapper::IQ& iq)
 		}
 		if (bq)
 		{
+			if (iq.from().full() != m_echelonId)
+			{
+				LOGWARNING("XmppClient: Received board list response from unexpected sender: %s", iq.from().full());
+				return true;
+			}
+
 			if (bq->m_Command == "boardlist")
 			{
 				for (const glooxwrapper::Tag* const& t : m_BoardList)
@@ -921,6 +934,12 @@ bool XmppClient::handleIq(const glooxwrapper::IQ& iq)
 		}
 		if (pq)
 		{
+			if (iq.from().full() != m_echelonId)
+			{
+				LOGWARNING("XmppClient: Received profile response from unexpected sender: %s", iq.from().full());
+				return true;
+			}
+
 			for (const glooxwrapper::Tag* const& t : m_Profile)
 				glooxwrapper::Tag::free(t);
 			m_Profile.clear();

@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: None\n"
-"POT-Creation-Date: 2023-06-12 07:18+0000\n"
-"PO-Revision-Date: 2023-06-12 07:18+0000\n"
+"POT-Creation-Date: 2024-07-29 07:18+0000\n"
+"PO-Revision-Date: 2024-07-29 07:18+0000\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -16,7 +16,7 @@ msgid "Catafalque"
 msgstr "শবাধার স্থাপনের জন্য মঞ্চ"
 
 msgid "A catafalque that holds the remains of a great leader."
-msgstr "Ein Katafalk, das die sterblichen Überreste eines großen Anführers enthält."
+msgstr "Ein Katafalk, dass die sterblichen Überreste eines großen Anführers enthält."
 
 msgctxt "Name of an attack, usually the weapon."
 msgid "Capture"
@@ -92,7 +92,7 @@ msgid "Ranged"
 msgstr "Jednostki walczące na dystans."
 
 msgid "Ranged Cavalry"
-msgstr "Cavalaria de Combate à Distância"
+msgstr "Cavalaria de combate à distância"
 
 msgctxt "Name of an attack, usually the weapon."
 msgid "Bow"
@@ -106,7 +106,7 @@ msgstr "Lučištník jedoucí na koni"
 
 msgctxt "Name of an attack, usually the weapon."
 msgid "Crossbow"
-msgstr "کمان زنبورکی"
+msgstr "Crois-bhogha"
 
 msgid "Cavalry Crossbowman"
 msgstr "Cavalerie Kruisboogschutter"
@@ -168,10 +168,10 @@ msgid "Circular"
 msgstr "Di Chuyển Vòng Quanh"
 
 msgid "Infantry"
-msgstr "Pėstininkas"
+msgstr "Җәяүле гаскәри"
 
 msgid "Champion Infantry"
-msgstr "Πρωτοπαλλήκαρο πεζικάριος"
+msgstr "Probatalanta infanterio"
 
 msgid "Champion Archer"
 msgstr "Sagittarius Propugnator"
@@ -193,13 +193,13 @@ msgid "Pike"
 msgstr "Дугачко копље"
 
 msgid "Champion Pikeman"
-msgstr "Πρωτοπαλλήκαρο Σαρισοφόρος"
+msgstr "Шампион са дугачким копљем"
 
 msgid "Counters: 3× vs Cavalry."
 msgstr "Противодействие: в 3 раза лучше против конницы."
 
 msgid "Pikeman"
-msgstr "Ietininkas su Pika"
+msgstr "Pehotnik z dolgo sulico"
 
 msgid "Champion Spearman"
 msgstr "Elitní bojovník s oštěpem"
@@ -215,7 +215,7 @@ msgstr "Čempionų Pėstininkas Trimitininkas"
 
 msgctxt "Name of an attack, usually the weapon."
 msgid "Fangs"
-msgstr "Torahampaat"
+msgstr "دندان های نیش"
 
 msgid "War Dog"
 msgstr "Πολεμικός σκύλος"
@@ -243,13 +243,6 @@ msgstr "Kahraman"
 
 msgid "Hero Cavalry"
 msgstr "Hrdina jedoucí na koni"
-
-msgid ""
-"\n"
-"        "
-msgstr ""
-"\n"
-"        "
 
 msgid "Hero Cavalry Archer"
 msgstr "Herojus kavalerijos lankininkas"
@@ -333,23 +326,23 @@ msgstr "Aruncator cu praștia"
 msgid "Ship"
 msgstr "Embarcação"
 
-msgctxt "Name of an attack, usually the weapon."
-msgid "Fire"
-msgstr "Khai hoả"
-
 msgid "Fire Ship"
 msgstr "Vaixell incendiari"
 
-msgid "Unrepairable. Gradually loses health. Can only attack Ships."
-msgstr ""
-"Cha ghabh a chàradh. Caillidh e a shlàinte beag air bheag. Chan urrainn dha ionnsaigh a"
-" thoirt ach air longan."
+msgid "Unrepairable. Gradually loses health after ignition."
+msgstr "Unreparierbar. Verliert nach dem entzünden nach und nach Gesundheit."
 
 msgid "Fireship"
 msgstr "Vaixell incendiari"
 
+msgid "Fire"
+msgstr "Khai hoả"
+
 msgid "Warship"
 msgstr "Військовий корабель"
+
+msgid "Ignite the Fire Ship to damage nearby enemy Ships."
+msgstr "Steek het Vuurschip aan om vijandelijke schepen in de buurt schade toe te brengen."
 
 msgctxt "Name of an attack, usually the weapon."
 msgid "Harpoon"
@@ -370,10 +363,11 @@ msgstr "Prekybinis laivas"
 #, python-format
 msgid ""
 "Trade between docks. Garrison a Trader aboard for additional profit (+20% for each "
-"garrisoned). Gather profitable aquatic treasures."
+"garrisoned). Gather profitable aquatic treasures. Improve sea trading at the Market."
 msgstr ""
-"Prowadź wymianę handlową pomiędzy dokami. Umieść kupca na pokładzie, aby osiągnąć "
-"dodatkowy zysk (+20% od każdej umieszczonej jednostki). Zbieraj dochodowe skarby wodne."
+"Comercio entre peiraos. Guarnicione a un comerciante a bordo para obter beneficios "
+"adicionais (+20 % por cada guarnición). Reúne tesouros acuáticos rendibles. Mellora o "
+"comercio marítimo no Mercado."
 
 msgid "Bribable"
 msgstr "Може да бъде подкупен"
@@ -381,39 +375,66 @@ msgstr "Може да бъде подкупен"
 msgid "Trader"
 msgstr "കച്ചവടക്കാരന്‍"
 
-msgid "Light Warship"
-msgstr "Легкий військовий корабель"
+msgctxt "Name of an attack, usually the weapon."
+msgid "Arrow"
+msgstr "Puščica"
+
+msgid "Arrow Ship"
+msgstr "Loď střílející šípy"
+
+msgid "ArrowShip"
+msgstr "Loď střílející šípy"
+
+msgid "Garrison units for transport across water. Countered by Siege Ships."
+msgstr ""
+"Quartiere Einheiten ein, um sie über Wasser zu transportieren. Wird durch "
+"Belagerungsschiffe gekontert."
+
+msgctxt "Name of an attack, usually the weapon."
+msgid "Naval Ram"
+msgstr "Námořní beranidlo"
+
+msgid "Ramming Ship"
+msgstr "Nave da speronamento"
 
 msgid ""
-"Garrison units for transport and to increase firepower. Deals triple damage against "
-"Ships."
+"Garrison units for transport across water. Strong against Siege Ships. Countered by "
+"Arrow Ships."
 msgstr ""
-"Mettre des unités en garnison pour le transport et augmenter la puissance de feu. "
-"Triple les dégâts infligés aux navires."
+"Quartiere Einheiten ein, um sie über Wasser zu transportieren. Stark gegen "
+"Belagerungsschiffe. Wird von Fernkampfschiffen gekontert."
+
+msgid "NavalRam"
+msgstr "Námořní beranidlo"
+
+msgid "Scout Ship"
+msgstr "Разведывательный корабль"
+
+msgid "ScoutShip"
+msgstr "Buque de exploración"
+
+msgid "Scout for coastlines. Garrison units for transport across water."
+msgstr ""
+"Schiff zum erkunden von Küsten. Quartierte Einheiten ein, um sie über Wasser zu "
+"transportieren."
 
 msgctxt "Name of an attack, usually the weapon."
 msgid "Stone"
 msgstr "Камень"
 
-msgid "Heavy Warship"
-msgstr "Важкий військовий корабель"
+msgid "Siege Ship"
+msgstr "Πολιορκητικό Πλοίο"
 
-msgid "Garrison units for transport. Garrison Stone Throwers to increase firepower."
+msgid "Garrison units for transport across water. Good against Arrow Ships and Structures."
 msgstr ""
-"Former une garnison pour le transport. Former une garnison de lanceurs de pierre pour "
-"augmenter la puissance de tir."
+"Aquartela unidades para transporte através da água. Bom contra barcos e estruturas de "
+"ataque com flechas."
+
+msgid "NavalSiege"
+msgstr "NamorneObliehanie"
 
 msgid "Heavy"
 msgstr "Těžká válečná loď"
-
-msgid "Light"
-msgstr "Lehká válečná loď"
-
-msgid "Medium Warship"
-msgstr "Vidutinio dydžio karo laivas"
-
-msgid "Medium"
-msgstr "Keskinkertainen"
 
 msgid "Siege"
 msgstr "Vũ khí công thành"
@@ -430,6 +451,10 @@ msgstr "Lanzador de proxectís"
 
 msgid "Bolt Shooter"
 msgstr "Lanzador de proxectís"
+
+msgctxt "Name of an attack, usually the weapon."
+msgid "Fire"
+msgstr "Khai hoả"
 
 msgid "Flamethrower"
 msgstr "Alevli Kuşatma Makinası"
@@ -460,7 +485,7 @@ msgid "Siege Tower"
 msgstr "Kullë Murëshkatërruese"
 
 msgid "Garrison units for transport and to increase firepower."
-msgstr "Guarnece soldados no interior para os transportar e para aumentar o seu poder de fogo."
+msgstr "Aquartela soldados no interior para os transportar e para aumentar o seu poder de fogo."
 
 msgid "Worker Elephant"
 msgstr "Éléphant travailleur"
@@ -485,6 +510,9 @@ msgstr ""
 
 msgid "Trade resources between your own markets and those of your allies."
 msgstr "Malairt stòras eadar na margaidean agad fhèin agus an fheadhainn aig do chaidreabhaich."
+
+msgid "Athenian Catafalque"
+msgstr "Athenischer Katafalk"
 
 msgid "Solon"
 msgstr "Solonas"
@@ -528,6 +556,9 @@ msgstr "Skythischer Bogenschütze"
 msgid "Toxótēs Skythikós"
 msgstr "Токсо̀тис скитико̀с"
 
+msgid "Hippocrates"
+msgstr "हिप्पोक्रातेस"
+
 msgid "Iphicrates"
 msgstr "la .ifikratys."
 
@@ -552,17 +583,17 @@ msgstr "Ksenofanas"
 msgid "Xenophōn"
 msgstr "Themistoklēs"
 
-msgid "Thracian Peltast"
-msgstr "თრაკიელი მსუბუქად შეიარაღებული მებრძოლი"
-
-msgid "Peltastḗs Thrâx"
-msgstr "पेल्तास्तेस थ्राक्स"
-
 msgid "Cretan Mercenary Archer"
 msgstr "Sagittarius Mercennarius Cretaeus"
 
 msgid "Toxótēs Krētikós"
 msgstr "Токсо̀тис критико̀с"
+
+msgid "Thracian Peltast"
+msgstr "თრაკიელი მსუბუქად შეიარაღებული მებრძოლი"
+
+msgid "Peltastḗs Thrâx"
+msgstr "पेल्तास्तेस थ्राक्स"
 
 msgid "Athenian Slinger Militia"
 msgstr "Atėnų Ginkluotų Civilių Svaidyklininkas"
@@ -576,11 +607,8 @@ msgstr "Atinalı Ağır Mızraklı Piyade"
 msgid "Hoplítēs Athēnaîos"
 msgstr "Hoplítēs Athēnaîos"
 
-msgid "Penteconter"
-msgstr "Galeră cu 50 de văsle."
-
-msgid "Pentēkóntoros"
-msgstr "पेन्तेकोन्तोरोस"
+msgid "Triḗrēs Athēnaía"
+msgstr "Triḗrēs Athēnaía"
 
 msgid "Ploîon Halieutikón"
 msgstr "प्लोइओन हालिएउतिकोन"
@@ -588,17 +616,14 @@ msgstr "प्लोइओन हालिएउतिकोन"
 msgid "Ploîon Phortēgikón"
 msgstr "Ploîon Phortēgikón"
 
-msgid "Triḗrēs Athēnaía"
-msgstr "Triḗrēs Athēnaía"
-
-msgid "Athenian Trireme"
-msgstr "سفينة ثلاثيّة المجاديف أثينيّة"
+msgid "Pentēkóntoros"
+msgstr "पेन्तेकोन्तोरोस"
 
 msgid "Lithobólos"
 msgstr "Lithobólos"
 
 msgid "Oxybelḗs"
-msgstr "Skorpion Oxybelēs\n"
+msgstr "پرتابگر تیر اسپارتی"
 
 msgid "Krios"
 msgstr "क्रिओस"
@@ -621,6 +646,9 @@ msgstr "Δοῦλος "
 msgid "Émporos"
 msgstr "एम्पोरोस"
 
+msgid "Briton Catafalque"
+msgstr "Britonisches Katafalk"
+
 msgid "Cassiuellaunos"
 msgstr "कास्सिउएल्लाउनोस"
 
@@ -631,7 +659,7 @@ msgid "Raiding Cavalry"
 msgstr "Plėšikaujanti kavalerija"
 
 msgid "Eporedos"
-msgstr "Cavalier Eporedos"
+msgstr "Eporedos"
 
 msgid "Celtic Cavalry"
 msgstr "സെല്‍റ്റിക്ക് കുതിരപ്പട"
@@ -641,9 +669,6 @@ msgstr "Keltský dvoukolý válečný vůz"
 
 msgid "Essedon"
 msgstr "एस्सेदोन"
-
-msgid "Chariot"
-msgstr "Kereta Kuda Perang"
 
 msgid "Brythonic Champion"
 msgstr "Propugnator Brythonicus"
@@ -682,7 +707,13 @@ msgid "Celtic Spearman"
 msgstr "സെല്‍റ്റിക്ക് കുന്തക്കാരന്‍"
 
 msgid "Catucos"
-msgstr "Catucos"
+msgstr "Talmoris"
+
+msgid "Pontos"
+msgstr "पोन्तोस"
+
+msgid "Briton Fire Ship"
+msgstr "Barco de bombeiros británico"
 
 msgid "Longos"
 msgstr "Longos"
@@ -690,8 +721,8 @@ msgstr "Longos"
 msgid "Nauson"
 msgstr "Nauson"
 
-msgid "Pontos"
-msgstr "पोन्तोस"
+msgid "Skiff"
+msgstr "Roeiboot"
 
 msgid "Molton"
 msgstr "Batterie Molton"
@@ -710,6 +741,9 @@ msgstr "Marchand Uogition"
 
 msgid "Agrocuna"
 msgstr "Dogue Agrocuna"
+
+msgid "Carthaginian Catafalque"
+msgstr "Carthaginian Catafalque"
 
 msgid "Hasdrubal (Quartermaster)"
 msgstr "Hasdrúbal (General de Hannibaʿal)"
@@ -733,7 +767,7 @@ msgid "Ḥayyāl Ḥerev Raḫūv"
 msgstr "Ḥayyāl Ḥerev Raḫūv"
 
 msgid "Iberian Heavy Cavalry"
-msgstr "Iberische schwere Kavallerie"
+msgstr "Schwere iberische Kavallerie"
 
 msgid "Sacred Band Cavalry"
 msgstr "Caballería del Batallón Sagrado."
@@ -810,11 +844,8 @@ msgstr "Seḫīr Ḥerev"
 msgid "Seḫīr Romaḥ"
 msgstr "Seḫīr Romaḥ"
 
-msgid "Bireme"
-msgstr "Dvojveslice (dvouřadá galéra)"
-
-msgid "Du-Mašōt"
-msgstr "Ντουμακότ"
+msgid "Tlat-Mašōt"
+msgstr "Tlat-Mašōt"
 
 msgid "Noon-Mašōt"
 msgstr "Noon-Mašōt"
@@ -828,21 +859,15 @@ msgid ""
 "garrisoned). Gather profitable aquatic treasures. Carthaginians have +25% sea trading "
 "bonus."
 msgstr ""
-"Comercializa mercadoria entre portos. Pode ser guarnecida com comerciantes a bordo para"
-" obter lucros adicionais (+20% lucro por cada comerciante a bordo). Recolhe tesouros "
-"aquáticos rentáveis. Os cartagineses têm um bónus de +25% no comércio marítimo."
+"Comercializa mercadoria entre docas. Pode aquartelar mercadores a bordo para obter "
+"lucros adicionais (+20% lucro por cada mercador a bordo). Recolhe tesouros aquáticos "
+"rentáveis. Os cartagineses têm um bónus de +25% no comércio marítimo."
 
-msgid "Quinquereme"
-msgstr "کشتی جنگی سنگین"
+msgid "Du-Mašōt"
+msgstr "Ντουμακότ"
 
 msgid "Ḥameš-Mašōt"
 msgstr "Ḥameš-Mašōt"
-
-msgid "Trireme"
-msgstr "Trirema (troveslača)"
-
-msgid "Tlat-Mašōt"
-msgstr "Tlat-Mašōt"
 
 msgid "Ballista"
 msgstr "Caiteoir Boltaí"
@@ -859,6 +884,9 @@ msgstr "Kehinit"
 msgid "Mekir"
 msgstr "Mekir"
 
+msgid "Gallic Catafalque"
+msgstr "Gallisches Katafalk"
+
 msgid "Ambiorix"
 msgstr "Ambioriksas"
 
@@ -869,7 +897,7 @@ msgid "Uerouicos"
 msgstr "Noble guerrier Uerouicos"
 
 msgid "Naked Fanatic"
-msgstr "Destrajado Obstinado"
+msgstr "Chiến Binh Cuồng Tín Khỏa Thân"
 
 msgid "Bariogaisatos"
 msgstr "Lancier fou Bariogaisatos"
@@ -898,8 +926,14 @@ msgstr "Viridomarus"
 msgid "Britomaros"
 msgstr "Grand Chef Britomaros"
 
+msgid "Gallic Fire Ship"
+msgstr "Γαλατικό Πυρπολικό Πλοίο"
+
+msgid "Han Catafalque"
+msgstr "Chanský katafalk"
+
 msgid "Emperor Wǔ (Liu Che)"
-msgstr "Wǔ enperadorea (Liu Che)"
+msgstr "Αυτοκράτορας Γου (Λίου Τσε)"
 
 msgid "Gōng Qíbīng"
 msgstr "Gōng Qíbīng jízdní střelec"
@@ -929,7 +963,7 @@ msgid "Yǔ Lín"
 msgstr "Okçu Şampiyon Piyade"
 
 msgid "Juezhang"
-msgstr "Juezhang"
+msgstr "Trương Giác"
 
 msgid "Palace Guard Spearman"
 msgstr "Hasteiru de la guardia palatina"
@@ -941,10 +975,10 @@ msgid "Hán Xìn"
 msgstr "Хань Синь"
 
 msgid "Liú Bāng"
-msgstr "Liú Bāng"
+msgstr "Λιού Μπανγ"
 
 msgid "Wèi Qīng"
-msgstr "Wèi Qīng"
+msgstr "Γουέι Τσινγκ"
 
 msgid "Shè Shǒu"
 msgstr "Okçu Piyade"
@@ -968,8 +1002,8 @@ msgstr "Mızraklı Piyade"
 msgid "Dāo Bīng"
 msgstr "Kılıçlı Piyade"
 
-msgid "Zhàn Chuán"
-msgstr "Çift sıra kürekli Kadırga"
+msgid "Lóu Chuán"
+msgstr "Üç sıra kürekli Kadırga"
 
 msgid "Yú Chuán"
 msgstr "Balıkçı Gemisi"
@@ -977,11 +1011,11 @@ msgstr "Balıkçı Gemisi"
 msgid "Shāng Chuán"
 msgstr "Tüccar Gemisi"
 
+msgid "Zhàn Chuán"
+msgstr "Çift sıra kürekli Kadırga"
+
 msgid "Dà Lóu Chuán"
 msgstr "Beş sıra kürekli Kadırga"
-
-msgid "Lóu Chuán"
-msgstr "Üç sıra kürekli Kadırga"
 
 msgid "Mangonel"
 msgstr "Manganiella"
@@ -990,13 +1024,13 @@ msgid "Tóushí Chē"
 msgstr "Kuşatma Mancınığı kurulmuş"
 
 msgid "Gōngchéng Chuí"
-msgstr "Kuşatma Koçbaşı"
+msgstr "Γκόνγκτσένγ Τσουί"
 
 msgid "Nǔ Chē"
-msgstr "Nǔ Chē"
+msgstr "Νου Τσε"
 
 msgid "Gōngchéng Tǎ"
-msgstr "Kuşatma Kulesi"
+msgstr "Công Thành Tháp"
 
 msgid "Fù Nǚ"
 msgstr "Kadın Vatandaş Yardımcısı"
@@ -1015,15 +1049,18 @@ msgid ""
 "to boost the efficiency of its production queue. Only Han buildings can garrison "
 "ministers."
 msgstr ""
-"Usa per aumentare l'efficienza delle unità e delle strutture vicine. Fai presidiere "
-"delle unitò in una struttura per migliorare l'efficienza della sua coda di produzione. "
-"Solo le strutture han possono avere il presidio di ministri."
+"Χρησιμοποίησε το για να ενισχύσεις την απόδοση των κοντινών μονάδων και κτιρίων. Η "
+"Φρουρά μέσα σε ένα κτίριο μπορεί να ενισχύσει την αποτελεσματικότητα της ουράς "
+"παραγωγής του. Μόνο τα κτίρια των Χαν μπορούν να φρουρούν υπουργούς."
 
 msgid "Minister"
 msgstr "Miniszter"
 
 msgid "Shāngrén"
 msgstr "Tüccar Yardımcısı"
+
+msgid "Iberian Catafalque"
+msgstr "Iberisches Katafalk"
 
 msgid "Mandonius"
 msgstr "Mandoinius"
@@ -1061,6 +1098,9 @@ msgstr "Eztenhagadun"
 msgid "Ezpatari"
 msgstr "Haneztodun"
 
+msgid "Ponti"
+msgstr "Plachetnice"
+
 msgid "Iberian Fire Ship"
 msgstr "Iberiar Brulote Leherkaria"
 
@@ -1069,9 +1109,6 @@ msgstr "Arrantza Ontzi"
 
 msgid "Merkataritza Itsasontzi"
 msgstr "Μαρκαταρίντσα Ιτσαντσοτσί"
-
-msgid "Ponti"
-msgstr "Plachetnice"
 
 msgid "Ahariburu"
 msgstr "Hesi-hausteko"
@@ -1091,6 +1128,9 @@ msgstr "Emakumezko Apaiz de Ataekina"
 msgid "Merkatari"
 msgstr "Mearcataraí"
 
+msgid "Kushite Catafalque"
+msgstr "Kuschitisches Katafalk"
+
 msgid "Shanakdakheto"
 msgstr "Sianadaichéato"
 
@@ -1098,7 +1138,7 @@ msgid "iry hr ssmwtt"
 msgstr "Ири хэр сэсмутэт"
 
 msgid "Napatan Light Cavalry"
-msgstr "Napatanische leichte Kavallerie"
+msgstr "Leichte napatanische Kavallerie"
 
 msgid "Blemmye Desert Raider"
 msgstr "Блеммійський пустельний переслідувач"
@@ -1110,7 +1150,7 @@ msgid "Camel"
 msgstr "Kupranugaris"
 
 msgid "Meroitic Heavy Cavalry"
-msgstr "Meroitische schwere Kavallerie"
+msgstr "Schwere meroitische Kavallerie"
 
 msgid "Htr"
 msgstr "Хэтэр"
@@ -1161,7 +1201,7 @@ msgid "Ḥr-sȝ-it.f Sȝ-mrı͗-I͗mn"
 msgstr "Хэр-са-итэф Са-мэри-Имэн"
 
 msgid "Nastasen"
-msgstr "Nastasen"
+msgstr "नास्तोसेन"
 
 msgid "N-ı͗-s-tȝ-s-nn Kȝ-ʿnḫ-Rʿ"
 msgstr "Ни-и-сэ-та-сэ-нэн Ка-анх-Рэ"
@@ -1179,7 +1219,7 @@ msgid "nhw ʿhȝw Noba"
 msgstr "nhw ʿhȝw nobata"
 
 msgid "Noba Maceman"
-msgstr "Guerreiro com maça nobata"
+msgstr "Luptator Noban cu buzdugan"
 
 msgid "nhw Noba"
 msgstr "nhw nobata"
@@ -1202,6 +1242,9 @@ msgstr "Guerreiro com espada meróitico"
 msgid "knw hps"
 msgstr "Кэну хэпэс"
 
+msgid "shry ʿȝ"
+msgstr "Сэхэри аа"
+
 msgid "Whʿ-rmw"
 msgstr "Уеха-рему"
 
@@ -1210,12 +1253,6 @@ msgstr "Нільський торгівельний баркас"
 
 msgid "Dȝy sbt"
 msgstr "Даи сэбэт"
-
-msgid "Ptolemaic Mercenary Trireme"
-msgstr "Trì-ràmhach shaighdearan-duaise Ptolemaidheach"
-
-msgid "shry ʿȝ"
-msgstr "Сэхэри аа"
 
 msgid "Kushite Siege Tower"
 msgstr "Κουσίτικος Πολιορκητικός Πύργος"
@@ -1241,8 +1278,11 @@ msgstr "Nilotisk handelsmand"
 msgid "rmt sbt"
 msgstr "Рэмэт сэбэт"
 
+msgid "Macedonian Catafalque"
+msgstr "Mazedonisches Katafalk"
+
 msgid "Philip V"
-msgstr "Filipas 5-asis"
+msgstr "Filipe V da Macedónia"
 
 msgid "Odrysian Skirmish Cavalry"
 msgstr "Odryysialainen kahakoitsijaratsuväki"
@@ -1328,14 +1368,14 @@ msgstr "Ροδίτης Εκσφενδονιστής"
 msgid "Sphendonḗtēs Rhódios"
 msgstr "Εκσφενδονιστής Ρόδιος"
 
-msgid "Hemiolos"
-msgstr "Hēmíolos"
+msgid "Tetrērēs"
+msgstr "Trojveslice"
 
 msgid "Triḗrēs Makedonikḗ"
 msgstr "Üç sıra kürekli Kadırga"
 
-msgid "Macedonian Trireme"
-msgstr "Lestr-Teirroeñvek Makedonian"
+msgid "Hemiolos"
+msgstr "Hēmíolos"
 
 msgid "Helépolis"
 msgstr "Helépolis"
@@ -1345,6 +1385,9 @@ msgstr "Гѝни македоникѝ"
 
 msgid "Macedonian Woman"
 msgstr "Boireannach Masadonach"
+
+msgid "Mauryan Catafalque"
+msgstr "Mauryanisches Katafalk"
 
 msgid "Bindusara"
 msgstr "Μπιντουσάρα"
@@ -1414,7 +1457,7 @@ msgid "Chandragupta Maurya"
 msgstr "Chandragupta Mauraidhea"
 
 msgid "This gives Chandragupta Maurya his War Elephant."
-msgstr "Esto apurre a Candragupta Maurya l sou elephante de guerra."
+msgstr "Αυτό δίνει στον Τσαντραγκούπτα Μαουρύα τον πολεμικό του ελέφαντα."
 
 msgid "Longbowman"
 msgstr "Lokostrelec z dolgim lokom"
@@ -1486,7 +1529,7 @@ msgid "Thōrakitēs"
 msgstr "Thōrakitēs"
 
 msgid "Heavy Skirmisher"
-msgstr "Sunkusis skirmišeris"
+msgstr "Thủ Tiễn Quân Hạng Nặng"
 
 msgid "Thyreophoros"
 msgstr "Thyreophoros"
@@ -1499,6 +1542,9 @@ msgstr "Pertsiar Lantzaren Eroalea"
 
 msgid "Arštibara"
 msgstr "Αρστιμπάρα"
+
+msgid "Persian Catafalque"
+msgstr "Persisches Katafalk"
 
 msgid "Artaxšaçā"
 msgstr "Артаксеркса"
@@ -1516,7 +1562,7 @@ msgid "Asabāra Varkaniya"
 msgstr "Αζαμπάρα Βαρκανίγια"
 
 msgid "Median Light Cavalry"
-msgstr "Medische leichte Kavallerie"
+msgstr "Leichte medische Kavallerie"
 
 msgid "Asabāra Māda"
 msgstr "Αζαμπάρα Μάδα"
@@ -1534,7 +1580,7 @@ msgid "Asabāra Baxtriš"
 msgstr "Αζαμπάρα Μπακτρίς"
 
 msgid "Bactrian Heavy Cavalry Archer"
-msgstr "Baktrischer schwerer berittene Bogenschütze"
+msgstr "Schwerer berittene baktrischer Bogenschütze"
 
 msgid "Babylonian Scythed Chariot"
 msgstr "Babylonský dvoukolý válečný vůz s kosami"
@@ -1555,7 +1601,7 @@ msgid "Immortal"
 msgstr "Lèine-chrios neo-bhàsmhor"
 
 msgid "Switch to using the bow and arrow."
-msgstr "Перейдіть на використання лука та стріл."
+msgstr "Превключване към ползване на лък и стрела."
 
 msgid "Switch to using a spear and shield."
 msgstr "Passa all'utilizzo di una lancia e uno scudo."
@@ -1594,7 +1640,7 @@ msgid "Shield Bearer"
 msgstr "Porteur de bouclier"
 
 msgid "Sparabara"
-msgstr "Σπαραμπάρα"
+msgstr "स्पाराबारा"
 
 msgid "Cardaces Hoplite"
 msgstr "Persli Ağır Mızraklı Piyade"
@@ -1606,13 +1652,10 @@ msgid "Cardaces Skirmisher"
 msgstr "Infanteria lleugera Cardaces"
 
 msgid "Peltastes Kardakes"
-msgstr "Kardaski lahki pehotnik"
+msgstr "पेल्तास्तेस कार्दाकेस"
 
-msgid "Cypriot Galley"
-msgstr "Long-fhada Chìoprasach"
-
-msgid "Hamaraniyanava"
-msgstr "Hamaraniyanava"
+msgid "Hamaraniyanava Vazarka"
+msgstr "Hamaraniyanava Vazarka"
 
 msgid "Masiyakara"
 msgstr "Masiyakara"
@@ -1623,11 +1666,8 @@ msgstr "Іонійський торгівельний корабель"
 msgid "Nauš Yauna"
 msgstr "ناعوش یاعونا"
 
-msgid "Phoenician Trireme"
-msgstr "Lestr-Teirroeñvek Fenikianeg"
-
-msgid "Hamaraniyanava Vazarka"
-msgstr "Hamaraniyanava Vazarka"
+msgid "Hamaraniyanava"
+msgstr "Hamaraniyanava"
 
 msgid "Assyrian Siege Ram"
 msgstr "Assyrischer Belagerungsrammbock"
@@ -1658,7 +1698,19 @@ msgid ""
 " land trading bonus."
 msgstr ""
 "Handle mit Ressourcen zwischen deinen eigenen Märkten und denen deiner Verbündeten. "
-"Perser haben einen Bonus in Höhe von +25 % für den Handel auf dem Landweg."
+"Perser haben einen Bonus in Höhe von +25 % für den Handel auf dem Landweg."
+
+msgid "Rhodian Marauder"
+msgstr "Rhodischer Plünderer"
+
+msgid "Blockade Runner"
+msgstr "Corredor de bloqueio"
+
+msgid "Treasure Ship"
+msgstr "Schattransportschip"
+
+msgid "Destroy this ship to loot its large amount of treasure."
+msgstr "Καταστρέψτε αυτό το πλοίο για να λεηλατήσεις τη μεγάλη ποσότητα του θησαυρού του."
 
 msgid "Cilician Pirate Ship"
 msgstr "Киликийский пиратский корабль"
@@ -1673,6 +1725,9 @@ msgstr "هواپیمای جنگنده پی-۵۱"
 msgid "A World War II American fighter plane."
 msgstr "Ένα αμερικάνικο μαχητικό αεροπλάνο του Β΄ Παγκοσμίου Πολέμου."
 
+msgid "Ptolemaic Catafalque"
+msgstr "Ptolemaiovský katafalk"
+
 msgid "Ptolemy III Euergetes (Benefactor)"
 msgstr "Ptolemaîos G΄ ho Euergétēs (el Bienfeiꞇhor)"
 
@@ -1683,16 +1738,16 @@ msgid "Mutsābiq Gamal Nabatu"
 msgstr "Μουτσέμπι Γκάμαλ Νάμπατσου"
 
 msgid "Tarantine Settler Cavalry"
-msgstr "Tarantinska kolonizacijska konjenica"
+msgstr "Кавалерія тарентійських поселенців"
 
 msgid "Hippeús Tarantînos"
-msgstr "Hippeús Tarantînos"
+msgstr "हिप्पेउस तारांतिनोस"
 
 msgid "Macedonian Settler Cavalry"
 msgstr "Makedonialainen uudisasukasratsuväki"
 
 msgid "Hippeús Makedonikós"
-msgstr "Хипеу̀с македонико̀с"
+msgstr "हिप्पेउस माकेदोनिकोस"
 
 msgid "Royal Guard Cavalry"
 msgstr "Karališkosios sargybos kavalerija"
@@ -1716,7 +1771,7 @@ msgid "Juggernaut"
 msgstr "Kaiken tieltään tuhoava voima"
 
 msgid "Tessarakonterēs"
-msgstr "Tessarakonterēs"
+msgstr "तेस्साराकोन्तेरेस"
 
 msgid "Cleopatra VII"
 msgstr "Cleopatra VII Philópator"
@@ -1752,7 +1807,7 @@ msgid "Judean Slinger"
 msgstr "Judėjų svaidyklininkas"
 
 msgid "Hebraikós Sphendonḗtēs"
-msgstr "Εβραϊκός Εκσφενδονιστής"
+msgstr "हेब्राइकोस स्फेंदोनेतेस"
 
 msgid "Mercenary Thureos Spearman"
 msgstr "Žoldnéřský bojovník s oštěpem nesoucí oválný štít (thureos)"
@@ -1761,16 +1816,16 @@ msgid "Thureophóros Misthophóros"
 msgstr "Thureophóros Misthophóros"
 
 msgid "Gallikós Mistophorós"
-msgstr "Gallikós Mistophorós"
+msgstr "गाल्लिकोस मिस्तोफोरोस"
+
+msgid "Pentērēs"
+msgstr "Pentere (Pentērēs)"
 
 msgid "Dierēs"
 msgstr "希腊双列桨战船"
 
-msgid "Octḗrēs"
-msgstr "托勒密五列桨战船"
-
-msgid "Pentḗrēs"
-msgstr "Пентѝрис"
+msgid "Octērēs"
+msgstr "Osmiveslice"
 
 msgid "Polybolos"
 msgstr "Catapultă Antică Grecească"
@@ -1781,23 +1836,35 @@ msgstr "Гѝни айгѝптия"
 msgid "Egyptian Woman"
 msgstr "Boireannach Èipheiteach"
 
+msgid "Roman Catafalque"
+msgstr "Römisches Katafalk"
+
 msgid "Lūcius Iūnius Brūtus"
 msgstr "Λούσιος Τζούνιος Βρούτος"
+
+msgid "Auxiliary Cavalry"
+msgstr "Cavalleria Ausiliaria"
+
+msgid "Eques Alaris"
+msgstr "Cabaleiro Alado (Eques Alaris)"
+
+msgid "Auxiliary"
+msgstr "Hulptroepen"
 
 msgid "Allied Cavalry"
 msgstr "Sprzymierzona kawaleria"
 
 msgid "Eques Socius"
-msgstr "Zavezniški vitez"
+msgstr "Zavezniški konjenik"
 
 msgid "Roman Cavalry"
 msgstr "Zalditeri Erromatarra"
 
 msgid "Eques Rōmānus"
-msgstr "Eques Rōmānus"
+msgstr "Rimski konjenik"
 
 msgid "Eques Cōnsulāris"
-msgstr "Εξές Κονσουλάριος"
+msgstr "एक्वेस कोनसुलारिस"
 
 msgid "Consular Bodyguard"
 msgstr "Pengawal Keselamatan Konsul"
@@ -1812,7 +1879,7 @@ msgid "Hoplomachus"
 msgstr "Hoplomachus"
 
 msgid "Gladiator Swordsman"
-msgstr "Prajurit Pedang Gladiator"
+msgstr "Gladiatoren-Schwertkämpfer"
 
 msgid "Murmillo"
 msgstr "Mirmillone"
@@ -1841,6 +1908,16 @@ msgstr "Pretoriaanikaartin vartija"
 msgid "Praetorianus"
 msgstr "Kılıçlı Şampiyon Piyade"
 
+msgid ""
+"Centurions may be promoted from elite melee citizen infantry, and train from the "
+"Fortress after Marian Reforms."
+msgstr ""
+"Los centuriones pueden ser promocionados desde infantería de ciudadanos cuerpo a cuerpo"
+" de élite, y pueden ser reclutados desde fortalezas después tras las Reformas de Mario."
+
+msgid "Centurion"
+msgstr "Εκατόνταρχος"
+
 msgid "Mārcus Claudius Mārcellus"
 msgstr "Quan Chấp Chính Tối Cao Gaius Claudius Marcellus"
 
@@ -1849,6 +1926,15 @@ msgstr "Куинтус Фабиус Максимус Веррукозус Кун
 
 msgid "Pūblius Cornēlius Scīpiō Āfricānus"
 msgstr "Pūblius Cornēlius Scīpiō Āfricānus"
+
+msgid "Legionary Skirmisher"
+msgstr "Schermagliatore Legionario"
+
+msgid "Antesignānus"
+msgstr "Antesígnio (Antesignānus)"
+
+msgid "Legionary"
+msgstr "Λεγεωνάριος"
 
 msgid "Roman Skirmisher"
 msgstr "Infanteria lleugera romana"
@@ -1863,7 +1949,7 @@ msgid "Triārius"
 msgstr "Τριάριους"
 
 msgid "Elite rank Spearmen can be promoted to champion Centurions."
-msgstr "Speervechters met elite rang kunnen bevorderd worden tot Kampioen Centurion."
+msgstr "Os lanceiros com patente de elite podem ser promovidos a centuriões campeões."
 
 msgid "Give this combat veteran the rank of Centurion."
 msgstr "Assegna a questo veterano del combattimento il grado di Centurione."
@@ -1875,13 +1961,13 @@ msgid "Hastātus"
 msgstr "Hastātus"
 
 msgid "Elite rank Swordsmen can be promoted to champion Centurions."
-msgstr "Zwaardvechters met elite rang kunnen bevorderd worden tot Kampioen Centurion."
+msgstr "Luptatorii de elită cu spada pot fi promovati la nivel de Centurioni campioni. "
 
 msgid "Servus"
 msgstr "Esclave"
 
-msgid "Liburna"
-msgstr "Libúrnica"
+msgid "Trirēmis Rōmāna"
+msgstr "त्रिरेमीस रोमाना"
 
 msgid "Nāvicula Piscātōria"
 msgstr "नाविकुला पिस्कातोरिआ"
@@ -1889,20 +1975,22 @@ msgstr "नाविकुला पिस्कातोरिआ"
 msgid "Corbīta"
 msgstr "कोर्बिता"
 
+msgid "Quadrirēmis Rōmāna"
+msgstr "Quadrirēmis Rōmāna"
+
+msgid "Liburna"
+msgstr "Libúrnica"
+
 msgid "Quīnquerēmis Rōmāna"
 msgstr "क्विनक्वेरेमिस रोमाना"
 
-msgid "Roman Quinquereme"
-msgstr "Romiešu četru klāju galēra"
-
-msgid "Trirēmis Rōmāna"
-msgstr "त्रिरेमीस रोमाना"
-
-msgid "Roman Trireme"
-msgstr "Lestr-Teirroeñvek Roman"
-
 msgid "Onager"
 msgstr "گوره خر کوجک"
+
+msgid "An area of effect siege unit unlocked by Marian Reforms."
+msgstr ""
+"Eine Belagerungseinheit mit Flächenwirkung, welche durch die marianische Heeresreform "
+"freigeschaltet wurde."
 
 msgid "Ariēs"
 msgstr "Máy Công Thành"
@@ -1926,7 +2014,7 @@ msgid "Plebeian Merchant"
 msgstr "Plebeiisk handelsmann"
 
 msgid "Mercātor"
-msgstr "Mercātor"
+msgstr "मेर्कातोर"
 
 msgid "Samnite Skirmisher"
 msgstr "Infanteria lleugera samnita"
@@ -1936,6 +2024,9 @@ msgstr "Samnitský bojovník s oštěpem"
 
 msgid "Samnite Swordsman"
 msgstr "Samnitischer Schwertkämpfer"
+
+msgid "Seleucid Catafalque"
+msgstr "Seleukidisches Katafalk"
 
 msgid "Antiochus I Soter (Savior)"
 msgstr "Aintíochas I 'Soter' (Slánaithe)"
@@ -1986,7 +2077,7 @@ msgid "Thorakitès Rhomaïkós"
 msgstr "Thorakitès Rhomaïkós"
 
 msgid "Antiochus III the Great"
-msgstr "Antiochus III Uaibhreach"
+msgstr "Antiochus al III-lea cel Mare"
 
 msgid "Antiokhos G' Megas"
 msgstr "Antíoco III el Grande"
@@ -2033,20 +2124,23 @@ msgstr "Thrácký žoldnéřský bojovník s mečem"
 msgid "Rhomphaiaphoros Thrakikós"
 msgstr "Rhomphaiaphoros Thrakikós"
 
-msgid "Pentères"
-msgstr "Pentérész"
-
 msgid "Seleukidó̱n Triērēs"
 msgstr "Seleukidó̱n Triērēs"
 
-msgid "Seleucid Trireme"
-msgstr "Lestr-Teirroeñvek Seleukid"
+msgid "Seleukidó̱n Tetrērēs"
+msgstr "Seleukidó̱n Tetrērēs"
+
+msgid "Pentères"
+msgstr "Pentérész"
 
 msgid "Syrías Gýnē"
 msgstr "Сирѝас гѝни"
 
 msgid "Syrian Woman"
 msgstr "Boireannach Siridheach"
+
+msgid "Spartan Catafalque"
+msgstr "Spartanisches Katafalk"
 
 msgid "Lycurgus"
 msgstr "Lider Spartan"
@@ -2074,6 +2168,9 @@ msgstr "Spartalı Ağır Mızraklı Piyade"
 
 msgid "Spartiátēs"
 msgstr "Spartijates"
+
+msgid "Spartan Olympic Hoplite"
+msgstr "Spartanischer Olympischer Holpit"
 
 msgid "Skiritai Commando"
 msgstr "Szkiritész elit könnyűgyalogos"
@@ -2107,6 +2204,12 @@ msgstr "Perioikoi Ağır Mızraklı Piyade"
 
 msgid "Hoplítēs Períoikos"
 msgstr "Hoplī́tās Períoikos"
+
+msgid "Neodamodes Hoplite"
+msgstr "Neodamodischer Hoplit"
+
+msgid "Neodamōdeis"
+msgstr "Neodamōdeis (Novos cidadans)"
 
 msgid "Triḗrēs"
 msgstr "Triḗrēs"

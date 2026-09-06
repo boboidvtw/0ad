@@ -1,29 +1,29 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2023 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# AceLan Kao
-# CAGD_lulofun滷肉飯
-# DanSnow
-# Ezekiel Hirschmann
-# Karinsu Hsu
-# Yuan Chang
-# 黃柏諺
-# Jonathan Chin
-# Mysterelee
-# neil000
-# nigelinux
-# Shoichi Chou
-# StarAtt
-# 又齊 劉
-# 胡椒牛肉
+# AceLan Kao, 2018
+# CAGD_lulofun滷肉飯, 2019
+# DanSnow, 2014
+# Ezekiel Hirschmann, 2020
+# Karinsu Hsu, 2018
+# Yuan Chang, 2017
+# 黃柏諺, 2014-2017
+# Jonathan Chin, 2017
+# Mysterelee, 2014
+# neil000, 2017
+# nigelinux, 2016
+# Shoichi Chou, 2018,2021
+# StarAtt, 2019,2021
+# 又齊 劉, 2018
+# 胡椒牛肉, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2023-03-20 08:08+0000\n"
+"POT-Creation-Date: 2024-07-26 13:41+0000\n"
 "PO-Revision-Date: 2014-06-19 17:54+0000\n"
-"Last-Translator: Yuan Chang <daan0014119@gmail.com>, 2022-2023\n"
+"Last-Translator: Yuan Chang, 2022-2024\n"
 "Language-Team: Chinese (Taiwan) (http://app.transifex.com/wildfire-games/0ad/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -140,19 +140,19 @@ msgstr "Emporion"
 msgid "Prophylagma"
 msgstr "Prophylagma"
 
-#: simulation/templates/structures/athen/prytaneion.xml:22
+#: simulation/templates/structures/athen/prytaneion.xml:25
 msgid "Council Chamber"
 msgstr "會議室"
 
-#: simulation/templates/structures/athen/prytaneion.xml:23
+#: simulation/templates/structures/athen/prytaneion.xml:26
 msgid "Prytaneion"
 msgstr "Prytaneion"
 
-#: simulation/templates/structures/athen/prytaneion.xml:24
+#: simulation/templates/structures/athen/prytaneion.xml:27
 msgid "Train Heroes and research technologies."
 msgstr "訓練英雄及研發科技。"
 
-#: simulation/templates/structures/athen/prytaneion.xml:26
+#: simulation/templates/structures/athen/prytaneion.xml:29
 #: simulation/templates/structures/gaul/assembly.xml:31
 #: simulation/templates/structures/spart/gerousia.xml:26
 msgid "Council"
@@ -341,6 +341,10 @@ msgstr "訓練英雄。進駐士兵以增加箭數。"
 msgid "Tegia"
 msgstr "Tegia"
 
+#: simulation/templates/structures/brit/kennel.xml:5
+msgid "Cunattegia"
+msgstr "Cunattegia"
+
 #: simulation/templates/structures/brit/market.xml:12
 #: simulation/templates/structures/gaul/market.xml:12
 msgid "Magos"
@@ -467,6 +471,11 @@ msgstr "Šadd"
 msgid "Ḥamet"
 msgstr "Ḥamet"
 
+#: simulation/templates/structures/cart/house.xml:16
+msgid ""
+"Add a second story to make an Apartment with a greater population bonus."
+msgstr "添加第二層樓，使公寓擁有更多的人口加成。"
+
 #: simulation/templates/structures/cart/market.xml:12
 msgid "Šūq"
 msgstr "Šūq"
@@ -514,8 +523,8 @@ msgid "Maqdaš"
 msgstr "Maqdaš"
 
 #: simulation/templates/structures/cart/temple.xml:10
-msgid "Train Healers and Champion Infantry and research healing technologies."
-msgstr "訓練治療者與鬥士步兵及研發治療科技。"
+msgid "Train Healers and Champions, and research healing technologies."
+msgstr "訓練治療者和鬥士，與研發治療科技。"
 
 #: simulation/templates/structures/cart/tophet.xml:18
 msgid "Sacrificial Temple"
@@ -566,39 +575,6 @@ msgstr "多立克柱"
 msgid "Fallen Doric Column"
 msgstr "倒下的多立克柱"
 
-#: simulation/templates/structures/farmstead_field_wheat.xml:7
-#: simulation/templates/structures/generic_field.xml:8
-msgid "Wheat Field"
-msgstr "麥田"
-
-#: simulation/templates/structures/athen/farmstead.xml:11
-#: simulation/templates/structures/farmstead_greek.xml:8
-#: simulation/templates/structures/mace/farmstead.xml:11
-#: simulation/templates/structures/ptol/farmstead.xml:8
-#: simulation/templates/structures/sele/farmstead.xml:8
-#: simulation/templates/structures/spart/farmstead.xml:11
-msgid "Epoikion"
-msgstr "Epoikion"
-
-#: simulation/templates/structures/farmstead_indian.xml:8
-#: simulation/templates/structures/maur/farmstead.xml:11
-msgid "Kantu"
-msgstr "Kantu"
-
-#: simulation/templates/structures/farmstead_italian.xml:8
-msgid "Villa"
-msgstr "別墅"
-
-#: simulation/templates/structures/farmstead_middle_eastern.xml:9
-#: simulation/templates/structures/pers/farmstead.xml:8
-msgid "Kaštašta"
-msgstr "Kaštašta"
-
-#: simulation/templates/structures/brit/rotarymill.xml:5
-#: simulation/templates/structures/farmstead_temperate_europe.xml:4
-msgid "Melonas"
-msgstr "Melonas"
-
 #: simulation/templates/structures/fence_long.xml:14
 #: simulation/templates/structures/fence_short.xml:14
 msgid "Fence"
@@ -608,12 +584,31 @@ msgstr "籬笆"
 msgid "Long Wooden Fence"
 msgstr "長木籬笆"
 
+#: simulation/templates/structures/fence_rock_long.xml:12
+#: simulation/templates/structures/fence_rock_long.xml:13
+#: simulation/templates/structures/fence_rock_medium.xml:12
+#: simulation/templates/structures/fence_rock_medium.xml:13
+#: simulation/templates/structures/fence_rock_short.xml:12
+#: simulation/templates/structures/fence_rock_short.xml:13
+#: simulation/templates/structures/fence_rock_stub.xml:12
+#: simulation/templates/structures/fence_rock_stub.xml:13
+msgid "Rock Fence"
+msgstr "石頭圍籬"
+
 #: simulation/templates/structures/fence_short.xml:15
 msgid "Short Wooden Fence"
 msgstr "短木籬笆"
 
 #: simulation/templates/structures/fence_stone.xml:14
 #: simulation/templates/structures/fence_stone.xml:15
+#: simulation/templates/structures/fence_stone_long.xml:12
+#: simulation/templates/structures/fence_stone_long.xml:13
+#: simulation/templates/structures/fence_stone_medium.xml:12
+#: simulation/templates/structures/fence_stone_medium.xml:13
+#: simulation/templates/structures/fence_stone_short.xml:12
+#: simulation/templates/structures/fence_stone_short.xml:13
+#: simulation/templates/structures/fence_stone_stub.xml:12
+#: simulation/templates/structures/fence_stone_stub.xml:13
 msgid "Stone Fence"
 msgstr "石頭圍籬"
 
@@ -656,6 +651,11 @@ msgstr "科朗聖所"
 #: simulation/templates/structures/gaul/wonder.xml:10
 msgid "Celicnon"
 msgstr "賽里克農"
+
+#: simulation/templates/structures/generic_field.xml:8
+#: simulation/templates/structures/mill_field_wheat.xml:6
+msgid "Wheat Field"
+msgstr "麥田"
 
 #: simulation/templates/structures/han/academy.xml:27
 msgid "Imperial Academy"
@@ -738,11 +738,11 @@ msgstr "碼頭"
 msgid "Nóng Shè"
 msgstr "農舍"
 
-#: simulation/templates/structures/han/field.xml:15
+#: simulation/templates/structures/han/field.xml:18
 msgid "Dàotián"
 msgstr "稻田"
 
-#: simulation/templates/structures/han/field.xml:16
+#: simulation/templates/structures/han/field.xml:19
 msgid "Rice Paddy"
 msgstr "稻田"
 
@@ -1013,10 +1013,6 @@ msgstr "Mryt"
 msgid "Ỉḥ Abu"
 msgstr "Ỉḥ Abu"
 
-#: simulation/templates/structures/kush/farmstead.xml:9
-msgid "snwt"
-msgstr "snwt"
-
 #: simulation/templates/structures/kush/field.xml:5
 msgid "sht"
 msgstr "sht"
@@ -1103,19 +1099,19 @@ msgstr "訓練治療者與阿培德馬克鬥士及研發治療科技。"
 msgid "TempleOfApedemak"
 msgstr "阿培德馬克神殿"
 
-#: simulation/templates/structures/kush/temple_amun.xml:27
+#: simulation/templates/structures/kush/temple_amun.xml:30
 msgid "Grand Temple of Amun"
 msgstr "大阿蒙神神廟"
 
-#: simulation/templates/structures/kush/temple_amun.xml:28
+#: simulation/templates/structures/kush/temple_amun.xml:31
 msgid "Pr-ʿImn"
 msgstr "Pr-ʿImn"
 
-#: simulation/templates/structures/kush/temple_amun.xml:29
+#: simulation/templates/structures/kush/temple_amun.xml:32
 msgid "Train Amun Champions and Elite Healers. Research healing technologies."
 msgstr "訓練阿蒙鬥士與菁英治療者。研發治療科技。"
 
-#: simulation/templates/structures/kush/temple_amun.xml:31
+#: simulation/templates/structures/kush/temple_amun.xml:34
 msgid "TempleOfAmun"
 msgstr "阿蒙神神殿"
 
@@ -1197,21 +1193,19 @@ msgstr "Vipana"
 msgid "Uparaksana"
 msgstr "Uparaksana"
 
-#: simulation/templates/structures/maur/palace.xml:19
-#: simulation/templates/structures/maur/palace.xml:23
-#: simulation/templates/structures/pers/apadana.xml:30
-#: simulation/templates/structures/pers/tacara.xml:23
-#: simulation/templates/structures/pers/tacara.xml:26
+#: simulation/templates/structures/maur/palace.xml:20
+#: simulation/templates/structures/maur/palace.xml:26
+#: simulation/templates/structures/pers/tachara.xml:33
 msgid "Palace"
 msgstr "宮殿"
 
-#: simulation/templates/structures/maur/palace.xml:20
+#: simulation/templates/structures/maur/palace.xml:21
 msgid "Harmya"
 msgstr "Harmya"
 
-#: simulation/templates/structures/maur/palace.xml:21
-msgid "Territory root. Train Maiden Guards and Heroes."
-msgstr "領土地基。訓練少女衛隊與英雄。"
+#: simulation/templates/structures/maur/palace.xml:30
+msgid "Train Heroes and their Poison Maiden Guards. Territory root."
+msgstr "訓練英雄和他們的毒女衛士。領土地基。"
 
 #: simulation/templates/structures/maur/pillar_ashoka.xml:32
 msgid "Edict Pillar of Ashoka"
@@ -1290,6 +1284,40 @@ msgstr "Stratopedeia Misthophorōn"
 msgid "Capture this structure to train mercenaries from Hellenistic Egypt."
 msgstr "占領此建築以訓練來自希臘化埃及的傭兵。"
 
+#: simulation/templates/structures/kush/farmstead.xml:9
+#: simulation/templates/structures/mill_desert.xml:8
+#: simulation/templates/structures/mill_saharan.xml:8
+msgid "snwt"
+msgstr "snwt"
+
+#: simulation/templates/structures/athen/farmstead.xml:11
+#: simulation/templates/structures/mace/farmstead.xml:11
+#: simulation/templates/structures/mill_greek.xml:8
+#: simulation/templates/structures/ptol/farmstead.xml:8
+#: simulation/templates/structures/sele/farmstead.xml:8
+#: simulation/templates/structures/spart/farmstead.xml:11
+msgid "Epoikion"
+msgstr "Epoikion"
+
+#: simulation/templates/structures/maur/farmstead.xml:11
+#: simulation/templates/structures/mill_indian.xml:8
+msgid "Kantu"
+msgstr "Kantu"
+
+#: simulation/templates/structures/mill_italian.xml:8
+msgid "Villa"
+msgstr "別墅"
+
+#: simulation/templates/structures/mill_middle_eastern.xml:8
+#: simulation/templates/structures/pers/farmstead.xml:8
+msgid "Kaštašta"
+msgstr "Kaštašta"
+
+#: simulation/templates/structures/brit/rotarymill.xml:5
+#: simulation/templates/structures/mill_temperate_europe.xml:4
+msgid "Melonas"
+msgstr "Melonas"
+
 #: simulation/templates/structures/obelisk.xml:11
 msgid "Obelisk"
 msgstr "方尖碑"
@@ -1332,19 +1360,6 @@ msgstr "高尖刺"
 msgid "Watchtower"
 msgstr "瞭望塔"
 
-#: simulation/templates/structures/pers/apadana.xml:26
-msgid "Throne Hall"
-msgstr "皇室會館"
-
-#: simulation/templates/structures/pers/apadana.xml:27
-msgid "Apadāna"
-msgstr "Apadāna"
-
-#: simulation/templates/structures/pers/apadana.xml:28
-#: simulation/templates/structures/spart/syssiton.xml:25
-msgid "Train Champions and Heroes."
-msgstr "訓練鬥士與英雄。"
-
 #: simulation/templates/structures/pers/apartment_block.xml:12
 msgid "Apartment Block"
 msgstr "樓房"
@@ -1353,11 +1368,11 @@ msgstr "樓房"
 msgid "Padgan"
 msgstr "Padgan"
 
-#: simulation/templates/structures/pers/civil_centre.xml:8
+#: simulation/templates/structures/pers/civil_centre.xml:12
 msgid "Provincial Governor"
 msgstr "省長"
 
-#: simulation/templates/structures/pers/civil_centre.xml:9
+#: simulation/templates/structures/pers/civil_centre.xml:13
 msgid "Xšaçapāvan"
 msgstr "Xšaçapāvan"
 
@@ -1436,9 +1451,33 @@ msgstr "Paraspa"
 msgid "Asiyah"
 msgstr "Asiyah"
 
-#: simulation/templates/structures/pers/tacara.xml:24
+#: simulation/templates/structures/pers/tachara.xml:29
+msgid "Winter Palace"
+msgstr "冬宮"
+
+#: simulation/templates/structures/pers/tachara.xml:30
 msgid "Taçara"
 msgstr "Taçara"
+
+#: simulation/templates/structures/pers/tachara.xml:31
+msgid "Train Heroes and make use of the “Satrapy Tribute” feature."
+msgstr "訓練英雄並能使用「總督朝貢」功能。"
+
+#: simulation/templates/structures/pers/tachara.xml:81
+msgid "Receive free Food tribute to your treasury from your subject peoples."
+msgstr "從您的臣民那裡收到免費的食物貢品到您的收藏中。"
+
+#: simulation/templates/structures/pers/tachara.xml:86
+msgid "Receive free Wood tribute to your treasury from your subject peoples."
+msgstr "從您的臣民那裡收到免費的木材貢品到您的收藏中。"
+
+#: simulation/templates/structures/pers/tachara.xml:91
+msgid "Receive free Stone tribute to your treasury from your subject peoples."
+msgstr "從您的臣民那裡收到免費的石頭貢品到您的收藏中。"
+
+#: simulation/templates/structures/pers/tachara.xml:96
+msgid "Receive free Metal tribute to your treasury from your subject peoples."
+msgstr "從您的臣民那裡收到免費的金屬貢品到您的收藏中。"
 
 #: simulation/templates/structures/pers/temple.xml:12
 msgid "Āyadanam"
@@ -1462,6 +1501,10 @@ msgstr "倉庫"
 #: simulation/templates/structures/pers/wonder.xml:9
 msgid "Hanging Gardens of Babylon"
 msgstr "巴比倫空中花園"
+
+#: simulation/templates/structures/pirates/dock.xml:8
+msgid "Pirate Port"
+msgstr "海盜港"
 
 #: simulation/templates/structures/ptol/elephant_stable.xml:5
 #: simulation/templates/structures/sele/elephant_stable.xml:5
@@ -1498,6 +1541,18 @@ msgstr "可以建造在中立地帶的類軍營廉價建築，不會影響領土
 msgid "Klērouchia"
 msgstr "Klērouchia"
 
+#: simulation/templates/structures/ptol/temple_2.xml:24
+msgid "Temple of Isis"
+msgstr "伊西斯神廟"
+
+#: simulation/templates/structures/ptol/temple_2.xml:26
+msgid "Train Heroes and Healers. Research special technologies."
+msgstr "訓練英雄與治療者。研發特殊科技。"
+
+#: simulation/templates/structures/ptol/temple_2.xml:28
+msgid "TempleOfIsis"
+msgstr "伊西斯神廟"
+
 #: simulation/templates/structures/ptol/tower_artillery.xml:9
 msgid "mktr-n-ḏw"
 msgstr "mktr-n-ḏw"
@@ -1532,9 +1587,9 @@ msgstr "Castra"
 
 #: simulation/templates/structures/rome/army_camp.xml:73
 msgid ""
-"Build in neutral or enemy territory. Train Advanced Melee Infantry. "
-"Construct Rams. Garrison Soldiers for additional arrows."
-msgstr "在中立或敵方領土上建造。訓練高等近戰步兵，建造衝撞車。進駐士兵將會增加射出的箭支。"
+"Build in neutral or enemy territory. Train Advanced Melee Infantry and "
+"Marian Legionaries. Construct Rams. Garrison Soldiers for additional arrows."
+msgstr "在中立或敵方領土上建造。訓練高級近戰步兵和馬略軍團。建造衝撞車。駐軍士兵可獲得額外的箭。"
 
 #: simulation/templates/structures/rome/army_camp.xml:31
 #: simulation/templates/structures/rome/army_camp.xml:75
@@ -1717,6 +1772,10 @@ msgstr "柱廊"
 msgid "Corinthian Colonnade"
 msgstr "科林斯柱廊 "
 
+#: simulation/templates/structures/shrine_celtic.xml:9
+msgid "Henge"
+msgstr "巨石陣"
+
 #: simulation/templates/structures/shrine_chinese.xml:9
 msgid "Bǎotǎ"
 msgstr "寶塔"
@@ -1729,7 +1788,7 @@ msgstr "聖殿亭"
 #: simulation/templates/structures/athen/temple.xml:9
 #: simulation/templates/structures/mace/temple.xml:9
 #: simulation/templates/structures/ptol/temple.xml:12
-#: simulation/templates/structures/ptol/temple_2.xml:11
+#: simulation/templates/structures/ptol/temple_2.xml:25
 #: simulation/templates/structures/sele/temple.xml:9
 #: simulation/templates/structures/shrine_greek_01.xml:9
 #: simulation/templates/structures/shrine_greek_02.xml:9
@@ -1741,6 +1800,10 @@ msgstr "Naos"
 msgid "Aedēs Sanitatem"
 msgstr "Aedēs Sanitatem"
 
+#: simulation/templates/structures/shrine_persian.xml:9
+msgid "Fire Temple"
+msgstr "火神廟"
+
 #: simulation/templates/structures/spart/gerousia.xml:22
 msgid "Spartan Senate"
 msgstr "斯巴達元老院"
@@ -1750,8 +1813,8 @@ msgid "Gerousia"
 msgstr "Gerousia"
 
 #: simulation/templates/structures/spart/gerousia.xml:24
-msgid "Train Heroes."
-msgstr "訓練英雄。"
+msgid "Research technologies."
+msgstr "研發科技。"
 
 #: simulation/templates/structures/spart/persian_stoa.xml:9
 msgid "\\\"Persian\\\" Stoa"
@@ -1768,6 +1831,10 @@ msgstr "軍事交誼廳"
 #: simulation/templates/structures/spart/syssiton.xml:24
 msgid "Syssition"
 msgstr "Syssition"
+
+#: simulation/templates/structures/spart/syssiton.xml:25
+msgid "Train Champions and Heroes."
+msgstr "訓練鬥士與英雄。"
 
 #: simulation/templates/structures/spart/syssiton.xml:27
 msgid "Syssiton"
@@ -1917,11 +1984,13 @@ msgstr "房舍"
 
 #: simulation/templates/structures/kush/pyramid_small.xml:26
 #: simulation/templates/structures/pers/ice_house.xml:27
+#: simulation/templates/structures/spart/syssiton.xml:27
 #: simulation/templates/template_structure_civic_house.xml:28
 #: simulation/templates/template_structure_economic_farmstead.xml:30
 #: simulation/templates/template_structure_economic_storehouse.xml:28
 #: simulation/templates/template_structure_military_barracks.xml:29
 #: simulation/templates/template_structure_military_dock.xml:27
+#: simulation/templates/template_structure_military_kennel.xml:30
 #: simulation/templates/template_structure_military_range.xml:25
 #: simulation/templates/template_structure_military_stable.xml:29
 #: simulation/templates/template_structure_resource_corral.xml:29
@@ -1938,14 +2007,15 @@ msgid "Stoa"
 msgstr "門廊"
 
 #: simulation/templates/structures/athen/gymnasium.xml:26
-#: simulation/templates/structures/cart/apartment.xml:26
 #: simulation/templates/structures/gaul/tavern.xml:22
 #: simulation/templates/structures/han/laozigate.xml:24
 #: simulation/templates/structures/han/ministry.xml:39
 #: simulation/templates/structures/iber/monument.xml:34
+#: simulation/templates/structures/mace/arsenal.xml:6
 #: simulation/templates/structures/maur/elephant_stable.xml:7
 #: simulation/templates/structures/merc_camp_egyptian.xml:31
 #: simulation/templates/structures/rome/army_camp.xml:75
+#: simulation/templates/structures/spart/gerousia.xml:26
 #: simulation/templates/template_structure_civic_stoa.xml:30
 #: simulation/templates/template_structure_civic_temple.xml:32
 #: simulation/templates/template_structure_economic_market.xml:28
@@ -1961,7 +2031,7 @@ msgstr "神廟"
 
 #: simulation/templates/template_structure_civic_temple.xml:31
 msgid "Train Healers and research healing technologies."
-msgstr "訓練治癒者及研發治療科技。"
+msgstr "訓練治療者及研發治療科技。"
 
 #: simulation/templates/template_structure_defensive.xml:4
 msgid "Defensive Structure"
@@ -2091,8 +2161,6 @@ msgstr "經濟"
 
 #: simulation/templates/template_structure_economic_farmstead.xml:26
 #: simulation/templates/template_structure_economic_farmstead.xml:30
-#: simulation/templates/template_structure_special_rotarymill.xml:32
-#: simulation/templates/template_structure_special_rotarymill.xml:34
 msgid "Farmstead"
 msgstr "農舍"
 
@@ -2148,7 +2216,8 @@ msgstr "訓練鬥士弩步兵、建造攻城武器及研發攻城武器科技。
 #: simulation/templates/structures/han/academy.xml:31
 #: simulation/templates/structures/han/civil_centre_court.xml:19
 #: simulation/templates/structures/kush/pyramid_large.xml:29
-#: simulation/templates/structures/kush/temple_amun.xml:31
+#: simulation/templates/structures/kush/temple_amun.xml:34
+#: simulation/templates/structures/ptol/temple_2.xml:28
 #: simulation/templates/structures/rome/temple_mars.xml:14
 #: simulation/templates/template_structure_military_arsenal.xml:28
 #: simulation/templates/template_structure_military_elephant_stable.xml:29
@@ -2220,6 +2289,16 @@ msgstr "堡壘"
 msgid "Garrison Soldiers for additional arrows."
 msgstr "進駐士兵以增加箭數。"
 
+#: simulation/templates/template_structure_military_kennel.xml:28
+#: simulation/templates/template_structure_military_kennel.xml:29
+#: simulation/templates/template_structure_military_kennel.xml:30
+msgid "Kennel"
+msgstr "犬舍"
+
+#: simulation/templates/template_structure_military_kennel.xml:38
+msgid "Train War Dogs."
+msgstr "訓練戰犬。"
+
 #: simulation/templates/template_structure_military_range.xml:22
 msgid "Practice Range"
 msgstr "靶場"
@@ -2283,16 +2362,6 @@ msgstr "希臘圓型劇場"
 #: simulation/templates/template_structure_special_library.xml:27
 msgid "Library"
 msgstr "圖書館"
-
-#: simulation/templates/template_structure_special_rotarymill.xml:33
-msgid "Rotary Mill"
-msgstr "旋轉式磨坊"
-
-#: simulation/templates/template_structure_special_rotarymill.xml:38
-msgid ""
-"Dropsite for harvested Food. Capture one of these to increase nearby food "
-"production."
-msgstr "收穫食物的存放點。占領其中之一以增加附近的食物產量。"
 
 #: simulation/templates/template_structure_special_theater.xml:25
 #: simulation/templates/template_structure_special_theater.xml:27

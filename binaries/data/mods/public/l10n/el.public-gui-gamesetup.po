@@ -1,41 +1,43 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2022 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# Achilleas gioypi
-# Adrian Pappas
-# Aristomahos Nikiforakis
-# Armando Stylianakis
-# LOUKAS SKOUROLIAKOS
-# Christo Keller
-# crippledmoon
-# elenapan
-# firespin
-# George Charoupas
-# 77960155d0a4db79ed901e7c2ee242e7_4b8c532
-# manitarious gr
-# malvanos
-# mAnlis mAnlAkis
-# Michael Chatz
-# nik nik
-# ridergr
-# a24aea7ffc84d2433b80f99f2fbaaa74_064c1cf
-# Savvas Nesseris
-# Stanislas Dolcini
-# Tony Chief
-# Vasilis Drosos
-# XTos
-# Yiannis Fistikis
-# ZedRyder
-# Κωνσταντίνος Φωκιανός
-# Steven Gikas
+# Achilleas gioypi, 2020
+# Adrian Pappas, 2013
+# Aristomahos Nikiforakis, 2016
+# Armando Stylianakis, 2016
+# LOUKAS SKOUROLIAKOS, 2015
+# Christo Keller, 2014
+# crippledmoon, 2014
+# elenapan, 2017
+# firespin, 2014
+# George Charoupas, 2015
+# 77960155d0a4db79ed901e7c2ee242e7_4b8c532, 2015
+# manitarious gr, 2015
+# LOUKAS SKOUROLIAKOS, 2015-2016
+# LOUKAS SKOUROLIAKOS, 2020-2022,2024
+# malvanos, 2015
+# mAnlis mAnlAkis, 2016
+# Michael Chatz, 2018
+# nik nik, 2020
+# ridergr, 2015
+# a24aea7ffc84d2433b80f99f2fbaaa74_064c1cf, 2014
+# Savvas Nesseris, 2016
+# Stanislas Dolcini, 2021
+# Tony Chief, 2016
+# Vasilis Drosos, 2016-2020
+# XTos, 2014
+# Yiannis Fistikis, 2013
+# ZedRyder, 2014
+# Κωνσταντίνος Φωκιανός, 2015
+# Stefanos Gkikas, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2022-09-12 09:35+0000\n"
+"POT-Creation-Date: 2024-08-09 07:17+0000\n"
 "PO-Revision-Date: 2014-06-19 17:48+0000\n"
-"Last-Translator: LOUKAS SKOUROLIAKOS, 2020-2022\n"
+"Last-Translator: LOUKAS SKOUROLIAKOS, 2020-2022,2024\n"
 "Language-Team: Greek (http://app.transifex.com/wildfire-games/0ad/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -43,11 +45,11 @@ msgstr ""
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:(caption):13
+#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:13
 msgid "AI Configuration"
 msgstr "Ρύθμιση παραμέτρων AI"
 
-#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:(caption):29
+#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:29
 msgid "OK"
 msgstr "ΟΚ"
 
@@ -97,12 +99,12 @@ msgctxt "Match settings tab name"
 msgid "Map"
 msgstr "Χάρτης"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:28
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:29
 msgctxt "Match settings tab name"
 msgid "Player"
 msgstr "Παίκτης"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:40
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:41
 msgctxt "Match settings tab name"
 msgid "Game Type"
 msgstr "Τύπος Παιχνιδιού"
@@ -151,23 +153,23 @@ msgctxt "team"
 msgid "None"
 msgstr "Καμία"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):6
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:6
 msgid "Player Name"
 msgstr "Όνομα παίκτη:"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):10
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:10
 msgid "Color"
 msgstr "Χρώμα"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):14
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:14
 msgid "Player Placement"
 msgstr "Τοποθέτηση παίκτη"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):18
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:18
 msgid "Civilization"
 msgstr "Πολιτισμός"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):25
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:25
 msgid "Team"
 msgstr "Ομάδα"
 
@@ -472,6 +474,14 @@ msgstr "Δυσκολία"
 msgid "Select the difficulty of this scenario."
 msgstr "Επέλεξε την δυσκολία για αυτό το σενάριο."
 
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WaterLevel.js:43
+msgid "Water level"
+msgstr "Επίπεδο Νερού"
+
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WaterLevel.js:46
+msgid "Select the water level of this map."
+msgstr "Επιλέξτε το επίπεδο νερού σε αυτό τον χάρτη."
+
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WorldPopulationCap.js:47
 msgid "World Population Cap"
 msgstr "Ανώτατο Όριο Πληθυσμού Κόσμου"
@@ -573,19 +583,19 @@ msgstr "Διάρκεια Θαύματος"
 msgid "Minutes until the player has achieved Wonder Victory"
 msgstr "Λεπτά μέχρι ο παίκτης να καταφέρει\nΘαυματουργική Νίκη"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:36
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:17
 msgid "Back"
 msgstr "Πίσω"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:39
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:20
 msgid "Return to the lobby."
 msgstr "Επιστροφή στο λόμπι."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:42
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:23
 msgid "Return to the main menu."
 msgstr "Επιστροφή στο κεντρικό μενού."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CivInfoButton.js:48
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CivInfoButton.js:33
 #, javascript-format
 msgid ""
 "%(hotkey_civinfo)s / %(hotkey_structree)s: View Civilization Overview / Structure Tree\n"
@@ -596,27 +606,27 @@ msgstr "%(hotkey_civinfo)s%(hotkey_structree)s\n:Δείτε Σύνοψη Πολ�
 msgid "Show the multiplayer lobby in a dialog window."
 msgstr "Εμφάνιση του λόμπι πολλαπλών παικτών σε ένα παράθυρο διαλόγου."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:79
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:70
 msgid "I'm ready"
 msgstr "Είμαι έτοιμος!"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:80
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:71
 msgid "Stay ready"
 msgstr "Παρέμεινε έτοιμος"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:81
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:72
 msgid "I'm not ready!"
 msgstr "Δεν είμαι έτοιμος!"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:85
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:76
 msgid "State that you are ready to play."
 msgstr "Πείτε πως είστε έτοιμοι να παίξετε."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:86
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:77
 msgid "Stay ready even when the game settings change."
 msgstr "Παρέμεινε έτοιμος όταν οι ρυθμίσεις τους παιχνιδιού αλλάζουν."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:87
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:78
 msgid "State that you are not ready to play."
 msgstr "Πείτε πως δεν είστε έτοιμοι να παίξετε."
 
@@ -629,15 +639,15 @@ msgstr "Επαναφορά του κάθε πολιτισμό που έχει ε
 msgid "Reset all teams to the default."
 msgstr "Επαναφορά όλων τον ομάδων στο προκαθορισμένο."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:65
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:56
 msgid "Start Game!"
 msgstr "Έναρξη Παιχνιδιού!"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:68
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:59
 msgid "Start a new game with the current settings."
 msgstr "Έναρξη νέου παιχνιδιού με τις τρέχουσες ρυθμίσεις."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:71
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:62
 msgid ""
 "Start a new game with the current settings (disabled until all players are "
 "ready)."
@@ -696,7 +706,7 @@ msgstr "* %(username)s είναι έτοιμος!"
 msgid "Game settings have been changed"
 msgstr "Οι ρυθμίσεις του παιχνιδιού έχουν αλλάξει"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatPanel.xml:(caption):9
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatPanel.xml:9
 msgid "Send"
 msgstr "Αποστολή"
 
@@ -719,11 +729,11 @@ msgstr "\\[%(time)s]"
 msgid "HH:mm"
 msgstr "HH:mm"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:40
+#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:29
 msgid "Cheats enabled."
 msgstr "Τα κόλπα ενεργοποιήθηκαν"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:43
+#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:32
 msgid "Rated game."
 msgstr "Βαθμολογημένο παιχνίδι."
 
@@ -740,19 +750,19 @@ msgstr "Καμία επιλογή χάρτη"
 msgid "Click to view the list of available maps."
 msgstr "Κλίκ για να δείτε τη διαθέσιμη λίστα με χάρτες."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/TipsPanel.xml:(caption):10
+#: gui/gamesetup/Pages/GameSetupPage/Panels/TipsPanel.xml:10
 msgid "Show this message in the future."
 msgstr "Δείξε αυτό το μήνυμα στο μέλλον."
 
-#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:(caption):7
+#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:7
 msgid "Loading"
 msgstr "Φόρτωση"
 
-#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:(caption):11
+#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:11
 msgid "Loading map data. Please wait…"
 msgstr "Φόρτωση δεδομένων χάρτη. Παρακαλώ περιμένετε..."
 
-#: gui/gamesetup/gamesetup.xml:(caption):17
+#: gui/gamesetup/gamesetup.xml:17
 msgid "Match Setup"
 msgstr "Διαμόρφωση αναμέτρησης"
 
@@ -805,11 +815,6 @@ msgstr "Αποτυχία σύνδεσης με τον εξυπηρετητή."
 msgid "Connection failed"
 msgstr "Η σύνδεση απέτυχε"
 
-#: gui/gamesetup_mp/gamesetup_mp.js:193
-#, javascript-format
-msgid "Net message: %(message)s"
-msgstr "Μήνυμα διαδικτύου: %(message)s"
-
 #: gui/gamesetup_mp/gamesetup_mp.js:276
 msgid "Registering with server..."
 msgstr "Εγγραφή με τον διακομιστή ..."
@@ -828,82 +833,79 @@ msgid "Cannot host game: %(message)s."
 msgstr "Δεν μπορεί να φιλοξενήσει παιχνίδι: %(message)s."
 
 #: gui/gamesetup_mp/gamesetup_mp.js:377 gui/gamesetup_mp/gamesetup_mp.js:406
-#: gui/gamesetup_mp/gamesetup_mp.js:435 gui/gamesetup_mp/gamesetup_mp.js:450
+#: gui/gamesetup_mp/gamesetup_mp.js:436 gui/gamesetup_mp/gamesetup_mp.js:451
 msgid "Error"
 msgstr "Σφάλμα"
 
-#: gui/gamesetup_mp/gamesetup_mp.js:405 gui/gamesetup_mp/gamesetup_mp.js:449
+#: gui/gamesetup_mp/gamesetup_mp.js:405 gui/gamesetup_mp/gamesetup_mp.js:450
 #, javascript-format
 msgid "Cannot join game: %(message)s."
 msgstr "Δεν μπορεί να συνδεθεί στο παιχνίδι: %(message)s."
 
-#: gui/gamesetup_mp/gamesetup_mp.js:464
+#: gui/gamesetup_mp/gamesetup_mp.js:465
 #, javascript-format
 msgid "%(playername)s's game"
 msgstr "Το παιχνίδι του/ων %(playername)s"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):18
+#: gui/gamesetup_mp/gamesetup_mp.xml:18
 msgid "Multiplayer"
 msgstr "Παιχνίδι για πολλούς παίκτες"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):24
+#: gui/gamesetup_mp/gamesetup_mp.xml:24
 msgid "Joining an existing game."
 msgstr "Συμμετοχή σε υπάρχον παιχνίδι."
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):28
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):70
+#: gui/gamesetup_mp/gamesetup_mp.xml:28 gui/gamesetup_mp/gamesetup_mp.xml:70
 msgid "Player Name:"
 msgstr "Όνομα παίκτη:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):38
+#: gui/gamesetup_mp/gamesetup_mp.xml:38
 msgid "Server Hostname or IP:"
 msgstr "Όνομα host ή IP διακομιστή:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):48
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):95
+#: gui/gamesetup_mp/gamesetup_mp.xml:48 gui/gamesetup_mp/gamesetup_mp.xml:95
 msgid "Server Port:"
 msgstr "Θύρα Διακομιστή:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):65
-msgid "Set up your server to host."
-msgstr "Διαμόρφωση διακομιστή ως host."
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):83
-msgid "Server Name:"
-msgstr "Όνομα Διακομιστή:"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):112
-msgid "Server Password:"
-msgstr "Κωδικός Server:"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):128
-msgid "Use STUN to work around firewalls"
-msgstr "Χρησιμοποίησε το STUN για να λειτουργήσει με τα τείχη προστασίας"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):136
-msgid "Continue"
-msgstr "Συνέχεια"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):141
-msgid "Cancel"
-msgstr "Ακύρωση"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):152
-msgid "Password:"
-msgstr "Κωδικός:"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):162
-msgid "Confirm"
-msgstr "Επιβεβαίωση"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):52
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):99
+#: gui/gamesetup_mp/gamesetup_mp.xml:52 gui/gamesetup_mp/gamesetup_mp.xml:99
 msgid "Leave blank to use the default port."
 msgstr "Αφήστε κενό για να χρησιμοποιηθεί η προκαθορισμένη θύρα."
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):113
+#: gui/gamesetup_mp/gamesetup_mp.xml:65
+msgid "Set up your server to host."
+msgstr "Διαμόρφωση διακομιστή ως host."
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:83
+msgid "Server Name:"
+msgstr "Όνομα Διακομιστή:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:112
+msgid "Server Password:"
+msgstr "Κωδικός Server:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:113
 msgid "Leave blank to not require it."
 msgstr "Αφήστε κενό αν δέντο χρειάζεστε."
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:128
+msgid "Use STUN to work around firewalls"
+msgstr "Χρησιμοποίησε το STUN για να λειτουργήσει με τα τείχη προστασίας"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:136
+msgid "Continue"
+msgstr "Συνέχεια"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:141
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:152
+msgid "Password:"
+msgstr "Κωδικός:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:162
+msgid "Confirm"
+msgstr "Επιβεβαίωση"
 
 #: gui/loading/ProgressBar.js:48
 #, javascript-format

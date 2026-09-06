@@ -1,23 +1,19 @@
-function messageBox(mbWidth, mbHeight, mbMessage, mbTitle, mbButtonCaptions, mbBtnCode, mbCallbackArgs)
+function messageBox(width, height, message, title, buttonCaptions)
 {
-	Engine.PushGuiPage(
+	return Engine.PushGuiPage(
 		"page_msgbox.xml",
 		{
-			"width": mbWidth,
-			"height": mbHeight,
-			"message": mbMessage,
-			"title": mbTitle,
-			"buttonCaptions": mbButtonCaptions
-		},
-		btnCode => {
-			if (mbBtnCode !== undefined && mbBtnCode[btnCode])
-				mbBtnCode[btnCode](mbCallbackArgs ? mbCallbackArgs[btnCode] : undefined);
+			"width": width,
+			"height": height,
+			"message": message,
+			"title": title,
+			"buttonCaptions": buttonCaptions
 		});
 }
 
-function timedConfirmation(width, height, message, timeParameter, timeout, title, buttonCaptions, btnCode, callbackArgs)
+function timedConfirmation(width, height, message, timeParameter, timeout, title, buttonCaptions)
 {
-	Engine.PushGuiPage(
+	return Engine.PushGuiPage(
 		"page_timedconfirmation.xml",
 		{
 			"width": width,
@@ -27,22 +23,7 @@ function timedConfirmation(width, height, message, timeParameter, timeout, title
 			"timeout": timeout,
 			"title": title,
 			"buttonCaptions": buttonCaptions
-		},
-		button => {
-			if (btnCode !== undefined && btnCode[button])
-				btnCode[button](callbackArgs ? callbackArgs[button] : undefined);
 		});
-}
-
-function colorMixer(color, callback)
-{
-	Engine.PushGuiPage(
-		"page_colormixer.xml",
-		color,
-		result => {
-			callback(result);
-		}
-	);
 }
 
 function openURL(url)

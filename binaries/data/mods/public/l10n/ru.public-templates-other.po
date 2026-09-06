@@ -1,30 +1,30 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2023 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# Alexander Olkhovskiy
-# Boris Karalnik
-# Dire Avenger
-# Dmitriy Kulikov
-# Дмитрий Ошкало
-# Максим Дронь
-# Ilya Andreev
-# Ivan Korovin
-# c042aea184b4e59405665b6829c96633_d043b8e
-# nwtour
-# Prince Moth
-# Uzumaker Uzumaki
-# Vladislav Belov
-# Woratiklis
-# Георгий Морозов
-# Евгений Кривошеев
-# Николай Авдеев
-# Олег Шевченко
+# Alexander Olkhovskiy, 2016
+# Boris Karalnik, 2019,2021
+# Dire Avenger, 2022-2023
+# Dmitriy Kulikov, 2019
+# Дмитрий Ошкало, 2015-2018
+# Максим Дронь, 2014
+# Ilya Andreev, 2018
+# Ivan Korovin, 2017
+# c042aea184b4e59405665b6829c96633_d043b8e, 2022
+# nwtour, 2021
+# Prince Moth, 2016
+# Uzumaker Uzumaki, 2017
+# Vladislav Belov, 2016
+# Woratiklis, 2015-2017
+# Георгий Морозов, 2020-2021
+# Евгений Кривошеев, 2020
+# Николай Авдеев, 2016
+# Олег Шевченко, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2023-04-21 07:09+0000\n"
+"POT-Creation-Date: 2024-07-26 13:41+0000\n"
 "PO-Revision-Date: 2014-06-19 17:54+0000\n"
 "Last-Translator: Dire Avenger, 2022-2023\n"
 "Language-Team: Russian (http://app.transifex.com/wildfire-games/0ad/language/ru/)\n"
@@ -34,119 +34,119 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: simulation/data/attack_effects/applystatus.jsondescription
+#: simulation/data/attack_effects/applystatus.json
 msgctxt "effect caused by an attack"
 msgid "Various (timed) effects."
 msgstr "Различные (временные) эффекты."
 
-#: simulation/data/attack_effects/applystatus.jsonname
+#: simulation/data/attack_effects/applystatus.json
 msgctxt "effect caused by an attack"
 msgid "Apply Status"
 msgstr "Статус применения"
 
-#: simulation/data/attack_effects/capture.jsondescription
+#: simulation/data/attack_effects/capture.json
 msgctxt "effect caused by an attack"
 msgid "Reduces capture points of a target."
 msgstr "Уменьшает очки захвата цели."
 
-#: simulation/data/attack_effects/capture.jsonname
+#: simulation/data/attack_effects/capture.json
 msgctxt "effect caused by an attack"
 msgid "Capture"
 msgstr "Захват"
 
-#: simulation/data/attack_effects/damage.jsondescription
+#: simulation/data/attack_effects/damage.json
 msgctxt "effect caused by an attack"
 msgid "Reduces the health of a target."
 msgstr "Уменьшает здоровье цели."
 
-#: simulation/data/attack_effects/damage.jsonname
+#: simulation/data/attack_effects/damage.json
 msgctxt "effect caused by an attack"
 msgid "Damage"
 msgstr "Урон"
 
-#: simulation/data/damage_types/crush.jsondescription
-msgctxt "damage type"
-msgid "Damage caused by sheer force, like with a club or by trampling."
-msgstr "Урон, нанесённый только силой, например дубиной или топтанием."
-
-#: simulation/data/damage_types/crush.jsonname
+#: simulation/data/damage_types/crush.json
 msgctxt "damage type"
 msgid "Crush"
 msgstr "Дробящий"
 
-#: simulation/data/damage_types/fire.jsondescription
+#: simulation/data/damage_types/crush.json
 msgctxt "damage type"
-msgid "Damage caused by burning objects, like a torch or a flaming arrow."
-msgstr "Урон, нанесенный горящими объектами, например факел или горящая стрела."
+msgid "Damage caused by sheer force, like with a club or by trampling."
+msgstr "Урон, нанесённый только силой, например дубиной или топтанием."
 
-#: simulation/data/damage_types/fire.jsonname
+#: simulation/data/damage_types/fire.json
 msgctxt "damage type"
 msgid "Fire"
 msgstr "Огонь"
 
-#: simulation/data/damage_types/hack.jsondescription
+#: simulation/data/damage_types/fire.json
+msgctxt "damage type"
+msgid "Damage caused by burning objects, like a torch or a flaming arrow."
+msgstr "Урон, нанесенный горящими объектами, например факел или горящая стрела."
+
+#: simulation/data/damage_types/hack.json
+msgctxt "damage type"
+msgid "Hack"
+msgstr "Рубящий"
+
+#: simulation/data/damage_types/hack.json
 msgctxt "damage type"
 msgid ""
 "Damage caused by sharp objects cutting or chopping, like with a sword or an "
 "axe."
 msgstr "Урон, нанесённый только острыми предметами (рубящими или колющими), например меч или топор."
 
-#: simulation/data/damage_types/hack.jsonname
-msgctxt "damage type"
-msgid "Hack"
-msgstr "Рубящий"
-
-#: simulation/data/damage_types/pierce.jsondescription
-msgctxt "damage type"
-msgid "Damage caused by sharp pointy objects, like arrows or spears."
-msgstr "Урон, нанесённый заострёнными предметами, например стрелы или копья."
-
-#: simulation/data/damage_types/pierce.jsonname
+#: simulation/data/damage_types/pierce.json
 msgctxt "damage type"
 msgid "Pierce"
 msgstr "Колющий"
 
-#: simulation/data/damage_types/poison.jsondescription
+#: simulation/data/damage_types/pierce.json
+msgctxt "damage type"
+msgid "Damage caused by sharp pointy objects, like arrows or spears."
+msgstr "Урон, нанесённый заострёнными предметами, например стрелы или копья."
+
+#: simulation/data/damage_types/poison.json
+msgctxt "damage type"
+msgid "Poison"
+msgstr "Яд"
+
+#: simulation/data/damage_types/poison.json
 msgctxt "damage type"
 msgid ""
 "Damage caused by venomous or poisoned objects, like a snake or a poisoned "
 "weapon."
 msgstr "Урон, нанесённый ядовитыми предметами, например змея или отравленное оружие."
 
-#: simulation/data/damage_types/poison.jsonname
-msgctxt "damage type"
-msgid "Poison"
-msgstr "Яд"
-
-#: simulation/data/status_effects/burning.jsonapplierTooltip
+#: simulation/data/status_effects/burning.json
 msgctxt "status effect"
 msgid "This unit causes fire damage."
 msgstr "Этот юнит наносит урон огнём."
 
-#: simulation/data/status_effects/burning.jsonreceiverTooltip
-msgctxt "status effect"
-msgid "This unit is burning."
-msgstr "Этот юнит горит."
-
-#: simulation/data/status_effects/burning.jsonstatusName
+#: simulation/data/status_effects/burning.json
 msgctxt "status effect"
 msgid "Burning"
 msgstr "Горящий"
 
-#: simulation/data/status_effects/poisoned.jsonapplierTooltip
+#: simulation/data/status_effects/burning.json
+msgctxt "status effect"
+msgid "This unit is burning."
+msgstr "Этот юнит горит."
+
+#: simulation/data/status_effects/poisoned.json
 msgctxt "status effect"
 msgid "This unit causes poison damage."
 msgstr "Этот юнит наносит урон ядом."
 
-#: simulation/data/status_effects/poisoned.jsonreceiverTooltip
-msgctxt "status effect"
-msgid "This unit is poisoned."
-msgstr "Этот юнит отравлен."
-
-#: simulation/data/status_effects/poisoned.jsonstatusName
+#: simulation/data/status_effects/poisoned.json
 msgctxt "status effect"
 msgid "Poisoned"
 msgstr "Отравлен"
+
+#: simulation/data/status_effects/poisoned.json
+msgctxt "status effect"
+msgid "This unit is poisoned."
+msgstr "Этот юнит отравлен."
 
 #: simulation/templates/campaigns/army_mace_hero_alexander.xml:24
 msgid "Army of Alexander the Great."
@@ -235,7 +235,7 @@ msgstr "Бурый медведь"
 
 #: simulation/templates/gaia/fauna_bear_brown.xml:25
 msgid "Ursus arctos"
-msgstr "Урсус арктос"
+msgstr ""
 
 #: simulation/templates/gaia/fauna_bear_polar.xml:24
 msgid "Polar Bear"
@@ -258,7 +258,7 @@ msgstr "Вепрь"
 
 #: simulation/templates/gaia/fauna_boar.xml:24
 msgid "Sus scrofa"
-msgstr "Сус скрофа"
+msgstr ""
 
 #: simulation/templates/gaia/fauna_camel.xml:14
 msgid "Dromedary"
@@ -266,7 +266,7 @@ msgstr "Одногорбый верблюд"
 
 #: simulation/templates/gaia/fauna_camel.xml:15
 msgid "Camelus dromedarius"
-msgstr "Камелус дромедариус"
+msgstr ""
 
 #: simulation/templates/gaia/fauna_cattle_bull.xml:5
 msgctxt "Name of an attack, usually the weapon."
@@ -308,7 +308,7 @@ msgstr "Курица"
 
 #: simulation/templates/gaia/fauna_chicken.xml:12
 msgid "Gallus gallus domesticus"
-msgstr "Галлус галлус доместикус"
+msgstr ""
 
 #: simulation/templates/gaia/fauna_crocodile_nile.xml:5
 msgctxt "Name of an attack, usually the weapon."
@@ -321,7 +321,7 @@ msgstr "Нильский крокодил"
 
 #: simulation/templates/gaia/fauna_crocodile_nile.xml:24
 msgid "Crocodylus niloticus"
-msgstr "Крокодилус нилотикус"
+msgstr ""
 
 #: simulation/templates/gaia/fauna_deer.xml:11
 msgid "Red Deer"
@@ -329,7 +329,7 @@ msgstr "Благородный олень"
 
 #: simulation/templates/gaia/fauna_deer.xml:12
 msgid "Cervus elaphus"
-msgstr "Цервус элафус"
+msgstr ""
 
 #: simulation/templates/gaia/fauna_dog_mastiff.xml:5
 #: simulation/templates/gaia/fauna_dog_wolfhound.xml:5
@@ -359,7 +359,7 @@ msgstr "Осёл"
 
 #: simulation/templates/gaia/fauna_donkey.xml:12
 msgid "Equus africanus asinus"
-msgstr "Экуус африканус асинус"
+msgstr ""
 
 #: simulation/templates/gaia/fauna_elephant_african_bush.xml:5
 #: simulation/templates/gaia/fauna_elephant_asian.xml:5
@@ -375,7 +375,7 @@ msgstr "Саванный африканский слон"
 #: simulation/templates/gaia/fauna_elephant_african_bush.xml:26
 #: simulation/templates/gaia/fauna_elephant_african_infant.xml:12
 msgid "Loxodonta africana"
-msgstr "Локсодонта африкана"
+msgstr ""
 
 #: simulation/templates/gaia/fauna_elephant_african_infant.xml:11
 msgid "African Bush Elephant Calf"
@@ -400,7 +400,7 @@ msgstr "Африканский лесной слон"
 
 #: simulation/templates/gaia/fauna_elephant_north_african.xml:26
 msgid "Loxodonta cyclotis"
-msgstr "Локсодонта циклотис"
+msgstr ""
 
 #: simulation/templates/gaia/fauna_fox_arctic.xml:24
 msgid "Arctic Fox"
@@ -408,7 +408,7 @@ msgstr "Песец"
 
 #: simulation/templates/gaia/fauna_fox_arctic.xml:25
 msgid "Vulpes lagopus"
-msgstr "Вулпес лагопус"
+msgstr ""
 
 #: simulation/templates/gaia/fauna_fox_red.xml:24
 msgid "Red Fox"
@@ -416,7 +416,7 @@ msgstr "Рыжая лиса"
 
 #: simulation/templates/gaia/fauna_fox_red.xml:25
 msgid "Vulpes vulpes"
-msgstr "Вулпес вулпес"
+msgstr ""
 
 #: simulation/templates/gaia/fauna_gazelle.xml:11
 msgid "Thomson's Gazelle"
@@ -424,7 +424,7 @@ msgstr "Газель Томсона"
 
 #: simulation/templates/gaia/fauna_gazelle.xml:12
 msgid "Eudorcas thomsonii"
-msgstr "Эудоркас томсони"
+msgstr ""
 
 #: simulation/templates/gaia/fauna_giraffe.xml:11
 msgid "Giraffe"
@@ -433,7 +433,7 @@ msgstr "Жираф"
 #: simulation/templates/gaia/fauna_giraffe.xml:12
 #: simulation/templates/gaia/fauna_giraffe_infant.xml:12
 msgid "Giraffa camelopardalis"
-msgstr "Гираффа камелопардалис"
+msgstr ""
 
 #: simulation/templates/gaia/fauna_giraffe_infant.xml:11
 msgid "Juvenile Giraffe"
@@ -461,7 +461,7 @@ msgstr "Лошадь"
 
 #: simulation/templates/gaia/fauna_horse.xml:15
 msgid "Equus ferus caballus"
-msgstr "Экуус ферус кабаллус"
+msgstr ""
 
 #: simulation/templates/gaia/fauna_horse_pony.xml:8
 msgid "Pony"
@@ -493,7 +493,7 @@ msgstr "Павлин"
 
 #: simulation/templates/gaia/fauna_peacock.xml:12
 msgid "Pavo cristatus"
-msgstr "Паво кристатус"
+msgstr ""
 
 #: simulation/templates/gaia/fauna_pig.xml:20
 msgid "Pig"
@@ -530,7 +530,7 @@ msgstr "Белый носорог"
 
 #: simulation/templates/gaia/fauna_rhinoceros_white.xml:25
 msgid "Ceratotherium simum"
-msgstr "Цератотериум симум"
+msgstr ""
 
 #: simulation/templates/gaia/fauna_shark.xml:12
 msgid "Great White Shark"
@@ -570,7 +570,7 @@ msgstr "Финвал"
 
 #: simulation/templates/gaia/fauna_whale_fin.xml:12
 msgid "Balaenoptera physalus"
-msgstr "Балаеноптера фисалус"
+msgstr ""
 
 #: simulation/templates/gaia/fauna_whale_humpback.xml:11
 msgid "Humpback Whale"
@@ -697,6 +697,10 @@ msgstr "Статуя льва Апедемака"
 msgid "Ammon-Ra Ram Statue"
 msgstr "Статуя Амон-Ра в форме быка"
 
+#: simulation/templates/gaia/ruins/stone_statues_persian_lamassu.xml:8
+msgid "Lamassu Statue"
+msgstr ""
+
 #: simulation/templates/gaia/ruins/stone_statues_roman.xml:8
 msgid "Roman Statue"
 msgstr "Римская статуя"
@@ -775,6 +779,18 @@ msgstr "Обломки корабля"
 msgid "Shipwreck Cargo"
 msgstr "Груз с утонувшего корабля"
 
+#: simulation/templates/gaia/treasure/special_argo.xml:8
+msgid "The Argo"
+msgstr ""
+
+#: simulation/templates/gaia/treasure/special_argo.xml:9
+msgid "Mythological Treasure"
+msgstr ""
+
+#: simulation/templates/gaia/treasure/special_argo.xml:10
+msgid "The mythological ship of the hero Theseus and his Argonauts."
+msgstr ""
+
 #: simulation/templates/gaia/treasure/stone.xml:8
 msgid "Stone Treasure"
 msgstr "Каменные сокровища"
@@ -846,6 +862,10 @@ msgstr "Полукустарник"
 #: simulation/templates/gaia/tree/bush_mediterranean.xml:4
 msgid "Scrub"
 msgstr "Кустарник"
+
+#: simulation/templates/gaia/tree/bush_mediterranean_dry.xml:4
+msgid "Dry Scrub"
+msgstr ""
 
 #: simulation/templates/gaia/tree/carob.xml:4
 msgid "Carob"
@@ -962,6 +982,10 @@ msgstr "Фивийская гифена"
 msgid "Palmyra Palm"
 msgstr "Пальмировая пальма"
 
+#: simulation/templates/gaia/tree/palm_royal.xml:4
+msgid "Royal Palm"
+msgstr ""
+
 #: simulation/templates/gaia/tree/palm_tropic.xml:4
 msgid "Palm"
 msgstr "Пальма"
@@ -1020,7 +1044,7 @@ msgstr "Туна"
 msgid "Rainforest Tree"
 msgstr "Дерево дождевого леса"
 
-#: simulation/templates/mixins/builder.xml:41
+#: simulation/templates/mixins/builder.xml:42
 msgid "Builder"
 msgstr "Строитель"
 
@@ -1028,15 +1052,63 @@ msgstr "Строитель"
 msgid "Bush"
 msgstr "Кустарник"
 
+#: simulation/templates/mixins/cataphract.xml:14
+msgid "Cataphract Cavalry"
+msgstr ""
+
+#: simulation/templates/mixins/cataphract.xml:15
+msgid "Cataphract"
+msgstr ""
+
+#: simulation/templates/mixins/chariot.xml:16
+msgid "Chariot"
+msgstr "Колесница"
+
+#: simulation/templates/mixins/fireship.xml:15
+msgctxt "Name of an attack, usually the weapon."
+msgid "Flames"
+msgstr ""
+
+#: simulation/templates/mixins/fireship.xml:43
+msgid "Ignited"
+msgstr ""
+
+#: simulation/templates/mixins/longsword.xml:22
+msgid "Longsword"
+msgstr ""
+
 #: simulation/templates/mixins/mercenary.xml:13
 msgid "Mercenary"
 msgstr "Наёмник"
+
+#: simulation/templates/mixins/pirate.xml:29
+msgid "Pirate"
+msgstr ""
+
+#: simulation/templates/mixins/rotary_mill.xml:17
+#: simulation/templates/mixins/rotary_mill.xml:18
+msgid "Rotary Mill"
+msgstr "Мельница на животной тяге"
+
+#: simulation/templates/mixins/rotary_mill.xml:19
+msgid "RotaryMill"
+msgstr "Мельница на животной тяге"
+
+#: simulation/templates/mixins/rotary_mill.xml:22
+msgid ""
+"Dropsite for harvested Food. Capture one of these to increase nearby food "
+"production."
+msgstr "Место хранения собранных продуктов питания. Захватите, чтобы увеличить производство пищи поблизости."
 
 #: simulation/templates/mixins/shrine.xml:12
 #: simulation/templates/mixins/shrine.xml:13
 #: simulation/templates/mixins/shrine.xml:14
 msgid "Shrine"
 msgstr "Святыня"
+
+#: simulation/templates/mixins/shrine.xml:18
+msgid "Train Elite Healers and heal garrisoned units."
+msgstr ""
 
 #: simulation/templates/mixins/trading_post.xml:8
 msgid "Trading Post"
@@ -1092,9 +1164,17 @@ msgstr "Только тяжёлая пехота, не менее 16."
 msgid "Anti Cavalry"
 msgstr "Противоконное"
 
+#: simulation/templates/special/formations/anti_cavalry.xml:26
+msgid "Square formation of Melee Infantry to fight Cavalry."
+msgstr ""
+
 #: simulation/templates/special/formations/battle_line.xml:13
 msgid "Battle Line"
 msgstr "Линия фронта"
+
+#: simulation/templates/special/formations/battle_line.xml:15
+msgid "Common formation for frontal attacks."
+msgstr ""
 
 #: simulation/templates/special/formations/box.xml:5
 msgid "Requires at least 4 Soldiers or Siege engines."
@@ -1104,13 +1184,25 @@ msgstr "Не менее четырёх воинов или осадных ору
 msgid "Box"
 msgstr "Прямоугольник"
 
+#: simulation/templates/special/formations/box.xml:14
+msgid "Square formation to protect all sides."
+msgstr ""
+
 #: simulation/templates/special/formations/column_closed.xml:10
 msgid "Forced March"
 msgstr "Форсированный марш"
 
+#: simulation/templates/special/formations/column_closed.xml:12
+msgid "Closed column formation for risky movements."
+msgstr ""
+
 #: simulation/templates/special/formations/column_open.xml:10
 msgid "Column Open"
 msgstr "Открытая колонна"
+
+#: simulation/templates/special/formations/column_open.xml:12
+msgid "Dispersed formation for open field crossings."
+msgstr ""
 
 #: simulation/templates/special/formations/flank.xml:5
 msgid "Requires at least 8 Soldiers or Siege engines."
@@ -1120,13 +1212,25 @@ msgstr "Не менее восьми воинов или осадных оруд
 msgid "Flank"
 msgstr "Фланг"
 
+#: simulation/templates/special/formations/flank.xml:13
+msgid "Formation to protect the sides or surprise attack the enemy flank."
+msgstr ""
+
 #: simulation/templates/special/formations/line_closed.xml:9
 msgid "Close Order"
 msgstr "Сомкнутый строй"
 
+#: simulation/templates/special/formations/line_closed.xml:11
+msgid "Flexible closed line formation."
+msgstr ""
+
 #: simulation/templates/special/formations/line_open.xml:11
 msgid "Open Order"
 msgstr "Разомкнутый строй"
+
+#: simulation/templates/special/formations/line_open.xml:13
+msgid "Dispersed formation for open field combat."
+msgstr ""
 
 #: simulation/templates/special/formations/null.xml:7
 msgid "None"
@@ -1140,9 +1244,46 @@ msgstr "Только пешие гоплиты, не менее десяти."
 msgid "Phalanx"
 msgstr "Фаланга"
 
+#: simulation/templates/special/formations/phalanx.xml:25
+msgid "Compact formation of Infantry Hoplites creating a shield wall."
+msgstr ""
+
 #: simulation/templates/special/formations/scatter.xml:8
 msgid "Scatter"
 msgstr "Рассредоточить"
+
+#: simulation/templates/special/formations/ships/column.xml:5
+#: simulation/templates/special/formations/ships/line_staggered.xml:5
+msgid "Requires at least 4 Ships."
+msgstr ""
+
+#: simulation/templates/special/formations/ships/column.xml:14
+msgid "Maneuvering Column"
+msgstr ""
+
+#: simulation/templates/special/formations/ships/column.xml:16
+msgid "A column formation for fleet maneuvers."
+msgstr ""
+
+#: simulation/templates/special/formations/ships/flank.xml:5
+msgid "Requires at least 8 Ships."
+msgstr ""
+
+#: simulation/templates/special/formations/ships/flank.xml:14
+msgid "Flanking Formation"
+msgstr ""
+
+#: simulation/templates/special/formations/ships/flank.xml:16
+msgid "Formation to protect the sides or surprise attack the enemy flanks."
+msgstr ""
+
+#: simulation/templates/special/formations/ships/line_staggered.xml:17
+msgid "Fleet Battle Line"
+msgstr ""
+
+#: simulation/templates/special/formations/ships/line_staggered.xml:19
+msgid "Common fleet formation for frontal attacks."
+msgstr ""
 
 #: simulation/templates/special/formations/skirmish.xml:4
 msgid "Ranged Soldiers only, requires at least 2."
@@ -1152,6 +1293,10 @@ msgstr "Только стрелки, не менее двух."
 msgid "Skirmish"
 msgstr "Схватка"
 
+#: simulation/templates/special/formations/skirmish.xml:16
+msgid "Dispersed formation for reconnaissance, ambushes or hit-and-run."
+msgstr ""
+
 #: simulation/templates/special/formations/syntagma.xml:5
 msgid "Infantry Pikemen only, requires at least 16."
 msgstr "Только пешие пикинёры, не менее 16."
@@ -1160,9 +1305,17 @@ msgstr "Только пешие пикинёры, не менее 16."
 msgid "Syntagma"
 msgstr "Синтагма"
 
+#: simulation/templates/special/formations/syntagma.xml:31
+msgid "Compact formation of Infantry Pikemen creating a defensive wall."
+msgstr ""
+
 #: simulation/templates/special/formations/testudo.xml:70
 msgid "Testudo"
 msgstr "Черепаха"
+
+#: simulation/templates/special/formations/testudo.xml:72
+msgid "Compact formation of Melee Infantry creating a shield shell."
+msgstr ""
 
 #: simulation/templates/special/formations/wedge.xml:5
 msgid "Cavalry only, requires at least 6."
@@ -1171,6 +1324,10 @@ msgstr "Только конница, не менее 6."
 #: simulation/templates/special/formations/wedge.xml:16
 msgid "Wedge"
 msgstr "Клин"
+
+#: simulation/templates/special/formations/wedge.xml:18
+msgid "Triangular Cavalry formation to break through enemy lines."
+msgstr ""
 
 #: simulation/templates/special/spy.xml:16
 msgid "Spy"

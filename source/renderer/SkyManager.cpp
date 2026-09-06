@@ -1,4 +1,4 @@
-/* Copyright (C) 2023 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -32,7 +32,6 @@
 #include "ps/CStrInternStatic.h"
 #include "ps/Filesystem.h"
 #include "ps/Game.h"
-#include "ps/VideoMode.h"
 #include "renderer/backend/IDevice.h"
 #include "renderer/Renderer.h"
 #include "renderer/SceneRenderer.h"
@@ -41,7 +40,8 @@
 #include <algorithm>
 
 SkyManager::SkyManager()
-	: m_VertexArray(Renderer::Backend::IBuffer::Type::VERTEX, false)
+	: m_VertexArray(Renderer::Backend::IBuffer::Type::VERTEX,
+		Renderer::Backend::IBuffer::Usage::TRANSFER_DST)
 {
 	CFG_GET_VAL("showsky", m_SkyVisible);
 }
@@ -121,7 +121,7 @@ void SkyManager::LoadAndUploadSkyTexturesIfNeeded(
 	}
 
 	std::unique_ptr<Renderer::Backend::ITexture> skyCubeMap =
-		g_VideoMode.GetBackendDevice()->CreateTexture("SkyCubeMap",
+		deviceCommandContext->GetDevice()->CreateTexture("SkyCubeMap",
 			Renderer::Backend::ITexture::Type::TEXTURE_CUBE,
 			Renderer::Backend::ITexture::Usage::TRANSFER_DST |
 				Renderer::Backend::ITexture::Usage::SAMPLED,

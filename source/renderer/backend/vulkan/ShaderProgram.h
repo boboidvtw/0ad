@@ -1,4 +1,4 @@
-/* Copyright (C) 2023 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -19,12 +19,15 @@
 #define INCLUDED_RENDERER_BACKEND_VULKAN_SHADERPROGRAM
 
 #include "renderer/backend/IShaderProgram.h"
+#include "renderer/backend/vulkan/Buffer.h"
+#include "renderer/backend/vulkan/DescriptorManager.h"
 #include "renderer/backend/vulkan/Texture.h"
 
 #include <array>
 #include <cstddef>
 #include <glad/vulkan.h>
 #include <memory>
+#include <optional>
 #include <unordered_map>
 #include <vector>
 
@@ -41,6 +44,7 @@ namespace Vulkan
 {
 
 class CDevice;
+class CRingCommandContext;
 
 class CVertexInputLayout : public IVertexInputLayout
 {
@@ -91,10 +95,13 @@ public:
 
 	void Bind();
 	void Unbind();
-	void PreDraw(VkCommandBuffer commandBuffer);
+
+	void PreDraw(CRingCommandContext& commandContext);
+	void PreDispatch(CRingCommandContext& commandContext);
+	void PostDispatch(CRingCommandContext& commandContext);
 
 	VkPipelineLayout GetPipelineLayout() const { return m_PipelineLayout; }
-	VkPipelineBindPoint GetPipelineBindPoint() const { return VK_PIPELINE_BIND_POINT_GRAPHICS; }
+	VkPipelineBindPoint GetPipelineBindPoint() const { return m_PipelineBindPoint; }
 
 	void SetUniform(
 		const int32_t bindingSlot,
@@ -112,7 +119,9 @@ public:
 		const float valueZ, const float valueW);
 	void SetUniform(
 		const int32_t bindingSlot, PS::span<const float> values);
+
 	void SetTexture(const int32_t bindingSlot, CTexture* texture);
+	void SetStorageTexture(const int32_t bindingSlot, CTexture* texture);
 
 	// TODO: rename to something related to buffer.
 	bool IsMaterialConstantsDataOutdated() const { return m_MaterialConstantsDataOutdated; }
@@ -131,14 +140,15 @@ private:
 	static std::unique_ptr<CShaderProgram> Create(
 		CDevice* device, const CStr& name, const CShaderDefines& defines);
 
-	void UpdateActiveDescriptorSet(
-		VkCommandBuffer commandBuffer);
+	void BindOutdatedDescriptorSets(
+		CRingCommandContext& commandContext);
 
 	CDevice* m_Device = nullptr;
 
 	std::vector<VkShaderModule> m_ShaderModules;
 	std::vector<VkPipelineShaderStageCreateInfo> m_Stages;
 	VkPipelineLayout m_PipelineLayout = VK_NULL_HANDLE;
+	VkPipelineBindPoint m_PipelineBindPoint = VK_PIPELINE_BIND_POINT_MAX_ENUM;
 
 	std::vector<VfsPath> m_FileDependencies;
 
@@ -166,14 +176,8 @@ private:
 	std::unordered_map<CStrIntern, uint32_t> m_UniformMapping;
 	std::unordered_map<CStrIntern, uint32_t> m_PushConstantMapping;
 
-	uint32_t m_TexturesDescriptorSetSize = 0;
-	bool m_BoundTexturesOutdated = false;
-
-	VkDescriptorSetLayout m_TexturesDescriptorSetLayout = VK_NULL_HANDLE;
-	std::vector<CTexture*> m_BoundTextures;
-	std::vector<CTexture::UID> m_BoundTexturesUID;
-	VkDescriptorSet m_ActiveTexturesDescriptorSet = VK_NULL_HANDLE;
-	std::unordered_map<CStrIntern, uint32_t> m_TextureMapping;
+	std::optional<CSingleTypeDescriptorSetBinding<CTexture>> m_TextureBinding;
+	std::optional<CSingleTypeDescriptorSetBinding<CTexture>> m_StorageImageBinding;
 
 	std::unordered_map<VertexAttributeStream, uint32_t> m_StreamLocations;
 };

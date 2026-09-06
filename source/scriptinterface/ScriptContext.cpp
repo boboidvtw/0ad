@@ -1,4 +1,4 @@
-/* Copyright (C) 2023 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -22,6 +22,7 @@
 #include "lib/alignment.h"
 #include "ps/GameSetup/Config.h"
 #include "ps/Profile.h"
+#include "scriptinterface/Promises.h"
 #include "scriptinterface/ScriptExtraHeaders.h"
 #include "scriptinterface/ScriptEngine.h"
 #include "scriptinterface/ScriptInterface.h"
@@ -83,10 +84,9 @@ std::shared_ptr<ScriptContext> ScriptContext::CreateContext(int contextSize, int
 }
 
 ScriptContext::ScriptContext(int contextSize, int heapGrowthBytesGCTrigger):
-	m_LastGCBytes(0),
-	m_LastGCCheck(0.0f),
-	m_HeapGrowthBytesGCTrigger(heapGrowthBytesGCTrigger),
-	m_ContextSize(contextSize)
+	m_JobQueue{std::make_unique<Script::JobQueue>()},
+	m_ContextSize{contextSize},
+	m_HeapGrowthBytesGCTrigger{heapGrowthBytesGCTrigger}
 {
 	ENSURE(ScriptEngine::IsInitialised() && "The ScriptEngine must be initialized before constructing any ScriptContexts!");
 
@@ -120,9 +120,19 @@ ScriptContext::ScriptContext(int contextSize, int heapGrowthBytesGCTrigger):
 	JS_SetGlobalJitCompilerOption(m_cx, JSJITCOMPILER_ION_ENABLE, 1);
 	JS_SetGlobalJitCompilerOption(m_cx, JSJITCOMPILER_BASELINE_ENABLE, 1);
 
+	// Turn off Spectre mitigations - this is a huge speedup on JS code, particularly JS -> C++ calls.
+	JS_SetGlobalJitCompilerOption(m_cx, JSJITCOMPILER_SPECTRE_JIT_TO_CXX_CALLS, 0);
+	JS_SetGlobalJitCompilerOption(m_cx, JSJITCOMPILER_SPECTRE_INDEX_MASKING, 0);
+	JS_SetGlobalJitCompilerOption(m_cx, JSJITCOMPILER_SPECTRE_VALUE_MASKING, 0);
+	JS_SetGlobalJitCompilerOption(m_cx, JSJITCOMPILER_SPECTRE_STRING_MITIGATIONS, 0);
+	JS_SetGlobalJitCompilerOption(m_cx, JSJITCOMPILER_SPECTRE_OBJECT_MITIGATIONS, 0);
+
 	JS::ContextOptionsRef(m_cx).setStrictMode(true);
 
 	ScriptEngine::GetSingleton().RegisterContext(m_cx);
+
+	JS::SetJobQueue(m_cx, m_JobQueue.get());
+	JS::SetPromiseRejectionTrackerCallback(m_cx, &Script::UnhandledRejectedPromise);
 }
 
 ScriptContext::~ScriptContext()
@@ -259,6 +269,11 @@ void ScriptContext::ShrinkingGC()
 	JS::NonIncrementalGC(m_cx, JS::GCOptions::Shrink, JS::GCReason::API);
 	JS_SetGCParameter(m_cx, JSGC_INCREMENTAL_GC_ENABLED, true);
 	JS_SetGCParameter(m_cx, JSGC_PER_ZONE_GC_ENABLED, false);
+}
+
+void ScriptContext::RunJobs()
+{
+	m_JobQueue->runJobs(m_cx);
 }
 
 void ScriptContext::PrepareZonesForIncrementalGC() const

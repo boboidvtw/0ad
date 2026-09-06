@@ -1,16 +1,16 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2022 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# chanoknun namab
-# Stanislas Dolcini
+# chanoknun namab, 2021
+# Stanislas Dolcini, 2021,2023
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2022-09-12 09:35+0000\n"
+"POT-Creation-Date: 2024-08-09 07:17+0000\n"
 "PO-Revision-Date: 2014-06-19 17:48+0000\n"
-"Last-Translator: Stanislas Dolcini <stan@wildfiregames.com>, 2021,2023\n"
+"Last-Translator: Stanislas Dolcini, 2021,2023\n"
 "Language-Team: Thai (http://app.transifex.com/wildfire-games/0ad/language/th/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Language: th\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:(caption):13
+#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:13
 msgid "AI Configuration"
 msgstr "การกำหนดค่า AI"
 
-#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:(caption):29
+#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:29
 msgid "OK"
 msgstr "ตกลง"
 
@@ -72,12 +72,12 @@ msgctxt "Match settings tab name"
 msgid "Map"
 msgstr "แผนที่"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:28
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:29
 msgctxt "Match settings tab name"
 msgid "Player"
 msgstr "ผู้เล่น"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:40
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:41
 msgctxt "Match settings tab name"
 msgid "Game Type"
 msgstr "ประเภทเกม"
@@ -126,23 +126,23 @@ msgctxt "team"
 msgid "None"
 msgstr "ไม่มี"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):6
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:6
 msgid "Player Name"
 msgstr "ชื่อผู้เล่น"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):10
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:10
 msgid "Color"
 msgstr "สี"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):14
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:14
 msgid "Player Placement"
 msgstr "ตำแหน่งผู้เล่น"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):18
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:18
 msgid "Civilization"
 msgstr "อารยธรรม"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):25
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:25
 msgid "Team"
 msgstr "ทีม"
 
@@ -447,6 +447,14 @@ msgstr "ความยาก"
 msgid "Select the difficulty of this scenario."
 msgstr "เลือกความยากของสถานการณ์นี้"
 
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WaterLevel.js:43
+msgid "Water level"
+msgstr ""
+
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WaterLevel.js:46
+msgid "Select the water level of this map."
+msgstr ""
+
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WorldPopulationCap.js:47
 msgid "World Population Cap"
 msgstr "จำนวนประชากรโลก"
@@ -544,19 +552,19 @@ msgstr "ระยะเวลาชัยชนะ"
 msgid "Minutes until the player has achieved Wonder Victory"
 msgstr "นาทีจนกว่าผู้เล่นจะได้รับชัยชนะ"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:36
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:17
 msgid "Back"
 msgstr "ย้อนกลับ"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:39
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:20
 msgid "Return to the lobby."
 msgstr "กลับไปที่ล็อบบี้"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:42
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:23
 msgid "Return to the main menu."
 msgstr "กลับไปหน้าเมนูหลัก"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CivInfoButton.js:48
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CivInfoButton.js:33
 #, javascript-format
 msgid ""
 "%(hotkey_civinfo)s / %(hotkey_structree)s: View Civilization Overview / Structure Tree\n"
@@ -567,27 +575,27 @@ msgstr "%(hotkey_civinfo)s / %(hotkey_structree)s : ดูภาพรวมอ�
 msgid "Show the multiplayer lobby in a dialog window."
 msgstr "แสดงล็อบบี้ผู้เล่นหลายคนในหน้าต่างโต้ตอบ"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:79
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:70
 msgid "I'm ready"
 msgstr "ฉันพร้อมแล้ว"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:80
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:71
 msgid "Stay ready"
 msgstr "เตรียมพร้อม"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:81
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:72
 msgid "I'm not ready!"
 msgstr "ฉันยังไม่พร้อม"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:85
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:76
 msgid "State that you are ready to play."
 msgstr "ระบุว่าคุณพร้อมที่จะเล่น"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:86
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:77
 msgid "Stay ready even when the game settings change."
 msgstr "เตรียมพร้อมแม้การตั้งค่าเกมจะเปลี่ยนไป"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:87
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:78
 msgid "State that you are not ready to play."
 msgstr "ระบุว่าคุณไม่พร้อมที่จะเล่น"
 
@@ -600,15 +608,15 @@ msgstr "รีเซ็ตอารยธรรมใด ๆ ที่ถูก�
 msgid "Reset all teams to the default."
 msgstr "รีเซ็ตทีมทั้งหมดเป็นค่าเริ่มต้น"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:65
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:56
 msgid "Start Game!"
 msgstr "เริ่มเกม!"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:68
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:59
 msgid "Start a new game with the current settings."
 msgstr "เริ่มเกมใหม่ด้วยการตั้งค่าปัจจุบัน"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:71
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:62
 msgid ""
 "Start a new game with the current settings (disabled until all players are "
 "ready)."
@@ -667,7 +675,7 @@ msgstr "%(username)sพร้อม "
 msgid "Game settings have been changed"
 msgstr "การตั้งค่าเกมถูกเปลี่ยน"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatPanel.xml:(caption):9
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatPanel.xml:9
 msgid "Send"
 msgstr "ส่ง"
 
@@ -690,11 +698,11 @@ msgstr "\\[%(time)s]"
 msgid "HH:mm"
 msgstr "HH:mm"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:40
+#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:29
 msgid "Cheats enabled."
 msgstr "เปิดใช้งานกลโกง"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:43
+#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:32
 msgid "Rated game."
 msgstr "อันดับเกม"
 
@@ -711,19 +719,19 @@ msgstr "ไม่มีแผนที่ที่เลือก"
 msgid "Click to view the list of available maps."
 msgstr "คลิกเพื่อดูรายการแผนที่ที่มี"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/TipsPanel.xml:(caption):10
+#: gui/gamesetup/Pages/GameSetupPage/Panels/TipsPanel.xml:10
 msgid "Show this message in the future."
 msgstr "แสดงข้อความนี้ในอนาคต"
 
-#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:(caption):7
+#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:7
 msgid "Loading"
 msgstr "กำลังโหลด"
 
-#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:(caption):11
+#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:11
 msgid "Loading map data. Please wait…"
 msgstr "กำลังโหลดข้อมูลแผนที่ โปรดรอ…"
 
-#: gui/gamesetup/gamesetup.xml:(caption):17
+#: gui/gamesetup/gamesetup.xml:17
 msgid "Match Setup"
 msgstr "การตั้งค่าการจับคู่"
 
@@ -776,11 +784,6 @@ msgstr "ไม่สามารถเชื่อมต่อกับเซิ
 msgid "Connection failed"
 msgstr "การเชื่อมต่อล้มเหลว"
 
-#: gui/gamesetup_mp/gamesetup_mp.js:193
-#, javascript-format
-msgid "Net message: %(message)s"
-msgstr "ข้อความสุทธิ:%(message)s"
-
 #: gui/gamesetup_mp/gamesetup_mp.js:276
 msgid "Registering with server..."
 msgstr "การลงทะเบียนกับเซิร์ฟเวอร์ ..."
@@ -799,82 +802,79 @@ msgid "Cannot host game: %(message)s."
 msgstr "ไม่สามารถโฮสต์เกม:%(message)s"
 
 #: gui/gamesetup_mp/gamesetup_mp.js:377 gui/gamesetup_mp/gamesetup_mp.js:406
-#: gui/gamesetup_mp/gamesetup_mp.js:435 gui/gamesetup_mp/gamesetup_mp.js:450
+#: gui/gamesetup_mp/gamesetup_mp.js:436 gui/gamesetup_mp/gamesetup_mp.js:451
 msgid "Error"
 msgstr "ผิดพลาด"
 
-#: gui/gamesetup_mp/gamesetup_mp.js:405 gui/gamesetup_mp/gamesetup_mp.js:449
+#: gui/gamesetup_mp/gamesetup_mp.js:405 gui/gamesetup_mp/gamesetup_mp.js:450
 #, javascript-format
 msgid "Cannot join game: %(message)s."
 msgstr "ไม่สามารถเข้าร่วมเกม:%(message)s"
 
-#: gui/gamesetup_mp/gamesetup_mp.js:464
+#: gui/gamesetup_mp/gamesetup_mp.js:465
 #, javascript-format
 msgid "%(playername)s's game"
 msgstr "เกมของ%(playername)s"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):18
+#: gui/gamesetup_mp/gamesetup_mp.xml:18
 msgid "Multiplayer"
 msgstr "ผู้เล่นหลายคน"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):24
+#: gui/gamesetup_mp/gamesetup_mp.xml:24
 msgid "Joining an existing game."
 msgstr "เข้าร่วมเกมที่มีอยู่"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):28
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):70
+#: gui/gamesetup_mp/gamesetup_mp.xml:28 gui/gamesetup_mp/gamesetup_mp.xml:70
 msgid "Player Name:"
 msgstr "ชื่อผู้เล่น:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):38
+#: gui/gamesetup_mp/gamesetup_mp.xml:38
 msgid "Server Hostname or IP:"
 msgstr "ชื่อโฮสต์ของเซิร์ฟเวอร์หรือ IP:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):48
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):95
+#: gui/gamesetup_mp/gamesetup_mp.xml:48 gui/gamesetup_mp/gamesetup_mp.xml:95
 msgid "Server Port:"
 msgstr "พอร์ตเซิร์ฟเวอร์:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):65
-msgid "Set up your server to host."
-msgstr "ตั้งค่าเซิร์ฟเวอร์ของคุณเป็นโฮสต์"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):83
-msgid "Server Name:"
-msgstr "ชื่อเซิร์ฟเวอร์:"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):112
-msgid "Server Password:"
-msgstr "รหัสผ่านเซิร์ฟเวอร์:"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):128
-msgid "Use STUN to work around firewalls"
-msgstr "ใช้ STUN เพื่อแก้ไขปัญหาไฟร์วอลล์"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):136
-msgid "Continue"
-msgstr "ดำเนินการต่อ"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):141
-msgid "Cancel"
-msgstr "ยกเลิก"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):152
-msgid "Password:"
-msgstr "รหัสผ่าน:"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):162
-msgid "Confirm"
-msgstr "ยืนยัน"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):52
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):99
+#: gui/gamesetup_mp/gamesetup_mp.xml:52 gui/gamesetup_mp/gamesetup_mp.xml:99
 msgid "Leave blank to use the default port."
 msgstr "เว้นว่างไว้เพื่อใช้พอร์ตเริ่มต้น"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):113
+#: gui/gamesetup_mp/gamesetup_mp.xml:65
+msgid "Set up your server to host."
+msgstr "ตั้งค่าเซิร์ฟเวอร์ของคุณเป็นโฮสต์"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:83
+msgid "Server Name:"
+msgstr "ชื่อเซิร์ฟเวอร์:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:112
+msgid "Server Password:"
+msgstr "รหัสผ่านเซิร์ฟเวอร์:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:113
 msgid "Leave blank to not require it."
 msgstr "เว้นว่างไว้หากไม่ต้องการ"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:128
+msgid "Use STUN to work around firewalls"
+msgstr "ใช้ STUN เพื่อแก้ไขปัญหาไฟร์วอลล์"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:136
+msgid "Continue"
+msgstr "ดำเนินการต่อ"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:141
+msgid "Cancel"
+msgstr "ยกเลิก"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:152
+msgid "Password:"
+msgstr "รหัสผ่าน:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:162
+msgid "Confirm"
+msgstr "ยืนยัน"
 
 #: gui/loading/ProgressBar.js:48
 #, javascript-format

@@ -1,21 +1,22 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2022 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# Albin Nilsson
-# Jacob Carlsson
-# efef6ec5b435a041fce803c7f8af77d2_2341d43
-# Kristoffer Grundström
-# Martin H
-# Mattias Münster
-# Peter Freund
-# Sam Johnsson
-# theschitz
+# Albin Nilsson, 2021
+# Jacob Carlsson, 2015
+# efef6ec5b435a041fce803c7f8af77d2_2341d43, 2016
+# efef6ec5b435a041fce803c7f8af77d2_2341d43, 2020-2021
+# Kristoffer Grundström, 2016
+# Martin H, 2020
+# Mattias Münster, 2019
+# Peter Freund, 2023
+# Sam Johnsson, 2015
+# theschitz, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2022-09-12 09:35+0000\n"
+"POT-Creation-Date: 2024-08-12 07:08+0000\n"
 "PO-Revision-Date: 2014-06-19 17:50+0000\n"
 "Last-Translator: Peter Freund, 2023\n"
 "Language-Team: Swedish (http://app.transifex.com/wildfire-games/0ad/language/sv/)\n"
@@ -25,32 +26,31 @@ msgstr ""
 "Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(caption):28
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):61
-msgid "Back"
-msgstr "Tillbaka"
-
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(caption):32
-msgid "Update"
-msgstr "Uppdatera"
-
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(heading):17
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:17
 msgid "Rank"
 msgstr "Rang"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(heading):20
-#: gui/lobby/LobbyPage/GameList.xml:(heading):13
-#: gui/lobby/LobbyPage/PlayerList.xml:(heading):21
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:20
+#: gui/lobby/LobbyPage/GameList.xml:13 gui/lobby/LobbyPage/PlayerList.xml:21
 msgid "Name"
 msgstr "Namn"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(heading):23
-#: gui/lobby/LobbyPage/GameList.xml:(heading):28
-#: gui/lobby/LobbyPage/PlayerList.xml:(heading):24
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:23
+#: gui/lobby/LobbyPage/GameList.xml:28 gui/lobby/LobbyPage/PlayerList.xml:24
 msgid "Rating"
 msgstr "Värdering"
 
-#: gui/lobby/LobbyPage/AnnouncementHandler.js:18
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:28
+#: gui/lobby/ProfilePage/ProfilePage.xml:61
+msgid "Back"
+msgstr "Tillbaka"
+
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:32
+msgid "Update"
+msgstr "Uppdatera"
+
+#: gui/lobby/LobbyPage/AnnouncementHandler.js:19
+#: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessageFormatAnnouncement.js:24
 msgid "Notice"
 msgstr "OBS"
 
@@ -66,34 +66,34 @@ msgstr "Avmarkera som kompis"
 msgid "Host Game"
 msgstr "Var värd i ett spel"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:40
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:43
 msgid "Your active mods do not match the mods of this game."
 msgstr "Dina aktiva mods matchar inte spelets mods."
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:42
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:45
 msgid "Do you want to switch to the mod selection page?"
 msgstr "Vill du byta till sidan för att välja mods?"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:43
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:46
 msgid "Incompatible mods"
 msgstr "Inkompatibla mods"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:52
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:62
 msgid "The game has already started. Do you want to join as observer?"
 msgstr "Matchen har redan startat. Vill du ansluta dig som observatör?"
 
 #. Translation: Join the game currently selected in the list.
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:104
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:95
 msgid "Join Game"
 msgstr "Anslut till spel"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(caption):12
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:12
 #: gui/lobby/LobbyPage/Buttons/LeaderboardButton.js:9
 msgid "Leaderboard"
 msgstr "Topplistan"
 
 #: gui/lobby/LobbyPage/Buttons/ProfileButton.js:9
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):12
+#: gui/lobby/ProfilePage/ProfilePage.xml:12
 msgid "Player Profile Lookup"
 msgstr "Slå upp spelarprofil"
 
@@ -178,6 +178,13 @@ msgstr "/say"
 msgid "Clear all chat scrollback."
 msgstr "Rensa all chatthistoria."
 
+#: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessageFormatAnnouncement.js:26
+#, javascript-format
+msgid ""
+"== %(prefix)s:\n"
+"%(message)s"
+msgstr ""
+
 #. Translation: Chat message issued using the ‘/me’ command.
 #: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessageFormatMe.js:24
 #, javascript-format
@@ -203,7 +210,7 @@ msgstr "Privat"
 msgid "(%(private)s) %(message)s"
 msgstr "(%(private)s) %(message)s"
 
-#: gui/lobby/LobbyPage/Chat/ChatPanel.xml:(caption):12
+#: gui/lobby/LobbyPage/Chat/ChatPanel.xml:12
 msgid "Send"
 msgstr "Skicka"
 
@@ -318,23 +325,23 @@ msgstr "SPARKAD"
 msgid "You have been disconnected from the lobby. Do you want to reconnect?"
 msgstr "Du har blivit frånkopplad ifrån lobbyn. Vill du återansluta?"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:53
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:63
 #: gui/lobby/LobbyPage/ConnectionHandler.js:62
-#: gui/prelobby/common/credentials/credentials.js:55
+#: gui/prelobby/common/credentials/credentials.js:56
 msgid "Confirmation"
 msgstr "Bekräftelse"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:44
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:54
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:47
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:64
 #: gui/lobby/LobbyPage/ConnectionHandler.js:63
-#: gui/prelobby/common/credentials/credentials.js:56
+#: gui/prelobby/common/credentials/credentials.js:57
 msgid "No"
 msgstr "Nej"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:44
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:54
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:47
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:64
 #: gui/lobby/LobbyPage/ConnectionHandler.js:63
-#: gui/prelobby/common/credentials/credentials.js:56
+#: gui/prelobby/common/credentials/credentials.js:57
 msgid "Yes"
 msgstr "Ja"
 
@@ -416,25 +423,25 @@ msgstr "Kartstorlek:"
 msgid "Map Description:"
 msgstr "Kartbeskrivning:"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):16
+#: gui/lobby/LobbyPage/GameList.xml:16
 msgid "Map Name"
 msgstr "Kartnamn"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):19
+#: gui/lobby/LobbyPage/GameList.xml:19
 msgctxt "map"
 msgid "Size"
 msgstr "Storlek"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):22
+#: gui/lobby/LobbyPage/GameList.xml:22
 msgctxt "map"
 msgid "Type"
 msgstr "Typ"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):25
+#: gui/lobby/LobbyPage/GameList.xml:25
 msgid "Players"
 msgstr "Spelare"
 
-#: gui/lobby/LobbyPage/GameListFilters.xml:(caption):7
+#: gui/lobby/LobbyPage/GameListFilters.xml:7
 msgid "Show only open games"
 msgstr "Visa bara öppna spel"
 
@@ -490,8 +497,7 @@ msgctxt "lobby kick"
 msgid "Reason: %(reason)s"
 msgstr "Anledning: %(reason)s"
 
-#: gui/lobby/LobbyPage/LobbyPage.xml:(caption):13
-#: gui/prelobby/entrance/entrance.xml:(caption):14
+#: gui/lobby/LobbyPage/LobbyPage.xml:13 gui/prelobby/entrance/entrance.xml:14
 msgid "Multiplayer Lobby"
 msgstr "Flerspelarlobby"
 
@@ -521,13 +527,13 @@ msgctxt "lobby presence"
 msgid "Unknown"
 msgstr "Okänd"
 
-#: gui/lobby/LobbyPage/PlayerList.xml:(heading):18
-msgid "Status"
-msgstr "Status"
-
-#: gui/lobby/LobbyPage/PlayerList.xml:(placeholder_text):4
+#: gui/lobby/LobbyPage/PlayerList.xml:4
 msgid "Search for Player"
 msgstr "Sök efter spelare"
+
+#: gui/lobby/LobbyPage/PlayerList.xml:18
+msgid "Status"
+msgstr "Status"
 
 #: gui/lobby/LobbyPage/ProfilePanel.js:106
 msgid "N/A"
@@ -555,33 +561,33 @@ msgstr "-"
 msgid "%(percentage)s%%"
 msgstr "%(percentage)s%%"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):8
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):30
+#: gui/lobby/LobbyPage/ProfilePanel.xml:8
+#: gui/lobby/ProfilePage/ProfilePage.xml:30
 msgid "Current Rank:"
 msgstr "Nuvarande Rank"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):12
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):34
+#: gui/lobby/LobbyPage/ProfilePanel.xml:12
+#: gui/lobby/ProfilePage/ProfilePage.xml:34
 msgid "Highest Rating:"
 msgstr "Högsta Värdering:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):16
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):38
+#: gui/lobby/LobbyPage/ProfilePanel.xml:16
+#: gui/lobby/ProfilePage/ProfilePage.xml:38
 msgid "Total Games:"
 msgstr "Totala spel:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):20
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):42
+#: gui/lobby/LobbyPage/ProfilePanel.xml:20
+#: gui/lobby/ProfilePage/ProfilePage.xml:42
 msgid "Wins:"
 msgstr "Vinster:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):24
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):46
+#: gui/lobby/LobbyPage/ProfilePanel.xml:24
+#: gui/lobby/ProfilePage/ProfilePage.xml:46
 msgid "Losses:"
 msgstr "Förluster:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):28
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):50
+#: gui/lobby/LobbyPage/ProfilePanel.xml:28
+#: gui/lobby/ProfilePage/ProfilePage.xml:50
 msgid "Win Rate:"
 msgstr "Vinsttakt:"
 
@@ -590,19 +596,19 @@ msgstr "Vinsttakt:"
 msgid "Player \"%(nick)s\" not found."
 msgstr "Spelare \"%(nick)s\" kan ej hittas."
 
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):16
+#: gui/lobby/ProfilePage/ProfilePage.xml:16
 msgid "Enter playername:"
 msgstr "Ange spelarnamn:"
 
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):22
+#: gui/lobby/ProfilePage/ProfilePage.xml:22
 msgid "View Profile"
 msgstr "Se profil"
 
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):55
+#: gui/lobby/ProfilePage/ProfilePage.xml:55
 msgid "Please enter a player name."
 msgstr "Vänligen ange ett spelarnamn."
 
-#: gui/prelobby/common/credentials/confirmpassword.xml:(caption):4
+#: gui/prelobby/common/credentials/confirmpassword.xml:4
 msgid "Password again:"
 msgstr "Lösenord igen:"
 
@@ -636,19 +642,19 @@ msgstr "Vänligen ange ditt lösenord igen"
 msgid "Passwords do not match"
 msgstr "Lösenorden matchar inte"
 
-#: gui/prelobby/common/credentials/credentials.js:54
+#: gui/prelobby/common/credentials/credentials.js:55
 msgid "Are you sure you want to delete the password after connecting?"
 msgstr "Är du säker att du vill ta bort lösenordet efter anslutning?"
 
-#: gui/prelobby/common/credentials/credentials.xml:(caption):6
+#: gui/prelobby/common/credentials/credentials.xml:6
 msgid "Login:"
 msgstr "Logga in:"
 
-#: gui/prelobby/common/credentials/credentials.xml:(caption):15
+#: gui/prelobby/common/credentials/credentials.xml:15
 msgid "Password:"
 msgstr "Lösenord:"
 
-#: gui/prelobby/common/credentials/rememberpassword.xml:(caption):7
+#: gui/prelobby/common/credentials/rememberpassword.xml:7
 msgid "Remember Password"
 msgstr "Kom ihåg lösenord"
 
@@ -658,20 +664,22 @@ msgid ""
 "allowed to register more than one account within one hour."
 msgstr "Okänt fel. Detta sker oftast på grund av att samma IP-adress inte kan registrera mer än ett konto inom en timme."
 
-#: gui/prelobby/common/feedback/feedback.xml:(caption):10
-#: gui/prelobby/entrance/entrance.xml:(caption):30
+#: gui/prelobby/common/feedback/feedback.xml:10
+#: gui/prelobby/entrance/entrance.xml:30
 msgid "Cancel"
 msgstr "Avbryt"
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:1
 msgid ""
-"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Privacy "
+"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Privacy "
 "Policy[/font]"
-msgstr "[font=\"sans-bold-18\"]0 A.D. Empires Ascendant flerspelarlobby sekretesspolicy[/font]"
+msgstr ""
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:3
-msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2020-12-24"
-msgstr "[font=\"sans-bold-14\"]Dokumentdatum:[/font] 2020-12-24"
+#: gui/prelobby/common/terms/Terms_of_Service.txt:3
+#: gui/prelobby/common/terms/Terms_of_Use.txt:3
+msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2023-07-27"
+msgstr ""
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:5
 msgid ""
@@ -893,10 +901,10 @@ msgstr "1. Behandlingen är nödvändig för utförandet av den tjänst som defi
 #: gui/prelobby/common/terms/Privacy_Policy.txt:50
 msgid ""
 "2. Wildfire Games has legitimate interests in providing the Multiplayer "
-"Lobby, in the development and improvement of 0 A.D. and the Multiplayer "
+"Lobby, in the development and improvement of 0 A.D. and the Multiplayer "
 "Lobby, in enforcing the Terms of Use and in the protection against "
 "cyberattacks (GDPR 6.1.f)."
-msgstr "2. Wildfire Games har legitima intressen i att tillhandahålla flerspelarlobbyn, i utvecklingen och förbättringen av 0 A.D. och flerspelarlobbyn, att genomdriva användarvillkoren och i skydd mot cyberattacker (GDPR 6.1.f)."
+msgstr ""
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:51
 msgid ""
@@ -1070,28 +1078,24 @@ msgstr "För ytterligare information om Wildfire Games sekretesspolicy, besök h
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:1
 msgid ""
-"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
+"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
 "Service[/font]"
-msgstr "[font=\"sans-bold-14\"]0 A.D. Empires Ascendant flerspelarlobby användarvillkor[/font]"
-
-#: gui/prelobby/common/terms/Terms_of_Service.txt:3
-msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2018-10-16"
-msgstr "[font=\"sans-bold-14\"]Dokumentets datum:[/font] 2018-10-16"
+msgstr ""
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:5
 msgid ""
-"The 0 A.D. Empires Ascendant Multiplayer Lobby is an online service provided"
+"The 0 A.D. Empires Ascendant Multiplayer Lobby is an online service provided"
 " by Wildfire Games that allows players to set up online multiplayer matches,"
 " discuss the game in a public chat room and gain a rating that reflects "
 "their skill."
-msgstr "0 A.D. Empires Ascendant flerspelarlobbyn är en onlinetjänst som tillhandahålls av Wildfire Games som tillåter spelare att sätta upp flerspelarmatcher online, diskutera spelet i ett offentligt chattrum och få en rating som återspeglar deras skicklighet."
+msgstr ""
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:7
 msgid ""
 "Due to the subject matter of historic warfare, description and depiction of "
-"violence and the language on the Multiplayer Lobby, 0 A.D. and the "
+"violence and the language on the Multiplayer Lobby, 0 A.D. and the "
 "Multiplayer Lobby are not directed to young children (COPPA §312.2)."
-msgstr "På grund av att ämnet är historisk krigföring, och beskrivningar och skildringar av våld och språket i flerspelarlobbyn, är 0 A.D. och flerspelarlobbyn inte riktade till små barn (COPPA § 312.2)."
+msgstr ""
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:8
 msgid "The minimum age to use the Multiplayer Lobby is 13."
@@ -1100,9 +1104,9 @@ msgstr "Minimiåldern för att använda flerspelarlobbyn är 13."
 #: gui/prelobby/common/terms/Terms_of_Service.txt:10
 #: gui/prelobby/common/terms/Terms_of_Use.txt:5
 msgid ""
-"[font=\"sans-bold-14\"]By using the 0 A.D. Multiplayer Lobby, you agree "
+"[font=\"sans-bold-14\"]By using the 0 A.D. Multiplayer Lobby, you agree "
 "to:[/font]"
-msgstr "[font=\"sans-bold-14\"]Genom att använda 0 A.D. flerspelarlobbyn, samtycker du till:[/font]"
+msgstr ""
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:11
 msgid " 1. Follow all usage policies."
@@ -1162,13 +1166,9 @@ msgstr "Om delar av villkoren anses vara olagliga eller på annat sätt omöjlig
 
 #: gui/prelobby/common/terms/Terms_of_Use.txt:1
 msgid ""
-"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
+"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
 "Use[/font]"
-msgstr "[font=\"sans-bold-14\"]0 A.D. Empires Ascendant flerspelarlobby användarvillkor[/font]"
-
-#: gui/prelobby/common/terms/Terms_of_Use.txt:3
-msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2022-09-01"
-msgstr "[font=\"sans-bold-14\"]Dokumentdatum:[/font] 2022-09-01"
+msgstr ""
 
 #: gui/prelobby/common/terms/Terms_of_Use.txt:6
 msgid ""
@@ -1268,11 +1268,11 @@ msgstr "Sekretesspolicy"
 msgid "Please read and accept the Privacy Policy."
 msgstr "Vänligen läs och godkänn sekretesspolicyn."
 
-#: gui/prelobby/entrance/entrance.xml:(caption):20
+#: gui/prelobby/entrance/entrance.xml:20
 msgid "Create a new account"
 msgstr "Skapa nytt konto"
 
-#: gui/prelobby/entrance/entrance.xml:(caption):25
+#: gui/prelobby/entrance/entrance.xml:25
 msgid "Login to an existing account"
 msgstr "Logga in på ett befintligt konto"
 
@@ -1284,7 +1284,7 @@ msgstr "Anslut"
 msgid "Connecting…"
 msgstr "Ansluter…"
 
-#: gui/prelobby/login/login.xml:(caption):13
+#: gui/prelobby/login/login.xml:13
 msgid "Connect to the game lobby"
 msgstr "Anslut till spellobby"
 
@@ -1300,6 +1300,6 @@ msgstr "Registrerar…"
 msgid "Registered"
 msgstr "Registrerad"
 
-#: gui/prelobby/register/register.xml:(caption):13
+#: gui/prelobby/register/register.xml:13
 msgid "Registration"
 msgstr "Registrering"

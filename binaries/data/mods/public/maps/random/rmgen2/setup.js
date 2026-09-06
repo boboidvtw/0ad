@@ -86,7 +86,7 @@ var g_PlayerbaseTypes = {
  */
 function addElements(elements)
 {
-	for (let element of elements)
+	for (const element of elements)
 		element.func(
 			[
 				avoidClasses.apply(null, element.avoid),
@@ -103,7 +103,7 @@ function addElements(elements)
  */
 function pickAmount(amounts)
 {
-	let amount = pickRandom(amounts);
+	const amount = pickRandom(amounts);
 
 	if (amount in g_Amounts)
 		return g_Amounts[amount];
@@ -116,7 +116,7 @@ function pickAmount(amounts)
  */
 function pickMix(mixes)
 {
-	let mix = pickRandom(mixes);
+	const mix = pickRandom(mixes);
 
 	if (mix in g_Mixes)
 		return g_Mixes[mix];
@@ -129,7 +129,7 @@ function pickMix(mixes)
  */
 function pickSize(sizes)
 {
-	let size = pickRandom(sizes);
+	const size = pickRandom(sizes);
 
 	if (size in g_Sizes)
 		return g_Sizes[size];
@@ -148,7 +148,15 @@ function pickSize(sizes)
  */
 function createBasesByPattern(type, distance, groupedDistance, startAngle)
 {
-	return createBases(...g_PlayerbaseTypes[type].getPosition(distance, groupedDistance, startAngle), g_PlayerbaseTypes[type].walls);
+	error("createBasesByPattern() has been deprecated. Use playerPlacementByPattern() instead.");
+	return createBases(
+		...playerPlacementByPattern(
+			type,			// patternName
+			distance,		// distance
+			groupedDistance,
+			startAngle,		// angle
+			undefined), 	// center
+		undefined);			// walls
 }
 
 function createBases(playerIDs, playerPosition, walls)
@@ -206,116 +214,6 @@ function createBase(playerID, playerPosition, walls)
 }
 
 /**
- * Return an array where each element is an array of playerIndices of a team.
- */
-function getTeamsArray()
-{
-	var playerIDs = sortAllPlayers();
-	var numPlayers = getNumPlayers();
-
-	// Group players by team
-	var teams = [];
-	for (let i = 0; i < numPlayers; ++i)
-	{
-		let team = getPlayerTeam(playerIDs[i]);
-		if (team == -1)
-			continue;
-
-		if (!teams[team])
-			teams[team] = [];
-
-		teams[team].push(playerIDs[i]);
-	}
-
-	// Players without a team get a custom index
-	for (let i = 0; i < numPlayers; ++i)
-		if (getPlayerTeam(playerIDs[i]) == -1)
-			teams.push([playerIDs[i]]);
-
-	// Remove unused indices
-	return teams.filter(team => true);
-}
-
-/**
- * Place teams in a line-pattern.
- *
- * @param {Array} playerIDs - typically randomized indices of players of a single team
- * @param {number} distance - radial distance from the center of the map
- * @param {number} groupedDistance - distance between players
- * @param {number} startAngle - determined by the map that might want to place something between players.
- *
- * @returns {Array} - contains id, angle, x, z for every player
- */
-function placeLine(teamsArray, distance, groupedDistance, startAngle)
-{
-	let playerIDs = [];
-	let playerPosition = [];
-
-	let mapCenter = g_Map.getCenter();
-	let dist = fractionToTiles(0.45);
-
-	for (let i = 0; i < teamsArray.length; ++i)
-	{
-		var safeDist = distance;
-		if (distance + teamsArray[i].length * groupedDistance > dist)
-			safeDist = dist - teamsArray[i].length * groupedDistance;
-
-		var teamAngle = startAngle + (i + 1) * 2 * Math.PI / teamsArray.length;
-
-		for (let p = 0; p < teamsArray[i].length; ++p)
-		{
-			playerIDs.push(teamsArray[i][p]);
-			playerPosition.push(Vector2D.add(mapCenter, new Vector2D(safeDist + p * groupedDistance, 0).rotate(-teamAngle)).round());
-		}
-	}
-
-	return [playerIDs, playerPosition];
-}
-
-/**
- * Place given players in a stronghold-pattern.
- *
- * @param teamsArray - each item is an array of playerIDs placed per stronghold
- * @param distance - radial distance from the center of the map
- * @param groupedDistance - distance between neighboring players
- * @param {number} startAngle - determined by the map that might want to place something between players
- */
-function placeStronghold(teamsArray, distance, groupedDistance, startAngle)
-{
-	var mapCenter = g_Map.getCenter();
-
-	let playerIDs = [];
-	let playerPosition = [];
-
-	for (let i = 0; i < teamsArray.length; ++i)
-	{
-		var teamAngle = startAngle + (i + 1) * 2 * Math.PI / teamsArray.length;
-		var teamPosition = Vector2D.add(mapCenter, new Vector2D(distance, 0).rotate(-teamAngle));
-		var teamGroupDistance = groupedDistance;
-
-		// If we have a team of above average size, make sure they're spread out
-		if (teamsArray[i].length > 4)
-			teamGroupDistance = Math.max(fractionToTiles(0.08), groupedDistance);
-
-		// If we have a solo player, place them on the center of the team's location
-		if (teamsArray[i].length == 1)
-			teamGroupDistance = fractionToTiles(0);
-
-		// TODO: Ensure players are not placed outside of the map area, similar to placeLine
-
-		// Create player base
-		for (var p = 0; p < teamsArray[i].length; ++p)
-		{
-			var angle = startAngle + (p + 1) * 2 * Math.PI / teamsArray[i].length;
-			playerIDs.push(teamsArray[i][p]);
-			playerPosition.push(Vector2D.add(teamPosition, new Vector2D(teamGroupDistance, 0).rotate(-angle)).round());
-		}
-	}
-
-	return [playerIDs, playerPosition];
-}
-
-/**
  * Creates tileClass for the default classes and every class given.
  *
  * @param {Array} newClasses
@@ -323,12 +221,12 @@ function placeStronghold(teamsArray, distance, groupedDistance, startAngle)
  */
 function initTileClasses(newClasses)
 {
-	var classNames = g_DefaultTileClasses;
+	let classNames = g_DefaultTileClasses;
 
 	if (newClasses)
 		classNames = classNames.concat(newClasses);
 
 	g_TileClasses = {};
-	for (var className of classNames)
+	for (let className of classNames)
 		g_TileClasses[className] = g_Map.createTileClass();
 }

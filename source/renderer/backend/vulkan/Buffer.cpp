@@ -1,4 +1,4 @@
-/* Copyright (C) 2023 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -20,6 +20,9 @@
 #include "Buffer.h"
 
 #include "renderer/backend/vulkan/Device.h"
+#include "renderer/backend/vulkan/Utilities.h"
+
+#include <tuple>
 
 namespace Renderer
 {
@@ -30,47 +33,71 @@ namespace Backend
 namespace Vulkan
 {
 
+VkBufferUsageFlags ToVkBufferUsageFlags(const uint32_t usage)
+{
+	VkBufferUsageFlags usageFlags = 0;
+	if (usage & IBuffer::Usage::TRANSFER_SRC)
+		usageFlags |= VK_IMAGE_USAGE_TRANSFER_SRC_BIT;
+	if (usage & IBuffer::Usage::TRANSFER_DST)
+		usageFlags |= VK_IMAGE_USAGE_TRANSFER_DST_BIT;
+	return usageFlags;
+}
+
+std::tuple<VkBufferUsageFlags, VkMemoryPropertyFlags, VmaMemoryUsage> MakeCreationFlags(
+	const IBuffer::Type type, const uint32_t usage)
+{
+	const VkBufferUsageFlags commonFlags = ToVkBufferUsageFlags(usage);
+
+	switch (type)
+	{
+	case IBuffer::Type::VERTEX:
+		ENSURE(usage & IBuffer::Usage::TRANSFER_DST);
+		return {
+			commonFlags | VK_BUFFER_USAGE_VERTEX_BUFFER_BIT,
+			VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT,
+			VMA_MEMORY_USAGE_AUTO_PREFER_DEVICE};
+	case IBuffer::Type::INDEX:
+		ENSURE(usage & IBuffer::Usage::TRANSFER_DST);
+		return {
+			commonFlags | VK_BUFFER_USAGE_INDEX_BUFFER_BIT,
+			VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT,
+			VMA_MEMORY_USAGE_AUTO_PREFER_DEVICE};
+	case IBuffer::Type::UPLOAD:
+		ENSURE(usage & IBuffer::Usage::TRANSFER_SRC);
+		return {
+			commonFlags,
+			VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT | VK_MEMORY_PROPERTY_HOST_COHERENT_BIT,
+			VMA_MEMORY_USAGE_AUTO};
+	case IBuffer::Type::UNIFORM:
+		ENSURE(usage & IBuffer::Usage::TRANSFER_DST);
+		return {
+			commonFlags | VK_BUFFER_USAGE_UNIFORM_BUFFER_BIT,
+			VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT,
+			VMA_MEMORY_USAGE_AUTO_PREFER_DEVICE};
+	}
+
+	return {0, 0, VMA_MEMORY_USAGE_AUTO};
+}
+
 // static
 std::unique_ptr<CBuffer> CBuffer::Create(
 	CDevice* device, const char* name, const Type type, const uint32_t size,
-	const bool dynamic)
+	const uint32_t usage)
 {
 	std::unique_ptr<CBuffer> buffer(new CBuffer());
 	buffer->m_Device = device;
 	buffer->m_Type = type;
 	buffer->m_Size = size;
-	buffer->m_Dynamic = dynamic;
+	buffer->m_Usage = usage;
 
-	VkMemoryPropertyFlags properties = 0;
-	VkBufferUsageFlags usage = VK_BUFFER_USAGE_FLAG_BITS_MAX_ENUM;
-	VmaMemoryUsage memoryUsage = VMA_MEMORY_USAGE_AUTO;
-	switch (type)
-	{
-	case Type::VERTEX:
-		usage = VK_BUFFER_USAGE_VERTEX_BUFFER_BIT | VK_BUFFER_USAGE_TRANSFER_DST_BIT;
-		properties = VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT;
-		memoryUsage = VMA_MEMORY_USAGE_AUTO_PREFER_DEVICE;
-		break;
-	case Type::INDEX:
-		usage = VK_BUFFER_USAGE_INDEX_BUFFER_BIT | VK_BUFFER_USAGE_TRANSFER_DST_BIT;
-		properties = VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT;
-		memoryUsage = VMA_MEMORY_USAGE_AUTO_PREFER_DEVICE;
-		break;
-	case Type::UPLOAD:
-		usage = VK_BUFFER_USAGE_TRANSFER_SRC_BIT;
-		properties = VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT | VK_MEMORY_PROPERTY_HOST_COHERENT_BIT;
-		break;
-	case Type::UNIFORM:
-		usage = VK_BUFFER_USAGE_UNIFORM_BUFFER_BIT | VK_BUFFER_USAGE_TRANSFER_DST_BIT;
-		properties = VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT;
-		memoryUsage = VMA_MEMORY_USAGE_AUTO_PREFER_DEVICE;
-		break;
-	}
+	const auto [usageFlags, memoryProperties, memoryUsage] = MakeCreationFlags(type, usage);
+	// According to the Vulkan spec usage must not be 0.
+	ENSURE(usageFlags != 0);
 
 	VkBufferCreateInfo bufferCreateInfo{};
 	bufferCreateInfo.sType = VK_STRUCTURE_TYPE_BUFFER_CREATE_INFO;
 	bufferCreateInfo.size = size;
-	bufferCreateInfo.usage = usage;
+	bufferCreateInfo.usage = usageFlags;
 	bufferCreateInfo.sharingMode = VK_SHARING_MODE_EXCLUSIVE;
 
 	VmaAllocationCreateInfo allocationCreateInfo{};
@@ -80,14 +107,14 @@ std::unique_ptr<CBuffer> CBuffer::Create(
 	allocationCreateInfo.flags |= VMA_ALLOCATION_CREATE_USER_DATA_COPY_STRING_BIT;
 	allocationCreateInfo.pUserData = const_cast<char*>(name);
 #endif
-	allocationCreateInfo.requiredFlags = properties;
+	allocationCreateInfo.requiredFlags = memoryProperties;
 	allocationCreateInfo.usage = memoryUsage;
 	const VkResult createBufferResult = vmaCreateBuffer(
 		device->GetVMAAllocator(), &bufferCreateInfo, &allocationCreateInfo,
 		&buffer->m_Buffer, &buffer->m_Allocation, &buffer->m_AllocationInfo);
 	if (createBufferResult != VK_SUCCESS)
 	{
-		LOGERROR("Failed to create VkBuffer: %d", static_cast<int>(createBufferResult));
+		LOGERROR("Failed to create VkBuffer: %d (%s)", static_cast<int>(createBufferResult), Utilities::GetVkResultName(createBufferResult));
 		return nullptr;
 	}
 

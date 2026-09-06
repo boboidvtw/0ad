@@ -1,4 +1,4 @@
-/* Copyright (C) 2022 Wildfire Games.
+/* Copyright (C) 2023 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -83,7 +83,15 @@ public:
 	 * @param debugName Name of this interface for CScriptStats purposes.
 	 * @param context ScriptContext to use when initializing this interface.
 	 */
-	ScriptInterface(const char* nativeScopeName, const char* debugName, const std::shared_ptr<ScriptContext>& context);
+	ScriptInterface(const char* nativeScopeName, const char* debugName, ScriptContext& context);
+
+	template<typename Context>
+	ScriptInterface(const char* nativeScopeName, const char* debugName, Context&& context) :
+		ScriptInterface(nativeScopeName, debugName, *context)
+	{
+		static_assert(std::is_lvalue_reference_v<Context>, "`ScriptInterface` doesn't take ownership "
+			"of the context.");
+	}
 
 	/**
 	 * Alternate constructor. This creates the new Realm in the same Compartment as the neighbor scriptInterface.
@@ -117,7 +125,6 @@ public:
 	static T* ObjectFromCBData(const ScriptRequest& rq)
 	{
 		static_assert(!std::is_same_v<void, T>);
-		ScriptInterface::CmptPrivate::GetCBData(rq.cx);
 		return static_cast<T*>(ObjectFromCBData<void>(rq));
 	}
 
@@ -138,7 +145,7 @@ public:
 	 * ScriptInterface::Request and use the context from that.
 	 */
 	JSContext* GetGeneralJSContext() const;
-	std::shared_ptr<ScriptContext> GetContext() const;
+	ScriptContext& GetContext() const;
 
 	/**
 	 * Load global scripts that most script interfaces need,

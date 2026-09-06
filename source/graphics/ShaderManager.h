@@ -1,4 +1,4 @@
-/* Copyright (C) 2022 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -21,6 +21,7 @@
 #include "graphics/ShaderDefines.h"
 #include "graphics/ShaderProgram.h"
 #include "graphics/ShaderTechnique.h"
+#include "renderer/backend/IDevice.h"
 #include "renderer/backend/PipelineState.h"
 
 #include <functional>
@@ -37,7 +38,7 @@
 class CShaderManager
 {
 public:
-	CShaderManager();
+	CShaderManager(Renderer::Backend::IDevice* device);
 	~CShaderManager();
 
 	/**
@@ -80,6 +81,8 @@ private:
 			return defines < k.defines;
 		}
 	};
+
+	Renderer::Backend::IDevice* m_Device = nullptr;
 
 	// A CShaderProgram contains expensive backend state, so we ought to cache it.
 	// The compiled state depends solely on the filename and list of defines,

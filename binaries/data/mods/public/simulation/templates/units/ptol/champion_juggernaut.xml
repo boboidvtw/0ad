@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_ship_warship_heavy">
+<Entity parent="template_unit_ship_warship_siege">
   <Cost>
     <Population>5</Population>
     <BuildTime>60</BuildTime>
@@ -23,7 +23,7 @@
     <Classes datatype="tokens">Juggernaut</Classes>
     <GenericName>Juggernaut</GenericName>
     <SpecificName>Tessarakonterēs</SpecificName>
-    <Icon>units/rome/ship_quinquereme.png</Icon>
+    <Icon>units/rome/ship_siege.png</Icon>
   </Identity>
   <Loot>
     <xp>400</xp>

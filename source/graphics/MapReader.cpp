@@ -1,4 +1,4 @@
-/* Copyright (C) 2022 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -29,11 +29,11 @@
 #include "graphics/TerrainTextureEntry.h"
 #include "graphics/TerrainTextureManager.h"
 #include "lib/timer.h"
-#include "lib/external_libraries/libsdl.h"
 #include "maths/MathUtil.h"
 #include "ps/CLogger.h"
 #include "ps/Loader.h"
-#include "ps/LoaderThunks.h"
+#include "ps/Profiler2.h"
+#include "ps/TaskManager.h"
 #include "ps/World.h"
 #include "ps/XML/Xeromyces.h"
 #include "renderer/PostprocManager.h"
@@ -41,6 +41,7 @@
 #include "renderer/WaterManager.h"
 #include "scriptinterface/Object.h"
 #include "scriptinterface/ScriptContext.h"
+#include "scriptinterface/ScriptInterface.h"
 #include "scriptinterface/ScriptRequest.h"
 #include "scriptinterface/JSON.h"
 #include "simulation2/Simulation2.h"
@@ -63,11 +64,10 @@
 #pragma warning(disable: 4458) // Declaration hides class member.
 #endif
 
-CMapReader::CMapReader()
-	: xml_reader(0), m_PatchesPerSide(0), m_MapGen(0)
-{
-	cur_terrain_tex = 0;	// important - resets generator state
-}
+// TODO: Maybe this should be optimized depending on the map size.
+constexpr int MAP_GENERATION_CONTEXT_SIZE{96 * MiB};
+
+CMapReader::CMapReader() = default;
 
 // LoadMap: try to load the map from given file; reinitialise the scene to new data if successful
 void CMapReader::LoadMap(const VfsPath& pathname, const ScriptContext& cx,  JS::HandleValue settings, CTerrain *pTerrain_,
@@ -124,31 +124,58 @@ void CMapReader::LoadMap(const VfsPath& pathname, const ScriptContext& cx,  JS::
 
 	// load map or script settings script
 	if (settings.isUndefined())
-		RegMemFun(this, &CMapReader::LoadScriptSettings, L"CMapReader::LoadScriptSettings", 50);
+		LDR_Register([this](const double)
+		{
+			return LoadScriptSettings();
+		}, L"CMapReader::LoadScriptSettings", 50);
 	else
-		RegMemFun(this, &CMapReader::LoadRMSettings, L"CMapReader::LoadRMSettings", 50);
+		LDR_Register([this](const double)
+		{
+			return LoadRMSettings();
+		}, L"CMapReader::LoadRMSettings", 50);
 
 	// load player settings script (must be done before reading map)
-	RegMemFun(this, &CMapReader::LoadPlayerSettings, L"CMapReader::LoadPlayerSettings", 50);
+	LDR_Register([this](const double)
+	{
+		return LoadPlayerSettings();
+	}, L"CMapReader::LoadPlayerSettings", 50);
 
 	// unpack the data
 	if (!only_xml)
-		RegMemFun(this, &CMapReader::UnpackMap, L"CMapReader::UnpackMap", 1200);
+		LDR_Register([this](const double)
+		{
+			return UnpackTerrain();
+		}, L"CMapReader::UnpackMap", 1200);
 
 	// read the corresponding XML file
-	RegMemFun(this, &CMapReader::ReadXML, L"CMapReader::ReadXML", 50);
+	LDR_Register([this](const double)
+	{
+		return ReadXML();
+	}, L"CMapReader::ReadXML", 50);
 
 	// apply terrain data to the world
-	RegMemFun(this, &CMapReader::ApplyTerrainData, L"CMapReader::ApplyTerrainData", 5);
+	LDR_Register([this](const double)
+	{
+		return ApplyTerrainData();
+	}, L"CMapReader::ApplyTerrainData", 5);
 
 	// read entities
-	RegMemFun(this, &CMapReader::ReadXMLEntities, L"CMapReader::ReadXMLEntities", 5800);
+	LDR_Register([this](const double)
+	{
+		return ReadXMLEntities();
+	}, L"CMapReader::ReadXMLEntities", 5800);
 
 	// apply misc data to the world
-	RegMemFun(this, &CMapReader::ApplyData, L"CMapReader::ApplyData", 5);
+	LDR_Register([this](const double)
+	{
+		return ApplyData();
+	}, L"CMapReader::ApplyData", 5);
 
 	// load map settings script (must be done after reading map)
-	RegMemFun(this, &CMapReader::LoadMapSettings, L"CMapReader::LoadMapSettings", 5);
+	LDR_Register([this](const double)
+	{
+		return LoadMapSettings();
+	}, L"CMapReader::LoadMapSettings", 5);
 }
 
 // LoadRandomMap: try to load the map data; reinitialise the scene to new data if successful
@@ -157,7 +184,6 @@ void CMapReader::LoadRandomMap(const CStrW& scriptFile, const ScriptContext& cx,
 						 CLightEnv *pLightEnv_, CGameView *pGameView_, CCinemaManager* pCinema_, CTriggerManager* pTrigMan_, CPostprocManager* pPostproc_,
 						 CSimulation2 *pSimulation2_, int playerID_)
 {
-	m_ScriptFile = scriptFile;
 	pSimulation2 = pSimulation2_;
 	pSimContext = pSimulation2 ? &pSimulation2->GetSimContext() : NULL;
 	m_ScriptSettings.init(cx.GetGeneralJSContext(), settings);
@@ -180,40 +206,69 @@ void CMapReader::LoadRandomMap(const CStrW& scriptFile, const ScriptContext& cx,
 	only_xml = false;
 
 	// copy random map settings (before entity creation)
-	RegMemFun(this, &CMapReader::LoadRMSettings, L"CMapReader::LoadRMSettings", 50);
+	LDR_Register([this](const double)
+	{
+		return LoadRMSettings();
+	}, L"CMapReader::LoadRMSettings", 50);
 
 	// load player settings script (must be done before reading map)
-	RegMemFun(this, &CMapReader::LoadPlayerSettings, L"CMapReader::LoadPlayerSettings", 50);
+	LDR_Register([this](const double)
+	{
+		return LoadPlayerSettings();
+	}, L"CMapReader::LoadPlayerSettings", 50);
 
 	// load map generator with random map script
-	RegMemFun(this, &CMapReader::GenerateMap, L"CMapReader::GenerateMap", 20000);
+	LDR_Register([this, scriptFile](const double)
+	{
+		return StartMapGeneration(scriptFile);
+	}, L"CMapReader::StartMapGeneration", 1);
+
+	LDR_Register([this](const double)
+	{
+		return PollMapGeneration();
+	}, L"CMapReader::PollMapGeneration", 19999);
 
 	// parse RMS results into terrain structure
-	RegMemFun(this, &CMapReader::ParseTerrain, L"CMapReader::ParseTerrain", 500);
+	LDR_Register([this](const double)
+	{
+		return ParseTerrain();
+	}, L"CMapReader::ParseTerrain", 500);
 
 	// parse RMS results into environment settings
-	RegMemFun(this, &CMapReader::ParseEnvironment, L"CMapReader::ParseEnvironment", 5);
+	LDR_Register([this](const double)
+	{
+		return ParseEnvironment();
+	}, L"CMapReader::ParseEnvironment", 5);
 
 	// parse RMS results into camera settings
-	RegMemFun(this, &CMapReader::ParseCamera, L"CMapReader::ParseCamera", 5);
+	LDR_Register([this](const double)
+	{
+		return ParseCamera();
+	}, L"CMapReader::ParseCamera", 5);
 
 	// apply terrain data to the world
-	RegMemFun(this, &CMapReader::ApplyTerrainData, L"CMapReader::ApplyTerrainData", 5);
+	LDR_Register([this](const double)
+	{
+		return ApplyTerrainData();
+	}, L"CMapReader::ApplyTerrainData", 5);
 
 	// parse RMS results into entities
-	RegMemFun(this, &CMapReader::ParseEntities, L"CMapReader::ParseEntities", 1000);
+	LDR_Register([this](const double)
+	{
+		return ParseEntities();
+	}, L"CMapReader::ParseEntities", 1000);
 
 	// apply misc data to the world
-	RegMemFun(this, &CMapReader::ApplyData, L"CMapReader::ApplyData", 5);
+	LDR_Register([this](const double)
+	{
+		return ApplyData();
+	}, L"CMapReader::ApplyData", 5);
 
 	// load map settings script (must be done after reading map)
-	RegMemFun(this, &CMapReader::LoadMapSettings, L"CMapReader::LoadMapSettings", 5);
-}
-
-// UnpackMap: unpack the given data from the raw data stream into local variables
-int CMapReader::UnpackMap()
-{
-	return UnpackTerrain();
+	LDR_Register([this](const double)
+	{
+		return LoadMapSettings();
+	}, L"CMapReader::LoadMapSettings", 5);
 }
 
 // UnpackTerrain: unpack the terrain from the end of the input data stream
@@ -1272,64 +1327,65 @@ int CMapReader::LoadRMSettings()
 	return 0;
 }
 
-int CMapReader::GenerateMap()
+struct CMapReader::GeneratorState
+{
+	std::atomic<int> progress{1};
+	Future<Script::StructuredClone> task;
+};
+
+int CMapReader::StartMapGeneration(const CStrW& scriptFile)
 {
 	ScriptRequest rq(pSimulation2->GetScriptInterface());
 
-	if (!m_MapGen)
-	{
-		// Initialize map generator
-		m_MapGen = new CMapGenerator();
+	m_GeneratorState = std::make_unique<GeneratorState>();
 
-		VfsPath scriptPath;
-
-		if (m_ScriptFile.length())
-			scriptPath = L"maps/random/"+m_ScriptFile;
-
-		// Stringify settings to pass across threads
-		std::string scriptSettings = Script::StringifyJSON(rq, &m_ScriptSettings);
-
-		// Try to generate map
-		m_MapGen->GenerateMap(scriptPath, scriptSettings);
-	}
-
-	// Check status
-	int progress = m_MapGen->GetProgress();
-	if (progress < 0)
-	{
-		// RMS failed - return to main menu
-		throw PSERROR_Game_World_MapLoadFailed("Error generating random map.\nCheck application log for details.");
-	}
-	else if (progress == 0)
-	{
-		// Finished, get results as StructuredClone object, which must be read to obtain the JS::Value
-		Script::StructuredClone results = m_MapGen->GetResults();
-
-		// Parse data into simulation context
-		JS::RootedValue data(rq.cx);
-		Script::ReadStructuredClone(rq, results, &data);
-
-		if (data.isUndefined())
+	// The settings are stringified to pass them to the task.
+	m_GeneratorState->task = Threading::TaskManager::Instance().PushTask(
+		[&progress = m_GeneratorState->progress, scriptFile,
+			settings = Script::StringifyJSON(rq, &m_ScriptSettings)]
 		{
-			// RMS failed - return to main menu
-			throw PSERROR_Game_World_MapLoadFailed("Error generating random map.\nCheck application log for details.");
-		}
-		else
-		{
-			m_MapData.init(rq.cx, data);
-		}
-	}
-	else
-	{
-		// Still working
+			PROFILE2("Map Generation");
 
-		// Sleep for a while, slowing down the rendering thread
-		// to allow more CPU for the map generator thread
-		SDL_Delay(100);
-	}
+			const CStrW scriptPath{scriptFile.empty() ? L"" : L"maps/random/" + scriptFile};
 
-	// return progress
-	return progress;
+			const std::shared_ptr<ScriptContext> mapgenContext{ScriptContext::CreateContext(
+				MAP_GENERATION_CONTEXT_SIZE)};
+			ScriptInterface mapgenInterface{"Engine", "MapGenerator", mapgenContext};
+
+			return RunMapGenerationScript(progress, mapgenInterface, scriptPath, settings);
+		});
+
+	return 0;
+}
+
+[[noreturn]] void ThrowMapGenerationError()
+{
+	throw PSERROR_Game_World_MapLoadFailed{
+		"Error generating random map.\nCheck application log for details."};
+};
+
+int CMapReader::PollMapGeneration()
+{
+	ENSURE(m_GeneratorState);
+
+	if (!m_GeneratorState->task.IsReady())
+		return m_GeneratorState->progress.load();
+
+	const Script::StructuredClone results{m_GeneratorState->task.Get()};
+	if (!results)
+		ThrowMapGenerationError();
+
+	// Parse data into simulation context
+	ScriptRequest rq(pSimulation2->GetScriptInterface());
+	JS::RootedValue data{rq.cx};
+	Script::ReadStructuredClone(rq, results, &data);
+
+	if (data.isUndefined())
+		ThrowMapGenerationError();
+
+	m_MapData.init(rq.cx, data);
+
+	return 0;
 };
 
 
@@ -1612,5 +1668,4 @@ CMapReader::~CMapReader()
 {
 	// Cleaup objects
 	delete xml_reader;
-	delete m_MapGen;
 }

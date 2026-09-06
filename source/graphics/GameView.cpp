@@ -1,4 +1,4 @@
-/* Copyright (C) 2022 Wildfire Games.
+/* Copyright (C) 2023 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -49,7 +49,6 @@
 #include "ps/Globals.h"
 #include "ps/Hotkey.h"
 #include "ps/Loader.h"
-#include "ps/LoaderThunks.h"
 #include "ps/Profile.h"
 #include "ps/Pyrogenesis.h"
 #include "ps/TouchInput.h"
@@ -67,13 +66,13 @@ class CGameViewImpl
 {
 	NONCOPYABLE(CGameViewImpl);
 public:
-	CGameViewImpl(CGame* game)
+	CGameViewImpl(Renderer::Backend::IDevice* device, CGame* game)
 		: Game(game),
 		ColladaManager(g_VFS), MeshManager(ColladaManager), SkeletonAnimManager(ColladaManager),
 		ObjectManager(MeshManager, SkeletonAnimManager, *game->GetSimulation2()),
 		LOSTexture(*game->GetSimulation2()),
 		TerritoryTexture(*game->GetSimulation2()),
-		MiniMapTexture(*game->GetSimulation2()),
+		MiniMapTexture(device, *game->GetSimulation2()),
 		ViewCamera(),
 		CullCamera(),
 		LockCullCamera(false),
@@ -158,8 +157,8 @@ void CGameView::SetConstrainCameraEnabled(bool enabled)
 
 #undef IMPLEMENT_BOOLEAN_SETTING
 
-CGameView::CGameView(CGame *pGame):
-	m(new CGameViewImpl(pGame))
+CGameView::CGameView(Renderer::Backend::IDevice* device, CGame *pGame):
+	m(new CGameViewImpl(device, pGame))
 {
 	m->CullCamera = m->ViewCamera;
 	g_Renderer.GetSceneRenderer().SetSceneCamera(m->ViewCamera, m->CullCamera);
@@ -207,18 +206,19 @@ CMiniMapTexture& CGameView::GetMiniMapTexture()
 	return m->MiniMapTexture;
 }
 
-int CGameView::Initialize()
-{
-	m->CameraController->LoadConfig();
-	return 0;
-}
-
 void CGameView::RegisterInit()
 {
 	// CGameView init
-	RegMemFun(this, &CGameView::Initialize, L"CGameView init", 1);
+	LDR_Register([this](const double)
+	{
+		m->CameraController->LoadConfig();
+		return 0;
+	}, L"CGameView init", 1);
 
-	RegMemFun(g_TexMan.GetSingletonPtr(), &CTerrainTextureManager::LoadTerrainTextures, L"LoadTerrainTextures", 60);
+	LDR_Register([](const double)
+	{
+		return g_TexMan.LoadTerrainTextures();
+	}, L"LoadTerrainTextures", 60);
 }
 
 void CGameView::BeginFrame()
@@ -259,16 +259,16 @@ void CGameView::EnumerateObjects(const CFrustum& frustum, SceneCollector* c)
 	{
 	PROFILE3("submit terrain");
 
-	CTerrain* pTerrain = m->Game->GetWorld()->GetTerrain();
+	const CTerrain& terrain = m->Game->GetWorld()->GetTerrain();
 	float waterHeight = g_Renderer.GetSceneRenderer().GetWaterManager().m_WaterHeight + 0.001f;
-	const ssize_t patchesPerSide = pTerrain->GetPatchesPerSide();
+	const ssize_t patchesPerSide = terrain.GetPatchesPerSide();
 
 	// find out which patches will be drawn
 	for (ssize_t j=0; j<patchesPerSide; ++j)
 	{
 		for (ssize_t i=0; i<patchesPerSide; ++i)
 		{
-			CPatch* patch=pTerrain->GetPatch(i,j);	// can't fail
+			CPatch* const patch = terrain.GetPatch(i,j);	// can't fail
 
 			// If the patch is underwater, calculate a bounding box that also contains the water plane
 			CBoundingBoxAligned bounds = patch->GetWorldBounds();

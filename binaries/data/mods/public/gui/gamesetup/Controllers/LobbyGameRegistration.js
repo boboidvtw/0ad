@@ -21,7 +21,7 @@ class LobbyGameRegistrationController
 		// Events
 		setupWindow.registerClosePageHandler(this.onClosePage.bind(this));
 		netMessages.registerNetMessageHandler("start", this.onGameStart.bind(this));
-		playerAssignmentsController.registerPlayerAssignmentsChangeHandler(this.sendImmediately.bind(this));
+		playerAssignmentsController.registerPlayerAssignmentsChangeHandler(this.onSettingsChange.bind(this));
 
 		g_GameSettings.map.watch(() => this.onSettingsChange(), ["map", "type"]);
 		g_GameSettings.mapSize.watch(() => this.onSettingsChange(), ["size"]);
@@ -46,8 +46,7 @@ class LobbyGameRegistrationController
 
 	onClosePage()
 	{
-		if (g_IsController && Engine.HasXmppClient())
-			Engine.SendUnregisterGame();
+		Engine.SendUnregisterGame();
 	}
 
 	/**
@@ -55,9 +54,6 @@ class LobbyGameRegistrationController
 	 */
 	sendDelayed()
 	{
-		if (!g_IsController || !Engine.HasXmppClient())
-			return;
-
 		// Already sending an update - do nothing.
 		if (this.timer !== undefined)
 			return;
@@ -70,9 +66,6 @@ class LobbyGameRegistrationController
 	 */
 	sendImmediately()
 	{
-		if (!g_IsController || !Engine.HasXmppClient())
-			return;
-
 		// Wait until a map has been selected.
 		if (!g_GameSettings.map.map)
 			return;
@@ -144,4 +137,4 @@ class LobbyGameRegistrationController
 /**
  * Send the current game settings to the lobby bot if the settings didn't change for this number of milliseconds.
  */
-LobbyGameRegistrationController.prototype.Timeout = 2000;
+LobbyGameRegistrationController.prototype.Timeout = 500;

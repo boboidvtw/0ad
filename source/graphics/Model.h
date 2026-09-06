@@ -1,4 +1,4 @@
-/* Copyright (C) 2022 Wildfire Games.
+/* Copyright (C) 2023 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -34,15 +34,7 @@ class CSkeletonAnim;
 class CSkeletonAnimDef;
 class CSimulation2;
 
-#define MODELFLAG_CASTSHADOWS		(1<<0)
-#define MODELFLAG_NOLOOPANIMATION	(1<<1)
-#define MODELFLAG_SILHOUETTE_DISPLAY	(1<<2)
-#define MODELFLAG_SILHOUETTE_OCCLUDER	(1<<3)
-#define MODELFLAG_IGNORE_LOS		(1<<4)
-#define MODELFLAG_FLOATONWATER		(1<<5)
-///////////////////////////////////////////////////////////////////////////////
-// CModel: basically, a mesh object - holds the texturing and skinning
-// information for a model in game
+// Holds world information for a particular instance of a model in the game.
 class CModel : public CModelAbstract
 {
 	NONCOPYABLE(CModel);
@@ -50,59 +42,50 @@ class CModel : public CModelAbstract
 public:
 	struct Prop
 	{
-		Prop() : m_MinHeight(0.f), m_MaxHeight(0.f), m_Point(0), m_Model(0), m_ObjectEntry(0), m_Hidden(false), m_Selectable(true) {}
-
-		float m_MinHeight;
-		float m_MaxHeight;
+		float m_MinHeight{0.0f};
+		float m_MaxHeight{0.0f};
 
 		/**
 		 * Location of the prop point within its parent model, relative to either a bone in the parent model or to the
 		 * parent model's origin. See the documentation for @ref SPropPoint for more details.
 		 * @see SPropPoint
 		 */
-		const SPropPoint* m_Point;
+		const SPropPoint* m_Point{nullptr};
 
 		/**
 		 * Pointer to the model associated with this prop. Note that the transform matrix held by this model is the full object-to-world
 		 * space transform, taking into account all parent model positioning (see @ref CModel::ValidatePosition for positioning logic).
 		 * @see CModel::ValidatePosition
 		 */
-		CModelAbstract* m_Model;
-		CObjectEntry* m_ObjectEntry;
+		std::unique_ptr<CModelAbstract> m_Model;
+		CObjectEntry* m_ObjectEntry{nullptr};
 
-		bool m_Hidden; ///< Should this prop be temporarily removed from rendering?
-		bool m_Selectable; /// < should this prop count in the selection size?
+		bool m_Hidden{false}; ///< Should this prop be temporarily removed from rendering?
+		bool m_Selectable{true}; /// < should this prop count in the selection size?
 	};
 
 public:
-	// constructor
-	CModel(CSimulation2& simulation);
-	// destructor
-	~CModel();
-
+	CModel(const CSimulation2& simulation, const CMaterial& material, const CModelDefPtr& modeldef);
+	~CModel() override;
 
 	/// Dynamic cast
-	virtual CModel* ToCModel()
+	CModel* ToCModel() override
 	{
 		return this;
 	}
 
-	// setup model from given geometry
-	bool InitModel(const CModelDefPtr& modeldef);
 	// update this model's state; 'time' is the absolute time since the start of the animation, in MS
 	void UpdateTo(float time);
 
 	// get the model's geometry data
 	const CModelDefPtr& GetModelDef() { return m_pModelDef; }
 
-	// set the model's material
-	void SetMaterial(const CMaterial &material);
 	// set the model's player ID, recursively through props
-	void SetPlayerID(player_id_t id);
+	void SetPlayerID(player_id_t id) override;
 	// set the models mod color
-	virtual void SetShadingColor(const CColor& color);
+	void SetShadingColor(const CColor& color) override;
 	// get the model's material
-	CMaterial& GetMaterial() { return m_Material; }
+	const CMaterial& GetMaterial() { return m_Material; }
 
 	// set the given animation as the current animation on this model
 	bool SetAnimation(CSkeletonAnim* anim, bool once = false);
@@ -118,19 +101,20 @@ public:
 	void SetFlags(int flags) { m_Flags=flags; }
 	// get object flags
 	int GetFlags() const { return m_Flags; }
+
 	// add object flags, recursively through props
 	void AddFlagsRec(int flags);
 	// remove shadow casting and receiving, recursively through props
 	// TODO: replace with more generic shader define + flags setting
 	void RemoveShadowsRec();
 
-	virtual void SetTerrainDirty(ssize_t i0, ssize_t j0, ssize_t i1, ssize_t j1)
+	void SetTerrainDirty(ssize_t i0, ssize_t j0, ssize_t i1, ssize_t j1) override
 	{
 		for (size_t i = 0; i < m_Props.size(); ++i)
 			m_Props[i].m_Model->SetTerrainDirty(i0, j0, i1, j1);
 	}
 
-	virtual void SetEntityVariable(const std::string& name, float value)
+	void SetEntityVariable(const std::string& name, float value) override
 	{
 		for (size_t i = 0; i < m_Props.size(); ++i)
 			m_Props[i].m_Model->SetEntityVariable(name, value);
@@ -140,7 +124,7 @@ public:
 
 	/// Overridden to calculate both the world-space and object-space bounds of this model, and stores the result in
 	/// m_Bounds and m_ObjectBounds, respectively.
-	virtual void CalcBounds();
+	void CalcBounds() override;
 
 	/// Returns the object-space bounds for this model, excluding its children.
 	const CBoundingBoxAligned& GetObjectBounds()
@@ -149,7 +133,7 @@ public:
 		return m_ObjectBounds;
 	}
 
-	virtual const CBoundingBoxAligned GetWorldBoundsRec();		// reimplemented here
+	const CBoundingBoxAligned GetWorldBoundsRec() override;		// reimplemented here
 
 	/// Auxiliary method; calculates object space bounds of this model, based solely on vertex positions, and stores
 	/// the result in m_ObjectBounds. Called by CalcBounds (instead of CalcAnimatedObjectBounds) if it has been determined
@@ -164,7 +148,7 @@ public:
 	// --- SELECTION BOX/BOUNDS ----------------------------------------------------------------------
 
 	/// Reimplemented here since proper models should participate in selection boxes.
-	virtual const CBoundingBoxAligned GetObjectSelectionBoundsRec();
+	const CBoundingBoxAligned GetObjectSelectionBoundsRec() override;
 
 	/**
 	 * Set transform of this object.
@@ -172,7 +156,7 @@ public:
 	 * @note In order to ensure that all child props are updated properly,
 	 * you must call ValidatePosition().
 	 */
-	virtual void SetTransform(const CMatrix3D& transform);
+	void SetTransform(const CMatrix3D& transform) override;
 
 	/**
 	 * Return whether this is a skinned/skeletal model. If it is, Get*BoneMatrices()
@@ -181,7 +165,8 @@ public:
 	bool IsSkinned() { return (m_BoneMatrices != NULL); }
 
 	// return the models bone matrices; 16-byte aligned for SSE reads
-	const CMatrix3D* GetAnimatedBoneMatrices() {
+	const CMatrix3D* GetAnimatedBoneMatrices()
+	{
 		ENSURE(m_PositionValid);
 		return m_BoneMatrices;
 	}
@@ -189,13 +174,13 @@ public:
 	/**
 	 * Add a prop to the model on the given point.
 	 */
-	void AddProp(const SPropPoint* point, CModelAbstract* model, CObjectEntry* objectentry, float minHeight = 0.f, float maxHeight = 0.f, bool selectable = true);
+	void AddProp(const SPropPoint* point, std::unique_ptr<CModelAbstract> model, CObjectEntry* objectentry, float minHeight = 0.f, float maxHeight = 0.f, bool selectable = true);
 
 	/**
 	 * Add a prop to the model on the given point, and treat it as the ammo prop.
 	 * The prop will be hidden by default.
 	 */
-	void AddAmmoProp(const SPropPoint* point, CModelAbstract* model, CObjectEntry* objectentry);
+	void AddAmmoProp(const SPropPoint* point, std::unique_ptr<CModelAbstract> model, CObjectEntry* objectentry);
 
 	/**
 	 * Show the ammo prop (if any), and hide any other props on that prop point.
@@ -217,41 +202,38 @@ public:
 	const std::vector<Prop>& GetProps() const { return m_Props; }
 
 	// return a clone of this model
-	virtual CModelAbstract* Clone() const;
+	std::unique_ptr<CModelAbstract> Clone() const override;
 
 	/**
 	 * Ensure that both the transformation and the bone
 	 * matrices are correct for this model and all its props.
 	 */
-	virtual void ValidatePosition();
+	void ValidatePosition() override;
 
 	/**
 	 * Mark this model's position and bone matrices,
 	 * and all props' positions as invalid.
 	 */
-	virtual void InvalidatePosition();
+	void InvalidatePosition() override;
 
 private:
-	// delete anything allocated by the model
-	void ReleaseData();
-
 	// Needed for terrain aligned props
-	CSimulation2& m_Simulation;
+	const CSimulation2& m_Simulation;
 
 	// object flags
-	int m_Flags;
+	int m_Flags{0};
 	// model's material
 	CMaterial m_Material;
 	// pointer to the model's raw 3d data
-	CModelDefPtr m_pModelDef;
+	const CModelDefPtr m_pModelDef;
 	// object space bounds of model - accounts for bounds of all possible animations
 	// that can play on a model. Not always up-to-date - currently CalcBounds()
 	// updates it when necessary.
 	CBoundingBoxAligned m_ObjectBounds;
 	// animation currently playing on this model, if any
-	CSkeletonAnim* m_Anim;
+	CSkeletonAnim* m_Anim = nullptr;
 	// time (in MS) into the current animation
-	float m_AnimTime;
+	float m_AnimTime{0.0f};
 
 	/**
 	 * Current state of all bones on this model; null if associated modeldef isn't skeletal.
@@ -261,19 +243,19 @@ private:
 	 *
 	 * @see SPropPoint
 	 */
-	CMatrix3D* m_BoneMatrices;
+	CMatrix3D* m_BoneMatrices{nullptr};
 	// list of current props on model
 	std::vector<Prop> m_Props;
 
 	/**
 	 * The prop point to which the ammo prop is attached, or NULL if none
 	 */
-	const SPropPoint* m_AmmoPropPoint;
+	const SPropPoint* m_AmmoPropPoint{nullptr};
 
 	/**
 	 * If m_AmmoPropPoint is not NULL, then the index in m_Props of the ammo prop
 	 */
-	size_t m_AmmoLoadedProp;
+	size_t m_AmmoLoadedProp{0};
 };
 
-#endif
+#endif // INCLUDED_MODEL

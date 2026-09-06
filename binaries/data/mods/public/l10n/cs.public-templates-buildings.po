@@ -1,30 +1,30 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2023 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# cd16528e781b93a5c74ed80984fd5012_ec89011
-# Ales Novak
-# David Nováček
-# Dernes Žižka
-# Jaroslav Kajínek
-# Jaroslav Lichtblau
-# fri
-# Peter Stanislav
-# Petr Hála
-# Robin Kriebel
-# Tomáš Machala
-# Tomáš Matýs
-# Tomáš Weber
-# Tonda12
-# Vojtěch Dubský
-# Vojtěch Valigura
+# cd16528e781b93a5c74ed80984fd5012_ec89011, 2016
+# Ales Novak, 2019
+# David Nováček, 2020
+# Dernes Žižka, 2023
+# Jaroslav Kajínek, 2020,2022
+# Jaroslav Lichtblau, 2016
+# fri, 2014-2018,2021,2023-2024
+# Peter Stanislav, 2021
+# Petr Hála, 2016-2017
+# Robin Kriebel, 2016-2017,2020
+# Tomáš Machala, 2017
+# Tomáš Matýs, 2018,2021-2022,2024
+# Tomáš Weber, 2021
+# Tonda12, 2021
+# Vojtěch Dubský, 2021
+# Vojtěch Valigura, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2023-03-20 08:08+0000\n"
+"POT-Creation-Date: 2024-07-26 13:41+0000\n"
 "PO-Revision-Date: 2014-06-19 17:54+0000\n"
-"Last-Translator: fri, 2014-2018,2021,2023\n"
+"Last-Translator: fri, 2014-2018,2021,2023-2024\n"
 "Language-Team: Czech (http://app.transifex.com/wildfire-games/0ad/language/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -141,19 +141,19 @@ msgstr "Obchod"
 msgid "Prophylagma"
 msgstr "Rozhledna"
 
-#: simulation/templates/structures/athen/prytaneion.xml:22
+#: simulation/templates/structures/athen/prytaneion.xml:25
 msgid "Council Chamber"
 msgstr "Poradní síň"
 
-#: simulation/templates/structures/athen/prytaneion.xml:23
+#: simulation/templates/structures/athen/prytaneion.xml:26
 msgid "Prytaneion"
 msgstr "Poradní síň"
 
-#: simulation/templates/structures/athen/prytaneion.xml:24
+#: simulation/templates/structures/athen/prytaneion.xml:27
 msgid "Train Heroes and research technologies."
 msgstr "Cvičte hrdiny a zkoumejte technologie."
 
-#: simulation/templates/structures/athen/prytaneion.xml:26
+#: simulation/templates/structures/athen/prytaneion.xml:29
 #: simulation/templates/structures/gaul/assembly.xml:31
 #: simulation/templates/structures/spart/gerousia.xml:26
 msgid "Council"
@@ -342,6 +342,10 @@ msgstr "Vycvičte hrdiny. Umístěte posádku vojáků pro další šípy."
 msgid "Tegia"
 msgstr "Dům"
 
+#: simulation/templates/structures/brit/kennel.xml:5
+msgid "Cunattegia"
+msgstr "Cunattegia"
+
 #: simulation/templates/structures/brit/market.xml:12
 #: simulation/templates/structures/gaul/market.xml:12
 msgid "Magos"
@@ -468,6 +472,11 @@ msgstr "Šadd"
 msgid "Ḥamet"
 msgstr "Ḥamet"
 
+#: simulation/templates/structures/cart/house.xml:16
+msgid ""
+"Add a second story to make an Apartment with a greater population bonus."
+msgstr "Přidejte druhé podlaží, abyste vytvořili byt s větším populačním bonusem."
+
 #: simulation/templates/structures/cart/market.xml:12
 msgid "Šūq"
 msgstr "Šūq"
@@ -515,8 +524,8 @@ msgid "Maqdaš"
 msgstr "Maqdaš"
 
 #: simulation/templates/structures/cart/temple.xml:10
-msgid "Train Healers and Champion Infantry and research healing technologies."
-msgstr "Cvičte léčitele a elitní pěchotu, a zkoumejte léčitelské technologie."
+msgid "Train Healers and Champions, and research healing technologies."
+msgstr "Vycvičte léčitele a elitní bojovníky, a zkoumejte technologie léčení."
 
 #: simulation/templates/structures/cart/tophet.xml:18
 msgid "Sacrificial Temple"
@@ -567,39 +576,6 @@ msgstr "Dórský sloup"
 msgid "Fallen Doric Column"
 msgstr "Spadlý dórský sloup"
 
-#: simulation/templates/structures/farmstead_field_wheat.xml:7
-#: simulation/templates/structures/generic_field.xml:8
-msgid "Wheat Field"
-msgstr "Pšeničné pole"
-
-#: simulation/templates/structures/athen/farmstead.xml:11
-#: simulation/templates/structures/farmstead_greek.xml:8
-#: simulation/templates/structures/mace/farmstead.xml:11
-#: simulation/templates/structures/ptol/farmstead.xml:8
-#: simulation/templates/structures/sele/farmstead.xml:8
-#: simulation/templates/structures/spart/farmstead.xml:11
-msgid "Epoikion"
-msgstr "Statek"
-
-#: simulation/templates/structures/farmstead_indian.xml:8
-#: simulation/templates/structures/maur/farmstead.xml:11
-msgid "Kantu"
-msgstr "Kantu"
-
-#: simulation/templates/structures/farmstead_italian.xml:8
-msgid "Villa"
-msgstr "Venkovské sídlo"
-
-#: simulation/templates/structures/farmstead_middle_eastern.xml:9
-#: simulation/templates/structures/pers/farmstead.xml:8
-msgid "Kaštašta"
-msgstr "Kaštašta"
-
-#: simulation/templates/structures/brit/rotarymill.xml:5
-#: simulation/templates/structures/farmstead_temperate_europe.xml:4
-msgid "Melonas"
-msgstr "Melonas"
-
 #: simulation/templates/structures/fence_long.xml:14
 #: simulation/templates/structures/fence_short.xml:14
 msgid "Fence"
@@ -609,12 +585,31 @@ msgstr "Plot"
 msgid "Long Wooden Fence"
 msgstr "Dlouhé dřevěné oplocení"
 
+#: simulation/templates/structures/fence_rock_long.xml:12
+#: simulation/templates/structures/fence_rock_long.xml:13
+#: simulation/templates/structures/fence_rock_medium.xml:12
+#: simulation/templates/structures/fence_rock_medium.xml:13
+#: simulation/templates/structures/fence_rock_short.xml:12
+#: simulation/templates/structures/fence_rock_short.xml:13
+#: simulation/templates/structures/fence_rock_stub.xml:12
+#: simulation/templates/structures/fence_rock_stub.xml:13
+msgid "Rock Fence"
+msgstr "Kamenný plot"
+
 #: simulation/templates/structures/fence_short.xml:15
 msgid "Short Wooden Fence"
 msgstr "Krátké dřevěné oplocení"
 
 #: simulation/templates/structures/fence_stone.xml:14
 #: simulation/templates/structures/fence_stone.xml:15
+#: simulation/templates/structures/fence_stone_long.xml:12
+#: simulation/templates/structures/fence_stone_long.xml:13
+#: simulation/templates/structures/fence_stone_medium.xml:12
+#: simulation/templates/structures/fence_stone_medium.xml:13
+#: simulation/templates/structures/fence_stone_short.xml:12
+#: simulation/templates/structures/fence_stone_short.xml:13
+#: simulation/templates/structures/fence_stone_stub.xml:12
+#: simulation/templates/structures/fence_stone_stub.xml:13
 msgid "Stone Fence"
 msgstr "Kamenný plot"
 
@@ -657,6 +652,11 @@ msgstr "Svatyně Corent"
 #: simulation/templates/structures/gaul/wonder.xml:10
 msgid "Celicnon"
 msgstr "Div světa - Celicnon"
+
+#: simulation/templates/structures/generic_field.xml:8
+#: simulation/templates/structures/mill_field_wheat.xml:6
+msgid "Wheat Field"
+msgstr "Pšeničné pole"
 
 #: simulation/templates/structures/han/academy.xml:27
 msgid "Imperial Academy"
@@ -739,11 +739,11 @@ msgstr "Mǎtóu"
 msgid "Nóng Shè"
 msgstr "Nóng Shè"
 
-#: simulation/templates/structures/han/field.xml:15
+#: simulation/templates/structures/han/field.xml:18
 msgid "Dàotián"
 msgstr "Dàotián"
 
-#: simulation/templates/structures/han/field.xml:16
+#: simulation/templates/structures/han/field.xml:19
 msgid "Rice Paddy"
 msgstr "Rýžové pole"
 
@@ -1014,10 +1014,6 @@ msgstr "Mryt"
 msgid "Ỉḥ Abu"
 msgstr "Sloní stáje"
 
-#: simulation/templates/structures/kush/farmstead.xml:9
-msgid "snwt"
-msgstr "snwt"
-
 #: simulation/templates/structures/kush/field.xml:5
 msgid "sht"
 msgstr "sht"
@@ -1104,19 +1100,19 @@ msgstr "Vycvičte léčitele a apedemakské elitní bojovníky a zkoumejte léč
 msgid "TempleOfApedemak"
 msgstr "Apademakův chrám"
 
-#: simulation/templates/structures/kush/temple_amun.xml:27
+#: simulation/templates/structures/kush/temple_amun.xml:30
 msgid "Grand Temple of Amun"
 msgstr "Velkolepý Amonův chrám"
 
-#: simulation/templates/structures/kush/temple_amun.xml:28
+#: simulation/templates/structures/kush/temple_amun.xml:31
 msgid "Pr-ʿImn"
 msgstr "Pr-ʿImn"
 
-#: simulation/templates/structures/kush/temple_amun.xml:29
+#: simulation/templates/structures/kush/temple_amun.xml:32
 msgid "Train Amun Champions and Elite Healers. Research healing technologies."
 msgstr "Vycvičte šampiony Amuna a elitní léčitele. Vyzkoumejte léčivé technologie."
 
-#: simulation/templates/structures/kush/temple_amun.xml:31
+#: simulation/templates/structures/kush/temple_amun.xml:34
 msgid "TempleOfAmun"
 msgstr "Amonův chrám"
 
@@ -1198,21 +1194,19 @@ msgstr "Vipana"
 msgid "Uparaksana"
 msgstr "Uparaksana"
 
-#: simulation/templates/structures/maur/palace.xml:19
-#: simulation/templates/structures/maur/palace.xml:23
-#: simulation/templates/structures/pers/apadana.xml:30
-#: simulation/templates/structures/pers/tacara.xml:23
-#: simulation/templates/structures/pers/tacara.xml:26
+#: simulation/templates/structures/maur/palace.xml:20
+#: simulation/templates/structures/maur/palace.xml:26
+#: simulation/templates/structures/pers/tachara.xml:33
 msgid "Palace"
 msgstr "Palác"
 
-#: simulation/templates/structures/maur/palace.xml:20
+#: simulation/templates/structures/maur/palace.xml:21
 msgid "Harmya"
 msgstr "Harmya"
 
-#: simulation/templates/structures/maur/palace.xml:21
-msgid "Territory root. Train Maiden Guards and Heroes."
-msgstr "Vytváří hranici území. Vycvičte dívčí stráže a hrdiny."
+#: simulation/templates/structures/maur/palace.xml:30
+msgid "Train Heroes and their Poison Maiden Guards. Territory root."
+msgstr "Trénujte hrdiny a jejich Stráže jedovatých pan. Kořen území."
 
 #: simulation/templates/structures/maur/pillar_ashoka.xml:32
 msgid "Edict Pillar of Ashoka"
@@ -1291,6 +1285,40 @@ msgstr "Stratopedeia Misthophorōn"
 msgid "Capture this structure to train mercenaries from Hellenistic Egypt."
 msgstr "Zaberte tuto stavbu, a cvičte žoldnéře z helénistického Egypta."
 
+#: simulation/templates/structures/kush/farmstead.xml:9
+#: simulation/templates/structures/mill_desert.xml:8
+#: simulation/templates/structures/mill_saharan.xml:8
+msgid "snwt"
+msgstr "snwt"
+
+#: simulation/templates/structures/athen/farmstead.xml:11
+#: simulation/templates/structures/mace/farmstead.xml:11
+#: simulation/templates/structures/mill_greek.xml:8
+#: simulation/templates/structures/ptol/farmstead.xml:8
+#: simulation/templates/structures/sele/farmstead.xml:8
+#: simulation/templates/structures/spart/farmstead.xml:11
+msgid "Epoikion"
+msgstr "Statek"
+
+#: simulation/templates/structures/maur/farmstead.xml:11
+#: simulation/templates/structures/mill_indian.xml:8
+msgid "Kantu"
+msgstr "Kantu"
+
+#: simulation/templates/structures/mill_italian.xml:8
+msgid "Villa"
+msgstr "Venkovské sídlo"
+
+#: simulation/templates/structures/mill_middle_eastern.xml:8
+#: simulation/templates/structures/pers/farmstead.xml:8
+msgid "Kaštašta"
+msgstr "Kaštašta"
+
+#: simulation/templates/structures/brit/rotarymill.xml:5
+#: simulation/templates/structures/mill_temperate_europe.xml:4
+msgid "Melonas"
+msgstr "Melonas"
+
 #: simulation/templates/structures/obelisk.xml:11
 msgid "Obelisk"
 msgstr "Obelisk"
@@ -1333,19 +1361,6 @@ msgstr "Dlouhé kůly"
 msgid "Watchtower"
 msgstr "Strážní věž"
 
-#: simulation/templates/structures/pers/apadana.xml:26
-msgid "Throne Hall"
-msgstr "Trůnní sál"
-
-#: simulation/templates/structures/pers/apadana.xml:27
-msgid "Apadāna"
-msgstr "Apadāna"
-
-#: simulation/templates/structures/pers/apadana.xml:28
-#: simulation/templates/structures/spart/syssiton.xml:25
-msgid "Train Champions and Heroes."
-msgstr "Cvičte elitní jednotky a hrdiny."
-
 #: simulation/templates/structures/pers/apartment_block.xml:12
 msgid "Apartment Block"
 msgstr "Bytový dům"
@@ -1354,11 +1369,11 @@ msgstr "Bytový dům"
 msgid "Padgan"
 msgstr "Padgan"
 
-#: simulation/templates/structures/pers/civil_centre.xml:8
+#: simulation/templates/structures/pers/civil_centre.xml:12
 msgid "Provincial Governor"
 msgstr "Provinční správce"
 
-#: simulation/templates/structures/pers/civil_centre.xml:9
+#: simulation/templates/structures/pers/civil_centre.xml:13
 msgid "Xšaçapāvan"
 msgstr "Xšaçapāvan"
 
@@ -1437,9 +1452,33 @@ msgstr "Paraspa"
 msgid "Asiyah"
 msgstr "Asiyah"
 
-#: simulation/templates/structures/pers/tacara.xml:24
+#: simulation/templates/structures/pers/tachara.xml:29
+msgid "Winter Palace"
+msgstr "Zimní palác"
+
+#: simulation/templates/structures/pers/tachara.xml:30
 msgid "Taçara"
 msgstr "Taçara"
+
+#: simulation/templates/structures/pers/tachara.xml:31
+msgid "Train Heroes and make use of the “Satrapy Tribute” feature."
+msgstr "Trénujte hrdiny a využívejte funkci “Satrapský Tribut”."
+
+#: simulation/templates/structures/pers/tachara.xml:81
+msgid "Receive free Food tribute to your treasury from your subject peoples."
+msgstr "Přijměte tribut jídla zdarma do vaší pokladnice od vašich poddaných."
+
+#: simulation/templates/structures/pers/tachara.xml:86
+msgid "Receive free Wood tribute to your treasury from your subject peoples."
+msgstr "Přijměte tribut dřeva zdarma do vaší pokladnice od vašich poddaných."
+
+#: simulation/templates/structures/pers/tachara.xml:91
+msgid "Receive free Stone tribute to your treasury from your subject peoples."
+msgstr "Přijměte tribut kamene zdarma do vaší pokladnice od vašich poddaných."
+
+#: simulation/templates/structures/pers/tachara.xml:96
+msgid "Receive free Metal tribute to your treasury from your subject peoples."
+msgstr "Přijměte tribut kovu zdarma do vaší pokladnice od vašich poddaných."
 
 #: simulation/templates/structures/pers/temple.xml:12
 msgid "Āyadanam"
@@ -1463,6 +1502,10 @@ msgstr "Sklad"
 #: simulation/templates/structures/pers/wonder.xml:9
 msgid "Hanging Gardens of Babylon"
 msgstr "Visuté babylonské zahrady"
+
+#: simulation/templates/structures/pirates/dock.xml:8
+msgid "Pirate Port"
+msgstr "Pirátský přístav"
 
 #: simulation/templates/structures/ptol/elephant_stable.xml:5
 #: simulation/templates/structures/sele/elephant_stable.xml:5
@@ -1499,6 +1542,18 @@ msgstr "Levné stavby podobající se kasárnám, které lze postavit v neutrál
 msgid "Klērouchia"
 msgstr "Klērouchia"
 
+#: simulation/templates/structures/ptol/temple_2.xml:24
+msgid "Temple of Isis"
+msgstr "Isisin chrám"
+
+#: simulation/templates/structures/ptol/temple_2.xml:26
+msgid "Train Heroes and Healers. Research special technologies."
+msgstr "Vycvičte hrdiny a léčitele. Zkoumejte zvláštní technologie."
+
+#: simulation/templates/structures/ptol/temple_2.xml:28
+msgid "TempleOfIsis"
+msgstr "Isisin chrám"
+
 #: simulation/templates/structures/ptol/tower_artillery.xml:9
 msgid "mktr-n-ḏw"
 msgstr "mktr-n-ḏw"
@@ -1533,9 +1588,9 @@ msgstr "Castra"
 
 #: simulation/templates/structures/rome/army_camp.xml:73
 msgid ""
-"Build in neutral or enemy territory. Train Advanced Melee Infantry. "
-"Construct Rams. Garrison Soldiers for additional arrows."
-msgstr "Budujte na neutrálním nebo nepřátelském území. Vycvičte pokročilou pěchotu na blízko. Postavte beranidla. Umístěte posádku vojáků pro další šípy."
+"Build in neutral or enemy territory. Train Advanced Melee Infantry and "
+"Marian Legionaries. Construct Rams. Garrison Soldiers for additional arrows."
+msgstr "Budujte na neutrálním nebo nepřátelském území. Vycvičte pokročilou pěchotu na blízko a Máriovi legionáře. Postavte beranidla. Umístěte posádku vojáků pro další šípy."
 
 #: simulation/templates/structures/rome/army_camp.xml:31
 #: simulation/templates/structures/rome/army_camp.xml:75
@@ -1718,6 +1773,10 @@ msgstr "Kolonáda"
 msgid "Corinthian Colonnade"
 msgstr "Korintská kolonáda"
 
+#: simulation/templates/structures/shrine_celtic.xml:9
+msgid "Henge"
+msgstr "Henge"
+
 #: simulation/templates/structures/shrine_chinese.xml:9
 msgid "Bǎotǎ"
 msgstr "Bǎotǎ"
@@ -1730,7 +1789,7 @@ msgstr "Svatyně Kiosk"
 #: simulation/templates/structures/athen/temple.xml:9
 #: simulation/templates/structures/mace/temple.xml:9
 #: simulation/templates/structures/ptol/temple.xml:12
-#: simulation/templates/structures/ptol/temple_2.xml:11
+#: simulation/templates/structures/ptol/temple_2.xml:25
 #: simulation/templates/structures/sele/temple.xml:9
 #: simulation/templates/structures/shrine_greek_01.xml:9
 #: simulation/templates/structures/shrine_greek_02.xml:9
@@ -1742,6 +1801,10 @@ msgstr "Chrám"
 msgid "Aedēs Sanitatem"
 msgstr "Aedēs Sanitatem"
 
+#: simulation/templates/structures/shrine_persian.xml:9
+msgid "Fire Temple"
+msgstr "Ohnivý chrám"
+
 #: simulation/templates/structures/spart/gerousia.xml:22
 msgid "Spartan Senate"
 msgstr "Spartský senát"
@@ -1751,8 +1814,8 @@ msgid "Gerousia"
 msgstr "Gerousia"
 
 #: simulation/templates/structures/spart/gerousia.xml:24
-msgid "Train Heroes."
-msgstr "Tréning Hrdinů"
+msgid "Research technologies."
+msgstr "Vyzkoumejte technologie."
 
 #: simulation/templates/structures/spart/persian_stoa.xml:9
 msgid "\\\"Persian\\\" Stoa"
@@ -1769,6 +1832,10 @@ msgstr "Společná vojenská jídelna"
 #: simulation/templates/structures/spart/syssiton.xml:24
 msgid "Syssition"
 msgstr "Syssition"
+
+#: simulation/templates/structures/spart/syssiton.xml:25
+msgid "Train Champions and Heroes."
+msgstr "Cvičte elitní jednotky a hrdiny."
 
 #: simulation/templates/structures/spart/syssiton.xml:27
 msgid "Syssiton"
@@ -1918,11 +1985,13 @@ msgstr "Dům"
 
 #: simulation/templates/structures/kush/pyramid_small.xml:26
 #: simulation/templates/structures/pers/ice_house.xml:27
+#: simulation/templates/structures/spart/syssiton.xml:27
 #: simulation/templates/template_structure_civic_house.xml:28
 #: simulation/templates/template_structure_economic_farmstead.xml:30
 #: simulation/templates/template_structure_economic_storehouse.xml:28
 #: simulation/templates/template_structure_military_barracks.xml:29
 #: simulation/templates/template_structure_military_dock.xml:27
+#: simulation/templates/template_structure_military_kennel.xml:30
 #: simulation/templates/template_structure_military_range.xml:25
 #: simulation/templates/template_structure_military_stable.xml:29
 #: simulation/templates/template_structure_resource_corral.xml:29
@@ -1939,14 +2008,15 @@ msgid "Stoa"
 msgstr "Kolonáda"
 
 #: simulation/templates/structures/athen/gymnasium.xml:26
-#: simulation/templates/structures/cart/apartment.xml:26
 #: simulation/templates/structures/gaul/tavern.xml:22
 #: simulation/templates/structures/han/laozigate.xml:24
 #: simulation/templates/structures/han/ministry.xml:39
 #: simulation/templates/structures/iber/monument.xml:34
+#: simulation/templates/structures/mace/arsenal.xml:6
 #: simulation/templates/structures/maur/elephant_stable.xml:7
 #: simulation/templates/structures/merc_camp_egyptian.xml:31
 #: simulation/templates/structures/rome/army_camp.xml:75
+#: simulation/templates/structures/spart/gerousia.xml:26
 #: simulation/templates/template_structure_civic_stoa.xml:30
 #: simulation/templates/template_structure_civic_temple.xml:32
 #: simulation/templates/template_structure_economic_market.xml:28
@@ -2092,8 +2162,6 @@ msgstr "Hospodářství"
 
 #: simulation/templates/template_structure_economic_farmstead.xml:26
 #: simulation/templates/template_structure_economic_farmstead.xml:30
-#: simulation/templates/template_structure_special_rotarymill.xml:32
-#: simulation/templates/template_structure_special_rotarymill.xml:34
 msgid "Farmstead"
 msgstr "Zemědělská usedlost"
 
@@ -2149,7 +2217,8 @@ msgstr "Vycvičte elitní pěší kušníky/kušiníky. Stavějte obléhací str
 #: simulation/templates/structures/han/academy.xml:31
 #: simulation/templates/structures/han/civil_centre_court.xml:19
 #: simulation/templates/structures/kush/pyramid_large.xml:29
-#: simulation/templates/structures/kush/temple_amun.xml:31
+#: simulation/templates/structures/kush/temple_amun.xml:34
+#: simulation/templates/structures/ptol/temple_2.xml:28
 #: simulation/templates/structures/rome/temple_mars.xml:14
 #: simulation/templates/template_structure_military_arsenal.xml:28
 #: simulation/templates/template_structure_military_elephant_stable.xml:29
@@ -2221,6 +2290,16 @@ msgstr "Pevnost"
 msgid "Garrison Soldiers for additional arrows."
 msgstr "Umístěte posádku vojáků pro další šípy."
 
+#: simulation/templates/template_structure_military_kennel.xml:28
+#: simulation/templates/template_structure_military_kennel.xml:29
+#: simulation/templates/template_structure_military_kennel.xml:30
+msgid "Kennel"
+msgstr "Bouda"
+
+#: simulation/templates/template_structure_military_kennel.xml:38
+msgid "Train War Dogs."
+msgstr "Cvičte válečné psy."
+
 #: simulation/templates/template_structure_military_range.xml:22
 msgid "Practice Range"
 msgstr "Procvičujte dostřel"
@@ -2240,7 +2319,7 @@ msgstr "Stáje"
 
 #: simulation/templates/template_structure_military_stable.xml:28
 msgid "Train Cavalry and research Cavalry technologies."
-msgstr "Cvičte jízdu a zkoumejte technologie kavalérie."
+msgstr "Cvičte jízdu a zkoumejte technologie jízdy."
 
 #: simulation/templates/template_structure_resource.xml:4
 msgid "Resource Structure"
@@ -2284,16 +2363,6 @@ msgstr "Hlediště"
 #: simulation/templates/template_structure_special_library.xml:27
 msgid "Library"
 msgstr "Knihovna"
-
-#: simulation/templates/template_structure_special_rotarymill.xml:33
-msgid "Rotary Mill"
-msgstr "Otočný mlýn"
-
-#: simulation/templates/template_structure_special_rotarymill.xml:38
-msgid ""
-"Dropsite for harvested Food. Capture one of these to increase nearby food "
-"production."
-msgstr "Skladiště pro sklizené potraviny. Získejte jedno z nich, abyste zvýšili potravinářskou výrobu v okolí."
 
 #: simulation/templates/template_structure_special_theater.xml:25
 #: simulation/templates/template_structure_special_theater.xml:27

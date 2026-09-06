@@ -1,4 +1,4 @@
-/* Copyright (C) 2023 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -214,9 +214,14 @@ bool COList::HandleAdditionalChildren(const XMBData& xmb, const XMBElement& chil
 			std::string_view attr_name(xmb.GetAttributeStringView(attr.Name));
 			CStr attr_value(attr.Value);
 
-			if (attr_name == "color")
+			if (attr_name == "textcolor")
 			{
 				if (!CGUI::ParseString<CGUIColor>(&m_pGUI, attr_value.FromUTF8(), column.m_TextColor))
+					LOGERROR("GUI: Error parsing '%s' (\"%s\")", attr_name.data(), attr_value.c_str());
+			}
+			else if (attr_name == "textcolor_selected")
+			{
+				if (!CGUI::ParseString<CGUIColor>(&m_pGUI, attr_value.FromUTF8(), column.m_TextColorSelected))
 					LOGERROR("GUI: Error parsing '%s' (\"%s\")", attr_name.data(), attr_value.c_str());
 			}
 			else if (attr_name == "hidden")
@@ -435,8 +440,10 @@ void COList::DrawList(CCanvas2D& canvas, const int& selected, const CGUISpriteIn
 			cliparea2.right = std::min(cliparea2.right, textPos.X + width);
 			cliparea2.bottom = std::min(cliparea2.bottom, textPos.Y + rowHeight);
 
+			const CGUIColor& finalTextColor = (drawSelected && static_cast<size_t>(selected) == i && column.m_TextColorSelected) ? column.m_TextColorSelected : column.m_TextColor;
+
 			// Draw list item
-			DrawText(canvas, objectsCount * (i +/*Heading*/1) + colIdx, column.m_TextColor, textPos, cliparea2);
+			DrawText(canvas, objectsCount * (i +/*Heading*/1) + colIdx, finalTextColor, textPos, cliparea2);
 			xpos += width;
 		}
 	}

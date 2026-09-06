@@ -1,85 +1,85 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2022 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# Aber Wagen
-# Adrian Sbardella
-# Ageoneitor JT
-# Albert
-# Ancel0
-# Antonio Box Sánchez
-# Antonio J. A
-# Antonio Martín
-# Antonio Vazquez
-# blvebird
-# Diego Bruschetti
-# caniroc
-# Damian Axel Xavier
-# The_Gipsy
-# espanengo
-# Emilio Romero
-# Enrique Keykens
-# Ermides Gonzalez
-# Esteban A. Mina
-# Esteban de Jesus Rodriguez Bujaidar
-# fca1970
-# Federico Palacios
-# Fernando Mendez
-# Francisco
-# GaboXandre
-# gonzaleau
-# Gonzalo Fleming
-# Leandro Schenone
-# Ignacio Casal
-# itmeansnothing
-# Javier Rojas
-# Jesús Asenjo
-# Jesus Covo
-# Jesús Martínez
-# Jhon Valencia
-# 9fb1441aa6a9381136d59534f8fda24d_19d1fd3
-# Jorge George
-# jorgman1 .
-# José Javier Domínguez Reina
-# Jose Raul Cruz R.
-# Juan Jaramillo
-# juan pablo Ferraro
-# kie kie
-# Lenny Hans Andreu
-# Brookhaven Alt
-# Marcos Lasalle Vázquez Verdejo
-# matiasng37
-# memmaker650
-# Miguel Magdaleno Santamaría
-# Mihai Pantazi
-# Ocean 65
-# papalote alreves
-# Pedro Luis
-# Pretorg
-# Rafael Castro
-# Rafael Cuevas Montero
-# Raúl García Calvo
-# Roberto Alvarez de Lara
-# Rodrigo Vegas Sánchez-Ferrero
-# Roger Vasquez
-# Sander Deryckere
-# ab661d6cee6a756af4a49df8163441b7_633a6fb
-# soloooy0 fg
-# Spartan2411
-# Stanislas Dolcini
-# Swyter
-# thebs snbds
-# Tomato
-# Trombe
-# vega93
-# wsnlndr lndr
+# Aber Wagen, 2017
+# Adrian Sbardella, 2017
+# Ageoneitor JT, 2014
+# Albert, 2017
+# Ancel0, 2013
+# Antonio Box Sánchez, 2022
+# Antonio J. A, 2021
+# Antonio Martín, 2018
+# Antonio Vazquez, 2020
+# blvebird, 2014
+# Diego Bruschetti, 2014
+# caniroc, 2013
+# Damian Axel Xavier, 2013
+# The_Gipsy, 2018
+# espanengo, 2021
+# Emilio Romero, 2017
+# Enrique Keykens, 2013
+# Ermides Gonzalez, 2013
+# Esteban A. Mina, 2014
+# Esteban de Jesus Rodriguez Bujaidar, 2013
+# fca1970, 2014
+# Federico Palacios, 2018
+# Fernando Mendez, 2019
+# Francisco, 2014
+# GaboXandre, 2013
+# gonzaleau, 2013
+# Gonzalo Fleming, 2017
+# Leandro Schenone, 2014
+# Ignacio Casal, 2019
+# itmeansnothing, 2014
+# Javier Rojas, 2017
+# Jesús Asenjo, 2017
+# Jesus Covo, 2019
+# Jesús Martínez, 2014
+# Jhon Valencia, 2017
+# 9fb1441aa6a9381136d59534f8fda24d_19d1fd3, 2013
+# Jorge George, 2021
+# jorgman1 ., 2021
+# José Javier Domínguez Reina, 2017
+# Jose Raul Cruz R., 2017
+# Juan Jaramillo, 2019
+# juan pablo Ferraro, 2020
+# kie kie, 2021
+# Lenny Hans Andreu, 2013
+# Brookhaven Alt, 2013
+# Marcos Lasalle Vázquez Verdejo, 2020
+# matiasng37, 2013
+# memmaker650, 2014
+# Miguel Magdaleno Santamaría, 2020
+# Mihai Pantazi, 2017-2018
+# Ocean 65, 2019
+# papalote alreves, 2017
+# Pedro Luis, 2014
+# Pretorg, 2014
+# Rafael Castro, 2013
+# Rafael Cuevas Montero, 2017
+# Raúl García Calvo, 2021
+# Roberto Alvarez de Lara, 2021
+# Rodrigo Vegas Sánchez-Ferrero, 2020-2024
+# Roger Vasquez, 2013
+# Sander Deryckere, 2014
+# ab661d6cee6a756af4a49df8163441b7_633a6fb, 2014
+# soloooy0 fg, 2017,2019
+# Spartan2411, 2014
+# Stanislas Dolcini, 2022
+# Swyter, 2013-2018
+# thebs snbds, 2021
+# Tomato, 2014
+# Trombe, 2014
+# vega93, 2013,2015
+# wsnlndr lndr, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2022-09-12 09:35+0000\n"
+"POT-Creation-Date: 2024-08-09 07:17+0000\n"
 "PO-Revision-Date: 2014-06-19 17:48+0000\n"
-"Last-Translator: Rodrigo Vegas Sánchez-Ferrero, 2020-2022\n"
+"Last-Translator: Rodrigo Vegas Sánchez-Ferrero, 2020-2024\n"
 "Language-Team: Spanish (http://app.transifex.com/wildfire-games/0ad/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -87,11 +87,11 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:(caption):13
+#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:13
 msgid "AI Configuration"
 msgstr "Ajustes de IA"
 
-#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:(caption):29
+#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:29
 msgid "OK"
 msgstr "Aceptar"
 
@@ -141,12 +141,12 @@ msgctxt "Match settings tab name"
 msgid "Map"
 msgstr "Mapa"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:28
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:29
 msgctxt "Match settings tab name"
 msgid "Player"
 msgstr "Jugador"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:40
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:41
 msgctxt "Match settings tab name"
 msgid "Game Type"
 msgstr "Tipo de juego"
@@ -195,23 +195,23 @@ msgctxt "team"
 msgid "None"
 msgstr "Ninguno"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):6
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:6
 msgid "Player Name"
 msgstr "Nombre del jugador"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):10
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:10
 msgid "Color"
 msgstr "Color"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):14
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:14
 msgid "Player Placement"
 msgstr "Ubicación de los jugadores"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):18
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:18
 msgid "Civilization"
 msgstr "Civilización"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):25
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:25
 msgid "Team"
 msgstr "Equipo"
 
@@ -401,7 +401,7 @@ msgstr "Selecciona uno de los paisajes de este mapa."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/MapFilter.js:82
 msgid "Map Filter"
-msgstr "Filtro de mapa"
+msgstr "Filtro"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/MapFilter.js:85
 msgid "Select a map filter."
@@ -413,7 +413,7 @@ msgstr "Mapa"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/MapSelection.js:141
 msgid "Select Map"
-msgstr "Elige un mapa"
+msgstr "Mapa"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/MapSelection.js:144
 msgid "Select a map to play on."
@@ -438,7 +438,7 @@ msgstr "Elige un tamaño del escenario (los más grandes pueden ralentizar el ju
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/MapType.js:65
 msgid "Map Type"
-msgstr "Tipo de mapa"
+msgstr "Tipo"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/MapType.js:68
 msgid "Select a map type."
@@ -515,6 +515,14 @@ msgstr "Dificultad"
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/TriggerDifficulty.js:44
 msgid "Select the difficulty of this scenario."
 msgstr "Selecciona la dificultad de este escenario."
+
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WaterLevel.js:43
+msgid "Water level"
+msgstr "Nivel de agua"
+
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WaterLevel.js:46
+msgid "Select the water level of this map."
+msgstr "Selecciona el nivel de agua de este mapa."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WorldPopulationCap.js:47
 msgid "World Population Cap"
@@ -621,19 +629,19 @@ msgstr "Duración de la maravilla"
 msgid "Minutes until the player has achieved Wonder Victory"
 msgstr "Minutos hasta que el jugador logre la victoria por capturar maravilla"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:36
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:17
 msgid "Back"
 msgstr "Atrás"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:39
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:20
 msgid "Return to the lobby."
 msgstr "Volver a la Sala multijugador."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:42
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:23
 msgid "Return to the main menu."
 msgstr "Volver al menú principal."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CivInfoButton.js:48
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CivInfoButton.js:33
 #, javascript-format
 msgid ""
 "%(hotkey_civinfo)s / %(hotkey_structree)s: View Civilization Overview / Structure Tree\n"
@@ -644,27 +652,27 @@ msgstr "%(hotkey_civinfo)s / %(hotkey_structree)s: Ver resumen de la civilizaci�
 msgid "Show the multiplayer lobby in a dialog window."
 msgstr "Mostrar la sala multijugador en una ventana de diálogo."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:79
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:70
 msgid "I'm ready"
 msgstr "¡Estoy listo!"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:80
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:71
 msgid "Stay ready"
 msgstr "Preparado"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:81
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:72
 msgid "I'm not ready!"
 msgstr "¡No estoy listo!"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:85
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:76
 msgid "State that you are ready to play."
 msgstr "Indica que estás listo para jugar."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:86
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:77
 msgid "Stay ready even when the game settings change."
 msgstr "Estate preparado incluso cuando los ajustes del juego cambien."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:87
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:78
 msgid "State that you are not ready to play."
 msgstr "Indica que no estás listo para jugar."
 
@@ -677,15 +685,15 @@ msgstr "Restablecer las civilizaciones seleccionadas a los ajustes predeterminad
 msgid "Reset all teams to the default."
 msgstr "Restablece todos los equipos a su valor original."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:65
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:56
 msgid "Start Game!"
 msgstr "Comenzar partida"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:68
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:59
 msgid "Start a new game with the current settings."
 msgstr "Comenzar una nueva partida con los ajustes actuales."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:71
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:62
 msgid ""
 "Start a new game with the current settings (disabled until all players are "
 "ready)."
@@ -744,7 +752,7 @@ msgstr "* ¡%(username)s está listo!"
 msgid "Game settings have been changed"
 msgstr "Los ajustes de la partida han cambiado"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatPanel.xml:(caption):9
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatPanel.xml:9
 msgid "Send"
 msgstr "Enviar"
 
@@ -767,11 +775,11 @@ msgstr "\\[%(time)s]"
 msgid "HH:mm"
 msgstr "HH:mm"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:40
+#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:29
 msgid "Cheats enabled."
 msgstr "Los trucos están activados."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:43
+#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:32
 msgid "Rated game."
 msgstr "Partida clasificatoria."
 
@@ -788,19 +796,19 @@ msgstr "Ningún mapa seleccionado"
 msgid "Click to view the list of available maps."
 msgstr "Haz clic para explorar los escenarios disponibles."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/TipsPanel.xml:(caption):10
+#: gui/gamesetup/Pages/GameSetupPage/Panels/TipsPanel.xml:10
 msgid "Show this message in the future."
 msgstr "Mostrar este mensaje en el futuro."
 
-#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:(caption):7
+#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:7
 msgid "Loading"
 msgstr "Cargando"
 
-#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:(caption):11
+#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:11
 msgid "Loading map data. Please wait…"
 msgstr "Cargando información del mapa. Por favor espere..."
 
-#: gui/gamesetup/gamesetup.xml:(caption):17
+#: gui/gamesetup/gamesetup.xml:17
 msgid "Match Setup"
 msgstr "Ajustes del enfrentamiento"
 
@@ -853,11 +861,6 @@ msgstr "No ha sido posible conectarse al servidor."
 msgid "Connection failed"
 msgstr "La conexión falló"
 
-#: gui/gamesetup_mp/gamesetup_mp.js:193
-#, javascript-format
-msgid "Net message: %(message)s"
-msgstr "Mensaje de red: %(message)s"
-
 #: gui/gamesetup_mp/gamesetup_mp.js:276
 msgid "Registering with server..."
 msgstr "Registrándose en el servidor..."
@@ -876,82 +879,79 @@ msgid "Cannot host game: %(message)s."
 msgstr "No se puede alojar la partida: %(message)s."
 
 #: gui/gamesetup_mp/gamesetup_mp.js:377 gui/gamesetup_mp/gamesetup_mp.js:406
-#: gui/gamesetup_mp/gamesetup_mp.js:435 gui/gamesetup_mp/gamesetup_mp.js:450
+#: gui/gamesetup_mp/gamesetup_mp.js:436 gui/gamesetup_mp/gamesetup_mp.js:451
 msgid "Error"
 msgstr "Error"
 
-#: gui/gamesetup_mp/gamesetup_mp.js:405 gui/gamesetup_mp/gamesetup_mp.js:449
+#: gui/gamesetup_mp/gamesetup_mp.js:405 gui/gamesetup_mp/gamesetup_mp.js:450
 #, javascript-format
 msgid "Cannot join game: %(message)s."
 msgstr "No fue posible unirse a la partida: %(message)s."
 
-#: gui/gamesetup_mp/gamesetup_mp.js:464
+#: gui/gamesetup_mp/gamesetup_mp.js:465
 #, javascript-format
 msgid "%(playername)s's game"
 msgstr "Partida de %(playername)s"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):18
+#: gui/gamesetup_mp/gamesetup_mp.xml:18
 msgid "Multiplayer"
 msgstr "Multijugador"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):24
+#: gui/gamesetup_mp/gamesetup_mp.xml:24
 msgid "Joining an existing game."
 msgstr "Uniéndose a una partida existente."
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):28
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):70
+#: gui/gamesetup_mp/gamesetup_mp.xml:28 gui/gamesetup_mp/gamesetup_mp.xml:70
 msgid "Player Name:"
 msgstr "Nombre del Jugador:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):38
+#: gui/gamesetup_mp/gamesetup_mp.xml:38
 msgid "Server Hostname or IP:"
 msgstr "Nombre o IP del servidor:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):48
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):95
+#: gui/gamesetup_mp/gamesetup_mp.xml:48 gui/gamesetup_mp/gamesetup_mp.xml:95
 msgid "Server Port:"
 msgstr "Puerto del servidor:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):65
-msgid "Set up your server to host."
-msgstr "Configura tu propio servidor."
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):83
-msgid "Server Name:"
-msgstr "Nombre del servidor:"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):112
-msgid "Server Password:"
-msgstr "Contraseña del servidor:"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):128
-msgid "Use STUN to work around firewalls"
-msgstr "Utilizar STUN para evitar cortafuegos"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):136
-msgid "Continue"
-msgstr "Continuar"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):141
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):152
-msgid "Password:"
-msgstr "Contraseña:"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):162
-msgid "Confirm"
-msgstr "Confirmar"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):52
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):99
+#: gui/gamesetup_mp/gamesetup_mp.xml:52 gui/gamesetup_mp/gamesetup_mp.xml:99
 msgid "Leave blank to use the default port."
 msgstr "Déjar en blanco para utilizar el puerto estándar."
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):113
+#: gui/gamesetup_mp/gamesetup_mp.xml:65
+msgid "Set up your server to host."
+msgstr "Configura tu propio servidor."
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:83
+msgid "Server Name:"
+msgstr "Nombre del servidor:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:112
+msgid "Server Password:"
+msgstr "Contraseña del servidor:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:113
 msgid "Leave blank to not require it."
 msgstr "Dejar en blanco para no requerirlo."
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:128
+msgid "Use STUN to work around firewalls"
+msgstr "Utilizar STUN para evitar cortafuegos"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:136
+msgid "Continue"
+msgstr "Continuar"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:141
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:152
+msgid "Password:"
+msgstr "Contraseña:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:162
+msgid "Confirm"
+msgstr "Confirmar"
 
 #: gui/loading/ProgressBar.js:48
 #, javascript-format
@@ -1705,7 +1705,7 @@ msgstr "«La ira es locura transitoria, así que controla tu pasión o ella te c
 msgid ""
 "“It is your concern when your neighbor's wall is on fire.” \\n— Horace "
 "(“Epistles”, epistle XVIII., 84)"
-msgstr "«Es asunto tuyo cuando la pared de tu vecino está ardiendo.» \\n— Horacio («Epístolas», epístola XVIII., 84)"
+msgstr "«Deberías preocuparte si es la pared de tu vecino la que está ardiendo.» \\n— Horacio («Epístolas», epístola XVIII., 84)"
 
 #: gui/text/quotes.txt:107
 msgid ""
@@ -1945,7 +1945,7 @@ msgid ""
 "“Themistocles robbed his fellow citizens of spear and shield, and degraded "
 "the people of Athens to the rowing-pad and the oar.” \\n— Plato, no friend "
 "of the Athenian navy (Plutarch, “Parallel Lives”, “Themistocles”, sec. 3)"
-msgstr "“Temístocles robó a sus ciudadanos de lanza y escudo, y degradó a la gente de Atenas a la plataforma de remo y al remo.” — Platón, enemigo de la armada ateniense (Plutarco, “Vidas Paralelas”, “Temístocles”, sec. 3)"
+msgstr "«Temístocles arrebató a sus ciudadanos la lanza y el escudo, reduciendo al pueblo ateniense al banco y al remo.» \\n— Platón, en contra de la armada ateniense (Plutarco, «Vidas Paralelas», «Temístocles», sec. 3)"
 
 #: gui/text/quotes.txt:142
 msgid ""
@@ -2012,7 +2012,7 @@ msgid ""
 "escaping the dangers of the widest seas and the most violent storms, they "
 "wreck their ship in harbor and close to shore.” \\n— Polybius on the "
 "Athenian constitution (“Histories”, VI. 44)"
-msgstr "“El pueblo ateniense siempre está en la posición de un barco sin comandante. El miedo al enemigo o a la tormenta hace que la tripulación sea unánime y obedezca al timonel, todo va bien; pero si se recuperan \\[…] se pelean entre sí \\[…], y el resultado ha sido que a menudo, después de escapar de los peligros de los mares más anchos y de las tormentas más violentas, destrozan su barco en el puerto y cerca de la orilla.” — Polibio sobre la constitución ateniense (“Historias”, VI. 44)"
+msgstr "«El pueblo ateniense siempre actúa como un barco sin capitán. Ante el temor al enemigo o a la tormenta, la tripulación es unánime y obedece al timonel, funcionan bien; pero si se recuperan \\[…] se pelean entre sí \\[…], y el resultado es que a menudo, después de escapar de los peligros de los mares más inmensos y de las tormentas más violentas, acaban destrozando su barco en el puerto, junto a la orilla.» \\n— Polibio sobre la constitución ateniense («Historias», VI. 44)"
 
 #: gui/text/quotes.txt:150
 msgid ""
@@ -2091,7 +2091,7 @@ msgstr "«Haz que tu discurso sea mejor que el silencio, o calla.» \\n— Pitá
 msgid ""
 "“Unity strengthens even small states, while discord undermines the mightiest"
 " empires.” \\n— Sallust (“The Jugurthine War”, 10.6)"
-msgstr "“La unidad fortalece incluso a los estados pequeños, mientras que la discordia socava los imperios más poderosos.” — Salustio (“La guerra de Yugurta”, 10.6)"
+msgstr "«La unidad fortalece incluso a los estados pequeños, mientras que la discordia socava los imperios más poderosos.» \\n— Salustio («La guerra de Yugurta», 10.6)"
 
 #: gui/text/quotes.txt:160
 msgid ""

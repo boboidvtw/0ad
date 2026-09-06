@@ -1,4 +1,4 @@
-/* Copyright (C) 2022 Wildfire Games.
+/* Copyright (C) 2023 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -23,10 +23,22 @@
 #include "maths/BoundingBoxOriented.h"
 #include "simulation2/helpers/Player.h"
 
+#include <memory>
+
 class CModelDummy;
 class CModel;
 class CModelDecal;
 class CModelParticleEmitter;
+
+namespace ModelFlag
+{
+static constexpr uint32_t CAST_SHADOWS{1 << 0};
+static constexpr uint32_t NO_LOOP_ANIMATION{1 << 1};
+static constexpr uint32_t SILHOUETTE_DISPLAY{1 << 2};
+static constexpr uint32_t SILHOUETTE_OCCLUDER{1 << 3};
+static constexpr uint32_t IGNORE_LOS{1 << 4};
+static constexpr uint32_t FLOAT_ON_WATER{1 << 5};
+} // namespace ModelFlag
 
 /**
  * Abstract base class for graphical objects that are used by units,
@@ -46,7 +58,8 @@ public:
 	 */
 	struct CustomSelectionShape
 	{
-		enum EType {
+		enum EType
+		{
 			/// The selection shape is determined by an oriented box of custom, user-specified size.
 			BOX,
 			/// The selection shape is determined by a cylinder of custom, user-specified size.
@@ -66,12 +79,12 @@ public:
 		  m_SelectionBoxValid(false), m_CustomSelectionShape(NULL)
 	{ }
 
-	~CModelAbstract()
+	virtual ~CModelAbstract()
 	{
 		delete m_CustomSelectionShape; // allocated and set externally by CCmpVisualActor, but our responsibility to clean up
 	}
 
-	virtual CModelAbstract* Clone() const = 0;
+	virtual std::unique_ptr<CModelAbstract> Clone() const = 0;
 
 	/// Dynamic cast
 	virtual CModelDummy* ToCModelDummy() { return nullptr; }

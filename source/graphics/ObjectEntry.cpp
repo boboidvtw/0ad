@@ -43,16 +43,12 @@
 
 #include <sstream>
 
-CObjectEntry::CObjectEntry(const std::shared_ptr<CObjectBase>& base, CSimulation2& simulation) :
-	m_Base(base), m_Color(1.0f, 1.0f, 1.0f, 1.0f), m_Model(NULL), m_Simulation(simulation)
+CObjectEntry::CObjectEntry(const std::shared_ptr<CObjectBase>& base, const CSimulation2& simulation) :
+	m_Base(base), m_Color(1.0f, 1.0f, 1.0f, 1.0f), m_Simulation(simulation)
 {
 }
 
-CObjectEntry::~CObjectEntry()
-{
-	delete m_Model;
-}
-
+CObjectEntry::~CObjectEntry() = default;
 
 bool CObjectEntry::BuildVariation(const std::vector<const std::set<CStr>*>& completeSelections,
 								  const std::vector<u8>& variationKey,
@@ -101,20 +97,20 @@ bool CObjectEntry::BuildVariation(const std::vector<const std::set<CStr>*>& comp
 			variation.decal.m_SizeX, variation.decal.m_SizeZ,
 			variation.decal.m_Angle, variation.decal.m_OffsetX, variation.decal.m_OffsetZ,
 			m_Base->m_Properties.m_FloatOnWater);
-		m_Model = new CModelDecal(objectManager.GetTerrain(), decal);
+		m_Model = std::make_unique<CModelDecal>(objectManager.GetTerrain(), decal);
 
 		return true;
 	}
 
 	if (!variation.particles.empty())
 	{
-		m_Model = new CModelParticleEmitter(g_Renderer.GetSceneRenderer().GetParticleManager().LoadEmitterType(variation.particles));
+		m_Model = std::make_unique<CModelParticleEmitter>(g_Renderer.GetSceneRenderer().GetParticleManager().LoadEmitterType(variation.particles));
 		return true;
 	}
 
 	if (variation.model.empty())
 	{
-		m_Model = new CModelDummy();
+		m_Model = std::make_unique<CModelDummy>();
 		return true;
 	}
 
@@ -134,12 +130,8 @@ bool CObjectEntry::BuildVariation(const std::vector<const std::set<CStr>*>& comp
 	}
 
 	// delete old model, create new
-	CModel* model = new CModel(m_Simulation);
-	delete m_Model;
-	m_Model = model;
-	model->SetMaterial(g_Renderer.GetSceneRenderer().GetMaterialManager().LoadMaterial(m_Base->m_Material));
-	model->GetMaterial().AddStaticUniform("objectColor", CVector4D(m_Color.r, m_Color.g, m_Color.b, m_Color.a));
-	model->InitModel(modeldef);
+	CMaterial material = g_Renderer.GetSceneRenderer().GetMaterialManager().LoadMaterial(m_Base->m_Material);
+	material.AddStaticUniform("objectColor", CVector4D(m_Color.r, m_Color.g, m_Color.b, m_Color.a));
 
 	if (m_Samplers.empty())
 		LOGERROR("Actor '%s' has no textures.", m_Base->GetIdentifier());
@@ -153,8 +145,12 @@ bool CObjectEntry::BuildVariation(const std::vector<const std::set<CStr>*>& comp
 		// All textures are prefetched even in the fixed pipeline, including the normal maps etc.
 		// TODO: Should check which renderpath is selected and only preload the necessary textures.
 		texture->Prefetch();
-		model->GetMaterial().AddSampler(CMaterial::TextureSampler(samp.m_SamplerName, texture));
+		material.AddSampler(CMaterial::TextureSampler(samp.m_SamplerName, texture));
 	}
+
+	std::unique_ptr<CModel> newModel = std::make_unique<CModel>(m_Simulation, material, modeldef);
+	CModel* model = newModel.get();
+	m_Model = std::move(newModel);
 
 	for (const CStrIntern& requSampName : model->GetMaterial().GetRequiredSampler())
 	{
@@ -249,13 +245,13 @@ bool CObjectEntry::BuildVariation(const std::vector<const std::set<CStr>*>& comp
 		const SPropPoint* proppoint = modeldef->FindPropPoint(ppn.c_str());
 		if (proppoint)
 		{
-			CModelAbstract* propmodel = oe->m_Model->Clone();
-			if (isAmmo)
-				model->AddAmmoProp(proppoint, propmodel, oe);
-			else
-				model->AddProp(proppoint, propmodel, oe, prop.m_minHeight, prop.m_maxHeight, prop.m_selectable);
+			std::unique_ptr<CModelAbstract> propmodel = oe->m_Model->Clone();
 			if (propmodel->ToCModel())
 				propmodel->ToCModel()->SetAnimation(oe->GetRandomAnimation("idle"));
+			if (isAmmo)
+				model->AddAmmoProp(proppoint, std::move(propmodel), oe);
+			else
+				model->AddProp(proppoint, std::move(propmodel), oe, prop.m_minHeight, prop.m_maxHeight, prop.m_selectable);
 		}
 		else
 			LOGERROR("Failed to find matching prop point called \"%s\" in model \"%s\" for actor \"%s\"", ppn, m_ModelName.string8(), m_Base->GetIdentifier());
@@ -264,12 +260,12 @@ bool CObjectEntry::BuildVariation(const std::vector<const std::set<CStr>*>& comp
 	// Setup flags.
 	if (m_Base->m_Properties.m_CastShadows)
 	{
-		model->SetFlags(model->GetFlags() | MODELFLAG_CASTSHADOWS);
+		model->SetFlags(model->GetFlags() | ModelFlag::CAST_SHADOWS);
 	}
 
 	if (m_Base->m_Properties.m_FloatOnWater)
 	{
-		model->SetFlags(model->GetFlags() | MODELFLAG_FLOATONWATER);
+		model->SetFlags(model->GetFlags() | ModelFlag::FLOAT_ON_WATER);
 	}
 
 	return true;

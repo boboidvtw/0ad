@@ -1,34 +1,34 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2022 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# 978f34620323a49beac44c046cb2117a_1860a64
-# Albin Nilsson
-# Amanda Ringqvist
-# 0a7f9ff4c411567131ab21a7587f6066
-# Daniel Sandman
-# Erik Johansson
-# Jacob Carlsson
-# Jonatan Nyberg
-# efef6ec5b435a041fce803c7f8af77d2_2341d43
-# Kristoffer Grundström
-# liothe
-# magicae
-# Martin H
-# Mattias Münster
-# mljungberg10
-# Patrik Nilsson
-# Peter Freund
-# Sam Johnsson
-# theschitz
-# Ulrika Uddeborg
+# 978f34620323a49beac44c046cb2117a_1860a64, 2013
+# Albin Nilsson, 2021
+# Amanda Ringqvist, 2014
+# 0a7f9ff4c411567131ab21a7587f6066, 2014
+# Daniel Sandman, 2013
+# Erik Johansson, 2013
+# Jacob Carlsson, 2015-2016
+# Jonatan Nyberg, 2016,2021-2022,2024
+# efef6ec5b435a041fce803c7f8af77d2_2341d43, 2018,2020-2021
+# Kristoffer Grundström, 2018
+# liothe, 2013
+# magicae, 2014
+# Martin H, 2020
+# Mattias Münster, 2019
+# mljungberg10, 2019
+# Patrik Nilsson, 2014
+# Peter Freund, 2023
+# Sam Johnsson, 2015
+# theschitz, 2015
+# Ulrika Uddeborg, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2022-09-12 09:35+0000\n"
+"POT-Creation-Date: 2024-08-09 07:17+0000\n"
 "PO-Revision-Date: 2014-06-19 17:48+0000\n"
-"Last-Translator: Peter Freund, 2023\n"
+"Last-Translator: Jonatan Nyberg, 2016,2021-2022,2024\n"
 "Language-Team: Swedish (http://app.transifex.com/wildfire-games/0ad/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,11 +36,11 @@ msgstr ""
 "Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:(caption):13
+#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:13
 msgid "AI Configuration"
 msgstr "AI-konfiguration"
 
-#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:(caption):29
+#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:29
 msgid "OK"
 msgstr "OK"
 
@@ -90,12 +90,12 @@ msgctxt "Match settings tab name"
 msgid "Map"
 msgstr "Karta"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:28
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:29
 msgctxt "Match settings tab name"
 msgid "Player"
 msgstr "Spelare"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:40
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:41
 msgctxt "Match settings tab name"
 msgid "Game Type"
 msgstr "Typ av spel"
@@ -144,23 +144,23 @@ msgctxt "team"
 msgid "None"
 msgstr "Inga"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):6
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:6
 msgid "Player Name"
 msgstr "Spelarnamn"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):10
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:10
 msgid "Color"
 msgstr "Färg"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):14
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:14
 msgid "Player Placement"
 msgstr "Spelarplacering"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):18
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:18
 msgid "Civilization"
 msgstr "Civilisation"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):25
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:25
 msgid "Team"
 msgstr "Lag"
 
@@ -175,7 +175,7 @@ msgstr "Tryck %(hotkey)s för att se en lista med alla tillgängliga kartor."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/AlliedView.js:26
 msgid "Allied View"
-msgstr "Allierad Vy"
+msgstr "Allierad vy"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/AlliedView.js:30
 msgid "Toggle allied view (see what your allies see)."
@@ -194,7 +194,7 @@ msgstr "Växla om fusk ska gå att använda."
 #. settings!
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/ExploredMap.js:26
 msgid "Explored Map"
-msgstr "Utforskad Karta"
+msgstr "Utforskad karta"
 
 #. Translation: Make sure to differentiate between the revealed map and
 #. explored map
@@ -205,7 +205,7 @@ msgstr "Växla upptäckt karta (se kartan i början)."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/LastManStanding.js:26
 msgid "Last Man Standing"
-msgstr "Sista Man Stående"
+msgstr "Sista man stående"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/LastManStanding.js:29
 msgid ""
@@ -215,7 +215,7 @@ msgstr "Välj om sista överlevande spelare eller sista överlevande grupp allie
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/LockedTeams.js:30
 msgid "Teams Locked"
-msgstr "Låsta Lag"
+msgstr "Låsta lag"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/LockedTeams.js:33
 msgid "Toggle locked teams."
@@ -233,7 +233,7 @@ msgstr "I nomad-läge börjar spelare med endast ett fåtal enheter och måste h
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/Rating.js:27
 msgid "Rated Game"
-msgstr "Värderat Spel"
+msgstr "Värderat spel"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/Rating.js:30
 msgid "Toggle if this game will be rated for the leaderboard."
@@ -252,7 +252,7 @@ msgstr "Välj om hjältar kan garnisoneras."
 #. settings!
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/RevealedMap.js:26
 msgid "Revealed Map"
-msgstr "Synlig Karta"
+msgstr "Synlig karta"
 
 #. Translation: Make sure to differentiate between the revealed map and
 #. explored map
@@ -263,7 +263,7 @@ msgstr "Växla avslöjad karta (se allt)."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/Spies.js:26
 msgid "Disable Spies"
-msgstr "Inaktivera Spioner"
+msgstr "Inaktivera spioner"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/Spies.js:29
 msgid "Disable spies during the game."
@@ -293,7 +293,7 @@ msgstr "Biom"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/Biome.js:60
 msgid "Select the flora and fauna."
-msgstr "Välj flora och fauna"
+msgstr "Välj flora och fauna."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/Biome.js:63
 msgctxt "biome"
@@ -407,7 +407,7 @@ msgstr "Befolkningsgräns"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/PopulationCap.js:55
 msgid "Select population limit."
-msgstr "Välj befolkningsgräns"
+msgstr "Välj befolkningsgräns."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/PopulationCap.js:58
 msgctxt "population limit"
@@ -465,13 +465,21 @@ msgstr "Svårighetsgrad"
 msgid "Select the difficulty of this scenario."
 msgstr "Välj svårighetsgraden för det här scenariot."
 
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WaterLevel.js:43
+msgid "Water level"
+msgstr ""
+
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WaterLevel.js:46
+msgid "Select the water level of this map."
+msgstr ""
+
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WorldPopulationCap.js:47
 msgid "World Population Cap"
 msgstr "Världsbefolkningsgräns"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WorldPopulationCap.js:50
 msgid "Select world population limit."
-msgstr "Välj världsbefolkningsgräns"
+msgstr "Välj världsbefolkningsgräns."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WorldPopulationCap.js:53
 #, javascript-format
@@ -503,7 +511,7 @@ msgstr[1] "%(minutes)s minuter"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Sliders/RelicCount.js:38
 msgid "Relic Count"
-msgstr "Antal Reliker"
+msgstr "Antal reliker"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Sliders/RelicCount.js:41
 #, javascript-format
@@ -566,50 +574,50 @@ msgstr "Underlängd"
 msgid "Minutes until the player has achieved Wonder Victory"
 msgstr "Antal minuter tills spelaren har vunnit underseger"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:36
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:17
 msgid "Back"
 msgstr "Tillbaka"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:39
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:20
 msgid "Return to the lobby."
 msgstr "Återgå till lobbyn."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:42
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:23
 msgid "Return to the main menu."
 msgstr "Återgå till huvudmenyn."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CivInfoButton.js:48
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CivInfoButton.js:33
 #, javascript-format
 msgid ""
 "%(hotkey_civinfo)s / %(hotkey_structree)s: View Civilization Overview / Structure Tree\n"
 "Last opened will be reopened on click."
-msgstr "%(hotkey_civinfo)s / %(hotkey_structree)s: Visa Civilisationsöversikt / Byggnadsträd\nSenast öppnad kommer att öppnas igen vid klick."
+msgstr "%(hotkey_civinfo)s / %(hotkey_structree)s: Visa civilisationsöversikt / byggnadsträd\nSenast öppnad kommer att öppnas igen vid klick."
 
 #: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/LobbyButton.js:19
 msgid "Show the multiplayer lobby in a dialog window."
 msgstr "Visa flerspelarlobbyn i en dialogruta."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:79
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:70
 msgid "I'm ready"
 msgstr "Jag är redo"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:80
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:71
 msgid "Stay ready"
 msgstr "Förbli redo"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:81
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:72
 msgid "I'm not ready!"
 msgstr "Jag är inte redo!"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:85
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:76
 msgid "State that you are ready to play."
 msgstr "Meddela att du är redo för spel!"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:86
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:77
 msgid "Stay ready even when the game settings change."
 msgstr "Förbli redo även om spelinställningar ändras."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:87
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:78
 msgid "State that you are not ready to play."
 msgstr "Ange att du inte är redo för spel."
 
@@ -622,15 +630,15 @@ msgstr "Återställ alla civilisationer som har blivit valda till standardvärde
 msgid "Reset all teams to the default."
 msgstr "Återställ alla lag to grundinställningarna."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:65
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:56
 msgid "Start Game!"
 msgstr "Starta spelet!"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:68
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:59
 msgid "Start a new game with the current settings."
 msgstr "Starta ett nytt spel med nuvarande inställningar."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:71
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:62
 msgid ""
 "Start a new game with the current settings (disabled until all players are "
 "ready)."
@@ -689,7 +697,7 @@ msgstr "* %(username)s är redo!"
 msgid "Game settings have been changed"
 msgstr "Spelinställningarna har ändrats"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatPanel.xml:(caption):9
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatPanel.xml:9
 msgid "Send"
 msgstr "Skicka"
 
@@ -712,11 +720,11 @@ msgstr "\\[%(time)s]"
 msgid "HH:mm"
 msgstr "HH:mm"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:40
+#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:29
 msgid "Cheats enabled."
 msgstr "Fusk är påslagna"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:43
+#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:32
 msgid "Rated game."
 msgstr "Värderat spel."
 
@@ -733,19 +741,19 @@ msgstr "Ingen vald karta."
 msgid "Click to view the list of available maps."
 msgstr "Klicka för att se listan med tillgängliga kartor."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/TipsPanel.xml:(caption):10
+#: gui/gamesetup/Pages/GameSetupPage/Panels/TipsPanel.xml:10
 msgid "Show this message in the future."
 msgstr "Visa detta meddelande i framtiden."
 
-#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:(caption):7
+#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:7
 msgid "Loading"
 msgstr "Läser in"
 
-#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:(caption):11
+#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:11
 msgid "Loading map data. Please wait…"
 msgstr "Läser in kartdata. Vänta..."
 
-#: gui/gamesetup/gamesetup.xml:(caption):17
+#: gui/gamesetup/gamesetup.xml:17
 msgid "Match Setup"
 msgstr "Spelinställningar"
 
@@ -798,11 +806,6 @@ msgstr "Det gick inte att ansluta till servern."
 msgid "Connection failed"
 msgstr "Anslutning misslyckades"
 
-#: gui/gamesetup_mp/gamesetup_mp.js:193
-#, javascript-format
-msgid "Net message: %(message)s"
-msgstr "Nätmeddelande: %(message)s"
-
 #: gui/gamesetup_mp/gamesetup_mp.js:276
 msgid "Registering with server..."
 msgstr "Registrerar med server..."
@@ -821,82 +824,79 @@ msgid "Cannot host game: %(message)s."
 msgstr "Kan inte bli värd för match: %(message)s."
 
 #: gui/gamesetup_mp/gamesetup_mp.js:377 gui/gamesetup_mp/gamesetup_mp.js:406
-#: gui/gamesetup_mp/gamesetup_mp.js:435 gui/gamesetup_mp/gamesetup_mp.js:450
+#: gui/gamesetup_mp/gamesetup_mp.js:436 gui/gamesetup_mp/gamesetup_mp.js:451
 msgid "Error"
 msgstr "Fel"
 
-#: gui/gamesetup_mp/gamesetup_mp.js:405 gui/gamesetup_mp/gamesetup_mp.js:449
+#: gui/gamesetup_mp/gamesetup_mp.js:405 gui/gamesetup_mp/gamesetup_mp.js:450
 #, javascript-format
 msgid "Cannot join game: %(message)s."
 msgstr "Kan inte ansluta till match: %(message)s."
 
-#: gui/gamesetup_mp/gamesetup_mp.js:464
+#: gui/gamesetup_mp/gamesetup_mp.js:465
 #, javascript-format
 msgid "%(playername)s's game"
 msgstr "%(playername)ss spel"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):18
+#: gui/gamesetup_mp/gamesetup_mp.xml:18
 msgid "Multiplayer"
 msgstr "Flera spelare"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):24
+#: gui/gamesetup_mp/gamesetup_mp.xml:24
 msgid "Joining an existing game."
 msgstr "Ansluter till ett befintligt spel."
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):28
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):70
+#: gui/gamesetup_mp/gamesetup_mp.xml:28 gui/gamesetup_mp/gamesetup_mp.xml:70
 msgid "Player Name:"
 msgstr "Spelarnamn:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):38
+#: gui/gamesetup_mp/gamesetup_mp.xml:38
 msgid "Server Hostname or IP:"
 msgstr "Serverns Värdnamn eller IP:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):48
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):95
+#: gui/gamesetup_mp/gamesetup_mp.xml:48 gui/gamesetup_mp/gamesetup_mp.xml:95
 msgid "Server Port:"
 msgstr "Serverport:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):65
-msgid "Set up your server to host."
-msgstr "Ställ in din server som värd."
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):83
-msgid "Server Name:"
-msgstr "Servernamn:"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):112
-msgid "Server Password:"
-msgstr "Serverlösenord:"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):128
-msgid "Use STUN to work around firewalls"
-msgstr "Använd STUN för att kringgå brandväggar"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):136
-msgid "Continue"
-msgstr "Fortsätt"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):141
-msgid "Cancel"
-msgstr "Avbryt"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):152
-msgid "Password:"
-msgstr "Lösenord:"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):162
-msgid "Confirm"
-msgstr "Bekräfta"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):52
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):99
+#: gui/gamesetup_mp/gamesetup_mp.xml:52 gui/gamesetup_mp/gamesetup_mp.xml:99
 msgid "Leave blank to use the default port."
 msgstr "Lämna tom för att använda standardporten."
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):113
+#: gui/gamesetup_mp/gamesetup_mp.xml:65
+msgid "Set up your server to host."
+msgstr "Ställ in din server som värd."
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:83
+msgid "Server Name:"
+msgstr "Servernamn:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:112
+msgid "Server Password:"
+msgstr "Serverlösenord:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:113
 msgid "Leave blank to not require it."
-msgstr "Lämna tomt för att inte kräva ett"
+msgstr "Lämna tomt för att inte kräva ett."
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:128
+msgid "Use STUN to work around firewalls"
+msgstr "Använd STUN för att kringgå brandväggar"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:136
+msgid "Continue"
+msgstr "Fortsätt"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:141
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:152
+msgid "Password:"
+msgstr "Lösenord:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:162
+msgid "Confirm"
+msgstr "Bekräfta"
 
 #: gui/loading/ProgressBar.js:48
 #, javascript-format

@@ -1,4 +1,4 @@
-/* Copyright (C) 2023 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -145,9 +145,11 @@ std::unique_ptr<CSwapChain> CSwapChain::Create(
 	// VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT is guaranteed to present.
 	// VK_IMAGE_USAGE_TRANSFER_SRC_BIT allows a simpler backbuffer readback.
 	// VK_IMAGE_USAGE_TRANSFER_DST_BIT allows a blit to the backbuffer.
+	// VK_IMAGE_USAGE_STORAGE_BIT allows to write to the backbuffer directly
+	// from a compute shader.
 	swapChainCreateInfo.imageUsage =
-		(VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT | VK_IMAGE_USAGE_TRANSFER_SRC_BIT | VK_IMAGE_USAGE_TRANSFER_DST_BIT) &
-		surfaceCapabilities.supportedUsageFlags;
+		(VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT | VK_IMAGE_USAGE_TRANSFER_SRC_BIT | VK_IMAGE_USAGE_TRANSFER_DST_BIT | VK_IMAGE_USAGE_STORAGE_BIT) &
+			surfaceCapabilities.supportedUsageFlags;
 	swapChainCreateInfo.imageSharingMode = VK_SHARING_MODE_EXCLUSIVE;
 	// We need to set these only if imageSharingMode is VK_SHARING_MODE_CONCURRENT.
 	swapChainCreateInfo.queueFamilyIndexCount = 0;
@@ -188,11 +190,21 @@ std::unique_ptr<CSwapChain> CSwapChain::Create(
 	device->SetObjectName(VK_OBJECT_TYPE_SWAPCHAIN_KHR, swapChain->m_SwapChain, nameBuffer);
 
 	uint32_t imageCount = 0;
-	ENSURE_VK_SUCCESS(vkGetSwapchainImagesKHR(
-		device->GetVkDevice(), swapChain->m_SwapChain, &imageCount, nullptr));
-	swapChain->m_Images.resize(imageCount);
-	ENSURE_VK_SUCCESS(vkGetSwapchainImagesKHR(
-		device->GetVkDevice(), swapChain->m_SwapChain, &imageCount, swapChain->m_Images.data()));
+	VkResult getSwapchainImagesResult = VK_INCOMPLETE;
+	do
+	{
+		getSwapchainImagesResult = vkGetSwapchainImagesKHR(
+			device->GetVkDevice(), swapChain->m_SwapChain, &imageCount, nullptr);
+		if (getSwapchainImagesResult == VK_SUCCESS && imageCount > 0)
+		{
+			swapChain->m_Images.resize(imageCount);
+			getSwapchainImagesResult = vkGetSwapchainImagesKHR(
+				device->GetVkDevice(), swapChain->m_SwapChain, &imageCount, swapChain->m_Images.data());
+		}
+	} while (getSwapchainImagesResult == VK_INCOMPLETE);
+	LOGMESSAGE("SwapChain image count: %u (min: %u)", imageCount, swapChainCreateInfo.minImageCount);
+	ENSURE_VK_SUCCESS(getSwapchainImagesResult);
+	ENSURE(imageCount > 0);
 
 	swapChain->m_DepthTexture = CTexture::Create(
 		device, "SwapChainDepthTexture", ITexture::Type::TEXTURE_2D,
@@ -266,7 +278,8 @@ bool CSwapChain::AcquireNextImage(VkSemaphore acquireImageSemaphore)
 			m_IsValid = false;
 		else if (acquireResult != VK_SUBOPTIMAL_KHR)
 		{
-			LOGERROR("Acquire result: %d", static_cast<int>(acquireResult));
+			LOGERROR("Acquire result: %d (%s)",
+				static_cast<int>(acquireResult), Utilities::GetVkResultName(acquireResult));
 			debug_warn("Unknown acquire error.");
 		}
 	}
@@ -329,7 +342,8 @@ void CSwapChain::Present(VkSemaphore submitDone, VkQueue queue)
 			m_IsValid = false;
 		else if (presentResult != VK_SUBOPTIMAL_KHR)
 		{
-			LOGERROR("Present result: %d", static_cast<int>(presentResult));
+			LOGERROR("Present result: %d (%s)",
+				static_cast<int>(presentResult), Utilities::GetVkResultName(presentResult));
 			debug_warn("Unknown present error.");
 		}
 	}

@@ -1076,13 +1076,9 @@ function setup_main_exe ()
 		linkoptions {
 			-- wraps main thread in a __try block(see wseh.cpp). replace with mainCRTStartup if that's undesired.
 			"/ENTRY:wseh_EntryPoint",
-
-			-- see wstartup.h
-			"/INCLUDE:_wstartup_InitAndRegisterShutdown",
-
-			-- allow manual unload of delay-loaded DLLs
-			"/DELAY:UNLOAD",
 		}
+
+		links { "delayimp" }
 
 		-- allow the executable to use more than 2GB of RAM.
 		-- this should not be enabled during development, so that memory issues are easily spotted.
@@ -1411,16 +1407,22 @@ function setup_tests()
 		runner = "XmlPrinter"
 	end
 
-	local includefiles = {
+	local include_files = {
 		-- Precompiled headers - the header is added to all generated .cpp files
 		-- note that the header isn't actually precompiled here, only #included
 		-- so that the build stage can use it as a precompiled header.
 		"precompiled.h",
-		-- This is required to build against SDL 2.0.4 on Windows.
-		"lib/external_libraries/libsdl.h",
 	}
+	local test_root_include_files = {
+		"precompiled.h",
+	}
+	if os.istarget("windows") then
+		-- This is required to build against SDL 2.0.12 (starting from 2.0.4) on Windows.
+		-- Refs #3138
+		table.insert(test_root_include_files, "lib/external_libraries/libsdl.h")
+	end
 
-	cxxtest.init(source_root, true, runner, includefiles)
+	cxxtest.init(source_root, true, runner, include_files, test_root_include_files)
 
 	local target_type = get_main_project_target_type()
 	project_create("test", target_type)
@@ -1474,10 +1476,10 @@ function setup_tests()
 		-- from "lowlevel" static lib; must be added here to be linked in
 		files { source_root.."lib/sysdep/os/win/error_dialog.rc" }
 
-		-- see wstartup.h
-		linkoptions { "/INCLUDE:_wstartup_InitAndRegisterShutdown" }
 		-- Enables console for the TEST project on Windows
 		linkoptions { "/SUBSYSTEM:CONSOLE" }
+
+		links { "delayimp" }
 
 		project_add_manifest()
 

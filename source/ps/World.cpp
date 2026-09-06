@@ -1,4 +1,4 @@
-/* Copyright (C) 2022 Wildfire Games.
+/* Copyright (C) 2023 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -30,7 +30,6 @@
 #include "ps/Errors.h"
 #include "ps/Game.h"
 #include "ps/Loader.h"
-#include "ps/LoaderThunks.h"
 #include "ps/World.h"
 #include "renderer/Renderer.h"
 #include "renderer/SceneRenderer.h"
@@ -47,15 +46,17 @@ CLightEnv g_LightEnv;
 /**
  * Constructor.
  *
- * @param pGame CGame * pGame pointer to the container game object.
+ * @param game CGame& game reference to the container game object.
  **/
-CWorld::CWorld(CGame *pGame):
-	m_pGame(pGame),
-	m_Terrain(new CTerrain()),
-	m_UnitManager(new CUnitManager()),
-	m_MapReader(new CMapReader)
+CWorld::CWorld(CGame& game):
+	m_Game{game},
+	m_Terrain{std::make_unique<CTerrain>()},
+	m_UnitManager{std::make_unique<CUnitManager>()},
+	m_MapReader{std::make_unique<CMapReader>()}
 {
 }
+
+CWorld::~CWorld() = default;
 
 /**
  * Initializes the game world with the attributes provided.
@@ -69,20 +70,25 @@ void CWorld::RegisterInit(const CStrW& mapFile, const ScriptContext& cx, JS::Han
 
 		try
 		{
-			CTriggerManager* pTriggerManager = NULL;
-			m_MapReader->LoadMap(mapfilename, cx, settings, m_Terrain,
-				CRenderer::IsInitialised() ? &g_Renderer.GetSceneRenderer().GetWaterManager() : NULL,
-				CRenderer::IsInitialised() ? &g_Renderer.GetSceneRenderer().GetSkyManager() : NULL,
-				&g_LightEnv, m_pGame->GetView(),
-				m_pGame->GetView() ? m_pGame->GetView()->GetCinema() : NULL,
-				pTriggerManager, CRenderer::IsInitialised() ? &g_Renderer.GetPostprocManager() : NULL,
-				m_pGame->GetSimulation2(), &m_pGame->GetSimulation2()->GetSimContext(), playerID, false);
+			CTriggerManager* pTriggerManager = nullptr;
+			m_MapReader->LoadMap(mapfilename, cx, settings, m_Terrain.get(),
+				CRenderer::IsInitialised() ? &g_Renderer.GetSceneRenderer().GetWaterManager() :
+					nullptr,
+				CRenderer::IsInitialised() ? &g_Renderer.GetSceneRenderer().GetSkyManager() :
+					nullptr, &g_LightEnv, m_Game.GetView(),
+				m_Game.GetView() ? m_Game.GetView()->GetCinema() : nullptr, pTriggerManager,
+				CRenderer::IsInitialised() ? &g_Renderer.GetPostprocManager() : nullptr,
+				m_Game.GetSimulation2(), &m_Game.GetSimulation2()->GetSimContext(), playerID,
+				false);
 				// fails immediately, or registers for delay loading
-			RegMemFun(this, &CWorld::DeleteMapReader, L"CWorld::DeleteMapReader", 5);
+			LDR_Register([this](const double)
+			{
+				return DeleteMapReader();
+			}, L"CWorld::DeleteMapReader", 5);
 		}
 		catch (PSERROR_File& err)
 		{
-			SAFE_DELETE(m_MapReader);
+			m_MapReader.reset();
 			LOGERROR("Failed to load map %s: %s", mapfilename.string8(), err.what());
 			throw PSERROR_Game_World_MapLoadFailed("Failed to load map.\nCheck application log for details.");
 		}
@@ -92,31 +98,22 @@ void CWorld::RegisterInit(const CStrW& mapFile, const ScriptContext& cx, JS::Han
 void CWorld::RegisterInitRMS(const CStrW& scriptFile, const ScriptContext& cx, JS::HandleValue settings, int playerID)
 {
 	// If scriptFile is empty, a blank map will be generated using settings (no RMS run)
-	CTriggerManager* pTriggerManager = NULL;
-	m_MapReader->LoadRandomMap(scriptFile, cx, settings, m_Terrain,
-		CRenderer::IsInitialised() ? &g_Renderer.GetSceneRenderer().GetWaterManager() : NULL,
-		CRenderer::IsInitialised() ? &g_Renderer.GetSceneRenderer().GetSkyManager() : NULL,
-		&g_LightEnv, m_pGame->GetView(),
-		m_pGame->GetView() ? m_pGame->GetView()->GetCinema() : NULL,
-		pTriggerManager, CRenderer::IsInitialised() ? &g_Renderer.GetPostprocManager() : NULL,
-		m_pGame->GetSimulation2(), playerID);
+	CTriggerManager* pTriggerManager = nullptr;
+	m_MapReader->LoadRandomMap(scriptFile, cx, settings, m_Terrain.get(),
+		CRenderer::IsInitialised() ? &g_Renderer.GetSceneRenderer().GetWaterManager() : nullptr,
+		CRenderer::IsInitialised() ? &g_Renderer.GetSceneRenderer().GetSkyManager() : nullptr,
+		&g_LightEnv, m_Game.GetView(), m_Game.GetView() ? m_Game.GetView()->GetCinema() : nullptr,
+		pTriggerManager, CRenderer::IsInitialised() ? &g_Renderer.GetPostprocManager() : nullptr,
+		m_Game.GetSimulation2(), playerID);
 		// registers for delay loading
-	RegMemFun(this, &CWorld::DeleteMapReader, L"CWorld::DeleteMapReader", 5);
+	LDR_Register([this](const double)
+	{
+		return DeleteMapReader();
+	}, L"CWorld::DeleteMapReader", 5);
 }
 
 int CWorld::DeleteMapReader()
 {
-	SAFE_DELETE(m_MapReader);
+	m_MapReader.reset();
 	return 0;
-}
-
-/**
- * Destructor.
- *
- **/
-CWorld::~CWorld()
-{
-	delete m_Terrain;
-	delete m_UnitManager;
-	delete m_MapReader;
 }

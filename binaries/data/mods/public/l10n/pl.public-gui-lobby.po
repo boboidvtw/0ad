@@ -1,34 +1,34 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2022 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# youtome_metoyou
-# Adam Stachowicz
-# Adrian Budasz
-# 38a616e48ab75224196c9f5d011018d4_f8b318e
-# Bartosz Bobin
-# e9706534be4a728ed4e67375991e760b_b69146a
-# Leszek Szary
-# Lukasz B
-# Marcin Kozłowski
-# Marcin S
-# Marek Opłotny
-# Mateusz Klaczynski
-# Mateusz Kubicz
-# miragae
-# zyxist
-# Pawel
-# Przemysław Murach
-# Robert Wolniak
-# slodki12341
-# Xu Ux
+# youtome_metoyou, 2018
+# Adam Stachowicz, 2015
+# Adrian Budasz, 2014
+# 38a616e48ab75224196c9f5d011018d4_f8b318e, 2015
+# Bartosz Bobin, 2017-2018
+# e9706534be4a728ed4e67375991e760b_b69146a, 2018
+# Leszek Szary, 2014
+# Lukasz B, 2016
+# Marcin Kozłowski, 2014
+# Marcin S, 2016,2021-2022
+# Marek Opłotny, 2017
+# Mateusz Klaczynski, 2017
+# Mateusz Kubicz, 2017
+# miragae, 2014
+# zyxist, 2014
+# Pawel, 2018
+# Przemysław Murach, 2018-2021
+# Robert Wolniak, 2014
+# slodki12341, 2014
+# Xu Ux, 2021
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2022-09-12 09:35+0000\n"
+"POT-Creation-Date: 2024-08-12 07:08+0000\n"
 "PO-Revision-Date: 2014-06-19 17:50+0000\n"
-"Last-Translator: Marcin S <dzidek1003@o2.pl>, 2016,2021-2022\n"
+"Last-Translator: Bartosz Bobin, 2018,2023\n"
 "Language-Team: Polish (http://app.transifex.com/wildfire-games/0ad/language/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,32 +36,31 @@ msgstr ""
 "Language: pl\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(caption):28
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):61
-msgid "Back"
-msgstr "Powrót"
-
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(caption):32
-msgid "Update"
-msgstr "Aktualizacja"
-
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(heading):17
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:17
 msgid "Rank"
 msgstr "Ranga"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(heading):20
-#: gui/lobby/LobbyPage/GameList.xml:(heading):13
-#: gui/lobby/LobbyPage/PlayerList.xml:(heading):21
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:20
+#: gui/lobby/LobbyPage/GameList.xml:13 gui/lobby/LobbyPage/PlayerList.xml:21
 msgid "Name"
 msgstr "Nazwa"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(heading):23
-#: gui/lobby/LobbyPage/GameList.xml:(heading):28
-#: gui/lobby/LobbyPage/PlayerList.xml:(heading):24
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:23
+#: gui/lobby/LobbyPage/GameList.xml:28 gui/lobby/LobbyPage/PlayerList.xml:24
 msgid "Rating"
 msgstr "Ocena"
 
-#: gui/lobby/LobbyPage/AnnouncementHandler.js:18
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:28
+#: gui/lobby/ProfilePage/ProfilePage.xml:61
+msgid "Back"
+msgstr "Powrót"
+
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:32
+msgid "Update"
+msgstr "Aktualizacja"
+
+#: gui/lobby/LobbyPage/AnnouncementHandler.js:19
+#: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessageFormatAnnouncement.js:24
 msgid "Notice"
 msgstr "Uwagi"
 
@@ -77,34 +76,34 @@ msgstr "Odznacz jako Kumpel"
 msgid "Host Game"
 msgstr "Załóż nową grę"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:40
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:43
 msgid "Your active mods do not match the mods of this game."
 msgstr "Twoje aktywne mody nie pasują do modów używanych w tej grze"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:42
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:45
 msgid "Do you want to switch to the mod selection page?"
 msgstr "Czy chcesz się przełączyć w tryb wyboru modyfikacji?"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:43
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:46
 msgid "Incompatible mods"
 msgstr "Niekompatybilne mody"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:52
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:62
 msgid "The game has already started. Do you want to join as observer?"
 msgstr "Gra już się rozpoczęła. Czy chcesz dołączyć jako obserwator?"
 
 #. Translation: Join the game currently selected in the list.
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:104
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:95
 msgid "Join Game"
 msgstr "Dołącz do gry"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(caption):12
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:12
 #: gui/lobby/LobbyPage/Buttons/LeaderboardButton.js:9
 msgid "Leaderboard"
 msgstr "Tabela wyników"
 
 #: gui/lobby/LobbyPage/Buttons/ProfileButton.js:9
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):12
+#: gui/lobby/ProfilePage/ProfilePage.xml:12
 msgid "Player Profile Lookup"
 msgstr "Profil gracza"
 
@@ -189,6 +188,13 @@ msgstr "/say"
 msgid "Clear all chat scrollback."
 msgstr "Wyczyść historię czatu."
 
+#: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessageFormatAnnouncement.js:26
+#, javascript-format
+msgid ""
+"== %(prefix)s:\n"
+"%(message)s"
+msgstr ""
+
 #. Translation: Chat message issued using the ‘/me’ command.
 #: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessageFormatMe.js:24
 #, javascript-format
@@ -214,7 +220,7 @@ msgstr "Prywatne"
 msgid "(%(private)s) %(message)s"
 msgstr "(%(private)s) %(message)s"
 
-#: gui/lobby/LobbyPage/Chat/ChatPanel.xml:(caption):12
+#: gui/lobby/LobbyPage/Chat/ChatPanel.xml:12
 msgid "Send"
 msgstr "Wyślij"
 
@@ -329,23 +335,23 @@ msgstr "WYRZUCONY"
 msgid "You have been disconnected from the lobby. Do you want to reconnect?"
 msgstr "Zostałeś rozłączony z tej poczekalni. Chcesz się połączyć ponownie?"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:53
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:63
 #: gui/lobby/LobbyPage/ConnectionHandler.js:62
-#: gui/prelobby/common/credentials/credentials.js:55
+#: gui/prelobby/common/credentials/credentials.js:56
 msgid "Confirmation"
 msgstr "Potwierdzenie"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:44
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:54
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:47
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:64
 #: gui/lobby/LobbyPage/ConnectionHandler.js:63
-#: gui/prelobby/common/credentials/credentials.js:56
+#: gui/prelobby/common/credentials/credentials.js:57
 msgid "No"
 msgstr "Nie"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:44
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:54
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:47
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:64
 #: gui/lobby/LobbyPage/ConnectionHandler.js:63
-#: gui/prelobby/common/credentials/credentials.js:56
+#: gui/prelobby/common/credentials/credentials.js:57
 msgid "Yes"
 msgstr "Tak"
 
@@ -427,25 +433,25 @@ msgstr "Rozmiar mapy:"
 msgid "Map Description:"
 msgstr "Opis mapy:"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):16
+#: gui/lobby/LobbyPage/GameList.xml:16
 msgid "Map Name"
 msgstr "Nazwa mapy"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):19
+#: gui/lobby/LobbyPage/GameList.xml:19
 msgctxt "map"
 msgid "Size"
 msgstr "Rozmiar"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):22
+#: gui/lobby/LobbyPage/GameList.xml:22
 msgctxt "map"
 msgid "Type"
 msgstr "Typ"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):25
+#: gui/lobby/LobbyPage/GameList.xml:25
 msgid "Players"
 msgstr "Gracze"
 
-#: gui/lobby/LobbyPage/GameListFilters.xml:(caption):7
+#: gui/lobby/LobbyPage/GameListFilters.xml:7
 msgid "Show only open games"
 msgstr "Pokaż wyłącznie otwarte rozgrywki."
 
@@ -501,8 +507,7 @@ msgctxt "lobby kick"
 msgid "Reason: %(reason)s"
 msgstr "Powód: %(reason)s."
 
-#: gui/lobby/LobbyPage/LobbyPage.xml:(caption):13
-#: gui/prelobby/entrance/entrance.xml:(caption):14
+#: gui/lobby/LobbyPage/LobbyPage.xml:13 gui/prelobby/entrance/entrance.xml:14
 msgid "Multiplayer Lobby"
 msgstr "Poczekalnia trybu wieloosobowego"
 
@@ -532,13 +537,13 @@ msgctxt "lobby presence"
 msgid "Unknown"
 msgstr "Nieznane"
 
-#: gui/lobby/LobbyPage/PlayerList.xml:(heading):18
-msgid "Status"
-msgstr "Status"
-
-#: gui/lobby/LobbyPage/PlayerList.xml:(placeholder_text):4
+#: gui/lobby/LobbyPage/PlayerList.xml:4
 msgid "Search for Player"
 msgstr "Wyszukaj gracza"
+
+#: gui/lobby/LobbyPage/PlayerList.xml:18
+msgid "Status"
+msgstr "Status"
 
 #: gui/lobby/LobbyPage/ProfilePanel.js:106
 msgid "N/A"
@@ -566,33 +571,33 @@ msgstr "-"
 msgid "%(percentage)s%%"
 msgstr "%(percentage)s%%"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):8
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):30
+#: gui/lobby/LobbyPage/ProfilePanel.xml:8
+#: gui/lobby/ProfilePage/ProfilePage.xml:30
 msgid "Current Rank:"
 msgstr "Obecna Pozycja:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):12
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):34
+#: gui/lobby/LobbyPage/ProfilePanel.xml:12
+#: gui/lobby/ProfilePage/ProfilePage.xml:34
 msgid "Highest Rating:"
 msgstr "Najwyższa Ocena:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):16
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):38
+#: gui/lobby/LobbyPage/ProfilePanel.xml:16
+#: gui/lobby/ProfilePage/ProfilePage.xml:38
 msgid "Total Games:"
 msgstr "Wszystkie Gry:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):20
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):42
+#: gui/lobby/LobbyPage/ProfilePanel.xml:20
+#: gui/lobby/ProfilePage/ProfilePage.xml:42
 msgid "Wins:"
 msgstr "Wygrane:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):24
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):46
+#: gui/lobby/LobbyPage/ProfilePanel.xml:24
+#: gui/lobby/ProfilePage/ProfilePage.xml:46
 msgid "Losses:"
 msgstr "Przegrane:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):28
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):50
+#: gui/lobby/LobbyPage/ProfilePanel.xml:28
+#: gui/lobby/ProfilePage/ProfilePage.xml:50
 msgid "Win Rate:"
 msgstr "Współczynnik zwycięstw:"
 
@@ -601,19 +606,19 @@ msgstr "Współczynnik zwycięstw:"
 msgid "Player \"%(nick)s\" not found."
 msgstr "Gracz \"%(nick)s\" nie został znaleziony."
 
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):16
+#: gui/lobby/ProfilePage/ProfilePage.xml:16
 msgid "Enter playername:"
 msgstr "Wpisz nazwę gracza:"
 
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):22
+#: gui/lobby/ProfilePage/ProfilePage.xml:22
 msgid "View Profile"
 msgstr "Pokaż Profil"
 
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):55
+#: gui/lobby/ProfilePage/ProfilePage.xml:55
 msgid "Please enter a player name."
 msgstr "Wpisz nazwę gracza."
 
-#: gui/prelobby/common/credentials/confirmpassword.xml:(caption):4
+#: gui/prelobby/common/credentials/confirmpassword.xml:4
 msgid "Password again:"
 msgstr "Powtórne hasło:"
 
@@ -647,19 +652,19 @@ msgstr "Ponownie wpisz swoje hasło"
 msgid "Passwords do not match"
 msgstr "Hasła nie zgadzają się"
 
-#: gui/prelobby/common/credentials/credentials.js:54
+#: gui/prelobby/common/credentials/credentials.js:55
 msgid "Are you sure you want to delete the password after connecting?"
 msgstr "Jesteś pewien że chcesz usunąć hasło po połączeniu?"
 
-#: gui/prelobby/common/credentials/credentials.xml:(caption):6
+#: gui/prelobby/common/credentials/credentials.xml:6
 msgid "Login:"
 msgstr "Login:"
 
-#: gui/prelobby/common/credentials/credentials.xml:(caption):15
+#: gui/prelobby/common/credentials/credentials.xml:15
 msgid "Password:"
 msgstr "Hasło:"
 
-#: gui/prelobby/common/credentials/rememberpassword.xml:(caption):7
+#: gui/prelobby/common/credentials/rememberpassword.xml:7
 msgid "Remember Password"
 msgstr "Zapamiętaj hasło"
 
@@ -669,20 +674,22 @@ msgid ""
 "allowed to register more than one account within one hour."
 msgstr "Nieznany błąd. Występuje on przeważnie ponieważ używanie jednego adresu IP do rejestracji więcej niż jednego konta w przeciągu godziny jest niedozwolone."
 
-#: gui/prelobby/common/feedback/feedback.xml:(caption):10
-#: gui/prelobby/entrance/entrance.xml:(caption):30
+#: gui/prelobby/common/feedback/feedback.xml:10
+#: gui/prelobby/entrance/entrance.xml:30
 msgid "Cancel"
 msgstr "Anuluj"
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:1
 msgid ""
-"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Privacy "
+"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Privacy "
 "Policy[/font]"
-msgstr "[font=\"sans-bold-18\"]Polityka prywatności 0 A.D. Empires Ascendant Multiplayer Lobby[/font]"
+msgstr "[font=\"sans-bold-18\"]Polityka prywatności 0 A.D. Empires Ascendant Multiplayer Lobby[/font]"
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:3
-msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2020-12-24"
-msgstr "[font=\"sans-bold-14\"]Data dokeumtnu:[/font] 2020-12-24"
+#: gui/prelobby/common/terms/Terms_of_Service.txt:3
+#: gui/prelobby/common/terms/Terms_of_Use.txt:3
+msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2023-07-27"
+msgstr "[font=\"sans-bold-14\"]Data dokumentu:[/font] 2023-07-27"
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:5
 msgid ""
@@ -904,10 +911,10 @@ msgstr "1. Przetwarzanie jest niezbędne do realizacji usługi zdefiniowanej w w
 #: gui/prelobby/common/terms/Privacy_Policy.txt:50
 msgid ""
 "2. Wildfire Games has legitimate interests in providing the Multiplayer "
-"Lobby, in the development and improvement of 0 A.D. and the Multiplayer "
+"Lobby, in the development and improvement of 0 A.D. and the Multiplayer "
 "Lobby, in enforcing the Terms of Use and in the protection against "
 "cyberattacks (GDPR 6.1.f)."
-msgstr "2. Wildfire Games posiada uzasadnione interesy w dostarczeniu Multiplayer Lobby, w rozwoju i ulepszaniu 0 A.D. i Lobby, w egzekwowaniu Warunków korzystania i ochrony przed cyberatakami (GDPR 6.1.f)."
+msgstr "2. Wildfire Games posiada uzasadnione interesy w dostarczeniu Multiplayer Lobby, w rozwoju i ulepszaniu 0 A.D. i Lobby, w egzekwowaniu Warunków korzystania i ochrony przed cyberatakami (GDPR 6.1.f)."
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:51
 msgid ""
@@ -1081,28 +1088,24 @@ msgstr "Po więcej informacji zajrzyj na Politykę Prywatności Wildfire Games: 
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:1
 msgid ""
-"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
+"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
 "Service[/font]"
-msgstr "[font=\"sans-bold-18\"]Warunki korzystania z 0 A.D. Empires Ascendant Multiplayer Lobby[/font]"
-
-#: gui/prelobby/common/terms/Terms_of_Service.txt:3
-msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2018-10-16"
-msgstr "[font=\"sans-bold-14\"]Data dokumentu:[/font] 16.10.2018"
+msgstr "[font=\"sans-bold-18\"]Warunki korzystania z 0 A.D. Empires Ascendant Multiplayer Lobby[/font]"
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:5
 msgid ""
-"The 0 A.D. Empires Ascendant Multiplayer Lobby is an online service provided"
+"The 0 A.D. Empires Ascendant Multiplayer Lobby is an online service provided"
 " by Wildfire Games that allows players to set up online multiplayer matches,"
 " discuss the game in a public chat room and gain a rating that reflects "
 "their skill."
-msgstr "0 A.D. Empires Ascendant Multiplayer Lobby to usługa online dostarczona przez Wildfire Games, która pozwala graczom założyć mecz, prowadzić dyskusje na publicznym czacie i wspinać się w rankingu odzwierciedlającym ich umiejętności."
+msgstr "0 A.D. Empires Ascendant Multiplayer Lobby to usługa online dostarczona przez Wildfire Games, która pozwala graczom założyć mecz, prowadzić dyskusje na publicznym czacie i wspinać się w rankingu odzwierciedlającym ich umiejętności."
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:7
 msgid ""
 "Due to the subject matter of historic warfare, description and depiction of "
-"violence and the language on the Multiplayer Lobby, 0 A.D. and the "
+"violence and the language on the Multiplayer Lobby, 0 A.D. and the "
 "Multiplayer Lobby are not directed to young children (COPPA §312.2)."
-msgstr "Ze względu na tematykę wojenną, opis i przedstawienie przemocy oraz język w Lobby, 0 A.D. i Multiplayer Lobby nie jest przeznaczone dla młodszych dzieci (COPPA §312.2)."
+msgstr "Ze względu na tematykę wojenną, opis i przedstawienie przemocy oraz język w Lobby, 0 A.D. i Multiplayer Lobby nie jest przeznaczone dla młodszych dzieci (COPPA §312.2)."
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:8
 msgid "The minimum age to use the Multiplayer Lobby is 13."
@@ -1111,9 +1114,9 @@ msgstr "Aby korzystać z usługi, musisz mieć co najmniej 13 lat."
 #: gui/prelobby/common/terms/Terms_of_Service.txt:10
 #: gui/prelobby/common/terms/Terms_of_Use.txt:5
 msgid ""
-"[font=\"sans-bold-14\"]By using the 0 A.D. Multiplayer Lobby, you agree "
+"[font=\"sans-bold-14\"]By using the 0 A.D. Multiplayer Lobby, you agree "
 "to:[/font]"
-msgstr "[font=\"sans-bold-14\"]Korzystając z 0 A.D. Multiplayer Lobby, zgadzasz się na:[/font]"
+msgstr "[font=\"sans-bold-14\"]Korzystając z 0 A.D. Multiplayer Lobby, zgadzasz się na:[/font]"
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:11
 msgid " 1. Follow all usage policies."
@@ -1173,13 +1176,9 @@ msgstr "Jeżeli część warunków zostanie uznana za niezgodną z prawem lub w 
 
 #: gui/prelobby/common/terms/Terms_of_Use.txt:1
 msgid ""
-"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
+"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
 "Use[/font]"
-msgstr "[font=\"sans-bold-18\"]Warunki korzystania z 0 A.D. Empires Ascendant Multiplayer Lobby[/font]"
-
-#: gui/prelobby/common/terms/Terms_of_Use.txt:3
-msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2022-09-01"
-msgstr "[font=\"sans-bold-14\"]Data dokumentu:[/font] 2022-09-01"
+msgstr "[font=\"sans-bold-18\"]Warunki korzystania z 0 A.D. Empires Ascendant Multiplayer Lobby[/font]"
 
 #: gui/prelobby/common/terms/Terms_of_Use.txt:6
 msgid ""
@@ -1279,11 +1278,11 @@ msgstr "Polityka Prywatności"
 msgid "Please read and accept the Privacy Policy."
 msgstr "Proszę przeczytać i zaakceptować zasady Polityki Prywatności."
 
-#: gui/prelobby/entrance/entrance.xml:(caption):20
+#: gui/prelobby/entrance/entrance.xml:20
 msgid "Create a new account"
 msgstr "Stwórz nowe konto"
 
-#: gui/prelobby/entrance/entrance.xml:(caption):25
+#: gui/prelobby/entrance/entrance.xml:25
 msgid "Login to an existing account"
 msgstr "Zaloguj się do istniejącego konta"
 
@@ -1295,7 +1294,7 @@ msgstr "Połącz"
 msgid "Connecting…"
 msgstr "Łączenie..."
 
-#: gui/prelobby/login/login.xml:(caption):13
+#: gui/prelobby/login/login.xml:13
 msgid "Connect to the game lobby"
 msgstr "Połącz z poczekalnią gry wieloosobowej"
 
@@ -1311,6 +1310,6 @@ msgstr "Rejestrowanie..."
 msgid "Registered"
 msgstr "Zarejestrowany"
 
-#: gui/prelobby/register/register.xml:(caption):13
+#: gui/prelobby/register/register.xml:13
 msgid "Registration"
 msgstr "Rejestracja"

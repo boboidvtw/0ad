@@ -1928,7 +1928,6 @@ UnitAI.prototype.UnitFsmSpec = {
 
 				"leave": function(msg) {
 					this.StopMoving();
-					this.ResetSpeedMultiplier();
 					this.StopTimer();
 					this.SetDefaultAnimationVariant();
 				},
@@ -1999,7 +1998,7 @@ UnitAI.prototype.UnitFsmSpec = {
 
 				this.PlaySound("panic");
 
-				this.SetSpeedMultiplier(this.GetRunMultiplier());
+				this.Run();
 				return false;
 			},
 
@@ -2024,7 +2023,6 @@ UnitAI.prototype.UnitFsmSpec = {
 			},
 
 			"leave": function() {
-				this.ResetSpeedMultiplier();
 				this.StopMoving();
 			},
 
@@ -2302,16 +2300,14 @@ UnitAI.prototype.UnitFsmSpec = {
 					if (!this.formationAnimationVariant)
 						this.SetAnimationVariant("combat");
 
-					var cmpUnitAI = Engine.QueryInterface(this.order.data.target, IID_UnitAI);
-					if (cmpUnitAI && cmpUnitAI.IsFleeing())
-						this.SetSpeedMultiplier(this.GetRunMultiplier());
+					if (Engine.QueryInterface(this.order.data.target, IID_UnitAI)?.IsFleeing())
+						this.Run();
 
 					this.StartTimer(1000, 1000);
 					return false;
 				},
 
 				"leave": function() {
-					this.ResetSpeedMultiplier();
 					this.StopMoving();
 					this.StopTimer();
 				},
@@ -3768,12 +3764,11 @@ UnitAI.prototype.SetupLOSRangeQuery = function(enable = true)
 		this.losRangeQuery = undefined;
 	}
 
-	let cmpPlayer = QueryOwnerInterface(this.entity);
-	// If we are being destructed (owner == -1), creating a range query is pointless.
-	if (!cmpPlayer)
+	const cmpDiplomacy = QueryOwnerInterface(this.entity, IID_Diplomacy);
+	if (!cmpDiplomacy)
 		return;
 
-	let players = cmpPlayer.GetEnemies();
+	const players = cmpDiplomacy.GetEnemies();
 	if (!players.length)
 		return;
 
@@ -3802,13 +3797,12 @@ UnitAI.prototype.SetupHealRangeQuery = function(enable = true)
 		this.losHealRangeQuery = undefined;
 	}
 
-	let cmpPlayer = QueryOwnerInterface(this.entity);
-	// If we are being destructed (owner == -1), creating a range query is pointless.
-	if (!cmpPlayer)
+	const cmpDiplomacy = QueryOwnerInterface(this.entity, IID_Diplomacy);
+	if (!cmpDiplomacy)
 		return;
 
-	let players = cmpPlayer.GetAllies();
-	let range = this.GetQueryRange(IID_Heal);
+	const players = cmpDiplomacy.GetAllies();
+	const range = this.GetQueryRange(IID_Heal);
 
 	// Do not compensate for entity sizes: LOS doesn't, and UnitAI relies on that.
 	this.losHealRangeQuery = cmpRangeManager.CreateActiveQuery(this.entity,
@@ -3834,13 +3828,12 @@ UnitAI.prototype.SetupAttackRangeQuery = function(enable = true)
 		this.losAttackRangeQuery = undefined;
 	}
 
-	let cmpPlayer = QueryOwnerInterface(this.entity);
-	// If we are being destructed (owner == -1), creating a range query is pointless.
-	if (!cmpPlayer)
+	const cmpDiplomacy = QueryOwnerInterface(this.entity, IID_Diplomacy);
+	if (!cmpDiplomacy)
 		return;
 
 	// TODO: How to handle neutral players - Special query to attack military only?
-	let players = cmpPlayer.GetEnemies();
+	const players = cmpDiplomacy.GetEnemies();
 	if (!players.length)
 		return;
 
@@ -4474,8 +4467,8 @@ UnitAI.prototype.FindNearestDropsite = function(genericType)
 	let maxDifference = 40;
 
 	let owner = cmpOwnership.GetOwner();
-	let cmpPlayer = QueryOwnerInterface(this.entity);
-	let players = cmpPlayer && cmpPlayer.HasSharedDropsites() ? cmpPlayer.GetMutualAllies() : [owner];
+	let cmpDiplomacy = QueryOwnerInterface(this.entity, IID_Diplomacy);
+	let players = cmpDiplomacy && cmpDiplomacy.HasSharedDropsites() ? cmpDiplomacy.GetMutualAllies() : [owner];
 	let nearestDropsites = Engine.QueryInterface(SYSTEM_ENTITY, IID_RangeManager).ExecuteQuery(this.entity, 0, -1, players, IID_ResourceDropsite, false);
 
 	let isShip = Engine.QueryInterface(this.entity, IID_Identity).HasClass("Ship");
@@ -4647,9 +4640,15 @@ UnitAI.prototype.SetAnimationSync = function(actiontime, repeattime)
 
 UnitAI.prototype.StopMoving = function()
 {
-	let cmpUnitMotion = Engine.QueryInterface(this.entity, IID_UnitMotion);
-	if (cmpUnitMotion)
-		cmpUnitMotion.StopMoving();
+	const cmpUnitMotion = Engine.QueryInterface(this.entity, IID_UnitMotion);
+	if (!cmpUnitMotion)
+		return;
+
+	cmpUnitMotion.StopMoving();
+
+	// Formations misuse the speed multiplier for adapting its walk speed to their members.
+	if (!this.IsFormationController())
+		cmpUnitMotion.SetSpeedMultiplier(1);
 };
 
 /**
@@ -6139,20 +6138,19 @@ UnitAI.prototype.GetStanceName = function()
 };
 
 /*
- * Make the unit walk at its normal pace.
+ * Make the unit run.
  */
-UnitAI.prototype.ResetSpeedMultiplier = function()
+UnitAI.prototype.Run = function()
 {
-	let cmpUnitMotion = Engine.QueryInterface(this.entity, IID_UnitMotion);
-	if (cmpUnitMotion)
-		cmpUnitMotion.SetSpeedMultiplier(1);
+	this.SetSpeedMultiplier(this.GetRunMultiplier());
 };
 
+/**
+ * @param {number} speed - The multiplier to set the speed to.
+ */
 UnitAI.prototype.SetSpeedMultiplier = function(speed)
 {
-	let cmpUnitMotion = Engine.QueryInterface(this.entity, IID_UnitMotion);
-	if (cmpUnitMotion)
-		cmpUnitMotion.SetSpeedMultiplier(speed);
+	Engine.QueryInterface(this.entity, IID_UnitMotion)?.SetSpeedMultiplier(speed);
 };
 
 /**
@@ -6438,7 +6436,15 @@ UnitAI.prototype.AttackEntitiesByPreference = function(ents)
 		if (!attackfilter(ent))
 			continue;
 		let pref = cmpAttack.GetPreference(ent);
-		if (pref === null || pref === undefined)
+		// If we match our best preference, we can try responding right away.
+		// This makes some common cases fast, like most soldiers having 'Human' as best preference,
+		// or ships having 'Ship'. And if there are no such targets, this doesn't do much more work.
+		if (pref === 0)
+		{
+			if (this.RespondToTargetedEntities([ent]))
+				return true;
+		}
+		else if (pref === null || pref === undefined)
 			entsWithoutPref.push(ent);
 		else if (!entsByPreferences[pref])
 		{

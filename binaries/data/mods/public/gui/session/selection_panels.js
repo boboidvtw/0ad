@@ -63,10 +63,22 @@ g_SelectionPanels.Alert = {
 		case "raise":
 			data.icon.sprite = "stretched:session/icons/bell_level1.png";
 			data.button.tooltip = translate("Raise an alert!");
+			if (data.unitEntStates.every(state => MatchesClassList(["FemaleCitizen"], state.alertRaiser?.classes)))
+				data.button.tooltip += "\n" + bodyFont(translate("Alert nearby Female Citizens to seek refuge."));
+			else if (data.unitEntStates.every(state => MatchesClassList(["Trader"], state.alertRaiser?.classes)))
+				data.button.tooltip += "\n" + bodyFont(translate("Alert nearby Traders to seek refuge."));
+			else
+				data.button.tooltip += "\n" + bodyFont(translate("Alert nearby vulnerable units to seek refuge."));
 			break;
 		case "end":
-			data.button.tooltip = translate("End of alert.");
 			data.icon.sprite = "stretched:session/icons/bell_level0.png";
+			data.button.tooltip = translate("End the alert.");
+			if (data.unitEntStates.every(state => MatchesClassList(["FemaleCitizen"], state.alertRaiser?.classes)))
+				data.button.tooltip += "\n" + bodyFont(translate("Unload nearby Female Citizens."));
+			else if (data.unitEntStates.every(state => MatchesClassList(["Trader"], state.alertRaiser?.classes)))
+				data.button.tooltip += "\n" + bodyFont(translate("Unload nearby Traders."));
+			else
+				data.button.tooltip += "\n" + bodyFont(translate("Unload nearby vulnerable units."));
 			break;
 		}
 		data.button.enabled = controlsPlayer(data.player);
@@ -270,6 +282,8 @@ g_SelectionPanels.Formation = {
 
 		let formationInfo = g_FormationsInfo.get(data.item);
 		let tooltip = translate(formationInfo.name);
+		if (formationInfo.tooltip)
+			tooltip += "\n" + bodyFont(translate(formationInfo.tooltip));
 
 		let isDefaultFormation = g_AutoFormation.isDefault(data.item);
 		if (data.item === NULL_FORMATION)
@@ -281,8 +295,8 @@ g_SelectionPanels.Formation = {
 				translate("This is the default formation, used for movement orders.") :
 				translate("Right-click to set this as the default formation."));
 
-		if (!formationOk && formationInfo.tooltip)
-			tooltip += "\n" + objectionFont(translate(formationInfo.tooltip));
+		if (!formationOk && formationInfo.disabledTooltip)
+			tooltip += "\n" + objectionFont(translate(formationInfo.disabledTooltip));
 		data.button.tooltip = tooltip;
 
 		data.button.enabled = formationOk && controlsPlayer(data.player);
@@ -328,7 +342,7 @@ g_SelectionPanels.Garrison = {
 			unloadTemplate(template.selectionGroupName || entState.template, entState.player);
 		};
 
-		data.countDisplay.caption = data.item.ents.length || "";
+		data.countDisplay.caption = data.item.ents.length > 1 ? data.item.ents.length : "";
 
 		let canUngarrison = controlsPlayer(data.player) || controlsPlayer(entState.player);
 
@@ -924,7 +938,7 @@ g_SelectionPanels.Selection = {
 		data.guiSelection.sprite = "color:" + g_DiplomacyColors.getPlayerColor(unitOwner, 160);
 		data.guiSelection.hidden = !g_IsObserver;
 
-		data.countDisplay.caption = data.item.ents.length || "";
+		data.countDisplay.caption = data.item.ents.length > 1 ? data.item.ents.length : "";
 
 		data.button.onPress = function() {
 			if (Engine.HotkeyIsPressed("session.deselectgroup"))
@@ -959,8 +973,7 @@ g_SelectionPanels.Stance = {
 		let unitIds = data.unitEntStates.map(state => state.id);
 		data.button.onPress = function() { performStance(unitIds, data.item); };
 
-		data.button.tooltip = getStanceDisplayName(data.item) + "\n" +
-			"[font=\"sans-13\"]" + getStanceTooltip(data.item) + "[/font]";
+		data.button.tooltip = getStanceDisplayName(data.item) + "\n" + bodyFont(getStanceTooltip(data.item));
 
 		data.guiSelection.hidden = !Engine.GuiInterfaceCall("IsStanceSelected", {
 			"ents": unitIds,
@@ -1249,19 +1262,19 @@ function initSelectionPanels()
  *
  * @param {string} [civCode] - The template name of the entity that researches the selected technology.
  */
-function showTemplateDetails(templateName, civCode)
+async function showTemplateDetails(templateName, civCode)
 {
 	if (inputState != INPUT_NORMAL)
 		return;
 	g_PauseControl.implicitPause();
 
-	Engine.PushGuiPage(
+	await Engine.PushGuiPage(
 		"page_viewer.xml",
 		{
 			"templateName": templateName,
 			"civ": civCode
-		},
-		resumeGame);
+		});
+	resumeGame();
 }
 
 /**

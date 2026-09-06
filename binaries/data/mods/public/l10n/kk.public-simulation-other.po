@@ -1,12 +1,12 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2023 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2023-02-02 21:44+0000\n"
+"POT-Creation-Date: 2024-07-26 07:08+0000\n"
 "PO-Revision-Date: 2014-06-19 17:53+0000\n"
 "Language-Team: Kazakh (http://app.transifex.com/wildfire-games/0ad/language/kk/)\n"
 "MIME-Version: 1.0\n"
@@ -29,350 +29,388 @@ msgid ""
 "your share of the loot."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:7
+#: simulation/ai/petra/chatHelper.js:5
 #, javascript-format
-msgid "I am launching an attack against %(_player_)s."
+msgid ""
+"I am launching an unprecedented attack against %(_player_)s. Bring your "
+"armies and we may soon win this war."
 msgstr ""
 
 #: simulation/ai/petra/chatHelper.js:8
 #, javascript-format
+msgid "I am launching an attack against %(_player_)s."
+msgstr ""
+
+#: simulation/ai/petra/chatHelper.js:9
+#, javascript-format
 msgid "I have just sent an army against %(_player_)s."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:14
+#: simulation/ai/petra/chatHelper.js:10
+#, javascript-format
+msgid "I am sending an army against %(_player_)s."
+msgstr ""
+
+#: simulation/ai/petra/chatHelper.js:16
 #, javascript-format
 msgid "Let me regroup my army and I will then join you against %(_player_)s."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:15
+#: simulation/ai/petra/chatHelper.js:17
 #, javascript-format
 msgid "I am finishing preparations to attack %(_player_)s."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:18
+#: simulation/ai/petra/chatHelper.js:20
 #, javascript-format
 msgid ""
 "Sorry, I do not have enough soldiers currently; but my next attack will "
 "target %(_player_)s."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:19
+#: simulation/ai/petra/chatHelper.js:21
 #, javascript-format
 msgid ""
 "Sorry, I still need to strengthen my army. However, I will attack "
 "%(_player_)s next."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:22
+#: simulation/ai/petra/chatHelper.js:24
 #, javascript-format
 msgid ""
 "I cannot help you against %(_player_)s for the time being, I am planning to "
 "attack %(_player_2)s first."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:27
+#: simulation/ai/petra/chatHelper.js:29
 #, javascript-format
 msgid "Here is a gift for you, %(_player_)s. Make good use of it."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:28
+#: simulation/ai/petra/chatHelper.js:30
 #, javascript-format
 msgid "I see you are in a bad situation, %(_player_)s. I hope this helps."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:29
+#: simulation/ai/petra/chatHelper.js:31
 #, javascript-format
 msgid ""
 "I can help you this time, %(_player_)s, but you should manage your resources"
 " more carefully in the future."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:33
+#: simulation/ai/petra/chatHelper.js:35
 #, javascript-format
 msgid "I am in need of %(resource)s, can you help? I will make it up to you."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:34
+#: simulation/ai/petra/chatHelper.js:36
 #, javascript-format
 msgid ""
 "I would participate more efficiently in our common war effort if you could "
 "provide me some %(resource)s."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:35
+#: simulation/ai/petra/chatHelper.js:37
 #, javascript-format
 msgid ""
 "If you can spare me some %(resource)s, I will be able to strengthen my army."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:39
+#: simulation/ai/petra/chatHelper.js:41
 #, javascript-format
 msgid ""
 "I have set up a new route with %(_player_)s. Trading will be profitable for "
 "all of us."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:40
+#: simulation/ai/petra/chatHelper.js:42
 #, javascript-format
 msgid ""
 "A new trade route is set up with %(_player_)s. Take your share of the "
 "profits."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:45
+#: simulation/ai/petra/chatHelper.js:47
 #, javascript-format
 msgid "%(_player_)s and I are now allies."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:48
+#: simulation/ai/petra/chatHelper.js:50
 #, javascript-format
 msgid "%(_player_)s and I are now neutral."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:51
+#: simulation/ai/petra/chatHelper.js:53
 #, javascript-format
 msgid "%(_player_)s and I are now enemies."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:58
+#: simulation/ai/petra/chatHelper.js:60
 #, javascript-format
 msgid "I cannot accept your offer to become allies, %(_player_)s."
 msgstr ""
 
 #: simulation/ai/petra/chatHelper.js:61
 #, javascript-format
+msgid "I must decline your offer of alliance, %(_player_)s."
+msgstr ""
+
+#: simulation/ai/petra/chatHelper.js:62
+#, javascript-format
+msgid "An alliance with you is not in my best interest, %(_player_)s."
+msgstr ""
+
+#: simulation/ai/petra/chatHelper.js:65
+#, javascript-format
 msgid ""
 "I will not be your ally, %(_player_)s. However, I will consider a neutrality"
 " pact."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:62
+#: simulation/ai/petra/chatHelper.js:66
 #, javascript-format
 msgid ""
 "I reject your request for alliance, %(_player_)s, but we could become "
 "neutral."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:63
+#: simulation/ai/petra/chatHelper.js:67
 #, javascript-format
 msgid "%(_player_)s, only a neutrality agreement is conceivable to me."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:66
+#: simulation/ai/petra/chatHelper.js:70
 #, javascript-format
 msgid ""
 "Our previous alliance did not work out, %(_player_)s. I must decline your "
 "offer."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:67
+#: simulation/ai/petra/chatHelper.js:71
 #, javascript-format
 msgid "I won’t ally you again, %(_player_)s!"
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:68
+#: simulation/ai/petra/chatHelper.js:72
 #, javascript-format
 msgid "No more alliances between us, %(_player_)s!"
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:69
+#: simulation/ai/petra/chatHelper.js:73
 #, javascript-format
 msgid "Your request for peace means nothing to me anymore, %(_player_)s!"
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:70
+#: simulation/ai/petra/chatHelper.js:74
 #, javascript-format
 msgid ""
 "My answer to your repeated peace proposal will remain war, %(_player_)s!"
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:73
+#: simulation/ai/petra/chatHelper.js:77
 #, javascript-format
 msgid ""
 "I will accept your offer to become allies, %(_player_)s. We will both "
 "benefit from this partnership."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:74
+#: simulation/ai/petra/chatHelper.js:78
 #, javascript-format
 msgid "An alliance between us is a good idea, %(_player_)s."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:75
+#: simulation/ai/petra/chatHelper.js:79
 #, javascript-format
 msgid ""
 "Let both of our people prosper from a peaceful association, %(_player_)s."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:76
+#: simulation/ai/petra/chatHelper.js:80
 #, javascript-format
 msgid "We have found common ground, %(_player_)s. I accept the alliance."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:77
+#: simulation/ai/petra/chatHelper.js:81
 #, javascript-format
 msgid "%(_player_)s, consider us allies from now on."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:80
+#: simulation/ai/petra/chatHelper.js:84
 #, javascript-format
 msgid ""
 "I will ally with you, %(_player_)s, but only if you send me a tribute of "
 "%(_amount_)s %(_resource_)s."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:81
+#: simulation/ai/petra/chatHelper.js:85
 #, javascript-format
 msgid ""
 "%(_player_)s, you must send me a tribute of %(_amount_)s %(_resource_)s "
 "before I accept an alliance with you."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:82
+#: simulation/ai/petra/chatHelper.js:86
 #, javascript-format
 msgid ""
 "Unless you send me %(_amount_)s %(_resource_)s, an alliance won’t be formed,"
 " %(_player_)s."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:85
+#: simulation/ai/petra/chatHelper.js:89
 #, javascript-format
 msgid ""
 "%(_player_)s, my offer still stands. I will ally with you only if you send "
 "me a tribute of %(_amount_)s %(_resource_)s."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:86
+#: simulation/ai/petra/chatHelper.js:90
 #, javascript-format
 msgid ""
 "I’m still waiting for %(_amount_)s %(_resource_)s before accepting your "
 "alliance, %(_player_)s."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:87 simulation/ai/petra/chatHelper.js:108
+#: simulation/ai/petra/chatHelper.js:91 simulation/ai/petra/chatHelper.js:112
 #, javascript-format
 msgid ""
 "%(_player_)s, if you do not send me part of the %(_amount_)s %(_resource_)s "
 "tribute soon, I will break off our negotiations."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:92
+#: simulation/ai/petra/chatHelper.js:96
 #, javascript-format
 msgid "I will not become neutral with you, %(_player_)s."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:93
+#: simulation/ai/petra/chatHelper.js:97
 #, javascript-format
 msgid "%(_player_)s, I must decline your request for a neutrality pact."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:96
+#: simulation/ai/petra/chatHelper.js:100
 #, javascript-format
 msgid ""
 "Our previous neutrality agreement ended in failure, %(_player_)s; I will not"
 " consider another one."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:99
+#: simulation/ai/petra/chatHelper.js:103
 #, javascript-format
 msgid ""
 "I welcome your request for peace between our civilizations, %(_player_)s. I "
 "will accept."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:100
+#: simulation/ai/petra/chatHelper.js:104
 #, javascript-format
 msgid ""
 "%(_player_)s, I will accept your neutrality request. May both our "
 "civilizations benefit."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:103
+#: simulation/ai/petra/chatHelper.js:107
 #, javascript-format
 msgid ""
 "If you send me a tribute of %(_amount_)s %(_resource_)s, I will accept your "
 "neutrality request, %(_player_)s."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:104
+#: simulation/ai/petra/chatHelper.js:108
 #, javascript-format
 msgid ""
 "%(_player_)s, if you send me %(_amount_)s %(_resource_)s, I will accept a "
 "neutrality pact."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:107
+#: simulation/ai/petra/chatHelper.js:111
 #, javascript-format
 msgid ""
 "%(_player_)s, I will not accept your neutrality request unless you tribute "
 "me %(_amount_)s %(_resource_)s soon."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:116
+#: simulation/ai/petra/chatHelper.js:120
 #, javascript-format
 msgid ""
 "%(_player_)s, it would help both of our civilizations if we formed an "
 "alliance. If you become allies with me, I will respond in kind."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:119
+#: simulation/ai/petra/chatHelper.js:123
 #, javascript-format
 msgid "%(_player_)s, my offer for an alliance has expired."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:120
+#: simulation/ai/petra/chatHelper.js:124
 #, javascript-format
 msgid ""
 "%(_player_)s, I have rescinded my previous offer for an alliance between us."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:125
+#: simulation/ai/petra/chatHelper.js:129
 #, javascript-format
 msgid ""
 "%(_player_)s, I would like to request a neutrality pact between our "
 "civilizations. If you become neutral with me, I will respond in kind."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:126
+#: simulation/ai/petra/chatHelper.js:130
 #, javascript-format
 msgid ""
 "%(_player_)s, it would be both to our benefit if we negotiated a neutrality "
 "pact. I will become neutral with you if you do the same."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:129
+#: simulation/ai/petra/chatHelper.js:133
 #, javascript-format
 msgid "%(_player_)s, I have decided to revoke my offer for a neutrality pact."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:130
+#: simulation/ai/petra/chatHelper.js:134
 #, javascript-format
 msgid ""
 "%(_player_)s, as you have failed to respond to my request for peace between "
 "us, I have abrogated my offer."
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:137
+#: simulation/ai/petra/chatHelper.js:141
 msgid ""
 "My armies failed while defending my empire. Please honor our alliance and "
 "send help!"
 msgstr ""
 
-#: simulation/ai/petra/chatHelper.js:140
+#: simulation/ai/petra/chatHelper.js:142
+msgid ""
+"My humble armies feel weak and tired. My civilization depends on our "
+"alliance, please send help!"
+msgstr ""
+
+#: simulation/ai/petra/chatHelper.js:143
+msgid "I need your help. Please do not let my armies fall!"
+msgstr ""
+
+#: simulation/ai/petra/chatHelper.js:146
 msgid ""
 "My empire regained its old strength, now it is time to seek revenge "
 "together!"
 msgstr ""
 
-#: simulation/ai/petra/data.jsondescription
+#: simulation/ai/petra/chatHelper.js:147
 msgid ""
-"Petra is the default 0 A.D. AI bot. Please report issues to Wildfire Games (see the link in the main menu).\n"
-"\n"
-"The AI's resource gathering rate and trade gain depend on the difficulty level (Sandbox −58%, Very Easy −44%, Easy −25%, Medium ±0%, Hard +25%, Very Hard +56%). The easiest levels also have a slower research, training, and building rate. In addition, the Sandbox level does not expand nor attack."
+"My civilization raised from the ashes. Now my armies feel stronger and eager"
+" to fight for our alliance."
 msgstr ""
 
-#: simulation/ai/petra/data.jsonname
+#: simulation/ai/petra/data.json
 msgid "Petra Bot"
+msgstr ""
+
+#: simulation/ai/petra/data.json
+msgid ""
+"Petra is the default 0 A.D. AI bot. Please report issues to Wildfire Games (see the link in the main menu).\n"
+"\n"
+"The AI's resource gathering rate and trade gain depend on the difficulty level (Sandbox −58%, Very Easy −44%, Easy −25%, Medium ±0%, Hard +25%, Very Hard +56%). The easiest levels also have a slower research, training, and building rate. In addition, the Sandbox level does not expand nor attack."
 msgstr ""
 
 #: simulation/components/BuildRestrictions.js:91
@@ -398,7 +436,7 @@ msgstr ""
 #. Translation: territoryType being displayed in a translated sentence in the
 #. form: "House
 #. cannot be built in %(territoryType)s territory.".
-#: simulation/components/BuildRestrictions.js:190
+#: simulation/components/BuildRestrictions.js:195
 msgctxt "Territory type"
 msgid "own"
 msgstr ""
@@ -406,7 +444,7 @@ msgstr ""
 #. Translation: territoryType being displayed in a translated sentence in the
 #. form: "House
 #. cannot be built in %(territoryType)s territory.".
-#: simulation/components/BuildRestrictions.js:193
+#: simulation/components/BuildRestrictions.js:198
 msgctxt "Territory type"
 msgid "unconnected own"
 msgstr ""
@@ -414,7 +452,7 @@ msgstr ""
 #. Translation: territoryType being displayed in a translated sentence in the
 #. form: "House
 #. cannot be built in %(territoryType)s territory.".
-#: simulation/components/BuildRestrictions.js:199
+#: simulation/components/BuildRestrictions.js:204
 msgctxt "Territory type"
 msgid "allied"
 msgstr ""
@@ -422,7 +460,7 @@ msgstr ""
 #. Translation: territoryType being displayed in a translated sentence in the
 #. form: "House
 #. cannot be built in %(territoryType)s territory.".
-#: simulation/components/BuildRestrictions.js:202
+#: simulation/components/BuildRestrictions.js:207
 msgctxt "Territory type"
 msgid "unconnected allied"
 msgstr ""
@@ -430,7 +468,7 @@ msgstr ""
 #. Translation: territoryType being displayed in a translated sentence in the
 #. form: "House
 #. cannot be built in %(territoryType)s territory.".
-#: simulation/components/BuildRestrictions.js:208
+#: simulation/components/BuildRestrictions.js:213
 msgctxt "Territory type"
 msgid "neutral"
 msgstr ""
@@ -438,24 +476,24 @@ msgstr ""
 #. Translation: territoryType being displayed in a translated sentence in the
 #. form: "House
 #. cannot be built in %(territoryType)s territory.".
-#: simulation/components/BuildRestrictions.js:215
+#: simulation/components/BuildRestrictions.js:220
 msgctxt "Territory type"
 msgid "enemy"
 msgstr ""
 
-#: simulation/components/BuildRestrictions.js:220
+#: simulation/components/BuildRestrictions.js:225
 #, javascript-format
 msgid ""
 "%(name)s cannot be built in %(territoryType)s territory. Valid territories: "
 "%(validTerritories)s"
 msgstr ""
 
-#: simulation/components/BuildRestrictions.js:234
+#: simulation/components/BuildRestrictions.js:239
 #, javascript-format
 msgid "%(name)s must be built on a valid shoreline"
 msgstr ""
 
-#: simulation/components/BuildRestrictions.js:261
+#: simulation/components/BuildRestrictions.js:266
 #, javascript-format
 msgid ""
 "%(name)s too close to a %(category)s, must be at least %(distance)s meter "
@@ -466,7 +504,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: simulation/components/BuildRestrictions.js:282
+#: simulation/components/BuildRestrictions.js:287
 #, javascript-format
 msgid ""
 "%(name)s too far from a %(category)s, must be within %(distance)s meter"
@@ -478,7 +516,7 @@ msgstr[1] ""
 #. Translation: Territory types being displayed as part of a list like "Valid
 #. territories:
 #. own, ally".
-#: simulation/components/BuildRestrictions.js:322
+#: simulation/components/BuildRestrictions.js:327
 msgctxt "Territory type list"
 msgid "own"
 msgstr ""
@@ -486,7 +524,7 @@ msgstr ""
 #. Translation: Territory types being displayed as part of a list like "Valid
 #. territories:
 #. own, ally".
-#: simulation/components/BuildRestrictions.js:324
+#: simulation/components/BuildRestrictions.js:329
 msgctxt "Territory type list"
 msgid "ally"
 msgstr ""
@@ -494,7 +532,7 @@ msgstr ""
 #. Translation: Territory types being displayed as part of a list like "Valid
 #. territories:
 #. own, ally".
-#: simulation/components/BuildRestrictions.js:326
+#: simulation/components/BuildRestrictions.js:331
 msgctxt "Territory type list"
 msgid "neutral"
 msgstr ""
@@ -502,7 +540,7 @@ msgstr ""
 #. Translation: Territory types being displayed as part of a list like "Valid
 #. territories:
 #. own, ally".
-#: simulation/components/BuildRestrictions.js:328
+#: simulation/components/BuildRestrictions.js:333
 msgctxt "Territory type list"
 msgid "enemy"
 msgstr ""
@@ -542,26 +580,26 @@ msgstr ""
 msgid "%(category)s limit of %(limit)s reached"
 msgstr ""
 
-#: simulation/components/Player.js:328
+#: simulation/components/Player.js:308
 #, javascript-format
 msgid "Insufficient resources - %(resourceAmount1)s %(resourceType1)s"
 msgstr ""
 
-#: simulation/components/Player.js:330
+#: simulation/components/Player.js:310
 #, javascript-format
 msgid ""
 "Insufficient resources - %(resourceAmount1)s %(resourceType1)s, "
 "%(resourceAmount2)s %(resourceType2)s"
 msgstr ""
 
-#: simulation/components/Player.js:332
+#: simulation/components/Player.js:312
 #, javascript-format
 msgid ""
 "Insufficient resources - %(resourceAmount1)s %(resourceType1)s, "
 "%(resourceAmount2)s %(resourceType2)s, %(resourceAmount3)s %(resourceType3)s"
 msgstr ""
 
-#: simulation/components/Player.js:334
+#: simulation/components/Player.js:314
 #, javascript-format
 msgid ""
 "Insufficient resources - %(resourceAmount1)s %(resourceType1)s, "
@@ -581,7 +619,7 @@ msgstr ""
 msgid "Could not auto-queue unit, de-activating."
 msgstr ""
 
-#: simulation/components/Trainer.js:313
+#: simulation/components/Trainer.js:321
 msgid "Can't find free space to spawn trained units."
 msgstr ""
 
@@ -589,279 +627,278 @@ msgstr ""
 msgid "Entity is producing. Cannot start upgrading."
 msgstr ""
 
-#: simulation/data/settings/game_speeds.jsonData[0].Title
+#: simulation/data/settings/game_speeds.json
 msgid "Turtle (0.1×)"
 msgstr ""
 
-#: simulation/data/settings/game_speeds.jsonData[10].Title
-msgid "Fast Forward (20×)"
-msgstr ""
-
-#: simulation/data/settings/game_speeds.jsonData[1].Title
+#: simulation/data/settings/game_speeds.json
 msgid "Slow (0.25×)"
 msgstr ""
 
-#: simulation/data/settings/game_speeds.jsonData[2].Title
+#: simulation/data/settings/game_speeds.json
 msgid "Leisurely (0.5×)"
 msgstr ""
 
-#: simulation/data/settings/game_speeds.jsonData[3].Title
+#: simulation/data/settings/game_speeds.json
 msgid "Relaxed (0.75×)"
 msgstr ""
 
-#: simulation/data/settings/game_speeds.jsonData[4].Title
+#: simulation/data/settings/game_speeds.json
 msgid "Normal (1×)"
 msgstr ""
 
-#: simulation/data/settings/game_speeds.jsonData[5].Title
+#: simulation/data/settings/game_speeds.json
 msgid "Fast (1.25×)"
 msgstr ""
 
-#: simulation/data/settings/game_speeds.jsonData[6].Title
+#: simulation/data/settings/game_speeds.json
 msgid "Very Fast (1.5×)"
 msgstr ""
 
-#: simulation/data/settings/game_speeds.jsonData[7].Title
+#: simulation/data/settings/game_speeds.json
 msgid "Insane (2×)"
 msgstr ""
 
-#: simulation/data/settings/game_speeds.jsonData[8].Title
+#: simulation/data/settings/game_speeds.json
 msgid "Fast Forward (5×)"
 msgstr ""
 
-#: simulation/data/settings/game_speeds.jsonData[9].Title
+#: simulation/data/settings/game_speeds.json
 msgid "Fast Forward (10×)"
 msgstr ""
 
-#: simulation/data/settings/map_sizes.jsonData[0].Name
+#: simulation/data/settings/game_speeds.json
+msgid "Fast Forward (20×)"
+msgstr ""
+
+#: simulation/data/settings/map_sizes.json
 msgid "Tiny"
 msgstr ""
 
-#: simulation/data/settings/map_sizes.jsonData[0].Tooltip
+#: simulation/data/settings/map_sizes.json
 msgid "This map size has barely any room for even the most basic resources."
 msgstr ""
 
-#: simulation/data/settings/map_sizes.jsonData[1].Name
+#: simulation/data/settings/map_sizes.json
 msgid "Small"
 msgstr ""
 
-#: simulation/data/settings/map_sizes.jsonData[1].Tooltip
+#: simulation/data/settings/map_sizes.json
 msgid ""
 "Small maps are suitable for 1v1 matches, as players can reach the enemy "
 "quickly while still having some room to expand."
 msgstr ""
 
-#: simulation/data/settings/map_sizes.jsonData[2].Name
+#: simulation/data/settings/map_sizes.json
 msgid "Normal"
 msgstr ""
 
-#: simulation/data/settings/map_sizes.jsonData[2].Tooltip
+#: simulation/data/settings/map_sizes.json
 msgid ""
 "This map size provides plenty of space for two players, but even eight "
 "players fit."
 msgstr ""
 
-#: simulation/data/settings/map_sizes.jsonData[3].Tooltip
+#: simulation/data/settings/map_sizes.json
 msgid ""
 "This is the ideal mapsize for 4 to 8 players, because there is plenty of "
 "space to expand while the neighbors are quickly reachable."
 msgstr ""
 
-#: simulation/data/settings/map_sizes.jsonData[4].Name
+#: simulation/data/settings/map_sizes.json
 msgid "Large"
 msgstr ""
 
-#: simulation/data/settings/map_sizes.jsonData[4].Tooltip
+#: simulation/data/settings/map_sizes.json
 msgid ""
 "The large mapsize is recommended when great portions of the map are covered "
 "with water or inaccessible mountains."
 msgstr ""
 
-#: simulation/data/settings/map_sizes.jsonData[5].Name
+#: simulation/data/settings/map_sizes.json
 msgid "Very Large"
 msgstr ""
 
-#: simulation/data/settings/map_sizes.jsonData[5].Tooltip
-#: simulation/data/settings/map_sizes.jsonData[6].Tooltip
+#: simulation/data/settings/map_sizes.json
+msgid "Giant"
+msgstr ""
+
+#: simulation/data/settings/map_sizes.json
 msgid ""
 "Very large maps are not recommended as it takes very long to reach the enemy"
 " and the game performance can be reduced."
 msgstr ""
 
-#: simulation/data/settings/map_sizes.jsonData[6].Name
-msgid "Giant"
-msgstr ""
-
-#: simulation/data/settings/player_defaults.jsonPlayerData[0].Name
+#: simulation/data/settings/player_defaults.json
 msgid "Gaia"
 msgstr ""
 
-#: simulation/data/settings/player_defaults.jsonPlayerData[1].Name
+#: simulation/data/settings/player_defaults.json
 msgid "Player 1"
 msgstr ""
 
-#: simulation/data/settings/player_defaults.jsonPlayerData[2].Name
+#: simulation/data/settings/player_defaults.json
 msgid "Player 2"
 msgstr ""
 
-#: simulation/data/settings/player_defaults.jsonPlayerData[3].Name
+#: simulation/data/settings/player_defaults.json
 msgid "Player 3"
 msgstr ""
 
-#: simulation/data/settings/player_defaults.jsonPlayerData[4].Name
+#: simulation/data/settings/player_defaults.json
 msgid "Player 4"
 msgstr ""
 
-#: simulation/data/settings/player_defaults.jsonPlayerData[5].Name
+#: simulation/data/settings/player_defaults.json
 msgid "Player 5"
 msgstr ""
 
-#: simulation/data/settings/player_defaults.jsonPlayerData[6].Name
+#: simulation/data/settings/player_defaults.json
 msgid "Player 6"
 msgstr ""
 
-#: simulation/data/settings/player_defaults.jsonPlayerData[7].Name
+#: simulation/data/settings/player_defaults.json
 msgid "Player 7"
 msgstr ""
 
-#: simulation/data/settings/player_defaults.jsonPlayerData[8].Name
+#: simulation/data/settings/player_defaults.json
 msgid "Player 8"
 msgstr ""
 
-#: simulation/data/settings/starting_resources.jsonData[0].Title
+#: simulation/data/settings/starting_resources.json
 msgctxt "startingResources"
 msgid "Very Low"
 msgstr ""
 
-#: simulation/data/settings/starting_resources.jsonData[1].Title
+#: simulation/data/settings/starting_resources.json
 msgctxt "startingResources"
 msgid "Low"
 msgstr ""
 
-#: simulation/data/settings/starting_resources.jsonData[2].Title
+#: simulation/data/settings/starting_resources.json
 msgctxt "startingResources"
 msgid "Medium"
 msgstr ""
 
-#: simulation/data/settings/starting_resources.jsonData[3].Title
+#: simulation/data/settings/starting_resources.json
 msgctxt "startingResources"
 msgid "High"
 msgstr ""
 
-#: simulation/data/settings/starting_resources.jsonData[4].Title
+#: simulation/data/settings/starting_resources.json
 msgctxt "startingResources"
 msgid "Very High"
 msgstr ""
 
-#: simulation/data/settings/starting_resources.jsonData[5].Title
+#: simulation/data/settings/starting_resources.json
 msgctxt "startingResources"
 msgid "Deathmatch"
 msgstr ""
 
-#: simulation/data/settings/trigger_difficulties.jsonData[0].Title
+#: simulation/data/settings/trigger_difficulties.json
 msgid "Very Easy"
 msgstr ""
 
-#: simulation/data/settings/trigger_difficulties.jsonData[0].Tooltip
-msgid "Choose this difficulty if you are discovering 0 A.D."
+#: simulation/data/settings/trigger_difficulties.json
+msgid "Choose this difficulty if you are discovering 0 A.D."
 msgstr ""
 
-#: simulation/data/settings/trigger_difficulties.jsonData[1].Title
+#: simulation/data/settings/trigger_difficulties.json
 msgid "Easy"
 msgstr ""
 
-#: simulation/data/settings/trigger_difficulties.jsonData[1].Tooltip
+#: simulation/data/settings/trigger_difficulties.json
 msgid "Choose this difficulty if you do not like being knocked down."
 msgstr ""
 
-#: simulation/data/settings/map_sizes.jsonData[3].Name
-#: simulation/data/settings/trigger_difficulties.jsonData[2].Title
-msgid "Medium"
-msgstr ""
-
-#: simulation/data/settings/trigger_difficulties.jsonData[2].Tooltip
+#: simulation/data/settings/trigger_difficulties.json
 msgid ""
-"Choose this difficulty if you have already a good experience with 0 A.D."
+"Choose this difficulty if you have already a good experience with 0 A.D."
 msgstr ""
 
-#: simulation/data/settings/trigger_difficulties.jsonData[3].Title
+#: simulation/data/settings/trigger_difficulties.json
 msgid "Hard"
 msgstr ""
 
-#: simulation/data/settings/trigger_difficulties.jsonData[3].Tooltip
+#: simulation/data/settings/trigger_difficulties.json
 msgid "Choose this difficulty if you want to be really challenged."
 msgstr ""
 
-#: simulation/data/settings/trigger_difficulties.jsonData[4].Title
+#: simulation/data/settings/trigger_difficulties.json
 msgid "Very Hard"
 msgstr ""
 
-#: simulation/data/settings/trigger_difficulties.jsonData[4].Tooltip
+#: simulation/data/settings/trigger_difficulties.json
 msgid "Choose this difficulty if you do not mind being swept out."
 msgstr ""
 
-#: simulation/data/settings/victory_conditions/capture_the_relic.jsonData.Description
+#: simulation/data/settings/map_sizes.json
+#: simulation/data/settings/trigger_difficulties.json
+msgid "Medium"
+msgstr ""
+
+#: simulation/data/settings/victory_conditions/capture_the_relic.json
+msgid "Capture the Relic"
+msgstr ""
+
+#: simulation/data/settings/victory_conditions/capture_the_relic.json
 msgid ""
 "Capture all relics spread across the map and keep them for a certain time to"
 " win the game."
 msgstr ""
 
-#: simulation/data/settings/victory_conditions/capture_the_relic.jsonData.Title
-msgid "Capture the Relic"
+#: simulation/data/settings/victory_conditions/conquest.json
+msgid "Conquest"
 msgstr ""
 
-#: simulation/data/settings/victory_conditions/conquest.jsonData.Description
+#: simulation/data/settings/victory_conditions/conquest.json
 msgid ""
 "Defeat opponents by killing all their units and destroying all their "
 "structures."
 msgstr ""
 
-#: simulation/data/settings/victory_conditions/conquest.jsonData.Title
-msgid "Conquest"
-msgstr ""
-
-#: simulation/data/settings/victory_conditions/conquest_civic_centers.jsonData.Description
-msgid "Defeat opponents by destroying all their fully built civic centers."
-msgstr ""
-
-#: simulation/data/settings/victory_conditions/conquest_civic_centers.jsonData.Title
+#: simulation/data/settings/victory_conditions/conquest_civic_centers.json
 msgid "Conquest Civic Centers"
 msgstr ""
 
-#: simulation/data/settings/victory_conditions/conquest_structures.jsonData.Description
-msgid "Defeat opponents by destroying all their structures."
+#: simulation/data/settings/victory_conditions/conquest_civic_centers.json
+msgid "Defeat opponents by destroying all their fully built civic centers."
 msgstr ""
 
-#: simulation/data/settings/victory_conditions/conquest_structures.jsonData.Title
+#: simulation/data/settings/victory_conditions/conquest_structures.json
 msgid "Conquest Structures"
 msgstr ""
 
-#: simulation/data/settings/victory_conditions/conquest_units.jsonData.Description
-msgid "Defeat opponents by killing all their units."
+#: simulation/data/settings/victory_conditions/conquest_structures.json
+msgid "Defeat opponents by destroying all their structures."
 msgstr ""
 
-#: simulation/data/settings/victory_conditions/conquest_units.jsonData.Title
+#: simulation/data/settings/victory_conditions/conquest_units.json
 msgid "Conquest Units"
 msgstr ""
 
-#: simulation/data/settings/victory_conditions/regicide.jsonData.Description
-msgid "Defeat opponents by killing their hero."
+#: simulation/data/settings/victory_conditions/conquest_units.json
+msgid "Defeat opponents by killing all their units."
 msgstr ""
 
-#: simulation/data/settings/victory_conditions/regicide.jsonData.Title
+#: simulation/data/settings/victory_conditions/regicide.json
 msgid "Regicide"
 msgstr ""
 
-#: simulation/data/settings/victory_conditions/wonder.jsonData.Description
+#: simulation/data/settings/victory_conditions/regicide.json
+msgid "Defeat opponents by killing their hero."
+msgstr ""
+
+#: simulation/data/settings/victory_conditions/wonder.json
+msgid "Wonder"
+msgstr ""
+
+#: simulation/data/settings/victory_conditions/wonder.json
 msgid ""
 "Be the first to build or capture a Wonder and keep it for a certain time to "
 "win the game. The timer will be reset when the Wonder is destroyed or "
 "captured. If the allied victory mode is enabled, the timer will also be "
 "reset when the alliances of the owner change."
-msgstr ""
-
-#: simulation/data/settings/victory_conditions/wonder.jsonData.Title
-msgid "Wonder"
 msgstr ""
 
 #: simulation/helpers/Cheat.js:57
@@ -873,51 +910,51 @@ msgstr ""
 msgid "You need to select a building that trains units."
 msgstr ""
 
-#: simulation/helpers/Commands.js:134
+#: simulation/helpers/Commands.js:135
 msgid "(Cheat - control all units)"
 msgstr ""
 
-#: simulation/helpers/Commands.js:149
+#: simulation/helpers/Commands.js:150
 msgid "(Cheat - reveal map)"
 msgstr ""
 
-#: simulation/helpers/Commands.js:461
+#: simulation/helpers/Commands.js:462
 #, javascript-format
 msgid "%(player)s has resigned."
 msgstr ""
 
-#: simulation/helpers/Commands.js:639
+#: simulation/helpers/Commands.js:640
 msgid "(Cheat - promoted units)"
 msgstr ""
 
-#: simulation/helpers/Commands.js:760
+#: simulation/helpers/Commands.js:761
 msgid ""
 "Cannot upgrade as distance requirements are not verified or terrain is "
 "obstructed."
 msgstr ""
 
-#: simulation/helpers/Commands.js:802
+#: simulation/helpers/Commands.js:803
 #, javascript-format
 msgid "Attack against %(_player_)s requested."
 msgstr ""
 
-#: simulation/helpers/Commands.js:841
+#: simulation/helpers/Commands.js:842
 msgid "There are no bribable units"
 msgstr ""
 
-#: simulation/helpers/Commands.js:918
+#: simulation/helpers/Commands.js:919
 msgid "Unable to unload unit(s)."
 msgstr ""
 
-#: simulation/helpers/Commands.js:932
+#: simulation/helpers/Commands.js:933
 msgid "Some unit(s) can't go back to work"
 msgstr ""
 
-#: simulation/helpers/Commands.js:951
+#: simulation/helpers/Commands.js:952
 #, javascript-format
 msgid "%(unit)s can't be controlled."
 msgstr ""
 
-#: simulation/helpers/Commands.js:1202
+#: simulation/helpers/Commands.js:1203
 msgid "The building's technology requirements are not met."
 msgstr ""

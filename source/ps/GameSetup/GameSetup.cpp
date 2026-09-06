@@ -1,4 +1,4 @@
-/* Copyright (C) 2023 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -155,11 +155,9 @@ void MountMods(const Paths& paths, const std::vector<CStr>& mods)
 	g_VFS->Mount(L"", modUserPath / "user" / "", userFlags, InDevelopmentCopy() ? 0 : priority + 1);
 }
 
-static void InitVfs(const CmdLineArgs& args, int flags)
+void InitVfs(const CmdLineArgs& args)
 {
 	TIMER(L"InitVfs");
-
-	const bool setup_error = (flags & INIT_HAVE_DISPLAY_ERROR) == 0;
 
 	const Paths paths(args);
 
@@ -172,8 +170,7 @@ static void InitVfs(const CmdLineArgs& args, int flags)
 	AppHooks hooks = {0};
 	hooks.bundle_logs = psBundleLogs;
 	hooks.get_log_dir = psLogDir;
-	if (setup_error)
-		hooks.display_error = psDisplayError;
+	hooks.display_error = psDisplayError;
 	app_hooks_update(&hooks);
 
 	g_VFS = CreateVfs();
@@ -336,12 +333,9 @@ void EndGame()
 	}
 }
 
-void Shutdown(int flags)
+void ShutdownNetworkAndUI()
 {
 	const bool hasRenderer = CRenderer::IsInitialised();
-
-	if ((flags & SHUTDOWN_FROM_CONFIG))
-		goto from_config;
 
 	EndGame();
 
@@ -355,7 +349,6 @@ void Shutdown(int flags)
 	{
 		TIMER_BEGIN(L"shutdown Renderer");
 		g_Renderer.~CRenderer();
-		g_VBMan.Shutdown();
 		TIMER_END(L"shutdown Renderer");
 	}
 
@@ -378,8 +371,10 @@ void Shutdown(int flags)
 	curl_global_cleanup();
 
 	delete &g_L10n;
+}
 
-from_config:
+void ShutdownConfigAndSubsequent()
+{
 	TIMER_BEGIN(L"shutdown ConfigDB");
 	CConfigDB::Shutdown();
 	TIMER_END(L"shutdown ConfigDB");
@@ -408,7 +403,6 @@ from_config:
 		CNetHost::Deinitialize();
 
 		// should be last, since the above use them
-		SAFE_DELETE(g_Logger);
 		delete &g_Profiler;
 		delete &g_ProfileViewer;
 
@@ -524,15 +518,6 @@ bool AutostartVisualReplay(const std::string& replayFile);
 
 bool Init(const CmdLineArgs& args, int flags)
 {
-	// Do this as soon as possible, because it chdirs
-	// and will mess up the error reporting if anything
-	// crashes before the working directory is set.
-	InitVfs(args, flags);
-
-	// This must come after VFS init, which sets the current directory
-	// (required for finding our output log files).
-	g_Logger = new CLogger;
-
 	new CProfileViewer;
 	new CProfileManager;	// before any script code
 
@@ -592,7 +577,7 @@ bool Init(const CmdLineArgs& args, int flags)
 	// on anything else.)
 	if (args.Has("dumpSchema"))
 	{
-		CSimulation2 sim(NULL, g_ScriptContext, NULL);
+		CSimulation2 sim{NULL, *g_ScriptContext, NULL};
 		sim.LoadDefaultScripts();
 		std::ofstream f("entity.rng", std::ios_base::out | std::ios_base::trunc);
 		f << sim.GenerateSchema();
@@ -627,7 +612,8 @@ bool Init(const CmdLineArgs& args, int flags)
 	return true;
 }
 
-void InitGraphics(const CmdLineArgs& args, int flags, const std::vector<CStr>& installedMods)
+void InitGraphics(const CmdLineArgs& args, int flags, const std::vector<CStr>& installedMods,
+	ScriptContext& scriptContext, ScriptInterface& scriptInterface)
 {
 	const bool setup_vmode = (flags & INIT_HAVE_VMODE) == 0;
 
@@ -639,7 +625,7 @@ void InitGraphics(const CmdLineArgs& args, int flags, const std::vector<CStr>& i
 			throw PSERROR_System_VmodeFailed(); // abort startup
 	}
 
-	RunHardwareDetection();
+	RunHardwareDetection(!g_Quickstart, g_VideoMode.GetBackendDevice());
 
 	// Optionally start profiler GPU timings automatically
 	// (By default it's only enabled by a hotkey, for performance/compatibility)
@@ -648,17 +634,10 @@ void InitGraphics(const CmdLineArgs& args, int flags, const std::vector<CStr>& i
 	if (profilerGPUEnable)
 		g_Profiler2.EnableGPU();
 
-	if(!g_Quickstart)
-	{
-		WriteSystemInfo();
-		// note: no longer vfs_display here. it's dog-slow due to unbuffered
-		// file output and very rarely needed.
-	}
-
 	if(g_DisableAudio)
 		ISoundManager::SetEnabled(false);
 
-	g_GUI = new CGUIManager();
+	g_GUI = new CGUIManager{scriptContext, scriptInterface};
 
 	CStr8 renderPath = "default";
 	CFG_GET_VAL("renderpath", renderPath);
@@ -677,7 +656,7 @@ void InitGraphics(const CmdLineArgs& args, int flags, const std::vector<CStr>& i
 	g_RenderingOptions.ReadConfigAndSetupHooks();
 
 	// create renderer
-	new CRenderer;
+	new CRenderer(g_VideoMode.GetBackendDevice());
 
 	InitInput();
 
@@ -690,17 +669,13 @@ void InitGraphics(const CmdLineArgs& args, int flags, const std::vector<CStr>& i
 		if (!AutostartVisualReplay(args.Get("replay-visual")) && !Autostart(args))
 		{
 			const bool setup_gui = ((flags & INIT_NO_GUI) == 0);
-			// We only want to display the splash screen at startup
-			std::shared_ptr<ScriptInterface> scriptInterface = g_GUI->GetScriptInterface();
-			ScriptRequest rq(scriptInterface);
+
+			ScriptRequest rq{g_GUI->GetScriptInterface()};
 			JS::RootedValue data(rq.cx);
-			if (g_GUI)
-			{
-				Script::CreateObject(rq, &data, "isStartup", true);
-				if (!installedMods.empty())
-					Script::SetProperty(rq, data, "installedMods", installedMods);
-			}
-			InitPs(setup_gui, installedMods.empty() ? L"page_pregame.xml" : L"page_modmod.xml", g_GUI->GetScriptInterface().get(), data);
+			Script::CreateObject(rq, &data, "isStartup", true);
+			if (!installedMods.empty())
+				Script::SetProperty(rq, data, "installedMods", installedMods);
+			InitPs(setup_gui, installedMods.empty() ? L"page_pregame.xml" : L"page_modmod.xml", &g_GUI->GetScriptInterface(), data);
 		}
 	}
 	catch (PSERROR_Game_World_MapLoadFailed& e)
@@ -800,6 +775,7 @@ CParamNode GetTemplate(const std::string& templateName)
  *
  * -autostart="TYPEDIR/MAPNAME"    enables autostart and sets MAPNAME;
  *                                 TYPEDIR is skirmishes, scenarios, or random
+ * -autostart-biome=BIOME          sets BIOME for a random map
  * -autostart-seed=SEED            sets randomization seed value (default 0, use -1 for random)
  * -autostart-ai=PLAYER:AI         sets the AI for PLAYER (e.g. 2:petra)
  * -autostart-aidiff=PLAYER:DIFF   sets the DIFFiculty of PLAYER's AI
@@ -879,7 +855,7 @@ bool Autostart(const CmdLineArgs& args)
 	{
 		JSI_GUIManager::RegisterScriptFunctions(rq);
 		// TODO: this loads pregame, which is hardcoded to exist by various code paths. That ought be changed.
-		InitPs(false, L"page_pregame.xml", g_GUI->GetScriptInterface().get(), JS::UndefinedHandleValue);
+		InitPs(false, L"page_pregame.xml", &g_GUI->GetScriptInterface(), JS::UndefinedHandleValue);
 	}
 
 	JSI_Game::RegisterScriptFunctions(rq);
@@ -957,6 +933,12 @@ bool Autostart(const CmdLineArgs& args)
 		}
 
 		Script::SetProperty(rq, settings, "Size", mapSize);		// Random map size (in patches)
+
+		if (args.Has("autostart-biome"))
+		{
+			CStr biome = args.Get("autostart-biome");
+			Script::SetProperty(rq, settings, "Biome", biome);
+		}
 
 		// Get optional number of players (default 2)
 		size_t numPlayers = 2;

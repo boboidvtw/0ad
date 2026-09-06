@@ -1,4 +1,4 @@
-/* Copyright (C) 2021 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -18,6 +18,8 @@
 #include "graphics/MapGenerator.h"
 #include "ps/Filesystem.h"
 #include "simulation2/system/ComponentTest.h"
+
+#include <atomic>
 
 class TestMapGenerator : public CxxTest::TestSuite
 {
@@ -49,12 +51,31 @@ public:
 
 		for (const VfsPath& path : paths)
 		{
+			TestLogger logger;
 			ScriptInterface scriptInterface("Engine", "MapGenerator", g_ScriptContext);
 			ScriptTestSetup(scriptInterface);
 
-			CMapGeneratorWorker worker(&scriptInterface);
-			worker.InitScriptInterface(0);
-			scriptInterface.LoadGlobalScriptFile(path);
+			std::atomic<int> progress{1};
+
+			const Script::StructuredClone result{RunMapGenerationScript(progress, scriptInterface,
+				path, "{\"Seed\": 0}", JSPROP_ENUMERATE | JSPROP_PERMANENT)};
+
+			if (path == "maps/random/tests/test_Generator.js" ||
+				path == "maps/random/tests/test_RecoverableError.js")
+			{
+				TS_ASSERT_EQUALS(progress.load(), 50);
+				TS_ASSERT_DIFFERS(result, nullptr);
+			}
+			else
+			{
+				// The test scripts don't call `ExportMap` so `RunMapGenerationScript` allways
+				// returns `nullptr`.
+				TS_ASSERT_EQUALS(result, nullptr);
+				// Because the test scripts don't call `ExportMap`, `GenerateMap` is searched, which
+				// doesn't exist.
+				TS_ASSERT_STR_CONTAINS(logger.GetOutput(),
+					"Failed to call the generator `GenerateMap`.");
+			}
 		}
 	}
 };

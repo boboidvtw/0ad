@@ -1,18 +1,17 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2022 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# shreyash kore
-# Mangat Ram
-# jaiprak tiger
-# Ritwik Raghav
+# jaiprak tiger, 2021
+# Ritwik Raghav, 2024
+# Ansh Mishra, 2024
 msgid ""
 msgstr ""
-"Project-Id-Version: 0 A.D. — Empires Ascendant\n"
-"POT-Creation-Date: 2022-09-12 09:35+0000\n"
+"Project-Id-Version: 0 A.D. — Empires Ascendant\n"
+"POT-Creation-Date: 2024-07-26 07:08+0000\n"
 "PO-Revision-Date: 2017-06-04 12:59+0000\n"
-"Last-Translator: Ritwik Raghav, 2022\n"
+"Last-Translator: Ansh Mishra, 2024\n"
 "Language-Team: Hindi (https://app.transifex.com/wildfire-games/teams/17418/hi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,8 +20,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: maps/tutorials/introductory_tutorial.js:3
-msgid "Welcome to the 0 A.D. tutorial."
-msgstr "0 एडी ट्यूटोरियल में आपका स्वागत है।"
+msgid "Welcome to the 0 A.D. tutorial."
+msgstr "0 A.D. ट्यूटोरियल में आपका स्वागत है।"
 
 #: maps/tutorials/introductory_tutorial.js:6
 msgid ""
@@ -30,6 +29,9 @@ msgid ""
 "that Female Citizen gather food. Female Citizens gather vegetables faster "
 "than other units."
 msgstr ""
+"एक नागरिका पर बायां-क्लिक करें और फिर उस नागरिका से भोजन संग्रह करवाने के "
+"लिये एक बेर की झाड़ी पर दाहिना-क्लिक करें। दूसरी इकाईयों की तुलना में "
+"नागरिकायें वनस्पति अधिक तेज संग्रह करती हैं।"
 
 #: maps/tutorials/introductory_tutorial.js:15
 msgid ""
@@ -37,6 +39,9 @@ msgid ""
 "begin gathering wood. Citizen Soldiers gather wood faster than Female "
 "Citizens."
 msgstr ""
+"लकड़ी संग्रह शुरु करने के लिये पौर सैनिक को चुनें, फिर नगर केंद्र के पास "
+"किसी वृक्ष पर दाहिना क्लिक करें। पौर सैनिक नागरिकाओं की तुलना में तेज लकड़ी "
+"संग्रहण करते हैं।"
 
 #: maps/tutorials/introductory_tutorial.js:26
 #, javascript-format
@@ -44,6 +49,8 @@ msgid ""
 "Select the Civic Center building and hold %(hotkey)s while clicking on the "
 "Hoplite icon once to begin training a batch of Hoplites."
 msgstr ""
+"होप्लाइटों के एक जत्थे का प्रशिक्षण शुरु करने के लिये नगर केंद्र भवन चुनें "
+"और %(hotkey)s दबाये हुए एक बार होप्लाइट प्रतीक पर क्लिक करें।"
 
 #: maps/tutorials/introductory_tutorial.js:37
 #: maps/tutorials/introductory_tutorial.js:79
@@ -53,19 +60,21 @@ msgid ""
 "Do not forget to press the batch training hotkey while clicking to produce "
 "multiple units."
 msgstr ""
-"एकाधिक इकाइयों का उत्पादन करने के लिए क्लिक करते समय बैच प्रशिक्षण हॉटकी "
-"दबाएं मत भूलना।"
+"एकाधिक इकाइयों का उत्पादन करने के लिए क्लिक करते समय जत्था प्रशिक्षण हॉटकी "
+"दबाना न भूलें।"
 
 #: maps/tutorials/introductory_tutorial.js:38
 #: maps/tutorials/introductory_tutorial.js:162
 msgid "Click on the Hoplite icon."
-msgstr ""
+msgstr "होप्लाइट प्रतीक पर क्लिक करें।"
 
 #: maps/tutorials/introductory_tutorial.js:46
 msgid ""
 "Select the two idle Female Citizens and build a House nearby by selecting "
 "the House icon. Place the House by left-clicking on a piece of land."
 msgstr ""
+"दो निष्क्रिय नागरिकाओं को चुनें और घर के प्रतीक को चुन कर पास में एक घर का "
+"निर्माण करें। किसी भूमि के टुकड़े पर बायां-क्लिक करके घर स्थापित करें।"
 
 #: maps/tutorials/introductory_tutorial.js:54
 msgid ""
@@ -73,6 +82,9 @@ msgid ""
 "build a Storehouse beside some nearby trees. They will begin to gather wood "
 "when it's constructed."
 msgstr ""
+"जब वो तैयार हो जायें तब नव-प्रशिक्षित होप्लाइटों को चुनें और उन्हें निकट के "
+"कुछ पेड़ों के पास एक भंडारगृह बनाने में लगा दें। निर्माण पूरा हो जाने पर वे "
+"लकड़ी संग्रह करना शुरु कर देंगे।"
 
 #: maps/tutorials/introductory_tutorial.js:64
 #, javascript-format
@@ -83,7 +95,7 @@ msgstr ""
 
 #: maps/tutorials/introductory_tutorial.js:80
 msgid "Click on the Skirmisher icon."
-msgstr ""
+msgstr "स्किर्मिशर आइकन पर क्लिक करें।"
 
 #: maps/tutorials/introductory_tutorial.js:88
 msgid ""
@@ -93,7 +105,7 @@ msgstr ""
 
 #: maps/tutorials/introductory_tutorial.js:100
 msgid "Let's wait for the Farmstead to be built."
-msgstr ""
+msgstr "आइए फार्मस्टेड के निर्माण की प्रतीक्षा करें।"
 
 #: maps/tutorials/introductory_tutorial.js:112
 msgid ""
@@ -158,7 +170,7 @@ msgstr ""
 #: maps/tutorials/introductory_tutorial.js:246
 #: maps/tutorials/starting_economy_walkthrough.js:348
 msgid "Click on the Female Citizen icon."
-msgstr ""
+msgstr "महिला नागरिक आइकन पर क्लिक करें।"
 
 #: maps/tutorials/introductory_tutorial.js:266
 msgid ""
@@ -178,7 +190,7 @@ msgstr ""
 
 #: maps/tutorials/introductory_tutorial.js:290
 msgid "Try to repel the attack."
-msgstr ""
+msgstr "हमले को विफल करने का प्रयास करें।"
 
 #: maps/tutorials/introductory_tutorial.js:300
 msgid ""
@@ -213,28 +225,28 @@ msgstr ""
 
 #: maps/tutorials/introductory_tutorial.js:368
 msgid "Female Citizens should continue to gather resources."
-msgstr ""
+msgstr "महिला नागरिकों को संसाधन जुटाते रहना चाहिए।"
 
 #: maps/tutorials/introductory_tutorial.js:379
 msgid "The enemy has been defeated. These tutorial tasks are now completed."
-msgstr ""
+msgstr "शत्रु पराजित हो गया। ये ट्यूटोरियल कार्य अब पूरे हो गए हैं।"
 
-#: maps/tutorials/introductory_tutorial.xml:Description:38
-msgid "This is a basic tutorial to get you started playing 0 A.D."
-msgstr "ये आपको 0 A.D. खेलने की शुरूआत करने के लिए आधारभूत पाठ है।"
+#: maps/tutorials/introductory_tutorial.xml:39
+msgid "This is a basic tutorial to get you started playing 0 A.D."
+msgstr "यह आपको 0 A.D. खेलना शुरू करने के लिए एक बुनियादी ट्यूटोरियल है।"
 
-#: maps/tutorials/introductory_tutorial.xml:Name:38
+#: maps/tutorials/introductory_tutorial.xml:39
 msgid "Introductory Tutorial"
 msgstr "आरंभिक पाठ"
 
-#: maps/tutorials/introductory_tutorial.xml:PlayerData[0].Name:38
-#: maps/tutorials/starting_economy_walkthrough.xml:PlayerData[0].Name:39
-msgid "Player 1"
-msgstr "खिलाड़ी १"
-
-#: maps/tutorials/introductory_tutorial.xml:PlayerData[1].Name:38
+#: maps/tutorials/introductory_tutorial.xml:39
 msgid "Player 2"
 msgstr "खिलाड़ी २"
+
+#: maps/tutorials/introductory_tutorial.xml:39
+#: maps/tutorials/starting_economy_walkthrough.xml:39
+msgid "Player 1"
+msgstr "खिलाड़ी १"
 
 #: maps/tutorials/starting_economy_walkthrough.js:4
 msgid ""
@@ -730,13 +742,13 @@ msgid ""
 "basics of setting up your economy."
 msgstr ""
 
-#: maps/tutorials/starting_economy_walkthrough.xml:Description:39
+#: maps/tutorials/starting_economy_walkthrough.xml:39
 msgid ""
 "This map will give a rough guide for starting the game effectively. Early in"
 " the game the most important thing is to gather resources as fast as "
 "possible so you are able to build enough troops later."
 msgstr ""
 
-#: maps/tutorials/starting_economy_walkthrough.xml:Name:39
+#: maps/tutorials/starting_economy_walkthrough.xml:39
 msgid "Starting Economy Walkthrough"
 msgstr ""

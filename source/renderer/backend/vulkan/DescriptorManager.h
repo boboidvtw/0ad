@@ -1,4 +1,4 @@
-/* Copyright (C) 2023 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -18,7 +18,9 @@
 #ifndef INCLUDED_RENDERER_BACKEND_VULKAN_DESCRIPTORMANAGER
 #define INCLUDED_RENDERER_BACKEND_VULKAN_DESCRIPTORMANAGER
 
+#include "ps/CStrIntern.h"
 #include "renderer/backend/Sampler.h"
+#include "renderer/backend/vulkan/Device.h"
 #include "renderer/backend/vulkan/Texture.h"
 
 #include <glad/vulkan.h>
@@ -56,13 +58,14 @@ public:
 
 	VkDescriptorSet GetSingleTypeDescritorSet(
 		VkDescriptorType type, VkDescriptorSetLayout layout,
-		const std::vector<CTexture::UID>& texturesUID,
+		const std::vector<DeviceObjectUID>& texturesUID,
 		const std::vector<CTexture*>& textures);
 
 	uint32_t GetUniformSet() const;
 
 	uint32_t GetTextureDescriptor(CTexture* texture);
-	void OnTextureDestroy(const CTexture::UID uid);
+
+	void OnTextureDestroy(const DeviceObjectUID uid);
 
 	const VkDescriptorSetLayout& GetDescriptorIndexingSetLayout() const { return m_DescriptorIndexingSetLayout; }
 	const VkDescriptorSetLayout& GetUniformDescriptorSetLayout() const { return m_UniformDescriptorSetLayout; }
@@ -87,6 +90,10 @@ private:
 	};
 	SingleTypePool& GetSingleTypePool(const VkDescriptorType type, const uint32_t size);
 
+	std::pair<VkDescriptorSet, bool> GetSingleTypeDescritorSetImpl(
+		VkDescriptorType type, VkDescriptorSetLayout layout,
+		const std::vector<DeviceObjectUID>& uids);
+
 	CDevice* m_Device = nullptr;
 
 	bool m_UseDescriptorIndexing = false;
@@ -105,11 +112,11 @@ private:
 		static_assert(std::numeric_limits<int16_t>::max() >= DESCRIPTOR_INDEXING_BINDING_SIZE);
 		int16_t firstFreeIndex = 0;
 		std::vector<int16_t> elements;
-		std::unordered_map<CTexture::UID, int16_t> map;
+		std::unordered_map<DeviceObjectUID, int16_t> map;
 	};
 	std::array<DescriptorIndexingBindingMap, NUMBER_OF_BINDINGS_PER_DESCRIPTOR_INDEXING_SET>
 		m_DescriptorIndexingBindings;
-	std::unordered_map<CTexture::UID, uint32_t> m_TextureToBindingMap;
+	std::unordered_map<DeviceObjectUID, uint32_t> m_TextureToBindingMap;
 
 	std::unordered_map<VkDescriptorType, std::vector<SingleTypePool>> m_SingleTypePools;
 	struct SingleTypePoolReference
@@ -119,9 +126,9 @@ private:
 		int16_t elementIndex = SingleTypePool::INVALID_INDEX;
 		uint8_t size = 0;
 	};
-	std::unordered_map<CTexture::UID, std::vector<SingleTypePoolReference>> m_TextureSingleTypePoolMap;
+	std::unordered_map<DeviceObjectUID, std::vector<SingleTypePoolReference>> m_UIDToSingleTypePoolMap;
 
-	using SingleTypeCacheKey = std::pair<VkDescriptorSetLayout, std::vector<CTexture::UID>>;
+	using SingleTypeCacheKey = std::pair<VkDescriptorSetLayout, std::vector<DeviceObjectUID>>;
 	struct SingleTypeCacheKeyHash
 	{
 		size_t operator()(const SingleTypeCacheKey& key) const;
@@ -129,6 +136,75 @@ private:
 	std::unordered_map<SingleTypeCacheKey, VkDescriptorSet, SingleTypeCacheKeyHash> m_SingleTypeSets;
 
 	std::unique_ptr<ITexture> m_ErrorTexture;
+};
+
+// TODO: ideally we might want to separate a set and its mapping.
+template<typename DeviceObject>
+class CSingleTypeDescriptorSetBinding
+{
+public:
+	CSingleTypeDescriptorSetBinding(CDevice* device, const VkDescriptorType type,
+		const uint32_t size, std::unordered_map<CStrIntern, uint32_t> mapping)
+		: m_Device{device}, m_Type{type}, m_Mapping{std::move(mapping)}
+	{
+		m_BoundDeviceObjects.resize(size);
+		m_BoundUIDs.resize(size);
+		m_DescriptorSetLayout =
+			m_Device->GetDescriptorManager().GetSingleTypeDescritorSetLayout(m_Type, size);
+	}
+
+	int32_t GetBindingSlot(const CStrIntern name) const
+	{
+		const auto it = m_Mapping.find(name);
+		return it != m_Mapping.end() ? it->second : -1;
+	}
+
+	void SetObject(const int32_t bindingSlot, DeviceObject* object)
+	{
+		if (m_BoundUIDs[bindingSlot] == object->GetUID())
+			return;
+		m_BoundUIDs[bindingSlot] = object->GetUID();
+		m_BoundDeviceObjects[bindingSlot] = object;
+		m_Outdated = true;
+	}
+
+	bool IsOutdated() const { return m_Outdated; }
+
+	VkDescriptorSet UpdateAndReturnDescriptorSet()
+	{
+		ENSURE(m_Outdated);
+		m_Outdated = false;
+
+		VkDescriptorSet descriptorSet =
+			m_Device->GetDescriptorManager().GetSingleTypeDescritorSet(
+				m_Type, m_DescriptorSetLayout, m_BoundUIDs, m_BoundDeviceObjects);
+		ENSURE(descriptorSet != VK_NULL_HANDLE);
+
+		return descriptorSet;
+	}
+
+	void Unbind()
+	{
+		std::fill(m_BoundDeviceObjects.begin(), m_BoundDeviceObjects.end(), nullptr);
+		std::fill(m_BoundUIDs.begin(), m_BoundUIDs.end(), INVALID_DEVICE_OBJECT_UID);
+		m_Outdated = true;
+	}
+
+	VkDescriptorSetLayout GetDescriptorSetLayout() { return m_DescriptorSetLayout; }
+
+	const std::vector<DeviceObject*>& GetBoundDeviceObjects() const { return m_BoundDeviceObjects; }
+
+private:
+	CDevice* const m_Device;
+	const VkDescriptorType m_Type;
+	const std::unordered_map<CStrIntern, uint32_t> m_Mapping;
+
+	bool m_Outdated{true};
+
+	VkDescriptorSetLayout m_DescriptorSetLayout{VK_NULL_HANDLE};
+
+	std::vector<DeviceObject*> m_BoundDeviceObjects;
+	std::vector<DeviceObjectUID> m_BoundUIDs;
 };
 
 } // namespace Vulkan

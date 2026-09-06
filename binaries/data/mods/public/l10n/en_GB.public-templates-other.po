@@ -1,21 +1,22 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2023 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# Andi Chandler
-# Derek Owumi
-# Fabrizio Marana
-# Laurene Albrand
-# leper
-# Martin H
-# Nescio
+# Andi Chandler, 2023-2024
+# Derek Owumi, 2020
+# Fabrizio Marana, 2015
+# Laurene Albrand, 2015
+# Laurene Albrand, 2015
+# leper, 2014-2015
+# Martin H, 2020
+# Nescio, 2020-2021
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2023-04-21 07:09+0000\n"
+"POT-Creation-Date: 2024-07-26 13:41+0000\n"
 "PO-Revision-Date: 2014-06-19 17:54+0000\n"
-"Last-Translator: Andi Chandler <andi@gowling.com>, 2023\n"
+"Last-Translator: Andi Chandler, 2023-2024\n"
 "Language-Team: English (United Kingdom) (http://app.transifex.com/wildfire-games/0ad/language/en_GB/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,119 +24,119 @@ msgstr ""
 "Language: en_GB\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: simulation/data/attack_effects/applystatus.jsondescription
+#: simulation/data/attack_effects/applystatus.json
 msgctxt "effect caused by an attack"
 msgid "Various (timed) effects."
 msgstr "Various (timed) effects."
 
-#: simulation/data/attack_effects/applystatus.jsonname
+#: simulation/data/attack_effects/applystatus.json
 msgctxt "effect caused by an attack"
 msgid "Apply Status"
 msgstr "Apply Status"
 
-#: simulation/data/attack_effects/capture.jsondescription
+#: simulation/data/attack_effects/capture.json
 msgctxt "effect caused by an attack"
 msgid "Reduces capture points of a target."
 msgstr "Reduces capture points of a target."
 
-#: simulation/data/attack_effects/capture.jsonname
+#: simulation/data/attack_effects/capture.json
 msgctxt "effect caused by an attack"
 msgid "Capture"
 msgstr "Capture"
 
-#: simulation/data/attack_effects/damage.jsondescription
+#: simulation/data/attack_effects/damage.json
 msgctxt "effect caused by an attack"
 msgid "Reduces the health of a target."
 msgstr "Reduces the health of a target."
 
-#: simulation/data/attack_effects/damage.jsonname
+#: simulation/data/attack_effects/damage.json
 msgctxt "effect caused by an attack"
 msgid "Damage"
 msgstr "Damage"
 
-#: simulation/data/damage_types/crush.jsondescription
-msgctxt "damage type"
-msgid "Damage caused by sheer force, like with a club or by trampling."
-msgstr "Damage caused by sheer force, such as with a club or by trampling."
-
-#: simulation/data/damage_types/crush.jsonname
+#: simulation/data/damage_types/crush.json
 msgctxt "damage type"
 msgid "Crush"
 msgstr "Crush"
 
-#: simulation/data/damage_types/fire.jsondescription
+#: simulation/data/damage_types/crush.json
 msgctxt "damage type"
-msgid "Damage caused by burning objects, like a torch or a flaming arrow."
-msgstr "Damage caused by burning objects, such as a torch or a flaming arrow."
+msgid "Damage caused by sheer force, like with a club or by trampling."
+msgstr "Damage caused by sheer force, such as with a club or by trampling."
 
-#: simulation/data/damage_types/fire.jsonname
+#: simulation/data/damage_types/fire.json
 msgctxt "damage type"
 msgid "Fire"
 msgstr "Fire"
 
-#: simulation/data/damage_types/hack.jsondescription
+#: simulation/data/damage_types/fire.json
+msgctxt "damage type"
+msgid "Damage caused by burning objects, like a torch or a flaming arrow."
+msgstr "Damage caused by burning objects, such as a torch or a flaming arrow."
+
+#: simulation/data/damage_types/hack.json
+msgctxt "damage type"
+msgid "Hack"
+msgstr "Hack"
+
+#: simulation/data/damage_types/hack.json
 msgctxt "damage type"
 msgid ""
 "Damage caused by sharp objects cutting or chopping, like with a sword or an "
 "axe."
 msgstr "Damage caused by sharp objects cutting or chopping, such as with a sword or an axe."
 
-#: simulation/data/damage_types/hack.jsonname
-msgctxt "damage type"
-msgid "Hack"
-msgstr "Hack"
-
-#: simulation/data/damage_types/pierce.jsondescription
-msgctxt "damage type"
-msgid "Damage caused by sharp pointy objects, like arrows or spears."
-msgstr "Damage caused by sharp pointy objects, such as arrows or spears."
-
-#: simulation/data/damage_types/pierce.jsonname
+#: simulation/data/damage_types/pierce.json
 msgctxt "damage type"
 msgid "Pierce"
 msgstr "Pierce"
 
-#: simulation/data/damage_types/poison.jsondescription
+#: simulation/data/damage_types/pierce.json
+msgctxt "damage type"
+msgid "Damage caused by sharp pointy objects, like arrows or spears."
+msgstr "Damage caused by sharp pointy objects, such as arrows or spears."
+
+#: simulation/data/damage_types/poison.json
+msgctxt "damage type"
+msgid "Poison"
+msgstr "Poison"
+
+#: simulation/data/damage_types/poison.json
 msgctxt "damage type"
 msgid ""
 "Damage caused by venomous or poisoned objects, like a snake or a poisoned "
 "weapon."
 msgstr "Damage caused by venomous or poisoned objects, such as a snake or a poisoned weapon."
 
-#: simulation/data/damage_types/poison.jsonname
-msgctxt "damage type"
-msgid "Poison"
-msgstr "Poison"
-
-#: simulation/data/status_effects/burning.jsonapplierTooltip
+#: simulation/data/status_effects/burning.json
 msgctxt "status effect"
 msgid "This unit causes fire damage."
 msgstr "This unit causes fire damage."
 
-#: simulation/data/status_effects/burning.jsonreceiverTooltip
-msgctxt "status effect"
-msgid "This unit is burning."
-msgstr "This unit is burning."
-
-#: simulation/data/status_effects/burning.jsonstatusName
+#: simulation/data/status_effects/burning.json
 msgctxt "status effect"
 msgid "Burning"
 msgstr "Burning"
 
-#: simulation/data/status_effects/poisoned.jsonapplierTooltip
+#: simulation/data/status_effects/burning.json
+msgctxt "status effect"
+msgid "This unit is burning."
+msgstr "This unit is burning."
+
+#: simulation/data/status_effects/poisoned.json
 msgctxt "status effect"
 msgid "This unit causes poison damage."
 msgstr "This unit causes poison damage."
 
-#: simulation/data/status_effects/poisoned.jsonreceiverTooltip
-msgctxt "status effect"
-msgid "This unit is poisoned."
-msgstr "This unit is poisoned."
-
-#: simulation/data/status_effects/poisoned.jsonstatusName
+#: simulation/data/status_effects/poisoned.json
 msgctxt "status effect"
 msgid "Poisoned"
 msgstr "Poisoned"
+
+#: simulation/data/status_effects/poisoned.json
+msgctxt "status effect"
+msgid "This unit is poisoned."
+msgstr "This unit is poisoned."
 
 #: simulation/templates/campaigns/army_mace_hero_alexander.xml:24
 msgid "Army of Alexander the Great."
@@ -686,6 +687,10 @@ msgstr "Apademak Lion Statue"
 msgid "Ammon-Ra Ram Statue"
 msgstr "Amun Ram Statue"
 
+#: simulation/templates/gaia/ruins/stone_statues_persian_lamassu.xml:8
+msgid "Lamassu Statue"
+msgstr "Lamassu Statue"
+
 #: simulation/templates/gaia/ruins/stone_statues_roman.xml:8
 msgid "Roman Statue"
 msgstr "Roman Statue"
@@ -764,6 +769,18 @@ msgstr "Shipwreck"
 msgid "Shipwreck Cargo"
 msgstr "Shipwreck Cargo"
 
+#: simulation/templates/gaia/treasure/special_argo.xml:8
+msgid "The Argo"
+msgstr "The Argo"
+
+#: simulation/templates/gaia/treasure/special_argo.xml:9
+msgid "Mythological Treasure"
+msgstr "Mythological Treasure"
+
+#: simulation/templates/gaia/treasure/special_argo.xml:10
+msgid "The mythological ship of the hero Theseus and his Argonauts."
+msgstr "The mythological ship of the hero Theseus and his Argonauts."
+
 #: simulation/templates/gaia/treasure/stone.xml:8
 msgid "Stone Treasure"
 msgstr "Stone Treasure"
@@ -835,6 +852,10 @@ msgstr "Hardy Bush"
 #: simulation/templates/gaia/tree/bush_mediterranean.xml:4
 msgid "Scrub"
 msgstr "Scrub"
+
+#: simulation/templates/gaia/tree/bush_mediterranean_dry.xml:4
+msgid "Dry Scrub"
+msgstr "Dry Scrub"
 
 #: simulation/templates/gaia/tree/carob.xml:4
 msgid "Carob"
@@ -951,6 +972,10 @@ msgstr "Doum Palm"
 msgid "Palmyra Palm"
 msgstr "Palmyra Palm"
 
+#: simulation/templates/gaia/tree/palm_royal.xml:4
+msgid "Royal Palm"
+msgstr "Royal Palm"
+
 #: simulation/templates/gaia/tree/palm_tropic.xml:4
 msgid "Palm"
 msgstr "Palm"
@@ -1009,7 +1034,7 @@ msgstr "Toona"
 msgid "Rainforest Tree"
 msgstr "Rainforest Tree"
 
-#: simulation/templates/mixins/builder.xml:41
+#: simulation/templates/mixins/builder.xml:42
 msgid "Builder"
 msgstr "Builder"
 
@@ -1017,15 +1042,63 @@ msgstr "Builder"
 msgid "Bush"
 msgstr "Bush"
 
+#: simulation/templates/mixins/cataphract.xml:14
+msgid "Cataphract Cavalry"
+msgstr "Cataphract Cavalry"
+
+#: simulation/templates/mixins/cataphract.xml:15
+msgid "Cataphract"
+msgstr "Cataphract"
+
+#: simulation/templates/mixins/chariot.xml:16
+msgid "Chariot"
+msgstr "Chariot"
+
+#: simulation/templates/mixins/fireship.xml:15
+msgctxt "Name of an attack, usually the weapon."
+msgid "Flames"
+msgstr "Flames"
+
+#: simulation/templates/mixins/fireship.xml:43
+msgid "Ignited"
+msgstr "Ignited"
+
+#: simulation/templates/mixins/longsword.xml:22
+msgid "Longsword"
+msgstr "Longsword"
+
 #: simulation/templates/mixins/mercenary.xml:13
 msgid "Mercenary"
 msgstr "Mercenary"
+
+#: simulation/templates/mixins/pirate.xml:29
+msgid "Pirate"
+msgstr "Pirate"
+
+#: simulation/templates/mixins/rotary_mill.xml:17
+#: simulation/templates/mixins/rotary_mill.xml:18
+msgid "Rotary Mill"
+msgstr "Rotary Mill"
+
+#: simulation/templates/mixins/rotary_mill.xml:19
+msgid "RotaryMill"
+msgstr "RotaryMill"
+
+#: simulation/templates/mixins/rotary_mill.xml:22
+msgid ""
+"Dropsite for harvested Food. Capture one of these to increase nearby food "
+"production."
+msgstr "Dropsite for harvested Food. Capture one of these to increase nearby food production."
 
 #: simulation/templates/mixins/shrine.xml:12
 #: simulation/templates/mixins/shrine.xml:13
 #: simulation/templates/mixins/shrine.xml:14
 msgid "Shrine"
 msgstr "Shrine"
+
+#: simulation/templates/mixins/shrine.xml:18
+msgid "Train Elite Healers and heal garrisoned units."
+msgstr "Train Elite Healers and heal garrisoned units."
 
 #: simulation/templates/mixins/trading_post.xml:8
 msgid "Trading Post"
@@ -1081,9 +1154,17 @@ msgstr "Melee Infantry only, requires at least 16."
 msgid "Anti Cavalry"
 msgstr "Anti-Cavalry"
 
+#: simulation/templates/special/formations/anti_cavalry.xml:26
+msgid "Square formation of Melee Infantry to fight Cavalry."
+msgstr "Square formation of Melee Infantry to fight Cavalry."
+
 #: simulation/templates/special/formations/battle_line.xml:13
 msgid "Battle Line"
 msgstr "Battle Line"
+
+#: simulation/templates/special/formations/battle_line.xml:15
+msgid "Common formation for frontal attacks."
+msgstr "Common formation for frontal attacks."
 
 #: simulation/templates/special/formations/box.xml:5
 msgid "Requires at least 4 Soldiers or Siege engines."
@@ -1093,13 +1174,25 @@ msgstr "Requires at least 4 Soldiers or Siege engines."
 msgid "Box"
 msgstr "Box"
 
+#: simulation/templates/special/formations/box.xml:14
+msgid "Square formation to protect all sides."
+msgstr "Square formation to protect all sides."
+
 #: simulation/templates/special/formations/column_closed.xml:10
 msgid "Forced March"
 msgstr "Forced March"
 
+#: simulation/templates/special/formations/column_closed.xml:12
+msgid "Closed column formation for risky movements."
+msgstr "Closed column formation for risky movements."
+
 #: simulation/templates/special/formations/column_open.xml:10
 msgid "Column Open"
 msgstr "Column Open"
+
+#: simulation/templates/special/formations/column_open.xml:12
+msgid "Dispersed formation for open field crossings."
+msgstr "Dispersed formation for open field crossings."
 
 #: simulation/templates/special/formations/flank.xml:5
 msgid "Requires at least 8 Soldiers or Siege engines."
@@ -1109,13 +1202,25 @@ msgstr "Requires at least 8 Soldiers or Siege engines."
 msgid "Flank"
 msgstr "Flank"
 
+#: simulation/templates/special/formations/flank.xml:13
+msgid "Formation to protect the sides or surprise attack the enemy flank."
+msgstr "Formation to protect the sides or surprise attack the enemy flank."
+
 #: simulation/templates/special/formations/line_closed.xml:9
 msgid "Close Order"
 msgstr "Close Order"
 
+#: simulation/templates/special/formations/line_closed.xml:11
+msgid "Flexible closed line formation."
+msgstr "Flexible closed line formation."
+
 #: simulation/templates/special/formations/line_open.xml:11
 msgid "Open Order"
 msgstr "Open Order"
+
+#: simulation/templates/special/formations/line_open.xml:13
+msgid "Dispersed formation for open field combat."
+msgstr "Dispersed formation for open field combat."
 
 #: simulation/templates/special/formations/null.xml:7
 msgid "None"
@@ -1129,9 +1234,46 @@ msgstr "Infantry Hoplites only, requires at least 10."
 msgid "Phalanx"
 msgstr "Phalanx"
 
+#: simulation/templates/special/formations/phalanx.xml:25
+msgid "Compact formation of Infantry Hoplites creating a shield wall."
+msgstr "Compact formation of Infantry Hoplites creating a shield wall."
+
 #: simulation/templates/special/formations/scatter.xml:8
 msgid "Scatter"
 msgstr "Scatter"
+
+#: simulation/templates/special/formations/ships/column.xml:5
+#: simulation/templates/special/formations/ships/line_staggered.xml:5
+msgid "Requires at least 4 Ships."
+msgstr "Requires at least 4 Ships."
+
+#: simulation/templates/special/formations/ships/column.xml:14
+msgid "Maneuvering Column"
+msgstr "Manoeuvring Column"
+
+#: simulation/templates/special/formations/ships/column.xml:16
+msgid "A column formation for fleet maneuvers."
+msgstr "A column formation for fleet manoeuvres."
+
+#: simulation/templates/special/formations/ships/flank.xml:5
+msgid "Requires at least 8 Ships."
+msgstr "Requires at least 8 Ships."
+
+#: simulation/templates/special/formations/ships/flank.xml:14
+msgid "Flanking Formation"
+msgstr "Flanking Formation"
+
+#: simulation/templates/special/formations/ships/flank.xml:16
+msgid "Formation to protect the sides or surprise attack the enemy flanks."
+msgstr "Formation to protect the sides or surprise attack the enemy flanks."
+
+#: simulation/templates/special/formations/ships/line_staggered.xml:17
+msgid "Fleet Battle Line"
+msgstr "Fleet Battle Line"
+
+#: simulation/templates/special/formations/ships/line_staggered.xml:19
+msgid "Common fleet formation for frontal attacks."
+msgstr "Common fleet formation for frontal attacks."
 
 #: simulation/templates/special/formations/skirmish.xml:4
 msgid "Ranged Soldiers only, requires at least 2."
@@ -1141,6 +1283,10 @@ msgstr "Ranged Soldiers only, requires at least 2."
 msgid "Skirmish"
 msgstr "Skirmish"
 
+#: simulation/templates/special/formations/skirmish.xml:16
+msgid "Dispersed formation for reconnaissance, ambushes or hit-and-run."
+msgstr "Dispersed formation for reconnaissance, ambushes or hit-and-run."
+
 #: simulation/templates/special/formations/syntagma.xml:5
 msgid "Infantry Pikemen only, requires at least 16."
 msgstr "Infantry Pikemen only, requires at least 16."
@@ -1149,9 +1295,17 @@ msgstr "Infantry Pikemen only, requires at least 16."
 msgid "Syntagma"
 msgstr "Syntagma"
 
+#: simulation/templates/special/formations/syntagma.xml:31
+msgid "Compact formation of Infantry Pikemen creating a defensive wall."
+msgstr "Compact formation of Infantry Pikemen creating a defensive wall."
+
 #: simulation/templates/special/formations/testudo.xml:70
 msgid "Testudo"
 msgstr "Testudo"
+
+#: simulation/templates/special/formations/testudo.xml:72
+msgid "Compact formation of Melee Infantry creating a shield shell."
+msgstr "Compact formation of Melee Infantry creating a shield shell."
 
 #: simulation/templates/special/formations/wedge.xml:5
 msgid "Cavalry only, requires at least 6."
@@ -1160,6 +1314,10 @@ msgstr "Cavalry only, requires at least 6."
 #: simulation/templates/special/formations/wedge.xml:16
 msgid "Wedge"
 msgstr "Wedge"
+
+#: simulation/templates/special/formations/wedge.xml:18
+msgid "Triangular Cavalry formation to break through enemy lines."
+msgstr "Triangular Cavalry formation to break through enemy lines."
 
 #: simulation/templates/special/spy.xml:16
 msgid "Spy"

@@ -1,4 +1,4 @@
-/* Copyright (C) 2023 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -302,7 +302,8 @@ std::unique_ptr<CDevice> CDevice::Create(SDL_Window* window)
 		else if (createInstanceResult == VK_ERROR_LAYER_NOT_PRESENT)
 			LOGERROR("Can't create Vulkan instance: layer not present.");
 		else
-			LOGERROR("Unknown error during Vulkan instance creation: %d", static_cast<int>(createInstanceResult));
+			LOGERROR("Unknown error during Vulkan instance creation: %d (%s)",
+				static_cast<int>(createInstanceResult), Utilities::GetVkResultName(createInstanceResult));
 		return nullptr;
 	}
 
@@ -518,8 +519,8 @@ std::unique_ptr<CDevice> CDevice::Create(SDL_Window* window)
 		else if (createDeviceResult == VK_ERROR_EXTENSION_NOT_PRESENT)
 			LOGERROR("Can't create Vulkan device: extension not present.");
 		else
-			LOGERROR("Unknown error during Vulkan device creation: %d",
-				static_cast<int>(createDeviceResult));
+			LOGERROR("Unknown error during Vulkan device creation: %d (%s)",
+				static_cast<int>(createDeviceResult), Utilities::GetVkResultName(createDeviceResult));
 		return nullptr;
 	}
 
@@ -560,8 +561,8 @@ std::unique_ptr<CDevice> CDevice::Create(SDL_Window* window)
 		vmaCreateAllocator(&allocatorCreateInfo, &device->m_VMAAllocator);
 	if (createVMAAllocatorResult != VK_SUCCESS)
 	{
-		LOGERROR("Failed to create VMA allocator: %d",
-			static_cast<int>(createDeviceResult));
+		LOGERROR("Failed to create VMA allocator: %d (%s)",
+			static_cast<int>(createVMAAllocatorResult), Utilities::GetVkResultName(createVMAAllocatorResult));
 		return nullptr;
 	}
 
@@ -707,6 +708,12 @@ std::unique_ptr<IGraphicsPipelineState> CDevice::CreateGraphicsPipelineState(
 	return CGraphicsPipelineState::Create(this, pipelineStateDesc);
 }
 
+std::unique_ptr<IComputePipelineState> CDevice::CreateComputePipelineState(
+	const SComputePipelineStateDesc& pipelineStateDesc)
+{
+	return CComputePipelineState::Create(this, pipelineStateDesc);
+}
+
 std::unique_ptr<IVertexInputLayout> CDevice::CreateVertexInputLayout(
 	const PS::span<const SVertexAttributeFormat> attributes)
 {
@@ -742,15 +749,15 @@ std::unique_ptr<IFramebuffer> CDevice::CreateFramebuffer(
 }
 
 std::unique_ptr<IBuffer> CDevice::CreateBuffer(
-	const char* name, const IBuffer::Type type, const uint32_t size, const bool dynamic)
+	const char* name, const IBuffer::Type type, const uint32_t size, const uint32_t usage)
 {
-	return CreateCBuffer(name, type, size, dynamic);
+	return CreateCBuffer(name, type, size, usage);
 }
 
 std::unique_ptr<CBuffer> CDevice::CreateCBuffer(
-	const char* name, const IBuffer::Type type, const uint32_t size, const bool dynamic)
+	const char* name, const IBuffer::Type type, const uint32_t size, const uint32_t usage)
 {
-	return CBuffer::Create(this, name, type, size, dynamic);
+	return CBuffer::Create(this, name, type, size, usage);
 }
 
 std::unique_ptr<IShaderProgram> CDevice::CreateShaderProgram(
@@ -910,7 +917,7 @@ void CDevice::ScheduleObjectToDestroy(
 	m_ObjectToDestroyQueue.push({m_FrameID, type, handle, allocation});
 }
 
-void CDevice::ScheduleTextureToDestroy(const CTexture::UID uid)
+void CDevice::ScheduleTextureToDestroy(const DeviceObjectUID uid)
 {
 	m_TextureToDestroyQueue.push({m_FrameID, uid});
 }
@@ -1026,6 +1033,12 @@ CTexture* CDevice::GetOrCreateBackbufferReadbackTexture()
 			currentBackbufferTexture->GetHeight());
 	}
 	return m_BackbufferReadbackTexture.get();
+}
+
+DeviceObjectUID CDevice::GenerateNextDeviceObjectUID()
+{
+	ENSURE(m_LastAvailableUID < std::numeric_limits<DeviceObjectUID>::max());
+	return m_LastAvailableUID++;
 }
 
 std::unique_ptr<IDevice> CreateDevice(SDL_Window* window)

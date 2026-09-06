@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: None\n"
-"POT-Creation-Date: 2023-06-12 07:18+0000\n"
-"PO-Revision-Date: 2023-06-12 07:18+0000\n"
+"POT-Creation-Date: 2024-07-26 07:18+0000\n"
+"PO-Revision-Date: 2024-07-26 07:18+0000\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -24,12 +24,24 @@ msgstr ""
 "saya dan awak akan mendapat sebahagian dari hasil rampasan perang kelak."
 
 #, python-format
+msgid ""
+"I am launching an unprecedented attack against %(_player_)s. Bring your armies and we "
+"may soon win this war."
+msgstr ""
+"Ich starte einen noch nie dagewesenen Angriff auf %(_player_)s. Komm mit deinen Armeen "
+"dazu und wir werden diesen Krieg bald gewinnen."
+
+#, python-format
 msgid "I am launching an attack against %(_player_)s."
 msgstr "Olen aloittamassa hyökkäystä pelaajaa %(_player_)s vastaan."
 
 #, python-format
 msgid "I have just sent an army against %(_player_)s."
 msgstr "Saya baru sahaja mengerah askar saya menentang %(_player_)s."
+
+#, python-format
+msgid "I am sending an army against %(_player_)s."
+msgstr "Ich schicke eine Armee, um %(_player_)s anzugreifen."
 
 #, python-format
 msgid "Let me regroup my army and I will then join you against %(_player_)s."
@@ -130,6 +142,14 @@ msgstr "Tha %(_player_)s ’s mi fhìn ’nar nàimhdean a-nis."
 #, python-format
 msgid "I cannot accept your offer to become allies, %(_player_)s."
 msgstr "Ní féidir liom a ghlacadh le do thairiscint a bheith inar gcomhghuaillí, a %(_player_)s."
+
+#, python-format
+msgid "I must decline your offer of alliance, %(_player_)s."
+msgstr "Ik wijs uw voorstel om bondgenoot te worden af, %(_player_)s."
+
+#, python-format
+msgid "An alliance with you is not in my best interest, %(_player_)s."
+msgstr "Eine Allianz mit dir ist nicht in meinem besten Interesse, %(_player_)s."
 
 #, python-format
 msgid "I will not be your ally, %(_player_)s. However, I will consider a neutrality pact."
@@ -330,7 +350,7 @@ msgid ""
 "%(_player_)s, it would be both to our benefit if we negotiated a neutrality pact. I "
 "will become neutral with you if you do the same."
 msgstr ""
-"%(_player_)s, es würde uns beiden nützen, wenn wir uns auf einen Neutralitätspakt "
+"%(_player_)s, es würde uns beiden nutzen, wenn wir uns auf einen Neutralitätspakt "
 "einigen könnten. Ich werde mich dir gegenüber neutral verhalten, wenn du das Gleiche "
 "tust."
 
@@ -353,13 +373,33 @@ msgstr ""
 "Meine Truppen haben bei der Verteidigung meines Reiches versagt. Bitte berücksichtige "
 "unser Bündniss und schick uns Hilfe!"
 
+msgid ""
+"My humble armies feel weak and tired. My civilization depends on our alliance, please "
+"send help!"
+msgstr ""
+"Mis reducidos ejércitos están debilitados y exhaustos. Mi civilización depende de "
+"nuestra alianza. ¡Envíanos ayuda por favor!"
+
+msgid "I need your help. Please do not let my armies fall!"
+msgstr "Ho bisogno del vostro aiuto. Per favore, non lasciate che le mie armate cadano!"
+
 msgid "My empire regained its old strength, now it is time to seek revenge together!"
 msgstr ""
 "Mijn imperium heeft zijn oude kracht herwonnen. Nu is het moment aangebroken om tezamen"
 " revanche te nemen!"
 
 msgid ""
-"Petra is the default 0 A.D. AI bot. Please report issues to Wildfire Games (see the "
+"My civilization raised from the ashes. Now my armies feel stronger and eager to fight "
+"for our alliance."
+msgstr ""
+"Meine Zivilisation ist aus der Asche wiederauferstanden. Meine Armeen sind nun stärker "
+"und versessen darauf für unsere Allianz zu kämpfen."
+
+msgid "Petra Bot"
+msgstr "Robotas Petra"
+
+msgid ""
+"Petra is the default 0 A.D. AI bot. Please report issues to Wildfire Games (see the "
 "link in the main menu).\n"
 "\n"
 "The AI's resource gathering rate and trade gain depend on the difficulty level (Sandbox"
@@ -367,18 +407,15 @@ msgid ""
 "levels also have a slower research, training, and building rate. In addition, the "
 "Sandbox level does not expand nor attack."
 msgstr ""
-"’S e am bot bunaiteach aig 0 A.D. a th’ ann am Peadra. An aithris thu duilgheadas sam "
-"bith gu Wildfire Games (faic an ceangal air a’ phrìomh chlàr-taice)?\n"
+"Petra a 0 A.D. alapértelmezett MI-botja. Amennyiben valamilyen hibát észlelsz, azt "
+"kérjük jelezd a Wildfire Games-nek (lásd a főmenüben található linket).\n"
 "\n"
-"Tha buannachd a’ chruinneachaidh ’s air a’ mhalart an IF a-rèir leibheil an "
-"duilgheadais (seo −58% air leibheil a’ bhogsa-gainmhich, −44% air leibheil glè "
-"fhurasta, −25% air leibheil fhurasta, ±0% air leibheil mheadhanach, +25% air leibheil "
-"dhoirbh, +56% air leibheil dhùbhlanach). Tha an rannsachadh, an t-oideachadh ’s an "
-"togail nas maille air na leibheilean as fhasa cuideachd. A bharrachd air sin, cha dèan "
-"leibheil a’ bhogsa-ghainmhich leudachadh ’s cha doir e ionnsaigh."
-
-msgid "Petra Bot"
-msgstr "Robotas Petra"
+"Az, hogy az MI milyen hatékonysággal gyűjti be a nyersanyagokat, illetve hogy mekkora "
+"haszonra tesz szert kereskedelem útján a nehézségi szinttől függ (az értékek "
+"következőképp változnak: Homokozón −58%, Nagyon könnyűn −44%, Könnyűn −25%, Közepesen "
+"±0%, Nehézen +25%, Nagyon nehézen +56%). A könnyebb szinteken ezen felül lassabban "
+"zajlanak a kutatások, a kiképzések és az építkezések is, Homokozón pedig mellőzi mind a"
+" támadást, mind a terjeszkedést."
 
 #, python-format
 msgid "%(name)s cannot be built due to unknown error"
@@ -398,26 +435,38 @@ msgstr ""
 msgid "%(name)s cannot be built on invalid terrain"
 msgstr "Non é posíbel construír a estrutura «%(name)s» en terreo non apto."
 
+#. Translation: territoryType being displayed in a translated sentence in the form: "House
+#. cannot be built in %(territoryType)s territory.".
 msgctxt "Territory type"
 msgid "own"
 msgstr "perc'hennet"
 
+#. Translation: territoryType being displayed in a translated sentence in the form: "House
+#. cannot be built in %(territoryType)s territory.".
 msgctxt "Territory type"
 msgid "unconnected own"
 msgstr "agad fhèin nach eil ceangailte"
 
+#. Translation: territoryType being displayed in a translated sentence in the form: "House
+#. cannot be built in %(territoryType)s territory.".
 msgctxt "Territory type"
 msgid "allied"
 msgstr "comhghuaillithe"
 
+#. Translation: territoryType being displayed in a translated sentence in the form: "House
+#. cannot be built in %(territoryType)s territory.".
 msgctxt "Territory type"
 msgid "unconnected allied"
 msgstr "verbündetem und nicht verbundenem"
 
+#. Translation: territoryType being displayed in a translated sentence in the form: "House
+#. cannot be built in %(territoryType)s territory.".
 msgctxt "Territory type"
 msgid "neutral"
 msgstr "neo-phàirteach"
 
+#. Translation: territoryType being displayed in a translated sentence in the form: "House
+#. cannot be built in %(territoryType)s territory.".
 msgctxt "Territory type"
 msgid "enemy"
 msgstr "nepriateľskom"
@@ -447,18 +496,26 @@ msgid_plural "%(name)s too far from a %(category)s, must be within %(distance)s 
 msgstr[0] "%(name)s too far from a %(category)s, must be within %(distance)s meter"
 msgstr[1] "%(name)s too far from a %(category)s, must be within %(distance)s meters"
 
+#. Translation: Territory types being displayed as part of a list like "Valid territories:
+#. own, ally".
 msgctxt "Territory type list"
 msgid "own"
 msgstr "perc'hennet"
 
+#. Translation: Territory types being displayed as part of a list like "Valid territories:
+#. own, ally".
 msgctxt "Territory type list"
 msgid "ally"
 msgstr "aig caidreabhach"
 
+#. Translation: Territory types being displayed as part of a list like "Valid territories:
+#. own, ally".
 msgctxt "Territory type list"
 msgid "neutral"
 msgstr "الأقاليم المحايدة"
 
+#. Translation: Territory types being displayed as part of a list like "Valid territories:
+#. own, ally".
 msgctxt "Territory type list"
 msgid "enemy"
 msgstr "aig an nàmhaid"
@@ -542,9 +599,6 @@ msgstr "Η Οντότητα είναι σε διαδικασία παραγωγ�
 msgid "Turtle (0.1×)"
 msgstr "По-черепашьи (0.1×)"
 
-msgid "Fast Forward (20×)"
-msgstr "Baya Bi Hızlı İleri  (20×)"
-
 msgid "Slow (0.25×)"
 msgstr "Pomalá rýchlosť (0,25x)"
 
@@ -571,6 +625,9 @@ msgstr "Avanzar rapidamente (×5)"
 
 msgid "Fast Forward (10×)"
 msgstr "Avanzar rapidamente (×10)"
+
+msgid "Fast Forward (20×)"
+msgstr "Baya Bi Hızlı İleri  (20×)"
 
 msgid "Tiny"
 msgstr "Μικροσκοπικός"
@@ -618,15 +675,15 @@ msgstr ""
 msgid "Very Large"
 msgstr "Erittäin laaja"
 
+msgid "Giant"
+msgstr "Jättiläismäinen"
+
 msgid ""
 "Very large maps are not recommended as it takes very long to reach the enemy and the "
 "game performance can be reduced."
 msgstr ""
-"Много големите карти не са препоръчителни, тъй като достигането до врага отнема твърде "
-"много време, а и производителността на играта може да е намалена."
-
-msgid "Giant"
-msgstr "Jättiläismäinen"
+"Sehr große Karten werden nicht empfohlen, da es sehr lange dauert, um den Feind zu "
+"erreichen und sich die Kartengröße negativ auf die Spielleistung auswirken kann."
 
 msgid "Gaia"
 msgstr "Moder Natur"
@@ -677,25 +734,22 @@ msgstr "Moi abundantes"
 
 msgctxt "startingResources"
 msgid "Deathmatch"
-msgstr "Peperangan Habis-habisan"
+msgstr "Җанын кызганмыйча каршы тору"
 
 msgid "Very Easy"
 msgstr "Erittäin helppo"
 
-msgid "Choose this difficulty if you are discovering 0 A.D."
-msgstr "Válaszd ezt a nehézségi fokozatot, ha még csak felfedezed a 0 A.D.-t."
+msgid "Choose this difficulty if you are discovering 0 A.D."
+msgstr "Wähle diesen Schwierigkeitsgrad, wenn du gerade dabei bist 0 A.D. zu entdecken."
 
 msgid "Easy"
 msgstr "Makkelijk"
 
 msgid "Choose this difficulty if you do not like being knocked down."
-msgstr "Выберите этот уровень сложности, если вам не нравится быть поверженным."
+msgstr "Wähle diesen Schwierigkeitsgrad, wenn du nicht überrannt werden möchtest."
 
-msgid "Medium"
-msgstr "Vidutiniškai"
-
-msgid "Choose this difficulty if you have already a good experience with 0 A.D."
-msgstr "Pilih kesulitan ini jika Anda sudah memiliki pengalaman yang baik dengan 0 A.D."
+msgid "Choose this difficulty if you have already a good experience with 0 A.D."
+msgstr "Wähle diesen Schwierigkeitsgrad, wenn du bereits gute Erfahrung mit 0 A.D. hast."
 
 msgid "Hard"
 msgstr "Difficilis"
@@ -709,7 +763,13 @@ msgid "Very Hard"
 msgstr "Difficilis Maximus"
 
 msgid "Choose this difficulty if you do not mind being swept out."
-msgstr "Kies deze moeilijkheidsgraad als u het niet erg vindt in de pan gehakt te worden."
+msgstr "Wähle diesen Schwierigkeitsgrad, wenn es dir nichts ausmacht, überrannt zu werden."
+
+msgid "Medium"
+msgstr "Vidutiniškai"
+
+msgid "Capture the Relic"
+msgstr "Szerezd meg az ereklyéket"
 
 msgid ""
 "Capture all relics spread across the map and keep them for a certain time to win the "
@@ -718,42 +778,42 @@ msgstr ""
 "Κατέλαβε όλα τα ιερά κειμήλια που είναι διασκορπισμένα στο χάρτη και κράτησέ τα για "
 "ορισμένο χρόνο ώστε να κερδηθεί το παιχνίδι."
 
-msgid "Capture the Relic"
-msgstr "Szerezd meg az ereklyéket"
+msgid "Conquest"
+msgstr "Pilnīga uzvara"
 
 msgid "Defeat opponents by killing all their units and destroying all their structures."
 msgstr ""
-"Kukista vastustajat tappamalla kaikki heidän yksikkönsä ja tuhoamalla kaikki heidän "
-"rakennelmansa."
+"Đánh bại đối thủ bằng cách tận diệt tất cả các công trình và phá hủy hết tất cả các "
+"công trình của họ."
 
-msgid "Conquest"
-msgstr "Pilnīga uzvara"
+msgid "Conquest Civic Centers"
+msgstr "Завладяване на селищни центрове"
 
 msgid "Defeat opponents by destroying all their fully built civic centers."
 msgstr ""
 "Derrota os teus opoñentes destruíndo todos os seus centros cívicos totalmente "
 "construídos."
 
-msgid "Conquest Civic Centers"
-msgstr "Уничтожение городских центров"
-
-msgid "Defeat opponents by destroying all their structures."
-msgstr "Roit-lamm d'an enebourien en ur zistrujañ holl savadur anezho."
-
 msgid "Conquest Structures"
 msgstr "Estructuras de conquista."
 
-msgid "Defeat opponents by killing all their units."
-msgstr "Kalahkan semua pihak lawan dengan membunuh semnua unit mereka."
+msgid "Defeat opponents by destroying all their structures."
+msgstr "Đánh bại đối thủ bằng cách phá hủy hết tất cả các công trình của họ."
 
 msgid "Conquest Units"
 msgstr "Alouberezh an Unanennoù"
 
-msgid "Defeat opponents by killing their hero."
-msgstr "Kalahkan semua pihak lawan dengan membunuh adiwira mereka."
+msgid "Defeat opponents by killing all their units."
+msgstr "Kalahkan semua pihak lawan dengan membunuh semnua unit mereka."
 
 msgid "Regicide"
 msgstr "Karaliaus nužudymas"
+
+msgid "Defeat opponents by killing their hero."
+msgstr "Kalahkan semua pihak lawan dengan membunuh adiwira mereka."
+
+msgid "Wonder"
+msgstr "Keajaiban Dunia"
 
 msgid ""
 "Be the first to build or capture a Wonder and keep it for a certain time to win the "
@@ -765,9 +825,6 @@ msgstr ""
 "dalam waktu tertentu untuk memenangkan permainan. Hitungan mundur akan diatur ulang "
 "ketika Keajaiban Dunia dihancurkan atau direbut. Jika kemenangan sekutu diaktifkan, "
 "hitungan mundur juga akan diatur ulang ketika persekutuan pemiliknya berubah."
-
-msgid "Wonder"
-msgstr "Keajaiban Dunia"
 
 #, python-format
 msgid "%(player)s has been defeated (cheat)."
@@ -802,7 +859,7 @@ msgid "There are no bribable units"
 msgstr "Няма единици, които могат да бъдат подкупени"
 
 msgid "Unable to unload unit(s)."
-msgstr "Nun ye possible disoccupare la(s) unidá(des)."
+msgstr "Разтоварването на единицата (или единиците) е невъзможно."
 
 msgid "Some unit(s) can't go back to work"
 msgstr "Има единица (или единици), която не може да се върне обратно към работата си."

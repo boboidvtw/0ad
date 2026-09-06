@@ -1,20 +1,20 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2022 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2023 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# Ferhat Olçum
-# Emre JILTA
-# Emir Öksüz
-# Volkan Sarıoğlu
-# Günay Yılmaz
-# berhudar
+# Ferhat Olçum, 2018
+# Emre JILTA, 2018
+# Emir Öksüz, 2019
+# Günay Yılmaz, 2020
+# A, 2023
+# 9d4282795e87ad099e39d98812f1a822_ade2f01, 2023
 msgid ""
 msgstr ""
-"Project-Id-Version: 0 A.D. — Empires Ascendant\n"
-"POT-Creation-Date: 2022-09-12 09:35+0000\n"
+"Project-Id-Version: 0 A.D. — Empires Ascendant\n"
+"POT-Creation-Date: 2023-08-18 07:08+0000\n"
 "PO-Revision-Date: 2018-10-14 18:34+0000\n"
-"Last-Translator: berhudar, 2023\n"
+"Last-Translator: 9d4282795e87ad099e39d98812f1a822_ade2f01, 2023\n"
 "Language-Team: Turkish (https://app.transifex.com/wildfire-games/teams/17418/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,26 +24,27 @@ msgstr ""
 
 #: gui/userreport/Terms_and_Conditions.txt:1
 msgid ""
-"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant UserReporter Terms and "
+"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant UserReporter Terms and "
 "Conditions[/font]"
 msgstr ""
-"[font=\"sans-bold-18\"]0 A.D. İmparatorlukların Yükselişi Rapor Edici "
-"(UserReporter) Kullanım Koşulları ve Şartları[/font]"
+"[font=\"sans-bold-18\"]0 A.D. İmparatorlukların Yükselişi UserReporter "
+"Kullanım Koşulları ve Şartları[/font]"
 
 #: gui/userreport/Terms_and_Conditions.txt:3
-msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2018-10-16"
-msgstr "[font=\"sans-bold-14\"]Döküman Tarihi:[/font] 2018-10-16"
+msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2023-08-17"
+msgstr "[font=\"sans-bold-14\"]Belge Tarihi:[/font] 2023-08-17"
 
 #: gui/userreport/Terms_and_Conditions.txt:5
 msgid ""
-"The 0 A.D. UserReporter is a tool that allows you, the 0 A.D. player, to "
+"The 0 A.D. UserReporter is a tool that allows you, the 0 A.D. player, to "
 "automatically upload hardware- and software-system details in order to help "
 "Wildfire Games and community developers to improve the performance and "
-"compatibility of 0 A.D."
+"compatibility of 0 A.D."
 msgstr ""
-"0 A.D. Kullanıcı Rapor Edici (UserReporter) aracı, performans ve yazılım "
-"uygunluğunun geliştirilmesi için  otomatik olarak donanım ve yazılım "
-"bilgilerini oyun geliştiricilerine iletilmesini sağlayan bir araçtır."
+"Bu 0 A.D. UserReporter Wildfire Games ve topluluk geliştiricilerinin, 0 A.D."
+" 'nin performansını ve uyumluluğunu artırmasına yardımcı olmak amacıyla "
+"0 A.D. oyuncusunun donanım ve yazılım sistemi ayrıntılarını otomatik olarak "
+"yüklememize olanak tanıyan bir araçtır."
 
 #: gui/userreport/Terms_and_Conditions.txt:7
 msgid "[font=\"sans-bold-14\"]Purpose of the UserReport:[/font]"
@@ -53,19 +54,20 @@ msgstr "[font=\"sans-bold-14\"]Kullanıcı Raporunun (UserReport) Amacı:[/font]
 msgid ""
 "The UserReports indicate which system features (for example CPU instruction "
 "sets and OpenGL capabilities) are widely supported by the computer systems "
-"of 0 A.D. players."
+"of 0 A.D. players."
 msgstr ""
-"Kullanıcı Raporları (UserReports), 0 A.D. oyuncularının çoğunlukla hangi "
-"sistem ayarlarını kullanıldığını gösterir. (Örneğin, OpenGL performansını "
-"arttırmak için CPU ayarlarının nasıl yapıldığı.)"
+"Bu UserReports hangi sistem özelliklerinin (örneğin İşlemci talimat setleri "
+"ve OpenGL yetenekleri) 0 A.D. 'nin bilgisayar sistemleri tarafından geniş "
+"çapta desteklendiğini gösterir."
 
 #: gui/userreport/Terms_and_Conditions.txt:9
 msgid ""
-"This allows developers to decide which 0 A.D. program code is safe to use "
+"This allows developers to decide which 0 A.D. program code is safe to use "
 "and which optimizations are most feasible to implement next."
 msgstr ""
-"Geliştiricilerin hangi 0 A.D. kodunun güvenli ve kullanıma hazır olduğunu ve gelecekte hangilerinin iyileştirilmesi gerektiğini anlamalarını sağlar.\n"
-"Bu, geliştiricilerin hangi 0 A.D. program kodunun güvenli ve ileride uygulanması en uygun olan optimizasyonların belirlenmesine olanak tanır."
+"Bu, geliştiricilerin hangi 0 A.D. program kodunun kullanımının güvenli "
+"olacağı ve bundan sonra hangi optimizasyonların uygulanmasının en uygun "
+"olacağını anlamamızı sağlar."
 
 #: gui/userreport/Terms_and_Conditions.txt:10
 msgid ""
@@ -99,8 +101,8 @@ msgstr ""
 
 #: gui/userreport/Terms_and_Conditions.txt:15
 msgid ""
-" 3. Application Details, for example the 0 A.D. version and build number."
-msgstr "3. Uygulama Detayları, örneğin 0 A.D. versiyonu ve yapı numarası."
+" 3. Application Details, for example the 0 A.D. version and build number."
+msgstr " 3. Uygulama Ayrıntıları, örneğin 0 A.D. ürümü ve yapı numarası."
 
 #: gui/userreport/Terms_and_Conditions.txt:16
 msgid ""
@@ -113,13 +115,13 @@ msgstr ""
 
 #: gui/userreport/Terms_and_Conditions.txt:17
 msgid ""
-"    The UserID enables developers to count how many 0 A.D. players use a "
+"    The UserID enables developers to count how many 0 A.D. players use a "
 "specific set of hardware or system software without allowing them to "
 "attribute the data to any person."
 msgstr ""
-"Kullanıcı Kimliği, geliştiricilerin, verilerini herhangi bir kişiye "
-"atfetmesine izin vermeden, belirli bir donanım veya sistem yazılımı kümesini"
-" kaç tane 0 A.D oyuncusunun kullandığını sayma olanağı sağlar."
+"    Bu UserID verileri herhangi bir kişiye atfetmelerine izin vermeden "
+"geliştiricilerin ne kadar  0 A.D. oyuncusu belirli donanım veya sistem "
+"yazılımı seti kullandığını saymasına olanak tanır."
 
 #: gui/userreport/Terms_and_Conditions.txt:18
 msgid ""
@@ -156,12 +158,12 @@ msgstr ""
 #: gui/userreport/Terms_and_Conditions.txt:24
 msgid ""
 " 1. Publish UserReport data, excluding the UserID pseudonym, so that "
-"community developers may help contribute to 0 A.D. development using this "
+"community developers may help contribute to 0 A.D. development using this "
 "data (GDPR 4.5)."
 msgstr ""
-"1. Kullanıcı Kimliği taklidi hariç, UserReport verilerini yayınlayın, "
-"böylece topluluk geliştiricileri bu verileri kullanarak 0 A.D. gelişimine "
-"katkıda bulunabilirler (GVKY 4.5)."
+" 1. Topluluk geliştiricilerinin bu verileri kullanarak 0 A.D. 'nin "
+"geliştirilmesine katkıda bulunabilmesi için UserID takma adı hariç "
+"UserReport verilerini yayınla (GDPR 4.5)."
 
 #: gui/userreport/Terms_and_Conditions.txt:25
 msgid ""
@@ -256,10 +258,10 @@ msgstr ""
 #: gui/userreport/Terms_and_Conditions.txt:39
 msgid ""
 "    The UserID pseudonym can be found in the user.cfg file of the "
-"configuration folder of 0 A.D."
+"configuration folder of 0 A.D."
 msgstr ""
-"UserID takma adı, 0 A.D. yapılandırma klasörünün user.cfg dosyasında "
-"bulunabilir."
+"    UserID takma adı, 0 A.D. yapılandırma klasörünün user.cfg dosyası içinde"
+" bulunabilir."
 
 #: gui/userreport/Terms_and_Conditions.txt:40
 msgid "    The current configuration folder is %(configPath)s."
@@ -268,10 +270,11 @@ msgstr " Mevcut ayarların bulunduğu dosya %(configPath)s."
 #: gui/userreport/Terms_and_Conditions.txt:41
 msgid ""
 "    The user obtains a machine-readable and human-readable copy of the "
-"UserReport data in the logs folder of 0 A.D. (GDPR 20)."
+"UserReport data in the logs folder of 0 A.D. (GDPR 20)."
 msgstr ""
-"Kullanıcı, UserReport verilerinin 0 A.D. (GVKY 20) günlük klasöründe "
-"makinede okunabilir ve insan tarafından okunabilir bir kopyasını alır."
+"    Kullanıcı, 0 A.D. 'nin logs klasöründeki UserReport verilerinin makine "
+"tarafından okunabilen ve insanlar tarafından okunabilen bir kopyasını "
+"alabilir. (GDPR 20)."
 
 #: gui/userreport/Terms_and_Conditions.txt:42
 msgid "    The data can be reviewed before the UserReporter is enabled."
@@ -305,12 +308,13 @@ msgstr "3. Yanlış UserReport verilerinin düzeltilmesi hakkı (GVKY 16)."
 #: gui/userreport/Terms_and_Conditions.txt:47
 msgid ""
 " 4. Right to erasure of your UserReports if they are not relevant to the "
-"development of 0 A.D., if the data was processed unlawfully or if the user "
+"development of 0 A.D., if the data was processed unlawfully or if the user "
 "objects to the processing and has overriding legitimate grounds (GDPR 17)."
 msgstr ""
-"4. 0 A.D.'nin geliştirilmesiyle ilgili değilse, veriler yasadışı bir şekilde"
-" işlenmişse veya kullanıcı işleme tabi tutulursa ve meşru gerekçeleri "
-"geçersiz kılıyorsa (GVKY 17), Kullanıcı Raporlarınızı silme hakkı."
+" 4. 0 A.D. nin geliştirilmesiyle ilgili olmaması durumunda Kullanıcı "
+"Raporlarınızı silme hakkı, Verilerin yasa dışı bir şekilde işlenmiş olması "
+"veya kullanıcının işlemeye itiraz etmesi ve meşru gerekçelerin ağır basması "
+"durumunda mümkündür. (GDPR 17)."
 
 #: gui/userreport/Terms_and_Conditions.txt:48
 msgid ""
@@ -359,11 +363,11 @@ msgstr ""
 
 #: gui/userreport/Terms_and_Conditions.txt:55
 msgid ""
-" 2. Wildfire Games has legitimate interests in the development of 0 A.D and "
-"protection against cyberattacks (GDPR 6.1.f)."
+" 2. Wildfire Games has legitimate interests in the development of 0 A.D. and"
+" protection against cyberattacks (GDPR 6.1.f)."
 msgstr ""
-"2. Wildfire Games, 0 A.D'nin geliştirilmesi ve siber saldırılara karşı "
-"korunma konusunda meşru çıkarlara sahiptir (GVKY 6.1.f)."
+" 2. Wildfire Games'in 0 A.D. 'nin geliştirilmesi ve siber saldırılara karşı "
+"koruma konusunda meşru çıkarları vardır (GDPR 6.1.f)."
 
 #: gui/userreport/Terms_and_Conditions.txt:56
 msgid ""

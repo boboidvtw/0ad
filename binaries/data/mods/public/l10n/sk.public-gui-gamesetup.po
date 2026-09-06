@@ -1,32 +1,35 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2022 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# B2D
-# Martin Plávala
-# LeviTaule
-# Marek Berčík
-# 2001c3bfc7421750b343e20d6f8feae5_62d342a
-# Mário Bulejko
-# Michal Ján Mária Polovka
-# Miroslav Kadlec
-# MiroslavR
-# Patrik Loch
-# SuroX
-# Peto (wt-ts)
-# Roman Beňo
-# Roman 'Kaktuxista' Benji
-# Rudolf Tisoň
-# c1d3d4413723242329060e6153cf18b8_282267d
-# Tom Hanax
-# Zuzana Miadoková
+# B2D, 2014
+# Martin Plávala, 2014
+# LeviTaule, 2017
+# Marek Berčík, 2021
+# 2001c3bfc7421750b343e20d6f8feae5_62d342a, 2015
+# Mário Bulejko, 2015
+# Michal Ján Mária Polovka, 2016
+# Miroslav Kadlec, 2018
+# MiroslavR, 2014
+# Patrik Loch, 2014
+# Patrik Špaňo, 2024
+# SuroX, 2016
+# Peto (wt-ts), 2015-2016
+# Roman Beňo, 2014
+# Roman 'Kaktuxista' Benji, 2014
+# Rudolf Tisoň, 2022
+# Rudolf Tisoň, 2021
+# c1d3d4413723242329060e6153cf18b8_282267d, 2017-2021
+# Tom Hanax, 2019
+# Timotej Ružička, 2024
+# Zuzana Miadoková, 2021-2022,2024
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2022-09-12 09:35+0000\n"
+"POT-Creation-Date: 2024-08-09 07:17+0000\n"
 "PO-Revision-Date: 2014-06-19 17:48+0000\n"
-"Last-Translator: Rudolf Tisoň, 2022\n"
+"Last-Translator: Patrik Špaňo, 2024\n"
 "Language-Team: Slovak (http://app.transifex.com/wildfire-games/0ad/language/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,11 +37,11 @@ msgstr ""
 "Language: sk\n"
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
 
-#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:(caption):13
+#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:13
 msgid "AI Configuration"
 msgstr "Nastavenie AI"
 
-#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:(caption):29
+#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:29
 msgid "OK"
 msgstr "OK"
 
@@ -88,12 +91,12 @@ msgctxt "Match settings tab name"
 msgid "Map"
 msgstr "Mapa "
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:28
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:29
 msgctxt "Match settings tab name"
 msgid "Player"
 msgstr "Hráč"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:40
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:41
 msgctxt "Match settings tab name"
 msgid "Game Type"
 msgstr "Typ hry"
@@ -142,23 +145,23 @@ msgctxt "team"
 msgid "None"
 msgstr "Žiadny"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):6
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:6
 msgid "Player Name"
 msgstr "Meno hráča"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):10
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:10
 msgid "Color"
 msgstr "Farba"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):14
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:14
 msgid "Player Placement"
 msgstr "Umiestnenie hráča"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):18
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:18
 msgid "Civilization"
 msgstr "Civilizácia"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):25
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:25
 msgid "Team"
 msgstr "Tím"
 
@@ -463,6 +466,14 @@ msgstr "Obtiažnosť "
 msgid "Select the difficulty of this scenario."
 msgstr "Vyber náročnosť scenára."
 
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WaterLevel.js:43
+msgid "Water level"
+msgstr "Úroveň vody"
+
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WaterLevel.js:46
+msgid "Select the water level of this map."
+msgstr "Vyber výšku vodnej hladiny na tejto mape."
+
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WorldPopulationCap.js:47
 msgid "World Population Cap"
 msgstr "Limit svetovej populácie"
@@ -572,19 +583,19 @@ msgstr "Čas vlastnenia divu"
 msgid "Minutes until the player has achieved Wonder Victory"
 msgstr "Minút, kým hráč dosiahne víťazstvo vďaka Divu"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:36
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:17
 msgid "Back"
 msgstr "Späť"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:39
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:20
 msgid "Return to the lobby."
 msgstr "Návrat do lobby."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:42
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:23
 msgid "Return to the main menu."
 msgstr "Návrat do hlavného menu."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CivInfoButton.js:48
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CivInfoButton.js:33
 #, javascript-format
 msgid ""
 "%(hotkey_civinfo)s / %(hotkey_structree)s: View Civilization Overview / Structure Tree\n"
@@ -595,27 +606,27 @@ msgstr "%(hotkey_civinfo)s / %(hotkey_structree)s: Zobraziť prehľad civilizác
 msgid "Show the multiplayer lobby in a dialog window."
 msgstr "Ukázať predsieň hry viacerých hráčov v dialógovom okne. "
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:79
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:70
 msgid "I'm ready"
 msgstr "Som pripravený"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:80
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:71
 msgid "Stay ready"
 msgstr "Zostať pripravený."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:81
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:72
 msgid "I'm not ready!"
 msgstr "Nie som pripravený!"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:85
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:76
 msgid "State that you are ready to play."
 msgstr "Oznámite, že ste pripravený hrať."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:86
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:77
 msgid "Stay ready even when the game settings change."
 msgstr "Zostať pripravený aj keď sa zmenia nastavenia hry."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:87
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:78
 msgid "State that you are not ready to play."
 msgstr "Oznámte, že ešte nie ste pripravený hrať."
 
@@ -628,15 +639,15 @@ msgstr "Vrátiť všetky nastavenia vybratých civilizácií na predvolenú hodn
 msgid "Reset all teams to the default."
 msgstr "Vrátiť všetky tímy na predvolenú hodnotu."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:65
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:56
 msgid "Start Game!"
 msgstr "Spustiť hru!"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:68
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:59
 msgid "Start a new game with the current settings."
 msgstr "Začať novú hru so súčasnými nastaveniami."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:71
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:62
 msgid ""
 "Start a new game with the current settings (disabled until all players are "
 "ready)."
@@ -695,7 +706,7 @@ msgstr "* %(username)s je priravený!"
 msgid "Game settings have been changed"
 msgstr "Nastavenia boli zmenené"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatPanel.xml:(caption):9
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatPanel.xml:9
 msgid "Send"
 msgstr "Poslať"
 
@@ -718,11 +729,11 @@ msgstr "\\[%(time)s]"
 msgid "HH:mm"
 msgstr "HH:mm"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:40
+#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:29
 msgid "Cheats enabled."
 msgstr "Cheaty sú povolené"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:43
+#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:32
 msgid "Rated game."
 msgstr "Hodnotená hra."
 
@@ -739,19 +750,19 @@ msgstr "Nie je vybraná mapa"
 msgid "Click to view the list of available maps."
 msgstr "Klikni pre náhľad zoznamu dostupných máp."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/TipsPanel.xml:(caption):10
+#: gui/gamesetup/Pages/GameSetupPage/Panels/TipsPanel.xml:10
 msgid "Show this message in the future."
 msgstr "Zobraziť túto správu aj v budúcnosti."
 
-#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:(caption):7
+#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:7
 msgid "Loading"
 msgstr "Nahrávanie"
 
-#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:(caption):11
+#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:11
 msgid "Loading map data. Please wait…"
 msgstr "Načítavajú sa údaje o mape. Prosím, počkajte... "
 
-#: gui/gamesetup/gamesetup.xml:(caption):17
+#: gui/gamesetup/gamesetup.xml:17
 msgid "Match Setup"
 msgstr "Nastavenie súboja"
 
@@ -804,11 +815,6 @@ msgstr "Nepodarilo sa spojiť so serverom."
 msgid "Connection failed"
 msgstr "Pripojenie zlyhalo"
 
-#: gui/gamesetup_mp/gamesetup_mp.js:193
-#, javascript-format
-msgid "Net message: %(message)s"
-msgstr "Sieťová správa: %(message)s"
-
 #: gui/gamesetup_mp/gamesetup_mp.js:276
 msgid "Registering with server..."
 msgstr "Registrujem sa na serveri..."
@@ -827,82 +833,79 @@ msgid "Cannot host game: %(message)s."
 msgstr "Nemožno hosťovať hru: %(message)s."
 
 #: gui/gamesetup_mp/gamesetup_mp.js:377 gui/gamesetup_mp/gamesetup_mp.js:406
-#: gui/gamesetup_mp/gamesetup_mp.js:435 gui/gamesetup_mp/gamesetup_mp.js:450
+#: gui/gamesetup_mp/gamesetup_mp.js:436 gui/gamesetup_mp/gamesetup_mp.js:451
 msgid "Error"
 msgstr "Chyba"
 
-#: gui/gamesetup_mp/gamesetup_mp.js:405 gui/gamesetup_mp/gamesetup_mp.js:449
+#: gui/gamesetup_mp/gamesetup_mp.js:405 gui/gamesetup_mp/gamesetup_mp.js:450
 #, javascript-format
 msgid "Cannot join game: %(message)s."
 msgstr "Nedá sa pripojiť k hre: %(message)s."
 
-#: gui/gamesetup_mp/gamesetup_mp.js:464
+#: gui/gamesetup_mp/gamesetup_mp.js:465
 #, javascript-format
 msgid "%(playername)s's game"
 msgstr "Hra hráča %(playername)s"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):18
+#: gui/gamesetup_mp/gamesetup_mp.xml:18
 msgid "Multiplayer"
 msgstr "Hra viacerých hráčov"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):24
+#: gui/gamesetup_mp/gamesetup_mp.xml:24
 msgid "Joining an existing game."
 msgstr "Pripojiť sa k existujúcej hre."
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):28
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):70
+#: gui/gamesetup_mp/gamesetup_mp.xml:28 gui/gamesetup_mp/gamesetup_mp.xml:70
 msgid "Player Name:"
 msgstr "Meno hráča:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):38
+#: gui/gamesetup_mp/gamesetup_mp.xml:38
 msgid "Server Hostname or IP:"
 msgstr "Názov hostiteľa alebo IP:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):48
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):95
+#: gui/gamesetup_mp/gamesetup_mp.xml:48 gui/gamesetup_mp/gamesetup_mp.xml:95
 msgid "Server Port:"
 msgstr "Port servera:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):65
-msgid "Set up your server to host."
-msgstr "Nastaviť tvoj server ako hostiteľa."
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):83
-msgid "Server Name:"
-msgstr "Názov servera:"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):112
-msgid "Server Password:"
-msgstr "Heslo servera:"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):128
-msgid "Use STUN to work around firewalls"
-msgstr "Použiť STUN na obídenie firewallu"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):136
-msgid "Continue"
-msgstr "Pokračovať"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):141
-msgid "Cancel"
-msgstr "Zrušiť"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):152
-msgid "Password:"
-msgstr "Heslo:"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):162
-msgid "Confirm"
-msgstr "Potvrdiť"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):52
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):99
+#: gui/gamesetup_mp/gamesetup_mp.xml:52 gui/gamesetup_mp/gamesetup_mp.xml:99
 msgid "Leave blank to use the default port."
 msgstr "Ponechaj prázdne na použitie predvoleného portu."
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):113
+#: gui/gamesetup_mp/gamesetup_mp.xml:65
+msgid "Set up your server to host."
+msgstr "Nastaviť tvoj server ako hostiteľa."
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:83
+msgid "Server Name:"
+msgstr "Názov servera:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:112
+msgid "Server Password:"
+msgstr "Heslo servera:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:113
 msgid "Leave blank to not require it."
 msgstr "Ponechaj prázdne pre zápas bez hesla."
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:128
+msgid "Use STUN to work around firewalls"
+msgstr "Použiť STUN na obídenie firewallu"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:136
+msgid "Continue"
+msgstr "Pokračovať"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:141
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:152
+msgid "Password:"
+msgstr "Heslo:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:162
+msgid "Confirm"
+msgstr "Potvrdiť"
 
 #: gui/loading/ProgressBar.js:48
 #, javascript-format
@@ -1310,7 +1313,7 @@ msgid ""
 "It was impossible for the weak or cowardly to retreat; man to man they "
 "fought like in single combat.” \\n— Curtius Rufus about the Battle of Issus "
 "(“Histories of Alexander the Great”, III. 11.5)"
-msgstr ""
+msgstr "\"Vtedy naozaj tiekla krv, pretože obe línie boli tak blízko, že sa štítom udierali o štít a mečmi si vrážali do tvárí. Pre slabých alebo zbabelých bolo nemožné ustúpiť; muž proti mužovi bojovali ako v boji jednotlivcov.\" \\n- Curtius Rufus o bitke pri Isse (\"Dejiny Alexandra Veľkého\", III. 11.5)"
 
 #: gui/text/quotes.txt:58
 msgid ""
@@ -1334,7 +1337,7 @@ msgid ""
 "Ecbatana; and the men who were his foremost followers \\[…] I flayed and "
 "hung out their skins, stuffed with straw.” \\n— Darius I (Behistun "
 "inscription, column II, 32)"
-msgstr ""
+msgstr "“Fraorta zajali a priviedli predo mňa. Odrezal som mu nos, uši a jazyk, vypichol som mu jedno oko a bol držaný v reťaziach pri vchode do môjho paláca a videl ho všetok ľud. Potom som ho ukrižoval v Ekbatane; a mužov, ktorí boli jeho poprednými prívržencami, \\[...] stiahol som z kože a vypchaté slamou ich vyvesil.” \\n— Darius I ( Behistúnsky nápis, stĺpec II, 32)"
 
 #: gui/text/quotes.txt:61
 msgid ""
@@ -1373,7 +1376,7 @@ msgid ""
 "the sound, and that second roar was louder than the Macedonian war cry as "
 "five hundred thousand men shouted with one voice.” \\n— Diodorus Siculus "
 "about the Battle of Issus (“The Library of History”, XVII., sec. 33)"
-msgstr ""
+msgstr "“Macedónci najprv vydali nadpozemský pokrik a Peržania im odpovedali tak, že celý svah ohraničujúci bojisko sa rozozvučal, a ten druhý rev bol hlasnejší ako macedónsky vojnový pokrik, pretože päťstotisíc mužov kričalo jedným hlasom.” \\n— Diodorus Siculus o bitke pri Isse (\"Knižnica dejín\", XVII., oddiel 33)"
 
 #: gui/text/quotes.txt:67
 msgid ""
@@ -1383,7 +1386,7 @@ msgid ""
 "him, he suffered many wounds on the front of his body.” \\n— Diodorus "
 "Siculus, on a brave Spartan at the Battle of Pylos (“The Library of "
 "History”, XXII., sec. 62)"
-msgstr ""
+msgstr "“Brasidas sa postavil na koridor a odtiaľ odohnal zástup Aténčanov, ktorí sa na neho vrhli. Zo začiatku mnohých pobil, keď sa naňho vrhli, ale po chvíli, keď ho napadli početné strely, utrpel mnoho rán na prednej časti tela.” \\n— Diodorus Siculus o statočnom Sparťanovi v bitke pri Pylose (“Knižnica dejín”, XXII., oddiel. 62)"
 
 #: gui/text/quotes.txt:68
 msgid ""
@@ -1437,7 +1440,7 @@ msgstr "“Zbabelec sa odvráti, ale voľbou statočného muža je nebezpečie.�
 msgid ""
 "“Brave men are made bolder by ordeals, but cowards achieve nothing.” \\n— "
 "Euripides (“Iphigenia in Tauris”)"
-msgstr ""
+msgstr "“Odvážni muži sú vďaka skúškam odvážnejší, a zbabelci nezískajú nič.” \\n— Euripides (“Ifigénia v Tauride”)"
 
 #: gui/text/quotes.txt:76
 msgid ""
@@ -1483,7 +1486,7 @@ msgid ""
 "back; and, when they were put to flight, the archers were surrounded and cut"
 " to pieces.” \\n— Caesar about the Battle of Alesia (“De Bello Gallico”, "
 "VII. 80)"
-msgstr ""
+msgstr "“Po boji trvajúcom od pravého poludnia takmer do západu slnka, keď víťazstvo bolo otázne, Germáni na jednej strane zaútočili na nepriateľa v kompaktnom zoskupení a zahnali ho späť; a keď sa dali na útek, lukostrelci boli obkľúčení a rozsekaní na kusy.”\\n— Cézar o bitke pri Alesii  (“De Bello Gallico”, VII. 80)"
 
 #: gui/text/quotes.txt:83
 msgid ""
@@ -1493,7 +1496,7 @@ msgid ""
 "legion, Publius Sextius Baculus, a very valiant man, who was so exhausted by"
 " many and severe wounds, that he was already unable to support himself.” "
 "\\n— Caesar about the Battle of the Sabis (“De Bello Gallico”, II. 25)"
-msgstr ""
+msgstr "“Všetci centurióni štvrtej kohorty boli zabití, aj práporčík, samotný prápor sa stratil, takmer všetci centurióni ostatných kohort boli buď zranení, alebo zabití a medzi nimi aj hlavný centurión légie Publius Sextius Baculus, veľmi statočný muž, ktorý bol mnohými a ťažkými ranami tak vyčerpaný, že sa už nemohol udržať na nohách.” \\n— Cézar o bitke pri Sabise (“De Bello Gallico”, II. 25)"
 
 #: gui/text/quotes.txt:84
 msgid ""
@@ -1503,7 +1506,7 @@ msgid ""
 "while the survivors used the heap as a vantage point for throwing missiles "
 "at our men, or catching our spears and throwing them back.” \\n— Caesar "
 "about the Battle of the Sabis (“De Bello Gallico”, II. 27)"
-msgstr ""
+msgstr "“Ale nepriateľ \\[…] preukázal takú veľkú odvahu, že keď padli predné rady, muži za nimi sa postavili na ne a pokračovali v boji z vrcholu mŕtvol; keď boli títo zabití, hromada tiel sa zväčšovala, zatiaľ čo tí, čo prežili, používali hromadu ako pozorovateľňu na vrhanie striel na našich mužov alebo na chytanie našich oštepov a ich vrhanie späť.” \\n— Cézar o bitke pri Sabise (“De Bello Gallico”, II. 27)"
 
 #: gui/text/quotes.txt:85
 msgid ""
@@ -1543,7 +1546,7 @@ msgid ""
 "an old man.” \\n— Hannibal's last words before his suicide, in exile with "
 "Flaminius pressuring the local ruler to hand him over (Livy, “History of "
 "Rome”, XXXIX. 51)"
-msgstr ""
+msgstr "“Ukončime teraz obavy Rimanov, ktorí sa nemôžu dočkať smrti starého muža.” \\n— Posledné slová Hannibala pred jeho samovraždou vo vyhnanstve, keď Flaminius tlačil na miestneho vládcu, aby ho vydal (Livy, “Dejiny Ríma”, XXXIX. 51)"
 
 #: gui/text/quotes.txt:91
 msgid ""
@@ -1564,7 +1567,7 @@ msgid ""
 "“War is the father and king of all things: some he has made gods, and some "
 "men; some slaves and some free.” \\n— Heraclitus (Hippolytus, “The "
 "Refutation of all Heresies”, IX. 4)"
-msgstr ""
+msgstr "“Vojna je otcom a kráľom všetkých vecí: jedných urobil bohmi a druhých ľuďmi, jedných otrokmi a druhých slobodnými.” \\n— Hérakleitos (Hippolytus, “Vyvrátenie všetkých heréz”, IX. 4)"
 
 #: gui/text/quotes.txt:94
 msgid ""
@@ -1601,7 +1604,7 @@ msgid ""
 "“The Lacedaemonians \\[Spartans] fought a memorable battle; they made it "
 "quite clear that they were the experts, and that they were fighting against "
 "amateurs.” \\n— Herodotus (“The Histories”, VII. 211)"
-msgstr ""
+msgstr "“Lakedaimónčania \\[Sparťania] vybojovali pamätnú bitku; dali jasne najavo, že sú odborníci a že bojovali proti amatérom.” \\n— Hérodotos (“Dejiny”, VII. 211)"
 
 #: gui/text/quotes.txt:100
 msgid ""
@@ -1620,7 +1623,7 @@ msgid ""
 "Thebes] was the same: If he sent an army against the Persians, he would "
 "destroy a great empire.” \\n— Herodotus, later mentioning that the empire "
 "Croesus destroyed was his own (“The Histories”, I. 53)"
-msgstr ""
+msgstr "“Obe z dvoch veštiarní \\[Delfská i Thébska] vyniesli nad Krézom rovnaký rozsudok: Ak pošle vojsko proti Peržanom, zničí veľkú ríšu.” \\n— Hérodotos neskôr uvádza, že ríša, ktorú Krézos zničil, bola jeho vlastná (“Dejiny”, I. 53)"
 
 #: gui/text/quotes.txt:102
 msgid ""
@@ -1630,7 +1633,7 @@ msgid ""
 "the Athenians!” \\n— Herodotus, narrating how the Athenian support for the "
 "Ionian revolt caught the wrath of Darius I, the Persian king (“The "
 "Histories”, V. 105)"
-msgstr ""
+msgstr "“On \\[Kráľ Dareios] sa spýtal, kto sú Aténčania, a keď sa to dozvedel, požiadal o luk, nasadil šíp na tetivu, vystrelil do neba a povedal, keď vypustil šíp: Dovoľ mi, Zeus, aby som sa pomstil Aténčanom!” \\n— Hérodotos rozpráva, ako aténska podpora iónskej vzbury vyvolala hnev perzského kráľa Dareiosa I.  (“Dejiny”, V. 105)"
 
 #: gui/text/quotes.txt:103
 msgid ""
@@ -1638,7 +1641,7 @@ msgid ""
 " spread, three times to repeat to him: Master, remember the Athenians!” \\n—"
 " Herodotus, narrating how the Athenian support for the Ionian revolt lead to"
 " the Persian Wars (“The Histories”, V. 105)"
-msgstr ""
+msgstr "“On \\[King Darius] požiadal jedného zo svojich sluhov, aby mu každý deň, keď mal prestretú večeru, trikrát zopakoval: Pane, pamätaj na Aténčanov!” \\n— Hérodotos rozpráva, ako aténska podpora iónskej vzbury viedla k perzským vojnám (“Dejiny”, V. 105)"
 
 #: gui/text/quotes.txt:104
 msgid ""
@@ -1672,7 +1675,7 @@ msgstr "„Ja som Kýros, kráľ sveta...\" \\n— Nápis (Kýrov valec)"
 msgid ""
 "“In peace the sons bury their fathers, but in war the fathers bury their "
 "sons.” \\n— Croesus, king of Lydia (Herodotus, “The Histories”, I. 87)"
-msgstr ""
+msgstr "“V mieri synovia pochovávajú svojich otcov, ale vo vojne otcovia pochovávajú svojich synov.” \\n— Krézus, kráľ Lýdie (Hérodotos, “Dejiny”, I. 87)"
 
 #: gui/text/quotes.txt:110
 msgid ""
@@ -1686,7 +1689,7 @@ msgstr ""
 msgid ""
 "“If a king is energetic, his subjects will be equally energetic.”\\n— "
 "Kauṭilya (“Arthashastra” I.19.1)"
-msgstr ""
+msgstr "“Ak je kráľ energický, jeho poddaní budú rovnako energickí.”\\n— Čánakja (“Arthašástra” I.19.1)"
 
 #: gui/text/quotes.txt:112
 msgid ""
@@ -1743,7 +1746,7 @@ msgstr "„Aké časy, aké zvyky!“ \\n— Cicero (“Reči proti Catilinovi�
 msgid ""
 "“A war is never undertaken by the ideal State, except in defense of its "
 "honor or its safety.” \\n— Cicero (“De Re Publica”, III., 23)"
-msgstr ""
+msgstr "“Ideálny štát sa nikdy nepúšťa do vojny, pokiaľ nejde o obranu jeho cti alebo bezpečnosti.” \\n— Cicero (“De Re Publica”, III., 23)"
 
 #: gui/text/quotes.txt:120
 msgid ""
@@ -1805,7 +1808,7 @@ msgstr "\"Muž, ktorý uteká môže bojovať znovu.\" \\n— Menandros (“Mono
 msgid ""
 "“Whom the Gods love dies young.” \\n— Menander (“The Double Deceiver”, "
 "fragment 4)"
-msgstr ""
+msgstr "“Koho bohovia milujú, zomiera mladý.” \\n— Menander (“Dvojitý podvodník”, fragment 4)"
 
 #: gui/text/quotes.txt:130
 msgid "“I call a fig a fig, a spade a spade.” \\n— Menander (fragment 545 K)"
@@ -2024,7 +2027,7 @@ msgstr ""
 msgid ""
 "“None can be free who is a slave to, and ruled by, his passions.” \\n— "
 "Pythagoras (Stobaeus, “Florilegium”, 18)"
-msgstr ""
+msgstr "“Nikto nemôže byť slobodný, kto je otrokom svojich vášní a je nimi ovládaný.” \\n— Pytagoras (Stobaeus, “Florilegium”, 18)"
 
 #: gui/text/quotes.txt:157
 msgid ""
@@ -2042,7 +2045,7 @@ msgstr "\"Nech tvoj prejav je lepší ako ticho, alebo buď ticho.\" \\n— Pyta
 msgid ""
 "“Unity strengthens even small states, while discord undermines the mightiest"
 " empires.” \\n— Sallust (“The Jugurthine War”, 10.6)"
-msgstr ""
+msgstr "“Jednota posilňuje aj malé štáty, zatiaľ čo nezhody podkopávajú aj tie najmocnejšie ríše.” \\n— Sallustius (“Vojna s Jugurthom”, 10.6)"
 
 #: gui/text/quotes.txt:160
 msgid ""
@@ -2057,7 +2060,7 @@ msgid ""
 "“Prepare for war, since you have been unable to endure a peace.” \\n— Scipio"
 " Africanus, replying to Hannibal's offer of peace terms before the Battle of"
 " Zama (Livy, “History of Rome”, XXX. 31)"
-msgstr ""
+msgstr "\"Pripravte sa na vojnu, keďže ste neboli schopní vydržať mier.\" \\n— Scipio Africanus, odpovedajúc na Hannibalovu ponuku mierových podmienok pred bitkou pri Zame (Lívius, „Dejiny Ríma“, XXX. 31)"
 
 #: gui/text/quotes.txt:162
 msgid ""
@@ -2129,7 +2132,7 @@ msgid ""
 "raise a city that was small and unimportant to glory and greatness.” \\n— "
 "Themistocles, defending his lack of cultural sophistication (Plutarch, "
 "“Parallel Lives”, “Themistocles”, sec. 2)"
-msgstr ""
+msgstr "\"Neviem, ako naladiť lýru alebo hrať na harfu, ale viem, ako povzniesť mesto, ktoré bolo malé a nevýznamné, k sláve a dôležitosti.\" \\n— Temistoklés, obhajujúci svoj nedostatok kultúrnej sofistikovanosti (Plutarch, \"Životopisy\", \"Temistoklés\", ods. 2)"
 
 #: gui/text/quotes.txt:172
 msgid ""
@@ -2226,7 +2229,7 @@ msgstr ""
 msgid ""
 "“Do not trust the horse, Trojans! I fear the Greeks even when they bring "
 "gifts.” \\n— Virgil (“Aeneid”, II. 48–49)"
-msgstr ""
+msgstr "\"Neverte koňovi, Trójania! Grékov sa bojím, aj keď prichádzajú s darmi.\" \\n— Vergílius (\"Eneida\", II. 48–49)"
 
 #: gui/text/quotes.txt:184
 msgid "“Prepared for either alternative.” \\n— Virgil (“Aeneid”, II. 61)"
@@ -2237,7 +2240,7 @@ msgid ""
 "“Homer and Hesiod ascribed to their Gods all things that are a disgrace "
 "among mortals: stealing, adultery, deceiving one another.” \\n— Xenophanes "
 "(fragment 11)"
-msgstr ""
+msgstr "\"Homér a Hésiodos prisudzovali svojim bohom všetko, čo je medzi smrteľníkmi hanbou: krádež, cudzoložstvo, klamstvo.\" \\n— Xenofón (fragment 11)"
 
 #: gui/text/quotes.txt:186
 msgid ""

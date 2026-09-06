@@ -1,107 +1,117 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2022 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# 2856c6542409e2c106d48dbf59bb62d9_eb9ce99
-# 2e2b588472fe1defa568f6ae9221f0c2_f685bd0
-# 96921931311cbcef40e532f6e0de4499_eac7260
-# adrien vigneron
-# Alain Rinder
-# Alt Ober
-# Antoine Adet
-# Antonin GIRAUD-PERNETTE
-# Arnaud Rochés
-# ay sapik
-# Barth Frey
-# benjamin jasse
-# Brian BERNARD
-# Buggi
-# Cajetan Bouchard
-# Calinou
-# Const Ance
-# curieux de l'être
-# Cyril Roques
-# David D
-# Thibaut Cuvelier
-# ecaba88ae861835563a122a2209143f0_c75c0b0
-# SecondCloud500
-# Edouard Dwaarf
-# ernest olory
-# françois bernier
-# François Magimel
-# François Poirotte
-# gab_tes
-# Glorfindel Of Gondolin
-# Hadrien Titeux
-# Hadri man
-# Hakim Benzakour
-# Jason Labrecque
-# Jérémi Mapas
-# Jibi
-# Jo Du
-# Jonathan LEVY
-# Julien Bernard
-# jy jrts
-# Kachimatte
-# kalemiro
-# Laetitia Atlan
-# lelapin .
-# lemiaou
-# Loki
-# LordIgorIIIofKiev
-# l p
-# Lucas Bertram
-# lx bou
-# Moul
-# Machaonix .
-# Marsan
-# Nescio
-# Micky Jault
-# minissimo
-# Morgan Guilleze
-# Moritz FS
-# Mortimer
-# Nicolas Auvray
-# nicolas caillard
-# nicolas t
-# Oimat
-# oiseauroch
-# Olivier
-# Oumph
-# Paul Menut
-# prénom nom
-# PRIME Gildas
-# Raz Ou
-# Rémi Moulin
-# Rémi Verschelde
-# robin moussu
-# Rodrigue March
-# Ross1396
-# sanderd17
-# Sander Deryckere
-# slimkhan
-# Slim Khan
-# Stanislas Dolcini
-# Polakrity
-# tavariz
-# Thedemos
-# Thierry Vignaud
-# Tito221
-# Toto AD
-# Vahe Avagyan
-# Valentin Chevalier
-# Valentin Diwali
-# Xavier Tardieu
-# Yannick Heintz
-# youritch ....
-# Youssef Souissi
+# 2856c6542409e2c106d48dbf59bb62d9_eb9ce99, 2016
+# 2e2b588472fe1defa568f6ae9221f0c2_f685bd0, 2014
+# 96921931311cbcef40e532f6e0de4499_eac7260, 2019
+# adrien vigneron, 2017
+# Alain Rinder, 2020
+# Alt Ober, 2018
+# Antoine Adet, 2013
+# Antonin GIRAUD-PERNETTE, 2020
+# Arnaud Rochés, 2017
+# ay sapik, 2018
+# Barth Frey, 2017-2018
+# benjamin jasse, 2019-2020
+# Brian BERNARD, 2017
+# Buggi, 2014
+# Buggi, 2014
+# Cajetan Bouchard, 2015
+# Calinou, 2013
+# Const Ance, 2017
+# curieux de l'être, 2017
+# Cyril Roques, 2017
+# David D, 2018
+# David D, 2018
+# Thibaut Cuvelier, 2014
+# ecaba88ae861835563a122a2209143f0_c75c0b0, 2014
+# SecondCloud500, 2014
+# Edouard Dwaarf, 2021
+# Emmanuel MANZINI, 2023
+# ernest olory, 2017
+# françois bernier, 2021
+# François Magimel, 2019
+# François Magimel, 2019
+# François Poirotte, 2014,2016-2017,2020
+# gab_tes, 2020
+# gab_tes, 2020
+# Glorfindel Of Gondolin, 2019
+# Glorfindel Of Gondolin, 2019
+# Hadrien Titeux, 2013
+# Hadri man, 2017
+# Hakim Benzakour, 2020
+# Jason Labrecque, 2020
+# Jérémi Mapas, 2017
+# Jibi, 2013
+# Jo Du, 2017-2018
+# Jonathan LEVY, 2020
+# Julien Bernard, 2013
+# jy jrts, 2017
+# Kachimatte, 2013
+# kalemiro, 2014
+# Laetitia Atlan, 2017
+# lelapin ., 2017
+# lemiaou, 2014
+# Loki, 2013
+# LordIgorIIIofKiev, 2014
+# l p, 2018
+# Lucas Bertram, 2017
+# lx bou, 2019
+# Moul, 2015
+# Machaonix ., 2019
+# Marsan, 2016
+# Nescio, 2020
+# Micky Jault, 2016-2017
+# minissimo, 2014
+# Morgan Guilleze, 2022
+# Moritz FS, 2015
+# Mortimer, 2016-2017
+# Nescio, 2020
+# Nicolas Auvray, 2013-2017
+# nicolas caillard, 2013
+# nicolas t, 2016
+# Oimat, 2014
+# oiseauroch, 2018
+# Olivier, 2013
+# Oumph, 2021
+# Paul Menut, 2021
+# prénom nom, 2021
+# prénom nom, 2021
+# PRIME Gildas, 2013
+# 96921931311cbcef40e532f6e0de4499_eac7260, 2019
+# Raz Ou, 2021
+# Rémi Moulin, 2020
+# Rémi Verschelde, 2014
+# robin moussu, 2013
+# Rodrigue March, 2013
+# Ross1396, 2014
+# sanderd17, 2014
+# Sander Deryckere, 2014
+# slimkhan, 2014
+# Slim Khan, 2014
+# Stanislas Dolcini, 2019,2021
+# Polakrity, 2014,2017-2019
+# tavariz, 2014
+# Thedemos, 2014
+# Thierry Vignaud, 2017
+# Tito221, 2013
+# Toto AD, 2014
+# Vahe Avagyan, 2019
+# Valentin Chevalier, 2015
+# Valentin Diwali, 2021
+# Xavier Tardieu, 2016,2021
+# Yannick Heintz, 2014
+# Yannick Heintz, 2014
+# youritch ...., 2021
+# Youssef Souissi, 2020
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2022-09-12 09:35+0000\n"
+"POT-Creation-Date: 2024-08-09 07:17+0000\n"
 "PO-Revision-Date: 2014-06-19 17:48+0000\n"
-"Last-Translator: Morgan Guilleze <morgan.guillez@gmail.com>, 2022\n"
+"Last-Translator: Emmanuel MANZINI, 2023\n"
 "Language-Team: French (http://app.transifex.com/wildfire-games/0ad/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -109,11 +119,11 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:(caption):13
+#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:13
 msgid "AI Configuration"
 msgstr "Configuration de l'IA"
 
-#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:(caption):29
+#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:29
 msgid "OK"
 msgstr "OK"
 
@@ -163,12 +173,12 @@ msgctxt "Match settings tab name"
 msgid "Map"
 msgstr "Carte"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:28
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:29
 msgctxt "Match settings tab name"
 msgid "Player"
 msgstr "Joueur"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:40
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:41
 msgctxt "Match settings tab name"
 msgid "Game Type"
 msgstr "Type de jeu"
@@ -217,23 +227,23 @@ msgctxt "team"
 msgid "None"
 msgstr "Aucune"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):6
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:6
 msgid "Player Name"
 msgstr "Nom du joueur"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):10
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:10
 msgid "Color"
 msgstr "Couleur"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):14
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:14
 msgid "Player Placement"
 msgstr "Position du joueur"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):18
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:18
 msgid "Civilization"
 msgstr "Civilisation"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):25
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:25
 msgid "Team"
 msgstr "Équipe"
 
@@ -538,6 +548,14 @@ msgstr "Difficulté"
 msgid "Select the difficulty of this scenario."
 msgstr "Sélectionnez la difficulté de ce scénario."
 
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WaterLevel.js:43
+msgid "Water level"
+msgstr ""
+
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WaterLevel.js:46
+msgid "Select the water level of this map."
+msgstr ""
+
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WorldPopulationCap.js:47
 msgid "World Population Cap"
 msgstr "Limite de population mondiale"
@@ -643,19 +661,19 @@ msgstr "Durée de la merveille"
 msgid "Minutes until the player has achieved Wonder Victory"
 msgstr "Nombre de minutes minimales à atteindre pour gagner grâce à la Merveille."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:36
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:17
 msgid "Back"
 msgstr "Retour"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:39
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:20
 msgid "Return to the lobby."
 msgstr "Retourner au hall multijoueur."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:42
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:23
 msgid "Return to the main menu."
 msgstr "Revenir au menu principal."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CivInfoButton.js:48
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CivInfoButton.js:33
 #, javascript-format
 msgid ""
 "%(hotkey_civinfo)s / %(hotkey_structree)s: View Civilization Overview / Structure Tree\n"
@@ -666,27 +684,27 @@ msgstr "%(hotkey_civinfo)s / %(hotkey_structree)s : Aperçu de la civilisation /
 msgid "Show the multiplayer lobby in a dialog window."
 msgstr "Montrer le salon multijoueurs dans une fenêtre de dialogue."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:79
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:70
 msgid "I'm ready"
 msgstr "Je suis prêt(e)"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:80
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:71
 msgid "Stay ready"
 msgstr "Rester prêt"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:81
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:72
 msgid "I'm not ready!"
 msgstr "Je ne suis pas prêt(e) !"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:85
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:76
 msgid "State that you are ready to play."
 msgstr "Déclare que vous êtes prêt(e) à jouer."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:86
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:77
 msgid "Stay ready even when the game settings change."
 msgstr "Rester prêt(e) même si les options de jeu changent."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:87
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:78
 msgid "State that you are not ready to play."
 msgstr "Déclarer que vous n'êtes pas prêt(e) à jouer."
 
@@ -699,15 +717,15 @@ msgstr "Réinitialiser toutes les civilisations sélectionnées à leur valeur p
 msgid "Reset all teams to the default."
 msgstr "Réinitialiser toutes les équipes à leur valeur par défaut."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:65
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:56
 msgid "Start Game!"
 msgstr "Démarrer !"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:68
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:59
 msgid "Start a new game with the current settings."
 msgstr "Démarrer une partie avec les paramètres actuels."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:71
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:62
 msgid ""
 "Start a new game with the current settings (disabled until all players are "
 "ready)."
@@ -766,7 +784,7 @@ msgstr "* %(username)s est prêt !"
 msgid "Game settings have been changed"
 msgstr "Les paramètres du jeu ont été changés"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatPanel.xml:(caption):9
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatPanel.xml:9
 msgid "Send"
 msgstr "Envoyer"
 
@@ -789,11 +807,11 @@ msgstr "\\[%(time)s]"
 msgid "HH:mm"
 msgstr "HH:mm"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:40
+#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:29
 msgid "Cheats enabled."
 msgstr "Codes triche activés."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:43
+#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:32
 msgid "Rated game."
 msgstr "Partie classée"
 
@@ -810,19 +828,19 @@ msgstr "Aucune carte sélectionnée"
 msgid "Click to view the list of available maps."
 msgstr "Cliquez pour voir la liste des cartes disponibles."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/TipsPanel.xml:(caption):10
+#: gui/gamesetup/Pages/GameSetupPage/Panels/TipsPanel.xml:10
 msgid "Show this message in the future."
 msgstr "Afficher ce message ultérieurement."
 
-#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:(caption):7
+#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:7
 msgid "Loading"
 msgstr "Chargement"
 
-#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:(caption):11
+#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:11
 msgid "Loading map data. Please wait…"
 msgstr "Chargement de la carte. Veuillez patienter..."
 
-#: gui/gamesetup/gamesetup.xml:(caption):17
+#: gui/gamesetup/gamesetup.xml:17
 msgid "Match Setup"
 msgstr "Configuration"
 
@@ -875,11 +893,6 @@ msgstr "Échec de connexion au serveur."
 msgid "Connection failed"
 msgstr "La connexion a échoué"
 
-#: gui/gamesetup_mp/gamesetup_mp.js:193
-#, javascript-format
-msgid "Net message: %(message)s"
-msgstr "Message réseau : %(message)s"
-
 #: gui/gamesetup_mp/gamesetup_mp.js:276
 msgid "Registering with server..."
 msgstr "Enregistrement sur le serveur..."
@@ -898,82 +911,79 @@ msgid "Cannot host game: %(message)s."
 msgstr "Impossible d'héberger la partie : %(message)s."
 
 #: gui/gamesetup_mp/gamesetup_mp.js:377 gui/gamesetup_mp/gamesetup_mp.js:406
-#: gui/gamesetup_mp/gamesetup_mp.js:435 gui/gamesetup_mp/gamesetup_mp.js:450
+#: gui/gamesetup_mp/gamesetup_mp.js:436 gui/gamesetup_mp/gamesetup_mp.js:451
 msgid "Error"
 msgstr "Erreur"
 
-#: gui/gamesetup_mp/gamesetup_mp.js:405 gui/gamesetup_mp/gamesetup_mp.js:449
+#: gui/gamesetup_mp/gamesetup_mp.js:405 gui/gamesetup_mp/gamesetup_mp.js:450
 #, javascript-format
 msgid "Cannot join game: %(message)s."
 msgstr "Impossible de rejoindre la partie : %(message)s"
 
-#: gui/gamesetup_mp/gamesetup_mp.js:464
+#: gui/gamesetup_mp/gamesetup_mp.js:465
 #, javascript-format
 msgid "%(playername)s's game"
 msgstr "Partie de %(playername)s"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):18
+#: gui/gamesetup_mp/gamesetup_mp.xml:18
 msgid "Multiplayer"
 msgstr "Multijoueur"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):24
+#: gui/gamesetup_mp/gamesetup_mp.xml:24
 msgid "Joining an existing game."
 msgstr "Rejoindre une partie existante."
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):28
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):70
+#: gui/gamesetup_mp/gamesetup_mp.xml:28 gui/gamesetup_mp/gamesetup_mp.xml:70
 msgid "Player Name:"
 msgstr "Nom du joueur :"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):38
+#: gui/gamesetup_mp/gamesetup_mp.xml:38
 msgid "Server Hostname or IP:"
 msgstr "Nom ou adresse IP du serveur hôte :"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):48
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):95
+#: gui/gamesetup_mp/gamesetup_mp.xml:48 gui/gamesetup_mp/gamesetup_mp.xml:95
 msgid "Server Port:"
 msgstr "Port du serveur :"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):65
-msgid "Set up your server to host."
-msgstr "Configurer votre serveur hôte."
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):83
-msgid "Server Name:"
-msgstr "Nom du serveur :"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):112
-msgid "Server Password:"
-msgstr "Mot de passe serveur :"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):128
-msgid "Use STUN to work around firewalls"
-msgstr "Utiliser STUN pour éviter les pare-feu"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):136
-msgid "Continue"
-msgstr "Continuer"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):141
-msgid "Cancel"
-msgstr "Annuler"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):152
-msgid "Password:"
-msgstr "Mot de passe :"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):162
-msgid "Confirm"
-msgstr "Confirmer."
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):52
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):99
+#: gui/gamesetup_mp/gamesetup_mp.xml:52 gui/gamesetup_mp/gamesetup_mp.xml:99
 msgid "Leave blank to use the default port."
 msgstr "Laisser vide pour utiliser le port par défaut."
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):113
+#: gui/gamesetup_mp/gamesetup_mp.xml:65
+msgid "Set up your server to host."
+msgstr "Configurer votre serveur hôte."
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:83
+msgid "Server Name:"
+msgstr "Nom du serveur :"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:112
+msgid "Server Password:"
+msgstr "Mot de passe serveur :"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:113
 msgid "Leave blank to not require it."
 msgstr "Laisser vide pour utiliser le port par défaut."
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:128
+msgid "Use STUN to work around firewalls"
+msgstr "Utiliser STUN pour éviter les pare-feu"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:136
+msgid "Continue"
+msgstr "Continuer"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:141
+msgid "Cancel"
+msgstr "Annuler"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:152
+msgid "Password:"
+msgstr "Mot de passe :"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:162
+msgid "Confirm"
+msgstr "Confirmer."
 
 #: gui/loading/ProgressBar.js:48
 #, javascript-format

@@ -1,15 +1,16 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2023 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# shreyash kore
+# sabretou, 2023-2024
+# shreyash kore, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2023-03-20 08:08+0000\n"
+"POT-Creation-Date: 2024-07-26 13:41+0000\n"
 "PO-Revision-Date: 2014-06-19 17:54+0000\n"
-"Last-Translator: shreyash kore, 2018\n"
+"Last-Translator: sabretou, 2023-2024\n"
 "Language-Team: Marathi (http://app.transifex.com/wildfire-games/0ad/language/mr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +24,7 @@ msgstr ""
 #: simulation/templates/structures/sele/arsenal.xml:5
 #: simulation/templates/structures/spart/arsenal.xml:5
 msgid "Hoplothēkē"
-msgstr ""
+msgstr "होपलोथेके"
 
 #: simulation/templates/structures/athen/barracks.xml:12
 #: simulation/templates/structures/mace/barracks.xml:12
@@ -31,7 +32,7 @@ msgstr ""
 #: simulation/templates/structures/sele/barracks.xml:12
 #: simulation/templates/structures/spart/barracks.xml:12
 msgid "Stratopedon"
-msgstr ""
+msgstr "स्ट्राटोपेडॉन"
 
 #: simulation/templates/structures/athen/civil_centre.xml:8
 #: simulation/templates/structures/mace/civil_centre.xml:8
@@ -39,7 +40,7 @@ msgstr ""
 #: simulation/templates/structures/sele/civil_centre.xml:5
 #: simulation/templates/structures/spart/civil_centre.xml:8
 msgid "Agora"
-msgstr ""
+msgstr "आगोरा"
 
 #: simulation/templates/structures/athen/corral.xml:5
 #: simulation/templates/structures/mace/corral.xml:5
@@ -47,7 +48,7 @@ msgstr ""
 #: simulation/templates/structures/sele/corral.xml:5
 #: simulation/templates/structures/spart/corral.xml:5
 msgid "Epaulos"
-msgstr ""
+msgstr "एपाउलोस"
 
 #: simulation/templates/structures/athen/defense_tower.xml:9
 #: simulation/templates/structures/mace/defense_tower.xml:9
@@ -55,7 +56,7 @@ msgstr ""
 #: simulation/templates/structures/sele/defense_tower.xml:9
 #: simulation/templates/structures/spart/defense_tower.xml:9
 msgid "Pyrgion"
-msgstr ""
+msgstr "पिरजिऑन"
 
 #: simulation/templates/structures/athen/dock.xml:12
 #: simulation/templates/structures/mace/dock.xml:12
@@ -63,7 +64,7 @@ msgstr ""
 #: simulation/templates/structures/sele/dock.xml:9
 #: simulation/templates/structures/spart/dock.xml:12
 msgid "Limēn"
-msgstr ""
+msgstr "लिमेन"
 
 #: simulation/templates/structures/athen/field.xml:5
 #: simulation/templates/structures/mace/field.xml:5
@@ -71,7 +72,7 @@ msgstr ""
 #: simulation/templates/structures/sele/field.xml:5
 #: simulation/templates/structures/spart/field.xml:5
 msgid "Agros"
-msgstr ""
+msgstr "आग्रोस"
 
 #: simulation/templates/structures/athen/forge.xml:5
 #: simulation/templates/structures/mace/forge.xml:5
@@ -79,7 +80,7 @@ msgstr ""
 #: simulation/templates/structures/sele/forge.xml:5
 #: simulation/templates/structures/spart/forge.xml:5
 msgid "Chalkeōn"
-msgstr ""
+msgstr "चालकेओन"
 
 #: simulation/templates/structures/athen/fortress.xml:9
 #: simulation/templates/structures/mace/fortress.xml:9
@@ -87,16 +88,16 @@ msgstr ""
 #: simulation/templates/structures/sele/fortress.xml:9
 #: simulation/templates/structures/spart/fortress.xml:9
 msgid "Phrourion"
-msgstr ""
+msgstr "फ्रोउरिऑन"
 
 #: simulation/templates/structures/athen/gymnasium.xml:22
 #: simulation/templates/structures/athen/gymnasium.xml:26
 msgid "Gymnasium"
-msgstr ""
+msgstr "व्यायामशाळा"
 
 #: simulation/templates/structures/athen/gymnasium.xml:23
 msgid "Gymnasion"
-msgstr ""
+msgstr "जिमनासिऑन"
 
 #: simulation/templates/structures/athen/gymnasium.xml:24
 msgid "Train Champions."
@@ -108,7 +109,7 @@ msgstr ""
 #: simulation/templates/structures/sele/house.xml:8
 #: simulation/templates/structures/spart/house.xml:5
 msgid "Oikos"
-msgstr ""
+msgstr "ओइकोस"
 
 #: simulation/templates/structures/athen/market.xml:5
 #: simulation/templates/structures/mace/market.xml:5
@@ -116,7 +117,7 @@ msgstr ""
 #: simulation/templates/structures/sele/market.xml:5
 #: simulation/templates/structures/spart/market.xml:5
 msgid "Emporion"
-msgstr ""
+msgstr "एम्पोरिऑन"
 
 #: simulation/templates/structures/athen/outpost.xml:5
 #: simulation/templates/structures/mace/outpost.xml:5
@@ -124,25 +125,25 @@ msgstr ""
 #: simulation/templates/structures/sele/outpost.xml:5
 #: simulation/templates/structures/spart/outpost.xml:5
 msgid "Prophylagma"
-msgstr ""
+msgstr "प्रॉफिलाग्मा"
 
-#: simulation/templates/structures/athen/prytaneion.xml:22
+#: simulation/templates/structures/athen/prytaneion.xml:25
 msgid "Council Chamber"
-msgstr ""
+msgstr "सभा कक्ष"
 
-#: simulation/templates/structures/athen/prytaneion.xml:23
+#: simulation/templates/structures/athen/prytaneion.xml:26
 msgid "Prytaneion"
-msgstr ""
+msgstr "प्रिटानेलॉन"
 
-#: simulation/templates/structures/athen/prytaneion.xml:24
+#: simulation/templates/structures/athen/prytaneion.xml:27
 msgid "Train Heroes and research technologies."
 msgstr ""
 
-#: simulation/templates/structures/athen/prytaneion.xml:26
+#: simulation/templates/structures/athen/prytaneion.xml:29
 #: simulation/templates/structures/gaul/assembly.xml:31
 #: simulation/templates/structures/spart/gerousia.xml:26
 msgid "Council"
-msgstr ""
+msgstr "परिषद"
 
 #: simulation/templates/structures/athen/range.xml:8
 #: simulation/templates/structures/mace/range.xml:8
@@ -150,7 +151,7 @@ msgstr ""
 #: simulation/templates/structures/sele/range.xml:8
 #: simulation/templates/structures/spart/range.xml:5
 msgid "Stratopedon tōn Psilōn"
-msgstr ""
+msgstr "स्ट्राटोपेडॉन टोन प्सिलोन"
 
 #: simulation/templates/structures/athen/sentry_tower.xml:5
 #: simulation/templates/structures/mace/sentry_tower.xml:5
@@ -158,7 +159,7 @@ msgstr ""
 #: simulation/templates/structures/sele/sentry_tower.xml:5
 #: simulation/templates/structures/spart/sentry_tower.xml:5
 msgid "Pyrgidion"
-msgstr ""
+msgstr "पिरजिडिऑन"
 
 #: simulation/templates/structures/athen/stable.xml:5
 #: simulation/templates/structures/mace/stable.xml:5
@@ -166,7 +167,7 @@ msgstr ""
 #: simulation/templates/structures/sele/stable.xml:5
 #: simulation/templates/structures/spart/stable.xml:5
 msgid "Hippōn"
-msgstr ""
+msgstr "हिप्पोन"
 
 #: simulation/templates/structures/athen/storehouse.xml:8
 #: simulation/templates/structures/mace/storehouse.xml:8
@@ -174,7 +175,7 @@ msgstr ""
 #: simulation/templates/structures/sele/storehouse.xml:8
 #: simulation/templates/structures/spart/storehouse.xml:8
 msgid "Apothēkē"
-msgstr ""
+msgstr "आपोथेके"
 
 #: simulation/templates/structures/athen/theater.xml:5
 #: simulation/templates/structures/mace/theater.xml:5
@@ -182,7 +183,7 @@ msgstr ""
 #: simulation/templates/structures/sele/theater.xml:5
 #: simulation/templates/structures/spart/theater.xml:5
 msgid "Theatron"
-msgstr ""
+msgstr "थेआट्रॉन"
 
 #: simulation/templates/structures/athen/tower_artillery.xml:9
 #: simulation/templates/structures/athen/tower_bolt.xml:9
@@ -192,7 +193,7 @@ msgstr ""
 #: simulation/templates/structures/sele/tower_artillery.xml:9
 #: simulation/templates/structures/spart/tower_bolt.xml:9
 msgid "Pyrgíon"
-msgstr ""
+msgstr "पिरजिऑन"
 
 #: simulation/templates/structures/athen/wall_gate.xml:9
 #: simulation/templates/structures/mace/wall_gate.xml:9
@@ -200,7 +201,7 @@ msgstr ""
 #: simulation/templates/structures/sele/wall_gate.xml:9
 #: simulation/templates/structures/spart/wall_gate.xml:9
 msgid "Pylai"
-msgstr ""
+msgstr "पिलाई"
 
 #: simulation/templates/structures/athen/wall_long.xml:9
 #: simulation/templates/structures/athen/wall_medium.xml:9
@@ -223,7 +224,7 @@ msgstr ""
 #: simulation/templates/structures/spart/wall_short.xml:9
 #: simulation/templates/structures/spart/wallset_stone.xml:5
 msgid "Teichos"
-msgstr ""
+msgstr "टेइखोस"
 
 #: simulation/templates/structures/athen/wall_tower.xml:9
 #: simulation/templates/structures/mace/wall_tower.xml:9
@@ -231,45 +232,45 @@ msgstr ""
 #: simulation/templates/structures/sele/wall_tower.xml:9
 #: simulation/templates/structures/spart/wall_tower.xml:9
 msgid "Pyrgos"
-msgstr ""
+msgstr "पिरगोस"
 
 #: simulation/templates/structures/athen/wonder.xml:9
 msgid "Parthenōn"
-msgstr ""
+msgstr "पार्थेनोन"
 
 #: simulation/templates/structures/bench.xml:11
 msgid "Bench"
-msgstr ""
+msgstr "बाक"
 
 #: simulation/templates/structures/bench.xml:12
 msgid "Wooden Bench"
-msgstr ""
+msgstr "लाकडी बाक"
 
 #: simulation/templates/structures/brit/arsenal.xml:5
 #: simulation/templates/structures/gaul/arsenal.xml:5
 msgid "Miletucerdon"
-msgstr ""
+msgstr "मिलेटुसेर्डोन"
 
 #: simulation/templates/structures/brit/barracks.xml:18
 msgid "Coriosessa"
-msgstr ""
+msgstr "कोरिओसेस्सा"
 
 #: simulation/templates/structures/brit/civil_centre.xml:12
 msgid "Tigernotreba"
-msgstr ""
+msgstr "टिगेरनोट्रेबा"
 
 #: simulation/templates/structures/brit/corral.xml:8
 #: simulation/templates/structures/gaul/corral.xml:8
 msgid "Cagion"
-msgstr ""
+msgstr "कागिऑन"
 
 #: simulation/templates/structures/brit/crannog.xml:13
 msgid "Island Settlement"
-msgstr ""
+msgstr "द्वीप वसाहत"
 
 #: simulation/templates/structures/brit/crannog.xml:14
 msgid "Cranogion"
-msgstr ""
+msgstr "क्रानोगिओन"
 
 #: simulation/templates/structures/brit/crannog.xml:15
 msgid ""
@@ -290,17 +291,17 @@ msgstr ""
 #: simulation/templates/structures/brit/dock.xml:12
 #: simulation/templates/structures/gaul/dock.xml:12
 msgid "Counos"
-msgstr ""
+msgstr "कोउनोस"
 
 #: simulation/templates/structures/brit/farmstead.xml:11
 #: simulation/templates/structures/gaul/farmstead.xml:8
 msgid "Buta"
-msgstr ""
+msgstr "बुटा"
 
 #: simulation/templates/structures/brit/field.xml:5
 #: simulation/templates/structures/gaul/field.xml:5
 msgid "Olca"
-msgstr ""
+msgstr "ओल्का"
 
 #: simulation/templates/structures/brit/forge.xml:5
 #: simulation/templates/structures/gaul/forge.xml:5
@@ -310,7 +311,7 @@ msgstr ""
 #: simulation/templates/structures/brit/fortress.xml:12
 #: simulation/templates/structures/gaul/fortress.xml:5
 msgid "Dunon"
-msgstr ""
+msgstr "डुनोन"
 
 #: simulation/templates/structures/brit/fortress.xml:13
 #: simulation/templates/structures/cart/fortress.xml:10
@@ -325,12 +326,16 @@ msgstr ""
 #: simulation/templates/structures/brit/house.xml:9
 #: simulation/templates/structures/gaul/house.xml:5
 msgid "Tegia"
+msgstr "टेगिआ"
+
+#: simulation/templates/structures/brit/kennel.xml:5
+msgid "Cunattegia"
 msgstr ""
 
 #: simulation/templates/structures/brit/market.xml:12
 #: simulation/templates/structures/gaul/market.xml:12
 msgid "Magos"
-msgstr ""
+msgstr "मागोस"
 
 #: simulation/templates/structures/brit/outpost.xml:5
 #: simulation/templates/structures/gaul/outpost.xml:5
@@ -340,12 +345,12 @@ msgstr ""
 #: simulation/templates/structures/brit/range.xml:5
 #: simulation/templates/structures/gaul/range.xml:8
 msgid "Budinadon"
-msgstr ""
+msgstr "बुडिनाडोन"
 
 #: simulation/templates/structures/brit/stable.xml:11
 #: simulation/templates/structures/gaul/stable.xml:11
 msgid "Eposton"
-msgstr ""
+msgstr "एपोस्टोन"
 
 #: simulation/templates/structures/brit/storehouse.xml:8
 #: simulation/templates/structures/gaul/storehouse.xml:8
@@ -371,7 +376,7 @@ msgstr ""
 #: simulation/templates/structures/gaul/wall_short.xml:9
 #: simulation/templates/structures/gaul/wallset_stone.xml:5
 msgid "Rate"
-msgstr ""
+msgstr "दर"
 
 #: simulation/templates/structures/brit/wonder.xml:9
 msgid "Emain Macha"
@@ -384,7 +389,7 @@ msgstr ""
 #: simulation/templates/structures/cart/apartment.xml:24
 #: simulation/templates/structures/cart/house.xml:8
 msgid "Bet"
-msgstr ""
+msgstr "बेत"
 
 #: simulation/templates/structures/cart/barracks.xml:12
 msgid "Maḥanēt"
@@ -419,11 +424,11 @@ msgstr ""
 
 #: simulation/templates/structures/cart/embassy_celtic.xml:17
 msgid "Celtic Embassy"
-msgstr ""
+msgstr "केल्टिक दूतावास"
 
 #: simulation/templates/structures/cart/embassy_celtic.xml:18
 msgid "Train Celtic Mercenaries."
-msgstr ""
+msgstr "केल्टिक भाडोत्री सैनिक तयार करा."
 
 #: simulation/templates/structures/cart/embassy_iberian.xml:10
 msgid "Iberian Embassy"
@@ -439,7 +444,7 @@ msgstr ""
 
 #: simulation/templates/structures/cart/embassy_italic.xml:18
 msgid "Train Italic Mercenaries."
-msgstr ""
+msgstr "इटॅलिक भाडोत्री सैनिक तयार करा."
 
 #: simulation/templates/structures/cart/farmstead.xml:8
 msgid "Aḥuzāh"
@@ -451,6 +456,11 @@ msgstr ""
 
 #: simulation/templates/structures/cart/fortress.xml:9
 msgid "Ḥamet"
+msgstr ""
+
+#: simulation/templates/structures/cart/house.xml:16
+msgid ""
+"Add a second story to make an Apartment with a greater population bonus."
 msgstr ""
 
 #: simulation/templates/structures/cart/market.xml:12
@@ -482,7 +492,7 @@ msgstr ""
 
 #: simulation/templates/structures/cart/super_dock.xml:40
 msgid "Cothon"
-msgstr ""
+msgstr "कोथोन"
 
 #: simulation/templates/structures/cart/super_dock.xml:41
 msgid ""
@@ -493,23 +503,23 @@ msgstr ""
 
 #: simulation/templates/structures/cart/super_dock.xml:43
 msgid "Shipyard"
-msgstr ""
+msgstr "जहाज कारखाना"
 
 #: simulation/templates/structures/cart/temple.xml:9
 msgid "Maqdaš"
 msgstr ""
 
 #: simulation/templates/structures/cart/temple.xml:10
-msgid "Train Healers and Champion Infantry and research healing technologies."
+msgid "Train Healers and Champions, and research healing technologies."
 msgstr ""
 
 #: simulation/templates/structures/cart/tophet.xml:18
 msgid "Sacrificial Temple"
-msgstr ""
+msgstr "बळीचे मंदिर"
 
 #: simulation/templates/structures/cart/tophet.xml:19
 msgid "Tophet"
-msgstr ""
+msgstr "टोफेट"
 
 #: simulation/templates/structures/cart/wall_gate.xml:9
 msgid "Mijdil-šaʿar"
@@ -519,7 +529,7 @@ msgstr ""
 #: simulation/templates/structures/cart/wall_medium.xml:9
 #: simulation/templates/structures/cart/wall_short.xml:9
 msgid "Homah"
-msgstr ""
+msgstr "होमाह"
 
 #: simulation/templates/structures/cart/wallset_stone.xml:5
 msgid "Jdar"
@@ -527,85 +537,71 @@ msgstr ""
 
 #: simulation/templates/structures/cart/wonder.xml:9
 msgid "Temple of Ba'al Hammon"
-msgstr ""
+msgstr "बाआल हाम्मोनचे मंदिर"
 
 #: simulation/templates/structures/celt_hut.xml:20
 msgid "Hut"
-msgstr ""
+msgstr "झोपडी"
 
 #: simulation/templates/structures/celt_longhouse.xml:20
 msgid "Longhouse"
-msgstr ""
+msgstr "लाँगहाउस"
 
 #: simulation/templates/structures/column_doric.xml:12
 #: simulation/templates/structures/column_doric_fallen.xml:12
 #: simulation/templates/structures/column_doric_fallen_b.xml:12
 msgid "Column"
-msgstr ""
+msgstr "कॉलम"
 
 #: simulation/templates/structures/column_doric.xml:13
 msgid "Doric Column"
-msgstr ""
+msgstr "डोरिक कॉलम"
 
 #: simulation/templates/structures/column_doric_fallen.xml:13
 #: simulation/templates/structures/column_doric_fallen_b.xml:13
 msgid "Fallen Doric Column"
-msgstr ""
-
-#: simulation/templates/structures/farmstead_field_wheat.xml:7
-#: simulation/templates/structures/generic_field.xml:8
-msgid "Wheat Field"
-msgstr ""
-
-#: simulation/templates/structures/athen/farmstead.xml:11
-#: simulation/templates/structures/farmstead_greek.xml:8
-#: simulation/templates/structures/mace/farmstead.xml:11
-#: simulation/templates/structures/ptol/farmstead.xml:8
-#: simulation/templates/structures/sele/farmstead.xml:8
-#: simulation/templates/structures/spart/farmstead.xml:11
-msgid "Epoikion"
-msgstr ""
-
-#: simulation/templates/structures/farmstead_indian.xml:8
-#: simulation/templates/structures/maur/farmstead.xml:11
-msgid "Kantu"
-msgstr ""
-
-#: simulation/templates/structures/farmstead_italian.xml:8
-msgid "Villa"
-msgstr ""
-
-#: simulation/templates/structures/farmstead_middle_eastern.xml:9
-#: simulation/templates/structures/pers/farmstead.xml:8
-msgid "Kaštašta"
-msgstr ""
-
-#: simulation/templates/structures/brit/rotarymill.xml:5
-#: simulation/templates/structures/farmstead_temperate_europe.xml:4
-msgid "Melonas"
-msgstr ""
+msgstr "पडलेली डोरिक कॉलम"
 
 #: simulation/templates/structures/fence_long.xml:14
 #: simulation/templates/structures/fence_short.xml:14
 msgid "Fence"
-msgstr ""
+msgstr "कुंपण"
 
 #: simulation/templates/structures/fence_long.xml:15
 msgid "Long Wooden Fence"
-msgstr ""
+msgstr "मोठी लाकडी कुंपण"
+
+#: simulation/templates/structures/fence_rock_long.xml:12
+#: simulation/templates/structures/fence_rock_long.xml:13
+#: simulation/templates/structures/fence_rock_medium.xml:12
+#: simulation/templates/structures/fence_rock_medium.xml:13
+#: simulation/templates/structures/fence_rock_short.xml:12
+#: simulation/templates/structures/fence_rock_short.xml:13
+#: simulation/templates/structures/fence_rock_stub.xml:12
+#: simulation/templates/structures/fence_rock_stub.xml:13
+msgid "Rock Fence"
+msgstr "मोठ्या दगडांचे कुंपण"
 
 #: simulation/templates/structures/fence_short.xml:15
 msgid "Short Wooden Fence"
-msgstr ""
+msgstr "छोटी लाकडी कुंपण"
 
 #: simulation/templates/structures/fence_stone.xml:14
 #: simulation/templates/structures/fence_stone.xml:15
+#: simulation/templates/structures/fence_stone_long.xml:12
+#: simulation/templates/structures/fence_stone_long.xml:13
+#: simulation/templates/structures/fence_stone_medium.xml:12
+#: simulation/templates/structures/fence_stone_medium.xml:13
+#: simulation/templates/structures/fence_stone_short.xml:12
+#: simulation/templates/structures/fence_stone_short.xml:13
+#: simulation/templates/structures/fence_stone_stub.xml:12
+#: simulation/templates/structures/fence_stone_stub.xml:13
 msgid "Stone Fence"
-msgstr ""
+msgstr "छोट्या दगडांचे कुंपण"
 
 #: simulation/templates/structures/gaul/assembly.xml:27
 msgid "Assembly of Princes"
-msgstr ""
+msgstr "राजकुमारांची सभा"
 
 #: simulation/templates/structures/gaul/assembly.xml:28
 msgid "Remogantion"
@@ -621,7 +617,7 @@ msgstr ""
 
 #: simulation/templates/structures/gaul/civil_centre.xml:12
 msgid "Lissos"
-msgstr ""
+msgstr "लिस्सोस"
 
 #: simulation/templates/structures/gaul/rotarymill.xml:5
 msgid "Brauon"
@@ -633,7 +629,7 @@ msgstr ""
 
 #: simulation/templates/structures/gaul/tavern.xml:21
 msgid "Taberna"
-msgstr ""
+msgstr "ताबेर्ना"
 
 #: simulation/templates/structures/gaul/wonder.xml:9
 msgid "Sanctuary of Corent"
@@ -643,9 +639,14 @@ msgstr ""
 msgid "Celicnon"
 msgstr ""
 
+#: simulation/templates/structures/generic_field.xml:8
+#: simulation/templates/structures/mill_field_wheat.xml:6
+msgid "Wheat Field"
+msgstr "गवताचे शेत"
+
 #: simulation/templates/structures/han/academy.xml:27
 msgid "Imperial Academy"
-msgstr ""
+msgstr "साम्राज्याची अकादमी"
 
 #: simulation/templates/structures/han/academy.xml:28
 msgid "Dìguó Xuéyuàn"
@@ -657,7 +658,7 @@ msgstr ""
 
 #: simulation/templates/structures/han/academy.xml:31
 msgid "Academy"
-msgstr ""
+msgstr "अकादमी"
 
 #: simulation/templates/structures/han/arsenal.xml:8
 msgid "Bīnggōng Chǎng"
@@ -680,7 +681,7 @@ msgstr ""
 
 #: simulation/templates/structures/han/civil_centre_court.xml:17
 msgid "Imperial Court"
-msgstr ""
+msgstr "साम्राज्याचे न्यायालय"
 
 #: simulation/templates/structures/han/civil_centre_court.xml:18
 msgid "Cháotíng"
@@ -688,7 +689,7 @@ msgstr ""
 
 #: simulation/templates/structures/han/civil_centre_court.xml:19
 msgid "ImperialCourt"
-msgstr ""
+msgstr "साम्राज्याचेन्यायालय"
 
 #: simulation/templates/structures/han/corral.xml:12
 msgid "Xù Lán"
@@ -706,7 +707,7 @@ msgstr ""
 
 #: simulation/templates/structures/han/defense_tower_great.xml:31
 msgid "Great Tower"
-msgstr ""
+msgstr "मोठा मनोरा"
 
 #: simulation/templates/structures/han/defense_tower_great.xml:32
 msgid "Dà Fángyù Tǎ"
@@ -714,7 +715,7 @@ msgstr ""
 
 #: simulation/templates/structures/han/defense_tower_great.xml:34
 msgid "GreatTower"
-msgstr ""
+msgstr "मोठामनोरा"
 
 #: simulation/templates/structures/han/dock.xml:9
 msgid "Mǎtóu"
@@ -724,13 +725,13 @@ msgstr ""
 msgid "Nóng Shè"
 msgstr ""
 
-#: simulation/templates/structures/han/field.xml:15
+#: simulation/templates/structures/han/field.xml:18
 msgid "Dàotián"
 msgstr ""
 
-#: simulation/templates/structures/han/field.xml:16
+#: simulation/templates/structures/han/field.xml:19
 msgid "Rice Paddy"
-msgstr ""
+msgstr "भाताचे शेत"
 
 #: simulation/templates/structures/han/field_grain.xml:5
 msgid "Tián"
@@ -764,7 +765,7 @@ msgstr ""
 
 #: simulation/templates/structures/han/ministry.xml:36
 msgid "Imperial Ministry"
-msgstr ""
+msgstr "साम्राज्याचे मंत्रालय"
 
 #: simulation/templates/structures/han/ministry.xml:37
 msgid "Gōngdiàn"
@@ -772,7 +773,7 @@ msgstr ""
 
 #: simulation/templates/structures/han/ministry.xml:39
 msgid "ImperialMinistry"
-msgstr ""
+msgstr "साम्राज्याचेमंत्रालय"
 
 #: simulation/templates/structures/han/ministry.xml:40
 msgid ""
@@ -868,11 +869,11 @@ msgstr ""
 
 #: simulation/templates/structures/iber/barracks.xml:5
 msgid "Kaserna"
-msgstr ""
+msgstr "कासेर्ना"
 
 #: simulation/templates/structures/iber/civil_centre.xml:8
 msgid "Oppidum"
-msgstr ""
+msgstr "ऑप्पिडिअम"
 
 #: simulation/templates/structures/iber/corral.xml:8
 msgid "Saroe"
@@ -897,11 +898,11 @@ msgstr ""
 
 #: simulation/templates/structures/iber/forge.xml:5
 msgid "Harotz"
-msgstr ""
+msgstr "होरोत्झ"
 
 #: simulation/templates/structures/iber/fortress.xml:5
 msgid "Castro"
-msgstr ""
+msgstr "कास्त्रो"
 
 #: simulation/templates/structures/iber/house.xml:5
 msgid "Etxe"
@@ -922,15 +923,15 @@ msgstr ""
 #: simulation/templates/structures/iber/monument.xml:9
 #: simulation/templates/structures/iber/monument.xml:34
 msgid "Monument"
-msgstr ""
+msgstr "स्मारक"
 
 #: simulation/templates/structures/iber/storehouse.xml:5
 msgid "Ola"
-msgstr ""
+msgstr "ओला"
 
 #: simulation/templates/structures/iber/temple.xml:12
 msgid "Loki"
-msgstr ""
+msgstr "लोकी"
 
 #: simulation/templates/structures/iber/wall_gate.xml:9
 msgid "Biko Sarbide"
@@ -949,7 +950,7 @@ msgstr ""
 
 #: simulation/templates/structures/ishtar_gate.xml:25
 msgid "Ishtar Gate of Babylon"
-msgstr ""
+msgstr "बॅबिलॉनचा इश्तारद्वार"
 
 #: simulation/templates/structures/ishtar_gate.xml:26
 msgid "Territory root."
@@ -973,11 +974,11 @@ msgstr ""
 
 #: simulation/templates/structures/kush/camp_noba.xml:22
 msgid "Noba Village"
-msgstr ""
+msgstr "नोबा गाव"
 
 #: simulation/templates/structures/kush/camp_noba.xml:23
 msgid "Train Noba Mercenaries."
-msgstr ""
+msgstr "नोबा भाडोत्री सैनिकांचे प्रशिक्षण करा."
 
 #: simulation/templates/structures/kush/civil_centre.xml:9
 msgid "Pr-nsw"
@@ -999,10 +1000,6 @@ msgstr ""
 msgid "Ỉḥ Abu"
 msgstr ""
 
-#: simulation/templates/structures/kush/farmstead.xml:9
-msgid "snwt"
-msgstr ""
-
 #: simulation/templates/structures/kush/field.xml:5
 msgid "sht"
 msgstr ""
@@ -1017,7 +1014,7 @@ msgstr ""
 
 #: simulation/templates/structures/kush/house.xml:5
 msgid "Pr"
-msgstr ""
+msgstr "प्र"
 
 #: simulation/templates/structures/kush/market.xml:9
 msgid "Pr-sbt"
@@ -1046,7 +1043,7 @@ msgstr "लहान पिरामिड"
 
 #: simulation/templates/structures/kush/pyramid_small.xml:24
 msgid "mr"
-msgstr ""
+msgstr "म्र"
 
 #: simulation/templates/structures/kush/range.xml:8
 msgid "Pr-Pdt"
@@ -1089,21 +1086,21 @@ msgstr ""
 msgid "TempleOfApedemak"
 msgstr ""
 
-#: simulation/templates/structures/kush/temple_amun.xml:27
+#: simulation/templates/structures/kush/temple_amun.xml:30
 msgid "Grand Temple of Amun"
-msgstr ""
+msgstr "आमुनचे महामंदिर"
 
-#: simulation/templates/structures/kush/temple_amun.xml:28
+#: simulation/templates/structures/kush/temple_amun.xml:31
 msgid "Pr-ʿImn"
 msgstr ""
 
-#: simulation/templates/structures/kush/temple_amun.xml:29
+#: simulation/templates/structures/kush/temple_amun.xml:32
 msgid "Train Amun Champions and Elite Healers. Research healing technologies."
 msgstr ""
 
-#: simulation/templates/structures/kush/temple_amun.xml:31
+#: simulation/templates/structures/kush/temple_amun.xml:34
 msgid "TempleOfAmun"
-msgstr ""
+msgstr "आमुनचेमंदिर"
 
 #: simulation/templates/structures/kush/wall_gate.xml:9
 msgid "ʿryt"
@@ -1136,7 +1133,7 @@ msgstr ""
 
 #: simulation/templates/structures/maur/barracks.xml:15
 msgid "Sainyavasa"
-msgstr ""
+msgstr "सैन्यवास"
 
 #: simulation/templates/structures/maur/civil_centre.xml:12
 msgid "Rajadhanika"
@@ -1144,20 +1141,20 @@ msgstr "राजधानीक"
 
 #: simulation/templates/structures/maur/corral.xml:8
 msgid "Gotra"
-msgstr ""
+msgstr "गोत्र"
 
 #: simulation/templates/structures/maur/defense_tower.xml:5
 #: simulation/templates/structures/maur/tower_double.xml:20
 msgid "Udarka"
-msgstr ""
+msgstr "उदर्क"
 
 #: simulation/templates/structures/maur/dock.xml:9
 msgid "Naukasthanaka"
-msgstr ""
+msgstr "नौकास्थानक"
 
 #: simulation/templates/structures/maur/elephant_stable.xml:5
 msgid "Vāraṇaśālā"
-msgstr ""
+msgstr "वारणशाला"
 
 #: simulation/templates/structures/maur/field.xml:5
 msgid "Kshetra"
@@ -1173,35 +1170,33 @@ msgstr "दुर्ग"
 
 #: simulation/templates/structures/maur/house.xml:8
 msgid "Griham"
-msgstr ""
+msgstr "गृहम्"
 
 #: simulation/templates/structures/maur/market.xml:12
 msgid "Vipana"
-msgstr ""
+msgstr "विपन"
 
 #: simulation/templates/structures/maur/outpost.xml:5
 msgid "Uparaksana"
 msgstr ""
 
-#: simulation/templates/structures/maur/palace.xml:19
-#: simulation/templates/structures/maur/palace.xml:23
-#: simulation/templates/structures/pers/apadana.xml:30
-#: simulation/templates/structures/pers/tacara.xml:23
-#: simulation/templates/structures/pers/tacara.xml:26
-msgid "Palace"
-msgstr ""
-
 #: simulation/templates/structures/maur/palace.xml:20
+#: simulation/templates/structures/maur/palace.xml:26
+#: simulation/templates/structures/pers/tachara.xml:33
+msgid "Palace"
+msgstr "महाल"
+
+#: simulation/templates/structures/maur/palace.xml:21
 msgid "Harmya"
 msgstr ""
 
-#: simulation/templates/structures/maur/palace.xml:21
-msgid "Territory root. Train Maiden Guards and Heroes."
+#: simulation/templates/structures/maur/palace.xml:30
+msgid "Train Heroes and their Poison Maiden Guards. Territory root."
 msgstr ""
 
 #: simulation/templates/structures/maur/pillar_ashoka.xml:32
 msgid "Edict Pillar of Ashoka"
-msgstr ""
+msgstr "अशोकचा धर्मादेश स्तंभ"
 
 #: simulation/templates/structures/maur/pillar_ashoka.xml:33
 msgid "Śāsana Stambha Aśokā"
@@ -1265,7 +1260,7 @@ msgstr ""
 
 #: simulation/templates/structures/merc_camp_egyptian.xml:28
 msgid "Egyptian Mercenary Camp"
-msgstr ""
+msgstr "इजिप्शियन भाडोत्री सैनिकांची शिबिर"
 
 #: simulation/templates/structures/merc_camp_egyptian.xml:29
 #: simulation/templates/structures/ptol/mercenary_camp.xml:28
@@ -1275,6 +1270,40 @@ msgstr ""
 #: simulation/templates/structures/merc_camp_egyptian.xml:32
 msgid "Capture this structure to train mercenaries from Hellenistic Egypt."
 msgstr ""
+
+#: simulation/templates/structures/kush/farmstead.xml:9
+#: simulation/templates/structures/mill_desert.xml:8
+#: simulation/templates/structures/mill_saharan.xml:8
+msgid "snwt"
+msgstr ""
+
+#: simulation/templates/structures/athen/farmstead.xml:11
+#: simulation/templates/structures/mace/farmstead.xml:11
+#: simulation/templates/structures/mill_greek.xml:8
+#: simulation/templates/structures/ptol/farmstead.xml:8
+#: simulation/templates/structures/sele/farmstead.xml:8
+#: simulation/templates/structures/spart/farmstead.xml:11
+msgid "Epoikion"
+msgstr ""
+
+#: simulation/templates/structures/maur/farmstead.xml:11
+#: simulation/templates/structures/mill_indian.xml:8
+msgid "Kantu"
+msgstr ""
+
+#: simulation/templates/structures/mill_italian.xml:8
+msgid "Villa"
+msgstr "व्हिल्ला"
+
+#: simulation/templates/structures/mill_middle_eastern.xml:8
+#: simulation/templates/structures/pers/farmstead.xml:8
+msgid "Kaštašta"
+msgstr ""
+
+#: simulation/templates/structures/brit/rotarymill.xml:5
+#: simulation/templates/structures/mill_temperate_europe.xml:4
+msgid "Melonas"
+msgstr "मेलोनास"
 
 #: simulation/templates/structures/obelisk.xml:11
 msgid "Obelisk"
@@ -1286,7 +1315,7 @@ msgstr ""
 
 #: simulation/templates/structures/palisades_fort.xml:9
 msgid "Wooden Tower"
-msgstr ""
+msgstr "लाकडी मनोरा"
 
 #: simulation/templates/structures/palisades_gate.xml:20
 msgid "Palisade Gate"
@@ -1318,19 +1347,6 @@ msgstr ""
 msgid "Watchtower"
 msgstr ""
 
-#: simulation/templates/structures/pers/apadana.xml:26
-msgid "Throne Hall"
-msgstr ""
-
-#: simulation/templates/structures/pers/apadana.xml:27
-msgid "Apadāna"
-msgstr ""
-
-#: simulation/templates/structures/pers/apadana.xml:28
-#: simulation/templates/structures/spart/syssiton.xml:25
-msgid "Train Champions and Heroes."
-msgstr ""
-
 #: simulation/templates/structures/pers/apartment_block.xml:12
 msgid "Apartment Block"
 msgstr ""
@@ -1339,11 +1355,11 @@ msgstr ""
 msgid "Padgan"
 msgstr ""
 
-#: simulation/templates/structures/pers/civil_centre.xml:8
+#: simulation/templates/structures/pers/civil_centre.xml:12
 msgid "Provincial Governor"
-msgstr ""
+msgstr "प्रांतीय राज्यपाल"
 
-#: simulation/templates/structures/pers/civil_centre.xml:9
+#: simulation/templates/structures/pers/civil_centre.xml:13
 msgid "Xšaçapāvan"
 msgstr ""
 
@@ -1371,23 +1387,23 @@ msgstr ""
 
 #: simulation/templates/structures/pers/fortress.xml:5
 msgid "Didā"
-msgstr ""
+msgstr "दिदा"
 
 #: simulation/templates/structures/pers/hall.xml:23
 msgid "Gate of All Nations"
-msgstr ""
+msgstr "सर्व राष्ट्रांचा द्वार"
 
 #: simulation/templates/structures/pers/hall.xml:24
 msgid "Duvarθi Visadahyu"
-msgstr ""
+msgstr "दुवारथी विसादाहयु"
 
 #: simulation/templates/structures/pers/hall.xml:25
 msgid "Hall"
-msgstr ""
+msgstr "सभागृह"
 
 #: simulation/templates/structures/pers/house.xml:8
 msgid "Huvādā"
-msgstr ""
+msgstr "हुवादा"
 
 #: simulation/templates/structures/pers/house_b.xml:12
 #: simulation/templates/structures/pers/inn.xml:12
@@ -1408,38 +1424,62 @@ msgstr ""
 
 #: simulation/templates/structures/pers/market.xml:12
 msgid "Ardatašta"
-msgstr ""
+msgstr "अर्दतश्त"
 
 #: simulation/templates/structures/pers/outpost.xml:5
 msgid "Didebani"
-msgstr ""
+msgstr "दिदेबानी"
 
 #: simulation/templates/structures/pers/stable.xml:9
 msgid "Paraspa"
-msgstr ""
+msgstr "परस्प"
 
 #: simulation/templates/structures/pers/storehouse.xml:5
 msgid "Asiyah"
+msgstr "आसियाह"
+
+#: simulation/templates/structures/pers/tachara.xml:29
+msgid "Winter Palace"
 msgstr ""
 
-#: simulation/templates/structures/pers/tacara.xml:24
+#: simulation/templates/structures/pers/tachara.xml:30
 msgid "Taçara"
+msgstr "ताचारा"
+
+#: simulation/templates/structures/pers/tachara.xml:31
+msgid "Train Heroes and make use of the “Satrapy Tribute” feature."
+msgstr ""
+
+#: simulation/templates/structures/pers/tachara.xml:81
+msgid "Receive free Food tribute to your treasury from your subject peoples."
+msgstr ""
+
+#: simulation/templates/structures/pers/tachara.xml:86
+msgid "Receive free Wood tribute to your treasury from your subject peoples."
+msgstr ""
+
+#: simulation/templates/structures/pers/tachara.xml:91
+msgid "Receive free Stone tribute to your treasury from your subject peoples."
+msgstr ""
+
+#: simulation/templates/structures/pers/tachara.xml:96
+msgid "Receive free Metal tribute to your treasury from your subject peoples."
 msgstr ""
 
 #: simulation/templates/structures/pers/temple.xml:12
 msgid "Āyadanam"
-msgstr ""
+msgstr "आयदनम"
 
 #: simulation/templates/structures/pers/wall_gate.xml:9
 msgid "Duvarθiš"
-msgstr ""
+msgstr "दुवारथिश"
 
 #: simulation/templates/structures/pers/wall_long.xml:9
 #: simulation/templates/structures/pers/wall_medium.xml:9
 #: simulation/templates/structures/pers/wall_short.xml:9
 #: simulation/templates/structures/pers/wallset_stone.xml:5
 msgid "Para"
-msgstr ""
+msgstr "पारा"
 
 #: simulation/templates/structures/pers/warehouse.xml:12
 msgid "Warehouse"
@@ -1447,7 +1487,11 @@ msgstr "गोदाम"
 
 #: simulation/templates/structures/pers/wonder.xml:9
 msgid "Hanging Gardens of Babylon"
-msgstr ""
+msgstr "बॅबिलॉनचे लटकते बाग"
+
+#: simulation/templates/structures/pirates/dock.xml:8
+msgid "Pirate Port"
+msgstr "चाच्यांचे बंदर"
 
 #: simulation/templates/structures/ptol/elephant_stable.xml:5
 #: simulation/templates/structures/sele/elephant_stable.xml:5
@@ -1461,7 +1505,7 @@ msgstr "प्रकाशस्तंभ"
 
 #: simulation/templates/structures/ptol/lighthouse.xml:26
 msgid "Pharos"
-msgstr ""
+msgstr "फारोस"
 
 #: simulation/templates/structures/ptol/lighthouse.xml:27
 msgid ""
@@ -1471,7 +1515,7 @@ msgstr ""
 
 #: simulation/templates/structures/ptol/mercenary_camp.xml:27
 msgid "Mercenary Camp"
-msgstr ""
+msgstr "भाडोत्री सैनिकांची शिबिर"
 
 #: simulation/templates/structures/ptol/mercenary_camp.xml:30
 msgid ""
@@ -1484,17 +1528,29 @@ msgstr ""
 msgid "Klērouchia"
 msgstr ""
 
+#: simulation/templates/structures/ptol/temple_2.xml:24
+msgid "Temple of Isis"
+msgstr "आयसिसचे मंदिर"
+
+#: simulation/templates/structures/ptol/temple_2.xml:26
+msgid "Train Heroes and Healers. Research special technologies."
+msgstr ""
+
+#: simulation/templates/structures/ptol/temple_2.xml:28
+msgid "TempleOfIsis"
+msgstr ""
+
 #: simulation/templates/structures/ptol/tower_artillery.xml:9
 msgid "mktr-n-ḏw"
 msgstr ""
 
 #: simulation/templates/structures/ptol/wonder.xml:9
 msgid "Hieron tou Hōrou"
-msgstr ""
+msgstr "हिएरोन तौ होरौ"
 
 #: simulation/templates/structures/rome/amphitheater_pompeii.xml:6
 msgid "Amphitheātrum"
-msgstr ""
+msgstr "आम्फिथेआत्रुम"
 
 #: simulation/templates/structures/rome/arch.xml:22
 msgid "Triumphal Arch"
@@ -1502,7 +1558,7 @@ msgstr ""
 
 #: simulation/templates/structures/rome/arch.xml:23
 msgid "Arcus Triumphālis"
-msgstr ""
+msgstr "आर्कुस त्रिउम्फालिस"
 
 #: simulation/templates/structures/rome/arch.xml:24
 msgid "TriumphalArch"
@@ -1510,16 +1566,16 @@ msgstr ""
 
 #: simulation/templates/structures/rome/army_camp.xml:71
 msgid "Army Camp"
-msgstr ""
+msgstr "सैन्य शिबिर"
 
 #: simulation/templates/structures/rome/army_camp.xml:72
 msgid "Castra"
-msgstr ""
+msgstr "कास्त्रा"
 
 #: simulation/templates/structures/rome/army_camp.xml:73
 msgid ""
-"Build in neutral or enemy territory. Train Advanced Melee Infantry. "
-"Construct Rams. Garrison Soldiers for additional arrows."
+"Build in neutral or enemy territory. Train Advanced Melee Infantry and "
+"Marian Legionaries. Construct Rams. Garrison Soldiers for additional arrows."
 msgstr ""
 
 #: simulation/templates/structures/rome/army_camp.xml:31
@@ -1529,61 +1585,61 @@ msgstr ""
 
 #: simulation/templates/structures/rome/arsenal.xml:5
 msgid "Ballistārium"
-msgstr ""
+msgstr "बाल्लिस्तारिउम"
 
 #: simulation/templates/structures/rome/barracks.xml:12
 msgid "Castrum"
-msgstr ""
+msgstr "कास्त्रुम"
 
 #: simulation/templates/structures/rome/civil_centre.xml:12
 msgid "Forum"
-msgstr ""
+msgstr "फोरुम"
 
 #: simulation/templates/structures/rome/corral.xml:8
 msgid "Saeptum"
-msgstr ""
+msgstr "सॅप्तुम"
 
 #: simulation/templates/structures/rome/defense_tower.xml:9
 #: simulation/templates/structures/rome/tower_artillery.xml:9
 #: simulation/templates/structures/rome/tower_bolt.xml:9
 msgid "Turris Laterīcia"
-msgstr ""
+msgstr "तुर्रिस लातेरिसिआ"
 
 #: simulation/templates/structures/rome/dock.xml:12
 msgid "Portus"
-msgstr ""
+msgstr "पोर्तुस"
 
 #: simulation/templates/structures/rome/farmstead.xml:8
 msgid "Vīlla"
-msgstr ""
+msgstr "विल्ला"
 
 #: simulation/templates/structures/rome/field.xml:5
 msgid "Ager"
-msgstr ""
+msgstr "आगेर"
 
 #: simulation/templates/structures/rome/forge.xml:5
 msgid "Armāmentārium"
-msgstr ""
+msgstr "आर्मामेन्तारिउम"
 
 #: simulation/templates/structures/rome/fortress.xml:5
 msgid "Castellum"
-msgstr ""
+msgstr "कास्तेल्लुम"
 
 #: simulation/templates/structures/rome/house.xml:5
 msgid "Domus"
-msgstr ""
+msgstr "दोमुस"
 
 #: simulation/templates/structures/rome/market.xml:12
 msgid "Mercātus"
-msgstr ""
+msgstr "मेर्कातुस"
 
 #: simulation/templates/structures/rome/outpost.xml:5
 msgid "Vigilārium"
-msgstr ""
+msgstr "विगिलारिउम"
 
 #: simulation/templates/structures/rome/sentry_tower.xml:5
 msgid "Turris Līgnea"
-msgstr ""
+msgstr "तुर्रिस लिग्नेआ"
 
 #: simulation/templates/structures/rome/siege_wall_gate.xml:22
 msgid "Siege Wall Gate"
@@ -1591,7 +1647,7 @@ msgstr ""
 
 #: simulation/templates/structures/rome/siege_wall_gate.xml:23
 msgid "Porta Circummūnītiōnis"
-msgstr ""
+msgstr "पोर्ता सिर्कुम्मूनितिओनिस"
 
 #: simulation/templates/structures/rome/siege_wall_gate.xml:24
 #: simulation/templates/structures/rome/siege_wall_long.xml:25
@@ -1614,7 +1670,7 @@ msgstr "घेराबंदी भिंत"
 #: simulation/templates/structures/rome/siege_wall_short.xml:24
 #: simulation/templates/structures/rome/wallset_siege.xml:6
 msgid "Mūrus Circummūnītiōnis"
-msgstr ""
+msgstr "मूरुस सिर्कुम्मूनितिओनिस"
 
 #: simulation/templates/structures/rome/siege_wall_tower.xml:26
 msgid "Siege Wall Tower"
@@ -1622,19 +1678,19 @@ msgstr ""
 
 #: simulation/templates/structures/rome/siege_wall_tower.xml:27
 msgid "Turris Circummūnītiōnis"
-msgstr ""
+msgstr "तुर्रिस सिर्कुम्मूनितिओनिस"
 
 #: simulation/templates/structures/rome/stable.xml:5
 msgid "Equīle"
-msgstr ""
+msgstr "एक्विले"
 
 #: simulation/templates/structures/rome/storehouse.xml:8
 msgid "Receptāculum"
-msgstr ""
+msgstr "रेसेप्ताकुलुम"
 
 #: simulation/templates/structures/rome/temple.xml:9
 msgid "Aedēs"
-msgstr ""
+msgstr "एदेस"
 
 #: simulation/templates/structures/rome/temple_mars.xml:12
 msgid "Temple of Mars"
@@ -1642,7 +1698,7 @@ msgstr "मार्स चे देऊळ"
 
 #: simulation/templates/structures/rome/temple_mars.xml:13
 msgid "Aedēs Mārtiālis"
-msgstr ""
+msgstr "एदेस मार्तिआलिस"
 
 #: simulation/templates/structures/rome/temple_mars.xml:14
 msgid "TempleOfMars"
@@ -1654,7 +1710,7 @@ msgstr "वेस्ता चे देऊळ"
 
 #: simulation/templates/structures/rome/temple_vesta.xml:19
 msgid "Aedēs Vestālis"
-msgstr ""
+msgstr "एदेस वेस्तालिस"
 
 #: simulation/templates/structures/rome/temple_vesta.xml:21
 msgid "TempleOfVesta"
@@ -1662,7 +1718,7 @@ msgstr ""
 
 #: simulation/templates/structures/rome/tent.xml:25
 msgid "Tabernāculum"
-msgstr ""
+msgstr "ताबेरनाकुलुम"
 
 #: simulation/templates/structures/rome/tent.xml:27
 msgid "A temporary shelter for soldiers."
@@ -1670,7 +1726,7 @@ msgstr "सैनिकांसाठी तात्पुरती आश्�
 
 #: simulation/templates/structures/rome/wall_gate.xml:9
 msgid "Porta"
-msgstr ""
+msgstr "पोर्ता"
 
 #: simulation/templates/structures/rome/wall_long.xml:9
 #: simulation/templates/structures/rome/wall_medium.xml:9
@@ -1681,7 +1737,7 @@ msgstr ""
 
 #: simulation/templates/structures/rome/wall_tower.xml:9
 msgid "Turris Lapidea"
-msgstr ""
+msgstr "तुर्रिस लापिदेआ"
 
 #: simulation/templates/structures/rome/wallset_siege.xml:7
 msgid "Wall off an area. Build in own, neutral, or enemy territory."
@@ -1689,7 +1745,7 @@ msgstr ""
 
 #: simulation/templates/structures/rome/wonder.xml:9
 msgid "Aedēs Iovis Optimi Maximi"
-msgstr ""
+msgstr "एदेस इओविस ओप्तिमी माक्सिमी"
 
 #: simulation/templates/structures/sele/wonder.xml:9
 msgid "Hieron tou Apollōnos Pythiou"
@@ -1703,6 +1759,10 @@ msgstr ""
 msgid "Corinthian Colonnade"
 msgstr ""
 
+#: simulation/templates/structures/shrine_celtic.xml:9
+msgid "Henge"
+msgstr "हेंज"
+
 #: simulation/templates/structures/shrine_chinese.xml:9
 msgid "Bǎotǎ"
 msgstr ""
@@ -1715,7 +1775,7 @@ msgstr ""
 #: simulation/templates/structures/athen/temple.xml:9
 #: simulation/templates/structures/mace/temple.xml:9
 #: simulation/templates/structures/ptol/temple.xml:12
-#: simulation/templates/structures/ptol/temple_2.xml:11
+#: simulation/templates/structures/ptol/temple_2.xml:25
 #: simulation/templates/structures/sele/temple.xml:9
 #: simulation/templates/structures/shrine_greek_01.xml:9
 #: simulation/templates/structures/shrine_greek_02.xml:9
@@ -1727,6 +1787,10 @@ msgstr ""
 msgid "Aedēs Sanitatem"
 msgstr ""
 
+#: simulation/templates/structures/shrine_persian.xml:9
+msgid "Fire Temple"
+msgstr "अग्यारी"
+
 #: simulation/templates/structures/spart/gerousia.xml:22
 msgid "Spartan Senate"
 msgstr ""
@@ -1736,7 +1800,7 @@ msgid "Gerousia"
 msgstr ""
 
 #: simulation/templates/structures/spart/gerousia.xml:24
-msgid "Train Heroes."
+msgid "Research technologies."
 msgstr ""
 
 #: simulation/templates/structures/spart/persian_stoa.xml:9
@@ -1753,6 +1817,10 @@ msgstr ""
 
 #: simulation/templates/structures/spart/syssiton.xml:24
 msgid "Syssition"
+msgstr ""
+
+#: simulation/templates/structures/spart/syssiton.xml:25
+msgid "Train Champions and Heroes."
 msgstr ""
 
 #: simulation/templates/structures/spart/syssiton.xml:27
@@ -1778,12 +1846,12 @@ msgstr ""
 
 #: simulation/templates/structures/stonehenge.xml:8
 msgid "Stonehenge"
-msgstr ""
+msgstr "स्टोनहेंज"
 
 #: simulation/templates/structures/table_rectangle.xml:11
 #: simulation/templates/structures/table_square.xml:11
 msgid "Table"
-msgstr ""
+msgstr "टेबल"
 
 #: simulation/templates/structures/table_rectangle.xml:12
 msgid "Rectangle Table"
@@ -1791,11 +1859,11 @@ msgstr ""
 
 #: simulation/templates/structures/table_square.xml:12
 msgid "Square Table"
-msgstr ""
+msgstr "चौकोनी टेबल"
 
 #: simulation/templates/structures/tent_arab.xml:35
 msgid "Arab Army Tent"
-msgstr ""
+msgstr "अरब सैन्य शिबिर"
 
 #: simulation/templates/structures/rome/tent.xml:24
 #: simulation/templates/structures/tent_arab.xml:36
@@ -1821,11 +1889,11 @@ msgstr ""
 
 #: simulation/templates/structures/tent_bedouin.xml:35
 msgid "Bedouin Tent"
-msgstr ""
+msgstr "बेदूईन शिबिर"
 
 #: simulation/templates/structures/tent_desert.xml:35
 msgid "Desert Army Tent"
-msgstr ""
+msgstr "वाळवंटी सैन्य शिबिर"
 
 #: simulation/templates/structures/tent_mace.xml:35
 msgid "Macedonian Army Tent"
@@ -1833,7 +1901,7 @@ msgstr ""
 
 #: simulation/templates/structures/tent_rome.xml:35
 msgid "Roman Army Tent"
-msgstr ""
+msgstr "रोमन सैन्य शिबिर"
 
 #: simulation/templates/structures/trading_post_celtic.xml:9
 msgid "Celtic Tavern"
@@ -1841,11 +1909,11 @@ msgstr ""
 
 #: simulation/templates/structures/trading_post_desert.xml:9
 msgid "Desert Bazaar"
-msgstr ""
+msgstr "वाळवंटी बाजार"
 
 #: simulation/templates/structures/uffington_horse.xml:10
 msgid "Uffington White Horse"
-msgstr ""
+msgstr "अफिंग्टन सफेद घोडा"
 
 #: simulation/templates/template_structure_civic.xml:5
 msgid "Civic Structure"
@@ -1893,7 +1961,7 @@ msgstr "सैन्य तळ"
 
 #: simulation/templates/template_structure_civic_civil_centre_military_colony.xml:29
 msgid "Colony"
-msgstr ""
+msgstr "वसाहत"
 
 #: simulation/templates/structures/pers/house_a.xml:12
 #: simulation/templates/template_structure_civic_house.xml:26
@@ -1903,11 +1971,13 @@ msgstr "घर"
 
 #: simulation/templates/structures/kush/pyramid_small.xml:26
 #: simulation/templates/structures/pers/ice_house.xml:27
+#: simulation/templates/structures/spart/syssiton.xml:27
 #: simulation/templates/template_structure_civic_house.xml:28
 #: simulation/templates/template_structure_economic_farmstead.xml:30
 #: simulation/templates/template_structure_economic_storehouse.xml:28
 #: simulation/templates/template_structure_military_barracks.xml:29
 #: simulation/templates/template_structure_military_dock.xml:27
+#: simulation/templates/template_structure_military_kennel.xml:30
 #: simulation/templates/template_structure_military_range.xml:25
 #: simulation/templates/template_structure_military_stable.xml:29
 #: simulation/templates/template_structure_resource_corral.xml:29
@@ -1924,14 +1994,15 @@ msgid "Stoa"
 msgstr ""
 
 #: simulation/templates/structures/athen/gymnasium.xml:26
-#: simulation/templates/structures/cart/apartment.xml:26
 #: simulation/templates/structures/gaul/tavern.xml:22
 #: simulation/templates/structures/han/laozigate.xml:24
 #: simulation/templates/structures/han/ministry.xml:39
 #: simulation/templates/structures/iber/monument.xml:34
+#: simulation/templates/structures/mace/arsenal.xml:6
 #: simulation/templates/structures/maur/elephant_stable.xml:7
 #: simulation/templates/structures/merc_camp_egyptian.xml:31
 #: simulation/templates/structures/rome/army_camp.xml:75
+#: simulation/templates/structures/spart/gerousia.xml:26
 #: simulation/templates/template_structure_civic_stoa.xml:30
 #: simulation/templates/template_structure_civic_temple.xml:32
 #: simulation/templates/template_structure_economic_market.xml:28
@@ -1947,7 +2018,7 @@ msgstr "मंदिर"
 
 #: simulation/templates/template_structure_civic_temple.xml:31
 msgid "Train Healers and research healing technologies."
-msgstr ""
+msgstr "वैद्य तयार करा व उपचाराशी संबंधित तंत्रज्ञानांचे संशोधन करा."
 
 #: simulation/templates/template_structure_defensive.xml:4
 msgid "Defensive Structure"
@@ -1982,7 +2053,7 @@ msgstr ""
 #: simulation/templates/template_structure_defensive_tower.xml:52
 #: simulation/templates/template_structure_defensive_tower.xml:53
 msgid "Tower"
-msgstr ""
+msgstr "मनोरा"
 
 #: simulation/templates/template_structure_defensive_tower_artillery.xml:5
 msgctxt "Name of an attack, usually the weapon."
@@ -2031,7 +2102,7 @@ msgstr ""
 
 #: simulation/templates/template_structure_defensive_tower_stone.xml:30
 msgid "Stone Tower"
-msgstr ""
+msgstr "दगडी मनोरा"
 
 #: simulation/templates/template_structure_defensive_tower_stone.xml:33
 msgid "StoneTower"
@@ -2040,7 +2111,7 @@ msgstr "दगडी बुरुज"
 #: simulation/templates/template_structure_defensive_wall.xml:12
 #: simulation/templates/template_structure_defensive_wall.xml:15
 msgid "Wall"
-msgstr ""
+msgstr "भिंत"
 
 #: simulation/templates/template_structure_defensive_wall.xml:14
 msgid "Wall off your town for a stout defense."
@@ -2050,7 +2121,7 @@ msgstr ""
 #: simulation/templates/template_structure_defensive_wall_gate.xml:22
 #: simulation/templates/template_structure_defensive_wall_gate.xml:25
 msgid "Gate"
-msgstr ""
+msgstr "द्वार"
 
 #: simulation/templates/template_structure_defensive_wall_gate.xml:24
 #: simulation/templates/template_structure_defensive_wall_long.xml:26
@@ -2073,23 +2144,21 @@ msgstr "आर्थिक इमारत"
 #: simulation/templates/template_structure_military_dock.xml:27
 #: simulation/templates/template_structure_resource_corral.xml:29
 msgid "Economic"
-msgstr ""
+msgstr "आर्थिक"
 
 #: simulation/templates/template_structure_economic_farmstead.xml:26
 #: simulation/templates/template_structure_economic_farmstead.xml:30
-#: simulation/templates/template_structure_special_rotarymill.xml:32
-#: simulation/templates/template_structure_special_rotarymill.xml:34
 msgid "Farmstead"
-msgstr ""
+msgstr "शेतवाडी"
 
 #: simulation/templates/template_structure_economic_farmstead.xml:28
 msgid "Research food gathering technologies."
-msgstr ""
+msgstr "अन्न गोळा करण्याच्या तंत्रज्ञानांचे संशोधन करा."
 
 #: simulation/templates/template_structure_economic_market.xml:24
 #: simulation/templates/template_structure_economic_market.xml:28
 msgid "Market"
-msgstr ""
+msgstr "बाजार"
 
 #: simulation/templates/template_structure_economic_market.xml:26
 msgid ""
@@ -2105,11 +2174,11 @@ msgstr "व्यापार"
 #: simulation/templates/template_structure_economic_storehouse.xml:24
 #: simulation/templates/template_structure_economic_storehouse.xml:28
 msgid "Storehouse"
-msgstr ""
+msgstr "भंडार"
 
 #: simulation/templates/template_structure_economic_storehouse.xml:26
 msgid "Research gathering technologies."
-msgstr ""
+msgstr "गोळा करण्याच्या तंत्रज्ञानांचे संशोधन करा."
 
 #: simulation/templates/template_structure_military.xml:10
 msgid "Military Structure"
@@ -2134,14 +2203,15 @@ msgstr ""
 #: simulation/templates/structures/han/academy.xml:31
 #: simulation/templates/structures/han/civil_centre_court.xml:19
 #: simulation/templates/structures/kush/pyramid_large.xml:29
-#: simulation/templates/structures/kush/temple_amun.xml:31
+#: simulation/templates/structures/kush/temple_amun.xml:34
+#: simulation/templates/structures/ptol/temple_2.xml:28
 #: simulation/templates/structures/rome/temple_mars.xml:14
 #: simulation/templates/template_structure_military_arsenal.xml:28
 #: simulation/templates/template_structure_military_elephant_stable.xml:29
 #: simulation/templates/template_structure_special.xml:20
 #: simulation/templates/template_structure_wonder.xml:41
 msgid "City"
-msgstr ""
+msgstr "शहर"
 
 #: simulation/templates/template_structure_military_barracks.xml:26
 #: simulation/templates/template_structure_military_barracks.xml:29
@@ -2150,7 +2220,7 @@ msgstr ""
 
 #: simulation/templates/template_structure_military_barracks.xml:28
 msgid "Train Infantry and research Infantry technologies."
-msgstr ""
+msgstr "पायदळ तयार करा व पायदळाशी संबंधित तंत्रज्ञानांचे संशोधन करा."
 
 #: simulation/templates/template_structure_military_dock.xml:24
 #: simulation/templates/template_structure_military_dock.xml:27
@@ -2167,7 +2237,7 @@ msgstr ""
 #: simulation/templates/structures/cart/super_dock.xml:43
 #: simulation/templates/template_structure_military_dock.xml:27
 msgid "Naval"
-msgstr ""
+msgstr "नौदलीय"
 
 #: simulation/templates/template_structure_military_elephant_stable.xml:26
 msgid "Elephant Stable"
@@ -2185,7 +2255,7 @@ msgstr ""
 #: simulation/templates/template_structure_military_embassy.xml:22
 #: simulation/templates/template_structure_military_embassy.xml:24
 msgid "Embassy"
-msgstr ""
+msgstr "दूतावास"
 
 #: simulation/templates/template_structure_military_forge.xml:22
 #: simulation/templates/template_structure_military_forge.xml:26
@@ -2206,6 +2276,16 @@ msgstr "गड"
 msgid "Garrison Soldiers for additional arrows."
 msgstr ""
 
+#: simulation/templates/template_structure_military_kennel.xml:28
+#: simulation/templates/template_structure_military_kennel.xml:29
+#: simulation/templates/template_structure_military_kennel.xml:30
+msgid "Kennel"
+msgstr ""
+
+#: simulation/templates/template_structure_military_kennel.xml:38
+msgid "Train War Dogs."
+msgstr "युद्धाचे कुत्रे तयार करा."
+
 #: simulation/templates/template_structure_military_range.xml:22
 msgid "Practice Range"
 msgstr ""
@@ -2225,7 +2305,7 @@ msgstr ""
 
 #: simulation/templates/template_structure_military_stable.xml:28
 msgid "Train Cavalry and research Cavalry technologies."
-msgstr ""
+msgstr "घोडदळ तयार करा व घोडदळाशी संबंधित तंत्रज्ञानांचे संशोधन करा."
 
 #: simulation/templates/template_structure_resource.xml:4
 msgid "Resource Structure"
@@ -2233,7 +2313,7 @@ msgstr ""
 
 #: simulation/templates/template_structure_resource.xml:5
 msgid "Resource"
-msgstr ""
+msgstr "साधन"
 
 #: simulation/templates/template_structure_resource_corral.xml:26
 #: simulation/templates/template_structure_resource_corral.xml:29
@@ -2248,7 +2328,7 @@ msgstr ""
 #: simulation/templates/template_structure_resource_field.xml:18
 #: simulation/templates/template_structure_resource_field.xml:20
 msgid "Field"
-msgstr ""
+msgstr "शेत"
 
 #: simulation/templates/template_structure_resource_field.xml:21
 msgid ""
@@ -2263,27 +2343,17 @@ msgstr ""
 #: simulation/templates/template_structure_special_amphitheater.xml:18
 #: simulation/templates/template_structure_special_amphitheater.xml:20
 msgid "Amphitheater"
-msgstr ""
+msgstr "अँफिथिएटर"
 
 #: simulation/templates/template_structure_special_library.xml:25
 #: simulation/templates/template_structure_special_library.xml:27
 msgid "Library"
-msgstr ""
-
-#: simulation/templates/template_structure_special_rotarymill.xml:33
-msgid "Rotary Mill"
-msgstr ""
-
-#: simulation/templates/template_structure_special_rotarymill.xml:38
-msgid ""
-"Dropsite for harvested Food. Capture one of these to increase nearby food "
-"production."
-msgstr ""
+msgstr "पुस्तकालय"
 
 #: simulation/templates/template_structure_special_theater.xml:25
 #: simulation/templates/template_structure_special_theater.xml:27
 msgid "Theater"
-msgstr ""
+msgstr "नाट्यगृह"
 
 #: simulation/templates/template_structure_wonder.xml:37
 #: simulation/templates/template_structure_wonder.xml:41

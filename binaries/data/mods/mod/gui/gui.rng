@@ -587,7 +587,12 @@
       <interleave>
         <attribute name="id"/>
         <optional>
-          <attribute name="color">
+          <attribute name="textcolor">
+            <ref name="ccolor"/>
+          </attribute>
+        </optional>
+        <optional>
+          <attribute name="textcolor_selected">
             <ref name="ccolor"/>
           </attribute>
         </optional>

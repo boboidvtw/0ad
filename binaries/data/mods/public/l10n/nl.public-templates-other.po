@@ -1,26 +1,29 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2023 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# annihilator solar
-# rollieoo
-# bb
-# Christof Verhoeven
-# Ellen Roels
-# Freagarach
-# Ismail Sahin
-# LTom
-# 477f07d437f0da0e33ec4ecd7b8e2b62
-# Michiel Franssen
-# Piers T
-# Sander Deryckere
+# annihilator solar, 2019
+# rollieoo, 2020
+# rollieoo, 2020-2021
+# bb, 2018
+# Christof Verhoeven, 2016-2017
+# Ellen Roels, 2015
+# Freagarach, 2021
+# Freagarach, 2019-2021
+# Ismail Sahin, 2017
+# LTom, 2015
+# 477f07d437f0da0e33ec4ecd7b8e2b62, 2017
+# Michiel Franssen, 2018
+# Piers T, 2019
+# rollieoo, 2022-2024
+# Sander Deryckere, 2014,2016
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2023-04-21 07:09+0000\n"
+"POT-Creation-Date: 2024-07-26 13:41+0000\n"
 "PO-Revision-Date: 2014-06-19 17:54+0000\n"
-"Last-Translator: rollieoo, 2022-2023\n"
+"Last-Translator: rollieoo, 2022-2024\n"
 "Language-Team: Dutch (http://app.transifex.com/wildfire-games/0ad/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,119 +31,119 @@ msgstr ""
 "Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: simulation/data/attack_effects/applystatus.jsondescription
+#: simulation/data/attack_effects/applystatus.json
 msgctxt "effect caused by an attack"
 msgid "Various (timed) effects."
 msgstr "Verschillende (getimede) effecten."
 
-#: simulation/data/attack_effects/applystatus.jsonname
+#: simulation/data/attack_effects/applystatus.json
 msgctxt "effect caused by an attack"
 msgid "Apply Status"
 msgstr "Pas status toe"
 
-#: simulation/data/attack_effects/capture.jsondescription
+#: simulation/data/attack_effects/capture.json
 msgctxt "effect caused by an attack"
 msgid "Reduces capture points of a target."
 msgstr "Vermindert veroverpunten van een doelwit."
 
-#: simulation/data/attack_effects/capture.jsonname
+#: simulation/data/attack_effects/capture.json
 msgctxt "effect caused by an attack"
 msgid "Capture"
 msgstr "Verover"
 
-#: simulation/data/attack_effects/damage.jsondescription
+#: simulation/data/attack_effects/damage.json
 msgctxt "effect caused by an attack"
 msgid "Reduces the health of a target."
 msgstr "Vermindert de gezondheid of sterkte van een doelwit."
 
-#: simulation/data/attack_effects/damage.jsonname
+#: simulation/data/attack_effects/damage.json
 msgctxt "effect caused by an attack"
 msgid "Damage"
 msgstr "Schade"
 
-#: simulation/data/damage_types/crush.jsondescription
-msgctxt "damage type"
-msgid "Damage caused by sheer force, like with a club or by trampling."
-msgstr "Schade veroorzaakt door brute kracht, zoals met een knuppel of door vertrappen."
-
-#: simulation/data/damage_types/crush.jsonname
+#: simulation/data/damage_types/crush.json
 msgctxt "damage type"
 msgid "Crush"
 msgstr "Verpletter"
 
-#: simulation/data/damage_types/fire.jsondescription
+#: simulation/data/damage_types/crush.json
 msgctxt "damage type"
-msgid "Damage caused by burning objects, like a torch or a flaming arrow."
-msgstr "Schade veroorzaakt door brandende objecten zoals toortsen of een brandende pijl."
+msgid "Damage caused by sheer force, like with a club or by trampling."
+msgstr "Schade veroorzaakt door brute kracht, zoals met een knuppel of door vertrappen."
 
-#: simulation/data/damage_types/fire.jsonname
+#: simulation/data/damage_types/fire.json
 msgctxt "damage type"
 msgid "Fire"
 msgstr "Vuur"
 
-#: simulation/data/damage_types/hack.jsondescription
+#: simulation/data/damage_types/fire.json
+msgctxt "damage type"
+msgid "Damage caused by burning objects, like a torch or a flaming arrow."
+msgstr "Schade veroorzaakt door brandende objecten zoals toortsen of een brandende pijl."
+
+#: simulation/data/damage_types/hack.json
+msgctxt "damage type"
+msgid "Hack"
+msgstr "Hak"
+
+#: simulation/data/damage_types/hack.json
 msgctxt "damage type"
 msgid ""
 "Damage caused by sharp objects cutting or chopping, like with a sword or an "
 "axe."
 msgstr "Schade veroorzaakt door snijden of hakken met een scherp voorwerp zoals een zwaard of een bijl."
 
-#: simulation/data/damage_types/hack.jsonname
-msgctxt "damage type"
-msgid "Hack"
-msgstr "Hak"
-
-#: simulation/data/damage_types/pierce.jsondescription
-msgctxt "damage type"
-msgid "Damage caused by sharp pointy objects, like arrows or spears."
-msgstr "Schade veroorzaakt door scherpe puntige voorwerpen zoals pijlen of speren."
-
-#: simulation/data/damage_types/pierce.jsonname
+#: simulation/data/damage_types/pierce.json
 msgctxt "damage type"
 msgid "Pierce"
 msgstr "Doorboor"
 
-#: simulation/data/damage_types/poison.jsondescription
+#: simulation/data/damage_types/pierce.json
+msgctxt "damage type"
+msgid "Damage caused by sharp pointy objects, like arrows or spears."
+msgstr "Schade veroorzaakt door scherpe puntige voorwerpen zoals pijlen of speren."
+
+#: simulation/data/damage_types/poison.json
+msgctxt "damage type"
+msgid "Poison"
+msgstr "Vergif"
+
+#: simulation/data/damage_types/poison.json
 msgctxt "damage type"
 msgid ""
 "Damage caused by venomous or poisoned objects, like a snake or a poisoned "
 "weapon."
 msgstr "Schade veroorzaakt door giftige of vergiftigde objecten zoals een slang of een vergiftigd wapen."
 
-#: simulation/data/damage_types/poison.jsonname
-msgctxt "damage type"
-msgid "Poison"
-msgstr "Vergif"
-
-#: simulation/data/status_effects/burning.jsonapplierTooltip
+#: simulation/data/status_effects/burning.json
 msgctxt "status effect"
 msgid "This unit causes fire damage."
 msgstr "Deze eenheid veroorzaakt brandschade."
 
-#: simulation/data/status_effects/burning.jsonreceiverTooltip
-msgctxt "status effect"
-msgid "This unit is burning."
-msgstr "Deze eenheid staat in brand."
-
-#: simulation/data/status_effects/burning.jsonstatusName
+#: simulation/data/status_effects/burning.json
 msgctxt "status effect"
 msgid "Burning"
 msgstr "Brandend"
 
-#: simulation/data/status_effects/poisoned.jsonapplierTooltip
+#: simulation/data/status_effects/burning.json
+msgctxt "status effect"
+msgid "This unit is burning."
+msgstr "Deze eenheid staat in brand."
+
+#: simulation/data/status_effects/poisoned.json
 msgctxt "status effect"
 msgid "This unit causes poison damage."
 msgstr "Deze eenheid veroorzaakt vergiftigingsschade."
 
-#: simulation/data/status_effects/poisoned.jsonreceiverTooltip
-msgctxt "status effect"
-msgid "This unit is poisoned."
-msgstr "Deze eenheid is vergiftigd."
-
-#: simulation/data/status_effects/poisoned.jsonstatusName
+#: simulation/data/status_effects/poisoned.json
 msgctxt "status effect"
 msgid "Poisoned"
 msgstr "Vergiftigd"
+
+#: simulation/data/status_effects/poisoned.json
+msgctxt "status effect"
+msgid "This unit is poisoned."
+msgstr "Deze eenheid is vergiftigd."
 
 #: simulation/templates/campaigns/army_mace_hero_alexander.xml:24
 msgid "Army of Alexander the Great."
@@ -691,6 +694,10 @@ msgstr "Apademak leeuwenbeeld"
 msgid "Ammon-Ra Ram Statue"
 msgstr "Ammon-Ra ramsbeeld"
 
+#: simulation/templates/gaia/ruins/stone_statues_persian_lamassu.xml:8
+msgid "Lamassu Statue"
+msgstr "De Stierman"
+
 #: simulation/templates/gaia/ruins/stone_statues_roman.xml:8
 msgid "Roman Statue"
 msgstr "Romeins standbeeld"
@@ -769,6 +776,18 @@ msgstr "Scheepswrak"
 msgid "Shipwreck Cargo"
 msgstr "Lading van het scheepswrak"
 
+#: simulation/templates/gaia/treasure/special_argo.xml:8
+msgid "The Argo"
+msgstr "De Argo"
+
+#: simulation/templates/gaia/treasure/special_argo.xml:9
+msgid "Mythological Treasure"
+msgstr "Mythologische schat"
+
+#: simulation/templates/gaia/treasure/special_argo.xml:10
+msgid "The mythological ship of the hero Theseus and his Argonauts."
+msgstr "Het mythologische schip van de held Teseus en zijn Argonauten."
+
 #: simulation/templates/gaia/treasure/stone.xml:8
 msgid "Stone Treasure"
 msgstr "Stenen schat"
@@ -840,6 +859,10 @@ msgstr "Winterharde struik"
 #: simulation/templates/gaia/tree/bush_mediterranean.xml:4
 msgid "Scrub"
 msgstr "Struikgewas"
+
+#: simulation/templates/gaia/tree/bush_mediterranean_dry.xml:4
+msgid "Dry Scrub"
+msgstr "Stekelbosje"
 
 #: simulation/templates/gaia/tree/carob.xml:4
 msgid "Carob"
@@ -956,6 +979,10 @@ msgstr "Egyptische palm"
 msgid "Palmyra Palm"
 msgstr "Waaierpalm"
 
+#: simulation/templates/gaia/tree/palm_royal.xml:4
+msgid "Royal Palm"
+msgstr "Koningspalm"
+
 #: simulation/templates/gaia/tree/palm_tropic.xml:4
 msgid "Palm"
 msgstr "Palmboom"
@@ -1014,7 +1041,7 @@ msgstr "Mahonie"
 msgid "Rainforest Tree"
 msgstr "Regenwoudboom"
 
-#: simulation/templates/mixins/builder.xml:41
+#: simulation/templates/mixins/builder.xml:42
 msgid "Builder"
 msgstr "Bouwer"
 
@@ -1022,15 +1049,63 @@ msgstr "Bouwer"
 msgid "Bush"
 msgstr "Struik"
 
+#: simulation/templates/mixins/cataphract.xml:14
+msgid "Cataphract Cavalry"
+msgstr "Katafrakt cavalerie"
+
+#: simulation/templates/mixins/cataphract.xml:15
+msgid "Cataphract"
+msgstr "Katafrakt"
+
+#: simulation/templates/mixins/chariot.xml:16
+msgid "Chariot"
+msgstr "Strijdwagen"
+
+#: simulation/templates/mixins/fireship.xml:15
+msgctxt "Name of an attack, usually the weapon."
+msgid "Flames"
+msgstr "Vlammen"
+
+#: simulation/templates/mixins/fireship.xml:43
+msgid "Ignited"
+msgstr "In brand gezet"
+
+#: simulation/templates/mixins/longsword.xml:22
+msgid "Longsword"
+msgstr "Slagzwaard"
+
 #: simulation/templates/mixins/mercenary.xml:13
 msgid "Mercenary"
 msgstr "Huurling"
+
+#: simulation/templates/mixins/pirate.xml:29
+msgid "Pirate"
+msgstr "Piraat"
+
+#: simulation/templates/mixins/rotary_mill.xml:17
+#: simulation/templates/mixins/rotary_mill.xml:18
+msgid "Rotary Mill"
+msgstr "Rosmolen"
+
+#: simulation/templates/mixins/rotary_mill.xml:19
+msgid "RotaryMill"
+msgstr "Rosmolen"
+
+#: simulation/templates/mixins/rotary_mill.xml:22
+msgid ""
+"Dropsite for harvested Food. Capture one of these to increase nearby food "
+"production."
+msgstr "Verzamelplaats voor geoogst voedsel. Verover dit gebouw voor toename van nabijgelegen voedselproductie."
 
 #: simulation/templates/mixins/shrine.xml:12
 #: simulation/templates/mixins/shrine.xml:13
 #: simulation/templates/mixins/shrine.xml:14
 msgid "Shrine"
 msgstr "Schrijn"
+
+#: simulation/templates/mixins/shrine.xml:18
+msgid "Train Elite Healers and heal garrisoned units."
+msgstr "Rekruteer Elite Genezers en genees gelegerde eenheden."
 
 #: simulation/templates/mixins/trading_post.xml:8
 msgid "Trading Post"
@@ -1086,9 +1161,17 @@ msgstr "Slechts mêlee infanteriesoldaten, ten minste 16 benodigd."
 msgid "Anti Cavalry"
 msgstr "Anti-Ruiters"
 
+#: simulation/templates/special/formations/anti_cavalry.xml:26
+msgid "Square formation of Melee Infantry to fight Cavalry."
+msgstr "Vierkante formatie van mêlee-infanterie om cavalerie te bevechten."
+
 #: simulation/templates/special/formations/battle_line.xml:13
 msgid "Battle Line"
 msgstr "Aanvalslijn"
+
+#: simulation/templates/special/formations/battle_line.xml:15
+msgid "Common formation for frontal attacks."
+msgstr "Standaard formatie voor een frontale aanval."
 
 #: simulation/templates/special/formations/box.xml:5
 msgid "Requires at least 4 Soldiers or Siege engines."
@@ -1098,13 +1181,25 @@ msgstr "Ten minste 4 soldaten of belegeringswerktuigen vereist."
 msgid "Box"
 msgstr "Vierkant"
 
+#: simulation/templates/special/formations/box.xml:14
+msgid "Square formation to protect all sides."
+msgstr "Vierkante formatie ter bescherming van alle zijden."
+
 #: simulation/templates/special/formations/column_closed.xml:10
 msgid "Forced March"
 msgstr "Geforceerde mars"
 
+#: simulation/templates/special/formations/column_closed.xml:12
+msgid "Closed column formation for risky movements."
+msgstr "Gesloten kolom formatie voor riskante verplaatsingen."
+
 #: simulation/templates/special/formations/column_open.xml:10
 msgid "Column Open"
 msgstr "Open kolom"
+
+#: simulation/templates/special/formations/column_open.xml:12
+msgid "Dispersed formation for open field crossings."
+msgstr "Gespreide formatie voor verplaatsing door een open veld."
 
 #: simulation/templates/special/formations/flank.xml:5
 msgid "Requires at least 8 Soldiers or Siege engines."
@@ -1114,13 +1209,25 @@ msgstr "Ten minste 8 soldaten of belegeringswerktuigen vereist."
 msgid "Flank"
 msgstr "Flank"
 
+#: simulation/templates/special/formations/flank.xml:13
+msgid "Formation to protect the sides or surprise attack the enemy flank."
+msgstr "Formatie ter bescherming van de zijkanten of voor een verrassingsaanval op de vijandelijke flank."
+
 #: simulation/templates/special/formations/line_closed.xml:9
 msgid "Close Order"
 msgstr "Gesloten opstelling"
 
+#: simulation/templates/special/formations/line_closed.xml:11
+msgid "Flexible closed line formation."
+msgstr "Flexibele gesloten lijnopstelling."
+
 #: simulation/templates/special/formations/line_open.xml:11
 msgid "Open Order"
 msgstr "Open opstelling"
+
+#: simulation/templates/special/formations/line_open.xml:13
+msgid "Dispersed formation for open field combat."
+msgstr "Gespreide opstelling voor gevecht in het open veld."
 
 #: simulation/templates/special/formations/null.xml:7
 msgid "None"
@@ -1134,9 +1241,46 @@ msgstr "Alleen voor infanterie Hoplieten, ten minste 10 benodigd."
 msgid "Phalanx"
 msgstr "Falanx"
 
+#: simulation/templates/special/formations/phalanx.xml:25
+msgid "Compact formation of Infantry Hoplites creating a shield wall."
+msgstr "Compacte formatie van Infanterie Hoplieten voor een muur van schilden."
+
 #: simulation/templates/special/formations/scatter.xml:8
 msgid "Scatter"
 msgstr "Verspreiden"
+
+#: simulation/templates/special/formations/ships/column.xml:5
+#: simulation/templates/special/formations/ships/line_staggered.xml:5
+msgid "Requires at least 4 Ships."
+msgstr "Vereist tenminste 4 schepen."
+
+#: simulation/templates/special/formations/ships/column.xml:14
+msgid "Maneuvering Column"
+msgstr "Manoeuvre linie"
+
+#: simulation/templates/special/formations/ships/column.xml:16
+msgid "A column formation for fleet maneuvers."
+msgstr "Een lijnformatie voor manoeuvres met de vloot."
+
+#: simulation/templates/special/formations/ships/flank.xml:5
+msgid "Requires at least 8 Ships."
+msgstr "Vereist tenminste 8 schepen."
+
+#: simulation/templates/special/formations/ships/flank.xml:14
+msgid "Flanking Formation"
+msgstr "Flank formatie"
+
+#: simulation/templates/special/formations/ships/flank.xml:16
+msgid "Formation to protect the sides or surprise attack the enemy flanks."
+msgstr "Formatie ter bescherming van beide zijden of een verrassingsaanval van de vijandelijke flank."
+
+#: simulation/templates/special/formations/ships/line_staggered.xml:17
+msgid "Fleet Battle Line"
+msgstr "Kiellinie"
+
+#: simulation/templates/special/formations/ships/line_staggered.xml:19
+msgid "Common fleet formation for frontal attacks."
+msgstr "Gebruikelijke formatie van de vloot voor frontale aanvallen."
 
 #: simulation/templates/special/formations/skirmish.xml:4
 msgid "Ranged Soldiers only, requires at least 2."
@@ -1146,6 +1290,10 @@ msgstr "Alleen voor afstandseenheden, ten minste 2 benodigd."
 msgid "Skirmish"
 msgstr "Schermutseling"
 
+#: simulation/templates/special/formations/skirmish.xml:16
+msgid "Dispersed formation for reconnaissance, ambushes or hit-and-run."
+msgstr "Losse formatie voor verkenning, hinderlagen of plotselinge aanvallen."
+
 #: simulation/templates/special/formations/syntagma.xml:5
 msgid "Infantry Pikemen only, requires at least 16."
 msgstr "Alleen voor infanterie Piekeniers, ten minste 16 benodigd."
@@ -1154,9 +1302,17 @@ msgstr "Alleen voor infanterie Piekeniers, ten minste 16 benodigd."
 msgid "Syntagma"
 msgstr "Syntagma"
 
+#: simulation/templates/special/formations/syntagma.xml:31
+msgid "Compact formation of Infantry Pikemen creating a defensive wall."
+msgstr "Compacte formatie van Infanterie Speervechters voor een verdedigingslinie."
+
 #: simulation/templates/special/formations/testudo.xml:70
 msgid "Testudo"
 msgstr "Testudo"
+
+#: simulation/templates/special/formations/testudo.xml:72
+msgid "Compact formation of Melee Infantry creating a shield shell."
+msgstr "Compacte formatie van mêlee-infanterie voor bescherming met schilden."
 
 #: simulation/templates/special/formations/wedge.xml:5
 msgid "Cavalry only, requires at least 6."
@@ -1165,6 +1321,10 @@ msgstr "Alleen voor cavalerie, ten minste 6 benodigd."
 #: simulation/templates/special/formations/wedge.xml:16
 msgid "Wedge"
 msgstr "Hoek"
+
+#: simulation/templates/special/formations/wedge.xml:18
+msgid "Triangular Cavalry formation to break through enemy lines."
+msgstr "Driehoekige cavalerieformatie om vijandelijke posities te doorbreken."
 
 #: simulation/templates/special/spy.xml:16
 msgid "Spy"

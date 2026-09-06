@@ -1,21 +1,21 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2022 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# Aziz Rahmad
-# Dabiq 1441
-# Dedi Wahyudi
-# e628d465dac42212314cccfedeb58a39_4bd0330
-# Joshua Randiny
-# Mas Nnaw
-# Muhammad Furqon Abrori
-# Samuel
-# d5f629f7f4b251b1c1597d8275ebee28_4786982
+# Aziz Rahmad, 2014-2015
+# Dabiq 1441, 2021
+# Dedi Wahyudi, 2017
+# e628d465dac42212314cccfedeb58a39_4bd0330, 2014
+# Joshua Randiny, 2014-2015
+# Mas Nnaw, 2022
+# Muhammad Furqon Abrori, 2017,2020
+# Samuel, 2014-2016
+# d5f629f7f4b251b1c1597d8275ebee28_4786982, 2021
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2022-09-12 09:35+0000\n"
+"POT-Creation-Date: 2024-08-12 07:08+0000\n"
 "PO-Revision-Date: 2014-06-19 17:50+0000\n"
 "Last-Translator: Mas Nnaw, 2022\n"
 "Language-Team: Indonesian (http://app.transifex.com/wildfire-games/0ad/language/id/)\n"
@@ -25,32 +25,31 @@ msgstr ""
 "Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(caption):28
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):61
-msgid "Back"
-msgstr "Kembali"
-
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(caption):32
-msgid "Update"
-msgstr "Perbarui"
-
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(heading):17
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:17
 msgid "Rank"
 msgstr "Peringkat"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(heading):20
-#: gui/lobby/LobbyPage/GameList.xml:(heading):13
-#: gui/lobby/LobbyPage/PlayerList.xml:(heading):21
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:20
+#: gui/lobby/LobbyPage/GameList.xml:13 gui/lobby/LobbyPage/PlayerList.xml:21
 msgid "Name"
 msgstr "Nama"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(heading):23
-#: gui/lobby/LobbyPage/GameList.xml:(heading):28
-#: gui/lobby/LobbyPage/PlayerList.xml:(heading):24
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:23
+#: gui/lobby/LobbyPage/GameList.xml:28 gui/lobby/LobbyPage/PlayerList.xml:24
 msgid "Rating"
 msgstr "Peringkat"
 
-#: gui/lobby/LobbyPage/AnnouncementHandler.js:18
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:28
+#: gui/lobby/ProfilePage/ProfilePage.xml:61
+msgid "Back"
+msgstr "Kembali"
+
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:32
+msgid "Update"
+msgstr "Perbarui"
+
+#: gui/lobby/LobbyPage/AnnouncementHandler.js:19
+#: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessageFormatAnnouncement.js:24
 msgid "Notice"
 msgstr "Pemberitahuan"
 
@@ -66,34 +65,34 @@ msgstr "Cabut Tanda Teman"
 msgid "Host Game"
 msgstr "Buat Permainan"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:40
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:43
 msgid "Your active mods do not match the mods of this game."
 msgstr "Mod yang aktif tidak cocok dengan mod di permainan ini."
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:42
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:45
 msgid "Do you want to switch to the mod selection page?"
 msgstr "Apakah Anda ingin beralih ke halaman pemilihan mod?"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:43
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:46
 msgid "Incompatible mods"
 msgstr "Mod tidak cocok"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:52
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:62
 msgid "The game has already started. Do you want to join as observer?"
 msgstr "Permainan sudah dimulai. Apakah Anda ingin bergabung sebagai pengamat?"
 
 #. Translation: Join the game currently selected in the list.
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:104
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:95
 msgid "Join Game"
 msgstr "Bergabung ke permainan"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(caption):12
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:12
 #: gui/lobby/LobbyPage/Buttons/LeaderboardButton.js:9
 msgid "Leaderboard"
 msgstr "Papan Peringkat"
 
 #: gui/lobby/LobbyPage/Buttons/ProfileButton.js:9
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):12
+#: gui/lobby/ProfilePage/ProfilePage.xml:12
 msgid "Player Profile Lookup"
 msgstr "Pencarian Profil Pemain"
 
@@ -178,6 +177,13 @@ msgstr "/say"
 msgid "Clear all chat scrollback."
 msgstr "Hapus Semua Pesan Obrolan"
 
+#: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessageFormatAnnouncement.js:26
+#, javascript-format
+msgid ""
+"== %(prefix)s:\n"
+"%(message)s"
+msgstr ""
+
 #. Translation: Chat message issued using the ‘/me’ command.
 #: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessageFormatMe.js:24
 #, javascript-format
@@ -203,7 +209,7 @@ msgstr "Pribadi"
 msgid "(%(private)s) %(message)s"
 msgstr "(%(private)s) %(message)s"
 
-#: gui/lobby/LobbyPage/Chat/ChatPanel.xml:(caption):12
+#: gui/lobby/LobbyPage/Chat/ChatPanel.xml:12
 msgid "Send"
 msgstr "Kirim"
 
@@ -318,23 +324,23 @@ msgstr "DIKELUARKAN"
 msgid "You have been disconnected from the lobby. Do you want to reconnect?"
 msgstr "Anda telah terputus dari lobi. Apakah Anda ingin menyambungkan kembali?"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:53
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:63
 #: gui/lobby/LobbyPage/ConnectionHandler.js:62
-#: gui/prelobby/common/credentials/credentials.js:55
+#: gui/prelobby/common/credentials/credentials.js:56
 msgid "Confirmation"
 msgstr "Konfirmasi"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:44
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:54
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:47
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:64
 #: gui/lobby/LobbyPage/ConnectionHandler.js:63
-#: gui/prelobby/common/credentials/credentials.js:56
+#: gui/prelobby/common/credentials/credentials.js:57
 msgid "No"
 msgstr "Tidak"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:44
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:54
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:47
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:64
 #: gui/lobby/LobbyPage/ConnectionHandler.js:63
-#: gui/prelobby/common/credentials/credentials.js:56
+#: gui/prelobby/common/credentials/credentials.js:57
 msgid "Yes"
 msgstr "Ya"
 
@@ -416,25 +422,25 @@ msgstr "Ukuran Peta:"
 msgid "Map Description:"
 msgstr "Deskripsi Peta:"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):16
+#: gui/lobby/LobbyPage/GameList.xml:16
 msgid "Map Name"
 msgstr "Nama Peta"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):19
+#: gui/lobby/LobbyPage/GameList.xml:19
 msgctxt "map"
 msgid "Size"
 msgstr "Ukuran"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):22
+#: gui/lobby/LobbyPage/GameList.xml:22
 msgctxt "map"
 msgid "Type"
 msgstr "Tipe"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):25
+#: gui/lobby/LobbyPage/GameList.xml:25
 msgid "Players"
 msgstr "Pemain"
 
-#: gui/lobby/LobbyPage/GameListFilters.xml:(caption):7
+#: gui/lobby/LobbyPage/GameListFilters.xml:7
 msgid "Show only open games"
 msgstr "Hanya tunjukkan permainan terbuka"
 
@@ -490,8 +496,7 @@ msgctxt "lobby kick"
 msgid "Reason: %(reason)s"
 msgstr "Alasan: %(reason)s"
 
-#: gui/lobby/LobbyPage/LobbyPage.xml:(caption):13
-#: gui/prelobby/entrance/entrance.xml:(caption):14
+#: gui/lobby/LobbyPage/LobbyPage.xml:13 gui/prelobby/entrance/entrance.xml:14
 msgid "Multiplayer Lobby"
 msgstr "Lobi Main Bersama"
 
@@ -521,13 +526,13 @@ msgctxt "lobby presence"
 msgid "Unknown"
 msgstr "Tidak diketahui"
 
-#: gui/lobby/LobbyPage/PlayerList.xml:(heading):18
-msgid "Status"
-msgstr "Status"
-
-#: gui/lobby/LobbyPage/PlayerList.xml:(placeholder_text):4
+#: gui/lobby/LobbyPage/PlayerList.xml:4
 msgid "Search for Player"
 msgstr "Cari Pemain"
+
+#: gui/lobby/LobbyPage/PlayerList.xml:18
+msgid "Status"
+msgstr "Status"
 
 #: gui/lobby/LobbyPage/ProfilePanel.js:106
 msgid "N/A"
@@ -555,33 +560,33 @@ msgstr "-"
 msgid "%(percentage)s%%"
 msgstr "%(percentage)s%%"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):8
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):30
+#: gui/lobby/LobbyPage/ProfilePanel.xml:8
+#: gui/lobby/ProfilePage/ProfilePage.xml:30
 msgid "Current Rank:"
 msgstr "Peringkat Sekarang:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):12
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):34
+#: gui/lobby/LobbyPage/ProfilePanel.xml:12
+#: gui/lobby/ProfilePage/ProfilePage.xml:34
 msgid "Highest Rating:"
 msgstr "Peringkat Tertinggi:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):16
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):38
+#: gui/lobby/LobbyPage/ProfilePanel.xml:16
+#: gui/lobby/ProfilePage/ProfilePage.xml:38
 msgid "Total Games:"
 msgstr "Jumlah Permainan:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):20
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):42
+#: gui/lobby/LobbyPage/ProfilePanel.xml:20
+#: gui/lobby/ProfilePage/ProfilePage.xml:42
 msgid "Wins:"
 msgstr "Menang:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):24
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):46
+#: gui/lobby/LobbyPage/ProfilePanel.xml:24
+#: gui/lobby/ProfilePage/ProfilePage.xml:46
 msgid "Losses:"
 msgstr "Kalah:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):28
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):50
+#: gui/lobby/LobbyPage/ProfilePanel.xml:28
+#: gui/lobby/ProfilePage/ProfilePage.xml:50
 msgid "Win Rate:"
 msgstr "Tingkat Kemenangan:"
 
@@ -590,19 +595,19 @@ msgstr "Tingkat Kemenangan:"
 msgid "Player \"%(nick)s\" not found."
 msgstr "Pemain \"%(nick)s\" tidak ditemukan."
 
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):16
+#: gui/lobby/ProfilePage/ProfilePage.xml:16
 msgid "Enter playername:"
 msgstr "Masukkan nama pemain:"
 
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):22
+#: gui/lobby/ProfilePage/ProfilePage.xml:22
 msgid "View Profile"
 msgstr "Tampilkan Profil"
 
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):55
+#: gui/lobby/ProfilePage/ProfilePage.xml:55
 msgid "Please enter a player name."
 msgstr "Mohon masukkan nama pemain."
 
-#: gui/prelobby/common/credentials/confirmpassword.xml:(caption):4
+#: gui/prelobby/common/credentials/confirmpassword.xml:4
 msgid "Password again:"
 msgstr "Kata sandi lagi:"
 
@@ -636,19 +641,19 @@ msgstr "Mohon masukkan kata sandi Anda lagi"
 msgid "Passwords do not match"
 msgstr "Kata sandi tidak sama"
 
-#: gui/prelobby/common/credentials/credentials.js:54
+#: gui/prelobby/common/credentials/credentials.js:55
 msgid "Are you sure you want to delete the password after connecting?"
 msgstr "Anda yakin ingin menghapus kata sandi setelah terhubung?"
 
-#: gui/prelobby/common/credentials/credentials.xml:(caption):6
+#: gui/prelobby/common/credentials/credentials.xml:6
 msgid "Login:"
 msgstr "Masuk:"
 
-#: gui/prelobby/common/credentials/credentials.xml:(caption):15
+#: gui/prelobby/common/credentials/credentials.xml:15
 msgid "Password:"
 msgstr "Kata sandi:"
 
-#: gui/prelobby/common/credentials/rememberpassword.xml:(caption):7
+#: gui/prelobby/common/credentials/rememberpassword.xml:7
 msgid "Remember Password"
 msgstr "Ingat Kata Sandi"
 
@@ -658,20 +663,22 @@ msgid ""
 "allowed to register more than one account within one hour."
 msgstr "Kesalahan tidak diketahui. Ini biasanya terjadi karena alamat IP yang sama tidak diizinkan untuk mendaftarkan lebih dari satu akun dalam satu jam."
 
-#: gui/prelobby/common/feedback/feedback.xml:(caption):10
-#: gui/prelobby/entrance/entrance.xml:(caption):30
+#: gui/prelobby/common/feedback/feedback.xml:10
+#: gui/prelobby/entrance/entrance.xml:30
 msgid "Cancel"
 msgstr "Batal"
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:1
 msgid ""
-"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Privacy "
+"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Privacy "
 "Policy[/font]"
-msgstr "[font=\"sans-bold-18\"]Kebijakan Privasi Lobi Main Bersama 0 A.D. Empires Ascendant[/font]"
+msgstr ""
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:3
-msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2020-12-24"
-msgstr "[font=\"sans-bold-14\"]Tanggal Dokumen:[/font] 2020-12-24"
+#: gui/prelobby/common/terms/Terms_of_Service.txt:3
+#: gui/prelobby/common/terms/Terms_of_Use.txt:3
+msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2023-07-27"
+msgstr ""
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:5
 msgid ""
@@ -893,10 +900,10 @@ msgstr "1. Pemrosesan diperlukan untuk kinerja layanan yang ditentukan dalam per
 #: gui/prelobby/common/terms/Privacy_Policy.txt:50
 msgid ""
 "2. Wildfire Games has legitimate interests in providing the Multiplayer "
-"Lobby, in the development and improvement of 0 A.D. and the Multiplayer "
+"Lobby, in the development and improvement of 0 A.D. and the Multiplayer "
 "Lobby, in enforcing the Terms of Use and in the protection against "
 "cyberattacks (GDPR 6.1.f)."
-msgstr "2. Wildfire Games memiliki kepentingan yang sah dalam menyediakan Lobi Main Bersama, dalam pengembangan dan peningkatan 0 A.D. dan Lobi Main Bersama, dalam menegakkan Ketentuan Penggunaan dan dalam perlindungan terhadap serangan dunia maya(GDPR 6.1.f)."
+msgstr ""
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:51
 msgid ""
@@ -1070,28 +1077,24 @@ msgstr "Untuk informasi lebih lanjut tentang Kebijakan Privasi Wildfire Games, k
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:1
 msgid ""
-"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
+"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
 "Service[/font]"
-msgstr "[font=\"sans-bold-18\"]Ketentuan Layanan Lobi Main Bersama 0 A.D. Empires Ascendant[/font]"
-
-#: gui/prelobby/common/terms/Terms_of_Service.txt:3
-msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2018-10-16"
-msgstr "[font=\"sans-bold-14\"]Tanggal Dokumen:[/font] 2018-10-16"
+msgstr ""
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:5
 msgid ""
-"The 0 A.D. Empires Ascendant Multiplayer Lobby is an online service provided"
+"The 0 A.D. Empires Ascendant Multiplayer Lobby is an online service provided"
 " by Wildfire Games that allows players to set up online multiplayer matches,"
 " discuss the game in a public chat room and gain a rating that reflects "
 "their skill."
-msgstr "Lobi Main Bersama 0 A.D. Empires Ascendant adalah layanan daring yang disediakan oleh Wildfire Games yang memungkinkan pemain untuk mengatur pertandingan bersama daring, mendiskusikan permainan di ruang obrolan publik dan memperoleh peringkat yang mencerminkan keahlian mereka."
+msgstr ""
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:7
 msgid ""
 "Due to the subject matter of historic warfare, description and depiction of "
-"violence and the language on the Multiplayer Lobby, 0 A.D. and the "
+"violence and the language on the Multiplayer Lobby, 0 A.D. and the "
 "Multiplayer Lobby are not directed to young children (COPPA §312.2)."
-msgstr "Karena topik mengenai perang bersejarah, deskripsi dan penggambaran kekerasan dan bahasa kasar di Lobi Main Bersama, 0 A.D. dan Lobi Main Bersama tidak ditujukan untuk anak-anak (COPPA §312.2)."
+msgstr ""
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:8
 msgid "The minimum age to use the Multiplayer Lobby is 13."
@@ -1100,9 +1103,9 @@ msgstr "Usia minimum untuk menggunakan Lobi Main Bersama adalah 13 tahun."
 #: gui/prelobby/common/terms/Terms_of_Service.txt:10
 #: gui/prelobby/common/terms/Terms_of_Use.txt:5
 msgid ""
-"[font=\"sans-bold-14\"]By using the 0 A.D. Multiplayer Lobby, you agree "
+"[font=\"sans-bold-14\"]By using the 0 A.D. Multiplayer Lobby, you agree "
 "to:[/font]"
-msgstr "[font=\"sans-bold-14\"]Dengan menggunakan Lobi Main Bersama 0 A.D., Anda setuju:[/font]"
+msgstr ""
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:11
 msgid " 1. Follow all usage policies."
@@ -1162,12 +1165,8 @@ msgstr "Jika sebagian dari ketentuan dianggap tidak sah atau jika tidak dapat di
 
 #: gui/prelobby/common/terms/Terms_of_Use.txt:1
 msgid ""
-"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
+"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
 "Use[/font]"
-msgstr "[font=\"sans-bold-18\"]Ketentuan Penggunaan Lobi Main Bersama 0 A.D. Empires Ascendant[/font]"
-
-#: gui/prelobby/common/terms/Terms_of_Use.txt:3
-msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2022-09-01"
 msgstr ""
 
 #: gui/prelobby/common/terms/Terms_of_Use.txt:6
@@ -1268,11 +1267,11 @@ msgstr "Kebijakan Privasi"
 msgid "Please read and accept the Privacy Policy."
 msgstr "Mohon baca dan terima Kebijakan Privasi."
 
-#: gui/prelobby/entrance/entrance.xml:(caption):20
+#: gui/prelobby/entrance/entrance.xml:20
 msgid "Create a new account"
 msgstr " Buat akun baru"
 
-#: gui/prelobby/entrance/entrance.xml:(caption):25
+#: gui/prelobby/entrance/entrance.xml:25
 msgid "Login to an existing account"
 msgstr "Masuk ke akun yang sudah ada"
 
@@ -1284,7 +1283,7 @@ msgstr "Hubungkan"
 msgid "Connecting…"
 msgstr "Menghubungkan..."
 
-#: gui/prelobby/login/login.xml:(caption):13
+#: gui/prelobby/login/login.xml:13
 msgid "Connect to the game lobby"
 msgstr "Hubungkan ke lobi permainan"
 
@@ -1300,6 +1299,6 @@ msgstr "Mendaftarkan..."
 msgid "Registered"
 msgstr "Terdaftar"
 
-#: gui/prelobby/register/register.xml:(caption):13
+#: gui/prelobby/register/register.xml:13
 msgid "Registration"
 msgstr "Pendaftaran"

@@ -1,31 +1,32 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2023 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# c2e331a438add123670fbf39846b5de3_8c31b08
-# András Vöröskői
-# Balázs Meskó
-# Balázs Úr
-# Boross Péter
-# Csaba Balázs
-# Czene István
-# davesajt
-# Gábor P.
-# Gyuris Gellért
-# János Fehér
-# Mór Kárpáty
-# Nagy András
-# Richard Somlói
-# Scael Blu
-# Szabó Lambert
-# Tibor Buzási
+# c2e331a438add123670fbf39846b5de3_8c31b08, 2020-2021
+# András Vöröskői, 2019
+# Balázs Meskó, 2015-2017,2019-2020
+# Balázs Úr, 2015-2016
+# bar slyck, 2024
+# Boross Péter, 2015
+# Csaba Balázs, 2021
+# Czene István, 2015
+# davesajt, 2015
+# Gábor P., 2019
+# Gyuris Gellért, 2015-2016
+# János Fehér, 2021
+# Mór Kárpáty, 2019
+# Nagy András, 2014,2017-2018,2020
+# Richard Somlói, 2014
+# Scael Blu, 2021
+# Szabó Lambert, 2021-2023
+# Tibor Buzási, 2014-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2023-03-20 08:08+0000\n"
+"POT-Creation-Date: 2024-07-26 13:41+0000\n"
 "PO-Revision-Date: 2014-06-19 17:54+0000\n"
-"Last-Translator: Szabó Lambert, 2021-2022\n"
+"Last-Translator: bar slyck, 2024\n"
 "Language-Team: Hungarian (http://app.transifex.com/wildfire-games/0ad/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -142,19 +143,19 @@ msgstr "Emporion"
 msgid "Prophylagma"
 msgstr "Prophylagma"
 
-#: simulation/templates/structures/athen/prytaneion.xml:22
+#: simulation/templates/structures/athen/prytaneion.xml:25
 msgid "Council Chamber"
 msgstr "Tanácsterem"
 
-#: simulation/templates/structures/athen/prytaneion.xml:23
+#: simulation/templates/structures/athen/prytaneion.xml:26
 msgid "Prytaneion"
 msgstr "Prütaneion"
 
-#: simulation/templates/structures/athen/prytaneion.xml:24
+#: simulation/templates/structures/athen/prytaneion.xml:27
 msgid "Train Heroes and research technologies."
 msgstr "Hősök kiképzése és technológiák kutatása."
 
-#: simulation/templates/structures/athen/prytaneion.xml:26
+#: simulation/templates/structures/athen/prytaneion.xml:29
 #: simulation/templates/structures/gaul/assembly.xml:31
 #: simulation/templates/structures/spart/gerousia.xml:26
 msgid "Council"
@@ -343,6 +344,10 @@ msgstr "Hősök kiképzése. Katonák beszállásolása további nyilakért."
 msgid "Tegia"
 msgstr "Tegia"
 
+#: simulation/templates/structures/brit/kennel.xml:5
+msgid "Cunattegia"
+msgstr "Cunattegia"
+
 #: simulation/templates/structures/brit/market.xml:12
 #: simulation/templates/structures/gaul/market.xml:12
 msgid "Magos"
@@ -469,6 +474,11 @@ msgstr "Šadd"
 msgid "Ḥamet"
 msgstr "Ḥamet"
 
+#: simulation/templates/structures/cart/house.xml:16
+msgid ""
+"Add a second story to make an Apartment with a greater population bonus."
+msgstr ""
+
 #: simulation/templates/structures/cart/market.xml:12
 msgid "Šūq"
 msgstr "Šūq"
@@ -516,8 +526,8 @@ msgid "Maqdaš"
 msgstr "Maqdaš"
 
 #: simulation/templates/structures/cart/temple.xml:10
-msgid "Train Healers and Champion Infantry and research healing technologies."
-msgstr "Gyógyítók és bajnok gyalogság kiképzése, valamint gyógyítási fejlesztések kutatása."
+msgid "Train Healers and Champions, and research healing technologies."
+msgstr ""
 
 #: simulation/templates/structures/cart/tophet.xml:18
 msgid "Sacrificial Temple"
@@ -568,39 +578,6 @@ msgstr "Dór oszlop"
 msgid "Fallen Doric Column"
 msgstr "Ledőlt dór oszlop"
 
-#: simulation/templates/structures/farmstead_field_wheat.xml:7
-#: simulation/templates/structures/generic_field.xml:8
-msgid "Wheat Field"
-msgstr "Búzamező"
-
-#: simulation/templates/structures/athen/farmstead.xml:11
-#: simulation/templates/structures/farmstead_greek.xml:8
-#: simulation/templates/structures/mace/farmstead.xml:11
-#: simulation/templates/structures/ptol/farmstead.xml:8
-#: simulation/templates/structures/sele/farmstead.xml:8
-#: simulation/templates/structures/spart/farmstead.xml:11
-msgid "Epoikion"
-msgstr "Epoikion"
-
-#: simulation/templates/structures/farmstead_indian.xml:8
-#: simulation/templates/structures/maur/farmstead.xml:11
-msgid "Kantu"
-msgstr "Kantu"
-
-#: simulation/templates/structures/farmstead_italian.xml:8
-msgid "Villa"
-msgstr "Villa"
-
-#: simulation/templates/structures/farmstead_middle_eastern.xml:9
-#: simulation/templates/structures/pers/farmstead.xml:8
-msgid "Kaštašta"
-msgstr "Kaštašta"
-
-#: simulation/templates/structures/brit/rotarymill.xml:5
-#: simulation/templates/structures/farmstead_temperate_europe.xml:4
-msgid "Melonas"
-msgstr "Melonas"
-
 #: simulation/templates/structures/fence_long.xml:14
 #: simulation/templates/structures/fence_short.xml:14
 msgid "Fence"
@@ -610,12 +587,31 @@ msgstr "Kerítés"
 msgid "Long Wooden Fence"
 msgstr "Hosszú fakerítés"
 
+#: simulation/templates/structures/fence_rock_long.xml:12
+#: simulation/templates/structures/fence_rock_long.xml:13
+#: simulation/templates/structures/fence_rock_medium.xml:12
+#: simulation/templates/structures/fence_rock_medium.xml:13
+#: simulation/templates/structures/fence_rock_short.xml:12
+#: simulation/templates/structures/fence_rock_short.xml:13
+#: simulation/templates/structures/fence_rock_stub.xml:12
+#: simulation/templates/structures/fence_rock_stub.xml:13
+msgid "Rock Fence"
+msgstr "Kőkerítés"
+
 #: simulation/templates/structures/fence_short.xml:15
 msgid "Short Wooden Fence"
 msgstr "Rövid fakerítés"
 
 #: simulation/templates/structures/fence_stone.xml:14
 #: simulation/templates/structures/fence_stone.xml:15
+#: simulation/templates/structures/fence_stone_long.xml:12
+#: simulation/templates/structures/fence_stone_long.xml:13
+#: simulation/templates/structures/fence_stone_medium.xml:12
+#: simulation/templates/structures/fence_stone_medium.xml:13
+#: simulation/templates/structures/fence_stone_short.xml:12
+#: simulation/templates/structures/fence_stone_short.xml:13
+#: simulation/templates/structures/fence_stone_stub.xml:12
+#: simulation/templates/structures/fence_stone_stub.xml:13
 msgid "Stone Fence"
 msgstr "Kőkerítés"
 
@@ -658,6 +654,11 @@ msgstr "A corent-i szentély"
 #: simulation/templates/structures/gaul/wonder.xml:10
 msgid "Celicnon"
 msgstr "Celicnon"
+
+#: simulation/templates/structures/generic_field.xml:8
+#: simulation/templates/structures/mill_field_wheat.xml:6
+msgid "Wheat Field"
+msgstr "Búzamező"
 
 #: simulation/templates/structures/han/academy.xml:27
 msgid "Imperial Academy"
@@ -718,7 +719,7 @@ msgstr ""
 msgid ""
 "This tower has greater range, greater attack, greater health, and is twice "
 "as difficult to capture."
-msgstr "A toronynak nagyobb hatótávolsága, támadása és életereje van, illetve kétszer olyan nehéz elfoglalni."
+msgstr "Ez a torony nagyobb hatótávolsággal, támadóerővel és életerővel bír, illetve kétszer olyan nehéz elfoglalni."
 
 #: simulation/templates/structures/han/defense_tower_great.xml:31
 msgid "Great Tower"
@@ -740,11 +741,11 @@ msgstr "Mǎtóu"
 msgid "Nóng Shè"
 msgstr "Nóngshè"
 
-#: simulation/templates/structures/han/field.xml:15
+#: simulation/templates/structures/han/field.xml:18
 msgid "Dàotián"
 msgstr "Dàotián"
 
-#: simulation/templates/structures/han/field.xml:16
+#: simulation/templates/structures/han/field.xml:19
 msgid "Rice Paddy"
 msgstr "Rizsföld"
 
@@ -1015,10 +1016,6 @@ msgstr "Mryt"
 msgid "Ỉḥ Abu"
 msgstr "Ỉḥ Abu"
 
-#: simulation/templates/structures/kush/farmstead.xml:9
-msgid "snwt"
-msgstr "snwt"
-
 #: simulation/templates/structures/kush/field.xml:5
 msgid "sht"
 msgstr "sht"
@@ -1105,19 +1102,19 @@ msgstr "Gyógyítók és Apedemak bajnokainak kiképzése, valamint gyógyítás
 msgid "TempleOfApedemak"
 msgstr "Apedemak temploma"
 
-#: simulation/templates/structures/kush/temple_amun.xml:27
+#: simulation/templates/structures/kush/temple_amun.xml:30
 msgid "Grand Temple of Amun"
 msgstr "Amun nagytemploma"
 
-#: simulation/templates/structures/kush/temple_amun.xml:28
+#: simulation/templates/structures/kush/temple_amun.xml:31
 msgid "Pr-ʿImn"
 msgstr "Pr-ʿImn"
 
-#: simulation/templates/structures/kush/temple_amun.xml:29
+#: simulation/templates/structures/kush/temple_amun.xml:32
 msgid "Train Amun Champions and Elite Healers. Research healing technologies."
 msgstr "Gyógyítók és Ámon bajnokainak kiképzése. Gyógyítási fejlesztések kutatása."
 
-#: simulation/templates/structures/kush/temple_amun.xml:31
+#: simulation/templates/structures/kush/temple_amun.xml:34
 msgid "TempleOfAmun"
 msgstr "Amun temploma"
 
@@ -1199,21 +1196,19 @@ msgstr "Vipana"
 msgid "Uparaksana"
 msgstr "Uparaksana"
 
-#: simulation/templates/structures/maur/palace.xml:19
-#: simulation/templates/structures/maur/palace.xml:23
-#: simulation/templates/structures/pers/apadana.xml:30
-#: simulation/templates/structures/pers/tacara.xml:23
-#: simulation/templates/structures/pers/tacara.xml:26
+#: simulation/templates/structures/maur/palace.xml:20
+#: simulation/templates/structures/maur/palace.xml:26
+#: simulation/templates/structures/pers/tachara.xml:33
 msgid "Palace"
 msgstr "Palota"
 
-#: simulation/templates/structures/maur/palace.xml:20
+#: simulation/templates/structures/maur/palace.xml:21
 msgid "Harmya"
 msgstr "Harmya"
 
-#: simulation/templates/structures/maur/palace.xml:21
-msgid "Territory root. Train Maiden Guards and Heroes."
-msgstr "Terület gyökere. Leányőrök és hősök kiképzése."
+#: simulation/templates/structures/maur/palace.xml:30
+msgid "Train Heroes and their Poison Maiden Guards. Territory root."
+msgstr ""
 
 #: simulation/templates/structures/maur/pillar_ashoka.xml:32
 msgid "Edict Pillar of Ashoka"
@@ -1292,6 +1287,40 @@ msgstr "Stratopedeia Misthophorōn"
 msgid "Capture this structure to train mercenaries from Hellenistic Egypt."
 msgstr "Ezen épület elfoglalása zsoldosok kiképzéséhez a hellenisztikus Egyiptomból."
 
+#: simulation/templates/structures/kush/farmstead.xml:9
+#: simulation/templates/structures/mill_desert.xml:8
+#: simulation/templates/structures/mill_saharan.xml:8
+msgid "snwt"
+msgstr "snwt"
+
+#: simulation/templates/structures/athen/farmstead.xml:11
+#: simulation/templates/structures/mace/farmstead.xml:11
+#: simulation/templates/structures/mill_greek.xml:8
+#: simulation/templates/structures/ptol/farmstead.xml:8
+#: simulation/templates/structures/sele/farmstead.xml:8
+#: simulation/templates/structures/spart/farmstead.xml:11
+msgid "Epoikion"
+msgstr "Epoikion"
+
+#: simulation/templates/structures/maur/farmstead.xml:11
+#: simulation/templates/structures/mill_indian.xml:8
+msgid "Kantu"
+msgstr "Kantu"
+
+#: simulation/templates/structures/mill_italian.xml:8
+msgid "Villa"
+msgstr "Villa"
+
+#: simulation/templates/structures/mill_middle_eastern.xml:8
+#: simulation/templates/structures/pers/farmstead.xml:8
+msgid "Kaštašta"
+msgstr "Kaštašta"
+
+#: simulation/templates/structures/brit/rotarymill.xml:5
+#: simulation/templates/structures/mill_temperate_europe.xml:4
+msgid "Melonas"
+msgstr "Melonas"
+
 #: simulation/templates/structures/obelisk.xml:11
 msgid "Obelisk"
 msgstr "Obeliszk"
@@ -1334,19 +1363,6 @@ msgstr "Magas cövekek"
 msgid "Watchtower"
 msgstr "Őrtorony"
 
-#: simulation/templates/structures/pers/apadana.xml:26
-msgid "Throne Hall"
-msgstr "Trónterem"
-
-#: simulation/templates/structures/pers/apadana.xml:27
-msgid "Apadāna"
-msgstr "Apadāna"
-
-#: simulation/templates/structures/pers/apadana.xml:28
-#: simulation/templates/structures/spart/syssiton.xml:25
-msgid "Train Champions and Heroes."
-msgstr "Bajnokok és hősök kiképzése."
-
 #: simulation/templates/structures/pers/apartment_block.xml:12
 msgid "Apartment Block"
 msgstr "Bérháztömb"
@@ -1355,11 +1371,11 @@ msgstr "Bérháztömb"
 msgid "Padgan"
 msgstr "Padgan"
 
-#: simulation/templates/structures/pers/civil_centre.xml:8
+#: simulation/templates/structures/pers/civil_centre.xml:12
 msgid "Provincial Governor"
 msgstr "Tartományi kormányzó"
 
-#: simulation/templates/structures/pers/civil_centre.xml:9
+#: simulation/templates/structures/pers/civil_centre.xml:13
 msgid "Xšaçapāvan"
 msgstr "Xšaçapāvan"
 
@@ -1438,9 +1454,33 @@ msgstr "Paraspa"
 msgid "Asiyah"
 msgstr "Asiyah"
 
-#: simulation/templates/structures/pers/tacara.xml:24
+#: simulation/templates/structures/pers/tachara.xml:29
+msgid "Winter Palace"
+msgstr ""
+
+#: simulation/templates/structures/pers/tachara.xml:30
 msgid "Taçara"
 msgstr "Taçara"
+
+#: simulation/templates/structures/pers/tachara.xml:31
+msgid "Train Heroes and make use of the “Satrapy Tribute” feature."
+msgstr ""
+
+#: simulation/templates/structures/pers/tachara.xml:81
+msgid "Receive free Food tribute to your treasury from your subject peoples."
+msgstr ""
+
+#: simulation/templates/structures/pers/tachara.xml:86
+msgid "Receive free Wood tribute to your treasury from your subject peoples."
+msgstr ""
+
+#: simulation/templates/structures/pers/tachara.xml:91
+msgid "Receive free Stone tribute to your treasury from your subject peoples."
+msgstr ""
+
+#: simulation/templates/structures/pers/tachara.xml:96
+msgid "Receive free Metal tribute to your treasury from your subject peoples."
+msgstr ""
 
 #: simulation/templates/structures/pers/temple.xml:12
 msgid "Āyadanam"
@@ -1464,6 +1504,10 @@ msgstr "Raktár"
 #: simulation/templates/structures/pers/wonder.xml:9
 msgid "Hanging Gardens of Babylon"
 msgstr "Babiloni függőkert"
+
+#: simulation/templates/structures/pirates/dock.xml:8
+msgid "Pirate Port"
+msgstr ""
 
 #: simulation/templates/structures/ptol/elephant_stable.xml:5
 #: simulation/templates/structures/sele/elephant_stable.xml:5
@@ -1500,6 +1544,18 @@ msgstr "Olcsó laktanyaszerű épület, ami semleges területre építhető, de 
 msgid "Klērouchia"
 msgstr "Klērouchia"
 
+#: simulation/templates/structures/ptol/temple_2.xml:24
+msgid "Temple of Isis"
+msgstr "Az Izísz Temploma"
+
+#: simulation/templates/structures/ptol/temple_2.xml:26
+msgid "Train Heroes and Healers. Research special technologies."
+msgstr ""
+
+#: simulation/templates/structures/ptol/temple_2.xml:28
+msgid "TempleOfIsis"
+msgstr "AzÍziszTemploma"
+
 #: simulation/templates/structures/ptol/tower_artillery.xml:9
 msgid "mktr-n-ḏw"
 msgstr "mktr-n-ḏw"
@@ -1534,9 +1590,9 @@ msgstr "Tábor"
 
 #: simulation/templates/structures/rome/army_camp.xml:73
 msgid ""
-"Build in neutral or enemy territory. Train Advanced Melee Infantry. "
-"Construct Rams. Garrison Soldiers for additional arrows."
-msgstr "Semleges és ellenséges területre építhető. Közelharci gyalogság kiképzése. Faltörő kosokat épít. Katonák beszállásolása további nyilakért."
+"Build in neutral or enemy territory. Train Advanced Melee Infantry and "
+"Marian Legionaries. Construct Rams. Garrison Soldiers for additional arrows."
+msgstr ""
 
 #: simulation/templates/structures/rome/army_camp.xml:31
 #: simulation/templates/structures/rome/army_camp.xml:75
@@ -1719,6 +1775,10 @@ msgstr "Oszlopcsarnok"
 msgid "Corinthian Colonnade"
 msgstr "Korinthoszi oszlopcsarnok"
 
+#: simulation/templates/structures/shrine_celtic.xml:9
+msgid "Henge"
+msgstr "Hendzs"
+
 #: simulation/templates/structures/shrine_chinese.xml:9
 msgid "Bǎotǎ"
 msgstr "Bǎotǎ"
@@ -1731,7 +1791,7 @@ msgstr "Templom fülke"
 #: simulation/templates/structures/athen/temple.xml:9
 #: simulation/templates/structures/mace/temple.xml:9
 #: simulation/templates/structures/ptol/temple.xml:12
-#: simulation/templates/structures/ptol/temple_2.xml:11
+#: simulation/templates/structures/ptol/temple_2.xml:25
 #: simulation/templates/structures/sele/temple.xml:9
 #: simulation/templates/structures/shrine_greek_01.xml:9
 #: simulation/templates/structures/shrine_greek_02.xml:9
@@ -1743,6 +1803,10 @@ msgstr "Naos"
 msgid "Aedēs Sanitatem"
 msgstr "Aedēs Sanitatem"
 
+#: simulation/templates/structures/shrine_persian.xml:9
+msgid "Fire Temple"
+msgstr ""
+
 #: simulation/templates/structures/spart/gerousia.xml:22
 msgid "Spartan Senate"
 msgstr "Spártai szenátus"
@@ -1752,8 +1816,8 @@ msgid "Gerousia"
 msgstr "Gerúszia"
 
 #: simulation/templates/structures/spart/gerousia.xml:24
-msgid "Train Heroes."
-msgstr "Hősök kiképzése."
+msgid "Research technologies."
+msgstr ""
 
 #: simulation/templates/structures/spart/persian_stoa.xml:9
 msgid "\\\"Persian\\\" Stoa"
@@ -1770,6 +1834,10 @@ msgstr "Katonai étkezőcsarnok"
 #: simulation/templates/structures/spart/syssiton.xml:24
 msgid "Syssition"
 msgstr "Szüsszitia"
+
+#: simulation/templates/structures/spart/syssiton.xml:25
+msgid "Train Champions and Heroes."
+msgstr "Bajnokok és hősök kiképzése."
 
 #: simulation/templates/structures/spart/syssiton.xml:27
 msgid "Syssiton"
@@ -1919,11 +1987,13 @@ msgstr "Ház"
 
 #: simulation/templates/structures/kush/pyramid_small.xml:26
 #: simulation/templates/structures/pers/ice_house.xml:27
+#: simulation/templates/structures/spart/syssiton.xml:27
 #: simulation/templates/template_structure_civic_house.xml:28
 #: simulation/templates/template_structure_economic_farmstead.xml:30
 #: simulation/templates/template_structure_economic_storehouse.xml:28
 #: simulation/templates/template_structure_military_barracks.xml:29
 #: simulation/templates/template_structure_military_dock.xml:27
+#: simulation/templates/template_structure_military_kennel.xml:30
 #: simulation/templates/template_structure_military_range.xml:25
 #: simulation/templates/template_structure_military_stable.xml:29
 #: simulation/templates/template_structure_resource_corral.xml:29
@@ -1940,14 +2010,15 @@ msgid "Stoa"
 msgstr "Oszlopcsarnok"
 
 #: simulation/templates/structures/athen/gymnasium.xml:26
-#: simulation/templates/structures/cart/apartment.xml:26
 #: simulation/templates/structures/gaul/tavern.xml:22
 #: simulation/templates/structures/han/laozigate.xml:24
 #: simulation/templates/structures/han/ministry.xml:39
 #: simulation/templates/structures/iber/monument.xml:34
+#: simulation/templates/structures/mace/arsenal.xml:6
 #: simulation/templates/structures/maur/elephant_stable.xml:7
 #: simulation/templates/structures/merc_camp_egyptian.xml:31
 #: simulation/templates/structures/rome/army_camp.xml:75
+#: simulation/templates/structures/spart/gerousia.xml:26
 #: simulation/templates/template_structure_civic_stoa.xml:30
 #: simulation/templates/template_structure_civic_temple.xml:32
 #: simulation/templates/template_structure_economic_market.xml:28
@@ -2093,8 +2164,6 @@ msgstr "Gazdasági"
 
 #: simulation/templates/template_structure_economic_farmstead.xml:26
 #: simulation/templates/template_structure_economic_farmstead.xml:30
-#: simulation/templates/template_structure_special_rotarymill.xml:32
-#: simulation/templates/template_structure_special_rotarymill.xml:34
 msgid "Farmstead"
 msgstr "Tanya"
 
@@ -2150,7 +2219,8 @@ msgstr "Bajnok gyalogsági nyílpuskások kiképzése, ostromgépek építése �
 #: simulation/templates/structures/han/academy.xml:31
 #: simulation/templates/structures/han/civil_centre_court.xml:19
 #: simulation/templates/structures/kush/pyramid_large.xml:29
-#: simulation/templates/structures/kush/temple_amun.xml:31
+#: simulation/templates/structures/kush/temple_amun.xml:34
+#: simulation/templates/structures/ptol/temple_2.xml:28
 #: simulation/templates/structures/rome/temple_mars.xml:14
 #: simulation/templates/template_structure_military_arsenal.xml:28
 #: simulation/templates/template_structure_military_elephant_stable.xml:29
@@ -2195,7 +2265,7 @@ msgstr "Elefántok kiképzése és elefánt fejlesztések kutatása"
 
 #: simulation/templates/template_structure_military_elephant_stable.xml:29
 msgid "ElephantStable"
-msgstr "Elefánt istálló"
+msgstr "Elefántistálló"
 
 #: simulation/templates/structures/cart/embassy.xml:18
 #: simulation/templates/template_structure_military_embassy.xml:22
@@ -2221,6 +2291,16 @@ msgstr "Erőd"
 #: simulation/templates/template_structure_military_fortress.xml:67
 msgid "Garrison Soldiers for additional arrows."
 msgstr "Katonák beszállásolása további nyilakért."
+
+#: simulation/templates/template_structure_military_kennel.xml:28
+#: simulation/templates/template_structure_military_kennel.xml:29
+#: simulation/templates/template_structure_military_kennel.xml:30
+msgid "Kennel"
+msgstr "Kutyaól"
+
+#: simulation/templates/template_structure_military_kennel.xml:38
+msgid "Train War Dogs."
+msgstr ""
 
 #: simulation/templates/template_structure_military_range.xml:22
 msgid "Practice Range"
@@ -2285,16 +2365,6 @@ msgstr "Amfiteátrum"
 #: simulation/templates/template_structure_special_library.xml:27
 msgid "Library"
 msgstr "Könyvtár"
-
-#: simulation/templates/template_structure_special_rotarymill.xml:33
-msgid "Rotary Mill"
-msgstr "Forgómalom"
-
-#: simulation/templates/template_structure_special_rotarymill.xml:38
-msgid ""
-"Dropsite for harvested Food. Capture one of these to increase nearby food "
-"production."
-msgstr ""
 
 #: simulation/templates/template_structure_special_theater.xml:25
 #: simulation/templates/template_structure_special_theater.xml:27

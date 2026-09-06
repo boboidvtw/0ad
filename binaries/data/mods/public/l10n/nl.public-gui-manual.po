@@ -1,29 +1,32 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2023 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# rollieoo
-# Bart Groeneveld
-# bb
-# Christof Verhoeven
-# Dig Dug
-# echotangoecho .
-# Ellen Roels
-# Freagarach
-# Ismail Sahin
-# Johannes Collosus
-# Marijn Billiet
-# Max Klaversma
-# niektb
-# Sander Deryckere
-# Willem van der Doe
+# rollieoo, 2020-2021
+# Bart Groeneveld, 2017
+# bb, 2020
+# bb, 2018
+# Christof Verhoeven, 2016-2017
+# Dig Dug, 2018
+# echotangoecho ., 2017
+# Ellen Roels, 2015
+# Freagarach, 2021
+# Freagarach, 2019-2021
+# Ismail Sahin, 2017
+# Johannes Collosus, 2015
+# Marijn Billiet, 2018
+# Max Klaversma, 2014
+# niektb, 2015
+# rollieoo, 2021-2024
+# Sander Deryckere, 2015-2016
+# Willem van der Doe, 2020
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2023-01-13 08:09+0000\n"
+"POT-Creation-Date: 2024-06-17 07:08+0000\n"
 "PO-Revision-Date: 2014-06-19 17:51+0000\n"
-"Last-Translator: rollieoo, 2021-2023\n"
+"Last-Translator: rollieoo, 2021-2024\n"
 "Language-Team: Dutch (http://app.transifex.com/wildfire-games/0ad/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,15 +35,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: gui/manual/intro.txt:1
-msgid "[font=\"sans-bold-18\"]0 A.D. in-game manual[font=\"sans-14\"]"
-msgstr "[font=\"sans-bold-18\"]0 A.D. in-game handleiding[font=\"sans-14\"]"
+msgid "[font=\"sans-bold-18\"]0 A.D. in-game manual[font=\"sans-14\"]"
+msgstr "[font=\"sans-bold-18\"]0 A.D. in-game handleiding[font=\"sans-14\"]"
 
 #: gui/manual/intro.txt:2
 msgid ""
-"Thank you for installing 0 A.D.! This page will give a brief overview of the"
+"Thank you for installing 0 A.D.! This page will give a brief overview of the"
 " features available in this incomplete, under-development, alpha version of "
 "the game."
-msgstr "Bedankt voor het installeren van 0 A.D.! Deze pagina geeft een kort overzicht van de aanwezige functies in deze nog niet complete, in ontwikkeling zijnde, alpha versie van het spel."
+msgstr "Bedankt voor het installeren van 0 A.D.! Deze pagina geeft een kort overzicht van de aanwezige functies in deze nog niet complete, in ontwikkeling zijnde, alpha versie van het spel."
 
 #: gui/manual/intro.txt:4
 msgid "[font=\"sans-bold-16\"]Graphics settings[font=\"sans-14\"]"
@@ -335,13 +338,13 @@ msgstr "  sneltoets.selection.remove – Pas aan – verwijder uit selectie (wer
 #: gui/manual/intro.txt:72
 msgid ""
 "  hotkey.selection.offscreen – Modifier – add all units, including offscreen"
-" units, to selection."
-msgstr "  sneltoets.selection.offscreen - Pas aan – voeg alle eenheden toe aan selectie, ook als ze niet in beeld zijn."
+" units, to selection"
+msgstr "  sneltoets.selection.offscreen - Pas aan – voeg alle eenheden toe aan selectie, ook als ze niet in beeld zijn"
 
 #: gui/manual/intro.txt:73
 msgid ""
-"  hotkey.selection.cancel – Unselect all units, cancel building placement."
-msgstr "  sneltoets.selection.cancel – Deselecteer alle eenheden of onderbreek gebouwen plaatsen."
+"  hotkey.selection.cancel – Unselect all units, cancel building placement"
+msgstr "  sneltoets.selection.cancel – Deselecteer alle eenheden of onderbreek gebouwen plaatsen"
 
 #: gui/manual/intro.txt:74
 msgid "  hotkey.selection.idlebuilder – Select idle builder"
@@ -491,8 +494,8 @@ msgstr "  sneltoets.session.queue + rechtsklik – Voeg een (verplaats / bouw / 
 #: gui/manual/intro.txt:104
 msgid ""
 "  hotkey.session.pushorderfront + Right Click – Modifier to push any order "
-"in front of the order queue."
-msgstr "  sneltoets.session.pushorderfront + rechtsklik – Speciale toets om een commando vooraan de wachtrij te plaatsen.."
+"in front of the order queue"
+msgstr "  sneltoets.session.pushorderfront + rechtsklik – Speciale toets om een commando vooraan de wachtrij te plaatsen"
 
 #: gui/manual/intro.txt:105
 msgid ""

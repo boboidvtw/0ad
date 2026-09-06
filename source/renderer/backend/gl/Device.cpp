@@ -1,4 +1,4 @@
-/* Copyright (C) 2023 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -34,8 +34,6 @@
 #include "scriptinterface/ScriptRequest.h"
 
 #if OS_WIN
-#include "lib/sysdep/os/win/wgfx.h"
-
 // We can't include wutil directly because GL headers conflict with Windows
 // until we use a proper GL loader.
 extern void* wutil_GetAppHDC();
@@ -104,25 +102,8 @@ std::string GetVersionImpl()
 
 std::string GetDriverInformationImpl()
 {
-	const std::string version = GetVersionImpl();
-
-	std::string driverInfo;
-#if OS_WIN
-	driverInfo = CStrW(wgfx_DriverInfo()).ToUTF8();
-	if (driverInfo.empty())
-#endif
-	{
-		if (!version.empty())
-		{
-			// Add "OpenGL" to differentiate this from the real driver version
-			// (returned by platform-specific detect routines).
-			driverInfo = std::string("OpenGL ") + version;
-		}
-	}
-
-	if (driverInfo.empty())
-		return version;
-	return version + " " + driverInfo;
+	// Usually GL_VERSION contains both OpenGL and driver versions.
+	return reinterpret_cast<const char*>(glGetString(GL_VERSION));
 }
 
 std::vector<std::string> GetExtensionsImpl()
@@ -381,7 +362,7 @@ std::unique_ptr<IDevice> CDevice::Create(SDL_Window* window, const bool arb)
 	capabilities.ARBShaders = !ogl_HaveExtensions(0, "GL_ARB_vertex_program", "GL_ARB_fragment_program", nullptr);
 	if (capabilities.ARBShaders)
 		capabilities.ARBShadersShadow = ogl_HaveExtension("GL_ARB_fragment_program_shadow");
-	capabilities.computeShaders = ogl_HaveVersion(4, 3) || ogl_HaveExtension("GL_ARB_compute_shader");
+	capabilities.computeShaders = ogl_HaveVersion(4, 3) || (ogl_HaveVersion(4, 2) && ogl_HaveExtension("GL_ARB_compute_shader") && ogl_HaveExtension("GL_ARB_shader_image_load_store"));
 #if CONFIG2_GLES
 	// Some GLES implementations have GL_EXT_texture_compression_dxt1
 	// but that only supports DXT1 so we can't use it.
@@ -849,7 +830,7 @@ void CDevice::Report(const ScriptRequest& rq, JS::HandleValue settings)
 
 		const char* glxexts = glXQueryExtensionsString(dpy, scrnum);
 
-		Script::SetProperty(rq, settings, "glx_extensions", glxexts);
+		Script::SetProperty(rq, settings, "GLX_EXTENSIONS", glxexts);
 
 		if (strstr(glxexts, "GLX_MESA_query_renderer") && glXQueryCurrentRendererIntegerMESA && glXQueryCurrentRendererStringMESA)
 		{
@@ -882,6 +863,12 @@ std::unique_ptr<IGraphicsPipelineState> CDevice::CreateGraphicsPipelineState(
 	const SGraphicsPipelineStateDesc& pipelineStateDesc)
 {
 	return CGraphicsPipelineState::Create(this, pipelineStateDesc);
+}
+
+std::unique_ptr<IComputePipelineState> CDevice::CreateComputePipelineState(
+	const SComputePipelineStateDesc& pipelineStateDesc)
+{
+	return CComputePipelineState::Create(this, pipelineStateDesc);
 }
 
 std::unique_ptr<IVertexInputLayout> CDevice::CreateVertexInputLayout(
@@ -917,9 +904,9 @@ std::unique_ptr<IFramebuffer> CDevice::CreateFramebuffer(
 }
 
 std::unique_ptr<IBuffer> CDevice::CreateBuffer(
-	const char* name, const IBuffer::Type type, const uint32_t size, const bool dynamic)
+	const char* name, const IBuffer::Type type, const uint32_t size, const uint32_t usage)
 {
-	return CBuffer::Create(this, name, type, size, dynamic);
+	return CBuffer::Create(this, name, type, size, usage);
 }
 
 std::unique_ptr<IShaderProgram> CDevice::CreateShaderProgram(

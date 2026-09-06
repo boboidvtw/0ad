@@ -1,25 +1,25 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2022 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# scinart
-# Christian Xia
-# helinb
-# Kelvin Cooper
-# liu lizhi
-# Vince Luo
-# Wolfson Liu
-# 武军 李
-# 玉堂白鹤
-# 越 杨
-# 邬贝超
+# scinart, 2018
+# Christian Xia, 2016
+# helinb, 2015
+# Kelvin Cooper, 2016
+# liu lizhi, 2014,2018,2020
+# Vince Luo, 2017
+# Wolfson Liu, 2020
+# 武军 李, 2016-2017
+# 玉堂白鹤, 2015,2021
+# 越 杨, 2018
+# 邬贝超, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2022-09-12 09:35+0000\n"
+"POT-Creation-Date: 2024-08-12 07:08+0000\n"
 "PO-Revision-Date: 2014-06-19 17:50+0000\n"
-"Last-Translator: liu lizhi <xingzuo88@qq.com>, 2022-2023\n"
+"Last-Translator: liu lizhi, 2022-2024\n"
 "Language-Team: Chinese (http://app.transifex.com/wildfire-games/0ad/language/zh/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,32 +27,31 @@ msgstr ""
 "Language: zh\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(caption):28
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):61
-msgid "Back"
-msgstr "后退"
-
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(caption):32
-msgid "Update"
-msgstr "更新"
-
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(heading):17
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:17
 msgid "Rank"
 msgstr "等级"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(heading):20
-#: gui/lobby/LobbyPage/GameList.xml:(heading):13
-#: gui/lobby/LobbyPage/PlayerList.xml:(heading):21
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:20
+#: gui/lobby/LobbyPage/GameList.xml:13 gui/lobby/LobbyPage/PlayerList.xml:21
 msgid "Name"
 msgstr "名字"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(heading):23
-#: gui/lobby/LobbyPage/GameList.xml:(heading):28
-#: gui/lobby/LobbyPage/PlayerList.xml:(heading):24
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:23
+#: gui/lobby/LobbyPage/GameList.xml:28 gui/lobby/LobbyPage/PlayerList.xml:24
 msgid "Rating"
 msgstr "排位"
 
-#: gui/lobby/LobbyPage/AnnouncementHandler.js:18
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:28
+#: gui/lobby/ProfilePage/ProfilePage.xml:61
+msgid "Back"
+msgstr "后退"
+
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:32
+msgid "Update"
+msgstr "更新"
+
+#: gui/lobby/LobbyPage/AnnouncementHandler.js:19
+#: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessageFormatAnnouncement.js:24
 msgid "Notice"
 msgstr "公告"
 
@@ -68,34 +67,34 @@ msgstr "取消标记为好友"
 msgid "Host Game"
 msgstr "创建游戏"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:40
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:43
 msgid "Your active mods do not match the mods of this game."
 msgstr "当前模组不匹配其它模组。"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:42
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:45
 msgid "Do you want to switch to the mod selection page?"
 msgstr "是否要切换到模组项？"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:43
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:46
 msgid "Incompatible mods"
 msgstr "模组不兼容"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:52
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:62
 msgid "The game has already started. Do you want to join as observer?"
 msgstr "游戏已开始，是否进入为观察者模式？"
 
 #. Translation: Join the game currently selected in the list.
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:104
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:95
 msgid "Join Game"
 msgstr "加入游戏"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(caption):12
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:12
 #: gui/lobby/LobbyPage/Buttons/LeaderboardButton.js:9
 msgid "Leaderboard"
 msgstr "排行榜"
 
 #: gui/lobby/LobbyPage/Buttons/ProfileButton.js:9
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):12
+#: gui/lobby/ProfilePage/ProfilePage.xml:12
 msgid "Player Profile Lookup"
 msgstr "玩家档案"
 
@@ -180,6 +179,13 @@ msgstr "/say"
 msgid "Clear all chat scrollback."
 msgstr "清空之前所有的聊天记录。"
 
+#: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessageFormatAnnouncement.js:26
+#, javascript-format
+msgid ""
+"== %(prefix)s:\n"
+"%(message)s"
+msgstr ""
+
 #. Translation: Chat message issued using the ‘/me’ command.
 #: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessageFormatMe.js:24
 #, javascript-format
@@ -205,7 +211,7 @@ msgstr "私密"
 msgid "(%(private)s) %(message)s"
 msgstr "(%(private)s) %(message)s"
 
-#: gui/lobby/LobbyPage/Chat/ChatPanel.xml:(caption):12
+#: gui/lobby/LobbyPage/Chat/ChatPanel.xml:12
 msgid "Send"
 msgstr "发送"
 
@@ -320,23 +326,23 @@ msgstr "已被踢出"
 msgid "You have been disconnected from the lobby. Do you want to reconnect?"
 msgstr "已与大厅断开连接。是否重连？"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:53
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:63
 #: gui/lobby/LobbyPage/ConnectionHandler.js:62
-#: gui/prelobby/common/credentials/credentials.js:55
+#: gui/prelobby/common/credentials/credentials.js:56
 msgid "Confirmation"
 msgstr "确定"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:44
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:54
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:47
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:64
 #: gui/lobby/LobbyPage/ConnectionHandler.js:63
-#: gui/prelobby/common/credentials/credentials.js:56
+#: gui/prelobby/common/credentials/credentials.js:57
 msgid "No"
 msgstr "否"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:44
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:54
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:47
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:64
 #: gui/lobby/LobbyPage/ConnectionHandler.js:63
-#: gui/prelobby/common/credentials/credentials.js:56
+#: gui/prelobby/common/credentials/credentials.js:57
 msgid "Yes"
 msgstr "是"
 
@@ -418,25 +424,25 @@ msgstr "地图大小:"
 msgid "Map Description:"
 msgstr "地图描述："
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):16
+#: gui/lobby/LobbyPage/GameList.xml:16
 msgid "Map Name"
 msgstr "地图名称"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):19
+#: gui/lobby/LobbyPage/GameList.xml:19
 msgctxt "map"
 msgid "Size"
 msgstr "大小"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):22
+#: gui/lobby/LobbyPage/GameList.xml:22
 msgctxt "map"
 msgid "Type"
 msgstr "类型"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):25
+#: gui/lobby/LobbyPage/GameList.xml:25
 msgid "Players"
 msgstr "玩家"
 
-#: gui/lobby/LobbyPage/GameListFilters.xml:(caption):7
+#: gui/lobby/LobbyPage/GameListFilters.xml:7
 msgid "Show only open games"
 msgstr "只显示开放的游戏"
 
@@ -492,8 +498,7 @@ msgctxt "lobby kick"
 msgid "Reason: %(reason)s"
 msgstr "原因: %(reason)s"
 
-#: gui/lobby/LobbyPage/LobbyPage.xml:(caption):13
-#: gui/prelobby/entrance/entrance.xml:(caption):14
+#: gui/lobby/LobbyPage/LobbyPage.xml:13 gui/prelobby/entrance/entrance.xml:14
 msgid "Multiplayer Lobby"
 msgstr "多人游戏大厅"
 
@@ -523,13 +528,13 @@ msgctxt "lobby presence"
 msgid "Unknown"
 msgstr "未知"
 
-#: gui/lobby/LobbyPage/PlayerList.xml:(heading):18
-msgid "Status"
-msgstr "状态"
-
-#: gui/lobby/LobbyPage/PlayerList.xml:(placeholder_text):4
+#: gui/lobby/LobbyPage/PlayerList.xml:4
 msgid "Search for Player"
 msgstr "寻找玩家"
+
+#: gui/lobby/LobbyPage/PlayerList.xml:18
+msgid "Status"
+msgstr "状态"
 
 #: gui/lobby/LobbyPage/ProfilePanel.js:106
 msgid "N/A"
@@ -557,33 +562,33 @@ msgstr "-"
 msgid "%(percentage)s%%"
 msgstr "%(percentage)s%%"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):8
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):30
+#: gui/lobby/LobbyPage/ProfilePanel.xml:8
+#: gui/lobby/ProfilePage/ProfilePage.xml:30
 msgid "Current Rank:"
 msgstr "当前队列："
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):12
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):34
+#: gui/lobby/LobbyPage/ProfilePanel.xml:12
+#: gui/lobby/ProfilePage/ProfilePage.xml:34
 msgid "Highest Rating:"
 msgstr "最高排行："
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):16
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):38
+#: gui/lobby/LobbyPage/ProfilePanel.xml:16
+#: gui/lobby/ProfilePage/ProfilePage.xml:38
 msgid "Total Games:"
 msgstr "游戏总数："
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):20
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):42
+#: gui/lobby/LobbyPage/ProfilePanel.xml:20
+#: gui/lobby/ProfilePage/ProfilePage.xml:42
 msgid "Wins:"
 msgstr "胜者："
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):24
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):46
+#: gui/lobby/LobbyPage/ProfilePanel.xml:24
+#: gui/lobby/ProfilePage/ProfilePage.xml:46
 msgid "Losses:"
 msgstr "输者："
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):28
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):50
+#: gui/lobby/LobbyPage/ProfilePanel.xml:28
+#: gui/lobby/ProfilePage/ProfilePage.xml:50
 msgid "Win Rate:"
 msgstr "胜率："
 
@@ -592,19 +597,19 @@ msgstr "胜率："
 msgid "Player \"%(nick)s\" not found."
 msgstr "未找到玩家  \"%(nick)s\""
 
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):16
+#: gui/lobby/ProfilePage/ProfilePage.xml:16
 msgid "Enter playername:"
 msgstr "输入玩家昵称 :"
 
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):22
+#: gui/lobby/ProfilePage/ProfilePage.xml:22
 msgid "View Profile"
 msgstr "查看档案"
 
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):55
+#: gui/lobby/ProfilePage/ProfilePage.xml:55
 msgid "Please enter a player name."
 msgstr "请输入玩家名。"
 
-#: gui/prelobby/common/credentials/confirmpassword.xml:(caption):4
+#: gui/prelobby/common/credentials/confirmpassword.xml:4
 msgid "Password again:"
 msgstr "请再次输入密码："
 
@@ -638,19 +643,19 @@ msgstr "请再次输入密码"
 msgid "Passwords do not match"
 msgstr "密码不匹配"
 
-#: gui/prelobby/common/credentials/credentials.js:54
+#: gui/prelobby/common/credentials/credentials.js:55
 msgid "Are you sure you want to delete the password after connecting?"
 msgstr "确定要在连接后清除密码？"
 
-#: gui/prelobby/common/credentials/credentials.xml:(caption):6
+#: gui/prelobby/common/credentials/credentials.xml:6
 msgid "Login:"
 msgstr "注册："
 
-#: gui/prelobby/common/credentials/credentials.xml:(caption):15
+#: gui/prelobby/common/credentials/credentials.xml:15
 msgid "Password:"
 msgstr "密码："
 
-#: gui/prelobby/common/credentials/rememberpassword.xml:(caption):7
+#: gui/prelobby/common/credentials/rememberpassword.xml:7
 msgid "Remember Password"
 msgstr "记住密码"
 
@@ -660,20 +665,22 @@ msgid ""
 "allowed to register more than one account within one hour."
 msgstr "未知错误。这通常是因为同一IP地址在一小时内不允许注册超过一个帐户。"
 
-#: gui/prelobby/common/feedback/feedback.xml:(caption):10
-#: gui/prelobby/entrance/entrance.xml:(caption):30
+#: gui/prelobby/common/feedback/feedback.xml:10
+#: gui/prelobby/entrance/entrance.xml:30
 msgid "Cancel"
 msgstr "取消"
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:1
 msgid ""
-"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Privacy "
+"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Privacy "
 "Policy[/font]"
 msgstr "[font=\"sans-bold-18\"]多人大厅隐私政策[/font]"
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:3
-msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2020-12-24"
-msgstr "[font=\"sans-bold-14\"]文件日期:[/font] 2020-12-24"
+#: gui/prelobby/common/terms/Terms_of_Service.txt:3
+#: gui/prelobby/common/terms/Terms_of_Use.txt:3
+msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2023-07-27"
+msgstr "[font=\"sans-bold-14\"]文件日期：[/font] 2023-07-27"
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:5
 msgid ""
@@ -895,7 +902,7 @@ msgstr "1.必要时，将执行定义的服务条款(GDPR 6.1.b)。"
 #: gui/prelobby/common/terms/Privacy_Policy.txt:50
 msgid ""
 "2. Wildfire Games has legitimate interests in providing the Multiplayer "
-"Lobby, in the development and improvement of 0 A.D. and the Multiplayer "
+"Lobby, in the development and improvement of 0 A.D. and the Multiplayer "
 "Lobby, in enforcing the Terms of Use and in the protection against "
 "cyberattacks (GDPR 6.1.f)."
 msgstr "2. Wildfire Games 在开发和改进本游戏中，将合法提供多人游戏大厅服务。并执行使用条款来阻止网络攻击(GDPR 6.1.f)。"
@@ -1072,17 +1079,13 @@ msgstr "有关Wildfire游戏隐私政策的更多信息，请访问 https://trac
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:1
 msgid ""
-"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
+"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
 "Service[/font]"
-msgstr "[font=\"sans-bold-18\"]服务条款[/font]"
-
-#: gui/prelobby/common/terms/Terms_of_Service.txt:3
-msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2018-10-16"
-msgstr "[font=\"sans-bold-14\"]文件日期:[/font] 2018-10-16"
+msgstr "[font=\"sans-bold-18\"]游戏大厅服务条款[/font]"
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:5
 msgid ""
-"The 0 A.D. Empires Ascendant Multiplayer Lobby is an online service provided"
+"The 0 A.D. Empires Ascendant Multiplayer Lobby is an online service provided"
 " by Wildfire Games that allows players to set up online multiplayer matches,"
 " discuss the game in a public chat room and gain a rating that reflects "
 "their skill."
@@ -1091,9 +1094,9 @@ msgstr "0 A.D. 多人大厅是Wildfire Games提供的在线服务，允许玩家
 #: gui/prelobby/common/terms/Terms_of_Service.txt:7
 msgid ""
 "Due to the subject matter of historic warfare, description and depiction of "
-"violence and the language on the Multiplayer Lobby, 0 A.D. and the "
+"violence and the language on the Multiplayer Lobby, 0 A.D. and the "
 "Multiplayer Lobby are not directed to young children (COPPA §312.2)."
-msgstr "由于游戏为历史战争，会有暴力性的描述，以及在多人游戏大厅的玩家对话，0 A.D.及多人游戏大厅不会面向儿童（COPPA§312.2）。"
+msgstr "由于游戏为历史战争，会有暴力性的描述，以及在多人游戏大厅的玩家对话，0 A.D.及多人游戏大厅不会面向儿童（COPPA §312.2）。"
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:8
 msgid "The minimum age to use the Multiplayer Lobby is 13."
@@ -1102,9 +1105,9 @@ msgstr "进入多人游戏大厅，需年满13周岁。"
 #: gui/prelobby/common/terms/Terms_of_Service.txt:10
 #: gui/prelobby/common/terms/Terms_of_Use.txt:5
 msgid ""
-"[font=\"sans-bold-14\"]By using the 0 A.D. Multiplayer Lobby, you agree "
+"[font=\"sans-bold-14\"]By using the 0 A.D. Multiplayer Lobby, you agree "
 "to:[/font]"
-msgstr "[font=\"sans-bold-14\"]使用多人大厅, 你同意:[/font]"
+msgstr "[font=\"sans-bold-14\"]使用多人游戏大厅, 你将同意以下内容：[/font]"
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:11
 msgid " 1. Follow all usage policies."
@@ -1164,13 +1167,9 @@ msgstr "若部分条款被认定为非法或不可执行，其余条款仍然适
 
 #: gui/prelobby/common/terms/Terms_of_Use.txt:1
 msgid ""
-"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
+"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
 "Use[/font]"
-msgstr "0 A.D. Empires Ascendant 多人大厅使用条款"
-
-#: gui/prelobby/common/terms/Terms_of_Use.txt:3
-msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2022-09-01"
-msgstr "[font=\"sans-bold-14\"]文件日期：[/font] 2022-09-01"
+msgstr "[font=\"sans-bold-18\"]多人游戏大厅服务条款[/font]"
 
 #: gui/prelobby/common/terms/Terms_of_Use.txt:6
 msgid ""
@@ -1270,11 +1269,11 @@ msgstr "隐私政策"
 msgid "Please read and accept the Privacy Policy."
 msgstr "阅读并接受隐私政策。"
 
-#: gui/prelobby/entrance/entrance.xml:(caption):20
+#: gui/prelobby/entrance/entrance.xml:20
 msgid "Create a new account"
 msgstr "新建账户"
 
-#: gui/prelobby/entrance/entrance.xml:(caption):25
+#: gui/prelobby/entrance/entrance.xml:25
 msgid "Login to an existing account"
 msgstr "用已存在账户登录"
 
@@ -1286,7 +1285,7 @@ msgstr "连接"
 msgid "Connecting…"
 msgstr "连接中……"
 
-#: gui/prelobby/login/login.xml:(caption):13
+#: gui/prelobby/login/login.xml:13
 msgid "Connect to the game lobby"
 msgstr "加入游戏大厅"
 
@@ -1302,6 +1301,6 @@ msgstr "注册中……"
 msgid "Registered"
 msgstr "已注册"
 
-#: gui/prelobby/register/register.xml:(caption):13
+#: gui/prelobby/register/register.xml:13
 msgid "Registration"
 msgstr "注册"

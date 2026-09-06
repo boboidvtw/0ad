@@ -1,4 +1,4 @@
-/* Copyright (C) 2023 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -323,9 +323,10 @@ void CDecalRData::BuildVertexData()
 
 	if (!m_VBDecals || m_VBDecals->m_Count != vertices.size())
 	{
-		m_VBDecals = g_VBMan.AllocateChunk(
+		m_VBDecals = g_Renderer.GetVertexBufferManager().AllocateChunk(
 			sizeof(SDecalVertex), vertices.size(),
-			Renderer::Backend::IBuffer::Type::VERTEX, false);
+			Renderer::Backend::IBuffer::Type::VERTEX,
+			Renderer::Backend::IBuffer::Usage::TRANSFER_DST);
 	}
 	m_VBDecals->m_Owner->UpdateChunkVertices(m_VBDecals.Get(), vertices.data());
 
@@ -365,9 +366,10 @@ void CDecalRData::BuildVertexData()
 	// Construct vertex buffer.
 	if (!m_VBDecalsIndices || m_VBDecalsIndices->m_Count != indices.size())
 	{
-		m_VBDecalsIndices = g_VBMan.AllocateChunk(
+		m_VBDecalsIndices = g_Renderer.GetVertexBufferManager().AllocateChunk(
 			sizeof(u16), indices.size(),
-			Renderer::Backend::IBuffer::Type::INDEX, false);
+			Renderer::Backend::IBuffer::Type::INDEX,
+			Renderer::Backend::IBuffer::Usage::TRANSFER_DST);
 	}
 	m_VBDecalsIndices->m_Owner->UpdateChunkVertices(m_VBDecalsIndices.Get(), indices.data());
 }

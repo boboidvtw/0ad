@@ -1,28 +1,28 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2022 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# Cyril Chudáček
-# David Nováček
-# Jakub Jelen
-# LiberteCzech
-# fri
-# Pavel Šindelář
-# Peter Stanislav
-# Petr Hála
-# Petr Velička
-# Warriog
-# Robin Kriebel
-# Tomáš Matýs
-# Tomáš Weber
-# Vojtěch Dubský
+# Cyril Chudáček, 2020
+# David Nováček, 2020
+# Jakub Jelen, 2017
+# LiberteCzech, 2015
+# fri, 2014-2018,2021,2023
+# Pavel Šindelář, 2015
+# Peter Stanislav, 2021
+# Petr Hála, 2016-2017
+# Petr Velička, 2021
+# Warriog, 2018
+# Robin Kriebel, 2016-2017
+# Tomáš Matýs, 2018,2021,2024
+# Tomáš Weber, 2021
+# Vojtěch Dubský, 2021
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2022-09-12 09:35+0000\n"
+"POT-Creation-Date: 2024-08-12 07:08+0000\n"
 "PO-Revision-Date: 2014-06-19 17:50+0000\n"
-"Last-Translator: fri, 2014-2018,2021,2023\n"
+"Last-Translator: Tomáš Matýs, 2018,2021,2024\n"
 "Language-Team: Czech (http://app.transifex.com/wildfire-games/0ad/language/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,32 +30,31 @@ msgstr ""
 "Language: cs\n"
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(caption):28
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):61
-msgid "Back"
-msgstr "Zpět"
-
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(caption):32
-msgid "Update"
-msgstr "Aktualizovat"
-
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(heading):17
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:17
 msgid "Rank"
 msgstr "Hodnost"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(heading):20
-#: gui/lobby/LobbyPage/GameList.xml:(heading):13
-#: gui/lobby/LobbyPage/PlayerList.xml:(heading):21
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:20
+#: gui/lobby/LobbyPage/GameList.xml:13 gui/lobby/LobbyPage/PlayerList.xml:21
 msgid "Name"
 msgstr "Jméno"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(heading):23
-#: gui/lobby/LobbyPage/GameList.xml:(heading):28
-#: gui/lobby/LobbyPage/PlayerList.xml:(heading):24
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:23
+#: gui/lobby/LobbyPage/GameList.xml:28 gui/lobby/LobbyPage/PlayerList.xml:24
 msgid "Rating"
 msgstr "Hodnocení"
 
-#: gui/lobby/LobbyPage/AnnouncementHandler.js:18
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:28
+#: gui/lobby/ProfilePage/ProfilePage.xml:61
+msgid "Back"
+msgstr "Zpět"
+
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:32
+msgid "Update"
+msgstr "Aktualizovat"
+
+#: gui/lobby/LobbyPage/AnnouncementHandler.js:19
+#: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessageFormatAnnouncement.js:24
 msgid "Notice"
 msgstr "Oznámení"
 
@@ -71,34 +70,34 @@ msgstr "Odznačit kamaráda"
 msgid "Host Game"
 msgstr "Pořádat hru"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:40
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:43
 msgid "Your active mods do not match the mods of this game."
 msgstr "Vaše aktivní pozměněné verze neodpovídají úpravám této hry."
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:42
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:45
 msgid "Do you want to switch to the mod selection page?"
 msgstr "Chcete přejít na stránku výběru upravených verzí?"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:43
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:46
 msgid "Incompatible mods"
-msgstr "Nekompatibilní úpravy"
+msgstr "Nekompatibilní módy"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:52
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:62
 msgid "The game has already started. Do you want to join as observer?"
 msgstr "Hra již začala. Chcete se připojit jako pozorovatel?"
 
 #. Translation: Join the game currently selected in the list.
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:104
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:95
 msgid "Join Game"
 msgstr "Připojit se ke hře"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(caption):12
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:12
 #: gui/lobby/LobbyPage/Buttons/LeaderboardButton.js:9
 msgid "Leaderboard"
 msgstr "Tabulka vítězů"
 
 #: gui/lobby/LobbyPage/Buttons/ProfileButton.js:9
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):12
+#: gui/lobby/ProfilePage/ProfilePage.xml:12
 msgid "Player Profile Lookup"
 msgstr "Zobrazit profil hráče"
 
@@ -117,7 +116,7 @@ msgstr "Hlavní nabídka"
 msgid ""
 "The command '%(cmd)s' is not supported. Try %(help)s to get more information"
 " about the supported commands."
-msgstr "Příkaz '%(cmd)s' není podporován. Zkus %(help)s k získání více informací k podporovaným příkazům."
+msgstr "Příkaz '%(cmd)s' není podporován. Zkus %(help)sk získání více informací o podporovaných příkazech."
 
 #: gui/lobby/LobbyPage/Chat/ChatCommandHandler.js:45
 #, javascript-format
@@ -183,6 +182,13 @@ msgstr "/say"
 msgid "Clear all chat scrollback."
 msgstr "Vymazat celou historii rozhovoru."
 
+#: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessageFormatAnnouncement.js:26
+#, javascript-format
+msgid ""
+"== %(prefix)s:\n"
+"%(message)s"
+msgstr ""
+
 #. Translation: Chat message issued using the ‘/me’ command.
 #: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessageFormatMe.js:24
 #, javascript-format
@@ -208,7 +214,7 @@ msgstr "Soukromý"
 msgid "(%(private)s) %(message)s"
 msgstr "(%(private)s) %(message)s"
 
-#: gui/lobby/LobbyPage/Chat/ChatPanel.xml:(caption):12
+#: gui/lobby/LobbyPage/Chat/ChatPanel.xml:12
 msgid "Send"
 msgstr "Poslat"
 
@@ -323,23 +329,23 @@ msgstr "VYHOZEN"
 msgid "You have been disconnected from the lobby. Do you want to reconnect?"
 msgstr "Byl jste odpojen ze zájmové skupiny. Přejete si znovu se připojit?"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:53
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:63
 #: gui/lobby/LobbyPage/ConnectionHandler.js:62
-#: gui/prelobby/common/credentials/credentials.js:55
+#: gui/prelobby/common/credentials/credentials.js:56
 msgid "Confirmation"
 msgstr "Potvrzení"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:44
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:54
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:47
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:64
 #: gui/lobby/LobbyPage/ConnectionHandler.js:63
-#: gui/prelobby/common/credentials/credentials.js:56
+#: gui/prelobby/common/credentials/credentials.js:57
 msgid "No"
 msgstr "Ne"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:44
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:54
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:47
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:64
 #: gui/lobby/LobbyPage/ConnectionHandler.js:63
-#: gui/prelobby/common/credentials/credentials.js:56
+#: gui/prelobby/common/credentials/credentials.js:57
 msgid "Yes"
 msgstr "Ano"
 
@@ -365,11 +371,11 @@ msgstr "Nekonečná hra"
 msgid ""
 "You have some incompatible mods:\n"
 "%(details)s"
-msgstr "Máte několik nekompatibilních úprav:\n%(details)s"
+msgstr "Máte několik nekompatibilních módů:\n%(details)s"
 
 #: gui/lobby/LobbyPage/GameDetails.js:123
 msgid "This mod does not affect MP compatibility"
-msgstr "Tato úprava nemá vliv na více-hráčskou kompatibilitu"
+msgstr "Tato modifikace nemá vliv na více-hráčskou kompatibilitu"
 
 #: gui/lobby/LobbyPage/GameDetails.js:142
 #, javascript-format
@@ -396,7 +402,7 @@ msgstr "Upravené verze:"
 
 #: gui/lobby/LobbyPage/GameDetails.js:153
 msgid "Mods (incompatible):"
-msgstr "Upravené verze (nekompatibilní):"
+msgstr "Modifikace (nekompatibilní):"
 
 #. Translation: %(time)s is the hour and minute here.
 #: gui/lobby/LobbyPage/GameDetails.js:156
@@ -421,25 +427,25 @@ msgstr "Velikost mapy:"
 msgid "Map Description:"
 msgstr "Popis mapy:"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):16
+#: gui/lobby/LobbyPage/GameList.xml:16
 msgid "Map Name"
 msgstr "Název mapy"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):19
+#: gui/lobby/LobbyPage/GameList.xml:19
 msgctxt "map"
 msgid "Size"
 msgstr "Velikost"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):22
+#: gui/lobby/LobbyPage/GameList.xml:22
 msgctxt "map"
 msgid "Type"
 msgstr "Typ"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):25
+#: gui/lobby/LobbyPage/GameList.xml:25
 msgid "Players"
 msgstr "Hráči"
 
-#: gui/lobby/LobbyPage/GameListFilters.xml:(caption):7
+#: gui/lobby/LobbyPage/GameListFilters.xml:7
 msgid "Show only open games"
 msgstr "Ukázat pouze otevřené hry"
 
@@ -495,8 +501,7 @@ msgctxt "lobby kick"
 msgid "Reason: %(reason)s"
 msgstr "Důvod: %(reason)s"
 
-#: gui/lobby/LobbyPage/LobbyPage.xml:(caption):13
-#: gui/prelobby/entrance/entrance.xml:(caption):14
+#: gui/lobby/LobbyPage/LobbyPage.xml:13 gui/prelobby/entrance/entrance.xml:14
 msgid "Multiplayer Lobby"
 msgstr "Zájmová skupina pro více hráčů"
 
@@ -526,13 +531,13 @@ msgctxt "lobby presence"
 msgid "Unknown"
 msgstr "Neznámý"
 
-#: gui/lobby/LobbyPage/PlayerList.xml:(heading):18
-msgid "Status"
-msgstr "Stav"
-
-#: gui/lobby/LobbyPage/PlayerList.xml:(placeholder_text):4
+#: gui/lobby/LobbyPage/PlayerList.xml:4
 msgid "Search for Player"
 msgstr "Hledat hráče"
+
+#: gui/lobby/LobbyPage/PlayerList.xml:18
+msgid "Status"
+msgstr "Stav"
 
 #: gui/lobby/LobbyPage/ProfilePanel.js:106
 msgid "N/A"
@@ -560,33 +565,33 @@ msgstr "-"
 msgid "%(percentage)s%%"
 msgstr "%(percentage)s%%"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):8
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):30
+#: gui/lobby/LobbyPage/ProfilePanel.xml:8
+#: gui/lobby/ProfilePage/ProfilePage.xml:30
 msgid "Current Rank:"
 msgstr "Nynější hodnost:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):12
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):34
+#: gui/lobby/LobbyPage/ProfilePanel.xml:12
+#: gui/lobby/ProfilePage/ProfilePage.xml:34
 msgid "Highest Rating:"
 msgstr "Nejvyšší hodnocení:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):16
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):38
+#: gui/lobby/LobbyPage/ProfilePanel.xml:16
+#: gui/lobby/ProfilePage/ProfilePage.xml:38
 msgid "Total Games:"
 msgstr "Celkový počet her:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):20
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):42
+#: gui/lobby/LobbyPage/ProfilePanel.xml:20
+#: gui/lobby/ProfilePage/ProfilePage.xml:42
 msgid "Wins:"
 msgstr "Vyhráno:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):24
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):46
+#: gui/lobby/LobbyPage/ProfilePanel.xml:24
+#: gui/lobby/ProfilePage/ProfilePage.xml:46
 msgid "Losses:"
 msgstr "Ztraceno:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):28
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):50
+#: gui/lobby/LobbyPage/ProfilePanel.xml:28
+#: gui/lobby/ProfilePage/ProfilePage.xml:50
 msgid "Win Rate:"
 msgstr "Ziskový podíl:"
 
@@ -595,19 +600,19 @@ msgstr "Ziskový podíl:"
 msgid "Player \"%(nick)s\" not found."
 msgstr "Hráč \"%(nick)s\" nenalezen."
 
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):16
+#: gui/lobby/ProfilePage/ProfilePage.xml:16
 msgid "Enter playername:"
 msgstr "Zadejte hráčské jméno:"
 
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):22
+#: gui/lobby/ProfilePage/ProfilePage.xml:22
 msgid "View Profile"
 msgstr "Ukázat profil"
 
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):55
+#: gui/lobby/ProfilePage/ProfilePage.xml:55
 msgid "Please enter a player name."
 msgstr "Zadejte, prosím, jméno hráče."
 
-#: gui/prelobby/common/credentials/confirmpassword.xml:(caption):4
+#: gui/prelobby/common/credentials/confirmpassword.xml:4
 msgid "Password again:"
 msgstr "Heslo znovu:"
 
@@ -641,19 +646,19 @@ msgstr "Zadejte, prosím, své heslo znovu"
 msgid "Passwords do not match"
 msgstr "Hesla se neshodují"
 
-#: gui/prelobby/common/credentials/credentials.js:54
+#: gui/prelobby/common/credentials/credentials.js:55
 msgid "Are you sure you want to delete the password after connecting?"
 msgstr "Jste si jistý, že chcete smazat heslo po připojení?"
 
-#: gui/prelobby/common/credentials/credentials.xml:(caption):6
+#: gui/prelobby/common/credentials/credentials.xml:6
 msgid "Login:"
 msgstr "Přihlašovací jméno:"
 
-#: gui/prelobby/common/credentials/credentials.xml:(caption):15
+#: gui/prelobby/common/credentials/credentials.xml:15
 msgid "Password:"
 msgstr "Heslo:"
 
-#: gui/prelobby/common/credentials/rememberpassword.xml:(caption):7
+#: gui/prelobby/common/credentials/rememberpassword.xml:7
 msgid "Remember Password"
 msgstr "Pamatovat si heslo"
 
@@ -663,20 +668,22 @@ msgid ""
 "allowed to register more than one account within one hour."
 msgstr "Neznámá chyba. Toto se obyčejně stává, protože té samé adrese IP není během jedné hodiny dovoleno registrovat více než jeden účet."
 
-#: gui/prelobby/common/feedback/feedback.xml:(caption):10
-#: gui/prelobby/entrance/entrance.xml:(caption):30
+#: gui/prelobby/common/feedback/feedback.xml:10
+#: gui/prelobby/entrance/entrance.xml:30
 msgid "Cancel"
 msgstr "Zrušit"
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:1
 msgid ""
-"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Privacy "
+"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Privacy "
 "Policy[/font]"
-msgstr "[font=\"sans-bold-18\"] Zásady ochrany osobních údajů hry pro více hráčů jedné zájmové skupiny ve hře 0 A.D. Empires Ascendant[/font]"
+msgstr "[font=\"sans-bold-18\"] Zásady ochrany osobních údajů hry pro více hráčů jedné zájmové skupiny ve hře 0 A.D. Empires Ascendant[/font]"
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:3
-msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2020-12-24"
-msgstr "[font=\"sans-bold-14\"]Datum dokumentu:[/font] 2020-12-24"
+#: gui/prelobby/common/terms/Terms_of_Service.txt:3
+#: gui/prelobby/common/terms/Terms_of_Use.txt:3
+msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2023-07-27"
+msgstr "[font=\"sans-bold-14\"]Datum dokumentu:[/font] 2023-07-27"
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:5
 msgid ""
@@ -898,10 +905,10 @@ msgstr "1. Zpracování je nezbytné pro výkon služby stanovené v podmínkác
 #: gui/prelobby/common/terms/Privacy_Policy.txt:50
 msgid ""
 "2. Wildfire Games has legitimate interests in providing the Multiplayer "
-"Lobby, in the development and improvement of 0 A.D. and the Multiplayer "
+"Lobby, in the development and improvement of 0 A.D. and the Multiplayer "
 "Lobby, in enforcing the Terms of Use and in the protection against "
 "cyberattacks (GDPR 6.1.f)."
-msgstr "2. Wildfire Games má oprávněné zájmy na poskytování Hry pro více hráčů, na vývoji a vylepšování hry 0 A.D. a Hry pro více hráčů, na prosazování Podmínek užití a na ochraně před kybernetickými útoky (GDPR 6.1.f)."
+msgstr "2. Wildfire Games má oprávněné zájmy na poskytování Hry pro více hráčů, na vývoji a vylepšování hry 0 A.D. a Hry pro více hráčů, na prosazování Podmínek užití a na ochraně před kybernetickými útoky (GDPR 6.1.f)."
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:51
 msgid ""
@@ -1075,28 +1082,24 @@ msgstr "Další informace o zásadách ochrany soukromí Wildfire Games naleznet
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:1
 msgid ""
-"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
+"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
 "Service[/font]"
-msgstr "[font=\"sans-bold-18\"]Podmínky užití služby hry pro více hráčů jedné zájmové skupiny ve hře 0 A.D. Empires Ascendant[/font]"
-
-#: gui/prelobby/common/terms/Terms_of_Service.txt:3
-msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2018-10-16"
-msgstr "[font=\"sans-bold-14\"]Datum dokumentu:[/font] 2018-10-16"
+msgstr "[font=\"sans-bold-18\"]Podmínky užití služby hry pro více hráčů jedné zájmové skupiny ve hře 0 A.D. Empires Ascendant[/font]"
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:5
 msgid ""
-"The 0 A.D. Empires Ascendant Multiplayer Lobby is an online service provided"
+"The 0 A.D. Empires Ascendant Multiplayer Lobby is an online service provided"
 " by Wildfire Games that allows players to set up online multiplayer matches,"
 " discuss the game in a public chat room and gain a rating that reflects "
 "their skill."
-msgstr "The 0 A.D. Empires Ascendant Multiplayer Lobby je online služba poskytovaná Wildfire Games, která umožňuje hráčům nastavit internetové zápasy pro více hráčů, diskutovat o hře ve veřejné chatovací místnosti a získat hodnocení, které odráží jejich dovednosti."
+msgstr "The 0 A.D. Empires Ascendant Multiplayer Lobby je online služba poskytovaná Wildfire Games, která umožňuje hráčům nastavit internetové zápasy pro více hráčů, diskutovat o hře ve veřejné chatovací místnosti a získat hodnocení, které odráží jejich dovednosti."
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:7
 msgid ""
 "Due to the subject matter of historic warfare, description and depiction of "
-"violence and the language on the Multiplayer Lobby, 0 A.D. and the "
+"violence and the language on the Multiplayer Lobby, 0 A.D. and the "
 "Multiplayer Lobby are not directed to young children (COPPA §312.2)."
-msgstr "Vzhledem k předmětu historické války, popisu a vyobrazení násilí a jazyka ve hře pro více hráčů není hra 0 A.D. a hra pro více hráčů zaměřena na malé děti (COPPA §312.2)."
+msgstr "Vzhledem k předmětu historické války, popisu a vyobrazení násilí a jazyka ve hře pro více hráčů není hra 0 A.D. a hra pro více hráčů zaměřena na malé děti (COPPA §312.2)."
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:8
 msgid "The minimum age to use the Multiplayer Lobby is 13."
@@ -1105,9 +1108,9 @@ msgstr "Nejnižší věk pro používání zájmové herní skupiny pro více hr
 #: gui/prelobby/common/terms/Terms_of_Service.txt:10
 #: gui/prelobby/common/terms/Terms_of_Use.txt:5
 msgid ""
-"[font=\"sans-bold-14\"]By using the 0 A.D. Multiplayer Lobby, you agree "
+"[font=\"sans-bold-14\"]By using the 0 A.D. Multiplayer Lobby, you agree "
 "to:[/font]"
-msgstr "[font=\"sans-bold-14\"]Užíváním zájmové herní skupiny pro více hráčů souhlasíte s tím, že:[/font]"
+msgstr "[font=\"sans-bold-14\"]Užíváním zájmové herní skupiny 0 A.D. pro více hráčů souhlasíte s tím, že:[/font]"
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:11
 msgid " 1. Follow all usage policies."
@@ -1167,25 +1170,21 @@ msgstr "Pokud jsou části podmínek považovány za nezákonné nebo jinak nevy
 
 #: gui/prelobby/common/terms/Terms_of_Use.txt:1
 msgid ""
-"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
+"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
 "Use[/font]"
-msgstr "[font=\"sans-bold-18\"]Podmínky užití hry pro více hráčů sdružených v zájmové skupině ve hře 0 A.D. Empires Ascendant[/font]"
-
-#: gui/prelobby/common/terms/Terms_of_Use.txt:3
-msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2022-09-01"
-msgstr ""
+msgstr "[font=\"sans-bold-18\"]Podmínky užití hry pro více hráčů sdružených v zájmové skupině ve hře 0 A.D. Empires Ascendant[/font]"
 
 #: gui/prelobby/common/terms/Terms_of_Use.txt:6
 msgid ""
 " 1. a. Only create one account per person on the service unless authorized "
 "by Wildfire Games."
-msgstr ""
+msgstr "1. a. Při použití této služby vytvořte pouze jeden účet na osobu, pokud to není povoleno Wildfire Games."
 
 #: gui/prelobby/common/terms/Terms_of_Use.txt:7
 msgid ""
 "    b. Not share your account with anyone and not publish or divulge to "
 "anyone the account password."
-msgstr ""
+msgstr "b. Nesdílejte svůj účet s nikým a nezveřejňujte ani nikomu neprozrazujte heslo k účtu."
 
 #: gui/prelobby/common/terms/Terms_of_Use.txt:8
 msgid ""
@@ -1273,11 +1272,11 @@ msgstr "Zásady ochrany osobních údajů"
 msgid "Please read and accept the Privacy Policy."
 msgstr "Přečtěte si a souhlaste, prosím, se Zásadami ochrany osobních údajů."
 
-#: gui/prelobby/entrance/entrance.xml:(caption):20
+#: gui/prelobby/entrance/entrance.xml:20
 msgid "Create a new account"
 msgstr "Vytvořit nový účet"
 
-#: gui/prelobby/entrance/entrance.xml:(caption):25
+#: gui/prelobby/entrance/entrance.xml:25
 msgid "Login to an existing account"
 msgstr "Přihlásit se k existujícímu účtu"
 
@@ -1289,7 +1288,7 @@ msgstr "Připojit"
 msgid "Connecting…"
 msgstr "Připojuje se..."
 
-#: gui/prelobby/login/login.xml:(caption):13
+#: gui/prelobby/login/login.xml:13
 msgid "Connect to the game lobby"
 msgstr "Připojit se k zájmové skupině"
 
@@ -1305,6 +1304,6 @@ msgstr "Registruje se..."
 msgid "Registered"
 msgstr "Registrován"
 
-#: gui/prelobby/register/register.xml:(caption):13
+#: gui/prelobby/register/register.xml:13
 msgid "Registration"
 msgstr "Registrace"

@@ -1,26 +1,27 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2023 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# Junghee Lee
-# moolow
-# EK lee
-# 손가현
-# Gu Hong Min
-# ks k
-# Philipp Sauter
-# Stanislas Dolcini
-# Suhyeon Park
-# SungJin Cho
-# YongNam Kim
-# 최용석
+# Junghee Lee, 2020-2021
+# moolow, 2019
+# EK lee, 2019
+# 손가현, 2016
+# Gu Hong Min, 2015
+# ks k, 2019
+# ks k, 2019-2020
+# Philipp Sauter, 2018
+# Stanislas Dolcini, 2021
+# Suhyeon Park, 2018
+# SungJin Cho, 2016
+# YongNam Kim, 2016
+# 최용석, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2023-01-13 08:09+0000\n"
+"POT-Creation-Date: 2024-06-17 07:08+0000\n"
 "PO-Revision-Date: 2014-06-19 17:51+0000\n"
-"Last-Translator: Junghee Lee <daemul72@gmail.com>, 2022-2023\n"
+"Last-Translator: Junghee Lee, 2022-2024\n"
 "Language-Team: Korean (http://app.transifex.com/wildfire-games/0ad/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,15 +30,15 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: gui/manual/intro.txt:1
-msgid "[font=\"sans-bold-18\"]0 A.D. in-game manual[font=\"sans-14\"]"
-msgstr "[font=\"sans-bold-18\"]0 A.D. 게임 내 설명서[font=\"sans-14\"]"
+msgid "[font=\"sans-bold-18\"]0 A.D. in-game manual[font=\"sans-14\"]"
+msgstr "[font=\"sans-bold-18\"]0 A.D. 게임 내 설명서[font=\"sans-14\"]"
 
 #: gui/manual/intro.txt:2
 msgid ""
-"Thank you for installing 0 A.D.! This page will give a brief overview of the"
+"Thank you for installing 0 A.D.! This page will give a brief overview of the"
 " features available in this incomplete, under-development, alpha version of "
 "the game."
-msgstr "0 A.D.를 설치해주셔서 감사합니다! 이 페이지에서는 개발중인 알파버전의 게임에 이용가능한 특징들을 간단히 대략적으로 살펴볼 것입니다."
+msgstr "0 A.D.를 설치해 주셔서 감사합니다! 이 페이지에서는 이 불완전하고 개발 중인 알파 버전의 게임에서 사용할 수 있는 기능에 대한 간략한 개요를 제공합니다."
 
 #: gui/manual/intro.txt:4
 msgid "[font=\"sans-bold-16\"]Graphics settings[font=\"sans-14\"]"
@@ -61,7 +62,7 @@ msgid ""
 "time strategy (RTS) games. There are currently a lot of missing features and"
 " poorly-balanced stats – you will probably have to wait until a beta release"
 " for it to work well."
-msgstr "컨트롤과 게임 방식은 전통적인 실시간 전략(RTS) 게임 참가자들에게 친숙해야 합니다. 현재 누락된 기능이 많고 균형이 맞지 않는 통계가 있습니다. – 제대로 작동하려면 베타 릴리스가 나올 때까지 기다려야 할 것입니다."
+msgstr "컨트롤과 게임 방식은 전통적인 실시간 전략(RTS) 게임 플레이어들에게 친숙해야 합니다. 현재 누락된 기능이 많고 균형이 맞지 않는 통계가 있습니다. – 제대로 작동하려면 베타 릴리스가 나올 때까지 기다려야 할 것입니다."
 
 #: gui/manual/intro.txt:10
 msgid "Basic controls (by default):"
@@ -107,7 +108,7 @@ msgid ""
 "game or against one or more computer players (AI). The default AI (Petra) is"
 " under development and may not always be up to date on the new features, but"
 " you can play the game with or against it nonetheless."
-msgstr "• [font=\"sans-bold-14\"]싱글참가자[font=\"sans-14\"] – 샌드박스 게임을 하거나 하나 이상의 컴퓨터 참가자들(인공지능)을 상대로 합니다. 기본 인공지능(Petra)는 개발 중이며 새로운 기능에 대해 항상 최신 상태가 아닐 수 있지만, 그렇더라도 당신은 게임을 할 수도 있고 인공지능을 상대로 게임을 할 수도 있습니다."
+msgstr "• [font=\"sans-bold-14\"]싱글플레이어[font=\"sans-14\"] – 샌드박스 게임을 하거나 하나 이상의 컴퓨터 플레이어들(인공지능)을 상대로 합니다. 기본 인공지능(Petra)는 개발 중이며 새로운 기능에 대해 항상 최신 상태가 아닐 수 있지만, 그렇더라도 당신은 게임을 할 수도 있고 인공지능을 상대로 게임을 할 수도 있습니다."
 
 #: gui/manual/intro.txt:21
 msgid ""
@@ -121,7 +122,7 @@ msgid ""
 " The game uses UDP port 20595, so the host must configure their "
 "NAT/firewall/etc. to allow this. Other players can then select “Join game” "
 "and enter the host's IP address."
-msgstr "멀티플레이어 게임을 설정하려면 한 참가자들이 “호스트 게임” 옵션을 선택해야 합니다. 이 게임은 UDP 포트 20595를 사용하므로 호스트는 이를 허용하도록 NAT/방화벽 등을 구성해야 합니다. 그런 다음 다른 참가자들이 “게임 참여”를 선택하고 호스트의 IP 주소를 입력할 수 있습니다."
+msgstr "멀티플레이어 게임을 설정하려면 한 플레이어들이 “호스트 게임” 옵션을 선택해야 합니다. 이 게임은 UDP 포트 20595를 사용하므로 호스트는 이를 허용하도록 NAT/방화벽 등을 구성해야 합니다. 그런 다음 다른 플레이어들이 “게임 참여”를 선택하고 호스트의 IP 주소를 입력할 수 있습니다."
 
 #: gui/manual/intro.txt:25
 msgid "[font=\"sans-bold-16\"]Game setup[font=\"sans-14\"]"
@@ -151,7 +152,7 @@ msgstr "• [font=\"sans-bold-14\"]시나리오 지도[font=\"sans-14\"] – 문
 msgid ""
 "• [font=\"sans-bold-14\"]Skirmish map[font=\"sans-14\"] – A map created by "
 "map designers but where the civilizations can be chosen"
-msgstr "• [font=\"sans-bold-14\"]전초전 지도[font=\"sans-14\"] – 지도 디자이너에 의해 제작되었지만 문명을 선택할 수 있는 지도"
+msgstr "• [font=\"sans-bold-14\"]접전 지도[font=\"sans-14\"] – 지도 디자이너에 의해 제작되었지만 문명을 선택할 수 있는 지도"
 
 #: gui/manual/intro.txt:33
 msgid ""
@@ -160,7 +161,7 @@ msgid ""
 "over land and demo maps are maps used for testing purposes (generally not "
 "useful to play on). The “All Maps” filter shows all maps together in one "
 "list."
-msgstr "그런 다음 지도를 추가로 필터링할 수 있습니다. 기본 지도는 일반적으로 재생할 수 있는 지도입니다. 해전 지도는 육지에서 모든 적에게 접근할 수 없는 지도이며 데모 지도는 테스트 목적으로 사용되는 지도입니다(일반적으로 재생에는 유용하지 않음). 모든 지도 필터는 모든 지도를 하나의 목록에 함께 표시합니다."
+msgstr "그런 다음 지도를 추가로 필터링할 수 있습니다. 기본 지도는 일반적으로 게임이 가능한 지도입니다. 해상 지도는 육지에서 모든 적에게 접근할 수 없는 지도이고 데모 지도는 테스트 목적으로 사용되는 지도입니다(일반적으로 게임하는 데 유용하지 않음). \"모든 지도\" 필터는 모든 지도를 하나의 목록에 함께 표시합니다."
 
 #: gui/manual/intro.txt:35
 msgid ""
@@ -169,7 +170,7 @@ msgid ""
 "controls which player (decides where you start on the map etc.). The options"
 " are either a human player, an AI or no player at all (the opponent will "
 "just be idle)."
-msgstr "마지막으로 설정을 변경합니다. 무작위 지도의 경우 참가자 수, 지도 크기 등이 포함됩니다. 시나리오의 경우 누가 어떤 참가자를 제어할지만 선택할 수 있습니다(지도에서 시작하는 위치를 결정합니다). 옵션은 인간 참가자, 인공지능 또는 참가자 없음(상대는 그냥 노는 상태일 것임)입니다."
+msgstr "마지막으로 설정을 변경합니다. 무작위 지도의 경우 플레이어 수, 지도 크기 등이 포함됩니다. 시나리오의 경우 누가 어떤 플레이어를 제어할지만 선택할 수 있습니다(지도에서 시작하는 위치를 결정합니다). 옵션은 인간 플레이어, 인공지능 또는 플레이어 없음(상대는 그냥 노는 상태일 것임)입니다."
 
 #: gui/manual/intro.txt:37
 msgid "When you are ready to start, click the “Start game” button."
@@ -332,13 +333,13 @@ msgstr "  hotkey.selection.remove – 수정도구 – 선택에서 제거(클�
 #: gui/manual/intro.txt:72
 msgid ""
 "  hotkey.selection.offscreen – Modifier – add all units, including offscreen"
-" units, to selection."
-msgstr "  hotkey.selection.offscreen – 수정도구– 화면 밖 유닛을 포함한 모든 유닛을 선택 항목에 추가합니다."
+" units, to selection"
+msgstr "  hotkey.selection.offscreen – 조정도구 – 화면 밖 유닛을 포함한 모든 유닛을 선택 항목에 추가합니다"
 
 #: gui/manual/intro.txt:73
 msgid ""
-"  hotkey.selection.cancel – Unselect all units, cancel building placement."
-msgstr "  hotkey.selection.cancel – 모든 유닛을 선택 취소하고 건물 배치를 취소합니다."
+"  hotkey.selection.cancel – Unselect all units, cancel building placement"
+msgstr "  hotkey.selection.cancel – 모든 유닛을 선택 취소하고, 건물 배치를 취소합니다"
 
 #: gui/manual/intro.txt:74
 msgid "  hotkey.selection.idlebuilder – Select idle builder"
@@ -352,7 +353,7 @@ msgstr "  hotkey.selection.idlewarrior – 노는 전사 선택"
 msgid ""
 "  hotkey.selection.idleworker – Select idle worker (including citizen-"
 "soldiers)"
-msgstr "  hotkey.selection.idleworker – 노는 일꾼 선택 (시민 병사들 포함)"
+msgstr "  hotkey.selection.idleworker – 노는 일꾼 선택 (주민 병사들 포함)"
 
 #: gui/manual/intro.txt:77
 msgid "  hotkey.selection.idleunit – Select idle unit"
@@ -409,7 +410,7 @@ msgid ""
 "hotkey.session.queueunit.5, hotkey.session.queueunit.6, "
 "hotkey.session.queueunit.7 – With training structure selected. Add the 1st, "
 "2nd, … unit shown to the training queue for all the selected structures"
-msgstr "  hotkey.session.queueunit.1, hotkey.session.queueunit.2, hotkey.session.queueunit.3, hotkey.session.queueunit.4, hotkey.session.queueunit.5, hotkey.session.queueunit.6, hotkey.session.queueunit.7 – 훈련 건축물이 선택되어 있습니다. 선택된 모든 건축물에 대해 표시된 첫 번째, 두 번째, … 유닛을 훈련 대기열에 추가합니다"
+msgstr "  hotkey.session.queueunit.1, hotkey.session.queueunit.2, hotkey.session.queueunit.3, hotkey.session.queueunit.4, hotkey.session.queueunit.5, hotkey.session.queueunit.6, hotkey.session.queueunit.7 – 훈련 건축물들이 선택되어 있습니다. 선택된 모든 건축물들에 대해 표시된 첫 번째, 두 번째, … 유닛을 훈련 대기열에 추가합니다"
 
 #: gui/manual/intro.txt:87
 msgid ""
@@ -488,8 +489,8 @@ msgstr "  hotkey.session.queue + 마우스 오른쪽 버튼 클릭 – 이동/�
 #: gui/manual/intro.txt:104
 msgid ""
 "  hotkey.session.pushorderfront + Right Click – Modifier to push any order "
-"in front of the order queue."
-msgstr "  hotkey.session.pushorderfront + 오른쪽 클릭 – 수정자를 클릭하여 주문 대기열 앞에 있는 주문을 누릅니다."
+"in front of the order queue"
+msgstr "  hotkey.session.pushorderfront + 오른쪽 클릭 – 주문 대기열 앞에 주문을 밀어넣는 조정도구"
 
 #: gui/manual/intro.txt:105
 msgid ""
@@ -568,7 +569,7 @@ msgstr "  hotkey.session.attack + 유닛(들)을 선택한 상태에서 마우�
 msgid ""
 "  hotkey.session.attackmove + Right Click with unit(s) selected – Attack "
 "move (by default all enemy units and structures along the way are targeted)"
-msgstr "  hotkey.session.attack move + 유닛을 선택한 상태에서 마우스 오른쪽 버튼 클릭 – 공격 이동(기본적으로 길을 따라있는 모든 적 유닛과 건축물이 표적이 됨)"
+msgstr "  hotkey.session.attack move + 유닛을 선택한 상태에서 마우스 오른쪽 버튼 클릭 – 공격 이동(기본적으로 길을 따라있는 모든 적 유닛과 건축물들이 표적이 됨)"
 
 #: gui/manual/intro.txt:118
 msgid ""
@@ -586,7 +587,7 @@ msgstr "  hotkey.session.capture + 유닛(들)을 선택한 상태에서 마우�
 msgid ""
 "  hotkey.session.snaptoedges + Mouse Move near structures – Align the new "
 "structure with an existing nearby structure"
-msgstr "  hotkey.session.snaptoedges + 건축물 주변로 마우스 이동 – 새 건축물을 기존 주변 건축물과 정렬"
+msgstr "  hotkey.session.snaptoedges + 건축물들 주변로 마우스 이동 – 새 건축물들을 기존 주변 건축물들과 정렬"
 
 #: gui/manual/intro.txt:121
 msgid "  hotkey.session.flare + Right Click – Send a flare to your allies"
@@ -627,13 +628,13 @@ msgstr "  hotkey.session.diplomacycolors – 외교 색상을 전환합니다"
 msgid ""
 "  hotkey.session.toggleattackrange – Toggle attack range visualizations of "
 "selected units and structures"
-msgstr "  hotkey.session.toggleattackrange – 선택한 유닛 및 건축물의 공격 범위 시각화를 전환합니다"
+msgstr "  hotkey.session.toggleattackrange – 선택한 유닛 및 건축물들의 공격 범위 시각화를 전환합니다"
 
 #: gui/manual/intro.txt:130
 msgid ""
 "  hotkey.session.toggleaurasrange – Toggle aura range visualizations of "
 "selected units and structures"
-msgstr "  hotkey.session.toggleaurasrange – 선택한 유닛 및 건축물의 아우라 범위 시각화를 전환합니다"
+msgstr "  hotkey.session.toggleaurasrange – 선택한 유닛 및 건축물들의 아우라 범위 시각화를 전환합니다"
 
 #: gui/manual/intro.txt:131
 msgid ""

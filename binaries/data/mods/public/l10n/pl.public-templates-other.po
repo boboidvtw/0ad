@@ -1,36 +1,36 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2023 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# Adam Kol
-# Adrian Budasz
-# Andrzej Dąbrowski
-# Arthur Glovchynski
-# Bartłomiej Prokop
-# Bartosz Bobin
-# Daniel Whatever
-# e9706534be4a728ed4e67375991e760b_b69146a
-# Jarek Kokociński
-# Leszek Szary
-# Łukasz Ankudo
-# Lukasz B
-# Marcin S
-# Marek Balicki
-# Mateusz Klaczynski
-# Michał Karol
-# miragae
-# zyxist
-# Pawel
-# Przemysław Murach
-# Robert Wolniak
-# slodki12341
+# Adam Kol, 2019
+# Adrian Budasz, 2014,2016
+# Andrzej Dąbrowski, 2020
+# Arthur Glovchynski, 2015
+# Bartłomiej Prokop, 2017
+# Bartosz Bobin, 2017-2018
+# Daniel Whatever, 2017
+# e9706534be4a728ed4e67375991e760b_b69146a, 2018
+# Jarek Kokociński, 2015
+# Leszek Szary, 2014-2015
+# Łukasz Ankudo, 2022
+# Lukasz B, 2016
+# Marcin S, 2016-2017,2021-2023
+# Marek Balicki, 2017
+# Mateusz Klaczynski, 2017
+# Michał Karol, 2015
+# miragae, 2014
+# zyxist, 2014
+# Pawel, 2018
+# Przemysław Murach, 2019-2022
+# Robert Wolniak, 2014
+# slodki12341, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2023-04-21 07:09+0000\n"
+"POT-Creation-Date: 2024-07-26 13:41+0000\n"
 "PO-Revision-Date: 2014-06-19 17:54+0000\n"
-"Last-Translator: Marcin S <dzidek1003@o2.pl>, 2016-2017,2021-2023\n"
+"Last-Translator: Marcin S, 2016-2017,2021-2023\n"
 "Language-Team: Polish (http://app.transifex.com/wildfire-games/0ad/language/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -38,119 +38,119 @@ msgstr ""
 "Language: pl\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
-#: simulation/data/attack_effects/applystatus.jsondescription
+#: simulation/data/attack_effects/applystatus.json
 msgctxt "effect caused by an attack"
 msgid "Various (timed) effects."
 msgstr "Różne (czasowe) efekty."
 
-#: simulation/data/attack_effects/applystatus.jsonname
+#: simulation/data/attack_effects/applystatus.json
 msgctxt "effect caused by an attack"
 msgid "Apply Status"
 msgstr "Zastosuj status"
 
-#: simulation/data/attack_effects/capture.jsondescription
+#: simulation/data/attack_effects/capture.json
 msgctxt "effect caused by an attack"
 msgid "Reduces capture points of a target."
 msgstr "Zmniejsza punkty przejęcia celu."
 
-#: simulation/data/attack_effects/capture.jsonname
+#: simulation/data/attack_effects/capture.json
 msgctxt "effect caused by an attack"
 msgid "Capture"
 msgstr "Przejęcie"
 
-#: simulation/data/attack_effects/damage.jsondescription
+#: simulation/data/attack_effects/damage.json
 msgctxt "effect caused by an attack"
 msgid "Reduces the health of a target."
 msgstr "Zmniejsza zdrowie celu."
 
-#: simulation/data/attack_effects/damage.jsonname
+#: simulation/data/attack_effects/damage.json
 msgctxt "effect caused by an attack"
 msgid "Damage"
 msgstr "Obrażenia"
 
-#: simulation/data/damage_types/crush.jsondescription
-msgctxt "damage type"
-msgid "Damage caused by sheer force, like with a club or by trampling."
-msgstr "Obrażenia powodujące rany tępe, np. poprzez zdeptanie czy uderzenie obuchem."
-
-#: simulation/data/damage_types/crush.jsonname
+#: simulation/data/damage_types/crush.json
 msgctxt "damage type"
 msgid "Crush"
 msgstr "Obuchowe"
 
-#: simulation/data/damage_types/fire.jsondescription
+#: simulation/data/damage_types/crush.json
 msgctxt "damage type"
-msgid "Damage caused by burning objects, like a torch or a flaming arrow."
-msgstr "Obrażenia spowodowane płonącymi przedmiotami, takimi jak pochodnia lub płonąca strzała."
+msgid "Damage caused by sheer force, like with a club or by trampling."
+msgstr "Obrażenia powodujące rany tępe, np. poprzez zdeptanie czy uderzenie obuchem."
 
-#: simulation/data/damage_types/fire.jsonname
+#: simulation/data/damage_types/fire.json
 msgctxt "damage type"
 msgid "Fire"
 msgstr "Ogień"
 
-#: simulation/data/damage_types/hack.jsondescription
+#: simulation/data/damage_types/fire.json
+msgctxt "damage type"
+msgid "Damage caused by burning objects, like a torch or a flaming arrow."
+msgstr "Obrażenia spowodowane płonącymi przedmiotami, takimi jak pochodnia lub płonąca strzała."
+
+#: simulation/data/damage_types/hack.json
+msgctxt "damage type"
+msgid "Hack"
+msgstr "Sieczne"
+
+#: simulation/data/damage_types/hack.json
 msgctxt "damage type"
 msgid ""
 "Damage caused by sharp objects cutting or chopping, like with a sword or an "
 "axe."
 msgstr "Obrażenia spowodowane ostrymi przedmiotami poprzez odcięcie lub rozszarpanie, np. mieczem lub toporem."
 
-#: simulation/data/damage_types/hack.jsonname
-msgctxt "damage type"
-msgid "Hack"
-msgstr "Sieczne"
-
-#: simulation/data/damage_types/pierce.jsondescription
-msgctxt "damage type"
-msgid "Damage caused by sharp pointy objects, like arrows or spears."
-msgstr "Obrażenia spowodowane ostrymi przedmiotami, np. strzałami czy włóczniami."
-
-#: simulation/data/damage_types/pierce.jsonname
+#: simulation/data/damage_types/pierce.json
 msgctxt "damage type"
 msgid "Pierce"
 msgstr "Kłute"
 
-#: simulation/data/damage_types/poison.jsondescription
+#: simulation/data/damage_types/pierce.json
+msgctxt "damage type"
+msgid "Damage caused by sharp pointy objects, like arrows or spears."
+msgstr "Obrażenia spowodowane ostrymi przedmiotami, np. strzałami czy włóczniami."
+
+#: simulation/data/damage_types/poison.json
+msgctxt "damage type"
+msgid "Poison"
+msgstr "Trucizna"
+
+#: simulation/data/damage_types/poison.json
 msgctxt "damage type"
 msgid ""
 "Damage caused by venomous or poisoned objects, like a snake or a poisoned "
 "weapon."
 msgstr "Obrażenia spowodowane jadowitymi lub zatrutymi obiektami, takimi jak wąż lub zatruta broń."
 
-#: simulation/data/damage_types/poison.jsonname
-msgctxt "damage type"
-msgid "Poison"
-msgstr "Trucizna"
-
-#: simulation/data/status_effects/burning.jsonapplierTooltip
+#: simulation/data/status_effects/burning.json
 msgctxt "status effect"
 msgid "This unit causes fire damage."
 msgstr "Ta jednostka zadaje obrażenia od ognia."
 
-#: simulation/data/status_effects/burning.jsonreceiverTooltip
-msgctxt "status effect"
-msgid "This unit is burning."
-msgstr "Jednostka płonie."
-
-#: simulation/data/status_effects/burning.jsonstatusName
+#: simulation/data/status_effects/burning.json
 msgctxt "status effect"
 msgid "Burning"
 msgstr "Płonie"
 
-#: simulation/data/status_effects/poisoned.jsonapplierTooltip
+#: simulation/data/status_effects/burning.json
+msgctxt "status effect"
+msgid "This unit is burning."
+msgstr "Jednostka płonie."
+
+#: simulation/data/status_effects/poisoned.json
 msgctxt "status effect"
 msgid "This unit causes poison damage."
 msgstr "Ta jednostka zadaje obrażenia trujące."
 
-#: simulation/data/status_effects/poisoned.jsonreceiverTooltip
-msgctxt "status effect"
-msgid "This unit is poisoned."
-msgstr "Jednostka jest otruta."
-
-#: simulation/data/status_effects/poisoned.jsonstatusName
+#: simulation/data/status_effects/poisoned.json
 msgctxt "status effect"
 msgid "Poisoned"
 msgstr "Pod wpływem trucizny"
+
+#: simulation/data/status_effects/poisoned.json
+msgctxt "status effect"
+msgid "This unit is poisoned."
+msgstr "Jednostka jest otruta."
 
 #: simulation/templates/campaigns/army_mace_hero_alexander.xml:24
 msgid "Army of Alexander the Great."
@@ -701,6 +701,10 @@ msgstr "Posąg lwiego apademaka"
 msgid "Ammon-Ra Ram Statue"
 msgstr "Barani posąg Ammon-Ra"
 
+#: simulation/templates/gaia/ruins/stone_statues_persian_lamassu.xml:8
+msgid "Lamassu Statue"
+msgstr ""
+
 #: simulation/templates/gaia/ruins/stone_statues_roman.xml:8
 msgid "Roman Statue"
 msgstr "Rzymski Posąg"
@@ -779,6 +783,18 @@ msgstr "Wrak"
 msgid "Shipwreck Cargo"
 msgstr "Ładunek wraku"
 
+#: simulation/templates/gaia/treasure/special_argo.xml:8
+msgid "The Argo"
+msgstr ""
+
+#: simulation/templates/gaia/treasure/special_argo.xml:9
+msgid "Mythological Treasure"
+msgstr ""
+
+#: simulation/templates/gaia/treasure/special_argo.xml:10
+msgid "The mythological ship of the hero Theseus and his Argonauts."
+msgstr ""
+
 #: simulation/templates/gaia/treasure/stone.xml:8
 msgid "Stone Treasure"
 msgstr "Skarb pełen kamieni"
@@ -850,6 +866,10 @@ msgstr "Odporny krzew"
 #: simulation/templates/gaia/tree/bush_mediterranean.xml:4
 msgid "Scrub"
 msgstr "Zarośla"
+
+#: simulation/templates/gaia/tree/bush_mediterranean_dry.xml:4
+msgid "Dry Scrub"
+msgstr "Suchy zagajnik"
 
 #: simulation/templates/gaia/tree/carob.xml:4
 msgid "Carob"
@@ -966,13 +986,17 @@ msgstr "Widlica"
 msgid "Palmyra Palm"
 msgstr "Winna palma"
 
+#: simulation/templates/gaia/tree/palm_royal.xml:4
+msgid "Royal Palm"
+msgstr "Królewska palma"
+
 #: simulation/templates/gaia/tree/palm_tropic.xml:4
 msgid "Palm"
 msgstr "Palma"
 
 #: simulation/templates/gaia/tree/palm_tropical.xml:4
 msgid "Tropical Palm"
-msgstr "Palma"
+msgstr ""
 
 #: simulation/templates/gaia/tree/pine.xml:4
 #: simulation/templates/gaia/tree/pine_w.xml:4
@@ -1024,7 +1048,7 @@ msgstr "Cedrela chińska"
 msgid "Rainforest Tree"
 msgstr "Drzewo lasu deszczowego"
 
-#: simulation/templates/mixins/builder.xml:41
+#: simulation/templates/mixins/builder.xml:42
 msgid "Builder"
 msgstr "Budowniczy"
 
@@ -1032,15 +1056,63 @@ msgstr "Budowniczy"
 msgid "Bush"
 msgstr "Krzak"
 
+#: simulation/templates/mixins/cataphract.xml:14
+msgid "Cataphract Cavalry"
+msgstr "Kawaleria katafraktów"
+
+#: simulation/templates/mixins/cataphract.xml:15
+msgid "Cataphract"
+msgstr "Katafrakt"
+
+#: simulation/templates/mixins/chariot.xml:16
+msgid "Chariot"
+msgstr "Rydwan"
+
+#: simulation/templates/mixins/fireship.xml:15
+msgctxt "Name of an attack, usually the weapon."
+msgid "Flames"
+msgstr ""
+
+#: simulation/templates/mixins/fireship.xml:43
+msgid "Ignited"
+msgstr ""
+
+#: simulation/templates/mixins/longsword.xml:22
+msgid "Longsword"
+msgstr "Miecz długi"
+
 #: simulation/templates/mixins/mercenary.xml:13
 msgid "Mercenary"
 msgstr "Najemnik"
+
+#: simulation/templates/mixins/pirate.xml:29
+msgid "Pirate"
+msgstr ""
+
+#: simulation/templates/mixins/rotary_mill.xml:17
+#: simulation/templates/mixins/rotary_mill.xml:18
+msgid "Rotary Mill"
+msgstr "Młyn obrotowy"
+
+#: simulation/templates/mixins/rotary_mill.xml:19
+msgid "RotaryMill"
+msgstr "RotaryMill"
+
+#: simulation/templates/mixins/rotary_mill.xml:22
+msgid ""
+"Dropsite for harvested Food. Capture one of these to increase nearby food "
+"production."
+msgstr "Miejsce zbioru żywności. Przejmij, aby zwiększyć pobliską produkcję żywności."
 
 #: simulation/templates/mixins/shrine.xml:12
 #: simulation/templates/mixins/shrine.xml:13
 #: simulation/templates/mixins/shrine.xml:14
 msgid "Shrine"
 msgstr "Sanktuarium"
+
+#: simulation/templates/mixins/shrine.xml:18
+msgid "Train Elite Healers and heal garrisoned units."
+msgstr ""
 
 #: simulation/templates/mixins/trading_post.xml:8
 msgid "Trading Post"
@@ -1096,9 +1168,17 @@ msgstr "Tylko piechota walcząca wręcz, wymaga przynajmniej 16."
 msgid "Anti Cavalry"
 msgstr "Jednostka skuteczna przeciw konnicy"
 
+#: simulation/templates/special/formations/anti_cavalry.xml:26
+msgid "Square formation of Melee Infantry to fight Cavalry."
+msgstr "Kwadratowa formacja piechoty do walki z kawalerią."
+
 #: simulation/templates/special/formations/battle_line.xml:13
 msgid "Battle Line"
 msgstr "Szyk liniowy"
+
+#: simulation/templates/special/formations/battle_line.xml:15
+msgid "Common formation for frontal attacks."
+msgstr "Wspólna formacja do ataków frontalnych."
 
 #: simulation/templates/special/formations/box.xml:5
 msgid "Requires at least 4 Soldiers or Siege engines."
@@ -1108,13 +1188,25 @@ msgstr "Wymaga przynajmniej 4 żołnierzy lub machin oblężniczych."
 msgid "Box"
 msgstr "Czworobok"
 
+#: simulation/templates/special/formations/box.xml:14
+msgid "Square formation to protect all sides."
+msgstr "Kwadratowa formacja chroniąca wszystkie strony."
+
 #: simulation/templates/special/formations/column_closed.xml:10
 msgid "Forced March"
 msgstr "Wymuszony Marsz"
 
+#: simulation/templates/special/formations/column_closed.xml:12
+msgid "Closed column formation for risky movements."
+msgstr "Zamknięta formacja kolumny dla ryzykownych ruchów."
+
 #: simulation/templates/special/formations/column_open.xml:10
 msgid "Column Open"
 msgstr "Kolumna otwarta"
+
+#: simulation/templates/special/formations/column_open.xml:12
+msgid "Dispersed formation for open field crossings."
+msgstr "Formacja rozproszona dla przejść na otwartym terenie."
 
 #: simulation/templates/special/formations/flank.xml:5
 msgid "Requires at least 8 Soldiers or Siege engines."
@@ -1124,13 +1216,25 @@ msgstr "Wymaga przynajmniej 8 żołnierzy lub machin oblężniczych."
 msgid "Flank"
 msgstr "Flanka"
 
+#: simulation/templates/special/formations/flank.xml:13
+msgid "Formation to protect the sides or surprise attack the enemy flank."
+msgstr "Formacja do ochrony boków lub ataku z zaskoczenia na flankę wroga."
+
 #: simulation/templates/special/formations/line_closed.xml:9
 msgid "Close Order"
 msgstr "Zamknięty rozkaz"
 
+#: simulation/templates/special/formations/line_closed.xml:11
+msgid "Flexible closed line formation."
+msgstr "Elastyczne formowanie zamkniętej linii."
+
 #: simulation/templates/special/formations/line_open.xml:11
 msgid "Open Order"
 msgstr "Otwarty rozkaz"
+
+#: simulation/templates/special/formations/line_open.xml:13
+msgid "Dispersed formation for open field combat."
+msgstr "Formacja rozproszona do walki na otwartym polu."
 
 #: simulation/templates/special/formations/null.xml:7
 msgid "None"
@@ -1144,9 +1248,46 @@ msgstr "Tylko Hoplici, wymaga przynajmniej 10."
 msgid "Phalanx"
 msgstr "Falanga"
 
+#: simulation/templates/special/formations/phalanx.xml:25
+msgid "Compact formation of Infantry Hoplites creating a shield wall."
+msgstr "Zwarta formacja hoplitów piechoty tworząca ścianę z tarcz."
+
 #: simulation/templates/special/formations/scatter.xml:8
 msgid "Scatter"
 msgstr "Rozproszenie"
+
+#: simulation/templates/special/formations/ships/column.xml:5
+#: simulation/templates/special/formations/ships/line_staggered.xml:5
+msgid "Requires at least 4 Ships."
+msgstr ""
+
+#: simulation/templates/special/formations/ships/column.xml:14
+msgid "Maneuvering Column"
+msgstr ""
+
+#: simulation/templates/special/formations/ships/column.xml:16
+msgid "A column formation for fleet maneuvers."
+msgstr ""
+
+#: simulation/templates/special/formations/ships/flank.xml:5
+msgid "Requires at least 8 Ships."
+msgstr ""
+
+#: simulation/templates/special/formations/ships/flank.xml:14
+msgid "Flanking Formation"
+msgstr ""
+
+#: simulation/templates/special/formations/ships/flank.xml:16
+msgid "Formation to protect the sides or surprise attack the enemy flanks."
+msgstr ""
+
+#: simulation/templates/special/formations/ships/line_staggered.xml:17
+msgid "Fleet Battle Line"
+msgstr ""
+
+#: simulation/templates/special/formations/ships/line_staggered.xml:19
+msgid "Common fleet formation for frontal attacks."
+msgstr ""
 
 #: simulation/templates/special/formations/skirmish.xml:4
 msgid "Ranged Soldiers only, requires at least 2."
@@ -1156,6 +1297,10 @@ msgstr "Tylko Żołnierze walczący na dystans, wymaga przynajmniej 2."
 msgid "Skirmish"
 msgstr "Potyczka"
 
+#: simulation/templates/special/formations/skirmish.xml:16
+msgid "Dispersed formation for reconnaissance, ambushes or hit-and-run."
+msgstr "Rozproszona formacja do celów rozpoznania, zasadzek lub ucieczki."
+
 #: simulation/templates/special/formations/syntagma.xml:5
 msgid "Infantry Pikemen only, requires at least 16."
 msgstr "Tylko piesi Pikinierzy, wymaga przynajmniej 16."
@@ -1164,9 +1309,17 @@ msgstr "Tylko piesi Pikinierzy, wymaga przynajmniej 16."
 msgid "Syntagma"
 msgstr "Syntagma"
 
+#: simulation/templates/special/formations/syntagma.xml:31
+msgid "Compact formation of Infantry Pikemen creating a defensive wall."
+msgstr "Zwarta formacja Pikinierów Piechoty tworząca mur obronny."
+
 #: simulation/templates/special/formations/testudo.xml:70
 msgid "Testudo"
 msgstr "Testudo"
+
+#: simulation/templates/special/formations/testudo.xml:72
+msgid "Compact formation of Melee Infantry creating a shield shell."
+msgstr "Zwarta formacja piechoty do walki w zwarciu tworząca osłon z tarcz."
 
 #: simulation/templates/special/formations/wedge.xml:5
 msgid "Cavalry only, requires at least 6."
@@ -1175,6 +1328,10 @@ msgstr "Tylko kawaleria, wymaga przynajmniej 6."
 #: simulation/templates/special/formations/wedge.xml:16
 msgid "Wedge"
 msgstr "Klin"
+
+#: simulation/templates/special/formations/wedge.xml:18
+msgid "Triangular Cavalry formation to break through enemy lines."
+msgstr "Trójkątna formacja kawalerii do przełamania linii wroga."
 
 #: simulation/templates/special/spy.xml:16
 msgid "Spy"

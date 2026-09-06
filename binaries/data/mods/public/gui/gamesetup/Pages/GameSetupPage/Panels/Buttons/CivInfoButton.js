@@ -3,7 +3,6 @@ class CivInfoButton
 	constructor()
 	{
 		this.civInfo = {
-			"civ": "",
 			"page": "page_civinfo.xml"
 		};
 
@@ -24,23 +23,9 @@ class CivInfoButton
 		this.openPage(this.civInfo.page);
 	}
 
-	openPage(page)
+	async openPage(page)
 	{
-		Engine.PushGuiPage(
-			page,
-			{ "civ": this.civInfo.civ },
-			this.storeCivInfoPage.bind(this));
-	}
-
-	storeCivInfoPage(data)
-	{
-		if (data.nextPage)
-			Engine.PushGuiPage(
-				data.nextPage,
-				{ "civ": data.civ },
-				this.storeCivInfoPage.bind(this));
-		else
-			this.civInfo = data;
+		this.civInfo = await pageLoop(page, this.civInfo.args);
 	}
 }
 

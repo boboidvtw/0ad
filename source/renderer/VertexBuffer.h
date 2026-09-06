@@ -1,4 +1,4 @@
-/* Copyright (C) 2022 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -23,6 +23,7 @@
 #define INCLUDED_VERTEXBUFFER
 
 #include "renderer/backend/IBuffer.h"
+#include "renderer/backend/IDevice.h"
 #include "renderer/backend/IDeviceCommandContext.h"
 
 #include <memory>
@@ -82,20 +83,21 @@ public:
 
 	private:
 		// Only CVertexBuffer can construct/delete these
-		// (Other people should use g_VBMan.AllocateChunk)
+		// (Other people should use g_Renderer.GetVertexBufferManager().AllocateChunk)
 		friend class CVertexBuffer;
 		VBChunk() {}
 		~VBChunk() {}
 	};
 
 public:
-	// constructor, destructor
 	CVertexBuffer(
+		Renderer::Backend::IDevice* device,
 		const char* name, const size_t vertexSize,
-		const Renderer::Backend::IBuffer::Type type, const bool dynamic);
+		const Renderer::Backend::IBuffer::Type type, const uint32_t usage);
 	CVertexBuffer(
+		Renderer::Backend::IDevice* device,
 		const char* name, const size_t vertexSize,
-		const Renderer::Backend::IBuffer::Type type, const bool dynamic,
+		const Renderer::Backend::IBuffer::Type type, const uint32_t usage,
 		const size_t maximumBufferSize);
 	~CVertexBuffer();
 
@@ -114,7 +116,7 @@ public:
 	/// Returns true if this vertex buffer is compatible with the specified vertex type and intended usage.
 	bool CompatibleVertexType(
 		const size_t vertexSize, const Renderer::Backend::IBuffer::Type type,
-		const bool dynamic) const;
+		const uint32_t usage) const;
 
 	void DumpStatus() const;
 
@@ -128,7 +130,7 @@ public:
 	 * If false, we assume it will change rarely, and use direct upload to
 	 * update it incrementally. The backing store can be freed to save memory.
 	 */
-	static bool UseStreaming(const bool dynamic);
+	static bool UseStreaming(const uint32_t usage);
 
 	Renderer::Backend::IBuffer* GetBuffer() { return m_Buffer.get(); }
 
@@ -139,7 +141,7 @@ private:
 	/// and with the given type - return null if no free chunks available
 	VBChunk* Allocate(
 		const size_t vertexSize, const size_t numberOfVertices,
-		const Renderer::Backend::IBuffer::Type type, const bool dynamic,
+		const Renderer::Backend::IBuffer::Type type, const uint32_t usage,
 		void* backingStore);
 	/// Return given chunk to this buffer
 	void Release(VBChunk* chunk);

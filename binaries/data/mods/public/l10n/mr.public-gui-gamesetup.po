@@ -1,15 +1,16 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2022 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# shreyash kore
+# sabretou, 2024
+# shreyash kore, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2022-09-12 09:35+0000\n"
+"POT-Creation-Date: 2024-08-09 07:17+0000\n"
 "PO-Revision-Date: 2014-06-19 17:48+0000\n"
-"Last-Translator: shreyash kore, 2018\n"
+"Last-Translator: sabretou, 2024\n"
 "Language-Team: Marathi (http://app.transifex.com/wildfire-games/0ad/language/mr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,13 +18,13 @@ msgstr ""
 "Language: mr\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:(caption):13
+#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:13
 msgid "AI Configuration"
 msgstr ""
 
-#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:(caption):29
+#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:29
 msgid "OK"
-msgstr ""
+msgstr "ठीक आहे"
 
 #: gui/gamesetup/Pages/AIConfigPage/AIDescription.js:30
 msgid "AI will be disabled for this player."
@@ -31,11 +32,11 @@ msgstr "या खेळाडूसाठी एआय अक्षम के�
 
 #: gui/gamesetup/Pages/AIConfigPage/Controls/AIBehavior.js:29
 msgid "AI Behavior"
-msgstr ""
+msgstr "ए.आय. वागणूक"
 
 #: gui/gamesetup/Pages/AIConfigPage/Controls/AIDifficulty.js:32
 msgid "AI Difficulty"
-msgstr ""
+msgstr "ए.आय. कठीणता"
 
 #: gui/gamesetup/Pages/AIConfigPage/Controls/AISelection.js:39
 msgctxt "ai"
@@ -44,13 +45,13 @@ msgstr "काहीही नाही"
 
 #: gui/gamesetup/Pages/AIConfigPage/Controls/AISelection.js:44
 msgid "AI Player"
-msgstr ""
+msgstr "ए.आय. खेळाडू"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingControl.js:142
 #, javascript-format
 msgctxt "Title for specific setting"
 msgid "%(setting)s:"
-msgstr ""
+msgstr "%(setting)s:"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingControlCheckbox.js:57
 msgid "Yes"
@@ -71,12 +72,12 @@ msgctxt "Match settings tab name"
 msgid "Map"
 msgstr "नकाशा"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:28
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:29
 msgctxt "Match settings tab name"
 msgid "Player"
 msgstr "खेळाडू"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:40
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:41
 msgctxt "Match settings tab name"
 msgid "Game Type"
 msgstr "गेम प्रकार"
@@ -88,20 +89,20 @@ msgstr ""
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/Dropdowns/PlayerAssignment.js:135
 msgid "Select player."
-msgstr ""
+msgstr "खेळाडू निवडा."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/Dropdowns/PlayerAssignment.js:222
 #, javascript-format
 msgid "AI: %(ai)s"
-msgstr ""
+msgstr "ए.आय.: %(ai)s"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/Dropdowns/PlayerAssignment.js:257
 msgid "Unassigned"
-msgstr ""
+msgstr "नियुक्त केलेले नाही"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/Dropdowns/PlayerCiv.js:90
 msgid "Choose the civilization for this player."
-msgstr ""
+msgstr "या खेळाडूसाठी एक संस्कृती निवडा."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/Dropdowns/PlayerCiv.js:93
 msgctxt "civilization"
@@ -114,45 +115,45 @@ msgstr "जेव्हा गेम प्रारंभ होतो ते�
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/Dropdowns/PlayerColor.js:48
 msgid "Pick a color."
-msgstr ""
+msgstr "रंग निवडा."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/Dropdowns/PlayerTeam.js:47
 msgid "Select player's team."
-msgstr ""
+msgstr "खेळाडूचा संघ निवडा."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/Dropdowns/PlayerTeam.js:50
 msgctxt "team"
 msgid "None"
 msgstr "काहीही नाही"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):6
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:6
 msgid "Player Name"
-msgstr ""
+msgstr "खेळाडूचे नाव"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):10
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:10
 msgid "Color"
-msgstr ""
+msgstr "रंग"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):14
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:14
 msgid "Player Placement"
 msgstr ""
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):18
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:18
 msgid "Civilization"
 msgstr "संस्कृती"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):25
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:25
 msgid "Team"
 msgstr "गट"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Buttons/MapBrowser.js:36
 msgid "Browse Maps"
-msgstr ""
+msgstr "मॅप चाळा"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Buttons/MapBrowser.js:39
 #, javascript-format
 msgid "Press %(hotkey)s to view the list of available maps."
-msgstr ""
+msgstr "उपलब्ध असलेल्या सर्व मॅपची यादी पाहण्यास %(hotkey)s दाबा."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/AlliedView.js:26
 msgid "Allied View"
@@ -164,7 +165,7 @@ msgstr ""
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/Cheats.js:35
 msgid "Cheats"
-msgstr ""
+msgstr "चीट"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/Cheats.js:38
 msgid "Toggle the usability of cheats."
@@ -186,7 +187,7 @@ msgstr ""
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/LastManStanding.js:26
 msgid "Last Man Standing"
-msgstr ""
+msgstr "उभा असलेला शेवटचा"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/LastManStanding.js:29
 msgid ""
@@ -204,7 +205,7 @@ msgstr ""
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/Nomad.js:25
 msgid "Nomad"
-msgstr ""
+msgstr "भटका"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/Nomad.js:28
 msgid ""
@@ -244,23 +245,23 @@ msgstr ""
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/Spies.js:26
 msgid "Disable Spies"
-msgstr ""
+msgstr "हेर निष्क्रिय करा"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/Spies.js:29
 msgid "Disable spies during the game."
-msgstr ""
+msgstr "खेळात हेर निष्क्रिय करा."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/Treasures.js:25
 msgid "Disable Treasures"
-msgstr ""
+msgstr "खजिने निष्क्रिय करा"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/Treasures.js:28
 msgid "Do not add treasures to the map."
-msgstr ""
+msgstr "मॅपवर खजिने घालू नका."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/WorldPopulation.js:25
 msgid "World Population"
-msgstr ""
+msgstr "जगाची लोकसंख्या"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/WorldPopulation.js:28
 msgid ""
@@ -270,7 +271,7 @@ msgstr ""
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/Biome.js:54
 msgid "Biome"
-msgstr ""
+msgstr "बायोम"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/Biome.js:60
 msgid "Select the flora and fauna."
@@ -283,15 +284,15 @@ msgstr "यादृच्छिक"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/Biome.js:66
 msgid "Pick a biome at random."
-msgstr ""
+msgstr "यादृच्छिकरित्या बायोम निवडा."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/Daytime.js:57
 msgid "Daytime"
-msgstr ""
+msgstr "दिवस"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/Daytime.js:60
 msgid "Select whether the match takes place at daylight or night."
-msgstr ""
+msgstr "सामना दिवसा घडतो का रात्री हे निवडा."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/Daytime.js:63
 msgctxt "daytime selection"
@@ -301,7 +302,7 @@ msgstr "यादृच्छिक"
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/Daytime.js:66
 msgctxt "daytime selection"
 msgid "Randomly pick a time of the day."
-msgstr ""
+msgstr "यादृच्छिकरित्या दिवसातली वेळ निवडा."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/GameSpeed.js:61
 msgid "Game Speed"
@@ -309,7 +310,7 @@ msgstr "खेळाची गती"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/GameSpeed.js:64
 msgid "Select game speed."
-msgstr ""
+msgstr "गेमचा वेग निवडा."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/Landscape.js:25
 msgctxt "landscape selection"
@@ -343,11 +344,11 @@ msgstr "नकाशा"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/MapSelection.js:141
 msgid "Select Map"
-msgstr ""
+msgstr "मॅप निवडा"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/MapSelection.js:144
 msgid "Select a map to play on."
-msgstr ""
+msgstr "खेळण्यासाठी मॅप निवडा."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/MapSelection.js:150
 msgctxt "map selection"
@@ -356,11 +357,11 @@ msgstr "यादृच्छिक"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/MapSelection.js:153
 msgid "Pick any of the given maps at random."
-msgstr ""
+msgstr "दिलेल्या मॅपमधून यादृच्छिकरित्या निवडा."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/MapSize.js:39
 msgid "Map Size"
-msgstr ""
+msgstr "मॅपचा आकार"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/MapSize.js:42
 msgid "Select map size. (Larger sizes may reduce performance.)"
@@ -372,28 +373,28 @@ msgstr "नकाशा प्रकार"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/MapType.js:68
 msgid "Select a map type."
-msgstr ""
+msgstr "मॅपचा प्रकार निवडा."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/PlayerCount.js:33
 msgid "Number of Players"
-msgstr ""
+msgstr "खेळाडूंची संख्या"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/PlayerCount.js:36
 msgid "Select number of players."
-msgstr ""
+msgstr "खेळाडूंची संख्या निवडा."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/PopulationCap.js:52
 msgid "Population Cap"
-msgstr ""
+msgstr "लोकसंख्येची मर्यादा"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/PopulationCap.js:55
 msgid "Select population limit."
-msgstr ""
+msgstr "लोकसंख्येची मर्यादा निवडा."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/PopulationCap.js:58
 msgctxt "population limit"
 msgid "Per Player"
-msgstr ""
+msgstr "प्रति खेळाडू"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/PopulationCap.js:61
 #, javascript-format
@@ -404,21 +405,21 @@ msgstr ""
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/StartingResources.js:50
 msgid "Starting Resources"
-msgstr ""
+msgstr "सुरुवातीची साधने"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/StartingResources.js:53
 msgid "Select the game's starting resources."
-msgstr ""
+msgstr "गेमच्या सुरुवातीची साधने निवडा."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/StartingResources.js:56
 #, javascript-format
 msgid "Initial amount of each resource: %(resources)s."
-msgstr ""
+msgstr "प्रत्येक साधनेची प्रारंभी संख्या: %(resources)s."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/StartingResources.js:59
 msgctxt "starting resources"
 msgid "Per Player"
-msgstr ""
+msgstr "प्रति खेळाडू"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/TeamPlacement.js:53
 msgid "Team Placement"
@@ -440,19 +441,27 @@ msgstr ""
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/TriggerDifficulty.js:41
 msgid "Difficulty"
-msgstr ""
+msgstr "कठीणता"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/TriggerDifficulty.js:44
 msgid "Select the difficulty of this scenario."
-msgstr ""
+msgstr "या सेनारियोची कठीणता निवडा."
+
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WaterLevel.js:43
+msgid "Water level"
+msgstr "पाण्याचा स्तर"
+
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WaterLevel.js:46
+msgid "Select the water level of this map."
+msgstr "या मॅपवरचा पाण्याचा स्तर निवडा."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WorldPopulationCap.js:47
 msgid "World Population Cap"
-msgstr ""
+msgstr "जागतिक लोकसंख्येची मर्यादा"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WorldPopulationCap.js:50
 msgid "Select world population limit."
-msgstr ""
+msgstr "जगाच्या लोकसंख्येची मर्यादा निवडा."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WorldPopulationCap.js:53
 #, javascript-format
@@ -463,24 +472,24 @@ msgstr ""
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Sliders/Ceasefire.js:35
 msgid "Ceasefire"
-msgstr ""
+msgstr "युद्धबंदी"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Sliders/Ceasefire.js:38
 msgid "Set time where no attacks are possible."
-msgstr ""
+msgstr "हल्ला शक्य नसण्याचा वेळ सेट करा."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Sliders/Ceasefire.js:41
 msgctxt "ceasefire"
 msgid "No ceasefire"
-msgstr ""
+msgstr "युद्धबंदी नाही"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Sliders/Ceasefire.js:44
 #, javascript-format
 msgctxt "ceasefire"
 msgid "%(minutes)s minute"
 msgid_plural "%(minutes)s minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(minutes)sमिनिट"
+msgstr[1] "%(minutes)s मिनिट"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Sliders/RelicCount.js:38
 msgid "Relic Count"
@@ -514,8 +523,8 @@ msgstr ""
 msgctxt "victory duration"
 msgid "%(min)s minute"
 msgid_plural "%(min)s minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(min)s मिनिट"
+msgstr[1] "%(min)s मिनिट"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Sliders/RelicDuration.js:50
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Sliders/WonderDuration.js:47
@@ -536,8 +545,8 @@ msgstr ""
 msgctxt "sea level rise time"
 msgid "%(minutes)s minute"
 msgid_plural "%(minutes)s minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(minutes)sमिनिट"
+msgstr[1] "%(minutes)s मिनिट"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Sliders/WonderDuration.js:38
 msgid "Wonder Duration"
@@ -547,19 +556,19 @@ msgstr ""
 msgid "Minutes until the player has achieved Wonder Victory"
 msgstr ""
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:36
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:17
 msgid "Back"
-msgstr ""
+msgstr "मागे"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:39
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:20
 msgid "Return to the lobby."
-msgstr ""
+msgstr "लॉबीला परता."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:42
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:23
 msgid "Return to the main menu."
-msgstr ""
+msgstr "मुख्य मेन्यूला परता."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CivInfoButton.js:48
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CivInfoButton.js:33
 #, javascript-format
 msgid ""
 "%(hotkey_civinfo)s / %(hotkey_structree)s: View Civilization Overview / Structure Tree\n"
@@ -570,27 +579,27 @@ msgstr ""
 msgid "Show the multiplayer lobby in a dialog window."
 msgstr ""
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:79
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:70
 msgid "I'm ready"
 msgstr "मी तयार आहे"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:80
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:71
 msgid "Stay ready"
 msgstr "तयार राहा"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:81
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:72
 msgid "I'm not ready!"
 msgstr "मी तयार नाही!"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:85
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:76
 msgid "State that you are ready to play."
 msgstr "आपण खेळण्यासाठी तयार आहात ते सांगा."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:86
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:77
 msgid "Stay ready even when the game settings change."
 msgstr "गेम सेटिंग्ज बदलत असताना देखील तयार रहा."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:87
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:78
 msgid "State that you are not ready to play."
 msgstr "आपण खेळण्यासाठी तयार नाही असे सांगा."
 
@@ -601,21 +610,21 @@ msgstr ""
 
 #: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ResetTeamsButton.js:29
 msgid "Reset all teams to the default."
-msgstr ""
+msgstr "सर्व संघांना डिफॉल्टला रिसेट करा."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:65
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:56
 msgid "Start Game!"
-msgstr ""
+msgstr "गेम सुरू करा!"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:68
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:59
 msgid "Start a new game with the current settings."
-msgstr ""
+msgstr "वर्तमान पर्याय धरून नवीन गेम सुरू करा."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:71
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:62
 msgid ""
 "Start a new game with the current settings (disabled until all players are "
 "ready)."
-msgstr ""
+msgstr "वर्तमान पर्याय धरून नवीन गेम सुरू करा. (सर्व खेळाडू तयार असेपर्यंत निष्क्रिय)"
 
 #: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatInputPanel.js:55
 #, javascript-format
@@ -629,22 +638,22 @@ msgstr "अज्ञात खेळाडू"
 #: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatMessages/ClientChat.js:47
 #, javascript-format
 msgid "<%(username)s>"
-msgstr ""
+msgstr "<%(username)s>"
 
 #: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatMessages/ClientChat.js:50
 #, javascript-format
 msgid "%(username)s %(message)s"
-msgstr ""
+msgstr "%(username)s %(message)s"
 
 #: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatMessages/ClientConnection.js:27
 #, javascript-format
 msgid "%(username)s has joined"
-msgstr ""
+msgstr "%(username)s सहभागी झाले आहेत"
 
 #: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatMessages/ClientConnection.js:30
 #, javascript-format
 msgid "%(username)s has left"
-msgstr ""
+msgstr "%(username)s यांनी सोडले आहे"
 
 #: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatMessages/ClientKicked.js:22
 #, javascript-format
@@ -670,14 +679,14 @@ msgstr "%(username)s तयार आहे!"
 msgid "Game settings have been changed"
 msgstr "गेम सेटिंग्ज बदलली गेली आहेत"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatPanel.xml:(caption):9
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatPanel.xml:9
 msgid "Send"
-msgstr ""
+msgstr "पाठवा"
 
 #: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/StatusMessageFormat.js:24
 #, javascript-format
 msgid "== %(message)s"
-msgstr ""
+msgstr "== %(message)s"
 
 #: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/TimestampWrapper.js:25
 #, javascript-format
@@ -687,17 +696,17 @@ msgstr "%(time)s %(message)s"
 #: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/TimestampWrapper.js:28
 #, javascript-format
 msgid "\\[%(time)s]"
-msgstr ""
+msgstr "\\[%(time)s]"
 
 #: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/TimestampWrapper.js:31
 msgid "HH:mm"
-msgstr ""
+msgstr "HH:mm"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:40
+#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:29
 msgid "Cheats enabled."
-msgstr ""
+msgstr "चीट सक्रिय केले आहेत."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:43
+#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:32
 msgid "Rated game."
 msgstr ""
 
@@ -708,57 +717,57 @@ msgstr ""
 
 #: gui/gamesetup/Pages/GameSetupPage/Panels/MapPreview.js:27
 msgid "No selected map"
-msgstr ""
+msgstr "कोणताही मॅप निवडला नाही"
 
 #: gui/gamesetup/Pages/GameSetupPage/Panels/MapPreview.js:47
 msgid "Click to view the list of available maps."
-msgstr ""
+msgstr "उपलब्ध असलेल्या सर्व मॅपची यादी पाहण्यास येथे क्लिक करा."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/TipsPanel.xml:(caption):10
+#: gui/gamesetup/Pages/GameSetupPage/Panels/TipsPanel.xml:10
 msgid "Show this message in the future."
-msgstr ""
+msgstr "हा निरोप भविष्यातसुद्धा दाखवा."
 
-#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:(caption):7
+#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:7
 msgid "Loading"
-msgstr ""
+msgstr "लोड करत आहे"
 
-#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:(caption):11
+#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:11
 msgid "Loading map data. Please wait…"
-msgstr ""
+msgstr "मॅप डेटा लोड करत आहे. कृपया प्रतीक्षा करा..."
 
-#: gui/gamesetup/gamesetup.xml:(caption):17
+#: gui/gamesetup/gamesetup.xml:17
 msgid "Match Setup"
-msgstr ""
+msgstr "सामन्याची मांडणी"
 
 #: gui/gamesetup_mp/gamesetup_mp.js:59
 #, javascript-format
 msgid "%(name)s's game"
-msgstr ""
+msgstr "%(name)s यांचा गेम"
 
 #: gui/gamesetup_mp/gamesetup_mp.js:123
 msgid "Please enter a valid server name."
-msgstr ""
+msgstr "वैध असेल असे सर्व्हरचे नाव प्रविष्ट करा."
 
 #: gui/gamesetup_mp/gamesetup_mp.js:131
 #, javascript-format
 msgid "Server port number must be between %(min)s and %(max)s."
-msgstr ""
+msgstr "सर्व्हरच्या पोर्टचा नंबर %(min)s आणि %(max)s यांमध्ये असायला हवा."
 
 #: gui/gamesetup_mp/gamesetup_mp.js:150
 msgid "Connecting to server..."
-msgstr ""
+msgstr "सर्व्हरला कनेक्ट करत आहे..."
 
 #: gui/gamesetup_mp/gamesetup_mp.js:165
 msgid "Server is not running."
-msgstr ""
+msgstr "सर्व्हर चालू नाही."
 
 #: gui/gamesetup_mp/gamesetup_mp.js:166
 msgid "Password is invalid."
-msgstr ""
+msgstr "पासवर्ड अवैध आहे."
 
 #: gui/gamesetup_mp/gamesetup_mp.js:167
 msgid "You have been banned."
-msgstr ""
+msgstr "तुम्हाला बॅन करण्यात आले आहे."
 
 #: gui/gamesetup_mp/gamesetup_mp.js:168
 msgid ""
@@ -769,32 +778,27 @@ msgstr ""
 #: gui/gamesetup_mp/gamesetup_mp.js:171
 #, javascript-format
 msgid "\\[Invalid value %(reason)s]"
-msgstr ""
+msgstr "\\[अवैध मूल्य %(reason)s]"
 
 #: gui/gamesetup_mp/gamesetup_mp.js:179
 msgid "Failed to connect to the server."
-msgstr ""
+msgstr "सर्व्हरशी कनेक्ट करण्यात अपयशी."
 
 #: gui/gamesetup_mp/gamesetup_mp.js:181
 msgid "Connection failed"
-msgstr ""
-
-#: gui/gamesetup_mp/gamesetup_mp.js:193
-#, javascript-format
-msgid "Net message: %(message)s"
-msgstr ""
+msgstr "कनेक्शन अपयशी"
 
 #: gui/gamesetup_mp/gamesetup_mp.js:276
 msgid "Registering with server..."
-msgstr ""
+msgstr "सर्व्हरवर नोंदणी करत आहे..."
 
 #: gui/gamesetup_mp/gamesetup_mp.js:282
 msgid "Game has already started, rejoining..."
-msgstr ""
+msgstr "गेम आधीच सुरू झाला आहे, पुन्हा सहभागी होत आहे..."
 
 #: gui/gamesetup_mp/gamesetup_mp.js:361
 msgid "Game name already in use."
-msgstr ""
+msgstr "गेमचे हे नाव आधीच वापरात आहे."
 
 #: gui/gamesetup_mp/gamesetup_mp.js:376
 #, javascript-format
@@ -802,88 +806,85 @@ msgid "Cannot host game: %(message)s."
 msgstr ""
 
 #: gui/gamesetup_mp/gamesetup_mp.js:377 gui/gamesetup_mp/gamesetup_mp.js:406
-#: gui/gamesetup_mp/gamesetup_mp.js:435 gui/gamesetup_mp/gamesetup_mp.js:450
+#: gui/gamesetup_mp/gamesetup_mp.js:436 gui/gamesetup_mp/gamesetup_mp.js:451
 msgid "Error"
 msgstr "समस्या"
 
-#: gui/gamesetup_mp/gamesetup_mp.js:405 gui/gamesetup_mp/gamesetup_mp.js:449
+#: gui/gamesetup_mp/gamesetup_mp.js:405 gui/gamesetup_mp/gamesetup_mp.js:450
 #, javascript-format
 msgid "Cannot join game: %(message)s."
-msgstr ""
+msgstr "%(message)s या गेममध्ये सहभागी होता आले नाही."
 
-#: gui/gamesetup_mp/gamesetup_mp.js:464
+#: gui/gamesetup_mp/gamesetup_mp.js:465
 #, javascript-format
 msgid "%(playername)s's game"
-msgstr ""
+msgstr "%(playername)s यांचे गेम"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):18
+#: gui/gamesetup_mp/gamesetup_mp.xml:18
 msgid "Multiplayer"
-msgstr ""
+msgstr "मल्टिप्लेयर"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):24
+#: gui/gamesetup_mp/gamesetup_mp.xml:24
 msgid "Joining an existing game."
-msgstr ""
+msgstr "अस्तित्वात असलेल्या गेममध्ये सहभागी व्हा."
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):28
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):70
+#: gui/gamesetup_mp/gamesetup_mp.xml:28 gui/gamesetup_mp/gamesetup_mp.xml:70
 msgid "Player Name:"
-msgstr ""
+msgstr "खेळाडूचे नाव:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):38
+#: gui/gamesetup_mp/gamesetup_mp.xml:38
 msgid "Server Hostname or IP:"
-msgstr ""
+msgstr "सर्व्हरचा होस्टनेम किंवा आय.पी.:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):48
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):95
+#: gui/gamesetup_mp/gamesetup_mp.xml:48 gui/gamesetup_mp/gamesetup_mp.xml:95
 msgid "Server Port:"
-msgstr ""
+msgstr "सर्व्हरचा पोर्ट:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):65
+#: gui/gamesetup_mp/gamesetup_mp.xml:52 gui/gamesetup_mp/gamesetup_mp.xml:99
+msgid "Leave blank to use the default port."
+msgstr "डिफॉल्ट पोर्ट वापरण्यासाठी रिकामे ठेवा."
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:65
 msgid "Set up your server to host."
 msgstr ""
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):83
+#: gui/gamesetup_mp/gamesetup_mp.xml:83
 msgid "Server Name:"
-msgstr ""
+msgstr "सर्व्हरचे नाव:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):112
+#: gui/gamesetup_mp/gamesetup_mp.xml:112
 msgid "Server Password:"
+msgstr "सर्व्हरचा पासवर्ड:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:113
+msgid "Leave blank to not require it."
 msgstr ""
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):128
+#: gui/gamesetup_mp/gamesetup_mp.xml:128
 msgid "Use STUN to work around firewalls"
 msgstr ""
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):136
+#: gui/gamesetup_mp/gamesetup_mp.xml:136
 msgid "Continue"
-msgstr ""
+msgstr "पुढे जा"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):141
+#: gui/gamesetup_mp/gamesetup_mp.xml:141
 msgid "Cancel"
 msgstr "रद्द करा"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):152
+#: gui/gamesetup_mp/gamesetup_mp.xml:152
 msgid "Password:"
-msgstr ""
+msgstr "पासवर्ड:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):162
+#: gui/gamesetup_mp/gamesetup_mp.xml:162
 msgid "Confirm"
-msgstr ""
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):52
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):99
-msgid "Leave blank to use the default port."
-msgstr ""
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):113
-msgid "Leave blank to not require it."
 msgstr ""
 
 #: gui/loading/ProgressBar.js:48
 #, javascript-format
 msgctxt "loading screen progress"
 msgid "%(percentage)s%%"
-msgstr ""
+msgstr "%(percentage)s%%"
 
 #. Translation: A bullet point used before every item of list of tips
 #. displayed on loading
@@ -891,17 +892,17 @@ msgstr ""
 #: gui/loading/TipDisplay.js:62
 #, javascript-format
 msgid "• %(tiptext)s"
-msgstr ""
+msgstr "• %(tiptext)s"
 
 #: gui/loading/TitleDisplay.js:15
 #, javascript-format
 msgid "Generating “%(map)s”"
-msgstr ""
+msgstr "“%(map)s” निर्माण करत आहे"
 
 #: gui/loading/TitleDisplay.js:17
 #, javascript-format
 msgid "Loading “%(map)s”"
-msgstr ""
+msgstr "“%(map)s” लोड करत आहे"
 
 #: gui/text/quotes.txt:1
 msgid ""
@@ -952,7 +953,7 @@ msgstr ""
 
 #: gui/text/quotes.txt:9
 msgid "“Union gives strength.” \\n— Aesop (“The Bundle of Sticks”)"
-msgstr ""
+msgstr "“एकतेने शक्ती मिळते.” \\n— ईसाप (“काठ्यांचा गठ्ठा”)"
 
 #: gui/text/quotes.txt:10
 msgid ""

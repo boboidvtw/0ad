@@ -1,4 +1,4 @@
-/* Copyright (C) 2022 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -100,6 +100,13 @@ that of Atlas depending on commandline parameters.
 #endif
 
 #if OS_WIN
+// Forward declarations to avoid including Windows dependent headers.
+Status waio_Shutdown();
+Status wdir_watch_Init();
+Status wdir_watch_Shutdown();
+Status wutil_Init();
+Status wutil_Shutdown();
+
 // We don't want to include Windows.h as it might mess up the rest
 // of the file so we just define DWORD as done in Windef.h.
 #ifndef DWORD
@@ -353,7 +360,7 @@ static void RendererIncrementalLoad()
 	while (more && timer_Time() - startTime < maxTime);
 }
 
-static void Frame()
+static void Frame(RL::Interface* rlInterface)
 {
 	g_Profiler2.RecordFrameStart();
 	PROFILE2("frame");
@@ -378,15 +385,14 @@ static void Frame()
 	ENSURE(realTimeSinceLastFrame > 0.0f);
 
 	// Decide if update is necessary
-	bool need_update = true;
+	const bool needUpdate{g_app_has_focus || g_NetClient || !g_PauseOnFocusLoss};
 
 	// If we are not running a multiplayer game, disable updates when the game is
 	// minimized or out of focus and relinquish the CPU a bit, in order to make
 	// debugging easier.
-	if (g_PauseOnFocusLoss && !g_NetClient && !g_app_has_focus)
+	if (!needUpdate)
 	{
 		PROFILE3("non-focus delay");
-		need_update = false;
 		// don't use SDL_WaitEvent: don't want the main loop to freeze until app focus is restored
 		SDL_Delay(10);
 	}
@@ -419,12 +425,12 @@ static void Frame()
 
 	g_GUI->TickObjects();
 
-	if (g_RLInterface)
-		g_RLInterface->TryApplyMessage();
+	if (rlInterface)
+		rlInterface->TryApplyMessage();
 
-	if (g_Game && g_Game->IsGameStarted() && need_update)
+	if (g_Game && g_Game->IsGameStarted() && needUpdate)
 	{
-		if (!g_RLInterface)
+		if (!rlInterface)
 			g_Game->Update(realTimeSinceLastFrame);
 
 		g_Game->GetView()->Update(float(realTimeSinceLastFrame));
@@ -482,16 +488,19 @@ static void MainControllerShutdown()
 	in_reset_handlers();
 }
 
-static void StartRLInterface(CmdLineArgs args)
+static std::optional<RL::Interface> CreateRLInterface(const CmdLineArgs& args)
 {
+	if (!args.Has("rl-interface"))
+		return std::nullopt;
+
 	std::string server_address;
 	CFG_GET_VAL("rlinterface.address", server_address);
 
 	if (!args.Get("rl-interface").empty())
 		server_address = args.Get("rl-interface");
 
-	g_RLInterface = std::make_unique<RL::Interface>(server_address.c_str());
 	debug_printf("RL interface listening on %s\n", server_address.c_str());
+	return std::make_optional<RL::Interface>(server_address.c_str());
 }
 
 // moved into a helper function to ensure args is destroyed before
@@ -519,8 +528,7 @@ static void RunGameOrAtlas(const PS::span<const char* const> argv)
 
 	const bool isVisualReplay = args.Has("replay-visual");
 	const bool isNonVisualReplay = args.Has("replay");
-	const bool isNonVisual = args.Has("autostart-nonvisual");
-	const bool isUsingRLInterface = args.Has("rl-interface");
+	const bool isVisual = !args.Has("autostart-nonvisual");
 
 	const OsPath replayFile(
 		isVisualReplay ? args.Get("replay-visual") :
@@ -635,10 +643,18 @@ static void RunGameOrAtlas(const PS::span<const char* const> argv)
 	{
 		g_Shutdown = ShutdownType::None;
 
+		// Do this as soon as possible, because it chdirs and will mess up the error reporting if
+		// anything crashes before the working directory is set.
+		InitVfs(args);
+
+		// This must come after VFS init, which sets the current directory (required for finding our
+		// output log files).
+		FileLogger logger;
+
 		if (!Init(args, flags))
 		{
 			flags &= ~INIT_MODS;
-			Shutdown(SHUTDOWN_FROM_CONFIG);
+			ShutdownConfigAndSubsequent();
 			continue;
 		}
 
@@ -662,35 +678,42 @@ static void RunGameOrAtlas(const PS::span<const char* const> argv)
 			g_Mods.UpdateAvailableMods(modInterface);
 		}
 
-		if (isNonVisual)
-		{
-			if (!InitNonVisual(args))
-				g_Shutdown = ShutdownType::Quit;
-			else if (isUsingRLInterface)
-				StartRLInterface(args);
+		std::optional<ScriptInterface> guiScriptInterface;
 
-			while (g_Shutdown == ShutdownType::None)
-			{
-				if (isUsingRLInterface)
-					g_RLInterface->TryApplyMessage();
-				else
-					NonVisualFrame();
-			}
-		}
-		else
+		if (isVisual)
 		{
-			InitGraphics(args, 0, installedMods);
+			guiScriptInterface.emplace("Engine", "gui", *g_ScriptContext);
+			InitGraphics(args, 0, installedMods, *g_ScriptContext, *guiScriptInterface);
 			MainControllerInit();
-			if (isUsingRLInterface)
-				StartRLInterface(args);
-			while (g_Shutdown == ShutdownType::None)
-				Frame();
+		}
+		else if (!InitNonVisual(args))
+			g_Shutdown = ShutdownType::Quit;
+
+		// MSVC doesn't support copy elision in ternary expressions. So we use a lambda instead.
+		std::optional<RL::Interface> rlInterface{[&]() -> std::optional<RL::Interface>
+			{
+				if (g_Shutdown == ShutdownType::None)
+					return CreateRLInterface(args);
+				else
+					return std::nullopt;
+			}()};
+
+		while (g_Shutdown == ShutdownType::None)
+		{
+			if (isVisual)
+				Frame(rlInterface ? &*rlInterface : nullptr);
+			else if(rlInterface)
+				rlInterface->TryApplyMessage();
+			else
+				NonVisualFrame();
 		}
 
 		// Do not install mods again in case of restart (typically from the mod selector)
 		modsToInstall.clear();
 
-		Shutdown(0);
+		ShutdownNetworkAndUI();
+		guiScriptInterface.reset();
+		ShutdownConfigAndSubsequent();
 		MainControllerShutdown();
 		flags &= ~INIT_MODS;
 
@@ -734,6 +757,11 @@ extern "C" int main(int argc, char* argv[])
 	}
 #endif // OS_UNIX
 
+#if OS_WIN
+	wutil_Init();
+	wdir_watch_Init();
+#endif
+
 	EarlyInit();	// must come at beginning of main
 
 	// static_cast is ok, argc is never negative.
@@ -741,6 +769,14 @@ extern "C" int main(int argc, char* argv[])
 
 	// Shut down profiler initialised by EarlyInit
 	g_Profiler2.Shutdown();
+
+#if OS_WIN
+	// All calls to Windows specific functions have to happen before the following
+	// shutdowns.
+	wdir_watch_Shutdown();
+	waio_Shutdown();
+	wutil_Shutdown();
+#endif
 
 	return EXIT_SUCCESS;
 }

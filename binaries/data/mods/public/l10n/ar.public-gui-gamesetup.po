@@ -1,29 +1,30 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2022 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# abdelbaseer shaheen
-# abdul-rahman sawalmah
-# Adam Adam
-# jalal natsheh
-# Majid Al-Dharrab
-# mustapha ali abdulkarim
-# nitro361
-# 425467bb0c9da71484550c3c99a0865a_432023a
-# Safa Alfulaij
-# slimkhan
-# Tux-Tn
-# 6a39c688df6306dcd1a5e2f20d845515
-# Youssef Aharbil
-# صفا الفليج
-# Mohamed Ahmed
+# abdelbaseer shaheen, 2017
+# abdul-rahman sawalmah, 2015
+# Adam Adam, 2021
+# ahmed t, 2023
+# jalal natsheh, 2017
+# Majid Al-Dharrab, 2014
+# mustapha ali abdulkarim, 2014
+# nitro361, 2015
+# 425467bb0c9da71484550c3c99a0865a_432023a, 2017
+# Safa Alfulaij, 2014
+# slimkhan, 2014
+# Tux-Tn, 2013
+# 6a39c688df6306dcd1a5e2f20d845515, 2018
+# Youssef Aharbil, 2015
+# صفا الفليج, 2014-2018,2022
+# Mohamed Ahmed, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2022-09-12 09:35+0000\n"
+"POT-Creation-Date: 2024-08-09 07:17+0000\n"
 "PO-Revision-Date: 2014-06-19 17:48+0000\n"
-"Last-Translator: صفا الفليج <safaalfulaij@hotmail.com>, 2014-2018,2022\n"
+"Last-Translator: ahmed t, 2023\n"
 "Language-Team: Arabic (http://app.transifex.com/wildfire-games/0ad/language/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,11 +32,11 @@ msgstr ""
 "Language: ar\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:(caption):13
+#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:13
 msgid "AI Configuration"
 msgstr "ضبط الذكاء الاصطناعي"
 
-#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:(caption):29
+#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:29
 msgid "OK"
 msgstr "حسنًا"
 
@@ -85,12 +86,12 @@ msgctxt "Match settings tab name"
 msgid "Map"
 msgstr "خريطة"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:28
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:29
 msgctxt "Match settings tab name"
 msgid "Player"
 msgstr "لاعب"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:40
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:41
 msgctxt "Match settings tab name"
 msgid "Game Type"
 msgstr "نوع اللعبة"
@@ -139,23 +140,23 @@ msgctxt "team"
 msgid "None"
 msgstr "بلا"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):6
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:6
 msgid "Player Name"
 msgstr "اسم اللاعب"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):10
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:10
 msgid "Color"
 msgstr "اللون"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):14
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:14
 msgid "Player Placement"
 msgstr "موضع اللاعب"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):18
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:18
 msgid "Civilization"
 msgstr "الحضارة"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):25
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:25
 msgid "Team"
 msgstr "الفريق"
 
@@ -170,11 +171,11 @@ msgstr "إضغط %(hotkey)s لإظهار لائحة الخرائط الموجو�
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/AlliedView.js:26
 msgid "Allied View"
-msgstr ""
+msgstr "Allied View"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/AlliedView.js:30
 msgid "Toggle allied view (see what your allies see)."
-msgstr ""
+msgstr "Toggle allied view (see what your allies see)."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/Cheats.js:35
 msgid "Cheats"
@@ -274,7 +275,7 @@ msgstr "لا تُضِف الكنوز للخريطة."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/WorldPopulation.js:25
 msgid "World Population"
-msgstr ""
+msgstr "World Population"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Checkboxes/WorldPopulation.js:28
 msgid ""
@@ -333,7 +334,7 @@ msgstr "عشوائي"
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/Landscape.js:26
 msgctxt "landscape selection"
 msgid "Select a random landscape."
-msgstr ""
+msgstr "Select a random landscape."
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/Landscape.js:78
 msgid "Landscape"
@@ -460,6 +461,14 @@ msgstr "الصعوبة"
 msgid "Select the difficulty of this scenario."
 msgstr "اختر صعوبة هذا السيناريو."
 
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WaterLevel.js:43
+msgid "Water level"
+msgstr ""
+
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WaterLevel.js:46
+msgid "Select the water level of this map."
+msgstr ""
+
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WorldPopulationCap.js:47
 msgid "World Population Cap"
 msgstr "حد السكان العالمي"
@@ -577,19 +586,19 @@ msgstr ""
 msgid "Minutes until the player has achieved Wonder Victory"
 msgstr ""
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:36
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:17
 msgid "Back"
 msgstr "عُد"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:39
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:20
 msgid "Return to the lobby."
 msgstr "عُد إلى الرّدهة."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:42
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:23
 msgid "Return to the main menu."
 msgstr "عُد إلى القائمة الرّئيسيّة."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CivInfoButton.js:48
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CivInfoButton.js:33
 #, javascript-format
 msgid ""
 "%(hotkey_civinfo)s / %(hotkey_structree)s: View Civilization Overview / Structure Tree\n"
@@ -600,27 +609,27 @@ msgstr ""
 msgid "Show the multiplayer lobby in a dialog window."
 msgstr "اعرض ردهة اللاعبين في نافذة حواريّ."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:79
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:70
 msgid "I'm ready"
 msgstr "أنا جاهز"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:80
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:71
 msgid "Stay ready"
 msgstr "ابق مستعدًا"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:81
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:72
 msgid "I'm not ready!"
 msgstr "لستُ جاهزًا!"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:85
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:76
 msgid "State that you are ready to play."
 msgstr "أعلن استعدادك للّعب."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:86
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:77
 msgid "Stay ready even when the game settings change."
 msgstr "أظهر استعدادك لبدء اللعب حتى مع تغير إعدادات اللعبة."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:87
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:78
 msgid "State that you are not ready to play."
 msgstr "أعلن عدم استعدادك للّعب."
 
@@ -633,15 +642,15 @@ msgstr "أعد أي الحضارات التي تم إختيارها إلى ال�
 msgid "Reset all teams to the default."
 msgstr "صفّر كلّ الفِرق إلى الافتراضيّات."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:65
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:56
 msgid "Start Game!"
 msgstr "ابدأ اللعبة!"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:68
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:59
 msgid "Start a new game with the current settings."
 msgstr "ابدأ لعبة جديدة بالإعدادات الحالّيّة."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:71
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:62
 msgid ""
 "Start a new game with the current settings (disabled until all players are "
 "ready)."
@@ -700,7 +709,7 @@ msgstr "* %(username)s جاهز!"
 msgid "Game settings have been changed"
 msgstr "تغيّرت إعدادات اللعبة"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatPanel.xml:(caption):9
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatPanel.xml:9
 msgid "Send"
 msgstr "أرسل"
 
@@ -723,11 +732,11 @@ msgstr "\\[%(time)s]"
 msgid "HH:mm"
 msgstr "HH:mm"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:40
+#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:29
 msgid "Cheats enabled."
 msgstr "الغشّ مفعّل."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:43
+#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:32
 msgid "Rated game."
 msgstr "لعبة مصنفة."
 
@@ -742,21 +751,21 @@ msgstr ""
 
 #: gui/gamesetup/Pages/GameSetupPage/Panels/MapPreview.js:47
 msgid "Click to view the list of available maps."
-msgstr ""
+msgstr "Click to view the list of available maps."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/TipsPanel.xml:(caption):10
+#: gui/gamesetup/Pages/GameSetupPage/Panels/TipsPanel.xml:10
 msgid "Show this message in the future."
 msgstr "أظهِر هذه الرسالة في المستقبل."
 
-#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:(caption):7
+#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:7
 msgid "Loading"
 msgstr "يحمّل"
 
-#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:(caption):11
+#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:11
 msgid "Loading map data. Please wait…"
 msgstr "يحمّل بيانات الخريطة، رجاءً انتظر…"
 
-#: gui/gamesetup/gamesetup.xml:(caption):17
+#: gui/gamesetup/gamesetup.xml:17
 msgid "Match Setup"
 msgstr "إعداد المبارزة"
 
@@ -780,7 +789,7 @@ msgstr "يتّصل بالخادوم..."
 
 #: gui/gamesetup_mp/gamesetup_mp.js:165
 msgid "Server is not running."
-msgstr ""
+msgstr "Server is not running."
 
 #: gui/gamesetup_mp/gamesetup_mp.js:166
 msgid "Password is invalid."
@@ -799,7 +808,7 @@ msgstr ""
 #: gui/gamesetup_mp/gamesetup_mp.js:171
 #, javascript-format
 msgid "\\[Invalid value %(reason)s]"
-msgstr ""
+msgstr "\\[Invalid value %(reason)s]"
 
 #: gui/gamesetup_mp/gamesetup_mp.js:179
 msgid "Failed to connect to the server."
@@ -807,12 +816,7 @@ msgstr "فشل الاتّصال مع الخادوم."
 
 #: gui/gamesetup_mp/gamesetup_mp.js:181
 msgid "Connection failed"
-msgstr ""
-
-#: gui/gamesetup_mp/gamesetup_mp.js:193
-#, javascript-format
-msgid "Net message: %(message)s"
-msgstr "رسالة شبكيّة: %(message)s"
+msgstr "Connection failed"
 
 #: gui/gamesetup_mp/gamesetup_mp.js:276
 msgid "Registering with server..."
@@ -832,82 +836,79 @@ msgid "Cannot host game: %(message)s."
 msgstr "تعذّرت استضافة اللعبة: %(message)s"
 
 #: gui/gamesetup_mp/gamesetup_mp.js:377 gui/gamesetup_mp/gamesetup_mp.js:406
-#: gui/gamesetup_mp/gamesetup_mp.js:435 gui/gamesetup_mp/gamesetup_mp.js:450
+#: gui/gamesetup_mp/gamesetup_mp.js:436 gui/gamesetup_mp/gamesetup_mp.js:451
 msgid "Error"
 msgstr "خطأ"
 
-#: gui/gamesetup_mp/gamesetup_mp.js:405 gui/gamesetup_mp/gamesetup_mp.js:449
+#: gui/gamesetup_mp/gamesetup_mp.js:405 gui/gamesetup_mp/gamesetup_mp.js:450
 #, javascript-format
 msgid "Cannot join game: %(message)s."
 msgstr "لايمكن الدخول للعبة: %(message)s."
 
-#: gui/gamesetup_mp/gamesetup_mp.js:464
+#: gui/gamesetup_mp/gamesetup_mp.js:465
 #, javascript-format
 msgid "%(playername)s's game"
 msgstr "لعبة %(playername)s"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):18
+#: gui/gamesetup_mp/gamesetup_mp.xml:18
 msgid "Multiplayer"
 msgstr "لعبة جماعيّة"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):24
+#: gui/gamesetup_mp/gamesetup_mp.xml:24
 msgid "Joining an existing game."
 msgstr "انضمّ إلى لعبة موجودة."
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):28
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):70
+#: gui/gamesetup_mp/gamesetup_mp.xml:28 gui/gamesetup_mp/gamesetup_mp.xml:70
 msgid "Player Name:"
 msgstr "إسم اللاعب:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):38
+#: gui/gamesetup_mp/gamesetup_mp.xml:38
 msgid "Server Hostname or IP:"
 msgstr "اسم مضيف الخادوم أو م‌إ:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):48
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):95
+#: gui/gamesetup_mp/gamesetup_mp.xml:48 gui/gamesetup_mp/gamesetup_mp.xml:95
 msgid "Server Port:"
 msgstr "منفذ الخادوم:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):65
-msgid "Set up your server to host."
-msgstr "اضبط خادومك المضيف."
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):83
-msgid "Server Name:"
-msgstr "إسم السرفر:"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):112
-msgid "Server Password:"
-msgstr ""
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):128
-msgid "Use STUN to work around firewalls"
-msgstr ""
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):136
-msgid "Continue"
-msgstr "تابع"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):141
-msgid "Cancel"
-msgstr "ألغِ"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):152
-msgid "Password:"
-msgstr "كلمة السّرّ:"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):162
-msgid "Confirm"
-msgstr ""
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):52
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):99
+#: gui/gamesetup_mp/gamesetup_mp.xml:52 gui/gamesetup_mp/gamesetup_mp.xml:99
 msgid "Leave blank to use the default port."
 msgstr "أتركها فارغة لكي تستعمل المنفذ الافتراضي."
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):113
-msgid "Leave blank to not require it."
+#: gui/gamesetup_mp/gamesetup_mp.xml:65
+msgid "Set up your server to host."
+msgstr "اضبط خادومك المضيف."
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:83
+msgid "Server Name:"
+msgstr "إسم السرفر:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:112
+msgid "Server Password:"
 msgstr ""
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:113
+msgid "Leave blank to not require it."
+msgstr "Leave blank to not require it."
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:128
+msgid "Use STUN to work around firewalls"
+msgstr ""
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:136
+msgid "Continue"
+msgstr "تابع"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:141
+msgid "Cancel"
+msgstr "ألغِ"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:152
+msgid "Password:"
+msgstr "كلمة السّرّ:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:162
+msgid "Confirm"
+msgstr "Confirm"
 
 #: gui/loading/ProgressBar.js:48
 #, javascript-format
@@ -1685,13 +1686,13 @@ msgid ""
 " who awards mild punishment becomes contemptible. But whoever imposes "
 "punishment as deserved becomes respectable.”\\n— Kauṭilya (“Arthashastra”, "
 "I.4.8–10)"
-msgstr ""
+msgstr "“Whoever imposes severe punishment becomes repulsive to the people; while he who awards mild punishment becomes contemptible. But whoever imposes punishment as deserved becomes respectable.”\\n— Kauṭilya (“Arthashastra”, I.4.8–10)"
 
 #: gui/text/quotes.txt:111
 msgid ""
 "“If a king is energetic, his subjects will be equally energetic.”\\n— "
 "Kauṭilya (“Arthashastra” I.19.1)"
-msgstr ""
+msgstr "“If a king is energetic, his subjects will be equally energetic.”\\n— Kauṭilya (“Arthashastra” I.19.1)"
 
 #: gui/text/quotes.txt:112
 msgid ""
@@ -1914,7 +1915,7 @@ msgstr ""
 msgid ""
 "“You cannot eat your cake and have it too, unless you think your money is "
 "immortal.”\\n— Plautus (“Trinummus”, Act II, scene 4, 13–14)"
-msgstr ""
+msgstr "“You cannot eat your cake and have it too, unless you think your money is immortal.”\\n— Plautus (“Trinummus”, Act II, scene 4, 13–14)"
 
 #: gui/text/quotes.txt:144
 msgid ""
@@ -2116,7 +2117,7 @@ msgid ""
 "“He could boast that he found a city of brick and left it a city of "
 "marble.”\\n— Suetonius, commenting on the many building projects of Augustus"
 " in Rome (“Divus Augustus”, 28.3)"
-msgstr ""
+msgstr "“He could boast that he found a city of brick and left it a city of marble.”\\n— Suetonius, commenting on the many building projects of Augustus in Rome (“Divus Augustus”, 28.3)"
 
 #: gui/text/quotes.txt:169
 msgid "“Moderation in all things.” \\n— Terence (“The Girl from Andros”, 61)"
@@ -2215,7 +2216,7 @@ msgid ""
 "Tiberius Gracchus, advocating for land reform to the benefit of homeless and"
 " unemployed veterans whose lands had often been bought up while they were on"
 " campaign. (Plutarch, “Parallel Lives”, “Tiberius Gracchus”, 9.4–5)"
-msgstr ""
+msgstr "“The wild beasts of Italy have their caves to retire to, but the brave veterans who spilled their blood in her cause have nothing left but air and light. They wander around homeless with their wives and children.”\\n— Tiberius Gracchus, advocating for land reform to the benefit of homeless and unemployed veterans whose lands had often been bought up while they were on campaign. (Plutarch, “Parallel Lives”, “Tiberius Gracchus”, 9.4–5)"
 
 #: gui/text/quotes.txt:182
 msgid ""
@@ -2225,7 +2226,7 @@ msgid ""
 "benefit of homeless and unemployed veterans whose lands had often been "
 "bought up while they were on campaign. (Plutarch, “Parallel Lives”, "
 "“Tiberius Gracchus”, 9.5)"
-msgstr ""
+msgstr "“The soldiers fight and die to support others in wealth and luxury and they are called masters of the world without owning a single piece of farmland of their own.”\\n— Tiberius Gracchus, advocating for land reform to the benefit of homeless and unemployed veterans whose lands had often been bought up while they were on campaign. (Plutarch, “Parallel Lives”, “Tiberius Gracchus”, 9.5)"
 
 #: gui/text/quotes.txt:183
 msgid ""

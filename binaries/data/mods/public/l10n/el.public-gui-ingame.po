@@ -1,44 +1,46 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2023 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# Achilleas gioypi
-# Adrian Pappas
-# Tasos Grv.
-# Archie Mc
-# 81edad40869c12ce1eee98855cfb6a35_be2cde9
-# crippledmoon
-# firespin
-# Dimitrios Kekakos
-# elenapan
-# George Charoupas
-# George Spere
-# Lampros Lampreas
-# LOUKAS SKOUROLIAKOS
-# malvanos
-# Michael Chatz
-# c28898edaeb1dbe1cfa07607b5ff55ed_3357a88
-# Nea Retrogamer (nearetrogamer)
-# ridergr
-# a24aea7ffc84d2433b80f99f2fbaaa74_064c1cf
-# Savvas Nesseris
-# csparta
-# Stanislas Dolcini
-# Steven Gikas
-# Thanasis Mousiolis
-# Thanos Nikopoulos
-# Vasilis Drosos
-# XTos
-# Yiannis Fistikis
-# ZedRyder
-# Κωνσταντίνος Σπάρταλης
+# Achilleas gioypi, 2020
+# Adrian Pappas, 2013,2017
+# Tasos Grv., 2016
+# Archie Mc, 2015
+# 81edad40869c12ce1eee98855cfb6a35_be2cde9, 2014
+# crippledmoon, 2014
+# firespin, 2014
+# Dimitrios Kekakos, 2015
+# elenapan, 2017
+# firespin, 2014
+# George Charoupas, 2015
+# George Spere, 2018
+# Lampros Lampreas, 2016
+# LOUKAS SKOUROLIAKOS, 2015
+# LOUKAS SKOUROLIAKOS, 2019-2021,2024
+# malvanos, 2014
+# Michael Chatz, 2018
+# c28898edaeb1dbe1cfa07607b5ff55ed_3357a88, 2016
+# Nea Retrogamer (nearetrogamer), 2018
+# ridergr, 2014
+# a24aea7ffc84d2433b80f99f2fbaaa74_064c1cf, 2014
+# Savvas Nesseris, 2016
+# csparta, 2016
+# Stanislas Dolcini, 2021
+# Stefanos Gkikas, 2016
+# Thanasis Mousiolis, 2014
+# Thanos Nikopoulos, 2021
+# Vasilis Drosos, 2016-2020
+# XTos, 2014
+# Yiannis Fistikis, 2013
+# ZedRyder, 2014
+# Κωνσταντίνος Σπάρταλης, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2023-04-28 09:24+0000\n"
+"POT-Creation-Date: 2024-07-26 07:08+0000\n"
 "PO-Revision-Date: 2014-06-19 17:49+0000\n"
-"Last-Translator: LOUKAS SKOUROLIAKOS, 2019-2021\n"
+"Last-Translator: LOUKAS SKOUROLIAKOS, 2019-2021,2024\n"
 "Language-Team: Greek (http://app.transifex.com/wildfire-games/0ad/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -50,7 +52,7 @@ msgstr ""
 msgid "This cheat requires a numeric parameter."
 msgstr ""
 
-#: gui/session/GameSpeedControl.xml:(tooltip):11
+#: gui/session/GameSpeedControl.xml:11
 msgid "Choose game speed"
 msgstr "Ταχύτητα παιχνιδιού"
 
@@ -59,19 +61,19 @@ msgstr "Ταχύτητα παιχνιδιού"
 msgid "Press %(hotkey)s to toggle this menu."
 msgstr "Πάτα το %(hotkey)s για να ανοιγοκλείσεις αυτό το μενού."
 
-#: gui/session/MenuButtons.js:32
+#: gui/session/MenuButtons.js:33
 msgid "Chat"
 msgstr "Συνομιλία"
 
-#: gui/session/MenuButtons.js:53
+#: gui/session/MenuButtons.js:54
 msgid "Save"
 msgstr "Αποθήκευση"
 
-#: gui/session/MenuButtons.js:77
+#: gui/session/MenuButtons.js:78
 msgid "Summary"
 msgstr "Σύνοψη"
 
-#: gui/session/MenuButtons.js:90
+#: gui/session/MenuButtons.js:91
 #, javascript-format
 msgid "Press %(hotkey)s to open the summary screen."
 msgstr "Πάτα το %(hotkey)s για να ανοίξεις την οθόνη σύνοψης."
@@ -91,29 +93,28 @@ msgstr "Πάτα το πλήκτρο %(hotkey)s για να ανοίξεις τ�
 msgid "Options"
 msgstr "Επιλογές"
 
-#: gui/session/MenuButtons.js:185
+#: gui/session/MenuButtons.js:180
 msgid "Hotkeys"
 msgstr "Αυτόματη Επιλογή"
 
-#: gui/session/MenuButtons.js:220
+#: gui/session/MenuButtons.js:213
 msgid "Resume"
 msgstr "Συνέχεια"
 
-#: gui/session/MenuButtons.js:220
+#: gui/session/MenuButtons.js:213
 msgid "Pause"
 msgstr "Παύση"
 
-#: gui/session/MenuButtons.js:221
+#: gui/session/MenuButtons.js:214
 #, javascript-format
 msgid "Press %(hotkey)s to pause or resume the game."
 msgstr "Πάτα το πλήκτρο %(hotkey)s για να σταματήσεις ή να επιστρέψεις στο παιχνίδι."
 
-#: gui/session/MenuButtons.js:237
+#: gui/session/MenuButtons.js:230
 msgid "Resign"
 msgstr "Παραίτηση"
 
-#: gui/session/MenuButtons.js:261
-#: gui/session/NetworkStatusOverlay.xml:(caption):9
+#: gui/session/MenuButtons.js:254 gui/session/NetworkStatusOverlay.xml:9
 msgid "Exit"
 msgstr "Έξοδος"
 
@@ -165,16 +166,16 @@ msgstr ", "
 msgid "Paused by %(players)s"
 msgstr "Σε κατάσταση παύσης με εντολή του παίκτη %(players)s"
 
-#: gui/session/PauseOverlay.xml:(caption):7
+#: gui/session/PauseOverlay.xml:7
 msgid "Game Paused"
 msgstr "Παύση Παιχνιδιού"
 
-#: gui/session/PauseOverlay.xml:(caption):11
+#: gui/session/PauseOverlay.xml:11
 msgid "Click to Resume Game"
 msgstr "Κλικ για Επαναφορά Παιχνιδιού"
 
 #: gui/session/ResearchProgress.js:117 gui/session/selection_details.js:273
-#: gui/session/selection_details.js:291 gui/session/selection_panels.js:588
+#: gui/session/selection_details.js:291 gui/session/selection_panels.js:602
 msgctxt "countdown format"
 msgid "m:ss"
 msgstr "m:ss"
@@ -182,9 +183,9 @@ msgstr "m:ss"
 #. Translation: String displayed when the research is paused. E.g. by being
 #. garrisoned or
 #. when not the first item in the queue.
-#: gui/session/ResearchProgress.js:120 gui/session/selection_panels.js:602
+#: gui/session/ResearchProgress.js:120 gui/session/selection_panels.js:616
 msgid "This item is paused."
-msgstr ""
+msgstr "Αυτό το αντικείμενο είναι σε παύση"
 
 #: gui/session/chat/ChatAddressees.js:93
 msgctxt "chat addressee"
@@ -475,43 +476,43 @@ msgstr "Έχεις στείλει %(player2)s %(amounts)s."
 msgid "%(player)s has sent %(player2)s %(amounts)s."
 msgstr "%(player)s έστειλε %(player2)s %(amounts)s."
 
-#: gui/session/chat/chat_window.xml:(caption):19
+#: gui/session/chat/chat_window.xml:19
 msgctxt "chat input"
 msgid "Filter:"
 msgstr "Φίλτρο:"
 
-#: gui/session/chat/chat_window.xml:(caption):46
-msgctxt "chat input"
-msgid "To:"
-msgstr "Προς:"
-
-#: gui/session/chat/chat_window.xml:(caption):60
-msgctxt "chat input"
-msgid "Text:"
-msgstr "Κείμενο:"
-
-#: gui/session/chat/chat_window.xml:(caption):72
-msgid "Cancel"
-msgstr "Ακύρωση"
-
-#: gui/session/chat/chat_window.xml:(caption):86
-msgctxt "chat"
-msgid "History"
-msgstr "Ιστορικό"
-
-#: gui/session/chat/chat_window.xml:(caption):91
-msgid "Send"
-msgstr "Αποστολή"
-
-#: gui/session/chat/chat_window.xml:(tooltip):29
+#: gui/session/chat/chat_window.xml:29
 msgctxt "chat input"
 msgid "Filter the chat history."
 msgstr "Φιλτράρισε το ιστορικό συνομιλίας"
 
-#: gui/session/chat/chat_window.xml:(tooltip):55
+#: gui/session/chat/chat_window.xml:46
+msgctxt "chat input"
+msgid "To:"
+msgstr "Προς:"
+
+#: gui/session/chat/chat_window.xml:55
 msgctxt "chat input"
 msgid "Select chat addressee."
 msgstr "Επέλεξε διεύθυνση συζήτησης."
+
+#: gui/session/chat/chat_window.xml:60
+msgctxt "chat input"
+msgid "Text:"
+msgstr "Κείμενο:"
+
+#: gui/session/chat/chat_window.xml:72
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+#: gui/session/chat/chat_window.xml:86
+msgctxt "chat"
+msgid "History"
+msgstr "Ιστορικό"
+
+#: gui/session/chat/chat_window.xml:91
+msgid "Send"
+msgstr "Αποστολή"
 
 #: gui/session/developer_overlay/DeveloperOverlay.js:80
 msgid "The Developer Overlay was opened."
@@ -620,49 +621,49 @@ msgid ""
 "memory or crash."
 msgstr "Σημείωση: Η λειτουργία χρονική δίνη είναι μια επιλογή προγραμματισμού, και δεν προορίζεται για χρήση σε μεγάλες χρονικές περιόδους. Χρησιμοποιώντας τη λάθος μπορεί να προκαλέσει το παιχνίδι να ξεμείνει από μνήμη ή να κρασάρει."
 
-#: gui/session/dialogs/yes_no.xml:(caption):11
+#: gui/session/dialogs/yes_no.xml:11
 msgid "Question"
 msgstr "Ερώτηση"
 
-#: gui/session/dialogs/yes_no.xml:(caption):15
+#: gui/session/dialogs/yes_no.xml:15
 msgid "Yes or no?"
 msgstr "Ναι ή όχι;"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):15
+#: gui/session/diplomacy/DiplomacyDialog.xml:15
 msgid "Name"
 msgstr "Όνομα"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):18
+#: gui/session/diplomacy/DiplomacyDialog.xml:18
 msgid "Civilization"
 msgstr "Πολιτισμός"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):21
+#: gui/session/diplomacy/DiplomacyDialog.xml:21
 msgid "Team"
 msgstr "Ομάδα"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):24
+#: gui/session/diplomacy/DiplomacyDialog.xml:24
 msgid "Theirs"
 msgstr "Δικά τους"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):27
+#: gui/session/diplomacy/DiplomacyDialog.xml:27
 msgid "A"
 msgstr "Σ"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):31
+#: gui/session/diplomacy/DiplomacyDialog.xml:31
 msgid "N"
 msgstr "Ο"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):35
+#: gui/session/diplomacy/DiplomacyDialog.xml:35
 msgid "E"
 msgstr "Ε"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):39
+#: gui/session/diplomacy/DiplomacyDialog.xml:39
 msgid "Tribute"
 msgstr "Φόρος υποτελείας"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):90
-#: gui/session/objectives/ObjectivesDialog.xml:(caption):43
-#: gui/session/trade/TradeDialog.xml:(caption):22
+#: gui/session/diplomacy/DiplomacyDialog.xml:90
+#: gui/session/objectives/ObjectivesDialog.xml:43
+#: gui/session/trade/TradeDialog.xml:22
 msgid "Close"
 msgstr "Κλείσιμο"
 
@@ -672,7 +673,7 @@ msgctxt "ceasefire"
 msgid "Remaining ceasefire time: %(time)s."
 msgstr "Εναπομένον χρόνος κατάπαυσης πυρός: %(time)s."
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):85
+#: gui/session/diplomacy/DiplomacyDialog.xml:85
 #: gui/session/diplomacy/DiplomacyDialogColorsButton.js:30
 #: gui/session/minimap/MiniMapDiplomacyColorsButton.js:36
 msgid "Toggle Diplomacy Colors"
@@ -687,17 +688,17 @@ msgctxt "team"
 msgid "None"
 msgstr "Καμία"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(tooltip):28
+#: gui/session/diplomacy/DiplomacyDialog.xml:28
 #: gui/session/diplomacy/playercontrols/DiplomacyPlayerText.js:78
 msgid "Ally"
 msgstr "Σύμμαχος"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(tooltip):32
+#: gui/session/diplomacy/DiplomacyDialog.xml:32
 #: gui/session/diplomacy/playercontrols/DiplomacyPlayerText.js:81
 msgid "Neutral"
 msgstr "Ουδέτερος"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(tooltip):36
+#: gui/session/diplomacy/DiplomacyDialog.xml:36
 #: gui/session/diplomacy/playercontrols/DiplomacyPlayerText.js:84
 msgid "Enemy"
 msgstr "Εχθρός"
@@ -750,14 +751,14 @@ msgstr "Διαγραφή"
 msgid "Destroy everything currently selected?"
 msgstr "Να κατεστραφεί ό,τι είναι αυτή τη στιγμή επιλεγμένο;"
 
-#: gui/session/dialogs/yes_no.xml:(caption):24
+#: gui/session/dialogs/yes_no.xml:24
 #: gui/session/message_box/DeleteSelectionConfirmation.js:14
 #: gui/session/message_box/QuitConfirmationMenu.js:52
 #: gui/session/message_box/ResignConfirmation.js:9
 msgid "No"
 msgstr "Όχι"
 
-#: gui/session/dialogs/yes_no.xml:(caption):19
+#: gui/session/dialogs/yes_no.xml:19
 #: gui/session/message_box/DeleteSelectionConfirmation.js:17
 #: gui/session/message_box/QuitConfirmationMenu.js:55
 #: gui/session/message_box/ResignConfirmation.js:12
@@ -840,8 +841,8 @@ msgid "Stay"
 msgstr "Μείνε"
 
 #. Translation: Shown in the Dialog that shows up when the game finishes
-#: gui/session/message_box/QuitConfirmation.js:19
-#: gui/session/message_box/QuitConfirmationReplay.js:27
+#: gui/session/message_box/QuitConfirmation.js:20
+#: gui/session/message_box/QuitConfirmationReplay.js:28
 msgid "Quit and View Summary"
 msgstr "Έξοδος και Εμφάνιση Περίληψης"
 
@@ -904,8 +905,8 @@ msgstr "Ηττηθήκατε!"
 msgid "Click to quit this tutorial."
 msgstr "Κάνε κλικ για να βγεις από αυτήν την εκπαίδευση."
 
-#: gui/session/message_box/QuitConfirmation.js:24
-#: gui/session/message_box/QuitConfirmationReplay.js:32
+#: gui/session/message_box/QuitConfirmation.js:25
+#: gui/session/message_box/QuitConfirmationReplay.js:33
 #: gui/session/messages.js:411
 msgid "Quit"
 msgstr "Έξοδος"
@@ -963,7 +964,7 @@ msgstr "%(capturePoints)s / %(maxCapturePoints)s"
 
 #: gui/session/selection_details.js:189
 msgid "Capture Points"
-msgstr ""
+msgstr "Πόντοι Κατάκτησης"
 
 #: gui/session/selection_details.js:202
 #, javascript-format
@@ -1074,127 +1075,151 @@ msgstr ", "
 msgid "Raise an alert!"
 msgstr "Σήμανε συναγερμό!"
 
-#: gui/session/selection_panels.js:68
-msgid "End of alert."
-msgstr "Τέλος του συναγερμού"
+#: gui/session/selection_panels.js:67
+msgid "Alert nearby Female Citizens to seek refuge."
+msgstr ""
 
-#: gui/session/selection_panels.js:277
+#: gui/session/selection_panels.js:69
+msgid "Alert nearby Traders to seek refuge."
+msgstr "Συναγερμός έμποροι σε κοντινή απόσταση αναζητούν καταφύγιο."
+
+#: gui/session/selection_panels.js:71
+msgid "Alert nearby vulnerable units to seek refuge."
+msgstr "Συναγερμός, ευάλωτες  μονάδες  σε κοντινή απόσταση αναζητούν καταφύγιο."
+
+#: gui/session/selection_panels.js:75
+msgid "End the alert."
+msgstr "Παύση συναγερμού."
+
+#: gui/session/selection_panels.js:77
+msgid "Unload nearby Female Citizens."
+msgstr "Ξεφόρτωμα Γυναικείων Πολιτών σε κοντινή απόσταση."
+
+#: gui/session/selection_panels.js:79
+msgid "Unload nearby Traders."
+msgstr ""
+
+#: gui/session/selection_panels.js:81
+msgid "Unload nearby vulnerable units."
+msgstr "Ξεφόρτωμα ευάλωτων μονάδων σε κοντινή απόσταση."
+
+#: gui/session/selection_panels.js:291
 msgid "Default formation is disabled."
 msgstr "Προεπιλεγμένος  σχηματισμός έχει απενεργοποιηθεί."
 
-#: gui/session/selection_panels.js:278
+#: gui/session/selection_panels.js:292
 msgid "Right-click to disable the default formation feature."
 msgstr "Δεξί-κλίκ για απενεργοποίηση αντικειμένου προ επιλεγμένου σχηματισμού."
 
-#: gui/session/selection_panels.js:281
+#: gui/session/selection_panels.js:295
 msgid "This is the default formation, used for movement orders."
 msgstr "Αυτός είναι ο προ επιλεγμένος σχηματισμός, χρησιμοποιείτε  για εντολές κίνησης."
 
-#: gui/session/selection_panels.js:282
+#: gui/session/selection_panels.js:296
 msgid "Right-click to set this as the default formation."
 msgstr "Δεξί-κλίκ για να οριστεί ώς ο προ επιλεγμένος σχηματισμός."
 
-#: gui/session/selection_panels.js:338
+#: gui/session/selection_panels.js:352
 #, javascript-format
 msgid "Unload %(name)s"
 msgstr "Ξεφόρτωμα %(name)s"
 
-#: gui/session/selection_panels.js:339
+#: gui/session/selection_panels.js:353
 msgid "Single-click to unload 1. Shift-click to unload all of this type."
 msgstr "Μονό-κλικ για να να ξεφορτώθει 1. Shift-κλικ για να ξεφορτώθουν πάντες αυτού του τύπου."
 
-#: gui/session/selection_panels.js:341 gui/session/selection_panels.js:919
+#: gui/session/selection_panels.js:355 gui/session/selection_panels.js:933
 #, javascript-format
 msgid "Player: %(playername)s"
 msgstr "Ο παίκτης: %(playername)s"
 
-#: gui/session/selection_panels.js:377
+#: gui/session/selection_panels.js:391
 msgid "Lock Gate"
 msgstr "Κλείδωμα Πύλης"
 
-#: gui/session/selection_panels.js:383
+#: gui/session/selection_panels.js:397
 msgid "Unlock Gate"
 msgstr "Ξεκλείδωμα Πύλης"
 
-#: gui/session/selection_panels.js:434
+#: gui/session/selection_panels.js:448
 msgid "Pack"
 msgstr "Πακετάρισμα"
 
-#: gui/session/selection_panels.js:442
+#: gui/session/selection_panels.js:456
 msgid "Unpack"
 msgstr "Άνοιγμα πακέτου"
 
-#: gui/session/selection_panels.js:450
+#: gui/session/selection_panels.js:464
 msgid "Cancel Packing"
 msgstr "Ακύρωση πακεταρίσματος "
 
-#: gui/session/selection_panels.js:458
+#: gui/session/selection_panels.js:472
 msgid "Cancel Unpacking"
 msgstr "Ακύρωση ξεπακεταρίσματος "
 
-#: gui/session/selection_panels.js:558
+#: gui/session/selection_panels.js:572
 msgid "The auto-queue will try to train this item later."
 msgstr "Η αυτόματη σειρά ουρά αναμονής θα προσπαθήσει να εκπαιδεύσει αυτό το αντκείμενο αργότερα."
 
-#: gui/session/selection_panels.js:561
+#: gui/session/selection_panels.js:575
 msgid "Insufficient population capacity:"
 msgstr "Aνεπαρκής χωρητικότητα πληθυσμού:"
 
-#: gui/session/selection_panels.js:562
+#: gui/session/selection_panels.js:576
 #, javascript-format
 msgid "%(population)s %(neededSlots)s"
 msgstr "%(population)s %(neededSlots)s"
 
-#: gui/session/selection_panels.js:784
+#: gui/session/selection_panels.js:798
 #, javascript-format
 msgid "%(number)s entity of class %(class)s"
 msgid_plural "%(number)s entities of class %(class)s"
 msgstr[0] "%(number)s οντότητα της κατηγορίας %(class)s"
 msgstr[1] "%(number)s οντότητες της κατηγορίας %(class)s"
 
-#: gui/session/selection_panels.js:790
+#: gui/session/selection_panels.js:804
 #, javascript-format
 msgid "Remaining: %(entityCounts)s"
 msgstr "Εναπομένοντα:  %(entityCounts)s"
 
-#: gui/session/selection_panels.js:791
+#: gui/session/selection_panels.js:805
 msgctxt "Separator for a list of entity counts"
 msgid ", "
 msgstr ", "
 
-#: gui/session/selection_panels.js:843
+#: gui/session/selection_panels.js:857
 msgid "Cannot research while upgrading."
 msgstr "Αδυναμία έρευνας όταν βρίσκεται σε φάση αναβάθμισης."
 
-#: gui/session/selection_panels.js:1073
+#: gui/session/selection_panels.js:1086
 msgid "Cannot train while upgrading."
 msgstr "Αδυναμία εκπαίδευσης όταν βρίσκεται σε φάση αναβάθμισης."
 
-#: gui/session/selection_panels.js:1140
+#: gui/session/selection_panels.js:1153
 #, javascript-format
 msgid "Upgrade to a %(primaryName)s (%(secondaryName)s). %(tooltip)s"
 msgstr "Αναβάθμιση σε %(primaryName)s(%(secondaryName)s). %(tooltip)s"
 
-#: gui/session/selection_panels.js:1146
+#: gui/session/selection_panels.js:1159
 #, javascript-format
 msgid "Upgrade to a %(primaryName)s (%(secondaryName)s)."
 msgstr "Αναβάθμιση σε %(primaryName)s(%(secondaryName)s)."
 
-#: gui/session/selection_panels.js:1154
+#: gui/session/selection_panels.js:1167
 #, javascript-format
 msgid "Upgrade to a %(primaryName)s. %(tooltip)s"
 msgstr "Αναβάθμιση σε%(primaryName)s.%(tooltip)s"
 
-#: gui/session/selection_panels.js:1159
+#: gui/session/selection_panels.js:1172
 #, javascript-format
 msgid "Upgrade to a %(primaryName)s."
 msgstr "Αναβάθμιση σε %(primaryName)s."
 
-#: gui/session/selection_panels.js:1196
+#: gui/session/selection_panels.js:1209
 msgid "Cancel Upgrading"
 msgstr "Ακύρωση αναβάθμισης"
 
-#: gui/session/selection_panels.js:1211
+#: gui/session/selection_panels.js:1224
 msgid ""
 "Cannot upgrade when the entity is training, researching or already "
 "upgrading."
@@ -1347,42 +1372,42 @@ msgstr "%(action)s για εκπαίδευση %(number)s."
 msgid "Shift-click"
 msgstr "Shift-click"
 
-#: gui/session/selection_panels_left/garrison_panel.xml:(tooltip):16
-#: gui/session/selection_panels_middle/single_details_area.xml:(tooltip):64
+#: gui/session/selection_panels_left/garrison_panel.xml:16
+#: gui/session/selection_panels_middle/single_details_area.xml:64
 msgid "Health"
 msgstr "Υγεία"
 
-#: gui/session/selection_panels_middle/single_details_area.xml:(tooltip):41
+#: gui/session/selection_panels_middle/single_details_area.xml:41
 msgid "Capture points"
 msgstr "Πόντοι κατάκτησης:"
 
-#: gui/session/selection_panels_middle/single_details_area.xml:(tooltip):84
+#: gui/session/selection_panels_middle/single_details_area.xml:84
 msgid "Attack and Resistance"
 msgstr "Επίθεση και Αντίσταση"
 
-#: gui/session/selection_panels_middle/single_details_area.xml:(tooltip):99
+#: gui/session/selection_panels_middle/single_details_area.xml:99
 msgid "Experience"
 msgstr "Εμπειρία"
 
-#: gui/session/selection_panels_middle/single_details_area.xml:(tooltip):107
+#: gui/session/selection_panels_middle/single_details_area.xml:107
 msgid "Rank"
 msgstr "Βαθμός"
 
-#: gui/session/selection_panels_right/queue_panel.xml:(tooltip):8
+#: gui/session/selection_panels_right/queue_panel.xml:8
 msgid "Production queue"
 msgstr "Σειρά παραγωγής"
 
-#: gui/session/session_objects/selection_group_icons.xml:(tooltip):7
+#: gui/session/session_objects/selection_group_icons.xml:7
 msgid ""
 "Click to select grouped units, double-click to focus the grouped units and "
 "right-click to disband the group."
 msgstr "Κάντε κλικ για να επιλέξετε ομαδικά μονάδες, κάντε διπλό κλικ για να επικεντρωθούν οι ομαδοποιημένες μονάδες και κάντε δεξί κλικ για να διαλύσετε την ομάδα."
 
-#: gui/session/top_panel/BuildLabel.xml:(caption):6
+#: gui/session/top_panel/BuildLabel.xml:6
 msgid "Alpha XXVII: Agni"
 msgstr ""
 
-#: gui/session/top_panel/CivIcon.js:80
+#: gui/session/top_panel/CivIcon.js:68
 #, javascript-format
 msgid ""
 "%(civ)s\n"
@@ -1429,27 +1454,27 @@ msgstr "Πλυθισμός: τρέχων/όριο (μέγιστο)"
 msgid "Gatherers: current"
 msgstr "Συλλέκτες: Τωρινοί"
 
-#: gui/session/top_panel/FollowPlayer.xml:(caption):15
-#: gui/session/top_panel/FollowPlayer.xml:(tooltip):11
+#: gui/session/top_panel/FollowPlayer.xml:11
+#: gui/session/top_panel/FollowPlayer.xml:15
 msgctxt "observer mode"
 msgid "Follow Player"
 msgstr "Ακολούθα τον παίχτη!"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):10
+#: gui/session/diplomacy/DiplomacyDialog.xml:10
 #: gui/session/top_panel/IconButtons/DiplomacyDialogButton.js:29
 msgid "Diplomacy"
 msgstr "Διπλωματία"
 
-#: gui/session/top_panel/IconButtons/GameSpeedButton.xml:(tooltip):9
+#: gui/session/top_panel/IconButtons/GameSpeedButton.xml:9
 msgid "Game Speed"
 msgstr "Ταχύτητα Παιχνιδιού"
 
-#: gui/session/objectives/ObjectivesDialog.xml:(caption):15
+#: gui/session/objectives/ObjectivesDialog.xml:15
 #: gui/session/top_panel/IconButtons/ObjectivesDialogButton.js:23
 msgid "Objectives"
 msgstr "Στόχοι"
 
-#: gui/session/top_panel/MenuButton.xml:(caption):15
+#: gui/session/top_panel/MenuButton.xml:15
 msgid "Menu"
 msgstr "Μενού"
 
@@ -1457,13 +1482,13 @@ msgstr "Μενού"
 msgid "Observer"
 msgstr "Παρατηρητής"
 
-#: gui/session/top_panel/PlayerViewControl.xml:(caption):17
-msgid "Observer Mode"
-msgstr "Λειτουργία Παρατηρητή"
-
-#: gui/session/top_panel/PlayerViewControl.xml:(tooltip):13
+#: gui/session/top_panel/PlayerViewControl.xml:13
 msgid "Choose player to view"
 msgstr "Επιλέξτε παίκτη προς προβολή"
+
+#: gui/session/top_panel/PlayerViewControl.xml:17
+msgid "Observer Mode"
+msgstr "Λειτουργία Παρατηρητή"
 
 #: gui/session/trade/BarterButton.js:108
 #, javascript-format
@@ -1487,19 +1512,19 @@ msgctxt "sell action"
 msgid "-%(amount)s"
 msgstr "-%(amount)s"
 
-#: gui/session/trade/BarterPanel.xml:(caption):5
+#: gui/session/trade/BarterPanel.xml:5
 msgid "Barter"
 msgstr "Ανταλλαγή εμπορευμάτων"
 
-#: gui/session/trade/BarterPanel.xml:(caption):13
+#: gui/session/trade/BarterPanel.xml:13
 msgid "Sell:"
 msgstr "Πώληση:"
 
-#: gui/session/trade/BarterPanel.xml:(caption):17
+#: gui/session/trade/BarterPanel.xml:17
 msgid "Buy:"
 msgstr "Αγορά:"
 
-#: gui/session/trade/BarterPanel.xml:(caption):21
+#: gui/session/trade/BarterPanel.xml:21
 msgid "No Markets Available"
 msgstr "Δεν υπάρχουν Διαθέσιμες Αγορές"
 
@@ -1526,11 +1551,11 @@ msgid ""
 "%(hotkey)s to temporarily multiply the traded amount by %(multiplier)s."
 msgstr "Ξεκινήστε επιλέγοντας το αγαθό που θέλετε να πουλήσετε από την ανώτερη σειρά. Σε κάθε πάτημα του κουμπιού μείωσις, %(quantity)s του άνω πόρου θα πουλιέται στη προβαλλόμενη ποσότητα του κάτω πόρου. Κρατώντας πατημένο το πλήκτρο %(hotkey)s πολλαπλασιάζει προσωρινά την εμπορεύσιμη ποσότητα επί %(multiplier)s."
 
-#: gui/session/trade/TradePanel.xml:(caption):5
+#: gui/session/trade/TradePanel.xml:5
 msgid "Trade"
 msgstr "Ανταλλαγή"
 
-#: gui/session/trade/TradePanel.xml:(caption):14
+#: gui/session/trade/TradePanel.xml:14
 msgid "Resources:"
 msgstr "Πόροι:"
 
@@ -1643,7 +1668,7 @@ msgstr[1] "%(numberOfShipTraders)s εμπορικά πλοία αδρανοί"
 msgid "There are no merchant ships."
 msgstr "Δεν υπάρχουν εμπορικά πλοία."
 
-#: gui/session/tutorial_panel.xml:(caption):11
+#: gui/session/tutorial_panel.xml:11
 msgid "Ready"
 msgstr "Έτοιμος"
 
@@ -1758,8 +1783,7 @@ msgid "Remove guard"
 msgstr "Αφαίρεση προφύλαξης"
 
 #: gui/session/top_panel/IconButtons/TradeDialogButton.js:31
-#: gui/session/trade/TradeDialog.xml:(caption):9
-#: gui/session/unit_actions.js:1698
+#: gui/session/trade/TradeDialog.xml:9 gui/session/unit_actions.js:1698
 msgid "Barter & Trade"
 msgstr "Ανταλλαγή και Εμπόριο"
 

@@ -1,23 +1,24 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2023 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# CAGD_lulofun滷肉飯
-# Yuan Chang
-# 黃柏諺
-# JerryShen
-# Shoichi Chou
-# StarAtt
-# WY Liu
-# 周 桂标
-# 張峻瑜
+# CAGD_lulofun滷肉飯, 2019
+# Yuan Chang, 2017
+# 黃柏諺, 2014-2018
+# JerryShen, 2018
+# Roy Huang, 2024
+# Shoichi Chou, 2018,2021
+# StarAtt, 2021
+# WY Liu, 2020
+# 周 桂标, 2021
+# 張峻瑜, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2023-01-13 08:09+0000\n"
+"POT-Creation-Date: 2024-06-17 07:08+0000\n"
 "PO-Revision-Date: 2014-06-19 17:51+0000\n"
-"Last-Translator: Yuan Chang <daan0014119@gmail.com>, 2022-2023\n"
+"Last-Translator: Roy Huang, 2024\n"
 "Language-Team: Chinese (Taiwan) (http://app.transifex.com/wildfire-games/0ad/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,15 +27,15 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: gui/manual/intro.txt:1
-msgid "[font=\"sans-bold-18\"]0 A.D. in-game manual[font=\"sans-14\"]"
-msgstr "[font=\"sans-bold-18\"]0 A.D. 遊戲手冊[font=\"sans-14\"]"
+msgid "[font=\"sans-bold-18\"]0 A.D. in-game manual[font=\"sans-14\"]"
+msgstr "[font=\"sans-bold-18\"]0 A.D. 遊戲手冊[font=\"sans-14\"]"
 
 #: gui/manual/intro.txt:2
 msgid ""
-"Thank you for installing 0 A.D.! This page will give a brief overview of the"
+"Thank you for installing 0 A.D.! This page will give a brief overview of the"
 " features available in this incomplete, under-development, alpha version of "
 "the game."
-msgstr "感謝您安裝 0 A.D.！此頁面將簡介這個尚不完整、開發中的 alpha 版本遊戲之遊戲特色。"
+msgstr "感謝您安裝 0 A.D.！本頁將簡要概述這款遊戲尚不完整、開發中的 alpha 版本中的可用功能。"
 
 #: gui/manual/intro.txt:4
 msgid "[font=\"sans-bold-16\"]Graphics settings[font=\"sans-14\"]"
@@ -104,7 +105,7 @@ msgid ""
 "game or against one or more computer players (AI). The default AI (Petra) is"
 " under development and may not always be up to date on the new features, but"
 " you can play the game with or against it nonetheless."
-msgstr "• [font=\"sans-bold-14\"]單人遊戲[font=\"sans-14\"] – 遊玩沙盒模式或對抗一個以上的電腦玩家 (AI)。預設 AI (Petra) 仍在開發中且可能不會使用新功能，但您仍可以與其一同遊玩。"
+msgstr "• [font=\"sans-bold-14\"]單人遊戲[font=\"sans-14\"] – 遊玩沙盒模式或對抗一個以上的電腦玩家 (AI)。預設 AI（佩特拉）仍在開發中且可能不會使用新功能，但您仍可以與其一同遊玩。"
 
 #: gui/manual/intro.txt:21
 msgid ""
@@ -329,13 +330,13 @@ msgstr "  hotkey.selection.remove – 指示鍵 – 從選取中移除（適用�
 #: gui/manual/intro.txt:72
 msgid ""
 "  hotkey.selection.offscreen – Modifier – add all units, including offscreen"
-" units, to selection."
-msgstr "  hotkey.selection.offscreen – 指示鍵 – 添加包括螢幕外的所有單位到選取中。"
+" units, to selection"
+msgstr "hotkey.selection.offscreen – 指示鍵 – 添加包括螢幕外的所有單位到選取中。"
 
 #: gui/manual/intro.txt:73
 msgid ""
-"  hotkey.selection.cancel – Unselect all units, cancel building placement."
-msgstr "  hotkey.selection.cancel – 取消選取所有單位，取消放置建築。"
+"  hotkey.selection.cancel – Unselect all units, cancel building placement"
+msgstr "hotkey.selection.cancel – 取消選取所有單位，取消放置建築。"
 
 #: gui/manual/intro.txt:74
 msgid "  hotkey.selection.idlebuilder – Select idle builder"
@@ -485,7 +486,7 @@ msgstr "  hotkey.session.queue + 右鍵 – 排程移動 / 建造 / 採集 / 等
 #: gui/manual/intro.txt:104
 msgid ""
 "  hotkey.session.pushorderfront + Right Click – Modifier to push any order "
-"in front of the order queue."
+"in front of the order queue"
 msgstr "hotkey.session.pushorderfront + 右鍵單擊 – 將任何指令推到指令佇列前的指示鍵。"
 
 #: gui/manual/intro.txt:105

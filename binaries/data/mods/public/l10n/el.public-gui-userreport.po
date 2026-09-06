@@ -1,14 +1,14 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2022 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2023 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# Vasilis Drosos
-# LOUKAS SKOUROLIAKOS
+# Vasilis Drosos, 2018
+# LOUKAS SKOUROLIAKOS, 2020
 msgid ""
 msgstr ""
-"Project-Id-Version: 0 A.D. — Empires Ascendant\n"
-"POT-Creation-Date: 2022-09-12 09:35+0000\n"
+"Project-Id-Version: 0 A.D. — Empires Ascendant\n"
+"POT-Creation-Date: 2023-08-18 07:08+0000\n"
 "PO-Revision-Date: 2018-10-14 18:34+0000\n"
 "Last-Translator: LOUKAS SKOUROLIAKOS, 2020\n"
 "Language-Team: Greek (https://app.transifex.com/wildfire-games/teams/17418/el/)\n"
@@ -20,28 +20,21 @@ msgstr ""
 
 #: gui/userreport/Terms_and_Conditions.txt:1
 msgid ""
-"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant UserReporter Terms and "
+"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant UserReporter Terms and "
 "Conditions[/font]"
 msgstr ""
-"[font=\"sans-bold-18\"]Όροι και Προϋποθέσεις της Αναφοράς Χρήστη του 0 A.D. "
-"η Άνοδος των Αυτοκρατοριών[/font]"
 
 #: gui/userreport/Terms_and_Conditions.txt:3
-msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2018-10-16"
-msgstr "[font=\"sans-bold-14\"]Ημερομηνία Εγγράφου:[/font] 16-10-2018"
+msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2023-08-17"
+msgstr ""
 
 #: gui/userreport/Terms_and_Conditions.txt:5
 msgid ""
-"The 0 A.D. UserReporter is a tool that allows you, the 0 A.D. player, to "
+"The 0 A.D. UserReporter is a tool that allows you, the 0 A.D. player, to "
 "automatically upload hardware- and software-system details in order to help "
 "Wildfire Games and community developers to improve the performance and "
-"compatibility of 0 A.D."
+"compatibility of 0 A.D."
 msgstr ""
-"Η Αναφορά Χρήστη του 0 A.D. είναι ένα εργαλείο που επιτρέπει, στο παίκτη του"
-" 0 A.D., να ανεβάζει αυτόματα τις λεπτομέρειες του υλικού και λογισμικού του"
-" συστήματός του, προκειμένου να βοηθήσει την Wildfire Games και τους "
-"προγραμματιστές της κοινότητας να βελτιώσουν την απόδοση και τη συμβατότητα "
-"του 0 A.D."
 
 #: gui/userreport/Terms_and_Conditions.txt:7
 msgid "[font=\"sans-bold-14\"]Purpose of the UserReport:[/font]"
@@ -51,21 +44,14 @@ msgstr "[font=\"sans-bold-14\"]Σκοπός της Αναφοράς Χρήστη
 msgid ""
 "The UserReports indicate which system features (for example CPU instruction "
 "sets and OpenGL capabilities) are widely supported by the computer systems "
-"of 0 A.D. players."
+"of 0 A.D. players."
 msgstr ""
-"Οι Αναφορές Χρήστη υποδεικνύουν ποιες λειτουργίες του συστήματος (για "
-"παράδειγμα, το σύνολο των εντολών του επεξεργαστή και τις δυνατότητες του "
-"OpenGL) υποστηρίζονται ευρέως από τα υπολογιστικά συστήματα των παικτών του "
-"0 A.D."
 
 #: gui/userreport/Terms_and_Conditions.txt:9
 msgid ""
-"This allows developers to decide which 0 A.D. program code is safe to use "
+"This allows developers to decide which 0 A.D. program code is safe to use "
 "and which optimizations are most feasible to implement next."
 msgstr ""
-"Αυτό επιτρέπει στους προγραμματιστές να αποφασίσουν ποιος κώδικας του "
-"προγράμματος 0 A.D. είναι ασφαλής στη χρήση και ποιες βελτιστοποιήσεις είναι"
-" πιο εφικτές για την επόμενη εφαρμογή."
 
 #: gui/userreport/Terms_and_Conditions.txt:10
 msgid ""
@@ -101,10 +87,8 @@ msgstr ""
 
 #: gui/userreport/Terms_and_Conditions.txt:15
 msgid ""
-" 3. Application Details, for example the 0 A.D. version and build number."
+" 3. Application Details, for example the 0 A.D. version and build number."
 msgstr ""
-" 3. Λεπτομέρειες Εφαρμογής, για παράδειγμα η έκδοση του 0 A.D. και ο αριθμός"
-" κατασκευής."
 
 #: gui/userreport/Terms_and_Conditions.txt:16
 msgid ""
@@ -117,14 +101,10 @@ msgstr ""
 
 #: gui/userreport/Terms_and_Conditions.txt:17
 msgid ""
-"    The UserID enables developers to count how many 0 A.D. players use a "
+"    The UserID enables developers to count how many 0 A.D. players use a "
 "specific set of hardware or system software without allowing them to "
 "attribute the data to any person."
 msgstr ""
-"‮‭    Το Αναγνωριστικό Χρήστη επιτρέπει στους προγραμματιστές να μετρήσουν "
-"πόσοι παίκτες του 0 A.D. χρησιμοποιούν το συγκεκριμένο σύνολο λογισμικού ή "
-"υλικού του συστήματος χωρίς να τους επιτρέπεται να αποδίδουν τα δεδομένα σε "
-"οποιοδήποτε άτομο."
 
 #: gui/userreport/Terms_and_Conditions.txt:18
 msgid ""
@@ -161,13 +141,9 @@ msgstr "[font=\"sans-bold-14\"]Η Wildfire Games διατηρεί το δικα�
 #: gui/userreport/Terms_and_Conditions.txt:24
 msgid ""
 " 1. Publish UserReport data, excluding the UserID pseudonym, so that "
-"community developers may help contribute to 0 A.D. development using this "
+"community developers may help contribute to 0 A.D. development using this "
 "data (GDPR 4.5)."
 msgstr ""
-" 1. Δημοσιεύσει τα δεδομένα της Αναφοράς Χρήστη, εξαιρώντας το ψευδώνυμο του"
-" Αναγνωριστικού Χρήστη, έτσι ώστε οι προγραμματιστές της κοινότητας να "
-"μπορούν να συμβάλλουν στην ανάπτυξη του 0 A.D. χρησιμοποιώντας αυτά τα "
-"δεδομένα (Γενικός Κανονισμός για την Προστασία Δεδομένων 4.5)."
 
 #: gui/userreport/Terms_and_Conditions.txt:25
 msgid ""
@@ -269,10 +245,8 @@ msgstr ""
 #: gui/userreport/Terms_and_Conditions.txt:39
 msgid ""
 "    The UserID pseudonym can be found in the user.cfg file of the "
-"configuration folder of 0 A.D."
+"configuration folder of 0 A.D."
 msgstr ""
-"    Το ψευδώνυμο του Αναγνωριστικού Χρήστη (UserID) μπορεί να βρεθεί στο "
-"αρχείο user.cfg του φακέλου ρυθμίσεων του 0 A.D."
 
 #: gui/userreport/Terms_and_Conditions.txt:40
 msgid "    The current configuration folder is %(configPath)s."
@@ -281,11 +255,8 @@ msgstr "Ο τρέχων φάκελος ρυθμίσεων είναι ο %(config
 #: gui/userreport/Terms_and_Conditions.txt:41
 msgid ""
 "    The user obtains a machine-readable and human-readable copy of the "
-"UserReport data in the logs folder of 0 A.D. (GDPR 20)."
+"UserReport data in the logs folder of 0 A.D. (GDPR 20)."
 msgstr ""
-"    Ο χρήστης βρίσκει ένα αναγνώσιμο από μηχανή και αναγνώσιμο από άνθρωπο "
-"αντίγραφο των δεδομένων της Αναφοράς Χρήστη στο φάκελο αρχείων καταγραφής "
-"του 0 A.D. (Γενικός Κανονισμός για την Προστασία Δεδομένων 20)."
 
 #: gui/userreport/Terms_and_Conditions.txt:42
 msgid "    The data can be reviewed before the UserReporter is enabled."
@@ -324,13 +295,9 @@ msgstr ""
 #: gui/userreport/Terms_and_Conditions.txt:47
 msgid ""
 " 4. Right to erasure of your UserReports if they are not relevant to the "
-"development of 0 A.D., if the data was processed unlawfully or if the user "
+"development of 0 A.D., if the data was processed unlawfully or if the user "
 "objects to the processing and has overriding legitimate grounds (GDPR 17)."
 msgstr ""
-" 4. Δικαίωμα διαγραφής των Αναφορών Χρήστη σας, εάν δεν σχετίζονται με την "
-"ανάπτυξη του 0 A.D., εάν τα δεδομένα υποβλήθηκαν σε παράνομη επεξεργασία ή "
-"αν ο χρήστης αντιτίθεται στην επεξεργασία και έχει νόμιμους λόγους "
-"υπεράσπισης (Γενικός Κανονισμός για την Προστασία Δεδομένων 17)."
 
 #: gui/userreport/Terms_and_Conditions.txt:48
 msgid ""
@@ -386,12 +353,9 @@ msgstr ""
 
 #: gui/userreport/Terms_and_Conditions.txt:55
 msgid ""
-" 2. Wildfire Games has legitimate interests in the development of 0 A.D and "
-"protection against cyberattacks (GDPR 6.1.f)."
+" 2. Wildfire Games has legitimate interests in the development of 0 A.D. and"
+" protection against cyberattacks (GDPR 6.1.f)."
 msgstr ""
-" 2. Η Wildfire Games έχει νόμιμα συμφέροντα στην ανάπτυξη του 0 A.D και την "
-"προστασία από τις κυβερνοεπιθέσεις (Γενικός Κανονισμός για την Προστασία "
-"Δεδομένων 6.1.f)."
 
 #: gui/userreport/Terms_and_Conditions.txt:56
 msgid ""

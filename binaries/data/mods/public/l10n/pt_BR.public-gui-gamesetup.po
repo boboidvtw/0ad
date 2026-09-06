@@ -1,76 +1,79 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2022 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# Alessandro Nunes
-# alrope
-# Andrei Golemsky
-# Maximilian Weiss-Föder
-# 8a9afb43fd95d08d43e4b3f29e8e204d_f74a2a3
-# borg 2k
-# Caio Northfleet
-# Diana K. Cury
-# 1e46fd82907595ae69bafb7f4e47cd1b_169840e
-# alveselvis16
-# Enrico Nicoletto
-# Ernan
-# Estevan Borges Martins
-# Estus
-# Fábio Medeiros
-# Filipe Oliveira
-# Sturm
-# Guilherme Soster
-# Gustavo Passarella
-# Hunteros
-# Igor Aleixo
-# João Francisco Gauze Carrer
-# Jose Bentivi
-# jose
-# JulioBianor
-# lecalam
-# Lourenço Gaiteiro
-# d985c683c87c96d130507ab20847ffb3_c33e5c1
-# Lukas Haselmann
-# Lush litz
-# mac.edgar
-# Marcelo Augusto Kniss
-# Marcos Correa
-# Marcus Rasseli
-# Mateus Felipe Cordeiro Caetano Pinto
-# Mateus Tavares
-# Matheus Clemente
-# Mihailov Vasilievic Filho
-# mliell
-# mogafi
-# pizzaiolo
-# Paulo Castro
-# Pedro Augusto Marques Sanches
-# Pedro Augustus Diniz Falcão Silva
-# PedroDognani
-# Qodek
-# Rafael Andrade
-# Rafael Monteiro
-# Raphael Mendonça
-# Ricardo Siqueira Oliveira Leite
-# Rodolfo Rizzo
-# Rowel
-# Rui
-# Stanislas Dolcini
-# Thiago Fontanari
-# Tiago
-# victoJ
-# Washington Ramon Santos nascimento
-# Werther Ramalho
-# William Sandres
-# yurids
-# Yuri Laskowski
+# Alessandro Nunes, 2019
+# alrope, 2014
+# Andrei Golemsky, 2021
+# Maximilian Weiss-Föder, 2020
+# 8a9afb43fd95d08d43e4b3f29e8e204d_f74a2a3, 2014
+# borg 2k, 2017-2018
+# Caio Northfleet, 2014
+# Diana K. Cury, 2014
+# 1e46fd82907595ae69bafb7f4e47cd1b_169840e, 2014
+# alveselvis16, 2014
+# Enrico Nicoletto, 2013
+# Ernan, 2014
+# Ernan, 2014
+# Estevan Borges Martins, 2021
+# Estus, 2014
+# Fábio Medeiros, 2014
+# Filipe Oliveira, 2013
+# Sturm, 2014
+# Guilherme Soster, 2014
+# Gustavo Passarella, 2021
+# Hunteros, 2013
+# Igor Aleixo, 2016-2017
+# João Francisco Gauze Carrer, 2018
+# Jose Bentivi, 2017
+# jose, 2017
+# JulioBianor, 2014
+# lecalam, 2022,2024
+# Lourenço Gaiteiro, 2017
+# Lucas Ribel, 2024
+# d985c683c87c96d130507ab20847ffb3_c33e5c1, 2013
+# Lukas Haselmann, 2020
+# Lush litz, 2021
+# mac.edgar, 2014
+# Marcelo Augusto Kniss, 2016
+# Marcos Correa, 2014
+# Marcus Rasseli, 2013
+# Mateus Felipe Cordeiro Caetano Pinto, 2013
+# Mateus Tavares, 2016
+# Matheus Clemente, 2015
+# Mihailov Vasilievic Filho, 2015
+# mliell, 2014
+# mogafi, 2014
+# pizzaiolo, 2015
+# Paulo Castro, 2013
+# Pedro Augusto Marques Sanches, 2020
+# Pedro Augustus Diniz Falcão Silva, 2014-2015
+# PedroDognani, 2015
+# Qodek, 2014
+# Rafael Andrade, 2020
+# Rafael Games, 2024
+# Rafael Monteiro, 2016
+# Raphael Mendonça, 2014
+# Ricardo Siqueira Oliveira Leite, 2016
+# Rodolfo Rizzo, 2023
+# Rowel, 2014
+# Rui, 2018-2019
+# Stanislas Dolcini, 2021
+# Thiago Fontanari, 2021
+# Tiago, 2020
+# victoJ, 2020
+# Washington Ramon Santos nascimento, 2014
+# Werther Ramalho, 2017
+# William Sandres, 2021
+# yurids, 2014
+# Yuri Laskowski, 2020,2022
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2022-09-12 09:35+0000\n"
+"POT-Creation-Date: 2024-08-09 07:17+0000\n"
 "PO-Revision-Date: 2014-06-19 17:48+0000\n"
-"Last-Translator: Rodolfo Rizzo, 2023\n"
+"Last-Translator: Lucas Ribel, 2024\n"
 "Language-Team: Portuguese (Brazil) (http://app.transifex.com/wildfire-games/0ad/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -78,11 +81,11 @@ msgstr ""
 "Language: pt_BR\n"
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:(caption):13
+#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:13
 msgid "AI Configuration"
 msgstr "Configuração de Inteligência Artificial"
 
-#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:(caption):29
+#: gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml:29
 msgid "OK"
 msgstr "OK"
 
@@ -105,7 +108,7 @@ msgstr "Nenhum"
 
 #: gui/gamesetup/Pages/AIConfigPage/Controls/AISelection.js:44
 msgid "AI Player"
-msgstr "Jogador automatizado"
+msgstr "Jogador IA"
 
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingControl.js:142
 #, javascript-format
@@ -132,12 +135,12 @@ msgctxt "Match settings tab name"
 msgid "Map"
 msgstr "Mapa"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:28
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:29
 msgctxt "Match settings tab name"
 msgid "Player"
 msgstr "Jogador"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:40
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingsLayout.js:41
 msgctxt "Match settings tab name"
 msgid "Game Type"
 msgstr "Tipo de Jogo"
@@ -186,23 +189,23 @@ msgctxt "team"
 msgid "None"
 msgstr "Nenhuma"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):6
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:6
 msgid "Player Name"
 msgstr "Nome do Jogador"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):10
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:10
 msgid "Color"
 msgstr "Cor"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):14
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:14
 msgid "Player Placement"
 msgstr "Posicionamento de Jogador"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):18
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:18
 msgid "Civilization"
 msgstr "Civilização"
 
-#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:(caption):25
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/PerPlayer/PlayersPanel.xml:25
 msgid "Team"
 msgstr "Equipe"
 
@@ -507,6 +510,14 @@ msgstr "Dificuldade"
 msgid "Select the difficulty of this scenario."
 msgstr "Determine o nível de dificuldade do cenário."
 
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WaterLevel.js:43
+msgid "Water level"
+msgstr "Nível da água"
+
+#: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WaterLevel.js:46
+msgid "Select the water level of this map."
+msgstr "Escolha o nível da água para o mapa."
+
 #: gui/gamesetup/Pages/GameSetupPage/GameSettings/Single/Dropdowns/WorldPopulationCap.js:47
 msgid "World Population Cap"
 msgstr "População global máxima"
@@ -612,19 +623,19 @@ msgstr "Duração da Maravilha"
 msgid "Minutes until the player has achieved Wonder Victory"
 msgstr "Minutos até que o jogador conquiste uma Vitória por Maravilha"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:36
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:17
 msgid "Back"
 msgstr "Voltar"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:39
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:20
 msgid "Return to the lobby."
-msgstr "Voltar para o lobby."
+msgstr "Voltar para a sala."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:42
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CancelButton.js:23
 msgid "Return to the main menu."
 msgstr "Voltar ao menu principal."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CivInfoButton.js:48
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/CivInfoButton.js:33
 #, javascript-format
 msgid ""
 "%(hotkey_civinfo)s / %(hotkey_structree)s: View Civilization Overview / Structure Tree\n"
@@ -633,29 +644,29 @@ msgstr "%(hotkey_civinfo)s / %(hotkey_structree)s: Visão Geral da Civilização
 
 #: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/LobbyButton.js:19
 msgid "Show the multiplayer lobby in a dialog window."
-msgstr "Mostrar o lobby multijogador em uma janela de diálogo."
+msgstr "Mostrar a sala multijogador em uma janela de diálogo."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:79
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:70
 msgid "I'm ready"
 msgstr "Estou pronto"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:80
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:71
 msgid "Stay ready"
 msgstr "Fique pronto"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:81
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:72
 msgid "I'm not ready!"
 msgstr "Não estou pronto!"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:85
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:76
 msgid "State that you are ready to play."
 msgstr "Indique que você está pronto para jogar."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:86
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:77
 msgid "Stay ready even when the game settings change."
 msgstr "Manter-se pronto mesmo se houver modificações nas configurações da partida."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:87
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/ReadyButton.js:78
 msgid "State that you are not ready to play."
 msgstr "Informa que você ainda não está pronto para jogar."
 
@@ -668,15 +679,15 @@ msgstr "Reiniciar para o padrão qualquer civilização que tenha sido seleciona
 msgid "Reset all teams to the default."
 msgstr "Restaura todos os times para o padrão."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:65
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:56
 msgid "Start Game!"
 msgstr "Comece a Partida!"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:68
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:59
 msgid "Start a new game with the current settings."
 msgstr "Iniciar um novo jogo com os ajustes atuais."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:71
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Buttons/StartGameButton.js:62
 msgid ""
 "Start a new game with the current settings (disabled until all players are "
 "ready)."
@@ -735,7 +746,7 @@ msgstr "* %(username)s está pronto!"
 msgid "Game settings have been changed"
 msgstr "As configurações do jogo foram alteradas"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatPanel.xml:(caption):9
+#: gui/gamesetup/Pages/GameSetupPage/Panels/Chat/ChatPanel.xml:9
 msgid "Send"
 msgstr "Enviar"
 
@@ -758,11 +769,11 @@ msgstr "\\[%(time)s]"
 msgid "HH:mm"
 msgstr "HH:mm"
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:40
+#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:29
 msgid "Cheats enabled."
 msgstr "Trapaças ativadas."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:43
+#: gui/gamesetup/Pages/GameSetupPage/Panels/GameSettingWarning.js:32
 msgid "Rated game."
 msgstr "Jogo avaliado."
 
@@ -779,19 +790,19 @@ msgstr "Nenhum mapa selecionado"
 msgid "Click to view the list of available maps."
 msgstr "Clique para ver a lista de mapas disponíveis."
 
-#: gui/gamesetup/Pages/GameSetupPage/Panels/TipsPanel.xml:(caption):10
+#: gui/gamesetup/Pages/GameSetupPage/Panels/TipsPanel.xml:10
 msgid "Show this message in the future."
 msgstr "Mostrar essa mensagem no futuro."
 
-#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:(caption):7
+#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:7
 msgid "Loading"
 msgstr "Carregando"
 
-#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:(caption):11
+#: gui/gamesetup/Pages/LoadingPage/LoadingPage.xml:11
 msgid "Loading map data. Please wait…"
 msgstr "Carregando dados do mapa. Aguarde…"
 
-#: gui/gamesetup/gamesetup.xml:(caption):17
+#: gui/gamesetup/gamesetup.xml:17
 msgid "Match Setup"
 msgstr "Configuração da partida"
 
@@ -802,7 +813,7 @@ msgstr "Jogo do %(name)s"
 
 #: gui/gamesetup_mp/gamesetup_mp.js:123
 msgid "Please enter a valid server name."
-msgstr "Por favor entre com um nome de servidor valido."
+msgstr "Por favor insira um nome de servidor válido."
 
 #: gui/gamesetup_mp/gamesetup_mp.js:131
 #, javascript-format
@@ -811,7 +822,7 @@ msgstr "Número da porta do servidor deve ser entre %(min)s e %(max)s."
 
 #: gui/gamesetup_mp/gamesetup_mp.js:150
 msgid "Connecting to server..."
-msgstr "Conectando ao servidor..."
+msgstr "Conectando ao servidor…"
 
 #: gui/gamesetup_mp/gamesetup_mp.js:165
 msgid "Server is not running."
@@ -844,18 +855,13 @@ msgstr "Falha ao conectar ao servidor."
 msgid "Connection failed"
 msgstr "Conexão falhou."
 
-#: gui/gamesetup_mp/gamesetup_mp.js:193
-#, javascript-format
-msgid "Net message: %(message)s"
-msgstr "Mensagem da rede: %(message)s"
-
 #: gui/gamesetup_mp/gamesetup_mp.js:276
 msgid "Registering with server..."
-msgstr "Registrando com servidor..."
+msgstr "Registrando com servidor…"
 
 #: gui/gamesetup_mp/gamesetup_mp.js:282
 msgid "Game has already started, rejoining..."
-msgstr "O jogo já começou, juntando-se novamente..."
+msgstr "O jogo já começou, juntando-se novamente…"
 
 #: gui/gamesetup_mp/gamesetup_mp.js:361
 msgid "Game name already in use."
@@ -867,82 +873,79 @@ msgid "Cannot host game: %(message)s."
 msgstr "Não é possível hospedar o jogo: %(message)s."
 
 #: gui/gamesetup_mp/gamesetup_mp.js:377 gui/gamesetup_mp/gamesetup_mp.js:406
-#: gui/gamesetup_mp/gamesetup_mp.js:435 gui/gamesetup_mp/gamesetup_mp.js:450
+#: gui/gamesetup_mp/gamesetup_mp.js:436 gui/gamesetup_mp/gamesetup_mp.js:451
 msgid "Error"
 msgstr "Erro"
 
-#: gui/gamesetup_mp/gamesetup_mp.js:405 gui/gamesetup_mp/gamesetup_mp.js:449
+#: gui/gamesetup_mp/gamesetup_mp.js:405 gui/gamesetup_mp/gamesetup_mp.js:450
 #, javascript-format
 msgid "Cannot join game: %(message)s."
 msgstr "Não é possível entrar no jogo: %(message)s."
 
-#: gui/gamesetup_mp/gamesetup_mp.js:464
+#: gui/gamesetup_mp/gamesetup_mp.js:465
 #, javascript-format
 msgid "%(playername)s's game"
 msgstr "Jogo do %(playername)s"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):18
+#: gui/gamesetup_mp/gamesetup_mp.xml:18
 msgid "Multiplayer"
 msgstr "Multijogador"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):24
+#: gui/gamesetup_mp/gamesetup_mp.xml:24
 msgid "Joining an existing game."
 msgstr "Juntando-se a um jogo existente."
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):28
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):70
+#: gui/gamesetup_mp/gamesetup_mp.xml:28 gui/gamesetup_mp/gamesetup_mp.xml:70
 msgid "Player Name:"
 msgstr "Nome do Jogador:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):38
+#: gui/gamesetup_mp/gamesetup_mp.xml:38
 msgid "Server Hostname or IP:"
 msgstr "Hostname do Servidor ou IP:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):48
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):95
+#: gui/gamesetup_mp/gamesetup_mp.xml:48 gui/gamesetup_mp/gamesetup_mp.xml:95
 msgid "Server Port:"
 msgstr "Porta do Servidor:"
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):65
-msgid "Set up your server to host."
-msgstr "Configure seu servidor como host."
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):83
-msgid "Server Name:"
-msgstr "Nome do Servidor:"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):112
-msgid "Server Password:"
-msgstr "Senha do Servidor:"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):128
-msgid "Use STUN to work around firewalls"
-msgstr "Use STUN para evitar problemas com firewalls"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):136
-msgid "Continue"
-msgstr "Continuar"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):141
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):152
-msgid "Password:"
-msgstr "Senha:"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(caption):162
-msgid "Confirm"
-msgstr "Confirmar"
-
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):52
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):99
+#: gui/gamesetup_mp/gamesetup_mp.xml:52 gui/gamesetup_mp/gamesetup_mp.xml:99
 msgid "Leave blank to use the default port."
 msgstr "Deixe em branco para utilizar a porta padrão."
 
-#: gui/gamesetup_mp/gamesetup_mp.xml:(tooltip):113
+#: gui/gamesetup_mp/gamesetup_mp.xml:65
+msgid "Set up your server to host."
+msgstr "Configure seu servidor como host."
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:83
+msgid "Server Name:"
+msgstr "Nome do Servidor:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:112
+msgid "Server Password:"
+msgstr "Senha do Servidor:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:113
 msgid "Leave blank to not require it."
 msgstr "Deixe em branco para não exigir."
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:128
+msgid "Use STUN to work around firewalls"
+msgstr "Use STUN para evitar problemas com firewalls"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:136
+msgid "Continue"
+msgstr "Continuar"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:141
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:152
+msgid "Password:"
+msgstr "Senha:"
+
+#: gui/gamesetup_mp/gamesetup_mp.xml:162
+msgid "Confirm"
+msgstr "Confirmar"
 
 #: gui/loading/ProgressBar.js:48
 #, javascript-format
@@ -1223,7 +1226,7 @@ msgid ""
 "immediately poured it upon the ground in the sight of all.” \\n— Arrian "
 "about Alexander's march through the Gedrosian desert (“The Anabasis of "
 "Alexander”, 6.26)"
-msgstr "“O próprio Alexandre, atormentado pela sede, com muita dor e dificuldade, no entanto conduzia o exército a pé \\[...]. A essa altura, alguns soldados de armas leves \\[...] encontraram um pouco de água \\[...], despejaram a água em um capacete e levaram para ele. Ele o pegou e, elogiando os homens que o trouxeram, imediatamente o derramou no chão à vista de todos.” \\n— Arriano sobre a marcha de Alexandre através do deserto Gedrosiano (\"The Anabasis of Alexander\", 6.26)"
+msgstr "“O próprio Alexandre, atormentado pela sede, com muita dor e dificuldade, no entanto conduzia o exército a pé \\[…]. A essa altura, alguns soldados de armas leves \\[…] encontraram um pouco de água \\[…], despejaram a água em um capacete e levaram para ele. Ele o pegou e, elogiando os homens que o trouxeram, imediatamente o derramou no chão à vista de todos.” \\n— Arriano sobre a marcha de Alexandre através do deserto Gedrosiano (\"The Anabasis of Alexander\", 6.26)"
 
 #: gui/text/quotes.txt:41
 msgid ""
@@ -1234,7 +1237,7 @@ msgid ""
 "had already raised his sword against Alexander from behind when Clitus \\[…]"
 " cut his arm off.” \\n— Arrian about the Battle of the Granicus (“The "
 "Anabasis of Alexander”, 1.15)"
-msgstr "“Enfiando sua lança no rosto de Mitrídates, ele \\[Alexandre] o jogou no chão. Então Rhoesaces \\[um persa] \\[...] golpeou-o na cabeça com sua espada. \\[...] Alexandre o jogou no chão, perfurando seu peito com sua lança através de sua couraça. Sphitrídates \\[um persa] já havia levantado sua espada contra Alexandre por trás quando Clito \\[...] cortou seu braço.” \\n— Arriano sobre a Batalha de Granicus (\"A Anábase de Alexandre\", 1.15)"
+msgstr "“Enfiando sua lança no rosto de Mitrídates, ele \\[Alexandre] o jogou no chão. Então Rhoesaces \\[um persa] \\[…] golpeou-o na cabeça com sua espada. \\[…] Alexandre o jogou no chão, perfurando seu peito com sua lança através de sua couraça. Sphitrídates \\[um persa] já havia levantado sua espada contra Alexandre por trás quando Clito \\[…] cortou seu braço.” \\n— Arriano sobre a Batalha de Granicus (\"A Anábase de Alexandre\", 1.15)"
 
 #: gui/text/quotes.txt:42
 msgid ""
@@ -1364,7 +1367,7 @@ msgid ""
 "“I am Darius, the great king, king of kings, the king of Persia, the king of"
 " countries, \\[…] 23 lands in total.” \\n— Darius I (Behistun inscription, "
 "column I, 1–6)"
-msgstr "“Eu sou Dario, o grande rei, rei dos reis, o rei da Pérsia, o rei dos países, \\[...] 23 terras no total.” \\n— Darius I (inscrição de Behistun, coluna I, 1-6)"
+msgstr "“Eu sou Dario, o grande rei, rei dos reis, o rei da Pérsia, o rei dos países, \\[…] 23 terras no total.” \\n— Darius I (inscrição de Behistun, coluna I, 1-6)"
 
 #: gui/text/quotes.txt:60
 msgid ""
@@ -1374,7 +1377,7 @@ msgid ""
 "Ecbatana; and the men who were his foremost followers \\[…] I flayed and "
 "hung out their skins, stuffed with straw.” \\n— Darius I (Behistun "
 "inscription, column II, 32)"
-msgstr "“Fraortes foi capturado e trazido à minha presença. Cortei fora seu nariz, suas orelhas e sua língua, e arranquei um olho, e ele foi mantido acorrentado na entrada do meu palácio, e todas as pessoas o viram. Então eu o crucifiquei em Ecbátana; e os homens que foram seus principais seguidores \\[...] eu esfolei e pendurei suas peles, recheadas com palha.” \\n— Darius I (inscrição de Behistun, coluna II, 32)"
+msgstr "“Fraortes foi capturado e trazido à minha presença. Cortei fora seu nariz, suas orelhas e sua língua, e arranquei um olho, e ele foi mantido acorrentado na entrada do meu palácio, e todas as pessoas o viram. Então eu o crucifiquei em Ecbátana; e os homens que foram seus principais seguidores \\[…] eu esfolei e pendurei suas peles, recheadas com palha.” \\n— Darius I (inscrição de Behistun, coluna II, 32)"
 
 #: gui/text/quotes.txt:61
 msgid ""
@@ -1543,7 +1546,7 @@ msgid ""
 "while the survivors used the heap as a vantage point for throwing missiles "
 "at our men, or catching our spears and throwing them back.” \\n— Caesar "
 "about the Battle of the Sabis (“De Bello Gallico”, II. 27)"
-msgstr "“Mas o inimigo \\[...] demonstrou tamanha coragem, que quando a linha de frente caiu, os homens atrás deles se colocaram sobre eles e continuaram a luta por cima dos cadáveres; quando estes eram mortos, a pilha de corpos ficava mais alta, enquanto os sobreviventes usavam a pilha como um ponto de vantagem para lançar mísseis em nossos homens ou pegar nossas lanças e jogá-los de volta.” \\n— César sobre a Batalha dos Sabis (“De Bello Gallico”, II. 27)"
+msgstr "“Mas o inimigo \\[…] demonstrou tamanha coragem, que quando a linha de frente caiu, os homens atrás deles se colocaram sobre eles e continuaram a luta por cima dos cadáveres; quando estes eram mortos, a pilha de corpos ficava mais alta, enquanto os sobreviventes usavam a pilha como um ponto de vantagem para lançar mísseis em nossos homens ou pegar nossas lanças e jogá-los de volta.” \\n— César sobre a Batalha dos Sabis (“De Bello Gallico”, II. 27)"
 
 #: gui/text/quotes.txt:85
 msgid ""
@@ -1575,7 +1578,7 @@ msgstr "“Se um homem arrancar o olho de outro homem, o olho dele será arranca
 msgid ""
 "“I have come not to make war on the Italians, but to aid the Italians "
 "against Rome.” \\n— Hannibal (Polybius, “Histories”, III. 85)"
-msgstr "“Não vim para fazer guerra aos italianos, mas para ajudar os italianos contra Roma.” \\n— Hannibal (Políbio, \"Histórias\", III. 85)"
+msgstr "“Não vim para fazer guerra aos italianos, mas para ajudar os italianos contra Roma.” \\n— Aníbal (Políbio, \"Histórias\", III. 85)"
 
 #: gui/text/quotes.txt:90
 msgid ""
@@ -1591,13 +1594,13 @@ msgid ""
 "world as theirs and subject to their pleasure. With whom we are to be at "
 "war, with whom at peace, they think it right that they should determine.” "
 "\\n— Hannibal, addressing his troops (Livy, “History of Rome”, XXI. 44)"
-msgstr "“A mais desumana e a mais arrogante das nações, eles \\[os romanos] consideram o mundo como seu e sujeito ao seu prazer. Com quem devemos estar em guerra, com quem em paz, eles acham que é certo que eles devem decidir.” \\n— Hannibal, dirigindo-se às suas tropas (Tito Lívio, \"História de Roma\", XXI. 44)"
+msgstr "“A mais desumana e a mais arrogante das nações, eles \\[os romanos] consideram o mundo como seu e sujeito ao seu prazer. Com quem devemos estar em guerra, com quem em paz, eles acham que é certo que eles devem decidir.” \\n— Aníbal, dirigindo-se às suas tropas (Tito Lívio, \"História de Roma\", XXI. 44)"
 
 #: gui/text/quotes.txt:92
 msgid ""
 "“You must be brave and discard all hopes of anything but victory or death.” "
 "\\n— Hannibal, addressing his troops (Livy, “History of Rome”, XXI. 44)"
-msgstr "“Você deve ser corajoso e descartar todas as esperanças de qualquer coisa, exceto a vitória ou a morte.” \\n— Hannibal, dirigindo-se às suas tropas (Tito Lívio, \"História de Roma\", XXI. 44)"
+msgstr "“Você deve ser corajoso e descartar todas as esperanças de qualquer coisa, exceto a vitória ou a morte.” \\n— Aníbal, dirigindo-se às suas tropas (Tito Lívio, \"História de Roma\", XXI. 44)"
 
 #: gui/text/quotes.txt:93
 msgid ""
@@ -1652,7 +1655,7 @@ msgid ""
 "would be in the shade and not in the sun.” \\n— Herodotus describing "
 "Dieneces, reputedly the bravest Spartan soldier at Thermopylae (Polybius, "
 "“Histories”, VII. 226)"
-msgstr "“Sendo informado \\[...] que quando os bárbaros dispararam suas flechas eles obscureceram a luz do sol pela multidão de flechas, ele \\[Dieneces] \\[...] disse que seu convidado \\[...] lhes trouxe notícias muito boas , pois se os medos obscurecessem a luz do sol, a batalha contra eles seria na sombra e não no sol.” \\n— Heródoto descrevendo Dieneces, supostamente o mais bravo soldado espartano nas Termópilas (Políbio, \"Histórias\", VII. 226)"
+msgstr "“Sendo informado \\[…] que quando os bárbaros dispararam suas flechas eles obscureceram a luz do sol pela multidão de flechas, ele \\[Dieneces] \\[…] disse que seu convidado \\[…] lhes trouxe notícias muito boas , pois se os medos obscurecessem a luz do sol, a batalha contra eles seria na sombra e não no sol.” \\n— Heródoto descrevendo Dieneces, supostamente o mais bravo soldado espartano nas Termópilas (Políbio, \"Histórias\", VII. 226)"
 
 #: gui/text/quotes.txt:101
 msgid ""
@@ -1706,7 +1709,7 @@ msgstr "“É doce e honrado morrer pelo país.” \\n— Horácio (\"Odes\", II
 
 #: gui/text/quotes.txt:108
 msgid "“I am Cyrus, king of the world…” \\n— Inscription (Cyrus Cylinder)"
-msgstr "“Eu sou Cyrus, rei do mundo...” \\n— Inscrição (Cilindro de Cyrus)"
+msgstr "“Eu sou Cyrus, rei do mundo…” \\n— Inscrição (Cilindro de Cyrus)"
 
 #: gui/text/quotes.txt:109
 msgid ""
@@ -1760,7 +1763,7 @@ msgid ""
 "of dawn, and was cut down by his enemies.” \\n— Livy, describing the "
 "aftermath of the Battle of Cannae, where Hannibal inflicted the greatest "
 "defeat on the Romans in all their history (“History of Rome”, XXII. 51)"
-msgstr "“Ali estavam milhares e milhares de romanos \\[...]. Aqui e ali, entre os mortos, erguia-se uma figura sangrenta cujas feridas começaram a latejar com o frio da madrugada e foi cortada por seus inimigos.\" \\n— Tito Lívio, descrevendo as consequências da Batalha de Canas, onde Aníbal infligiu a maior derrota aos romanos em toda a sua história (\"História de Roma\", XXII. 51)"
+msgstr "“Ali estavam milhares e milhares de romanos \\[…]. Aqui e ali, entre os mortos, erguia-se uma figura sangrenta cujas feridas começaram a latejar com o frio da madrugada e foi cortada por seus inimigos.\" \\n— Tito Lívio, descrevendo as consequências da Batalha de Canas, onde Aníbal infligiu a maior derrota aos romanos em toda a sua história (\"História de Roma\", XXII. 51)"
 
 #: gui/text/quotes.txt:116
 msgid ""
@@ -1966,7 +1969,7 @@ msgid ""
 "received many wounds, at last was struck on the neck with a mace, and leaned"
 " against the city wall, his eyes still fixed upon his foes.” \\n— Plutarch "
 "about the Mallian Campaign (“Parallel Lives”, “Alexander”, sec. 63)"
-msgstr "“Um \\[...] disparou uma flecha nele com tanta precisão e força que ela perfurou seu peitoral e ficou presa em suas costelas. \\[...] Alexandre recuou e caiu de joelhos. \\[…] Finalmente Alexandre matou o bárbaro. Mas ele recebeu muitos ferimentos, finalmente foi atingido no pescoço com uma maça e encostado na muralha da cidade, com os olhos ainda fixos em seus inimigos.\" \\n— Plutarco sobre a campanha de Mallian (\"Vidas paralelas\", \"Alexandre\", seção 63)"
+msgstr "“Um \\[…] disparou uma flecha nele com tanta precisão e força que ela perfurou seu peitoral e ficou presa em suas costelas. \\[…] Alexandre recuou e caiu de joelhos. \\[…] Finalmente Alexandre matou o bárbaro. Mas ele recebeu muitos ferimentos, finalmente foi atingido no pescoço com uma maça e encostado na muralha da cidade, com os olhos ainda fixos em seus inimigos.\" \\n— Plutarco sobre a campanha de Mallian (\"Vidas paralelas\", \"Alexandre\", seção 63)"
 
 #: gui/text/quotes.txt:146
 msgid ""
@@ -2003,7 +2006,7 @@ msgid ""
 "escaping the dangers of the widest seas and the most violent storms, they "
 "wreck their ship in harbor and close to shore.” \\n— Polybius on the "
 "Athenian constitution (“Histories”, VI. 44)"
-msgstr "“O povo ateniense está sempre na posição de um navio sem comandante. O medo do inimigo ou de uma tempestade fazem a tripulação unir-se e obedecer ao timoneiro, tudo vai bem; mas se eles se recuperarem \\[...] eles brigam entre si \\[...], e o resultado muitas vezes é que, depois de escapar dos perigos dos mares mais largos e das tempestades mais violentas, eles naufragam seu navio no porto e perto da costa.” \\n— Políbio sobre a constituição ateniense (\"Histórias\", VI. 44)"
+msgstr "“O povo ateniense está sempre na posição de um navio sem comandante. O medo do inimigo ou de uma tempestade fazem a tripulação unir-se e obedecer ao timoneiro, tudo vai bem; mas se eles se recuperarem \\[…] eles brigam entre si \\[…], e o resultado muitas vezes é que, depois de escapar dos perigos dos mares mais largos e das tempestades mais violentas, eles naufragam seu navio no porto e perto da costa.” \\n— Políbio sobre a constituição ateniense (\"Histórias\", VI. 44)"
 
 #: gui/text/quotes.txt:150
 msgid ""
@@ -2020,7 +2023,7 @@ msgid ""
 "the troops lying in ambush on the hills to do the same, and thus delivered "
 "an assault upon the enemy at every point at once.” \\n— Polybius on the "
 "beginning of a Roman disaster at the Trasymene Lake (“Histories”, III. 84)"
-msgstr "“Hannibal deu o sinal para o ataque; e, ao mesmo tempo, enviou ordens para as tropas emboscadas nas colinas para fazerem o mesmo, e assim lançaram um ataque ao inimigo em todos os pontos ao mesmo tempo.” \\n— Políbio no início de um desastre romano no Lago Trasymene (\"Histórias\", III. 84)"
+msgstr "“Aníbal deu o sinal para o ataque; e, ao mesmo tempo, enviou ordens para as tropas emboscadas nas colinas para fazerem o mesmo, e assim lançaram um ataque ao inimigo em todos os pontos ao mesmo tempo.” \\n— Políbio no início de um desastre romano no Lago Trasymene (\"Histórias\", III. 84)"
 
 #: gui/text/quotes.txt:152
 msgid ""
@@ -2240,7 +2243,7 @@ msgid ""
 "darts to the closest man at hand.” \\n— Thucydides, describing the Spartan "
 "disaster at the Battle of Sphacteria (“History of the Peloponnesian War”, "
 "IV. 34.2)"
-msgstr "“Quando os lacedemônios não conseguiram mais correr atrás deles, os escaramuçadores \\[...] todos os atacaram ao mesmo tempo, atirando pedras, flechas e dardos no homem mais próximo.” \\n— Tucídides, descrevendo o desastre espartano na Batalha de Sphacteria (\"História da Guerra do Peloponeso\", IV. 34.2)"
+msgstr "“Quando os lacedemônios não conseguiram mais correr atrás deles, os escaramuçadores \\[…] todos os atacaram ao mesmo tempo, atirando pedras, flechas e dardos no homem mais próximo.” \\n— Tucídides, descrevendo o desastre espartano na Batalha de Sphacteria (\"História da Guerra do Peloponeso\", IV. 34.2)"
 
 #: gui/text/quotes.txt:181
 msgid ""
@@ -2299,7 +2302,7 @@ msgid ""
 "are you, friend? What is your land? And how old were you when the Medes "
 "\\[Persians] came?” \\n— Xenophanes, likely referring to a punitive "
 "expedition against Greek cities in Ionia (fragment 17)"
-msgstr "“Essas são as perguntas certas a se fazer, no inverno em torno da fogueira \\[...]: Quem é você, amigo? Qual é a sua terra? E quantos anos você tinha quando os medos \\ [persas] chegaram?” \\n— Xenófanes, provavelmente referindo-se a uma expedição punitiva contra cidades gregas na Jônia (fragmento 17)"
+msgstr "“Essas são as perguntas certas a se fazer, no inverno em torno da fogueira \\[…]: Quem é você, amigo? Qual é a sua terra? E quantos anos você tinha quando os medos \\ [persas] chegaram?” \\n— Xenófanes, provavelmente referindo-se a uma expedição punitiva contra cidades gregas na Jônia (fragmento 17)"
 
 #: gui/text/quotes.txt:189
 msgid ""

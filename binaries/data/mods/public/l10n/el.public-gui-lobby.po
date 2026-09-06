@@ -1,30 +1,31 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2022 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# Archie Mc
-# Aristomahos Nikiforakis
-# Armando Stylianakis
-# LOUKAS SKOUROLIAKOS
-# Christo Keller
-# firespin
-# Dimitrios Kekakos
-# George Charoupas
-# malvanos
-# mAnlis mAnlAkis
-# Marinus Savoritias
-# c28898edaeb1dbe1cfa07607b5ff55ed_3357a88
-# Savvas Nesseris
-# csparta
-# Vasilis Drosos
-# Κωνσταντίνος Σπάρταλης
+# Archie Mc, 2015
+# Aristomahos Nikiforakis, 2017
+# Armando Stylianakis, 2016
+# LOUKAS SKOUROLIAKOS, 2015
+# Christo Keller, 2014
+# firespin, 2014
+# Dimitrios Kekakos, 2015
+# George Charoupas, 2015
+# LOUKAS SKOUROLIAKOS, 2021,2024
+# malvanos, 2014-2015
+# mAnlis mAnlAkis, 2016
+# Marinus Savoritias, 2016
+# c28898edaeb1dbe1cfa07607b5ff55ed_3357a88, 2016
+# Savvas Nesseris, 2016
+# csparta, 2016
+# Vasilis Drosos, 2016-2020
+# Κωνσταντίνος Σπάρταλης, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2022-09-12 09:35+0000\n"
+"POT-Creation-Date: 2024-08-12 07:08+0000\n"
 "PO-Revision-Date: 2014-06-19 17:50+0000\n"
-"Last-Translator: LOUKAS SKOUROLIAKOS, 2021\n"
+"Last-Translator: LOUKAS SKOUROLIAKOS, 2021,2024\n"
 "Language-Team: Greek (http://app.transifex.com/wildfire-games/0ad/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,32 +33,31 @@ msgstr ""
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(caption):28
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):61
-msgid "Back"
-msgstr "Πίσω"
-
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(caption):32
-msgid "Update"
-msgstr "Ενημέρωση"
-
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(heading):17
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:17
 msgid "Rank"
 msgstr "Βαθμός"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(heading):20
-#: gui/lobby/LobbyPage/GameList.xml:(heading):13
-#: gui/lobby/LobbyPage/PlayerList.xml:(heading):21
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:20
+#: gui/lobby/LobbyPage/GameList.xml:13 gui/lobby/LobbyPage/PlayerList.xml:21
 msgid "Name"
 msgstr "Όνομα"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(heading):23
-#: gui/lobby/LobbyPage/GameList.xml:(heading):28
-#: gui/lobby/LobbyPage/PlayerList.xml:(heading):24
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:23
+#: gui/lobby/LobbyPage/GameList.xml:28 gui/lobby/LobbyPage/PlayerList.xml:24
 msgid "Rating"
 msgstr "Βαθμολογία"
 
-#: gui/lobby/LobbyPage/AnnouncementHandler.js:18
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:28
+#: gui/lobby/ProfilePage/ProfilePage.xml:61
+msgid "Back"
+msgstr "Πίσω"
+
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:32
+msgid "Update"
+msgstr "Ενημέρωση"
+
+#: gui/lobby/LobbyPage/AnnouncementHandler.js:19
+#: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessageFormatAnnouncement.js:24
 msgid "Notice"
 msgstr "Ειδοποίηση"
 
@@ -73,34 +73,34 @@ msgstr "Ξεσημείωσε από φίλο."
 msgid "Host Game"
 msgstr "Φιλοξενία παιχνιδιού"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:40
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:43
 msgid "Your active mods do not match the mods of this game."
 msgstr "Τα ενεργοποιημένα σου mod δεν ταιριάζουν με τα mod αυτού του παιχνιδιού."
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:42
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:45
 msgid "Do you want to switch to the mod selection page?"
 msgstr "Θέλεις να μεταβείς στη σελίδα επιλογής mod;"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:43
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:46
 msgid "Incompatible mods"
 msgstr "Ασύμβατα mods"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:52
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:62
 msgid "The game has already started. Do you want to join as observer?"
 msgstr "Το παιχνίδι έχει ήδη αρχίσει. Θέλετε να συνδεθείτε ως θεατής;"
 
 #. Translation: Join the game currently selected in the list.
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:104
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:95
 msgid "Join Game"
 msgstr "Συμμετοχή στο παιχνίδι"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(caption):12
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:12
 #: gui/lobby/LobbyPage/Buttons/LeaderboardButton.js:9
 msgid "Leaderboard"
 msgstr "Πίνακας κατάταξης"
 
 #: gui/lobby/LobbyPage/Buttons/ProfileButton.js:9
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):12
+#: gui/lobby/ProfilePage/ProfilePage.xml:12
 msgid "Player Profile Lookup"
 msgstr "Αναζήτηση Προφίλ Παίχτη"
 
@@ -185,6 +185,13 @@ msgstr "/say"
 msgid "Clear all chat scrollback."
 msgstr "Καθαρισμός όλων των προηγούμενων συνομιλιών."
 
+#: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessageFormatAnnouncement.js:26
+#, javascript-format
+msgid ""
+"== %(prefix)s:\n"
+"%(message)s"
+msgstr ""
+
 #. Translation: Chat message issued using the ‘/me’ command.
 #: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessageFormatMe.js:24
 #, javascript-format
@@ -210,7 +217,7 @@ msgstr "Ιδιωτικό"
 msgid "(%(private)s) %(message)s"
 msgstr "(%(private)s) %(message)s"
 
-#: gui/lobby/LobbyPage/Chat/ChatPanel.xml:(caption):12
+#: gui/lobby/LobbyPage/Chat/ChatPanel.xml:12
 msgid "Send"
 msgstr "Αποστολή"
 
@@ -325,23 +332,23 @@ msgstr "ΕΚΔΙΩΓΜΕΝΟΣ"
 msgid "You have been disconnected from the lobby. Do you want to reconnect?"
 msgstr "Έχεις αποσυνδεθεί από το λόμπι. Θέλεις να επανασυνδεθείς;"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:53
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:63
 #: gui/lobby/LobbyPage/ConnectionHandler.js:62
-#: gui/prelobby/common/credentials/credentials.js:55
+#: gui/prelobby/common/credentials/credentials.js:56
 msgid "Confirmation"
 msgstr "Επιβεβαίωση"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:44
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:54
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:47
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:64
 #: gui/lobby/LobbyPage/ConnectionHandler.js:63
-#: gui/prelobby/common/credentials/credentials.js:56
+#: gui/prelobby/common/credentials/credentials.js:57
 msgid "No"
 msgstr "Όχι"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:44
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:54
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:47
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:64
 #: gui/lobby/LobbyPage/ConnectionHandler.js:63
-#: gui/prelobby/common/credentials/credentials.js:56
+#: gui/prelobby/common/credentials/credentials.js:57
 msgid "Yes"
 msgstr "Ναι"
 
@@ -423,25 +430,25 @@ msgstr "Μέγεθος Χάρτη:"
 msgid "Map Description:"
 msgstr "Περιγραφή Χάρτη:"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):16
+#: gui/lobby/LobbyPage/GameList.xml:16
 msgid "Map Name"
 msgstr "Όνομα  Χάρτη"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):19
+#: gui/lobby/LobbyPage/GameList.xml:19
 msgctxt "map"
 msgid "Size"
 msgstr "Μέγεθος"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):22
+#: gui/lobby/LobbyPage/GameList.xml:22
 msgctxt "map"
 msgid "Type"
 msgstr "Τύπος"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):25
+#: gui/lobby/LobbyPage/GameList.xml:25
 msgid "Players"
 msgstr "Παίκτες"
 
-#: gui/lobby/LobbyPage/GameListFilters.xml:(caption):7
+#: gui/lobby/LobbyPage/GameListFilters.xml:7
 msgid "Show only open games"
 msgstr "Εμφάνιση μόνο διαθέσιμων παιχνιδιών"
 
@@ -497,8 +504,7 @@ msgctxt "lobby kick"
 msgid "Reason: %(reason)s"
 msgstr "Αιτία: %(reason)s"
 
-#: gui/lobby/LobbyPage/LobbyPage.xml:(caption):13
-#: gui/prelobby/entrance/entrance.xml:(caption):14
+#: gui/lobby/LobbyPage/LobbyPage.xml:13 gui/prelobby/entrance/entrance.xml:14
 msgid "Multiplayer Lobby"
 msgstr "Λόμπι πολλαπλών παικτών."
 
@@ -528,13 +534,13 @@ msgctxt "lobby presence"
 msgid "Unknown"
 msgstr "Άγνωστο"
 
-#: gui/lobby/LobbyPage/PlayerList.xml:(heading):18
-msgid "Status"
-msgstr "Κατάσταση"
-
-#: gui/lobby/LobbyPage/PlayerList.xml:(placeholder_text):4
+#: gui/lobby/LobbyPage/PlayerList.xml:4
 msgid "Search for Player"
 msgstr "Αναζήτηση για Παίκτη/τρια"
+
+#: gui/lobby/LobbyPage/PlayerList.xml:18
+msgid "Status"
+msgstr "Κατάσταση"
 
 #: gui/lobby/LobbyPage/ProfilePanel.js:106
 msgid "N/A"
@@ -562,33 +568,33 @@ msgstr "-"
 msgid "%(percentage)s%%"
 msgstr "%(percentage)s%%"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):8
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):30
+#: gui/lobby/LobbyPage/ProfilePanel.xml:8
+#: gui/lobby/ProfilePage/ProfilePage.xml:30
 msgid "Current Rank:"
 msgstr "Τρέχουσα Βαθμίδα:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):12
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):34
+#: gui/lobby/LobbyPage/ProfilePanel.xml:12
+#: gui/lobby/ProfilePage/ProfilePage.xml:34
 msgid "Highest Rating:"
 msgstr "Υψηλότερη Βαθμολογία:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):16
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):38
+#: gui/lobby/LobbyPage/ProfilePanel.xml:16
+#: gui/lobby/ProfilePage/ProfilePage.xml:38
 msgid "Total Games:"
 msgstr "Συνολικά παιχνίδια:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):20
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):42
+#: gui/lobby/LobbyPage/ProfilePanel.xml:20
+#: gui/lobby/ProfilePage/ProfilePage.xml:42
 msgid "Wins:"
 msgstr "Νίκες:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):24
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):46
+#: gui/lobby/LobbyPage/ProfilePanel.xml:24
+#: gui/lobby/ProfilePage/ProfilePage.xml:46
 msgid "Losses:"
 msgstr "Ηττες:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):28
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):50
+#: gui/lobby/LobbyPage/ProfilePanel.xml:28
+#: gui/lobby/ProfilePage/ProfilePage.xml:50
 msgid "Win Rate:"
 msgstr "Αναλογία Νίκης:"
 
@@ -597,19 +603,19 @@ msgstr "Αναλογία Νίκης:"
 msgid "Player \"%(nick)s\" not found."
 msgstr "Ο παίχτης \"%(nick)s\" δεν βρέθηκε."
 
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):16
+#: gui/lobby/ProfilePage/ProfilePage.xml:16
 msgid "Enter playername:"
 msgstr "Δώσε όνομα παίχτη:"
 
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):22
+#: gui/lobby/ProfilePage/ProfilePage.xml:22
 msgid "View Profile"
 msgstr "Δείτε προφίλ:"
 
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):55
+#: gui/lobby/ProfilePage/ProfilePage.xml:55
 msgid "Please enter a player name."
 msgstr "Παρακαλώ, εισάγετε το όνομα του παίχτη."
 
-#: gui/prelobby/common/credentials/confirmpassword.xml:(caption):4
+#: gui/prelobby/common/credentials/confirmpassword.xml:4
 msgid "Password again:"
 msgstr "Κωδικός ξανά:"
 
@@ -643,19 +649,19 @@ msgstr "Παρακαλώ, ξαναπληκτρολογήστε το συνθημ
 msgid "Passwords do not match"
 msgstr "Οι κωδικοί πρόσβασης δεν ταιριάζουν"
 
-#: gui/prelobby/common/credentials/credentials.js:54
+#: gui/prelobby/common/credentials/credentials.js:55
 msgid "Are you sure you want to delete the password after connecting?"
 msgstr "Είσαι σίγουρος ότι θέλεις να διαγράψεις τον κωδικό πρόσβασης μετά τη σύνδεση;"
 
-#: gui/prelobby/common/credentials/credentials.xml:(caption):6
+#: gui/prelobby/common/credentials/credentials.xml:6
 msgid "Login:"
 msgstr "Σύνδεση:"
 
-#: gui/prelobby/common/credentials/credentials.xml:(caption):15
+#: gui/prelobby/common/credentials/credentials.xml:15
 msgid "Password:"
 msgstr "Κωδικός:"
 
-#: gui/prelobby/common/credentials/rememberpassword.xml:(caption):7
+#: gui/prelobby/common/credentials/rememberpassword.xml:7
 msgid "Remember Password"
 msgstr "Απομνημόνευση Κωδικού"
 
@@ -665,20 +671,22 @@ msgid ""
 "allowed to register more than one account within one hour."
 msgstr "Άγνωστο σφάλμα. Αυτό συνήθως συμβαίνει επειδή η ίδια διεύθυνση IP δεν επιτρέπει να εγγράψετε περισσότερους από έναν λογαριασμό μέσα σε μία ώρα."
 
-#: gui/prelobby/common/feedback/feedback.xml:(caption):10
-#: gui/prelobby/entrance/entrance.xml:(caption):30
+#: gui/prelobby/common/feedback/feedback.xml:10
+#: gui/prelobby/entrance/entrance.xml:30
 msgid "Cancel"
 msgstr "Ακύρωση"
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:1
 msgid ""
-"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Privacy "
+"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Privacy "
 "Policy[/font]"
-msgstr "[font=\"sans-bold-18\"]Πολιτική Απορρήτου του Λόμπι Πολλών Παιχτών του 0 A.D. η Άνοδος των Αυτοκρατοριών[/font]"
+msgstr "[font=\"sans-bold-18\"]  0 A.D Η Άνοδος των Αυτοκρατοριών  ,Λόμπι Πολλαπλών Παικτών ,Πολιτική Απορρήτου [/font]"
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:3
-msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2020-12-24"
-msgstr "[font=\"sans-bold-14\"]Ημερομηνία Εγγράφου:[/font] 2020-12-24"
+#: gui/prelobby/common/terms/Terms_of_Service.txt:3
+#: gui/prelobby/common/terms/Terms_of_Use.txt:3
+msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2023-07-27"
+msgstr "[font=\"sans-bold-14\"]Ημερομηνία :[/font] 2023-07-27"
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:5
 msgid ""
@@ -900,10 +908,10 @@ msgstr "  1. Η επεξεργασία είναι απαραίτητη για τ
 #: gui/prelobby/common/terms/Privacy_Policy.txt:50
 msgid ""
 "2. Wildfire Games has legitimate interests in providing the Multiplayer "
-"Lobby, in the development and improvement of 0 A.D. and the Multiplayer "
+"Lobby, in the development and improvement of 0 A.D. and the Multiplayer "
 "Lobby, in enforcing the Terms of Use and in the protection against "
 "cyberattacks (GDPR 6.1.f)."
-msgstr "  2. Η Wildfire Games έχει νόμιμα συμφέροντα για την παροχή του Λόμπι Πολλών Παικτών, στην ανάπτυξη και βελτίωση του 0 A.D και του Λόμπι Πολλών Παικτών, στην επιβολή των Όρων Χρήσης και στην προστασία από τις κυβερνοεπιθέσεις (Γενικός Κανονισμός για την Προστασία Δεδομένων 6.1.f)."
+msgstr ""
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:51
 msgid ""
@@ -1077,28 +1085,24 @@ msgstr "Για περισσότερες πληροφορίες σχετικά μ
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:1
 msgid ""
-"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
+"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
 "Service[/font]"
-msgstr "[font=\"sans-bold-18\"]Όροι της Υπηρεσίας για το Λόμπι του 0 A.D. η Άνοδος των Αυτοκρατοριών[/font]"
-
-#: gui/prelobby/common/terms/Terms_of_Service.txt:3
-msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2018-10-16"
-msgstr "[font=\"sans-bold-14\"]Ημερομηνία Εγγράφου:[/font] 16-10-2018"
+msgstr "[font=\"sans-bold-18\"]  0 A.D Η Άνοδος των Αυτοκρατοριών ,Λόμπι Πολλαπλών Παικτών ,Όροι παροχής υπηρεσιών [/font]"
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:5
 msgid ""
-"The 0 A.D. Empires Ascendant Multiplayer Lobby is an online service provided"
+"The 0 A.D. Empires Ascendant Multiplayer Lobby is an online service provided"
 " by Wildfire Games that allows players to set up online multiplayer matches,"
 " discuss the game in a public chat room and gain a rating that reflects "
 "their skill."
-msgstr "Το Λόμπι Πολλών Παιχτών του 0 A.D. η Άνοδος των Αυτοκρατοριών είναι μια διαδικτυακή υπηρεσία που παρέχεται από την Wildfire Games που επιτρέπει στους παίκτες να δημιουργήσουν διαδικτυακούς αγώνες για πολλούς παίκτες, να συζητήσουν για το παιχνίδι σε μια δημόσια αίθουσα συνομιλίας και να αποκτήσουν μια βαθμολογία που αντανακλά τις δεξιότητές τους."
+msgstr ""
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:7
 msgid ""
 "Due to the subject matter of historic warfare, description and depiction of "
-"violence and the language on the Multiplayer Lobby, 0 A.D. and the "
+"violence and the language on the Multiplayer Lobby, 0 A.D. and the "
 "Multiplayer Lobby are not directed to young children (COPPA §312.2)."
-msgstr "Λόγω του περιεχομένου του ιστορικού πολέμου, της περιγραφής και της απεικόνισης της βίας καθώς και της γλώσσας στο Λόμπι Πολλών Παικτών, το 0 A.D. και το Λόμπι για Πολλούς Παίκτες δεν απευθύνεται σε μικρά παιδιά (Νόμος για την προστασία της ιδιωτικής ζωής των παιδιών στο διαδίκτυο §312.2)."
+msgstr "Λόγω του θέματος της ιστορικότητας του πολέμου ,αναπαράστασης ,περιγραφής και απεικόνησης βίας καθώς και της γλώσσας στο Λόμπι Πολλαλπλών Παικτών , το 0 A.D και το Λόμπι Πολλαπλών Παικτών ,δέν απευθύνονται σε νεαρά παιδιά   (COPPA §312.2)."
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:8
 msgid "The minimum age to use the Multiplayer Lobby is 13."
@@ -1107,9 +1111,9 @@ msgstr "Η ελάχιστη ηλικία για την χρήση του Λόμ�
 #: gui/prelobby/common/terms/Terms_of_Service.txt:10
 #: gui/prelobby/common/terms/Terms_of_Use.txt:5
 msgid ""
-"[font=\"sans-bold-14\"]By using the 0 A.D. Multiplayer Lobby, you agree "
+"[font=\"sans-bold-14\"]By using the 0 A.D. Multiplayer Lobby, you agree "
 "to:[/font]"
-msgstr "[font=\"sans-bold-14\"]Χρησιμοποιώντας το Λόμπι Πολλών Παιχτών του 0 A.D. συμφωνείς να:[/font]"
+msgstr "[font=\"sans-bold-14\"] Χρησιμοποιώντας το Λόμπι Πολλαπλών Παικτών του 0 AD, συμφωνείτε σε\n[/font]\n"
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:11
 msgid " 1. Follow all usage policies."
@@ -1169,12 +1173,8 @@ msgstr "Εάν μέρη των όρων θεωρούνται παράνομα ή
 
 #: gui/prelobby/common/terms/Terms_of_Use.txt:1
 msgid ""
-"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
+"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
 "Use[/font]"
-msgstr "[font=\"sans-bold-18\"]Όροι της Χρήσης του Λόμπι Πολλών Παιχτών του 0 A.D. η Άνοδος των Αυτοκρατοριών[/font]"
-
-#: gui/prelobby/common/terms/Terms_of_Use.txt:3
-msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2022-09-01"
 msgstr ""
 
 #: gui/prelobby/common/terms/Terms_of_Use.txt:6
@@ -1275,11 +1275,11 @@ msgstr "Πολιτική Απορρήτου"
 msgid "Please read and accept the Privacy Policy."
 msgstr "Παρακαλώ διάβασε και αποδέξου την Πολιτική Απορρήτου."
 
-#: gui/prelobby/entrance/entrance.xml:(caption):20
+#: gui/prelobby/entrance/entrance.xml:20
 msgid "Create a new account"
 msgstr "Δημιουργήστε ένα νέο λογαριασμό"
 
-#: gui/prelobby/entrance/entrance.xml:(caption):25
+#: gui/prelobby/entrance/entrance.xml:25
 msgid "Login to an existing account"
 msgstr "Σύνδεση σε έναν υπάρχοντα λογαριασμό"
 
@@ -1291,7 +1291,7 @@ msgstr "Σύνδεση"
 msgid "Connecting…"
 msgstr "Συνδέεται..."
 
-#: gui/prelobby/login/login.xml:(caption):13
+#: gui/prelobby/login/login.xml:13
 msgid "Connect to the game lobby"
 msgstr "Συνδεθείτε στο λόμπι του παιχνιδιού"
 
@@ -1307,6 +1307,6 @@ msgstr "Δηλώνεται..."
 msgid "Registered"
 msgstr "Εγγεγραμένο."
 
-#: gui/prelobby/register/register.xml:(caption):13
+#: gui/prelobby/register/register.xml:13
 msgid "Registration"
 msgstr "Εγγραφή"

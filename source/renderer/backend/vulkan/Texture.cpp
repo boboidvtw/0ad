@@ -1,4 +1,4 @@
-/* Copyright (C) 2023 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -40,8 +40,7 @@ std::unique_ptr<CTexture> CTexture::Create(
 	const Sampler::Desc& defaultSamplerDesc,
 	const uint32_t MIPLevelCount, const uint32_t sampleCount)
 {
-	std::unique_ptr<CTexture> texture(new CTexture());
-	texture->m_Device = device;
+	std::unique_ptr<CTexture> texture(new CTexture(device));
 
 	texture->m_Format = format;
 	texture->m_Type = type;
@@ -74,6 +73,15 @@ std::unique_ptr<CTexture> CTexture::Create(
 	vkGetPhysicalDeviceFormatProperties(
 		physicalDevice, imageFormat, &formatProperties);
 
+	if (!(usage & Usage::SAMPLED))
+	{
+		// A texture can't be *_ATTACHMENT and STORAGE at the same time without
+		// to be SAMPLED.
+		const bool isAttachment = (usage & Usage::COLOR_ATTACHMENT) || (usage & Usage::DEPTH_STENCIL_ATTACHMENT);
+		const bool isStorage = usage & Usage::STORAGE;
+		ENSURE(!(isAttachment && isStorage));
+	}
+
 	VkImageUsageFlags usageFlags = 0;
 	// Vulkan 1.0 implies that TRANSFER_SRC and TRANSFER_DST are supported.
 	// TODO: account Vulkan 1.1.
@@ -90,6 +98,16 @@ std::unique_ptr<CTexture> CTexture::Create(
 			return nullptr;
 		}
 		usageFlags |= VK_IMAGE_USAGE_SAMPLED_BIT;
+	}
+	if (usage & Usage::STORAGE)
+	{
+		ENSURE(type != Type::TEXTURE_2D_MULTISAMPLE);
+		if (!(formatProperties.optimalTilingFeatures & VK_FORMAT_FEATURE_STORAGE_IMAGE_BIT))
+		{
+			LOGERROR("Format %d doesn't support storage for optimal tiling.", static_cast<int>(imageFormat));
+			return nullptr;
+		}
+		usageFlags |= VK_IMAGE_USAGE_STORAGE_BIT;
 	}
 	if (usage & Usage::COLOR_ATTACHMENT)
 	{
@@ -157,7 +175,8 @@ std::unique_ptr<CTexture> CTexture::Create(
 		&texture->m_Image, &texture->m_Allocation, nullptr);
 	if (createImageResult != VK_SUCCESS)
 	{
-		LOGERROR("Failed to create VkImage: %d", static_cast<int>(createImageResult));
+		LOGERROR("Failed to create VkImage: %d (%s)",
+			static_cast<int>(createImageResult), Utilities::GetVkResultName(createImageResult));
 		return nullptr;
 	}
 
@@ -224,8 +243,7 @@ std::unique_ptr<CTexture> CTexture::WrapBackbufferImage(
 	CDevice* device, const char* name, const VkImage image, const VkFormat format,
 	const VkImageUsageFlags usage, const uint32_t width, const uint32_t height)
 {
-	std::unique_ptr<CTexture> texture(new CTexture());
-	texture->m_Device = device;
+	std::unique_ptr<CTexture> texture(new CTexture(device));
 
 	if (format == VK_FORMAT_R8G8B8A8_UNORM)
 		texture->m_Format = Format::R8G8B8A8_UNORM;
@@ -278,8 +296,7 @@ std::unique_ptr<CTexture> CTexture::CreateReadback(
 	CDevice* device, const char* name, const Format format,
 	const uint32_t width, const uint32_t height)
 {
-	std::unique_ptr<CTexture> texture(new CTexture());
-	texture->m_Device = device;
+	std::unique_ptr<CTexture> texture(new CTexture(device));
 
 	texture->m_Format = format;
 	texture->m_Type = Type::TEXTURE_2D;
@@ -321,7 +338,8 @@ std::unique_ptr<CTexture> CTexture::CreateReadback(
 		&texture->m_Image, &texture->m_Allocation, &texture->m_AllocationInfo);
 	if (createImageResult != VK_SUCCESS)
 	{
-		LOGERROR("Failed to create VkImage: %d", static_cast<int>(createImageResult));
+		LOGERROR("Failed to create VkImage: %d (%s)",
+			static_cast<int>(createImageResult), Utilities::GetVkResultName(createImageResult));
 		return nullptr;
 	}
 
@@ -336,10 +354,9 @@ std::unique_ptr<CTexture> CTexture::CreateReadback(
 	return texture;
 }
 
-CTexture::CTexture()
+CTexture::CTexture(CDevice* device)
+	: m_Device(device), m_UID(device->GenerateNextDeviceObjectUID())
 {
-	static uint32_t m_LastAvailableUID = 1;
-	m_UID = m_LastAvailableUID++;
 }
 
 CTexture::~CTexture()

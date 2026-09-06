@@ -96,7 +96,7 @@
 			{
 				"type": "boolean",
 				"label": "Windowed mode",
-				"tooltip": "Start 0 A.D. in a window.",
+				"tooltip": "Start 0 A.D. in a window.",
 				"config": "windowed"
 			},
 			{
@@ -110,6 +110,35 @@
 				"label": "Post-processing",
 				"tooltip": "Use screen-space post-processing filters (HDR, Bloom, DOF, etc).",
 				"config": "postproc"
+			},
+			{
+				"type": "dropdownNumber",
+				"label": "Resolution scale",
+				"tooltip": "A smaller scale makes rendering faster but produces a more blurry picture, a large scale makes rendering slower but produces a better picture.",
+				"dependencies": ["postproc"],
+				"config": "renderer.scale",
+				"list": [
+					{ "value": 0.5, "label": "50%" },
+					{ "value": 0.75, "label": "75%" },
+					{ "value": 0.875, "label": "87.5%" },
+					{ "value": 1.00, "label": "100%" },
+					{ "value": 1.25, "label": "125%" },
+					{ "value": 1.50, "label": "150%" },
+					{ "value": 1.75, "label": "175%" },
+					{ "value": 2.00, "label": "200%" }
+				]
+			},
+			{
+				"type": "dropdown",
+				"label": "Upscale technique",
+				"tooltip": "Technique defines performance and quality of upscaling process.",
+				"dependencies": ["postproc", { "config": "renderer.scale", "op": "<", "value": 1.0 }],
+				"config": "renderer.upscale.technique",
+				"list": [
+					{ "value": "fsr", "label": "FidelityFX Super Resolution 1.0", "tooltip": "Advanced upscale technique. For better results, use FSR with antialiasing enabled. Using it with the OpenGL backend may have some issues, consider using Vulkan backend instead." },
+					{ "value": "bilinear", "label": "Bilinear", "tooltip": "Bilinear upscale technique. Produces a slightly blurry picture depending on the scale." },
+					{ "value": "pixelated", "label": "Pixelated", "tooltip": "Simplest upscale technique. Used mostly for stylized effect." }
+				]
 			},
 			{
 				"type": "boolean",
@@ -199,11 +228,11 @@
 			{
 				"type": "dropdown",
 				"label": "Renderer backend",
-				"tooltip": "Choose the renderer's backend. REQUIRES GAME RESTART",
+				"tooltip": "Choose the renderer's backend. It's recommended to use Vulkan if supported. REQUIRES GAME RESTART",
 				"config": "rendererbackend",
 				"list": [
 					{ "value": "gl", "label": "OpenGL", "tooltip": "Default OpenGL backend with GLSL. REQUIRES GAME RESTART" },
-					{ "value": "glarb", "label": "OpenGL ARB", "tooltip": "Legacy OpenGL backend with ARB shaders. REQUIRES GAME RESTART" },
+					{ "value": "glarb", "label": "OpenGL ARB (Deprecated)", "tooltip": "Legacy OpenGL backend with ARB shaders. It's deprecated and it's going to be removed in future versions of the game. REQUIRES GAME RESTART" },
 					{ "value": "vulkan", "label": "Vulkan", "tooltip": "Modern API, requires up-to-date drivers. REQUIRES GAME RESTART" }
 				]
 			},

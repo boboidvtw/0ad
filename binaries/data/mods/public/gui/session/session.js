@@ -391,7 +391,7 @@ function updatePlayerData()
 				"a": playerState.color.a * 255
 			},
 			"team": playerState.team,
-			"teamsLocked": playerState.teamsLocked,
+			"teamLocked": playerState.teamLocked,
 			"cheatsEnabled": playerState.cheatsEnabled,
 			"state": playerState.state,
 			"isAlly": playerState.isAlly,
@@ -686,13 +686,26 @@ function toggleGUI()
 	updateCinemaPath();
 }
 
+var g_HasHiddenSilhouettes = false;
 function updateCinemaPath()
 {
 	let isPlayingCinemaPath = GetSimState().cinemaPlaying && !g_Disconnected;
 
 	Engine.GetGUIObjectByName("session").hidden = !g_ShowGUI || isPlayingCinemaPath;
 	Engine.GetGUIObjectByName("cinemaOverlay").hidden = !isPlayingCinemaPath;
-	Engine.ConfigDB_CreateValue("user", "silhouettes", !isPlayingCinemaPath && Engine.ConfigDB_GetValue("user", "silhouettes") == "true" ? "true" : "false");
+	// TODO: This isn't great and should use a different system.
+	if (isPlayingCinemaPath && Engine.ConfigDB_GetValue("user", "silhouettes") == "true")
+	{
+		Engine.ConfigDB_CreateValue("user", "silhouettes", "false");
+		g_HasHiddenSilhouettes = true;
+	}
+	else if (!isPlayingCinemaPath && g_HasHiddenSilhouettes)
+	{
+		// TODO: Keyboard shortcuts can still try to toggle silhouettes
+		// which would behave incorrectly on reset.
+		Engine.ConfigDB_Reload();
+		g_HasHiddenSilhouettes = false;
+	}
 }
 
 function updateCinemaOverlay()

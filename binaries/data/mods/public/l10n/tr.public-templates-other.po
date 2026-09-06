@@ -1,26 +1,28 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2023 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# A
-# ali topçu
-# Cem Aktas
-# Hüseyin Cem KOÇ
-# Emre JILTA
-# Günay Yılmaz
-# Hüseyin Cem Aras
-# İrfan Sunay
-# Muha Aliss
-# Tamer Kesenkaş
-# yakup
-# Yasin Uysal
+# A, 2023
+# ali topçu, 2018
+# Cem Aktas, 2018,2021-2022
+# Hüseyin Cem KOÇ, 2015
+# Emre JILTA, 2020
+# Galip Dede, 2023
+# Günay Yılmaz, 2019-2021
+# Hüseyin Cem Aras, 2016
+# İrfan Sunay, 2018
+# Muha Aliss, 2017
+# Tamer Kesenkaş, 2022
+# Günay Yılmaz, 2020
+# 9d4282795e87ad099e39d98812f1a822_ade2f01, 2014-2017,2021-2023
+# Yasin Uysal, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2023-04-21 07:09+0000\n"
+"POT-Creation-Date: 2024-07-26 13:41+0000\n"
 "PO-Revision-Date: 2014-06-19 17:54+0000\n"
-"Last-Translator: A, 2023\n"
+"Last-Translator: 9d4282795e87ad099e39d98812f1a822_ade2f01, 2014-2017,2021-2023\n"
 "Language-Team: Turkish (http://app.transifex.com/wildfire-games/0ad/language/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,119 +30,119 @@ msgstr ""
 "Language: tr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: simulation/data/attack_effects/applystatus.jsondescription
+#: simulation/data/attack_effects/applystatus.json
 msgctxt "effect caused by an attack"
 msgid "Various (timed) effects."
 msgstr "Çeşitli (zamanlanmış) etkiler"
 
-#: simulation/data/attack_effects/applystatus.jsonname
+#: simulation/data/attack_effects/applystatus.json
 msgctxt "effect caused by an attack"
 msgid "Apply Status"
 msgstr "Durumu Uygula"
 
-#: simulation/data/attack_effects/capture.jsondescription
+#: simulation/data/attack_effects/capture.json
 msgctxt "effect caused by an attack"
 msgid "Reduces capture points of a target."
 msgstr "Bir hedefin ele geçirme puanlarını düşürür."
 
-#: simulation/data/attack_effects/capture.jsonname
+#: simulation/data/attack_effects/capture.json
 msgctxt "effect caused by an attack"
 msgid "Capture"
 msgstr "Ele geçir"
 
-#: simulation/data/attack_effects/damage.jsondescription
+#: simulation/data/attack_effects/damage.json
 msgctxt "effect caused by an attack"
 msgid "Reduces the health of a target."
 msgstr "Bir hedefin sağlığını düşürür."
 
-#: simulation/data/attack_effects/damage.jsonname
+#: simulation/data/attack_effects/damage.json
 msgctxt "effect caused by an attack"
 msgid "Damage"
 msgstr "Hasar"
 
-#: simulation/data/damage_types/crush.jsondescription
-msgctxt "damage type"
-msgid "Damage caused by sheer force, like with a club or by trampling."
-msgstr "Bir sopadaki veya çiğneme gibi salt kuvvetten kaynaklanan hasar."
-
-#: simulation/data/damage_types/crush.jsonname
+#: simulation/data/damage_types/crush.json
 msgctxt "damage type"
 msgid "Crush"
 msgstr "Yıkım"
 
-#: simulation/data/damage_types/fire.jsondescription
+#: simulation/data/damage_types/crush.json
 msgctxt "damage type"
-msgid "Damage caused by burning objects, like a torch or a flaming arrow."
-msgstr "Meşale veya alevli ok gibi yanan nesnelerin neden olduğu hasar."
+msgid "Damage caused by sheer force, like with a club or by trampling."
+msgstr "Bir sopadaki veya çiğneme gibi salt kuvvetten kaynaklanan hasar."
 
-#: simulation/data/damage_types/fire.jsonname
+#: simulation/data/damage_types/fire.json
 msgctxt "damage type"
 msgid "Fire"
 msgstr "Ateş"
 
-#: simulation/data/damage_types/hack.jsondescription
+#: simulation/data/damage_types/fire.json
+msgctxt "damage type"
+msgid "Damage caused by burning objects, like a torch or a flaming arrow."
+msgstr "Meşale veya alevli ok gibi yanan nesnelerin neden olduğu hasar."
+
+#: simulation/data/damage_types/hack.json
+msgctxt "damage type"
+msgid "Hack"
+msgstr "Darbe"
+
+#: simulation/data/damage_types/hack.json
 msgctxt "damage type"
 msgid ""
 "Damage caused by sharp objects cutting or chopping, like with a sword or an "
 "axe."
 msgstr "Kılıç veya balta gibi keskin nesnelerin kesmesi veya yarması sonucu oluşan hasar."
 
-#: simulation/data/damage_types/hack.jsonname
-msgctxt "damage type"
-msgid "Hack"
-msgstr "Darbe"
-
-#: simulation/data/damage_types/pierce.jsondescription
-msgctxt "damage type"
-msgid "Damage caused by sharp pointy objects, like arrows or spears."
-msgstr "Oklar veya mızraklar gibi sivri uçlu nesnelerin neden olduğu hasarlar."
-
-#: simulation/data/damage_types/pierce.jsonname
+#: simulation/data/damage_types/pierce.json
 msgctxt "damage type"
 msgid "Pierce"
 msgstr "Delme"
 
-#: simulation/data/damage_types/poison.jsondescription
+#: simulation/data/damage_types/pierce.json
+msgctxt "damage type"
+msgid "Damage caused by sharp pointy objects, like arrows or spears."
+msgstr "Oklar veya mızraklar gibi sivri uçlu nesnelerin neden olduğu hasarlar."
+
+#: simulation/data/damage_types/poison.json
+msgctxt "damage type"
+msgid "Poison"
+msgstr "Zehir"
+
+#: simulation/data/damage_types/poison.json
 msgctxt "damage type"
 msgid ""
 "Damage caused by venomous or poisoned objects, like a snake or a poisoned "
 "weapon."
 msgstr "Yılan veya zehirli silahların neden olduğu zehir hasarı."
 
-#: simulation/data/damage_types/poison.jsonname
-msgctxt "damage type"
-msgid "Poison"
-msgstr "Zehir"
-
-#: simulation/data/status_effects/burning.jsonapplierTooltip
+#: simulation/data/status_effects/burning.json
 msgctxt "status effect"
 msgid "This unit causes fire damage."
 msgstr "Bu birim yangına neden olur."
 
-#: simulation/data/status_effects/burning.jsonreceiverTooltip
-msgctxt "status effect"
-msgid "This unit is burning."
-msgstr "Bu birim yanıyor."
-
-#: simulation/data/status_effects/burning.jsonstatusName
+#: simulation/data/status_effects/burning.json
 msgctxt "status effect"
 msgid "Burning"
 msgstr "Yanıyor"
 
-#: simulation/data/status_effects/poisoned.jsonapplierTooltip
+#: simulation/data/status_effects/burning.json
+msgctxt "status effect"
+msgid "This unit is burning."
+msgstr "Bu birim yanıyor."
+
+#: simulation/data/status_effects/poisoned.json
 msgctxt "status effect"
 msgid "This unit causes poison damage."
 msgstr "Bu birim zehir hasarına neden olur."
 
-#: simulation/data/status_effects/poisoned.jsonreceiverTooltip
-msgctxt "status effect"
-msgid "This unit is poisoned."
-msgstr "Bu birim zehirlendi."
-
-#: simulation/data/status_effects/poisoned.jsonstatusName
+#: simulation/data/status_effects/poisoned.json
 msgctxt "status effect"
 msgid "Poisoned"
 msgstr "Zehirlendi"
+
+#: simulation/data/status_effects/poisoned.json
+msgctxt "status effect"
+msgid "This unit is poisoned."
+msgstr "Bu birim zehirlendi."
 
 #: simulation/templates/campaigns/army_mace_hero_alexander.xml:24
 msgid "Army of Alexander the Great."
@@ -642,7 +644,7 @@ msgstr "Üzüm"
 
 #: simulation/templates/gaia/ruins/column_doric.xml:8
 msgid "Doric Column"
-msgstr "Kaba Sütun"
+msgstr "Dor Sütunu"
 
 #: simulation/templates/gaia/ruins/metal_statue_isis.xml:9
 msgid "Isis Cult Image"
@@ -690,6 +692,10 @@ msgstr "Apedamak Aslan Heykesli"
 #: simulation/templates/gaia/ruins/stone_statues_kushite_ram.xml:10
 msgid "Ammon-Ra Ram Statue"
 msgstr "Amon-Ra Koç Heykeli"
+
+#: simulation/templates/gaia/ruins/stone_statues_persian_lamassu.xml:8
+msgid "Lamassu Statue"
+msgstr ""
 
 #: simulation/templates/gaia/ruins/stone_statues_roman.xml:8
 msgid "Roman Statue"
@@ -769,6 +775,18 @@ msgstr "Gemi enkazı"
 msgid "Shipwreck Cargo"
 msgstr "Batık Kargosu"
 
+#: simulation/templates/gaia/treasure/special_argo.xml:8
+msgid "The Argo"
+msgstr ""
+
+#: simulation/templates/gaia/treasure/special_argo.xml:9
+msgid "Mythological Treasure"
+msgstr ""
+
+#: simulation/templates/gaia/treasure/special_argo.xml:10
+msgid "The mythological ship of the hero Theseus and his Argonauts."
+msgstr ""
+
 #: simulation/templates/gaia/treasure/stone.xml:8
 msgid "Stone Treasure"
 msgstr "Değerli Taş Hazinesi"
@@ -840,6 +858,10 @@ msgstr "Dayanıklı Çalı"
 #: simulation/templates/gaia/tree/bush_mediterranean.xml:4
 msgid "Scrub"
 msgstr "Bodur ağaç"
+
+#: simulation/templates/gaia/tree/bush_mediterranean_dry.xml:4
+msgid "Dry Scrub"
+msgstr "Kurak Çalılık"
 
 #: simulation/templates/gaia/tree/carob.xml:4
 msgid "Carob"
@@ -956,6 +978,10 @@ msgstr "Doum Palmiyesi"
 msgid "Palmyra Palm"
 msgstr "Palmira Palmiyesi"
 
+#: simulation/templates/gaia/tree/palm_royal.xml:4
+msgid "Royal Palm"
+msgstr "Kraliyet Palmiyesi"
+
 #: simulation/templates/gaia/tree/palm_tropic.xml:4
 msgid "Palm"
 msgstr "Palmiye"
@@ -1014,7 +1040,7 @@ msgstr "Kızıl Sedir"
 msgid "Rainforest Tree"
 msgstr "Yağmur Ormanı Ağacı"
 
-#: simulation/templates/mixins/builder.xml:41
+#: simulation/templates/mixins/builder.xml:42
 msgid "Builder"
 msgstr "İnşaacı"
 
@@ -1022,15 +1048,63 @@ msgstr "İnşaacı"
 msgid "Bush"
 msgstr "Böğürtlen"
 
+#: simulation/templates/mixins/cataphract.xml:14
+msgid "Cataphract Cavalry"
+msgstr "Katafrakt Süvarisi"
+
+#: simulation/templates/mixins/cataphract.xml:15
+msgid "Cataphract"
+msgstr "Katafrakt"
+
+#: simulation/templates/mixins/chariot.xml:16
+msgid "Chariot"
+msgstr "Savaş Arabası"
+
+#: simulation/templates/mixins/fireship.xml:15
+msgctxt "Name of an attack, usually the weapon."
+msgid "Flames"
+msgstr ""
+
+#: simulation/templates/mixins/fireship.xml:43
+msgid "Ignited"
+msgstr ""
+
+#: simulation/templates/mixins/longsword.xml:22
+msgid "Longsword"
+msgstr "Uzun kılıç"
+
 #: simulation/templates/mixins/mercenary.xml:13
 msgid "Mercenary"
 msgstr "Paralı asker"
+
+#: simulation/templates/mixins/pirate.xml:29
+msgid "Pirate"
+msgstr ""
+
+#: simulation/templates/mixins/rotary_mill.xml:17
+#: simulation/templates/mixins/rotary_mill.xml:18
+msgid "Rotary Mill"
+msgstr "Döner Değirmen"
+
+#: simulation/templates/mixins/rotary_mill.xml:19
+msgid "RotaryMill"
+msgstr "Döner Değirmen"
+
+#: simulation/templates/mixins/rotary_mill.xml:22
+msgid ""
+"Dropsite for harvested Food. Capture one of these to increase nearby food "
+"production."
+msgstr "Hasat edilen yiyecekler için b,r depo. Yakındaki yiyecek üretimini artırmak için bunlardan birini ele geçir."
 
 #: simulation/templates/mixins/shrine.xml:12
 #: simulation/templates/mixins/shrine.xml:13
 #: simulation/templates/mixins/shrine.xml:14
 msgid "Shrine"
 msgstr "Tapınak"
+
+#: simulation/templates/mixins/shrine.xml:18
+msgid "Train Elite Healers and heal garrisoned units."
+msgstr ""
 
 #: simulation/templates/mixins/trading_post.xml:8
 msgid "Trading Post"
@@ -1086,9 +1160,17 @@ msgstr "Sadece Yakın Piyade, en az 16 tane gerektirir."
 msgid "Anti Cavalry"
 msgstr "Anti Süvari"
 
+#: simulation/templates/special/formations/anti_cavalry.xml:26
+msgid "Square formation of Melee Infantry to fight Cavalry."
+msgstr "Süvari ile savaşmak için Yakın Piyadenin kare düzeni."
+
 #: simulation/templates/special/formations/battle_line.xml:13
 msgid "Battle Line"
 msgstr "Savaş Hattı"
+
+#: simulation/templates/special/formations/battle_line.xml:15
+msgid "Common formation for frontal attacks."
+msgstr "Önden saldırılar için ortak oluşum."
 
 #: simulation/templates/special/formations/box.xml:5
 msgid "Requires at least 4 Soldiers or Siege engines."
@@ -1098,13 +1180,25 @@ msgstr "En az 4 Asker ya da Kuşatma Makinesi gerektirir."
 msgid "Box"
 msgstr "Kutu"
 
+#: simulation/templates/special/formations/box.xml:14
+msgid "Square formation to protect all sides."
+msgstr "Her tarafı korumak için kare oluşumu."
+
 #: simulation/templates/special/formations/column_closed.xml:10
 msgid "Forced March"
 msgstr "Zorunlu Yürüyüş"
 
+#: simulation/templates/special/formations/column_closed.xml:12
+msgid "Closed column formation for risky movements."
+msgstr "Riskli hareketler için kapalı kolon oluşumu."
+
 #: simulation/templates/special/formations/column_open.xml:10
 msgid "Column Open"
 msgstr "Açık Sütun"
+
+#: simulation/templates/special/formations/column_open.xml:12
+msgid "Dispersed formation for open field crossings."
+msgstr "Açık alan geçişleri için dağınık oluşum."
 
 #: simulation/templates/special/formations/flank.xml:5
 msgid "Requires at least 8 Soldiers or Siege engines."
@@ -1114,13 +1208,25 @@ msgstr "Requires at least 8 Soldiers or Siege engines."
 msgid "Flank"
 msgstr "Kanat"
 
+#: simulation/templates/special/formations/flank.xml:13
+msgid "Formation to protect the sides or surprise attack the enemy flank."
+msgstr "Tarafları korumak için oluşum veya düşman kanadına sürpriz saldırı."
+
 #: simulation/templates/special/formations/line_closed.xml:9
 msgid "Close Order"
 msgstr "Kapalı Düzen"
 
+#: simulation/templates/special/formations/line_closed.xml:11
+msgid "Flexible closed line formation."
+msgstr "Esnek kapalı hat oluşumu."
+
 #: simulation/templates/special/formations/line_open.xml:11
 msgid "Open Order"
 msgstr "Açık Düzen"
+
+#: simulation/templates/special/formations/line_open.xml:13
+msgid "Dispersed formation for open field combat."
+msgstr "Açık alan savaşı için dağınık oluşum."
 
 #: simulation/templates/special/formations/null.xml:7
 msgid "None"
@@ -1134,9 +1240,46 @@ msgstr "Sadece Ağır Mızraklı Piyade en az 10 gerektirir."
 msgid "Phalanx"
 msgstr "Falanks"
 
+#: simulation/templates/special/formations/phalanx.xml:25
+msgid "Compact formation of Infantry Hoplites creating a shield wall."
+msgstr "Bir kalkan duvarı oluşturan Piyade Hoplitlerinin kompakt oluşumu."
+
 #: simulation/templates/special/formations/scatter.xml:8
 msgid "Scatter"
 msgstr "Dağınık"
+
+#: simulation/templates/special/formations/ships/column.xml:5
+#: simulation/templates/special/formations/ships/line_staggered.xml:5
+msgid "Requires at least 4 Ships."
+msgstr ""
+
+#: simulation/templates/special/formations/ships/column.xml:14
+msgid "Maneuvering Column"
+msgstr ""
+
+#: simulation/templates/special/formations/ships/column.xml:16
+msgid "A column formation for fleet maneuvers."
+msgstr ""
+
+#: simulation/templates/special/formations/ships/flank.xml:5
+msgid "Requires at least 8 Ships."
+msgstr ""
+
+#: simulation/templates/special/formations/ships/flank.xml:14
+msgid "Flanking Formation"
+msgstr ""
+
+#: simulation/templates/special/formations/ships/flank.xml:16
+msgid "Formation to protect the sides or surprise attack the enemy flanks."
+msgstr ""
+
+#: simulation/templates/special/formations/ships/line_staggered.xml:17
+msgid "Fleet Battle Line"
+msgstr ""
+
+#: simulation/templates/special/formations/ships/line_staggered.xml:19
+msgid "Common fleet formation for frontal attacks."
+msgstr ""
 
 #: simulation/templates/special/formations/skirmish.xml:4
 msgid "Ranged Soldiers only, requires at least 2."
@@ -1146,6 +1289,10 @@ msgstr "Sadece Menzilli Askerler, en az 2 tane gerektirir."
 msgid "Skirmish"
 msgstr "Çatışma"
 
+#: simulation/templates/special/formations/skirmish.xml:16
+msgid "Dispersed formation for reconnaissance, ambushes or hit-and-run."
+msgstr "Keşif, pusu veya vur-kaç için dağınık oluşum."
+
 #: simulation/templates/special/formations/syntagma.xml:5
 msgid "Infantry Pikemen only, requires at least 16."
 msgstr "Sadece Piyade Kargıcılar için en az 16 tane gerekir."
@@ -1154,9 +1301,17 @@ msgstr "Sadece Piyade Kargıcılar için en az 16 tane gerekir."
 msgid "Syntagma"
 msgstr "Sintagma"
 
+#: simulation/templates/special/formations/syntagma.xml:31
+msgid "Compact formation of Infantry Pikemen creating a defensive wall."
+msgstr "Bir savunma duvarı oluşturan Piyade Mızrakçılarının kompakt oluşumu."
+
 #: simulation/templates/special/formations/testudo.xml:70
 msgid "Testudo"
 msgstr "Kaplumbağa Düzeni"
+
+#: simulation/templates/special/formations/testudo.xml:72
+msgid "Compact formation of Melee Infantry creating a shield shell."
+msgstr "Bir kalkan kabuğu oluşturan Yakın Dövüş Piyadelerinin kompakt oluşumu."
 
 #: simulation/templates/special/formations/wedge.xml:5
 msgid "Cavalry only, requires at least 6."
@@ -1165,6 +1320,10 @@ msgstr "Sadece süvari en az 6 gerektirir."
 #: simulation/templates/special/formations/wedge.xml:16
 msgid "Wedge"
 msgstr "Kama"
+
+#: simulation/templates/special/formations/wedge.xml:18
+msgid "Triangular Cavalry formation to break through enemy lines."
+msgstr "Düşman hatlarını yarıp geçmek için Üçgen Süvari düzeni."
 
 #: simulation/templates/special/spy.xml:16
 msgid "Spy"

@@ -1,23 +1,24 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2023 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# a103db7de20fb0ddb805579cc7ed4c45_b5e60b0
-# Asakura
-# Kanetaka Suto
-# karubabu
-# Mysterelee
-# naoki yoshida
-# Photon “PHN” man
-# Ray I
-# red hare
+# a103db7de20fb0ddb805579cc7ed4c45_b5e60b0, 2021
+# Asakura, 2015,2017
+# Dara Samali, 2024
+# Kanetaka Suto, 2014-2016
+# karubabu, 2018
+# Mysterelee, 2014
+# naoki yoshida, 2015
+# Photon “PHN” man, 2021-2022
+# Ray I, 2022
+# red hare, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2023-03-20 08:08+0000\n"
+"POT-Creation-Date: 2024-07-26 13:41+0000\n"
 "PO-Revision-Date: 2014-06-19 17:54+0000\n"
-"Last-Translator: Photon “PHN” man, 2021-2022\n"
+"Last-Translator: Dara Samali, 2024\n"
 "Language-Team: Japanese (http://app.transifex.com/wildfire-games/0ad/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -55,7 +56,7 @@ msgstr "アゴラ"
 #: simulation/templates/structures/sele/corral.xml:5
 #: simulation/templates/structures/spart/corral.xml:5
 msgid "Epaulos"
-msgstr "Epaulos"
+msgstr "エパウロス"
 
 #: simulation/templates/structures/athen/defense_tower.xml:9
 #: simulation/templates/structures/mace/defense_tower.xml:9
@@ -134,19 +135,19 @@ msgstr "Emporion"
 msgid "Prophylagma"
 msgstr "Prophylagma"
 
-#: simulation/templates/structures/athen/prytaneion.xml:22
+#: simulation/templates/structures/athen/prytaneion.xml:25
 msgid "Council Chamber"
 msgstr "市議事堂"
 
-#: simulation/templates/structures/athen/prytaneion.xml:23
+#: simulation/templates/structures/athen/prytaneion.xml:26
 msgid "Prytaneion"
 msgstr "Prytaneion"
 
-#: simulation/templates/structures/athen/prytaneion.xml:24
+#: simulation/templates/structures/athen/prytaneion.xml:27
 msgid "Train Heroes and research technologies."
 msgstr "英雄の養成とテクノロジーの研究が行えます。"
 
-#: simulation/templates/structures/athen/prytaneion.xml:26
+#: simulation/templates/structures/athen/prytaneion.xml:29
 #: simulation/templates/structures/gaul/assembly.xml:31
 #: simulation/templates/structures/spart/gerousia.xml:26
 msgid "Council"
@@ -243,7 +244,7 @@ msgstr "Pyrgos"
 
 #: simulation/templates/structures/athen/wonder.xml:9
 msgid "Parthenōn"
-msgstr "Parthenōn"
+msgstr "パルテノン神殿"
 
 #: simulation/templates/structures/bench.xml:11
 msgid "Bench"
@@ -284,7 +285,7 @@ msgid ""
 "Build upon a shoreline in own, neutral, or allied territory. Acquire large "
 "tracts of territory. Territory root. Train Citizens, construct Ships, and "
 "research technologies. Garrison Soldiers for additional arrows."
-msgstr "自国、中立国、同盟国のいずれかの領土の海岸線に建設し、広大な領域を獲得します。市民の養成、船の建造、テクノロジーの研究を行えます。兵士を駐屯させることで矢を放ちます。"
+msgstr "自国、中立国、同盟国のいずれかの領土の海岸線に建設し、広大な領土を獲得します。市民の養成、船の建造、テクノロジーの研究を行います。兵士を駐屯させることで矢を放ちます。"
 
 #: simulation/templates/structures/brit/defense_tower.xml:9
 #: simulation/templates/structures/brit/sentry_tower.xml:5
@@ -334,6 +335,10 @@ msgstr "英雄を養成できます。兵士を駐屯させることで矢を放
 #: simulation/templates/structures/gaul/house.xml:5
 msgid "Tegia"
 msgstr "Tegia"
+
+#: simulation/templates/structures/brit/kennel.xml:5
+msgid "Cunattegia"
+msgstr ""
 
 #: simulation/templates/structures/brit/market.xml:12
 #: simulation/templates/structures/gaul/market.xml:12
@@ -461,6 +466,11 @@ msgstr "Šadd"
 msgid "Ḥamet"
 msgstr "Ḥamet"
 
+#: simulation/templates/structures/cart/house.xml:16
+msgid ""
+"Add a second story to make an Apartment with a greater population bonus."
+msgstr ""
+
 #: simulation/templates/structures/cart/market.xml:12
 msgid "Šūq"
 msgstr "Šūq"
@@ -508,8 +518,8 @@ msgid "Maqdaš"
 msgstr "Maqdaš"
 
 #: simulation/templates/structures/cart/temple.xml:10
-msgid "Train Healers and Champion Infantry and research healing technologies."
-msgstr "ヒーラーやチャンピオン歩兵を養成し、テクノロジーの研究を行えます。"
+msgid "Train Healers and Champions, and research healing technologies."
+msgstr ""
 
 #: simulation/templates/structures/cart/tophet.xml:18
 msgid "Sacrificial Temple"
@@ -560,39 +570,6 @@ msgstr "ドーリア式石柱"
 msgid "Fallen Doric Column"
 msgstr "倒れたドーリア式石柱"
 
-#: simulation/templates/structures/farmstead_field_wheat.xml:7
-#: simulation/templates/structures/generic_field.xml:8
-msgid "Wheat Field"
-msgstr "小麦畑"
-
-#: simulation/templates/structures/athen/farmstead.xml:11
-#: simulation/templates/structures/farmstead_greek.xml:8
-#: simulation/templates/structures/mace/farmstead.xml:11
-#: simulation/templates/structures/ptol/farmstead.xml:8
-#: simulation/templates/structures/sele/farmstead.xml:8
-#: simulation/templates/structures/spart/farmstead.xml:11
-msgid "Epoikion"
-msgstr "Epoikion"
-
-#: simulation/templates/structures/farmstead_indian.xml:8
-#: simulation/templates/structures/maur/farmstead.xml:11
-msgid "Kantu"
-msgstr "Kantu"
-
-#: simulation/templates/structures/farmstead_italian.xml:8
-msgid "Villa"
-msgstr "Villa"
-
-#: simulation/templates/structures/farmstead_middle_eastern.xml:9
-#: simulation/templates/structures/pers/farmstead.xml:8
-msgid "Kaštašta"
-msgstr "Kaštašta"
-
-#: simulation/templates/structures/brit/rotarymill.xml:5
-#: simulation/templates/structures/farmstead_temperate_europe.xml:4
-msgid "Melonas"
-msgstr "Melonas"
-
 #: simulation/templates/structures/fence_long.xml:14
 #: simulation/templates/structures/fence_short.xml:14
 msgid "Fence"
@@ -602,12 +579,31 @@ msgstr "フェンス"
 msgid "Long Wooden Fence"
 msgstr "長い木のフェンス"
 
+#: simulation/templates/structures/fence_rock_long.xml:12
+#: simulation/templates/structures/fence_rock_long.xml:13
+#: simulation/templates/structures/fence_rock_medium.xml:12
+#: simulation/templates/structures/fence_rock_medium.xml:13
+#: simulation/templates/structures/fence_rock_short.xml:12
+#: simulation/templates/structures/fence_rock_short.xml:13
+#: simulation/templates/structures/fence_rock_stub.xml:12
+#: simulation/templates/structures/fence_rock_stub.xml:13
+msgid "Rock Fence"
+msgstr ""
+
 #: simulation/templates/structures/fence_short.xml:15
 msgid "Short Wooden Fence"
 msgstr "短いフェンス"
 
 #: simulation/templates/structures/fence_stone.xml:14
 #: simulation/templates/structures/fence_stone.xml:15
+#: simulation/templates/structures/fence_stone_long.xml:12
+#: simulation/templates/structures/fence_stone_long.xml:13
+#: simulation/templates/structures/fence_stone_medium.xml:12
+#: simulation/templates/structures/fence_stone_medium.xml:13
+#: simulation/templates/structures/fence_stone_short.xml:12
+#: simulation/templates/structures/fence_stone_short.xml:13
+#: simulation/templates/structures/fence_stone_stub.xml:12
+#: simulation/templates/structures/fence_stone_stub.xml:13
 msgid "Stone Fence"
 msgstr "石の塀"
 
@@ -650,6 +646,11 @@ msgstr "コレント聖域"
 #: simulation/templates/structures/gaul/wonder.xml:10
 msgid "Celicnon"
 msgstr "Celicnon"
+
+#: simulation/templates/structures/generic_field.xml:8
+#: simulation/templates/structures/mill_field_wheat.xml:6
+msgid "Wheat Field"
+msgstr "小麦畑"
 
 #: simulation/templates/structures/han/academy.xml:27
 msgid "Imperial Academy"
@@ -732,11 +733,11 @@ msgstr "Mǎtóu"
 msgid "Nóng Shè"
 msgstr "Nóng Shè"
 
-#: simulation/templates/structures/han/field.xml:15
+#: simulation/templates/structures/han/field.xml:18
 msgid "Dàotián"
 msgstr "Dàotián"
 
-#: simulation/templates/structures/han/field.xml:16
+#: simulation/templates/structures/han/field.xml:19
 msgid "Rice Paddy"
 msgstr "稲田"
 
@@ -1007,10 +1008,6 @@ msgstr "Mryt"
 msgid "Ỉḥ Abu"
 msgstr "Ỉḥ Abu"
 
-#: simulation/templates/structures/kush/farmstead.xml:9
-msgid "snwt"
-msgstr "snwt"
-
 #: simulation/templates/structures/kush/field.xml:5
 msgid "sht"
 msgstr "sht"
@@ -1097,19 +1094,19 @@ msgstr "ヒーラーやアペデマクチャンピオンを養成でき、テク
 msgid "TempleOfApedemak"
 msgstr "アペデマク寺院"
 
-#: simulation/templates/structures/kush/temple_amun.xml:27
+#: simulation/templates/structures/kush/temple_amun.xml:30
 msgid "Grand Temple of Amun"
 msgstr "アメン巨大寺院"
 
-#: simulation/templates/structures/kush/temple_amun.xml:28
+#: simulation/templates/structures/kush/temple_amun.xml:31
 msgid "Pr-ʿImn"
 msgstr "Pr-ʿImn"
 
-#: simulation/templates/structures/kush/temple_amun.xml:29
+#: simulation/templates/structures/kush/temple_amun.xml:32
 msgid "Train Amun Champions and Elite Healers. Research healing technologies."
 msgstr "精鋭のヒーラーやアメンチャンピオンを養成でき、テクノロジーの研究を行えます。"
 
-#: simulation/templates/structures/kush/temple_amun.xml:31
+#: simulation/templates/structures/kush/temple_amun.xml:34
 msgid "TempleOfAmun"
 msgstr "アメン寺院"
 
@@ -1191,21 +1188,19 @@ msgstr "Vipana"
 msgid "Uparaksana"
 msgstr "Uparaksana"
 
-#: simulation/templates/structures/maur/palace.xml:19
-#: simulation/templates/structures/maur/palace.xml:23
-#: simulation/templates/structures/pers/apadana.xml:30
-#: simulation/templates/structures/pers/tacara.xml:23
-#: simulation/templates/structures/pers/tacara.xml:26
+#: simulation/templates/structures/maur/palace.xml:20
+#: simulation/templates/structures/maur/palace.xml:26
+#: simulation/templates/structures/pers/tachara.xml:33
 msgid "Palace"
 msgstr "宮殿"
 
-#: simulation/templates/structures/maur/palace.xml:20
+#: simulation/templates/structures/maur/palace.xml:21
 msgid "Harmya"
 msgstr "Harmya"
 
-#: simulation/templates/structures/maur/palace.xml:21
-msgid "Territory root. Train Maiden Guards and Heroes."
-msgstr "領土を広げ、メイデン防衛兵と英雄の養成ができます。"
+#: simulation/templates/structures/maur/palace.xml:30
+msgid "Train Heroes and their Poison Maiden Guards. Territory root."
+msgstr ""
 
 #: simulation/templates/structures/maur/pillar_ashoka.xml:32
 msgid "Edict Pillar of Ashoka"
@@ -1284,6 +1279,40 @@ msgstr "Stratopedeia Misthophorōn"
 msgid "Capture this structure to train mercenaries from Hellenistic Egypt."
 msgstr "この建物を奪い、ギリシア系エジプトから傭兵を養成しましょう。"
 
+#: simulation/templates/structures/kush/farmstead.xml:9
+#: simulation/templates/structures/mill_desert.xml:8
+#: simulation/templates/structures/mill_saharan.xml:8
+msgid "snwt"
+msgstr "snwt"
+
+#: simulation/templates/structures/athen/farmstead.xml:11
+#: simulation/templates/structures/mace/farmstead.xml:11
+#: simulation/templates/structures/mill_greek.xml:8
+#: simulation/templates/structures/ptol/farmstead.xml:8
+#: simulation/templates/structures/sele/farmstead.xml:8
+#: simulation/templates/structures/spart/farmstead.xml:11
+msgid "Epoikion"
+msgstr "Epoikion"
+
+#: simulation/templates/structures/maur/farmstead.xml:11
+#: simulation/templates/structures/mill_indian.xml:8
+msgid "Kantu"
+msgstr "Kantu"
+
+#: simulation/templates/structures/mill_italian.xml:8
+msgid "Villa"
+msgstr "Villa"
+
+#: simulation/templates/structures/mill_middle_eastern.xml:8
+#: simulation/templates/structures/pers/farmstead.xml:8
+msgid "Kaštašta"
+msgstr "Kaštašta"
+
+#: simulation/templates/structures/brit/rotarymill.xml:5
+#: simulation/templates/structures/mill_temperate_europe.xml:4
+msgid "Melonas"
+msgstr "Melonas"
+
 #: simulation/templates/structures/obelisk.xml:11
 msgid "Obelisk"
 msgstr "オベリスク"
@@ -1326,19 +1355,6 @@ msgstr "鹿砦（大）"
 msgid "Watchtower"
 msgstr "物見やぐら"
 
-#: simulation/templates/structures/pers/apadana.xml:26
-msgid "Throne Hall"
-msgstr "王座の間"
-
-#: simulation/templates/structures/pers/apadana.xml:27
-msgid "Apadāna"
-msgstr "Apadāna"
-
-#: simulation/templates/structures/pers/apadana.xml:28
-#: simulation/templates/structures/spart/syssiton.xml:25
-msgid "Train Champions and Heroes."
-msgstr "チャンピオンユニットと英雄の養成ができます。"
-
 #: simulation/templates/structures/pers/apartment_block.xml:12
 msgid "Apartment Block"
 msgstr "Apartment Block"
@@ -1347,11 +1363,11 @@ msgstr "Apartment Block"
 msgid "Padgan"
 msgstr "Padgan"
 
-#: simulation/templates/structures/pers/civil_centre.xml:8
+#: simulation/templates/structures/pers/civil_centre.xml:12
 msgid "Provincial Governor"
 msgstr "太守府"
 
-#: simulation/templates/structures/pers/civil_centre.xml:9
+#: simulation/templates/structures/pers/civil_centre.xml:13
 msgid "Xšaçapāvan"
 msgstr "Xšaçapāvan"
 
@@ -1430,9 +1446,33 @@ msgstr "Paraspa"
 msgid "Asiyah"
 msgstr "Asiyah"
 
-#: simulation/templates/structures/pers/tacara.xml:24
+#: simulation/templates/structures/pers/tachara.xml:29
+msgid "Winter Palace"
+msgstr ""
+
+#: simulation/templates/structures/pers/tachara.xml:30
 msgid "Taçara"
 msgstr "Taçara"
+
+#: simulation/templates/structures/pers/tachara.xml:31
+msgid "Train Heroes and make use of the “Satrapy Tribute” feature."
+msgstr ""
+
+#: simulation/templates/structures/pers/tachara.xml:81
+msgid "Receive free Food tribute to your treasury from your subject peoples."
+msgstr ""
+
+#: simulation/templates/structures/pers/tachara.xml:86
+msgid "Receive free Wood tribute to your treasury from your subject peoples."
+msgstr ""
+
+#: simulation/templates/structures/pers/tachara.xml:91
+msgid "Receive free Stone tribute to your treasury from your subject peoples."
+msgstr ""
+
+#: simulation/templates/structures/pers/tachara.xml:96
+msgid "Receive free Metal tribute to your treasury from your subject peoples."
+msgstr ""
 
 #: simulation/templates/structures/pers/temple.xml:12
 msgid "Āyadanam"
@@ -1456,6 +1496,10 @@ msgstr "貯蔵庫"
 #: simulation/templates/structures/pers/wonder.xml:9
 msgid "Hanging Gardens of Babylon"
 msgstr "Hanging Gardens of Babylon"
+
+#: simulation/templates/structures/pirates/dock.xml:8
+msgid "Pirate Port"
+msgstr ""
 
 #: simulation/templates/structures/ptol/elephant_stable.xml:5
 #: simulation/templates/structures/sele/elephant_stable.xml:5
@@ -1492,6 +1536,18 @@ msgstr "安価な兵舎。傭兵を養成できます。中立領域に建設で
 msgid "Klērouchia"
 msgstr "Klērouchia"
 
+#: simulation/templates/structures/ptol/temple_2.xml:24
+msgid "Temple of Isis"
+msgstr ""
+
+#: simulation/templates/structures/ptol/temple_2.xml:26
+msgid "Train Heroes and Healers. Research special technologies."
+msgstr ""
+
+#: simulation/templates/structures/ptol/temple_2.xml:28
+msgid "TempleOfIsis"
+msgstr ""
+
 #: simulation/templates/structures/ptol/tower_artillery.xml:9
 msgid "mktr-n-ḏw"
 msgstr "mktr-n-ḏw"
@@ -1526,9 +1582,9 @@ msgstr "Castra"
 
 #: simulation/templates/structures/rome/army_camp.xml:73
 msgid ""
-"Build in neutral or enemy territory. Train Advanced Melee Infantry. "
-"Construct Rams. Garrison Soldiers for additional arrows."
-msgstr "中立または敵の領域に建設できますが領域を獲得できません。上級兵士を養成でき、兵士を駐留させることで矢を放ちます。"
+"Build in neutral or enemy territory. Train Advanced Melee Infantry and "
+"Marian Legionaries. Construct Rams. Garrison Soldiers for additional arrows."
+msgstr ""
 
 #: simulation/templates/structures/rome/army_camp.xml:31
 #: simulation/templates/structures/rome/army_camp.xml:75
@@ -1545,7 +1601,7 @@ msgstr "Castrum"
 
 #: simulation/templates/structures/rome/civil_centre.xml:12
 msgid "Forum"
-msgstr "Forum"
+msgstr ""
 
 #: simulation/templates/structures/rome/corral.xml:8
 msgid "Saeptum"
@@ -1711,6 +1767,10 @@ msgstr "列柱"
 msgid "Corinthian Colonnade"
 msgstr "コリント式列柱"
 
+#: simulation/templates/structures/shrine_celtic.xml:9
+msgid "Henge"
+msgstr ""
+
 #: simulation/templates/structures/shrine_chinese.xml:9
 msgid "Bǎotǎ"
 msgstr "Bǎotǎ"
@@ -1723,7 +1783,7 @@ msgstr "キオスク聖域"
 #: simulation/templates/structures/athen/temple.xml:9
 #: simulation/templates/structures/mace/temple.xml:9
 #: simulation/templates/structures/ptol/temple.xml:12
-#: simulation/templates/structures/ptol/temple_2.xml:11
+#: simulation/templates/structures/ptol/temple_2.xml:25
 #: simulation/templates/structures/sele/temple.xml:9
 #: simulation/templates/structures/shrine_greek_01.xml:9
 #: simulation/templates/structures/shrine_greek_02.xml:9
@@ -1735,6 +1795,10 @@ msgstr "Naos"
 msgid "Aedēs Sanitatem"
 msgstr "Aedēs Sanitatem"
 
+#: simulation/templates/structures/shrine_persian.xml:9
+msgid "Fire Temple"
+msgstr ""
+
 #: simulation/templates/structures/spart/gerousia.xml:22
 msgid "Spartan Senate"
 msgstr "スパルタ長老会"
@@ -1744,8 +1808,8 @@ msgid "Gerousia"
 msgstr "Gerousia"
 
 #: simulation/templates/structures/spart/gerousia.xml:24
-msgid "Train Heroes."
-msgstr "英雄を養成できます"
+msgid "Research technologies."
+msgstr ""
 
 #: simulation/templates/structures/spart/persian_stoa.xml:9
 msgid "\\\"Persian\\\" Stoa"
@@ -1762,6 +1826,10 @@ msgstr "軍人大食堂"
 #: simulation/templates/structures/spart/syssiton.xml:24
 msgid "Syssition"
 msgstr "シッシティオン"
+
+#: simulation/templates/structures/spart/syssiton.xml:25
+msgid "Train Champions and Heroes."
+msgstr "チャンピオンユニットと英雄の養成ができます。"
 
 #: simulation/templates/structures/spart/syssiton.xml:27
 msgid "Syssiton"
@@ -1911,11 +1979,13 @@ msgstr "家"
 
 #: simulation/templates/structures/kush/pyramid_small.xml:26
 #: simulation/templates/structures/pers/ice_house.xml:27
+#: simulation/templates/structures/spart/syssiton.xml:27
 #: simulation/templates/template_structure_civic_house.xml:28
 #: simulation/templates/template_structure_economic_farmstead.xml:30
 #: simulation/templates/template_structure_economic_storehouse.xml:28
 #: simulation/templates/template_structure_military_barracks.xml:29
 #: simulation/templates/template_structure_military_dock.xml:27
+#: simulation/templates/template_structure_military_kennel.xml:30
 #: simulation/templates/template_structure_military_range.xml:25
 #: simulation/templates/template_structure_military_stable.xml:29
 #: simulation/templates/template_structure_resource_corral.xml:29
@@ -1932,14 +2002,15 @@ msgid "Stoa"
 msgstr "柱廊"
 
 #: simulation/templates/structures/athen/gymnasium.xml:26
-#: simulation/templates/structures/cart/apartment.xml:26
 #: simulation/templates/structures/gaul/tavern.xml:22
 #: simulation/templates/structures/han/laozigate.xml:24
 #: simulation/templates/structures/han/ministry.xml:39
 #: simulation/templates/structures/iber/monument.xml:34
+#: simulation/templates/structures/mace/arsenal.xml:6
 #: simulation/templates/structures/maur/elephant_stable.xml:7
 #: simulation/templates/structures/merc_camp_egyptian.xml:31
 #: simulation/templates/structures/rome/army_camp.xml:75
+#: simulation/templates/structures/spart/gerousia.xml:26
 #: simulation/templates/template_structure_civic_stoa.xml:30
 #: simulation/templates/template_structure_civic_temple.xml:32
 #: simulation/templates/template_structure_economic_market.xml:28
@@ -2085,8 +2156,6 @@ msgstr "経済施設"
 
 #: simulation/templates/template_structure_economic_farmstead.xml:26
 #: simulation/templates/template_structure_economic_farmstead.xml:30
-#: simulation/templates/template_structure_special_rotarymill.xml:32
-#: simulation/templates/template_structure_special_rotarymill.xml:34
 msgid "Farmstead"
 msgstr "農場"
 
@@ -2142,7 +2211,8 @@ msgstr "攻城兵器の作成、テクノロジーの研究ができます。一
 #: simulation/templates/structures/han/academy.xml:31
 #: simulation/templates/structures/han/civil_centre_court.xml:19
 #: simulation/templates/structures/kush/pyramid_large.xml:29
-#: simulation/templates/structures/kush/temple_amun.xml:31
+#: simulation/templates/structures/kush/temple_amun.xml:34
+#: simulation/templates/structures/ptol/temple_2.xml:28
 #: simulation/templates/structures/rome/temple_mars.xml:14
 #: simulation/templates/template_structure_military_arsenal.xml:28
 #: simulation/templates/template_structure_military_elephant_stable.xml:29
@@ -2214,6 +2284,16 @@ msgstr "要塞"
 msgid "Garrison Soldiers for additional arrows."
 msgstr "兵士を駐留させることで弓矢を放ちます。"
 
+#: simulation/templates/template_structure_military_kennel.xml:28
+#: simulation/templates/template_structure_military_kennel.xml:29
+#: simulation/templates/template_structure_military_kennel.xml:30
+msgid "Kennel"
+msgstr "Kennel"
+
+#: simulation/templates/template_structure_military_kennel.xml:38
+msgid "Train War Dogs."
+msgstr ""
+
 #: simulation/templates/template_structure_military_range.xml:22
 msgid "Practice Range"
 msgstr "射撃訓練場"
@@ -2277,16 +2357,6 @@ msgstr "円形劇場"
 #: simulation/templates/template_structure_special_library.xml:27
 msgid "Library"
 msgstr "図書館"
-
-#: simulation/templates/template_structure_special_rotarymill.xml:33
-msgid "Rotary Mill"
-msgstr "回転式製粉所"
-
-#: simulation/templates/template_structure_special_rotarymill.xml:38
-msgid ""
-"Dropsite for harvested Food. Capture one of these to increase nearby food "
-"production."
-msgstr ""
 
 #: simulation/templates/template_structure_special_theater.xml:25
 #: simulation/templates/template_structure_special_theater.xml:27

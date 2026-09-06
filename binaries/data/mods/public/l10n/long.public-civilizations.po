@@ -2,33 +2,37 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: None\n"
-"POT-Creation-Date: 2023-06-05 07:19+0000\n"
-"PO-Revision-Date: 2023-06-05 07:19+0000\n"
+"POT-Creation-Date: 2024-07-26 07:18+0000\n"
+"PO-Revision-Date: 2024-07-26 07:18+0000\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit"
 
-msgid "Themistocles"
-msgstr "Danh Tướng Themistocles"
+msgid "Silver Owls"
+msgstr "Cailleachan-oidhche airgid"
 
-msgid "Cleon"
-msgstr "Tướng Quân Cleon"
+msgid ""
+"The mines at Laureion in Attica provided Athens with a wealth of silver from which to "
+"mint her famous and highly prized coin, The Athenian Owl."
+msgstr ""
+"Аттикадагы Лаврион мәгъдәнлекләре көмеш белән муллыклы итеп Афина шәһәрен тәэмин "
+"иткәннәр. Шул көмештән билгеле һәм бик кыйммәтле тәнкәләрне бизәк сукканлар, аларны "
+"\"Афина ябалаклары\" дип атаганнар. "
 
-msgid "Cleophon"
-msgstr "la kliofon."
+msgid "Workers +10% metal gather rate per phase advance."
+msgstr "Работници: +10% скорост на събиране на метал при всяко преминаване към следваща фаза."
 
-msgid "Thrasybulus"
-msgstr "Thraszübulosz"
+msgid "Epilektoi Infantry"
+msgstr "Epilektoiskt infanteri"
 
-msgid "Iphicrates"
-msgstr "la .ifikratys."
+msgid "The best of the hoplites were chosen to form a group of elite professional soldiers."
+msgstr ""
+"بهترین های هاپلایت ها یا نیزه دار های یونانی انتخاب شدن تا یک گروه از سرباز های حرفه ای"
+" و زبده تشکیل دهند."
 
-msgid "Demosthenes"
-msgstr "Déamoistéanas"
-
-msgid "Pericles"
-msgstr "la periklys."
+msgid "Elite Hoplites can promote to Champion Spearmen."
+msgstr "نیزه دار های زبده یونانی یا هاپلایت ها میتوانند به نیزه دار قهرمان ارتقا بیابند."
 
 msgid "Cimon"
 msgstr "Kimon II"
@@ -54,31 +58,32 @@ msgstr "अल्खीबियादिस"
 msgid "Miltiades"
 msgstr "மில்டியேட்ஸ்"
 
-msgid "Workers +10% metal gather rate per phase advance."
-msgstr "Cruinnichidh an luchd-obrach meatailt +10% nas luaithe le gach adhartas gu linn ùr."
+msgid "Cleon"
+msgstr "la klion."
+
+msgid "Cleophon"
+msgstr "la kliofon."
+
+msgid "Thrasybulus"
+msgstr "Thraszübulosz"
+
+msgid "Demosthenes"
+msgstr "Déamoistéanas"
+
+msgid "Woad Warriors"
+msgstr "Guerreros de Vexetal Índigo"
 
 msgid ""
-"The mines at Laureion in Attica provided Athens with a wealth of silver from which to "
-"mint her famous and highly prized coin, The Athenian Owl."
+"Britons paint their bodies with Woad, which produces a blue color and gives them a "
+"fiercesome appearance in battle."
 msgstr ""
-"Аттикадагы Лаврион мәгъдәнлекләре көмеш белән муллыклы итеп Афина шәһәрен тәэмин "
-"иткәннәр. Шул көмештән билгеле һәм бик кыйммәтле тәнкәләрне бизәк сукканлар, аларны "
-"\"Афина ябалаклары\" дип атаганнар. "
+"Britonnen bemalen ihre Körper mit Färberwaid, welcher eine blaue Farbe produziert und "
+"Ihnen in der Schlacht ein erbittertes Aussehen gibt."
 
-msgid "Silver Owls"
-msgstr "Cailleachan-oidhche airgid"
-
-msgid "Karatakos"
-msgstr "la karatakos."
-
-msgid "Vosenius"
-msgstr "Voiséineas"
-
-msgid "Kunobelinos"
-msgstr "la kunobelinos."
-
-msgid "Boudicca"
-msgstr "Nữ Hoàng Boudicca"
+msgid "All Infantry Units +5% movement speed, and gain +1 loot taking."
+msgstr ""
+"Tutte le unità di fanteria aumentano la velocità di movimento del 5% e guadagnano un "
+"bottino di +1."
 
 msgid "Prasutagus"
 msgstr "प्रासुतागुस"
@@ -101,8 +106,51 @@ msgstr "แอดมินิวส"
 msgid "Dubnovellaunus"
 msgstr "ดุบบิโนเวลาอุนุส"
 
-msgid "Hannibal Barca"
-msgstr "la xanibyl.barkas."
+msgid "Vosenius"
+msgstr "Voiséineas"
+
+msgid "Deas Celtica"
+msgstr "Boginie celtyckie"
+
+msgid "Celtic religion and druidry inspired their warlike mindset."
+msgstr "Die keltische Religion und das Druidentum inspirierten ihre kriegerische Einstellung."
+
+msgid "Druids increase attack rates of soldiers near them by 5%."
+msgstr "Los druidas incrementan las proporciones de ataque de soldados cercanos a ellos por 5%."
+
+msgid "Commercial Acumen"
+msgstr "Merkataritzarako gaitasuna"
+
+msgid "Merchant Ships +25% trade gain."
+msgstr "Les Navires commerciaux obtiennent +25 % de gain d’échange."
+
+msgid "Desirable Products"
+msgstr "Begerenswaardige producten"
+
+#, python-format
+msgid "Docks and Markets +10% international trade bonus."
+msgstr "Augmente le bonus d'échange international des marchés et ports de +10 %."
+
+msgid "Hasdrubal Barca"
+msgstr "Hasdrubal, Sohn Barkas"
+
+msgid "Hasdrubal Gisco"
+msgstr "Hasdrubal, Sohn Gisgos"
+
+msgid "Hanno the Elder"
+msgstr "Hanno yang Dihormati"
+
+msgid "Mago Barca"
+msgstr "Magó Barkasz"
+
+msgid "Hasdrubal the Fair"
+msgstr "Hasdrubal Người Công Bằng"
+
+msgid "Hanno the Great"
+msgstr "Hannon el Grande"
+
+msgid "Himilco"
+msgstr "Гимилькон"
 
 msgid "Hampsicora"
 msgstr "हाम्पिस्कोरा"
@@ -122,60 +170,11 @@ msgstr "Himilcon Phameas"
 msgid "Hasdrubal the Boetharch"
 msgstr "Hasdrubal sang Boetharch"
 
-msgid "Hamilcar Barca"
-msgstr "la xamilkar.barkas."
-
-msgid "Hasdrubal Barca"
-msgstr "हासद्रुबाल बार्का"
-
-msgid "Hasdrubal Gisco"
-msgstr "Hasdrubal, Sohn Gisgos"
-
-msgid "Hanno the Elder"
-msgstr "Hanno yang Dihormati"
-
-msgid "Maharbal"
-msgstr "Maharbalas"
-
-msgid "Mago Barca"
-msgstr "Magó Barkasz"
-
-msgid "Hasdrubal the Fair"
-msgstr "Hasdrubal Người Công Bằng"
-
-msgid "Hanno the Great"
-msgstr "Hannon el Grande"
-
-msgid "Himilco"
-msgstr "Гимилькон"
-
-msgid "Merchant Ships +25% trade gain."
-msgstr "Les Navires commerciaux obtiennent +25 % de gain d’échange."
-
-msgid "Commercial Acumen"
-msgstr "Merkataritzarako gaitasuna"
-
-#, python-format
-msgid "Docks and Markets +10% international trade bonus."
-msgstr "Augmente le bonus d'échange international des marchés et ports de +10 %."
-
-msgid "Desirable Products"
-msgstr "Begerenswaardige producten"
-
-msgid "Viridomarus"
-msgstr "Viridomarus"
-
-msgid "Brennus"
-msgstr "ब्रेन्नुस"
-
 msgid "Cativolcus"
 msgstr "\"كاتيفولكوس\""
 
 msgid "Cingetorix"
 msgstr "\"فيرسينجيتوريكس\""
-
-msgid "Vercingetorix"
-msgstr "Tể Tướng Vercingetorix"
 
 msgid "Divico"
 msgstr "डिव्हिको"
@@ -186,6 +185,9 @@ msgstr ".ambioriks."
 msgid "Liscus"
 msgstr "लिस्कुस"
 
+msgid "Orgetorix"
+msgstr "ऑर्गेटेरिक्स"
+
 msgid "Valetiacus"
 msgstr "Валецијакус"
 
@@ -193,64 +195,10 @@ msgid "Viridovix"
 msgstr "विरिदोविक्स"
 
 msgid "Liu Ying"
-msgstr "Liou Jing"
-
-msgid "Liu Ao"
-msgstr "전한 성제 유오"
-
-msgid "Liu Xin"
-msgstr "Liou Sin"
-
-msgid "Liu Kan"
-msgstr "Liou Kan"
-
-msgid "Liu Xuan"
-msgstr "Liou Suan"
-
-msgid "Liu Xiu"
-msgstr "후한 광무제 유수"
-
-msgid "Liu Zhuang"
-msgstr "Liu Zhuang"
-
-msgid "Liu Da"
-msgstr "후한 장제 유달"
-
-msgid "Liu Zhao"
-msgstr "Liu Zhao"
-
-msgid "Liu Long"
-msgstr "Liou Long"
-
-msgid "Liu Hu"
-msgstr "Liou Chu"
+msgstr "Լիու Յինգ"
 
 msgid "Liu Gong"
 msgstr "西漢前少帝劉恭 (軼)"
-
-msgid "Liu Yi"
-msgstr "동한 전소제 유의"
-
-msgid "Liu Bao"
-msgstr "Liou Pao"
-
-msgid "Liu Bing"
-msgstr "Liou Ping"
-
-msgid "Liu Zuan"
-msgstr "Лю Цзуань"
-
-msgid "Liu Zhi"
-msgstr "후한 환제 유지"
-
-msgid "Liu Bian"
-msgstr "Liou Pian"
-
-msgid "Liu Xie"
-msgstr "Liou Sie"
-
-msgid "Liu Hong"
-msgstr "Liou Chong"
 
 msgid "Liu Heng"
 msgstr "Liou Cheng"
@@ -262,7 +210,7 @@ msgid "Liu Che"
 msgstr "Liou Čche"
 
 msgid "Liu Fuling"
-msgstr "Liou Fuling"
+msgstr "Լիու Ֆուլինգ"
 
 msgid "Liu He"
 msgstr "Liou Che"
@@ -273,31 +221,62 @@ msgstr "لیو بینگ‌یی"
 msgid "Liu Shi"
 msgstr "전한 원제 유석"
 
-msgid "Viriato"
-msgstr "Viriathus"
+msgid "Liu Ao"
+msgstr "전한 성제 유오"
 
-msgid "Karos"
-msgstr "Caro de Segeda"
+msgid "Liu Xin"
+msgstr "Լիու Սյին"
 
-msgid "Indibil"
-msgstr "אינדיביל  "
+msgid "Liu Kan"
+msgstr "Լիու Քան"
 
-msgid "Audax"
-msgstr "आउदाक्स"
+msgid "Liu Xuan"
+msgstr "Լիու Սյուան"
 
-msgid "Ditalcus"
-msgstr "दिताल्कुस"
+msgid "Liu Xiu"
+msgstr "Լիու Սյիու"
 
-msgid "Minurus"
-msgstr "Մինուրոս"
+msgid "Liu Zhuang"
+msgstr "Լիու Ճուանգ"
 
-msgid "Tautalus"
-msgstr "Տաուտալոս"
+msgid "Liu Da"
+msgstr "후한 장제 유달"
 
-msgid "Iberians start with City Walls around their base on most maps."
-msgstr ""
-"Tòisichidh na h-Ibèirich le ballachan baile timcheall air a’ bhunait aca air a’ "
-"mhòrchuid a mhapaichean."
+msgid "Liu Zhao"
+msgstr "Liu Zhao"
+
+msgid "Liu Long"
+msgstr "Լիու Լոնգ"
+
+msgid "Liu Hu"
+msgstr "Լիու Հու"
+
+msgid "Liu Yi"
+msgstr "동한 전소제 유의"
+
+msgid "Liu Bao"
+msgstr "Լիու Պաո"
+
+msgid "Liu Bing"
+msgstr "Լիու Պինգ"
+
+msgid "Liu Zuan"
+msgstr "Լիու Ցուան"
+
+msgid "Liu Zhi"
+msgstr "후한 환제 유지"
+
+msgid "Liu Bian"
+msgstr "Լիու Պիան"
+
+msgid "Liu Xie"
+msgstr "Լիու Սյիե"
+
+msgid "Liu Hong"
+msgstr "Liou Chong"
+
+msgid "Starting Walls"
+msgstr "Розпочато побудову Стін"
 
 msgid ""
 "With exception to alluvial plains and river valleys, stone is abundant in the Iberian "
@@ -307,8 +286,13 @@ msgstr ""
 "praktycznie wszędzie, poza równinami aluwialnymi oraz dolinami rzek i był masowo "
 "wykorzystywany do wznoszenia wszelkiego rodzaju budowli."
 
-msgid "Starting Walls"
-msgstr "Розпочато побудову Стін"
+msgid "Iberians start with City Walls around their base on most maps."
+msgstr ""
+"Tòisichidh na h-Ibèirich le ballachan baile timcheall air a’ bhunait aca air a’ "
+"mhòrchuid a mhapaichean."
+
+msgid "Massive Towers"
+msgstr "Velké a důkladné věže"
 
 #, python-format
 msgid ""
@@ -319,23 +303,32 @@ msgstr ""
 "més lent, guanyen un 60% més de salut, guanyen 3 més de capacitat de refugi i 1 fletxa "
 "més per defecte."
 
-msgid "Massive Towers"
-msgstr "Velké a důkladné věže"
+msgid "Audax"
+msgstr "आउदाक्स"
+
+msgid "Calcus"
+msgstr "काल्कुस"
+
+msgid "Ditalcus"
+msgstr "दिताल्कुस"
+
+msgid "Minurus"
+msgstr "Մինուրոս"
+
+msgid "Olyndicus"
+msgstr "Olyndicus"
+
+msgid "Orison"
+msgstr "Orison"
+
+msgid "Tanginus"
+msgstr "Tanginus"
+
+msgid "Tautalus"
+msgstr "Տաուտալոս"
 
 msgid "Kashta"
 msgstr "Kachta "
-
-msgid "Malewiebamani"
-msgstr "Mailemhiebeamanaí"
-
-msgid "Harsiotef"
-msgstr "Hairsióitef"
-
-msgid "Shanakdakhete"
-msgstr "Sianachdaichete"
-
-msgid "Amanishakheto"
-msgstr "Amainiseacheto"
 
 msgid "Alara"
 msgstr "Alara"
@@ -364,37 +357,28 @@ msgstr "आत्लानेर्सा"
 msgid "Nasalsa"
 msgstr "नासाल्सा"
 
-msgid "Battering Rams +20% attack damage and +2 garrison capacity."
-msgstr ""
-"Стена җимерә торган кораллар 20%-ка күбрәк зарар китерәләр һәм 2 юнитка күбрәк сыйдыра "
-"алалар."
+msgid "Malewiebamani"
+msgstr "Mailemhiebeamanaí"
+
+msgid "Shanakdakhete"
+msgstr "Sianachdaichete"
+
+msgid "Amanishakheto"
+msgstr "Amainiseacheto"
 
 msgid "Large Rams"
 msgstr "Большие стенобитные орудия"
 
-msgid "Alexander the Great"
-msgstr "Aleksandras Makedonietis"
-
-msgid "Perseus"
-msgstr "Perseo de Macedonia"
-
-msgid "Craterus"
-msgstr "Cráitéaras"
-
-msgid "Meleager"
-msgstr "Meleagrosz"
-
-msgid "Philip II"
-msgstr "Filip al II-lea"
+msgid "Battering Rams +20% attack damage and +2 garrison capacity."
+msgstr ""
+"Стена җимерә торган кораллар 20%-ка күбрәк зарар китерәләр һәм 2 юнитка күбрәк сыйдыра "
+"алалар."
 
 msgid "Antipater"
 msgstr "Antipatrosz"
 
 msgid "Philip IV"
 msgstr "Filipe IV da Macedónia"
-
-msgid "Lysander"
-msgstr "Lüszandrosz"
 
 msgid "Lysimachus"
 msgstr "Lüszimakhosz"
@@ -411,53 +395,82 @@ msgstr "देमेट्रियस द्वितीय एटोलिक�
 msgid "Philip V"
 msgstr "Filipe V da Macedónia"
 
-msgid "Chandragupta Maurya"
-msgstr "Chandragupta Mauraidhea"
+msgid "Perseus"
+msgstr "Perseo de Macedonia"
+
+msgid "Craterus"
+msgstr "Cráitéaras"
+
+msgid "Meleager"
+msgstr "Meleagrosz"
+
+msgid "Lysander"
+msgstr "Lüszandrosz"
 
 msgid "Bindusara Maurya"
 msgstr "Bindusara Mauraidhea"
 
-msgid "Ashoka the Great"
-msgstr "അശോക ചക്രവര്‍ത്തി"
+msgid "Brihadratha Maurya"
+msgstr "Brihadratha Mauraidhea"
 
 msgid "Dasharatha Maurya"
 msgstr "Dasharatha Mauraidhea"
 
+msgid "Devavarman Maurya"
+msgstr "Déabhabharmán Mauiria"
+
+msgid "Kunala Maurya"
+msgstr "Kunala Maurya"
+
 msgid "Samprati Maurya"
-msgstr "Samprati de Magadha"
+msgstr "Samprati Mauraidhea"
 
 msgid "Shalishuka Maurya"
 msgstr "Salishuka Mauraidhea"
 
-msgid "Devavarman Maurya"
-msgstr "Devavarman de Magadha"
-
 msgid "Shatadhanvan Maurya"
 msgstr "Shatadhanvan Mauraidhea"
 
-msgid "Brihadratha Maurya"
-msgstr "Brihadratha de Magadha"
+msgid "Tivala Maurya"
+msgstr "Tivala Maurya"
 
-msgid "Kurush II the Great"
-msgstr "Kurush al II-lea cel Mare"
+msgid "Darics"
+msgstr "Koin Emas Darik"
 
-msgid "Haxamanish"
-msgstr "Haksamanish"
+msgid "Land Traders +25% trade gain."
+msgstr "Les Marchands terrestres gagnent +25 % de gains commerciaux."
 
-msgid "Xsayarsa II"
-msgstr "क्षयार्षा द्वितीय"
+msgid "Times of War"
+msgstr "Tijden van oorlog"
 
-msgid "Darayavahush I"
-msgstr "داراياڤاهوش الأوّل"
+msgid "The Persians were known for their large cavalry contingent."
+msgstr "Die Perser waren für ihre großen Kavallerie-Truppenkontingente bekannt."
+
+msgid "The batch training time of units trained in Stables decreases each phase advance."
+msgstr ""
+"El tiempo de adiestramiento en grupo de las unidades producidas en los establos "
+"disminuye en cada avance de fase."
+
+msgid "Satrapy Tribute"
+msgstr "Tribuut aan de Satrapen"
+
+msgid ""
+"The empire was divided into provinces, called “Satrapies,” that sent yearly tribute to "
+"the ruling Persian dynasty in Persepolis as a form of tax."
+msgstr ""
+"Das Reich war in Provinzen unterteilt, die „Satrapien“, welche jährlich Tribute, als "
+"eine Form von Steuern, an die herrschende persische Dynastie nach Persepolis schickten."
+
+msgid "Upgrade the Throne Hall to receive a free trickle of a desired resource."
+msgstr ""
+"Faça a atualização do Salão do Trono para receber um fluxo contínuo gratuito de um "
+"recurso desejado."
 
 msgid "Cambyses II"
 msgstr "कम्बूजिय द्वितीय"
 
 msgid "Bardiya"
 msgstr "Smerdi di Persia"
-
-msgid "Xsayarsa I"
-msgstr "Xerxés I. (Chšajáršá)"
 
 msgid "Artaxshacha I"
 msgstr "Artakserkses I Długoręki"
@@ -474,25 +487,54 @@ msgstr "la .artakcaxas. poi remoi"
 msgid "Artaxshacha III"
 msgstr "Artakserkses III Ochos"
 
-msgid "Land Traders +25% trade gain."
-msgstr "Les Marchands terrestres gagnent +25 % de gains commerciaux."
+msgid "Haxamanish"
+msgstr "Haksamanish"
 
-msgid "Darics"
-msgstr "Koin Emas Darik"
+msgid "Xsayarsa II"
+msgstr "क्षयार्षा द्वितीय"
 
-msgid "Stable −10% batch training time per phase advance."
+msgid "Polybolos"
+msgstr "Catapultă Antică Grecească"
+
+msgid "Bolt Shooters −33% attack damage and −33% attack time."
+msgstr "Gheibh losgaiche crainn −33% a dhochann ionnsaighe ’s −33% air ùine na h-ionnsaighe."
+
+msgid "Nile Delta"
+msgstr "Δέλτα του Νείλου"
+
+msgid ""
+"The Nile Delta is a region where the Nile River divides into several branches to flow "
+"into the Mediterranean Sea, in northern Egypt."
 msgstr ""
-"−10% kiképzési idő minden szakaszváltás után az istállókban történő csoportos "
-"kiképzéseknél"
+"Il Delta del Nilo è una regione in cui il fiume Nilo si divide in diversi rami per "
+"sfociare nel Mar Mediterraneo, nell'Egitto settentrionale."
 
-msgid "The Persians were known for their large cavalry contingent"
-msgstr "I persiani erano conosciuto per il loro grande contingente di cavalleria"
+msgid "The three farming technologies are available in Village Phase."
+msgstr "Les trois technologiques d'agriculture sont disponibles en période des hameaux."
 
-msgid "Time of War"
-msgstr "Tiempos de guerra"
+msgid "Ptolemy Philadelphus"
+msgstr "Ptolemaiosz Philadelphosz"
 
-msgid "Ptolemy Soter"
-msgstr "Ptolemeu l Salvador"
+msgid "Ptolemy Epigone"
+msgstr "Ptolémée de Telmessos"
+
+msgid "Ptolemy Eurgetes"
+msgstr "Ptolemaios III. Euergetes I."
+
+msgid "Ptolemy Epiphanes"
+msgstr "Ptolemaios V. Epiphanes Eucharistos"
+
+msgid "Ptolemy Philometor"
+msgstr "Ptolemaios VI. Philometor"
+
+msgid "Ptolemy Eupator"
+msgstr "Ptolemaiosz Eupatór"
+
+msgid "Ptolemy Alexander"
+msgstr "Ptolemaios X. Alexandros I."
+
+msgid "Ptolemy Neos Dionysos"
+msgstr "Ptolomeo XII Neo Dionisio Auletes"
 
 msgid "Ptolemy Neos Philopater"
 msgstr "Ptolemaios VII. Neos Filopatór"
@@ -521,53 +563,46 @@ msgstr "ארסינואה  הרביעית "
 msgid "Arsinoe II"
 msgstr "आर्सिनोयी द्वितीय"
 
-msgid "Ptolemy Philadelphus"
-msgstr "Ptolemaiosz Philadelphosz"
+msgid "Fertility"
+msgstr "Hedelmällisyys"
 
-msgid "Ptolemy Epigone"
-msgstr "Ptolémée de Telmessos"
+msgid "Rome was one of the most populous cities in the ancient world."
+msgstr "Rom war einst eine der Städte mit den meisten Einwohnern der antiken Welt."
 
-msgid "Ptolemy Eurgetes"
-msgstr "Ptolemaios III. Euergetes I."
+msgid "Women train from houses without the need to research Fertility Festival."
+msgstr ""
+"Les citoyennes sont entraînées dans les maisons  sans recourir à la recherche \"Joie de"
+" la fertilité\"."
 
-msgid "Ptolemy Philopater"
-msgstr "Ptolemaios IV. Philopator"
+msgid "Testudo Formation"
+msgstr "Σχηματισμός Τεστούντο (Χελώνας)."
 
-msgid "Ptolemy Epiphanes"
-msgstr "Ptolemaios V. Epiphanes Eucharistos"
+msgid ""
+"The Romans commonly used the Testudo or 'turtle' formation for defense: Legionaries "
+"were formed into hollow squares with twelve men on each side, standing so close "
+"together that their shields overlapped like fish scales."
+msgstr ""
+"رومی ها عموما از آرایش نظامی تستودو یا لاکپشتی برای حالت دفاعی استفاده می کردند، بدین "
+"شکل که یک لژیون رومی بصورت متمرکز در کنار هم حالت دفاعی می گرفتند و در هر جهت دوازده "
+"سرباز به هم چسبیده در حالی که سپرهای آنها به هم لب به لب بود قرار می گرفتند و کل افراد "
+"هم از کنار و هم از بالا با سپر از همدیگر محافظت می کردند."
 
-msgid "Ptolemy Philometor"
-msgstr "Ptolemaios VI. Philometor"
+msgid "Roman Legionaries can form a Testudo."
+msgstr "’S urrainn dha na lèigiunaich Ròmanach a dhol dhan chumadh shligeanach."
 
-msgid "Ptolemy Eupator"
-msgstr "Ptolemaiosz Eupatór"
+msgid "Centurions"
+msgstr "Կենտուրիոններ"
 
-msgid "Ptolemy Alexander"
-msgstr "Ptolemaios X. Alexandros I."
+msgid "Centurions were the officers responsible for a centuria, a group of 100 soldiers."
+msgstr ""
+"Centurions waren de officieren die verantwoordelijk waren voor een centuria, een groep "
+"van 100 soldaten."
 
-msgid "Ptolemy Neos Dionysos"
-msgstr "Ptolomeo XII Neo Dionisio Auletes"
-
-msgid "Bolt Shooters −33% attack damage and −33% attack time."
-msgstr "Gheibh losgaiche crainn −33% a dhochann ionnsaighe ’s −33% air ùine na h-ionnsaighe."
-
-msgid "Polybolos"
-msgstr "Catapultă Antică Grecească"
+msgid "Promote Elite Rank Spearmen or Swordsmen to Champion Centurions."
+msgstr "Los lanceros y los espadas más veteranos pueden promocionar a centuriones de élite."
 
 msgid "Lucius Junius Brutus"
 msgstr "ലൂസിയസ് യൂനിയസ് ബ്രൂട്ടസ്"
-
-msgid "Publius Sempronius Tuditanus"
-msgstr "പ്യൂബിയസ് സെംപ്രോണിയസ് റ്റുഡിറ്റാനസ്"
-
-msgid "Marcus Cornelius Cethegus"
-msgstr "മാര്‍ക്കസ് കൊര്‍ണേലിയസ് സെതെഗസ്"
-
-msgid "Quintus Caecilius Metellus Pius"
-msgstr "क्विन्टुस काइसिलियुस मेतेलुस पीयुस"
-
-msgid "Marcus Licinius Crassus"
-msgstr "മാര്‍ക്കസ് ലിസിനിയസ് ക്രാസ്സസ്"
 
 msgid "Lucius Tarquinius Collatinus"
 msgstr "ലൂസിയസ് ടാര്‍ക്വിനിയസ് കൊളാറ്റിനസ്"
@@ -593,41 +628,41 @@ msgstr "ലൂസിയസ് പാപ്പിറിയസ് കഴ്‍സ�
 msgid "Aulus Manlius Capitolinus"
 msgstr "ഓലസ് മാന്‍ലിയസ് കാപ്പിറ്റോളിനസ്"
 
-msgid "Publius Cornelius Scipio Africanus"
-msgstr "പ്യൂബിയസ് കോര്‍ണേലിയസ് സ്കിപിയോ ആഫ്രിക്കാനസ്"
+msgid "Publius Sempronius Tuditanus"
+msgstr "പ്യൂബിയസ് സെംപ്രോണിയസ് റ്റുഡിറ്റാനസ്"
 
-msgid "Roman Legionaries can form a Testudo."
-msgstr "’S urrainn dha na lèigiunaich Ròmanach a dhol dhan chumadh shligeanach."
+msgid "Marcus Cornelius Cethegus"
+msgstr "മാര്‍ക്കസ് കൊര്‍ണേലിയസ് സെതെഗസ്"
 
-msgid ""
-"The Romans commonly used the Testudo or 'turtle' formation for defense: Legionaries "
-"were formed into hollow squares with twelve men on each side, standing so close "
-"together that their shields overlapped like fish scales."
-msgstr ""
-"رومی ها عموما از آرایش نظامی تستودو یا لاکپشتی برای حالت دفاعی استفاده می کردند، بدین "
-"شکل که یک لژیون رومی بصورت متمرکز در کنار هم حالت دفاعی می گرفتند و در هر جهت دوازده "
-"سرباز به هم چسبیده در حالی که سپرهای آنها به هم لب به لب بود قرار می گرفتند و کل افراد "
-"هم از کنار و هم از بالا با سپر از همدیگر محافظت می کردند."
+msgid "Quintus Caecilius Metellus Pius"
+msgstr "क्विन्टुस काइसिलियुस मेतेलुस पीयुस"
 
-msgid "Testudo Formation"
-msgstr "Σχηματισμός Τεστούντο (Χελώνας)."
+msgid "Marcus Licinius Crassus"
+msgstr "മാര്‍ക്കസ് ലിസിനിയസ് ക്രാസ്സസ്"
 
-msgid "Battering Rams +20% attack damage. Stone Throwers +10% attack damage."
-msgstr ""
-"Стена җимерә торган кораллар 20%-ка күбрәк зарар китерәләр. Таш ыргыткан кораллар "
-"10%-ка күбрәк җимерү китерәләр."
+msgid "Antiochus I Soter"
+msgstr "Antioch·o Premiér Sotèr"
 
-msgid "Legionary Engineers"
-msgstr "Innleadairean lèigiunach"
+msgid "Antiochus II Theos"
+msgstr "दिव्य अंतायोकस द्वितीय"
 
-msgid "Seleucus I Nicator"
-msgstr "Sèlèco Premiér Nicator"
+msgid "Seleucus II Callinicus"
+msgstr "Seleukos II. Kalliníkos (Slavně vítězící)"
+
+msgid "Seleucus III Ceraunus"
+msgstr "Seleuco III Sotere Cerauno"
+
+msgid "Seleucus IV Philopator"
+msgstr "पितृनिष्ठ सेल्यूकस चतुर्थ"
+
+msgid "Antiochus V Eupator"
+msgstr "Antiochos V. Eupatór (Z urozeného otce)"
+
+msgid "Demetrius I Soter"
+msgstr "Demetriu I el Salvador"
 
 msgid "Alexander I Balas"
 msgstr "Alessandro I Bala Epifane"
-
-msgid "Demetrius II Nicator"
-msgstr "Demetrios II. Theos Nikator Philadelphos"
 
 msgid "Antiochus VI Dionysus"
 msgstr "Antiochos VI. Epifanés Dionýsos"
@@ -649,9 +684,6 @@ msgstr "Séileucas V 'Philometor'"
 
 msgid "Antiochus VIII Grypus"
 msgstr "Antiochos VIII Philométor"
-
-msgid "Antiochus I Soter"
-msgstr "Antioch·o Premiér Sotèr"
 
 msgid "Antiochus IX Cyzicenus"
 msgstr "Aintíochas IX 'Cyzicenus'"
@@ -683,47 +715,42 @@ msgstr "Antiochos XIII. Philadelphos Asiatikos"
 msgid "Philip II Philoromaeus"
 msgstr "II. Philipposz Philoroméosz"
 
-msgid "Antiochus II Theos"
-msgstr "दिव्य अंतायोकस द्वितीय"
+msgid "Demetrius II Nicator"
+msgstr "Demetrios II. Theos Nikator Philadelphos"
 
-msgid "Seleucus II Callinicus"
-msgstr "Seleukos II. Kalliníkos (Slavně vítězící)"
+msgid "Spartan Women"
+msgstr "Σπαρτιάτισσες Γυναίκες"
 
-msgid "Seleucus III Ceraunus"
-msgstr "Seleuco III Sotere Cerauno"
+#, python-format
+msgid "Female Citizens +40% health and +50% melee attack hack damage."
+msgstr ""
+"Gheibh saoranaich bhoireann +40% de shlàinte ’s +50% a dhochann spealgaidh do "
+"dh’ionnsaighean dlùtha."
 
-msgid "Antiochus III Megas"
-msgstr "Antiochos III. der Große"
+msgid "Laws of Lycurgus"
+msgstr "Undang-undang Lycurgus"
 
-msgid "Seleucus IV Philopator"
-msgstr "पितृनिष्ठ सेल्यूकस चतुर्थ"
+msgid ""
+"Under the constitution written by the mythical lawgiver Lycurgus, the institution of "
+"the Agoge was established, where Spartans were trained from the age of 6 to be superior"
+" warriors in defense of the Spartan state."
+msgstr ""
+"Unter der Verfassung, die durch den mytischen Gesetzgeber Lykurg geschrieben wurde, "
+"wurde das System der Agoge etabliert, in dem Spartaner ab dem Alter von sechs Jahren zu"
+" überlegenen Kriegern ausgebildet wurden, um Sparta zu verteidigen. "
 
-msgid "Antiochus IV Epiphanes"
-msgstr "Antiochos IV. Epifanés (Zjevený bůh)"
-
-msgid "Antiochus V Eupator"
-msgstr "Antiochos V. Eupatór (Z urozeného otce)"
-
-msgid "Demetrius I Soter"
-msgstr "Demetriu I el Salvador"
-
-msgid "Leonidas"
-msgstr "לאונידאס הראשון"
-
-msgid "Eucleidas"
-msgstr "Eucleidas"
-
-msgid "Agesipolis"
-msgstr "Agesipolis I."
+msgid ""
+"Champion Hoplites are available in village phase, and can promote to highly experienced"
+" Olympic Champions."
+msgstr ""
+"Gli Opliti Campioni sono disponibili nella fase del villaggio e possono essere promossi"
+" a Campioni Olimpici di grande esperienza."
 
 msgid "Dienekes"
 msgstr "Díénéiceas"
 
-msgid "Brasidas"
-msgstr "Braszidasz"
-
-msgid "Agis"
-msgstr "Aegeas"
+msgid "Agis II"
+msgstr "II. Agisz"
 
 msgid "Archidamus"
 msgstr "Arcaíodamas"
@@ -735,19 +762,16 @@ msgid "Agesilaus"
 msgstr "Agesilaos II."
 
 msgid "Echestratus"
-msgstr "Éiceastratas"
+msgstr "एकेस्त्रातुस"
 
 msgid "Eurycrates"
 msgstr "Eurycrates"
 
-#, python-format
-msgid "Female Citizens +40% health and +50% melee attack hack damage."
-msgstr ""
-"Gheibh saoranaich bhoireann +40% de shlàinte ’s +50% a dhochann spealgaidh do "
-"dh’ionnsaighean dlùtha."
+msgid "Eucleidas"
+msgstr "Eucleidas"
 
-msgid "Spartan Women"
-msgstr "Σπαρτιάτισσες Γυναίκες"
+msgid "Agesipolis"
+msgstr "Agesipolis I."
 
 msgid "Athenians"
 msgstr "Muinntir na h‑Àithne"
@@ -773,8 +797,8 @@ msgid ""
 " customs and interests. Also, they built thousands of unique structures such as hill "
 "forts, crannogs and brochs."
 msgstr ""
-"Os Bretões eram as tribos Celtas das Ilhas Britânicas. Usando bigas (carros de guerra),"
-" montantes (espadas) e soldados poderosos de combate corpo-a-corpo, eles organizaram "
+"Os bretões eram as tribos celtas das Ilhas Britânicas. Usando bigas (carros de guerra),"
+" montantes (espadas) e soldados poderosos de combate corpo a corpo, eles organizaram "
 "revoltas temíveis contra Roma para proteger os seus costumes e interesses. Além disso, "
 "eles construíram milhares de estruturas únicas, como fortalezas de montanha, "
 "\"crannogs\" (habitações lacustres) e \"brochs\" (torres de pedra seca)."

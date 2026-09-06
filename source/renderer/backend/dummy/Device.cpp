@@ -1,4 +1,4 @@
-/* Copyright (C) 2023 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -80,6 +80,12 @@ std::unique_ptr<IGraphicsPipelineState> CDevice::CreateGraphicsPipelineState(
 	return CGraphicsPipelineState::Create(this, pipelineStateDesc);
 }
 
+std::unique_ptr<IComputePipelineState> CDevice::CreateComputePipelineState(
+	const SComputePipelineStateDesc& pipelineStateDesc)
+{
+	return CComputePipelineState::Create(this, pipelineStateDesc);
+}
+
 std::unique_ptr<IVertexInputLayout> CDevice::CreateVertexInputLayout(
 	const PS::span<const SVertexAttributeFormat> UNUSED(attributes))
 {
@@ -110,9 +116,9 @@ std::unique_ptr<IFramebuffer> CDevice::CreateFramebuffer(
 }
 
 std::unique_ptr<IBuffer> CDevice::CreateBuffer(
-	const char*, const CBuffer::Type type, const uint32_t size, const bool dynamic)
+	const char*, const CBuffer::Type type, const uint32_t size, const uint32_t usage)
 {
-	return CBuffer::Create(this, type, size, dynamic);
+	return CBuffer::Create(this, type, size, usage);
 }
 
 std::unique_ptr<IShaderProgram> CDevice::CreateShaderProgram(

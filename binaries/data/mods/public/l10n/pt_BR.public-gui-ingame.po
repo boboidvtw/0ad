@@ -1,83 +1,85 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2023 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# Aldo Leandro F
-# Alessandro Nunes
-# alrope
-# Álvaro Tavares de Oliveira
-# Angelo Florentino
-# 8a9afb43fd95d08d43e4b3f29e8e204d_f74a2a3
-# borg 2k
-# Caio Northfleet
-# Carlo Emmanoel Tolla de Oliveira
-# Dalcio Marçal
-# Diana K. Cury
-# 1e46fd82907595ae69bafb7f4e47cd1b_169840e
-# alveselvis16
-# Enrico Nicoletto
-# Ernan
-# Estevan Borges Martins
-# Estus
-# Fábio Medeiros
-# Filipe Oliveira
-# Geovå Ramalho dos Santos
-# Sturm
-# Guilherme Soster
-# Gustavo Moitinho
-# Hunteros
-# Igor Aleixo
-# Isaac Porto
-# João Francisco Gauze Carrer
-# jose
-# J. P. Lacerda
-# JulioBianor
-# Junior Lage
-# Kesley Martins
-# lecalam
-# Leonardo
-# Leonardo Tada Antunes
-# Lourenço Gaiteiro
-# d985c683c87c96d130507ab20847ffb3_c33e5c1
-# 998498d12a22dc2270ba5020996dacc6_1f522eb
-# Luis Santos
-# Marcelo Augusto Kniss
-# Marcos Correa
-# Marcus Rasseli
-# Mateus Felipe Cordeiro Caetano Pinto
-# Mateus Guerra
-# Mateus Tavares
-# Matheus Clemente
-# Mihailov Vasilievic Filho
-# mliell
-# mogafi
-# pizzaiolo
-# Paulo Castro
-# Pedro Augustus Diniz Falcão Silva
-# PedroDognani
-# Qodek
-# Rafael Andrade
-# Rafael Monteiro
-# Raphael Mendonça
-# Rowel
-# Rui
-# Stanislas Dolcini
-# Thiago Fontanari
-# e05a6f0c527312287ac027cf3d3a35f5_685166c
-# Tiago
-# victoJ
-# Victor Gregório
-# Vinícius Pereira
-# William Sandres
-# yurids
-# Yuri Laskowski
+# Aldo Leandro F, 2023
+# Alessandro Nunes, 2019
+# alrope, 2014
+# Álvaro Tavares de Oliveira, 2022
+# Angelo Florentino, 2017
+# 8a9afb43fd95d08d43e4b3f29e8e204d_f74a2a3, 2015
+# borg 2k, 2017-2018
+# Caio Northfleet, 2014
+# Carlo Emmanoel Tolla de Oliveira, 2020
+# Dalcio Marçal, 2016
+# Diana K. Cury, 2014
+# 1e46fd82907595ae69bafb7f4e47cd1b_169840e, 2014
+# alveselvis16, 2014
+# Enrico Nicoletto, 2013
+# Ernan, 2014
+# Estevan Borges Martins, 2021
+# Estus, 2014
+# Fábio Medeiros, 2014
+# Filipe Oliveira, 2013
+# Geovå Ramalho dos Santos, 2023
+# Sturm, 2014
+# Guilherme Soster, 2014
+# Gustavo Moitinho, 2016
+# Hunteros, 2013
+# Igor Aleixo, 2016-2017
+# Isaac Porto, 2021
+# João Francisco Gauze Carrer, 2018
+# jose, 2017
+# J. P. Lacerda, 2016
+# JulioBianor, 2014
+# Junior Lage, 2017
+# Kesley Martins, 2021
+# lecalam, 2022,2024
+# Leonardo, 2014
+# Leonardo Tada Antunes, 2014
+# Lourenço Gaiteiro, 2017
+# d985c683c87c96d130507ab20847ffb3_c33e5c1, 2013
+# 998498d12a22dc2270ba5020996dacc6_1f522eb, 2021
+# Luis Santos, 2021
+# Marcelo Augusto Kniss, 2016
+# Marcos Correa, 2014
+# Marcus Rasseli, 2013
+# Mateus Felipe Cordeiro Caetano Pinto, 2013
+# Mateus Guerra, 2020
+# Mateus Tavares, 2016
+# Matheus Clemente, 2015
+# Mihailov Vasilievic Filho, 2015
+# mliell, 2014
+# mogafi, 2014
+# pizzaiolo, 2015
+# Paulo Castro, 2013
+# Pedro Augustus Diniz Falcão Silva, 2014-2017
+# PedroDognani, 2015
+# Qodek, 2014
+# Rafael Andrade, 2020
+# Rafael Games, 2024
+# Rafael Monteiro, 2016
+# Raphael Mendonça, 2014
+# Rocha Enzo, 2023
+# Rowel, 2014
+# Rui, 2018
+# Stanislas Dolcini, 2021
+# Thiago Fontanari, 2021
+# e05a6f0c527312287ac027cf3d3a35f5_685166c, 2015
+# Tiago, 2020
+# victoJ, 2020
+# Victor Gregório, 2017
+# Vinícius Pereira, 2020
+# William Sandres, 2021
+# yurids, 2014
+# Yuri Laskowski, 2020,2022
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2023-04-28 09:24+0000\n"
+"POT-Creation-Date: 2024-07-26 07:08+0000\n"
 "PO-Revision-Date: 2014-06-19 17:49+0000\n"
-"Last-Translator: Aldo Leandro F, 2023\n"
+"Last-Translator: lecalam, 2022,2024\n"
 "Language-Team: Portuguese (Brazil) (http://app.transifex.com/wildfire-games/0ad/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -87,9 +89,9 @@ msgstr ""
 
 #: gui/session/Cheats.js:78
 msgid "This cheat requires a numeric parameter."
-msgstr "Esta trapaça requer um parâmetro numérico"
+msgstr "Esta trapaça requer um parâmetro numérico."
 
-#: gui/session/GameSpeedControl.xml:(tooltip):11
+#: gui/session/GameSpeedControl.xml:11
 msgid "Choose game speed"
 msgstr "Escolha a velocidade do jogo"
 
@@ -98,61 +100,60 @@ msgstr "Escolha a velocidade do jogo"
 msgid "Press %(hotkey)s to toggle this menu."
 msgstr "Pressione %(hotkey)s para habilitar este menu."
 
-#: gui/session/MenuButtons.js:32
+#: gui/session/MenuButtons.js:33
 msgid "Chat"
 msgstr "Chat"
 
-#: gui/session/MenuButtons.js:53
+#: gui/session/MenuButtons.js:54
 msgid "Save"
 msgstr "Salvar"
 
-#: gui/session/MenuButtons.js:77
+#: gui/session/MenuButtons.js:78
 msgid "Summary"
-msgstr "Sumário"
+msgstr "Resumo"
 
-#: gui/session/MenuButtons.js:90
+#: gui/session/MenuButtons.js:91
 #, javascript-format
 msgid "Press %(hotkey)s to open the summary screen."
 msgstr "Pressione %(hotkey)s para abrir a tela de resumo."
 
 #: gui/session/MenuButtons.js:133
 msgid "Lobby"
-msgstr "Lobby"
+msgstr "Sala"
 
 #: gui/session/MenuButtons.js:142
 #, javascript-format
 msgid ""
 "Press %(hotkey)s to open the multiplayer lobby page without leaving the "
 "game."
-msgstr "Pressione %(hotkey)spara abrir a página das salas de multijogador sem sair do jogo."
+msgstr "Pressione %(hotkey)s para abrir a página da sala de multijogador sem sair do jogo."
 
 #: gui/session/MenuButtons.js:161
 msgid "Options"
 msgstr "Opções"
 
-#: gui/session/MenuButtons.js:185
+#: gui/session/MenuButtons.js:180
 msgid "Hotkeys"
 msgstr "Atalhos"
 
-#: gui/session/MenuButtons.js:220
+#: gui/session/MenuButtons.js:213
 msgid "Resume"
 msgstr "Continuar"
 
-#: gui/session/MenuButtons.js:220
+#: gui/session/MenuButtons.js:213
 msgid "Pause"
 msgstr "Pausar"
 
-#: gui/session/MenuButtons.js:221
+#: gui/session/MenuButtons.js:214
 #, javascript-format
 msgid "Press %(hotkey)s to pause or resume the game."
 msgstr "Pressione %(hotkey)s para pausar ou resumir o jogo."
 
-#: gui/session/MenuButtons.js:237
+#: gui/session/MenuButtons.js:230
 msgid "Resign"
 msgstr "Desistir"
 
-#: gui/session/MenuButtons.js:261
-#: gui/session/NetworkStatusOverlay.xml:(caption):9
+#: gui/session/MenuButtons.js:254 gui/session/NetworkStatusOverlay.xml:9
 msgid "Exit"
 msgstr "Sair"
 
@@ -204,16 +205,16 @@ msgstr ","
 msgid "Paused by %(players)s"
 msgstr "Pausado por %(players)s"
 
-#: gui/session/PauseOverlay.xml:(caption):7
+#: gui/session/PauseOverlay.xml:7
 msgid "Game Paused"
 msgstr "Jogo Pausado"
 
-#: gui/session/PauseOverlay.xml:(caption):11
+#: gui/session/PauseOverlay.xml:11
 msgid "Click to Resume Game"
 msgstr "Clique para Resumir o Jogo"
 
 #: gui/session/ResearchProgress.js:117 gui/session/selection_details.js:273
-#: gui/session/selection_details.js:291 gui/session/selection_panels.js:588
+#: gui/session/selection_details.js:291 gui/session/selection_panels.js:602
 msgctxt "countdown format"
 msgid "m:ss"
 msgstr "m:ss"
@@ -221,7 +222,7 @@ msgstr "m:ss"
 #. Translation: String displayed when the research is paused. E.g. by being
 #. garrisoned or
 #. when not the first item in the queue.
-#: gui/session/ResearchProgress.js:120 gui/session/selection_panels.js:602
+#: gui/session/ResearchProgress.js:120 gui/session/selection_panels.js:616
 msgid "This item is paused."
 msgstr "Este item está pausado."
 
@@ -514,43 +515,43 @@ msgstr "Você enviou %(player2)s %(amounts)s."
 msgid "%(player)s has sent %(player2)s %(amounts)s."
 msgstr "%(player)s enviou ao %(player2)s %(amounts)s."
 
-#: gui/session/chat/chat_window.xml:(caption):19
+#: gui/session/chat/chat_window.xml:19
 msgctxt "chat input"
 msgid "Filter:"
 msgstr "Filtro:"
 
-#: gui/session/chat/chat_window.xml:(caption):46
-msgctxt "chat input"
-msgid "To:"
-msgstr "Para:"
-
-#: gui/session/chat/chat_window.xml:(caption):60
-msgctxt "chat input"
-msgid "Text:"
-msgstr "Texto:"
-
-#: gui/session/chat/chat_window.xml:(caption):72
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: gui/session/chat/chat_window.xml:(caption):86
-msgctxt "chat"
-msgid "History"
-msgstr "Histórico"
-
-#: gui/session/chat/chat_window.xml:(caption):91
-msgid "Send"
-msgstr "Enviar"
-
-#: gui/session/chat/chat_window.xml:(tooltip):29
+#: gui/session/chat/chat_window.xml:29
 msgctxt "chat input"
 msgid "Filter the chat history."
 msgstr "Filtrar o histórico do chat."
 
-#: gui/session/chat/chat_window.xml:(tooltip):55
+#: gui/session/chat/chat_window.xml:46
+msgctxt "chat input"
+msgid "To:"
+msgstr "Para:"
+
+#: gui/session/chat/chat_window.xml:55
 msgctxt "chat input"
 msgid "Select chat addressee."
 msgstr "Selecione um destinatário do chat."
+
+#: gui/session/chat/chat_window.xml:60
+msgctxt "chat input"
+msgid "Text:"
+msgstr "Texto:"
+
+#: gui/session/chat/chat_window.xml:72
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: gui/session/chat/chat_window.xml:86
+msgctxt "chat"
+msgid "History"
+msgstr "Histórico"
+
+#: gui/session/chat/chat_window.xml:91
+msgid "Send"
+msgstr "Enviar"
 
 #: gui/session/developer_overlay/DeveloperOverlay.js:80
 msgid "The Developer Overlay was opened."
@@ -659,49 +660,49 @@ msgid ""
 "memory or crash."
 msgstr "Nota: o modo de manipulação do tempo é uma opção de desenvolvedor e não é recomendado o uso por longos períodos de tempo. Uso incorreto pode causar falta de memória ou erros fatais."
 
-#: gui/session/dialogs/yes_no.xml:(caption):11
+#: gui/session/dialogs/yes_no.xml:11
 msgid "Question"
 msgstr "Questão"
 
-#: gui/session/dialogs/yes_no.xml:(caption):15
+#: gui/session/dialogs/yes_no.xml:15
 msgid "Yes or no?"
 msgstr "Sim ou não?"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):15
+#: gui/session/diplomacy/DiplomacyDialog.xml:15
 msgid "Name"
 msgstr "Nome"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):18
+#: gui/session/diplomacy/DiplomacyDialog.xml:18
 msgid "Civilization"
 msgstr "Civilização"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):21
+#: gui/session/diplomacy/DiplomacyDialog.xml:21
 msgid "Team"
 msgstr "Equipe"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):24
+#: gui/session/diplomacy/DiplomacyDialog.xml:24
 msgid "Theirs"
 msgstr "Deles"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):27
+#: gui/session/diplomacy/DiplomacyDialog.xml:27
 msgid "A"
 msgstr "A"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):31
+#: gui/session/diplomacy/DiplomacyDialog.xml:31
 msgid "N"
 msgstr "N"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):35
+#: gui/session/diplomacy/DiplomacyDialog.xml:35
 msgid "E"
 msgstr "I"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):39
+#: gui/session/diplomacy/DiplomacyDialog.xml:39
 msgid "Tribute"
 msgstr "Tributo"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):90
-#: gui/session/objectives/ObjectivesDialog.xml:(caption):43
-#: gui/session/trade/TradeDialog.xml:(caption):22
+#: gui/session/diplomacy/DiplomacyDialog.xml:90
+#: gui/session/objectives/ObjectivesDialog.xml:43
+#: gui/session/trade/TradeDialog.xml:22
 msgid "Close"
 msgstr "Fechar"
 
@@ -711,7 +712,7 @@ msgctxt "ceasefire"
 msgid "Remaining ceasefire time: %(time)s."
 msgstr "Tempo de cessar-fogo restante: %(time)s."
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):85
+#: gui/session/diplomacy/DiplomacyDialog.xml:85
 #: gui/session/diplomacy/DiplomacyDialogColorsButton.js:30
 #: gui/session/minimap/MiniMapDiplomacyColorsButton.js:36
 msgid "Toggle Diplomacy Colors"
@@ -726,17 +727,17 @@ msgctxt "team"
 msgid "None"
 msgstr "Nenhum"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(tooltip):28
+#: gui/session/diplomacy/DiplomacyDialog.xml:28
 #: gui/session/diplomacy/playercontrols/DiplomacyPlayerText.js:78
 msgid "Ally"
 msgstr "Aliado"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(tooltip):32
+#: gui/session/diplomacy/DiplomacyDialog.xml:32
 #: gui/session/diplomacy/playercontrols/DiplomacyPlayerText.js:81
 msgid "Neutral"
 msgstr "Neutro"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(tooltip):36
+#: gui/session/diplomacy/DiplomacyDialog.xml:36
 #: gui/session/diplomacy/playercontrols/DiplomacyPlayerText.js:84
 msgid "Enemy"
 msgstr "Inimigo"
@@ -791,14 +792,14 @@ msgstr "Excluir"
 msgid "Destroy everything currently selected?"
 msgstr "Destruir tudo que foi selecionado?"
 
-#: gui/session/dialogs/yes_no.xml:(caption):24
+#: gui/session/dialogs/yes_no.xml:24
 #: gui/session/message_box/DeleteSelectionConfirmation.js:14
 #: gui/session/message_box/QuitConfirmationMenu.js:52
 #: gui/session/message_box/ResignConfirmation.js:9
 msgid "No"
 msgstr "Não"
 
-#: gui/session/dialogs/yes_no.xml:(caption):19
+#: gui/session/dialogs/yes_no.xml:19
 #: gui/session/message_box/DeleteSelectionConfirmation.js:17
 #: gui/session/message_box/QuitConfirmationMenu.js:55
 #: gui/session/message_box/ResignConfirmation.js:12
@@ -881,8 +882,8 @@ msgid "Stay"
 msgstr "Ficar"
 
 #. Translation: Shown in the Dialog that shows up when the game finishes
-#: gui/session/message_box/QuitConfirmation.js:19
-#: gui/session/message_box/QuitConfirmationReplay.js:27
+#: gui/session/message_box/QuitConfirmation.js:20
+#: gui/session/message_box/QuitConfirmationReplay.js:28
 msgid "Quit and View Summary"
 msgstr "Sair e ver o resumo"
 
@@ -945,8 +946,8 @@ msgstr "Você foi derrotado!"
 msgid "Click to quit this tutorial."
 msgstr "Clique para sair deste tutorial."
 
-#: gui/session/message_box/QuitConfirmation.js:24
-#: gui/session/message_box/QuitConfirmationReplay.js:32
+#: gui/session/message_box/QuitConfirmation.js:25
+#: gui/session/message_box/QuitConfirmationReplay.js:33
 #: gui/session/messages.js:411
 msgid "Quit"
 msgstr "Sair"
@@ -1115,78 +1116,102 @@ msgstr ","
 msgid "Raise an alert!"
 msgstr "Levante um alerta!"
 
-#: gui/session/selection_panels.js:68
-msgid "End of alert."
-msgstr "Fim do alerta."
+#: gui/session/selection_panels.js:67
+msgid "Alert nearby Female Citizens to seek refuge."
+msgstr "Alertar Cidadãs próximas para procurarem refúgio."
 
-#: gui/session/selection_panels.js:277
+#: gui/session/selection_panels.js:69
+msgid "Alert nearby Traders to seek refuge."
+msgstr "Alertar Comerciantes próximos para procurarem refúgio."
+
+#: gui/session/selection_panels.js:71
+msgid "Alert nearby vulnerable units to seek refuge."
+msgstr "Alertar unidades vulneráveis próximas para procurarem refúgio."
+
+#: gui/session/selection_panels.js:75
+msgid "End the alert."
+msgstr "Fim do Alerta."
+
+#: gui/session/selection_panels.js:77
+msgid "Unload nearby Female Citizens."
+msgstr "Desalojar Cidadãs próximas."
+
+#: gui/session/selection_panels.js:79
+msgid "Unload nearby Traders."
+msgstr "Desalojar Comerciantes próximos."
+
+#: gui/session/selection_panels.js:81
+msgid "Unload nearby vulnerable units."
+msgstr "Desalojar unidades vulneráveis próximas."
+
+#: gui/session/selection_panels.js:291
 msgid "Default formation is disabled."
 msgstr "A formação padrão está desabilitada."
 
-#: gui/session/selection_panels.js:278
+#: gui/session/selection_panels.js:292
 msgid "Right-click to disable the default formation feature."
 msgstr "Clique com o botão direito para desativar o recurso de formação padrão."
 
-#: gui/session/selection_panels.js:281
+#: gui/session/selection_panels.js:295
 msgid "This is the default formation, used for movement orders."
 msgstr "Esta é a formação padrão, usada para ordens de movimento."
 
-#: gui/session/selection_panels.js:282
+#: gui/session/selection_panels.js:296
 msgid "Right-click to set this as the default formation."
 msgstr "Clique com o botão direito para definir esta como a formação padrão."
 
-#: gui/session/selection_panels.js:338
+#: gui/session/selection_panels.js:352
 #, javascript-format
 msgid "Unload %(name)s"
 msgstr "Desalojar %(name)s"
 
-#: gui/session/selection_panels.js:339
+#: gui/session/selection_panels.js:353
 msgid "Single-click to unload 1. Shift-click to unload all of this type."
 msgstr "Clique para desalojar 1. Shift-clique para desalojar todos deste tipo."
 
-#: gui/session/selection_panels.js:341 gui/session/selection_panels.js:919
+#: gui/session/selection_panels.js:355 gui/session/selection_panels.js:933
 #, javascript-format
 msgid "Player: %(playername)s"
 msgstr "Jogador: %(playername)s"
 
-#: gui/session/selection_panels.js:377
+#: gui/session/selection_panels.js:391
 msgid "Lock Gate"
 msgstr "Trancar Portões"
 
-#: gui/session/selection_panels.js:383
+#: gui/session/selection_panels.js:397
 msgid "Unlock Gate"
 msgstr "Destrancar Portões"
 
-#: gui/session/selection_panels.js:434
+#: gui/session/selection_panels.js:448
 msgid "Pack"
 msgstr "Compactar"
 
-#: gui/session/selection_panels.js:442
+#: gui/session/selection_panels.js:456
 msgid "Unpack"
 msgstr "Descompactar"
 
-#: gui/session/selection_panels.js:450
+#: gui/session/selection_panels.js:464
 msgid "Cancel Packing"
 msgstr "Cancelar Desmontagem"
 
-#: gui/session/selection_panels.js:458
+#: gui/session/selection_panels.js:472
 msgid "Cancel Unpacking"
 msgstr "Cancelar Montagem"
 
-#: gui/session/selection_panels.js:558
+#: gui/session/selection_panels.js:572
 msgid "The auto-queue will try to train this item later."
 msgstr "A fila automática tentará treinar este item depois"
 
-#: gui/session/selection_panels.js:561
+#: gui/session/selection_panels.js:575
 msgid "Insufficient population capacity:"
 msgstr "Capacidade populacional insuficiente:"
 
-#: gui/session/selection_panels.js:562
+#: gui/session/selection_panels.js:576
 #, javascript-format
 msgid "%(population)s %(neededSlots)s"
 msgstr "%(population)s %(neededSlots)s"
 
-#: gui/session/selection_panels.js:784
+#: gui/session/selection_panels.js:798
 #, javascript-format
 msgid "%(number)s entity of class %(class)s"
 msgid_plural "%(number)s entities of class %(class)s"
@@ -1194,49 +1219,49 @@ msgstr[0] "%(number)s entidade da classe %(class)s"
 msgstr[1] "%(number)s entidades da classe %(class)s"
 msgstr[2] "%(number)s entidades da classe %(class)s"
 
-#: gui/session/selection_panels.js:790
+#: gui/session/selection_panels.js:804
 #, javascript-format
 msgid "Remaining: %(entityCounts)s"
 msgstr "Remanescente: %(entityCounts)s"
 
-#: gui/session/selection_panels.js:791
+#: gui/session/selection_panels.js:805
 msgctxt "Separator for a list of entity counts"
 msgid ", "
 msgstr ","
 
-#: gui/session/selection_panels.js:843
+#: gui/session/selection_panels.js:857
 msgid "Cannot research while upgrading."
 msgstr "Melhoramento da entidade já está acontecendo."
 
-#: gui/session/selection_panels.js:1073
+#: gui/session/selection_panels.js:1086
 msgid "Cannot train while upgrading."
 msgstr "Não é possível treinar durante a atualização."
 
-#: gui/session/selection_panels.js:1140
+#: gui/session/selection_panels.js:1153
 #, javascript-format
 msgid "Upgrade to a %(primaryName)s (%(secondaryName)s). %(tooltip)s"
 msgstr "Melhorar para um %(primaryName)s (%(secondaryName)s). %(tooltip)s"
 
-#: gui/session/selection_panels.js:1146
+#: gui/session/selection_panels.js:1159
 #, javascript-format
 msgid "Upgrade to a %(primaryName)s (%(secondaryName)s)."
 msgstr "Melhorar para um %(primaryName)s (%(secondaryName)s)."
 
-#: gui/session/selection_panels.js:1154
+#: gui/session/selection_panels.js:1167
 #, javascript-format
 msgid "Upgrade to a %(primaryName)s. %(tooltip)s"
 msgstr "Melhorar para um %(primaryName)s. %(tooltip)s"
 
-#: gui/session/selection_panels.js:1159
+#: gui/session/selection_panels.js:1172
 #, javascript-format
 msgid "Upgrade to a %(primaryName)s."
 msgstr "Melhorar para um %(primaryName)s."
 
-#: gui/session/selection_panels.js:1196
+#: gui/session/selection_panels.js:1209
 msgid "Cancel Upgrading"
 msgstr "Cancelar Melhoramento."
 
-#: gui/session/selection_panels.js:1211
+#: gui/session/selection_panels.js:1224
 msgid ""
 "Cannot upgrade when the entity is training, researching or already "
 "upgrading."
@@ -1396,42 +1421,42 @@ msgstr "%(action)s para treinar %(number)s."
 msgid "Shift-click"
 msgstr "Shift-clique"
 
-#: gui/session/selection_panels_left/garrison_panel.xml:(tooltip):16
-#: gui/session/selection_panels_middle/single_details_area.xml:(tooltip):64
+#: gui/session/selection_panels_left/garrison_panel.xml:16
+#: gui/session/selection_panels_middle/single_details_area.xml:64
 msgid "Health"
 msgstr "Saúde"
 
-#: gui/session/selection_panels_middle/single_details_area.xml:(tooltip):41
+#: gui/session/selection_panels_middle/single_details_area.xml:41
 msgid "Capture points"
 msgstr "Pontos de captura"
 
-#: gui/session/selection_panels_middle/single_details_area.xml:(tooltip):84
+#: gui/session/selection_panels_middle/single_details_area.xml:84
 msgid "Attack and Resistance"
 msgstr "Ataque e Resistência"
 
-#: gui/session/selection_panels_middle/single_details_area.xml:(tooltip):99
+#: gui/session/selection_panels_middle/single_details_area.xml:99
 msgid "Experience"
 msgstr "Experiência"
 
-#: gui/session/selection_panels_middle/single_details_area.xml:(tooltip):107
+#: gui/session/selection_panels_middle/single_details_area.xml:107
 msgid "Rank"
 msgstr "Classificação"
 
-#: gui/session/selection_panels_right/queue_panel.xml:(tooltip):8
+#: gui/session/selection_panels_right/queue_panel.xml:8
 msgid "Production queue"
 msgstr "Fila de Produção"
 
-#: gui/session/session_objects/selection_group_icons.xml:(tooltip):7
+#: gui/session/session_objects/selection_group_icons.xml:7
 msgid ""
 "Click to select grouped units, double-click to focus the grouped units and "
 "right-click to disband the group."
 msgstr "Clique para selecionar unidades agrupadas, duplo-clique para focar as unidades agrupadas e clique-direito para desfazer o grupo."
 
-#: gui/session/top_panel/BuildLabel.xml:(caption):6
+#: gui/session/top_panel/BuildLabel.xml:6
 msgid "Alpha XXVII: Agni"
 msgstr "Alfa XXVII: Agni"
 
-#: gui/session/top_panel/CivIcon.js:80
+#: gui/session/top_panel/CivIcon.js:68
 #, javascript-format
 msgid ""
 "%(civ)s\n"
@@ -1478,27 +1503,27 @@ msgstr "População: atual/limite (máx)"
 msgid "Gatherers: current"
 msgstr "Coletores: atuais"
 
-#: gui/session/top_panel/FollowPlayer.xml:(caption):15
-#: gui/session/top_panel/FollowPlayer.xml:(tooltip):11
+#: gui/session/top_panel/FollowPlayer.xml:11
+#: gui/session/top_panel/FollowPlayer.xml:15
 msgctxt "observer mode"
 msgid "Follow Player"
 msgstr "Siga o Jogador"
 
-#: gui/session/diplomacy/DiplomacyDialog.xml:(caption):10
+#: gui/session/diplomacy/DiplomacyDialog.xml:10
 #: gui/session/top_panel/IconButtons/DiplomacyDialogButton.js:29
 msgid "Diplomacy"
 msgstr "Diplomacia"
 
-#: gui/session/top_panel/IconButtons/GameSpeedButton.xml:(tooltip):9
+#: gui/session/top_panel/IconButtons/GameSpeedButton.xml:9
 msgid "Game Speed"
 msgstr "Velocidade de Jogo"
 
-#: gui/session/objectives/ObjectivesDialog.xml:(caption):15
+#: gui/session/objectives/ObjectivesDialog.xml:15
 #: gui/session/top_panel/IconButtons/ObjectivesDialogButton.js:23
 msgid "Objectives"
 msgstr "Objetivos"
 
-#: gui/session/top_panel/MenuButton.xml:(caption):15
+#: gui/session/top_panel/MenuButton.xml:15
 msgid "Menu"
 msgstr "Menu"
 
@@ -1506,13 +1531,13 @@ msgstr "Menu"
 msgid "Observer"
 msgstr "Observador"
 
-#: gui/session/top_panel/PlayerViewControl.xml:(caption):17
-msgid "Observer Mode"
-msgstr "Modo observador"
-
-#: gui/session/top_panel/PlayerViewControl.xml:(tooltip):13
+#: gui/session/top_panel/PlayerViewControl.xml:13
 msgid "Choose player to view"
 msgstr "Escolher jogador para ver"
+
+#: gui/session/top_panel/PlayerViewControl.xml:17
+msgid "Observer Mode"
+msgstr "Modo observador"
 
 #: gui/session/trade/BarterButton.js:108
 #, javascript-format
@@ -1536,19 +1561,19 @@ msgctxt "sell action"
 msgid "-%(amount)s"
 msgstr "-%(amount)s"
 
-#: gui/session/trade/BarterPanel.xml:(caption):5
+#: gui/session/trade/BarterPanel.xml:5
 msgid "Barter"
 msgstr "Troca"
 
-#: gui/session/trade/BarterPanel.xml:(caption):13
+#: gui/session/trade/BarterPanel.xml:13
 msgid "Sell:"
 msgstr "Vender"
 
-#: gui/session/trade/BarterPanel.xml:(caption):17
+#: gui/session/trade/BarterPanel.xml:17
 msgid "Buy:"
 msgstr "Comprar"
 
-#: gui/session/trade/BarterPanel.xml:(caption):21
+#: gui/session/trade/BarterPanel.xml:21
 msgid "No Markets Available"
 msgstr "Não há mercados disponíveis."
 
@@ -1575,11 +1600,11 @@ msgid ""
 "%(hotkey)s to temporarily multiply the traded amount by %(multiplier)s."
 msgstr "Comece selecionando o recurso que deseja vender na linha superior. Para cada vez que os botões inferiores são pressionados, %(quantity)s de recurso superior será vendida para a quantidade exibida na parte inferior. Pressione e segure %(hotkey)s para multiplicar temporariamente o valor negociado por %(multiplier)s."
 
-#: gui/session/trade/TradePanel.xml:(caption):5
+#: gui/session/trade/TradePanel.xml:5
 msgid "Trade"
 msgstr "Comércio"
 
-#: gui/session/trade/TradePanel.xml:(caption):14
+#: gui/session/trade/TradePanel.xml:14
 msgid "Resources:"
 msgstr "Recursos:"
 
@@ -1701,7 +1726,7 @@ msgstr[2] "%(numberOfShipTraders)s navios mercantes inativos"
 msgid "There are no merchant ships."
 msgstr "Não há nenhum navio comercial."
 
-#: gui/session/tutorial_panel.xml:(caption):11
+#: gui/session/tutorial_panel.xml:11
 msgid "Ready"
 msgstr "Pronto"
 
@@ -1817,8 +1842,7 @@ msgid "Remove guard"
 msgstr "Remover guarda"
 
 #: gui/session/top_panel/IconButtons/TradeDialogButton.js:31
-#: gui/session/trade/TradeDialog.xml:(caption):9
-#: gui/session/unit_actions.js:1698
+#: gui/session/trade/TradeDialog.xml:9 gui/session/unit_actions.js:1698
 msgid "Barter & Trade"
 msgstr "Troca & Comércio"
 

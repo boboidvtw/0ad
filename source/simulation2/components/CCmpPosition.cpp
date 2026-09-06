@@ -556,6 +556,7 @@ public:
 			if (cmpPosition)
 				y -= cmpPosition->GetRotation().Y;
 		}
+
 		m_RotY = y;
 
 		AdvertisePositionChanges();

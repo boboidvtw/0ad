@@ -1,4 +1,4 @@
-/* Copyright (C) 2023 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -19,30 +19,10 @@
 #define FSM_H
 
 #include <limits>
-#include <map>
-#include <set>
-#include <vector>
+#include <unordered_map>
 
 
 constexpr unsigned int FSM_INVALID_STATE{std::numeric_limits<unsigned int>::max()};
-
-class CFsmEvent;
-class CFsmTransition;
-class CFsm;
-
-using Condition = bool(void* pContext);
-using Action = bool(void* pContext, const CFsmEvent* pEvent);
-
-struct CallbackFunction
-{
-	void* pFunction;
-	void* pContext;
-};
-
-using StateSet = std::set<unsigned int>;
-using EventMap = std::map<unsigned int, CFsmEvent*>;
-using TransitionList = std::vector<CFsmTransition*>;
-using CallbackList = std::vector<CallbackFunction>;
 
 /**
  * Represents a signal in the state machine that a change has occurred.
@@ -51,11 +31,11 @@ using CallbackList = std::vector<CallbackFunction>;
  */
 class CFsmEvent
 {
-	NONCOPYABLE(CFsmEvent);
 public:
-
-	CFsmEvent(unsigned int type);
-	~CFsmEvent();
+	CFsmEvent(unsigned int type, void* pParam) :
+		m_Type{type},
+		m_Param{pParam}
+	{}
 
 	unsigned int GetType() const
 	{
@@ -67,91 +47,9 @@ public:
 		return m_Param;
 	}
 
-	void SetParamRef(void* pParam);
-
 private:
 	unsigned int m_Type; // Event type
 	void* m_Param; // Event paramater
-};
-
-
-/**
- * An association of event, condition, action and next state.
- */
-class CFsmTransition
-{
-	NONCOPYABLE(CFsmTransition);
-public:
-
-	CFsmTransition(unsigned int state);
-	~CFsmTransition();
-
-	/**
-	 * Registers an action that will be executed when the transition occurs.
-	 * @param pAction the function which will be executed.
-	 * @param pContext data passed to the function.
-	 */
-	void RegisterAction(void* pAction, void* pContext);
-
-	/**
-	 * Registers a condition which will be evaluated when the transition occurs.
-	 * @param pCondition the predicate which will be executed.
-	 * @param pContext data passed to the predicate.
-	 */
-	void RegisterCondition(void* pCondition, void* pContext);
-
-	/**
-	 * Set event for which transition will occur.
-	 */
-	void SetEvent(CFsmEvent* pEvent);
-	CFsmEvent* GetEvent() const
-	{
-		return m_Event;
-	}
-
-	/**
-	 * Set next state the transition will switch the system to.
-	 */
-	void SetNextState(unsigned int nextState);
-	unsigned int GetNextState() const
-	{
-		return m_NextState;
-	}
-
-	unsigned int GetCurrState() const
-	{
-		return m_CurrState;
-	}
-
-	const CallbackList& GetActions() const
-	{
-		return m_Actions;
-	}
-
-	const CallbackList& GetConditions() const
-	{
-		return m_Conditions;
-	}
-
-	/**
-	 * Evaluates conditions for the transition.
-	 * @return whether all the conditions are true.
-	 */
-	bool ApplyConditions() const;
-
-	/**
-	 * Executes actions for the transition.
-	 * @note If there are no actions, assume true.
-	 * @return whether all the actions returned true.
-	 */
-	bool RunActions() const;
-
-private:
-	unsigned int m_CurrState;
-	unsigned int m_NextState;
-	CFsmEvent* m_Event;
-	CallbackList m_Actions;
-	CallbackList m_Conditions;
 };
 
 /**
@@ -165,66 +63,47 @@ private:
  * transitions; Mealy machines are event driven where an
  * event triggers a state transition.
  */
+template <typename Context>
 class CFsm
 {
-	NONCOPYABLE(CFsm);
+	using Action = bool(Context* pContext, CFsmEvent* pEvent);
+
+	struct CallbackFunction
+	{
+		Action* pFunction{nullptr};
+		Context* pContext{nullptr};
+
+		bool operator()(CFsmEvent& event) const
+		{
+			return !pFunction || pFunction(pContext, &event);
+		}
+	};
 public:
-
-	CFsm();
-	virtual ~CFsm();
-
-	/**
-	 * Constructs the state machine. This method must be overriden so that
-	 * connections are constructed for the particular state machine implemented.
-	 */
-	virtual void Setup();
-
-	/**
-	 * Clear event, action and condition lists and reset state machine.
-	 */
-	void Shutdown();
-
-	/**
-	 * Adds the specified state to the internal list of states.
-	 * @note If a state with the specified ID exists, the state is not added.
-	 */
-	void AddState(unsigned int state);
-
-	/**
-	 * Adds the specified event to the internal list of events.
-	 * @note If an eveny with the specified ID exists, the event is not added.
-	 * @return a pointer to the new event.
-	 */
-	CFsmEvent* AddEvent(unsigned int eventType);
-
 	/**
 	 * Adds a new transistion to the state machine.
-	 * @return a pointer to the new transition.
 	 */
-	CFsmTransition* AddTransition(unsigned int state, unsigned int eventType, unsigned int nextState );
-
-	/**
-	 * Adds a new transition to the state machine.
-	 * @return a pointer to the new transition.
-	 */
-	CFsmTransition* AddTransition(unsigned int state, unsigned int eventType, unsigned int nextState,
-		 void* pAction, void* pContext);
-
-	/**
-	 * Looks up the transition given the state, event and next state to transition to.
-	 */
-	CFsmTransition* GetTransition(unsigned int state, unsigned int eventType) const;
-	CFsmTransition* GetEventTransition (unsigned int eventType) const;
+	void AddTransition(unsigned int state, unsigned int eventType, unsigned int nextState,
+		Action* pAction = nullptr, Context* pContext = nullptr)
+	{
+		m_Transitions.insert({TransitionKey{state, eventType},
+			Transition{{pAction, pContext}, nextState}});
+	}
 
 	/**
 	 * Sets the initial state for FSM.
 	 */
-	void SetFirstState(unsigned int firstState);
+	void SetFirstState(unsigned int firstState)
+	{
+		m_FirstState = firstState;
+	}
 
 	/**
 	 * Sets the current state and update the last state to the current state.
 	 */
-	void SetCurrState(unsigned int state);
+	void SetCurrState(unsigned int state)
+	{
+		m_CurrState = state;
+	}
 	unsigned int GetCurrState() const
 	{
 		return m_CurrState;
@@ -240,56 +119,91 @@ public:
 		return m_NextState;
 	}
 
-	const StateSet& GetStates() const
-	{
-		return m_States;
-	}
-
-	const EventMap& GetEvents() const
-	{
-		return m_Events;
-	}
-
-	const TransitionList& GetTransitions() const
-	{
-		return m_Transitions;
-	}
-
 	/**
 	 * Updates the FSM and retrieves next state.
 	 * @return whether the state was changed.
 	 */
-	bool Update(unsigned int eventType, void* pEventData);
+	bool Update(unsigned int eventType, void* pEventData)
+	{
+		if (IsFirstTime())
+			m_CurrState = m_FirstState;
 
-	/**
-	 * Verifies whether the specified state is managed by the FSM.
-	 */
-	bool IsValidState(unsigned int state) const;
+		// Lookup transition
+		auto transitionIterator = m_Transitions.find({m_CurrState, eventType});
+		if (transitionIterator == m_Transitions.end())
+			return false;
 
-	/**
-	 * Verifies whether the specified event is managed by the FSM.
-	 */
-	bool IsValidEvent(unsigned int eventType) const;
+		CFsmEvent event{eventType, pEventData};
+
+		// Save the default state transition (actions might call SetNextState
+		// to override this)
+		SetNextState(transitionIterator->second.nextState);
+
+		if (!transitionIterator->second.action(event))
+			return false;
+
+		SetCurrState(GetNextState());
+
+		// Reset the next state since it's no longer valid
+		SetNextState(FSM_INVALID_STATE);
+
+		return true;
+	}
 
 	/**
 	 * Tests whether the state machine has finished its work.
-	 * @note This is state machine specific.
 	 */
-	virtual bool IsDone() const;
+	bool IsDone() const
+	{
+		return m_Done;
+	}
 
 private:
+	struct TransitionKey
+	{
+		using UnderlyingType = unsigned int;
+		UnderlyingType state;
+		UnderlyingType eventType;
+
+		struct Hash
+		{
+			size_t operator()(const TransitionKey& key) const noexcept
+			{
+				constexpr size_t count{std::numeric_limits<size_t>::digits / 2};
+				const size_t wideState{static_cast<size_t>(key.state)};
+				const size_t rotatedState{(wideState << count) | (wideState >> count)};
+				return static_cast<size_t>(key.eventType) ^ rotatedState;
+			}
+		};
+
+		friend bool operator==(const TransitionKey& lhs, const TransitionKey& rhs) noexcept
+		{
+			return lhs.state == rhs.state && lhs.eventType == rhs.eventType;
+		}
+	};
+
+	struct Transition
+	{
+		CallbackFunction action;
+		unsigned int nextState;
+	};
+
+	using TransitionMap = std::unordered_map<TransitionKey, const Transition,
+		typename TransitionKey::Hash>;
+
 	/**
 	 * Verifies whether state machine has already been updated.
 	 */
-	bool IsFirstTime() const;
+	bool IsFirstTime() const
+	{
+		return m_CurrState == FSM_INVALID_STATE;
+	}
 
-	bool m_Done;
-	unsigned int m_FirstState;
-	unsigned int m_CurrState;
-	unsigned int m_NextState;
-	StateSet m_States;
-	EventMap m_Events;
-	TransitionList m_Transitions;
+	bool m_Done{false};
+	unsigned int m_FirstState{FSM_INVALID_STATE};
+	unsigned int m_CurrState{FSM_INVALID_STATE};
+	unsigned int m_NextState{FSM_INVALID_STATE};
+	TransitionMap m_Transitions;
 };
 
 #endif // FSM_H

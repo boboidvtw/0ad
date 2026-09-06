@@ -1,4 +1,4 @@
-/* Copyright (C) 2022 Wildfire Games.
+/* Copyright (C) 2023 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -36,11 +36,6 @@
 
 namespace JSI_Game
 {
-bool IsGameStarted()
-{
-	return g_Game;
-}
-
 void StartGame(const ScriptInterface& guiInterface, JS::HandleValue attribs, int playerID, bool storeReplay)
 {
 	ENSURE(!g_NetServer);
@@ -171,7 +166,7 @@ void RewindTimeWarp()
 void DumpTerrainMipmap()
 {
 	VfsPath filename(L"screenshots/terrainmipmap.png");
-	g_Game->GetWorld()->GetTerrain()->GetHeightMipmap().DumpToDisk(filename);
+	g_Game->GetWorld()->GetTerrain().GetHeightMipmap().DumpToDisk(filename);
 	OsPath realPath;
 	g_VFS->GetRealPath(filename, realPath);
 	LOGMESSAGERENDER("Terrain mipmap written to '%s'", realPath.string8());
@@ -179,7 +174,6 @@ void DumpTerrainMipmap()
 
 void RegisterScriptFunctions(const ScriptRequest& rq)
 {
-	ScriptFunction::Register<&IsGameStarted>(rq, "IsGameStarted");
 	ScriptFunction::Register<&StartGame>(rq, "StartGame");
 	ScriptFunction::Register<&Script_EndGame>(rq, "EndGame");
 	ScriptFunction::Register<&GetPlayerID>(rq, "GetPlayerID");

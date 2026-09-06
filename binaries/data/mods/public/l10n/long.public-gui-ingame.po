@@ -2,15 +2,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: None\n"
-"POT-Creation-Date: 2023-06-12 07:18+0000\n"
-"PO-Revision-Date: 2023-06-12 07:18+0000\n"
+"POT-Creation-Date: 2024-07-26 07:18+0000\n"
+"PO-Revision-Date: 2024-07-26 07:18+0000\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit"
 
 msgid "This cheat requires a numeric parameter."
-msgstr "To oszustwo wymaga podania parametru numerycznego."
+msgstr "Dieser Cheat benötigt einen numerischen Parameter."
 
 msgid "Choose game speed"
 msgstr "Seleccionar a velocidade da partida."
@@ -20,10 +20,10 @@ msgid "Press %(hotkey)s to toggle this menu."
 msgstr "Paina %(hotkey)s avataksesi tai sulkeaksesi tämän valikon."
 
 msgid "Chat"
-msgstr "Conversación"
+msgstr "ചാറ്റ് ചെയ്യുക"
 
 msgid "Save"
-msgstr "Sauvegarder"
+msgstr "സംരക്ഷിക്കുക"
 
 msgid "Summary"
 msgstr "Zusammenfassung"
@@ -51,7 +51,7 @@ msgid "Resume"
 msgstr "Continuar o jogo"
 
 msgid "Pause"
-msgstr "தற்காலிகமாக நிறுத்து"
+msgstr "താൽക്കാലികമായി നിർത്തുക"
 
 #, python-format
 msgid "Press %(hotkey)s to pause or resume the game."
@@ -65,7 +65,7 @@ msgstr "sisti lo nu kelci"
 
 #, python-format
 msgid "Delay to live stream: %(delay)ss"
-msgstr "Retraso para a transmisión en directo: %(delay)ss"
+msgstr "തത്സമയ സ്ട്രീം ചെയ്യാനുള്ള കാലതാമസം: %(delay)sസെക്കൻഡ്"
 
 msgid "Connection to the server has been authenticated."
 msgstr "Chaidh aithne a’ cheangail dhan fhrithealaiche a dhearbhadh."
@@ -91,6 +91,7 @@ msgctxt "Separator for a list of client loading messages"
 msgid ", "
 msgstr "، و"
 
+#. Translation: The "x" means "times", with the mathematical meaning of multiplication.
 #, python-format
 msgid "%(time)s (%(speed)sx)"
 msgstr "%(time)sবার (%(speed)sগুন গতিতে)"
@@ -111,10 +112,12 @@ msgstr "Preme co botón principal en algures para retomar a partida."
 
 msgctxt "countdown format"
 msgid "m:ss"
-msgstr "মিনিট:সেকেন্ড"
+msgstr "മിനിറ്റ്:സെക്കൻഡ്"
 
+#. Translation: String displayed when the research is paused. E.g. by being garrisoned or
+#. when not the first item in the queue.
 msgid "This item is paused."
-msgstr "Цей предмет поставлено на паузу"
+msgstr "Αυτό το αντικείμενο είναι σε παύση"
 
 msgctxt "chat addressee"
 msgid "Everyone"
@@ -157,7 +160,7 @@ msgid "\\[%(time)s]"
 msgstr "\\[%(time)s]"
 
 msgid "HH:mm"
-msgstr "HH:mm"
+msgstr "മണിക്കൂർ: മിനിറ്റ്"
 
 msgctxt "chat history filter"
 msgid "Chat and notifications"
@@ -217,10 +220,12 @@ msgstr ""
 "Brùth air %(hotkey)s gus a’ chabadaich phrìobhaideach mu dheireadh a thagh thu "
 "fhosgladh."
 
+#. Translation: A player that left the game joins again
 #, python-format
 msgid "%(player)s is starting to rejoin the game."
 msgstr "%(player)s a zo o kregiñ da emezelañ e-barzh ar c'hoariadenn."
 
+#. Translation: A player joins the game for the first time
 #, python-format
 msgid "%(player)s is starting to join the game."
 msgstr "%(player)s a zo o kregiñ da stagañ gant ar c'hoariadenn."
@@ -237,10 +242,12 @@ msgstr "Στον παίκτη %(username)s απαγορεύτηκε η πρόσ�
 msgid "%(username)s has been kicked"
 msgstr "Ο παίκτης %(username)s εκδιώχθηκε από το παιχνίδι."
 
+#. Translation: A player that left the game joins again
 #, python-format
 msgid "%(player)s has rejoined the game."
 msgstr "%(player)s heeft zich opnieuw bij het spel aangesloten."
 
+#. Translation: A player joins the game for the first time
 #, python-format
 msgid "%(player)s has joined the game."
 msgstr "%(player)s en deus staget gant ar c'hoariadenn."
@@ -267,7 +274,7 @@ msgstr "* %(user)s %(message)s"
 
 #, python-format
 msgid "%(icon)sYour livestock has been attacked by %(attacker)s!"
-msgstr "%(icon)sاز حیوانات اهلی شما مورد حمله واقع شده اند به وسیله%(attacker)s!"
+msgstr "%(icon)sVos réserves de nourriture ont été attaquées par %(attacker)s"
 
 #, python-format
 msgid "%(icon)sYou have been attacked by %(attacker)s!"
@@ -318,7 +325,7 @@ msgstr "%(player)s je sedaj v nevtralnih odnosih z igralcem %(player2)s."
 
 #, python-format
 msgid "%(player)s is advancing to the %(phaseName)s."
-msgstr "%(player)s sedang meningkatkan diri ke %(phaseName)s."
+msgstr "%(player)s प्रगती करून या टप्प्याला पोहोचत आहे: %(phaseName)s."
 
 #, python-format
 msgid "The %(phaseName)s of %(player)s has been aborted."
@@ -326,8 +333,10 @@ msgstr "Overagngen til %(phaseName)s for %(player)s har blitt kansellert."
 
 #, python-format
 msgid "%(player)s has reached the %(phaseName)s."
-msgstr "%(player)s on saavuttanut vaiheen %(phaseName)s."
+msgstr "%(player)s हे या टप्प्याला पोहोचले आहेत: %(phaseName)s."
 
+#. Translation: This comma is used for separating first to penultimate elements in an
+#. enumeration.
 msgid ", "
 msgstr "، و"
 
@@ -348,8 +357,16 @@ msgid "Filter:"
 msgstr "Iragazkia:"
 
 msgctxt "chat input"
+msgid "Filter the chat history."
+msgstr "Penheirare la historia de lɐs conversɐs."
+
+msgctxt "chat input"
 msgid "To:"
 msgstr "Címzett:"
+
+msgctxt "chat input"
+msgid "Select chat addressee."
+msgstr "Seleziona il destinatario del messaggio."
 
 msgctxt "chat input"
 msgid "Text:"
@@ -364,14 +381,6 @@ msgstr "Geschiedenis"
 
 msgid "Send"
 msgstr "Надіслати"
-
-msgctxt "chat input"
-msgid "Filter the chat history."
-msgstr "Penheirare la historia de lɐs conversɐs."
-
-msgctxt "chat input"
-msgid "Select chat addressee."
-msgstr "Seleziona il destinatario del messaggio."
 
 msgid "The Developer Overlay was opened."
 msgstr "Dreistgwiskad an diorroerien a zo bet digoret warni."
@@ -413,10 +422,10 @@ msgid "Reveal map"
 msgstr "Tampilkan seluruh peta"
 
 msgid "Enable time warp"
-msgstr "Ativar o modo de velocidade hiper rápida"
+msgstr "Включване на изкривяването на времето"
 
 msgid "Activate Rejoin Test"
-msgstr "Activar a proba de reunión novamente"
+msgstr "Активирайте теста за повторно присъединяване"
 
 msgid "Promote selected units"
 msgstr "Ngre në pozitë njësitë e përzgjedhura"
@@ -431,19 +440,19 @@ msgid "Display camera frustum"
 msgstr "Показване на отсечената пирамида на камерата"
 
 msgid "Display shadows frustum"
-msgstr "Відобразити тіні зрізаного конусу камери"
+msgstr "Показване на отсечената пирамида на сенките"
 
 msgid "Render Debug Mode Disabled"
 msgstr "Απεικόνηση Λειτουργίας Εντοπισμού Σφαλμάτων Απενεργοποιημένη"
 
 msgid "Render Debug Mode AO"
-msgstr "Modo de depuração de render de oclusão do ambiente"
+msgstr "Изобразяване в режим на отстраняване на грешки - АО"
 
 msgid "Render Debug Mode Alpha"
-msgstr "Modo de depuración de errores de renderizado alfa"
+msgstr "Изобразяване в режим на отстраняване на грешки - Алфа"
 
 msgid "Render Debug Mode Custom"
-msgstr "Modo de depuración de errores de renderizado personalizado"
+msgstr "Изобразяване в режим на отстраняване на грешки - Специфично"
 
 msgid "Time warp mode"
 msgstr "Tryb zwielokrotnienia szybkości."
@@ -530,8 +539,8 @@ msgid ""
 "Tribute %(resourceAmount)s %(resourceType)s to %(playerName)s. Shift-click to tribute "
 "%(greaterAmount)s."
 msgstr ""
-"Tributar %(resourceAmount)s %(resourceType)s a %(playerName)s. Shift + clique do botão "
-"direito do rato para tributar %(greaterAmount)s."
+"Pagar o tributo %(resourceAmount)s %(resourceType)s a %(playerName)s. Shift + clique do"
+" botão direito do rato para pagar o tributo %(greaterAmount)s."
 
 #, python-format
 msgid "Basic range: %(range)s meter"
@@ -549,7 +558,7 @@ msgid "Cannot build wall here!"
 msgstr "Pas possiblo de construire de muralye iqui"
 
 msgid "Delete"
-msgstr "Esmemorecer"
+msgstr "ഇല്ലാതാക്കുക"
 
 msgid "Destroy everything currently selected?"
 msgstr "A bheil thu airson a h‑uile rud a thagh thu a mhilleadh?"
@@ -610,6 +619,7 @@ msgstr "Diskargañ ar statud a zo er mare-mañ da %(filepath)s"
 msgid "Out of Sync"
 msgstr "Chailleadh an sioncronachadh"
 
+#. Translation: This is shown if replay is out of sync
 msgid "Out-Of-Sync"
 msgstr "Se ha perdido la sincronización"
 
@@ -619,9 +629,11 @@ msgstr "Confirmar decisión"
 msgid "The game has finished, what do you want to do?"
 msgstr "Thàinig an geama gu crìoch, dè tha thu airson dèanamh?"
 
+#. Translation: Shown in the Dialog that shows up when the game finishes
 msgid "Stay"
 msgstr "Tetap di sini"
 
+#. Translation: Shown in the Dialog that shows up when the game finishes
 msgid "Quit and View Summary"
 msgstr "Fàg an-seo ’s seall air a’ gheàrr-chunntas"
 
@@ -632,7 +644,7 @@ msgid "DEFEATED!"
 msgstr "FLASTRET OC'H BET!"
 
 msgid "Do you want to quit?"
-msgstr "Estás seguro de que queres saír?"
+msgstr "Möchtest du das Spiel verlassen?"
 
 msgid "Are you sure you want to quit? Leaving will disconnect all other players."
 msgstr ""
@@ -702,11 +714,11 @@ msgstr "Air a phasgadh"
 
 #, python-format
 msgid "\\[OFFLINE] %(player)s"
-msgstr "\\[DESKONEKTATUTA] %(player)s"
+msgstr "\\[ЧЕЛТӘРГӘ ТОТАШМАГАН] %(player)s"
 
 #, python-format
 msgid "%(rank)s Rank"
-msgstr "Graduação %(rank)s"
+msgstr "%(rank)s Pangkat"
 
 #, python-format
 msgid "%(hitpoints)s / %(maxHitpoints)s"
@@ -768,7 +780,7 @@ msgid "%(label)s: %(details)s\n"
 msgstr "%(label)s : %(details)s\n"
 
 msgid "Garrison Size"
-msgstr "Tamaño de la guarnición"
+msgstr "Tamanho do aquartelamento"
 
 #, python-format
 msgid "%(label)s %(details)s\n"
@@ -788,10 +800,12 @@ msgstr "%(label)s %(details)s"
 msgid "Loot:"
 msgstr "Ryöstösaalis:"
 
+#. Translation: Used in the trading gain tooltip
 #, python-format
 msgid "%(gain)s (%(player)s)"
 msgstr "%(gain)s (%(player)s님)"
 
+#. Translation: Used in the trading gain tooltip to concatenate profits of different players
 msgid "+"
 msgstr "+"
 
@@ -802,8 +816,26 @@ msgstr "، و"
 msgid "Raise an alert!"
 msgstr "Lakaat da seniñ ar c'hloc'h-galv!"
 
-msgid "End of alert."
-msgstr "Nutraukti pavojaus skelbimą."
+msgid "Alert nearby Female Citizens to seek refuge."
+msgstr "Waarschuw de vrouwelijke burgers in de buurt om een schuilplaats te zoeken."
+
+msgid "Alert nearby Traders to seek refuge."
+msgstr "Waarschuw de handelaren in de buurt om een schuilplaats te zoeken."
+
+msgid "Alert nearby vulnerable units to seek refuge."
+msgstr "Waarschuw de kwetsbare eenheden in de buurt om een schuilplaats te zoeken."
+
+msgid "End the alert."
+msgstr "Край на предупреждението."
+
+msgid "Unload nearby Female Citizens."
+msgstr "Laat de vrouwelijke burgers in de buurt naar buiten gaan."
+
+msgid "Unload nearby Traders."
+msgstr "Laat de handelaren in de buurt naar buiten gaan."
+
+msgid "Unload nearby vulnerable units."
+msgstr "Laat de kwetsbare eenheden in de buurt naar buiten gaan."
 
 msgid "Default formation is disabled."
 msgstr "Προεπιλεγμένος  σχηματισμός έχει απενεργοποιηθεί."
@@ -815,7 +847,7 @@ msgid "This is the default formation, used for movement orders."
 msgstr "Aquesta és la formació per defecte, que s'utilitza per donar ordres de moviment."
 
 msgid "Right-click to set this as the default formation."
-msgstr "Clic droit pour sélectionner cette formation en tant que formation par défaut."
+msgstr "Clica com o botão direito do rato para definir esta como a formação predefinida."
 
 #, python-format
 msgid "Unload %(name)s"
@@ -982,8 +1014,8 @@ msgstr[1] "Może zostać stworzone jeszcze tylko %(count)s razy."
 #, python-format
 msgid "Could only be trained once."
 msgid_plural "Could only be trained %(limit)s times."
-msgstr[0] "Só podia ser treinado mais %(limit)s vez."
-msgstr[1] "Csak ennyiszer lehetett kiképezni: %(limit)s."
+msgstr[0] "Could only be trained %(limit)s times."
+msgstr[1] "Cha b’ urrainnear oideachadh ach %(limit)s thuras."
 
 msgid "Can be trained only once."
 msgstr "Kan maar één keer gerekruteerd worden."
@@ -1076,7 +1108,7 @@ msgid "Unordered"
 msgstr "Без определен ред"
 
 msgid "Descending"
-msgstr "Φθίνουσα σειρά"
+msgstr "उतरत्या क्रमात"
 
 msgid "Ascending"
 msgstr "По возрастанию"
@@ -1085,6 +1117,8 @@ msgstr "По возрастанию"
 msgid "%(playername)s: %(statValue)s"
 msgstr "%(playername)s님: %(statValue)s"
 
+#. Translation: Do not insert spaces around the slash symbol for this exact string. Keep only
+#. one space between popLimit and popMax.
 #, python-format
 msgid "%(popCount)s/%(popLimit)s (%(popMax)s)"
 msgstr "%(popCount)s / %(popLimit)s (%(popMax)s)"
@@ -1114,11 +1148,11 @@ msgstr "కార్యక్రమపట్టిక"
 msgid "Observer"
 msgstr "Pozorovateľ"
 
-msgid "Observer Mode"
-msgstr "Λειτουργία Παρατηρητή"
-
 msgid "Choose player to view"
 msgstr "Tagh cluicheadair airson a shealltainn"
+
+msgid "Observer Mode"
+msgstr "Λειτουργία Παρατηρητή"
 
 #, python-format
 msgid "Buy %(resource)s"
@@ -1189,7 +1223,7 @@ msgstr "Nyersanyagok:"
 msgid "There is %(numberTrading)s land trader trading"
 msgid_plural "There are %(numberTrading)s land traders trading"
 msgstr[0] "Aici este %(numberTrading)s un comerciant de terenuri"
-msgstr[1] "Há %(numberTrading)s comerciantes terrestres a comercializar"
+msgstr[1] "Hi ha %(numberTrading)s mercaders comerciant per terra"
 
 #, python-format
 msgid "%(numberOfLandTraders)s inactive"
@@ -1213,7 +1247,7 @@ msgstr[1] "%(numberGarrisoned)s abelhogados n un barcu mercante activu"
 msgid "There is %(numberGarrisoned)s land trader garrisoned on a trading merchant ship"
 msgid_plural "There are %(numberGarrisoned)s land traders garrisoned on a trading merchant ship"
 msgstr[0] "There is %(numberGarrisoned)s land trader garrisoned on a trading merchant ship"
-msgstr[1] "Há %(numberGarrisoned)s comerciantes terrestres guarnecidos numa embarcação mercante"
+msgstr[1] "Hay %(numberGarrisoned)s comerciantes terrestres guarnecidos en un navío mercante"
 
 #, python-format
 msgid "%(openingTradingString)s, and %(garrisonedString)s."
@@ -1264,7 +1298,7 @@ msgstr[1] "%(numberOfShipTraders)s inactius"
 msgid "%(numberOfShipTraders)s merchant ship inactive"
 msgid_plural "%(numberOfShipTraders)s merchant ships inactive"
 msgstr[0] "%(numberOfShipTraders)s-لاتوجد سفن تجارية خاملة"
-msgstr[1] "%(numberOfShipTraders)s navios mercantes inativos"
+msgstr[1] "%(numberOfShipTraders)s barcos mercantes inativos"
 
 msgid "There are no merchant ships."
 msgstr "Nevlastníte žiadne obchodné lode."
@@ -1277,7 +1311,7 @@ msgid ""
 "Right-click to cancel trade route."
 msgstr ""
 "Este é o mercado de origem da rota de comércio.\n"
-"Clica com o botão direito para cancelar a rota de comércio."
+"Clica com o botão direito do rato para cancelar a rota de comércio."
 
 msgid "Origin trade market."
 msgstr "Origen del intercambio comercial."
@@ -1307,7 +1341,7 @@ msgstr "Actualmente están guarnecidos: %(garrisoned)s/%(capacity)s"
 msgid "Right-click to establish a default route for new traders."
 msgstr ""
 "Clica com o botão direito do rato para estabelecer uma rota pré-definida para os novos "
-"comerciantes."
+"mercadores."
 
 #, python-format
 msgid "Expected gain: %(gain)s"
@@ -1322,7 +1356,7 @@ msgid "Unload All."
 msgstr "Iedereen naar buiten sturen."
 
 msgid "Unload Turrets."
-msgstr "برجک ها بارگذاری نشده اند."
+msgstr "Каравыч манаралардан бушату."
 
 msgid "Destroy the selected units or structures."
 msgstr "選択しているユニットまたは建造物を破壊します。Destroy the selected units or structures."
@@ -1354,11 +1388,11 @@ msgstr "Ausquartieren"
 
 msgid "Order the selected units to repair a structure, ship, or siege engine."
 msgstr ""
-"Ausgewählten Einheiten Befehl, ein Gebäude, ein Schiff oder eine Belagerungseinheit zu "
-"reparieren."
+"Ausgewählten Einheiten befehlen, ein Gebäude, ein Schiff oder eine Belagerungseinheit "
+"zu reparieren."
 
 msgid "Focus on Rally Point."
-msgstr "Centrer sur le point de ralliement."
+msgstr "Kamera auf Sammelpunkt fokussieren."
 
 msgid "Back to Work"
 msgstr "Tillbaka till arbetet"

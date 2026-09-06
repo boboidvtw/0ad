@@ -1,31 +1,32 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2023 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# 76407af6b051a571d67c2577de2183db_7380deb
-# Aksidion Kreimben (programmer)
-# Asakura
-# Junghee Lee
-# 미워하지 않아
-# Gu Hong Min
-# Hn Dsu
-# moolow
-# jjj
-# ks k
-# naoki yoshida
-# red hare
-# sang gyu nam
-# 개발자무일푼
-# Takaki IEKURA
-# Valtiel
-# YongNam Kim
+# 76407af6b051a571d67c2577de2183db_7380deb, 2016
+# Aksidion Kreimben (programmer), 2016
+# Asakura, 2017
+# Junghee Lee, 2021
+# 미워하지 않아, 2017
+# Gu Hong Min, 2015
+# Hn Dsu, 2016
+# moolow, 2018
+# jjj, 2014
+# ks k, 2017,2019
+# ks k, 2019-2020
+# naoki yoshida, 2015
+# red hare, 2017
+# sang gyu nam, 2018
+# 개발자무일푼, 2015
+# Takaki IEKURA, 2018
+# Valtiel, 2014
+# YongNam Kim, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2023-04-21 07:09+0000\n"
+"POT-Creation-Date: 2024-07-26 13:41+0000\n"
 "PO-Revision-Date: 2014-06-19 17:54+0000\n"
-"Last-Translator: Junghee Lee <daemul72@gmail.com>, 2022-2023\n"
+"Last-Translator: Junghee Lee, 2022-2024\n"
 "Language-Team: Korean (http://app.transifex.com/wildfire-games/0ad/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,119 +34,119 @@ msgstr ""
 "Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: simulation/data/attack_effects/applystatus.jsondescription
+#: simulation/data/attack_effects/applystatus.json
 msgctxt "effect caused by an attack"
 msgid "Various (timed) effects."
 msgstr "다양한 (시간 지정) 효과."
 
-#: simulation/data/attack_effects/applystatus.jsonname
+#: simulation/data/attack_effects/applystatus.json
 msgctxt "effect caused by an attack"
 msgid "Apply Status"
 msgstr "상태 적용"
 
-#: simulation/data/attack_effects/capture.jsondescription
+#: simulation/data/attack_effects/capture.json
 msgctxt "effect caused by an attack"
 msgid "Reduces capture points of a target."
 msgstr "대상의 점령 포인트가 줄어듭니다."
 
-#: simulation/data/attack_effects/capture.jsonname
+#: simulation/data/attack_effects/capture.json
 msgctxt "effect caused by an attack"
 msgid "Capture"
 msgstr "점령"
 
-#: simulation/data/attack_effects/damage.jsondescription
+#: simulation/data/attack_effects/damage.json
 msgctxt "effect caused by an attack"
 msgid "Reduces the health of a target."
 msgstr "대상의 체력을 감소시킵니다."
 
-#: simulation/data/attack_effects/damage.jsonname
+#: simulation/data/attack_effects/damage.json
 msgctxt "effect caused by an attack"
 msgid "Damage"
 msgstr "피해"
 
-#: simulation/data/damage_types/crush.jsondescription
-msgctxt "damage type"
-msgid "Damage caused by sheer force, like with a club or by trampling."
-msgstr "몽둥이나 짓밟는 것과 같은 순수한 힘에 의한 피해입니다."
-
-#: simulation/data/damage_types/crush.jsonname
+#: simulation/data/damage_types/crush.json
 msgctxt "damage type"
 msgid "Crush"
 msgstr "진압"
 
-#: simulation/data/damage_types/fire.jsondescription
+#: simulation/data/damage_types/crush.json
 msgctxt "damage type"
-msgid "Damage caused by burning objects, like a torch or a flaming arrow."
-msgstr "횃불이나 불타는 화살과 같은 물체를 태워서 생긴 손상입니다."
+msgid "Damage caused by sheer force, like with a club or by trampling."
+msgstr "몽둥이나 짓밟는 것과 같은 순수한 힘에 의한 피해입니다."
 
-#: simulation/data/damage_types/fire.jsonname
+#: simulation/data/damage_types/fire.json
 msgctxt "damage type"
 msgid "Fire"
 msgstr "불"
 
-#: simulation/data/damage_types/hack.jsondescription
+#: simulation/data/damage_types/fire.json
+msgctxt "damage type"
+msgid "Damage caused by burning objects, like a torch or a flaming arrow."
+msgstr "횃불이나 불타는 화살과 같은 물체를 태워서 생긴 손상입니다."
+
+#: simulation/data/damage_types/hack.json
+msgctxt "damage type"
+msgid "Hack"
+msgstr "베기"
+
+#: simulation/data/damage_types/hack.json
 msgctxt "damage type"
 msgid ""
 "Damage caused by sharp objects cutting or chopping, like with a sword or an "
 "axe."
 msgstr "칼이나 도끼처럼 날카로운 물체에의한 베거나 찍히는 피해입니다."
 
-#: simulation/data/damage_types/hack.jsonname
-msgctxt "damage type"
-msgid "Hack"
-msgstr "베기"
-
-#: simulation/data/damage_types/pierce.jsondescription
-msgctxt "damage type"
-msgid "Damage caused by sharp pointy objects, like arrows or spears."
-msgstr "화살이나 창과 같은 뾰족한 물체로 인한 피해입니다."
-
-#: simulation/data/damage_types/pierce.jsonname
+#: simulation/data/damage_types/pierce.json
 msgctxt "damage type"
 msgid "Pierce"
 msgstr "찌르기"
 
-#: simulation/data/damage_types/poison.jsondescription
+#: simulation/data/damage_types/pierce.json
+msgctxt "damage type"
+msgid "Damage caused by sharp pointy objects, like arrows or spears."
+msgstr "화살이나 창과 같은 뾰족한 물체로 인한 피해입니다."
+
+#: simulation/data/damage_types/poison.json
+msgctxt "damage type"
+msgid "Poison"
+msgstr "독약"
+
+#: simulation/data/damage_types/poison.json
 msgctxt "damage type"
 msgid ""
 "Damage caused by venomous or poisoned objects, like a snake or a poisoned "
 "weapon."
 msgstr "뱀이나 독이 든 무기같이 독이 있거나, 독극물에 의한 손상입니다."
 
-#: simulation/data/damage_types/poison.jsonname
-msgctxt "damage type"
-msgid "Poison"
-msgstr "독약"
-
-#: simulation/data/status_effects/burning.jsonapplierTooltip
+#: simulation/data/status_effects/burning.json
 msgctxt "status effect"
 msgid "This unit causes fire damage."
 msgstr "이 유닛은 화재 피해를 입힙니다."
 
-#: simulation/data/status_effects/burning.jsonreceiverTooltip
-msgctxt "status effect"
-msgid "This unit is burning."
-msgstr "이 유닛은 불타는 중입니다."
-
-#: simulation/data/status_effects/burning.jsonstatusName
+#: simulation/data/status_effects/burning.json
 msgctxt "status effect"
 msgid "Burning"
 msgstr "불타는 중"
 
-#: simulation/data/status_effects/poisoned.jsonapplierTooltip
+#: simulation/data/status_effects/burning.json
+msgctxt "status effect"
+msgid "This unit is burning."
+msgstr "이 유닛은 불타는 중입니다."
+
+#: simulation/data/status_effects/poisoned.json
 msgctxt "status effect"
 msgid "This unit causes poison damage."
 msgstr "이 유닛은 독 피해를 일으킵니다."
 
-#: simulation/data/status_effects/poisoned.jsonreceiverTooltip
-msgctxt "status effect"
-msgid "This unit is poisoned."
-msgstr "이 유닛은 중독되었습니다."
-
-#: simulation/data/status_effects/poisoned.jsonstatusName
+#: simulation/data/status_effects/poisoned.json
 msgctxt "status effect"
 msgid "Poisoned"
 msgstr "중독됨"
+
+#: simulation/data/status_effects/poisoned.json
+msgctxt "status effect"
+msgid "This unit is poisoned."
+msgstr "이 유닛은 중독되었습니다."
 
 #: simulation/templates/campaigns/army_mace_hero_alexander.xml:24
 msgid "Army of Alexander the Great."
@@ -175,7 +176,7 @@ msgstr "레오니다스 1세의 군대입니다."
 
 #: simulation/templates/campaigns/army_spart_hero_leonidas.xml:25
 msgid "Army of Leonidas I"
-msgstr "레오니다스 1세의 군대"
+msgstr ""
 
 #: simulation/templates/campaigns/campaign_city_minor_test.xml:21
 #: simulation/templates/campaigns/campaign_city_test.xml:21
@@ -197,7 +198,7 @@ msgstr "이것은 작은 그리스 도시입니다."
 
 #: simulation/templates/campaigns/campaign_city_test.xml:23
 msgid "Greek Polis"
-msgstr "그리스 폴리스"
+msgstr ""
 
 #: simulation/templates/campaigns/campaign_city_test.xml:24
 msgid "This is a major Greek city."
@@ -639,7 +640,7 @@ msgstr "대추야자"
 
 #: simulation/templates/gaia/fruit/fig.xml:8
 msgid "Fig"
-msgstr "무화과"
+msgstr ""
 
 #: simulation/templates/gaia/fruit/grapes.xml:4
 msgid "Grapes"
@@ -647,7 +648,7 @@ msgstr "포도"
 
 #: simulation/templates/gaia/ruins/column_doric.xml:8
 msgid "Doric Column"
-msgstr "도리아식 기념비"
+msgstr "도리아 기념비"
 
 #: simulation/templates/gaia/ruins/metal_statue_isis.xml:9
 msgid "Isis Cult Image"
@@ -672,7 +673,7 @@ msgstr "이집트 동상"
 
 #: simulation/templates/gaia/ruins/stone_statues_kushite.xml:8
 msgid "Kushite Statue"
-msgstr "쿠시족 동상"
+msgstr "쿠시인 동상"
 
 #: simulation/templates/gaia/ruins/stone_statues_kushite_bird.xml:9
 #: simulation/templates/gaia/ruins/stone_statues_kushite_lion.xml:9
@@ -686,7 +687,7 @@ msgstr "석재 자원"
 
 #: simulation/templates/gaia/ruins/stone_statues_kushite_bird.xml:10
 msgid "Kushite Bird Statue"
-msgstr "쿠시족 새 동상"
+msgstr "쿠시인 새 동상"
 
 #: simulation/templates/gaia/ruins/stone_statues_kushite_lion.xml:10
 msgid "Apademak Lion Statue"
@@ -695,6 +696,10 @@ msgstr "아파데막 사자상"
 #: simulation/templates/gaia/ruins/stone_statues_kushite_ram.xml:10
 msgid "Ammon-Ra Ram Statue"
 msgstr "암몬 라 램 동상"
+
+#: simulation/templates/gaia/ruins/stone_statues_persian_lamassu.xml:8
+msgid "Lamassu Statue"
+msgstr "라마수 조각상"
 
 #: simulation/templates/gaia/ruins/stone_statues_roman.xml:8
 msgid "Roman Statue"
@@ -718,7 +723,7 @@ msgstr "폐허가 된 탑"
 
 #: simulation/templates/gaia/ruins/unfinished_greek_temple.xml:8
 msgid "Unfinished Greek Temple"
-msgstr "미완성된 그리스 사원"
+msgstr ""
 
 #: simulation/templates/gaia/treasure/food_barrel.xml:8
 #: simulation/templates/gaia/treasure/food_bin.xml:8
@@ -733,27 +738,27 @@ msgstr "반쯤 묻힌 통"
 
 #: simulation/templates/gaia/treasure/food_persian_big.xml:8
 msgid "Persian Food Stores"
-msgstr "페르시아의 식량 저장고"
+msgstr "페르시아족 식량 저장고"
 
 #: simulation/templates/gaia/treasure/food_persian_small.xml:8
 msgid "Persian Food Treasure"
-msgstr "페르시아의 식량 보물"
+msgstr "페르시아족 식량 보물"
 
 #: simulation/templates/gaia/treasure/golden_fleece.xml:8
 msgid "Golden Fleece"
-msgstr "황금 양털"
+msgstr ""
 
 #: simulation/templates/gaia/treasure/metal.xml:8
 msgid "Secret Box"
-msgstr "비밀 상자"
+msgstr ""
 
 #: simulation/templates/gaia/treasure/metal_persian_big.xml:8
 msgid "Persian Wares"
-msgstr "페르시아의 상품"
+msgstr "페르시아족 상품"
 
 #: simulation/templates/gaia/treasure/metal_persian_small.xml:8
 msgid "Persian Rugs"
-msgstr "페르시아의 양탄자"
+msgstr "페르시아족 양탄자"
 
 #: simulation/templates/gaia/treasure/metal_weapons_small.xml:8
 msgid "Iron Weapons"
@@ -761,18 +766,30 @@ msgstr "철제 무기"
 
 #: simulation/templates/gaia/treasure/pegasus.xml:8
 msgid "Pegasus"
-msgstr "페가수스"
+msgstr ""
 
 #: simulation/templates/gaia/treasure/shipwreck.xml:8
 #: simulation/templates/gaia/treasure/shipwreck_ram_bow.xml:8
 #: simulation/templates/gaia/treasure/shipwreck_sail_boat.xml:8
 #: simulation/templates/gaia/treasure/shipwreck_sail_boat_cut.xml:8
 msgid "Shipwreck"
-msgstr "난파선"
+msgstr ""
 
 #: simulation/templates/gaia/treasure/shipwreck_debris.xml:8
 msgid "Shipwreck Cargo"
 msgstr "난파선 화물"
+
+#: simulation/templates/gaia/treasure/special_argo.xml:8
+msgid "The Argo"
+msgstr "아르고"
+
+#: simulation/templates/gaia/treasure/special_argo.xml:9
+msgid "Mythological Treasure"
+msgstr "신화 속 보물"
+
+#: simulation/templates/gaia/treasure/special_argo.xml:10
+msgid "The mythological ship of the hero Theseus and his Argonauts."
+msgstr "영웅 테세우스와 그의 아르고선 선원들의 신화 속의 선박입니다."
 
 #: simulation/templates/gaia/treasure/stone.xml:8
 msgid "Stone Treasure"
@@ -784,12 +801,12 @@ msgstr "화강암 다음기"
 
 #: simulation/templates/gaia/treasure/stone_pile_granite_large.xml:8
 msgid "Cut Stone"
-msgstr "돌 다음기"
+msgstr "다듬어진 돌"
 
 #: simulation/templates/gaia/treasure/stone_pile_red.xml:8
 #: simulation/templates/gaia/treasure/stone_pile_sandstone.xml:4
 msgid "Cut Sandstone"
-msgstr "사암 다듬기"
+msgstr "다듬어진 사암"
 
 #: simulation/templates/gaia/treasure/wood.xml:8
 msgid "Wood Treasure"
@@ -797,7 +814,7 @@ msgstr "목재 보물"
 
 #: simulation/templates/gaia/treasure/wood_lumber.xml:8
 msgid "Milled Lumber"
-msgstr "가공된 목재"
+msgstr "가공된 판재"
 
 #: simulation/templates/gaia/tree/acacia.xml:4
 msgid "Acacia"
@@ -845,6 +862,10 @@ msgstr "튼튼한 덤불"
 #: simulation/templates/gaia/tree/bush_mediterranean.xml:4
 msgid "Scrub"
 msgstr "덤불"
+
+#: simulation/templates/gaia/tree/bush_mediterranean_dry.xml:4
+msgid "Dry Scrub"
+msgstr "마른 덤불"
 
 #: simulation/templates/gaia/tree/carob.xml:4
 msgid "Carob"
@@ -961,13 +982,17 @@ msgstr "둠야자"
 msgid "Palmyra Palm"
 msgstr "다라수"
 
+#: simulation/templates/gaia/tree/palm_royal.xml:4
+msgid "Royal Palm"
+msgstr "대왕야자"
+
 #: simulation/templates/gaia/tree/palm_tropic.xml:4
 msgid "Palm"
-msgstr "야자수"
+msgstr ""
 
 #: simulation/templates/gaia/tree/palm_tropical.xml:4
 msgid "Tropical Palm"
-msgstr "열대 야자수"
+msgstr ""
 
 #: simulation/templates/gaia/tree/pine.xml:4
 #: simulation/templates/gaia/tree/pine_w.xml:4
@@ -997,7 +1022,7 @@ msgstr "검은 미루나무"
 
 #: simulation/templates/gaia/tree/senegal_date_palm.xml:4
 msgid "Senegal Date Palm"
-msgstr "세네갈 대추야자"
+msgstr ""
 
 #: simulation/templates/gaia/tree/strangler.xml:8
 msgid "Strangler Fig"
@@ -1019,23 +1044,71 @@ msgstr "참죽나무"
 msgid "Rainforest Tree"
 msgstr "열대 우림 나무"
 
-#: simulation/templates/mixins/builder.xml:41
+#: simulation/templates/mixins/builder.xml:42
 msgid "Builder"
 msgstr "건축 유닛"
 
 #: simulation/templates/mixins/bush.xml:4
 msgid "Bush"
-msgstr "덤불"
+msgstr ""
+
+#: simulation/templates/mixins/cataphract.xml:14
+msgid "Cataphract Cavalry"
+msgstr "철갑기병"
+
+#: simulation/templates/mixins/cataphract.xml:15
+msgid "Cataphract"
+msgstr "철갑기병"
+
+#: simulation/templates/mixins/chariot.xml:16
+msgid "Chariot"
+msgstr "전차"
+
+#: simulation/templates/mixins/fireship.xml:15
+msgctxt "Name of an attack, usually the weapon."
+msgid "Flames"
+msgstr "화염"
+
+#: simulation/templates/mixins/fireship.xml:43
+msgid "Ignited"
+msgstr "점화"
+
+#: simulation/templates/mixins/longsword.xml:22
+msgid "Longsword"
+msgstr "장검"
 
 #: simulation/templates/mixins/mercenary.xml:13
 msgid "Mercenary"
 msgstr "용병"
+
+#: simulation/templates/mixins/pirate.xml:29
+msgid "Pirate"
+msgstr "해적"
+
+#: simulation/templates/mixins/rotary_mill.xml:17
+#: simulation/templates/mixins/rotary_mill.xml:18
+msgid "Rotary Mill"
+msgstr "연자 방아"
+
+#: simulation/templates/mixins/rotary_mill.xml:19
+msgid "RotaryMill"
+msgstr "연자방아"
+
+#: simulation/templates/mixins/rotary_mill.xml:22
+msgid ""
+"Dropsite for harvested Food. Capture one of these to increase nearby food "
+"production."
+msgstr "수확한 음식을 모으는 장소입니다. 이 건물을 점령하면 인근의 식량 생산이 증가합니다."
 
 #: simulation/templates/mixins/shrine.xml:12
 #: simulation/templates/mixins/shrine.xml:13
 #: simulation/templates/mixins/shrine.xml:14
 msgid "Shrine"
 msgstr "사당"
+
+#: simulation/templates/mixins/shrine.xml:18
+msgid "Train Elite Healers and heal garrisoned units."
+msgstr "정예 치료사들을 훈련하고 주둔한 유닛들을 치료합니다."
 
 #: simulation/templates/mixins/trading_post.xml:8
 msgid "Trading Post"
@@ -1085,15 +1158,23 @@ msgstr "문명화를 위해 인구 5명이 거주하는 집의 변화는, 다른
 #: simulation/templates/special/formations/anti_cavalry.xml:5
 #: simulation/templates/special/formations/testudo.xml:5
 msgid "Melee Infantry only, requires at least 16."
-msgstr "근접병만, 최소 16명이 필요합니다."
+msgstr "근접 보병만, 최소 16명이 필요합니다."
 
 #: simulation/templates/special/formations/anti_cavalry.xml:25
 msgid "Anti Cavalry"
-msgstr "장창병"
+msgstr "대항 기병"
+
+#: simulation/templates/special/formations/anti_cavalry.xml:26
+msgid "Square formation of Melee Infantry to fight Cavalry."
+msgstr "기병과 싸우기 위한 근접 보병의 정방형 대형입니다."
 
 #: simulation/templates/special/formations/battle_line.xml:13
 msgid "Battle Line"
 msgstr "전투대형"
+
+#: simulation/templates/special/formations/battle_line.xml:15
+msgid "Common formation for frontal attacks."
+msgstr "전방 공격의 공통 대형입니다."
 
 #: simulation/templates/special/formations/box.xml:5
 msgid "Requires at least 4 Soldiers or Siege engines."
@@ -1103,13 +1184,25 @@ msgstr "최소 4명의 병사나 공성 무기가 필요합니다."
 msgid "Box"
 msgstr "경비대형"
 
+#: simulation/templates/special/formations/box.xml:14
+msgid "Square formation to protect all sides."
+msgstr "모든 측면을 보호하는 정방형 대형입니다."
+
 #: simulation/templates/special/formations/column_closed.xml:10
 msgid "Forced March"
 msgstr "행군대형"
 
+#: simulation/templates/special/formations/column_closed.xml:12
+msgid "Closed column formation for risky movements."
+msgstr "위험한 움직임에 대비한 순환식 종대 대형입니다."
+
 #: simulation/templates/special/formations/column_open.xml:10
 msgid "Column Open"
 msgstr "산개종대"
+
+#: simulation/templates/special/formations/column_open.xml:12
+msgid "Dispersed formation for open field crossings."
+msgstr "개활지 횡단을 위한 분산 대형입니다."
 
 #: simulation/templates/special/formations/flank.xml:5
 msgid "Requires at least 8 Soldiers or Siege engines."
@@ -1119,13 +1212,25 @@ msgstr "최소 8명의 병사나 공성 무기가 필요합니다."
 msgid "Flank"
 msgstr "양옆대형"
 
+#: simulation/templates/special/formations/flank.xml:13
+msgid "Formation to protect the sides or surprise attack the enemy flank."
+msgstr "측면을 보호하거나 적의 측면을 기습 공격하기 위한 대형입니다."
+
 #: simulation/templates/special/formations/line_closed.xml:9
 msgid "Close Order"
 msgstr "밀집대형"
 
+#: simulation/templates/special/formations/line_closed.xml:11
+msgid "Flexible closed line formation."
+msgstr "유연한 순환식 일렬 대형입니다."
+
 #: simulation/templates/special/formations/line_open.xml:11
 msgid "Open Order"
 msgstr "산개대형"
+
+#: simulation/templates/special/formations/line_open.xml:13
+msgid "Dispersed formation for open field combat."
+msgstr "개활지 전투를 위한 분산 대형입니다."
 
 #: simulation/templates/special/formations/null.xml:7
 msgid "None"
@@ -1139,9 +1244,46 @@ msgstr "장갑보병만, 최소 10명이 필요합니다."
 msgid "Phalanx"
 msgstr "방진대형"
 
+#: simulation/templates/special/formations/phalanx.xml:25
+msgid "Compact formation of Infantry Hoplites creating a shield wall."
+msgstr "방패벽을 형성하는 보병 장갑보병의 밀집 대형입니다."
+
 #: simulation/templates/special/formations/scatter.xml:8
 msgid "Scatter"
 msgstr "분산대형"
+
+#: simulation/templates/special/formations/ships/column.xml:5
+#: simulation/templates/special/formations/ships/line_staggered.xml:5
+msgid "Requires at least 4 Ships."
+msgstr "최소 4척 이상의 선박이 필요합니다."
+
+#: simulation/templates/special/formations/ships/column.xml:14
+msgid "Maneuvering Column"
+msgstr "기동 대열"
+
+#: simulation/templates/special/formations/ships/column.xml:16
+msgid "A column formation for fleet maneuvers."
+msgstr "함대 기동을 위한 종대 대형입니다."
+
+#: simulation/templates/special/formations/ships/flank.xml:5
+msgid "Requires at least 8 Ships."
+msgstr "최소 8척 이상의 선박이 필요합니다."
+
+#: simulation/templates/special/formations/ships/flank.xml:14
+msgid "Flanking Formation"
+msgstr "측면공격 대형"
+
+#: simulation/templates/special/formations/ships/flank.xml:16
+msgid "Formation to protect the sides or surprise attack the enemy flanks."
+msgstr "측면을 보호하거나 적의 측면을 기습 공격하기 위한 대형입니다."
+
+#: simulation/templates/special/formations/ships/line_staggered.xml:17
+msgid "Fleet Battle Line"
+msgstr "함대 전선"
+
+#: simulation/templates/special/formations/ships/line_staggered.xml:19
+msgid "Common fleet formation for frontal attacks."
+msgstr "전방 공격을 위한 일반적인 함대 대형입니다."
 
 #: simulation/templates/special/formations/skirmish.xml:4
 msgid "Ranged Soldiers only, requires at least 2."
@@ -1151,25 +1293,41 @@ msgstr "원거리 공격 병사만, 최소 2명이 필요합니다."
 msgid "Skirmish"
 msgstr "교전대형"
 
+#: simulation/templates/special/formations/skirmish.xml:16
+msgid "Dispersed formation for reconnaissance, ambushes or hit-and-run."
+msgstr "정찰, 매복 또는 기습을 위한 분산 대형입니다."
+
 #: simulation/templates/special/formations/syntagma.xml:5
 msgid "Infantry Pikemen only, requires at least 16."
-msgstr "단창병만, 최소 16명이 필요합니다."
+msgstr "단창 보병만, 최소 16명이 필요합니다."
 
 #: simulation/templates/special/formations/syntagma.xml:29
 msgid "Syntagma"
 msgstr "통합대형"
 
+#: simulation/templates/special/formations/syntagma.xml:31
+msgid "Compact formation of Infantry Pikemen creating a defensive wall."
+msgstr "방어벽을 형성하는 보병 단창 보병의 밀집 대형입니다."
+
 #: simulation/templates/special/formations/testudo.xml:70
 msgid "Testudo"
 msgstr "귀갑대형"
 
+#: simulation/templates/special/formations/testudo.xml:72
+msgid "Compact formation of Melee Infantry creating a shield shell."
+msgstr "방어외관을 형성하는 근접 보병의 밀집 대형입니다."
+
 #: simulation/templates/special/formations/wedge.xml:5
 msgid "Cavalry only, requires at least 6."
-msgstr "기마병만, 최소 6명이 필요합니다."
+msgstr "기병만, 최소 6명이 필요합니다."
 
 #: simulation/templates/special/formations/wedge.xml:16
 msgid "Wedge"
 msgstr "쐐기대형"
+
+#: simulation/templates/special/formations/wedge.xml:18
+msgid "Triangular Cavalry formation to break through enemy lines."
+msgstr "적진을 돌파하기 위한 삼각 기병 대형입니다."
 
 #: simulation/templates/special/spy.xml:16
 msgid "Spy"

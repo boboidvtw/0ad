@@ -1,29 +1,31 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2023 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# LeviTaule
-# Marek Berčík
-# 2001c3bfc7421750b343e20d6f8feae5_62d342a
-# Mário Bulejko
-# Martin Plávala
-# Miroslav Kadlec
-# MiroslavR
-# Miroslav Remák
-# SuroX
-# Peto (wt-ts)
-# Roman 'Kaktuxista' Benji
-# Rudolf Tisoň
-# c1d3d4413723242329060e6153cf18b8_282267d
-# Tom Hanax
-# Zuzana Miadoková
+# LeviTaule, 2015-2016
+# Marek Berčík, 2021
+# 2001c3bfc7421750b343e20d6f8feae5_62d342a, 2015
+# Mário Bulejko, 2015
+# Martin Plávala, 2014
+# Miroslav Kadlec, 2018
+# MiroslavR, 2014
+# Miroslav Remák, 2014
+# Patrik Špaňo, 2024
+# SuroX, 2016
+# Peto (wt-ts), 2016
+# Roman 'Kaktuxista' Benji, 2014
+# Rudolf Tisoň, 2022
+# Rudolf Tisoň, 2021
+# c1d3d4413723242329060e6153cf18b8_282267d, 2018-2020
+# Tom Hanax, 2019
+# Zuzana Miadoková, 2019,2021-2024
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2023-04-21 07:09+0000\n"
+"POT-Creation-Date: 2024-07-26 13:41+0000\n"
 "PO-Revision-Date: 2014-06-19 17:54+0000\n"
-"Last-Translator: Zuzana Miadoková, 2019,2021-2022\n"
+"Last-Translator: Patrik Špaňo, 2024\n"
 "Language-Team: Slovak (http://app.transifex.com/wildfire-games/0ad/language/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,119 +33,119 @@ msgstr ""
 "Language: sk\n"
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
 
-#: simulation/data/attack_effects/applystatus.jsondescription
+#: simulation/data/attack_effects/applystatus.json
 msgctxt "effect caused by an attack"
 msgid "Various (timed) effects."
 msgstr "Rôzne (časované) efekty."
 
-#: simulation/data/attack_effects/applystatus.jsonname
+#: simulation/data/attack_effects/applystatus.json
 msgctxt "effect caused by an attack"
 msgid "Apply Status"
 msgstr "Použiť status"
 
-#: simulation/data/attack_effects/capture.jsondescription
+#: simulation/data/attack_effects/capture.json
 msgctxt "effect caused by an attack"
 msgid "Reduces capture points of a target."
 msgstr "Znižuje obsadzovacie body cieľa."
 
-#: simulation/data/attack_effects/capture.jsonname
+#: simulation/data/attack_effects/capture.json
 msgctxt "effect caused by an attack"
 msgid "Capture"
 msgstr "Prevzatie"
 
-#: simulation/data/attack_effects/damage.jsondescription
+#: simulation/data/attack_effects/damage.json
 msgctxt "effect caused by an attack"
 msgid "Reduces the health of a target."
 msgstr "Znižuje zdravie cieľa."
 
-#: simulation/data/attack_effects/damage.jsonname
+#: simulation/data/attack_effects/damage.json
 msgctxt "effect caused by an attack"
 msgid "Damage"
 msgstr "Poškodenie"
 
-#: simulation/data/damage_types/crush.jsondescription
-msgctxt "damage type"
-msgid "Damage caused by sheer force, like with a club or by trampling."
-msgstr "Poškodené spôsobené hrubou silou, napríklad palcátom alebo pošliapaním."
-
-#: simulation/data/damage_types/crush.jsonname
+#: simulation/data/damage_types/crush.json
 msgctxt "damage type"
 msgid "Crush"
 msgstr "Drvivé"
 
-#: simulation/data/damage_types/fire.jsondescription
+#: simulation/data/damage_types/crush.json
 msgctxt "damage type"
-msgid "Damage caused by burning objects, like a torch or a flaming arrow."
-msgstr "Poškodenie spôsobené horiacimi objektami, napríklad fakľou alebo zápalným šípom."
+msgid "Damage caused by sheer force, like with a club or by trampling."
+msgstr "Poškodené spôsobené hrubou silou, napríklad palcátom alebo pošliapaním."
 
-#: simulation/data/damage_types/fire.jsonname
+#: simulation/data/damage_types/fire.json
 msgctxt "damage type"
 msgid "Fire"
 msgstr "Ohnivé"
 
-#: simulation/data/damage_types/hack.jsondescription
+#: simulation/data/damage_types/fire.json
+msgctxt "damage type"
+msgid "Damage caused by burning objects, like a torch or a flaming arrow."
+msgstr "Poškodenie spôsobené horiacimi objektami, napríklad fakľou alebo zápalným šípom."
+
+#: simulation/data/damage_types/hack.json
+msgctxt "damage type"
+msgid "Hack"
+msgstr "Sečné"
+
+#: simulation/data/damage_types/hack.json
 msgctxt "damage type"
 msgid ""
 "Damage caused by sharp objects cutting or chopping, like with a sword or an "
 "axe."
 msgstr "Poškodenie spôsobené čepeľami ostrých objektov, napríklad mečom alebo sekerou."
 
-#: simulation/data/damage_types/hack.jsonname
-msgctxt "damage type"
-msgid "Hack"
-msgstr "Sečné"
-
-#: simulation/data/damage_types/pierce.jsondescription
-msgctxt "damage type"
-msgid "Damage caused by sharp pointy objects, like arrows or spears."
-msgstr "Poškodenie spôsobené ostrými špicatými objektmi, napríklad šípmi alebo kopijami."
-
-#: simulation/data/damage_types/pierce.jsonname
+#: simulation/data/damage_types/pierce.json
 msgctxt "damage type"
 msgid "Pierce"
 msgstr "Bodné"
 
-#: simulation/data/damage_types/poison.jsondescription
+#: simulation/data/damage_types/pierce.json
+msgctxt "damage type"
+msgid "Damage caused by sharp pointy objects, like arrows or spears."
+msgstr "Poškodenie spôsobené ostrými špicatými objektmi, napríklad šípmi alebo kopijami."
+
+#: simulation/data/damage_types/poison.json
+msgctxt "damage type"
+msgid "Poison"
+msgstr "Jedové"
+
+#: simulation/data/damage_types/poison.json
 msgctxt "damage type"
 msgid ""
 "Damage caused by venomous or poisoned objects, like a snake or a poisoned "
 "weapon."
 msgstr "Poškodenie spôsobené jedovatými alebo otrávenými objektami, napríklad hadom alebo otrávenou zbraňou."
 
-#: simulation/data/damage_types/poison.jsonname
-msgctxt "damage type"
-msgid "Poison"
-msgstr "Jedové"
-
-#: simulation/data/status_effects/burning.jsonapplierTooltip
+#: simulation/data/status_effects/burning.json
 msgctxt "status effect"
 msgid "This unit causes fire damage."
 msgstr "Táto jednotka spôsobuje poškodenie ohňom."
 
-#: simulation/data/status_effects/burning.jsonreceiverTooltip
-msgctxt "status effect"
-msgid "This unit is burning."
-msgstr "Táto jednotka horí."
-
-#: simulation/data/status_effects/burning.jsonstatusName
+#: simulation/data/status_effects/burning.json
 msgctxt "status effect"
 msgid "Burning"
 msgstr "Horiace"
 
-#: simulation/data/status_effects/poisoned.jsonapplierTooltip
+#: simulation/data/status_effects/burning.json
+msgctxt "status effect"
+msgid "This unit is burning."
+msgstr "Táto jednotka horí."
+
+#: simulation/data/status_effects/poisoned.json
 msgctxt "status effect"
 msgid "This unit causes poison damage."
 msgstr "Táto jednotka spôsobuje poškodenie jedom."
 
-#: simulation/data/status_effects/poisoned.jsonreceiverTooltip
-msgctxt "status effect"
-msgid "This unit is poisoned."
-msgstr "Táto jednotka je otrávená."
-
-#: simulation/data/status_effects/poisoned.jsonstatusName
+#: simulation/data/status_effects/poisoned.json
 msgctxt "status effect"
 msgid "Poisoned"
 msgstr "Otrávený"
+
+#: simulation/data/status_effects/poisoned.json
+msgctxt "status effect"
+msgid "This unit is poisoned."
+msgstr "Táto jednotka je otrávená."
 
 #: simulation/templates/campaigns/army_mace_hero_alexander.xml:24
 msgid "Army of Alexander the Great."
@@ -649,7 +651,7 @@ msgstr "Dórsky stĺp"
 
 #: simulation/templates/gaia/ruins/metal_statue_isis.xml:9
 msgid "Isis Cult Image"
-msgstr "Svätý obraz Isis"
+msgstr "Svätý obraz Eset"
 
 #: simulation/templates/gaia/ruins/pyramid_great.xml:8
 msgid "Great Pyramid"
@@ -694,25 +696,29 @@ msgstr "Levia socha Apedemak"
 msgid "Ammon-Ra Ram Statue"
 msgstr "Barania socha Amon-Ré"
 
+#: simulation/templates/gaia/ruins/stone_statues_persian_lamassu.xml:8
+msgid "Lamassu Statue"
+msgstr "Socha Lamassu"
+
 #: simulation/templates/gaia/ruins/stone_statues_roman.xml:8
 msgid "Roman Statue"
 msgstr "Rímska socha"
 
 #: simulation/templates/gaia/ruins/stone_structure_farmstead.xml:10
 msgid "Ruined Farmstead"
-msgstr ""
+msgstr "Ruiny usadlosti"
 
 #: simulation/templates/gaia/ruins/stone_structure_house.xml:10
 msgid "Ruined House"
-msgstr ""
+msgstr "Ruiny domu"
 
 #: simulation/templates/gaia/ruins/stone_structure_small.xml:10
 msgid "Ruined Structure"
-msgstr ""
+msgstr "Ruiny budovy"
 
 #: simulation/templates/gaia/ruins/stone_structure_tower.xml:10
 msgid "Ruined Tower"
-msgstr ""
+msgstr "Ruiny veže"
 
 #: simulation/templates/gaia/ruins/unfinished_greek_temple.xml:8
 msgid "Unfinished Greek Temple"
@@ -771,6 +777,18 @@ msgstr "Vrak lode"
 #: simulation/templates/gaia/treasure/shipwreck_debris.xml:8
 msgid "Shipwreck Cargo"
 msgstr "Náklad z vraku"
+
+#: simulation/templates/gaia/treasure/special_argo.xml:8
+msgid "The Argo"
+msgstr "Argo"
+
+#: simulation/templates/gaia/treasure/special_argo.xml:9
+msgid "Mythological Treasure"
+msgstr "Mýtický poklad"
+
+#: simulation/templates/gaia/treasure/special_argo.xml:10
+msgid "The mythological ship of the hero Theseus and his Argonauts."
+msgstr "Loď Thésea a Argonautov z mytológie."
 
 #: simulation/templates/gaia/treasure/stone.xml:8
 msgid "Stone Treasure"
@@ -843,6 +861,10 @@ msgstr "Otužilý ker"
 #: simulation/templates/gaia/tree/bush_mediterranean.xml:4
 msgid "Scrub"
 msgstr "Ker"
+
+#: simulation/templates/gaia/tree/bush_mediterranean_dry.xml:4
+msgid "Dry Scrub"
+msgstr "Suchý ker"
 
 #: simulation/templates/gaia/tree/carob.xml:4
 msgid "Carob"
@@ -959,6 +981,10 @@ msgstr "Palma dúmová"
 msgid "Palmyra Palm"
 msgstr "Palma palmýrska"
 
+#: simulation/templates/gaia/tree/palm_royal.xml:4
+msgid "Royal Palm"
+msgstr "Palma kráľovská"
+
 #: simulation/templates/gaia/tree/palm_tropic.xml:4
 msgid "Palm"
 msgstr "Palma"
@@ -1017,7 +1043,7 @@ msgstr "Toona"
 msgid "Rainforest Tree"
 msgstr "Strom dažďového pralesa"
 
-#: simulation/templates/mixins/builder.xml:41
+#: simulation/templates/mixins/builder.xml:42
 msgid "Builder"
 msgstr "Staviteľ"
 
@@ -1025,15 +1051,63 @@ msgstr "Staviteľ"
 msgid "Bush"
 msgstr "Ker"
 
+#: simulation/templates/mixins/cataphract.xml:14
+msgid "Cataphract Cavalry"
+msgstr "Katafraktská kavaléria"
+
+#: simulation/templates/mixins/cataphract.xml:15
+msgid "Cataphract"
+msgstr "Katafrakt"
+
+#: simulation/templates/mixins/chariot.xml:16
+msgid "Chariot"
+msgstr "Voz"
+
+#: simulation/templates/mixins/fireship.xml:15
+msgctxt "Name of an attack, usually the weapon."
+msgid "Flames"
+msgstr "Plamene"
+
+#: simulation/templates/mixins/fireship.xml:43
+msgid "Ignited"
+msgstr ""
+
+#: simulation/templates/mixins/longsword.xml:22
+msgid "Longsword"
+msgstr "Dlhý meč"
+
 #: simulation/templates/mixins/mercenary.xml:13
 msgid "Mercenary"
 msgstr "Žoldnier"
+
+#: simulation/templates/mixins/pirate.xml:29
+msgid "Pirate"
+msgstr "Pirát"
+
+#: simulation/templates/mixins/rotary_mill.xml:17
+#: simulation/templates/mixins/rotary_mill.xml:18
+msgid "Rotary Mill"
+msgstr "Otočný mlyn"
+
+#: simulation/templates/mixins/rotary_mill.xml:19
+msgid "RotaryMill"
+msgstr "OtocnyMlyn"
+
+#: simulation/templates/mixins/rotary_mill.xml:22
+msgid ""
+"Dropsite for harvested Food. Capture one of these to increase nearby food "
+"production."
+msgstr "Skladisko nazbieraného jedla. Obsaď takúto budovu pre zvýšenie produkcie jedla v jej blízkosti."
 
 #: simulation/templates/mixins/shrine.xml:12
 #: simulation/templates/mixins/shrine.xml:13
 #: simulation/templates/mixins/shrine.xml:14
 msgid "Shrine"
 msgstr "Svätyňa"
+
+#: simulation/templates/mixins/shrine.xml:18
+msgid "Train Elite Healers and heal garrisoned units."
+msgstr "Trénuj elitných liečiteľov a uzdrav jednotky v posádke."
 
 #: simulation/templates/mixins/trading_post.xml:8
 msgid "Trading Post"
@@ -1043,30 +1117,30 @@ msgstr "Obchodné stredisko"
 #: simulation/templates/obstructors/movement_8x36.xml:9
 #: simulation/templates/obstructors/movement_8x8.xml:9
 msgid "Movement Obstructor"
-msgstr ""
+msgstr "Prekážka pohybu"
 
 #: simulation/templates/obstructors/movement_36x36.xml:11
 #: simulation/templates/obstructors/movement_8x36.xml:11
 #: simulation/templates/obstructors/movement_8x8.xml:11
 msgid "Placement obstructor to prevent movement and construction."
-msgstr ""
+msgstr "Prekážka umiestnenia na zabránenie pohybu a stavbe."
 
 #: simulation/templates/obstructors/placement.xml:10
 msgid "Obstructor"
-msgstr "Zábrana"
+msgstr "Prekážka"
 
 #: simulation/templates/obstructors/placement.xml:12
 #: simulation/templates/obstructors/placement_36x36.xml:11
 #: simulation/templates/obstructors/placement_8x36.xml:11
 #: simulation/templates/obstructors/placement_8x8.xml:11
 msgid "Placement obstructor to prevent construction but not movement"
-msgstr "Zábrana umiestnenia bráni stavbe budov, ale nie pohybu"
+msgstr "Prekážka umiestnenia na zabránenie stavby budov, ale nie pohybu"
 
 #: simulation/templates/obstructors/placement_36x36.xml:9
 #: simulation/templates/obstructors/placement_8x36.xml:9
 #: simulation/templates/obstructors/placement_8x8.xml:9
 msgid "Placement Obstructor"
-msgstr ""
+msgstr "Prekážka umiestnenia"
 
 #: simulation/templates/skirmish/structures/default_house_10.xml:5
 msgid ""
@@ -1089,9 +1163,17 @@ msgstr "Iba pešiaci s útokom na blízko, vyžaduje aspoň 16."
 msgid "Anti Cavalry"
 msgstr "Proti jazde"
 
+#: simulation/templates/special/formations/anti_cavalry.xml:26
+msgid "Square formation of Melee Infantry to fight Cavalry."
+msgstr "Štvorcová formácia pechoty na blízko na boj s kavalériou."
+
 #: simulation/templates/special/formations/battle_line.xml:13
 msgid "Battle Line"
 msgstr "Bojová línia"
+
+#: simulation/templates/special/formations/battle_line.xml:15
+msgid "Common formation for frontal attacks."
+msgstr "Bežná formácia na frontálne útoky."
 
 #: simulation/templates/special/formations/box.xml:5
 msgid "Requires at least 4 Soldiers or Siege engines."
@@ -1101,13 +1183,25 @@ msgstr "Vyžaduje aspoň 4 vojakov alebo obliehacie stroje."
 msgid "Box"
 msgstr "Obdĺžnik"
 
+#: simulation/templates/special/formations/box.xml:14
+msgid "Square formation to protect all sides."
+msgstr "Štvorcová formácia na ochranu zo všetkých strán."
+
 #: simulation/templates/special/formations/column_closed.xml:10
 msgid "Forced March"
 msgstr "Rýchly pochod"
 
+#: simulation/templates/special/formations/column_closed.xml:12
+msgid "Closed column formation for risky movements."
+msgstr "Uzavretá radová formácia na riskantné manévre."
+
 #: simulation/templates/special/formations/column_open.xml:10
 msgid "Column Open"
 msgstr "Otvorený stĺpec"
+
+#: simulation/templates/special/formations/column_open.xml:12
+msgid "Dispersed formation for open field crossings."
+msgstr "Rozptýlená formácia na prechod otvorenými poliami."
 
 #: simulation/templates/special/formations/flank.xml:5
 msgid "Requires at least 8 Soldiers or Siege engines."
@@ -1117,13 +1211,25 @@ msgstr "Vyžaduje aspoň 8 vojakov alebo obliehacích strojov."
 msgid "Flank"
 msgstr "Krídla"
 
+#: simulation/templates/special/formations/flank.xml:13
+msgid "Formation to protect the sides or surprise attack the enemy flank."
+msgstr "Formácia na ochranu bokov alebo útoky na nepriateľské krídla."
+
 #: simulation/templates/special/formations/line_closed.xml:9
 msgid "Close Order"
 msgstr "Zavretý šík"
 
+#: simulation/templates/special/formations/line_closed.xml:11
+msgid "Flexible closed line formation."
+msgstr "Flexibilná uzavretá línia."
+
 #: simulation/templates/special/formations/line_open.xml:11
 msgid "Open Order"
 msgstr "Otvorený šík"
+
+#: simulation/templates/special/formations/line_open.xml:13
+msgid "Dispersed formation for open field combat."
+msgstr "Rozptýlená formácia na boj na otvorených poliach."
 
 #: simulation/templates/special/formations/null.xml:7
 msgid "None"
@@ -1137,9 +1243,46 @@ msgstr "Iba Hopliti, vyžaduje aspoň 10."
 msgid "Phalanx"
 msgstr "Falanga"
 
+#: simulation/templates/special/formations/phalanx.xml:25
+msgid "Compact formation of Infantry Hoplites creating a shield wall."
+msgstr "Kompaktná formácia pechotných hoplitov vytvárajúcich štítový val."
+
 #: simulation/templates/special/formations/scatter.xml:8
 msgid "Scatter"
 msgstr "Rozptyl"
+
+#: simulation/templates/special/formations/ships/column.xml:5
+#: simulation/templates/special/formations/ships/line_staggered.xml:5
+msgid "Requires at least 4 Ships."
+msgstr "Vyžaduje aspoň 4 lode."
+
+#: simulation/templates/special/formations/ships/column.xml:14
+msgid "Maneuvering Column"
+msgstr "Manévrovací Stĺpec"
+
+#: simulation/templates/special/formations/ships/column.xml:16
+msgid "A column formation for fleet maneuvers."
+msgstr "Stĺpcová formácia na manévre flotily."
+
+#: simulation/templates/special/formations/ships/flank.xml:5
+msgid "Requires at least 8 Ships."
+msgstr "Vyžaduje aspoň 8 lodí."
+
+#: simulation/templates/special/formations/ships/flank.xml:14
+msgid "Flanking Formation"
+msgstr "Flankovacia formácia"
+
+#: simulation/templates/special/formations/ships/flank.xml:16
+msgid "Formation to protect the sides or surprise attack the enemy flanks."
+msgstr ""
+
+#: simulation/templates/special/formations/ships/line_staggered.xml:17
+msgid "Fleet Battle Line"
+msgstr ""
+
+#: simulation/templates/special/formations/ships/line_staggered.xml:19
+msgid "Common fleet formation for frontal attacks."
+msgstr ""
 
 #: simulation/templates/special/formations/skirmish.xml:4
 msgid "Ranged Soldiers only, requires at least 2."
@@ -1149,6 +1292,10 @@ msgstr "Iba vojaci s útokom na diaľku, vyžaduje aspoň 2."
 msgid "Skirmish"
 msgstr "Šarvátka"
 
+#: simulation/templates/special/formations/skirmish.xml:16
+msgid "Dispersed formation for reconnaissance, ambushes or hit-and-run."
+msgstr ""
+
 #: simulation/templates/special/formations/syntagma.xml:5
 msgid "Infantry Pikemen only, requires at least 16."
 msgstr "Len pechotní kopijníci, vyžaduje aspoň 16."
@@ -1157,9 +1304,17 @@ msgstr "Len pechotní kopijníci, vyžaduje aspoň 16."
 msgid "Syntagma"
 msgstr "Syntagma"
 
+#: simulation/templates/special/formations/syntagma.xml:31
+msgid "Compact formation of Infantry Pikemen creating a defensive wall."
+msgstr ""
+
 #: simulation/templates/special/formations/testudo.xml:70
 msgid "Testudo"
 msgstr "Korytnačka"
+
+#: simulation/templates/special/formations/testudo.xml:72
+msgid "Compact formation of Melee Infantry creating a shield shell."
+msgstr ""
 
 #: simulation/templates/special/formations/wedge.xml:5
 msgid "Cavalry only, requires at least 6."
@@ -1168,6 +1323,10 @@ msgstr "Iba Jazda, vyžaduje aspoň 6."
 #: simulation/templates/special/formations/wedge.xml:16
 msgid "Wedge"
 msgstr "Klin"
+
+#: simulation/templates/special/formations/wedge.xml:18
+msgid "Triangular Cavalry formation to break through enemy lines."
+msgstr ""
 
 #: simulation/templates/special/spy.xml:16
 msgid "Spy"

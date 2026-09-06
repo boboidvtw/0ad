@@ -1,4 +1,4 @@
-/* Copyright (C) 2023 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -199,13 +199,13 @@ CStr CRendererStatsTable::GetCellText(size_t row, size_t col)
 	case Row_VBReserved:
 		if (col == 0)
 			return "VB reserved";
-		sprintf_s(buf, sizeof(buf), "%lu kB", (unsigned long)g_VBMan.GetBytesReserved() / 1024);
+		sprintf_s(buf, sizeof(buf), "%lu kB", static_cast<unsigned long>(g_Renderer.GetVertexBufferManager().GetBytesReserved() / 1024));
 		return buf;
 
 	case Row_VBAllocated:
 		if (col == 0)
 			return "VB allocated";
-		sprintf_s(buf, sizeof(buf), "%lu kB", (unsigned long)g_VBMan.GetBytesAllocated() / 1024);
+		sprintf_s(buf, sizeof(buf), "%lu kB", static_cast<unsigned long>(g_Renderer.GetVertexBufferManager().GetBytesAllocated() / 1024));
 		return buf;
 
 	case Row_TextureMemory:
@@ -243,6 +243,8 @@ class CRenderer::Internals
 {
 	NONCOPYABLE(Internals);
 public:
+	Renderer::Backend::IDevice* device;
+
 	std::unique_ptr<Renderer::Backend::IDeviceCommandContext> deviceCommandContext;
 
 	/// true if CRenderer::Open has been called
@@ -259,6 +261,8 @@ public:
 
 	/// Texture manager
 	CTextureManager textureManager;
+
+	CVertexBufferManager vertexBufferManager;
 
 	/// Time manager
 	CTimeManager timeManager;
@@ -281,10 +285,12 @@ public:
 		std::vector<Renderer::Backend::SVertexAttributeFormat>,
 		std::unique_ptr<Renderer::Backend::IVertexInputLayout>, VertexAttributesHash> vertexInputLayouts;
 
-	Internals() :
+	Internals(Renderer::Backend::IDevice* device) :
+		device(device),
+		deviceCommandContext(device->CreateCommandContext()),
 		IsOpen(false), ShadersDirty(true), profileTable(g_Renderer.m_Stats),
-		deviceCommandContext(g_VideoMode.GetBackendDevice()->CreateCommandContext()),
-		textureManager(g_VFS, false, g_VideoMode.GetBackendDevice())
+		shaderManager(device), textureManager(g_VFS, false, device), vertexBufferManager(device),
+		postprocManager(device), sceneRenderer(device)
 	{
 	}
 };
@@ -306,11 +312,11 @@ size_t CRenderer::Internals::VertexAttributesHash::operator()(
 	return seed;
 }
 
-CRenderer::CRenderer()
+CRenderer::CRenderer(Renderer::Backend::IDevice* device)
 {
 	TIMER(L"InitRenderer");
 
-	m = std::make_unique<Internals>();
+	m = std::make_unique<Internals>(device);
 
 	g_ProfileViewer.AddRootTable(&m->profileTable);
 
@@ -320,7 +326,7 @@ CRenderer::CRenderer()
 	m_Stats.Reset();
 
 	// Create terrain related stuff.
-	new CTerrainTextureManager;
+	new CTerrainTextureManager(device);
 
 	Open(g_xres, g_yres);
 
@@ -348,7 +354,7 @@ void CRenderer::ReloadShaders()
 {
 	ENSURE(m->IsOpen);
 
-	m->sceneRenderer.ReloadShaders();
+	m->sceneRenderer.ReloadShaders(m->device);
 	m->ShadersDirty = false;
 }
 
@@ -393,8 +399,8 @@ void CRenderer::SetRenderPath(RenderPath rp)
 
 	// Renderer has been opened, so validate the selected renderpath
 	const bool hasShadersSupport =
-		g_VideoMode.GetBackendDevice()->GetCapabilities().ARBShaders ||
-		g_VideoMode.GetBackendDevice()->GetBackend() != Renderer::Backend::Backend::GL_ARB;
+		m->device->GetCapabilities().ARBShaders ||
+		m->device->GetBackend() != Renderer::Backend::Backend::GL_ARB;
 	if (rp == RenderPath::DEFAULT)
 	{
 		if (hasShadersSupport)
@@ -443,7 +449,7 @@ void CRenderer::RenderFrame(const bool needsPresent)
 		if (needsPresent)
 		{
 			// In case of no acquired backbuffer we have nothing render to.
-			if (!g_VideoMode.GetBackendDevice()->AcquireNextBackbuffer())
+			if (!m->device->AcquireNextBackbuffer())
 				return;
 		}
 
@@ -458,7 +464,7 @@ void CRenderer::RenderFrame(const bool needsPresent)
 
 		m->deviceCommandContext->Flush();
 		if (needsPresent)
-			g_VideoMode.GetBackendDevice()->Present();
+			m->device->Present();
 	}
 }
 
@@ -487,6 +493,7 @@ void CRenderer::RenderFrameImpl(const bool renderGUI, const bool renderLogger)
 		g_Game->GetView()->Prepare(m->deviceCommandContext.get());
 
 		Renderer::Backend::IFramebuffer* framebuffer = nullptr;
+		Renderer::Backend::IDeviceCommandContext::Rect viewportRect{};
 
 		CPostprocManager& postprocManager = GetPostprocManager();
 		if (postprocManager.IsEnabled())
@@ -499,6 +506,8 @@ void CRenderer::RenderFrameImpl(const bool renderGUI, const bool renderLogger)
 			);
 			postprocManager.Initialize();
 			framebuffer = postprocManager.PrepareAndGetOutputFramebuffer();
+			viewportRect.width = framebuffer->GetWidth();
+			viewportRect.height = framebuffer->GetHeight();
 		}
 		else
 		{
@@ -510,13 +519,12 @@ void CRenderer::RenderFrameImpl(const bool renderGUI, const bool renderLogger)
 					Renderer::Backend::AttachmentStoreOp::STORE,
 					Renderer::Backend::AttachmentLoadOp::CLEAR,
 					Renderer::Backend::AttachmentStoreOp::DONT_CARE);
+
+			viewportRect.width = m_Width;
+			viewportRect.height = m_Height;
 		}
 
 		m->deviceCommandContext->BeginFramebufferPass(framebuffer);
-
-		Renderer::Backend::IDeviceCommandContext::Rect viewportRect{};
-		viewportRect.width = m_Width;
-		viewportRect.height = m_Height;
 		m->deviceCommandContext->SetViewports(1, &viewportRect);
 
 		g_Game->GetView()->Render(m->deviceCommandContext.get());
@@ -651,7 +659,7 @@ void CRenderer::RenderScreenShot(const bool needsPresent)
 	const size_t width = static_cast<size_t>(g_xres), height = static_cast<size_t>(g_yres);
 	const size_t bpp = 24;
 
-	if (needsPresent && !g_VideoMode.GetBackendDevice()->AcquireNextBackbuffer())
+	if (needsPresent && !m->device->AcquireNextBackbuffer())
 		return;
 
 	// Hide log messages and re-render
@@ -669,14 +677,14 @@ void CRenderer::RenderScreenShot(const bool needsPresent)
 	m->deviceCommandContext->ReadbackFramebufferSync(0, 0, width, height, img);
 	m->deviceCommandContext->Flush();
 	if (needsPresent)
-		g_VideoMode.GetBackendDevice()->Present();
+		m->device->Present();
 
 	if (tex_write(&t, filename) == INFO::OK)
 	{
 		OsPath realPath;
 		g_VFS->GetRealPath(filename, realPath);
 
-		LOGMESSAGERENDER(g_L10n.Translate("Screenshot written to '%s'"), realPath.string8());
+		LOGMESSAGERENDER("Screenshot written to '%s'", realPath.string8());
 
 		debug_printf(
 			CStr(g_L10n.Translate("Screenshot written to '%s'") + "\n").c_str(),
@@ -768,7 +776,7 @@ void CRenderer::RenderBigScreenShot(const bool needsPresent)
 			}
 			g_Game->GetView()->GetCamera()->SetProjection(projection);
 
-			if (!needsPresent || g_VideoMode.GetBackendDevice()->AcquireNextBackbuffer())
+			if (!needsPresent || m->device->AcquireNextBackbuffer())
 			{
 				RenderFrameImpl(false, false);
 
@@ -776,7 +784,7 @@ void CRenderer::RenderBigScreenShot(const bool needsPresent)
 				m->deviceCommandContext->Flush();
 
 				if (needsPresent)
-					g_VideoMode.GetBackendDevice()->Present();
+					m->device->Present();
 			}
 
 			// Copy the tile pixels into the main image
@@ -802,7 +810,7 @@ void CRenderer::RenderBigScreenShot(const bool needsPresent)
 		OsPath realPath;
 		g_VFS->GetRealPath(filename, realPath);
 
-		LOGMESSAGERENDER(g_L10n.Translate("Screenshot written to '%s'"), realPath.string8());
+		LOGMESSAGERENDER("Screenshot written to '%s'", realPath.string8());
 
 		debug_printf(
 			CStr(g_L10n.Translate("Screenshot written to '%s'") + "\n").c_str(),
@@ -843,6 +851,11 @@ void CRenderer::MakeShadersDirty()
 CTextureManager& CRenderer::GetTextureManager()
 {
 	return m->textureManager;
+}
+
+CVertexBufferManager& CRenderer::GetVertexBufferManager()
+{
+	return m->vertexBufferManager;
 }
 
 CShaderManager& CRenderer::GetShaderManager()
@@ -896,6 +909,6 @@ Renderer::Backend::IVertexInputLayout* CRenderer::GetVertexInputLayout(
 	const auto [it, inserted] = m->vertexInputLayouts.emplace(
 		std::vector<Renderer::Backend::SVertexAttributeFormat>{attributes.begin(), attributes.end()}, nullptr);
 	if (inserted)
-		it->second = g_VideoMode.GetBackendDevice()->CreateVertexInputLayout(attributes);
+		it->second = m->device->CreateVertexInputLayout(attributes);
 	return it->second.get();
 }

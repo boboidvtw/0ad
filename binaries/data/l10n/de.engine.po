@@ -1,27 +1,29 @@
 # Translation template for Pyrogenesis.
-# Copyright (C) 2022 Wildfire Games
+# Copyright (C) 2024 Wildfire Games
 # This file is distributed under the same license as the Pyrogenesis project.
 # Translators:
-# Wuzzy
-# xtother90
-# eclipse
-# Maximilian Wagenbach
-# Heraklit of Ephesos
-# leper
-# b53a4c6b86c5e58f09676ea42b536be9_2d04222
-# 999f6a43cef2718a4332fbe42b808991_de12e9e
-# Thelxinoe
-# Raymond Vetter
-# Silasoa
-# Tobias Stegemann
-# Tobias
-# ze ro
+# Wuzzy, 2018
+# Daniel Roschka, 2024
+# xtother90, 2018-2022
+# eclipse, 2013
+# Maximilian Wagenbach, 2016
+# Heraklit of Ephesos, 2021
+# leper, 2013-2016
+# b53a4c6b86c5e58f09676ea42b536be9_2d04222, 2014
+# 999f6a43cef2718a4332fbe42b808991_de12e9e, 2016
+# Thelxinoe, 2014
+# Raymond Vetter, 2014-2015
+# Silasoa, 2014
+# Tobias Stegemann, 2017
+# Tobias, 2014
+# xtother90, 2016
+# ze ro, 2021
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2022-09-12 09:35+0000\n"
+"POT-Creation-Date: 2024-08-09 07:17+0000\n"
 "PO-Revision-Date: 2013-06-22 12:54+0000\n"
-"Last-Translator: xtother90, 2018-2022\n"
+"Last-Translator: Daniel Roschka, 2024\n"
 "Language-Team: German (http://app.transifex.com/wildfire-games/0ad/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,37 +31,7 @@ msgstr ""
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: graphics/CameraController.cpp:659
-#, c-format
-msgid "Scroll speed increased to %.1f"
-msgstr "Scroll-Geschwindigkeit erhöht auf %.1f"
-
-#: graphics/CameraController.cpp:665
-#, c-format
-msgid "Scroll speed decreased to %.1f"
-msgstr "Scroll-Geschwindigkeit verringert auf %.1f"
-
-#: graphics/CameraController.cpp:672
-#, c-format
-msgid "Rotate speed increased to X=%.3f, Y=%.3f"
-msgstr "Dreh-Geschwindigkeit erhöht auf X=%.3f, Y=%.3f"
-
-#: graphics/CameraController.cpp:679
-#, c-format
-msgid "Rotate speed decreased to X=%.3f, Y=%.3f"
-msgstr "Dreh-Geschwindigkeit verringert auf X=%.3f, Y=%.3f"
-
-#: graphics/CameraController.cpp:685
-#, c-format
-msgid "Zoom speed increased to %.1f"
-msgstr "Zoom-Geschwindigkeit erhöht auf %.1f"
-
-#: graphics/CameraController.cpp:691
-#, c-format
-msgid "Zoom speed decreased to %.1f"
-msgstr "Zoom-Geschwindigkeit verringert auf %.1f"
-
-#: i18n/L10n.cpp:308
+#: i18n/L10n.cpp:346
 msgid "Long strings"
 msgstr "Lange Wörter"
 
@@ -89,7 +61,7 @@ msgstr "Das Zertifikat ist noch nicht aktiv."
 
 #: lobby/XmppClient.cpp:1360
 msgid "The certificate has not been issued for the peer connected to."
-msgstr "Das Zertifikat ist nicht für den verbundenen Partner ausgestellt worden."
+msgstr "Das Zertifikat ist nicht für die Gegenstelle ausgestellt worden."
 
 #: lobby/XmppClient.cpp:1361
 msgid "The certificate signer is not a certificate authority."
@@ -146,11 +118,11 @@ msgstr "Datenstrom-Fehler"
 
 #: lobby/XmppClient.cpp:1432
 msgid "The incoming stream version is unsupported"
-msgstr "Die Version des eingehenden Daten-Stroms wird nicht unterstützt."
+msgstr "Die Version des eingehenden Datenstroms wird nicht unterstützt."
 
 #: lobby/XmppClient.cpp:1433
 msgid "The stream has been closed by the server"
-msgstr "Der Daten-Strom wurde vom Server geschlossen."
+msgstr "Der Datenstrom wurde vom Server geschlossen."
 
 #: lobby/XmppClient.cpp:1437
 msgid "An I/O error occurred"
@@ -166,7 +138,7 @@ msgstr "Der Hostname des Servers konnte nicht aufgelöst werden."
 
 #: lobby/XmppClient.cpp:1441
 msgid "This system is out of memory"
-msgstr "Dieses System hat keinen freien Speicher mehr zur Verfügung."
+msgstr "Dieses System hat keinen freien Arbeitsspeicher mehr zur Verfügung."
 
 #: lobby/XmppClient.cpp:1443
 msgid ""
@@ -192,7 +164,7 @@ msgstr "Es existiert keine aktive Verbindung."
 
 #: lobby/XmppClient.cpp:1469
 msgid "Your account has been successfully registered"
-msgstr "Dein Konto wurde erfolgreich eingerichtet."
+msgstr "Dein Konto wurde erfolgreich angelegt."
 
 #: lobby/XmppClient.cpp:1470
 msgid "Not all necessary information provided"
@@ -202,76 +174,63 @@ msgstr "Nicht alle erforderlichen Informationen wurden bereitgestellt."
 msgid "Username already exists"
 msgstr "Benutzername bereits in Verwendung"
 
-#: ps/Mod.cpp:93
-#, c-format
-msgid ""
-"Could not write external mod.json for zipped mod '%s'. The mod should be "
-"reinstalled."
-msgstr "Die externe Datei mod.json für die gezippte Mod ‚%s‘ konnte nicht geschrieben werden. Die Mod sollte neu installiert werden."
-
-#: ps/ModIo.cpp:264
+#: ps/ModIo.cpp:266
 #, c-format
 msgid "Failure while starting querying for game id. Error: %s; %s."
 msgstr "Abfrage der Spiel-ID gescheitert. Fehler: %s; %s"
 
-#: ps/ModIo.cpp:294
+#: ps/ModIo.cpp:296
 #, c-format
 msgid "Failure while starting querying for mods. Error: %s; %s."
 msgstr "Abfrage der Mods gescheitert. Fehler: %s; %s"
 
-#: ps/ModIo.cpp:320
+#: ps/ModIo.cpp:322
 #, c-format
 msgid "Could not create mod directory: %s."
 msgstr "Mod-Verzeichnis konnte nicht erstellt werden. Fehler: %s"
 
-#: ps/ModIo.cpp:345
+#: ps/ModIo.cpp:347
 #, c-format
 msgid "Could not open temporary file for mod download: %s."
 msgstr "Temporäre Datei konnte nicht für Mod-Download geöffnet werden: %s"
 
-#: ps/ModIo.cpp:355
+#: ps/ModIo.cpp:357
 #, c-format
 msgid "Failed to start the download. Error: %s; %s."
 msgstr "Download konnte nicht gestartet werden. Fehler: %s; %s"
 
-#: ps/ModIo.cpp:400
+#: ps/ModIo.cpp:402
 #, c-format
 msgid "Asynchronous download failure: %s, %s."
 msgstr "Asynchroner Download gescheitert. Fehler: %s, %s"
 
-#: ps/ModIo.cpp:428
+#: ps/ModIo.cpp:430
 #, c-format
 msgid "Download failure. Server response: %s; %s."
 msgstr "Download gescheitert. Server-Antwort: %s; %s"
 
-#: ps/ModIo.cpp:534
+#: ps/ModIo.cpp:536
 msgid "Mismatched filesize."
 msgstr "Die Dateigrößen passen nicht zusammen."
 
-#: ps/ModIo.cpp:552
+#: ps/ModIo.cpp:554
 #, c-format
 msgid "Invalid file. Expected md5 %s, got %s."
 msgstr "Ungültige Datei. Erwartete MD5-Prüfsumme %s, jedoch %s erhalten."
 
-#: ps/ModIo.cpp:567
+#: ps/ModIo.cpp:569
 msgid "Failed to compute final hash."
 msgstr "Der endgültige Hash konnte nicht berechnet werden."
 
-#: ps/ModIo.cpp:573
+#: ps/ModIo.cpp:575
 msgid "Failed to verify signature."
 msgstr "Signatur konnte nicht verifiziert werden."
 
-#: ps/SavedGame.cpp:142
-#, c-format
-msgid "Saved game to '%s'"
-msgstr "Spiel gespeichert unter ‚%s‘"
-
 #: ps/scripting/JSInterface_Debug.cpp:87
 msgid "custom build"
-msgstr "custom build"
+msgstr "Custom Build"
 
-#: renderer/Renderer.cpp:565 renderer/Renderer.cpp:568
-#: renderer/Renderer.cpp:680 renderer/Renderer.cpp:683
+#: renderer/Renderer.cpp:690 renderer/Renderer.cpp:816
 #, c-format
 msgid "Screenshot written to '%s'"
 msgstr "Bildschirmfoto gespeichert unter ‚%s‘"

@@ -2,36 +2,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: None\n"
-"POT-Creation-Date: 2023-06-01 01:50+0000\n"
-"PO-Revision-Date: 2023-06-01 01:50+0000\n"
+"POT-Creation-Date: 2024-08-09 07:22+0000\n"
+"PO-Revision-Date: 2024-08-09 07:22+0000\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit"
-
-#, python-format
-msgid "Scroll speed increased to %.1f"
-msgstr "Velocidade de deslocamento da vista aumentada para %.1f"
-
-#, python-format
-msgid "Scroll speed decreased to %.1f"
-msgstr "Velocidade de deslocamento da vista diminuída para %.1f"
-
-#, python-format
-msgid "Rotate speed increased to X=%.3f, Y=%.3f"
-msgstr "Chaidh luaths a’ chuairteachaidh a mheudachadh gu X=%.3f, Y=%.3f"
-
-#, python-format
-msgid "Rotate speed decreased to X=%.3f, Y=%.3f"
-msgstr "Chaidh luaths a’ chuairteachaidh a lùghdachadh gu X=%.3f, Y=%.3f"
-
-#, python-format
-msgid "Zoom speed increased to %.1f"
-msgstr "Chaidh luaths an t-sùmaidh a mheudachadh gu %.1f"
-
-#, python-format
-msgid "Zoom speed decreased to %.1f"
-msgstr "Chaidh luaths an t-sùmaidh a lùghdachadh gu %.1f"
 
 msgid "Long strings"
 msgstr "Συμβολοσειρές μεγάλου μήκους"
@@ -97,7 +73,7 @@ msgid "Stream error"
 msgstr "Napaka pri podatkovnem toku"
 
 msgid "The incoming stream version is unsupported"
-msgstr "Die Version des eingehenden Daten-Stroms wird nicht unterstützt."
+msgstr "Die Version des eingehenden Datenstroms wird nicht unterstützt."
 
 msgid "The stream has been closed by the server"
 msgstr "La comunicación fue interrumpida por el servidor"
@@ -112,7 +88,7 @@ msgid "Resolving the server's hostname failed"
 msgstr "Houbo un fallu a l resolvere l nome hospedeiru de l servidor"
 
 msgid "This system is out of memory"
-msgstr "Dieses System hat keinen freien Speicher mehr zur Verfügung."
+msgstr "Dieses System hat keinen freien Arbeitsspeicher mehr zur Verfügung."
 
 msgid ""
 "The server's certificate could not be verified or the TLS handshake did not complete "
@@ -143,12 +119,6 @@ msgstr "Nicht alle erforderlichen Informationen wurden bereitgestellt."
 
 msgid "Username already exists"
 msgstr "409: Uživatelské jméno je již používáno"
-
-#, python-format
-msgid "Could not write external mod.json for zipped mod '%s'. The mod should be reinstalled."
-msgstr ""
-"Cha b’ urrainn dhuinn am mod.json air an taobh a-muigh a sgrìobhadh dhan tuilleadan "
-"dùmhlaichte “%s”. Bu chòir dhut an tuilleadan ath-stàladh."
 
 #, python-format
 msgid "Failure while starting querying for game id. Error: %s; %s."
@@ -192,10 +162,6 @@ msgstr "Hi ha hagut un error en computar el valor final del hash."
 
 msgid "Failed to verify signature."
 msgstr "Cha deach leinn an soidhneadh a dhearbhadh."
-
-#, python-format
-msgid "Saved game to '%s'"
-msgstr "Chaidh an geama a shàbhaladh gu “%s”"
 
 msgid "custom build"
 msgstr "Construcción personalizada"

@@ -1,0 +1,11 @@
+{
+	"type": "global",
+	"affects": ["Healer"],
+	"affectedPlayers": ["MutualAlly"],
+	"modifications": [
+		{ "value": "Heal/Health", "add": 1.0 }
+	],
+	"auraName": "Hippocratic Oath",
+	"auraDescription": "Own and Allied Healers +1 healing effect.",
+	"overlayIcon": "art/textures/ui/session/auras/heal.png"
+}

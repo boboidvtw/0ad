@@ -1,16 +1,17 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2022 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# Stanislas Dolcini
-# Woramet Chaleenoi
+# Alpaca Chorus, 2023
+# Stanislas Dolcini, 2023
+# Woramet Chaleenoi, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2022-09-12 09:35+0000\n"
+"POT-Creation-Date: 2024-08-12 07:08+0000\n"
 "PO-Revision-Date: 2014-06-19 17:50+0000\n"
-"Last-Translator: Stanislas Dolcini <stan@wildfiregames.com>, 2023\n"
+"Last-Translator: Alpaca Chorus, 2023\n"
 "Language-Team: Thai (http://app.transifex.com/wildfire-games/0ad/language/th/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,77 +19,76 @@ msgstr ""
 "Language: th\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(caption):28
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):61
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:17
+msgid "Rank"
+msgstr "อันดับ"
+
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:20
+#: gui/lobby/LobbyPage/GameList.xml:13 gui/lobby/LobbyPage/PlayerList.xml:21
+msgid "Name"
+msgstr "ชื่อ"
+
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:23
+#: gui/lobby/LobbyPage/GameList.xml:28 gui/lobby/LobbyPage/PlayerList.xml:24
+msgid "Rating"
+msgstr "เรตติ้ง"
+
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:28
+#: gui/lobby/ProfilePage/ProfilePage.xml:61
 msgid "Back"
 msgstr "ย้อนกลับ"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(caption):32
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:32
 msgid "Update"
-msgstr ""
+msgstr "อัปเดต"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(heading):17
-msgid "Rank"
-msgstr ""
-
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(heading):20
-#: gui/lobby/LobbyPage/GameList.xml:(heading):13
-#: gui/lobby/LobbyPage/PlayerList.xml:(heading):21
-msgid "Name"
-msgstr ""
-
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(heading):23
-#: gui/lobby/LobbyPage/GameList.xml:(heading):28
-#: gui/lobby/LobbyPage/PlayerList.xml:(heading):24
-msgid "Rating"
-msgstr ""
-
-#: gui/lobby/LobbyPage/AnnouncementHandler.js:18
+#: gui/lobby/LobbyPage/AnnouncementHandler.js:19
+#: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessageFormatAnnouncement.js:24
 msgid "Notice"
 msgstr "ประกาศ"
 
 #: gui/lobby/LobbyPage/Buttons/BuddyButton.js:69
 msgid "Mark as Buddy"
-msgstr ""
+msgstr "ทำเครื่องหมายว่าบัดดี้"
 
 #: gui/lobby/LobbyPage/Buttons/BuddyButton.js:70
 msgid "Unmark as Buddy"
-msgstr ""
+msgstr "เลิกทำเครื่องหมายว่าเป็นเพื่อน"
 
 #: gui/lobby/LobbyPage/Buttons/HostButton.js:10
 msgid "Host Game"
-msgstr ""
-
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:40
-msgid "Your active mods do not match the mods of this game."
-msgstr ""
-
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:42
-msgid "Do you want to switch to the mod selection page?"
-msgstr ""
+msgstr "โฮสต์เกม"
 
 #: gui/lobby/LobbyPage/Buttons/JoinButton.js:43
-msgid "Incompatible mods"
-msgstr ""
+msgid "Your active mods do not match the mods of this game."
+msgstr "Mods ที่ใช้งานอยู่ของคุณไม่ตรงกับ Mods ของเกมนี้"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:52
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:45
+msgid "Do you want to switch to the mod selection page?"
+msgstr "คุณต้องการสลับไปยังหน้าเลือก Mod หรือไม่"
+
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:46
+msgid "Incompatible mods"
+msgstr "Mods ที่เข้ากันไม่ได้"
+
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:62
 msgid "The game has already started. Do you want to join as observer?"
-msgstr ""
+msgstr "เกมได้เริ่มต้นแล้ว คุณต้องการเข้าร่วมเป็นผู้สังเกตการณ์หรือไม่"
 
 #. Translation: Join the game currently selected in the list.
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:104
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:95
 msgid "Join Game"
-msgstr ""
+msgstr "เข้าร่วมเกม"
 
-#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:(caption):12
+#: gui/lobby/LeaderboardPage/LeaderboardPage.xml:12
 #: gui/lobby/LobbyPage/Buttons/LeaderboardButton.js:9
 msgid "Leaderboard"
-msgstr ""
+msgstr "กระดานผู้นำ"
 
 #: gui/lobby/LobbyPage/Buttons/ProfileButton.js:9
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):12
+#: gui/lobby/ProfilePage/ProfilePage.xml:12
 msgid "Player Profile Lookup"
-msgstr ""
+msgstr "รายละเอียดผู้เล่น"
 
 #: gui/lobby/LobbyPage/Buttons/QuitButton.js:15
 msgctxt "previous page"
@@ -139,13 +139,13 @@ msgstr "แสดงความช่วยเหลือ"
 
 #: gui/lobby/LobbyPage/Chat/ChatCommandHandler.js:129
 msgid "Chat commands:"
-msgstr ""
+msgstr "คำสั่งแชท:"
 
 #. Translation: Chat command help format
 #: gui/lobby/LobbyPage/Chat/ChatCommandHandler.js:133
 #, javascript-format
 msgid "%(command)s - %(description)s"
-msgstr ""
+msgstr "%(command)s - %(description)s"
 
 #: gui/lobby/LobbyPage/Chat/ChatCommandHandler.js:147
 msgid "Send a chat message about yourself. Example: /me goes swimming."
@@ -154,7 +154,7 @@ msgstr ""
 #. Translation: Chat command
 #: gui/lobby/LobbyPage/Chat/ChatCommandHandler.js:150
 msgid "/me"
-msgstr ""
+msgstr "/me"
 
 #: gui/lobby/LobbyPage/Chat/ChatCommandHandler.js:154
 msgid ""
@@ -165,101 +165,108 @@ msgstr ""
 #. Translation: Chat command
 #: gui/lobby/LobbyPage/Chat/ChatCommandHandler.js:157
 msgid "/say"
-msgstr ""
+msgstr "/say"
 
 #: gui/lobby/LobbyPage/Chat/ChatCommandHandler.js:161
 msgid "Clear all chat scrollback."
+msgstr "ล้างการสนทนาทั้งหมด"
+
+#: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessageFormatAnnouncement.js:26
+#, javascript-format
+msgid ""
+"== %(prefix)s:\n"
+"%(message)s"
 msgstr ""
 
 #. Translation: Chat message issued using the ‘/me’ command.
 #: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessageFormatMe.js:24
 #, javascript-format
 msgid "* %(sender)s %(message)s"
-msgstr ""
+msgstr "* %(sender)s %(message)s"
 
 #: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessageFormatSay.js:29
 #, javascript-format
 msgid "<%(sender)s>"
-msgstr ""
+msgstr "<%(sender)s>"
 
 #: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessageFormatSay.js:31
 #, javascript-format
 msgid "%(sender)s %(message)s"
-msgstr ""
+msgstr "%(sender)s %(message)s"
 
 #: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessagePrivateWrapper.js:23
 msgid "Private"
-msgstr ""
+msgstr "ส่วนตัว"
 
 #: gui/lobby/LobbyPage/Chat/ChatMessages/ChatMessagePrivateWrapper.js:25
 #, javascript-format
 msgid "(%(private)s) %(message)s"
-msgstr ""
+msgstr "(%(private)s) %(message)s"
 
-#: gui/lobby/LobbyPage/Chat/ChatPanel.xml:(caption):12
+#: gui/lobby/LobbyPage/Chat/ChatPanel.xml:12
 msgid "Send"
 msgstr "ส่ง"
 
 #: gui/lobby/LobbyPage/Chat/StatusMessages/StatusMessageEvents.js:47
 #, javascript-format
 msgid "%(nick)s has joined."
-msgstr ""
+msgstr "%(nick)s ได้เข้าร่วม"
 
 #: gui/lobby/LobbyPage/Chat/StatusMessages/StatusMessageEvents.js:48
 #, javascript-format
 msgid "%(nick)s has left."
-msgstr ""
+msgstr "%(nick)s ได้ออกจากห้อง"
 
 #: gui/lobby/LobbyPage/Chat/StatusMessages/StatusMessageEvents.js:70
 #, javascript-format
 msgid "%(oldnick)s is now known as %(newnick)s."
-msgstr ""
+msgstr "%(oldnick)s เปลื่อนชื่อเป็น %(newnick)s."
 
 #: gui/lobby/LobbyPage/Chat/StatusMessages/StatusMessageEvents.js:107
 msgid "You have been muted."
-msgstr ""
+msgstr "คุณถูกปิดเสียง"
 
 #: gui/lobby/LobbyPage/Chat/StatusMessages/StatusMessageEvents.js:108
 #, javascript-format
 msgid "%(nick)s has been muted."
-msgstr ""
+msgstr "%(nick)s ถูกปิดเสียง"
 
 #: gui/lobby/LobbyPage/Chat/StatusMessages/StatusMessageEvents.js:112
 msgid "You are now a moderator."
-msgstr ""
+msgstr "ตอนนี้คุณเป็นผู้ดูแลแล้ว"
 
 #: gui/lobby/LobbyPage/Chat/StatusMessages/StatusMessageEvents.js:113
 #, javascript-format
 msgid "%(nick)s is now a moderator."
-msgstr ""
+msgstr "%(nick)s เป็นผู้ดูแลแล้ว"
 
 #: gui/lobby/LobbyPage/Chat/StatusMessages/StatusMessageEvents.js:118
 msgid "You have been unmuted."
-msgstr ""
+msgstr "คุณได้รับการเปิดเสียงแล้ว"
 
 #: gui/lobby/LobbyPage/Chat/StatusMessages/StatusMessageEvents.js:119
 #, javascript-format
 msgid "%(nick)s has been unmuted."
-msgstr ""
+msgstr "%(nick)s ได้รับการเปิดเสียงแล้ว"
 
 #: gui/lobby/LobbyPage/Chat/StatusMessages/StatusMessageEvents.js:124
 msgid "You are not a moderator anymore."
-msgstr ""
+msgstr "คุณไม่ใช่ผู้ดูแลอีกต่อไป"
 
 #: gui/lobby/LobbyPage/Chat/StatusMessages/StatusMessageEvents.js:125
 #, javascript-format
 msgid "%(nick)s is not a moderator anymore."
-msgstr ""
+msgstr "%(nick)s ไม่ใช่ผู้ดูแลอีกต่อไป"
 
 #: gui/lobby/LobbyPage/Chat/StatusMessages/StatusMessageEvents.js:152
 #, javascript-format
 msgid "%(nick)s changed the lobby subject to:"
-msgstr ""
+msgstr "%(nick)s เปลื่ยนชื่อล็อบบี้เป็น:"
 
 #: gui/lobby/LobbyPage/Chat/StatusMessages/StatusMessageEvents.js:153
 #, javascript-format
 msgid "%(nick)s deleted the lobby subject."
-msgstr ""
+msgstr "%(nick)s ลบห้องล็อบบี้"
 
 #. Translation: Chat status message
 #: gui/lobby/LobbyPage/Chat/StatusMessages/StatusMessageFormat.js:25
@@ -269,7 +276,7 @@ msgstr "==%(message)s"
 
 #: gui/lobby/LobbyPage/Chat/SystemMessages/SystemMessageEvents.js:55
 msgid "Connected."
-msgstr ""
+msgstr "เชื่อมต่อ"
 
 #: gui/lobby/LobbyPage/Chat/SystemMessages/SystemMessageEvents.js:56
 msgid "Disconnected."
@@ -278,12 +285,12 @@ msgstr "ถูกตัดการเชื่อมต่อ"
 #. Translation: Caption for system notifications shown in the chat panel
 #: gui/lobby/LobbyPage/Chat/SystemMessages/SystemMessageFormat.js:25
 msgid "System:"
-msgstr ""
+msgstr "ระบบ:"
 
 #: gui/lobby/LobbyPage/Chat/SystemMessages/SystemMessageFormat.js:32
 #, javascript-format
 msgid "=== %(system)s %(message)s"
-msgstr ""
+msgstr "=== %(system)s %(message)s"
 
 #. Translation: Chat message format when there is a time prefix.
 #: gui/lobby/LobbyPage/Chat/TimestampWrapper.js:25
@@ -311,23 +318,23 @@ msgstr "ถูกเตะออก"
 msgid "You have been disconnected from the lobby. Do you want to reconnect?"
 msgstr "คุณถูกตัดการเชื่อมต่อกับล็อบบี้ ต้องการจะเชื่อมต่อใหม่หรื่อไม่?"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:53
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:63
 #: gui/lobby/LobbyPage/ConnectionHandler.js:62
-#: gui/prelobby/common/credentials/credentials.js:55
+#: gui/prelobby/common/credentials/credentials.js:56
 msgid "Confirmation"
 msgstr "การยืนยัน"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:44
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:54
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:47
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:64
 #: gui/lobby/LobbyPage/ConnectionHandler.js:63
-#: gui/prelobby/common/credentials/credentials.js:56
+#: gui/prelobby/common/credentials/credentials.js:57
 msgid "No"
 msgstr "ไม่"
 
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:44
-#: gui/lobby/LobbyPage/Buttons/JoinButton.js:54
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:47
+#: gui/lobby/LobbyPage/Buttons/JoinButton.js:64
 #: gui/lobby/LobbyPage/ConnectionHandler.js:63
-#: gui/prelobby/common/credentials/credentials.js:56
+#: gui/prelobby/common/credentials/credentials.js:57
 msgid "Yes"
 msgstr "ใช่"
 
@@ -335,62 +342,62 @@ msgstr "ใช่"
 #: gui/lobby/LobbyPage/Game.js:310
 #, javascript-format
 msgid "%(current)s/%(max)s +%(observercount)s"
-msgstr ""
+msgstr "%(current)s/%(max)s +%(observercount)s"
 
 #. Translation: The number of players in this game
 #: gui/lobby/LobbyPage/Game.js:313
 #, javascript-format
 msgid "%(current)s/%(max)s"
-msgstr ""
+msgstr "%(current)s/%(max)s"
 
 #: gui/lobby/LobbyPage/GameDetails.js:65
 msgctxt "victory condition"
 msgid "Endless Game"
-msgstr ""
+msgstr "Endless Game"
 
 #: gui/lobby/LobbyPage/GameDetails.js:109
 #, javascript-format
 msgid ""
 "You have some incompatible mods:\n"
 "%(details)s"
-msgstr ""
+msgstr "คุณมี mods ที่เข้ากันไม่ได้:\n%(details)s"
 
 #: gui/lobby/LobbyPage/GameDetails.js:123
 msgid "This mod does not affect MP compatibility"
-msgstr ""
+msgstr "mod นี้ไม่ส่งผลต่อความเข้ากันได้ของ MP"
 
 #: gui/lobby/LobbyPage/GameDetails.js:142
 #, javascript-format
 msgid "Host: %(playername)s"
-msgstr ""
+msgstr "โฮสต์: %(playername)s"
 
 #: gui/lobby/LobbyPage/GameDetails.js:144
 #, javascript-format
 msgid "Players: %(current)s/%(total)s"
-msgstr ""
+msgstr "ผู้เล่น: %(current)s/%(total)s"
 
 #: gui/lobby/LobbyPage/GameDetails.js:146
 msgid "Victory Conditions:"
-msgstr ""
+msgstr "เงื่อนไขแห่งชัยชนะ"
 
 #. Translation: Comma used to concatenate victory conditions
 #: gui/lobby/LobbyPage/GameDetails.js:149
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: gui/lobby/LobbyPage/GameDetails.js:151
 msgid "Mods:"
-msgstr ""
+msgstr "ม็อด:"
 
 #: gui/lobby/LobbyPage/GameDetails.js:153
 msgid "Mods (incompatible):"
-msgstr ""
+msgstr "ม็อด (เข้ากันไม่ได้):"
 
 #. Translation: %(time)s is the hour and minute here.
 #: gui/lobby/LobbyPage/GameDetails.js:156
 #, javascript-format
 msgid "Game started at %(time)s"
-msgstr ""
+msgstr "เกมเริ่มเวลา %(time)s"
 
 #: gui/lobby/LobbyPage/Chat/TimestampWrapper.js:33
 #: gui/lobby/LobbyPage/GameDetails.js:158
@@ -399,99 +406,98 @@ msgstr "HH:mm"
 
 #: gui/lobby/LobbyPage/GameDetails.js:160
 msgid "Map Type:"
-msgstr ""
+msgstr "ประเภทแผนที่:"
 
 #: gui/lobby/LobbyPage/GameDetails.js:162
 msgid "Map Size:"
-msgstr ""
+msgstr "ขนาดแผนที่:"
 
 #: gui/lobby/LobbyPage/GameDetails.js:164
 msgid "Map Description:"
-msgstr ""
+msgstr "รายละเอียดแผนที่:"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):16
+#: gui/lobby/LobbyPage/GameList.xml:16
 msgid "Map Name"
-msgstr ""
+msgstr "ชื่อแผนที่"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):19
+#: gui/lobby/LobbyPage/GameList.xml:19
 msgctxt "map"
 msgid "Size"
-msgstr ""
+msgstr "ขนาด"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):22
+#: gui/lobby/LobbyPage/GameList.xml:22
 msgctxt "map"
 msgid "Type"
-msgstr ""
+msgstr "ชนิด"
 
-#: gui/lobby/LobbyPage/GameList.xml:(heading):25
+#: gui/lobby/LobbyPage/GameList.xml:25
 msgid "Players"
-msgstr ""
+msgstr "ผู้เล่น"
 
-#: gui/lobby/LobbyPage/GameListFilters.xml:(caption):7
+#: gui/lobby/LobbyPage/GameListFilters.xml:7
 msgid "Show only open games"
-msgstr ""
+msgstr "แสดงเฉพาะเกมที่เปิดอยู่"
 
 #: gui/lobby/LobbyPage/GameListFilters/MapSize.js:9
 msgctxt "map size"
 msgid "Any"
-msgstr ""
+msgstr "Any"
 
 #: gui/lobby/LobbyPage/GameListFilters/MapType.js:9
 #: gui/lobby/LobbyPage/GameListFilters/Rating.js:11
 msgctxt "map"
 msgid "Any"
-msgstr ""
+msgstr "Any"
 
 #: gui/lobby/LobbyPage/GameListFilters/PlayerCount.js:10
 msgctxt "player number"
 msgid "Any"
-msgstr ""
+msgstr "Any"
 
 #: gui/lobby/LobbyPage/GameListFilters/Rating.js:19
 #, javascript-format
 msgctxt "gamelist filter"
 msgid "> %(rating)s"
-msgstr ""
+msgstr "> %(rating)s"
 
 #: gui/lobby/LobbyPage/GameListFilters/Rating.js:20
 #, javascript-format
 msgctxt "gamelist filter"
 msgid "< %(rating)s"
-msgstr ""
+msgstr "< %(rating)s"
 
 #: gui/lobby/LobbyPage/KickStrings.js:39
 msgid "You have been kicked from the lobby!"
-msgstr ""
+msgstr "คุณถูกเตะออกจากล็อบบี้!"
 
 #: gui/lobby/LobbyPage/KickStrings.js:40
 msgid "You have been banned from the lobby!"
-msgstr ""
+msgstr "คุญถูกแยนจากล็อบบี้!"
 
 #: gui/lobby/LobbyPage/KickStrings.js:43
 #, javascript-format
 msgid "%(nick)s has been kicked from the lobby."
-msgstr ""
+msgstr "%(nick)s ถูกเตะออกจากล็อบบี้!"
 
 #: gui/lobby/LobbyPage/KickStrings.js:44
 #, javascript-format
 msgid "%(nick)s has been banned from the lobby."
-msgstr ""
+msgstr "%(nick)s ถูกแบนออกจากล็อบบี้!"
 
 #: gui/lobby/LobbyPage/KickStrings.js:49
 #, javascript-format
 msgctxt "lobby kick"
 msgid "Reason: %(reason)s"
-msgstr ""
+msgstr "เหตุผล: %(reason)s"
 
-#: gui/lobby/LobbyPage/LobbyPage.xml:(caption):13
-#: gui/prelobby/entrance/entrance.xml:(caption):14
+#: gui/lobby/LobbyPage/LobbyPage.xml:13 gui/prelobby/entrance/entrance.xml:14
 msgid "Multiplayer Lobby"
-msgstr ""
+msgstr "ล็อบบี้รวม"
 
 #: gui/lobby/LobbyPage/PlayerColor.js:34
 #, javascript-format
 msgid "%(nick)s (%(rating)s)"
-msgstr ""
+msgstr "%(nick)s (%(rating)s)"
 
 #: gui/lobby/LobbyPage/PlayerList.js:197
 msgid "Online"
@@ -514,21 +520,21 @@ msgctxt "lobby presence"
 msgid "Unknown"
 msgstr "ไม่ทราบ"
 
-#: gui/lobby/LobbyPage/PlayerList.xml:(heading):18
-msgid "Status"
-msgstr ""
-
-#: gui/lobby/LobbyPage/PlayerList.xml:(placeholder_text):4
+#: gui/lobby/LobbyPage/PlayerList.xml:4
 msgid "Search for Player"
-msgstr ""
+msgstr "ค้นหาผู้เล่น"
+
+#: gui/lobby/LobbyPage/PlayerList.xml:18
+msgid "Status"
+msgstr "สถานะ"
 
 #: gui/lobby/LobbyPage/ProfilePanel.js:106
 msgid "N/A"
-msgstr ""
+msgstr "N/A"
 
 #: gui/lobby/LobbyPage/ProfilePanel.js:112
 msgid "Moderator"
-msgstr ""
+msgstr "ผู้ดูแล"
 
 #: gui/lobby/LobbyPage/ProfilePanel.js:113
 msgid "Player"
@@ -536,72 +542,72 @@ msgstr "ผู้เล่น"
 
 #: gui/lobby/LobbyPage/ProfilePanel.js:114
 msgid "Muted Player"
-msgstr ""
+msgstr "ปิดเสียงผู้เล่น"
 
 #: gui/lobby/LobbyPage/ProfilePanel.js:120
 msgctxt "Used for an undefined winning rate"
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #: gui/lobby/LobbyPage/ProfilePanel.js:122
 #, javascript-format
 msgid "%(percentage)s%%"
 msgstr "%(percentage)s%%"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):8
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):30
+#: gui/lobby/LobbyPage/ProfilePanel.xml:8
+#: gui/lobby/ProfilePage/ProfilePage.xml:30
 msgid "Current Rank:"
-msgstr ""
+msgstr "อันดับปัจจุบัน:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):12
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):34
+#: gui/lobby/LobbyPage/ProfilePanel.xml:12
+#: gui/lobby/ProfilePage/ProfilePage.xml:34
 msgid "Highest Rating:"
-msgstr ""
+msgstr "คะแนนสูงสุด:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):16
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):38
+#: gui/lobby/LobbyPage/ProfilePanel.xml:16
+#: gui/lobby/ProfilePage/ProfilePage.xml:38
 msgid "Total Games:"
-msgstr ""
+msgstr "เกมทั้งหมด:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):20
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):42
+#: gui/lobby/LobbyPage/ProfilePanel.xml:20
+#: gui/lobby/ProfilePage/ProfilePage.xml:42
 msgid "Wins:"
-msgstr ""
+msgstr "ชนะ:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):24
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):46
+#: gui/lobby/LobbyPage/ProfilePanel.xml:24
+#: gui/lobby/ProfilePage/ProfilePage.xml:46
 msgid "Losses:"
-msgstr ""
+msgstr "แพ้:"
 
-#: gui/lobby/LobbyPage/ProfilePanel.xml:(caption):28
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):50
+#: gui/lobby/LobbyPage/ProfilePanel.xml:28
+#: gui/lobby/ProfilePage/ProfilePage.xml:50
 msgid "Win Rate:"
-msgstr ""
+msgstr "อัตราการชนะ:"
 
 #: gui/lobby/ProfilePage/ProfilePage.js:86
 #, javascript-format
 msgid "Player \"%(nick)s\" not found."
-msgstr ""
+msgstr "ไม่พบผู้เล่น \"%(nick)s\"  "
 
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):16
+#: gui/lobby/ProfilePage/ProfilePage.xml:16
 msgid "Enter playername:"
-msgstr ""
+msgstr "ใส่ชื่อผู้เล่น:"
 
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):22
+#: gui/lobby/ProfilePage/ProfilePage.xml:22
 msgid "View Profile"
-msgstr ""
+msgstr "ดูโปรไฟล์"
 
-#: gui/lobby/ProfilePage/ProfilePage.xml:(caption):55
+#: gui/lobby/ProfilePage/ProfilePage.xml:55
 msgid "Please enter a player name."
-msgstr ""
+msgstr "กรุณาใส่ชื่อผู้เล่น"
 
-#: gui/prelobby/common/credentials/confirmpassword.xml:(caption):4
+#: gui/prelobby/common/credentials/confirmpassword.xml:4
 msgid "Password again:"
-msgstr ""
+msgstr "ใส่รหัสอีกครั้ง"
 
 #: gui/prelobby/common/credentials/credentials.js:5
 msgid "Please enter your username"
-msgstr "กรุณาใส่ชื่่อผู้เล่น:"
+msgstr "กรุณาใส่ชื่อผู้เล่น:"
 
 #: gui/prelobby/common/credentials/credentials.js:8
 msgid "Invalid username"
@@ -619,7 +625,7 @@ msgstr "กรุณากรอกรหัสผ่าน"
 
 #: gui/prelobby/common/credentials/credentials.js:23
 msgid "Please choose a longer password"
-msgstr ""
+msgstr "กรุณากรอกรหัสผ่านที่ยาวกว่านี้"
 
 #: gui/prelobby/common/credentials/credentials.js:32
 msgid "Please enter your password again"
@@ -629,41 +635,43 @@ msgstr "กรุณากรอกรหัสผ่านอีกครั้
 msgid "Passwords do not match"
 msgstr "รหัสผ่านไม่ตรงกัน"
 
-#: gui/prelobby/common/credentials/credentials.js:54
+#: gui/prelobby/common/credentials/credentials.js:55
 msgid "Are you sure you want to delete the password after connecting?"
-msgstr ""
+msgstr "คุณแน่ใจหรือไม่ว่าต้องการลบรหัสผ่านหลังจากเชื่อมต่อแล้ว"
 
-#: gui/prelobby/common/credentials/credentials.xml:(caption):6
+#: gui/prelobby/common/credentials/credentials.xml:6
 msgid "Login:"
-msgstr ""
+msgstr "เข้าสู่ระบบ:"
 
-#: gui/prelobby/common/credentials/credentials.xml:(caption):15
+#: gui/prelobby/common/credentials/credentials.xml:15
 msgid "Password:"
 msgstr "รหัสผ่าน:"
 
-#: gui/prelobby/common/credentials/rememberpassword.xml:(caption):7
+#: gui/prelobby/common/credentials/rememberpassword.xml:7
 msgid "Remember Password"
-msgstr ""
+msgstr "จดจำรหัสผ่าน"
 
 #: gui/prelobby/common/feedback/feedback.js:4
 msgid ""
 "Unknown error. This usually occurs because the same IP address is not "
 "allowed to register more than one account within one hour."
-msgstr ""
+msgstr "ข้อผิดพลาดที่ไม่รู้จัก มักเกิดขึ้นเนื่องจากที่อยู่ IP เดียวกันไม่ได้รับอนุญาตให้ลงทะเบียนมากกว่าหนึ่ง บัญชี ภายในหนึ่งชั่วโมง"
 
-#: gui/prelobby/common/feedback/feedback.xml:(caption):10
-#: gui/prelobby/entrance/entrance.xml:(caption):30
+#: gui/prelobby/common/feedback/feedback.xml:10
+#: gui/prelobby/entrance/entrance.xml:30
 msgid "Cancel"
 msgstr "ยกเลิก"
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:1
 msgid ""
-"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Privacy "
+"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Privacy "
 "Policy[/font]"
 msgstr ""
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:3
-msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2020-12-24"
+#: gui/prelobby/common/terms/Terms_of_Service.txt:3
+#: gui/prelobby/common/terms/Terms_of_Use.txt:3
+msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2023-07-27"
 msgstr ""
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:5
@@ -718,7 +726,7 @@ msgstr ""
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:15
 msgid "[font=\"sans-bold-14\"]3. IP address[/font]"
-msgstr ""
+msgstr "[font=\"sans-bold-14\"]3. IP address[/font]"
 
 #: gui/prelobby/common/terms/Privacy_Policy.txt:16
 msgid ""
@@ -886,7 +894,7 @@ msgstr ""
 #: gui/prelobby/common/terms/Privacy_Policy.txt:50
 msgid ""
 "2. Wildfire Games has legitimate interests in providing the Multiplayer "
-"Lobby, in the development and improvement of 0 A.D. and the Multiplayer "
+"Lobby, in the development and improvement of 0 A.D. and the Multiplayer "
 "Lobby, in enforcing the Terms of Use and in the protection against "
 "cyberattacks (GDPR 6.1.f)."
 msgstr ""
@@ -1063,17 +1071,13 @@ msgstr ""
 
 #: gui/prelobby/common/terms/Terms_of_Service.txt:1
 msgid ""
-"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
+"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
 "Service[/font]"
 msgstr ""
 
-#: gui/prelobby/common/terms/Terms_of_Service.txt:3
-msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2018-10-16"
-msgstr "[font=\"sans-bold-14\"]เอกสาร วันที่:[/font] 2018-10-16"
-
 #: gui/prelobby/common/terms/Terms_of_Service.txt:5
 msgid ""
-"The 0 A.D. Empires Ascendant Multiplayer Lobby is an online service provided"
+"The 0 A.D. Empires Ascendant Multiplayer Lobby is an online service provided"
 " by Wildfire Games that allows players to set up online multiplayer matches,"
 " discuss the game in a public chat room and gain a rating that reflects "
 "their skill."
@@ -1082,7 +1086,7 @@ msgstr ""
 #: gui/prelobby/common/terms/Terms_of_Service.txt:7
 msgid ""
 "Due to the subject matter of historic warfare, description and depiction of "
-"violence and the language on the Multiplayer Lobby, 0 A.D. and the "
+"violence and the language on the Multiplayer Lobby, 0 A.D. and the "
 "Multiplayer Lobby are not directed to young children (COPPA §312.2)."
 msgstr ""
 
@@ -1093,7 +1097,7 @@ msgstr ""
 #: gui/prelobby/common/terms/Terms_of_Service.txt:10
 #: gui/prelobby/common/terms/Terms_of_Use.txt:5
 msgid ""
-"[font=\"sans-bold-14\"]By using the 0 A.D. Multiplayer Lobby, you agree "
+"[font=\"sans-bold-14\"]By using the 0 A.D. Multiplayer Lobby, you agree "
 "to:[/font]"
 msgstr ""
 
@@ -1155,12 +1159,8 @@ msgstr ""
 
 #: gui/prelobby/common/terms/Terms_of_Use.txt:1
 msgid ""
-"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
+"[font=\"sans-bold-18\"]0 A.D. Empires Ascendant Multiplayer Lobby Terms of "
 "Use[/font]"
-msgstr ""
-
-#: gui/prelobby/common/terms/Terms_of_Use.txt:3
-msgid "[font=\"sans-bold-14\"]Document Date:[/font] 2022-09-01"
 msgstr ""
 
 #: gui/prelobby/common/terms/Terms_of_Use.txt:6
@@ -1247,43 +1247,43 @@ msgstr ""
 
 #: gui/prelobby/common/terms/termslobby.js:19
 msgid "Terms of Use"
-msgstr ""
+msgstr "เงื่อนไขการใช้งาน"
 
 #: gui/prelobby/common/terms/termslobby.js:20
 msgid "Please read and accept the Terms of Use."
-msgstr ""
+msgstr "กรุณาอ่านและยอมรับเงื่อนไขการใช้งาน"
 
 #: gui/prelobby/common/terms/termslobby.js:29
 msgid "Privacy Policy"
-msgstr ""
+msgstr "นโยบายความเป็นส่วนตัว"
 
 #: gui/prelobby/common/terms/termslobby.js:30
 msgid "Please read and accept the Privacy Policy."
-msgstr ""
+msgstr "โปรดอ่านและยอมรับนโยบายความเป็นส่วนตัว"
 
-#: gui/prelobby/entrance/entrance.xml:(caption):20
+#: gui/prelobby/entrance/entrance.xml:20
 msgid "Create a new account"
-msgstr ""
+msgstr "สร้างบัญชีใหม่"
 
-#: gui/prelobby/entrance/entrance.xml:(caption):25
+#: gui/prelobby/entrance/entrance.xml:25
 msgid "Login to an existing account"
-msgstr ""
+msgstr "เข้าสู่ระบบบัญชีที่มีอยู่"
 
 #: gui/prelobby/login/login.js:5
 msgid "Connect"
-msgstr ""
+msgstr "เชื่อมต่อ"
 
 #: gui/prelobby/login/login.js:32
 msgid "Connecting…"
 msgstr "กำลังเชื่อมต่อ..."
 
-#: gui/prelobby/login/login.xml:(caption):13
+#: gui/prelobby/login/login.xml:13
 msgid "Connect to the game lobby"
-msgstr ""
+msgstr "เชื่อมต่อกับล็อบบี้เกม"
 
 #: gui/prelobby/register/register.js:5
 msgid "Register"
-msgstr ""
+msgstr "สมัครสมาชิก"
 
 #: gui/prelobby/register/register.js:26
 msgid "Registering…"
@@ -1291,8 +1291,8 @@ msgstr "กำลังดำเนินการสมัครสมาชิ
 
 #: gui/prelobby/register/register.js:39
 msgid "Registered"
-msgstr ""
+msgstr "สมัครสมาชิกแล้ว"
 
-#: gui/prelobby/register/register.xml:(caption):13
+#: gui/prelobby/register/register.xml:13
 msgid "Registration"
-msgstr ""
+msgstr "การสมัครสมาชิก "

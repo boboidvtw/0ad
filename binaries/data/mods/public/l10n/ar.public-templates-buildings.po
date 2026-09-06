@@ -1,34 +1,37 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2023 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# Nopar Despar
-# Abdallatif Sulaiman
-# Abdelrahman Essawy
-# ABDO SEED
-# abdul-rahman sawalmah
-# abidin toumi
-# Ahmed Albahhar
-# Amr Adel
-# Dar Games
-# Eslam obeidat
-# Houssem Mhamdi
-# ibrahim mahfod ghamdi
-# Mahmoud Abdalla
-# Mohamed Moanis
-# Mohamed Salah
-# nitro361
-# 425467bb0c9da71484550c3c99a0865a_432023a
-# salama
-# صفا الفليج
-# ‫علي السادة (‪games power‬‏)‬‎
+# Nopar Despar, 2015
+# Abdallatif Sulaiman, 2018
+# Abdelrahman Essawy, 2023
+# ABDO SEED, 2020
+# abdul-rahman sawalmah, 2015
+# abidin toumi, 2018,2021
+# Ahmed Albahhar, 2017
+# ahmed t, 2023
+# Amr Adel, 2020
+# Dar Games, 2015
+# Eslam obeidat, 2018
+# hachi mohamed, 2024
+# Houssem Mhamdi, 2014
+# ibrahim mahfod ghamdi, 2019
+# Mahmoud Abdalla, 2019
+# Mohamed Moanis, 2017
+# Mohamed Salah, 2018
+# nitro361, 2015
+# Olive Walle, 2023
+# 425467bb0c9da71484550c3c99a0865a_432023a, 2017
+# salama, 2015
+# صفا الفليج, 2015,2017-2018
+# ‫علي السادة (‪games power‬‏)‬‎, 2023
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2023-03-20 08:08+0000\n"
+"POT-Creation-Date: 2024-07-26 13:41+0000\n"
 "PO-Revision-Date: 2014-06-19 17:54+0000\n"
-"Last-Translator: Abdelrahman Essawy, 2023\n"
+"Last-Translator: hachi mohamed, 2024\n"
 "Language-Team: Arabic (http://app.transifex.com/wildfire-games/0ad/language/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -50,7 +53,7 @@ msgstr ""
 #: simulation/templates/structures/sele/barracks.xml:12
 #: simulation/templates/structures/spart/barracks.xml:12
 msgid "Stratopedon"
-msgstr ""
+msgstr "معسكر"
 
 #: simulation/templates/structures/athen/civil_centre.xml:8
 #: simulation/templates/structures/mace/civil_centre.xml:8
@@ -115,11 +118,11 @@ msgstr "مبنى رياضة"
 
 #: simulation/templates/structures/athen/gymnasium.xml:23
 msgid "Gymnasion"
-msgstr "جيمناسيون"
+msgstr ""
 
 #: simulation/templates/structures/athen/gymnasium.xml:24
 msgid "Train Champions."
-msgstr "درب أبطال."
+msgstr "تدريب الأبطال"
 
 #: simulation/templates/structures/athen/house.xml:5
 #: simulation/templates/structures/mace/house.xml:5
@@ -135,7 +138,7 @@ msgstr ""
 #: simulation/templates/structures/sele/market.xml:5
 #: simulation/templates/structures/spart/market.xml:5
 msgid "Emporion"
-msgstr ""
+msgstr "سوق"
 
 #: simulation/templates/structures/athen/outpost.xml:5
 #: simulation/templates/structures/mace/outpost.xml:5
@@ -145,19 +148,19 @@ msgstr ""
 msgid "Prophylagma"
 msgstr ""
 
-#: simulation/templates/structures/athen/prytaneion.xml:22
+#: simulation/templates/structures/athen/prytaneion.xml:25
 msgid "Council Chamber"
 msgstr "غرفة مجلس"
 
-#: simulation/templates/structures/athen/prytaneion.xml:23
+#: simulation/templates/structures/athen/prytaneion.xml:26
 msgid "Prytaneion"
-msgstr "پريتانيون"
+msgstr ""
 
-#: simulation/templates/structures/athen/prytaneion.xml:24
+#: simulation/templates/structures/athen/prytaneion.xml:27
 msgid "Train Heroes and research technologies."
 msgstr "درب أبطال وابحث عن التقنيات"
 
-#: simulation/templates/structures/athen/prytaneion.xml:26
+#: simulation/templates/structures/athen/prytaneion.xml:29
 #: simulation/templates/structures/gaul/assembly.xml:31
 #: simulation/templates/structures/spart/gerousia.xml:26
 msgid "Council"
@@ -254,7 +257,7 @@ msgstr ""
 
 #: simulation/templates/structures/athen/wonder.xml:9
 msgid "Parthenōn"
-msgstr ""
+msgstr "Parthenōn"
 
 #: simulation/templates/structures/bench.xml:11
 msgid "Bench"
@@ -346,6 +349,10 @@ msgstr ""
 msgid "Tegia"
 msgstr ""
 
+#: simulation/templates/structures/brit/kennel.xml:5
+msgid "Cunattegia"
+msgstr ""
+
 #: simulation/templates/structures/brit/market.xml:12
 #: simulation/templates/structures/gaul/market.xml:12
 msgid "Magos"
@@ -394,11 +401,11 @@ msgstr ""
 
 #: simulation/templates/structures/brit/wonder.xml:9
 msgid "Emain Macha"
-msgstr ""
+msgstr "Emain Macha"
 
 #: simulation/templates/structures/cart/apartment.xml:23
 msgid "Apartment Building"
-msgstr "مبنى مساكن"
+msgstr "مبنى سكني"
 
 #: simulation/templates/structures/cart/apartment.xml:24
 #: simulation/templates/structures/cart/house.xml:8
@@ -466,11 +473,16 @@ msgstr "أحوزاه"
 
 #: simulation/templates/structures/cart/field.xml:5
 msgid "Šadd"
-msgstr "شَدّ"
+msgstr ""
 
 #: simulation/templates/structures/cart/fortress.xml:9
 msgid "Ḥamet"
 msgstr "أَمّيت"
+
+#: simulation/templates/structures/cart/house.xml:16
+msgid ""
+"Add a second story to make an Apartment with a greater population bonus."
+msgstr ""
 
 #: simulation/templates/structures/cart/market.xml:12
 msgid "Šūq"
@@ -519,7 +531,7 @@ msgid "Maqdaš"
 msgstr "مَقْدَش"
 
 #: simulation/templates/structures/cart/temple.xml:10
-msgid "Train Healers and Champion Infantry and research healing technologies."
+msgid "Train Healers and Champions, and research healing technologies."
 msgstr ""
 
 #: simulation/templates/structures/cart/tophet.xml:18
@@ -571,39 +583,6 @@ msgstr "عمود دوريسي"
 msgid "Fallen Doric Column"
 msgstr "عمود دوريسي منهار"
 
-#: simulation/templates/structures/farmstead_field_wheat.xml:7
-#: simulation/templates/structures/generic_field.xml:8
-msgid "Wheat Field"
-msgstr "حقل قمح"
-
-#: simulation/templates/structures/athen/farmstead.xml:11
-#: simulation/templates/structures/farmstead_greek.xml:8
-#: simulation/templates/structures/mace/farmstead.xml:11
-#: simulation/templates/structures/ptol/farmstead.xml:8
-#: simulation/templates/structures/sele/farmstead.xml:8
-#: simulation/templates/structures/spart/farmstead.xml:11
-msgid "Epoikion"
-msgstr ""
-
-#: simulation/templates/structures/farmstead_indian.xml:8
-#: simulation/templates/structures/maur/farmstead.xml:11
-msgid "Kantu"
-msgstr "كَانْتُو"
-
-#: simulation/templates/structures/farmstead_italian.xml:8
-msgid "Villa"
-msgstr "فيلا"
-
-#: simulation/templates/structures/farmstead_middle_eastern.xml:9
-#: simulation/templates/structures/pers/farmstead.xml:8
-msgid "Kaštašta"
-msgstr "كَاشْتَاشْتَا"
-
-#: simulation/templates/structures/brit/rotarymill.xml:5
-#: simulation/templates/structures/farmstead_temperate_europe.xml:4
-msgid "Melonas"
-msgstr "ميلّوناس"
-
 #: simulation/templates/structures/fence_long.xml:14
 #: simulation/templates/structures/fence_short.xml:14
 msgid "Fence"
@@ -613,12 +592,31 @@ msgstr "سياج"
 msgid "Long Wooden Fence"
 msgstr "سياج خشبي طويل"
 
+#: simulation/templates/structures/fence_rock_long.xml:12
+#: simulation/templates/structures/fence_rock_long.xml:13
+#: simulation/templates/structures/fence_rock_medium.xml:12
+#: simulation/templates/structures/fence_rock_medium.xml:13
+#: simulation/templates/structures/fence_rock_short.xml:12
+#: simulation/templates/structures/fence_rock_short.xml:13
+#: simulation/templates/structures/fence_rock_stub.xml:12
+#: simulation/templates/structures/fence_rock_stub.xml:13
+msgid "Rock Fence"
+msgstr "Rock Fence"
+
 #: simulation/templates/structures/fence_short.xml:15
 msgid "Short Wooden Fence"
 msgstr "سياج خشبي قصير"
 
 #: simulation/templates/structures/fence_stone.xml:14
 #: simulation/templates/structures/fence_stone.xml:15
+#: simulation/templates/structures/fence_stone_long.xml:12
+#: simulation/templates/structures/fence_stone_long.xml:13
+#: simulation/templates/structures/fence_stone_medium.xml:12
+#: simulation/templates/structures/fence_stone_medium.xml:13
+#: simulation/templates/structures/fence_stone_short.xml:12
+#: simulation/templates/structures/fence_stone_short.xml:13
+#: simulation/templates/structures/fence_stone_stub.xml:12
+#: simulation/templates/structures/fence_stone_stub.xml:13
 msgid "Stone Fence"
 msgstr "سياج حجريّ"
 
@@ -662,74 +660,79 @@ msgstr ""
 msgid "Celicnon"
 msgstr ""
 
+#: simulation/templates/structures/generic_field.xml:8
+#: simulation/templates/structures/mill_field_wheat.xml:6
+msgid "Wheat Field"
+msgstr "حقل قمح"
+
 #: simulation/templates/structures/han/academy.xml:27
 msgid "Imperial Academy"
-msgstr ""
+msgstr "Imperial Academy"
 
 #: simulation/templates/structures/han/academy.xml:28
 msgid "Dìguó Xuéyuàn"
-msgstr ""
+msgstr "Dìguó Xuéyuàn"
 
 #: simulation/templates/structures/han/academy.xml:30
 msgid "Train Champions and research their technologies."
-msgstr ""
+msgstr "Train Champions and research their technologies."
 
 #: simulation/templates/structures/han/academy.xml:31
 msgid "Academy"
-msgstr ""
+msgstr "Academy"
 
 #: simulation/templates/structures/han/arsenal.xml:8
 msgid "Bīnggōng Chǎng"
-msgstr ""
+msgstr "Bīnggōng Chǎng"
 
 #: simulation/templates/structures/han/barracks.xml:12
 msgid "Jūn Yíng"
-msgstr ""
+msgstr "Jūn Yíng"
 
 #: simulation/templates/structures/han/civil_centre.xml:12
 msgid "Guān Shǔ"
-msgstr ""
+msgstr "Guān Shǔ"
 
 #: simulation/templates/structures/han/civil_centre.xml:33
 msgid ""
 "Enable training of heroes, reduce the batch training times and greatly "
 "increase the health, capture resistance and garrison capacity of this "
 "specific Civic Center."
-msgstr ""
+msgstr "Enable training of heroes, reduce the batch training times and greatly increase the health, capture resistance and garrison capacity of this specific Civic Center."
 
 #: simulation/templates/structures/han/civil_centre_court.xml:17
 msgid "Imperial Court"
-msgstr ""
+msgstr "Imperial Court"
 
 #: simulation/templates/structures/han/civil_centre_court.xml:18
 msgid "Cháotíng"
-msgstr ""
+msgstr "Cháotíng"
 
 #: simulation/templates/structures/han/civil_centre_court.xml:19
 msgid "ImperialCourt"
-msgstr ""
+msgstr "ImperialCourt"
 
 #: simulation/templates/structures/han/corral.xml:12
 msgid "Xù Lán"
-msgstr ""
+msgstr "Xù Lán"
 
 #: simulation/templates/structures/han/defense_tower.xml:12
 msgid "Fángyù Tǎ"
-msgstr ""
+msgstr "Fángyù Tǎ"
 
 #: simulation/templates/structures/han/defense_tower.xml:23
 msgid ""
 "This tower has greater range, greater attack, greater health, and is twice "
 "as difficult to capture."
-msgstr ""
+msgstr "This tower has greater range, greater attack, greater health, and is twice as difficult to capture."
 
 #: simulation/templates/structures/han/defense_tower_great.xml:31
 msgid "Great Tower"
-msgstr ""
+msgstr "Great Tower"
 
 #: simulation/templates/structures/han/defense_tower_great.xml:32
 msgid "Dà Fángyù Tǎ"
-msgstr ""
+msgstr "Dà Fángyù Tǎ"
 
 #: simulation/templates/structures/han/defense_tower_great.xml:34
 msgid "GreatTower"
@@ -737,71 +740,71 @@ msgstr "البرج العملاق"
 
 #: simulation/templates/structures/han/dock.xml:9
 msgid "Mǎtóu"
-msgstr ""
+msgstr "Mǎtóu"
 
 #: simulation/templates/structures/han/farmstead.xml:17
 msgid "Nóng Shè"
-msgstr ""
+msgstr "Nóng Shè"
 
-#: simulation/templates/structures/han/field.xml:15
+#: simulation/templates/structures/han/field.xml:18
 msgid "Dàotián"
-msgstr ""
+msgstr "Dàotián"
 
-#: simulation/templates/structures/han/field.xml:16
+#: simulation/templates/structures/han/field.xml:19
 msgid "Rice Paddy"
-msgstr ""
+msgstr "Rice Paddy"
 
 #: simulation/templates/structures/han/field_grain.xml:5
 msgid "Tián"
-msgstr ""
+msgstr "Tián"
 
 #: simulation/templates/structures/han/forge.xml:12
 msgid "Duànzào Chǎng"
-msgstr ""
+msgstr "Duànzào Chǎng"
 
 #: simulation/templates/structures/han/fortress.xml:12
 #: simulation/templates/structures/han/fortress_old.xml:12
 msgid "Bǎolěi"
-msgstr ""
+msgstr "Bǎolěi"
 
 #: simulation/templates/structures/han/house.xml:12
 msgid "Mín Jū"
-msgstr ""
+msgstr "Mín Jū"
 
 #: simulation/templates/structures/han/laozigate.xml:21
 #: simulation/templates/structures/han/laozigate.xml:24
 msgid "LaoziGate"
-msgstr ""
+msgstr "LaoziGate"
 
 #: simulation/templates/structures/han/laozigate.xml:22
 msgid "Lǎozǐ Mén"
-msgstr ""
+msgstr "Lǎozǐ Mén"
 
 #: simulation/templates/structures/han/market.xml:9
 msgid "Jíshì"
-msgstr ""
+msgstr "Jíshì"
 
 #: simulation/templates/structures/han/ministry.xml:36
 msgid "Imperial Ministry"
-msgstr ""
+msgstr "Imperial Ministry"
 
 #: simulation/templates/structures/han/ministry.xml:37
 msgid "Gōngdiàn"
-msgstr ""
+msgstr "Gōngdiàn"
 
 #: simulation/templates/structures/han/ministry.xml:39
 msgid "ImperialMinistry"
-msgstr ""
+msgstr "ImperialMinistry"
 
 #: simulation/templates/structures/han/ministry.xml:40
 msgid ""
 "Train the Nine Ministers. Territory root. Research a powerful suite of "
 "Administrative technologies."
-msgstr ""
+msgstr "Train the Nine Ministers. Territory root. Research a powerful suite of Administrative technologies."
 
 #: simulation/templates/structures/han/outpost.xml:5
 msgid "Wànglóu"
-msgstr ""
+msgstr "Wànglóu"
 
 #: simulation/templates/structures/han/palisades_curve.xml:10
 #: simulation/templates/structures/han/palisades_long.xml:4
@@ -809,57 +812,57 @@ msgstr ""
 #: simulation/templates/structures/han/palisades_short.xml:4
 #: simulation/templates/structures/han/wallset_palisade.xml:5
 msgid "Bamboo Stockade"
-msgstr ""
+msgstr "Bamboo Stockade"
 
 #: simulation/templates/structures/han/palisades_gate.xml:4
 msgid "Bamboo Stockade Gate"
-msgstr ""
+msgstr "Bamboo Stockade Gate"
 
 #: simulation/templates/structures/han/palisades_tower.xml:4
 msgid "Bamboo Stockade Tower"
-msgstr ""
+msgstr "Bamboo Stockade Tower"
 
 #: simulation/templates/structures/han/range.xml:12
 msgid "Bǎ Chǎng"
-msgstr ""
+msgstr "Bǎ Chǎng"
 
 #: simulation/templates/structures/han/sentry_tower.xml:5
 msgid "Shào Tǎ"
-msgstr ""
+msgstr "Shào Tǎ"
 
 #: simulation/templates/structures/han/stable.xml:12
 msgid "Mǎ Jiù"
-msgstr ""
+msgstr "Mǎ Jiù"
 
 #: simulation/templates/structures/han/storehouse.xml:17
 msgid "Cāngkù"
-msgstr ""
+msgstr "Cāngkù"
 
 #: simulation/templates/structures/han/temple.xml:12
 msgid "Sìmiào"
-msgstr ""
+msgstr "Sìmiào"
 
 #: simulation/templates/structures/han/wall_gate.xml:9
 msgid "Chéng Mén"
-msgstr ""
+msgstr "Chéng Mén"
 
 #: simulation/templates/structures/han/wall_long.xml:9
 #: simulation/templates/structures/han/wall_medium.xml:9
 #: simulation/templates/structures/han/wall_short.xml:9
 msgid "Chéng Yuán"
-msgstr ""
+msgstr "Chéng Yuán"
 
 #: simulation/templates/structures/han/wall_tower.xml:9
 msgid "Chéng Lóu"
-msgstr ""
+msgstr "Chéng Lóu"
 
 #: simulation/templates/structures/han/wallset_stone.xml:5
 msgid "Yōng"
-msgstr ""
+msgstr "Yōng"
 
 #: simulation/templates/structures/han/wonder.xml:12
 msgid "Míngtáng Bìyōng"
-msgstr ""
+msgstr "Míngtáng Bìyōng"
 
 #: simulation/templates/structures/hellenic_epic_temple.xml:23
 msgid "Epic Temple"
@@ -936,7 +939,7 @@ msgstr "النصب المعظم"
 
 #: simulation/templates/structures/iber/monument.xml:32
 msgid "Gur Oroigarri"
-msgstr "جور أورجاى"
+msgstr "غور أورويغاري"
 
 #: simulation/templates/structures/iber/monument.xml:9
 #: simulation/templates/structures/iber/monument.xml:34
@@ -972,11 +975,11 @@ msgstr "بوّابة عشتار لبابل"
 
 #: simulation/templates/structures/ishtar_gate.xml:26
 msgid "Territory root."
-msgstr ""
+msgstr "Territory root."
 
 #: simulation/templates/structures/kush/arsenal.xml:5
 msgid "Pr-ỉwn n ms"
-msgstr ""
+msgstr "Pr-ỉwn n ms"
 
 #: simulation/templates/structures/kush/barracks.xml:9
 msgid "pr-msʿyw"
@@ -1016,11 +1019,7 @@ msgstr ""
 
 #: simulation/templates/structures/kush/elephant_stable.xml:5
 msgid "Ỉḥ Abu"
-msgstr ""
-
-#: simulation/templates/structures/kush/farmstead.xml:9
-msgid "snwt"
-msgstr ""
+msgstr "Ỉḥ Abu"
 
 #: simulation/templates/structures/kush/field.xml:5
 msgid "sht"
@@ -1102,25 +1101,25 @@ msgstr ""
 #: simulation/templates/structures/kush/temple.xml:10
 msgid ""
 "Train Healers and Apedemak Champions and research healing technologies."
-msgstr ""
+msgstr "Train Healers and Apedemak Champions and research healing technologies."
 
 #: simulation/templates/structures/kush/temple.xml:11
 msgid "TempleOfApedemak"
 msgstr ""
 
-#: simulation/templates/structures/kush/temple_amun.xml:27
+#: simulation/templates/structures/kush/temple_amun.xml:30
 msgid "Grand Temple of Amun"
 msgstr "معبد آمون العظيم"
 
-#: simulation/templates/structures/kush/temple_amun.xml:28
+#: simulation/templates/structures/kush/temple_amun.xml:31
 msgid "Pr-ʿImn"
 msgstr ""
 
-#: simulation/templates/structures/kush/temple_amun.xml:29
+#: simulation/templates/structures/kush/temple_amun.xml:32
 msgid "Train Amun Champions and Elite Healers. Research healing technologies."
 msgstr ""
 
-#: simulation/templates/structures/kush/temple_amun.xml:31
+#: simulation/templates/structures/kush/temple_amun.xml:34
 msgid "TempleOfAmun"
 msgstr ""
 
@@ -1202,21 +1201,19 @@ msgstr "ڤِيپَانَا"
 msgid "Uparaksana"
 msgstr "أوپَارَاكْسَانَا"
 
-#: simulation/templates/structures/maur/palace.xml:19
-#: simulation/templates/structures/maur/palace.xml:23
-#: simulation/templates/structures/pers/apadana.xml:30
-#: simulation/templates/structures/pers/tacara.xml:23
-#: simulation/templates/structures/pers/tacara.xml:26
+#: simulation/templates/structures/maur/palace.xml:20
+#: simulation/templates/structures/maur/palace.xml:26
+#: simulation/templates/structures/pers/tachara.xml:33
 msgid "Palace"
 msgstr "قصر"
 
-#: simulation/templates/structures/maur/palace.xml:20
+#: simulation/templates/structures/maur/palace.xml:21
 msgid "Harmya"
 msgstr ""
 
-#: simulation/templates/structures/maur/palace.xml:21
-msgid "Territory root. Train Maiden Guards and Heroes."
-msgstr ""
+#: simulation/templates/structures/maur/palace.xml:30
+msgid "Train Heroes and their Poison Maiden Guards. Territory root."
+msgstr "Train Heroes and their Poison Maiden Guards. Territory root."
 
 #: simulation/templates/structures/maur/pillar_ashoka.xml:32
 msgid "Edict Pillar of Ashoka"
@@ -1295,6 +1292,40 @@ msgstr ""
 msgid "Capture this structure to train mercenaries from Hellenistic Egypt."
 msgstr "احتل هذا المبنى لتدرب مرتزقه من مصر الهيلنيه."
 
+#: simulation/templates/structures/kush/farmstead.xml:9
+#: simulation/templates/structures/mill_desert.xml:8
+#: simulation/templates/structures/mill_saharan.xml:8
+msgid "snwt"
+msgstr ""
+
+#: simulation/templates/structures/athen/farmstead.xml:11
+#: simulation/templates/structures/mace/farmstead.xml:11
+#: simulation/templates/structures/mill_greek.xml:8
+#: simulation/templates/structures/ptol/farmstead.xml:8
+#: simulation/templates/structures/sele/farmstead.xml:8
+#: simulation/templates/structures/spart/farmstead.xml:11
+msgid "Epoikion"
+msgstr ""
+
+#: simulation/templates/structures/maur/farmstead.xml:11
+#: simulation/templates/structures/mill_indian.xml:8
+msgid "Kantu"
+msgstr "كَانْتُو"
+
+#: simulation/templates/structures/mill_italian.xml:8
+msgid "Villa"
+msgstr "فيلا"
+
+#: simulation/templates/structures/mill_middle_eastern.xml:8
+#: simulation/templates/structures/pers/farmstead.xml:8
+msgid "Kaštašta"
+msgstr "كَاشْتَاشْتَا"
+
+#: simulation/templates/structures/brit/rotarymill.xml:5
+#: simulation/templates/structures/mill_temperate_europe.xml:4
+msgid "Melonas"
+msgstr "ميلّوناس"
+
 #: simulation/templates/structures/obelisk.xml:11
 msgid "Obelisk"
 msgstr "مسلة"
@@ -1337,19 +1368,6 @@ msgstr "أشواك طويلة"
 msgid "Watchtower"
 msgstr "برج مراقبة"
 
-#: simulation/templates/structures/pers/apadana.xml:26
-msgid "Throne Hall"
-msgstr ""
-
-#: simulation/templates/structures/pers/apadana.xml:27
-msgid "Apadāna"
-msgstr ""
-
-#: simulation/templates/structures/pers/apadana.xml:28
-#: simulation/templates/structures/spart/syssiton.xml:25
-msgid "Train Champions and Heroes."
-msgstr ""
-
 #: simulation/templates/structures/pers/apartment_block.xml:12
 msgid "Apartment Block"
 msgstr "مجموعة مساكن"
@@ -1358,11 +1376,11 @@ msgstr "مجموعة مساكن"
 msgid "Padgan"
 msgstr "پَادْجَان"
 
-#: simulation/templates/structures/pers/civil_centre.xml:8
+#: simulation/templates/structures/pers/civil_centre.xml:12
 msgid "Provincial Governor"
 msgstr "حاكم مقاطعة"
 
-#: simulation/templates/structures/pers/civil_centre.xml:9
+#: simulation/templates/structures/pers/civil_centre.xml:13
 msgid "Xšaçapāvan"
 msgstr "حامى المقاطعه"
 
@@ -1415,15 +1433,15 @@ msgstr "نُزل"
 
 #: simulation/templates/structures/pers/ice_house.xml:25
 msgid "Ice House"
-msgstr ""
+msgstr "Ice House"
 
 #: simulation/templates/structures/pers/ice_house.xml:26
 msgid "Yakhchāl"
-msgstr ""
+msgstr "Yakhchāl"
 
 #: simulation/templates/structures/pers/ice_house.xml:27
 msgid "IceHouse"
-msgstr ""
+msgstr "IceHouse"
 
 #: simulation/templates/structures/pers/market.xml:12
 msgid "Ardatašta"
@@ -1441,9 +1459,33 @@ msgstr "پَارَاسْپَا"
 msgid "Asiyah"
 msgstr "أَسْيَاه"
 
-#: simulation/templates/structures/pers/tacara.xml:24
+#: simulation/templates/structures/pers/tachara.xml:29
+msgid "Winter Palace"
+msgstr ""
+
+#: simulation/templates/structures/pers/tachara.xml:30
 msgid "Taçara"
 msgstr "تاكارا"
+
+#: simulation/templates/structures/pers/tachara.xml:31
+msgid "Train Heroes and make use of the “Satrapy Tribute” feature."
+msgstr ""
+
+#: simulation/templates/structures/pers/tachara.xml:81
+msgid "Receive free Food tribute to your treasury from your subject peoples."
+msgstr ""
+
+#: simulation/templates/structures/pers/tachara.xml:86
+msgid "Receive free Wood tribute to your treasury from your subject peoples."
+msgstr ""
+
+#: simulation/templates/structures/pers/tachara.xml:91
+msgid "Receive free Stone tribute to your treasury from your subject peoples."
+msgstr ""
+
+#: simulation/templates/structures/pers/tachara.xml:96
+msgid "Receive free Metal tribute to your treasury from your subject peoples."
+msgstr ""
 
 #: simulation/templates/structures/pers/temple.xml:12
 msgid "Āyadanam"
@@ -1467,6 +1509,10 @@ msgstr "مخزن"
 #: simulation/templates/structures/pers/wonder.xml:9
 msgid "Hanging Gardens of Babylon"
 msgstr "حدائق بابل المعلّقة"
+
+#: simulation/templates/structures/pirates/dock.xml:8
+msgid "Pirate Port"
+msgstr ""
 
 #: simulation/templates/structures/ptol/elephant_stable.xml:5
 #: simulation/templates/structures/sele/elephant_stable.xml:5
@@ -1503,6 +1549,18 @@ msgstr ""
 msgid "Klērouchia"
 msgstr ""
 
+#: simulation/templates/structures/ptol/temple_2.xml:24
+msgid "Temple of Isis"
+msgstr ""
+
+#: simulation/templates/structures/ptol/temple_2.xml:26
+msgid "Train Heroes and Healers. Research special technologies."
+msgstr ""
+
+#: simulation/templates/structures/ptol/temple_2.xml:28
+msgid "TempleOfIsis"
+msgstr ""
+
 #: simulation/templates/structures/ptol/tower_artillery.xml:9
 msgid "mktr-n-ḏw"
 msgstr "برج الدفاع"
@@ -1537,8 +1595,8 @@ msgstr ""
 
 #: simulation/templates/structures/rome/army_camp.xml:73
 msgid ""
-"Build in neutral or enemy territory. Train Advanced Melee Infantry. "
-"Construct Rams. Garrison Soldiers for additional arrows."
+"Build in neutral or enemy territory. Train Advanced Melee Infantry and "
+"Marian Legionaries. Construct Rams. Garrison Soldiers for additional arrows."
 msgstr ""
 
 #: simulation/templates/structures/rome/army_camp.xml:31
@@ -1722,9 +1780,13 @@ msgstr "صف أعمدة"
 msgid "Corinthian Colonnade"
 msgstr "رواق كورنثيان"
 
+#: simulation/templates/structures/shrine_celtic.xml:9
+msgid "Henge"
+msgstr "Henge"
+
 #: simulation/templates/structures/shrine_chinese.xml:9
 msgid "Bǎotǎ"
-msgstr ""
+msgstr "Bǎotǎ"
 
 #: simulation/templates/structures/shrine_egyptian.xml:5
 #: simulation/templates/structures/shrine_kushite.xml:5
@@ -1734,7 +1796,7 @@ msgstr ""
 #: simulation/templates/structures/athen/temple.xml:9
 #: simulation/templates/structures/mace/temple.xml:9
 #: simulation/templates/structures/ptol/temple.xml:12
-#: simulation/templates/structures/ptol/temple_2.xml:11
+#: simulation/templates/structures/ptol/temple_2.xml:25
 #: simulation/templates/structures/sele/temple.xml:9
 #: simulation/templates/structures/shrine_greek_01.xml:9
 #: simulation/templates/structures/shrine_greek_02.xml:9
@@ -1744,6 +1806,10 @@ msgstr ""
 
 #: simulation/templates/structures/shrine_italian.xml:9
 msgid "Aedēs Sanitatem"
+msgstr "Aedēs Sanitatem"
+
+#: simulation/templates/structures/shrine_persian.xml:9
+msgid "Fire Temple"
 msgstr ""
 
 #: simulation/templates/structures/spart/gerousia.xml:22
@@ -1755,16 +1821,16 @@ msgid "Gerousia"
 msgstr ""
 
 #: simulation/templates/structures/spart/gerousia.xml:24
-msgid "Train Heroes."
+msgid "Research technologies."
 msgstr ""
 
 #: simulation/templates/structures/spart/persian_stoa.xml:9
 msgid "\\\"Persian\\\" Stoa"
-msgstr ""
+msgstr "\\\"Persian\\\" Stoa"
 
 #: simulation/templates/structures/spart/persian_stoa.xml:10
 msgid "Stoa Persikē"
-msgstr ""
+msgstr "Stoa Persikē"
 
 #: simulation/templates/structures/spart/syssiton.xml:23
 msgid "Military Mess Hall"
@@ -1773,6 +1839,10 @@ msgstr "صالة طعام عسكرية"
 #: simulation/templates/structures/spart/syssiton.xml:24
 msgid "Syssition"
 msgstr "سيسيسيتيون"
+
+#: simulation/templates/structures/spart/syssiton.xml:25
+msgid "Train Champions and Heroes."
+msgstr ""
 
 #: simulation/templates/structures/spart/syssiton.xml:27
 msgid "Syssiton"
@@ -1814,7 +1884,7 @@ msgstr "طاولة مربّعة"
 
 #: simulation/templates/structures/tent_arab.xml:35
 msgid "Arab Army Tent"
-msgstr ""
+msgstr "Arab Army Tent"
 
 #: simulation/templates/structures/rome/tent.xml:24
 #: simulation/templates/structures/tent_arab.xml:36
@@ -1844,7 +1914,7 @@ msgstr "خيمة البدو"
 
 #: simulation/templates/structures/tent_desert.xml:35
 msgid "Desert Army Tent"
-msgstr ""
+msgstr "Desert Army Tent"
 
 #: simulation/templates/structures/tent_mace.xml:35
 msgid "Macedonian Army Tent"
@@ -1852,15 +1922,15 @@ msgstr ""
 
 #: simulation/templates/structures/tent_rome.xml:35
 msgid "Roman Army Tent"
-msgstr ""
+msgstr "Roman Army Tent"
 
 #: simulation/templates/structures/trading_post_celtic.xml:9
 msgid "Celtic Tavern"
-msgstr ""
+msgstr "Celtic Tavern"
 
 #: simulation/templates/structures/trading_post_desert.xml:9
 msgid "Desert Bazaar"
-msgstr ""
+msgstr "Desert Bazaar"
 
 #: simulation/templates/structures/uffington_horse.xml:10
 msgid "Uffington White Horse"
@@ -1922,11 +1992,13 @@ msgstr "منزل"
 
 #: simulation/templates/structures/kush/pyramid_small.xml:26
 #: simulation/templates/structures/pers/ice_house.xml:27
+#: simulation/templates/structures/spart/syssiton.xml:27
 #: simulation/templates/template_structure_civic_house.xml:28
 #: simulation/templates/template_structure_economic_farmstead.xml:30
 #: simulation/templates/template_structure_economic_storehouse.xml:28
 #: simulation/templates/template_structure_military_barracks.xml:29
 #: simulation/templates/template_structure_military_dock.xml:27
+#: simulation/templates/template_structure_military_kennel.xml:30
 #: simulation/templates/template_structure_military_range.xml:25
 #: simulation/templates/template_structure_military_stable.xml:29
 #: simulation/templates/template_structure_resource_corral.xml:29
@@ -1943,14 +2015,15 @@ msgid "Stoa"
 msgstr "رواق إغريقي معمد"
 
 #: simulation/templates/structures/athen/gymnasium.xml:26
-#: simulation/templates/structures/cart/apartment.xml:26
 #: simulation/templates/structures/gaul/tavern.xml:22
 #: simulation/templates/structures/han/laozigate.xml:24
 #: simulation/templates/structures/han/ministry.xml:39
 #: simulation/templates/structures/iber/monument.xml:34
+#: simulation/templates/structures/mace/arsenal.xml:6
 #: simulation/templates/structures/maur/elephant_stable.xml:7
 #: simulation/templates/structures/merc_camp_egyptian.xml:31
 #: simulation/templates/structures/rome/army_camp.xml:75
+#: simulation/templates/structures/spart/gerousia.xml:26
 #: simulation/templates/template_structure_civic_stoa.xml:30
 #: simulation/templates/template_structure_civic_temple.xml:32
 #: simulation/templates/template_structure_economic_market.xml:28
@@ -1995,7 +2068,7 @@ msgstr "سياج"
 #: simulation/templates/structures/wallset_palisade.xml:5
 #: simulation/templates/template_structure_defensive_palisade.xml:15
 msgid "Wall off an area. Build in own or neutral territory."
-msgstr ""
+msgstr "Wall off an area. Build in own or neutral territory."
 
 #: simulation/templates/template_structure_defensive_tower.xml:36
 #: simulation/templates/template_structure_defensive_tower.xml:52
@@ -2096,8 +2169,6 @@ msgstr "الاقتصاد"
 
 #: simulation/templates/template_structure_economic_farmstead.xml:26
 #: simulation/templates/template_structure_economic_farmstead.xml:30
-#: simulation/templates/template_structure_special_rotarymill.xml:32
-#: simulation/templates/template_structure_special_rotarymill.xml:34
 msgid "Farmstead"
 msgstr "مزرعة"
 
@@ -2153,7 +2224,8 @@ msgstr ""
 #: simulation/templates/structures/han/academy.xml:31
 #: simulation/templates/structures/han/civil_centre_court.xml:19
 #: simulation/templates/structures/kush/pyramid_large.xml:29
-#: simulation/templates/structures/kush/temple_amun.xml:31
+#: simulation/templates/structures/kush/temple_amun.xml:34
+#: simulation/templates/structures/ptol/temple_2.xml:28
 #: simulation/templates/structures/rome/temple_mars.xml:14
 #: simulation/templates/template_structure_military_arsenal.xml:28
 #: simulation/templates/template_structure_military_elephant_stable.xml:29
@@ -2169,7 +2241,7 @@ msgstr "ثكنة"
 
 #: simulation/templates/template_structure_military_barracks.xml:28
 msgid "Train Infantry and research Infantry technologies."
-msgstr ""
+msgstr "Train Infantry and research Infantry technologies."
 
 #: simulation/templates/template_structure_military_dock.xml:24
 #: simulation/templates/template_structure_military_dock.xml:27
@@ -2213,7 +2285,7 @@ msgstr "حداد"
 
 #: simulation/templates/template_structure_military_forge.xml:24
 msgid "Research attack damage and damage resistance technologies."
-msgstr ""
+msgstr "Research attack damage and damage resistance technologies."
 
 #: simulation/templates/template_structure_military_fortress.xml:30
 #: simulation/templates/template_structure_military_fortress.xml:65
@@ -2223,6 +2295,16 @@ msgstr "قلعة"
 
 #: simulation/templates/template_structure_military_fortress.xml:67
 msgid "Garrison Soldiers for additional arrows."
+msgstr ""
+
+#: simulation/templates/template_structure_military_kennel.xml:28
+#: simulation/templates/template_structure_military_kennel.xml:29
+#: simulation/templates/template_structure_military_kennel.xml:30
+msgid "Kennel"
+msgstr ""
+
+#: simulation/templates/template_structure_military_kennel.xml:38
+msgid "Train War Dogs."
 msgstr ""
 
 #: simulation/templates/template_structure_military_range.xml:22
@@ -2262,7 +2344,7 @@ msgstr "زريبة"
 #: simulation/templates/template_structure_resource_corral.xml:28
 msgid ""
 "Raise Domestic Animals for food. Garrison animals to gain a trickle of food."
-msgstr ""
+msgstr "Raise Domestic Animals for food. Garrison animals to gain a trickle of food."
 
 #: simulation/templates/template_structure_resource_field.xml:18
 #: simulation/templates/template_structure_resource_field.xml:20
@@ -2288,16 +2370,6 @@ msgstr "مدرج"
 #: simulation/templates/template_structure_special_library.xml:27
 msgid "Library"
 msgstr "مكتبة"
-
-#: simulation/templates/template_structure_special_rotarymill.xml:33
-msgid "Rotary Mill"
-msgstr "طاحونة دوارة"
-
-#: simulation/templates/template_structure_special_rotarymill.xml:38
-msgid ""
-"Dropsite for harvested Food. Capture one of these to increase nearby food "
-"production."
-msgstr ""
 
 #: simulation/templates/template_structure_special_theater.xml:25
 #: simulation/templates/template_structure_special_theater.xml:27

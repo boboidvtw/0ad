@@ -1,4 +1,4 @@
-/* Copyright (C) 2022 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -57,7 +57,7 @@ public:
 		g_VideoMode.InitNonSDL();
 		g_VideoMode.CreateBackendDevice(false);
 		m_Viewer = new CProfileViewer;
-		m_Renderer = new CRenderer;
+		m_Renderer = new CRenderer(g_VideoMode.GetBackendDevice());
 	}
 
 	void tearDown()
@@ -73,13 +73,13 @@ public:
 
 	void test_empty()
 	{
-		CGUI gui(g_ScriptContext);
+		CGUI gui{*g_ScriptContext};
 		CGUIText empty;
 	}
 
 	void test_wrapping()
 	{
-		CGUI gui(g_ScriptContext);
+		CGUI gui{*g_ScriptContext};
 
 		const CStrW font = L"console";
 		// Make sure this matches the value of the file.
@@ -186,7 +186,7 @@ public:
 		// +------------------------------+
 		//
 
-		CGUI gui(g_ScriptContext);
+		CGUI gui{*g_ScriptContext};
 		const CStrW firstWord = L"Shortword";
 		const CStrW secondWord = L"(Veryverylongword)";
 		const CStrW text = firstWord + L" " + secondWord;
@@ -266,7 +266,7 @@ public:
 
 	void test_overflow()
 	{
-		CGUI gui(g_ScriptContext);
+		CGUI gui{*g_ScriptContext};
 
 		const CStrW font = L"console";
 		// Make sure this matches the value of the file.
@@ -318,7 +318,7 @@ public:
 	{
 		TS_ASSERT_OK(g_VFS->Mount(L"", DataDir() / "mods" / "mod" / "", VFS_MOUNT_MUST_EXIST));
 
-		CGUI gui(g_ScriptContext);
+		CGUI gui{*g_ScriptContext};
 
 		const CStrW font = L"sans-bold-13";
 		CGUIString string;
@@ -334,7 +334,7 @@ public:
 
 	void test_multiple_blank_spaces()
 	{
-		CGUI gui(g_ScriptContext);
+		CGUI gui{*g_ScriptContext};
 
 		const CStrW font = L"console";
 		// Make sure this matches the value of the file.

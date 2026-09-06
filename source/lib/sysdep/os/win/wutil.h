@@ -1,4 +1,4 @@
-/* Copyright (C) 2022 Wildfire Games.
+/* Copyright (C) 2023 Wildfire Games.
  *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -156,27 +156,9 @@ extern Status StatusFromWin();
 //-----------------------------------------------------------------------------
 // directories
 
-extern const OsPath& wutil_SystemPath();
-extern const OsPath& wutil_ExecutablePath();
-extern const OsPath& wutil_LocalAppdataPath();
-extern const OsPath& wutil_RoamingAppdataPath();
-extern const OsPath& wutil_PersonalPath();
-
-
-//-----------------------------------------------------------------------------
-// Wow64
-
-extern bool wutil_IsWow64();
-
-class WinScopedDisableWow64Redirection
-{
-public:
-	WinScopedDisableWow64Redirection();
-	~WinScopedDisableWow64Redirection();
-
-private:
-	void* m_wasRedirectionEnabled;
-};
+extern OsPath wutil_LocalAppdataPath();
+extern OsPath wutil_RoamingAppdataPath();
+extern OsPath wutil_PersonalPath();
 
 
 //-----------------------------------------------------------------------------

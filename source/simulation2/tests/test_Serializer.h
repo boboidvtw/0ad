@@ -1,4 +1,4 @@
-/* Copyright (C) 2022 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -887,7 +887,7 @@ public:
 
 		CTerrain terrain;
 
-		CSimulation2 sim2(NULL, g_ScriptContext, &terrain);
+		CSimulation2 sim2{nullptr, *g_ScriptContext, &terrain};
 		sim2.LoadDefaultScripts();
 		sim2.ResetState();
 
@@ -895,7 +895,7 @@ public:
 
 		LDR_BeginRegistering();
 		mapReader->LoadMap(L"maps/skirmishes/Greek Acropolis (2).pmp",
-			*sim2.GetScriptInterface().GetContext(), JS::UndefinedHandleValue,
+			sim2.GetScriptInterface().GetContext(), JS::UndefinedHandleValue,
 			&terrain, NULL, NULL, NULL, NULL, NULL, NULL, NULL,
 			&sim2, &sim2.GetSimContext(), -1, false);
 		LDR_EndRegistering();

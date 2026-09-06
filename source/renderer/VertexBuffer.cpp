@@ -1,4 +1,4 @@
-/* Copyright (C) 2022 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -21,8 +21,6 @@
 
 #include "lib/sysdep/cpu.h"
 #include "ps/CLogger.h"
-#include "ps/Errors.h"
-#include "ps/VideoMode.h"
 #include "renderer/backend/IDevice.h"
 #include "renderer/Renderer.h"
 
@@ -37,15 +35,15 @@
 constexpr std::size_t MAX_VB_SIZE_BYTES = 4 * 1024 * 1024;
 
 CVertexBuffer::CVertexBuffer(
-	const char* name, const size_t vertexSize,
-	const Renderer::Backend::IBuffer::Type type, const bool dynamic)
-	: CVertexBuffer(name, vertexSize, type, dynamic, MAX_VB_SIZE_BYTES)
+	Renderer::Backend::IDevice* device, const char* name, const size_t vertexSize,
+	const Renderer::Backend::IBuffer::Type type, const uint32_t usage)
+	: CVertexBuffer(device, name, vertexSize, type, usage, MAX_VB_SIZE_BYTES)
 {
 }
 
 CVertexBuffer::CVertexBuffer(
-	const char* name, const size_t vertexSize,
-	const Renderer::Backend::IBuffer::Type type, const bool dynamic,
+	Renderer::Backend::IDevice* device, const char* name, const size_t vertexSize,
+	const Renderer::Backend::IBuffer::Type type, const uint32_t usage,
 	const size_t maximumBufferSize)
 	: m_VertexSize(vertexSize), m_HasNeededChunks(false)
 {
@@ -66,8 +64,8 @@ CVertexBuffer::CVertexBuffer(
 	// store max/free vertex counts
 	m_MaxVertices = m_FreeVertices = size / vertexSize;
 
-	m_Buffer = g_VideoMode.GetBackendDevice()->CreateBuffer(
-		name, type, m_MaxVertices * m_VertexSize, dynamic);
+	m_Buffer = device->CreateBuffer(
+		name, type, m_MaxVertices * m_VertexSize, usage);
 
 	// create sole free chunk
 	VBChunk* chunk = new VBChunk;
@@ -90,10 +88,10 @@ CVertexBuffer::~CVertexBuffer()
 
 bool CVertexBuffer::CompatibleVertexType(
 	const size_t vertexSize, const Renderer::Backend::IBuffer::Type type,
-	const bool dynamic) const
+	const uint32_t usage) const
 {
 	ENSURE(m_Buffer);
-	return type == m_Buffer->GetType() && dynamic == m_Buffer->IsDynamic() && vertexSize == m_VertexSize;
+	return type == m_Buffer->GetType() && usage == m_Buffer->GetUsage() && vertexSize == m_VertexSize;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -102,14 +100,14 @@ bool CVertexBuffer::CompatibleVertexType(
 // if no free chunks available
 CVertexBuffer::VBChunk* CVertexBuffer::Allocate(
 	const size_t vertexSize, const size_t numberOfVertices,
-	const Renderer::Backend::IBuffer::Type type, const bool dynamic,
+	const Renderer::Backend::IBuffer::Type type, const uint32_t usage,
 	void* backingStore)
 {
 	// check this is the right kind of buffer
-	if (!CompatibleVertexType(vertexSize, type, dynamic))
+	if (!CompatibleVertexType(vertexSize, type, usage))
 		return nullptr;
 
-	if (UseStreaming(dynamic))
+	if (UseStreaming(usage))
 		ENSURE(backingStore != nullptr);
 
 	// quick check there's enough vertices spare to allocate
@@ -208,7 +206,7 @@ void CVertexBuffer::Release(VBChunk* chunk)
 void CVertexBuffer::UpdateChunkVertices(VBChunk* chunk, void* data)
 {
 	ENSURE(m_Buffer);
-	if (UseStreaming(m_Buffer->IsDynamic()))
+	if (UseStreaming(m_Buffer->GetUsage()))
 	{
 		// The backend buffer is now out of sync with the backing store.
 		chunk->m_Dirty = true;
@@ -228,7 +226,7 @@ void CVertexBuffer::UpdateChunkVertices(VBChunk* chunk, void* data)
 void CVertexBuffer::UploadIfNeeded(
 	Renderer::Backend::IDeviceCommandContext* deviceCommandContext)
 {
-	if (UseStreaming(m_Buffer->IsDynamic()))
+	if (UseStreaming(m_Buffer->GetUsage()))
 	{
 		if (!m_HasNeededChunks)
 			return;
@@ -312,9 +310,9 @@ void CVertexBuffer::DumpStatus() const
 	debug_printf("max size = %d\n", static_cast<int>(maxSize));
 }
 
-bool CVertexBuffer::UseStreaming(const bool dynamic)
+bool CVertexBuffer::UseStreaming(const uint32_t usage)
 {
-	return dynamic;
+	return usage & Renderer::Backend::IBuffer::Usage::DYNAMIC;
 }
 
 void CVertexBuffer::PrepareForRendering(VBChunk* chunk)

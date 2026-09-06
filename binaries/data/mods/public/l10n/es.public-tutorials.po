@@ -1,22 +1,21 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2022 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# Mihai Pantazi
-# José Javier Domínguez Reina
-# Miguel Rodriguez
-# Swyter
-# Jesús Asenjo
-# jorgman1 .
-# Víctor Rodríguez Bouza
-# Rodrigo Vegas Sánchez-Ferrero
+# Mihai Pantazi, 2017
+# Miguel Rodriguez, 2017
+# Swyter, 2018
+# Jesús Asenjo, 2021
+# jorgman1 ., 2021
+# Víctor Rodríguez Bouza, 2021
+# Rodrigo Vegas Sánchez-Ferrero, 2024
 msgid ""
 msgstr ""
-"Project-Id-Version: 0 A.D. — Empires Ascendant\n"
-"POT-Creation-Date: 2022-09-12 09:35+0000\n"
+"Project-Id-Version: 0 A.D. — Empires Ascendant\n"
+"POT-Creation-Date: 2024-07-26 07:08+0000\n"
 "PO-Revision-Date: 2017-06-04 12:59+0000\n"
-"Last-Translator: Rodrigo Vegas Sánchez-Ferrero, 2022\n"
+"Last-Translator: Rodrigo Vegas Sánchez-Ferrero, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/wildfire-games/teams/17418/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,8 +24,8 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: maps/tutorials/introductory_tutorial.js:3
-msgid "Welcome to the 0 A.D. tutorial."
-msgstr "¡Bienvenido al tutorial de 0 A.D.! "
+msgid "Welcome to the 0 A.D. tutorial."
+msgstr "¡Bienvenido al tutorial de 0 A.D.! "
 
 #: maps/tutorials/introductory_tutorial.js:6
 msgid ""
@@ -287,22 +286,22 @@ msgid "The enemy has been defeated. These tutorial tasks are now completed."
 msgstr ""
 "El enemigo ha sido derrotado. Has completado todas las tareas del tutorial."
 
-#: maps/tutorials/introductory_tutorial.xml:Description:38
-msgid "This is a basic tutorial to get you started playing 0 A.D."
-msgstr "Este es un tutorial básico para empezar a jugar a 0 A.D."
+#: maps/tutorials/introductory_tutorial.xml:39
+msgid "This is a basic tutorial to get you started playing 0 A.D."
+msgstr "Tutorial básico para empezar a jugar a 0 A.D."
 
-#: maps/tutorials/introductory_tutorial.xml:Name:38
+#: maps/tutorials/introductory_tutorial.xml:39
 msgid "Introductory Tutorial"
-msgstr "Tutorial introductorio "
+msgstr "Tutorial introductorio"
 
-#: maps/tutorials/introductory_tutorial.xml:PlayerData[0].Name:38
-#: maps/tutorials/starting_economy_walkthrough.xml:PlayerData[0].Name:39
-msgid "Player 1"
-msgstr "Jugador 1"
-
-#: maps/tutorials/introductory_tutorial.xml:PlayerData[1].Name:38
+#: maps/tutorials/introductory_tutorial.xml:39
 msgid "Player 2"
 msgstr "Jugador 2"
+
+#: maps/tutorials/introductory_tutorial.xml:39
+#: maps/tutorials/starting_economy_walkthrough.xml:39
+msgid "Player 1"
+msgstr "Jugador 1"
 
 #: maps/tutorials/starting_economy_walkthrough.js:4
 msgid ""
@@ -1014,7 +1013,7 @@ msgstr ""
 "Aquí finaliza el tutorial. Ahora deberías tener una idea aproximada de como "
 "poner en funcionamiento tu propia economía."
 
-#: maps/tutorials/starting_economy_walkthrough.xml:Description:39
+#: maps/tutorials/starting_economy_walkthrough.xml:39
 msgid ""
 "This map will give a rough guide for starting the game effectively. Early in"
 " the game the most important thing is to gather resources as fast as "
@@ -1025,6 +1024,6 @@ msgstr ""
 "importante es recolectar recursos lo más rápido posible para después poder "
 "reclutar tropas suficientes."
 
-#: maps/tutorials/starting_economy_walkthrough.xml:Name:39
+#: maps/tutorials/starting_economy_walkthrough.xml:39
 msgid "Starting Economy Walkthrough"
 msgstr "Tutorial de economía inicial"

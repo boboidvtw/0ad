@@ -1,4 +1,4 @@
-/* Copyright (C) 2022 Wildfire Games.
+/* Copyright (C) 2023 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -37,62 +37,30 @@
 #include "simulation2/Simulation2.h"
 
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Constructor
-CModel::CModel(CSimulation2& simulation)
-	: m_Flags(0), m_Anim(NULL), m_AnimTime(0), m_Simulation(simulation),
-	m_BoneMatrices(NULL), m_AmmoPropPoint(NULL), m_AmmoLoadedProp(0)
+CModel::CModel(const CSimulation2& simulation, const CMaterial& material, const CModelDefPtr& modeldef)
+	: m_Simulation{simulation}, m_Material{material}, m_pModelDef{modeldef}
 {
-}
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Destructor
-CModel::~CModel()
-{
-	ReleaseData();
-}
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// ReleaseData: delete anything allocated by the model
-void CModel::ReleaseData()
-{
-	rtl_FreeAligned(m_BoneMatrices);
-
-	for (size_t i = 0; i < m_Props.size(); ++i)
-		delete m_Props[i].m_Model;
-	m_Props.clear();
-
-	m_pModelDef = CModelDefPtr();
-}
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// InitModel: setup model from given geometry
-bool CModel::InitModel(const CModelDefPtr& modeldef)
-{
-	// clean up any existing data first
-	ReleaseData();
-
-	m_pModelDef = modeldef;
-
-	size_t numBones = modeldef->GetNumBones();
-	if (numBones != 0)
+	const size_t numberOfBones = modeldef->GetNumBones();
+	if (numberOfBones != 0)
 	{
-		size_t numBlends = modeldef->GetNumBlends();
+		const size_t numberOfBlends = modeldef->GetNumBlends();
 
 		// allocate matrices for bone transformations
 		// (one extra matrix is used for the special case of bind-shape relative weighting)
-		m_BoneMatrices = (CMatrix3D*)rtl_AllocateAligned(sizeof(CMatrix3D) * (numBones + 1 + numBlends), 16);
-		for (size_t i = 0; i < numBones + 1 + numBlends; ++i)
+		m_BoneMatrices = (CMatrix3D*)rtl_AllocateAligned(sizeof(CMatrix3D) * (numberOfBones + 1 + numberOfBlends), 16);
+		for (size_t i = 0; i < numberOfBones + 1 + numberOfBlends; ++i)
 		{
 			m_BoneMatrices[i].SetIdentity();
 		}
 	}
 
 	m_PositionValid = true;
-
-	return true;
 }
 
+CModel::~CModel()
+{
+	rtl_FreeAligned(m_BoneMatrices);
+}
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // CalcBound: calculate the world space bounds of this model
@@ -124,7 +92,7 @@ void CModel::CalcBounds()
 void CModel::CalcStaticObjectBounds()
 {
 	PROFILE2("CalcStaticObjectBounds");
-	m_pModelDef->GetMaxBounds(nullptr, !(m_Flags & MODELFLAG_NOLOOPANIMATION), m_ObjectBounds);
+	m_pModelDef->GetMaxBounds(nullptr, !(m_Flags & ModelFlag::NO_LOOP_ANIMATION), m_ObjectBounds);
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -132,7 +100,7 @@ void CModel::CalcStaticObjectBounds()
 void CModel::CalcAnimatedObjectBounds(CSkeletonAnimDef* anim, CBoundingBoxAligned& result)
 {
 	PROFILE2("CalcAnimatedObjectBounds");
-	m_pModelDef->GetMaxBounds(anim, !(m_Flags & MODELFLAG_NOLOOPANIMATION), result);
+	m_pModelDef->GetMaxBounds(anim, !(m_Flags & ModelFlag::NO_LOOP_ANIMATION), result);
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -250,7 +218,7 @@ void CModel::ValidatePosition()
 
 		ENSURE(m_pModelDef->GetNumBones() == m_Anim->m_AnimDef->GetNumKeys());
 
-		m_Anim->m_AnimDef->BuildBoneMatrices(m_AnimTime, m_BoneMatrices, !(m_Flags & MODELFLAG_NOLOOPANIMATION));
+		m_Anim->m_AnimDef->BuildBoneMatrices(m_AnimTime, m_BoneMatrices, !(m_Flags & ModelFlag::NO_LOOP_ANIMATION));
 	}
 	else if (m_BoneMatrices)
 	{
@@ -297,12 +265,15 @@ void CModel::ValidatePosition()
 		objectHeight = cmpTerrain->GetExactGroundLevel(objTranslation.X, objTranslation.Z);
 
 	// Object height is incorrect for floating objects. We use water height instead.
-	CmpPtr<ICmpWaterManager> cmpWaterManager(m_Simulation, SYSTEM_ENTITY);
-	if (cmpWaterManager)
+	if (m_Flags & ModelFlag::FLOAT_ON_WATER)
 	{
-		float waterHeight = cmpWaterManager->GetExactWaterLevel(objTranslation.X, objTranslation.Z);
-		if (waterHeight >= objectHeight && m_Flags & MODELFLAG_FLOATONWATER)
-			objectHeight = waterHeight;
+		CmpPtr<ICmpWaterManager> cmpWaterManager(m_Simulation, SYSTEM_ENTITY);
+		if (cmpWaterManager)
+		{
+			const float waterHeight = cmpWaterManager->GetExactWaterLevel(objTranslation.X, objTranslation.Z);
+			if (waterHeight >= objectHeight)
+				objectHeight = waterHeight;
+		}
 	}
 
 	// re-position and validate all props
@@ -366,10 +337,10 @@ bool CModel::SetAnimation(CSkeletonAnim* anim, bool once)
 
 	if (anim)
 	{
-		m_Flags &= ~MODELFLAG_NOLOOPANIMATION;
+		m_Flags &= ~ModelFlag::NO_LOOP_ANIMATION;
 
 		if (once)
-			m_Flags |= MODELFLAG_NOLOOPANIMATION;
+			m_Flags |= ModelFlag::NO_LOOP_ANIMATION;
 
 		// Not rigged or animation is not valid.
 		if (!m_BoneMatrices || !anim->m_AnimDef)
@@ -411,7 +382,7 @@ void CModel::CopyAnimationFrom(CModel* source)
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // AddProp: add a prop to the model on the given point
-void CModel::AddProp(const SPropPoint* point, CModelAbstract* model, CObjectEntry* objectentry, float minHeight, float maxHeight, bool selectable)
+void CModel::AddProp(const SPropPoint* point, std::unique_ptr<CModelAbstract> model, CObjectEntry* objectentry, float minHeight, float maxHeight, bool selectable)
 {
 	// position model according to prop point position
 
@@ -421,17 +392,17 @@ void CModel::AddProp(const SPropPoint* point, CModelAbstract* model, CObjectEntr
 
 	Prop prop;
 	prop.m_Point = point;
-	prop.m_Model = model;
+	prop.m_Model = std::move(model);
 	prop.m_ObjectEntry = objectentry;
 	prop.m_MinHeight = minHeight;
 	prop.m_MaxHeight = maxHeight;
 	prop.m_Selectable = selectable;
-	m_Props.push_back(prop);
+	m_Props.push_back(std::move(prop));
 }
 
-void CModel::AddAmmoProp(const SPropPoint* point, CModelAbstract* model, CObjectEntry* objectentry)
+void CModel::AddAmmoProp(const SPropPoint* point, std::unique_ptr<CModelAbstract> model, CObjectEntry* objectentry)
 {
-	AddProp(point, model, objectentry);
+	AddProp(point, std::move(model), objectentry);
 	m_AmmoPropPoint = point;
 	m_AmmoLoadedProp = m_Props.size() - 1;
 	m_Props[m_AmmoLoadedProp].m_Hidden = true;
@@ -474,7 +445,7 @@ void CModel::HideAmmoProp()
 CModelAbstract* CModel::FindFirstAmmoProp()
 {
 	if (m_AmmoPropPoint)
-		return m_Props[m_AmmoLoadedProp].m_Model;
+		return m_Props[m_AmmoLoadedProp].m_Model.get();
 
 	for (size_t i = 0; i < m_Props.size(); ++i)
 	{
@@ -492,12 +463,10 @@ CModelAbstract* CModel::FindFirstAmmoProp()
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Clone: return a clone of this model
-CModelAbstract* CModel::Clone() const
+std::unique_ptr<CModelAbstract> CModel::Clone() const
 {
-	CModel* clone = new CModel(m_Simulation);
+	std::unique_ptr<CModel> clone = std::make_unique<CModel>(m_Simulation, m_Material, m_pModelDef);
 	clone->m_ObjectBounds = m_ObjectBounds;
-	clone->InitModel(m_pModelDef);
-	clone->SetMaterial(m_Material);
 	clone->SetAnimation(m_Anim);
 	clone->SetFlags(m_Flags);
 
@@ -529,7 +498,7 @@ void CModel::AddFlagsRec(int flags)
 {
 	m_Flags |= flags;
 
-	if (flags & MODELFLAG_IGNORE_LOS)
+	if (flags & ModelFlag::IGNORE_LOS)
 		m_Material.AddShaderDefine(str_IGNORE_LOS, str_1);
 
 	for (size_t i = 0; i < m_Props.size(); ++i)
@@ -539,7 +508,7 @@ void CModel::AddFlagsRec(int flags)
 
 void CModel::RemoveShadowsRec()
 {
-	m_Flags &= ~MODELFLAG_CASTSHADOWS;
+	m_Flags &= ~ModelFlag::CAST_SHADOWS;
 
 	m_Material.AddShaderDefine(str_DISABLE_RECEIVE_SHADOWS, str_1);
 
@@ -550,11 +519,6 @@ void CModel::RemoveShadowsRec()
 		else if (m_Props[i].m_Model->ToCModelDecal())
 			m_Props[i].m_Model->ToCModelDecal()->RemoveShadows();
 	}
-}
-
-void CModel::SetMaterial(const CMaterial &material)
-{
-	m_Material = material;
 }
 
 void CModel::SetPlayerID(player_id_t id)

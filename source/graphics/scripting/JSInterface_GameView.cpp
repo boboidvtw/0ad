@@ -1,4 +1,4 @@
-/* Copyright (C) 2022 Wildfire Games.
+/* Copyright (C) 2023 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -27,6 +27,7 @@
 #include "ps/World.h"
 #include "ps/CLogger.h"
 #include "scriptinterface/FunctionWrapper.h"
+#include "scriptinterface/Object.h"
 #include "simulation2/helpers/Position.h"
 
 namespace JSI_GameView
@@ -117,15 +118,15 @@ JS::Value GetCameraPosition(const ScriptRequest& rq)
  */
 void CameraMoveTo(entity_pos_t x, entity_pos_t z)
 {
-	if (!g_Game || !g_Game->GetWorld() || !g_Game->GetView() || !g_Game->GetWorld()->GetTerrain())
+	if (!g_Game || !g_Game->GetWorld() || !g_Game->GetView())
 		return;
 
-	CTerrain* terrain = g_Game->GetWorld()->GetTerrain();
+	const CTerrain& terrain = g_Game->GetWorld()->GetTerrain();
 
 	CVector3D target;
 	target.X = x.ToFloat();
 	target.Z = z.ToFloat();
-	target.Y = terrain->GetExactGroundLevel(target.X, target.Z);
+	target.Y = terrain.GetExactGroundLevel(target.X, target.Z);
 
 	g_Game->GetView()->MoveCameraTarget(target);
 }

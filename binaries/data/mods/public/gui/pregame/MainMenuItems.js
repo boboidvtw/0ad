@@ -5,7 +5,7 @@ var g_MainMenuItems = [
 		"submenu": [
 			{
 				"caption": translate("Manual"),
-				"tooltip": translate("Open the 0 A.D. Game Manual."),
+				"tooltip": translate("Open the 0 A.D. Game Manual."),
 				"onPress": () => {
 					Engine.PushGuiPage("page_manual.xml");
 				}
@@ -34,38 +34,26 @@ var g_MainMenuItems = [
 			},
 			{
 				"caption": translate("Structure Tree"),
-				"tooltip": colorizeHotkey(translate("%(hotkey)s: View the structure tree of civilizations featured in 0 A.D."), "structree"),
+				"tooltip": colorizeHotkey(translate("%(hotkey)s: View the structure tree of civilizations featured in 0 A.D."), "structree"),
 				"hotkey": "structree",
-				"onPress": () => {
-					let callback = data => {
-						if (data.nextPage)
-							Engine.PushGuiPage(data.nextPage, { "civ": data.civ }, callback);
-					};
-					Engine.PushGuiPage("page_structree.xml", {}, callback);
-				},
+				"onPress": pageLoop.bind(null, "page_structree.xml")
 			},
 			{
 				"caption": translate("Civilization Overview"),
-				"tooltip": colorizeHotkey(translate("%(hotkey)s: Learn about the civilizations featured in 0 A.D."), "civinfo"),
+				"tooltip": colorizeHotkey(translate("%(hotkey)s: Learn about the civilizations featured in 0 A.D."), "civinfo"),
 				"hotkey": "civinfo",
-				"onPress": () => {
-					let callback = data => {
-						if (data.nextPage)
-							Engine.PushGuiPage(data.nextPage, { "civ": data.civ }, callback);
-					};
-					Engine.PushGuiPage("page_civinfo.xml", {}, callback);
-				}
+				"onPress": pageLoop.bind(null, "page_civinfo.xml")
 			},
 			{
 				"caption": translate("Catafalque Overview"),
-				"tooltip": translate("Compare the bonuses of catafalques featured in 0 A.D."),
+				"tooltip": translate("Compare the bonuses of catafalques featured in 0 A.D."),
 				"onPress": () => {
 					Engine.PushGuiPage("page_catafalque.xml");
 				}
 			},
 			{
 				"caption": translate("Map Overview"),
-				"tooltip": translate("View the different maps featured in 0 A.D."),
+				"tooltip": translate("View the different maps featured in 0 A.D."),
 				"onPress": () => {
 					Engine.PushGuiPage("page_mapbrowser.xml");
 				},
@@ -82,7 +70,7 @@ var g_MainMenuItems = [
 			}
 			catch(err)
 			{
-				error(translate("Error opening campaign run:"));
+				error("Error opening campaign run:");
 				error(err.toString());
 			}
 		},
@@ -102,8 +90,31 @@ var g_MainMenuItems = [
 			{
 				"caption": translate("Load Game"),
 				"tooltip": translate("Load a saved game."),
-				"onPress": () => {
-					Engine.PushGuiPage("page_loadgame.xml");
+				"onPress": async() => {
+					const gameId = await Engine.PushGuiPage("page_loadgame.xml");
+
+					if (!gameId)
+						return;
+
+					const metadata = Engine.StartSavedGame(gameId);
+					if (!metadata)
+					{
+						error("Could not load saved game: " + gameId);
+						return;
+					}
+
+					Engine.SwitchGuiPage("page_loading.xml", {
+						"attribs": metadata.initAttributes,
+						"playerAssignments": {
+							"local": {
+								"name": metadata.initAttributes.settings.
+									PlayerData[metadata.playerID]?.Name ??
+									singleplayerName(),
+								"player": metadata.playerID
+							}
+						},
+						"savedGUIData": metadata.gui
+					});
 				}
 			},
 			{
@@ -116,7 +127,7 @@ var g_MainMenuItems = [
 					}
 					catch(err)
 					{
-						error(translate("Error opening campaign run:"));
+						error("Error opening campaign run:");
 						error(err.toString());
 					}
 				},
@@ -211,11 +222,8 @@ var g_MainMenuItems = [
 			{
 				"caption": translate("Options"),
 				"tooltip": translate("Adjust game settings."),
-				"onPress": () => {
-					Engine.PushGuiPage(
-						"page_options.xml",
-						{},
-						fireConfigChangeHandlers);
+				"onPress": async() => {
+					fireConfigChangeHandlers(await Engine.PushGuiPage("page_options.xml"));
 				}
 			},
 			{
@@ -251,24 +259,29 @@ var g_MainMenuItems = [
 	{
 		"caption": translate("Scenario Editor"),
 		"tooltip": translate('Open the Atlas Scenario Editor in a new window. You can run this more reliably by starting the game with the command-line argument "-editor".'),
-		"onPress": () => {
-			if (Engine.AtlasIsAvailable())
-				messageBox(
-					400, 200,
-					translate("Are you sure you want to quit 0 A.D. and open the Scenario Editor?"),
-					translate("Confirmation"),
-					[translate("No"), translate("Yes")],
-					[null, Engine.RestartInAtlas]);
-			else
+		"onPress": async() => {
+			if (!Engine.AtlasIsAvailable())
+			{
 				messageBox(
 					400, 200,
 					translate("The scenario editor is not available or failed to load. See the game logs for additional information."),
 					translate("Error"));
+				return;
+			}
+
+			const buttonIndex = await messageBox(
+				400, 200,
+				translate("Are you sure you want to quit 0 A.D. and open the Scenario Editor?"),
+				translate("Confirmation"),
+				[translate("No"), translate("Yes")]);
+
+			if (buttonIndex === 1)
+				Engine.RestartInAtlas();
 		}
 	},
 	{
 		"caption": translate("Credits"),
-		"tooltip": translate("Show the 0 A.D. credits."),
+		"tooltip": translate("Show the 0 A.D. credits."),
 		"onPress": () => {
 			Engine.PushGuiPage("page_credits.xml");
 		}
@@ -276,13 +289,15 @@ var g_MainMenuItems = [
 	{
 		"caption": translate("Exit"),
 		"tooltip": translate("Exit the game."),
-		"onPress": () => {
-			messageBox(
+		"onPress": async() => {
+			const buttonIndex = await messageBox(
 				400, 200,
-				translate("Are you sure you want to quit 0 A.D.?"),
+				translate("Are you sure you want to quit 0 A.D.?"),
 				translate("Confirmation"),
-				[translate("No"), translate("Yes")],
-				[null, Engine.Exit]);
+				[translate("No"), translate("Yes")]);
+
+			if (buttonIndex === 1)
+				Engine.Exit();
 		}
 	}
 ];

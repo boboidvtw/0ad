@@ -32,7 +32,7 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="497.214" y="93.0185" z="750.975"/>
+		<Position x="854.806" y="92.4877" z="511.57"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
@@ -15375,18 +15375,102 @@
 			<Actor seed="25429"/>
 		</Entity>
 		<Entity uid="4802">
-			<Template>structures/farmstead_temperate_europe</Template>
+			<Template>structures/mill_temperate_europe</Template>
 			<Player>0</Player>
 			<Position x="85.02065" z="456.54877"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="37045"/>
 		</Entity>
 		<Entity uid="4803">
-			<Template>structures/farmstead_temperate_europe</Template>
+			<Template>structures/mill_temperate_europe</Template>
 			<Player>0</Player>
 			<Position x="971.53705" z="550.59888"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="31461"/>
+		</Entity>
+		<Entity uid="4804">
+			<Template>gaia/fauna_deer</Template>
+			<Player>0</Player>
+			<Position x="970.73072" z="423.90006"/>
+			<Orientation y="0.73487"/>
+			<Actor seed="16235"/>
+		</Entity>
+		<Entity uid="4805">
+			<Template>gaia/fauna_deer</Template>
+			<Player>0</Player>
+			<Position x="969.98401" z="431.16736"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="42573"/>
+		</Entity>
+		<Entity uid="4806">
+			<Template>gaia/fauna_deer</Template>
+			<Player>0</Player>
+			<Position x="969.0456" z="437.24964"/>
+			<Orientation y="0.85631"/>
+			<Actor seed="12902"/>
+		</Entity>
+		<Entity uid="4807">
+			<Template>gaia/fauna_deer</Template>
+			<Player>0</Player>
+			<Position x="976.8996" z="442.57831"/>
+			<Orientation y="0.89019"/>
+			<Actor seed="12902"/>
+		</Entity>
+		<Entity uid="4808">
+			<Template>gaia/fauna_deer</Template>
+			<Player>0</Player>
+			<Position x="981.7403" z="443.69376"/>
+			<Orientation y="-2.44135"/>
+			<Actor seed="12902"/>
+		</Entity>
+		<Entity uid="4809">
+			<Template>gaia/fauna_deer</Template>
+			<Player>0</Player>
+			<Position x="975.60645" z="431.92194"/>
+			<Orientation y="2.30568"/>
+			<Actor seed="61678"/>
+		</Entity>
+		<Entity uid="4810">
+			<Template>gaia/fauna_deer</Template>
+			<Player>0</Player>
+			<Position x="985.74665" z="427.5196"/>
+			<Orientation y="-2.50455"/>
+			<Actor seed="61678"/>
+		</Entity>
+		<Entity uid="4811">
+			<Template>gaia/fauna_deer</Template>
+			<Player>0</Player>
+			<Position x="993.06513" z="437.04471"/>
+			<Orientation y="-1.91144"/>
+			<Actor seed="61678"/>
+		</Entity>
+		<Entity uid="4812">
+			<Template>gaia/fauna_deer</Template>
+			<Player>0</Player>
+			<Position x="885.94916" z="636.64307"/>
+			<Orientation y="-1.63282"/>
+			<Actor seed="4352"/>
+		</Entity>
+		<Entity uid="4813">
+			<Template>gaia/fauna_deer</Template>
+			<Player>0</Player>
+			<Position x="877.32105" z="638.034"/>
+			<Orientation y="0.92869"/>
+			<Actor seed="55734"/>
+		</Entity>
+		<Entity uid="4814">
+			<Template>gaia/fauna_deer</Template>
+			<Player>0</Player>
+			<Position x="881.52875" z="642.39649"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="18999"/>
+		</Entity>
+		<Entity uid="4815">
+			<Template>gaia/fauna_deer</Template>
+			<Player>0</Player>
+			<Position x="885.76038" z="646.0066"/>
+			<Orientation y="0.71395"/>
+			<Actor seed="14519"/>
 		</Entity>
 	</Entities>
 	<Paths/>

@@ -42,7 +42,6 @@
 #include "ps/CStrInternStatic.h"
 #include "ps/Game.h"
 #include "ps/Profile.h"
-#include "ps/VideoMode.h"
 #include "ps/World.h"
 #include "renderer/backend/IDevice.h"
 #include "renderer/DebugRenderer.h"
@@ -76,7 +75,11 @@ class CSceneRenderer::Internals
 {
 	NONCOPYABLE(Internals);
 public:
-	Internals() = default;
+	Internals(Renderer::Backend::IDevice* device)
+		: waterManager(device), shadow(device)
+	{
+	}
+
 	~Internals() = default;
 
 	/// Water manager
@@ -186,9 +189,9 @@ public:
 	}
 };
 
-CSceneRenderer::CSceneRenderer()
+CSceneRenderer::CSceneRenderer(Renderer::Backend::IDevice* device)
 {
-	m = std::make_unique<Internals>();
+	m = std::make_unique<Internals>(device);
 
 	m_TerrainRenderMode = SOLID;
 	m_WaterRenderMode = SOLID;
@@ -210,11 +213,9 @@ CSceneRenderer::~CSceneRenderer()
 	m.reset();
 }
 
-void CSceneRenderer::ReloadShaders()
+void CSceneRenderer::ReloadShaders(Renderer::Backend::IDevice* device)
 {
 	m->globalContext = CShaderDefines();
-
-	Renderer::Backend::IDevice* device = g_VideoMode.GetBackendDevice();
 
 	if (g_RenderingOptions.GetShadows())
 	{
@@ -324,12 +325,12 @@ void CSceneRenderer::RenderShadowMap(
 
 		{
 			PROFILE("render models");
-			m->CallModelRenderers(deviceCommandContext, contextCast, cullGroup, MODELFLAG_CASTSHADOWS);
+			m->CallModelRenderers(deviceCommandContext, contextCast, cullGroup, ModelFlag::CAST_SHADOWS);
 		}
 
 		{
 			PROFILE("render transparent models");
-			m->CallTranspModelRenderers(deviceCommandContext, contextCast, cullGroup, MODELFLAG_CASTSHADOWS);
+			m->CallTranspModelRenderers(deviceCommandContext, contextCast, cullGroup, ModelFlag::CAST_SHADOWS);
 		}
 	}
 
@@ -567,7 +568,7 @@ void CSceneRenderer::RenderReflections(
 
 	// Save the model-view-projection matrix so the shaders can use it for projective texturing
 	wm.m_ReflectionMatrix = m_ViewCamera.GetViewProjection();
-	if (g_VideoMode.GetBackendDevice()->GetBackend() == Renderer::Backend::Backend::VULKAN)
+	if (deviceCommandContext->GetDevice()->GetBackend() == Renderer::Backend::Backend::VULKAN)
 	{
 		CMatrix3D flip;
 		flip.SetIdentity();
@@ -650,7 +651,7 @@ void CSceneRenderer::RenderRefractions(
 	wm.m_RefractionProjInvMatrix = m_ViewCamera.GetProjection().GetInverse();
 	wm.m_RefractionViewInvMatrix = m_ViewCamera.GetOrientation();
 
-	if (g_VideoMode.GetBackendDevice()->GetBackend() == Renderer::Backend::Backend::VULKAN)
+	if (deviceCommandContext->GetDevice()->GetBackend() == Renderer::Backend::Backend::VULKAN)
 	{
 		CMatrix3D flip;
 		flip.SetIdentity();
@@ -1027,15 +1028,15 @@ void CSceneRenderer::SubmitNonRecursive(CModel* model)
 	{
 		m->shadow.AddShadowReceiverBound(model->GetWorldBounds());
 
-		if (model->GetFlags() & MODELFLAG_SILHOUETTE_OCCLUDER)
+		if (model->GetFlags() & ModelFlag::SILHOUETTE_OCCLUDER)
 			m->silhouetteRenderer.AddOccluder(model);
-		if (model->GetFlags() & MODELFLAG_SILHOUETTE_DISPLAY)
+		if (model->GetFlags() & ModelFlag::SILHOUETTE_DISPLAY)
 			m->silhouetteRenderer.AddCaster(model);
 	}
 
 	if (CULL_SHADOWS_CASCADE_0 <= m_CurrentCullGroup && m_CurrentCullGroup <= CULL_SHADOWS_CASCADE_3)
 	{
-		if (!(model->GetFlags() & MODELFLAG_CASTSHADOWS))
+		if (!(model->GetFlags() & ModelFlag::CAST_SHADOWS))
 			return;
 
 		const int cascade = m_CurrentCullGroup - CULL_SHADOWS_CASCADE_0;

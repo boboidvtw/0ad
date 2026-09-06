@@ -1,4 +1,4 @@
-/* Copyright (C) 2023 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -21,6 +21,7 @@
 #include "renderer/backend/PipelineState.h"
 #include "renderer/backend/vulkan/Framebuffer.h"
 #include "renderer/backend/vulkan/ShaderProgram.h"
+#include "renderer/backend/vulkan/DeviceObjectUID.h"
 
 #include <cstdint>
 #include <glad/vulkan.h>
@@ -53,8 +54,7 @@ public:
 	VkPipeline GetOrCreatePipeline(
 		const CVertexInputLayout* vertexInputLayout, CFramebuffer* framebuffer);
 
-	using UID = uint32_t;
-	UID GetUID() const { return m_UID; }
+	DeviceObjectUID GetUID() const { return m_UID; }
 
 private:
 	friend class CDevice;
@@ -62,23 +62,19 @@ private:
 	static std::unique_ptr<CGraphicsPipelineState> Create(
 		CDevice* device, const SGraphicsPipelineStateDesc& desc);
 
-	CGraphicsPipelineState()
-	{
-		static uint32_t m_LastAvailableUID = 1;
-		m_UID = m_LastAvailableUID++;
-	}
+	CGraphicsPipelineState() = default;
 
 	CDevice* m_Device = nullptr;
 
-	UID m_UID = 0;
+	DeviceObjectUID m_UID{INVALID_DEVICE_OBJECT_UID};
 
 	SGraphicsPipelineStateDesc m_Desc{};
 
 	struct CacheKey
 	{
-		CVertexInputLayout::UID vertexInputLayoutUID;
+		DeviceObjectUID vertexInputLayoutUID;
 		// TODO: try to replace the UID by the only required parameters.
-		CFramebuffer::UID framebufferUID;
+		DeviceObjectUID framebufferUID;
 	};
 	struct CacheKeyHash
 	{
@@ -89,6 +85,38 @@ private:
 		bool operator()(const CacheKey& lhs, const CacheKey& rhs) const;
 	};
 	std::unordered_map<CacheKey, VkPipeline, CacheKeyHash, CacheKeyEqual> m_PipelineMap;
+};
+
+class CComputePipelineState final : public IComputePipelineState
+{
+public:
+	~CComputePipelineState() override;
+
+	IDevice* GetDevice() override;
+
+	IShaderProgram* GetShaderProgram() const override { return m_Desc.shaderProgram; }
+
+	const SComputePipelineStateDesc& GetDesc() const { return m_Desc; }
+
+	VkPipeline GetPipeline() { return m_Pipeline; }
+
+	DeviceObjectUID GetUID() const { return m_UID; }
+
+private:
+	friend class CDevice;
+
+	static std::unique_ptr<CComputePipelineState> Create(
+		CDevice* device, const SComputePipelineStateDesc& desc);
+
+	CComputePipelineState() = default;
+
+	CDevice* m_Device{nullptr};
+
+	DeviceObjectUID m_UID{INVALID_DEVICE_OBJECT_UID};
+
+	SComputePipelineStateDesc m_Desc{};
+
+	VkPipeline m_Pipeline{VK_NULL_HANDLE};
 };
 
 } // namespace Vulkan

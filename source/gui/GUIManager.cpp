@@ -1,4 +1,4 @@
-/* Copyright (C) 2022 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -21,6 +21,7 @@
 
 #include "gui/CGUI.h"
 #include "lib/timer.h"
+#include "lobby/IXmppClient.h"
 #include "ps/CLogger.h"
 #include "ps/Filesystem.h"
 #include "ps/GameSetup/Config.h"
@@ -28,6 +29,8 @@
 #include "ps/VideoMode.h"
 #include "ps/XML/Xeromyces.h"
 #include "scriptinterface/FunctionWrapper.h"
+#include "scriptinterface/Object.h"
+#include "scriptinterface/Promises.h"
 #include "scriptinterface/ScriptContext.h"
 #include "scriptinterface/ScriptInterface.h"
 #include "scriptinterface/StructuredClone.h"
@@ -66,12 +69,12 @@ static Status ReloadChangedFileCB(void* param, const VfsPath& path)
 	return static_cast<CGUIManager*>(param)->ReloadChangedFile(path);
 }
 
-CGUIManager::CGUIManager()
+CGUIManager::CGUIManager(ScriptContext& scriptContext, ScriptInterface& scriptInterface) :
+	m_ScriptContext{scriptContext},
+	m_ScriptInterface{scriptInterface}
 {
-	m_ScriptContext = g_ScriptContext;
-	m_ScriptInterface.reset(new ScriptInterface("Engine", "GUIManager", m_ScriptContext));
-	m_ScriptInterface->SetCallbackData(this);
-	m_ScriptInterface->LoadGlobalScripts();
+	m_ScriptInterface.SetCallbackData(this);
+	m_ScriptInterface.LoadGlobalScripts();
 
 	if (!CXeromyces::AddValidator(g_VFS, "gui_page", "gui/gui_page.rng"))
 		LOGERROR("CGUIManager: failed to load GUI page grammar file 'gui/gui_page.rng'");
@@ -110,24 +113,28 @@ void CGUIManager::SwitchPage(const CStrW& pageName, const ScriptInterface* srcSc
 		m_PageStack.clear();
 	}
 
-	PushPage(pageName, initDataClone, JS::UndefinedHandleValue);
+	PushPage(pageName, initDataClone);
 }
 
-void CGUIManager::PushPage(const CStrW& pageName, Script::StructuredClone initData, JS::HandleValue callbackFunction)
+JS::Value CGUIManager::PushPage(const CStrW& pageName, Script::StructuredClone initData)
 {
 	// Store the callback handler in the current GUI page before opening the new one
-	if (!m_PageStack.empty() && !callbackFunction.isUndefined())
-	{
-		m_PageStack.back().SetCallbackFunction(*m_ScriptInterface, callbackFunction);
+	JS::RootedValue promise{m_ScriptInterface.GetGeneralJSContext(), [&]
+		{
+			if (m_PageStack.empty())
+				return JS::UndefinedValue();
 
-		// Make sure we unfocus anything on the current page.
-		m_PageStack.back().gui->SendFocusMessage(GUIM_LOST_FOCUS);
-	}
+			// Make sure we unfocus anything on the current page.
+			m_PageStack.back().gui->SendFocusMessage(GUIM_LOST_FOCUS);
+			return m_PageStack.back().ReplacePromise(m_ScriptInterface);
+		}()};
 
 	// Push the page prior to loading its contents, because that may push
 	// another GUI page on init which should be pushed on top of this new page.
 	m_PageStack.emplace_back(pageName, initData);
 	m_PageStack.back().LoadPage(m_ScriptContext);
+
+	return promise;
 }
 
 void CGUIManager::PopPage(Script::StructuredClone args)
@@ -142,7 +149,7 @@ void CGUIManager::PopPage(Script::StructuredClone args)
 	m_PageStack.back().gui->SendFocusMessage(GUIM_LOST_FOCUS);
 
 	m_PageStack.pop_back();
-	m_PageStack.back().PerformCallbackFunction(args);
+	m_PageStack.back().ResolvePromise(args);
 
 	// We return to a page where some object might have been focused.
 	m_PageStack.back().gui->SendFocusMessage(GUIM_GOT_FOCUS);
@@ -153,7 +160,7 @@ CGUIManager::SGUIPage::SGUIPage(const CStrW& pageName, const Script::StructuredC
 {
 }
 
-void CGUIManager::SGUIPage::LoadPage(std::shared_ptr<ScriptContext> scriptContext)
+void CGUIManager::SGUIPage::LoadPage(ScriptContext& scriptContext)
 {
 	// If we're hotloading then try to grab some data from the previous page
 	Script::StructuredClone hotloadData;
@@ -243,26 +250,15 @@ void CGUIManager::SGUIPage::LoadPage(std::shared_ptr<ScriptContext> scriptContex
 		LOGERROR("GUI page '%s': Failed to call init() function", utf8_from_wstring(m_Name));
 }
 
-void CGUIManager::SGUIPage::SetCallbackFunction(ScriptInterface& scriptInterface, JS::HandleValue callbackFunc)
+JS::Value CGUIManager::SGUIPage::ReplacePromise(ScriptInterface& scriptInterface)
 {
-	if (!callbackFunc.isObject())
-	{
-		LOGERROR("Given callback handler is not an object!");
-		return;
-	}
-
-	ScriptRequest rq(scriptInterface);
-
-	if (!JS_ObjectIsFunction(&callbackFunc.toObject()))
-	{
-		LOGERROR("Given callback handler is not a function!");
-		return;
-	}
-
-	callbackFunction = std::make_shared<JS::PersistentRootedValue>(scriptInterface.GetGeneralJSContext(), callbackFunc);
+	JSContext* generalContext{scriptInterface.GetGeneralJSContext()};
+	callbackFunction = std::make_shared<JS::PersistentRootedObject>(generalContext,
+		JS::NewPromiseObject(generalContext, nullptr));
+	return JS::ObjectValue(**callbackFunction);
 }
 
-void CGUIManager::SGUIPage::PerformCallbackFunction(Script::StructuredClone args)
+void CGUIManager::SGUIPage::ResolvePromise(Script::StructuredClone args)
 {
 	if (!callbackFunction)
 		return;
@@ -272,7 +268,7 @@ void CGUIManager::SGUIPage::PerformCallbackFunction(Script::StructuredClone args
 
 	JS::RootedObject globalObj(rq.cx, rq.glob);
 
-	JS::RootedValue funcVal(rq.cx, *callbackFunction);
+	JS::RootedObject funcVal(rq.cx, *callbackFunction);
 
 	// Delete the callback function, so that it is not called again
 	callbackFunction.reset();
@@ -281,13 +277,8 @@ void CGUIManager::SGUIPage::PerformCallbackFunction(Script::StructuredClone args
 	if (args)
 		Script::ReadStructuredClone(rq, args, &argVal);
 
-	JS::RootedValueVector paramData(rq.cx);
-	ignore_result(paramData.append(argVal));
-
-	JS::RootedValue result(rq.cx);
-
-	if(!JS_CallFunctionValue(rq.cx, globalObj, funcVal, paramData, &result))
-		ScriptException::CatchPending(rq);
+	// This only resolves the promise, it doesn't call the continuation.
+	JS::ResolvePromise(rq.cx, funcVal, argVal);
 }
 
 Status CGUIManager::ReloadChangedFile(const VfsPath& path)
@@ -379,13 +370,15 @@ void CGUIManager::TickObjects()
 
 	// We share the script context with everything else that runs in the same thread.
 	// This call makes sure we trigger GC regularly even if the simulation is not running.
-	m_ScriptInterface->GetContext()->MaybeIncrementalGC(1.0f);
+	m_ScriptContext.MaybeIncrementalGC(1.0f);
 
 	// Save an immutable copy so iterators aren't invalidated by tick handlers
 	PageStackType pageStack = m_PageStack;
 
 	for (const SGUIPage& p : pageStack)
 		p.gui->TickObjects();
+
+	m_ScriptContext.RunJobs();
 }
 
 void CGUIManager::Draw(CCanvas2D& canvas) const

@@ -1,4 +1,4 @@
-/* Copyright (C) 2022 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -19,20 +19,6 @@
 
 #include "Simulation2.h"
 
-#include "scriptinterface/FunctionWrapper.h"
-#include "scriptinterface/ScriptContext.h"
-#include "scriptinterface/ScriptInterface.h"
-#include "scriptinterface/JSON.h"
-#include "scriptinterface/StructuredClone.h"
-
-#include "simulation2/MessageTypes.h"
-#include "simulation2/system/ComponentManager.h"
-#include "simulation2/system/ParamNode.h"
-#include "simulation2/system/SimContext.h"
-#include "simulation2/components/ICmpAIManager.h"
-#include "simulation2/components/ICmpCommandQueue.h"
-#include "simulation2/components/ICmpTemplateManager.h"
-
 #include "graphics/MapReader.h"
 #include "graphics/Terrain.h"
 #include "lib/timer.h"
@@ -46,6 +32,19 @@
 #include "ps/Pyrogenesis.h"
 #include "ps/Util.h"
 #include "ps/XML/Xeromyces.h"
+#include "scriptinterface/FunctionWrapper.h"
+#include "scriptinterface/JSON.h"
+#include "scriptinterface/Object.h"
+#include "scriptinterface/ScriptContext.h"
+#include "scriptinterface/ScriptInterface.h"
+#include "scriptinterface/StructuredClone.h"
+#include "simulation2/MessageTypes.h"
+#include "simulation2/system/ComponentManager.h"
+#include "simulation2/system/ParamNode.h"
+#include "simulation2/system/SimContext.h"
+#include "simulation2/components/ICmpAIManager.h"
+#include "simulation2/components/ICmpCommandQueue.h"
+#include "simulation2/components/ICmpTemplateManager.h"
 
 #include <fstream>
 #include <iomanip>
@@ -54,13 +53,12 @@
 class CSimulation2Impl
 {
 public:
-	CSimulation2Impl(CUnitManager* unitManager, std::shared_ptr<ScriptContext> cx, CTerrain* terrain) :
-		m_SimContext(), m_ComponentManager(m_SimContext, cx),
-		m_EnableOOSLog(false), m_EnableSerializationTest(false), m_RejoinTestTurn(-1), m_TestingRejoin(false),
-		m_MapSettings(cx->GetGeneralJSContext()), m_InitAttributes(cx->GetGeneralJSContext())
+	CSimulation2Impl(CUnitManager* unitManager, ScriptContext& cx, CTerrain* terrain) :
+		m_SimContext{terrain, unitManager},
+		m_ComponentManager{m_SimContext, cx},
+		m_MapSettings{cx.GetGeneralJSContext()},
+		m_InitAttributes{cx.GetGeneralJSContext()}
 	{
-		m_SimContext.m_UnitManager = unitManager;
-		m_SimContext.m_Terrain = terrain;
 		m_ComponentManager.LoadComponentTypes();
 
 		RegisterFileReloadFunc(ReloadChangedFileCB, this);
@@ -132,14 +130,14 @@ public:
 
 	uint32_t m_TurnNumber;
 
-	bool m_EnableOOSLog;
+	bool m_EnableOOSLog{false};
 	OsPath m_OOSLogPath;
 
 	// Functions and data for the serialization test mode: (see Update() for relevant comments)
 
-	bool m_EnableSerializationTest;
-	int m_RejoinTestTurn;
-	bool m_TestingRejoin;
+	bool m_EnableSerializationTest{false};
+	int m_RejoinTestTurn{-1};
+	bool m_TestingRejoin{false};
 
 	// Secondary simulation (NB: order matters for destruction).
 	std::unique_ptr<CComponentManager> m_SecondaryComponentManager;
@@ -407,8 +405,7 @@ void CSimulation2Impl::Update(int turnLength, const std::vector<SimulationComman
 
 		m_SecondaryTerrain = std::make_unique<CTerrain>();
 
-		m_SecondaryContext = std::make_unique<CSimContext>();
-		m_SecondaryContext->m_Terrain = m_SecondaryTerrain.get();
+		m_SecondaryContext = std::make_unique<CSimContext>(m_SecondaryTerrain.get());
 
 		m_SecondaryComponentManager = std::make_unique<CComponentManager>(*m_SecondaryContext, scriptInterface.GetContext());
 		m_SecondaryComponentManager->LoadComponentTypes();
@@ -444,7 +441,7 @@ void CSimulation2Impl::Update(int turnLength, const std::vector<SimulationComman
 			Script::GetProperty(rq, m_InitAttributes, "map", mapFile);
 
 			VfsPath mapfilename = VfsPath(mapFile).ChangeExtension(L".pmp");
-			mapReader->LoadMap(mapfilename, *scriptInterface.GetContext(), JS::UndefinedHandleValue,
+			mapReader->LoadMap(mapfilename, scriptInterface.GetContext(), JS::UndefinedHandleValue,
 				m_SecondaryTerrain.get(), NULL, NULL, NULL, NULL, NULL, NULL,
 				NULL, NULL, m_SecondaryContext.get(), INVALID_PLAYER, true); // throws exception on failure
 		}
@@ -503,9 +500,9 @@ void CSimulation2Impl::Update(int turnLength, const std::vector<SimulationComman
 	// (TODO: we ought to schedule this for a frame where we're not
 	// running the sim update, to spread the load)
 	if (m_TurnNumber % 500 == 0)
-		scriptInterface.GetContext()->ShrinkingGC();
+		scriptInterface.GetContext().ShrinkingGC();
 	else
-		scriptInterface.GetContext()->MaybeIncrementalGC(0.0f);
+		scriptInterface.GetContext().MaybeIncrementalGC(0.0f);
 
 	if (m_EnableOOSLog)
 		DumpState();
@@ -588,6 +585,8 @@ void CSimulation2Impl::UpdateComponents(CSimContext& simContext, fixed turnLengt
 		cmpPathfinder->UpdateGrid();
 		cmpPathfinder->StartProcessingMoves(false);
 	}
+
+	componentManager.GetScriptInterface().GetContext().RunJobs();
 }
 
 void CSimulation2Impl::Interpolate(float simFrameLength, float frameOffset, float realFrameLength)
@@ -635,7 +634,7 @@ void CSimulation2Impl::DumpState()
 
 ////////////////////////////////////////////////////////////////
 
-CSimulation2::CSimulation2(CUnitManager* unitManager, std::shared_ptr<ScriptContext> cx, CTerrain* terrain) :
+CSimulation2::CSimulation2(CUnitManager* unitManager, ScriptContext& cx, CTerrain* terrain) :
 	m(new CSimulation2Impl(unitManager, cx, terrain))
 {
 }

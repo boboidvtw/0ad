@@ -1,4 +1,4 @@
-/* Copyright (C) 2023 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -24,6 +24,7 @@
 #include "graphics/ShaderManager.h"
 #include "graphics/TextureManager.h"
 #include "ps/CLogger.h"
+#include "ps/containers/StaticVector.h"
 #include "ps/Filesystem.h"
 #include "ps/Profile.h"
 #include "ps/XML/Xeromyces.h"
@@ -39,6 +40,7 @@
 
 #include <algorithm>
 #include <map>
+#include <tuple>
 #include <unordered_map>
 
 namespace Renderer
@@ -263,6 +265,43 @@ std::tuple<GLenum, GLenum, GLint> GetElementTypeAndCountFromString(const CStr& s
 	return {0, 0, 0};
 }
 #endif // !CONFIG2_GLES
+
+bool CompileGLSL(GLuint shader, const VfsPath& file, const CStr& code)
+{
+	const char* codeString = code.c_str();
+	GLint codeLength = code.length();
+	glShaderSource(shader, 1, &codeString, &codeLength);
+
+	ogl_WarnIfError();
+
+	glCompileShader(shader);
+
+	GLint ok = 0;
+	glGetShaderiv(shader, GL_COMPILE_STATUS, &ok);
+
+	GLint length = 0;
+	glGetShaderiv(shader, GL_INFO_LOG_LENGTH, &length);
+
+	// Apparently sometimes GL_INFO_LOG_LENGTH is incorrectly reported as 0
+	// (http://code.google.com/p/android/issues/detail?id=9953)
+	if (!ok && length == 0)
+		length = 4096;
+
+	if (length > 1)
+	{
+		std::unique_ptr<char[]> infolog = std::make_unique<char[]>(length);
+		glGetShaderInfoLog(shader, length, nullptr, infolog.get());
+
+		if (ok)
+			LOGMESSAGE("Info when compiling shader '%s':\n%s", file.string8(), infolog.get());
+		else
+			LOGERROR("Failed to compile shader '%s':\n%s", file.string8(), infolog.get());
+	}
+
+	ogl_WarnIfError();
+
+	return ok;
+}
 
 } // anonymous namespace
 
@@ -593,7 +632,7 @@ class CShaderProgramGLSL final : public CShaderProgram
 public:
 	CShaderProgramGLSL(
 		CDevice* device, const CStr& name,
-		const VfsPath& path, const VfsPath& vertexFilePath, const VfsPath& fragmentFilePath,
+		const VfsPath& programPath, PS::span<const std::tuple<VfsPath, GLenum>> shaderStages,
 		const CShaderDefines& defines,
 		const std::map<CStrIntern, int>& vertexAttribs,
 		int streamflags) :
@@ -606,64 +645,65 @@ public:
 		std::sort(m_ActiveVertexAttributes.begin(), m_ActiveVertexAttributes.end());
 
 		m_Program = 0;
-		m_VertexShader = glCreateShader(GL_VERTEX_SHADER);
-		m_FragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-		m_FileDependencies = {path, vertexFilePath, fragmentFilePath};
-
-#if !CONFIG2_GLES
-		if (m_Device->GetCapabilities().debugLabels)
+		m_FileDependencies = {programPath};
+		for (const auto& [path, type] : shaderStages)
 		{
-			glObjectLabel(GL_SHADER, m_VertexShader, -1, vertexFilePath.string8().c_str());
-			glObjectLabel(GL_SHADER, m_FragmentShader, -1, fragmentFilePath.string8().c_str());
+			UNUSED2(type);
+			m_FileDependencies.emplace_back(path);
 		}
-#endif
-
-		std::vector<VfsPath> newFileDependencies = {path, vertexFilePath, fragmentFilePath};
-
-		CStr vertexCode;
-		if (!PreprocessShaderFile(false, defines, vertexFilePath, "STAGE_VERTEX", vertexCode, newFileDependencies))
-			return;
-		CStr fragmentCode;
-		if (!PreprocessShaderFile(false, defines, fragmentFilePath, "STAGE_FRAGMENT", fragmentCode, newFileDependencies))
-			return;
-
-		m_FileDependencies = std::move(newFileDependencies);
-
-		if (vertexCode.empty())
-		{
-			LOGERROR("Failed to preprocess vertex shader: '%s'", vertexFilePath.string8());
-			return;
-		}
-		if (fragmentCode.empty())
-		{
-			LOGERROR("Failed to preprocess fragment shader: '%s'", fragmentFilePath.string8());
-			return;
-		}
-
-#if CONFIG2_GLES
-		// Ugly hack to replace desktop GLSL 1.10/1.20 with GLSL ES 1.00,
-		// and also to set default float precision for fragment shaders
-		vertexCode.Replace("#version 110\n", "#version 100\nprecision highp float;\n");
-		vertexCode.Replace("#version 110\r\n", "#version 100\nprecision highp float;\n");
-		vertexCode.Replace("#version 120\n", "#version 100\nprecision highp float;\n");
-		vertexCode.Replace("#version 120\r\n", "#version 100\nprecision highp float;\n");
-		fragmentCode.Replace("#version 110\n", "#version 100\nprecision highp float;\n");
-		fragmentCode.Replace("#version 110\r\n", "#version 100\nprecision highp float;\n");
-		fragmentCode.Replace("#version 120\n", "#version 100\nprecision highp float;\n");
-		fragmentCode.Replace("#version 120\r\n", "#version 100\nprecision highp float;\n");
-#endif
 
 		// TODO: replace by scoped bind.
 		m_Device->GetActiveCommandContext()->SetGraphicsPipelineState(
 			MakeDefaultGraphicsPipelineStateDesc());
 
-		if (!Compile(m_VertexShader, vertexFilePath, vertexCode))
-			return;
+		std::vector<VfsPath> newFileDependencies = {programPath};
+		for (const auto& [path, type] : shaderStages)
+		{
+			GLuint shader = glCreateShader(type);
+			newFileDependencies.emplace_back(path);
+#if !CONFIG2_GLES
+			if (m_Device->GetCapabilities().debugLabels)
+				glObjectLabel(GL_SHADER, shader, -1, path.string8().c_str());
+#endif
+			m_ShaderStages.emplace_back(type, shader);
+			const char* stageDefine = "STAGE_UNDEFINED";
+			switch (type)
+			{
+			case GL_VERTEX_SHADER:
+				stageDefine = "STAGE_VERTEX";
+				break;
+			case GL_FRAGMENT_SHADER:
+				stageDefine = "STAGE_FRAGMENT";
+				break;
+			case GL_COMPUTE_SHADER:
+				stageDefine = "STAGE_COMPUTE";
+				break;
+			default:
+				break;
+			}
+			CStr source;
+			if (!PreprocessShaderFile(false, defines, path, stageDefine, source, newFileDependencies))
+				return;
+			if (source.empty())
+			{
+				LOGERROR("Failed to preprocess shader: '%s'", path.string8());
+				return;
+			}
+#if CONFIG2_GLES
+			// Ugly hack to replace desktop GLSL 1.10/1.20 with GLSL ES 1.00,
+			// and also to set default float precision for fragment shaders
+			source.Replace("#version 110\n", "#version 100\nprecision highp float;\n");
+			source.Replace("#version 110\r\n", "#version 100\nprecision highp float;\n");
+			source.Replace("#version 120\n", "#version 100\nprecision highp float;\n");
+			source.Replace("#version 120\r\n", "#version 100\nprecision highp float;\n");
+#endif
+			if (!CompileGLSL(shader, path, source))
+				return;
+		}
 
-		if (!Compile(m_FragmentShader, fragmentFilePath, fragmentCode))
-			return;
+		m_FileDependencies = std::move(newFileDependencies);
 
-		if (!Link(vertexFilePath, fragmentFilePath))
+		if (!Link(programPath))
 			return;
 	}
 
@@ -672,50 +712,11 @@ public:
 		if (m_Program)
 			glDeleteProgram(m_Program);
 
-		glDeleteShader(m_VertexShader);
-		glDeleteShader(m_FragmentShader);
+		for (ShaderStage& stage : m_ShaderStages)
+			glDeleteShader(stage.shader);
 	}
 
-	bool Compile(GLuint shader, const VfsPath& file, const CStr& code)
-	{
-		const char* code_string = code.c_str();
-		GLint code_length = code.length();
-		glShaderSource(shader, 1, &code_string, &code_length);
-
-		ogl_WarnIfError();
-
-		glCompileShader(shader);
-
-		GLint ok = 0;
-		glGetShaderiv(shader, GL_COMPILE_STATUS, &ok);
-
-		GLint length = 0;
-		glGetShaderiv(shader, GL_INFO_LOG_LENGTH, &length);
-
-		// Apparently sometimes GL_INFO_LOG_LENGTH is incorrectly reported as 0
-		// (http://code.google.com/p/android/issues/detail?id=9953)
-		if (!ok && length == 0)
-			length = 4096;
-
-		if (length > 1)
-		{
-			char* infolog = new char[length];
-			glGetShaderInfoLog(shader, length, NULL, infolog);
-
-			if (ok)
-				LOGMESSAGE("Info when compiling shader '%s':\n%s", file.string8(), infolog);
-			else
-				LOGERROR("Failed to compile shader '%s':\n%s", file.string8(), infolog);
-
-			delete[] infolog;
-		}
-
-		ogl_WarnIfError();
-
-		return ok;
-	}
-
-	bool Link(const VfsPath& vertexFilePath, const VfsPath& fragmentFilePath)
+	bool Link(const VfsPath& path)
 	{
 		ENSURE(!m_Program);
 		m_Program = glCreateProgram();
@@ -727,10 +728,11 @@ public:
 		}
 #endif
 
-		glAttachShader(m_Program, m_VertexShader);
-		ogl_WarnIfError();
-		glAttachShader(m_Program, m_FragmentShader);
-		ogl_WarnIfError();
+		for (ShaderStage& stage : m_ShaderStages)
+		{
+			glAttachShader(m_Program, stage.shader);
+			ogl_WarnIfError();
+		}
 
 		// Set up the attribute bindings explicitly, since apparently drivers
 		// don't always pick the most efficient bindings automatically,
@@ -755,9 +757,9 @@ public:
 			glGetProgramInfoLog(m_Program, length, NULL, infolog);
 
 			if (ok)
-				LOGMESSAGE("Info when linking program '%s'+'%s':\n%s", vertexFilePath.string8(), fragmentFilePath.string8(), infolog);
+				LOGMESSAGE("Info when linking program '%s':\n%s", path.string8(), infolog);
 			else
-				LOGERROR("Failed to link program '%s'+'%s':\n%s", vertexFilePath.string8(), fragmentFilePath.string8(), infolog);
+				LOGERROR("Failed to link program '%s':\n%s", path.string8(), infolog);
 
 			delete[] infolog;
 		}
@@ -849,18 +851,35 @@ public:
 #undef CASE
 
 			// Assign sampler uniforms to sequential texture units.
-			if (type == GL_SAMPLER_2D
-			 || type == GL_SAMPLER_CUBE
+			switch (type)
+			{
+			case GL_SAMPLER_2D:
+				bindingSlot.elementType = GL_TEXTURE_2D;
+				bindingSlot.isTexture = true;
+				break;
+			case GL_SAMPLER_CUBE:
+				bindingSlot.elementType = GL_TEXTURE_CUBE_MAP;
+				bindingSlot.isTexture = true;
+				break;
 #if !CONFIG2_GLES
-			 || type == GL_SAMPLER_2D_SHADOW
+			case GL_SAMPLER_2D_SHADOW:
+				bindingSlot.elementType = GL_TEXTURE_2D;
+				bindingSlot.isTexture = true;
+				break;
+			case GL_IMAGE_2D:
+				bindingSlot.elementType = GL_IMAGE_2D;
+				bindingSlot.isTexture = true;
+				break;
 #endif
-			)
+			default:
+				break;
+			}
+
+			if (bindingSlot.isTexture)
 			{
 				const auto it = requiredUnits.find(nameIntern);
 				const int unit = it == requiredUnits.end() ? -1 : it->second;
-				bindingSlot.elementType = (type == GL_SAMPLER_CUBE ? GL_TEXTURE_CUBE_MAP : GL_TEXTURE_2D);
 				bindingSlot.elementCount = unit;
-				bindingSlot.isTexture = true;
 				if (unit != -1)
 				{
 					if (unit >= static_cast<int>(occupiedUnits.size()))
@@ -1128,6 +1147,12 @@ public:
 	}
 
 private:
+	struct ShaderStage
+	{
+		GLenum type;
+		GLuint shader;
+	};
+
 	CDevice* m_Device = nullptr;
 
 	CStr m_Name;
@@ -1138,7 +1163,8 @@ private:
 	std::vector<int> m_ActiveVertexAttributes;
 
 	GLuint m_Program;
-	GLuint m_VertexShader, m_FragmentShader;
+	// 5 = max(compute, vertex + tesselation (control + evaluation) + geometry + fragment).
+	PS::StaticVector<ShaderStage, 5> m_ShaderStages;
 
 	struct BindingSlot
 	{
@@ -1189,6 +1215,7 @@ std::unique_ptr<CShaderProgram> CShaderProgram::Create(CDevice* device, const CS
 	// Define all the elements and attributes used in the XML file
 #define EL(x) int el_##x = XeroFile.GetElementID(#x)
 #define AT(x) int at_##x = XeroFile.GetAttributeID(#x)
+	EL(compute);
 	EL(define);
 	EL(fragment);
 	EL(stream);
@@ -1218,6 +1245,8 @@ std::unique_ptr<CShaderProgram> CShaderProgram::Create(CDevice* device, const CS
 	std::map<CStrIntern, std::pair<CStr, int>> fragmentUniforms;
 	std::map<CStrIntern, int> vertexAttribs;
 	int streamFlags = 0;
+
+	VfsPath computeFile;
 
 	XERO_ITER_EL(root, child)
 	{
@@ -1304,12 +1333,24 @@ std::unique_ptr<CShaderProgram> CShaderProgram::Create(CDevice* device, const CS
 				}
 			}
 		}
+		else if (child.GetNodeName() == el_compute)
+		{
+			computeFile = L"shaders/" + child.GetAttributes().GetNamedItem(at_file).FromUTF8();
+		}
 	}
 
 	if (isGLSL)
 	{
+		if (!computeFile.empty())
+		{
+			ENSURE(streamFlags == 0);
+			ENSURE(vertexAttribs.empty());
+		}
+		const PS::StaticVector<std::tuple<VfsPath, GLenum>, 2> shaderStages{computeFile.empty()
+			? PS::StaticVector<std::tuple<VfsPath, GLenum>, 2>{{vertexFile, GL_VERTEX_SHADER}, {fragmentFile, GL_FRAGMENT_SHADER}}
+			: PS::StaticVector<std::tuple<VfsPath, GLenum>, 2>{{computeFile, GL_COMPUTE_SHADER}}};
 		return std::make_unique<CShaderProgramGLSL>(
-			device, name, xmlFilename, vertexFile, fragmentFile, defines,
+			device, name, xmlFilename, shaderStages, defines,
 			vertexAttribs, streamFlags);
 	}
 	else

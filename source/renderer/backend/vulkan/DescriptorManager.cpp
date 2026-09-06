@@ -168,7 +168,7 @@ CDescriptorManager::SingleTypePool& CDescriptorManager::GetSingleTypePool(
 		constexpr uint32_t maxSets = 16384;
 
 		VkDescriptorPoolSize descriptorPoolSize{};
-		descriptorPoolSize.type = VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER;
+		descriptorPoolSize.type = type;
 		descriptorPoolSize.descriptorCount = maxSets * size;
 
 		VkDescriptorPoolCreateInfo descriptorPoolCreateInfo{};
@@ -212,23 +212,22 @@ size_t CDescriptorManager::SingleTypeCacheKeyHash::operator()(const SingleTypeCa
 {
 	size_t seed = 0;
 	hash_combine(seed, key.first);
-	for (CTexture::UID uid : key.second)
+	for (DeviceObjectUID uid : key.second)
 		hash_combine(seed, uid);
 	return seed;
 }
 
-VkDescriptorSet CDescriptorManager::GetSingleTypeDescritorSet(
+std::pair<VkDescriptorSet, bool> CDescriptorManager::GetSingleTypeDescritorSetImpl(
 	VkDescriptorType type, VkDescriptorSetLayout layout,
-	const std::vector<CTexture::UID>& texturesUID,
-	const std::vector<CTexture*>& textures)
+	const std::vector<DeviceObjectUID>& uids)
 {
-	ENSURE(texturesUID.size() == textures.size());
-	ENSURE(!texturesUID.empty());
-	const SingleTypeCacheKey key{layout, texturesUID};
+	ENSURE(!uids.empty());
+	const SingleTypeCacheKey key{layout, uids};
 	auto it = m_SingleTypeSets.find(key);
+	bool created = false;
 	if (it == m_SingleTypeSets.end())
 	{
-		SingleTypePool& pool = GetSingleTypePool(type, texturesUID.size());
+		SingleTypePool& pool = GetSingleTypePool(type, uids.size());
 		const int16_t elementIndex = pool.firstFreeIndex;
 		ENSURE(elementIndex != SingleTypePool::INVALID_INDEX);
 		SingleTypePool::Element& element = pool.elements[elementIndex];
@@ -251,38 +250,60 @@ VkDescriptorSet CDescriptorManager::GetSingleTypeDescritorSet(
 		}
 
 		it = m_SingleTypeSets.emplace(key, element.set).first;
+		created = true;
 
-		for (const CTexture::UID uid : texturesUID)
-			if (uid != CTexture::INVALID_UID)
-				m_TextureSingleTypePoolMap[uid].push_back({type, element.version, elementIndex, static_cast<uint8_t>(texturesUID.size())});
-
-		PS::StaticVector<VkDescriptorImageInfo, 16> infos;
-		for (CTexture* texture : textures)
-		{
-			if (!texture)
-				texture = m_ErrorTexture->As<CTexture>();
-			ENSURE(texture->GetUsage() & ITexture::Usage::SAMPLED);
-
-			VkDescriptorImageInfo descriptorImageInfo{};
-			descriptorImageInfo.imageLayout = VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL;
-			descriptorImageInfo.imageView = texture->GetSamplerImageView();
-			descriptorImageInfo.sampler = texture->GetSampler();
-			infos.emplace_back(std::move(descriptorImageInfo));
-		}
-
-		VkWriteDescriptorSet writeDescriptorSet{};
-		writeDescriptorSet.sType = VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET;
-		writeDescriptorSet.dstSet = element.set;
-		writeDescriptorSet.dstBinding = 0;
-		writeDescriptorSet.dstArrayElement = 0;
-		writeDescriptorSet.descriptorType = type;
-		writeDescriptorSet.descriptorCount = static_cast<uint32_t>(infos.size());
-		writeDescriptorSet.pImageInfo = infos.data();
-
-		vkUpdateDescriptorSets(
-			m_Device->GetVkDevice(), 1, &writeDescriptorSet, 0, nullptr);
+		for (const DeviceObjectUID uid : uids)
+			if (uid != INVALID_DEVICE_OBJECT_UID)
+				m_UIDToSingleTypePoolMap[uid].push_back({type, element.version, elementIndex, static_cast<uint8_t>(uids.size())});
 	}
-	return it->second;
+	return {it->second, created};
+}
+
+VkDescriptorSet CDescriptorManager::GetSingleTypeDescritorSet(
+	VkDescriptorType type, VkDescriptorSetLayout layout,
+	const std::vector<DeviceObjectUID>& texturesUID,
+	const std::vector<CTexture*>& textures)
+{
+	ENSURE(texturesUID.size() == textures.size());
+	ENSURE(!texturesUID.empty());
+	const auto [set, justCreated] = GetSingleTypeDescritorSetImpl(type, layout, texturesUID);
+	if (!justCreated)
+		return set;
+
+	const VkImageLayout imageLayout = type == VK_DESCRIPTOR_TYPE_STORAGE_IMAGE
+		? VK_IMAGE_LAYOUT_GENERAL
+		: VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL;
+	PS::StaticVector<VkDescriptorImageInfo, 16> infos;
+	for (CTexture* texture : textures)
+	{
+		if (!texture)
+		{
+			// We can use a default texture only for read-only bindings.
+			ENSURE(type == VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER || type == VK_DESCRIPTOR_TYPE_SAMPLED_IMAGE);
+			texture = m_ErrorTexture->As<CTexture>();
+		}
+		ENSURE(texture->GetUsage() & ITexture::Usage::SAMPLED);
+
+		VkDescriptorImageInfo descriptorImageInfo{};
+		descriptorImageInfo.imageLayout = imageLayout;
+		descriptorImageInfo.imageView = texture->GetSamplerImageView();
+		descriptorImageInfo.sampler = texture->GetSampler();
+		infos.emplace_back(std::move(descriptorImageInfo));
+	}
+
+	VkWriteDescriptorSet writeDescriptorSet{};
+	writeDescriptorSet.sType = VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET;
+	writeDescriptorSet.dstSet = set;
+	writeDescriptorSet.dstBinding = 0;
+	writeDescriptorSet.dstArrayElement = 0;
+	writeDescriptorSet.descriptorType = type;
+	writeDescriptorSet.descriptorCount = static_cast<uint32_t>(infos.size());
+	writeDescriptorSet.pImageInfo = infos.data();
+
+	vkUpdateDescriptorSets(
+		m_Device->GetVkDevice(), 1, &writeDescriptorSet, 0, nullptr);
+
+	return set;
 }
 
 uint32_t CDescriptorManager::GetUniformSet() const
@@ -337,9 +358,9 @@ uint32_t CDescriptorManager::GetTextureDescriptor(CTexture* texture)
 	return descriptorSetIndex;
 }
 
-void CDescriptorManager::OnTextureDestroy(const CTexture::UID uid)
+void CDescriptorManager::OnTextureDestroy(const DeviceObjectUID uid)
 {
-	ENSURE(uid != CTexture::INVALID_UID);
+	ENSURE(uid != INVALID_DEVICE_OBJECT_UID);
 	if (m_UseDescriptorIndexing)
 	{
 		DescriptorIndexingBindingMap& bindingMap =
@@ -356,8 +377,8 @@ void CDescriptorManager::OnTextureDestroy(const CTexture::UID uid)
 	}
 	else
 	{
-		auto it = m_TextureSingleTypePoolMap.find(uid);
-		if (it == m_TextureSingleTypePoolMap.end())
+		auto it = m_UIDToSingleTypePoolMap.find(uid);
+		if (it == m_UIDToSingleTypePoolMap.end())
 			return;
 		for (const auto& entry : it->second)
 		{
@@ -372,7 +393,7 @@ void CDescriptorManager::OnTextureDestroy(const CTexture::UID uid)
 				pool.firstFreeIndex = entry.elementIndex;
 			}
 		}
-		m_TextureSingleTypePoolMap.erase(it);
+		m_UIDToSingleTypePoolMap.erase(it);
 	}
 }
 

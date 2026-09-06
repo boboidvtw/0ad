@@ -18,7 +18,7 @@ class SavegameLoader
 		};
 	}
 
-	loadGame(gameId, metadata)
+	async loadGame(gameId, metadata)
 	{
 		// Check compatibility before really loading it
 		let engineInfo = Engine.GetEngineInfo();
@@ -27,7 +27,7 @@ class SavegameLoader
 
 		if (sameEngineVersion && sameMods)
 		{
-			this.reallyLoadGame(gameId);
+			Engine.PopGuiPage(gameId);
 			return;
 		}
 
@@ -36,12 +36,12 @@ class SavegameLoader
 
 		if (!sameEngineVersion)
 			if (metadata.engine_version)
-				message += sprintf(translate("This savegame needs 0 A.D. version %(requiredVersion)s, while you are running version %(currentVersion)s."), {
+				message += sprintf(translate("This savegame needs 0 A.D. version %(requiredVersion)s, while you are running version %(currentVersion)s."), {
 					"requiredVersion": metadata.engine_version,
 					"currentVersion": engineInfo.engine_version
 				}) + "\n";
 			else
-				message += translate("This savegame needs an older version of 0 A.D.") + "\n";
+				message += translate("This savegame needs an older version of 0 A.D.") + "\n";
 
 		if (!sameMods)
 		{
@@ -54,34 +54,12 @@ class SavegameLoader
 
 		message += translate("Do you still want to proceed?");
 
-		messageBox(
+		const buttonIndex = await messageBox(
 			500, 250,
 			message,
 			translate("Warning"),
-			[translate("No"), translate("Yes")],
-			[undefined, () => { this.reallyLoadGame(gameId); }]);
-	}
-
-	reallyLoadGame(gameId)
-	{
-		let metadata = Engine.StartSavedGame(gameId);
-		if (!metadata)
-		{
-			error("Could not load saved game: " + gameId);
-			return;
-		}
-
-		let pData = metadata.initAttributes.settings.PlayerData[metadata.playerID];
-
-		Engine.SwitchGuiPage("page_loading.xml", {
-			"attribs": metadata.initAttributes,
-			"playerAssignments": {
-				"local": {
-					"name": pData ? pData.Name : singleplayerName(),
-					"player": metadata.playerID
-				}
-			},
-			"savedGUIData": metadata.gui
-		});
+			[translate("No"), translate("Yes")]);
+		if (buttonIndex === 1)
+			Engine.PopGuiPage(gameId);
 	}
 }

@@ -2,71 +2,92 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: None\n"
-"POT-Creation-Date: 2023-06-12 07:18+0000\n"
-"PO-Revision-Date: 2023-06-12 07:18+0000\n"
+"POT-Creation-Date: 2024-07-26 07:18+0000\n"
+"PO-Revision-Date: 2024-07-26 07:18+0000\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit"
 
-msgid "Garrisoned Siege Engines +3 health regeneration rate."
-msgstr "Augmente le taux de régénération de la santé des engins de siège en garnison de +3."
-
 msgid "Arsenal Repairs"
 msgstr "Réparations des pièces d'arsenal"
 
-msgid "Garrisoned Ships +10 health regeneration rate."
-msgstr "Las embarcaciones guarecidas obtienen +10 en la tasa de regeneración de salud."
+msgid "Garrisoned Siege Engines +3 health regeneration rate."
+msgstr "Augmente le taux de régénération de la santé des engins de siège en garnison de +3."
+
+msgid "Officer Accommodation"
+msgstr "Alloggio per i funzionari"
+
+msgid "Garrisoned Heroes +6 health regeneration rate."
+msgstr "Augmente le taux de régénération de la santé des héros en garnison de +6."
 
 msgid "Dockyard Repairs"
 msgstr "পোতাশ্রয়ে প্রাপ্ত সুবিধাসমূহ"
 
+msgid "Garrisoned Ships +10 health regeneration rate."
+msgstr "Las embarcaciones guarecidas obtienen +10 en la tasa de regeneración de salud."
+
 msgid "Garrison within the Corral to gain a slow trickle of +3 food."
-msgstr "Presidia il Recinto per il bestiame per ottenere un lento rifornimento di +3 cibo."
+msgstr ""
+"Quartiere Einheiten im Pferch ein, um einen langsamen, stetigen Zufluss von +3 Nahrung "
+"zu erhalten."
 
 msgid "Ranching and Corralling"
-msgstr "Rančerství a chov v ohradách"
+msgstr "ගොවිතැන් කිරීම සහ සම්බන්ධ කිරීම"
 
 msgid "Garrison within the Corral to gain a slow trickle of +2 food."
-msgstr "Presidia il Recinto per il bestiame per ottenere un lento rifornimento di +2 cibo."
+msgstr ""
+"Quartiere Einheiten im Pferch ein, um einen langsamen, stetigen Zufluss von +2 Nahrung "
+"zu erhalten."
 
 msgid "Garrison within the Corral to gain a slow trickle of +1 food."
-msgstr "Presidia il Recinto per il bestiame per ottenere un lento rifornimento di +1 cibo."
+msgstr ""
+"Quartiere Einheiten im Pferch ein, um einen langsamen, stetigen Zufluss von +1 Nahrung "
+"zu erhalten."
+
+msgid "Eternal Fire"
+msgstr "Wieczny płomień"
 
 #, python-format
-msgid "Gatherers +75% farming rate around a captured Farmstead."
-msgstr "Raccoglitori +75% di tasso di coltivazione intorno a una Fattoria catturata."
+msgid "Structures +50% capture points."
+msgstr "ساختارها +50 درصد به امتیاز تصرف شما اضافه می‌کنند."
 
 msgid "Farmland"
 msgstr "Сельскохозяйственные угодья"
 
-msgid "Soldiers +20% melee and ranged attack damage."
-msgstr "सैनिकों की शस्त्र और अस्त्र से नुकसान पहुंचाने की क्षमता में +२०% का इजाफा"
+#, python-format
+msgid "Workers +75% grain gather rate around a captured Rotary Mill."
+msgstr ""
+"Aumento de +75% na taxa das trabalhadores ao coletar os grão ao redor de um Moinho "
+"Rotativo capturado."
 
 msgid "Religious Fervor"
 msgstr "Рэлігійная стараннасць"
+
+msgid "Soldiers +20% melee and ranged attack damage."
+msgstr "सैनिकों की शस्त्र और अस्त्र से नुकसान पहुंचाने की क्षमता में +२०% का इजाफा"
+
+msgid "Patriotism"
+msgstr "Fædrelandskærlighed"
 
 #, python-format
 msgid "Workers +15% gather speed."
 msgstr "Los trabajadores obtienen +15 % de velocidad de recolección."
 
-msgid "Patriotism"
-msgstr "Fædrelandskærlighed"
+msgid "Exhortative Presence"
+msgstr "Aansporende Teenwoordigheid"
 
 msgid "Soldiers +1 crush, hack, pierce resistance and +10% melee and ranged attack damage."
 msgstr ""
 "Soldados +1 de resistencia contra ataques aplastantes, cortantes y perforantes. +10% de"
 " ataque en combate cuerpo a cuerpo y a distancia."
 
-msgid "Exhortative Presence"
-msgstr "Aansporende Teenwoordigheid"
+msgid "Powerful Priesthood"
+msgstr "சக்திவாய்ந்த ஆசாரியத்துவம்"
 
 #, python-format
 msgid "Heroes −5% health."
 msgstr "Герои имеют на 5% меньше здоровья"
-
-msgid "Powerful Priesthood"
-msgstr "சக்திவாய்ந்த ஆசாரியத்துவம்"
 
 msgid "Structures −15% technology resource costs and research time."
 msgstr "Gheibh togalaichean −15% air cosgaisean stòrais agus ùine rannsachaidh nan teicneolasan."
@@ -74,26 +95,34 @@ msgstr "Gheibh togalaichean −15% air cosgaisean stòrais agus ùine rannsachai
 msgid "Centre of Scholarship"
 msgstr "Zentrum der Gelehrsamkeit"
 
+msgid "Loyalty"
+msgstr "Lòng trung thành"
+
 #, python-format
 msgid "Structures +50% capture points garrison regeneration rate."
 msgstr ""
 "Les estructures regeneren els punts de captura un 50% més ràpid quan hi ha unitats "
 "refugiades."
 
-msgid "Loyalty"
-msgstr "Lòng trung thành"
+msgid "Edict of Ashoka"
+msgstr "Ashoka's Bevelschrift"
 
 msgid "Traders +20% movement speed."
 msgstr "Augmente la vitesse de déplacement des marchands de +20 %."
 
-msgid "Edict of Ashoka"
-msgstr "Ashoka's Bevelschrift"
+msgid "Satrapy Tribute"
+msgstr "Tribuut aan de Satrapen"
 
-msgid "Humans +1 health regeneration rate."
-msgstr "Augmente la régénération de points de vie des humains de +1."
+msgid "Upgrade the Winter Palace to receive a free trickle of a desired resource."
+msgstr ""
+"Atualizar o Palácio de Inverno para receber um recurso desejado de graça regularmente e"
+" ao longo do tempo."
 
 msgid "Medical Treatment"
 msgstr "Medizinische Behandlung"
+
+msgid "Humans +1 health regeneration rate."
+msgstr "Augmente la régénération de points de vie des humains de +1."
 
 msgid "Structures +20% territory influence radius."
 msgstr "Augmente le rayon d'influence territoriale des bâtiments de +20 %."
@@ -101,78 +130,81 @@ msgstr "Augmente le rayon d'influence territoriale des bâtiments de +20 %."
 msgid "Hellenization"
 msgstr "கிரேக்கத்தின் பரவல்"
 
+msgid "Wall Protection"
+msgstr "Protección de la muralla"
+
 msgid "Turreted Soldiers +3 crush, hack, pierce resistance and +20 vision range."
 msgstr ""
 "Гарнизонда урнашылган гаскәриләрнең ваклау, чаба һәм чәнечә торган зарардан саклаулары "
 "3-кә күтәрелә, һәм шулай ук күзәтү ераклыгы 20%-ка күтәрелә."
 
-msgid "Wall Protection"
-msgstr "Protección de la muralla"
+msgid "Glorious Expansion"
+msgstr "Величанствена експанзија"
 
 msgid "+20% maximum population limit (requires the “Glorious Expansion” technology)."
 msgstr ""
 "Augmente la limite de population maximale de +20 % (requiert la technologie « Expansion"
 " glorieuse »)."
 
-msgid "Glorious Expansion"
-msgstr "Величанствена експанзија"
+msgid "Rigorous Training"
+msgstr "Rygorystyczne Szkolenie"
 
 msgid "Units gain experience while garrisoned inside the building."
 msgstr ""
 "Les unités acquièrent de l'expérience lorsqu'elles sont en garnison à l’intérieur du "
 "bâtiment."
 
-msgid "Rigorous Training"
-msgstr "Rygorystyczne Szkolenie"
-
-#, python-format
-msgid "Civic center technologies −50% research time and −30% cost."
-msgstr ""
-"As tecnoloxías do centro cívico reducen o tempo de investigación en 50% e o custo en "
-"30%."
-
 msgid "Democracy"
-msgstr "Democracia"
+msgstr "Ժողովրդավարություն"
 
 #, python-format
-msgid "Healers −20% resource costs."
-msgstr "Стоимость обучения целителей уменьшается на 20%."
+msgid "Civic Center technologies −50% research time and −30% cost."
+msgstr ""
+"Kaupungintalon teknologioiden tutkimisaika on 50% lyhyempi ja kustannukset ovat 30% "
+"alhaisemmat."
 
 msgid "Druids"
 msgstr "மதபோதகர்கள்"
 
-msgid "Mercenaries −50% train time."
-msgstr "Mercenarios (Tiempo de adiestramiento: −50%)."
+#, python-format
+msgid "Healers −20% resource costs."
+msgstr "Стойността за обучаване на лечители е намалена на 20%"
 
 msgid "Mercenary Transports"
-msgstr "Transportes de mercenários"
+msgstr "Palkkasotilaiden kuljetukset"
 
-msgid "Forges −15% technology resource costs and research time."
-msgstr "Gheibh ceàrdaich −15% air cosgaisean stòrais agus ùine rannsachaidh nan teicneolasan."
+msgid "Mercenaries −50% train time."
+msgstr "Réduit de -50% le temps d'entraînement des mercenaires."
 
 msgid "Products from Gaul"
 msgstr "Productes de la Gàl·lia"
 
-#, python-format
-msgid "Allies +20% international trade bonus."
-msgstr "Navýšení zisku z mezinárodního obchodu pro spojence o + 20%."
+msgid "Forges −15% technology resource costs and research time."
+msgstr "Gheibh ceàrdaich −15% air cosgaisean stòrais agus ùine rannsachaidh nan teicneolasan."
 
 msgid "Silk Road"
 msgstr "Δρόμος του Μεταξιού"
 
 #, python-format
-msgid "Citizen Javelineers −10% resource costs."
-msgstr "Els soldats ciutadans amb javelina aliats costen un -10% de recursos."
+msgid "Allies +20% international trade bonus."
+msgstr "Navýšení zisku z mezinárodního obchodu pro spojence o + 20%."
 
 msgid "Saripeko"
 msgstr "ভাড়াটে সৈনিক"
 
 #, python-format
-msgid "Elephants −20% resource costs and training time."
-msgstr "Słonie są tańsze o 20% oraz ich czas szkolenia jest skrócony o 20%."
+msgid "Citizen Javelineers −10% resource costs."
+msgstr "Els soldats ciutadans amb javelina aliats costen un -10% de recursos."
 
 msgid "Elephant Suppliers"
 msgstr "Fornecedores de Elefantes"
+
+#, python-format
+msgid "Elephants −20% resource costs and training time."
+msgstr "Słonie są tańsze o 20% oraz ich czas szkolenia jest skrócony o 20%."
+
+msgid "Mechanical Innovation"
+msgstr "Чолгау технологиясын яхшырту"
 
 #, python-format
 msgid "Siege Weapons and Arsenals −25% resource costs and build time."
@@ -180,8 +212,8 @@ msgstr ""
 "Armes de siège et Arsenaux: Réduction de 25% sur le coût des ressources et du temps de "
 "construction."
 
-msgid "Mechanical Innovation"
-msgstr "Чолгау технологиясын яхшырту"
+msgid "Ashoka's Religious Support"
+msgstr "Sustinatorii religioşi ai lui Ashoka"
 
 #, python-format
 msgid ""
@@ -191,48 +223,51 @@ msgstr ""
 "Temples −50 % de coûts en ressources et en temps de construction. Technologies des "
 "Temples −50 % de coûts en ressources et en temps de recherche."
 
-msgid "Ashoka's Religious Support"
-msgstr "Sustinatorii religioşi ai lui Ashoka"
-
-msgid "Barracks and Stables −20% wood and stone cost and build time."
-msgstr "Cuartéis e Cabalerizas −20% nos custos de madeira e pedra e no tempo de construción."
-
 msgid "Training Regimes"
 msgstr "Adiestramiento exahustivo"
 
-msgid "+1.0 food trickle rate."
-msgstr "+1.0 recebimento de alimentos ao longo do tempo."
+msgid "Barracks and Stables −20% wood and stone cost and build time."
+msgstr ""
+"Réduit de -20% le coût en bois et pierre et le temps de construction des casernes et "
+"écuries."
 
 msgid "Breadbasket of the Mediterranean"
 msgstr "אזור ים תיכוני של עיבוד קרקע לדגני לחם"
 
-msgid "Citizen Infantry −10% training time."
-msgstr "Réduit le temps d'entraînement des infanteries civiles de 10%."
+msgid "+1.0 food trickle rate."
+msgstr "+1 velocidade de recebimento de alimentos ao longo do tempo."
 
 msgid "Conscription"
 msgstr "Serviciu militar obligatoriu"
 
-#, python-format
-msgid "Civil Centers and Colonies −20% resource cost and −30% construction time."
-msgstr "Centros cívicos e colonias −20% nos custos de recursos e −30% no tempo de construción."
+msgid "Citizen Infantry −10% training time."
+msgstr "Réduit le temps d'entraînement des infanteries civiles de 10%."
 
 msgid "Syrian Tetrapolis"
 msgstr "Сирийский тетраполис (Четырёхградье)"
 
 #, python-format
-msgid "Citizen Infantry Spearmen +10% health."
-msgstr "Коры җир кала сөңге гаскәриләрнең тереклеге 10%-ка күтәрелә."
+msgid "Civil Centers and Colonies −20% resource cost and −30% construction time."
+msgstr ""
+"Kaupungintalojen ja siirtokuntien resurssikustannukset ovat 20% alhaisemmat ja "
+"rakentamisaika on 30% lyhyempi.\""
 
 msgid "Peloponnesian League"
 msgstr "Det Peloponnesiske Forbund"
+
+msgid "Heroes are trained for free."
+msgstr "قهرمانان به صورت رایگان آموزش داده می شوند."
+
+msgid "Intimidating Sound"
+msgstr "Einschüchterndes Geräusch"
 
 msgid "Enemy Soldiers −10% attack damage and capture attack strength."
 msgstr ""
 "Nepřátelští vojáci mají −10 % z poškození při útoku a ze síly útoku při zajímání "
 "jednotek."
 
-msgid "Intimidating Sound"
-msgstr "Einschüchterndes Geräusch"
+msgid "Economic Reforms"
+msgstr "Ath-leasachadh an eaconamaidh"
 
 #, python-format
 msgid ""
@@ -243,8 +278,8 @@ msgstr ""
 "l'agricultura.\n"
 "Augmenta un 15% la velocitat de recollida de recursos dels treballadors."
 
-msgid "Economic Reforms"
-msgstr "Ath-leasachadh an eaconamaidh"
+msgid "Economic Fortune"
+msgstr "Ekonomiczne Powodzenie"
 
 #, python-format
 msgid ""
@@ -255,9 +290,6 @@ msgstr ""
 "Solon apporta un nouveau système des poids et mesures, les pères étaient encouragés à "
 "trouver des métiers pour leurs fils.\n"
 "Réduit le coût des ressources des technologies économiques de 10 %."
-
-msgid "Economic Fortune"
-msgstr "Ekonomiczne Powodzenie"
 
 msgid ""
 "Seeing entrenched defense to be useless against the Roman army, Cassivellaunus resorted"
@@ -273,6 +305,9 @@ msgstr ""
 msgid "Guerrilla Tactics"
 msgstr "Պարտիզանական մարտավարություն"
 
+msgid "Skirmisher Harassment"
+msgstr "Hostigamiento de los guerrilleros"
+
 msgid ""
 "Cassivellaunus deployed fast-moving skirmishers to harass Roman troops and foragers.\n"
 "Javelineers +20% attack range."
@@ -281,8 +316,8 @@ msgstr ""
 " στρατεύματα και τους τροφοσυλλέκτες τους.\n"
 "Ακοντιστές: +20% στο βεληνεκές επίθεσης."
 
-msgid "Skirmisher Harassment"
-msgstr "Hostigamiento de los guerrilleros"
+msgid "Commander of Heavy Cavalry"
+msgstr "Bevelvoerder van Swaargewapende Kavallerie"
 
 #, python-format
 msgid ""
@@ -295,8 +330,8 @@ msgstr ""
 "Якын сугыш атлы гаскәрнең ваклау, чаба һәм чәнечә торган коралдан саклауы 1-гә "
 "күтәрелә, һәм тереклеккә 10% кушыла."
 
-msgid "Commander of Heavy Cavalry"
-msgstr "Bevelvoerder van Swaargewapende Kavallerie"
+msgid "Ambush Slaughter"
+msgstr "ఆకస్మికంగా దాడిచేసి భారీ ఎత్తున వధించు"
 
 msgid ""
 "Warring with the Romans, Ambiorix realized the futility of open warfare and instead "
@@ -310,8 +345,8 @@ msgstr ""
 "Nì saighdearan +5% de dhochann dlùth s astair a bharrachd agus gheibh iad −25% air an "
 "eòlas àrdachaidh."
 
-msgid "Ambush Slaughter"
-msgstr "ఆకస్మికంగా దాడిచేసి భారీ ఎత్తున వధించు"
+msgid "Tribute to Rome"
+msgstr "Φόρος υποτελείας στην Ρώμη"
 
 #, python-format
 msgid ""
@@ -326,8 +361,8 @@ msgstr ""
 "στρατεύματα για να πάρει τις προμήθειές τους με την βία.\n"
 "Εργάτες: -10% στον ρυθμό συγκομιδής σιτηρών."
 
-msgid "Tribute to Rome"
-msgstr "Φόρος υποτελείας στην Ρώμη"
+msgid "Territorial Expansion"
+msgstr "Териториално Разрастване"
 
 msgid ""
 "At its height, the Empire's borders spanned from the Fergana Valley in the west, to "
@@ -338,8 +373,8 @@ msgstr ""
 "l'Ouest jusqu'à la Corée à l'Est en passant par la partie nord du Vietnam au Sud.\n"
 "Bonus de +20 % d'influence territoriale."
 
-msgid "Territorial Expansion"
-msgstr "Inançhadura territorial"
+msgid "Imperial Music Bureau"
+msgstr "לִשְׁכָּה מַלכּוּתִית לענייני מוזיקה"
 
 #, python-format
 msgid ""
@@ -352,8 +387,8 @@ msgstr ""
 "religioso.\n"
 "Tecnologías (Tiempo de investigación y coste de recursos: −50%)."
 
-msgid "Imperial Music Bureau"
-msgstr "לִשְׁכָּה מַלכּוּתִית לענייני מוזיקה"
+msgid "Mercenary Commander"
+msgstr "Ceannard shaighdearan-duaise"
 
 msgid ""
 "Along with his brother Indibil, Mandonius commanded the Iberian recruits and "
@@ -365,8 +400,8 @@ msgstr ""
 "Вербовка всех наёмников из числа дружественных воинов-граждан требует на 25% меньше "
 "металла."
 
-msgid "Mercenary Commander"
-msgstr "Ceannard shaighdearan-duaise"
+msgid "Saver of Lives"
+msgstr "Sàbhalaiche bheathannan"
 
 #, python-format
 msgid ""
@@ -377,8 +412,8 @@ msgstr ""
 "सुरक्षित स्थान तक पहुंचाया।\n"
 "सैनिकों का +१०% स्वास्थ्य।"
 
-msgid "Saver of Lives"
-msgstr "Sàbhalaiche bheathannan"
+msgid "Earliest Nubian Queen"
+msgstr "Najwcześniejsza Królowa Nubijska"
 
 #, python-format
 msgid ""
@@ -392,8 +427,8 @@ msgstr ""
 "Kush, à ne pas prendre à la légère.\n"
 "Les citoyennes ennemies voient leur vitesse de récolte diminuer de 15 %."
 
-msgid "Earliest Nubian Queen"
-msgstr "Najwcześniejsza Królowa Nubijska"
+msgid "Temple at Naqa"
+msgstr "Templo de la Tríade Thebaica"
 
 msgid ""
 "As in all cultures, religion played a significant part in Kush. Shanakdakheto had the "
@@ -405,8 +440,8 @@ msgstr ""
 "‘na shamhla air dè cho adhartach ’sa bha Meroë.\n"
 "Gheibh aonadan a tha ’nan gearastan ann an teampall +1 air an slànachadh."
 
-msgid "Temple at Naqa"
-msgstr "Templo de la Tríade Thebaica"
+msgid "Sacker of Cities"
+msgstr "Creachnóir na gCathracha"
 
 msgid ""
 "During the First Macedonian War, Philip and his troops sacked Thermum, the religious "
@@ -418,8 +453,8 @@ msgstr ""
 "Les Humains, les Engins de Sièges, et les Bâtiments gagnent +5 en butin de nourriture "
 "et de bois. "
 
-msgid "Sacker of Cities"
-msgstr "Creachnóir na gCathracha"
+msgid "Financial Reorganization"
+msgstr "Taloudellinen uudelleenjärjestely"
 
 msgid ""
 "Allied with Rome, Philip reorganized the country's internal affairs and finances, "
@@ -430,8 +465,8 @@ msgstr ""
 "своем государстве, оставив в наследство заново открытые месторождения и новую денежную "
 "единицу. Позволяет получить медленный, но стабильный приток запасов металла."
 
-msgid "Financial Reorganization"
-msgstr "Taloudellinen uudelleenjärjestely"
+msgid "Consolidator of the Empire"
+msgstr "Co-dhaingniche na h-impireachd"
 
 msgid ""
 "Son of Chandragupta Maurya, Bindusara consolidated the empire, creating a stable state "
@@ -442,8 +477,8 @@ msgstr ""
 "impireachd, a’ cruthachadh stàit sheasmhach a gheibheadh a mhac Aśoka mar dhìleab.\n"
 "Cuiridh seo +20% a bhuaidh ranntair ris gach togalach."
 
-msgid "Consolidator of the Empire"
-msgstr "Co-dhaingniche na h-impireachd"
+msgid "Vamba Moriyar"
+msgstr "Βάμπα Μοριγιάρ (Μαουρυανική Κατάκτηση)"
 
 #, python-format
 msgid ""
@@ -453,8 +488,8 @@ msgstr ""
 "Thathar ag ràdh gun do cheannsaich Bindusara tìrean gu deas air an impireachd.\n"
 "Gheibh saighdearan +15% air neart an ionnsaighean glacaidh."
 
-msgid "Vamba Moriyar"
-msgstr "Βάμπα Μοριγιάρ (Μαουρυανική Κατάκτηση)"
+msgid "Great Builder"
+msgstr "Vynikající stavitel"
 
 #, python-format
 msgid ""
@@ -467,8 +502,8 @@ msgstr ""
 "la ville d'Ecbatana.\n"
 "Les Bâtiments coûtent 10% de ressource de moins et gagnent 5% de santé supplémentaire."
 
-msgid "Great Builder"
-msgstr "Vynikající stavitel"
+msgid "Great Librarian"
+msgstr "గొప్ప గ్రంధాలయ అధికారి"
 
 #, python-format
 msgid ""
@@ -481,8 +516,8 @@ msgstr ""
 "sabiduría que quedaría como legado para su pueblo.\n"
 "Tecnologías estructurales (Coste de recursos: −10%)."
 
-msgid "Great Librarian"
-msgstr "గొప్ప గ్రంధాలయ అధికారి"
+msgid "Avenger of Lucretia"
+msgstr "ल्यूक्रेशिया की मौत का प्रतिशोध लेने वाला"
 
 #, python-format
 msgid ""
@@ -495,8 +530,8 @@ msgstr ""
 "иткән.\n"
 "Хатын кешеләрне өйрәтү хакы 20%-ка төшә һәм аларның эшләү вакыты 10%-ка күтәрелә."
 
-msgid "Avenger of Lucretia"
-msgstr "ल्यूक्रेशिया की मौत का प्रतिशोध लेने वाला"
+msgid "Founder and Defender of the Republic"
+msgstr "Ιδρυτής και Υπερασπιστής της Δημοκρατίας"
 
 msgid ""
 "Brutus was one of the key figures in the overthrow of the monarchy and the founding of "
@@ -511,8 +546,8 @@ msgstr ""
 "+1 a chomas-seasaimh an aghaidh brùilleadh, spealgadh ’s bioradh air gach duine ’s "
 "inneal-sèiste."
 
-msgid "Founder and Defender of the Republic"
-msgstr "Ιδρυτής και Υπερασπιστής της Δημοκρατίας"
+msgid "Founder of the Ezida Temple"
+msgstr "Bunaitheoir den Theampall Ezida"
 
 #, python-format
 msgid ""
@@ -523,8 +558,8 @@ msgstr ""
 "Les Temples coûtent 10% de ressources en moins; Les technologies du Temple coûtent 10% "
 "de ressource moins."
 
-msgid "Founder of the Ezida Temple"
-msgstr "Bunaitheoir den Theampall Ezida"
+msgid "Immigration"
+msgstr "Přistěhovalectví"
 
 msgid ""
 "Antiochus encouraged Greek immigration to his realm and established many new cities in "
@@ -535,8 +570,8 @@ msgstr ""
 "nouvelles villes en Asie Mineurs pour servir de contrepoids face aux Gaulois.\n"
 "La population maximale augmente de 5%."
 
-msgid "Immigration"
-msgstr "Přistěhovalectví"
+msgid "Basileus Megas"
+msgstr "बासिलेए्स मैग्स, \"महान राजा\" के लिए ग्रीक उपाधि"
 
 #, python-format
 msgid ""
@@ -549,9 +584,6 @@ msgstr ""
 "aige an impireachd a chumail ri chèile fhad ’s an do stèidhich e teampaill ’s a chuir e"
 " ruaig le ailbheanan-cogaidh air muinntir na Gaille a bhris a-steach.\n"
 "−10% a chosgaisean stòrais air laoich ailbhein."
-
-msgid "Basileus Megas"
-msgstr "बासिलेए्स मैग्स, \"महान राजा\" के लिए ग्रीक उपाधि"
 
 #, python-format
 msgid ""
@@ -571,6 +603,9 @@ msgstr "Στρατιωτικές Μεταρρυθμίσεις του Λυκού�
 msgid "Champion Infantry Spearmen −5% resource costs."
 msgstr "Les Champion lanciers d'infanterie coûtent 5% de ressource en moins."
 
+msgid "Iron Pelanors"
+msgstr "लौह पेले़नाॅर, स्पार्टा की नगदी"
+
 msgid ""
 "To further support equality, Lycurgus forbade the use of gold and silver, introducing a"
 " new iron currency called pelanors.\n"
@@ -580,17 +615,33 @@ msgstr ""
 " is stèidhich e airgeadra iarainn ùr ’na àite air an do chuirte peileanoraichean.\n"
 "Cruinnichidh an luchd-obrach meatailt nas luaithe le +15%."
 
-msgid "Iron Pelanors"
-msgstr "लौह पेले़नाॅर, स्पार्टा की नगदी"
+msgid "Deas Celtica"
+msgstr "Boginie celtyckie"
+
+msgid "Soldiers +5% attack damage."
+msgstr "Augmenta +5% el dany d'atac dels soldats."
 
 #, python-format
 msgid "Melee Soldiers +10% attack damage and all Soldiers −25% experience points for promotion."
 msgstr ""
-"Żołnierze walczący w zwarciu otrzymują +10% obrażeń, a wszyscy Żołnierze wymagają -25% "
-"punktów doświadczenia mniej do awansu."
+"Közelharci katonák +10% támadási sebzést kapnak továbbá a katonák -25%-kal kevesebb "
+"tapasztalatot kell gyűjtenie, hogy előléptetést kapjanak."
 
 msgid "Combat Leadership"
 msgstr "Leadership in combattimento"
+
+#, python-format
+msgid "Soldiers +10% attack damage and −25% experience points for promotion."
+msgstr "Soldados tem +10% no dano de ataque e -25% em pontos de experiência para promoção."
+
+msgid "Century Maneuvers"
+msgstr "Vuosikymmenen Manööverit"
+
+msgid "Marian Legionaries and Centurions +10% movement speed."
+msgstr "Legionários Marianos e Centuriões tem +10% de velocidade de movimento."
+
+msgid "Building Programs"
+msgstr "Programmes de construction"
 
 #, python-format
 msgid "Builders construct buildings +2% faster for every nearby Minister."
@@ -598,8 +649,8 @@ msgstr ""
 "Rakentajat rakentavat rakennuksia +2 % nopeammin jokaista lähellä olevaa ministeriä "
 "kohden."
 
-msgid "Building Programs"
-msgstr "Programmes de construction"
+msgid "Excellency of Works"
+msgstr "Excellencia d’obrɐs públicɐs"
 
 #, python-format
 msgid ""
@@ -609,8 +660,8 @@ msgstr ""
 "Diminue le besoin en ressources et le temps de recherche des technologies dans un "
 "bâtiment de 2 % pour chaque ministre stationné dans ce bâtiment."
 
-msgid "Excellency of Works"
-msgstr "Excellencia d’obrɐs públicɐs"
+msgid "Nationalized Industries"
+msgstr "Znárodnené odvetvia priemyslu"
 
 msgid ""
 "The Imperial Ministry gains a +0.1 wood, stone, metal trickle for each garrisoned "
@@ -619,62 +670,75 @@ msgstr ""
 "Císařské ministerstvo získává +0,1 dřevěného, kamenného a kovového pomalého dodatečného"
 " přísunu za každého obsazeného ministra."
 
-msgid "Nationalized Industries"
-msgstr "Znárodnené odvetvia priemyslu"
+msgid "Minister over the Masses"
+msgstr "Kitlelerin Üsütünlüğü Bakanı"
 
 #, python-format
 msgid "Gatherers +2% gathering rate for every nearby Minister."
 msgstr "Keräilijöille +2% keräysprosentti jokaista lähellä olevaa virkamiestä kohden."
 
-msgid "Minister over the Masses"
-msgstr "Kitlelerin Üsütünlüğü Bakanı"
+msgid "Father of Medicine"
+msgstr "Az orvostudomány atyja"
 
-msgid "Soldiers in his formation +3 crush, hack, pierce resistance, +15% movement speed."
-msgstr ""
-"Хәрби тәртибендә торган гаскәриләрнең, аның җитәкчелегендә, ваклый, чаба һәм чәнечә "
-"торган зарардан саклаулары 3-кә күтәрелә, шулай ук йөрү тизлекләре 15%-ка күтәрелә."
+msgid "Humans +0.5 health regeneration rate."
+msgstr "Le taux de régénération de la santé des humains est augmenté de +0.5"
+
+msgid "Hippocratic Oath"
+msgstr "Iusiurandum Hippocraticum"
+
+msgid "Own and Allied Healers +1 healing effect."
+msgstr "Curandeiros seus e de seus aliados tem +1 de efeito de cura."
 
 msgid "Formation Reforms"
 msgstr "Ath-leasachaidhean air na cumaidhean"
 
-msgid "Infantry Javelineers +15% movement speed."
-msgstr "Infantaria de Escaramuçadores têm +15% de velocidade de movimento."
+msgid "Soldiers +2 crush, hack, pierce resistance."
+msgstr "Wojownicy +2 do obrony przed obrażeniami obuchowymi, kłutymi i siecznymi."
 
 msgid "Peltast Reforms"
 msgstr "მსუბუქად შეიარაღებული მებრძოლების გაუმჯობესებები"
+
+msgid "Infantry Javelineers +15% movement speed."
+msgstr "Infantaria de Escaramuçadores têm +15% de velocidade de movimento."
+
+msgid "Periclean Defensive Strategy"
+msgstr "Perikleische Verteidigungsstrategie"
 
 msgid ""
 "Soldiers, Ships, Siege Engines and Structures do not give loot, +50% Structure capture "
 "points."
 msgstr ""
-"Askerler, Gemiler, Kuşatma Makineleri ve Yapılar (yok olduklarında düşmana) ganimet "
-"vermez, +%50 Yapı ele geçirme puanı."
+"A zsákmányol lehetőség katonák, hajók, ostromgépek és szerkezetek részére nem lesz "
+"elérhető, cserébe viszont +50% szerkezet elfogó pontban részesülnek."
 
-msgid "Periclean Defensive Strategy"
-msgstr "Perikleische Verteidigungsstrategie"
+msgid "Scholarship and the Arts"
+msgstr "Bolsas de Estudo e as Artes"
 
 #, python-format
 msgid "Technologies −10% resource costs, −50% research time."
-msgstr "Стоимость исследования технологий снижается на 10%, а время исследования на 50%."
-
-msgid "Scholarship and the Arts"
-msgstr "Bolsas de estudo e as artes"
-
-#, python-format
-msgid "−50% metal cost, Ships −50% construction time, +15% move speed."
 msgstr ""
-"Строительство кораблей требует на 50% металла, время постройки уменьшается на 50%, а "
-"скорость перемещения кораблей увеличивается на 15%."
+"Teknologioiden resurssikustannukset ovat -10 % alhaisemmat ja tutkimisaika on -50 % "
+"lyhyempi."
 
 msgid "Naval Preparation"
 msgstr "Przygotowanie Marynarki Wojennej"
 
-#, python-format
-msgid "Walls and Palisades −50% resource costs and −20% construction time."
-msgstr "-50% nos cursos de recursos para muros e palizadas e −20% no tempo de construción."
+msgid "Ships −50% metal cost, construction time, and +15% movement speed."
+msgstr ""
+"Laivojen metallikustannukset ja rakentamisaika ovat -50 % alhaisemmat ja "
+"liikkumisnopeus on +15 % korkeampi."
 
 msgid "Themistoclean Walls"
 msgstr "Muralhas de Temístocles"
+
+#, python-format
+msgid "Walls and Palisades −50% resource costs and −20% construction time."
+msgstr ""
+"Muurien ja palisadien resurssikustannukset ovat -50 % alhaisemmat ja rakentamisaika on "
+"-20 % lyhyempi."
+
+msgid "Champion Army"
+msgstr "Exércitu de campiadores"
 
 msgid ""
 "Champions +2 capture attack strength, +20% melee and ranged attack damage, +10% "
@@ -683,34 +747,34 @@ msgstr ""
 "Elitní vojáci +2 k síle útoku při zajímání jednotek, +20 % k poškození při útoku na "
 "blízko a na dálku, +10 % k rychlosti pohybu."
 
-msgid "Champion Army"
-msgstr "Exércitu de campiadores"
+msgid "Guerrilla Chief"
+msgstr "Cabeçaleiru guerrilleiru"
 
 msgid "Soldiers and Siege Engines +1 crush, hack, pierce resistance, +15% movement speed."
 msgstr ""
 "Gheibh saighdearan ’s innealan-sèiste +1 a chomas-seasaimh an aghaidh brùilleadh, "
 "spealgadh ’s bioradh, gluaisidh iad +15% nas luaithe."
 
-msgid "Guerrilla Chief"
-msgstr "Cabeçaleiru guerrilleiru"
+msgid "Britannorum Rex"
+msgstr "ब्रिटेनोरम़् रेक्स, रोमन कालिन ब्रिटेन की उपाधि"
 
 msgid "Humans +0.8 health regeneration rate."
 msgstr "+0,8 a la velocitat de regeneració de la salut dels humans."
 
-msgid "Britannorum Rex"
-msgstr "ब्रिटेनोरम़् रेक्स, रोमन कालिन ब्रिटेन की उपाधि"
+msgid "Lightning General"
+msgstr "Молниеносный предводитель"
 
 msgid "Soldiers and Siege Engines +15% movement speed."
 msgstr "Les Soldats et les Engins de sèges gagnent 15% de vitesse de déplacement."
 
-msgid "Lightning General"
-msgstr "Молниеносный предводитель"
+msgid "Subduer of Mercenaries"
+msgstr "Ceannsalaiche nan saighdearan-duaise"
 
 msgid "Enemy Mercenaries −20% melee and ranged attack damage."
 msgstr "Poškození nepřátelských žoldáků při útocích zblízka a na dálku se sníží o -20 %."
 
-msgid "Subduer of Mercenaries"
-msgstr "Ceannsalaiche nan saighdearan-duaise"
+msgid "Tactician"
+msgstr "কৌশল ব্যবহারকারী"
 
 msgid ""
 "Own and Allied Soldiers and Siege Engines +1 capture attack strength, +20% melee and "
@@ -719,20 +783,20 @@ msgstr ""
 "Les soldats et les Engins de sièges , les vôtres comme les alliés , gagnent +1 en force"
 " de capture d'attaque, et 20% de dégâts mêlée et distance."
 
-msgid "Tactician"
-msgstr "কৌশল ব্যবহারকারী"
+msgid "Cavalry Commander"
+msgstr "Kommandant vun der Kavallerie"
 
 msgid "Melee Cavalry +30% melee attack damage."
 msgstr "Cavalaria de combate corpo a corpo +30% dano no ataque corpo a corpo."
 
-msgid "Cavalry Commander"
-msgstr "Атлы гаскәриләрнең җитәкчесе"
+msgid "Sacker of Rome"
+msgstr "Neach-creiche na Ròimhe"
 
 msgid "Humans, Siege Engines, and Ships gain +15 metal loot."
 msgstr "Les Humains, les Engins de sièges, et les Navires gagnent +15 de butin de métal en plus"
 
-msgid "Sacker of Rome"
-msgstr "Neach-creiche na Ròimhe"
+msgid "Celtic Warlord"
+msgstr "Signore della Guerra Celtico"
 
 msgid ""
 "Soldiers and Siege Engines +1 capture attack strength, +20% melee and ranged attack "
@@ -741,23 +805,20 @@ msgstr ""
 "Гаскәриләрнең һәм чолгау коралларның басып алу тизлеге 1-гә күтәрелә, якын һәм ерак "
 "сугыштагы зарарлары 20%-ка күтәрелә."
 
-msgid "Celtic Warlord"
-msgstr "Signore della Guerra Celtico"
-
 msgid "Preparation for War"
 msgstr "Preparació per a la guerra"
-
-msgid "Soldiers −20% promotion experience."
-msgstr "Яңа биеклек алу өчен, гаскәриләргә 20%-ка әзрәк тәҗрибә кирәк."
 
 msgid "Northern Army"
 msgstr "Exércitu septentrional"
 
-msgid "Own and Allied Soldiers +25% vision range."
-msgstr "+25% látótávolság mind az általad, mind a szövetségeid által irányított katonáknak"
+msgid "Soldiers −20% promotion experience."
+msgstr "Яңа биеклек алу өчен, гаскәриләргә 20%-ка әзрәк тәҗрибә кирәк."
 
 msgid "Southern Army"
 msgstr "Exércitu meridional"
+
+msgid "Own and Allied Soldiers +25% vision range."
+msgstr "+25% látótávolság mind az általad, mind a szövetségeid által irányított katonáknak"
 
 msgid "Walls +10 health regeneration rate."
 msgstr "Murallas (Velocidad de regeneración de resistencia: +10)."
@@ -768,24 +829,24 @@ msgstr "Konfutselaiset uudistukset"
 msgid "Cavalry +20% attack damage."
 msgstr "Кавалерія має +20% нанесення пошкодження."
 
+msgid "Mandate of Heaven"
+msgstr "Mandado de l cielo"
+
 msgid "Champions +2 capture attack strength, +20% melee and ranged attack damage."
 msgstr ""
 "Elitní vojáci +2 k síle útoku při zajímání jednotek, +20 % k poškození při útoku na "
 "blízko a na dálku."
 
-msgid "Mandate of Heaven"
-msgstr "Mandado de l cielo"
-
 msgid "Enemy Cavalry −10% melee and ranged attack damage."
 msgstr "Ворожа кавалерія має −10% нанесення ближнього та дистанційного пошкодження."
 
-msgid "When garrisoned, the Structure has +1 capture points garrison regeneration rate."
-msgstr ""
-"abelhogadu, la taxa de regeneracion de puntos de posse per occupante de la Structura "
-"occupada xube n +1."
-
 msgid "Inspired Defense"
 msgstr "Geïnspireerde Verdediging"
+
+msgid "When garrisoned, the Structure has +1 capture points garrison regeneration rate."
+msgstr ""
+"Quando aquartelado, a estrutura tem +1 velocidade de regeneração de pontos de captura "
+"com unidades aquarteladas."
 
 msgid "When garrisoned, the Structure or Siege Tower has +75% arrow count."
 msgstr ""
@@ -795,11 +856,14 @@ msgstr ""
 msgid "Valiant Defender"
 msgstr "Heldenhafter Verteidiger"
 
+msgid "Battle Fervor"
+msgstr "Fervore nella Battaglia"
+
 msgid "Soldiers +1 crush, hack, pierce resistance."
 msgstr "Gheibh saighdearan +1 air an comas-seasaimh an aghaidh brùilleadh, spealgadh ’s bioradh."
 
-msgid "Battle Fervor"
-msgstr "Fervore nella Battaglia"
+msgid "Mobilization"
+msgstr "Uvedení do stavu pohotovosti"
 
 #, python-format
 msgid "Soldiers −15% resources costs, −20% training time."
@@ -807,21 +871,21 @@ msgstr ""
 "Les soldats coûtent 15% de ressources en moins, et leur temps de formation est réduite "
 "de 20%."
 
-msgid "Mobilization"
-msgstr "Uvedení do stavu pohotovosti"
-
 msgid "Soldiers +20% movement speed."
 msgstr "Les soldats gagnent 20% de vitesse de déplacement."
+
+msgid "Swag"
+msgstr "Կողոպտիչի ռազմավար"
 
 #, python-format
 msgid "Soldiers and Siege Engines gain +100% resource loot."
 msgstr "Les soldats et les engins de sièges gagnent 100% de butin de ressources en plus."
 
-msgid "Swag"
-msgstr "Կողոպտիչի ռազմավար"
-
 msgid "Warrior Queen"
 msgstr "Гаскәриләрнең хатын патшасы"
+
+msgid "Defier of Tradition"
+msgstr "Herausforderer der Tradition"
 
 #, python-format
 msgid ""
@@ -832,8 +896,8 @@ msgstr ""
 "construction en plus. Les Gardes du Temple d'Amon coûtent 20% de ressource en plus , et"
 " prennent 20% de temps de formation en plus."
 
-msgid "Defier of Tradition"
-msgstr "Herausforderer der Tradition"
+msgid "Follower of Apedemak"
+msgstr "Apedemak'ın İzinden Giden"
 
 #, python-format
 msgid ""
@@ -843,15 +907,15 @@ msgstr ""
 "Les Temples d'Amon prennent 20% de ressource et de temps de construction en moins. Les "
 "Gardes du Temple d'Amon prennent 20% de ressources et de temps d'entrainement en moins."
 
-msgid "Follower of Apedemak"
-msgstr "Apedemak'ın İzinden Giden"
+msgid "Slaughter of the Faithful"
+msgstr "Afslachting van de gelovigen"
 
 #, python-format
 msgid "Enemy Healers −50% healing strength."
 msgstr "−50% air neart an t-slànachaidh aig lighichean nàimhdeil."
 
-msgid "Slaughter of the Faithful"
-msgstr "Afslachting van de gelovigen"
+msgid "Savior of Kush"
+msgstr "Slánaitheoir na Chuise"
 
 #, python-format
 msgid "Soldiers +10% melee and ranged attack damage, gain +50% resource loot."
@@ -859,26 +923,26 @@ msgstr ""
 "Солдати мають +10% нанесення ближнього та дистанційного пошкодження, здобувають +50% "
 "ресурсу у якості трофеїв."
 
-msgid "Savior of Kush"
-msgstr "Slánaitheoir na Chuise"
+msgid "Gift of Warships"
+msgstr "Agasallo dos barcos de guerra"
 
 msgid "Kushite Triremes −50 wood and metal cost."
 msgstr "Les Trirèmes koushites coûtent 50 de bois et de métal de moins."
 
-msgid "Gift of Warships"
-msgstr "Agasallo dos barcos de guerra"
-
-msgid "Soldiers +10% attack damage, +15% movement speed."
-msgstr "Воины наносят на 10% больше урона и на 15% быстрее передвигаются"
-
 msgid "Rapid Conquest"
 msgstr "Блискавичне завоювання"
 
-msgid "Enemy Soldiers, Structures −10% attack damage."
-msgstr "Nepřátelské jednotky a stavby −10 % k poškození útokem"
+msgid "Soldiers +10% attack damage, +15% movement speed."
+msgstr "Augmente de +10% les dégâts d'attaque et de +15% la vitesse de déplacement des Soldats."
 
 msgid "Undefeated"
 msgstr "Tak Terkalahkan"
+
+msgid "Enemy Soldiers, Structures −10% attack damage."
+msgstr "Réduit de -10% les dégâts d'attaque des Soldats Ennemis  sur les Bâtiments."
+
+msgid "Conqueror"
+msgstr "Konkistatzailea"
 
 #, python-format
 msgid "Enemy Civic Centres −50% capture points garrisoned regeneration rate."
@@ -886,8 +950,8 @@ msgstr ""
 "Caillidh ionadan sìobhalta nàimhdeil −50% de dh’ath-ghintinn nam puingean glacaidh on "
 "gearastan a bhios annta."
 
-msgid "Conqueror"
-msgstr "Konkistatzailea"
+msgid "Taxiarchès"
+msgstr "टैक्सियार्क, यूनानी शब्द ब्रिगेडियर के लिए"
 
 #, python-format
 msgid "Infantry Pikemen +20% capture attack strength, +20% melee attack damage."
@@ -895,32 +959,29 @@ msgstr ""
 "Jalkaväen keihäsmiehille +20 % kaappaushyökkäyksen voimakkuutta, +20 % "
 "lähitaisteluhyökkäyksen vahinkoa."
 
-msgid "Taxiarchès"
-msgstr "टैक्सियार्क, यूनानी शब्द ब्रिगेडियर के लिए"
+msgid "Besieger"
+msgstr "Dowódca Oblężenia"
 
 #, python-format
 msgid ""
 "Siege Engines +1 crush, hack, pierce resistance, +20% melee and ranged attack damage, "
 "+10% ranged attack range, +10% vision range."
 msgstr ""
-"Gheibh innealan-sèiste +1 air an comas-seasaimh an aghaidh brùilleadh, spealgadh ’s "
-"bioradh, nì iad +20% dhe dhochann astair, +10 air astar nan ionnsaighean astair, +10% a"
-" dh’astar lèirsinne."
-
-msgid "Besieger"
-msgstr "Dowódca Oblężenia"
+"Máquinas de Asedio teñen +1 de resistencia a esmagamento, corte e perforación, +20% de "
+"dano de ataque corpo a corpo e á distancia, +10% de alcance de ataque á distancia e "
+"+10% de alcance de visión."
 
 msgid "Rise of Macedon"
 msgstr "Montée en puissance de la Macédoine "
+
+msgid "Pyrrhic Victory"
+msgstr "Pirrhika uzvara (Par mata tiesu)"
 
 #, python-format
 msgid "Soldiers +20% melee and ranged attack damage, −15% health."
 msgstr ""
 "Гаскәриләр якын һәм ерак сугышта 20%-ка күбрәк зарар китерәләр, әмма тереклекләре "
 "15%-ка төшә."
-
-msgid "Pyrrhic Victory"
-msgstr "Pirrhika uzvara (Par mata tiesu)"
 
 #, python-format
 msgid ""
@@ -935,7 +996,9 @@ msgstr "Բուդդայականություն"
 
 #, python-format
 msgid "All technologies have −20% resource cost and −30% research time."
-msgstr "Tutte le tecnologie hanno un costo di risorse del -20%  e un tempo di ricerca del -30%."
+msgstr ""
+"Todas as tecnoloxías teñen un −20% de custo de recursos e un −30% de tempo de "
+"investigación."
 
 msgid "Teacher"
 msgstr "Aura nauczyciela"
@@ -943,49 +1006,44 @@ msgstr "Aura nauczyciela"
 msgid "Regeneration"
 msgstr "Penjanaan Semula"
 
-msgid "Soldiers +10% melee and ranged attack damage, +1 crush, hack, pierce resistance."
-msgstr ""
-"Воины наносят на 10% больше урона в ближнем и дальнем бою, а так же получают +1 к "
-"защите от колющего, режущего и дробящего урона"
-
 msgid "Empire Maker"
 msgstr "Bouwers van het Keizerrijk"
 
-msgid "Elephants +15% attack rate, +10% movement speed."
-msgstr "Elefanten +15% Angriffsgeschwindigkeit, +10% Bewegungsgeschwindigkeit"
-
 msgid "Elephant Corps"
 msgstr "Zvláštní sloní jednotka"
+
+msgid "Elephants +15% attack rate, +10% movement speed."
+msgstr "Augmente de +15% le taux d'attaque et de +10% la vitesse de déplacement des Éléphants"
+
+msgid "Forefront Leader"
+msgstr "Cabeçaleiru de primeira llinia"
 
 msgid "Cavalry +1 capture attack strength, +20% melee and ranged attack damage."
 msgstr ""
 "Атлы гаскәриләрнең басып алу тизлеге 1-гә күтәрелә, якын һәм ерак сугыштагы зарарлары "
 "20%-ка күтәрелә."
 
-msgid "Forefront Leader"
-msgstr "Cabeçaleiru de primeira llinia"
+msgid "Leadership"
+msgstr "Aura Przywództwa"
 
 msgid "Soldiers, Siege Engines, Traders, and Merchant Ships +15% movement speed."
 msgstr ""
 "Les soldats, les engins de sièges, les marchands et les navires marchands gagnent 15 % "
 "de vitesse de déplacement."
 
-msgid "Leadership"
-msgstr "Aura Przywództwa"
+msgid "Administrator"
+msgstr "Administratzailea"
 
 msgid "Workers +15% build rate and gather speed."
 msgstr "Trabalhadores têm +15% de taxa de construção e de velocidade de coleta."
 
-msgid "Administrator"
-msgstr "Administratzailea"
+msgid "Patriot"
+msgstr "Aura Patriotyzmu"
 
 msgid "Soldiers and Siege Engines −20% melee and ranged attack repeat time."
 msgstr ""
 "−20% air an ùine a bhèir e mus doir na saighdearan is innealan-sèiste ionnsaigh dhlùth "
 "no astair a-rithist."
-
-msgid "Patriot"
-msgstr "Aura Patriotyzmu"
 
 #, python-format
 msgid "Allied Heroes +10% health."
@@ -998,25 +1056,25 @@ msgstr "Càraid rìoghail"
 msgid "Enemy Heroes −10% health."
 msgstr "Nepřátelští hrdinové budou mít o -10 % méně zdraví."
 
-msgid "Builders +10% build rate."
-msgstr "Nì luchd-togail an cuid obrach nas luaithe le +10%."
-
 msgid "Patron of Construction"
 msgstr "Покровител на строителството"
 
-#, python-format
-msgid "Mercenaries −35% resource costs."
-msgstr "Le coût en ressources pour les Mercenaires est réduit de 35 %\n"
+msgid "Builders +10% build rate."
+msgstr "Nì luchd-togail an cuid obrach nas luaithe le +10%."
 
 msgid "Mercenary Patron"
 msgstr "Cùl-taic do shaighdearan-duaise"
 
 #, python-format
-msgid "Pikemen +40% health."
-msgstr "Сөнгечеләрнең тереклеге 40%-ка күтәрелә."
+msgid "Mercenaries −35% resource costs."
+msgstr "Le coût en ressources pour les Mercenaires est réduit de 35 %\n"
 
 msgid "Raphia"
 msgstr "राफिया, अफ्रिकी वृक्ष प्रजाति"
+
+#, python-format
+msgid "Pikemen +40% health."
+msgstr "Сөнгечеләрнең тереклеге 40%-ка күтәрелә."
 
 msgid "Cavalry +15% melee and ranged attack damage."
 msgstr "Кавалерія має +15% нанесення ближнього та дистанційного пошкодження."
@@ -1027,13 +1085,16 @@ msgstr "Claidheamh na Ròimhe"
 msgid "Enemy Infantry −10% melee and ranged attack damage."
 msgstr "Infantaria Inimiga tem −10% de dano de ataque à distância e de corpo-a-corpo."
 
+msgid "Shield of Rome"
+msgstr "Η Ασπίς της Ρώμης"
+
 msgid "Humans and Structures +1 crush, hack, pierce resistance."
 msgstr ""
 "Gheibh daoine is togalaichean +1 air an comas-seasaimh an aghaidh brùilleadh, spealgadh"
 " ’s bioradh."
 
-msgid "Shield of Rome"
-msgstr "Η Ασπίς της Ρώμης"
+msgid "Triumph"
+msgstr "Erabateko garaipena"
 
 msgid ""
 "Soldiers and Siege Engines +2 capture attack strength, +20% melee and ranged attack "
@@ -1042,29 +1103,42 @@ msgstr ""
 "Гаскариләрнең һәм чолгау коралларның басып алу тизлеге 2-гә күтәрелә, якын һәм ерак "
 "сугыштагы зарарлары 20%-ка күтәрелә."
 
-msgid "Triumph"
-msgstr "Erabateko garaipena"
+msgid "Ilarchès"
+msgstr "Ilarchès Kavallerie Offisier"
 
 msgid "Cavalry +2 crush, hack, pierce resistance."
 msgstr "Gheibh eachraidh +2 air an comas-seasaimh an aghaidh brùilleadh, spealgadh ’s bioradh."
 
-msgid "Ilarchès"
-msgstr "Ilarchès Kavallerie Offisier"
+msgid "Renowned Conqueror"
+msgstr "Прославленный завоеватель"
 
 #, python-format
 msgid "Enemy Structures, Ships, and Siege Engines −20% health."
 msgstr "Дошман биналарының, корабларының һәм чолгау коралларының тереклекләре 20%-ка төшә."
 
-msgid "Renowned Conqueror"
-msgstr "Прославленный завоеватель"
+msgid "Zooiarchos"
+msgstr "Zooiarchos (elefánt parancsnok)"
 
 msgid "Champion Elephants +20% melee attack damage, +20% movement speed."
 msgstr ""
 "Elefantes Campeões têm +20% de dano de ataque corpo-a-corpo e +20% de velocidade de "
 "movimento."
 
-msgid "Zooiarchos"
-msgstr "Zooiarchos (elefánt parancsnok)"
+msgid "Great Revolt"
+msgstr "Pemberontakan Besar"
+
+msgid "Soldiers −25% metal cost, and training time."
+msgstr "Soldados tem -25% custo de metal e redução de -25% tempo de treinamento."
+
+#, python-format
+msgid "Agis +50% health."
+msgstr "Agis +50 % enemmän terveyttä."
+
+msgid "Last Stand"
+msgstr "An Hini Diwezhañ War-Sav"
+
+msgid "Helot Reforms"
+msgstr "Aura ath-leasachadh Heileotais"
 
 #, python-format
 msgid ""
@@ -1074,14 +1148,18 @@ msgstr ""
 "Gheibh gathadairean coisridh-dhùthcha +1 a chomas-seasaimh an aghaidh brùilleadh, "
 "spealgadh ’s bioradh, nì iad +25% dhe dhochann ionnsaigh bioraidh."
 
-msgid "Helot Reforms"
-msgstr "Aura ath-leasachadh Heileotais"
-
 msgid "Spearmen +1 capture attack strength, +25% melee attack damage."
 msgstr ""
 "Bojovníci s oštěpem +1 k síle útoku při zajímání jednotek a +25 % k poškození při útoku"
 " na blízko."
 
-msgid "Last Stand"
-msgstr "An Hini Diwezhañ War-Sav"
+msgid "Battering Team"
+msgstr "Tripulación de ariete"
+
+msgid ""
+"Battering Rams +0.15 speed, +1 acceleration, and +0.5 turn rate for each garrisoned "
+"soldier."
+msgstr ""
+"Rammböcke +0.15 Geschwindigkeit, +1 Beschleunigung und +0.5 Drehgeschwindigkeit für "
+"jeden einquartierten Soldaten."
 

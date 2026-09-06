@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: None\n"
-"POT-Creation-Date: 2023-06-01 01:50+0000\n"
-"PO-Revision-Date: 2023-06-01 01:50+0000\n"
+"POT-Creation-Date: 2024-07-29 07:18+0000\n"
+"PO-Revision-Date: 2024-07-29 07:18+0000\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -28,7 +28,7 @@ msgid "Limēn"
 msgstr "Přístav"
 
 msgid "Agros"
-msgstr "Agros"
+msgstr "Palayan"
 
 msgid "Chalkeōn"
 msgstr "लोहार-ख़ाना"
@@ -49,13 +49,13 @@ msgid "Oikos"
 msgstr "Oikos"
 
 msgid "Emporion"
-msgstr "Emporion"
+msgstr "एम्पोरिऑन"
 
 msgid "Prophylagma"
-msgstr "Prophylagma"
+msgstr "प्रॉफिलाग्मा"
 
 msgid "Council Chamber"
-msgstr "Зал заседаний совета"
+msgstr "Kapulungan ng Konseho"
 
 msgid "Prytaneion"
 msgstr "Poradní síň"
@@ -67,13 +67,13 @@ msgid "Council"
 msgstr "Il Consiglio"
 
 msgid "Stratopedon tōn Psilōn"
-msgstr "Стратопедон тон псільон"
+msgstr "स्ट्राटोपेडॉन टोन प्सिलोन"
 
 msgid "Pyrgidion"
 msgstr "Strážní věž"
 
 msgid "Hippōn"
-msgstr "Hippōn"
+msgstr "हिप्पोन"
 
 msgid "Apothēkē"
 msgstr "Apothēkē"
@@ -106,7 +106,7 @@ msgid "Miletucerdon"
 msgstr "Μαϊλτούρσεντον"
 
 msgid "Coriosessa"
-msgstr "Coriosessa"
+msgstr "कोरिओसेस्सा"
 
 msgid "Tigernotreba"
 msgstr "Τιγκερνότρουμπα"
@@ -140,7 +140,7 @@ msgid "Buta"
 msgstr "Statek"
 
 msgid "Olca"
-msgstr "Olca"
+msgstr "ओल्का"
 
 msgid "Gobanion"
 msgstr "Κομπάνιον"
@@ -153,6 +153,9 @@ msgstr "Oidich curaidhean. Cuir saighdearan ’nan gearastan ann airson barrachd
 
 msgid "Tegia"
 msgstr "Tegia"
+
+msgid "Cunattegia"
+msgstr "Cunattegia"
 
 msgid "Magos"
 msgstr "Vendejo"
@@ -235,6 +238,11 @@ msgstr "Šadd-Huerto"
 msgid "Ḥamet"
 msgstr "Ḥamet-Fortaleza"
 
+msgid "Add a second story to make an Apartment with a greater population bonus."
+msgstr ""
+"Aggiunge un secondo piano per creare un Appartamento con un bonus di popolazione "
+"maggiore."
+
 msgid "Šūq"
 msgstr "Šūq-Mercado"
 
@@ -267,10 +275,8 @@ msgstr "Корабостроителница"
 msgid "Maqdaš"
 msgstr "Maqdaš-Templo"
 
-msgid "Train Healers and Champion Infantry and research healing technologies."
-msgstr ""
-"Formez des guérisseurs et des champions d'infanterie et recherchez des technologies de "
-"guérison."
+msgid "Train Healers and Champions, and research healing technologies."
+msgstr "Şifacıları ve Şampiyonları eğitin ve iyileştirme teknolojilerini araştırın."
 
 msgid "Sacrificial Temple"
 msgstr "Храм за жертвоприношения"
@@ -305,41 +311,26 @@ msgstr "Дорическая колонна"
 msgid "Fallen Doric Column"
 msgstr "Kaatunut doorilainen pylväs"
 
-msgid "Wheat Field"
-msgstr "Achadh cruithneachd"
-
-msgid "Epoikion"
-msgstr "Epoikion"
-
-msgid "Kantu"
-msgstr "Kantu-Granja"
-
-msgid "Villa"
-msgstr "Venkovské sídlo"
-
-msgid "Kaštašta"
-msgstr "Kaštašta-Granja"
-
-msgid "Melonas"
-msgstr "la melonas."
-
 msgid "Fence"
 msgstr "Ogrodzenie"
 
 msgid "Long Wooden Fence"
 msgstr "Vedação de madeira comprida"
 
+msgid "Rock Fence"
+msgstr "मोठ्या दगडांचे कुंपण"
+
 msgid "Short Wooden Fence"
 msgstr "Krótkie drewniane ogrodzenie"
 
 msgid "Stone Fence"
-msgstr "Kamienne ogrodzenie"
+msgstr "छोट्या दगडांचे कुंपण"
 
 msgid "Assembly of Princes"
 msgstr "Seanadh nam prionnsachan"
 
 msgid "Remogantion"
-msgstr "Пленарна зала"
+msgstr "Remogantionare"
 
 msgid "Train Champion Trumpeters and Heroes."
 msgstr "Entraîner des Champions Trompettistes et des Héros."
@@ -365,6 +356,9 @@ msgstr "Святилище у комуні Коран"
 msgid "Celicnon"
 msgstr "Div světa - Celicnon"
 
+msgid "Wheat Field"
+msgstr "Achadh cruithneachd"
+
 msgid "Imperial Academy"
 msgstr "Императорская академия"
 
@@ -378,10 +372,10 @@ msgid "Academy"
 msgstr "Академија"
 
 msgid "Bīnggōng Chǎng"
-msgstr "Bīnggōng Chǎng"
+msgstr "Binh Công Xưởng"
 
 msgid "Jūn Yíng"
-msgstr "Jūn Yíng"
+msgstr "Quan Doanh"
 
 msgid "Guān Shǔ"
 msgstr "Guān Shǔ"
@@ -390,9 +384,9 @@ msgid ""
 "Enable training of heroes, reduce the batch training times and greatly increase the "
 "health, capture resistance and garrison capacity of this specific Civic Center."
 msgstr ""
-"Abilita l'addestramento degli eroi, riduce i tempi di addestramento dei lotti e aumenta"
-" notevolmente la salute, la resistenza alla cattura e la capacità di presidio di questo"
-" specifico Centro Civico."
+"Schaltet die Ausbildung von Helden frei, reduziert die Gruppen-Ausbildungszeiten und "
+"erhöht die Gesundheit, den Eroberungswiderstand und die Einquartiertungskapazität "
+"dieses Verwaltungssitzes  deutlich."
 
 msgid "Imperial Court"
 msgstr "İmparatorluk Mahkemesi"
@@ -413,7 +407,7 @@ msgid ""
 "This tower has greater range, greater attack, greater health, and is twice as difficult"
 " to capture."
 msgstr ""
-"Cette tour possède une portée, une puissance d'attaque et une santé plus importante. "
+"Cette tour possède une portée, une puissance d'attaque et une santé plus importantes. "
 "Elle est également deux fois plus difficile à capturer."
 
 msgid "Great Tower"
@@ -426,25 +420,25 @@ msgid "GreatTower"
 msgstr "BüyükSavunmaKulesi"
 
 msgid "Mǎtóu"
-msgstr "Mǎtóu"
+msgstr "Mã Đầu"
 
 msgid "Nóng Shè"
 msgstr "Nóng Shè"
 
 msgid "Dàotián"
-msgstr "Dàotián"
+msgstr "Đạo Điền"
 
 msgid "Rice Paddy"
-msgstr "Пиринчано Поље"
+msgstr "Culturǎ de orez"
 
 msgid "Tián"
 msgstr "Тиань"
 
 msgid "Duànzào Chǎng"
-msgstr "Duànzào Chǎng"
+msgstr "Đoàn Tạo Xưởng"
 
 msgid "Bǎolěi"
-msgstr "Bǎolěi"
+msgstr "Bảo Lũy"
 
 msgid "Mín Jū"
 msgstr "Мінь цзюй"
@@ -456,13 +450,13 @@ msgid "Lǎozǐ Mén"
 msgstr "Лао-цзы Мен"
 
 msgid "Jíshì"
-msgstr "Jíshì"
+msgstr "Tập Thị"
 
 msgid "Imperial Ministry"
 msgstr "Императорское министерство"
 
 msgid "Gōngdiàn"
-msgstr "Gōngdiàn"
+msgstr "Cung Điện"
 
 msgid "ImperialMinistry"
 msgstr "Императорское министерство"
@@ -471,11 +465,11 @@ msgid ""
 "Train the Nine Ministers. Territory root. Research a powerful suite of Administrative "
 "technologies."
 msgstr ""
-"Entrainer les Neuf Ministres.Centre du Territoire.Rechercher une suite puissante de "
+"Entrainer les Neuf Ministres. Centre du Territoire. Rechercher une suite puissante de "
 "Technologies administratives."
 
 msgid "Wànglóu"
-msgstr "Wànglóu"
+msgstr "Vọng Lâu"
 
 msgid "Bamboo Stockade"
 msgstr "Staccionata di bamboo"
@@ -487,19 +481,19 @@ msgid "Bamboo Stockade Tower"
 msgstr "Torre di staccionata di bamboo"
 
 msgid "Bǎ Chǎng"
-msgstr "Bǎ Chǎng"
+msgstr "Bá Trường"
 
 msgid "Shào Tǎ"
-msgstr "Shào Tǎ"
+msgstr "Sáo Tháp"
 
 msgid "Mǎ Jiù"
 msgstr "Ма Дзиу"
 
 msgid "Cāngkù"
-msgstr "Cāngkù"
+msgstr "Thương Khố"
 
 msgid "Sìmiào"
-msgstr "Sìmiào"
+msgstr "Tự Miếu"
 
 msgid "Chéng Mén"
 msgstr "Mężczyźni Chéng"
@@ -514,7 +508,7 @@ msgid "Yōng"
 msgstr "Yōng"
 
 msgid "Míngtáng Bìyōng"
-msgstr "Míngtáng Bìyōng"
+msgstr "Minh Đường Bích Dung"
 
 msgid "Epic Temple"
 msgstr "Suurenmoinen temppeli"
@@ -571,7 +565,7 @@ msgid "Revered Monument"
 msgstr "Spomenik strahospoštovanja"
 
 msgid "Gur Oroigarri"
-msgstr "Pomnik Gur Origarri"
+msgstr "Гур Ороигарри — Почитаемый Монумент"
 
 msgid "Monument"
 msgstr "స్మారక చిహ్నము"
@@ -629,9 +623,6 @@ msgstr "Мерит"
 
 msgid "Ỉḥ Abu"
 msgstr "Sloní stáje"
-
-msgid "snwt"
-msgstr "սենուտ"
 
 msgid "sht"
 msgstr "Сехет"
@@ -699,7 +690,7 @@ msgid "TempleOfApedemak"
 msgstr "Templul lui Apedamak"
 
 msgid "Grand Temple of Amun"
-msgstr "Didžioji Amono šventykla"
+msgstr "Marele Templu al lui Amun"
 
 msgid "Pr-ʿImn"
 msgstr "Пер-Амон"
@@ -772,8 +763,8 @@ msgstr "Lùchairt"
 msgid "Harmya"
 msgstr "Lùchairt Innseanach"
 
-msgid "Territory root. Train Maiden Guards and Heroes."
-msgstr "Rdzeń terytorialny. Szkoli strażniczki. Obsadź żołnierzami, by zwiększyć liczbę strzał."
+msgid "Train Heroes and their Poison Maiden Guards. Territory root."
+msgstr "Entraîner des Héros et leurs Gardes Vierges Empoisonneuses. Centre de votre territoire."
 
 msgid "Edict Pillar of Ashoka"
 msgstr "Edictos en los pilares de Aśoka"
@@ -799,9 +790,9 @@ msgid ""
 " to protect its foot."
 msgstr ""
 "Stabilerer Turm mit Befestigungsmauern für bis zu 16 Bogenschützen. Sichtbar "
-"einquartiert Bogenschützen bekommen einen Reichweiten- und Rüstungsbonus. Nur "
-"Bogenschützen können einquartiert werden. Braucht die Mörderlöchertechnologie, um seine"
-" unmittelbare Umgebung zu schützen."
+"einquartierte Bogenschützen bekommen einen Reichweiten- und Rüstungsbonus. Nur "
+"Bogenschützen können einquartiert werden. Braucht die „Mörderlöcher“-Technologie, um "
+"seine unmittelbare Umgebung zu schützen."
 
 msgid "Dwara"
 msgstr "Dwara-Puerta"
@@ -835,6 +826,24 @@ msgstr ""
 "Αιχμαλώτισε αυτό το κατασκεύασμα για να εκπαιδεύσεις μισθοφόρους από την Ελληνιστική "
 "Αίγυπτο."
 
+msgid "snwt"
+msgstr "սենուտ"
+
+msgid "Epoikion"
+msgstr "Epoikion"
+
+msgid "Kantu"
+msgstr "Kantu-Granja"
+
+msgid "Villa"
+msgstr "Venkovské sídlo"
+
+msgid "Kaštašta"
+msgstr "Kaštašta-Granja"
+
+msgid "Melonas"
+msgstr "la melonas."
+
 msgid "Obelisk"
 msgstr "Tursa Èipheiteach"
 
@@ -866,15 +875,6 @@ msgstr "Aukšti Spygliai"
 
 msgid "Watchtower"
 msgstr "Torre di osservazione"
-
-msgid "Throne Hall"
-msgstr "Αίθουσα του Θρόνου"
-
-msgid "Apadāna"
-msgstr "Απαντάνα"
-
-msgid "Train Champions and Heroes."
-msgstr "Позволяет обучать гвардейцев и героев."
 
 msgid "Apartment Block"
 msgstr "Συγκρότημα Διαμερισμάτων"
@@ -942,8 +942,34 @@ msgstr "Paraspa-Caballería"
 msgid "Asiyah"
 msgstr "Asiyah-Almacén"
 
+msgid "Winter Palace"
+msgstr "Palacio de invierno"
+
 msgid "Taçara"
 msgstr "Дворец Дария Великого"
+
+msgid "Train Heroes and make use of the “Satrapy Tribute” feature."
+msgstr "Treina heróis e utiliza a funcionalidade “Tributo satrópico”."
+
+msgid "Receive free Food tribute to your treasury from your subject peoples."
+msgstr ""
+"Riceve gratuitamente il tributo alimentare per il vostro tesoro da parte dei vostri "
+"sudditi."
+
+msgid "Receive free Wood tribute to your treasury from your subject peoples."
+msgstr ""
+"Riceve gratuitamente il tributo di legno per il vostro tesoro da parte dei vostri "
+"sudditi."
+
+msgid "Receive free Stone tribute to your treasury from your subject peoples."
+msgstr ""
+"Riceve gratuitamente il tributo di pietra per il vostro tesoro da parte dei vostri "
+"sudditi."
+
+msgid "Receive free Metal tribute to your treasury from your subject peoples."
+msgstr ""
+"Riceve gratuitamente ii tributo di metallo per il vostro tesoro da parte dei vostri "
+"sudditi."
 
 msgid "Āyadanam"
 msgstr "Εϊανταναμ"
@@ -959,6 +985,9 @@ msgstr "Tante-Emma-Lohn"
 
 msgid "Hanging Gardens of Babylon"
 msgstr "Babiloniako Lorategi Zintzilikatuak"
+
+msgid "Pirate Port"
+msgstr "Pirátský přístav"
 
 msgid "Stathmos tōn Elepantōn"
 msgstr "Stathmós tôn Elephántōn"
@@ -988,6 +1017,17 @@ msgstr ""
 msgid "Klērouchia"
 msgstr "Klērouchia"
 
+msgid "Temple of Isis"
+msgstr "Az Izísz Temploma"
+
+msgid "Train Heroes and Healers. Research special technologies."
+msgstr ""
+"Trenuj bohaterów oraz uzdrowicieli. Prowadź badania nad specjalnymi rozwiązaniami "
+"technologicznymi. "
+
+msgid "TempleOfIsis"
+msgstr "Temple der Isis"
+
 msgid "mktr-n-ḏw"
 msgstr "mktr-n-ḏw-Torre de Defensa"
 
@@ -1001,7 +1041,7 @@ msgid "Triumphal Arch"
 msgstr "Pelengkung Kemenangan"
 
 msgid "Arcus Triumphālis"
-msgstr "Արկուս Տրիումֆալիս"
+msgstr "आर्कुस त्रिउम्फालिस"
 
 msgid "TriumphalArch"
 msgstr "PelengkungKemenangan"
@@ -1010,21 +1050,21 @@ msgid "Army Camp"
 msgstr "Acampamento do Exército"
 
 msgid "Castra"
-msgstr "اردوگاه"
+msgstr "कास्त्रा"
 
 msgid ""
-"Build in neutral or enemy territory. Train Advanced Melee Infantry. Construct Rams. "
-"Garrison Soldiers for additional arrows."
+"Build in neutral or enemy territory. Train Advanced Melee Infantry and Marian "
+"Legionaries. Construct Rams. Garrison Soldiers for additional arrows."
 msgstr ""
-"Нейтраль яки дошман территориясендә төзеп була. Якында сугыша торган яхшыртылган коры "
-"җир гаскәриләрне өйрәтегез. Тараннар төзегез. Саклау атышын күбәйтер өчен гаскәриләрне "
-"эченә кертегез."
+"Kann in neutralem oder feindlichem Territorium gebaut werden. Ermöglicht Ausbildung von"
+" erweiterter Nahkampfinfanterie und marianischen Legionären, sowie den Bau von "
+"Rammböcken. Quartiere Soldaten für zusätzliche Pfeile ein."
 
 msgid "ArmyCamp"
-msgstr "Acampamento do Exército"
+msgstr "Acampamento do exército"
 
 msgid "Ballistārium"
-msgstr "Բալլիստարիում"
+msgstr "बाल्लिस्तारिउम"
 
 msgid "Castrum"
 msgstr "Castrum-Cuartel"
@@ -1036,7 +1076,7 @@ msgid "Saeptum"
 msgstr "Saeptum-Corral"
 
 msgid "Turris Laterīcia"
-msgstr "Turris Laterīcia"
+msgstr "तुर्रिस लातेरिसिआ"
 
 msgid "Portus"
 msgstr "Portus-Muelle"
@@ -1048,7 +1088,7 @@ msgid "Ager"
 msgstr "Campo (Ager)"
 
 msgid "Armāmentārium"
-msgstr "Արմամենտարիում"
+msgstr "आर्मामेन्तारिउम"
 
 msgid "Castellum"
 msgstr "Castellum-Fortaleza"
@@ -1057,19 +1097,19 @@ msgid "Domus"
 msgstr "منزل طبقة عالية "
 
 msgid "Mercātus"
-msgstr "Մերկատուս"
+msgstr "मेर्कातुस"
 
 msgid "Vigilārium"
 msgstr "Βιτζιλάριουμ"
 
 msgid "Turris Līgnea"
-msgstr "Turris Līgnea"
+msgstr "तुर्रिस लिग्नेआ"
 
 msgid "Siege Wall Gate"
 msgstr "Pintu Pagar Tembok Pelindung Kepung"
 
 msgid "Porta Circummūnītiōnis"
-msgstr "Порта на Циркумунитионис"
+msgstr "पोर्ता सिर्कुम्मूनितिओनिस"
 
 msgid "SiegeWall"
 msgstr "MurusCircummunitionis"
@@ -1084,10 +1124,10 @@ msgid "Siege Wall Tower"
 msgstr "Menara Tembok Pelindung Kepung"
 
 msgid "Turris Circummūnītiōnis"
-msgstr "Turris Suparparmūnītiōnis"
+msgstr "तुर्रिस सिर्कुम्मूनितिओनिस"
 
 msgid "Equīle"
-msgstr "Equīle"
+msgstr "एक्विले"
 
 msgid "Receptāculum"
 msgstr "Ռեսեպտակուլում"
@@ -1114,7 +1154,7 @@ msgid "TempleOfVesta"
 msgstr "Tempel der Vesta"
 
 msgid "Tabernāculum"
-msgstr "Տաբերնակուլում"
+msgstr "Tabernacculum"
 
 msgid "A temporary shelter for soldiers."
 msgstr "Ein vorübergehender Unterschlupf für Soldaten."
@@ -1134,7 +1174,7 @@ msgstr ""
 "ranntair agad fhèin."
 
 msgid "Aedēs Iovis Optimi Maximi"
-msgstr "Աեդես լովիս Օպտիմի Մաքսիմի"
+msgstr "एदेस इओविस ओप्तिमी माक्सिमी"
 
 msgid "Hieron tou Apollōnos Pythiou"
 msgstr "Hieron tou Apollōnos Pythiou"
@@ -1145,8 +1185,11 @@ msgstr "Colbh-thrannsa"
 msgid "Corinthian Colonnade"
 msgstr "Colbh-thrannsa Choirinteach"
 
+msgid "Henge"
+msgstr "Cromlech"
+
 msgid "Bǎotǎ"
-msgstr "Bǎotǎ"
+msgstr "Bảo Tháp"
 
 msgid "Sanctuary Kiosk"
 msgstr "Verkaufsstand im Heiligtum"
@@ -1157,17 +1200,20 @@ msgstr "Chrám"
 msgid "Aedēs Sanitatem"
 msgstr "Ιερό της  Πνευματικής Υγείας"
 
+msgid "Fire Temple"
+msgstr "Tempio del Fuoco"
+
 msgid "Spartan Senate"
 msgstr "Senatus Lacedaemonius"
 
 msgid "Gerousia"
 msgstr "مجلس بزرگان"
 
-msgid "Train Heroes."
-msgstr "Heroes perwerde dikin."
+msgid "Research technologies."
+msgstr "Tecnoloxías de investigación."
 
 msgid "\\\"Persian\\\" Stoa"
-msgstr "\\\" Persian Walking "
+msgstr "\\ \"Персийски\\ \" Стоа"
 
 msgid "Stoa Persikē"
 msgstr "Stoa Persikē (Stoa Perska)"
@@ -1177,6 +1223,9 @@ msgstr "Στρατιωτική Αίθουσα Συσσιτίου"
 
 msgid "Syssition"
 msgstr "Gran comedor"
+
+msgid "Train Champions and Heroes."
+msgstr "Позволяет обучать гвардейцев и героев."
 
 msgid "Syssiton"
 msgstr "Szüssziton"
@@ -1218,7 +1267,7 @@ msgid "Bedouin Tent"
 msgstr "Kanpadenda Beduindarra"
 
 msgid "Desert Army Tent"
-msgstr "Tienda de campaña del desierto"
+msgstr "Tenda do Exército para o Deserto"
 
 msgid "Macedonian Army Tent"
 msgstr "Makedonialainen armeijan teltta"
@@ -1462,11 +1511,17 @@ msgstr "ციხე-სიმაგრე"
 msgid "Garrison Soldiers for additional arrows."
 msgstr "Cuir saighdearan ’nan gearastan ann airson barrachd shaighdean."
 
+msgid "Kennel"
+msgstr "Sklonište za psa."
+
+msgid "Train War Dogs."
+msgstr "Adiestra perros de combate."
+
 msgid "Practice Range"
 msgstr "Exercitant artes telorum."
 
 msgid "Train Ranged Infantry and research technologies."
-msgstr "Kouluta etäältä taistelevaa jalkaväkeä ja tutki niihin liittyviä teknologioita."
+msgstr "Adestrar Infantería de Lanzadores a Distancia e investigar tecnoloxías relacionadas."
 
 msgid "Range"
 msgstr "Camp d'entrenament"
@@ -1496,8 +1551,8 @@ msgstr "Campo de cultivo"
 
 msgid "Harvest grain for food. Each subsequent gatherer works less efficiently."
 msgstr ""
-"Bailigh gráinne agus faigh bia. Oibríonn gach bailitheoir ina dhiaidh sin níos lú ná an"
-" bailitheoir roimhe."
+"Colhe os cereais para obter alimentos. Cada recoletor adicional a trabalhar neste campo"
+" trabalha de forma menos eficiente."
 
 msgid "Special Structure"
 msgstr "Structure spécifique"
@@ -1507,14 +1562,6 @@ msgstr "Amphitheatrum"
 
 msgid "Library"
 msgstr "Bibliothèque"
-
-msgid "Rotary Mill"
-msgstr "Мельница на животной тяге"
-
-msgid "Dropsite for harvested Food. Capture one of these to increase nearby food production."
-msgstr ""
-"Almacén para la comida recolectada. Captura uno de ellos para incrementar la producción"
-" de comida en la zona."
 
 msgid "Theater"
 msgstr "Taigh-cluiche"

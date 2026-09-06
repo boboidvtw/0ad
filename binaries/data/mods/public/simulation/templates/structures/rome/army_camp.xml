@@ -51,7 +51,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Square width="40.0" depth="40.0"/>
+    <Square width="37.0" depth="42.0"/>
     <Height>12.0</Height>
   </Footprint>
   <GarrisonHolder>
@@ -70,7 +70,7 @@
     <Civ>rome</Civ>
     <GenericName>Army Camp</GenericName>
     <SpecificName>Castra</SpecificName>
-    <Tooltip>Build in neutral or enemy territory. Train Advanced Melee Infantry. Construct Rams. Garrison Soldiers for additional arrows.</Tooltip>
+    <Tooltip>Build in neutral or enemy territory. Train Advanced Melee Infantry and Marian Legionaries. Construct Rams. Garrison Soldiers for additional arrows.</Tooltip>
     <Classes datatype="tokens">ConquestCritical CivSpecific</Classes>
     <VisibleClasses datatype="tokens">Town ArmyCamp</VisibleClasses>
     <Icon>structures/roman_camp.png</Icon>
@@ -83,7 +83,7 @@
     <stone>30</stone>
   </Loot>
   <Obstruction>
-    <Static width="36.0" depth="36.0"/>
+    <Static width="35.0" depth="40.0"/>
   </Obstruction>
   <ProductionQueue/>
   <Resistance>
@@ -103,9 +103,7 @@
       <attack_impact_ranged>attack/impact/arrow_impact.xml</attack_impact_ranged>
     </SoundGroups>
   </Sound>
-  <TerritoryDecay>
-    <DecayRate op="mul">2</DecayRate>
-  </TerritoryDecay>
+  <TerritoryDecay disable=""/>
   <Trainer>
     <BatchTimeModifier>0.7</BatchTimeModifier>
     <Entities datatype="tokens">
@@ -113,6 +111,8 @@
       units/{civ}/infantry_swordsman_a
       units/{civ}/infantry_spearman_a
       units/{civ}/infantry_pikeman_a
+      units/{civ}/infantry_legionary
+      units/{civ}/infantry_lanciarius
       units/{civ}/siege_ram
     </Entities>
   </Trainer>

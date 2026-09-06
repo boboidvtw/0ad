@@ -1,70 +1,78 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2022 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# A L
-# Aldicek
-# Alex Mayr
-# Alex Oneill
-# Wuzzy
-# 3261a07739204bf5849eea93616073d1_53c6965
-# Ankomias
-# Artur Epp
-# azrdev
-# Benjamin Seipel
-# Candy_man
-# chaosville
-# cledge
-# 473a26a63eabb3943530c47ac45cdd62_5ad55e0
-# xtother90
-# 0783ceb0abad32bf6a5d397ceffe5799
-# Enrico
-# Fabian Gref
-# Fesa
-# Hedaja
-# hunzel
-# Jakob
-# JeHathor
-# ... ...
-# jonnius
-# santa41116
-# Latein Lebt
-# leper
-# Luis W.
-# Mansent
-# Marcel Haring
-# Martin H
-# mathias.n.graf
-# Michał Trzebiatowski
-# nylki
-# Patremus
-# 820324eb4225977345186c7a0414bab6_b7d8beb
-# pointhi
-# raymond_de
-# Raymond Vetter
-# sdos77
-# Sebastian Goebel
-# sshmedom
-# Stefan Niedermann
-# c859c7ae9b035eefe3392e2c59500e49
-# 041353ddd70f6e53ac2b85d9f2bd6bb6_796a805
-# Talani
-# Thelxinoe
-# these
-# 2e0b287a42a58fac8b9e8dabb13e2828_72a3e40
-# tuxylord
-# wilhelm3
-# Xaver
-# b5538810274b9d784a7861c173b0cd9e_ec47183
-# YSelfTool
-# Yves_G
+# A L, 2016
+# Aldicek, 2014
+# Alex Mayr, 2015
+# Alex Oneill, 2020
+# Wuzzy, 2016-2018
+# 3261a07739204bf5849eea93616073d1_53c6965, 2013
+# Ankomias, 2014
+# Artur Epp, 2014
+# azrdev, 2014
+# Benjamin Seipel, 2020
+# Candy_man, 2014
+# chaosville, 2013
+# cledge, 2014
+# Daniel Roschka, 2024
+# 473a26a63eabb3943530c47ac45cdd62_5ad55e0, 2015
+# xtother90, 2019-2022
+# 0783ceb0abad32bf6a5d397ceffe5799, 2014
+# Enrico, 2013
+# Evan Kramer, 2024
+# Fabian Gref, 2017
+# Fesa, 2013
+# Hedaja, 2014
+# hunzel, 2014
+# Jakob, 2014
+# JeHathor, 2018
+# ... ..., 2017
+# jonnius, 2014
+# feb9b46c32de1acddf2e8d064e68546b_96c1829, 2014
+# Latein Lebt, 2022
+# leper, 2014-2016
+# Luis W., 2019
+# Mansent, 2013
+# Marcel Haring, 2013-2014
+# Marcel Mustermann, 2023
+# Martin H, 2020
+# mathias.n.graf, 2013
+# Michał Trzebiatowski, 2020
+# Moritz Ewert, 2023
+# nylki, 2013
+# Patremus, 2014
+# 820324eb4225977345186c7a0414bab6_b7d8beb, 2014
+# pointhi, 2014
+# raymond_de, 2014
+# Raymond Vetter, 2014
+# Raymond Vetter, 2014,2016
+# santa41116, 2014
+# sdos77, 2014
+# Sebastian Goebel, 2013
+# sshmedom, 2014
+# Stefan Niedermann, 2014
+# c859c7ae9b035eefe3392e2c59500e49, 2014
+# 041353ddd70f6e53ac2b85d9f2bd6bb6_796a805, 2014
+# Talani, 2014
+# Thelxinoe, 2014
+# these, 2014
+# 2e0b287a42a58fac8b9e8dabb13e2828_72a3e40, 2015
+# tuxylord, 2014
+# wilhelm3, 2014
+# Xaver, 2013
+# xtother90, 2014-2017
+# b5538810274b9d784a7861c173b0cd9e_ec47183, 2014
+# xtother90, 2013
+# YSelfTool, 2017
+# Yves_G, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2022-09-12 09:35+0000\n"
+"POT-Creation-Date: 2024-07-26 07:08+0000\n"
 "PO-Revision-Date: 2014-06-19 17:44+0000\n"
-"Last-Translator: Latein Lebt, 2022\n"
+"Last-Translator: Daniel Roschka, 2024\n"
 "Language-Team: German (http://app.transifex.com/wildfire-games/0ad/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -72,961 +80,966 @@ msgstr ""
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: simulation/data/civs/athen.jsonAINames[0]
-msgid "Themistocles"
-msgstr "Themistokles"
+#: simulation/data/civs/athen.json
+msgid "Silver Owls"
+msgstr "Silbereulen"
 
-#: simulation/data/civs/athen.jsonAINames[10]
-msgid "Cleon"
-msgstr "Kleon"
-
-#: simulation/data/civs/athen.jsonAINames[11]
-msgid "Cleophon"
-msgstr "Kleophon"
-
-#: simulation/data/civs/athen.jsonAINames[12]
-msgid "Thrasybulus"
-msgstr "Thrasybulos"
-
-#: simulation/data/civs/athen.jsonAINames[13]
-msgid "Iphicrates"
-msgstr "Iphikrates"
-
-#: simulation/data/civs/athen.jsonAINames[14]
-msgid "Demosthenes"
-msgstr "Demosthenes"
-
-#: simulation/data/civs/athen.jsonAINames[1]
-msgid "Pericles"
-msgstr "Perikles"
-
-#: simulation/data/civs/athen.jsonAINames[2]
-msgid "Cimon"
-msgstr "Kimon"
-
-#: simulation/data/civs/athen.jsonAINames[3]
-msgid "Aristides"
-msgstr "Aristides"
-
-#: simulation/data/civs/athen.jsonAINames[4]
-msgid "Xenophon"
-msgstr "Xenophon"
-
-#: simulation/data/civs/athen.jsonAINames[5]
-msgid "Hippias"
-msgstr "Hippias"
-
-#: simulation/data/civs/athen.jsonAINames[6]
-msgid "Cleisthenes"
-msgstr "Kleisthenes"
-
-#: simulation/data/civs/athen.jsonAINames[7]
-msgid "Thucydides"
-msgstr "Thukydides"
-
-#: simulation/data/civs/athen.jsonAINames[8]
-msgid "Alcibiades"
-msgstr "Alkibiades"
-
-#: simulation/data/civs/athen.jsonAINames[9]
-msgid "Miltiades"
-msgstr "Miltiades"
-
-#: simulation/data/civs/athen.jsonCivBonuses[0].Description
-msgid "Workers +10% metal gather rate per phase advance."
-msgstr "Arbeiter +10 % Metallsammelrate pro Phasenaufstieg."
-
-#: simulation/data/civs/athen.jsonCivBonuses[0].History
+#: simulation/data/civs/athen.json
 msgid ""
 "The mines at Laureion in Attica provided Athens with a wealth of silver from"
 " which to mint her famous and highly prized coin, The Athenian Owl."
 msgstr "Durch die Minen von Laureion in Attika hatten die Athener Zugriff auf Unmengen von Silber, welches sie zur Prägung ihrer bekannten und hochwertigen Münzen, der Athenischen Eule, verwendeten."
 
-#: simulation/data/civs/athen.jsonCivBonuses[0].Name
-msgid "Silver Owls"
-msgstr "Silbereulen"
+#: simulation/data/civs/athen.json
+msgid "Workers +10% metal gather rate per phase advance."
+msgstr "Arbeiter +10 % Metallsammelrate mit jeder Phase."
 
-#: simulation/data/civs/brit.jsonAINames[0]
-msgid "Karatakos"
-msgstr "Karatakos"
+#: simulation/data/civs/athen.json
+msgid "Epilektoi Infantry"
+msgstr "Elitehopliten"
 
-#: simulation/data/civs/brit.jsonAINames[10]
-msgid "Vosenius"
-msgstr "Vosenius"
+#: simulation/data/civs/athen.json
+msgid ""
+"The best of the hoplites were chosen to form a group of elite professional "
+"soldiers."
+msgstr "Die besten Hopliten wurden ausgewählt, um eine Gruppe von Elite-Berufssoldaten zu bilden.\n "
 
-#: simulation/data/civs/brit.jsonAINames[1]
-msgid "Kunobelinos"
-msgstr "Cunobelinus"
+#: simulation/data/civs/athen.json
+msgid "Elite Hoplites can promote to Champion Spearmen."
+msgstr "Elite-Hopliten können zu Gardespeerträgern aufgewertet werden."
 
-#: simulation/data/civs/brit.jsonAINames[2]
-msgid "Boudicca"
-msgstr "Boudicca"
+#: simulation/data/civs/athen.json
+msgid "Cimon"
+msgstr "Kimon"
 
-#: simulation/data/civs/brit.jsonAINames[3]
+#: simulation/data/civs/athen.json
+msgid "Aristides"
+msgstr "Aristides"
+
+#: simulation/data/civs/athen.json
+msgid "Xenophon"
+msgstr "Xenophon"
+
+#: simulation/data/civs/athen.json
+msgid "Hippias"
+msgstr "Hippias"
+
+#: simulation/data/civs/athen.json
+msgid "Cleisthenes"
+msgstr "Kleisthenes"
+
+#: simulation/data/civs/athen.json
+msgid "Thucydides"
+msgstr "Thukydides"
+
+#: simulation/data/civs/athen.json
+msgid "Alcibiades"
+msgstr "Alkibiades"
+
+#: simulation/data/civs/athen.json
+msgid "Miltiades"
+msgstr "Miltiades"
+
+#: simulation/data/civs/athen.json
+msgid "Cleon"
+msgstr "Kleon"
+
+#: simulation/data/civs/athen.json
+msgid "Cleophon"
+msgstr "Kleophon"
+
+#: simulation/data/civs/athen.json
+msgid "Thrasybulus"
+msgstr "Thrasybulos"
+
+#: simulation/data/civs/athen.json
+msgid "Demosthenes"
+msgstr "Demosthenes"
+
+#: simulation/data/civs/brit.json
+msgid "Woad Warriors"
+msgstr "Berserker"
+
+#: simulation/data/civs/brit.json
+msgid ""
+"Britons paint their bodies with Woad, which produces a blue color and gives "
+"them a fiercesome appearance in battle."
+msgstr "Britonnen bemalen ihre Körper mit Färberwaid, welcher eine blaue Farbe produziert und Ihnen in der Schlacht ein erbittertes Aussehen gibt."
+
+#: simulation/data/civs/brit.json
+msgid "All Infantry Units +5% movement speed, and gain +1 loot taking."
+msgstr "+5 % Bewegungsgeschwindigkeit für alle Infanterie-Einheiten und +1 Beuteaufnahme"
+
+#: simulation/data/civs/brit.json
 msgid "Prasutagus"
 msgstr "Prasutagus"
 
-#: simulation/data/civs/brit.jsonAINames[4]
+#: simulation/data/civs/brit.json
 msgid "Venutius"
 msgstr "Venutius"
 
-#: simulation/data/civs/brit.jsonAINames[5]
+#: simulation/data/civs/brit.json
 msgid "Cogidubnus"
 msgstr "Cogidubnus"
 
-#: simulation/data/civs/brit.jsonAINames[6]
+#: simulation/data/civs/brit.json
 msgid "Commius"
 msgstr "Commius"
 
-#: simulation/data/civs/brit.jsonAINames[7]
+#: simulation/data/civs/brit.json
 msgid "Comux"
 msgstr "Comux"
 
-#: simulation/data/civs/brit.jsonAINames[8]
+#: simulation/data/civs/brit.json
 msgid "Adminius"
 msgstr "Adminius"
 
-#: simulation/data/civs/brit.jsonAINames[9]
+#: simulation/data/civs/brit.json
 msgid "Dubnovellaunus"
 msgstr "Dubnovellaunus"
 
-#: simulation/data/civs/cart.jsonAINames[0]
-msgid "Hannibal Barca"
-msgstr "Hannibal Barkas"
+#: simulation/data/civs/brit.json
+msgid "Vosenius"
+msgstr "Vosenius"
 
-#: simulation/data/civs/cart.jsonAINames[10]
-msgid "Hampsicora"
-msgstr "Hampsicora"
+#: simulation/data/civs/brit.json simulation/data/civs/gaul.json
+msgid "Deas Celtica"
+msgstr "Deas Celtica"
 
-#: simulation/data/civs/cart.jsonAINames[11]
-msgid "Hannibal Gisco"
-msgstr "Hannibal Gisko"
+#: simulation/data/civs/brit.json simulation/data/civs/gaul.json
+msgid "Celtic religion and druidry inspired their warlike mindset."
+msgstr "Die keltische Religion und das Druidentum inspirierten ihre kriegerische Einstellung."
 
-#: simulation/data/civs/cart.jsonAINames[12]
-msgid "Dido"
-msgstr "Dido"
+#: simulation/data/civs/brit.json simulation/data/civs/gaul.json
+msgid "Druids increase attack rates of soldiers near them by 5%."
+msgstr "Druiden erhöhen die Angriffsrate von Soldaten in ihrer Nähe um 5 %."
 
-#: simulation/data/civs/cart.jsonAINames[13]
-msgid "Xanthippus"
-msgstr "Xanthippos"
-
-#: simulation/data/civs/cart.jsonAINames[14]
-msgid "Himilco Phameas"
-msgstr "Himilco Phameas"
-
-#: simulation/data/civs/cart.jsonAINames[15]
-msgid "Hasdrubal the Boetharch"
-msgstr "Hasdrubal der Boetharch"
-
-#: simulation/data/civs/cart.jsonAINames[1]
-msgid "Hamilcar Barca"
-msgstr "Hamilkar Barkas"
-
-#: simulation/data/civs/cart.jsonAINames[2]
-msgid "Hasdrubal Barca"
-msgstr "Hasdrubal Barkas"
-
-#: simulation/data/civs/cart.jsonAINames[3]
-msgid "Hasdrubal Gisco"
-msgstr "Hasdrubal, Sohn Gisgos"
-
-#: simulation/data/civs/cart.jsonAINames[4]
-msgid "Hanno the Elder"
-msgstr "Hanno der Älteste"
-
-#: simulation/data/civs/cart.jsonAINames[5]
-msgid "Maharbal"
-msgstr "Maharbal"
-
-#: simulation/data/civs/cart.jsonAINames[6]
-msgid "Mago Barca"
-msgstr "Mago Barkas"
-
-#: simulation/data/civs/cart.jsonAINames[7]
-msgid "Hasdrubal the Fair"
-msgstr "Hasdrubal Cartagena"
-
-#: simulation/data/civs/cart.jsonAINames[8]
-msgid "Hanno the Great"
-msgstr "Hanno der Große"
-
-#: simulation/data/civs/cart.jsonAINames[9]
-msgid "Himilco"
-msgstr "Himilkon"
-
-#: simulation/data/civs/cart.jsonCivBonuses[0].Description
-msgid "Merchant Ships +25% trade gain."
-msgstr "Handelsschiffe +25 % Handelsertrag."
-
-#: simulation/data/civs/cart.jsonCivBonuses[0].Name
+#: simulation/data/civs/cart.json
 msgid "Commercial Acumen"
 msgstr "Geschäftstüchtigkeit"
 
-#: simulation/data/civs/cart.jsonCivBonuses[1].Description
-msgid "Docks and Markets +10% international trade bonus."
-msgstr "Häfen und Märkte +10 % internationaler Handelsbonus."
+#: simulation/data/civs/cart.json
+msgid "Merchant Ships +25% trade gain."
+msgstr "Handelsschiffe +25 % Handelsertrag."
 
-#: simulation/data/civs/cart.jsonCivBonuses[1].Name
+#: simulation/data/civs/cart.json
 msgid "Desirable Products"
 msgstr "Begehrenswerte Waren"
 
-#: simulation/data/civs/gaul.jsonAINames[0]
-msgid "Viridomarus"
-msgstr "Viridomarus"
+#: simulation/data/civs/cart.json
+msgid "Docks and Markets +10% international trade bonus."
+msgstr "Häfen und Märkte +10 % internationaler Handelsbonus."
 
-#: simulation/data/civs/gaul.jsonAINames[1]
-msgid "Brennus"
-msgstr "Brennus"
+#: simulation/data/civs/cart.json
+msgid "Hasdrubal Barca"
+msgstr "Hasdrubal, Sohn Barkas"
 
-#: simulation/data/civs/gaul.jsonAINames[2]
+#: simulation/data/civs/cart.json
+msgid "Hasdrubal Gisco"
+msgstr "Hasdrubal, Sohn Gisgos"
+
+#: simulation/data/civs/cart.json
+msgid "Hanno the Elder"
+msgstr "Hanno der Älteste"
+
+#: simulation/data/civs/cart.json
+msgid "Mago Barca"
+msgstr "Mago Barkas"
+
+#: simulation/data/civs/cart.json
+msgid "Hasdrubal the Fair"
+msgstr "Hasdrubal Cartagena"
+
+#: simulation/data/civs/cart.json
+msgid "Hanno the Great"
+msgstr "Hanno der Große"
+
+#: simulation/data/civs/cart.json
+msgid "Himilco"
+msgstr "Himilkon"
+
+#: simulation/data/civs/cart.json
+msgid "Hampsicora"
+msgstr "Hampsicora"
+
+#: simulation/data/civs/cart.json
+msgid "Hannibal Gisco"
+msgstr "Hannibal Gisko"
+
+#: simulation/data/civs/cart.json
+msgid "Dido"
+msgstr "Dido"
+
+#: simulation/data/civs/cart.json
+msgid "Xanthippus"
+msgstr "Xanthippos"
+
+#: simulation/data/civs/cart.json
+msgid "Himilco Phameas"
+msgstr "Himilco Phameas"
+
+#: simulation/data/civs/cart.json
+msgid "Hasdrubal the Boetharch"
+msgstr "Hasdrubal der Boetharch"
+
+#: simulation/data/civs/gaul.json
 msgid "Cativolcus"
 msgstr "Cativolcus"
 
-#: simulation/data/civs/gaul.jsonAINames[3]
+#: simulation/data/civs/gaul.json
 msgid "Cingetorix"
 msgstr "Cingetorix"
 
-#: simulation/data/civs/gaul.jsonAINames[4]
-msgid "Vercingetorix"
-msgstr "Vercingetorix"
-
-#: simulation/data/civs/gaul.jsonAINames[5]
+#: simulation/data/civs/gaul.json
 msgid "Divico"
 msgstr "Divico"
 
-#: simulation/data/civs/gaul.jsonAINames[6]
+#: simulation/data/civs/gaul.json
 msgid "Ambiorix"
 msgstr "Ambiorix"
 
-#: simulation/data/civs/gaul.jsonAINames[7]
+#: simulation/data/civs/gaul.json
 msgid "Liscus"
 msgstr "Liscus"
 
-#: simulation/data/civs/gaul.jsonAINames[8]
+#: simulation/data/civs/gaul.json
+msgid "Orgetorix"
+msgstr "Orgetorix"
+
+#: simulation/data/civs/gaul.json
 msgid "Valetiacus"
 msgstr "Valetiacus"
 
-#: simulation/data/civs/gaul.jsonAINames[9]
+#: simulation/data/civs/gaul.json
 msgid "Viridovix"
 msgstr "Viridovix"
 
-#: simulation/data/civs/han.jsonAINames[0]
+#: simulation/data/civs/han.json
 msgid "Liu Ying"
 msgstr "Liu Ying"
 
-#: simulation/data/civs/han.jsonAINames[10]
-msgid "Liu Ao"
-msgstr "Liu Ao"
-
-#: simulation/data/civs/han.jsonAINames[11]
-msgid "Liu Xin"
-msgstr "Liu Xin"
-
-#: simulation/data/civs/han.jsonAINames[12]
-msgid "Liu Kan"
-msgstr "Liu Kan"
-
-#: simulation/data/civs/han.jsonAINames[13]
-msgid "Liu Xuan"
-msgstr "Liu Xuan"
-
-#: simulation/data/civs/han.jsonAINames[14]
-msgid "Liu Xiu"
-msgstr "Liu Xiu"
-
-#: simulation/data/civs/han.jsonAINames[15]
-msgid "Liu Zhuang"
-msgstr "Liu Zhuang"
-
-#: simulation/data/civs/han.jsonAINames[16]
-msgid "Liu Da"
-msgstr "Liu Da"
-
-#: simulation/data/civs/han.jsonAINames[17]
-msgid "Liu Zhao"
-msgstr "Liu Zhao"
-
-#: simulation/data/civs/han.jsonAINames[18]
-msgid "Liu Long"
-msgstr "Liu Long"
-
-#: simulation/data/civs/han.jsonAINames[19]
-msgid "Liu Hu"
-msgstr "Liu Hu"
-
-#: simulation/data/civs/han.jsonAINames[1]
+#: simulation/data/civs/han.json
 msgid "Liu Gong"
 msgstr "Liu Gong"
 
-#: simulation/data/civs/han.jsonAINames[20]
-msgid "Liu Yi"
-msgstr "Liu Yi"
-
-#: simulation/data/civs/han.jsonAINames[21]
-msgid "Liu Bao"
-msgstr "Liu Bao"
-
-#: simulation/data/civs/han.jsonAINames[22]
-msgid "Liu Bing"
-msgstr "Liu Bing"
-
-#: simulation/data/civs/han.jsonAINames[23]
-msgid "Liu Zuan"
-msgstr "Liu Zuan"
-
-#: simulation/data/civs/han.jsonAINames[24]
-msgid "Liu Zhi"
-msgstr "Liu Zhi"
-
-#: simulation/data/civs/han.jsonAINames[26]
-msgid "Liu Bian"
-msgstr "Liu Bian"
-
-#: simulation/data/civs/han.jsonAINames[27]
-msgid "Liu Xie"
-msgstr "Liu Xie"
-
-#: simulation/data/civs/han.jsonAINames[25]
-#: simulation/data/civs/han.jsonAINames[2]
-msgid "Liu Hong"
-msgstr "Liu Hong"
-
-#: simulation/data/civs/han.jsonAINames[3]
+#: simulation/data/civs/han.json
 msgid "Liu Heng"
 msgstr "Liu Heng"
 
-#: simulation/data/civs/han.jsonAINames[4]
+#: simulation/data/civs/han.json
 msgid "Liu Qi"
 msgstr "Liu Qi"
 
-#: simulation/data/civs/han.jsonAINames[5]
+#: simulation/data/civs/han.json
 msgid "Liu Che"
 msgstr "Liu Che"
 
-#: simulation/data/civs/han.jsonAINames[6]
+#: simulation/data/civs/han.json
 msgid "Liu Fuling"
 msgstr "Liu Fuling"
 
-#: simulation/data/civs/han.jsonAINames[7]
+#: simulation/data/civs/han.json
 msgid "Liu He"
 msgstr "Liu He"
 
-#: simulation/data/civs/han.jsonAINames[8]
+#: simulation/data/civs/han.json
 msgid "Liu Bingyi"
 msgstr "Liu Bingyi"
 
-#: simulation/data/civs/han.jsonAINames[9]
+#: simulation/data/civs/han.json
 msgid "Liu Shi"
 msgstr "Liu Shi"
 
-#: simulation/data/civs/iber.jsonAINames[0]
-#: simulation/data/civs/iber.jsonAINames[1]
-msgid "Viriato"
-msgstr "Viriathus"
+#: simulation/data/civs/han.json
+msgid "Liu Ao"
+msgstr "Liu Ao"
 
-#: simulation/data/civs/iber.jsonAINames[2]
-msgid "Karos"
-msgstr "Karos"
+#: simulation/data/civs/han.json
+msgid "Liu Xin"
+msgstr "Liu Xin"
 
-#: simulation/data/civs/iber.jsonAINames[3]
-msgid "Indibil"
-msgstr "Indibilis"
+#: simulation/data/civs/han.json
+msgid "Liu Kan"
+msgstr "Liu Kan"
 
-#: simulation/data/civs/iber.jsonAINames[4]
-msgid "Audax"
-msgstr "Audax"
+#: simulation/data/civs/han.json
+msgid "Liu Xuan"
+msgstr "Liu Xuan"
 
-#: simulation/data/civs/iber.jsonAINames[5]
-msgid "Ditalcus"
-msgstr "Ditalcus"
+#: simulation/data/civs/han.json
+msgid "Liu Xiu"
+msgstr "Liu Xiu"
 
-#: simulation/data/civs/iber.jsonAINames[6]
-msgid "Minurus"
-msgstr "Minurus"
+#: simulation/data/civs/han.json
+msgid "Liu Zhuang"
+msgstr "Liu Zhuang"
 
-#: simulation/data/civs/iber.jsonAINames[7]
-msgid "Tautalus"
-msgstr "Tautalus"
+#: simulation/data/civs/han.json
+msgid "Liu Da"
+msgstr "Liu Da"
 
-#: simulation/data/civs/iber.jsonCivBonuses[0].Description
-msgid "Iberians start with City Walls around their base on most maps."
-msgstr "Iberer beginnen auf den meisten Karten mit Stadtmauern rund um ihre Basis"
+#: simulation/data/civs/han.json
+msgid "Liu Zhao"
+msgstr "Liu Zhao"
 
-#: simulation/data/civs/iber.jsonCivBonuses[0].History
+#: simulation/data/civs/han.json
+msgid "Liu Long"
+msgstr "Liu Long"
+
+#: simulation/data/civs/han.json
+msgid "Liu Hu"
+msgstr "Liu Hu"
+
+#: simulation/data/civs/han.json
+msgid "Liu Yi"
+msgstr "Liu Yi"
+
+#: simulation/data/civs/han.json
+msgid "Liu Bao"
+msgstr "Liu Bao"
+
+#: simulation/data/civs/han.json
+msgid "Liu Bing"
+msgstr "Liu Bing"
+
+#: simulation/data/civs/han.json
+msgid "Liu Zuan"
+msgstr "Liu Zuan"
+
+#: simulation/data/civs/han.json
+msgid "Liu Zhi"
+msgstr "Liu Zhi"
+
+#: simulation/data/civs/han.json
+msgid "Liu Bian"
+msgstr "Liu Bian"
+
+#: simulation/data/civs/han.json
+msgid "Liu Xie"
+msgstr "Liu Xie"
+
+#: simulation/data/civs/han.json
+msgid "Liu Hong"
+msgstr "Liu Hong"
+
+#: simulation/data/civs/iber.json
+msgid "Starting Walls"
+msgstr "Mauern beim Start"
+
+#: simulation/data/civs/iber.json
 msgid ""
 "With exception to alluvial plains and river valleys, stone is abundant in "
 "the Iberian Peninsula and was greatly used in construction of structures of "
 "all types."
-msgstr "Auf der iberischen Halbinsel gibt es mit Ausnahme von Schwemmgland und Flusstälern überall reiche Vorkommen an Naturstein, welcher bei der Errichtung von Bauwerken jeglicher Art Verwendung fand."
+msgstr "Auf der iberischen Halbinsel gibt es mit Ausnahme von Schwemmland und Flusstälern überall reiche Vorkommen an Naturstein, welcher bei der Errichtung von Bauwerken jeglicher Art Verwendung fand."
 
-#: simulation/data/civs/iber.jsonCivBonuses[0].Name
-msgid "Starting Walls"
-msgstr "Mauern beim Start"
+#: simulation/data/civs/iber.json
+msgid "Iberians start with City Walls around their base on most maps."
+msgstr "Iberer beginnen auf den meisten Karten mit Stadtmauern rund um ihre Basis."
 
-#: simulation/data/civs/iber.jsonCivBonuses[1].Description
-msgid ""
-"Stone Towers −50% wood cost, +150% stone cost, +33% build time, +60% health,"
-" +3 garrison capacity, and +1 default arrow count."
-msgstr "Steintürme −50 % Holzkosten, +150 % Steinkosten, +33 Bauzeit, +60 % Gesundheit, +3 Garnison und +1 Pfeil standardmäßig."
-
-#: simulation/data/civs/iber.jsonCivBonuses[1].Name
+#: simulation/data/civs/iber.json
 msgid "Massive Towers"
 msgstr "Massive Türme"
 
-#: simulation/data/civs/kush.jsonAINames[0]
+#: simulation/data/civs/iber.json
+msgid ""
+"Stone Towers −50% wood cost, +150% stone cost, +33% build time, +60% health,"
+" +3 garrison capacity, and +1 default arrow count."
+msgstr "Steintürme −50 % Holzkosten, +150 % Steinkosten, +33 % Bauzeit, +60 % Gesundheit, +3 Einquartierungskapazität und +1 Pfeil standardmäßig."
+
+#: simulation/data/civs/iber.json
+msgid "Audax"
+msgstr "Audax"
+
+#: simulation/data/civs/iber.json
+msgid "Calcus"
+msgstr "Calcus"
+
+#: simulation/data/civs/iber.json
+msgid "Ditalcus"
+msgstr "Ditalcus"
+
+#: simulation/data/civs/iber.json
+msgid "Minurus"
+msgstr "Minurus"
+
+#: simulation/data/civs/iber.json
+msgid "Olyndicus"
+msgstr "Olyndicus"
+
+#: simulation/data/civs/iber.json
+msgid "Orison"
+msgstr "Orison"
+
+#: simulation/data/civs/iber.json
+msgid "Tanginus"
+msgstr "Tanginus"
+
+#: simulation/data/civs/iber.json
+msgid "Tautalus"
+msgstr "Tautalus"
+
+#: simulation/data/civs/kush.json
 msgid "Kashta"
 msgstr "Kaschta"
 
-#: simulation/data/civs/kush.jsonAINames[10]
-msgid "Malewiebamani"
-msgstr "Malowijebamani"
-
-#: simulation/data/civs/kush.jsonAINames[11]
-msgid "Harsiotef"
-msgstr "Harsijotef"
-
-#: simulation/data/civs/kush.jsonAINames[12]
-msgid "Shanakdakhete"
-msgstr "Shanakdakheto"
-
-#: simulation/data/civs/kush.jsonAINames[13]
-msgid "Amanishakheto"
-msgstr "Amanischacheto"
-
-#: simulation/data/civs/kush.jsonAINames[1]
+#: simulation/data/civs/kush.json
 msgid "Alara"
 msgstr "Alara"
 
-#: simulation/data/civs/kush.jsonAINames[2]
+#: simulation/data/civs/kush.json
 msgid "Pebatjma"
 msgstr "Pebatjma"
 
-#: simulation/data/civs/kush.jsonAINames[3]
+#: simulation/data/civs/kush.json
 msgid "Shabaka"
 msgstr "Schabaka"
 
-#: simulation/data/civs/kush.jsonAINames[4]
+#: simulation/data/civs/kush.json
 msgid "Shebitku"
 msgstr "Schebitko"
 
-#: simulation/data/civs/kush.jsonAINames[5]
+#: simulation/data/civs/kush.json
 msgid "Qalhata"
 msgstr "Qalhata"
 
-#: simulation/data/civs/kush.jsonAINames[6]
+#: simulation/data/civs/kush.json
 msgid "Takahatenamun"
 msgstr "Takahatenamun"
 
-#: simulation/data/civs/kush.jsonAINames[7]
+#: simulation/data/civs/kush.json
 msgid "Tantamani"
 msgstr "Tanotamun"
 
-#: simulation/data/civs/kush.jsonAINames[8]
+#: simulation/data/civs/kush.json
 msgid "Atlanersa"
 msgstr "Atlanersa"
 
-#: simulation/data/civs/kush.jsonAINames[9]
+#: simulation/data/civs/kush.json
 msgid "Nasalsa"
 msgstr "Nasalsa"
 
-#: simulation/data/civs/kush.jsonCivBonuses[0].Description
-#: simulation/data/civs/pers.jsonCivBonuses[1].Description
-msgid "Battering Rams +20% attack damage and +2 garrison capacity."
-msgstr "Rammböcke +20 % Schaden und +2 Garnison."
+#: simulation/data/civs/kush.json
+msgid "Malewiebamani"
+msgstr "Malowijebamani"
 
-#: simulation/data/civs/kush.jsonCivBonuses[0].Name
-#: simulation/data/civs/pers.jsonCivBonuses[1].Name
+#: simulation/data/civs/kush.json
+msgid "Shanakdakhete"
+msgstr "Shanakdakheto"
+
+#: simulation/data/civs/kush.json
+msgid "Amanishakheto"
+msgstr "Amanischacheto"
+
+#: simulation/data/civs/kush.json simulation/data/civs/pers.json
 msgid "Large Rams"
-msgstr "Große Rammen"
+msgstr "Große Rammböcke"
 
-#: simulation/data/civs/mace.jsonAINames[0]
-msgid "Alexander the Great"
-msgstr "Alexander der Große"
+#: simulation/data/civs/kush.json simulation/data/civs/pers.json
+msgid "Battering Rams +20% attack damage and +2 garrison capacity."
+msgstr "Rammböcke +20 % Schaden und +2 Einquartierungskapazität."
 
-#: simulation/data/civs/mace.jsonAINames[10]
-msgid "Perseus"
-msgstr "Perseus"
-
-#: simulation/data/civs/mace.jsonAINames[11]
-msgid "Craterus"
-msgstr "Krateros"
-
-#: simulation/data/civs/mace.jsonAINames[12]
-msgid "Meleager"
-msgstr "Meleagros"
-
-#: simulation/data/civs/mace.jsonAINames[1]
-msgid "Philip II"
-msgstr "Philip II."
-
-#: simulation/data/civs/mace.jsonAINames[2]
+#: simulation/data/civs/mace.json
 msgid "Antipater"
 msgstr "Antipater"
 
-#: simulation/data/civs/mace.jsonAINames[3]
+#: simulation/data/civs/mace.json
 msgid "Philip IV"
 msgstr "Philipp IV."
 
-#: simulation/data/civs/mace.jsonAINames[4]
-#: simulation/data/civs/spart.jsonAINames[5]
-msgid "Lysander"
-msgstr "Lysander"
-
-#: simulation/data/civs/mace.jsonAINames[5]
+#: simulation/data/civs/mace.json
 msgid "Lysimachus"
 msgstr "Lysimachos"
 
-#: simulation/data/civs/mace.jsonAINames[6]
+#: simulation/data/civs/mace.json
 msgid "Pyrrhus of Epirus"
 msgstr "Pyrrhos I."
 
-#: simulation/data/civs/mace.jsonAINames[7]
+#: simulation/data/civs/mace.json
 msgid "Antigonus II Gonatas"
 msgstr "Antigonos II. Gonatas"
 
-#: simulation/data/civs/mace.jsonAINames[8]
+#: simulation/data/civs/mace.json
 msgid "Demetrius II Aetolicus"
 msgstr "Demetrios II. Aitolikos"
 
-#: simulation/data/civs/mace.jsonAINames[9]
+#: simulation/data/civs/mace.json
 msgid "Philip V"
 msgstr "Philip V."
 
-#: simulation/data/civs/maur.jsonAINames[0]
-msgid "Chandragupta Maurya"
-msgstr "Chandragupta Maurya"
+#: simulation/data/civs/mace.json
+msgid "Perseus"
+msgstr "Perseus"
 
-#: simulation/data/civs/maur.jsonAINames[1]
+#: simulation/data/civs/mace.json
+msgid "Craterus"
+msgstr "Krateros"
+
+#: simulation/data/civs/mace.json
+msgid "Meleager"
+msgstr "Meleagros"
+
+#: simulation/data/civs/mace.json simulation/data/civs/spart.json
+msgid "Lysander"
+msgstr "Lysander"
+
+#: simulation/data/civs/maur.json
 msgid "Bindusara Maurya"
 msgstr "Bindusara"
 
-#: simulation/data/civs/maur.jsonAINames[2]
-msgid "Ashoka the Great"
-msgstr "Ashoka der Große"
-
-#: simulation/data/civs/maur.jsonAINames[3]
-msgid "Dasharatha Maurya"
-msgstr "Dasharatha Maurya"
-
-#: simulation/data/civs/maur.jsonAINames[4]
-msgid "Samprati Maurya"
-msgstr "Samprati"
-
-#: simulation/data/civs/maur.jsonAINames[5]
-msgid "Shalishuka Maurya"
-msgstr "Shalishuka Maurya"
-
-#: simulation/data/civs/maur.jsonAINames[6]
-msgid "Devavarman Maurya"
-msgstr "Devadharama"
-
-#: simulation/data/civs/maur.jsonAINames[7]
-msgid "Shatadhanvan Maurya"
-msgstr "Shatadhanvan Maurya"
-
-#: simulation/data/civs/maur.jsonAINames[8]
+#: simulation/data/civs/maur.json
 msgid "Brihadratha Maurya"
 msgstr "Brihadratha"
 
-#: simulation/data/civs/pers.jsonAINames[0]
-msgid "Kurush II the Great"
-msgstr "Kyros der Große"
+#: simulation/data/civs/maur.json
+msgid "Dasharatha Maurya"
+msgstr "Dasharatha Maurya"
 
-#: simulation/data/civs/pers.jsonAINames[10]
-msgid "Haxamanish"
-msgstr "Haxamanish"
+#: simulation/data/civs/maur.json
+msgid "Devavarman Maurya"
+msgstr "Devadharama"
 
-#: simulation/data/civs/pers.jsonAINames[11]
-msgid "Xsayarsa II"
-msgstr "Xšayāršā II."
+#: simulation/data/civs/maur.json
+msgid "Kunala Maurya"
+msgstr "Kunala Maurya"
 
-#: simulation/data/civs/pers.jsonAINames[1]
-msgid "Darayavahush I"
-msgstr "Darayavahush I."
+#: simulation/data/civs/maur.json
+msgid "Samprati Maurya"
+msgstr "Samprati"
 
-#: simulation/data/civs/pers.jsonAINames[2]
-msgid "Cambyses II"
-msgstr "Kambyses II."
+#: simulation/data/civs/maur.json
+msgid "Shalishuka Maurya"
+msgstr "Shalishuka Maurya"
 
-#: simulation/data/civs/pers.jsonAINames[3]
-msgid "Bardiya"
-msgstr "Bardiya"
+#: simulation/data/civs/maur.json
+msgid "Shatadhanvan Maurya"
+msgstr "Shatadhanvan Maurya"
 
-#: simulation/data/civs/pers.jsonAINames[4]
-msgid "Xsayarsa I"
-msgstr "Xšayāršā I."
+#: simulation/data/civs/maur.json
+msgid "Tivala Maurya"
+msgstr "Tivala Maurya"
 
-#: simulation/data/civs/pers.jsonAINames[5]
-msgid "Artaxshacha I"
-msgstr "Artaxerxes I. Makrocheir"
-
-#: simulation/data/civs/pers.jsonAINames[6]
-msgid "Darayavahush II"
-msgstr "Darayavahush II."
-
-#: simulation/data/civs/pers.jsonAINames[7]
-msgid "Darayavahush III"
-msgstr "Darayavahush III."
-
-#: simulation/data/civs/pers.jsonAINames[8]
-msgid "Artaxshacha II"
-msgstr "Artaxerxes II. Mnemon"
-
-#: simulation/data/civs/pers.jsonAINames[9]
-msgid "Artaxshacha III"
-msgstr "Artaxerxes III. Ochos"
-
-#: simulation/data/civs/pers.jsonCivBonuses[0].Description
-msgid "Land Traders +25% trade gain."
-msgstr "Händler +25 % Handelsbonus"
-
-#: simulation/data/civs/pers.jsonCivBonuses[0].Name
+#: simulation/data/civs/pers.json
 msgid "Darics"
 msgstr "Dareikoi"
 
-#: simulation/data/civs/pers.jsonCivBonuses[2].Description
-msgid "Stable −10% batch training time per phase advance."
-msgstr "Stall −10 % Gruppenausbildungszeit pro Phasenaufstieg."
+#: simulation/data/civs/pers.json
+msgid "Land Traders +25% trade gain."
+msgstr "Händler +25 % Handelsbonus"
 
-#: simulation/data/civs/pers.jsonCivBonuses[2].History
-msgid "The Persians were known for their large cavalry contingent"
-msgstr "Die Perser waren für ihre großes Kavallerieaufgebot bekannt"
+#: simulation/data/civs/pers.json
+msgid "Times of War"
+msgstr "Kriegszustand"
 
-#: simulation/data/civs/pers.jsonCivBonuses[2].Name
-msgid "Time of War"
-msgstr "Kriegszeit"
+#: simulation/data/civs/pers.json
+msgid "The Persians were known for their large cavalry contingent."
+msgstr "Die Perser waren für ihre großen Kavallerie-Truppenkontingente bekannt."
 
-#: simulation/data/civs/ptol.jsonAINames[0]
-msgid "Ptolemy Soter"
-msgstr "Ptolemaios I. Soter"
+#: simulation/data/civs/pers.json
+msgid ""
+"The batch training time of units trained in Stables decreases each phase "
+"advance."
+msgstr "Die Gruppen-Ausbildungszeit für Einheiten in Ställen reduziert sich mit jeder Phase."
 
-#: simulation/data/civs/ptol.jsonAINames[10]
-msgid "Ptolemy Neos Philopater"
-msgstr "Ptolemaios IV. Philopator"
+#: simulation/data/civs/pers.json
+msgid "Satrapy Tribute"
+msgstr "Tribut der Satrapie"
 
-#: simulation/data/civs/ptol.jsonAINames[11]
-msgid "Berenice Philopater"
-msgstr "Berenike Philopator"
+#: simulation/data/civs/pers.json
+msgid ""
+"The empire was divided into provinces, called “Satrapies,” that sent yearly "
+"tribute to the ruling Persian dynasty in Persepolis as a form of tax."
+msgstr "Das Reich war in Provinzen unterteilt, die „Satrapien“, welche jährlich Tribute, als eine Form von Steuern, an die herrschende persische Dynastie nach Persepolis schickten."
 
-#: simulation/data/civs/ptol.jsonAINames[12]
-msgid "Cleopatra Tryphaena"
-msgstr "Kleopatra VI. Tryphaina"
+#: simulation/data/civs/pers.json
+msgid ""
+"Upgrade the Throne Hall to receive a free trickle of a desired resource."
+msgstr "Werte die Thronhalle auf, um einen stetigen Zufluss einer gewünschten Ressource zu erhalten."
 
-#: simulation/data/civs/ptol.jsonAINames[13]
-msgid "Berenice Epiphaneia"
-msgstr "Berenike IV."
+#: simulation/data/civs/pers.json
+msgid "Cambyses II"
+msgstr "Kambyses II."
 
-#: simulation/data/civs/ptol.jsonAINames[14]
-msgid "Cleopatra Philopater"
-msgstr "Kleopatra VII. Philopator"
+#: simulation/data/civs/pers.json
+msgid "Bardiya"
+msgstr "Bardiya"
 
-#: simulation/data/civs/ptol.jsonAINames[15]
-msgid "Cleopatra Selene"
-msgstr "Kleopatra Selene"
+#: simulation/data/civs/pers.json
+msgid "Artaxshacha I"
+msgstr "Artaxerxes I. Makrocheir"
 
-#: simulation/data/civs/ptol.jsonAINames[16]
-msgid "Cleopatra II Philometora Soteira"
-msgstr "Kleopatra II."
+#: simulation/data/civs/pers.json
+msgid "Darayavahush II"
+msgstr "Darayavahush II."
 
-#: simulation/data/civs/ptol.jsonAINames[17]
-msgid "Arsinoe IV"
-msgstr "Arsinoë IV."
+#: simulation/data/civs/pers.json
+msgid "Darayavahush III"
+msgstr "Darayavahush III."
 
-#: simulation/data/civs/ptol.jsonAINames[18]
-msgid "Arsinoe II"
-msgstr "Arsinoë II."
+#: simulation/data/civs/pers.json
+msgid "Artaxshacha II"
+msgstr "Artaxerxes II. Mnemon"
 
-#: simulation/data/civs/ptol.jsonAINames[1]
-msgid "Ptolemy Philadelphus"
-msgstr "Ptolemaios Philadelphos"
+#: simulation/data/civs/pers.json
+msgid "Artaxshacha III"
+msgstr "Artaxerxes III. Ochos"
 
-#: simulation/data/civs/ptol.jsonAINames[2]
-msgid "Ptolemy Epigone"
-msgstr "Ptolemaios der Sohn"
+#: simulation/data/civs/pers.json
+msgid "Haxamanish"
+msgstr "Haxamanish"
 
-#: simulation/data/civs/ptol.jsonAINames[3]
-msgid "Ptolemy Eurgetes"
-msgstr "Ptolemaios III. Euergetes I."
+#: simulation/data/civs/pers.json
+msgid "Xsayarsa II"
+msgstr "Xerxes II."
 
-#: simulation/data/civs/ptol.jsonAINames[4]
-msgid "Ptolemy Philopater"
-msgstr "Ptolemaios IV. Philopator"
-
-#: simulation/data/civs/ptol.jsonAINames[5]
-msgid "Ptolemy Epiphanes"
-msgstr "Ptolemaios V. Epiphanes Eucharistos"
-
-#: simulation/data/civs/ptol.jsonAINames[6]
-msgid "Ptolemy Philometor"
-msgstr "Ptolemaios VI. Philometor"
-
-#: simulation/data/civs/ptol.jsonAINames[7]
-msgid "Ptolemy Eupator"
-msgstr "Ptolemaios Eupator"
-
-#: simulation/data/civs/ptol.jsonAINames[8]
-msgid "Ptolemy Alexander"
-msgstr "Ptolemaios X. Alexander I."
-
-#: simulation/data/civs/ptol.jsonAINames[9]
-msgid "Ptolemy Neos Dionysos"
-msgstr "Ptolemaios XII. Neos Dionysos"
-
-#: simulation/data/civs/ptol.jsonCivBonuses[0].Description
-msgid "Bolt Shooters −33% attack damage and −33% attack time."
-msgstr "Bolzengeschütze −33 % Schaden und −33 % Angriffszeit."
-
-#: simulation/data/civs/ptol.jsonCivBonuses[0].Name
+#: simulation/data/civs/ptol.json
 msgid "Polybolos"
 msgstr "Polybolos"
 
-#: simulation/data/civs/rome.jsonAINames[0]
-msgid "Lucius Junius Brutus"
-msgstr "Lucius Iunius Brutus"
+#: simulation/data/civs/ptol.json
+msgid "Bolt Shooters −33% attack damage and −33% attack time."
+msgstr "Bolzengeschütze −33 % Schaden und −33 % Angriffszeit."
 
-#: simulation/data/civs/rome.jsonAINames[10]
-msgid "Publius Sempronius Tuditanus"
-msgstr "Publius Sempronius Tuditanus"
+#: simulation/data/civs/ptol.json
+msgid "Nile Delta"
+msgstr "Nildelta"
 
-#: simulation/data/civs/rome.jsonAINames[11]
-msgid "Marcus Cornelius Cethegus"
-msgstr "Marcus Cornelius Cethegus"
+#: simulation/data/civs/ptol.json
+msgid ""
+"The Nile Delta is a region where the Nile River divides into several "
+"branches to flow into the Mediterranean Sea, in northern Egypt."
+msgstr "Das Nildelta ist eine Region in der sich der Nil in verschiedene Zweige aufteilt um im nördlichen Ägypten ins Mittelmeer zu fließen."
 
-#: simulation/data/civs/rome.jsonAINames[12]
-msgid "Quintus Caecilius Metellus Pius"
-msgstr "Quintus Caecilius Metellus Pius"
+#: simulation/data/civs/ptol.json
+msgid "The three farming technologies are available in Village Phase."
+msgstr "Die drei Landwirtschaftstechnologien sind in der Dorfphase verfügbar."
 
-#: simulation/data/civs/rome.jsonAINames[13]
-msgid "Marcus Licinius Crassus"
-msgstr "Marcus Licinius Crassus"
+#: simulation/data/civs/ptol.json
+msgid "Ptolemy Philadelphus"
+msgstr "Ptolemaios Philadelphos"
 
-#: simulation/data/civs/rome.jsonAINames[1]
-msgid "Lucius Tarquinius Collatinus"
-msgstr "Lucius Tarquinius Collatinus"
+#: simulation/data/civs/ptol.json
+msgid "Ptolemy Epigone"
+msgstr "Ptolemaios der Sohn"
 
-#: simulation/data/civs/rome.jsonAINames[2]
-msgid "Gaius Julius Caesar Octavianus"
-msgstr "Gaius Julius Caesar Octavianus"
+#: simulation/data/civs/ptol.json
+msgid "Ptolemy Eurgetes"
+msgstr "Ptolemaios III. Euergetes I."
 
-#: simulation/data/civs/rome.jsonAINames[3]
-msgid "Marcus Vipsanius Agrippa"
-msgstr "Marcus Vipsanius Agrippa"
+#: simulation/data/civs/ptol.json
+msgid "Ptolemy Epiphanes"
+msgstr "Ptolemaios V. Epiphanes Eucharistos"
 
-#: simulation/data/civs/rome.jsonAINames[4]
-msgid "Gaius Iulius Iullus"
-msgstr "Gaius Iulius Iullus"
+#: simulation/data/civs/ptol.json
+msgid "Ptolemy Philometor"
+msgstr "Ptolemaios VI. Philometor"
 
-#: simulation/data/civs/rome.jsonAINames[5]
-msgid "Gaius Servilius Structus Ahala"
-msgstr "Gaius Servilius Structus Ahala"
+#: simulation/data/civs/ptol.json
+msgid "Ptolemy Eupator"
+msgstr "Ptolemaios Eupator"
 
-#: simulation/data/civs/rome.jsonAINames[6]
-msgid "Publius Cornelius Rufinus"
-msgstr "Publius Cornelius Rufinus"
+#: simulation/data/civs/ptol.json
+msgid "Ptolemy Alexander"
+msgstr "Ptolemaios X. Alexander I."
 
-#: simulation/data/civs/rome.jsonAINames[7]
-msgid "Lucius Papirius Cursor"
-msgstr "Lucius Papirius Cursor"
+#: simulation/data/civs/ptol.json
+msgid "Ptolemy Neos Dionysos"
+msgstr "Ptolemaios XII. Neos Dionysos"
 
-#: simulation/data/civs/rome.jsonAINames[8]
-msgid "Aulus Manlius Capitolinus"
-msgstr "Aulus Manlius Capitolinus"
+#: simulation/data/civs/ptol.json
+msgid "Ptolemy Neos Philopater"
+msgstr "Ptolemaios IV. Philopator"
 
-#: simulation/data/civs/rome.jsonAINames[9]
-msgid "Publius Cornelius Scipio Africanus"
-msgstr "Publius Cornelius Scipio Africanus"
+#: simulation/data/civs/ptol.json
+msgid "Berenice Philopater"
+msgstr "Berenike Philopator"
 
-#: simulation/data/civs/rome.jsonCivBonuses[0].Description
-msgid "Roman Legionaries can form a Testudo."
-msgstr "Römische Legionäre können eine Schildkrötenformation einnehmen."
+#: simulation/data/civs/ptol.json
+msgid "Cleopatra Tryphaena"
+msgstr "Kleopatra VI. Tryphaina"
 
-#: simulation/data/civs/rome.jsonCivBonuses[0].History
+#: simulation/data/civs/ptol.json
+msgid "Berenice Epiphaneia"
+msgstr "Berenike IV."
+
+#: simulation/data/civs/ptol.json
+msgid "Cleopatra Philopater"
+msgstr "Kleopatra VII. Philopator"
+
+#: simulation/data/civs/ptol.json
+msgid "Cleopatra Selene"
+msgstr "Kleopatra Selene"
+
+#: simulation/data/civs/ptol.json
+msgid "Cleopatra II Philometora Soteira"
+msgstr "Kleopatra II."
+
+#: simulation/data/civs/ptol.json
+msgid "Arsinoe IV"
+msgstr "Arsinoë IV."
+
+#: simulation/data/civs/ptol.json
+msgid "Arsinoe II"
+msgstr "Arsinoë II."
+
+#: simulation/data/civs/rome.json
+msgid "Fertility"
+msgstr "Fruchtbarkeit"
+
+#: simulation/data/civs/rome.json
+msgid "Rome was one of the most populous cities in the ancient world."
+msgstr "Rom war einst eine der Städte mit den meisten Einwohnern der antiken Welt."
+
+#: simulation/data/civs/rome.json
+msgid ""
+"Women train from houses without the need to research Fertility Festival."
+msgstr "Bürgerinnen können in Häusern ausgebildet werden, ohne das Fruchtbarkeitsritual erforschen zu müssen."
+
+#: simulation/data/civs/rome.json
+msgid "Testudo Formation"
+msgstr "Schildkrötenformation"
+
+#: simulation/data/civs/rome.json
 msgid ""
 "The Romans commonly used the Testudo or 'turtle' formation for defense: "
 "Legionaries were formed into hollow squares with twelve men on each side, "
 "standing so close together that their shields overlapped like fish scales."
-msgstr "Die Römer benutzten die Schildkrötenformation (auch Testudo) meistens zur Verteidigung: Legionäre formten hohle Quadrate mit zwölf Kämpfern auf jeder Seite, die so eng zusammen standen, dass sich ihre Schilde wie Fischschuppen überlappten."
+msgstr "Die Römer benutzten die Schildkrötenformation (auch Testudo genannt) meistens zur Verteidigung: Legionäre formten hohle Quadrate mit zwölf Kämpfern auf jeder Seite, die so eng zusammen standen, dass sich ihre Schilde wie Fischschuppen überlappten."
 
-#: simulation/data/civs/rome.jsonCivBonuses[0].Name
-msgid "Testudo Formation"
-msgstr "Schildkrötenformation"
+#: simulation/data/civs/rome.json
+msgid "Roman Legionaries can form a Testudo."
+msgstr "Römische Legionäre können eine Schildkrötenformation einnehmen."
 
-#: simulation/data/civs/rome.jsonCivBonuses[1].Description
-msgid "Battering Rams +20% attack damage. Stone Throwers +10% attack damage."
-msgstr "Rammböcke +20 % Schaden. Steinwerfer +10 % Schaden."
+#: simulation/data/civs/rome.json
+msgid "Centurions"
+msgstr "Centurios"
 
-#: simulation/data/civs/rome.jsonCivBonuses[1].Name
-msgid "Legionary Engineers"
-msgstr "Legionsingenieure"
+#: simulation/data/civs/rome.json
+msgid ""
+"Centurions were the officers responsible for a centuria, a group of 100 "
+"soldiers."
+msgstr "Centurios waren Offiziere die für eine Zenturie verantwortlich waren, einer Gruppe von 100 Soldaten."
 
-#: simulation/data/civs/sele.jsonAINames[0]
-msgid "Seleucus I Nicator"
-msgstr "Seleukos I. Nikator"
+#: simulation/data/civs/rome.json
+msgid "Promote Elite Rank Spearmen or Swordsmen to Champion Centurions."
+msgstr "Beförde Speerträger oder Schwertkämpfer mit Elite-Rang zu Champion Centurios."
 
-#: simulation/data/civs/sele.jsonAINames[10]
-msgid "Alexander I Balas"
-msgstr "Alexander I. Balas"
+#: simulation/data/civs/rome.json
+msgid "Lucius Junius Brutus"
+msgstr "Lucius Iunius Brutus"
 
-#: simulation/data/civs/sele.jsonAINames[11]
-#: simulation/data/civs/sele.jsonAINames[15]
-msgid "Demetrius II Nicator"
-msgstr "Demetrios II. Theos Nikator Philadelphos"
+#: simulation/data/civs/rome.json
+msgid "Lucius Tarquinius Collatinus"
+msgstr "Lucius Tarquinius Collatinus"
 
-#: simulation/data/civs/sele.jsonAINames[12]
-msgid "Antiochus VI Dionysus"
-msgstr "Antiochos VI. Dionysos"
+#: simulation/data/civs/rome.json
+msgid "Gaius Julius Caesar Octavianus"
+msgstr "Gaius Julius Caesar Octavianus"
 
-#: simulation/data/civs/sele.jsonAINames[13]
-msgid "Diodotus Tryphon"
-msgstr "Diodotos Tryphon"
+#: simulation/data/civs/rome.json
+msgid "Marcus Vipsanius Agrippa"
+msgstr "Marcus Vipsanius Agrippa"
 
-#: simulation/data/civs/sele.jsonAINames[14]
-msgid "Antiochus VII Sidetes"
-msgstr "Antiochus VII. Sidetes"
+#: simulation/data/civs/rome.json
+msgid "Gaius Iulius Iullus"
+msgstr "Gaius Iulius Iullus"
 
-#: simulation/data/civs/sele.jsonAINames[16]
-msgid "Alexander II Zabinas"
-msgstr "Alexander II. Zabinas"
+#: simulation/data/civs/rome.json
+msgid "Gaius Servilius Structus Ahala"
+msgstr "Gaius Servilius Structus Ahala"
 
-#: simulation/data/civs/sele.jsonAINames[17]
-msgid "Cleopatra Thea"
-msgstr "Kleopatra Thea"
+#: simulation/data/civs/rome.json
+msgid "Publius Cornelius Rufinus"
+msgstr "Publius Cornelius Rufinus"
 
-#: simulation/data/civs/sele.jsonAINames[18]
-msgid "Seleucus V Philometor"
-msgstr "Seleukos V. Philometor"
+#: simulation/data/civs/rome.json
+msgid "Lucius Papirius Cursor"
+msgstr "Lucius Papirius Cursor"
 
-#: simulation/data/civs/sele.jsonAINames[19]
-msgid "Antiochus VIII Grypus"
-msgstr "Antiochos VIII. Grypos"
+#: simulation/data/civs/rome.json
+msgid "Aulus Manlius Capitolinus"
+msgstr "Aulus Manlius Capitolinus"
 
-#: simulation/data/civs/sele.jsonAINames[1]
+#: simulation/data/civs/rome.json
+msgid "Publius Sempronius Tuditanus"
+msgstr "Publius Sempronius Tuditanus"
+
+#: simulation/data/civs/rome.json
+msgid "Marcus Cornelius Cethegus"
+msgstr "Marcus Cornelius Cethegus"
+
+#: simulation/data/civs/rome.json
+msgid "Quintus Caecilius Metellus Pius"
+msgstr "Quintus Caecilius Metellus Pius"
+
+#: simulation/data/civs/rome.json
+msgid "Marcus Licinius Crassus"
+msgstr "Marcus Licinius Crassus"
+
+#: simulation/data/civs/sele.json
 msgid "Antiochus I Soter"
 msgstr "Antiochos I. Soter"
 
-#: simulation/data/civs/sele.jsonAINames[20]
-msgid "Antiochus IX Cyzicenus"
-msgstr "Antiochos IX. Kyzikenos"
-
-#: simulation/data/civs/sele.jsonAINames[21]
-msgid "Seleucus VI Epiphanes"
-msgstr "Seleukos VI. Epiphanes Nikator"
-
-#: simulation/data/civs/sele.jsonAINames[22]
-msgid "Antiochus X Eusebes"
-msgstr "Antiochos X. Eusebes Philopator"
-
-#: simulation/data/civs/sele.jsonAINames[23]
-msgid "Demetrius III Eucaerus"
-msgstr "Demetrios III. Eukairos"
-
-#: simulation/data/civs/sele.jsonAINames[24]
-msgid "Antiochus XI Epiphanes"
-msgstr "Antiochos XI. Epiphanes"
-
-#: simulation/data/civs/sele.jsonAINames[25]
-msgid "Philip I Philadelphus"
-msgstr "Philipp I. Philadelphos"
-
-#: simulation/data/civs/sele.jsonAINames[26]
-msgid "Antiochus XII Dionysus"
-msgstr "Antiochos XII. Dionysos"
-
-#: simulation/data/civs/sele.jsonAINames[27]
-msgid "Seleucus VII Kybiosaktes"
-msgstr "Seleukos VII. Kybiosaktes"
-
-#: simulation/data/civs/sele.jsonAINames[28]
-msgid "Antiochus XIII Asiaticus"
-msgstr "Antiochos XIII. Philadelphos Asiatikos"
-
-#: simulation/data/civs/sele.jsonAINames[29]
-msgid "Philip II Philoromaeus"
-msgstr "Philipp II. Philorhomaios"
-
-#: simulation/data/civs/sele.jsonAINames[2]
+#: simulation/data/civs/sele.json
 msgid "Antiochus II Theos"
 msgstr "Antiochos II. Theos"
 
-#: simulation/data/civs/sele.jsonAINames[3]
+#: simulation/data/civs/sele.json
 msgid "Seleucus II Callinicus"
 msgstr "Seleukos II. Kallinikos"
 
-#: simulation/data/civs/sele.jsonAINames[4]
+#: simulation/data/civs/sele.json
 msgid "Seleucus III Ceraunus"
 msgstr "Seleukos III. Keraunos"
 
-#: simulation/data/civs/sele.jsonAINames[5]
-msgid "Antiochus III Megas"
-msgstr "Antiochos III. der Große"
-
-#: simulation/data/civs/sele.jsonAINames[6]
+#: simulation/data/civs/sele.json
 msgid "Seleucus IV Philopator"
 msgstr "Seleukos IV. Philopator"
 
-#: simulation/data/civs/sele.jsonAINames[7]
-msgid "Antiochus IV Epiphanes"
-msgstr "Antiochos IV. Epiphanes"
-
-#: simulation/data/civs/sele.jsonAINames[8]
+#: simulation/data/civs/sele.json
 msgid "Antiochus V Eupator"
 msgstr "Antiochos V. Eupator"
 
-#: simulation/data/civs/sele.jsonAINames[9]
+#: simulation/data/civs/sele.json
 msgid "Demetrius I Soter"
 msgstr "Demetrios I. Soter"
 
-#: simulation/data/civs/spart.jsonAINames[0]
-msgid "Leonidas"
-msgstr "Leonidas"
+#: simulation/data/civs/sele.json
+msgid "Alexander I Balas"
+msgstr "Alexander I. Balas"
 
-#: simulation/data/civs/spart.jsonAINames[10]
-msgid "Eucleidas"
-msgstr "Eukleidas"
+#: simulation/data/civs/sele.json
+msgid "Antiochus VI Dionysus"
+msgstr "Antiochos VI. Dionysos"
 
-#: simulation/data/civs/spart.jsonAINames[11]
-msgid "Agesipolis"
-msgstr "Agesipolis I."
+#: simulation/data/civs/sele.json
+msgid "Diodotus Tryphon"
+msgstr "Diodotos Tryphon"
 
-#: simulation/data/civs/spart.jsonAINames[1]
+#: simulation/data/civs/sele.json
+msgid "Antiochus VII Sidetes"
+msgstr "Antiochus VII. Sidetes"
+
+#: simulation/data/civs/sele.json
+msgid "Alexander II Zabinas"
+msgstr "Alexander II. Zabinas"
+
+#: simulation/data/civs/sele.json
+msgid "Cleopatra Thea"
+msgstr "Kleopatra Thea"
+
+#: simulation/data/civs/sele.json
+msgid "Seleucus V Philometor"
+msgstr "Seleukos V. Philometor"
+
+#: simulation/data/civs/sele.json
+msgid "Antiochus VIII Grypus"
+msgstr "Antiochos VIII. Grypos"
+
+#: simulation/data/civs/sele.json
+msgid "Antiochus IX Cyzicenus"
+msgstr "Antiochos IX. Kyzikenos"
+
+#: simulation/data/civs/sele.json
+msgid "Seleucus VI Epiphanes"
+msgstr "Seleukos VI. Epiphanes Nikator"
+
+#: simulation/data/civs/sele.json
+msgid "Antiochus X Eusebes"
+msgstr "Antiochos X. Eusebes Philopator"
+
+#: simulation/data/civs/sele.json
+msgid "Demetrius III Eucaerus"
+msgstr "Demetrios III. Eukairos"
+
+#: simulation/data/civs/sele.json
+msgid "Antiochus XI Epiphanes"
+msgstr "Antiochos XI. Epiphanes"
+
+#: simulation/data/civs/sele.json
+msgid "Philip I Philadelphus"
+msgstr "Philipp I. Philadelphos"
+
+#: simulation/data/civs/sele.json
+msgid "Antiochus XII Dionysus"
+msgstr "Antiochos XII. Dionysos"
+
+#: simulation/data/civs/sele.json
+msgid "Seleucus VII Kybiosaktes"
+msgstr "Seleukos VII. Kybiosaktes"
+
+#: simulation/data/civs/sele.json
+msgid "Antiochus XIII Asiaticus"
+msgstr "Antiochos XIII. Philadelphos Asiatikos"
+
+#: simulation/data/civs/sele.json
+msgid "Philip II Philoromaeus"
+msgstr "Philipp II. Philorhomaios"
+
+#: simulation/data/civs/sele.json
+msgid "Demetrius II Nicator"
+msgstr "Demetrios II. Theos Nikator Philadelphos"
+
+#: simulation/data/civs/spart.json
+msgid "Spartan Women"
+msgstr "Spartanerin"
+
+#: simulation/data/civs/spart.json
+msgid "Female Citizens +40% health and +50% melee attack hack damage."
+msgstr "Bürgerinnen +40 % Gesundheit und +50 % Nahkampfhiebschaden."
+
+#: simulation/data/civs/spart.json
+msgid "Laws of Lycurgus"
+msgstr "Gesetze des Lykurg"
+
+#: simulation/data/civs/spart.json
+msgid ""
+"Under the constitution written by the mythical lawgiver Lycurgus, the "
+"institution of the Agoge was established, where Spartans were trained from "
+"the age of 6 to be superior warriors in defense of the Spartan state."
+msgstr "Unter der Verfassung, die durch den mytischen Gesetzgeber Lykurg geschrieben wurde, wurde das System der Agoge etabliert, in dem Spartaner ab dem Alter von sechs Jahren zu überlegenen Kriegern ausgebildet wurden, um Sparta zu verteidigen. "
+
+#: simulation/data/civs/spart.json
+msgid ""
+"Champion Hoplites are available in village phase, and can promote to highly "
+"experienced Olympic Champions."
+msgstr "Gardehopliten sind in der Dorfphase verfügbar und können zu hocherfahrenen olympischen Gardisten befördert werden."
+
+#: simulation/data/civs/spart.json
 msgid "Dienekes"
 msgstr "Dienekes"
 
-#: simulation/data/civs/spart.jsonAINames[2]
-msgid "Brasidas"
-msgstr "Brasidas"
+#: simulation/data/civs/spart.json
+msgid "Agis II"
+msgstr "Agis II."
 
-#: simulation/data/civs/spart.jsonAINames[3]
-msgid "Agis"
-msgstr "Agis"
-
-#: simulation/data/civs/spart.jsonAINames[4]
+#: simulation/data/civs/spart.json
 msgid "Archidamus"
 msgstr "Archidamos"
 
-#: simulation/data/civs/spart.jsonAINames[6]
+#: simulation/data/civs/spart.json
 msgid "Pausanias"
 msgstr "Pausanias"
 
-#: simulation/data/civs/spart.jsonAINames[7]
+#: simulation/data/civs/spart.json
 msgid "Agesilaus"
 msgstr "Agesilaos II."
 
-#: simulation/data/civs/spart.jsonAINames[8]
+#: simulation/data/civs/spart.json
 msgid "Echestratus"
 msgstr "Echestratos"
 
-#: simulation/data/civs/spart.jsonAINames[9]
+#: simulation/data/civs/spart.json
 msgid "Eurycrates"
 msgstr "Eurykrates"
 
-#: simulation/data/civs/spart.jsonCivBonuses[0].Description
-msgid "Female Citizens +40% health and +50% melee attack hack damage."
-msgstr "Bürgerinnen +40 % Gesundheit und +50 % Nahkampfhiebschaden."
+#: simulation/data/civs/spart.json
+msgid "Eucleidas"
+msgstr "Eukleidas"
 
-#: simulation/data/civs/spart.jsonCivBonuses[0].Name
-msgid "Spartan Women"
-msgstr "Spartanerin"
+#: simulation/data/civs/spart.json
+msgid "Agesipolis"
+msgstr "Agesipolis I."
 
 #: simulation/templates/special/players/athen.xml:8
 msgid "Athenians"
@@ -1066,7 +1079,7 @@ msgid ""
 "and had defensive walls so strong, they were never breached."
 msgstr "Karthago, ein Stadtstaat im heutigen Tunesien, war eine beeindruckende Macht im westlichen Mittelmeerraum, die im 3. Jahrhundert v. Chr. große Teile Nordafrikas und des heutigen Spaniens eroberte. Die Seeleute Karthagos gehörten zu den wildesten Streitern auf hoher See und waren Meister des Seehandels. Sie setzten Kriegselefanten mit Türmen mit furchterregendem Effekt auf dem Schlachtfeld ein und hatten Verteidigungswälle, die so stark waren, dass sie nie durchbrochen wurden."
 
-#: simulation/templates/special/players/gaia.xml:5
+#: simulation/templates/special/players/gaia.xml:9
 msgid "Gaia"
 msgstr "Gaia"
 
@@ -1096,7 +1109,7 @@ msgid ""
 "The core of the Han empire was around the Wei River, and the Han capital was"
 " Chang'an, very close to the Qin capital Xianyang (both are now part of "
 "Xi'an, Shaanxi)."
-msgstr "Die Han-Dynastie (206 v. Chr. – 220 n. Chr.) ist nach der Qin-Dynastie (221–207 v. Chr.) die zweite kaiserliche Dynastie Chinas. Ihr folgte die Zeit der Drei Reiche (220–280 n. Chr.). Die Han-Dynastie wird als goldenes Zeitalter der chinesischen Geschichte angesehen, in der China bedeutende Fortschritte in den Geistes- und Naturwissenschaften erzielte. Der Kern des Han-Reiches befand sich um den Wei-Fluss herum mit der Hauptstadt Chang'an sehr nahe der Qin-Hauptstadt Xianyang (beide sind heute Teil von Xi'an, Shaanxi)."
+msgstr "Die Han-Dynastie (206 v. Chr. – 220 n. Chr.) ist nach der Qin-Dynastie (221–207 v. Chr.) die zweite kaiserliche Dynastie Chinas. Ihr folgte die Zeit der Drei Reiche (220–280 n. Chr.). Die Han-Dynastie wird als goldenes Zeitalter der chinesischen Geschichte angesehen, in der China bedeutende Fortschritte in den Geistes- und Naturwissenschaften erzielte. Das Zentrum des Han-Reiches befand sich um den Wei-Fluss herum mit der Hauptstadt Chang'an sehr nahe der Qin-Hauptstadt Xianyang (beide sind heute Teil von Xi'an, Shaanxi)."
 
 #: simulation/templates/special/players/iber.xml:8
 msgid "Iberians"
@@ -1132,7 +1145,7 @@ msgid ""
 "Meroitic kingdom was known as Aethiopia. The Kushite kingdom persisted until"
 " the 4th century AD, when it weakened and disintegrated due to internal "
 "rebellion, eventually succumbing to the rising power of Axum."
-msgstr "Das Reich von Kusch war ein altes afrikanisches Königreich, welches am Zusammenfluss des blauen Nils, des weißen Nils und des schwarzen Nils, dem Gebiet des heutigen Sudan, gelegen war. Die kuschitische Ära in dieser Region begann nach der Bronzezeit mit dem Zusammenbruch des neuen Königreiches von Ägypten und hatte in früher Phase sein Zentrum in der Stadt Napata. Im 8. Jahrhundert v. Chr. fielen Sie in Ägypten ein. Dort regierten die kuschitischen Kaiser ein Jahrhundert lang als Pharaonen der fünfundzwanzigsten Dynastie, bis sie von den Assyrern wieder vertrieben wurden. Die Kultur der Kusch wurde stark von den Ägyptern beeinflusst aber durch eigene monumentale Bauwerke, wie Pyramiden oder Tempel, noch erweitert. Die Bewohner des Reiches Kusch verehrten sogar viele ägyptische Götter, einschließlich Amun. Während der klassischen Antike war ihre Reichshauptstadt Meroe, wobei in frühgriechischer Geschichte das meroitische Königreich auch als Aethiopien bekannt war. Das kuschitische Reich bestand bis ins 4. Jahrhindert, bis es, durch interne Rebellionen geschwächt, schließlich der wachsenden Macht von Aksum erlag."
+msgstr "Das Reich von Kusch war ein altes afrikanisches Königreich, welches am Zusammenfluss des blauen Nils, des weißen Nils und des schwarzen Nils, dem Gebiet des heutigen Sudan, gelegen war. Die kuschitische Ära in dieser Region begann nach der Bronzezeit mit dem Zusammenbruch des neuen Königreiches von Ägypten und hatte in früher Phase sein Zentrum in der Stadt Napata. Im 8. Jahrhundert v. Chr. fielen Sie in Ägypten ein. Dort regierten die kuschitischen Kaiser ein Jahrhundert lang als Pharaonen der fünfundzwanzigsten Dynastie, bis sie von den Assyrern wieder vertrieben wurden. Die Kultur der Kusch wurde stark von den Ägyptern beeinflusst, aber durch eigene monumentale Bauwerke, wie Pyramiden oder Tempel, noch erweitert. Die Bewohner des Reiches Kusch verehrten sogar viele ägyptische Götter, einschließlich Amun. Während der klassischen Antike war ihre Reichshauptstadt Meroe, wobei in frühgriechischer Geschichte das meroitische Königreich auch als Aethiopien bekannt war. Das kuschitische Reich bestand bis ins 4. Jahrhundert, bis es, durch interne Rebellionen geschwächt, schließlich der wachsenden Macht von Aksum erlag."
 
 #: simulation/templates/special/players/mace.xml:8
 msgid "Macedonians"
@@ -1161,7 +1174,7 @@ msgid ""
 "Acharya Chanakya, contributed to such varied fields such as economics, "
 "religion, diplomacy, warfare, and good governance. Under the rule of Ashoka "
 "the Great, the empire saw 40 years of peace, harmony, and prosperity."
-msgstr "Das Maurya-Reich, 322 v. Chr. von Chandragupta Maurya gegründet, war das erste, das fast den ganzen indischen Subkontinent beherrschte, und eines der größten und am dichtesten besiedelten Reiche der Antike. Seine Armee umfasste Bogenschützen, die Bambus-Bögen mit großer Reichweite benutzten, wilde weibliche Krieger, Streitwagen und tausende gepanzerte Kriegselefanten. Seine Philosophen, insbesondere der berühmte Acharya Chanakya, schufen Werke zu zahlreichen Themenbereichen wie Wirtschaft, Religion, Diplomatie, der Kriegskunst und dem verantwortungsbewussten Regieren. Unter der Herrschaft Ashokas des Großen erlebte das Reich 40 Jahre Frieden, Harmonie und Wohlstand."
+msgstr "Das Maurya-Reich wurde 322 v. Chr. von Chandragupta Maurya gegründet, war das erste, das fast den ganzen indischen Subkontinent beherrschte, und eines der größten und am dichtesten besiedelten Reiche der Antike. Seine Armee umfasste Bogenschützen, die Bambus-Bögen mit großer Reichweite benutzten, wilde weibliche Krieger, Streitwagen und tausende gepanzerte Kriegselefanten. Seine Philosophen, insbesondere der berühmte Acharya Chanakya, schufen Werke zu zahlreichen Themenbereichen wie Wirtschaft, Religion, Diplomatie, der Kriegskunst und dem verantwortungsbewussten Regieren. Unter der Herrschaft Ashokas des Großen erlebte das Reich 40 Jahre Frieden, Harmonie und Wohlstand."
 
 #: simulation/templates/special/players/pers.xml:8
 msgid "Persians"
@@ -1203,7 +1216,7 @@ msgid ""
 "nations on earth for almost 800 years. The Romans were the supreme builders "
 "of the ancient world, excelled at siege warfare and had an exquisite "
 "infantry and navy."
-msgstr "Die Römer kontrollierten eines der größten Reiche der Antike, das sich in seiner Blütezeit von Südschottland bis zur Sahara erstreckte und von etwa 60 bis 80 Millionen Menschen bevölkert wurde, zur damaligen Zeit ein Viertel der Weltbevölkerung. Rom blieb auch fast 800 Jahre lang eine der stärksten Nationen der Erde. Die Römer waren die besten Architekten der antiken Welt, zeichneten sich durch ihre Belagerungstaktik aus und hatten eine erlesene Infanterie und Marine."
+msgstr "Die Römer kontrollierten eines der größten Reiche der Antike, das sich in seiner Blütezeit von Südschottland bis zur Sahara erstreckte und von etwa 60 bis 80 Millionen Menschen bevölkert wurde, zur damaligen Zeit ein Viertel der Weltbevölkerung. Rom blieb fast 800 Jahre lang eine der stärksten Nationen der Erde. Die Römer waren die besten Architekten der antiken Welt, zeichneten sich durch ihre Belagerungstaktik aus und hatten eine erlesene Infanterie und Marine."
 
 #: simulation/templates/special/players/sele.xml:16
 msgid "Seleucids"

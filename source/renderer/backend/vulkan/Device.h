@@ -1,4 +1,4 @@
-/* Copyright (C) 2023 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -80,6 +80,9 @@ public:
 	std::unique_ptr<IGraphicsPipelineState> CreateGraphicsPipelineState(
 		const SGraphicsPipelineStateDesc& pipelineStateDesc) override;
 
+	std::unique_ptr<IComputePipelineState> CreateComputePipelineState(
+		const SComputePipelineStateDesc& pipelineStateDesc) override;
+
 	std::unique_ptr<IVertexInputLayout> CreateVertexInputLayout(
 		const PS::span<const SVertexAttributeFormat> attributes) override;
 
@@ -98,10 +101,10 @@ public:
 		SDepthStencilAttachment* depthStencilAttachment) override;
 
 	std::unique_ptr<IBuffer> CreateBuffer(
-		const char* name, const IBuffer::Type type, const uint32_t size, const bool dynamic) override;
+		const char* name, const IBuffer::Type type, const uint32_t size, const uint32_t usage) override;
 
 	std::unique_ptr<CBuffer> CreateCBuffer(
-		const char* name, const IBuffer::Type type, const uint32_t size, const bool dynamic);
+		const char* name, const IBuffer::Type type, const uint32_t size, const uint32_t usage);
 
 	std::unique_ptr<IShaderProgram> CreateShaderProgram(
 		const CStr& name, const CShaderDefines& defines) override;
@@ -140,7 +143,7 @@ public:
 	void ScheduleObjectToDestroy(
 		VkObjectType type, const uint64_t handle, const VmaAllocation allocation);
 
-	void ScheduleTextureToDestroy(const CTexture::UID uid);
+	void ScheduleTextureToDestroy(const DeviceObjectUID uid);
 
 	void SetObjectName(VkObjectType type, const void* handle, const char* name)
 	{
@@ -162,6 +165,8 @@ public:
 	CTexture* GetCurrentBackbufferTexture();
 
 	CTexture* GetOrCreateBackbufferReadbackTexture();
+
+	DeviceObjectUID GenerateNextDeviceObjectUID();
 
 private:
 	CDevice();
@@ -210,12 +215,14 @@ private:
 		VmaAllocation allocation;
 	};
 	std::queue<ObjectToDestroy> m_ObjectToDestroyQueue;
-	std::queue<std::pair<uint32_t, CTexture::UID>> m_TextureToDestroyQueue;
+	std::queue<std::pair<uint32_t, DeviceObjectUID>> m_TextureToDestroyQueue;
 
 	std::unique_ptr<CRenderPassManager> m_RenderPassManager;
 	std::unique_ptr<CSamplerManager> m_SamplerManager;
 	std::unique_ptr<CDescriptorManager> m_DescriptorManager;
 	std::unique_ptr<CSubmitScheduler> m_SubmitScheduler;
+
+	DeviceObjectUID m_LastAvailableUID{1};
 };
 
 } // namespace Vulkan

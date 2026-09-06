@@ -41,7 +41,7 @@ class CMiniMapTexture
 {
 	NONCOPYABLE(CMiniMapTexture);
 public:
-	CMiniMapTexture(CSimulation2& simulation);
+	CMiniMapTexture(Renderer::Backend::IDevice* device, CSimulation2& simulation);
 	~CMiniMapTexture();
 
 	/**
@@ -78,11 +78,11 @@ public:
 private:
 	void CreateTextures(
 		Renderer::Backend::IDeviceCommandContext* deviceCommandContext,
-		const CTerrain* terrain);
+		const CTerrain& terrain);
 	void DestroyTextures();
 	void RebuildTerrainTexture(
 		Renderer::Backend::IDeviceCommandContext* deviceCommandContext,
-		const CTerrain* terrain);
+		const CTerrain& terrain);
 	void RenderFinalTexture(
 		Renderer::Backend::IDeviceCommandContext* deviceCommandContext,
 		CLOSTexture& losTexture, CTerritoryTexture& territoryTexture);

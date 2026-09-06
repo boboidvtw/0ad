@@ -37,6 +37,7 @@ class CSceneRenderer;
 class CShaderManager;
 class CTextureManager;
 class CTimeManager;
+class CVertexBufferManager;
 
 #define g_Renderer CRenderer::GetSingleton()
 
@@ -77,7 +78,7 @@ public:
 	};
 
 public:
-	CRenderer();
+	CRenderer(Renderer::Backend::IDevice* device);
 	~CRenderer();
 
 	// open up the renderer: performs any necessary initialisation
@@ -105,6 +106,8 @@ public:
 	Stats& GetStats() { return m_Stats; }
 
 	CTextureManager& GetTextureManager();
+
+	CVertexBufferManager& GetVertexBufferManager();
 
 	CShaderManager& GetShaderManager();
 

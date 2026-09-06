@@ -1,4 +1,4 @@
-/* Copyright (C) 2022 Wildfire Games.
+/* Copyright (C) 2023 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -30,15 +30,15 @@ class CModelDummy final : public CModelAbstract
 public:
 
 	CModelDummy() = default;
-	virtual ~CModelDummy() = default;
+	~CModelDummy() override = default;
 
-	virtual CModelAbstract* Clone() const { return new CModelDummy(); }
-	virtual CModelDummy* ToCModelDummy() { return this; }
+	std::unique_ptr<CModelAbstract> Clone() const override { return std::make_unique<CModelDummy>(); }
+	CModelDummy* ToCModelDummy() override { return this; }
 
-	virtual void CalcBounds() {};
-	virtual void SetTerrainDirty(ssize_t, ssize_t, ssize_t, ssize_t) {}
-	virtual void ValidatePosition() {};
-	virtual void InvalidatePosition() {};
+	void CalcBounds() override {}
+	void SetTerrainDirty(ssize_t, ssize_t, ssize_t, ssize_t) override {}
+	void ValidatePosition() override {}
+	void InvalidatePosition() override {}
 };
 
 #endif // INCLUDED_MODELDUMMY

@@ -4,11 +4,12 @@
  */
 class SessionMessageBox
 {
-	display()
+	async display()
 	{
-		this.onPageOpening();
+		closeOpenDialogs();
+		g_PauseControl.implicitPause();
 
-		Engine.PushGuiPage(
+		const buttonId = await Engine.PushGuiPage(
 			"page_msgbox.xml",
 			{
 				"width": this.Width,
@@ -16,25 +17,17 @@ class SessionMessageBox
 				"title": this.Title,
 				"message": this.Caption,
 				"buttonCaptions": this.Buttons ? this.Buttons.map(button => button.caption) : undefined,
-			},
-			this.onPageClosed.bind(this));
-	}
+			});
 
-	onPageOpening()
-	{
-		closeOpenDialogs();
-		g_PauseControl.implicitPause();
-	}
-
-	onPageClosed(buttonId)
-	{
 		if (this.Buttons && this.Buttons[buttonId].onPress)
 			this.Buttons[buttonId].onPress.call(this);
 
-		if (Engine.IsGameStarted())
+		if (this.ResumeOnClose)
 			resumeGame();
 	}
 }
 
 SessionMessageBox.prototype.Width = 400;
 SessionMessageBox.prototype.Height = 200;
+
+SessionMessageBox.prototype.ResumeOnClose = true;

@@ -1,43 +1,44 @@
-# Translation template for 0 A.D. — Empires Ascendant.
-# Copyright (C) 2023 Wildfire Games
-# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant
 # project.
 # Translators:
-# Andreas I
-# annihilator solar
-# Avinash Gowricharn
-# rollieoo
-# bb
-# Charon De Beukelaer
-# Christof Verhoeven
-# Damion Wolters
-# Ellen Roels
-# Freagarach
-# Jonathan Doe
-# mat jojo
-# Mike vdw
-# niektb
-# Paul Staring
-# Peter Erinkveld
-# haldir
-# Pim de Graaf
-# Renza Polza
-# Sam Crauwels
-# Sander Deryckere
-# SuperVipers
-# Sven Witte
-# Sytze Krom
-# tanguy lesseliers
-# Tim de Reuver
-# Timo Tijhof
-# Wessel Fokkema
-# 魔大农
+# Andreas I, 2019
+# annihilator solar, 2019
+# Avinash Gowricharn, 2019
+# rollieoo, 2020-2021
+# bb, 2020
+# Charon De Beukelaer, 2015
+# Christof Verhoeven, 2016-2017,2021
+# Damion Wolters, 2016
+# Ellen Roels, 2015
+# Freagarach, 2019,2021
+# Jonathan Doe, 2020
+# mat jojo, 2015
+# Mike vdw, 2015
+# niektb, 2014,2016
+# Paul Staring, 2019
+# Peter Erinkveld, 2015
+# haldir, 2015
+# Pim de Graaf, 2019
+# Renza Polza, 2022
+# rollieoo, 2021-2024
+# Sam Crauwels, 2019
+# Sander Deryckere, 2014-2016
+# SuperVipers, 2017
+# Sven Witte, 2015
+# Sytze Krom, 2020
+# tanguy lesseliers, 2014
+# Tim de Reuver, 2020
+# Timo Tijhof, 2019
+# Wessel Fokkema, 2018
+# 魔大农, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2023-03-20 08:08+0000\n"
+"POT-Creation-Date: 2024-07-26 13:41+0000\n"
 "PO-Revision-Date: 2014-06-19 17:54+0000\n"
-"Last-Translator: rollieoo, 2021-2023\n"
+"Last-Translator: rollieoo, 2021-2024\n"
 "Language-Team: Dutch (http://app.transifex.com/wildfire-games/0ad/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -154,19 +155,19 @@ msgstr "Emporion"
 msgid "Prophylagma"
 msgstr "Prophylagma"
 
-#: simulation/templates/structures/athen/prytaneion.xml:22
+#: simulation/templates/structures/athen/prytaneion.xml:25
 msgid "Council Chamber"
 msgstr "Raadzaal"
 
-#: simulation/templates/structures/athen/prytaneion.xml:23
+#: simulation/templates/structures/athen/prytaneion.xml:26
 msgid "Prytaneion"
 msgstr "Prytaneion"
 
-#: simulation/templates/structures/athen/prytaneion.xml:24
+#: simulation/templates/structures/athen/prytaneion.xml:27
 msgid "Train Heroes and research technologies."
 msgstr "Train Helden en onderzoek technologieën."
 
-#: simulation/templates/structures/athen/prytaneion.xml:26
+#: simulation/templates/structures/athen/prytaneion.xml:29
 #: simulation/templates/structures/gaul/assembly.xml:31
 #: simulation/templates/structures/spart/gerousia.xml:26
 msgid "Council"
@@ -355,6 +356,10 @@ msgstr "Rekruteer Helden. Beman met soldaten voor extra pijlen."
 msgid "Tegia"
 msgstr "Tegia"
 
+#: simulation/templates/structures/brit/kennel.xml:5
+msgid "Cunattegia"
+msgstr "Cunattegia"
+
 #: simulation/templates/structures/brit/market.xml:12
 #: simulation/templates/structures/gaul/market.xml:12
 msgid "Magos"
@@ -481,6 +486,11 @@ msgstr "Šadd"
 msgid "Ḥamet"
 msgstr "Ḥamet"
 
+#: simulation/templates/structures/cart/house.xml:16
+msgid ""
+"Add a second story to make an Apartment with a greater population bonus."
+msgstr "Bouw een verdieping bij om een appartement te maken waar meer mensen kunnen wonen."
+
 #: simulation/templates/structures/cart/market.xml:12
 msgid "Šūq"
 msgstr "Šūq"
@@ -528,8 +538,8 @@ msgid "Maqdaš"
 msgstr "Maqdaš"
 
 #: simulation/templates/structures/cart/temple.xml:10
-msgid "Train Healers and Champion Infantry and research healing technologies."
-msgstr "Rekruteer genezers en infanteriekampioenen en onderzoek geneeskunde."
+msgid "Train Healers and Champions, and research healing technologies."
+msgstr "Rekruteer genezers en kampioenen en onderzoek genezingstechnologieën."
 
 #: simulation/templates/structures/cart/tophet.xml:18
 msgid "Sacrificial Temple"
@@ -580,39 +590,6 @@ msgstr "Dorische zuil"
 msgid "Fallen Doric Column"
 msgstr "Omgevallen Dorische zuil"
 
-#: simulation/templates/structures/farmstead_field_wheat.xml:7
-#: simulation/templates/structures/generic_field.xml:8
-msgid "Wheat Field"
-msgstr "Graanveld"
-
-#: simulation/templates/structures/athen/farmstead.xml:11
-#: simulation/templates/structures/farmstead_greek.xml:8
-#: simulation/templates/structures/mace/farmstead.xml:11
-#: simulation/templates/structures/ptol/farmstead.xml:8
-#: simulation/templates/structures/sele/farmstead.xml:8
-#: simulation/templates/structures/spart/farmstead.xml:11
-msgid "Epoikion"
-msgstr "Epoikion"
-
-#: simulation/templates/structures/farmstead_indian.xml:8
-#: simulation/templates/structures/maur/farmstead.xml:11
-msgid "Kantu"
-msgstr "Kantu"
-
-#: simulation/templates/structures/farmstead_italian.xml:8
-msgid "Villa"
-msgstr "Villa"
-
-#: simulation/templates/structures/farmstead_middle_eastern.xml:9
-#: simulation/templates/structures/pers/farmstead.xml:8
-msgid "Kaštašta"
-msgstr "Kaštašta"
-
-#: simulation/templates/structures/brit/rotarymill.xml:5
-#: simulation/templates/structures/farmstead_temperate_europe.xml:4
-msgid "Melonas"
-msgstr "Melonas"
-
 #: simulation/templates/structures/fence_long.xml:14
 #: simulation/templates/structures/fence_short.xml:14
 msgid "Fence"
@@ -622,12 +599,31 @@ msgstr "Hek"
 msgid "Long Wooden Fence"
 msgstr "Lang houten hek"
 
+#: simulation/templates/structures/fence_rock_long.xml:12
+#: simulation/templates/structures/fence_rock_long.xml:13
+#: simulation/templates/structures/fence_rock_medium.xml:12
+#: simulation/templates/structures/fence_rock_medium.xml:13
+#: simulation/templates/structures/fence_rock_short.xml:12
+#: simulation/templates/structures/fence_rock_short.xml:13
+#: simulation/templates/structures/fence_rock_stub.xml:12
+#: simulation/templates/structures/fence_rock_stub.xml:13
+msgid "Rock Fence"
+msgstr "Stenen hek"
+
 #: simulation/templates/structures/fence_short.xml:15
 msgid "Short Wooden Fence"
 msgstr "Kort houten hek"
 
 #: simulation/templates/structures/fence_stone.xml:14
 #: simulation/templates/structures/fence_stone.xml:15
+#: simulation/templates/structures/fence_stone_long.xml:12
+#: simulation/templates/structures/fence_stone_long.xml:13
+#: simulation/templates/structures/fence_stone_medium.xml:12
+#: simulation/templates/structures/fence_stone_medium.xml:13
+#: simulation/templates/structures/fence_stone_short.xml:12
+#: simulation/templates/structures/fence_stone_short.xml:13
+#: simulation/templates/structures/fence_stone_stub.xml:12
+#: simulation/templates/structures/fence_stone_stub.xml:13
 msgid "Stone Fence"
 msgstr "Stenen hek"
 
@@ -671,6 +667,11 @@ msgstr "Heiligdom van Corent"
 msgid "Celicnon"
 msgstr "Celicnon"
 
+#: simulation/templates/structures/generic_field.xml:8
+#: simulation/templates/structures/mill_field_wheat.xml:6
+msgid "Wheat Field"
+msgstr "Graanveld"
+
 #: simulation/templates/structures/han/academy.xml:27
 msgid "Imperial Academy"
 msgstr "Keizerlijke Academie"
@@ -704,7 +705,7 @@ msgid ""
 "Enable training of heroes, reduce the batch training times and greatly "
 "increase the health, capture resistance and garrison capacity of this "
 "specific Civic Center."
-msgstr "Schakelt de rekrutering van Helden en snellere rekrutering van groepen in en doet de sterkte, veroveringsweerstand en bemanningscapacieit van dit Beschavingscentrum sterk toenemen."
+msgstr "Schakel de rekrutering van Helden en snellere rekrutering van groepen in en doet de sterkte, veroveringsweerstand en bemanningscapacieit van dit Beschavingscentrum sterk toenemen."
 
 #: simulation/templates/structures/han/civil_centre_court.xml:17
 msgid "Imperial Court"
@@ -752,11 +753,11 @@ msgstr "Mǎtóu"
 msgid "Nóng Shè"
 msgstr "Nóng Shè"
 
-#: simulation/templates/structures/han/field.xml:15
+#: simulation/templates/structures/han/field.xml:18
 msgid "Dàotián"
 msgstr "Dàotián"
 
-#: simulation/templates/structures/han/field.xml:16
+#: simulation/templates/structures/han/field.xml:19
 msgid "Rice Paddy"
 msgstr "Rijstveld"
 
@@ -1027,10 +1028,6 @@ msgstr "Mryt"
 msgid "Ỉḥ Abu"
 msgstr "Ỉḥ Abu"
 
-#: simulation/templates/structures/kush/farmstead.xml:9
-msgid "snwt"
-msgstr "snwt"
-
 #: simulation/templates/structures/kush/field.xml:5
 msgid "sht"
 msgstr "sht"
@@ -1066,7 +1063,7 @@ msgstr "mr ʿȝ"
 #: simulation/templates/structures/kush/pyramid_large.xml:29
 #: simulation/templates/structures/kush/pyramid_small.xml:26
 msgid "Pyramid"
-msgstr "Pyramide"
+msgstr "Piramide"
 
 #: simulation/templates/structures/kush/pyramid_small.xml:23
 msgid "Small Pyramid"
@@ -1117,19 +1114,19 @@ msgstr "Rekruteer genezers en Kampioenen van Apedemak. Onderzoek geneeskunde."
 msgid "TempleOfApedemak"
 msgstr "Tempel van Apedemak"
 
-#: simulation/templates/structures/kush/temple_amun.xml:27
+#: simulation/templates/structures/kush/temple_amun.xml:30
 msgid "Grand Temple of Amun"
 msgstr "Grote Tempel van Amun"
 
-#: simulation/templates/structures/kush/temple_amun.xml:28
+#: simulation/templates/structures/kush/temple_amun.xml:31
 msgid "Pr-ʿImn"
 msgstr "Pr-ʿImn"
 
-#: simulation/templates/structures/kush/temple_amun.xml:29
+#: simulation/templates/structures/kush/temple_amun.xml:32
 msgid "Train Amun Champions and Elite Healers. Research healing technologies."
 msgstr "Rekruteer Kampioenen van Amon en elite genezers. Onderzoek geneeskunde."
 
-#: simulation/templates/structures/kush/temple_amun.xml:31
+#: simulation/templates/structures/kush/temple_amun.xml:34
 msgid "TempleOfAmun"
 msgstr "Tempel van Amon"
 
@@ -1211,21 +1208,19 @@ msgstr "Vipana"
 msgid "Uparaksana"
 msgstr "Uparaksana"
 
-#: simulation/templates/structures/maur/palace.xml:19
-#: simulation/templates/structures/maur/palace.xml:23
-#: simulation/templates/structures/pers/apadana.xml:30
-#: simulation/templates/structures/pers/tacara.xml:23
-#: simulation/templates/structures/pers/tacara.xml:26
+#: simulation/templates/structures/maur/palace.xml:20
+#: simulation/templates/structures/maur/palace.xml:26
+#: simulation/templates/structures/pers/tachara.xml:33
 msgid "Palace"
 msgstr "Paleis"
 
-#: simulation/templates/structures/maur/palace.xml:20
+#: simulation/templates/structures/maur/palace.xml:21
 msgid "Harmya"
 msgstr "Harmya"
 
-#: simulation/templates/structures/maur/palace.xml:21
-msgid "Territory root. Train Maiden Guards and Heroes."
-msgstr "Gebiedsbasis. Rekruteer maagdelijke wachters en Helden."
+#: simulation/templates/structures/maur/palace.xml:30
+msgid "Train Heroes and their Poison Maiden Guards. Territory root."
+msgstr "Rekruteer Helden en hun Maagdelijke Wachters. Gebiedsbasis."
 
 #: simulation/templates/structures/maur/pillar_ashoka.xml:32
 msgid "Edict Pillar of Ashoka"
@@ -1304,6 +1299,40 @@ msgstr "Stratopedeia Misthophorōn"
 msgid "Capture this structure to train mercenaries from Hellenistic Egypt."
 msgstr "Verover dit gebouw om Hellenistische huurlingen van Egypte te rekruteren."
 
+#: simulation/templates/structures/kush/farmstead.xml:9
+#: simulation/templates/structures/mill_desert.xml:8
+#: simulation/templates/structures/mill_saharan.xml:8
+msgid "snwt"
+msgstr "snwt"
+
+#: simulation/templates/structures/athen/farmstead.xml:11
+#: simulation/templates/structures/mace/farmstead.xml:11
+#: simulation/templates/structures/mill_greek.xml:8
+#: simulation/templates/structures/ptol/farmstead.xml:8
+#: simulation/templates/structures/sele/farmstead.xml:8
+#: simulation/templates/structures/spart/farmstead.xml:11
+msgid "Epoikion"
+msgstr "Epoikion"
+
+#: simulation/templates/structures/maur/farmstead.xml:11
+#: simulation/templates/structures/mill_indian.xml:8
+msgid "Kantu"
+msgstr "Kantu"
+
+#: simulation/templates/structures/mill_italian.xml:8
+msgid "Villa"
+msgstr "Villa"
+
+#: simulation/templates/structures/mill_middle_eastern.xml:8
+#: simulation/templates/structures/pers/farmstead.xml:8
+msgid "Kaštašta"
+msgstr "Kaštašta"
+
+#: simulation/templates/structures/brit/rotarymill.xml:5
+#: simulation/templates/structures/mill_temperate_europe.xml:4
+msgid "Melonas"
+msgstr "Melonas"
+
 #: simulation/templates/structures/obelisk.xml:11
 msgid "Obelisk"
 msgstr "Obelisk"
@@ -1346,19 +1375,6 @@ msgstr "Lange pieken"
 msgid "Watchtower"
 msgstr "Uitkijktoren"
 
-#: simulation/templates/structures/pers/apadana.xml:26
-msgid "Throne Hall"
-msgstr "Troonzaal"
-
-#: simulation/templates/structures/pers/apadana.xml:27
-msgid "Apadāna"
-msgstr "Apadāna"
-
-#: simulation/templates/structures/pers/apadana.xml:28
-#: simulation/templates/structures/spart/syssiton.xml:25
-msgid "Train Champions and Heroes."
-msgstr "Rekruteer Kampioenen en Helden."
-
 #: simulation/templates/structures/pers/apartment_block.xml:12
 msgid "Apartment Block"
 msgstr "Appartementengebouw"
@@ -1367,11 +1383,11 @@ msgstr "Appartementengebouw"
 msgid "Padgan"
 msgstr "Padgan"
 
-#: simulation/templates/structures/pers/civil_centre.xml:8
+#: simulation/templates/structures/pers/civil_centre.xml:12
 msgid "Provincial Governor"
 msgstr "Satrapie"
 
-#: simulation/templates/structures/pers/civil_centre.xml:9
+#: simulation/templates/structures/pers/civil_centre.xml:13
 msgid "Xšaçapāvan"
 msgstr "Xšaçapāvan"
 
@@ -1450,9 +1466,33 @@ msgstr "Paraspa"
 msgid "Asiyah"
 msgstr "Asiyah"
 
-#: simulation/templates/structures/pers/tacara.xml:24
+#: simulation/templates/structures/pers/tachara.xml:29
+msgid "Winter Palace"
+msgstr "Winterpaleis"
+
+#: simulation/templates/structures/pers/tachara.xml:30
 msgid "Taçara"
 msgstr "Taçara"
+
+#: simulation/templates/structures/pers/tachara.xml:31
+msgid "Train Heroes and make use of the “Satrapy Tribute” feature."
+msgstr "Rekruteer Helden en gebruik de “Schatting aan de Satrapen”."
+
+#: simulation/templates/structures/pers/tachara.xml:81
+msgid "Receive free Food tribute to your treasury from your subject peoples."
+msgstr "Ontvang een permanente schatting aan voedsel van uw volkeren."
+
+#: simulation/templates/structures/pers/tachara.xml:86
+msgid "Receive free Wood tribute to your treasury from your subject peoples."
+msgstr "Ontvang een permanente schatting aan hout van uw volkeren."
+
+#: simulation/templates/structures/pers/tachara.xml:91
+msgid "Receive free Stone tribute to your treasury from your subject peoples."
+msgstr "Ontvang een permanente schatting aan steen van uw volkeren."
+
+#: simulation/templates/structures/pers/tachara.xml:96
+msgid "Receive free Metal tribute to your treasury from your subject peoples."
+msgstr "Ontvang een permanente schatting aan metaal van uw volkeren."
 
 #: simulation/templates/structures/pers/temple.xml:12
 msgid "Āyadanam"
@@ -1476,6 +1516,10 @@ msgstr "Kruidenier"
 #: simulation/templates/structures/pers/wonder.xml:9
 msgid "Hanging Gardens of Babylon"
 msgstr "Hangende tuinen van Babylon"
+
+#: simulation/templates/structures/pirates/dock.xml:8
+msgid "Pirate Port"
+msgstr "Piratenhaven"
 
 #: simulation/templates/structures/ptol/elephant_stable.xml:5
 #: simulation/templates/structures/sele/elephant_stable.xml:5
@@ -1512,6 +1556,18 @@ msgstr "Goedkoop kazernegebouw dat gebouwd kan worden in neutraal gebied, maar g
 msgid "Klērouchia"
 msgstr "Klērouchia"
 
+#: simulation/templates/structures/ptol/temple_2.xml:24
+msgid "Temple of Isis"
+msgstr "Tempel van Isis"
+
+#: simulation/templates/structures/ptol/temple_2.xml:26
+msgid "Train Heroes and Healers. Research special technologies."
+msgstr "Rekruteer helden en genezers. Onderzoek speciale technologieën."
+
+#: simulation/templates/structures/ptol/temple_2.xml:28
+msgid "TempleOfIsis"
+msgstr "TempleOfIsis"
+
 #: simulation/templates/structures/ptol/tower_artillery.xml:9
 msgid "mktr-n-ḏw"
 msgstr "mktr-n-ḏw"
@@ -1546,9 +1602,9 @@ msgstr "Castra"
 
 #: simulation/templates/structures/rome/army_camp.xml:73
 msgid ""
-"Build in neutral or enemy territory. Train Advanced Melee Infantry. "
-"Construct Rams. Garrison Soldiers for additional arrows."
-msgstr "Bouw in neutraal of vijandelijk gebied. Rekruteer geavanceerde mêlee infanterie. Maak stormrammen. Beman met soldaten voor extra pijlen."
+"Build in neutral or enemy territory. Train Advanced Melee Infantry and "
+"Marian Legionaries. Construct Rams. Garrison Soldiers for additional arrows."
+msgstr "Bouw in neutraal of vijandelijk gebied. Rekruteer geavanceerde mêlee infanterie en Mariaanse Legionairs. Maak stormrammen. Beman met soldaten voor extra pijlen."
 
 #: simulation/templates/structures/rome/army_camp.xml:31
 #: simulation/templates/structures/rome/army_camp.xml:75
@@ -1731,6 +1787,10 @@ msgstr "Colonnade"
 msgid "Corinthian Colonnade"
 msgstr "Korinthische Colonnade"
 
+#: simulation/templates/structures/shrine_celtic.xml:9
+msgid "Henge"
+msgstr "Henge"
+
 #: simulation/templates/structures/shrine_chinese.xml:9
 msgid "Bǎotǎ"
 msgstr "Bǎotǎ"
@@ -1743,7 +1803,7 @@ msgstr "Heilige schrijn"
 #: simulation/templates/structures/athen/temple.xml:9
 #: simulation/templates/structures/mace/temple.xml:9
 #: simulation/templates/structures/ptol/temple.xml:12
-#: simulation/templates/structures/ptol/temple_2.xml:11
+#: simulation/templates/structures/ptol/temple_2.xml:25
 #: simulation/templates/structures/sele/temple.xml:9
 #: simulation/templates/structures/shrine_greek_01.xml:9
 #: simulation/templates/structures/shrine_greek_02.xml:9
@@ -1755,6 +1815,10 @@ msgstr "Naos"
 msgid "Aedēs Sanitatem"
 msgstr "Aedēs Sanitatem"
 
+#: simulation/templates/structures/shrine_persian.xml:9
+msgid "Fire Temple"
+msgstr "Vuurtempel"
+
 #: simulation/templates/structures/spart/gerousia.xml:22
 msgid "Spartan Senate"
 msgstr "Spartaanse senaat"
@@ -1764,8 +1828,8 @@ msgid "Gerousia"
 msgstr "Gerousia"
 
 #: simulation/templates/structures/spart/gerousia.xml:24
-msgid "Train Heroes."
-msgstr "Rekruteer Helden."
+msgid "Research technologies."
+msgstr "Onderzoek technologieën."
 
 #: simulation/templates/structures/spart/persian_stoa.xml:9
 msgid "\\\"Persian\\\" Stoa"
@@ -1782,6 +1846,10 @@ msgstr "Militaire ceremoniehal"
 #: simulation/templates/structures/spart/syssiton.xml:24
 msgid "Syssition"
 msgstr "Syssition"
+
+#: simulation/templates/structures/spart/syssiton.xml:25
+msgid "Train Champions and Heroes."
+msgstr "Rekruteer Kampioenen en Helden."
 
 #: simulation/templates/structures/spart/syssiton.xml:27
 msgid "Syssiton"
@@ -1931,11 +1999,13 @@ msgstr "Huis"
 
 #: simulation/templates/structures/kush/pyramid_small.xml:26
 #: simulation/templates/structures/pers/ice_house.xml:27
+#: simulation/templates/structures/spart/syssiton.xml:27
 #: simulation/templates/template_structure_civic_house.xml:28
 #: simulation/templates/template_structure_economic_farmstead.xml:30
 #: simulation/templates/template_structure_economic_storehouse.xml:28
 #: simulation/templates/template_structure_military_barracks.xml:29
 #: simulation/templates/template_structure_military_dock.xml:27
+#: simulation/templates/template_structure_military_kennel.xml:30
 #: simulation/templates/template_structure_military_range.xml:25
 #: simulation/templates/template_structure_military_stable.xml:29
 #: simulation/templates/template_structure_resource_corral.xml:29
@@ -1952,14 +2022,15 @@ msgid "Stoa"
 msgstr "Stoa"
 
 #: simulation/templates/structures/athen/gymnasium.xml:26
-#: simulation/templates/structures/cart/apartment.xml:26
 #: simulation/templates/structures/gaul/tavern.xml:22
 #: simulation/templates/structures/han/laozigate.xml:24
 #: simulation/templates/structures/han/ministry.xml:39
 #: simulation/templates/structures/iber/monument.xml:34
+#: simulation/templates/structures/mace/arsenal.xml:6
 #: simulation/templates/structures/maur/elephant_stable.xml:7
 #: simulation/templates/structures/merc_camp_egyptian.xml:31
 #: simulation/templates/structures/rome/army_camp.xml:75
+#: simulation/templates/structures/spart/gerousia.xml:26
 #: simulation/templates/template_structure_civic_stoa.xml:30
 #: simulation/templates/template_structure_civic_temple.xml:32
 #: simulation/templates/template_structure_economic_market.xml:28
@@ -2105,8 +2176,6 @@ msgstr "Economisch"
 
 #: simulation/templates/template_structure_economic_farmstead.xml:26
 #: simulation/templates/template_structure_economic_farmstead.xml:30
-#: simulation/templates/template_structure_special_rotarymill.xml:32
-#: simulation/templates/template_structure_special_rotarymill.xml:34
 msgid "Farmstead"
 msgstr "Boerderij"
 
@@ -2162,7 +2231,8 @@ msgstr "Rekruteer Kampioen infanterie kruisboogschutters, bouw belegeringswerktu
 #: simulation/templates/structures/han/academy.xml:31
 #: simulation/templates/structures/han/civil_centre_court.xml:19
 #: simulation/templates/structures/kush/pyramid_large.xml:29
-#: simulation/templates/structures/kush/temple_amun.xml:31
+#: simulation/templates/structures/kush/temple_amun.xml:34
+#: simulation/templates/structures/ptol/temple_2.xml:28
 #: simulation/templates/structures/rome/temple_mars.xml:14
 #: simulation/templates/template_structure_military_arsenal.xml:28
 #: simulation/templates/template_structure_military_elephant_stable.xml:29
@@ -2234,6 +2304,16 @@ msgstr "Vesting"
 msgid "Garrison Soldiers for additional arrows."
 msgstr "Beman met soldaten voor extra pijlen."
 
+#: simulation/templates/template_structure_military_kennel.xml:28
+#: simulation/templates/template_structure_military_kennel.xml:29
+#: simulation/templates/template_structure_military_kennel.xml:30
+msgid "Kennel"
+msgstr "Kennel"
+
+#: simulation/templates/template_structure_military_kennel.xml:38
+msgid "Train War Dogs."
+msgstr "Train oorlogshonden."
+
 #: simulation/templates/template_structure_military_range.xml:22
 msgid "Practice Range"
 msgstr "Oefenbereik"
@@ -2281,7 +2361,7 @@ msgstr "Akker"
 #: simulation/templates/template_structure_resource_field.xml:21
 msgid ""
 "Harvest grain for food. Each subsequent gatherer works less efficiently."
-msgstr "Oogst graan voor voedsel. Elke arbeider erbij werkt iets minder efficiënt."
+msgstr "Produceert graan voor voedsel. Elke arbeider erbij werkt iets minder efficiënt."
 
 #: simulation/templates/template_structure_special.xml:19
 msgid "Special Structure"
@@ -2297,16 +2377,6 @@ msgstr "Amphitheater"
 #: simulation/templates/template_structure_special_library.xml:27
 msgid "Library"
 msgstr "Bibliotheek"
-
-#: simulation/templates/template_structure_special_rotarymill.xml:33
-msgid "Rotary Mill"
-msgstr "Rosmolen"
-
-#: simulation/templates/template_structure_special_rotarymill.xml:38
-msgid ""
-"Dropsite for harvested Food. Capture one of these to increase nearby food "
-"production."
-msgstr "Verzamelplaats voor geoogst voedsel. Verover dit gebouw voor toename van nabijgelegen voedselproductie."
 
 #: simulation/templates/template_structure_special_theater.xml:25
 #: simulation/templates/template_structure_special_theater.xml:27

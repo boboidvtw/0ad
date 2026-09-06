@@ -1,4 +1,4 @@
-/* Copyright (C) 2023 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -190,10 +190,11 @@ bool CMiniMapTexture::CellIconKeyEqual::operator()(
 		lhs.b == rhs.b;
 }
 
-CMiniMapTexture::CMiniMapTexture(CSimulation2& simulation)
-	: m_Simulation(simulation), m_IndexArray(false),
-	m_VertexArray(Renderer::Backend::IBuffer::Type::VERTEX, true),
-	m_InstanceVertexArray(Renderer::Backend::IBuffer::Type::VERTEX, false)
+CMiniMapTexture::CMiniMapTexture(Renderer::Backend::IDevice* device, CSimulation2& simulation)
+	: m_Simulation(simulation), m_IndexArray(Renderer::Backend::IBuffer::Usage::TRANSFER_DST),
+	m_VertexArray(Renderer::Backend::IBuffer::Type::VERTEX,
+		Renderer::Backend::IBuffer::Usage::DYNAMIC | Renderer::Backend::IBuffer::Usage::TRANSFER_DST),
+	m_InstanceVertexArray(Renderer::Backend::IBuffer::Type::VERTEX, Renderer::Backend::IBuffer::Usage::TRANSFER_DST)
 {
 	// Register Relax NG validator.
 	CXeromyces::AddValidator(g_VFS, "pathfinder", "simulation/data/pathfinder.rng");
@@ -252,7 +253,6 @@ CMiniMapTexture::CMiniMapTexture(CSimulation2& simulation)
 	}};
 	m_QuadVertexInputLayout = g_Renderer.GetVertexInputLayout(attributes);
 
-	Renderer::Backend::IDevice* device = g_VideoMode.GetBackendDevice();
 	m_Flipped = device->GetBackend() == Renderer::Backend::Backend::VULKAN;
 
 	const uint32_t stride = m_VertexArray.GetStride();
@@ -357,10 +357,7 @@ void CMiniMapTexture::Render(
 	Renderer::Backend::IDeviceCommandContext* deviceCommandContext,
 	CLOSTexture& losTexture, CTerritoryTexture& territoryTexture)
 {
-	const CTerrain* terrain = g_Game->GetWorld()->GetTerrain();
-	if (!terrain)
-		return;
-
+	const CTerrain& terrain = g_Game->GetWorld()->GetTerrain();
 	if (!m_TerrainTexture)
 		CreateTextures(deviceCommandContext, terrain);
 
@@ -371,11 +368,11 @@ void CMiniMapTexture::Render(
 }
 
 void CMiniMapTexture::CreateTextures(
-	Renderer::Backend::IDeviceCommandContext* deviceCommandContext, const CTerrain* terrain)
+	Renderer::Backend::IDeviceCommandContext* deviceCommandContext, const CTerrain& terrain)
 {
 	DestroyTextures();
 
-	m_MapSize = terrain->GetVerticesPerSide();
+	m_MapSize = terrain.GetVerticesPerSide();
 	const size_t textureSize = round_up_to_pow2(static_cast<size_t>(m_MapSize));
 
 	const Renderer::Backend::Sampler::Desc defaultSamplerDesc =
@@ -429,7 +426,7 @@ void CMiniMapTexture::DestroyTextures()
 
 void CMiniMapTexture::RebuildTerrainTexture(
 	Renderer::Backend::IDeviceCommandContext* deviceCommandContext,
-	const CTerrain* terrain)
+	const CTerrain& terrain)
 {
 	const u32 x = 0;
 	const u32 y = 0;
@@ -444,10 +441,11 @@ void CMiniMapTexture::RebuildTerrainTexture(
 		u32* dataPtr = m_TerrainData.get() + ((y + j) * width) + x;
 		for (u32 i = 0; i < width; ++i)
 		{
-			const float avgHeight = ( terrain->GetVertexGroundLevel((int)i, (int)j)
-					+ terrain->GetVertexGroundLevel((int)i+1, (int)j)
-					+ terrain->GetVertexGroundLevel((int)i, (int)j+1)
-					+ terrain->GetVertexGroundLevel((int)i+1, (int)j+1)
+			const float avgHeight = (
+				terrain.GetVertexGroundLevel(static_cast<int>(i), static_cast<int>(j))
+				+ terrain.GetVertexGroundLevel(static_cast<int>(i+1), static_cast<int>(j))
+				+ terrain.GetVertexGroundLevel(static_cast<int>(i), static_cast<int>(j+1))
+				+ terrain.GetVertexGroundLevel(static_cast<int>(i+1), static_cast<int>(j+1))
 				) / 4.0f;
 
 			if (avgHeight < m_WaterHeight && avgHeight > m_WaterHeight - m_ShallowPassageHeight)
@@ -462,12 +460,13 @@ void CMiniMapTexture::RebuildTerrainTexture(
 			}
 			else
 			{
-				int hmap = ((int)terrain->GetHeightMap()[(y + j) * m_MapSize + x + i]) >> 8;
+				const int hmap =
+					static_cast<int>(terrain.GetHeightMap()[(y + j) * m_MapSize + x + i]) >> 8;
 				int val = (hmap / 3) + 170;
 
 				u32 color = 0xFFFFFFFF;
 
-				CMiniPatch* mp = terrain->GetTile(x + i, y + j);
+				CMiniPatch* const mp = terrain.GetTile(x + i, y + j);
 				if (mp)
 				{
 					CTerrainTextureEntry* tex = mp->GetTextureEntry();

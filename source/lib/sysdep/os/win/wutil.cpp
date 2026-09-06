@@ -1,4 +1,4 @@
-/* Copyright (C) 2022 Wildfire Games.
+/* Copyright (C) 2023 Wildfire Games.
  *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -31,20 +31,12 @@
 #include "lib/sysdep/sysdep.h"
 #include "lib/sysdep/os/win/win.h"
 #include "lib/sysdep/os/win/wdbg.h"	// wdbg_assert
-#include "lib/sysdep/os/win/winit.h"
 
 #include <shlobj.h>	// SHGetFolderPath
 
 #include <SDL_loadso.h>
 #include <SDL_syswm.h>
 
-
-WINIT_REGISTER_EARLY_INIT(wutil_Init);
-WINIT_REGISTER_LATE_SHUTDOWN(wutil_Shutdown);
-
-
-// Defined in ps/Pyrogenesis.h
-extern const char* main_window_name;
 
 //-----------------------------------------------------------------------------
 // safe allocator
@@ -164,41 +156,10 @@ Status StatusFromWin()
 //-----------------------------------------------------------------------------
 // directories
 
-// (NB: wutil_Init is called before static ctors => use placement new)
-static OsPath* systemPath;
-static OsPath* executablePath;
-static OsPath* localAppdataPath;
-static OsPath* roamingAppdataPath;
-static OsPath* personalPath;
-
-const OsPath& wutil_SystemPath()
-{
-	return *systemPath;
-}
-
-const OsPath& wutil_ExecutablePath()
-{
-	return *executablePath;
-}
-
-const OsPath& wutil_LocalAppdataPath()
-{
-	return *localAppdataPath;
-}
-
-const OsPath& wutil_RoamingAppdataPath()
-{
-	return *roamingAppdataPath;
-}
-
-const OsPath& wutil_PersonalPath()
-{
-	return *personalPath;
-}
-
 // Helper to avoid duplicating this setup
-static OsPath* GetFolderPath(int csidl)
+static OsPath GetFolderPath(int csidl)
 {
+	WinScopedPreserveLastError s;
 	HWND hwnd = 0;	// ignored unless a dial-up connection is needed to access the folder
 	HANDLE token = 0;
 	wchar_t path[MAX_PATH];	// mandated by SHGetFolderPathW
@@ -208,140 +169,28 @@ static OsPath* GetFolderPath(int csidl)
 		debug_printf("SHGetFolderPathW failed with HRESULT = 0x%08lx for csidl = 0x%04x\n", ret, csidl);
 		debug_warn("SHGetFolderPathW failed (see debug output)");
 	}
-	if(GetLastError() == ERROR_NO_TOKEN)	// avoid polluting last error
+	if (GetLastError() == ERROR_NO_TOKEN)	// avoid polluting last error
 		SetLastError(0);
-	return new(wutil_Allocate(sizeof(OsPath))) OsPath(path);
+	return OsPath(path);
 }
 
-static void GetDirectories()
+OsPath wutil_LocalAppdataPath()
 {
-	WinScopedPreserveLastError s;
-
-	// system directory
-	{
-		const UINT length = GetSystemDirectoryW(0, 0);
-		ENSURE(length != 0);
-		std::wstring path(length, '\0');
-		const UINT charsWritten = GetSystemDirectoryW(&path[0], length);
-		ENSURE(charsWritten == length-1);
-		systemPath = new(wutil_Allocate(sizeof(OsPath))) OsPath(path);
-	}
-
-	// executable's directory
-	executablePath = new(wutil_Allocate(sizeof(OsPath))) OsPath(sys_ExecutablePathname().Parent());
-
-	// roaming application data
-	roamingAppdataPath = GetFolderPath(CSIDL_APPDATA);
-
-	// local application data
-	localAppdataPath = GetFolderPath(CSIDL_LOCAL_APPDATA);
-
-	// my documents
-	personalPath = GetFolderPath(CSIDL_PERSONAL);
+	// Local application data.
+	return GetFolderPath(CSIDL_LOCAL_APPDATA);
 }
 
-
-static void FreeDirectories()
+OsPath wutil_RoamingAppdataPath()
 {
-	systemPath->~OsPath();
-	wutil_Free(systemPath);
-	executablePath->~OsPath();
-	wutil_Free(executablePath);
-	localAppdataPath->~OsPath();
-	wutil_Free(localAppdataPath);
-	roamingAppdataPath->~OsPath();
-	wutil_Free(roamingAppdataPath);
-	personalPath->~OsPath();
-	wutil_Free(personalPath);
+	// Roaming application data.
+	return GetFolderPath(CSIDL_APPDATA);
 }
 
-//-----------------------------------------------------------------------------
-// memory
-
-static void EnableLowFragmentationHeap()
+OsPath wutil_PersonalPath()
 {
-	if(IsDebuggerPresent())
-	{
-		// and the debug heap isn't explicitly disabled,
-		char* var = getenv("_NO_DEBUG_HEAP");
-		if(!var || var[0] != '1')
-			return;	// we can't enable the LFH
-	}
-
-#if WINVER >= 0x0501
-	WUTIL_FUNC(pHeapSetInformation, BOOL, (HANDLE, HEAP_INFORMATION_CLASS, void*, size_t));
-	WUTIL_IMPORT_KERNEL32(HeapSetInformation, pHeapSetInformation);
-	if(pHeapSetInformation)
-	{
-		ULONG flags = 2;	// enable LFH
-		pHeapSetInformation(GetProcessHeap(), HeapCompatibilityInformation, &flags, sizeof(flags));
-	}
-#endif	// #if WINVER >= 0x0501
+	// My documents.
+	return GetFolderPath(CSIDL_PERSONAL);
 }
-
-
-//-----------------------------------------------------------------------------
-// Wow64
-
-// Wow64 'helpfully' redirects all 32-bit apps' accesses of
-// %windir%\\system32\\drivers to %windir%\\system32\\drivers\\SysWOW64.
-// that's bad, because the actual drivers are not in the subdirectory. to
-// work around this, provide for temporarily disabling redirection.
-
-static WUTIL_FUNC(pIsWow64Process, BOOL, (HANDLE, PBOOL));
-static WUTIL_FUNC(pWow64DisableWow64FsRedirection, BOOL, (PVOID*));
-static WUTIL_FUNC(pWow64RevertWow64FsRedirection, BOOL, (PVOID));
-
-static bool isWow64;
-
-static void ImportWow64Functions()
-{
-	WUTIL_IMPORT_KERNEL32(IsWow64Process, pIsWow64Process);
-	WUTIL_IMPORT_KERNEL32(Wow64DisableWow64FsRedirection, pWow64DisableWow64FsRedirection);
-	WUTIL_IMPORT_KERNEL32(Wow64RevertWow64FsRedirection, pWow64RevertWow64FsRedirection);
-}
-
-static void DetectWow64()
-{
-	// function not found => running on 32-bit Windows
-	if(!pIsWow64Process)
-	{
-		isWow64 = false;
-		return;
-	}
-
-	BOOL isWow64Process = FALSE;
-	const BOOL ok = pIsWow64Process(GetCurrentProcess(), &isWow64Process);
-	WARN_IF_FALSE(ok);
-	isWow64 = (isWow64Process == TRUE);
-}
-
-bool wutil_IsWow64()
-{
-	return isWow64;
-}
-
-
-WinScopedDisableWow64Redirection::WinScopedDisableWow64Redirection()
-{
-	// note: don't just check if the function pointers are valid. 32-bit
-	// Vista includes them but isn't running Wow64, so calling the functions
-	// would fail. since we have to check if actually on Wow64, there's no
-	// more need to verify the pointers (their existence is implied).
-	if(!wutil_IsWow64())
-		return;
-	const BOOL ok = pWow64DisableWow64FsRedirection(&m_wasRedirectionEnabled);
-	WARN_IF_FALSE(ok);
-}
-
-WinScopedDisableWow64Redirection::~WinScopedDisableWow64Redirection()
-{
-	if(!wutil_IsWow64())
-		return;
-	const BOOL ok = pWow64RevertWow64FsRedirection(m_wasRedirectionEnabled);
-	WARN_IF_FALSE(ok);
-}
-
 
 //-----------------------------------------------------------------------------
 
@@ -452,26 +301,17 @@ void wutil_EnableHiDPIOnWindows()
 
 //-----------------------------------------------------------------------------
 
-static Status wutil_Init()
+Status wutil_Init()
 {
 	InitLocks();
-
-	EnableLowFragmentationHeap();
-
-	GetDirectories();
-
-	ImportWow64Functions();
-	DetectWow64();
 
 	return INFO::OK;
 }
 
 
-static Status wutil_Shutdown()
+Status wutil_Shutdown()
 {
 	ShutdownLocks();
-
-	FreeDirectories();
 
 	return INFO::OK;
 }

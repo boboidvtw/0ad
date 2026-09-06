@@ -1,4 +1,4 @@
-/* Copyright (C) 2023 Wildfire Games.
+/* Copyright (C) 2024 Wildfire Games.
  * This file is part of 0 A.D.
  *
  * 0 A.D. is free software: you can redistribute it and/or modify
@@ -84,6 +84,13 @@ public:
 		const SGraphicsPipelineStateDesc& pipelineStateDesc) = 0;
 
 	/**
+	 * Creates a compute pipeline state. It's a caller responsibility to
+	 * guarantee a lifespan of IShaderProgram stored in the description.
+	 */
+	virtual std::unique_ptr<IComputePipelineState> CreateComputePipelineState(
+		const SComputePipelineStateDesc& pipelineStateDesc) = 0;
+
+	/**
 	 * Creates a vertex input layout. It's recommended to use as few different
 	 * layouts as posible.
 	 */
@@ -115,7 +122,7 @@ public:
 		SDepthStencilAttachment* depthStencilAttachment) = 0;
 
 	virtual std::unique_ptr<IBuffer> CreateBuffer(
-		const char* name, const IBuffer::Type type, const uint32_t size, const bool dynamic) = 0;
+		const char* name, const IBuffer::Type type, const uint32_t size, const uint32_t usage) = 0;
 
 	virtual std::unique_ptr<IShaderProgram> CreateShaderProgram(
 		const CStr& name, const CShaderDefines& defines) = 0;
