@@ -1,0 +1,43 @@
+{
+  "Code": "epoch",
+  "Culture": "hele",
+  "Music": [
+    {
+      "File": "Harvest_Festival.ogg",
+      "Type": "peace"
+    },
+    {
+      "File": "Forging_a_City-State.ogg",
+      "Type": "peace"
+    },
+    {
+      "File": "Highland_Mist.ogg",
+      "Type": "peace"
+    },
+    {
+      "File": "The_Hellespont.ogg",
+      "Type": "peace"
+    }
+  ],
+  "CivBonuses": [],
+  "WallSets": [],
+  "StartEntities": [
+    {
+      "Template": "structures/epoch_rts/civil_centre"
+    },
+    {
+      "Template": "units/epoch_rts/pioneer",
+      "Count": 6
+    },
+    {
+      "Template": "units/epoch_rts/spearman",
+      "Count": 2
+    }
+  ],
+  "AINames": [
+    "Frontier Defender"
+  ],
+  "SkirmishReplacements": {},
+  "SelectableInGameSetup": true,
+  "Name": "Frontier Union"
+}

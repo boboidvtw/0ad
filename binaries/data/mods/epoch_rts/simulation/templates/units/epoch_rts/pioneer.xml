@@ -1,10 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2026 Epoch RTS contributors. SPDX-License-Identifier: GPL-2.0-or-later -->
-<!-- Purpose: Visible M1 custom unit; inherits temporary public gameplay/art. Created: 2026-09-06. -->
+<!-- Purpose: T04 original prototype rules using public temporary art. Created: 2026-09-07. -->
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
 <Entity parent="units/athen/support_female_citizen">
+  <Cost replace="">
+    <Population>1</Population>
+    <BuildTime>15</BuildTime>
+    <Resources>
+      <food>50</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>40</Max>
+  </Health>
   <Identity>
-    <GenericName>Frontier Pioneer</GenericName>
-    <SpecificName>Epoch Pioneer</SpecificName>
-    <Tooltip>Epoch RTS M1 prototype worker. Temporary Athenian art and inherited 0 A.D. rules; cross-era progression is not implemented yet.</Tooltip>
+    <Civ>epoch</Civ>
+    <Lang>greek</Lang>
+    <GenericName>Frontier Worker</GenericName>
+    <SpecificName>Pioneer</SpecificName>
+    <SelectionGroupName>units/epoch_rts/pioneer</SelectionGroupName>
+    <Classes datatype="tokens" replace="">Unit Organic Human Support Worker Builder</Classes>
+    <VisibleClasses datatype="tokens" replace="">Support Worker Builder</VisibleClasses>
+    <Tooltip>Frontier Worker: Gather resources, construct and repair buildings.</Tooltip>
+    <Requirements replace="" />
   </Identity>
+  <Auras disable="" />
+  <Promotion disable="" />
+  <Loot disable="" />
+  <Looter disable="" />
+  <TreasureCollector disable="" />
+  <Garrisonable disable="" />
+  <Resistance>
+    <Entity>
+      <Damage replace="">
+        <Hack>0</Hack>
+        <Pierce>0</Pierce>
+        <Crush>0</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>9</WalkSpeed>
+  </UnitMotion>
+  <Attack replace="">
+    <Melee>
+      <AttackName>Melee</AttackName>
+      <Damage replace="">
+        <Hack>2</Hack>
+        <Pierce>0</Pierce>
+        <Crush>0</Crush>
+      </Damage>
+      <MaxRange>3</MaxRange>
+      <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Builder replace="">
+    <Rate>1</Rate>
+    <Entities datatype="tokens">structures/epoch_rts/house structures/epoch_rts/storehouse structures/epoch_rts/barracks structures/epoch_rts/field structures/epoch_rts/forge</Entities>
+  </Builder>
+  <ResourceGatherer>
+    <Rates replace="">
+      <food.fruit>1</food.fruit>
+      <food.grain>0.5</food.grain>
+      <wood.tree>0.7</wood.tree>
+      <stone.rock>0.35</stone.rock>
+      <metal.ore>0.35</metal.ore>
+    </Rates>
+  </ResourceGatherer>
 </Entity>

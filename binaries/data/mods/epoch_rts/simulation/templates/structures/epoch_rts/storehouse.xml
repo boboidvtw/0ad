@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Purpose: T04 original prototype rules using public temporary art. Created: 2026-09-07. -->
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<Entity parent="structures/athen/storehouse">
+  <Cost replace="">
+    <Population>0</Population>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>100</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>400</Max>
+  </Health>
+  <Identity>
+    <Civ>epoch</Civ>
+    <GenericName>Storehouse</GenericName>
+    <SpecificName>Storehouse</SpecificName>
+    <SelectionGroupName>structures/epoch_rts/storehouse</SelectionGroupName>
+    <Classes datatype="tokens" replace="">Structure Storehouse</Classes>
+    <VisibleClasses datatype="tokens" replace="">Storehouse</VisibleClasses>
+    <Tooltip>Storehouse</Tooltip>
+    <Undeletable>false</Undeletable>
+    <Requirements replace="" />
+  </Identity>
+  <Capturable disable="" />
+  <TerritoryDecay disable="" />
+  <Attack disable="" />
+  <BuildingAI disable="" />
+  <GarrisonHolder disable="" />
+  <AlertRaiser disable="" />
+  <Loot disable="" />
+  <Looter disable="" />
+  <Auras disable="" />
+  <Researcher disable="" />
+  <Resistance>
+    <Entity>
+      <Damage replace="">
+        <Hack>5</Hack>
+        <Pierce>8</Pierce>
+        <Crush>5</Crush>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage replace="">
+        <Hack>5</Hack>
+        <Pierce>8</Pierce>
+        <Crush>5</Crush>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+    <Distance disable="" />
+  </BuildRestrictions>
+  <RallyPointRenderer>
+    <MarkerTemplate>special/rallypoints/athen</MarkerTemplate>
+  </RallyPointRenderer>
+  <TerritoryInfluence disable="" />
+  <Trainer disable="" />
+  <ProductionQueue disable="" />
+  <ResourceDropsite>
+    <Types>food wood stone metal</Types>
+    <Sharable>false</Sharable>
+  </ResourceDropsite>
+</Entity>

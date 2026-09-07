@@ -1,7 +1,9 @@
 {
   "name": "epoch_rts",
-  "version": "0.1.0",
-  "label": "Epoch RTS — Frontier Prototype",
-  "description": "Original cross-era RTS prototype. M1 adds the Frontier test map and Pioneer; two-era gameplay is not implemented yet.",
-  "dependencies": ["0ad=0.28.0"]
+  "version": "0.2.0",
+  "label": "Epoch RTS \u2014 Frontier Prototype",
+  "description": "Original cross-era RTS prototype. T04 adds the Frontier Duel economy; era research and complete match validation remain pending.",
+  "dependencies": [
+    "0ad=0.28.0"
+  ]
 }

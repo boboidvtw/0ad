@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Purpose: T04 original prototype rules using public temporary art. Created: 2026-09-07. -->
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<Entity parent="structures/athen/civil_centre">
+  <Cost replace="">
+    <Population>0</Population>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>1000</Max>
+  </Health>
+  <Identity>
+    <Civ>epoch</Civ>
+    <GenericName>Civic Center</GenericName>
+    <SpecificName>Civic Center</SpecificName>
+    <SelectionGroupName>structures/epoch_rts/civil_centre</SelectionGroupName>
+    <Classes datatype="tokens" replace="">Structure CivilCentre CivCentre ConquestCritical</Classes>
+    <VisibleClasses datatype="tokens" replace="">CivilCentre CivCentre </VisibleClasses>
+    <Tooltip>Civic Center</Tooltip>
+    <Undeletable>true</Undeletable>
+    <Requirements replace="" />
+  </Identity>
+  <Capturable disable="" />
+  <TerritoryDecay disable="" />
+  <Attack disable="" />
+  <BuildingAI disable="" />
+  <GarrisonHolder disable="" />
+  <AlertRaiser disable="" />
+  <Loot disable="" />
+  <Looter disable="" />
+  <Auras disable="" />
+  <Researcher disable="" />
+  <Resistance>
+    <Entity>
+      <Damage replace="">
+        <Hack>5</Hack>
+        <Pierce>8</Pierce>
+        <Crush>5</Crush>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage replace="">
+        <Hack>5</Hack>
+        <Pierce>8</Pierce>
+        <Crush>5</Crush>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+    <Distance disable="" />
+  </BuildRestrictions>
+  <RallyPointRenderer>
+    <MarkerTemplate>special/rallypoints/athen</MarkerTemplate>
+  </RallyPointRenderer>
+  <Trainer replace="">
+    <BatchTimeModifier>1</BatchTimeModifier>
+    <Entities datatype="tokens">units/epoch_rts/pioneer</Entities>
+  </Trainer>
+  <ResourceDropsite>
+    <Types>food wood stone metal</Types>
+    <Sharable>false</Sharable>
+  </ResourceDropsite>
+  <Population>
+    <Bonus>20</Bonus>
+  </Population>
+</Entity>

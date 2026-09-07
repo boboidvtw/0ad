@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Purpose: T04 original prototype rules using public temporary art. Created: 2026-09-07. -->
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<Entity parent="units/athen/infantry_spearman_b">
+  <Cost replace="">
+    <Population>1</Population>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>60</food>
+      <wood>20</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>100</Max>
+  </Health>
+  <Identity>
+    <Civ>epoch</Civ>
+    <Lang>greek</Lang>
+    <GenericName>Spearman</GenericName>
+    <SpecificName>Spearman</SpecificName>
+    <SelectionGroupName>units/epoch_rts/spearman</SelectionGroupName>
+    <Classes datatype="tokens" replace="">Unit Organic Human Soldier Infantry Spearman EpochMelee</Classes>
+    <VisibleClasses datatype="tokens" replace="">Soldier Infantry Spearman</VisibleClasses>
+    <Tooltip>Spearman: Combat unit. Cannot gather or build.</Tooltip>
+    <Requirements replace="" />
+  </Identity>
+  <Auras disable="" />
+  <Promotion disable="" />
+  <Loot disable="" />
+  <Looter disable="" />
+  <TreasureCollector disable="" />
+  <Garrisonable disable="" />
+  <Resistance>
+    <Entity>
+      <Damage replace="">
+        <Hack>1</Hack>
+        <Pierce>2</Pierce>
+        <Crush>0</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>8</WalkSpeed>
+  </UnitMotion>
+  <Attack replace="">
+    <Melee>
+      <AttackName>Melee</AttackName>
+      <Damage replace="">
+        <Hack>6</Hack>
+        <Pierce>0</Pierce>
+        <Crush>0</Crush>
+      </Damage>
+      <MaxRange>3</MaxRange>
+      <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Builder disable="" />
+  <ResourceGatherer disable="" />
+</Entity>

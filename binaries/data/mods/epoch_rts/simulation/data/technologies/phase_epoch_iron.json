@@ -1,0 +1,27 @@
+{
+  "genericName": "Iron Age",
+  "requirements": {
+    "all": [
+      {
+        "civ": "epoch"
+      },
+      {
+        "tech": "phase_epoch_bronze"
+      },
+      {
+        "entity": {
+          "class": "Barracks",
+          "number": 1
+        }
+      }
+    ]
+  },
+  "cost": {
+    "food": 400,
+    "wood": 200,
+    "metal": 100
+  },
+  "researchTime": 60,
+  "icon": "town_phase.png",
+  "tooltip": "Unlock Iron Swordsmen and the Forge."
+}

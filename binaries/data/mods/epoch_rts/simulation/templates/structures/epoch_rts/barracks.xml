@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Purpose: T04 original prototype rules using public temporary art. Created: 2026-09-07. -->
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<Entity parent="structures/athen/barracks">
+  <Cost replace="">
+    <Population>0</Population>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>150</wood>
+      <stone>50</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>600</Max>
+  </Health>
+  <Identity>
+    <Civ>epoch</Civ>
+    <GenericName>Barracks</GenericName>
+    <SpecificName>Barracks</SpecificName>
+    <SelectionGroupName>structures/epoch_rts/barracks</SelectionGroupName>
+    <Classes datatype="tokens" replace="">Structure Barracks</Classes>
+    <VisibleClasses datatype="tokens" replace="">Barracks</VisibleClasses>
+    <Tooltip>Barracks</Tooltip>
+    <Undeletable>false</Undeletable>
+    <Requirements replace="" />
+  </Identity>
+  <Capturable disable="" />
+  <TerritoryDecay disable="" />
+  <Attack disable="" />
+  <BuildingAI disable="" />
+  <GarrisonHolder disable="" />
+  <AlertRaiser disable="" />
+  <Loot disable="" />
+  <Looter disable="" />
+  <Auras disable="" />
+  <Researcher disable="" />
+  <Resistance>
+    <Entity>
+      <Damage replace="">
+        <Hack>5</Hack>
+        <Pierce>8</Pierce>
+        <Crush>5</Crush>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage replace="">
+        <Hack>5</Hack>
+        <Pierce>8</Pierce>
+        <Crush>5</Crush>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+    <Distance disable="" />
+  </BuildRestrictions>
+  <RallyPointRenderer>
+    <MarkerTemplate>special/rallypoints/athen</MarkerTemplate>
+  </RallyPointRenderer>
+  <TerritoryInfluence disable="" />
+  <Trainer replace="">
+    <BatchTimeModifier>1</BatchTimeModifier>
+    <Entities datatype="tokens">units/epoch_rts/spearman units/epoch_rts/slinger units/epoch_rts/iron_swordsman</Entities>
+  </Trainer>
+</Entity>

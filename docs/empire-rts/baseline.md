@@ -62,3 +62,22 @@ python3 tools/epoch-rts/smoke-macos.py --app '/path/to/0 A.D..app' --seed 7
 測試使用官方引擎實際生成地圖、載入自訂模板及運行模擬；偵測到至少 100 個回合後，以 SIGTERM 結束測試程序。引擎跑得很快，實際停止時通常已超過 100 回合；這不是效能基準。30 秒未達條件則失敗，最終只終止該測試自己啟動的程序。
 
 每次結果會保存在新的 `work/epoch-rts-smoke/時間-seed/` 目錄。`result.json` 區分引擎測試與畫面驗證；`visual_verified` 永遠為 false。若已有遊戲程序，測試會停止，避免日誌互相覆寫。詳細日誌只留本機；提交證據前需排除使用者路徑與設定。
+
+## T04 經濟原型（epoch_rts 0.2.0）
+
+沿用上述官方 R28 runtime 與 Mod 安裝方式。進入新的 Frontier Duel：
+
+```bash
+EPOCH_RTS_0AD_APP='/path/to/0 A.D..app' tools/epoch-rts/launch-macos.sh duel
+```
+
+兩位 Frontier Union 玩家，192 tiles；正常開局有 6 工人、2 長矛兵與唯一市中心。可採集、建造、訓練；鐵器研究入口與科技 HUD 尚待 T05。畫面暫用可讀英文名稱，中文支援待字型驗收。
+
+關閉所有 0 A.D. 實例後執行整合檢查：
+
+```bash
+python3 tools/epoch-rts/smoke-macos.py --app '/path/to/0 A.D..app' --scenario t04 --seed 42
+python3 tools/epoch-rts/smoke-macos.py --app '/path/to/0 A.D..app' --scenario t04 --seed 7
+```
+
+`--scenario duel` 只檢查正常地圖載入及運行；預設 `--scenario m1` 保留 M1 地圖回歸。`t04` 使用專用驗收地圖，會建立測試實體、設定資源並檢查邊界，不能當作無作弊完整對局。測試最長 60 秒，收到完整結果後停止自己的引擎程序；報告中的 SIGTERM 不代表遊戲正常退出，正常退出另由 GUI 測試驗證。

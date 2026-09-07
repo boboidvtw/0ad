@@ -1,0 +1,18 @@
+{
+  "runtime": "0.28.0",
+  "mod": "epoch_rts 0.2.0",
+  "seed": 42,
+  "map": "random/epoch_frontier",
+  "suite": null,
+  "size": 192,
+  "players": 2,
+  "map_ready_marker": true,
+  "last_turn": 1187,
+  "stopped_after_turn_limit": true,
+  "stop_condition": "at least 100 turns",
+  "exit_code": -15,
+  "errors_or_warnings": [],
+  "engine_html_error_or_warning": false,
+  "visual_verified": false,
+  "passed": true
+}

@@ -1,0 +1,25 @@
+{
+  "settings": {
+    "Name": "Epoch RTS — T04 automated validation",
+    "Script": "epoch_frontier_duel.js",
+    "Description": "青銅時代經濟原型：採集、建造及訓練。兩位拓荒聯盟玩家；192 地圖。時代研究介面將於後續階段加入。",
+    "CircularMap": true,
+    "Keywords": [
+      "demo"
+    ],
+    "SupportedBiomes": [],
+    "PlayerData": [
+      {
+        "Civ": "epoch"
+      },
+      {
+        "Civ": "epoch"
+      }
+    ],
+    "PopulationCap": 100,
+    "TriggerScripts": [
+      "scripts/epoch_rts/FrontierDuel.js",
+      "scripts/epoch_rts/T04Validation.js"
+    ]
+  }
+}

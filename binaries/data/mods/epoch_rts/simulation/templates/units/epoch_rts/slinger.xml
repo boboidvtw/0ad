@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Purpose: T04 original prototype rules using public temporary art. Created: 2026-09-07. -->
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<Entity parent="units/athen/infantry_slinger_b">
+  <Cost replace="">
+    <Population>1</Population>
+    <BuildTime>25</BuildTime>
+    <Resources>
+      <food>40</food>
+      <wood>40</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>60</Max>
+  </Health>
+  <Identity>
+    <Civ>epoch</Civ>
+    <Lang>greek</Lang>
+    <GenericName>Slinger</GenericName>
+    <SpecificName>Slinger</SpecificName>
+    <SelectionGroupName>units/epoch_rts/slinger</SelectionGroupName>
+    <Classes datatype="tokens" replace="">Unit Organic Human Soldier Infantry Slinger</Classes>
+    <VisibleClasses datatype="tokens" replace="">Soldier Infantry Slinger</VisibleClasses>
+    <Tooltip>Slinger: Combat unit. Cannot gather or build.</Tooltip>
+    <Requirements replace="" />
+  </Identity>
+  <Auras disable="" />
+  <Promotion disable="" />
+  <Loot disable="" />
+  <Looter disable="" />
+  <TreasureCollector disable="" />
+  <Garrisonable disable="" />
+  <Resistance>
+    <Entity>
+      <Damage replace="">
+        <Hack>0</Hack>
+        <Pierce>1</Pierce>
+        <Crush>0</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>9</WalkSpeed>
+  </UnitMotion>
+  <Attack replace="">
+    <Ranged>
+      <AttackName>Sling</AttackName>
+      <Damage replace="">
+        <Hack>0</Hack>
+        <Pierce>4</Pierce>
+        <Crush>0</Crush>
+      </Damage>
+      <MinRange>0</MinRange>
+      <MaxRange>40</MaxRange>
+      <PrepareTime>500</PrepareTime>
+      <RepeatTime>1500</RepeatTime>
+      <Projectile>
+        <Speed>90</Speed>
+        <Spread>3</Spread>
+        <Gravity>45</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+    </Ranged>
+  </Attack>
+  <Builder disable="" />
+  <ResourceGatherer disable="" />
+</Entity>

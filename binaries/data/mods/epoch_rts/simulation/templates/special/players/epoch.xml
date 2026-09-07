@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Purpose: Original prototype player with no inherited civilization aura. Created: 2026-09-07. -->
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<Entity parent="template_player">
+  <Identity>
+    <Civ>epoch</Civ>
+    <GenericName>Frontier Union</GenericName>
+    <History>An original faction with symmetric prototype rules.</History>
+    <Icon>emblems/emblem_athenians.png</Icon>
+  </Identity>
+</Entity>

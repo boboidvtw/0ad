@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Purpose: T04 original prototype rules using public temporary art. Created: 2026-09-07. -->
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<Entity parent="units/rome/infantry_swordsman_b">
+  <Cost replace="">
+    <Population>1</Population>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>80</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>40</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>140</Max>
+  </Health>
+  <Identity>
+    <Civ>epoch</Civ>
+    <Lang>greek</Lang>
+    <GenericName>Iron Swordsman</GenericName>
+    <SpecificName>Iron Swordsman</SpecificName>
+    <SelectionGroupName>units/epoch_rts/iron_swordsman</SelectionGroupName>
+    <Classes datatype="tokens" replace="">Unit Organic Human Soldier Infantry Swordsman EpochMelee</Classes>
+    <VisibleClasses datatype="tokens" replace="">Soldier Infantry Swordsman</VisibleClasses>
+    <Tooltip>Iron Swordsman: Combat unit. Cannot gather or build.</Tooltip>
+    <Requirements replace="">
+      <Techs datatype="tokens">phase_epoch_iron</Techs>
+      <Tooltip>Requires Iron Age.</Tooltip>
+    </Requirements>
+  </Identity>
+  <Auras disable="" />
+  <Promotion disable="" />
+  <Loot disable="" />
+  <Looter disable="" />
+  <TreasureCollector disable="" />
+  <Garrisonable disable="" />
+  <Resistance>
+    <Entity>
+      <Damage replace="">
+        <Hack>2</Hack>
+        <Pierce>3</Pierce>
+        <Crush>0</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>9</WalkSpeed>
+  </UnitMotion>
+  <Attack replace="">
+    <Melee>
+      <AttackName>Melee</AttackName>
+      <Damage replace="">
+        <Hack>10</Hack>
+        <Pierce>0</Pierce>
+        <Crush>0</Crush>
+      </Damage>
+      <MaxRange>3</MaxRange>
+      <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Builder disable="" />
+  <ResourceGatherer disable="" />
+</Entity>

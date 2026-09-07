@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Purpose: T04 original prototype rules using public temporary art. Created: 2026-09-07. -->
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<Entity parent="structures/athen/forge">
+  <Cost replace="">
+    <Population>0</Population>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>150</wood>
+      <stone>100</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>500</Max>
+  </Health>
+  <Identity>
+    <Civ>epoch</Civ>
+    <GenericName>Forge</GenericName>
+    <SpecificName>Forge</SpecificName>
+    <SelectionGroupName>structures/epoch_rts/forge</SelectionGroupName>
+    <Classes datatype="tokens" replace="">Structure Forge</Classes>
+    <VisibleClasses datatype="tokens" replace="">Forge</VisibleClasses>
+    <Tooltip>Forge</Tooltip>
+    <Undeletable>false</Undeletable>
+    <Requirements replace="">
+      <Techs datatype="tokens">phase_epoch_iron</Techs>
+      <Tooltip>Requires Iron Age.</Tooltip>
+    </Requirements>
+  </Identity>
+  <Capturable disable="" />
+  <TerritoryDecay disable="" />
+  <Attack disable="" />
+  <BuildingAI disable="" />
+  <GarrisonHolder disable="" />
+  <AlertRaiser disable="" />
+  <Loot disable="" />
+  <Looter disable="" />
+  <Auras disable="" />
+  <Researcher disable="" />
+  <Resistance>
+    <Entity>
+      <Damage replace="">
+        <Hack>5</Hack>
+        <Pierce>8</Pierce>
+        <Crush>5</Crush>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage replace="">
+        <Hack>5</Hack>
+        <Pierce>8</Pierce>
+        <Crush>5</Crush>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+    <Distance disable="" />
+  </BuildRestrictions>
+  <RallyPointRenderer>
+    <MarkerTemplate>special/rallypoints/athen</MarkerTemplate>
+  </RallyPointRenderer>
+  <TerritoryInfluence disable="" />
+  <Trainer disable="" />
+  <ProductionQueue disable="" />
+</Entity>

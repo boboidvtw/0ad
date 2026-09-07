@@ -1,0 +1,24 @@
+{
+  "settings": {
+    "Name": "Epoch RTS - Frontier Duel",
+    "Script": "epoch_frontier_duel.js",
+    "Description": "Bronze Age economy prototype: gather, build and train. Two Frontier Union players, 192 tiles. Age research will be added in the next stage.",
+    "CircularMap": true,
+    "Keywords": [
+      "land"
+    ],
+    "SupportedBiomes": [],
+    "PlayerData": [
+      {
+        "Civ": "epoch"
+      },
+      {
+        "Civ": "epoch"
+      }
+    ],
+    "PopulationCap": 100,
+    "TriggerScripts": [
+      "scripts/epoch_rts/FrontierDuel.js"
+    ]
+  }
+}

@@ -19,3 +19,10 @@
 資產替換時在此表新增新來源、作者、授權、原始檔、匯出設定與遊戲內證據；不得把暫用狀態直接改成正式而省略驗收。
 
 已讀取 Release 28 實際 public.zip 的 `art/LICENSE.txt`：要求署名 Wildfire Games、連結 https://www.wildfiregames.com/ 與 https://creativecommons.org/licenses/by-sa/3.0/；素材按 CC BY-SA 3.0 條件使用。本次遊戲截圖包含這些暫用美術，亦保留上述署名與來源。
+
+## T04 新增暫用引用（2026-09-07～2026-09-08）
+
+- 長矛兵、投石兵與鐵刃步兵分別引用 R28 雅典長矛兵、雅典投石兵、羅馬基礎劍士的模型、動畫與圖示。
+- 六棟建築引用 R28 雅典市中心、房屋、倉庫、兵營、農田、鍛造所；玩法由 epoch_rts 模板覆寫。
+- Frontier Union 暫用雅典徽章、音樂清單與小地圖邊框，尚未製作正式文明識別。MiniMapPanel.js 取自固定 R28，新增 epoch 的暫用邊框映射；程式沿用 GPL-2.0-or-later。
+- 本次仍只透過路徑引用素材，沒有複製 public 素材二進位檔或購買資產。來源、作者與 CC BY-SA 3.0 署名條件同上；新增驗收截圖包含上述暫用素材。

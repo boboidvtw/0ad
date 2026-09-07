@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-08",
+  "runtime": "0.28.0",
+  "map": "random/epoch_frontier_duel",
+  "seed": 42,
+  "visual_verified": true,
+  "normal_exit_code": 0,
+  "errors": 0,
+  "warnings": 0,
+  "checks": [
+    "Worker selection: 40 HP and five build buttons, forge locked",
+    "House completed: 300 HP; wood 250 to 200; capacity 20 to 30",
+    "Barracks completed: 600 HP; wood 200 to 50; stone 100 to 50",
+    "Worker trained: population 8 to 9, food cost 50",
+    "Food harvesting and repeated deposits observed",
+    "Spearman trained: population 9 to 10, wood cost 20, 100 HP",
+    "New Spearman selected and reached commanded position; no build buttons"
+  ],
+  "m1_regression": {
+    "visual_verified": true,
+    "hp": 40,
+    "selection_and_movement": true,
+    "normal_exit_code": 0,
+    "errors": 0,
+    "warnings": 0
+  }
+}

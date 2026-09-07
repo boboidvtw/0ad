@@ -1,15 +1,15 @@
 <!-- Purpose: 任務狀態與證據的唯一主表；Created: 2026-09-06. -->
 # 進度追蹤
 
-更新日期：2026-09-07。[計畫](plan.md) · [美術](art-direction.md) · [紀錄](journal.md)
+更新日期：2026-09-08。[計畫](plan.md) · [美術](art-direction.md) · [紀錄](journal.md)
 
 ## 現況與下一步
 
-**目前階段：M2 IN_PROGRESS。M1 已驗收；T03 兩時代規則定稿。**
+**目前階段：M2 IN_PROGRESS。M1 已驗收；T03 規則與 T04 經濟／生產完成。**
 
 已固定官方 Release 28 macOS ARM64 runtime，建立 `epoch_rts` Mod、Frontier 01 地圖與自訂 Pioneer。兩個 seed 的引擎測試通過；2026-09-07 已完成實際畫面、選取、移動與正常退出驗收，最終日誌 0 錯誤／0 警告，前後截圖已保存。這不是 repo C++ Build、多人、兩時代流程或正式美術驗收。
 
-**下一個動作：T04 實作採集、建造與訓練。** [兩時代規則](m2-rules.md) 已定稿為青銅→鐵器，4 單位、6 建築；依 [驗收清單](m2-acceptance.md) 逐項實作。T04–T06 尚未開始，遊戲目前仍為 M1 原型。
+**下一個動作：T05 時代升級、科技與 HUD。** T04 新增 Frontier Duel、4 單位／6 建築模板與青銅經濟。兩 seed 各 177 項引擎檢查、GUI 建造／訓練／移動及 M1 回歸通過。[T04 驗收](evidence/t04-validation.md)。鐵器研究入口尚未提供，繁中字型亦由 T05 處理；T06 整局未驗收。
 
 見 [基線與啟動方式](baseline.md)、[實際驗收](evidence/m1-validation.md)、[素材登錄](assets.md)。
 
@@ -34,8 +34,8 @@
 | T00 | M0 目標、方案與追蹤文件 | DONE | 無 | Amy | [plan](plan.md)、[art-direction](art-direction.md)、本表與 [journal](journal.md) 已建立；使用者於 2026-09-06 確認方向並要求寫入 repo |
 | T01 | M1 固定可運行基線 | DONE | T00 | Amy | 官方 R28 ARM64、SHA-256 已核對；實際引擎模擬成功。[基線](baseline.md)、[驗收](evidence/m1-validation.md) |
 | T02 | M1 獨立 Mod 與測試地圖 | DONE | T01 | Amy | 地圖／自訂模板載入、兩個 seed 模擬、Pioneer 畫面／選取／移動與正常退出通過；0 錯誤／0 警告，附截圖。[驗收](evidence/m1-validation.md) |
-| T03 | M2 定稿兩時代最小規則 | DONE | T00 | Amy | [規則 v0.1](m2-rules.md)、[驗收案例與靜態檢查](m2-acceptance.md)；數值及依賴已定稿，尚未實作或對局平衡 |
-| T04 | M2 採集、建造與訓練 | TODO | T02、T03 | 待指派 | 實測資源扣除、生產與取消、人口／建造限制及資源不足情況 |
+| T03 | M2 定稿兩時代最小規則 | DONE | T00 | Amy | [規則](m2-rules.md)、[驗收案例與靜態檢查](m2-acceptance.md)；數值及依賴已定稿，尚未實作或對局平衡 |
+| T04 | M2 採集、建造與訓練 | DONE | T02、T03 | Amy | 兩 seed 各 177 引擎檢查、GUI 與 M1 回歸通過；[證據與實測範圍](evidence/t04-validation.md) |
 | T05 | M2 時代升級、科技與 HUD | TODO | T04 | 待指派 | 前置條件、升級、解鎖及介面同步可重現，未解鎖內容不可提前取得 |
 | T06 | M2 作戰與整局流程 | TODO | T05 | 待指派 | 完整遊玩採集到勝負流程，保存步驟、版本及實際結果 |
 | T07 | M3 飛機、機場、防空原型 | TODO | T02 | 待指派 | 起降、移動、返航、對地、防空、邊界及連續命令都有測試紀錄 |
@@ -54,7 +54,7 @@
 | --- | --- | --- |
 | M0 規劃 | DONE | 文件完成；不代表遊戲功能完成 |
 | M1 可運行 Mod 骨架 | DONE | T01、T02 已驗收；限定官方 R28 macOS ARM64 |
-| M2 兩時代可玩流程 | IN_PROGRESS | T03 規格完成；T04–T06 尚未實作 |
+| M2 兩時代可玩流程 | IN_PROGRESS | T03、T04 完成；T05 研究／HUD、T06 整局待實作 |
 | M3 特殊機制可行性 | TODO | 可以與 M2 交錯處理，不假定必須改引擎 |
 | M4 美術垂直切片 | TODO | 已選取部分 M1 暫用 public 素材；正式美術未製作 |
 | M5 穩定性與對戰 | TODO | 無實測結果 |

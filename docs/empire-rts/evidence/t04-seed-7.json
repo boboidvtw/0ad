@@ -1,0 +1,1592 @@
+{
+  "runtime": "0.28.0",
+  "mod": "epoch_rts 0.2.0",
+  "seed": 7,
+  "map": "random/epoch_frontier_validation",
+  "suite": {
+    "passed": true,
+    "kind": "real-engine integration fixtures and timed command flows",
+    "checks": [
+      {
+        "id": "E01.start.1",
+        "actual": [
+          1,
+          6,
+          2
+        ],
+        "expected": [
+          1,
+          6,
+          2
+        ],
+        "passed": true
+      },
+      {
+        "id": "E01.resources.1",
+        "actual": {
+          "food": 1000,
+          "wood": 640,
+          "stone": 950,
+          "metal": 0
+        },
+        "expected": {
+          "food": 300,
+          "wood": 250,
+          "stone": 100,
+          "metal": 0
+        },
+        "passed": true
+      },
+      {
+        "id": "E01.population.1",
+        "actual": [
+          8,
+          20,
+          100
+        ],
+        "expected": [
+          8,
+          20,
+          100
+        ],
+        "passed": true
+      },
+      {
+        "id": "E01.phase.1",
+        "actual": [
+          true,
+          false
+        ],
+        "expected": [
+          true,
+          false
+        ],
+        "passed": true
+      },
+      {
+        "id": "E01.start.2",
+        "actual": [
+          1,
+          6,
+          2
+        ],
+        "expected": [
+          1,
+          6,
+          2
+        ],
+        "passed": true
+      },
+      {
+        "id": "E01.resources.2",
+        "actual": {
+          "food": 310,
+          "wood": 260,
+          "stone": 110,
+          "metal": 10
+        },
+        "expected": {
+          "food": 300,
+          "wood": 250,
+          "stone": 100,
+          "metal": 0
+        },
+        "passed": true
+      },
+      {
+        "id": "E01.population.2",
+        "actual": [
+          8,
+          20,
+          100
+        ],
+        "expected": [
+          8,
+          20,
+          100
+        ],
+        "passed": true
+      },
+      {
+        "id": "E01.phase.2",
+        "actual": [
+          true,
+          false
+        ],
+        "expected": [
+          true,
+          false
+        ],
+        "passed": true
+      },
+      {
+        "id": "E11.centreUndeletable",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "E02.resources.1",
+        "actual": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "expected": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "passed": true
+      },
+      {
+        "id": "E02.resources.2",
+        "actual": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "expected": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "passed": true
+      },
+      {
+        "id": "E11.builderWhitelist",
+        "actual": [
+          "structures/epoch_rts/house",
+          "structures/epoch_rts/storehouse",
+          "structures/epoch_rts/barracks",
+          "structures/epoch_rts/field",
+          "structures/epoch_rts/forge"
+        ],
+        "expected": [
+          "structures/epoch_rts/house",
+          "structures/epoch_rts/storehouse",
+          "structures/epoch_rts/barracks",
+          "structures/epoch_rts/field",
+          "structures/epoch_rts/forge"
+        ],
+        "passed": true
+      },
+      {
+        "id": "E07.template.pioneer",
+        "actual": [
+          40,
+          15,
+          [
+            50,
+            0,
+            0,
+            0
+          ],
+          9
+        ],
+        "expected": [
+          40,
+          15,
+          [
+            50,
+            0,
+            0,
+            0
+          ],
+          9
+        ],
+        "passed": true
+      },
+      {
+        "id": "E11.noLeakedUnit.pioneer",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E11.noCriticalUnit.pioneer",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E07.template.spearman",
+        "actual": [
+          100,
+          20,
+          [
+            60,
+            20,
+            0,
+            0
+          ],
+          8
+        ],
+        "expected": [
+          100,
+          20,
+          [
+            60,
+            20,
+            0,
+            0
+          ],
+          8
+        ],
+        "passed": true
+      },
+      {
+        "id": "E11.noLeakedUnit.spearman",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E11.noCriticalUnit.spearman",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E07.template.slinger",
+        "actual": [
+          60,
+          25,
+          [
+            40,
+            40,
+            0,
+            0
+          ],
+          9
+        ],
+        "expected": [
+          60,
+          25,
+          [
+            40,
+            40,
+            0,
+            0
+          ],
+          9
+        ],
+        "passed": true
+      },
+      {
+        "id": "E11.noLeakedUnit.slinger",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E11.noCriticalUnit.slinger",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E07.template.iron_swordsman",
+        "actual": [
+          140,
+          30,
+          [
+            80,
+            0,
+            0,
+            40
+          ],
+          9
+        ],
+        "expected": [
+          140,
+          30,
+          [
+            80,
+            0,
+            0,
+            40
+          ],
+          9
+        ],
+        "passed": true
+      },
+      {
+        "id": "E11.noLeakedUnit.iron_swordsman",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E11.noCriticalUnit.iron_swordsman",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E04.template.house",
+        "actual": [
+          300,
+          25,
+          50,
+          0
+        ],
+        "expected": [
+          300,
+          25,
+          50,
+          0
+        ],
+        "passed": true
+      },
+      {
+        "id": "E11.noLeakedBuilding.house",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E11.critical.house",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E04.template.storehouse",
+        "actual": [
+          400,
+          30,
+          100,
+          0
+        ],
+        "expected": [
+          400,
+          30,
+          100,
+          0
+        ],
+        "passed": true
+      },
+      {
+        "id": "E11.noLeakedBuilding.storehouse",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E11.critical.storehouse",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E04.template.barracks",
+        "actual": [
+          600,
+          50,
+          150,
+          50
+        ],
+        "expected": [
+          600,
+          50,
+          150,
+          50
+        ],
+        "passed": true
+      },
+      {
+        "id": "E11.noLeakedBuilding.barracks",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E11.critical.barracks",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E04.template.field",
+        "actual": [
+          200,
+          30,
+          60,
+          0
+        ],
+        "expected": [
+          200,
+          30,
+          60,
+          0
+        ],
+        "passed": true
+      },
+      {
+        "id": "E11.noLeakedBuilding.field",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E11.critical.field",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E04.template.forge",
+        "actual": [
+          500,
+          50,
+          150,
+          100
+        ],
+        "expected": [
+          500,
+          50,
+          150,
+          100
+        ],
+        "passed": true
+      },
+      {
+        "id": "E11.noLeakedBuilding.forge",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E11.critical.forge",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E04.template.civil_centre",
+        "actual": [
+          1000,
+          50,
+          0,
+          0
+        ],
+        "expected": [
+          1000,
+          50,
+          0,
+          0
+        ],
+        "passed": true
+      },
+      {
+        "id": "E11.noLeakedBuilding.civil_centre",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E11.critical.civil_centre",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "E03.rates",
+        "actual": {
+          "food.fruit": 1,
+          "food.grain": 0.5,
+          "metal.ore": 0.35,
+          "stone.rock": 0.35,
+          "wood.tree": 0.7
+        },
+        "expected": {
+          "food.fruit": 1,
+          "food.grain": 0.5,
+          "wood.tree": 0.7,
+          "stone.rock": 0.35,
+          "metal.ore": 0.35
+        },
+        "passed": true
+      },
+      {
+        "id": "E03.capacity.150food",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E03.carryNotStock.150food",
+        "actual": 0,
+        "expected": 0,
+        "passed": true
+      },
+      {
+        "id": "E03.deposit.150food",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E03.capacity.150wood",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E03.carryNotStock.150wood",
+        "actual": 0,
+        "expected": 0,
+        "passed": true
+      },
+      {
+        "id": "E03.deposit.150wood",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E03.capacity.150stone",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E03.carryNotStock.150stone",
+        "actual": 0,
+        "expected": 0,
+        "passed": true
+      },
+      {
+        "id": "E03.deposit.150stone",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E03.capacity.150metal",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E03.carryNotStock.150metal",
+        "actual": 0,
+        "expected": 0,
+        "passed": true
+      },
+      {
+        "id": "E03.deposit.150metal",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E03.capacity.242food",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E03.carryNotStock.242food",
+        "actual": 0,
+        "expected": 0,
+        "passed": true
+      },
+      {
+        "id": "E03.deposit.242food",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E03.capacity.242wood",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E03.carryNotStock.242wood",
+        "actual": 0,
+        "expected": 0,
+        "passed": true
+      },
+      {
+        "id": "E03.deposit.242wood",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E03.capacity.242stone",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E03.carryNotStock.242stone",
+        "actual": 0,
+        "expected": 0,
+        "passed": true
+      },
+      {
+        "id": "E03.deposit.242stone",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E03.capacity.242metal",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E03.carryNotStock.242metal",
+        "actual": 0,
+        "expected": 0,
+        "passed": true
+      },
+      {
+        "id": "E03.deposit.242metal",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E06.buildPoor.house",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E06.buildPoorUncharged.house",
+        "actual": 49,
+        "expected": 49,
+        "passed": true
+      },
+      {
+        "id": "E06.buildExact.house",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "E06.buildPaid.house",
+        "actual": [
+          0,
+          0
+        ],
+        "expected": [
+          0,
+          0
+        ],
+        "passed": true
+      },
+      {
+        "id": "E04.foundationNoPopulation.house",
+        "actual": 20,
+        "expected": 20,
+        "passed": true
+      },
+      {
+        "id": "E09.unstartedRefund.house",
+        "actual": [
+          50,
+          0
+        ],
+        "expected": [
+          50,
+          0
+        ],
+        "passed": true
+      },
+      {
+        "id": "E06.buildPoor.storehouse",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E06.buildPoorUncharged.storehouse",
+        "actual": 99,
+        "expected": 99,
+        "passed": true
+      },
+      {
+        "id": "E06.buildExact.storehouse",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "E06.buildPaid.storehouse",
+        "actual": [
+          0,
+          0
+        ],
+        "expected": [
+          0,
+          0
+        ],
+        "passed": true
+      },
+      {
+        "id": "E04.foundationNoPopulation.storehouse",
+        "actual": 20,
+        "expected": 20,
+        "passed": true
+      },
+      {
+        "id": "E09.unstartedRefund.storehouse",
+        "actual": [
+          100,
+          0
+        ],
+        "expected": [
+          100,
+          0
+        ],
+        "passed": true
+      },
+      {
+        "id": "E06.buildPoor.barracks",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E06.buildPoorUncharged.barracks",
+        "actual": 149,
+        "expected": 149,
+        "passed": true
+      },
+      {
+        "id": "E06.buildExact.barracks",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "E06.buildPaid.barracks",
+        "actual": [
+          0,
+          0
+        ],
+        "expected": [
+          0,
+          0
+        ],
+        "passed": true
+      },
+      {
+        "id": "E04.foundationNoPopulation.barracks",
+        "actual": 20,
+        "expected": 20,
+        "passed": true
+      },
+      {
+        "id": "E09.unstartedRefund.barracks",
+        "actual": [
+          150,
+          50
+        ],
+        "expected": [
+          150,
+          50
+        ],
+        "passed": true
+      },
+      {
+        "id": "E06.buildPoor.field",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E06.buildPoorUncharged.field",
+        "actual": 59,
+        "expected": 59,
+        "passed": true
+      },
+      {
+        "id": "E06.buildExact.field",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "E06.buildPaid.field",
+        "actual": [
+          0,
+          0
+        ],
+        "expected": [
+          0,
+          0
+        ],
+        "passed": true
+      },
+      {
+        "id": "E04.foundationNoPopulation.field",
+        "actual": 20,
+        "expected": 20,
+        "passed": true
+      },
+      {
+        "id": "E09.unstartedRefund.field",
+        "actual": [
+          60,
+          0
+        ],
+        "expected": [
+          60,
+          0
+        ],
+        "passed": true
+      },
+      {
+        "id": "E11.illegalConstruction.civil_centre",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E11.illegalUncharged.civil_centre",
+        "actual": "{\"food\":10000,\"wood\":10000,\"stone\":10000,\"metal\":10000}",
+        "expected": "{\"food\":10000,\"wood\":10000,\"stone\":10000,\"metal\":10000}",
+        "passed": true
+      },
+      {
+        "id": "E11.illegalConstruction.forge",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E11.illegalUncharged.forge",
+        "actual": "{\"food\":10000,\"wood\":10000,\"stone\":10000,\"metal\":10000}",
+        "expected": "{\"food\":10000,\"wood\":10000,\"stone\":10000,\"metal\":10000}",
+        "passed": true
+      },
+      {
+        "id": "E04.reject.overlapBuilding",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E04.rejectUncharged.overlapBuilding",
+        "actual": "{\"food\":10000,\"wood\":10000,\"stone\":10000,\"metal\":10000}",
+        "expected": "{\"food\":10000,\"wood\":10000,\"stone\":10000,\"metal\":10000}",
+        "passed": true
+      },
+      {
+        "id": "E04.reject.enemyTerritory",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E04.rejectUncharged.enemyTerritory",
+        "actual": "{\"food\":10000,\"wood\":10000,\"stone\":10000,\"metal\":10000}",
+        "expected": "{\"food\":10000,\"wood\":10000,\"stone\":10000,\"metal\":10000}",
+        "passed": true
+      },
+      {
+        "id": "E04.reject.militaryBuilder",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E04.rejectUncharged.militaryBuilder",
+        "actual": "{\"food\":10000,\"wood\":10000,\"stone\":10000,\"metal\":10000}",
+        "expected": "{\"food\":10000,\"wood\":10000,\"stone\":10000,\"metal\":10000}",
+        "passed": true
+      },
+      {
+        "id": "E04.reject.overlapUnit",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E04.rejectUncharged.overlapUnit",
+        "actual": "{\"food\":10000,\"wood\":10000,\"stone\":10000,\"metal\":10000}",
+        "expected": "{\"food\":10000,\"wood\":10000,\"stone\":10000,\"metal\":10000}",
+        "passed": true
+      },
+      {
+        "id": "E06.barracksMissingStone",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "E06.barracksMissingStoneUncharged",
+        "actual": [
+          150,
+          49
+        ],
+        "expected": [
+          150,
+          49
+        ],
+        "passed": true
+      },
+      {
+        "id": "E09.progress.false",
+        "actual": 0.4,
+        "expected": 0.4,
+        "passed": true
+      },
+      {
+        "id": "E09.highestProgressRefund.false",
+        "actual": [
+          90,
+          30
+        ],
+        "expected": [
+          90,
+          30
+        ],
+        "passed": true
+      },
+      {
+        "id": "E09.progress.true",
+        "actual": 0.4,
+        "expected": 0.4,
+        "passed": true
+      },
+      {
+        "id": "E09.highestProgressRefund.true",
+        "actual": [
+          90,
+          30
+        ],
+        "expected": [
+          90,
+          30
+        ],
+        "passed": true
+      },
+      {
+        "id": "E11.trainerWhitelist",
+        "actual": [
+          "units/epoch_rts/spearman",
+          "units/epoch_rts/slinger",
+          "units/epoch_rts/iron_swordsman"
+        ],
+        "expected": [
+          "units/epoch_rts/spearman",
+          "units/epoch_rts/slinger",
+          "units/epoch_rts/iron_swordsman"
+        ],
+        "passed": true
+      },
+      {
+        "id": "E06.trainPoor.pioneer",
+        "actual": [
+          0,
+          49
+        ],
+        "expected": [
+          0,
+          49
+        ],
+        "passed": true
+      },
+      {
+        "id": "E07.queuePaid.pioneer",
+        "actual": [
+          1,
+          0,
+          0
+        ],
+        "expected": [
+          1,
+          0,
+          0
+        ],
+        "passed": true
+      },
+      {
+        "id": "E07.cancelQueued.pioneer",
+        "actual": [
+          50,
+          0,
+          8
+        ],
+        "expected": [
+          50,
+          0,
+          8
+        ],
+        "passed": true
+      },
+      {
+        "id": "E07.reserved.pioneer",
+        "actual": 9,
+        "expected": 9,
+        "passed": true
+      },
+      {
+        "id": "E07.cancelStarted.pioneer",
+        "actual": [
+          50,
+          0,
+          8
+        ],
+        "expected": [
+          50,
+          0,
+          8
+        ],
+        "passed": true
+      },
+      {
+        "id": "E07.notEarly.pioneer",
+        "actual": 0,
+        "expected": 0,
+        "passed": true
+      },
+      {
+        "id": "E07.completed.pioneer",
+        "actual": [
+          0,
+          1,
+          9
+        ],
+        "expected": [
+          0,
+          1,
+          9
+        ],
+        "passed": true
+      },
+      {
+        "id": "E06.trainPoor.spearman",
+        "actual": [
+          0,
+          59
+        ],
+        "expected": [
+          0,
+          59
+        ],
+        "passed": true
+      },
+      {
+        "id": "E06.trainMissingWood.spearman",
+        "actual": [
+          0,
+          19
+        ],
+        "expected": [
+          0,
+          19
+        ],
+        "passed": true
+      },
+      {
+        "id": "E07.queuePaid.spearman",
+        "actual": [
+          1,
+          0,
+          0
+        ],
+        "expected": [
+          1,
+          0,
+          0
+        ],
+        "passed": true
+      },
+      {
+        "id": "E07.cancelQueued.spearman",
+        "actual": [
+          60,
+          20,
+          8
+        ],
+        "expected": [
+          60,
+          20,
+          8
+        ],
+        "passed": true
+      },
+      {
+        "id": "E07.reserved.spearman",
+        "actual": 9,
+        "expected": 9,
+        "passed": true
+      },
+      {
+        "id": "E07.cancelStarted.spearman",
+        "actual": [
+          60,
+          20,
+          8
+        ],
+        "expected": [
+          60,
+          20,
+          8
+        ],
+        "passed": true
+      },
+      {
+        "id": "E07.notEarly.spearman",
+        "actual": 0,
+        "expected": 0,
+        "passed": true
+      },
+      {
+        "id": "E07.completed.spearman",
+        "actual": [
+          0,
+          1,
+          9
+        ],
+        "expected": [
+          0,
+          1,
+          9
+        ],
+        "passed": true
+      },
+      {
+        "id": "E06.trainPoor.slinger",
+        "actual": [
+          0,
+          39
+        ],
+        "expected": [
+          0,
+          39
+        ],
+        "passed": true
+      },
+      {
+        "id": "E06.trainMissingWood.slinger",
+        "actual": [
+          0,
+          39
+        ],
+        "expected": [
+          0,
+          39
+        ],
+        "passed": true
+      },
+      {
+        "id": "E07.queuePaid.slinger",
+        "actual": [
+          1,
+          0,
+          0
+        ],
+        "expected": [
+          1,
+          0,
+          0
+        ],
+        "passed": true
+      },
+      {
+        "id": "E07.cancelQueued.slinger",
+        "actual": [
+          40,
+          40,
+          8
+        ],
+        "expected": [
+          40,
+          40,
+          8
+        ],
+        "passed": true
+      },
+      {
+        "id": "E07.reserved.slinger",
+        "actual": 9,
+        "expected": 9,
+        "passed": true
+      },
+      {
+        "id": "E07.cancelStarted.slinger",
+        "actual": [
+          40,
+          40,
+          8
+        ],
+        "expected": [
+          40,
+          40,
+          8
+        ],
+        "passed": true
+      },
+      {
+        "id": "E07.notEarly.slinger",
+        "actual": 0,
+        "expected": 0,
+        "passed": true
+      },
+      {
+        "id": "E07.completed.slinger",
+        "actual": [
+          0,
+          1,
+          9
+        ],
+        "expected": [
+          0,
+          1,
+          9
+        ],
+        "passed": true
+      },
+      {
+        "id": "E08.fullWait",
+        "actual": [
+          8,
+          1
+        ],
+        "expected": [
+          8,
+          1
+        ],
+        "passed": true
+      },
+      {
+        "id": "E08.houseCapacity",
+        "actual": 30,
+        "expected": 30,
+        "passed": true
+      },
+      {
+        "id": "E08.resumeReservation",
+        "actual": 9,
+        "expected": 9,
+        "passed": true
+      },
+      {
+        "id": "E08.overCap",
+        "actual": [
+          30,
+          20
+        ],
+        "expected": [
+          30,
+          20
+        ],
+        "passed": true
+      },
+      {
+        "id": "E08.reservedFinishesOverCap",
+        "actual": 1,
+        "expected": 1,
+        "passed": true
+      },
+      {
+        "id": "E08.hardCap",
+        "actual": 100,
+        "expected": 100,
+        "passed": true
+      },
+      {
+        "id": "E10.competingReservations",
+        "actual": 9,
+        "expected": 9,
+        "passed": true
+      },
+      {
+        "id": "E10.competingResume",
+        "actual": 9,
+        "expected": 9,
+        "passed": true
+      },
+      {
+        "id": "E10.spawnBlockedFixture",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "E10.blockedNoSpawn",
+        "actual": [
+          1,
+          10,
+          0
+        ],
+        "expected": [
+          1,
+          10,
+          0
+        ],
+        "passed": true
+      },
+      {
+        "id": "E10.partialBatchSpawn",
+        "actual": 1,
+        "expected": 1,
+        "passed": true
+      },
+      {
+        "id": "E10.partialBatchRefund",
+        "actual": [
+          60,
+          20,
+          9
+        ],
+        "expected": [
+          60,
+          20,
+          9
+        ],
+        "passed": true
+      },
+      {
+        "id": "E10.batchCancel",
+        "actual": [
+          120,
+          40,
+          8
+        ],
+        "expected": [
+          120,
+          40,
+          8
+        ],
+        "passed": true
+      },
+      {
+        "id": "E09.trainerDestroyed",
+        "actual": [
+          120,
+          40,
+          8
+        ],
+        "expected": [
+          120,
+          40,
+          8
+        ],
+        "passed": true
+      },
+      {
+        "id": "E05.gathererSlots",
+        "actual": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "expected": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "passed": true
+      },
+      {
+        "id": "E05.noDiminishing",
+        "actual": 1,
+        "expected": 1,
+        "passed": true
+      },
+      {
+        "id": "E05.infiniteFood",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "E03.timedCarrying.1.food",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "E03.timedDeposit.1.food",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E03.timedCarrying.1.wood",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "E03.timedDeposit.1.wood",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E03.timedCarrying.1.stone",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "E03.timedDeposit.1.stone",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E03.timedCarrying.1.metal",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "E03.timedDeposit.1.metal",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E03.timedCarrying.2.food",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "E03.timedDeposit.2.food",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E03.timedCarrying.2.wood",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "E03.timedDeposit.2.wood",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E03.timedCarrying.2.stone",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "E03.timedDeposit.2.stone",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E03.timedCarrying.2.metal",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "E03.timedDeposit.2.metal",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "E04.timedConstruction.house",
+        "actual": 300,
+        "expected": 300,
+        "passed": true
+      },
+      {
+        "id": "E04.timedHouseBonus",
+        "actual": 30,
+        "expected": 30,
+        "passed": true
+      },
+      {
+        "id": "E09.completedNoRefund.house",
+        "actual": "{\"food\":1000,\"wood\":950,\"stone\":1000,\"metal\":0}",
+        "expected": "{\"food\":1000,\"wood\":950,\"stone\":1000,\"metal\":0}",
+        "passed": true
+      },
+      {
+        "id": "E04.timedConstruction.storehouse",
+        "actual": 400,
+        "expected": 400,
+        "passed": true
+      },
+      {
+        "id": "E09.completedNoRefund.storehouse",
+        "actual": "{\"food\":1000,\"wood\":850,\"stone\":1000,\"metal\":0}",
+        "expected": "{\"food\":1000,\"wood\":850,\"stone\":1000,\"metal\":0}",
+        "passed": true
+      },
+      {
+        "id": "E04.timedConstruction.barracks",
+        "actual": 600,
+        "expected": 600,
+        "passed": true
+      },
+      {
+        "id": "E09.completedNoRefund.barracks",
+        "actual": "{\"food\":1000,\"wood\":700,\"stone\":950,\"metal\":0}",
+        "expected": "{\"food\":1000,\"wood\":700,\"stone\":950,\"metal\":0}",
+        "passed": true
+      },
+      {
+        "id": "E04.timedConstruction.field",
+        "actual": 200,
+        "expected": 200,
+        "passed": true
+      },
+      {
+        "id": "E12.timedRepairHP",
+        "actual": 200,
+        "expected": 200,
+        "passed": true
+      },
+      {
+        "id": "E12.repairNoCharge",
+        "actual": "{\"food\":1000,\"wood\":640,\"stone\":950,\"metal\":0}",
+        "expected": "{\"food\":1000,\"wood\":640,\"stone\":950,\"metal\":0}",
+        "passed": true
+      },
+      {
+        "id": "E02.walkBetweenBases",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      }
+    ],
+    "failure": null
+  },
+  "size": 192,
+  "players": 2,
+  "map_ready_marker": true,
+  "last_turn": 4227,
+  "stopped_after_turn_limit": false,
+  "stop_condition": "suite result",
+  "exit_code": -15,
+  "errors_or_warnings": [],
+  "engine_html_error_or_warning": false,
+  "visual_verified": false,
+  "passed": true
+}

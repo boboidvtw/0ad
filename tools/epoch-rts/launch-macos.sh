@@ -4,8 +4,8 @@
 set -euo pipefail
 
 mode="${1:-frontier}"
-if [[ "$#" -gt 1 || ( "$mode" != "frontier" && "$mode" != "--menu" ) ]]; then
-    echo "Usage: EPOCH_RTS_0AD_APP='/path/to/0 A.D..app' $0 [frontier|--menu]" >&2
+if [[ "$#" -gt 1 || ( "$mode" != "frontier" && "$mode" != "duel" && "$mode" != "--menu" ) ]]; then
+    echo "Usage: EPOCH_RTS_0AD_APP='/path/to/0 A.D..app' $0 [frontier|duel|--menu]" >&2
     exit 2
 fi
 if [[ "$(uname -s)" != "Darwin" ]]; then
@@ -52,6 +52,11 @@ args=(-mod=mod -mod=public -mod=epoch_rts -conf=windowed:true -xres=1280 -yres=8
 if [[ "$mode" == "frontier" ]]; then
     args+=(-autostart=random/epoch_frontier -autostart-players=2 -autostart-size=192
         -autostart-seed=42 -autostart-civ=1:athen -autostart-civ=2:athen
+        -autostart-player=1 -autostart-playername=EpochTester)
+fi
+if [[ "$mode" == "duel" ]]; then
+    args+=(-autostart=random/epoch_frontier_duel -autostart-players=2 -autostart-size=192
+        -autostart-seed=42 -autostart-civ=1:epoch -autostart-civ=2:epoch
         -autostart-player=1 -autostart-playername=EpochTester)
 fi
 exec "$binary" "${args[@]}"
