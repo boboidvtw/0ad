@@ -5,11 +5,11 @@
 
 ## 現況與下一步
 
-**目前階段：M1 PARTIAL。T01 基線已驗證；T02 的 Mod、地圖與無畫面模擬已通過，畫面與操作驗收待完成。**
+**目前階段：M1 DONE。T01 基線與 T02 Mod／地圖驗收完成。**
 
-已固定官方 Release 28 macOS ARM64 runtime，建立 `epoch_rts` Mod、Frontier 01 地圖與自訂 Pioneer。兩個 seed 的真正引擎測試通過，沒有記錄到錯誤或警告。這不是 repo C++ Build、多人、兩時代流程或正式美術驗收。
+已固定官方 Release 28 macOS ARM64 runtime，建立 `epoch_rts` Mod、Frontier 01 地圖與自訂 Pioneer。兩個 seed 的引擎測試通過；2026-09-07 已完成實際畫面、選取、移動與正常退出驗收，最終日誌 0 錯誤／0 警告，前後截圖已保存。這不是 repo C++ Build、多人、兩時代流程或正式美術驗收。
 
-**下一個動作：T02 畫面與操作驗收。** Computer Use 的輔助使用／螢幕錄製權限尚待完成；權限就緒後用啟動器進入地圖，確認地形、基地、Pioneer 名稱與模型、選取及移動，保存遊戲畫面證據並再次檢查日誌。完成後才將 T02／M1 標為 DONE，再進入 T03。
+**下一個動作：T03 定稿兩時代最小規則。** 明確時代、兵種、資源、研究條件與成本、建築、人口、初始條件及勝負規則，再開始 T04。M2 尚未開始。
 
 見 [基線與啟動方式](baseline.md)、[實際驗收](evidence/m1-validation.md)、[素材登錄](assets.md)。
 
@@ -33,7 +33,7 @@
 | --- | --- | --- | --- | --- | --- |
 | T00 | M0 目標、方案與追蹤文件 | DONE | 無 | Amy | [plan](plan.md)、[art-direction](art-direction.md)、本表與 [journal](journal.md) 已建立；使用者於 2026-09-06 確認方向並要求寫入 repo |
 | T01 | M1 固定可運行基線 | DONE | T00 | Amy | 官方 R28 ARM64、SHA-256 已核對；實際引擎模擬成功。[基線](baseline.md)、[驗收](evidence/m1-validation.md) |
-| T02 | M1 獨立 Mod 與測試地圖 | PARTIAL | T01 | Amy | Mod、地圖、模板與兩個 seed 的引擎測試完成；待畫面、選取／移動驗收與截圖。[驗收](evidence/m1-validation.md) |
+| T02 | M1 獨立 Mod 與測試地圖 | DONE | T01 | Amy | 地圖／自訂模板載入、兩個 seed 模擬、Pioneer 畫面／選取／移動與正常退出通過；0 錯誤／0 警告，附截圖。[驗收](evidence/m1-validation.md) |
 | T03 | M2 定稿兩時代最小規則 | TODO | T00 | 待指派 | 明確時代名稱、單位、資源、研究成本、前置條件、建築、人口、初始條件及勝負規則 |
 | T04 | M2 採集、建造與訓練 | TODO | T02、T03 | 待指派 | 實測資源扣除、生產與取消、人口／建造限制及資源不足情況 |
 | T05 | M2 時代升級、科技與 HUD | TODO | T04 | 待指派 | 前置條件、升級、解鎖及介面同步可重現，未解鎖內容不可提前取得 |
@@ -53,7 +53,7 @@
 | 里程碑 | 狀態 | 備註 |
 | --- | --- | --- |
 | M0 規劃 | DONE | 文件完成；不代表遊戲功能完成 |
-| M1 可運行 Mod 骨架 | PARTIAL | T01 DONE；T02 待畫面／操作證據 |
+| M1 可運行 Mod 骨架 | DONE | T01、T02 已驗收；限定官方 R28 macOS ARM64 |
 | M2 兩時代可玩流程 | TODO | 精確玩法由 T03 定稿 |
 | M3 特殊機制可行性 | TODO | 可以與 M2 交錯處理，不假定必須改引擎 |
 | M4 美術垂直切片 | TODO | 已選取部分 M1 暫用 public 素材；正式美術未製作 |

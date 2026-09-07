@@ -61,3 +61,14 @@
 - T01 DONE；T02、M1 PARTIAL。畫面、選取與移動、正常退出尚未驗收；兩時代、正式美術、AI、多人與效能均未宣稱完成。
 - 下一步：權限就緒後執行 evidence/m1-validation.md 的畫面步驟，完成後更新 T02／M1，再執行 T03。
 - 完整 runtime、下載檔與本機日誌不入 Git；只提交本專案程式與去除私人資訊的驗證結果。此批 commit 可由本紀錄的 Git 歷史取得。
+
+
+## 2026-09-07 — M1 最終畫面驗收完成
+
+- 使用者回報已開啟權限並要求繼續。Computer Use 現可讀取並操作遊戲視窗。
+- 使用程式 commit `4bd8e2ceb7031cc4c8260280fde969620b745d6d`，未修改 Mod 或引擎程式。
+- 使用啟動器進入 Frontier 01，確認實際場景及自訂單位名稱；選取 entity 244，右鍵移動至空地並確認抵達。
+- 保存 `m1-pioneer-selected.jpg` 與 `m1-pioneer-moved.jpg`；只含遊戲視窗及匿名測試玩家，保留暫用美術來源署名。
+- 遊戲正常退出（exit 0），最終日誌 778 messages、0 errors、0 warnings；完整驗證與範圍見 evidence/m1-validation.md 及 m1-visual.json。
+- T02／M1 更新為 DONE；保留先前 PARTIAL 紀錄作歷史，不改寫非視覺測試 JSON 為視覺通過。
+- 下一步 T03：兩時代最小規則；M2 尚未開始。沒有把兩時代、正式美術、AI、存讀檔、多人或效能標為完成。

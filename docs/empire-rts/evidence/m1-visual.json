@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-07",
+  "timezone": "Asia/Taipei",
+  "code_commit": "4bd8e2ceb7031cc4c8260280fde969620b745d6d",
+  "runtime": "0.28.0",
+  "mod": "epoch_rts 0.1.0",
+  "map": "maps/random/epoch_frontier",
+  "seed": 42,
+  "players": 2,
+  "size": 192,
+  "visual_verified": true,
+  "selection_verified": true,
+  "movement_verified": true,
+  "unit_name": "Epoch Pioneer (Frontier Pioneer)",
+  "walk_command": {
+    "player": 1,
+    "entity": 244,
+    "x": 642.1102294921875,
+    "z": 364.1474914550781
+  },
+  "replay_turns": 338,
+  "exit_code": 0,
+  "engine_messages": 778,
+  "engine_errors": 0,
+  "engine_warnings": 0,
+  "screenshots": [
+    "m1-pioneer-selected.jpg",
+    "m1-pioneer-moved.jpg"
+  ],
+  "scope": "M1 single-player scene, selection, movement and normal exit; not full gameplay or multiplayer validation"
+}
