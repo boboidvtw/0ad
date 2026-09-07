@@ -72,3 +72,13 @@
 - 遊戲正常退出（exit 0），最終日誌 778 messages、0 errors、0 warnings；完整驗證與範圍見 evidence/m1-validation.md 及 m1-visual.json。
 - T02／M1 更新為 DONE；保留先前 PARTIAL 紀錄作歷史，不改寫非視覺測試 JSON 為視覺通過。
 - 下一步 T03：兩時代最小規則；M2 尚未開始。沒有把兩時代、正式美術、AI、存讀檔、多人或效能標為完成。
+
+## 2026-09-07 — T03 兩時代規則定稿
+
+- 使用者要求繼續下一步；本次交付 T03 設計規格，起點 `f157f014db233c5f3afb4f793490b3ba319f49cf`，開始時 Git clean。
+- D08：原型固定青銅→鐵器、拓荒聯盟、4 資源、4 單位、6 建築；只保留一次時代升級與一項軍事科技。所有成本、時間、初始配置、人口與勝負條件記錄於 m2-rules.md。
+- D09：以官方 R28 的希臘／羅馬美術暫用，獨立規則清單移除原版額外科技、兵種、捕獲及文明加成；不新增付費素材或服務。正式原創美術仍依 M4 執行。
+- 閱讀固定官方 public.zip 的 Trainer、TechnologyManager、Foundation、Conquest／ConquestCommon 與候選模板，區分訓練全額退款、地基按最高進度退款及人口預留。研究開始前複查兵營是新增規格要求，尚未實作。
+- 新增 m2-rules.md 與 m2-acceptance.md，更新 README、plan、progress。驗收清單共 26 個案例，全部標為 NOT RUN；T03 的靜態檢查涵蓋範圍、成本、解鎖依賴與開局可達性。
+- 本批僅文件變更；檢查 Markdown 相對連結與 diff 格式，不執行遊戲 Build 或對局，也不宣稱數值平衡完成。提交版本由本節 Git 歷史識別。
+- T03 DONE，M2 IN_PROGRESS；下一步 T04：epoch 文明與模板、duel 地圖、經濟及生產實作。T04–T06 尚未開始，M1 既有證據維持不變。

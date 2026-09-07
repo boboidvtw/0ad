@@ -10,6 +10,8 @@
 | 文件 | 用途 |
 | --- | --- |
 | [開發計畫](docs/empire-rts/plan.md) | 目標、範圍、技術決策、里程碑與驗收條件 |
+| [兩時代玩法規格](docs/empire-rts/m2-rules.md) | 青銅→鐵器規則、數值與解鎖條件 |
+| [M2 驗收清單](docs/empire-rts/m2-acceptance.md) | 經濟、升級、戰鬥與整局測試要求 |
 | [美術規格與資產清單](docs/empire-rts/art-direction.md) | 視覺方向、製作流程、第一批資產與授權紀錄 |
 | [進度追蹤](docs/empire-rts/progress.md) | 現況、任務狀態、依賴、證據與下一步；進度的唯一主表 |
 | [決策與工作紀錄](docs/empire-rts/journal.md) | 為何這樣做、每次變更與驗證、恢復工作所需資訊 |
@@ -20,7 +22,7 @@
 
 - **M1 DONE**：官方 R28 macOS ARM64 基線已驗證；`epoch_rts` Mod 與 Frontier 01 測試地圖已建立。
 - 已通過：seed 42、7 引擎測試、Pioneer 實際畫面／選取／移動與正常退出，最終日誌 0 錯誤／0 警告。
-- 下一步：T03 定稿兩時代最小規則。兩時代玩法、正式美術及多人測試尚未完成。
+- T03 已完成青銅→鐵器規格；下一步 T04 實作採集、建造與訓練。兩時代玩法、正式美術及多人測試尚未完成。
 - [開始執行與重現測試](docs/empire-rts/baseline.md) · [驗收證據](docs/empire-rts/evidence/m1-validation.md) · [暫用素材](docs/empire-rts/assets.md)
 
 注意：本 Mod 鎖定官方 **0.28.0** runtime；repo 原有較早引擎程式保留，尚未建置驗證。請搭配官方 R28 自帶的 public Mod，勿混用 repo 的舊 public 資料。
