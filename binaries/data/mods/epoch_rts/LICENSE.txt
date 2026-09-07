@@ -1,0 +1,12 @@
+Epoch RTS original code and configuration in this directory:
+Copyright (C) 2026 Epoch RTS contributors.
+SPDX-License-Identifier: GPL-2.0-or-later
+
+Licensed under GNU General Public License version 2 or, at your option,
+any later version. See COPYING.txt (also license_gpl-2.0.txt at the repository root).
+
+This Mod references the public 0 A.D. Mod supplied with Release 28.
+No upstream model, texture, icon or sound binary is copied into this Mod.
+Referenced assets remain subject to their own authorship and licenses;
+see the repository root LICENSE.txt and runtime art/audio license files.
+Temporary asset references are recorded in docs/empire-rts/assets.md.

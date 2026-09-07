@@ -1,0 +1,18 @@
+{
+  "runtime": "0.28.0",
+  "mod": "epoch_rts 0.1.0",
+  "seed": 42,
+  "map": "random/epoch_frontier",
+  "size": 192,
+  "players": 2,
+  "map_ready_marker": true,
+  "last_turn": 1749,
+  "stopped_after_turn_limit": true,
+  "exit_code": -15,
+  "errors_or_warnings": [],
+  "engine_html_error_or_warning": false,
+  "visual_verified": false,
+  "passed": true,
+  "test_date": "2026-09-07",
+  "scope": "Real engine, nonvisual simulation only"
+}

@@ -1,0 +1,11 @@
+{
+  "settings": {
+    "Name": "Epoch RTS — Frontier 01",
+    "Script": "epoch_frontier.js",
+    "Description": "M1 integration map: two Athenian bases, starting resources and an original Frontier Pioneer per player. Uses temporary 0 A.D. art and rules. Cross-era progression is not implemented yet. Use two players, a 192-tile map and disable Nomad.",
+    "CircularMap": true,
+    "Keywords": ["land"],
+    "SupportedBiomes": [],
+    "PlayerData": [{"Civ": "athen"}, {"Civ": "athen"}]
+  }
+}

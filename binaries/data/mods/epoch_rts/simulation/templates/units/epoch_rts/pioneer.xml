@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2026 Epoch RTS contributors. SPDX-License-Identifier: GPL-2.0-or-later -->
+<!-- Purpose: Visible M1 custom unit; inherits temporary public gameplay/art. Created: 2026-09-06. -->
+<Entity parent="units/athen/support_female_citizen">
+  <Identity>
+    <GenericName>Frontier Pioneer</GenericName>
+    <SpecificName>Epoch Pioneer</SpecificName>
+    <Tooltip>Epoch RTS M1 prototype worker. Temporary Athenian art and inherited 0 A.D. rules; cross-era progression is not implemented yet.</Tooltip>
+  </Identity>
+</Entity>

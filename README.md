@@ -1,7 +1,7 @@
 <!-- Purpose: 本 Fork 的專案入口；Created: 2026-09-06. -->
 # 跨時代 RTS 改造計畫
 
-本 Fork 計畫以 **0 A.D. / Pyrogenesis 為基礎，製作受《Empire Earth》（世紀爭霸）跨時代玩法啟發的原創 RTS 全面改造 Mod（Total Conversion）**。目前處於規劃階段，尚未完成可玩 Mod；本庫現有遊戲功能屬於上游 0 A.D.，不代表改造功能已完成。
+本 Fork 計畫以 **0 A.D. / Pyrogenesis 為基礎，製作受《Empire Earth》（世紀爭霸）跨時代玩法啟發的原創 RTS 全面改造 Mod（Total Conversion）**。目前第一階段已建立 Mod、測試地圖與自訂單位，真正引擎的無畫面測試通過；畫面與操作驗收待完成。跨時代玩法尚未實作；上游既有功能不代表改造功能已完成。
 
 開發原則：先做 Mod 與小型可玩原型，驗證海陸空特殊機制；只有在證據顯示 Mod 層無法滿足需求時，才局部修改引擎。美術先以暫用素材驗證，再替換成輪廓清楚、略帶風格化的原創 3D 資產。
 
@@ -18,10 +18,12 @@
 
 ## 目前位置
 
-- 已確認：Mod 優先、按需修改引擎、模組化原創美術、先做小型原型。
-- 已建立：目標、里程碑、美術資產清單與進度紀錄。
-- 尚未完成：本專案的建置驗證、Mod 骨架、改造玩法、正式美術及遊戲內測試。
-- 下一步：執行 [T01：固定並驗證可運行基線](docs/empire-rts/progress.md)，然後建立獨立 Mod。
+- **M1 PARTIAL**：官方 R28 macOS ARM64 基線已驗證；`epoch_rts` Mod 與 Frontier 01 測試地圖已建立。
+- 已通過：seed 42、7 的真正引擎生成與模擬測試，未記錄錯誤／警告。
+- 待完成：畫面、Pioneer 選取與移動驗收。兩時代玩法、正式美術及多人測試尚未完成。
+- [開始執行與重現測試](docs/empire-rts/baseline.md) · [驗收證據](docs/empire-rts/evidence/m1-validation.md) · [暫用素材](docs/empire-rts/assets.md)
+
+注意：本 Mod 鎖定官方 **0.28.0** runtime；repo 原有較早引擎程式保留，尚未建置驗證。請搭配官方 R28 自帶的 public Mod，勿混用 repo 的舊 public 資料。
 
 正式遊戲名稱尚未決定；「跨時代 RTS」是工作名稱，並非官方《Empire Earth》重製版。沒有預設採用其原始模型、圖像、音樂或其他遊戲資產。
 

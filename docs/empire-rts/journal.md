@@ -49,3 +49,15 @@
 ## 後續紀錄格式
 
 每次新增一節，記錄：日期、任務 ID、目標、重要決策、變更檔案與 commit、實際驗證（版本／環境／步驟／結果）、外部操作 ID（若有）、未解問題、下一個動作。不要填入憑證或不必要的私人資料。
+
+## 2026-09-06～2026-09-07 — M1 Mod 與基線，畫面驗收待完成
+
+- 使用者要求開始第一階段；工作涵蓋 T01、T02 與對應進度更新。
+- 起點為 `f03b7d7173abea8bd05120cabb6f2f1a1e25ea96`。獨立 shallow／sparse checkout，開始時 Git clean；未發現 repo 的 AGENTS.md 或 CODING_RULES.md，依使用者全域規則工作。
+- D07：選用官方 0.28.0 macOS ARM64 runtime；原 repo 引擎不升級、不宣稱已 Build。確切來源、平台與 hash 見 baseline。
+- 新增 epoch_rts 0.1.0、Frontier 01 地圖、Pioneer 模板、macOS 啟動器、非視覺 smoke test、基線與素材登錄。
+- 修正 R28 地圖 API 與 ES module 入口差異。最終 seed 42／7 真正引擎測試通過，無記錄錯誤／警告；驗收 JSON 已保存。
+- Computer Use 回報輔助使用／螢幕錄製權限待完成。使用者提供系統設定截圖並詢問如何加入；已說明將 ChatGPT Computer Use 圖示拖入清單，不代替使用者擴大系統權限。
+- T01 DONE；T02、M1 PARTIAL。畫面、選取與移動、正常退出尚未驗收；兩時代、正式美術、AI、多人與效能均未宣稱完成。
+- 下一步：權限就緒後執行 evidence/m1-validation.md 的畫面步驟，完成後更新 T02／M1，再執行 T03。
+- 完整 runtime、下載檔與本機日誌不入 Git；只提交本專案程式與去除私人資訊的驗證結果。此批 commit 可由本紀錄的 Git 歷史取得。
