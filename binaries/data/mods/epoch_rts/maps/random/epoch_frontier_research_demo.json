@@ -1,11 +1,11 @@
 {
   "settings": {
-    "Name": "Epoch RTS - Frontier Duel",
+    "Name": "Epoch RTS \u2014 T05 research demo",
     "Script": "epoch_frontier_duel.js",
-    "Description": "Develop a Frontier Union settlement from Bronze Age to Iron Age. Gather, build, train and research Forged Weapons. Two players, 192 tiles.",
+    "Description": "UI test fixture: extra starting resources and a completed Barracks. Not a standard match.",
     "CircularMap": true,
     "Keywords": [
-      "land"
+      "demo"
     ],
     "SupportedBiomes": [],
     "PlayerData": [
@@ -18,7 +18,8 @@
     ],
     "PopulationCap": 100,
     "TriggerScripts": [
-      "scripts/epoch_rts/FrontierDuel.js"
+      "scripts/epoch_rts/FrontierDuel.js",
+      "scripts/epoch_rts/T05Demo.js"
     ]
   }
 }

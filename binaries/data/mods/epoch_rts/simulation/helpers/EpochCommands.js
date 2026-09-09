@@ -16,7 +16,7 @@
 			Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface).PushNotification({
 				"type": "text", "players": [player],
 				"message": "Cannot build: select a suitable worker and meet the age requirements.",
-				"translateMessage": false
+				"translateMessage": true
 			});
 			return;
 		}
@@ -35,10 +35,31 @@
 		if (occupied)
 		{
 		    Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface).PushNotification({
-		        "type": "text", "players": [player], "message": "Units occupy the building site. Move them away first.", "translateMessage": false
+		        "type": "text", "players": [player], "message": "Units occupy the building site. Move them away first.", "translateMessage": true
 		    });
 		    return;
 		}
 		return upstreamConstruct(player, { ...cmd, "entities": builders }, { ...data, "entities": builders });
 	};
+}
+
+// R28 single-entity research commands bypass FilterEntityList. Scope validation
+// to epoch games, including cancellation, before touching another player's queue.
+{
+    for (const type of ["research", "stop-production"])
+    {
+        const upstream = g_Commands[type];
+        g_Commands[type] = function(player, cmd, data)
+        {
+            if (QueryPlayerIDInterface(player, IID_Identity)?.GetCiv() != "epoch")
+                return upstream(player, cmd, data);
+            if (Engine.QueryInterface(cmd.entity, IID_Ownership)?.GetOwner() != player)
+                return;
+            if (type == "research" &&
+                (Engine.QueryInterface(cmd.entity, IID_Foundation) ||
+                 !Engine.QueryInterface(cmd.entity, IID_Researcher)?.GetTechnologiesList().includes(cmd.template)))
+                return;
+            return upstream(player, cmd, data);
+        };
+    }
 }

@@ -32,7 +32,7 @@ def read_suite(text):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--app", required=True, type=pathlib.Path)
-    parser.add_argument("--scenario", choices=["m1", "duel", "t04"], default="m1")
+    parser.add_argument("--scenario", choices=["m1", "duel", "t04", "t05"], default="m1")
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--output", type=pathlib.Path, default=pathlib.Path("work/epoch-rts-smoke"))
     args = parser.parse_args()
@@ -53,7 +53,7 @@ def main():
     output = args.output / f"{stamp}-seed-{args.seed}"
     output.mkdir(parents=True, exist_ok=False)
     log_path = output / "engine.log"
-    scenario = {"m1": "epoch_frontier", "duel": "epoch_frontier_duel", "t04": "epoch_frontier_validation"}[args.scenario]
+    scenario = {"m1": "epoch_frontier", "duel": "epoch_frontier_duel", "t04": "epoch_frontier_validation", "t05": "epoch_frontier_research_validation"}[args.scenario]
     civ = "athen" if args.scenario == "m1" else "epoch"
     command = [str(binary), "-mod=mod", "-mod=public", "-mod=epoch_rts",
                f"-autostart=random/{scenario}", "-autostart-players=2", "-autostart-size=192",
@@ -67,7 +67,7 @@ def main():
             while process.poll() is None and time.monotonic() < deadline:
                 text = log_path.read_text(errors="replace")
                 turns = re.findall(r"Turn (\d+) \(", text)
-                if (read_suite(text) is not None if args.scenario == "t04" else turns and int(turns[-1]) >= 100):
+                if (read_suite(text) is not None if args.scenario in ("t04", "t05") else turns and int(turns[-1]) >= 100):
                     reached_limit = True
                     break
                 time.sleep(0.1)
@@ -88,14 +88,14 @@ def main():
     html_errors = bool(re.search(r'<p[^>]+class=[\"\'](?:error|warning)', interesting))
     marker = ("Epoch RTS M1: Frontier ready;" if args.scenario == "m1" else "Epoch RTS T04: Duel ready;") in text
     suite = read_suite(text)
-    suite_passed = args.scenario != "t04" or bool(suite and suite.get("passed") is True and suite["checks"] and all(check.get("passed") is True for check in suite["checks"]))
+    suite_passed = args.scenario not in ("t04", "t05") or bool(suite and suite.get("passed") is True and suite["checks"] and all(check.get("passed") is True for check in suite["checks"]))
     mod_version = json.loads((repo / "binaries/data/mods/epoch_rts/mod.json").read_text())["version"]
     report = {
         "runtime": "0.28.0", "mod": f"epoch_rts {mod_version}", "seed": args.seed,
         "map": f"random/{scenario}", "suite": suite, "size": 192, "players": 2,
         "map_ready_marker": marker, "last_turn": int(turns[-1]) if turns else None,
-        "stopped_after_turn_limit": reached_limit and args.scenario != "t04",
-        "stop_condition": "suite result" if args.scenario == "t04" else "at least 100 turns", "exit_code": process.returncode,
+        "stopped_after_turn_limit": reached_limit and args.scenario not in ("t04", "t05"),
+        "stop_condition": "suite result" if args.scenario in ("t04", "t05") else "at least 100 turns", "exit_code": process.returncode,
         "errors_or_warnings": errors, "engine_html_error_or_warning": html_errors,
         "visual_verified": False,
         "passed": (reached_limit and marker and suite_passed and not errors and not html_errors

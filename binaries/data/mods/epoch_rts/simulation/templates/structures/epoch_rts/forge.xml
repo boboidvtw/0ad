@@ -38,7 +38,9 @@
   <Loot disable="" />
   <Looter disable="" />
   <Auras disable="" />
-  <Researcher disable="" />
+  <Researcher replace="">
+    <Technologies datatype="tokens">epoch_forged_weapons</Technologies>
+  </Researcher>
   <Resistance>
     <Entity>
       <Damage replace="">
@@ -64,5 +66,5 @@
   </RallyPointRenderer>
   <TerritoryInfluence disable="" />
   <Trainer disable="" />
-  <ProductionQueue disable="" />
+  <ProductionQueue replace="" />
 </Entity>

@@ -35,7 +35,9 @@
   <Loot disable="" />
   <Looter disable="" />
   <Auras disable="" />
-  <Researcher disable="" />
+  <Researcher replace="">
+    <Technologies datatype="tokens">phase_epoch_iron</Technologies>
+  </Researcher>
   <Resistance>
     <Entity>
       <Damage replace="">

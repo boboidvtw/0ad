@@ -13,11 +13,14 @@ Trigger.prototype.EpochCheck = function(id, actual, expected)
 };
 Trigger.prototype.EpochFinish = function(exception)
 {
-	print("EPOCH_TEST_RESULT " + JSON.stringify({
+	const result = "EPOCH_TEST_RESULT " + JSON.stringify({
 		"passed": !exception && this.epochResults.every(result => result.passed),
 		"kind": "real-engine integration fixtures and timed command flows",
 		"checks": this.epochResults, "failure": exception ? String(exception) : null
-	}));
+	});
+    // Engine print truncates large messages. Emit bounded chunks on the same stream.
+    for (let offset = 0; offset < result.length; offset += 4096)
+        print(result.slice(offset, offset + 4096));
 };
 Trigger.prototype.EpochRun = function()
 {
@@ -85,8 +88,9 @@ const centrePos = Q(centre, IID_Position).GetPosition2D();
 	{
 		const t = tm.GetTemplate("structures/epoch_rts/" + id);
 		this.EpochCheck("E04.template." + id, [+t.Health.Max, +t.Cost.BuildTime, +t.Cost.Resources.wood, +t.Cost.Resources.stone], [hp, seconds, w, s]);
-		this.EpochCheck("E11.noLeakedBuilding." + id, !!(t.Researcher || t.Attack || t.Capturable || t.GarrisonHolder || t.TerritoryDecay || t.Auras || t.Looter), false);
-		this.EpochCheck("E11.critical." + id, GetIdentityClasses(t.Identity).includes("ConquestCritical"), id == "civil_centre");
+		this.EpochCheck("E11.noLeakedBuilding." + id, !!(t.Attack || t.Capturable || t.GarrisonHolder || t.TerritoryDecay || t.Auras || t.Looter), false);
+		this.EpochCheck("E11.researchWhitelist." + id, t.Researcher?.Technologies?._string || "", id == "civil_centre" ? "phase_epoch_iron" : id == "forge" ? "epoch_forged_weapons" : "");
+        this.EpochCheck("E11.critical." + id, GetIdentityClasses(t.Identity).includes("ConquestCritical"), id == "civil_centre");
 	}
 	this.EpochCheck("E03.rates", Q(worker, IID_ResourceGatherer).GetGatherRates(), { "food.fruit": 1, "food.grain": 0.5, "wood.tree": 0.7, "stone.rock": 0.35, "metal.ore": 0.35 });
 	const store = add("structures/epoch_rts/storehouse", 330, 340);

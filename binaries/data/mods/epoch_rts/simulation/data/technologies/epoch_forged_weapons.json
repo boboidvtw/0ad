@@ -1,0 +1,28 @@
+{
+  "genericName": "Forged Weapons",
+  "description": "Improve the weapons of Spearmen and Iron Swordsmen.",
+  "requirements": {
+    "all": [
+      {
+        "civ": "epoch"
+      },
+      {
+        "tech": "phase_epoch_iron"
+      }
+    ]
+  },
+  "cost": {
+    "food": 100,
+    "metal": 100
+  },
+  "researchTime": 30,
+  "icon": "sword_01.png",
+  "tooltip": "Spearmen and Iron Swordsmen gain +2 hack damage. Applies to existing and future units.",
+  "modifications": [
+    {
+      "value": "Attack/Melee/Damage/Hack",
+      "add": 2,
+      "affects": "EpochMelee"
+    }
+  ]
+}

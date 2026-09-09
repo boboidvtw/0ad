@@ -26,3 +26,10 @@
 - 六棟建築引用 R28 雅典市中心、房屋、倉庫、兵營、農田、鍛造所；玩法由 epoch_rts 模板覆寫。
 - Frontier Union 暫用雅典徽章、音樂清單與小地圖邊框，尚未製作正式文明識別。MiniMapPanel.js 取自固定 R28，新增 epoch 的暫用邊框映射；程式沿用 GPL-2.0-or-later。
 - 本次仍只透過路徑引用素材，沒有複製 public 素材二進位檔或購買資產。來源、作者與 CC BY-SA 3.0 署名條件同上；新增驗收截圖包含上述暫用素材。
+
+## T05 字型與介面引用（2026-09-08～09）
+
+- 官方 R28 基礎 mod.zip 已包含 `fonts/SourceHanSansTW-Regular.otf` 與 Bold；default.cfg 的 `fonts.zh_TW.sans` 指向它們。以 `zh_TW` 啟動即可，不新增下載或付費。
+- 已讀取同包 `fonts/source-han-sans -LICENSE.txt`：Adobe 2014–2021，SIL Open Font License 1.1。只依賴官方 runtime，未將字型二進位複製進 repo。
+- 新增研究圖示引用 public 的 `town_phase.png`、`sword_01.png`；音效引用 `interface/alarm/alarm_phase.xml`。上游美術署名同上。
+- Researcher.js、BuildLabel.js/XML 與 selection_details.js 取自官方 R28 並作局部修改，保留 GPL-2.0-or-later 出處。尚未製作正式 HUD 美術。

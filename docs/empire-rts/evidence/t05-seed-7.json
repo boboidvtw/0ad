@@ -1,0 +1,760 @@
+{
+  "runtime": "0.28.0",
+  "mod": "epoch_rts 0.3.0",
+  "seed": 7,
+  "map": "random/epoch_frontier_research_validation",
+  "suite": {
+    "passed": true,
+    "kind": "real-engine integration fixtures and timed command flows",
+    "checks": [
+      {
+        "id": "A01.noBarracks",
+        "actual": [
+          0,
+          false
+        ],
+        "expected": [
+          0,
+          false
+        ],
+        "passed": true
+      },
+      {
+        "id": "A01.noCharge",
+        "actual": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "expected": {
+          "food": 400,
+          "wood": 200,
+          "stone": 0,
+          "metal": 100
+        },
+        "passed": true
+      },
+      {
+        "id": "A01.foundationNotEnough",
+        "actual": [
+          0,
+          false
+        ],
+        "expected": [
+          0,
+          false
+        ],
+        "passed": true
+      },
+      {
+        "id": "A01.missing.food",
+        "actual": [
+          0,
+          false
+        ],
+        "expected": [
+          0,
+          false
+        ],
+        "passed": true
+      },
+      {
+        "id": "A01.uncharged.food",
+        "actual": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "expected": {
+          "food": 399,
+          "wood": 200,
+          "stone": 0,
+          "metal": 100
+        },
+        "passed": true
+      },
+      {
+        "id": "A01.missing.wood",
+        "actual": [
+          0,
+          false
+        ],
+        "expected": [
+          0,
+          false
+        ],
+        "passed": true
+      },
+      {
+        "id": "A01.uncharged.wood",
+        "actual": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "expected": {
+          "food": 400,
+          "wood": 199,
+          "stone": 0,
+          "metal": 100
+        },
+        "passed": true
+      },
+      {
+        "id": "A01.missing.metal",
+        "actual": [
+          0,
+          false
+        ],
+        "expected": [
+          0,
+          false
+        ],
+        "passed": true
+      },
+      {
+        "id": "A01.uncharged.metal",
+        "actual": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "expected": {
+          "food": 400,
+          "wood": 200,
+          "stone": 0,
+          "metal": 99
+        },
+        "passed": true
+      },
+      {
+        "id": "A01.wrongBuilding",
+        "actual": 0,
+        "expected": 0,
+        "passed": true
+      },
+      {
+        "id": "A01.enemyQueue",
+        "actual": 0,
+        "expected": 0,
+        "passed": true
+      },
+      {
+        "id": "A01.nonWhitelist",
+        "actual": 0,
+        "expected": 0,
+        "passed": true
+      },
+      {
+        "id": "A01.illegalUncharged",
+        "actual": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "expected": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "passed": true
+      },
+      {
+        "id": "A04.swordLockedBefore",
+        "actual": 0,
+        "expected": 0,
+        "passed": true
+      },
+      {
+        "id": "A04.forgeLockedBefore",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "A04.forgeCommandBeforeUncharged",
+        "actual": "{\"food\":1000,\"wood\":1000,\"stone\":1000,\"metal\":1000}",
+        "expected": "{\"food\":1000,\"wood\":1000,\"stone\":1000,\"metal\":1000}",
+        "passed": true
+      },
+      {
+        "id": "A04.forgeCommandBeforeRejected",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "A02.sharedQueue",
+        "actual": 2,
+        "expected": 2,
+        "passed": true
+      },
+      {
+        "id": "A02.paidOnce",
+        "actual": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "expected": {
+          "food": 0,
+          "wood": 0,
+          "stone": 0,
+          "metal": 0
+        },
+        "passed": true
+      },
+      {
+        "id": "A02.preStartLossCancels",
+        "actual": [
+          0,
+          false
+        ],
+        "expected": [
+          0,
+          false
+        ],
+        "passed": true
+      },
+      {
+        "id": "A02.preStartFullRefund",
+        "actual": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "expected": {
+          "food": 400,
+          "wood": 200,
+          "stone": 0,
+          "metal": 100
+        },
+        "passed": true
+      },
+      {
+        "id": "A02.cancelNotification",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "A05.enemyCannotCancel.false",
+        "actual": 1,
+        "expected": 1,
+        "passed": true
+      },
+      {
+        "id": "A05.cancel.false",
+        "actual": [
+          0,
+          false
+        ],
+        "expected": [
+          0,
+          false
+        ],
+        "passed": true
+      },
+      {
+        "id": "A05.fullRefund.false",
+        "actual": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "expected": {
+          "food": 400,
+          "wood": 200,
+          "stone": 0,
+          "metal": 100
+        },
+        "passed": true
+      },
+      {
+        "id": "A05.enemyCannotCancel.true",
+        "actual": 1,
+        "expected": 1,
+        "passed": true
+      },
+      {
+        "id": "A05.cancel.true",
+        "actual": [
+          0,
+          false
+        ],
+        "expected": [
+          0,
+          false
+        ],
+        "passed": true
+      },
+      {
+        "id": "A05.fullRefund.true",
+        "actual": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "expected": {
+          "food": 400,
+          "wood": 200,
+          "stone": 0,
+          "metal": 100
+        },
+        "passed": true
+      },
+      {
+        "id": "A05.restartAtZero",
+        "actual": 60000,
+        "expected": 60000,
+        "passed": true
+      },
+      {
+        "id": "A05.destroyResearchPlaceRefund",
+        "actual": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "expected": {
+          "food": 400,
+          "wood": 200,
+          "stone": 0,
+          "metal": 100
+        },
+        "passed": true
+      },
+      {
+        "id": "A05.destroyNoEffect",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "A03.ageCost",
+        "actual": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "expected": {
+          "food": 600,
+          "wood": 800,
+          "stone": 1000,
+          "metal": 900
+        },
+        "passed": true
+      },
+      {
+        "id": "A04.swordLockedDuring",
+        "actual": 0,
+        "expected": 0,
+        "passed": true
+      },
+      {
+        "id": "A04.forgeLockedDuring",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "A04.forgeCommandDuringUncharged",
+        "actual": "{\"food\":600,\"wood\":800,\"stone\":1000,\"metal\":900}",
+        "expected": "{\"food\":600,\"wood\":800,\"stone\":1000,\"metal\":900}",
+        "passed": true
+      },
+      {
+        "id": "A04.forgeCommandDuringRejected",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "A02.started",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "A03.notCompleteAt58s",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "A03.completedAt61sAfterBarracksLoss",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "A03.noExtraResourceCost",
+        "actual": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "expected": {
+          "food": 600,
+          "wood": 800,
+          "stone": 1000,
+          "metal": 900
+        },
+        "passed": true
+      },
+      {
+        "id": "A03.noPublicTownBonus",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "A03.workerHPUnchanged",
+        "actual": 40,
+        "expected": 40,
+        "passed": true
+      },
+      {
+        "id": "A03.spearHPUnchanged",
+        "actual": 100,
+        "expected": 100,
+        "passed": true
+      },
+      {
+        "id": "A03.noFreeUnits",
+        "actual": 9,
+        "expected": 9,
+        "passed": true
+      },
+      {
+        "id": "A04.swordUnlocked",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "A04.forgeUnlocked",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "A04.swordPaid",
+        "actual": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "expected": {
+          "food": 520,
+          "wood": 800,
+          "stone": 1000,
+          "metal": 860
+        },
+        "passed": true
+      },
+      {
+        "id": "A04.swordNotEarly",
+        "actual": 1,
+        "expected": 1,
+        "passed": true
+      },
+      {
+        "id": "A04.swordComplete30s",
+        "actual": 0,
+        "expected": 0,
+        "passed": true
+      },
+      {
+        "id": "A06.poor.food",
+        "actual": 0,
+        "expected": 0,
+        "passed": true
+      },
+      {
+        "id": "A06.poorUncharged.food",
+        "actual": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "expected": {
+          "food": 99,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "passed": true
+      },
+      {
+        "id": "A06.poor.metal",
+        "actual": 0,
+        "expected": 0,
+        "passed": true
+      },
+      {
+        "id": "A06.poorUncharged.metal",
+        "actual": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "expected": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 99
+        },
+        "passed": true
+      },
+      {
+        "id": "A05.weaponRefund.false",
+        "actual": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "expected": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "passed": true
+      },
+      {
+        "id": "A05.weaponRefund.true",
+        "actual": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "expected": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "passed": true
+      },
+      {
+        "id": "A05.forgeDestroyedRefund",
+        "actual": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "expected": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "passed": true
+      },
+      {
+        "id": "A05.forgeDestroyedNoEffect",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "A06.cost",
+        "actual": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "expected": {
+          "food": 0,
+          "wood": 0,
+          "stone": 0,
+          "metal": 0
+        },
+        "passed": true
+      },
+      {
+        "id": "A06.restartZero",
+        "actual": 30000,
+        "expected": 30000,
+        "passed": true
+      },
+      {
+        "id": "A06.spearBefore",
+        "actual": 6,
+        "expected": 6,
+        "passed": true
+      },
+      {
+        "id": "A06.swordBefore",
+        "actual": 10,
+        "expected": 10,
+        "passed": true
+      },
+      {
+        "id": "A06.notComplete28s",
+        "actual": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "id": "A06.completed31s",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "A06.oldSpear",
+        "actual": 8,
+        "expected": 8,
+        "passed": true
+      },
+      {
+        "id": "A06.oldSword",
+        "actual": 12,
+        "expected": 12,
+        "passed": true
+      },
+      {
+        "id": "A06.slingerUnchanged",
+        "actual": 4,
+        "expected": 4,
+        "passed": true
+      },
+      {
+        "id": "A06.workerUnchanged",
+        "actual": 0.7,
+        "expected": 0.7,
+        "passed": true
+      },
+      {
+        "id": "A06.new.spearman",
+        "actual": 8,
+        "expected": 8,
+        "passed": true
+      },
+      {
+        "id": "A06.new.iron_swordsman",
+        "actual": 12,
+        "expected": 12,
+        "passed": true
+      },
+      {
+        "id": "A07.rebuildRetainsTech",
+        "actual": [
+          true,
+          true
+        ],
+        "expected": [
+          true,
+          true
+        ],
+        "passed": true
+      },
+      {
+        "id": "A06.repeatDenied",
+        "actual": 0,
+        "expected": 0,
+        "passed": true
+      },
+      {
+        "id": "A06.repeatUncharged",
+        "actual": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "expected": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "passed": true
+      },
+      {
+        "id": "A04.forgeConstructionPaid",
+        "actual": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "expected": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "passed": true
+      },
+      {
+        "id": "A04.forgeFoundationCreated",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "A04.realForgeCompletedHP",
+        "actual": 500,
+        "expected": 500,
+        "passed": true
+      },
+      {
+        "id": "A04.realForgeNotBefore50s",
+        "actual": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "id": "A04.realForgeNoExtraCharge",
+        "actual": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "expected": {
+          "food": 100,
+          "wood": 0,
+          "stone": 0,
+          "metal": 100
+        },
+        "passed": true
+      }
+    ],
+    "failure": null
+  },
+  "size": 192,
+  "players": 2,
+  "map_ready_marker": true,
+  "last_turn": 1269,
+  "stopped_after_turn_limit": false,
+  "stop_condition": "suite result",
+  "exit_code": -15,
+  "errors_or_warnings": [],
+  "engine_html_error_or_warning": false,
+  "visual_verified": false,
+  "passed": true
+}

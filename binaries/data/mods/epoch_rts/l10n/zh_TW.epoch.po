@@ -1,0 +1,115 @@
+# Purpose: Traditional Chinese prototype UI. Created: 2026-09-08.
+# SPDX-License-Identifier: GPL-2.0-or-later
+msgid ""
+msgstr ""
+"Language: zh_TW\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Frontier Union"
+msgstr "拓荒聯盟"
+
+msgid "Frontier Worker"
+msgstr "拓荒工人"
+
+msgid "Pioneer"
+msgstr "拓荒工人"
+
+msgid "Spearman"
+msgstr "長矛兵"
+
+msgid "Slinger"
+msgstr "投石兵"
+
+msgid "Iron Swordsman"
+msgstr "鐵刃步兵"
+
+msgid "Civic Center"
+msgstr "市中心"
+
+msgid "House"
+msgstr "房屋"
+
+msgid "Storehouse"
+msgstr "倉庫"
+
+msgid "Barracks"
+msgstr "兵營"
+
+msgid "Field"
+msgstr "農田"
+
+msgid "Forge"
+msgstr "鍛造所"
+
+msgid "Bronze Age"
+msgstr "青銅時代"
+
+msgid "Iron Age"
+msgstr "鐵器時代"
+
+msgid "Forged Weapons"
+msgstr "鍛造兵器"
+
+msgid "Forged Weapons completed"
+msgstr "鍛造兵器已完成"
+
+msgid "Researching: %(percent)s%%"
+msgstr "研究中：%(percent)s%%"
+
+msgid "Research queued"
+msgstr "研究排隊中"
+
+msgid "Build a Forge to research weapons"
+msgstr "建造鍛造所以研究兵器"
+
+msgid "Requires a completed Barracks"
+msgstr "需要已完工兵營"
+
+msgid "Insufficient resources for research"
+msgstr "研究資源不足"
+
+msgid "Forged Weapons available"
+msgstr "可研究鍛造兵器"
+
+msgid "Iron Age research available"
+msgstr "可研究鐵器時代"
+
+msgid "Requires Iron Age."
+msgstr "需要鐵器時代。"
+
+msgid "Requires a completed Barracks and Bronze Age."
+msgstr "需要青銅時代與一棟已完工兵營。"
+
+msgid "Advance to Iron Age. Unlock Iron Swordsmen and the Forge."
+msgstr "進入鐵器時代，解鎖鐵刃步兵與鍛造所。"
+
+msgid "Unlock Iron Swordsmen and the Forge."
+msgstr "解鎖鐵刃步兵與鍛造所。"
+
+msgid "Improve the weapons of Spearmen and Iron Swordsmen."
+msgstr "改良長矛兵與鐵刃步兵的兵器。"
+
+msgid "Spearmen and Iron Swordsmen gain +2 hack damage. Applies to existing and future units."
+msgstr "長矛兵與鐵刃步兵的劈砍傷害增加 2，現有與未來單位皆有效。"
+
+msgid "Iron Age research cancelled: a completed Barracks is required. Resources refunded."
+msgstr "鐵器時代研究已取消：需要已完工兵營，資源已退還。"
+
+msgid "Cannot build: select a suitable worker and meet the age requirements."
+msgstr "無法建造：請選擇合適工人並滿足時代條件。"
+
+msgid "Units occupy the building site. Move them away first."
+msgstr "建造位置有單位佔用，請先移開。"
+
+msgid "Frontier Worker: Gather resources, construct and repair buildings."
+msgstr "拓荒工人：採集資源、建造及維修建築。"
+
+msgid "Spearman: Combat unit. Cannot gather or build."
+msgstr "長矛兵：戰鬥單位，不能採集或建造。"
+
+msgid "Slinger: Combat unit. Cannot gather or build."
+msgstr "投石兵：遠程戰鬥單位，不能採集或建造。"
+
+msgid "Iron Swordsman: Combat unit. Cannot gather or build."
+msgstr "鐵刃步兵：鐵器時代步兵，不能採集或建造。"

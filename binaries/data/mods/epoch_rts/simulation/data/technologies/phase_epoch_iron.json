@@ -23,5 +23,8 @@
   },
   "researchTime": 60,
   "icon": "town_phase.png",
-  "tooltip": "Unlock Iron Swordsmen and the Forge."
+  "tooltip": "Unlock Iron Swordsmen and the Forge.",
+  "requirementsTooltip": "Requires a completed Barracks and Bronze Age.",
+  "description": "Advance to Iron Age. Unlock Iron Swordsmen and the Forge.",
+  "soundComplete": "interface/alarm/alarm_phase.xml"
 }

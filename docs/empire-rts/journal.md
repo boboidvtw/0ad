@@ -94,3 +94,13 @@
 - 接續 T05：時代升級、軍事科技、HUD 與繁中字型；AI、多人、存讀檔與正式美術仍未驗收。
 - 最終結果：T04 DONE；seed 42／7 各 177 項斷言通過。M1 兩 seed smoke 及新版 Pioneer GUI 選取／移動通過；T04 與 M1 的 GUI 均正常退出 exit 0、0 錯誤／0 警告。截圖與去識別化結果已入 evidence，原始本機日誌／重播不提交。
 - XML／JSON、JS／Python／Shell 語法、文件連結與實測程式 hash 核對通過；僅提交本批 Mod、測試工具及對應文件。提交版本由本節 Git 歷史追溯，沿用對 boboidvtw/0ad master 的既有授權推送。
+
+## 2026-09-08～09 — T05 研究實作與部分畫面驗收
+
+- 基於 b0efcaa 的 0.2.0，建立 0.3.0 鐵器與鍛造研究、共用生產佇列、開始前兵營檢查及退款、epoch 研究／取消命令所有權與場所白名單。未修改 C++。
+- D12：R28 自帶繁中思源黑體；啟動時指定 zh_TW，新增 Mod 翻譯與時代／研究 HUD，不下載新字型、不新增付費。研究示範單次關閉失焦暫停，不改永久設定。
+- D13：Researcher 開始前直接驗證科技前置，不使用會拒絕已排隊項目的 CanResearch。非 epoch 研究與建造沿用上游。
+- 最終研究測試 seed 42／7 各 77 項 PASS（包含實際模擬時鐘及工人建鍛造所）；經濟各 183 項 PASS，M1 smoke seed 42 PASS。過大報告改為分段輸出；文字通知測試依 R28 改讀限時通知。失敗嘗試未算通過。
+- GUI 已確認青銅／鐵器、排隊／百分比、解鎖與正常支付；保存四張截圖。9 日兩次示範正常 exit 0，但操作工具反覆 noWindowsAvailable，重置只短暫恢復。
+- **T05 PARTIAL，任務 IN_PROGRESS，沒有宣稱 DONE。** 下一步在可操作的遊戲視窗補完鍛造研究、鐵刃單位與三類不足提示，見 evidence/t05-validation.md；T06 整局尚未開始。這是可接續的 checkpoint，不是完整對局驗收。
+- 此批 scoped commit/push 沿用 boboidvtw/0ad master 的既有授權；來源 hash、測試與公開截圖一併保存，原始日誌和本機重播留在忽略的工作目錄／runtime 目錄。

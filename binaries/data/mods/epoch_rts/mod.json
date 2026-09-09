@@ -1,8 +1,8 @@
 {
   "name": "epoch_rts",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "label": "Epoch RTS \u2014 Frontier Prototype",
-  "description": "Original cross-era RTS prototype. T04 adds the Frontier Duel economy; era research and complete match validation remain pending.",
+  "description": "Original cross-era RTS prototype with Bronze-to-Iron research and Forged Weapons. Full match validation remains pending.",
   "dependencies": [
     "0ad=0.28.0"
   ]
