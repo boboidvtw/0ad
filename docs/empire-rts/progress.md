@@ -5,11 +5,11 @@
 
 ## 現況與下一步
 
-**目前階段：M2 IN_PROGRESS。M1 已驗收；T03 規則與 T04 經濟／生產完成；T05 功能已實作，畫面驗收尚未完成。**
+**目前階段：M2 IN_PROGRESS。M1 已驗收；T03 規則與 T04 經濟／生產完成；T05 時代研究、科技與繁中 HUD 已完成引擎及畫面驗收。**
 
 已固定官方 Release 28 macOS ARM64 runtime，建立 `epoch_rts` Mod、Frontier 01 地圖與自訂 Pioneer。兩個 seed 的引擎測試通過；2026-09-07 已完成實際畫面、選取、移動與正常退出驗收，最終日誌 0 錯誤／0 警告，前後截圖已保存。這不是 repo C++ Build、多人、兩時代流程或正式美術驗收。
 
-**下一個動作：補完 T05 畫面驗收。** 0.3.0 已實作鐵器研究、鍛造兵器、前置條件／退款檢查與繁中 HUD。兩 seed 各 77 項研究檢查、183 項經濟回歸通過，M1 smoke 通過。已確認研究排隊、進度、鐵器名稱與鎖定畫面；桌面工具 `noWindowsAvailable` 阻止剩餘點擊驗收，整體為 PARTIAL，任務保留 IN_PROGRESS。[T05 證據與待辦](evidence/t05-validation.md)。完成鍛造科技與不足提示的 GUI 驗收後，再進 T06 整局。
+**下一個動作：T06 作戰與完整對局。** 0.3.0 的兩 seed 各 77 項研究檢查、183 項經濟回歸與 M1 smoke 通過。GUI 已確認時代研究、鐵刃步兵選取／移動、鍛造所建造與研究，以及缺兵營、資源不足、人口不足的繁中提示。[T05 證據](evidence/t05-validation.md)。接續依 [T06 驗收清單](m2-acceptance.md) 驗證戰鬥數值、勝負邊界，再跑標準資源開局至勝利；目前尚未完成整局。
 
 見 [基線與啟動方式](baseline.md)、[實際驗收](evidence/m1-validation.md)、[素材登錄](assets.md)。
 
@@ -36,7 +36,7 @@
 | T02 | M1 獨立 Mod 與測試地圖 | DONE | T01 | Amy | 地圖／自訂模板載入、兩個 seed 模擬、Pioneer 畫面／選取／移動與正常退出通過；0 錯誤／0 警告，附截圖。[驗收](evidence/m1-validation.md) |
 | T03 | M2 定稿兩時代最小規則 | DONE | T00 | Amy | [規則](m2-rules.md)、[驗收案例與靜態檢查](m2-acceptance.md)；數值及依賴已定稿，尚未實作或對局平衡 |
 | T04 | M2 採集、建造與訓練 | DONE | T02、T03 | Amy | 兩 seed 各 177 引擎檢查、GUI 與 M1 回歸通過；[證據與實測範圍](evidence/t04-validation.md) |
-| T05 | M2 時代升級、科技與 HUD | IN_PROGRESS | T04 | Amy | 引擎兩 seed 各 77 項 PASS；GUI PARTIAL，待鍛造科技、解鎖單位及不足提示操作驗收 |
+| T05 | M2 時代升級、科技與 HUD | DONE | T04 | Amy | 引擎兩 seed 各 77 項 PASS；解鎖單位、鍛造研究及三類不足提示 GUI 通過；[證據](evidence/t05-validation.md) |
 | T06 | M2 作戰與整局流程 | TODO | T05 | 待指派 | 完整遊玩採集到勝負流程，保存步驟、版本及實際結果 |
 | T07 | M3 飛機、機場、防空原型 | TODO | T02 | 待指派 | 起降、移動、返航、對地、防空、邊界及連續命令都有測試紀錄 |
 | T08 | M3 潛艇與水下規則調查 | TODO | T02 | 待指派 | 明確可見性與攻擊需求；取得可行性證據；決定實作範圍或延後條件 |
@@ -54,7 +54,7 @@
 | --- | --- | --- |
 | M0 規劃 | DONE | 文件完成；不代表遊戲功能完成 |
 | M1 可運行 Mod 骨架 | DONE | T01、T02 已驗收；限定官方 R28 macOS ARM64 |
-| M2 兩時代可玩流程 | IN_PROGRESS | T03、T04 完成；T05 功能已實作但 GUI 未驗收完，T06 整局待做 |
+| M2 兩時代可玩流程 | IN_PROGRESS | T03–T05 完成；T06 作戰與整局待做 |
 | M3 特殊機制可行性 | TODO | 可以與 M2 交錯處理，不假定必須改引擎 |
 | M4 美術垂直切片 | TODO | 已選取部分 M1 暫用 public 素材；正式美術未製作 |
 | M5 穩定性與對戰 | TODO | 無實測結果 |

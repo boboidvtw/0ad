@@ -1,0 +1,75 @@
+{
+  "date": "2026-09-09",
+  "source_commit": "2fa5cd91a4191a1b0ed2c47ab8f84141a3d6c64d",
+  "runtime": "0 A.D. 0.28.0 macOS ARM64",
+  "mod_version": "0.3.0",
+  "result": "PASS",
+  "scope": "T05 visual acceptance; not T06 full match",
+  "runs": [
+    {
+      "replay_id": "2026-09-09_0003",
+      "mode": "research-demo",
+      "exit_code": 0,
+      "duration_ms": 1251000,
+      "commands_sha256": "63ac52602e3d4e1f6e95188f378b72508afb92f405546a74cd12d96173078763",
+      "final_player_state": {
+        "civ": "epoch",
+        "popCount": 20,
+        "popLimit": 20,
+        "trainingBlocked": true
+      }
+    },
+    {
+      "replay_id": "2026-09-09_0004",
+      "mode": "standard-duel",
+      "exit_code": 0,
+      "duration_ms": 152800,
+      "commands_sha256": "bc3f8df6980c4d46aab4626f14888b41dc9d21bc2e171998c8e87a3a4d8be781",
+      "final_player_state": {
+        "civ": "epoch",
+        "popCount": 8,
+        "popLimit": 20,
+        "trainingBlocked": false
+      }
+    }
+  ],
+  "visual_replay": {
+    "source_replay_id": "2026-09-09_0003",
+    "exit_code": 0,
+    "observed": [
+      "population cap tooltip at 20/20",
+      "selected sword unit at walk destination"
+    ],
+    "not_used_for": "age HUD (observer layout)"
+  },
+  "research_complete_hud": {
+    "observed": true,
+    "text": "鍛造兵器已完成",
+    "dedicated_screenshot_saved": false
+  },
+  "last_standard_duel_log": {
+    "errors": 0,
+    "warnings": 0,
+    "scope": "last run only; logs shared across processes"
+  },
+  "limitations": [
+    "research demo starts with four resources at 1000 and one completed barracks",
+    "metadata researchedTechs serializes as an empty object and is not completion evidence",
+    "exact research costs and timing covered by separate engine reports",
+    "no full match or victory acceptance"
+  ],
+  "screenshots": {
+    "t05-forge-complete.jpg": "c7a94ac316ad21a612e63a1de9b3e6259b43003db5217e93155d1a8a6315502c",
+    "t05-forge-locked.jpg": "2bc89b0273051e0eb68382ff919a388b6b95a915d3ce02dfbd7f33d594181106",
+    "t05-iron-unlocked.jpg": "4005efea30a4ad5f2539bcd1846a9d30b88bd97104ebe9cbbcf89a681fee0e65",
+    "t05-missing-barracks.jpg": "1278df2987df9cd295c4f5819a820ddf88a543fae80bc9e6624d5049f5d78c80",
+    "t05-missing-resources.jpg": "7399bda23fb233e03fd5058ebda92c083e07c1da4ed7bac45be9b0bdce746ec4",
+    "t05-population-blocked.jpg": "33562482a77c658b28a3bff79a37bb7425f2d72d89f86647c2dd529fe87e01b5",
+    "t05-research-progress.jpg": "7dd8a6e2c18e59e6587770b5b945d2426835fc7bb0665b6425f666598a9c4ae5",
+    "t05-research-queued.jpg": "e762b42e76a3c891691e9039d4eb777ea259c7e610979f781d13c5437f3888cb",
+    "t05-sword-arrived-replay.jpg": "a4095cf051692f64d543cdc6480e5edf883dfab2035fe61b18b0394ce1f32048",
+    "t05-sword-menu.jpg": "b967d272aa1164c3da4a2371e6ab6a76f38206f8809d23e3378000076def3caf",
+    "t05-sword-selected.jpg": "156c1b11f9e4054123ecd4fb80aa6b5e6862714474839632b65178c644d501fe",
+    "t05-weapons-progress.jpg": "b9c2db330c704936e5620e8276a0a43079911411cc4f7f98cbac7cbe3d459f86"
+  }
+}

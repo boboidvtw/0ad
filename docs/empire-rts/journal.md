@@ -104,3 +104,11 @@
 - GUI 已確認青銅／鐵器、排隊／百分比、解鎖與正常支付；保存四張截圖。9 日兩次示範正常 exit 0，但操作工具反覆 noWindowsAvailable，重置只短暫恢復。
 - **T05 PARTIAL，任務 IN_PROGRESS，沒有宣稱 DONE。** 下一步在可操作的遊戲視窗補完鍛造研究、鐵刃單位與三類不足提示，見 evidence/t05-validation.md；T06 整局尚未開始。這是可接續的 checkpoint，不是完整對局驗收。
 - 此批 scoped commit/push 沿用 boboidvtw/0ad master 的既有授權；來源 hash、測試與公開截圖一併保存，原始日誌和本機重播留在忽略的工作目錄／runtime 目錄。
+
+## 2026-09-09 — T05 剩餘畫面驗收完成
+
+- 接續 `2fa5cd91a4191a1b0ed2c47ab8f84141a3d6c64d`，沒有修改遊戲或測試程式；來源 manifest 逐檔核對，沿用已通過的引擎報告。
+- 研究示範以正常指令完成鐵器、訓練鐵刃步兵、建鍛造所與鍛造兵器；觀察到研究進度及完成 HUD。視覺重播確認移動抵達與人口不足提示；另以標準 duel 確認兵營不足、建成後資源不足提示。保存八張截圖與去識別化實測摘要，詳見 evidence/t05-validation.md。
+- 三次執行均正常退出；最後標準開局日誌 0 錯誤／0 警告。重播 metadata 的 researchedTechs 序列化為空物件，不用它證明科技完成；完成狀態依實際 GUI 觀察與既有引擎測試。
+- T05 更新 DONE；M2 維持 IN_PROGRESS，下一項 T06 的戰鬥、勝負邊界與標準完整對局仍 NOT RUN。正式美術、AI、多人與存讀檔未完成。
+- 本批只提交驗收文件與截圖，檢查連結、來源 hash、圖片格式與 diff；沿用 boboidvtw/0ad master 授權推送，提交可由本節 Git 歷史追溯。
