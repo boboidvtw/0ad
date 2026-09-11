@@ -1,0 +1,619 @@
+{
+  "date": "2026-09-11",
+  "runtime": "0.28.0",
+  "seed": 42,
+  "original_game_speed": 1,
+  "original_run": {
+    "replay_matches_baseline": null,
+    "replay_completed": null,
+    "hash_checks_ok": 0,
+    "runtime": "0.28.0",
+    "mode": "full",
+    "seed": 42,
+    "size": 192,
+    "replay": false,
+    "visual_requested": true,
+    "visual_verified": false,
+    "exit_code": 0,
+    "suite": {
+      "passed": true,
+      "checks": [
+        {
+          "id": "baseline.conquest",
+          "actual": [
+            "ConquestCritical+!Foundation"
+          ],
+          "expected": [
+            "ConquestCritical+!Foundation"
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.resources.1",
+          "actual": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "expected": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "passed": true
+        },
+        {
+          "id": "opening.population.1",
+          "actual": [
+            8,
+            20,
+            100
+          ],
+          "expected": [
+            8,
+            20,
+            100
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.age.1",
+          "actual": [
+            true,
+            false
+          ],
+          "expected": [
+            true,
+            false
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.entities.1",
+          "actual": 9,
+          "expected": 9,
+          "passed": true
+        },
+        {
+          "id": "opening.critical.1",
+          "actual": [
+            150
+          ],
+          "expected": [
+            150
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.resources.2",
+          "actual": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "expected": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "passed": true
+        },
+        {
+          "id": "opening.population.2",
+          "actual": [
+            8,
+            20,
+            100
+          ],
+          "expected": [
+            8,
+            20,
+            100
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.age.2",
+          "actual": [
+            true,
+            false
+          ],
+          "expected": [
+            true,
+            false
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.entities.2",
+          "actual": 9,
+          "expected": 9,
+          "passed": true
+        },
+        {
+          "id": "opening.critical.2",
+          "actual": [
+            196
+          ],
+          "expected": [
+            196
+          ],
+          "passed": true
+        },
+        {
+          "id": "full.enemyCentreDead",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "id": "full.states",
+          "actual": [
+            "won",
+            "defeated"
+          ],
+          "expected": [
+            "won",
+            "defeated"
+          ],
+          "passed": true
+        },
+        {
+          "id": "full.technologies",
+          "actual": [
+            true,
+            true
+          ],
+          "expected": [
+            true,
+            true
+          ],
+          "passed": true
+        },
+        {
+          "id": "full.singleWin",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        }
+      ],
+      "failure": null,
+      "mode": "full",
+      "events": [
+        {
+          "event": "won",
+          "player": 1,
+          "time": 649800
+        },
+        {
+          "event": "defeated",
+          "player": 2,
+          "time": 649800
+        }
+      ],
+      "steps": [
+        {
+          "step": "standard-opening",
+          "seconds": 1,
+          "resources": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          }
+        },
+        {
+          "step": "gather-build-barracks-workers",
+          "seconds": 91,
+          "resources": {
+            "food": 180,
+            "wood": 190,
+            "stone": 50,
+            "metal": 40
+          }
+        },
+        {
+          "step": "iron-paid",
+          "seconds": 197,
+          "resources": {
+            "food": 0,
+            "wood": 130,
+            "stone": 100,
+            "metal": 30
+          }
+        },
+        {
+          "step": "iron-complete",
+          "seconds": 257,
+          "resources": {
+            "food": 220,
+            "wood": 220,
+            "stone": 100,
+            "metal": 90
+          }
+        },
+        {
+          "step": "forge-built",
+          "seconds": 319,
+          "resources": {
+            "food": 320,
+            "wood": 180,
+            "stone": 20,
+            "metal": 150
+          }
+        },
+        {
+          "step": "weapons-paid",
+          "seconds": 320,
+          "resources": {
+            "food": 230,
+            "wood": 180,
+            "stone": 20,
+            "metal": 50
+          }
+        },
+        {
+          "step": "weapons-complete",
+          "seconds": 350,
+          "resources": {
+            "food": 280,
+            "wood": 230,
+            "stone": 40,
+            "metal": 70
+          }
+        },
+        {
+          "step": "army-trained",
+          "seconds": 574,
+          "resources": {
+            "food": 122,
+            "wood": 540,
+            "stone": 110,
+            "metal": 20
+          }
+        },
+        {
+          "step": "victory",
+          "seconds": 649.8,
+          "resources": {
+            "food": 142,
+            "wood": 660,
+            "stone": 110,
+            "metal": 90
+          }
+        },
+        {
+          "step": "enemy-workers-alive-at-victory",
+          "count": 0
+        }
+      ],
+      "seconds": 649.8
+    },
+    "errors_or_warnings": [],
+    "engine_html_error_or_warning": false,
+    "passed": true,
+    "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab"
+  },
+  "visual_replay_run": {
+    "replay_matches_baseline": true,
+    "replay_completed": null,
+    "hash_checks_ok": 0,
+    "runtime": "0.28.0",
+    "mode": "full",
+    "seed": 42,
+    "size": 192,
+    "replay": true,
+    "visual_requested": true,
+    "visual_verified": false,
+    "exit_code": 0,
+    "suite": {
+      "passed": true,
+      "checks": [
+        {
+          "id": "baseline.conquest",
+          "actual": [
+            "ConquestCritical+!Foundation"
+          ],
+          "expected": [
+            "ConquestCritical+!Foundation"
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.resources.1",
+          "actual": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "expected": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "passed": true
+        },
+        {
+          "id": "opening.population.1",
+          "actual": [
+            8,
+            20,
+            100
+          ],
+          "expected": [
+            8,
+            20,
+            100
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.age.1",
+          "actual": [
+            true,
+            false
+          ],
+          "expected": [
+            true,
+            false
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.entities.1",
+          "actual": 9,
+          "expected": 9,
+          "passed": true
+        },
+        {
+          "id": "opening.critical.1",
+          "actual": [
+            150
+          ],
+          "expected": [
+            150
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.resources.2",
+          "actual": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "expected": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "passed": true
+        },
+        {
+          "id": "opening.population.2",
+          "actual": [
+            8,
+            20,
+            100
+          ],
+          "expected": [
+            8,
+            20,
+            100
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.age.2",
+          "actual": [
+            true,
+            false
+          ],
+          "expected": [
+            true,
+            false
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.entities.2",
+          "actual": 9,
+          "expected": 9,
+          "passed": true
+        },
+        {
+          "id": "opening.critical.2",
+          "actual": [
+            196
+          ],
+          "expected": [
+            196
+          ],
+          "passed": true
+        },
+        {
+          "id": "full.enemyCentreDead",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "id": "full.states",
+          "actual": [
+            "won",
+            "defeated"
+          ],
+          "expected": [
+            "won",
+            "defeated"
+          ],
+          "passed": true
+        },
+        {
+          "id": "full.technologies",
+          "actual": [
+            true,
+            true
+          ],
+          "expected": [
+            true,
+            true
+          ],
+          "passed": true
+        },
+        {
+          "id": "full.singleWin",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        }
+      ],
+      "failure": null,
+      "mode": "full",
+      "events": [
+        {
+          "event": "won",
+          "player": 1,
+          "time": 649800
+        },
+        {
+          "event": "defeated",
+          "player": 2,
+          "time": 649800
+        }
+      ],
+      "steps": [
+        {
+          "step": "standard-opening",
+          "seconds": 1,
+          "resources": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          }
+        },
+        {
+          "step": "gather-build-barracks-workers",
+          "seconds": 91,
+          "resources": {
+            "food": 180,
+            "wood": 190,
+            "stone": 50,
+            "metal": 40
+          }
+        },
+        {
+          "step": "iron-paid",
+          "seconds": 197,
+          "resources": {
+            "food": 0,
+            "wood": 130,
+            "stone": 100,
+            "metal": 30
+          }
+        },
+        {
+          "step": "iron-complete",
+          "seconds": 257,
+          "resources": {
+            "food": 220,
+            "wood": 220,
+            "stone": 100,
+            "metal": 90
+          }
+        },
+        {
+          "step": "forge-built",
+          "seconds": 319,
+          "resources": {
+            "food": 320,
+            "wood": 180,
+            "stone": 20,
+            "metal": 150
+          }
+        },
+        {
+          "step": "weapons-paid",
+          "seconds": 320,
+          "resources": {
+            "food": 230,
+            "wood": 180,
+            "stone": 20,
+            "metal": 50
+          }
+        },
+        {
+          "step": "weapons-complete",
+          "seconds": 350,
+          "resources": {
+            "food": 280,
+            "wood": 230,
+            "stone": 40,
+            "metal": 70
+          }
+        },
+        {
+          "step": "army-trained",
+          "seconds": 574,
+          "resources": {
+            "food": 122,
+            "wood": 540,
+            "stone": 110,
+            "metal": 20
+          }
+        },
+        {
+          "step": "victory",
+          "seconds": 649.8,
+          "resources": {
+            "food": 142,
+            "wood": 660,
+            "stone": 110,
+            "metal": 90
+          }
+        },
+        {
+          "step": "enemy-workers-alive-at-victory",
+          "count": 0
+        }
+      ],
+      "seconds": 649.8
+    },
+    "errors_or_warnings": [],
+    "engine_html_error_or_warning": false,
+    "passed": true,
+    "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab"
+  },
+  "visual_verified": true,
+  "method": "Original 1x command-only standard match observed at opening; visual replay viewed at 1x, 2x, 5x to completion. UI selection, minimap navigation and summary inspected using Computer Use. No resource or technology cheats.",
+  "screenshots": {
+    "t06-replay-centre-destroyed.jpg": "b2aed6e555d276c93fb0e9570b04c8cfe4169acf13472b0426bf0bbf883e5673",
+    "t06-replay-iron-economy.jpg": "2336b54872f54b15884bb3b7c5976fbfba65f075118e42f098d1b7b3a10e17cc",
+    "t06-replay-speed-1x.jpg": "1e252fe48663223b766fc6692b97f6ce49e408539a533122741952e4a9845834",
+    "t06-replay-summary.jpg": "d4c39af816b56a418de30c0418dc001b47dc5cd5e57b9646cfa45b9146edac0d",
+    "t06-replay-victory.jpg": "b78ed9f937e4f7f49b70800b3df9e19e8d017d95cddc8b4bffd490a96fc25623",
+    "t06-standard-economy.jpg": "07e0f1ceef0516d68149ff0dc1d9c252c51e1423b1140d0673a47402fc3da434"
+  },
+  "observations": [
+    "Opening gathering and barracks construction visible.",
+    "Victory notification names anonymous as winner and Player 2 defeated.",
+    "Destroyed enemy centre animation, surviving Iron Swordsman selected at 140/140 HP.",
+    "Summary shows winner wreath, opponent skull and 10:50 elapsed.",
+    "Replay reached end dialog and was exited through Command-Q; exit 0."
+  ],
+  "limits": [
+    "Screenshots after opening are visual replay captures, not original live victory screenshots.",
+    "No separate image of active combat or research-completion instant.",
+    "Automated player versus fixed defenders; not general economic AI.",
+    "Event/result replay consistency only; no per-turn full-state hash records."
+  ]
+}

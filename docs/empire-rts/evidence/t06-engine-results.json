@@ -1,0 +1,6719 @@
+{
+  "date": "2026-09-10",
+  "starting_commit": "8d5ee7b4e54f224a231d481557d151d75a015503",
+  "scope": "R28 real-engine fixtures, command-only standard matches, and event/result replay comparison; not GUI or full-state hash verification",
+  "runs": [
+    {
+      "replay_matches_baseline": null,
+      "replay_completed": null,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "combat",
+      "seed": 42,
+      "size": 192,
+      "replay": false,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": -15,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "civil_centre.HP",
+            "actual": 1000,
+            "expected": 1000,
+            "passed": true
+          },
+          {
+            "id": "civil_centre.resistance",
+            "actual": {
+              "Crush": 5,
+              "Hack": 5,
+              "Pierce": 8
+            },
+            "expected": {
+              "Hack": 5,
+              "Pierce": 8,
+              "Crush": 5
+            },
+            "passed": true
+          },
+          {
+            "id": "civil_centre.noAttack",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "house.HP",
+            "actual": 300,
+            "expected": 300,
+            "passed": true
+          },
+          {
+            "id": "house.resistance",
+            "actual": {
+              "Crush": 5,
+              "Hack": 5,
+              "Pierce": 8
+            },
+            "expected": {
+              "Hack": 5,
+              "Pierce": 8,
+              "Crush": 5
+            },
+            "passed": true
+          },
+          {
+            "id": "house.noAttack",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "storehouse.HP",
+            "actual": 400,
+            "expected": 400,
+            "passed": true
+          },
+          {
+            "id": "storehouse.resistance",
+            "actual": {
+              "Crush": 5,
+              "Hack": 5,
+              "Pierce": 8
+            },
+            "expected": {
+              "Hack": 5,
+              "Pierce": 8,
+              "Crush": 5
+            },
+            "passed": true
+          },
+          {
+            "id": "storehouse.noAttack",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "barracks.HP",
+            "actual": 600,
+            "expected": 600,
+            "passed": true
+          },
+          {
+            "id": "barracks.resistance",
+            "actual": {
+              "Crush": 5,
+              "Hack": 5,
+              "Pierce": 8
+            },
+            "expected": {
+              "Hack": 5,
+              "Pierce": 8,
+              "Crush": 5
+            },
+            "passed": true
+          },
+          {
+            "id": "barracks.noAttack",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "field.HP",
+            "actual": 200,
+            "expected": 200,
+            "passed": true
+          },
+          {
+            "id": "field.resistance",
+            "actual": {
+              "Crush": 5,
+              "Hack": 5,
+              "Pierce": 8
+            },
+            "expected": {
+              "Hack": 5,
+              "Pierce": 8,
+              "Crush": 5
+            },
+            "passed": true
+          },
+          {
+            "id": "field.noAttack",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "forge.HP",
+            "actual": 500,
+            "expected": 500,
+            "passed": true
+          },
+          {
+            "id": "forge.resistance",
+            "actual": {
+              "Crush": 5,
+              "Hack": 5,
+              "Pierce": 8
+            },
+            "expected": {
+              "Hack": 5,
+              "Pierce": 8,
+              "Crush": 5
+            },
+            "passed": true
+          },
+          {
+            "id": "forge.noAttack",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "pioneer.HP",
+            "actual": 40,
+            "expected": 40,
+            "passed": true
+          },
+          {
+            "id": "pioneer.damage",
+            "actual": {
+              "Crush": 0,
+              "Hack": 2,
+              "Pierce": 0
+            },
+            "expected": {
+              "Hack": 2,
+              "Pierce": 0,
+              "Crush": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "pioneer.timers",
+            "actual": {
+              "prepare": 500,
+              "repeat": 1000
+            },
+            "expected": {
+              "prepare": 500,
+              "repeat": 1000
+            },
+            "passed": true
+          },
+          {
+            "id": "pioneer.range",
+            "actual": {
+              "max": 3,
+              "min": 0
+            },
+            "expected": {
+              "min": 0,
+              "max": 3
+            },
+            "passed": true
+          },
+          {
+            "id": "pioneer.resistance",
+            "actual": {
+              "Crush": 0,
+              "Hack": 0,
+              "Pierce": 0
+            },
+            "expected": {
+              "Hack": 0,
+              "Pierce": 0,
+              "Crush": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "pioneer.types",
+            "actual": [
+              "Melee"
+            ],
+            "expected": [
+              "Melee"
+            ],
+            "passed": true
+          },
+          {
+            "id": "pioneer.noPromotion",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "pioneer.noBonus",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "pioneer.noSplash",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "pioneer.canAttackBuilding",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "pioneer.buildingResistance",
+            "actual": {
+              "Crush": 5,
+              "Hack": 5,
+              "Pierce": 8
+            },
+            "expected": {
+              "Hack": 5,
+              "Pierce": 8,
+              "Crush": 5
+            },
+            "passed": true
+          },
+          {
+            "id": "spearman.HP",
+            "actual": 100,
+            "expected": 100,
+            "passed": true
+          },
+          {
+            "id": "spearman.damage",
+            "actual": {
+              "Crush": 0,
+              "Hack": 6,
+              "Pierce": 0
+            },
+            "expected": {
+              "Hack": 6,
+              "Pierce": 0,
+              "Crush": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "spearman.timers",
+            "actual": {
+              "prepare": 500,
+              "repeat": 1000
+            },
+            "expected": {
+              "prepare": 500,
+              "repeat": 1000
+            },
+            "passed": true
+          },
+          {
+            "id": "spearman.range",
+            "actual": {
+              "max": 3,
+              "min": 0
+            },
+            "expected": {
+              "min": 0,
+              "max": 3
+            },
+            "passed": true
+          },
+          {
+            "id": "spearman.resistance",
+            "actual": {
+              "Crush": 0,
+              "Hack": 1,
+              "Pierce": 2
+            },
+            "expected": {
+              "Hack": 1,
+              "Pierce": 2,
+              "Crush": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "spearman.types",
+            "actual": [
+              "Melee"
+            ],
+            "expected": [
+              "Melee"
+            ],
+            "passed": true
+          },
+          {
+            "id": "spearman.noPromotion",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "spearman.noBonus",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "spearman.noSplash",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "spearman.canAttackBuilding",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "spearman.buildingResistance",
+            "actual": {
+              "Crush": 5,
+              "Hack": 5,
+              "Pierce": 8
+            },
+            "expected": {
+              "Hack": 5,
+              "Pierce": 8,
+              "Crush": 5
+            },
+            "passed": true
+          },
+          {
+            "id": "slinger.HP",
+            "actual": 60,
+            "expected": 60,
+            "passed": true
+          },
+          {
+            "id": "slinger.damage",
+            "actual": {
+              "Crush": 0,
+              "Hack": 0,
+              "Pierce": 4
+            },
+            "expected": {
+              "Hack": 0,
+              "Pierce": 4,
+              "Crush": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "slinger.timers",
+            "actual": {
+              "prepare": 500,
+              "repeat": 1500
+            },
+            "expected": {
+              "prepare": 500,
+              "repeat": 1500
+            },
+            "passed": true
+          },
+          {
+            "id": "slinger.range",
+            "actual": {
+              "max": 40,
+              "min": 0
+            },
+            "expected": {
+              "min": 0,
+              "max": 40
+            },
+            "passed": true
+          },
+          {
+            "id": "slinger.resistance",
+            "actual": {
+              "Crush": 0,
+              "Hack": 0,
+              "Pierce": 1
+            },
+            "expected": {
+              "Hack": 0,
+              "Pierce": 1,
+              "Crush": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "slinger.types",
+            "actual": [
+              "Ranged"
+            ],
+            "expected": [
+              "Ranged"
+            ],
+            "passed": true
+          },
+          {
+            "id": "slinger.noPromotion",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "slinger.noBonus",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "slinger.noSplash",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "slinger.canAttackBuilding",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "slinger.buildingResistance",
+            "actual": {
+              "Crush": 5,
+              "Hack": 5,
+              "Pierce": 8
+            },
+            "expected": {
+              "Hack": 5,
+              "Pierce": 8,
+              "Crush": 5
+            },
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.HP",
+            "actual": 140,
+            "expected": 140,
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.damage",
+            "actual": {
+              "Crush": 0,
+              "Hack": 10,
+              "Pierce": 0
+            },
+            "expected": {
+              "Hack": 10,
+              "Pierce": 0,
+              "Crush": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.timers",
+            "actual": {
+              "prepare": 500,
+              "repeat": 1000
+            },
+            "expected": {
+              "prepare": 500,
+              "repeat": 1000
+            },
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.range",
+            "actual": {
+              "max": 3,
+              "min": 0
+            },
+            "expected": {
+              "min": 0,
+              "max": 3
+            },
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.resistance",
+            "actual": {
+              "Crush": 0,
+              "Hack": 2,
+              "Pierce": 3
+            },
+            "expected": {
+              "Hack": 2,
+              "Pierce": 3,
+              "Crush": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.types",
+            "actual": [
+              "Melee"
+            ],
+            "expected": [
+              "Melee"
+            ],
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.noPromotion",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.noBonus",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.noSplash",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.canAttackBuilding",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.buildingResistance",
+            "actual": {
+              "Crush": 5,
+              "Hack": 5,
+              "Pierce": 8
+            },
+            "expected": {
+              "Hack": 5,
+              "Pierce": 8,
+              "Crush": 5
+            },
+            "passed": true
+          },
+          {
+            "id": "pioneer.realHit",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "pioneer.damageFormula",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "spearman.realHit",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "spearman.damageFormula",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "slinger.realHit",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "slinger.damageFormula",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.realHit",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.damageFormula",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "combat",
+        "events": [],
+        "steps": [
+          {
+            "unit": "pioneer",
+            "loss": 14.171759999999722,
+            "perHit": 1.1809800000000004,
+            "hits": 12
+          },
+          {
+            "unit": "spearman",
+            "loss": 42.51527999999985,
+            "perHit": 3.542940000000001,
+            "hits": 12
+          },
+          {
+            "unit": "slinger",
+            "loss": 13.774950720000106,
+            "perHit": 1.7218688400000006,
+            "hits": 8
+          },
+          {
+            "unit": "iron_swordsman",
+            "loss": 70.85879999999997,
+            "perHit": 5.904900000000001,
+            "hits": 12
+          }
+        ],
+        "seconds": 13
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101414766258Z-combat-seed-42"
+    },
+    {
+      "replay_matches_baseline": null,
+      "replay_completed": null,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "combat",
+      "seed": 7,
+      "size": 192,
+      "replay": false,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": -15,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "civil_centre.HP",
+            "actual": 1000,
+            "expected": 1000,
+            "passed": true
+          },
+          {
+            "id": "civil_centre.resistance",
+            "actual": {
+              "Crush": 5,
+              "Hack": 5,
+              "Pierce": 8
+            },
+            "expected": {
+              "Hack": 5,
+              "Pierce": 8,
+              "Crush": 5
+            },
+            "passed": true
+          },
+          {
+            "id": "civil_centre.noAttack",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "house.HP",
+            "actual": 300,
+            "expected": 300,
+            "passed": true
+          },
+          {
+            "id": "house.resistance",
+            "actual": {
+              "Crush": 5,
+              "Hack": 5,
+              "Pierce": 8
+            },
+            "expected": {
+              "Hack": 5,
+              "Pierce": 8,
+              "Crush": 5
+            },
+            "passed": true
+          },
+          {
+            "id": "house.noAttack",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "storehouse.HP",
+            "actual": 400,
+            "expected": 400,
+            "passed": true
+          },
+          {
+            "id": "storehouse.resistance",
+            "actual": {
+              "Crush": 5,
+              "Hack": 5,
+              "Pierce": 8
+            },
+            "expected": {
+              "Hack": 5,
+              "Pierce": 8,
+              "Crush": 5
+            },
+            "passed": true
+          },
+          {
+            "id": "storehouse.noAttack",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "barracks.HP",
+            "actual": 600,
+            "expected": 600,
+            "passed": true
+          },
+          {
+            "id": "barracks.resistance",
+            "actual": {
+              "Crush": 5,
+              "Hack": 5,
+              "Pierce": 8
+            },
+            "expected": {
+              "Hack": 5,
+              "Pierce": 8,
+              "Crush": 5
+            },
+            "passed": true
+          },
+          {
+            "id": "barracks.noAttack",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "field.HP",
+            "actual": 200,
+            "expected": 200,
+            "passed": true
+          },
+          {
+            "id": "field.resistance",
+            "actual": {
+              "Crush": 5,
+              "Hack": 5,
+              "Pierce": 8
+            },
+            "expected": {
+              "Hack": 5,
+              "Pierce": 8,
+              "Crush": 5
+            },
+            "passed": true
+          },
+          {
+            "id": "field.noAttack",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "forge.HP",
+            "actual": 500,
+            "expected": 500,
+            "passed": true
+          },
+          {
+            "id": "forge.resistance",
+            "actual": {
+              "Crush": 5,
+              "Hack": 5,
+              "Pierce": 8
+            },
+            "expected": {
+              "Hack": 5,
+              "Pierce": 8,
+              "Crush": 5
+            },
+            "passed": true
+          },
+          {
+            "id": "forge.noAttack",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "pioneer.HP",
+            "actual": 40,
+            "expected": 40,
+            "passed": true
+          },
+          {
+            "id": "pioneer.damage",
+            "actual": {
+              "Crush": 0,
+              "Hack": 2,
+              "Pierce": 0
+            },
+            "expected": {
+              "Hack": 2,
+              "Pierce": 0,
+              "Crush": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "pioneer.timers",
+            "actual": {
+              "prepare": 500,
+              "repeat": 1000
+            },
+            "expected": {
+              "prepare": 500,
+              "repeat": 1000
+            },
+            "passed": true
+          },
+          {
+            "id": "pioneer.range",
+            "actual": {
+              "max": 3,
+              "min": 0
+            },
+            "expected": {
+              "min": 0,
+              "max": 3
+            },
+            "passed": true
+          },
+          {
+            "id": "pioneer.resistance",
+            "actual": {
+              "Crush": 0,
+              "Hack": 0,
+              "Pierce": 0
+            },
+            "expected": {
+              "Hack": 0,
+              "Pierce": 0,
+              "Crush": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "pioneer.types",
+            "actual": [
+              "Melee"
+            ],
+            "expected": [
+              "Melee"
+            ],
+            "passed": true
+          },
+          {
+            "id": "pioneer.noPromotion",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "pioneer.noBonus",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "pioneer.noSplash",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "pioneer.canAttackBuilding",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "pioneer.buildingResistance",
+            "actual": {
+              "Crush": 5,
+              "Hack": 5,
+              "Pierce": 8
+            },
+            "expected": {
+              "Hack": 5,
+              "Pierce": 8,
+              "Crush": 5
+            },
+            "passed": true
+          },
+          {
+            "id": "spearman.HP",
+            "actual": 100,
+            "expected": 100,
+            "passed": true
+          },
+          {
+            "id": "spearman.damage",
+            "actual": {
+              "Crush": 0,
+              "Hack": 6,
+              "Pierce": 0
+            },
+            "expected": {
+              "Hack": 6,
+              "Pierce": 0,
+              "Crush": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "spearman.timers",
+            "actual": {
+              "prepare": 500,
+              "repeat": 1000
+            },
+            "expected": {
+              "prepare": 500,
+              "repeat": 1000
+            },
+            "passed": true
+          },
+          {
+            "id": "spearman.range",
+            "actual": {
+              "max": 3,
+              "min": 0
+            },
+            "expected": {
+              "min": 0,
+              "max": 3
+            },
+            "passed": true
+          },
+          {
+            "id": "spearman.resistance",
+            "actual": {
+              "Crush": 0,
+              "Hack": 1,
+              "Pierce": 2
+            },
+            "expected": {
+              "Hack": 1,
+              "Pierce": 2,
+              "Crush": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "spearman.types",
+            "actual": [
+              "Melee"
+            ],
+            "expected": [
+              "Melee"
+            ],
+            "passed": true
+          },
+          {
+            "id": "spearman.noPromotion",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "spearman.noBonus",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "spearman.noSplash",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "spearman.canAttackBuilding",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "spearman.buildingResistance",
+            "actual": {
+              "Crush": 5,
+              "Hack": 5,
+              "Pierce": 8
+            },
+            "expected": {
+              "Hack": 5,
+              "Pierce": 8,
+              "Crush": 5
+            },
+            "passed": true
+          },
+          {
+            "id": "slinger.HP",
+            "actual": 60,
+            "expected": 60,
+            "passed": true
+          },
+          {
+            "id": "slinger.damage",
+            "actual": {
+              "Crush": 0,
+              "Hack": 0,
+              "Pierce": 4
+            },
+            "expected": {
+              "Hack": 0,
+              "Pierce": 4,
+              "Crush": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "slinger.timers",
+            "actual": {
+              "prepare": 500,
+              "repeat": 1500
+            },
+            "expected": {
+              "prepare": 500,
+              "repeat": 1500
+            },
+            "passed": true
+          },
+          {
+            "id": "slinger.range",
+            "actual": {
+              "max": 40,
+              "min": 0
+            },
+            "expected": {
+              "min": 0,
+              "max": 40
+            },
+            "passed": true
+          },
+          {
+            "id": "slinger.resistance",
+            "actual": {
+              "Crush": 0,
+              "Hack": 0,
+              "Pierce": 1
+            },
+            "expected": {
+              "Hack": 0,
+              "Pierce": 1,
+              "Crush": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "slinger.types",
+            "actual": [
+              "Ranged"
+            ],
+            "expected": [
+              "Ranged"
+            ],
+            "passed": true
+          },
+          {
+            "id": "slinger.noPromotion",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "slinger.noBonus",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "slinger.noSplash",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "slinger.canAttackBuilding",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "slinger.buildingResistance",
+            "actual": {
+              "Crush": 5,
+              "Hack": 5,
+              "Pierce": 8
+            },
+            "expected": {
+              "Hack": 5,
+              "Pierce": 8,
+              "Crush": 5
+            },
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.HP",
+            "actual": 140,
+            "expected": 140,
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.damage",
+            "actual": {
+              "Crush": 0,
+              "Hack": 10,
+              "Pierce": 0
+            },
+            "expected": {
+              "Hack": 10,
+              "Pierce": 0,
+              "Crush": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.timers",
+            "actual": {
+              "prepare": 500,
+              "repeat": 1000
+            },
+            "expected": {
+              "prepare": 500,
+              "repeat": 1000
+            },
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.range",
+            "actual": {
+              "max": 3,
+              "min": 0
+            },
+            "expected": {
+              "min": 0,
+              "max": 3
+            },
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.resistance",
+            "actual": {
+              "Crush": 0,
+              "Hack": 2,
+              "Pierce": 3
+            },
+            "expected": {
+              "Hack": 2,
+              "Pierce": 3,
+              "Crush": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.types",
+            "actual": [
+              "Melee"
+            ],
+            "expected": [
+              "Melee"
+            ],
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.noPromotion",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.noBonus",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.noSplash",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.canAttackBuilding",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.buildingResistance",
+            "actual": {
+              "Crush": 5,
+              "Hack": 5,
+              "Pierce": 8
+            },
+            "expected": {
+              "Hack": 5,
+              "Pierce": 8,
+              "Crush": 5
+            },
+            "passed": true
+          },
+          {
+            "id": "pioneer.realHit",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "pioneer.damageFormula",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "spearman.realHit",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "spearman.damageFormula",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "slinger.realHit",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "slinger.damageFormula",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.realHit",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "iron_swordsman.damageFormula",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "combat",
+        "events": [],
+        "steps": [
+          {
+            "unit": "pioneer",
+            "loss": 14.171759999999722,
+            "perHit": 1.1809800000000004,
+            "hits": 12
+          },
+          {
+            "unit": "spearman",
+            "loss": 42.51527999999985,
+            "perHit": 3.542940000000001,
+            "hits": 12
+          },
+          {
+            "unit": "slinger",
+            "loss": 13.774950720000106,
+            "perHit": 1.7218688400000006,
+            "hits": 8
+          },
+          {
+            "unit": "iron_swordsman",
+            "loss": 70.85879999999997,
+            "perHit": 5.904900000000001,
+            "hits": 12
+          }
+        ],
+        "seconds": 13
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101418784313Z-combat-seed-7"
+    },
+    {
+      "replay_matches_baseline": null,
+      "replay_completed": null,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "defeat",
+      "seed": 42,
+      "size": 192,
+      "replay": false,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.states",
+            "actual": [
+              "defeated",
+              "won"
+            ],
+            "expected": [
+              "defeated",
+              "won"
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.singleWin",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.singleDefeat",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "defeat",
+        "events": [
+          {
+            "event": "lethal",
+            "player": 1,
+            "time": 1000
+          },
+          {
+            "event": "won",
+            "player": 2,
+            "time": 1000
+          },
+          {
+            "event": "defeated",
+            "player": 1,
+            "time": 1000
+          }
+        ],
+        "steps": [],
+        "seconds": 1
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101415705065Z-defeat-seed-42"
+    },
+    {
+      "replay_matches_baseline": null,
+      "replay_completed": null,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "defeat",
+      "seed": 7,
+      "size": 192,
+      "replay": false,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.states",
+            "actual": [
+              "defeated",
+              "won"
+            ],
+            "expected": [
+              "defeated",
+              "won"
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.singleWin",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.singleDefeat",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "defeat",
+        "events": [
+          {
+            "event": "lethal",
+            "player": 1,
+            "time": 1000
+          },
+          {
+            "event": "won",
+            "player": 2,
+            "time": 1000
+          },
+          {
+            "event": "defeated",
+            "player": 1,
+            "time": 1000
+          }
+        ],
+        "steps": [],
+        "seconds": 1
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101419740915Z-defeat-seed-7"
+    },
+    {
+      "replay_matches_baseline": null,
+      "replay_completed": null,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "double12",
+      "seed": 42,
+      "size": 192,
+      "replay": false,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.states",
+            "actual": [
+              "defeated",
+              "won"
+            ],
+            "expected": [
+              "defeated",
+              "won"
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.singleWin",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.singleDefeat",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.bothCentresDestroyed",
+            "actual": [
+              false,
+              false
+            ],
+            "expected": [
+              false,
+              false
+            ],
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "double12",
+        "events": [
+          {
+            "event": "lethal",
+            "player": 1,
+            "time": 1000
+          },
+          {
+            "event": "lethal",
+            "player": 2,
+            "time": 1000
+          },
+          {
+            "event": "won",
+            "player": 2,
+            "time": 1000
+          },
+          {
+            "event": "defeated",
+            "player": 1,
+            "time": 1000
+          }
+        ],
+        "steps": [],
+        "seconds": 1
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101416664991Z-double12-seed-42"
+    },
+    {
+      "replay_matches_baseline": null,
+      "replay_completed": null,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "double12",
+      "seed": 7,
+      "size": 192,
+      "replay": false,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.states",
+            "actual": [
+              "defeated",
+              "won"
+            ],
+            "expected": [
+              "defeated",
+              "won"
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.singleWin",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.singleDefeat",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.bothCentresDestroyed",
+            "actual": [
+              false,
+              false
+            ],
+            "expected": [
+              false,
+              false
+            ],
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "double12",
+        "events": [
+          {
+            "event": "lethal",
+            "player": 1,
+            "time": 1000
+          },
+          {
+            "event": "lethal",
+            "player": 2,
+            "time": 1000
+          },
+          {
+            "event": "won",
+            "player": 2,
+            "time": 1000
+          },
+          {
+            "event": "defeated",
+            "player": 1,
+            "time": 1000
+          }
+        ],
+        "steps": [],
+        "seconds": 1
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101420692925Z-double12-seed-7"
+    },
+    {
+      "replay_matches_baseline": null,
+      "replay_completed": null,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "double21",
+      "seed": 42,
+      "size": 192,
+      "replay": false,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.states",
+            "actual": [
+              "won",
+              "defeated"
+            ],
+            "expected": [
+              "won",
+              "defeated"
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.singleWin",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.singleDefeat",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.bothCentresDestroyed",
+            "actual": [
+              false,
+              false
+            ],
+            "expected": [
+              false,
+              false
+            ],
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "double21",
+        "events": [
+          {
+            "event": "lethal",
+            "player": 2,
+            "time": 1000
+          },
+          {
+            "event": "lethal",
+            "player": 1,
+            "time": 1000
+          },
+          {
+            "event": "won",
+            "player": 1,
+            "time": 1000
+          },
+          {
+            "event": "defeated",
+            "player": 2,
+            "time": 1000
+          }
+        ],
+        "steps": [],
+        "seconds": 1
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101417145773Z-double21-seed-42"
+    },
+    {
+      "replay_matches_baseline": null,
+      "replay_completed": null,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "double21",
+      "seed": 7,
+      "size": 192,
+      "replay": false,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.states",
+            "actual": [
+              "won",
+              "defeated"
+            ],
+            "expected": [
+              "won",
+              "defeated"
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.singleWin",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.singleDefeat",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.bothCentresDestroyed",
+            "actual": [
+              false,
+              false
+            ],
+            "expected": [
+              false,
+              false
+            ],
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "double21",
+        "events": [
+          {
+            "event": "lethal",
+            "player": 2,
+            "time": 1000
+          },
+          {
+            "event": "lethal",
+            "player": 1,
+            "time": 1000
+          },
+          {
+            "event": "won",
+            "player": 1,
+            "time": 1000
+          },
+          {
+            "event": "defeated",
+            "player": 2,
+            "time": 1000
+          }
+        ],
+        "steps": [],
+        "seconds": 1
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101421176919Z-double21-seed-7"
+    },
+    {
+      "replay_matches_baseline": null,
+      "replay_completed": null,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "full",
+      "seed": 42,
+      "size": 192,
+      "replay": false,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "full.enemyCentreDead",
+            "actual": 0,
+            "expected": 0,
+            "passed": true
+          },
+          {
+            "id": "full.states",
+            "actual": [
+              "won",
+              "defeated"
+            ],
+            "expected": [
+              "won",
+              "defeated"
+            ],
+            "passed": true
+          },
+          {
+            "id": "full.technologies",
+            "actual": [
+              true,
+              true
+            ],
+            "expected": [
+              true,
+              true
+            ],
+            "passed": true
+          },
+          {
+            "id": "full.singleWin",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "full",
+        "events": [
+          {
+            "event": "won",
+            "player": 1,
+            "time": 649800
+          },
+          {
+            "event": "defeated",
+            "player": 2,
+            "time": 649800
+          }
+        ],
+        "steps": [
+          {
+            "step": "standard-opening",
+            "seconds": 1,
+            "resources": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            }
+          },
+          {
+            "step": "gather-build-barracks-workers",
+            "seconds": 91,
+            "resources": {
+              "food": 180,
+              "wood": 190,
+              "stone": 50,
+              "metal": 40
+            }
+          },
+          {
+            "step": "iron-paid",
+            "seconds": 197,
+            "resources": {
+              "food": 0,
+              "wood": 130,
+              "stone": 100,
+              "metal": 30
+            }
+          },
+          {
+            "step": "iron-complete",
+            "seconds": 257,
+            "resources": {
+              "food": 220,
+              "wood": 220,
+              "stone": 100,
+              "metal": 90
+            }
+          },
+          {
+            "step": "forge-built",
+            "seconds": 319,
+            "resources": {
+              "food": 320,
+              "wood": 180,
+              "stone": 20,
+              "metal": 150
+            }
+          },
+          {
+            "step": "weapons-paid",
+            "seconds": 320,
+            "resources": {
+              "food": 230,
+              "wood": 180,
+              "stone": 20,
+              "metal": 50
+            }
+          },
+          {
+            "step": "weapons-complete",
+            "seconds": 350,
+            "resources": {
+              "food": 280,
+              "wood": 230,
+              "stone": 40,
+              "metal": 70
+            }
+          },
+          {
+            "step": "army-trained",
+            "seconds": 574,
+            "resources": {
+              "food": 122,
+              "wood": 540,
+              "stone": 110,
+              "metal": 20
+            }
+          },
+          {
+            "step": "victory",
+            "seconds": 649.8,
+            "resources": {
+              "food": 142,
+              "wood": 660,
+              "stone": 110,
+              "metal": 90
+            }
+          },
+          {
+            "step": "enemy-workers-alive-at-victory",
+            "count": 0
+          }
+        ],
+        "seconds": 649.8
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101418104044Z-full-seed-42"
+    },
+    {
+      "replay_matches_baseline": null,
+      "replay_completed": null,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "full",
+      "seed": 7,
+      "size": 192,
+      "replay": false,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "full.enemyCentreDead",
+            "actual": 0,
+            "expected": 0,
+            "passed": true
+          },
+          {
+            "id": "full.states",
+            "actual": [
+              "won",
+              "defeated"
+            ],
+            "expected": [
+              "won",
+              "defeated"
+            ],
+            "passed": true
+          },
+          {
+            "id": "full.technologies",
+            "actual": [
+              true,
+              true
+            ],
+            "expected": [
+              true,
+              true
+            ],
+            "passed": true
+          },
+          {
+            "id": "full.singleWin",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "full",
+        "events": [
+          {
+            "event": "won",
+            "player": 1,
+            "time": 621000
+          },
+          {
+            "event": "defeated",
+            "player": 2,
+            "time": 621000
+          }
+        ],
+        "steps": [
+          {
+            "step": "standard-opening",
+            "seconds": 1,
+            "resources": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            }
+          },
+          {
+            "step": "gather-build-barracks-workers",
+            "seconds": 91,
+            "resources": {
+              "food": 180,
+              "wood": 190,
+              "stone": 50,
+              "metal": 40
+            }
+          },
+          {
+            "step": "iron-paid",
+            "seconds": 184,
+            "resources": {
+              "food": 10,
+              "wood": 100,
+              "stone": 100,
+              "metal": 30
+            }
+          },
+          {
+            "step": "iron-complete",
+            "seconds": 244,
+            "resources": {
+              "food": 210,
+              "wood": 200,
+              "stone": 100,
+              "metal": 90
+            }
+          },
+          {
+            "step": "forge-built",
+            "seconds": 303,
+            "resources": {
+              "food": 340,
+              "wood": 130,
+              "stone": 20,
+              "metal": 150
+            }
+          },
+          {
+            "step": "weapons-paid",
+            "seconds": 304,
+            "resources": {
+              "food": 240,
+              "wood": 140,
+              "stone": 20,
+              "metal": 50
+            }
+          },
+          {
+            "step": "weapons-complete",
+            "seconds": 334,
+            "resources": {
+              "food": 300,
+              "wood": 190,
+              "stone": 40,
+              "metal": 80
+            }
+          },
+          {
+            "step": "army-trained",
+            "seconds": 546,
+            "resources": {
+              "food": 106,
+              "wood": 460,
+              "stone": 110,
+              "metal": 20
+            }
+          },
+          {
+            "step": "victory",
+            "seconds": 621,
+            "resources": {
+              "food": 156,
+              "wood": 580,
+              "stone": 110,
+              "metal": 90
+            }
+          },
+          {
+            "step": "enemy-workers-alive-at-victory",
+            "count": 0
+          }
+        ],
+        "seconds": 621
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101422131956Z-full-seed-7"
+    },
+    {
+      "replay_matches_baseline": null,
+      "replay_completed": null,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "research",
+      "seed": 42,
+      "size": 192,
+      "replay": false,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "research.paid",
+            "actual": {
+              "food": 0,
+              "wood": 0,
+              "stone": 0,
+              "metal": 0
+            },
+            "expected": {
+              "food": 0,
+              "wood": 0,
+              "stone": 0,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "research.queued",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "research.pending",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "research.positiveProgress",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "research.started",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "boundary.states",
+            "actual": [
+              "defeated",
+              "won"
+            ],
+            "expected": [
+              "defeated",
+              "won"
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.singleWin",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.singleDefeat",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "research.noCompletion",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "research.queueCleared",
+            "actual": 0,
+            "expected": 0,
+            "passed": true
+          },
+          {
+            "id": "research.refund",
+            "actual": {
+              "food": 400,
+              "wood": 200,
+              "stone": 0,
+              "metal": 100
+            },
+            "expected": {
+              "food": 400,
+              "wood": 200,
+              "stone": 0,
+              "metal": 100
+            },
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "research",
+        "events": [
+          {
+            "event": "lethal",
+            "player": 1,
+            "time": 60000
+          },
+          {
+            "event": "won",
+            "player": 2,
+            "time": 60000
+          },
+          {
+            "event": "defeated",
+            "player": 1,
+            "time": 60000
+          }
+        ],
+        "steps": [],
+        "seconds": 60
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101417628516Z-research-seed-42"
+    },
+    {
+      "replay_matches_baseline": null,
+      "replay_completed": null,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "research",
+      "seed": 7,
+      "size": 192,
+      "replay": false,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "research.paid",
+            "actual": {
+              "food": 0,
+              "wood": 0,
+              "stone": 0,
+              "metal": 0
+            },
+            "expected": {
+              "food": 0,
+              "wood": 0,
+              "stone": 0,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "research.queued",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "research.pending",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "research.positiveProgress",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "research.started",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "boundary.states",
+            "actual": [
+              "defeated",
+              "won"
+            ],
+            "expected": [
+              "defeated",
+              "won"
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.singleWin",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.singleDefeat",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "research.noCompletion",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "research.queueCleared",
+            "actual": 0,
+            "expected": 0,
+            "passed": true
+          },
+          {
+            "id": "research.refund",
+            "actual": {
+              "food": 400,
+              "wood": 200,
+              "stone": 0,
+              "metal": 100
+            },
+            "expected": {
+              "food": 400,
+              "wood": 200,
+              "stone": 0,
+              "metal": 100
+            },
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "research",
+        "events": [
+          {
+            "event": "lethal",
+            "player": 1,
+            "time": 60000
+          },
+          {
+            "event": "won",
+            "player": 2,
+            "time": 60000
+          },
+          {
+            "event": "defeated",
+            "player": 1,
+            "time": 60000
+          }
+        ],
+        "steps": [],
+        "seconds": 60
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101421652475Z-research-seed-7"
+    },
+    {
+      "replay_matches_baseline": null,
+      "replay_completed": null,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "resign",
+      "seed": 42,
+      "size": 192,
+      "replay": false,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.states",
+            "actual": [
+              "defeated",
+              "won"
+            ],
+            "expected": [
+              "defeated",
+              "won"
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.singleWin",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.singleDefeat",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "resign",
+        "events": [
+          {
+            "event": "won",
+            "player": 2,
+            "time": 1000
+          },
+          {
+            "event": "defeated",
+            "player": 1,
+            "time": 1000
+          }
+        ],
+        "steps": [],
+        "seconds": 1
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101416182246Z-resign-seed-42"
+    },
+    {
+      "replay_matches_baseline": null,
+      "replay_completed": null,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "resign",
+      "seed": 7,
+      "size": 192,
+      "replay": false,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.states",
+            "actual": [
+              "defeated",
+              "won"
+            ],
+            "expected": [
+              "defeated",
+              "won"
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.singleWin",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.singleDefeat",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "resign",
+        "events": [
+          {
+            "event": "won",
+            "player": 2,
+            "time": 1000
+          },
+          {
+            "event": "defeated",
+            "player": 1,
+            "time": 1000
+          }
+        ],
+        "steps": [],
+        "seconds": 1
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101420216212Z-resign-seed-7"
+    },
+    {
+      "replay_matches_baseline": null,
+      "replay_completed": null,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "victory",
+      "seed": 42,
+      "size": 192,
+      "replay": false,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.states",
+            "actual": [
+              "won",
+              "defeated"
+            ],
+            "expected": [
+              "won",
+              "defeated"
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.singleWin",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.singleDefeat",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.survivors",
+            "actual": [
+              true,
+              true
+            ],
+            "expected": [
+              true,
+              true
+            ],
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "victory",
+        "events": [
+          {
+            "event": "lethal",
+            "player": 2,
+            "time": 1000
+          },
+          {
+            "event": "won",
+            "player": 1,
+            "time": 1000
+          },
+          {
+            "event": "defeated",
+            "player": 2,
+            "time": 1000
+          }
+        ],
+        "steps": [],
+        "seconds": 1
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101415235111Z-victory-seed-42"
+    },
+    {
+      "replay_matches_baseline": null,
+      "replay_completed": null,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "victory",
+      "seed": 7,
+      "size": 192,
+      "replay": false,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.states",
+            "actual": [
+              "won",
+              "defeated"
+            ],
+            "expected": [
+              "won",
+              "defeated"
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.singleWin",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.singleDefeat",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.survivors",
+            "actual": [
+              true,
+              true
+            ],
+            "expected": [
+              true,
+              true
+            ],
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "victory",
+        "events": [
+          {
+            "event": "lethal",
+            "player": 2,
+            "time": 1000
+          },
+          {
+            "event": "won",
+            "player": 1,
+            "time": 1000
+          },
+          {
+            "event": "defeated",
+            "player": 2,
+            "time": 1000
+          }
+        ],
+        "steps": [],
+        "seconds": 1
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101419257586Z-victory-seed-7"
+    },
+    {
+      "replay_matches_baseline": true,
+      "replay_completed": true,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "double12",
+      "seed": 42,
+      "size": 192,
+      "replay": true,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.states",
+            "actual": [
+              "defeated",
+              "won"
+            ],
+            "expected": [
+              "defeated",
+              "won"
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.singleWin",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.singleDefeat",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.bothCentresDestroyed",
+            "actual": [
+              false,
+              false
+            ],
+            "expected": [
+              false,
+              false
+            ],
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "double12",
+        "events": [
+          {
+            "event": "lethal",
+            "player": 1,
+            "time": 1000
+          },
+          {
+            "event": "lethal",
+            "player": 2,
+            "time": 1000
+          },
+          {
+            "event": "won",
+            "player": 2,
+            "time": 1000
+          },
+          {
+            "event": "defeated",
+            "player": 1,
+            "time": 1000
+          }
+        ],
+        "steps": [],
+        "seconds": 1
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101422828663Z-double12-seed-42"
+    },
+    {
+      "replay_matches_baseline": true,
+      "replay_completed": true,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "double12",
+      "seed": 7,
+      "size": 192,
+      "replay": true,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.states",
+            "actual": [
+              "defeated",
+              "won"
+            ],
+            "expected": [
+              "defeated",
+              "won"
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.singleWin",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.singleDefeat",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.bothCentresDestroyed",
+            "actual": [
+              false,
+              false
+            ],
+            "expected": [
+              false,
+              false
+            ],
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "double12",
+        "events": [
+          {
+            "event": "lethal",
+            "player": 1,
+            "time": 1000
+          },
+          {
+            "event": "lethal",
+            "player": 2,
+            "time": 1000
+          },
+          {
+            "event": "won",
+            "player": 2,
+            "time": 1000
+          },
+          {
+            "event": "defeated",
+            "player": 1,
+            "time": 1000
+          }
+        ],
+        "steps": [],
+        "seconds": 1
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101424915987Z-double12-seed-7"
+    },
+    {
+      "replay_matches_baseline": true,
+      "replay_completed": true,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "double21",
+      "seed": 42,
+      "size": 192,
+      "replay": true,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.states",
+            "actual": [
+              "won",
+              "defeated"
+            ],
+            "expected": [
+              "won",
+              "defeated"
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.singleWin",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.singleDefeat",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.bothCentresDestroyed",
+            "actual": [
+              false,
+              false
+            ],
+            "expected": [
+              false,
+              false
+            ],
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "double21",
+        "events": [
+          {
+            "event": "lethal",
+            "player": 2,
+            "time": 1000
+          },
+          {
+            "event": "lethal",
+            "player": 1,
+            "time": 1000
+          },
+          {
+            "event": "won",
+            "player": 1,
+            "time": 1000
+          },
+          {
+            "event": "defeated",
+            "player": 2,
+            "time": 1000
+          }
+        ],
+        "steps": [],
+        "seconds": 1
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101423300670Z-double21-seed-42"
+    },
+    {
+      "replay_matches_baseline": true,
+      "replay_completed": true,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "double21",
+      "seed": 7,
+      "size": 192,
+      "replay": true,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.states",
+            "actual": [
+              "won",
+              "defeated"
+            ],
+            "expected": [
+              "won",
+              "defeated"
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.singleWin",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.singleDefeat",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.bothCentresDestroyed",
+            "actual": [
+              false,
+              false
+            ],
+            "expected": [
+              false,
+              false
+            ],
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "double21",
+        "events": [
+          {
+            "event": "lethal",
+            "player": 2,
+            "time": 1000
+          },
+          {
+            "event": "lethal",
+            "player": 1,
+            "time": 1000
+          },
+          {
+            "event": "won",
+            "player": 1,
+            "time": 1000
+          },
+          {
+            "event": "defeated",
+            "player": 2,
+            "time": 1000
+          }
+        ],
+        "steps": [],
+        "seconds": 1
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101425386101Z-double21-seed-7"
+    },
+    {
+      "replay_matches_baseline": true,
+      "replay_completed": true,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "full",
+      "seed": 42,
+      "size": 192,
+      "replay": true,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "full.enemyCentreDead",
+            "actual": 0,
+            "expected": 0,
+            "passed": true
+          },
+          {
+            "id": "full.states",
+            "actual": [
+              "won",
+              "defeated"
+            ],
+            "expected": [
+              "won",
+              "defeated"
+            ],
+            "passed": true
+          },
+          {
+            "id": "full.technologies",
+            "actual": [
+              true,
+              true
+            ],
+            "expected": [
+              true,
+              true
+            ],
+            "passed": true
+          },
+          {
+            "id": "full.singleWin",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "full",
+        "events": [
+          {
+            "event": "won",
+            "player": 1,
+            "time": 649800
+          },
+          {
+            "event": "defeated",
+            "player": 2,
+            "time": 649800
+          }
+        ],
+        "steps": [
+          {
+            "step": "standard-opening",
+            "seconds": 1,
+            "resources": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            }
+          },
+          {
+            "step": "gather-build-barracks-workers",
+            "seconds": 91,
+            "resources": {
+              "food": 180,
+              "wood": 190,
+              "stone": 50,
+              "metal": 40
+            }
+          },
+          {
+            "step": "iron-paid",
+            "seconds": 197,
+            "resources": {
+              "food": 0,
+              "wood": 130,
+              "stone": 100,
+              "metal": 30
+            }
+          },
+          {
+            "step": "iron-complete",
+            "seconds": 257,
+            "resources": {
+              "food": 220,
+              "wood": 220,
+              "stone": 100,
+              "metal": 90
+            }
+          },
+          {
+            "step": "forge-built",
+            "seconds": 319,
+            "resources": {
+              "food": 320,
+              "wood": 180,
+              "stone": 20,
+              "metal": 150
+            }
+          },
+          {
+            "step": "weapons-paid",
+            "seconds": 320,
+            "resources": {
+              "food": 230,
+              "wood": 180,
+              "stone": 20,
+              "metal": 50
+            }
+          },
+          {
+            "step": "weapons-complete",
+            "seconds": 350,
+            "resources": {
+              "food": 280,
+              "wood": 230,
+              "stone": 40,
+              "metal": 70
+            }
+          },
+          {
+            "step": "army-trained",
+            "seconds": 574,
+            "resources": {
+              "food": 122,
+              "wood": 540,
+              "stone": 110,
+              "metal": 20
+            }
+          },
+          {
+            "step": "victory",
+            "seconds": 649.8,
+            "resources": {
+              "food": 142,
+              "wood": 660,
+              "stone": 110,
+              "metal": 90
+            }
+          },
+          {
+            "step": "enemy-workers-alive-at-victory",
+            "count": 0
+          }
+        ],
+        "seconds": 649.8
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101424249960Z-full-seed-42"
+    },
+    {
+      "replay_matches_baseline": true,
+      "replay_completed": true,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "full",
+      "seed": 7,
+      "size": 192,
+      "replay": true,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "full.enemyCentreDead",
+            "actual": 0,
+            "expected": 0,
+            "passed": true
+          },
+          {
+            "id": "full.states",
+            "actual": [
+              "won",
+              "defeated"
+            ],
+            "expected": [
+              "won",
+              "defeated"
+            ],
+            "passed": true
+          },
+          {
+            "id": "full.technologies",
+            "actual": [
+              true,
+              true
+            ],
+            "expected": [
+              true,
+              true
+            ],
+            "passed": true
+          },
+          {
+            "id": "full.singleWin",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "full",
+        "events": [
+          {
+            "event": "won",
+            "player": 1,
+            "time": 621000
+          },
+          {
+            "event": "defeated",
+            "player": 2,
+            "time": 621000
+          }
+        ],
+        "steps": [
+          {
+            "step": "standard-opening",
+            "seconds": 1,
+            "resources": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            }
+          },
+          {
+            "step": "gather-build-barracks-workers",
+            "seconds": 91,
+            "resources": {
+              "food": 180,
+              "wood": 190,
+              "stone": 50,
+              "metal": 40
+            }
+          },
+          {
+            "step": "iron-paid",
+            "seconds": 184,
+            "resources": {
+              "food": 10,
+              "wood": 100,
+              "stone": 100,
+              "metal": 30
+            }
+          },
+          {
+            "step": "iron-complete",
+            "seconds": 244,
+            "resources": {
+              "food": 210,
+              "wood": 200,
+              "stone": 100,
+              "metal": 90
+            }
+          },
+          {
+            "step": "forge-built",
+            "seconds": 303,
+            "resources": {
+              "food": 340,
+              "wood": 130,
+              "stone": 20,
+              "metal": 150
+            }
+          },
+          {
+            "step": "weapons-paid",
+            "seconds": 304,
+            "resources": {
+              "food": 240,
+              "wood": 140,
+              "stone": 20,
+              "metal": 50
+            }
+          },
+          {
+            "step": "weapons-complete",
+            "seconds": 334,
+            "resources": {
+              "food": 300,
+              "wood": 190,
+              "stone": 40,
+              "metal": 80
+            }
+          },
+          {
+            "step": "army-trained",
+            "seconds": 546,
+            "resources": {
+              "food": 106,
+              "wood": 460,
+              "stone": 110,
+              "metal": 20
+            }
+          },
+          {
+            "step": "victory",
+            "seconds": 621,
+            "resources": {
+              "food": 156,
+              "wood": 580,
+              "stone": 110,
+              "metal": 90
+            }
+          },
+          {
+            "step": "enemy-workers-alive-at-victory",
+            "count": 0
+          }
+        ],
+        "seconds": 621
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101426323618Z-full-seed-7"
+    },
+    {
+      "replay_matches_baseline": true,
+      "replay_completed": true,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "research",
+      "seed": 42,
+      "size": 192,
+      "replay": true,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "research.paid",
+            "actual": {
+              "food": 0,
+              "wood": 0,
+              "stone": 0,
+              "metal": 0
+            },
+            "expected": {
+              "food": 0,
+              "wood": 0,
+              "stone": 0,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "research.queued",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "research.pending",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "research.positiveProgress",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "research.started",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "boundary.states",
+            "actual": [
+              "defeated",
+              "won"
+            ],
+            "expected": [
+              "defeated",
+              "won"
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.singleWin",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.singleDefeat",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "research.noCompletion",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "research.queueCleared",
+            "actual": 0,
+            "expected": 0,
+            "passed": true
+          },
+          {
+            "id": "research.refund",
+            "actual": {
+              "food": 400,
+              "wood": 200,
+              "stone": 0,
+              "metal": 100
+            },
+            "expected": {
+              "food": 400,
+              "wood": 200,
+              "stone": 0,
+              "metal": 100
+            },
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "research",
+        "events": [
+          {
+            "event": "lethal",
+            "player": 1,
+            "time": 60000
+          },
+          {
+            "event": "won",
+            "player": 2,
+            "time": 60000
+          },
+          {
+            "event": "defeated",
+            "player": 1,
+            "time": 60000
+          }
+        ],
+        "steps": [],
+        "seconds": 60
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101423777118Z-research-seed-42"
+    },
+    {
+      "replay_matches_baseline": true,
+      "replay_completed": true,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "research",
+      "seed": 7,
+      "size": 192,
+      "replay": true,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "baseline.conquest",
+            "actual": [
+              "ConquestCritical+!Foundation"
+            ],
+            "expected": [
+              "ConquestCritical+!Foundation"
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.1",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.1",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.1",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.1",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.1",
+            "actual": [
+              150
+            ],
+            "expected": [
+              150
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.resources.2",
+            "actual": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "expected": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "opening.population.2",
+            "actual": [
+              8,
+              20,
+              100
+            ],
+            "expected": [
+              8,
+              20,
+              100
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.age.2",
+            "actual": [
+              true,
+              false
+            ],
+            "expected": [
+              true,
+              false
+            ],
+            "passed": true
+          },
+          {
+            "id": "opening.entities.2",
+            "actual": 9,
+            "expected": 9,
+            "passed": true
+          },
+          {
+            "id": "opening.critical.2",
+            "actual": [
+              196
+            ],
+            "expected": [
+              196
+            ],
+            "passed": true
+          },
+          {
+            "id": "research.paid",
+            "actual": {
+              "food": 0,
+              "wood": 0,
+              "stone": 0,
+              "metal": 0
+            },
+            "expected": {
+              "food": 0,
+              "wood": 0,
+              "stone": 0,
+              "metal": 0
+            },
+            "passed": true
+          },
+          {
+            "id": "research.queued",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "research.pending",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "research.positiveProgress",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "research.started",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "boundary.states",
+            "actual": [
+              "defeated",
+              "won"
+            ],
+            "expected": [
+              "defeated",
+              "won"
+            ],
+            "passed": true
+          },
+          {
+            "id": "boundary.singleWin",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "boundary.singleDefeat",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "research.noCompletion",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "research.queueCleared",
+            "actual": 0,
+            "expected": 0,
+            "passed": true
+          },
+          {
+            "id": "research.refund",
+            "actual": {
+              "food": 400,
+              "wood": 200,
+              "stone": 0,
+              "metal": 100
+            },
+            "expected": {
+              "food": 400,
+              "wood": 200,
+              "stone": 0,
+              "metal": 100
+            },
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "mode": "research",
+        "events": [
+          {
+            "event": "lethal",
+            "player": 1,
+            "time": 60000
+          },
+          {
+            "event": "won",
+            "player": 2,
+            "time": 60000
+          },
+          {
+            "event": "defeated",
+            "player": 1,
+            "time": 60000
+          }
+        ],
+        "steps": [],
+        "seconds": 60
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "fc532dade333edec5bf5dd78e3c2c0745c62c0abe213059e9cba5a36cbd3aeab",
+      "local_run_id": "20260910T101425856244Z-research-seed-7"
+    }
+  ]
+}
