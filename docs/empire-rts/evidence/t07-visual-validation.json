@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-13",
+  "runtime": "official R28 0.28.0 macOS ARM64",
+  "mod": "epoch_rts 0.3.0",
+  "method": "Real GUI mouse/keyboard via CUA; no replay screenshots",
+  "visual_verified": true,
+  "runs": [
+    {
+      "run_id": "20260913T100130190796Z-demo-seed-42",
+      "exit_code": 0,
+      "errors": 0,
+      "warnings": 0,
+      "scope": "Select grounded aircraft; right-click fly and attack enemy house; observe damaged house and aircraft; automatic return; relaunch; press H twice and land.",
+      "provenance_note": "Validation-only test functions changed during this run; production aircraft code and demo fixtures did not change. Old runner recorded end-of-run test script hash, so that hash is not proof of the initially loaded entire script."
+    },
+    {
+      "run_id": "20260913T100658243007Z-demo-seed-42",
+      "exit_code": 0,
+      "errors": 0,
+      "warnings": 0,
+      "source_changed_during_run": false,
+      "scope": "Final fixed-manifest confirmation: select aircraft, right-click enemy house, destroy house, return with 110/200 HP; final-combat-return screenshot."
+    }
+  ],
+  "screenshots_sha256": {
+    "t07-ground-selected.jpg": "4125cf0d0ab4bcfbc4aaee824449921ef7be89e15b05bfcc775bda6504957da8",
+    "t07-return-landed.jpg": "fe9c8e4d4c347cc5de2c3362352e391cf75a7c5de4ecf6b19e88b154e5bf5938",
+    "t07-final-combat-return.jpg": "ca8675ddf3f03950556691aa578f33f601a9b898c7077a049063a17549a0f501",
+    "t07-airborne.jpg": "2b8b048783c8422e343cc937fbc1fc681c1911b46fb31407218e2a4796b8cd1e",
+    "t07-stop-return.jpg": "34489eb65f1233916993d65a1b9d56e9bebf1b269c571df077d643e08e08f550",
+    "t07-ground-damage.jpg": "4655045146781cec8eaff8cdbfd587b7a6168797c7fb5ec6cc7e20feee3043d8",
+    "t07-damaged-relaunch.jpg": "a651c8401ba0dac40ac9cb599aac9fc9f34aa583c452263810667c89229ac0c8"
+  },
+  "limitations": [
+    "AA uses native instant-hit ranged damage, not projectile flight.",
+    "Aircraft may overlap temporary airfield model on landing; no precision parking.",
+    "Demo runner checks fixture setup only; visual claims come from actual UI observations."
+  ]
+}

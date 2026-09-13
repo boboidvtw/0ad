@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Purpose: Isolated T07 air prototype. Created: 2026-09-13. -->
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<Entity parent="structures/epoch_rts/barracks">
+<Identity><GenericName>Prototype Airfield</GenericName><SpecificName>Prototype Airfield</SpecificName><Classes datatype="tokens" replace="">Structure EpochAirfield</Classes><VisibleClasses datatype="tokens" replace="">EpochAirfield</VisibleClasses><Tooltip>Trains aircraft. Aircraft Stop orders return to the nearest friendly airfield.</Tooltip></Identity><Health><Max>800</Max></Health><Trainer><Entities datatype="tokens" replace="">units/epoch_rts/aircraft</Entities></Trainer>
+</Entity>

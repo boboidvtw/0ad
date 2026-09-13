@@ -1,0 +1,1167 @@
+{
+  "date": "2026-09-13",
+  "runs": [
+    {
+      "replay_matches_baseline": null,
+      "replay_completed": null,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "validation",
+      "seed": 42,
+      "size": 192,
+      "replay": false,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": -15,
+      "suite": {
+        "mode": "validation",
+        "passed": true,
+        "checks": [
+          {
+            "id": "F01.woodPaid",
+            "actual": 800,
+            "expected": 800,
+            "passed": true
+          },
+          {
+            "id": "F01.metalPaid",
+            "actual": 900,
+            "expected": 900,
+            "passed": true
+          },
+          {
+            "id": "F01.queued",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "F01.singleAircraft",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "F01.grounded",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F01.HP",
+            "actual": 200,
+            "expected": 200,
+            "passed": true
+          },
+          {
+            "id": "F02.airborne",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F02.predictionSeconds",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F02.altitude",
+            "actual": 25,
+            "expected": 25,
+            "passed": true
+          },
+          {
+            "id": "F04.enemyCannotMove",
+            "actual": 430,
+            "expected": 430,
+            "passed": true
+          },
+          {
+            "id": "F04.enemyAirfieldRejected",
+            "actual": "move",
+            "expected": "move",
+            "passed": true
+          },
+          {
+            "id": "F05.groundAccepted",
+            "actual": "attack",
+            "expected": "attack",
+            "passed": true
+          },
+          {
+            "id": "F05.airRejected",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F05.friendRejected",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F05.groundDamage",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F06.repeatStop",
+            "actual": "return",
+            "expected": "return",
+            "passed": true
+          },
+          {
+            "id": "F03.withinAirfield",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F03.relaunch",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F06.boundary",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F04.destroyedFieldLands",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F04.noFriendlyField",
+            "actual": 0,
+            "expected": 0,
+            "passed": true
+          },
+          {
+            "id": "F05.aaAir",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F05.groundFixtureValid",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F05.aaGround",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F05.aaFriendly",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F05.aaHit",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F03.taxiStopCancelsMovement",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F06.nonfiniteMoveRejected",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F03.taxiMoving",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F03.taxiBraked",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F02.latestMoveWins",
+            "actual": 420,
+            "expected": 420,
+            "passed": true
+          },
+          {
+            "id": "F05.targetMoved",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F05.tracksMovingTarget",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F04.capturedFieldReroutes",
+            "actual": 251,
+            "expected": 251,
+            "passed": true
+          },
+          {
+            "id": "F04.replacementLanding",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F06.groundedRepeatedStop",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "observations": [
+          {
+            "id": "F03.landingDistance",
+            "distance": 5.5336974470535925
+          },
+          {
+            "id": "aa-diagnostic",
+            "targets": [],
+            "round": 5,
+            "arrows": 0,
+            "timer": 83,
+            "plane": {
+              "x": 485.1157684326172,
+              "y": 48,
+              "z": 432.9716796875
+            },
+            "aa": {
+              "x": 456.8100128173828,
+              "y": 22.999282836914062,
+              "z": 425.29931640625
+            }
+          },
+          {
+            "id": "F05.aaDamage",
+            "before": 200,
+            "after": 42.5
+          }
+        ]
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "d609b1c16eef129e17e7b6a3ee05df84f4fa1e13f4a854bea4c31d1061ae2ae9",
+      "source_changed_during_run": false,
+      "run_id": "20260913T100645329817Z-validation-seed-42"
+    },
+    {
+      "replay_matches_baseline": null,
+      "replay_completed": null,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "validation",
+      "seed": 7,
+      "size": 192,
+      "replay": false,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": -15,
+      "suite": {
+        "mode": "validation",
+        "passed": true,
+        "checks": [
+          {
+            "id": "F01.woodPaid",
+            "actual": 800,
+            "expected": 800,
+            "passed": true
+          },
+          {
+            "id": "F01.metalPaid",
+            "actual": 900,
+            "expected": 900,
+            "passed": true
+          },
+          {
+            "id": "F01.queued",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "F01.singleAircraft",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "F01.grounded",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F01.HP",
+            "actual": 200,
+            "expected": 200,
+            "passed": true
+          },
+          {
+            "id": "F02.airborne",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F02.predictionSeconds",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F02.altitude",
+            "actual": 25,
+            "expected": 25,
+            "passed": true
+          },
+          {
+            "id": "F04.enemyCannotMove",
+            "actual": 430,
+            "expected": 430,
+            "passed": true
+          },
+          {
+            "id": "F04.enemyAirfieldRejected",
+            "actual": "move",
+            "expected": "move",
+            "passed": true
+          },
+          {
+            "id": "F05.groundAccepted",
+            "actual": "attack",
+            "expected": "attack",
+            "passed": true
+          },
+          {
+            "id": "F05.airRejected",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F05.friendRejected",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F05.groundDamage",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F06.repeatStop",
+            "actual": "return",
+            "expected": "return",
+            "passed": true
+          },
+          {
+            "id": "F03.withinAirfield",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F03.relaunch",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F06.boundary",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F04.destroyedFieldLands",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F04.noFriendlyField",
+            "actual": 0,
+            "expected": 0,
+            "passed": true
+          },
+          {
+            "id": "F05.aaAir",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F05.groundFixtureValid",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F05.aaGround",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F05.aaFriendly",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F05.aaHit",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F03.taxiStopCancelsMovement",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F06.nonfiniteMoveRejected",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F03.taxiMoving",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F03.taxiBraked",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F02.latestMoveWins",
+            "actual": 420,
+            "expected": 420,
+            "passed": true
+          },
+          {
+            "id": "F05.targetMoved",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F05.tracksMovingTarget",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F04.capturedFieldReroutes",
+            "actual": 251,
+            "expected": 251,
+            "passed": true
+          },
+          {
+            "id": "F04.replacementLanding",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F06.groundedRepeatedStop",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "observations": [
+          {
+            "id": "F03.landingDistance",
+            "distance": 5.5336974470535925
+          },
+          {
+            "id": "aa-diagnostic",
+            "targets": [],
+            "round": 5,
+            "arrows": 0,
+            "timer": 83,
+            "plane": {
+              "x": 485.1157684326172,
+              "y": 48,
+              "z": 432.9716796875
+            },
+            "aa": {
+              "x": 456.8100128173828,
+              "y": 22.999282836914062,
+              "z": 425.29931640625
+            }
+          },
+          {
+            "id": "F05.aaDamage",
+            "before": 200,
+            "after": 42.5
+          }
+        ]
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "d609b1c16eef129e17e7b6a3ee05df84f4fa1e13f4a854bea4c31d1061ae2ae9",
+      "source_changed_during_run": false,
+      "run_id": "20260913T100645807546Z-validation-seed-7"
+    },
+    {
+      "replay_matches_baseline": null,
+      "replay_completed": null,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "probe",
+      "seed": 42,
+      "size": 192,
+      "replay": false,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": -15,
+      "suite": {
+        "mode": "probe",
+        "passed": true,
+        "checks": [
+          {
+            "id": "native.airborne",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "native.height",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "observations": [
+          {
+            "id": "native.repeatStop",
+            "first": true,
+            "second": false
+          },
+          {
+            "id": "native.moveTargetWhileLanding",
+            "landing": true
+          }
+        ]
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "d609b1c16eef129e17e7b6a3ee05df84f4fa1e13f4a854bea4c31d1061ae2ae9",
+      "source_changed_during_run": false,
+      "run_id": "20260913T100646281124Z-probe-seed-42"
+    },
+    {
+      "replay_matches_baseline": null,
+      "replay_completed": null,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "demo",
+      "seed": 42,
+      "size": 192,
+      "replay": false,
+      "visual_requested": true,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "mode": "demo",
+        "passed": true,
+        "checks": [
+          {
+            "id": "demo.fixturesOnly",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "observations": []
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "d609b1c16eef129e17e7b6a3ee05df84f4fa1e13f4a854bea4c31d1061ae2ae9",
+      "source_changed_during_run": false,
+      "run_id": "20260913T100658243007Z-demo-seed-42"
+    },
+    {
+      "replay_matches_baseline": true,
+      "replay_completed": true,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "validation",
+      "seed": 42,
+      "size": 192,
+      "replay": true,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "mode": "validation",
+        "passed": true,
+        "checks": [
+          {
+            "id": "F01.woodPaid",
+            "actual": 800,
+            "expected": 800,
+            "passed": true
+          },
+          {
+            "id": "F01.metalPaid",
+            "actual": 900,
+            "expected": 900,
+            "passed": true
+          },
+          {
+            "id": "F01.queued",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "F01.singleAircraft",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "F01.grounded",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F01.HP",
+            "actual": 200,
+            "expected": 200,
+            "passed": true
+          },
+          {
+            "id": "F02.airborne",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F02.predictionSeconds",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F02.altitude",
+            "actual": 25,
+            "expected": 25,
+            "passed": true
+          },
+          {
+            "id": "F04.enemyCannotMove",
+            "actual": 430,
+            "expected": 430,
+            "passed": true
+          },
+          {
+            "id": "F04.enemyAirfieldRejected",
+            "actual": "move",
+            "expected": "move",
+            "passed": true
+          },
+          {
+            "id": "F05.groundAccepted",
+            "actual": "attack",
+            "expected": "attack",
+            "passed": true
+          },
+          {
+            "id": "F05.airRejected",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F05.friendRejected",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F05.groundDamage",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F06.repeatStop",
+            "actual": "return",
+            "expected": "return",
+            "passed": true
+          },
+          {
+            "id": "F03.withinAirfield",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F03.relaunch",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F06.boundary",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F04.destroyedFieldLands",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F04.noFriendlyField",
+            "actual": 0,
+            "expected": 0,
+            "passed": true
+          },
+          {
+            "id": "F05.aaAir",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F05.groundFixtureValid",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F05.aaGround",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F05.aaFriendly",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F05.aaHit",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F03.taxiStopCancelsMovement",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F06.nonfiniteMoveRejected",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F03.taxiMoving",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F03.taxiBraked",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F02.latestMoveWins",
+            "actual": 420,
+            "expected": 420,
+            "passed": true
+          },
+          {
+            "id": "F05.targetMoved",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F05.tracksMovingTarget",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F04.capturedFieldReroutes",
+            "actual": 251,
+            "expected": 251,
+            "passed": true
+          },
+          {
+            "id": "F04.replacementLanding",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F06.groundedRepeatedStop",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "observations": [
+          {
+            "id": "F03.landingDistance",
+            "distance": 5.5336974470535925
+          },
+          {
+            "id": "aa-diagnostic",
+            "targets": [],
+            "round": 5,
+            "arrows": 0,
+            "timer": 83,
+            "plane": {
+              "x": 485.1157684326172,
+              "y": 48,
+              "z": 432.9716796875
+            },
+            "aa": {
+              "x": 456.8100128173828,
+              "y": 22.999282836914062,
+              "z": 425.29931640625
+            }
+          },
+          {
+            "id": "F05.aaDamage",
+            "before": 200,
+            "after": 42.5
+          }
+        ]
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "d609b1c16eef129e17e7b6a3ee05df84f4fa1e13f4a854bea4c31d1061ae2ae9",
+      "source_changed_during_run": false,
+      "run_id": "20260913T100906978027Z-validation-seed-42"
+    },
+    {
+      "replay_matches_baseline": true,
+      "replay_completed": true,
+      "hash_checks_ok": 0,
+      "runtime": "0.28.0",
+      "mode": "validation",
+      "seed": 7,
+      "size": 192,
+      "replay": true,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "mode": "validation",
+        "passed": true,
+        "checks": [
+          {
+            "id": "F01.woodPaid",
+            "actual": 800,
+            "expected": 800,
+            "passed": true
+          },
+          {
+            "id": "F01.metalPaid",
+            "actual": 900,
+            "expected": 900,
+            "passed": true
+          },
+          {
+            "id": "F01.queued",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "F01.singleAircraft",
+            "actual": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "id": "F01.grounded",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F01.HP",
+            "actual": 200,
+            "expected": 200,
+            "passed": true
+          },
+          {
+            "id": "F02.airborne",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F02.predictionSeconds",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F02.altitude",
+            "actual": 25,
+            "expected": 25,
+            "passed": true
+          },
+          {
+            "id": "F04.enemyCannotMove",
+            "actual": 430,
+            "expected": 430,
+            "passed": true
+          },
+          {
+            "id": "F04.enemyAirfieldRejected",
+            "actual": "move",
+            "expected": "move",
+            "passed": true
+          },
+          {
+            "id": "F05.groundAccepted",
+            "actual": "attack",
+            "expected": "attack",
+            "passed": true
+          },
+          {
+            "id": "F05.airRejected",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F05.friendRejected",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F05.groundDamage",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F06.repeatStop",
+            "actual": "return",
+            "expected": "return",
+            "passed": true
+          },
+          {
+            "id": "F03.withinAirfield",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F03.relaunch",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F06.boundary",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F04.destroyedFieldLands",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F04.noFriendlyField",
+            "actual": 0,
+            "expected": 0,
+            "passed": true
+          },
+          {
+            "id": "F05.aaAir",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F05.groundFixtureValid",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F05.aaGround",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F05.aaFriendly",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F05.aaHit",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F03.taxiStopCancelsMovement",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F06.nonfiniteMoveRejected",
+            "actual": false,
+            "expected": false,
+            "passed": true
+          },
+          {
+            "id": "F03.taxiMoving",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F03.taxiBraked",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F02.latestMoveWins",
+            "actual": 420,
+            "expected": 420,
+            "passed": true
+          },
+          {
+            "id": "F05.targetMoved",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F05.tracksMovingTarget",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F04.capturedFieldReroutes",
+            "actual": 251,
+            "expected": 251,
+            "passed": true
+          },
+          {
+            "id": "F04.replacementLanding",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "F06.groundedRepeatedStop",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          }
+        ],
+        "failure": null,
+        "observations": [
+          {
+            "id": "F03.landingDistance",
+            "distance": 5.5336974470535925
+          },
+          {
+            "id": "aa-diagnostic",
+            "targets": [],
+            "round": 5,
+            "arrows": 0,
+            "timer": 83,
+            "plane": {
+              "x": 485.1157684326172,
+              "y": 48,
+              "z": 432.9716796875
+            },
+            "aa": {
+              "x": 456.8100128173828,
+              "y": 22.999282836914062,
+              "z": 425.29931640625
+            }
+          },
+          {
+            "id": "F05.aaDamage",
+            "before": 200,
+            "after": 42.5
+          }
+        ]
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "d609b1c16eef129e17e7b6a3ee05df84f4fa1e13f4a854bea4c31d1061ae2ae9",
+      "source_changed_during_run": false,
+      "run_id": "20260913T100907656192Z-validation-seed-7"
+    }
+  ]
+}

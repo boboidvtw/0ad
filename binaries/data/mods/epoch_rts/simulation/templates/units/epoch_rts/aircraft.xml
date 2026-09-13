@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Purpose: Isolated T07 air prototype. Created: 2026-09-13. -->
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<Entity parent="units/plane">
+<Identity><Civ>epoch</Civ><GenericName>Prototype Aircraft</GenericName><SpecificName>Prototype Aircraft</SpecificName><Classes datatype="tokens" replace="">Unit EpochAircraft</Classes><VisibleClasses datatype="tokens" replace="">EpochAircraft</VisibleClasses><Tooltip>Right-click ground to fly; attack enemy ground targets; Stop returns to a friendly airfield.</Tooltip><Requirements replace=""/></Identity>
+<Cost replace=""><Population>2</Population><BuildTime>20</BuildTime><Resources><food>0</food><wood>200</wood><stone>0</stone><metal>100</metal></Resources></Cost>
+<Health><Max>200</Max></Health><Resistance><Entity><Damage replace=""><Hack>1</Hack><Pierce>1</Pierce><Crush>1</Crush></Damage></Entity></Resistance>
+<UnitAI><DefaultStance>passive</DefaultStance></UnitAI><BuildingAI disable=""/><GarrisonHolder disable=""/><Repairable disable=""/>
+<UnitMotionFlying disable=""/>
+<EpochAircraftMotion><MaxSpeed>30</MaxSpeed><TakeoffSpeed>12</TakeoffSpeed><LandingSpeed>12</LandingSpeed><AccelRate>12</AccelRate><SlowingRate>12</SlowingRate><BrakingRate>12</BrakingRate><TurnRate>2</TurnRate><OvershootTime>0.5</OvershootTime><FlyingHeight>25</FlyingHeight><ClimbRate>10</ClimbRate><DiesInWater>true</DiesInWater><PassabilityClass>unrestricted</PassabilityClass></EpochAircraftMotion><EpochAircraft/>
+<Attack replace=""><Ranged><AttackName>Prototype Cannon</AttackName><Damage><Hack>0</Hack><Pierce>12</Pierce><Crush>8</Crush></Damage><MinRange>0</MinRange><MaxRange>85</MaxRange><PrepareTime>500</PrepareTime><RepeatTime>1500</RepeatTime><Projectile><Speed>150</Speed><Spread>0.2</Spread><Gravity>9.81</Gravity><FriendlyFire>false</FriendlyFire><LaunchPoint y="3"/></Projectile><RestrictedClasses datatype="tokens">EpochAircraft</RestrictedClasses></Ranged></Attack>
+</Entity>

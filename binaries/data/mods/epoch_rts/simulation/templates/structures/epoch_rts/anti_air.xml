@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Purpose: Isolated T07 air prototype. Created: 2026-09-13. -->
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<Entity parent="structures/epoch_rts/house">
+<Identity><GenericName>Prototype Anti-Air</GenericName><SpecificName>Prototype Anti-Air</SpecificName><Classes datatype="tokens" replace="">Structure EpochAntiAir</Classes><VisibleClasses datatype="tokens" replace="">EpochAntiAir</VisibleClasses><Tooltip>Attacks enemy aircraft only.</Tooltip></Identity><Health><Max>500</Max></Health><Population><Bonus>0</Bonus></Population><VisualActor><Actor>structures/hellenes/wooden_tower.xml</Actor></VisualActor><Vision><Range>110</Range></Vision><BuildingAI><DefaultArrowCount>1</DefaultArrowCount><GarrisonArrowMultiplier>0</GarrisonArrowMultiplier><GarrisonArrowClasses>Infantry</GarrisonArrowClasses></BuildingAI><Attack replace=""><Ranged><AttackName>Prototype Cannon</AttackName><Damage><Hack>0</Hack><Pierce>25</Pierce><Crush>0</Crush></Damage><MinRange>0</MinRange><MaxRange>100</MaxRange><PrepareTime>500</PrepareTime><RepeatTime>1500</RepeatTime><RestrictedClasses datatype="tokens">!EpochAircraft</RestrictedClasses></Ranged></Attack>
+</Entity>

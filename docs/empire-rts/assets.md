@@ -33,3 +33,9 @@
 - 已讀取同包 `fonts/source-han-sans -LICENSE.txt`：Adobe 2014–2021，SIL Open Font License 1.1。只依賴官方 runtime，未將字型二進位複製進 repo。
 - 新增研究圖示引用 public 的 `town_phase.png`、`sword_01.png`；音效引用 `interface/alarm/alarm_phase.xml`。上游美術署名同上。
 - Researcher.js、BuildLabel.js/XML 與 selection_details.js 取自官方 R28 並作局部修改，保留 GPL-2.0-or-later 出處。尚未製作正式 HUD 美術。
+
+## T07 飛行原型引用（2026-09-13）
+
+- `units/plane`、`art/actors/units/global/plane.xml` 及其飛機模型、mustang貼圖／圖示、projectile依賴由官方R28提供；機場沿用epoch兵營的雅典兵營，防空引用 `structures/hellenes/wooden_tower.xml`。無新增美術二進位檔、付費素材或Empire Earth素材。
+- 作者／來源：Wildfire Games及各素材作者，官方Release28；美術按前述CC BY-SA3.0署名。驗收截圖同樣包含這些暫用素材，不是正式美術交付。
+- `EpochAircraftMotion.js` 衍生自官方R28 `simulation/components/UnitMotionFlying.js`，保留Wildfire Games及GPL-2.0-or-later出處；沒有修改public或C++。

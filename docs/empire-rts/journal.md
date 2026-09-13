@@ -123,3 +123,15 @@
 - 修正測試器：勝負即退出前取結果、攻擊移動處理迷霧、資源值快照、研究已開始／扣款檢查、replay metadata／EOF／MISMATCH／baseline 比對。程式唯讀審查及修正後複查通過。T04／T05共享程式未變，因此不重跑。
 - T06／M2 更新 DONE，同步 progress、acceptance、rules歷史狀態、plan、README及evidence；下一步 T07 先調查 R28 飛行相關介面及定義最小案例。T07–T15 保持 TODO，不宣稱正式美術、AI、多人、存讀檔或效能完成。
 - 公開證據排除本機路徑；原始日誌、重播與引擎產生的 profile 留在本機忽略工作目錄。本次只做 scoped 本機提交，未執行 push／發布或私人設定同步。
+
+## 2026-09-13 — T07 獨立飛行原型完成
+
+- 從本機 `cdcbffc`、clean worktree 接續；恢復同一官方 R28 ARM64，核對既定 DMG SHA-256。版本仍 0.28.0／Mod 0.3.0，沒有 C++、上游 public 或 T05 修改。
+- 新增 EpochAircraft 控制器、R28 衍生 EpochAircraftMotion，以及僅分流飛機 walk／attack／stop 的 helper；飛機、機場、防空模板與 probe／validation／手動 demo 專用地圖。M2 建造白名單不增加現代單位。
+- D15：Stop 返航最近己方有效機場，無機場則就地降落；採90公尺區域，不含精準跑道／停機位。原生 Stop 反轉 landing、目標移動保留 landing、未來位置秒／毫秒換算缺口，在獨立元件修正。
+- D16：原生 AA 彈道多次未命中。放大 footprint 只過一 seed，已撤回；秒／毫秒修正及高速彈丸也未消除約6公尺取樣落差。原型 AA 改用原生即時 Ranged 傷害，對地仍彈道，精確空中彈道留待 T09。
+- 最終兩 seed 各36項 PASS、各36項重播事件／結果一致且自然 exit0；probe 2項 PASS。防空 HP200→42.5；返航距機場5.534公尺；補實際滑跑停止、轉敵機場改降、敵方命令及移動目標追蹤回歸。無 hash 行，不宣稱全狀態同步。
+- GUI 兩場正常 exit0、0錯誤／0警告。選取／起飛／對地傷害、房屋毀滅、受損110/200、返航、再起飛及 H 連按落地已見畫面；模型重疊是原型限制。第一場只擴充測試函式，舊 runner 來源雜湊不能證明初始整份 script；以最終 full Mod manifest 固定場次補核對，並修正 runner 啟動／結束 manifest 檢查。
+- M2 回歸：戰鬥81項、兩 seed 整局各15項且649.8／621秒勝利、T04經濟183項、M1 smoke 通過；T05未重跑。來源、結果與7張GUI截圖見 evidence/t07-*。
+- 唯讀程式審查提出的地面返航、移動目標追蹤、fixture與滑跑覆蓋問題均修正、複查通過。T07標DONE，M3保持IN_PROGRESS；下一步T08，T09待兩項調查齊備。
+- 此批只做 scoped 本機提交，未 push、發布或同步私人設定。原始日誌與 replays 留在本機忽略目錄；提交版本可由本節 Git 歷史追溯。
