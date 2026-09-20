@@ -39,3 +39,9 @@
 - `units/plane`、`art/actors/units/global/plane.xml` 及其飛機模型、mustang貼圖／圖示、projectile依賴由官方R28提供；機場沿用epoch兵營的雅典兵營，防空引用 `structures/hellenes/wooden_tower.xml`。無新增美術二進位檔、付費素材或Empire Earth素材。
 - 作者／來源：Wildfire Games及各素材作者，官方Release28；美術按前述CC BY-SA3.0署名。驗收截圖同樣包含這些暫用素材，不是正式美術交付。
 - `EpochAircraftMotion.js` 衍生自官方R28 `simulation/components/UnitMotionFlying.js`，保留Wildfire Games及GPL-2.0-or-later出處；沒有修改public或C++。
+
+## T08 調查探針引用（2026-09-20）
+
+- 原生 `units/athen/ship_scout` 衍生測試船；模型為 `art/actors/structures/athenians/pentekonter_scout.xml`，圖示 `units/athen/ship_scout.png`，以及繼承的船舶音效。水域使用 `medit_sand_wet` 與官方 ocean 水面、cirrus 天空。
+- 僅引用固定 R28 public，沒有複製美術二進位、購買素材或加入 Empire Earth 素材。作者 Wildfire Games／各素材作者，CC BY-SA 3.0 及來源署名沿用上文；T08截圖同樣含上述美術。
+- 船模型高桅杆不適合作正式潛艇，偵測後即使 y16 仍可能有桅杆露水；只用於可見性與位置探針，不代表完成水下美術。

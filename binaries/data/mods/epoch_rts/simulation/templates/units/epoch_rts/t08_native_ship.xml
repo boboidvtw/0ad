@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Purpose: T08 isolated native ship and direct-hit probe. Created: 2026-09-20. -->
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<Entity parent="units/athen/ship_scout">
+  <Identity><GenericName>T08 Probe Ship</GenericName></Identity>
+  <Vision><Range>100</Range></Vision>
+  <Health><Max>2000</Max></Health>
+  <Attack replace=""><Ranged><AttackName>Probe direct damage</AttackName>
+    <Damage><Hack>0</Hack><Pierce>20</Pierce><Crush>0</Crush></Damage>
+    <MinRange>0</MinRange><MaxRange>90</MaxRange><PrepareTime>200</PrepareTime><RepeatTime>1000</RepeatTime>
+    <RestrictedClasses datatype="tokens">!Ship</RestrictedClasses>
+  </Ranged></Attack>
+  <UnitAI><DefaultStance>passive</DefaultStance></UnitAI>
+</Entity>

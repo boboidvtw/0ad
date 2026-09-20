@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Purpose: T08 static native FloatDepth and scripted visibility fixture. Created: 2026-09-20. -->
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<Entity parent="units/epoch_rts/t08_native_ship">
+  <Position><FloatDepth>4</FloatDepth></Position>
+  <Visibility disable=""/>
+  <EpochT08Visibility/>
+</Entity>

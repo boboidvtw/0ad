@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-09-20",
+  "starting_head": "e956ac6943bc001bd5edca7c8d171df3e4df1625",
+  "initial_worktree": "clean",
+  "architecture": "arm64",
+  "runtime_version": "0.28.0",
+  "dmg_sha256": "8c53566123fed9a79766c364e543d6e9dc7c84f642c78d2bb5892eeea9c4c052",
+  "binary_sha256": "531981d016596b0abde110cd239feaed98998c3fdaa837d0fa8d6f75482c81ef",
+  "public_zip_sha256": "ccb24dedee399e6d2810ccb62b0b1b77a937999d9f1dedffbc189b3e359f2429",
+  "public_members": {
+    "mod.json": "a5cf63a85c0e40afbcacc1eb56c8f9c5852166104ee946a603873c29fea86573",
+    "simulation/components/Visibility.js": "0444912e54efb0dece62866bb294f8974fd76aa42efe27c6729d5f1be36d3afb",
+    "simulation/components/Attack.js": "caf4396fd5061ab0fb07b811b5e4306688f0c5fb11e602af7859838d6e056134",
+    "simulation/components/UnitAI.js": "52aaabc73004eb82e885e6d623c10cdf71d827b6d1b1d93cd22d67946004bcff",
+    "simulation/components/Fogging.js": "d1c690d1cb3e14a0c73000a62478ba88a72e5c701bd48de5211b378501c7eaca",
+    "simulation/templates/template_unit_ship.xml": "daae45358ab4b1ffad5b8a94c046dac1ec15be4b9a91abf746cdda852530abd3",
+    "simulation/templates/units/athen/ship_scout.xml": "8d4f791e991f080d3e2193a5831aca081e3c4caf20f81216d068e5d78838cb6d",
+    "maps/random/rmgen/RandomMap.js": "096df747f22e4d6e7a7532ca26c2ca63071143bed7865d15e1af6d209c25d706",
+    "maps/random/rmgen/environment.js": "153efb12655f4941fe5d75c08f0f68f93409b21e32232a643c6aa998c18b7cf9"
+  },
+  "public_mod": {
+    "name": "0ad",
+    "version": "0.28.0",
+    "label": "0\u00a0A.D. Empires Ascendant",
+    "url": "https://play0ad.com",
+    "description": "A free, open-source, historical RTS game.",
+    "dependencies": []
+  },
+  "old_repo_public_used": false,
+  "official_documentation": "https://docs.wildfiregames.com/entity-docs/r28/components/position/"
+}

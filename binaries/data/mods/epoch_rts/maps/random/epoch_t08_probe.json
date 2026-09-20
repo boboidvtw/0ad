@@ -1,0 +1,25 @@
+{
+  "settings": {
+    "Name": "Epoch RTS - T08 native submarine probe",
+    "Script": "epoch_t08_probe.js",
+    "Description": "Feasibility only; not a playable submarine feature.",
+    "CircularMap": false,
+    "Keywords": [
+      "demo"
+    ],
+    "SupportedBiomes": [],
+    "PlayerData": [
+      {
+        "Civ": "epoch"
+      },
+      {
+        "Civ": "epoch"
+      }
+    ],
+    "PopulationCap": 100,
+    "TriggerScripts": [
+      "scripts/epoch_rts/FrontierDuel.js",
+      "scripts/epoch_rts/T08Probe.js"
+    ]
+  }
+}

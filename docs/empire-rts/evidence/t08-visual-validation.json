@@ -1,0 +1,150 @@
+{
+  "run": {
+    "replay_matches_baseline": null,
+    "replay_completed": null,
+    "hash_checks_ok": 0,
+    "runner_sha256": "2e74655dd1fd3f87af940a636d062567c32e0264dfce3d19b6304944ccb707d8",
+    "runtime": "0.28.0",
+    "mode": "visual",
+    "seed": 42,
+    "size": 192,
+    "replay": false,
+    "visual_requested": true,
+    "visual_verified": false,
+    "exit_code": 0,
+    "suite": {
+      "mode": "visual",
+      "passed": true,
+      "checks": [
+        {
+          "id": "GUI.surface.enemy",
+          "actual": "visible",
+          "expected": "visible",
+          "passed": true
+        },
+        {
+          "id": "GUI.surface.owner",
+          "actual": "visible",
+          "expected": "visible",
+          "passed": true
+        },
+        {
+          "id": "GUI.hidden.enemy",
+          "actual": "hidden",
+          "expected": "hidden",
+          "passed": true
+        },
+        {
+          "id": "GUI.hidden.owner",
+          "actual": "visible",
+          "expected": "visible",
+          "passed": true
+        },
+        {
+          "id": "GUI.detected.enemy",
+          "actual": "visible",
+          "expected": "visible",
+          "passed": true
+        },
+        {
+          "id": "GUI.detected.owner",
+          "actual": "visible",
+          "expected": "visible",
+          "passed": true
+        },
+        {
+          "id": "GUI.resurfaced.enemy",
+          "actual": "visible",
+          "expected": "visible",
+          "passed": true
+        },
+        {
+          "id": "GUI.resurfaced.owner",
+          "actual": "visible",
+          "expected": "visible",
+          "passed": true
+        }
+      ],
+      "failure": null,
+      "observations": [
+        {
+          "id": "GUI.surface",
+          "position": {
+            "x": 330,
+            "y": 20,
+            "z": 300
+          },
+          "hp": 2000
+        },
+        {
+          "id": "GUI.hidden",
+          "position": {
+            "x": 330,
+            "y": 16,
+            "z": 300
+          },
+          "hp": 2000
+        },
+        {
+          "id": "GUI.detected",
+          "position": {
+            "x": 330,
+            "y": 16,
+            "z": 300
+          },
+          "hp": 2000
+        },
+        {
+          "id": "GUI.resurfaced",
+          "position": {
+            "x": 330,
+            "y": 20,
+            "z": 300
+          },
+          "hp": 2000
+        }
+      ]
+    },
+    "errors_or_warnings": [],
+    "engine_html_error_or_warning": false,
+    "passed": true,
+    "source_sha256": "b2925514e60b5d4782aeb85c770476d98bb32101d94bc9fce1b52ddf0b8e0a18",
+    "source_changed_during_run": false,
+    "run_id": "20260920T115139484886Z-visual-seed-42",
+    "log_sha256": "ab64de6157bd6217f851d63635372bb668307caf8c860bb302c469483c108325"
+  },
+  "human_visible_rendering_review": true,
+  "screenshots": [
+    {
+      "file": "t08-surface.png",
+      "sha256": "aede0deef95c95be6e12c22b6b712e6271510fb11f48e7b94507828797005457",
+      "captured_at_utc": "2026-09-20T11:51:56.336452+00:00",
+      "observed": "Enemy model visible at y20"
+    },
+    {
+      "file": "t08-hidden.png",
+      "sha256": "c3c8c7b695ce4497dfcec391e69f7d4fb07a1e201ae2fd8eb4bb717ba2482d37",
+      "captured_at_utc": "2026-09-20T11:52:33.921613+00:00",
+      "observed": "Enemy model absent at y16 without detector"
+    },
+    {
+      "file": "t08-detected.png",
+      "sha256": "54008189ee76bd14713aec92d85d15829ca1be1ea6162c1059878d3a6e1859df",
+      "captured_at_utc": "2026-09-20T11:52:56.381029+00:00",
+      "observed": "Enemy model visible at y16 with detector; temporary mast protrudes"
+    },
+    {
+      "file": "t08-resurfaced.png",
+      "sha256": "f876c07fc41524eefb93f8044e8b65a1be8d7f5e16b81e7209d6f566b19e250e",
+      "captured_at_utc": "2026-09-20T11:53:30.156239+00:00",
+      "observed": "Enemy model back at y20"
+    }
+  ],
+  "method": "CUA application screenshots; same fixed source run; Cmd+Q normal exit",
+  "limitations": [
+    "No player-issued dive command or UI control",
+    "No owner or allied UI acceptance",
+    "No selection/minimap leakage acceptance",
+    "Temporary surface ship art; not production underwater art"
+  ]
+}

@@ -140,3 +140,14 @@
 
 - 使用者要求先收工；核對實作HEAD c0266d9、工作樹clean、無遊戲進程。建立 SESSION-HANDOFF-2026-09-13.md，保存T07實測、R28基線、限制與T08開工順序。
 - 交接文件另作本機提交，未push；未安排背景工作。可安全關閉session，下一次從repo內交接文件接續。
+
+### 2026-09-20 T08 潛艇／水下規則調查
+
+- 依9/13交接接續既有repo；起點master e956ac6、clean，無遊戲進程；R28 0.28.0 ARM64、macOS26.6.2、Mod symlink及官方DMG SHA-256與基線一致，未使用舊public。
+- 定義水面／水下、2秒切換、深度4／安全水深6、普通LoS＋60公尺偵測、艦砲／反潛／魚雷規則。規則與實作範圍分開；只做隔離探針，不接入M2經濟，不改C++。
+- 實際public.zip、官方R28 Position文件與native runtime binding確認FloatDepth、SetHeightFixed、scripted Visibility、RequestVisibilityUpdate。高度本身不隱身；逐玩家可見性與偵測進出／轉敵／死亡／浮起可用。
+- 兩seed各30項通過；水面20／海床8／潛深4，航行仍y16，船停在陸地邊界x508.5。原生hidden新攻擊2000→1956.26、失去偵測後持續攻擊1897.94→1854.20：確認需要專用attack gate，沒有宣稱需求已實作。
+- 最終runner與fullMod來源固定，兩次重播事件／結果一致、自然EOF／exit0，沒有hash行，不宣稱全狀態同步。四階段GUI8項API檢查與四張截圖，exit0／無錯誤警告；暫用船桅杆露水、選取及盟友GUI未驗。M1載入回歸PASS，T05–T07未重做。
+- 首次水位偏移與第二次passive自主逃跑造成的fixture問題已修正並重跑；失敗紀錄留work。重播profile產物改存各run輸出目錄；未刪檔。唯讀審查與複查無阻擋項。
+- T08標DONE僅代表調查／決策；完整可玩潛艇延後。T09 TODO，下步比較獨立Mod狀態／偵測／攻擊gate，保留T07精確彈道與停機位限制。2秒切換、淺水路徑、動態武器矩陣、延遲傷害、多人／存讀檔／效能／實體魚雷全部未驗收。
+- 證據見evidence/t08-*、規則t08-submarine-feasibility.md；本批只本機工作，不push，無背景服務或排程。
