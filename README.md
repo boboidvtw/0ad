@@ -22,7 +22,7 @@
 
 - **M1 DONE**：官方 R28 macOS ARM64 基線已驗證；`epoch_rts` Mod 與 Frontier 01 測試地圖已建立。
 - 已通過：seed 42、7 引擎測試、Pioneer 實際畫面／選取／移動與正常退出，最終日誌 0 錯誤／0 警告。
-- **M2 DONE**：兩時代最小流程完成；T06 兩 seed 戰鬥、勝負邊界與標準資源脚本整局通過，附勝利畫面與限制。[T06 證據](docs/empire-rts/evidence/t06-validation.md)。[T07獨立飛行原型](docs/empire-rts/evidence/t07-validation.md) 已完成限定驗收，[T08潛艇可行性調查](docs/empire-rts/evidence/t08-validation.md)已完成，完整潛艇功能延後，下一步T09引擎修改決策；通用 AI、正式美術、存讀檔及多人尚未驗收。
+- **M2 DONE**：兩時代最小流程完成；T06 兩 seed 戰鬥、勝負邊界與標準資源脚本整局通過，附勝利畫面與限制。[T06 證據](docs/empire-rts/evidence/t06-validation.md)。[T07獨立飛行原型](docs/empire-rts/evidence/t07-validation.md) 已完成限定驗收，[T08潛艇可行性調查](docs/empire-rts/evidence/t08-validation.md)已完成，完整潛艇功能延後，[T09架構決策](docs/empire-rts/t09-engine-decision.md)已完成，維持R28與Mod、暫不改C++，主線下一步T10；通用 AI、正式美術、存讀檔及多人尚未驗收。
 - **T05 DONE**：[研究功能與驗收證據](docs/empire-rts/evidence/t05-validation.md)。兩 seed 各 77 項研究與 183 項經濟回歸通過；已確認解鎖單位、鍛造研究及三類繁中不足提示。
 - [T04 經濟原型驗收](docs/empire-rts/evidence/t04-validation.md)：兩 seed 各 177 項引擎檢查、GUI 操作及 M1 回歸通過。
 - [開始執行與重現測試](docs/empire-rts/baseline.md) · [驗收證據](docs/empire-rts/evidence/m1-validation.md) · [暫用素材](docs/empire-rts/assets.md)

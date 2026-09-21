@@ -151,3 +151,13 @@
 - 首次水位偏移與第二次passive自主逃跑造成的fixture問題已修正並重跑；失敗紀錄留work。重播profile產物改存各run輸出目錄；未刪檔。唯讀審查與複查無阻擋項。
 - T08標DONE僅代表調查／決策；完整可玩潛艇延後。T09 TODO，下步比較獨立Mod狀態／偵測／攻擊gate，保留T07精確彈道與停機位限制。2秒切換、淺水路徑、動態武器矩陣、延遲傷害、多人／存讀檔／效能／實體魚雷全部未驗收。
 - 證據見evidence/t08-*、規則t08-submarine-feasibility.md；本批只本機工作，不push，無背景服務或排程。
+
+### 2026-09-20～21 T09 引擎修改決策
+
+- 起點master ac4cbff、clean，沿既有repo接續。讀T07／T08規格、原始JSON、來源manifest及T07 controller／command routing，完成Mod／共享JS／C++方案比較。
+- 唯讀核對T07共68檔、T08共75檔均與來源manifest相同；T08 runner、實際R28 binary／public.zip與runtime manifest一致，Mod連結正確。核對結果存evidence/t09-decision-audit.json；這是檔案核對，不是新增引擎實測。
+- 決策維持官方R28與獨立Mod，不啟動C++；防空即時傷害保留。完整潛艇、精確空中彈道、停機位／建築避碰仍未完成，不抹除T07/T08限制。
+- 專用攻擊檢查列T16 TODO；明定新命令、既有攻擊、自動索敵、PerformAttack及原生攻擊者混用邊界。T17列潛艇最小垂直切片，T18列精確彈道／停機位擴充；目前均只有規格，未實作驗收。
+- t09-engine-decision.md定義重新評估native修改的正確性／3D需求／性能／同步門檻；沒有證據就不因概念複雜而修改C++，也不保證Mod可以滿足全部需求。
+- 唯讀審查通過；文件連結、JSON、來源雜湊、Git diff與任務狀態一致性核對完成。T09 DONE、M3 DONE只涵蓋限定原型／調查／決策；主線下一步T10。T05–T08本次未重跑。
+- 全部變更是文件與核對紀錄，本機提交、未push；無背景任務或遊戲進程。新接續入口SESSION-HANDOFF-2026-09-21.md。

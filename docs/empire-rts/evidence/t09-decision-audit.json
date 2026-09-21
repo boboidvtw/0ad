@@ -1,0 +1,38 @@
+{
+  "date_utc": "2026-09-20T12:08:05.030281+00:00",
+  "starting_head": "ac4cbff3eba31f5bb671c9ecedadd1159a9ddd0a",
+  "initial_worktree": "clean",
+  "scope": "Read-only source/runtime/evidence audit; no engine execution or new gameplay validation",
+  "runtime_version": "0.28.0",
+  "runtime_binary_matches_t08": true,
+  "runtime_public_matches_t08": true,
+  "t07_files_checked": 68,
+  "t07_mismatches": [],
+  "t08_files_checked": 75,
+  "t08_mismatches": [],
+  "t08_runner_matches": true,
+  "mod_symlink_matches": true,
+  "input_evidence_sha256": {
+    "t07-validation.md": "58c4a5c67dfc284b54a65069e9382975a257cc2ffb25adf296c5ef0e1a00f8d9",
+    "t07-engine-results.json": "d74ea4ed6b82dcf3e7642f9f5a5be4a18a881b3c340f8dc5307dd3467353c923",
+    "t07-source-manifest.json": "54b4ff4e3891472a66f4f9b495ec568caef04d6312ca5c781697457a47de919b",
+    "t08-validation.md": "c9e6a47cab3767add660fb958063365bf2165c2519ca54713285576f8f58767c",
+    "t08-engine-results.json": "6e716975e97a601b735cf0b193cd7457d02ba17e8bb3d5d56e51cfc5258df680",
+    "t08-source-manifest.json": "0e28531e0d9e1713eee82a9d6d986948f8999eba6da82849bdcc8ea0f49d5a3f",
+    "t08-runtime-manifest.json": "09e50cfea36f4ec8f3b1cf8790de50f5443eb92f229912eb693a17ecf19751d1",
+    "t08-visual-validation.json": "4c87a7f099858f483cebc0b293c5b2e6958e98d97869abe217323016487b349f"
+  },
+  "engine_tests_rerun": false,
+  "new_cpp_build": false,
+  "new_submarine_gate_validation": false,
+  "passed": true,
+  "documentation_validation": {
+    "completed_local_date": "2026-09-21",
+    "local_links_checked": 64,
+    "local_links_exist": true,
+    "task_status_consistent": true,
+    "only_documentation_changed": true,
+    "read_only_review": "passed; no blocking findings",
+    "new_gameplay_validation": false
+  }
+}
