@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<skeletons>
+  <standard_skeleton id="epoch_t11" title="Epoch T11">
+    <bone name="epoch_root">
+      <bone name="epoch_torso" />
+      <bone name="epoch_head" />
+      <bone name="epoch_arm_l" />
+      <bone name="epoch_arm_r" />
+      <bone name="epoch_leg_l" />
+      <bone name="epoch_leg_r" />
+    </bone>
+  </standard_skeleton>
+  <skeleton target="epoch_t11" title="Epoch T11">
+    <identifier>
+      <root>epoch_root</root>
+    </identifier>
+    <bone name="epoch_root">
+      <target>epoch_root</target>
+      <bone name="epoch_torso">
+        <target>epoch_torso</target>
+      </bone>
+      <bone name="epoch_head">
+        <target>epoch_head</target>
+      </bone>
+      <bone name="epoch_arm_l">
+        <target>epoch_arm_l</target>
+      </bone>
+      <bone name="epoch_arm_r">
+        <target>epoch_arm_r</target>
+      </bone>
+      <bone name="epoch_leg_l">
+        <target>epoch_leg_l</target>
+      </bone>
+      <bone name="epoch_leg_r">
+        <target>epoch_leg_r</target>
+      </bone>
+    </bone>
+  </skeleton>
+</skeletons>

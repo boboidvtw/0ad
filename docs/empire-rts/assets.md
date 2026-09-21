@@ -59,3 +59,16 @@ M1階段沒有製作正式模型，也沒有購買素材。下列項目由官方
 | 上游依賴 | R28 player_trans.xml／model shader；M2房屋繼承的圖示、音效等仍引用public，未複製；Wildfire Games署名沿用上文 |
 | 驗收 | [T10報告](evidence/t10-validation.md)：兩seed各13項、重播、GUI玩家色／選取、M1回歸與確定性匯出 |
 | 未完成 | 正式美術、Blender、LOD、人物動畫、建造／毀滅、效能；沒有逐檔發行授權清單 |
+
+## T11 原創低面數樣板（2026-09-21～22）
+
+| ID | 資產／狀態 | 可編輯来源及產出 | 規格／驗收 |
+| --- | --- | --- | --- |
+| T11-A02 | 工人／已驗樣板 | slice.json＋export-t11.py；t11_worker.dae／actor／PNG | 408頂點、204三角、7骨；idle／walk／採木／建造修理／death |
+| T11-A03 | 長矛兵／已驗樣板 | 同上，t11_soldier.dae／actor／PNG | 438頂點、218三角、共用rig；idle／walk／近戰／death |
+| T11-A04 | 房屋／已驗樣板 | slice.json house＋原T10 exporter；t11_house.dae／actor／PNG | 80三角、11.2×6.5×9.2m；施工／完工／玩家色；public鷹架仍暫用 |
+| T11-A08 | 3個HUD圖示／已驗樣板 | export-t11.py內原創幾何輪廓，portraits/epoch_rts/t11_*.png | 128×128；工人／兵／房屋選取及建造按鈕；非整套HUD重製 |
+
+作者Epoch RTS contributors，幾何／骨架／5clip／貼圖／圖示為原創CC BY-SA3.0，沒有複製上游人物或Empire Earth素材。房屋衍生本repo原創T10參數幾何。工具／simulation採GPL-2.0-or-later。來源、完整署名與重現契約見[手冊](../../assets/epoch-rts/t11-slice/README.md)。上游player_trans材質、shader、鷹架、樹、地形、其餘HUD、音效與字型仍按前述Wildfire Games／OFL條件引用。
+
+Python3.9.6標準庫，未用Blender／Assimp／付費工具。兩seed各126項、兩事件重播、GUI及5項工具測試見[T11驗收](evidence/t11-validation.md)；來源及native cache雜湊存evidence/t11-*。骨架不含肘膝／手指，原M2未全量換皮，其他動作／材質／LOD／效能及發行授權清單未完成，不將樣板標為正式量產資產。

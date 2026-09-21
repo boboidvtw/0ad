@@ -1,0 +1,143 @@
+{
+  "starting_head": "9d36013",
+  "runtime": "0.28.0",
+  "binary_sha256": "531981d016596b0abde110cd239feaed98998c3fdaa837d0fa8d6f75482c81ef",
+  "public_zip_sha256": "ccb24dedee399e6d2810ccb62b0b1b77a937999d9f1dedffbc189b3e359f2429",
+  "hardware": {
+    "model": "MacBook Air Mac16,13",
+    "chip": "Apple M4",
+    "cpu_cores": 10,
+    "memory_gb": 16,
+    "os": "macOS 26.6.2 arm64"
+  },
+  "python": "3.9.6 /usr/bin/python3",
+  "blender_and_assimp_found_in_path_or_applications": false,
+  "installed_new_tools": false,
+  "native_cache_artifacts": [
+    {
+      "file": "art/animation/epoch_rts/t11_attack.dae.4ee13fbe82feb1dc.psa",
+      "sha256": "ea8cc1642dce7661cbf84b9adae3437d5e782d008594cb75f6a7ed994126c840",
+      "bytes": 5712,
+      "bones": 7,
+      "frames": 29,
+      "frame_ms": 33.33333206176758,
+      "finite": true,
+      "distinct_pose_count": 29
+    },
+    {
+      "file": "art/animation/epoch_rts/t11_death.dae.e94a52bf5d493ef5.psa",
+      "sha256": "aab5823dc9812b38ca8a3afea440ae67a10f471c465d081c1d58ae765de5ac74",
+      "bytes": 6888,
+      "bones": 7,
+      "frames": 35,
+      "frame_ms": 33.33333206176758,
+      "finite": true,
+      "distinct_pose_count": 28
+    },
+    {
+      "file": "art/animation/epoch_rts/t11_idle.dae.f6bfe97fb6afc0f4.psa",
+      "sha256": "bd9be649fed591be41a18722f6376c3d5fbfdd114649fb24c7e491c4b97e81bd",
+      "bytes": 11592,
+      "bones": 7,
+      "frames": 59,
+      "frame_ms": 33.33333206176758,
+      "finite": true,
+      "distinct_pose_count": 57
+    },
+    {
+      "file": "art/animation/epoch_rts/t11_walk.dae.492956ace5230c00.psa",
+      "sha256": "cb0caeb9eeacfaa54415e284bb7d5fd0b2b3a96acd5efd178de4497e37b4bbf3",
+      "bytes": 4536,
+      "bones": 7,
+      "frames": 23,
+      "frame_ms": 33.33333206176758,
+      "finite": true,
+      "distinct_pose_count": 22
+    },
+    {
+      "file": "art/animation/epoch_rts/t11_work.dae.6f5f50aa1caf2065.psa",
+      "sha256": "2261bdf733eca84d71c17284b37171370f1ce44e8cfa658d359580a60c377292",
+      "bytes": 5712,
+      "bones": 7,
+      "frames": 29,
+      "frame_ms": 33.33333206176758,
+      "finite": true,
+      "distinct_pose_count": 23
+    },
+    {
+      "file": "art/meshes/skeletal/epoch_rts/t11_soldier.dae.8c4c3485fcb3d294.pmd",
+      "sha256": "20c003bda5ce71bdb3a029caf4b74a3408eac5369181b17eecfaa00bce712e12",
+      "bytes": 24349,
+      "vertices": 438,
+      "triangles": 218,
+      "bones": 7
+    },
+    {
+      "file": "art/meshes/skeletal/epoch_rts/t11_worker.dae.2fd7eea58a32eb3a.pmd",
+      "sha256": "8b740f65fc8f217a1cabd05f3c266c1024e8b8775e8b0ea07f9c3ae2f3706d08",
+      "bytes": 22705,
+      "vertices": 408,
+      "triangles": 204,
+      "bones": 7
+    },
+    {
+      "file": "art/meshes/structural/epoch_rts/t11_house.dae.1ab7b51996b037f9.pmd",
+      "sha256": "ab1b976ab98db3b412f272e55c80738acdf7ed024fdc305a975df584f4c91729",
+      "bytes": 8557,
+      "vertices": 154,
+      "triangles": 80,
+      "bones": 0
+    },
+    {
+      "file": "art/textures/skins/epoch_rts/t11_palette.png.b532f50237500dd2.dds",
+      "sha256": "c68cef42f8a1967303f6d31654c566a6e986c981cc8e33f21ae85857ad572e3c",
+      "bytes": 2960
+    },
+    {
+      "file": "art/textures/skins/structural/epoch_rts/t11_house.png.ddcf232811a219eb.dds",
+      "sha256": "c30c1eed7fa3af3b42c9303cd5c4b40c6906e1f85f3683d1c268bc0ef527d0a5",
+      "bytes": 1552
+    },
+    {
+      "file": "art/textures/ui/session/portraits/epoch_rts/t11_house.png.f638cf6c9d5d0328.dds",
+      "sha256": "f3effd0050cafa377fefda202caf96d71f61986c1cc6bf2a177367daac908fbb",
+      "bytes": 8320
+    },
+    {
+      "file": "art/textures/ui/session/portraits/epoch_rts/t11_soldier.png.f82565b095244f98.dds",
+      "sha256": "a913309ce27a29bf716bc39d88716832595eb834234aa699f3ebd5dacdbe298e",
+      "bytes": 8320
+    },
+    {
+      "file": "art/textures/ui/session/portraits/epoch_rts/t11_worker.png.f853968a2953b395.dds",
+      "sha256": "c9f401615f3ef50e263fdf7fb451beb7a90d3ba20c7125e2b06906c912abd2a2",
+      "bytes": 8320
+    }
+  ],
+  "official_v028_research_sha256": {
+    "precompiled.cpp": "decf735d70caf0e6d4afb058fe89eb5d41356a3a549fcaa73b1b37e207435555",
+    "CommonConvert.cpp": "aa72fa7a4bcb04f937dc709d2644fe6d5fd41ac7e20d5b6e71dc9abda0569086",
+    "PMDConvert.cpp": "bee626118357c56527a799fe68fe3118939f67a473679b4da135202f1a84404a",
+    "Decompose.cpp": "cf718ba821aba462e5ba3ac52876a259736c65bcf1d54e07b3d1b6e93cced390",
+    "GeomReindex.cpp": "f4f76cd9e3a8b438fe69a42577fb8fec99fd7954a72bddc651db8bbcf5f4413b",
+    "StdSkeletons.cpp": "e93a2ff85596c33f658b7edab205a3052b2a3612e706634716e0dff8e327979c",
+    "XMLFix.cpp": "59e71eeec45ef81d76d7bb0643b705d30fcb457872fceea69306bd649dd61b8c",
+    "PSAConvert.cpp": "dba5eac49bc3910472e628e1ff19962b92392cd42ed24f9593b7551908810e2e",
+    "StdSkeletons.h": "c75b31b06d060711fc7f316daee665a26620525ab29e92c13873bc7f73fedba4",
+    "Maths.cpp": "1b770df7320174994445db77814d0f88dadcda89e8308f00c6f90cb2649ccfa5",
+    "DLL.cpp": "0720c1a07b289cd366cf2dae7cd5a08420ca4439f467bc77060fbac93aef5f0b"
+  },
+  "public_direct_references": {
+    "art/skeletons/bow.xml": "85ef2f41943429380e5c5f5a36310a87547b5bc40c818f092947f82ab083e730",
+    "art/variants/biped/build.xml": "5fa1bdbb803f9e4c2b520f26ecdfd78bb295725c587928c489db4d778d2f17ad",
+    "art/variants/biped/base_hoplite.xml": "a7fc5470e9a0945220e796c9c58f7af45900a04ad92cd176135cad84263fd65c",
+    "art/materials/player_trans.xml": "041da51207a5faf33b6af48026759dd68c6006df0b61be36af07aca0ec3c0793",
+    "art/LICENSE.txt": "ef98babd771c206032e005f3d440a1e610df409d9a9191f03e64deaa4abefbd9"
+  },
+  "auxiliary_tool_hashes": {
+    "tools/epoch-rts/smoke-macos.py": "bff31613e95e4f28bd9d77776cdebb8154c239067e9321f439367fc9c0269e5e",
+    "tools/epoch-rts/test-export-t11.py": "77316e324171f36d307296f7bf844a725722abdfc8794d7b4e57f9196b607016"
+  },
+  "mod_file_count": 105,
+  "t10_existing_mod_files_unchanged": 82
+}

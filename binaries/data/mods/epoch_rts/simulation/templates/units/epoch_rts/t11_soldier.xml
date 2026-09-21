@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Purpose: T11 art-only M2 child. Created: 2026-09-21. SPDX-License-Identifier: GPL-2.0-or-later -->
+<Entity parent="units/epoch_rts/spearman">
+  <Identity><Icon>epoch_rts/t11_soldier.png</Icon></Identity>
+  <VisualActor><Actor>units/epoch_rts/t11_soldier.xml</Actor></VisualActor>
+</Entity>

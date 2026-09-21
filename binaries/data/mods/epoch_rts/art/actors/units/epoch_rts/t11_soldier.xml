@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Purpose: Original T11 soldier actor. Created: 2026-09-21. SPDX-License-Identifier: CC-BY-SA-3.0 -->
+<actor version="1"><castshadow/><group><variant frequency="100" name="base">
+    <mesh>skeletal/epoch_rts/t11_soldier.dae</mesh>
+    <textures><texture file="epoch_rts/t11_palette.png" name="baseTex"/></textures>
+    <animations>
+      <animation name="Idle" file="epoch_rts/t11_idle.dae" speed="100"/>
+      <animation name="Walk" file="epoch_rts/t11_walk.dae" speed="100"/>
+      <animation name="Run" file="epoch_rts/t11_walk.dae" speed="100"/>
+      <animation name="Attack_melee" file="epoch_rts/t11_attack.dae" speed="100"/>
+      <animation name="Death" file="epoch_rts/t11_death.dae" speed="100"/>
+    </animations>
+  </variant></group><material>player_trans.xml</material></actor>

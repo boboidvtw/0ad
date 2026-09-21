@@ -1,0 +1,24 @@
+{
+  "settings": {
+    "Name": "Epoch RTS - T11 original art",
+    "Script": "epoch_t11_validation.js",
+    "Description": "Original worker, soldier, house and HUD slice; isolated M2 rules.",
+    "CircularMap": false,
+    "Keywords": [
+      "demo"
+    ],
+    "SupportedBiomes": [],
+    "PlayerData": [
+      {
+        "Civ": "epoch"
+      },
+      {
+        "Civ": "epoch"
+      }
+    ],
+    "TriggerScripts": [
+      "scripts/epoch_rts/FrontierDuel.js",
+      "scripts/epoch_rts/T11Validation.js"
+    ]
+  }
+}

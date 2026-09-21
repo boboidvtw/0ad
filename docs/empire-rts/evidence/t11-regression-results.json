@@ -1,0 +1,87 @@
+{
+  "export_check": {
+    "metrics": {
+      "worker": {
+        "vertices": 408,
+        "triangles": 204,
+        "bones": 7,
+        "bounds_min": [
+          -1.04,
+          0.05,
+          -0.6
+        ],
+        "bounds_max": [
+          1.1,
+          4.3,
+          0.6
+        ]
+      },
+      "soldier": {
+        "vertices": 438,
+        "triangles": 218,
+        "bones": 7,
+        "bounds_min": [
+          -1.48,
+          0.05,
+          -0.38
+        ],
+        "bounds_max": [
+          1.06,
+          6.2,
+          0.52
+        ]
+      },
+      "house": {
+        "vertices": 162,
+        "triangles": 80,
+        "bounds_min": [
+          -5.6,
+          0,
+          -4.6
+        ],
+        "bounds_max": [
+          5.6,
+          6.5,
+          4.6
+        ],
+        "up_axis": "Y_UP",
+        "meters_per_unit": 1,
+        "uv_sets": 1,
+        "texture_size": [
+          64,
+          16
+        ],
+        "bones": 0,
+        "animations": 0
+      }
+    },
+    "outputs": {
+      "art/meshes/skeletal/epoch_rts/t11_worker.dae": "5d39faba1cb51ba54832325848e9ea987e30ca5fad8a4ad4c3c1004429312ab9",
+      "art/textures/ui/session/portraits/epoch_rts/t11_worker.png": "f83320feee176e0a6d7f60cc68b60184dbadef71a05f4357445e849483067eb0",
+      "art/meshes/skeletal/epoch_rts/t11_soldier.dae": "545224fd6b15fa9b9da2b793fd785a5752e0240814576d4f7e6e926ed4756558",
+      "art/textures/ui/session/portraits/epoch_rts/t11_soldier.png": "37d50619c4255c95d357d774158f2fa5c4d4f848c2fd096014809c57ce026f94",
+      "art/animation/epoch_rts/t11_idle.dae": "a5a64d55126f5afe86c5df10cd53d5d71b1e41a91e2ad1b5708eb06bfe0179fa",
+      "art/animation/epoch_rts/t11_walk.dae": "a70906786b08ce7d293d482cc1db2767ee7ca3b79a0bf19495de6930c98bf48b",
+      "art/animation/epoch_rts/t11_work.dae": "2dadb77f948cedf666b722f9e85fb1896711f34eec619c326006c91874e55e04",
+      "art/animation/epoch_rts/t11_attack.dae": "b371ece568be948cca7af2f642c34def5984a95fe2d3ebdeef5ad9025818e1f2",
+      "art/animation/epoch_rts/t11_death.dae": "54e4abcd287731270bce2143fa42391ae43a47121e9b955de56cccf1066df0b8",
+      "art/textures/skins/epoch_rts/t11_palette.png": "fd3d96554ae20e24e67a45ac2c56fe17bab15bfa3ae474d679d943f1ed2cc56f",
+      "art/skeletons/epoch_t11.xml": "d22192f8243d40bb8261060a96c88702dcf090ccfed8102ddc10b918b448c0c3",
+      "art/meshes/structural/epoch_rts/t11_house.dae": "5c662703d78292a9146eef1a1ee12d4ba251bc921aea1cf5459c1e7071d0f86d",
+      "art/textures/skins/structural/epoch_rts/t11_house.png": "da06994261a48837b75d88a0b9609d276c1d0961ee676e2b9f659d8dd4ed5e9c",
+      "art/textures/ui/session/portraits/epoch_rts/t11_house.png": "38d3dee9b104dfb7c3455fa033be85ff94d3bd05e39a75e9ec3f02de5fdfae0f"
+    }
+  },
+  "tool_tests": {
+    "passed": true,
+    "count": 5,
+    "output": "test_actor_animation_and_icon_paths_resolve (__main__.ExportTest) ... ok\ntest_clips_share_rig_and_animate (__main__.ExportTest) ... ok\ntest_outputs_match_committed_worktree (__main__.ExportTest) ... ok\ntest_skin_weights_and_bind_pose (__main__.ExportTest) ... ok\ntest_triangles_and_normals (__main__.ExportTest) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.120s\n\nOK\n"
+  },
+  "syntax_checks": {
+    "T11Validation.js": "PASS node --check",
+    "epoch_t11_validation.js": "PASS node --input-type=module --check"
+  },
+  "existing_t10_mod_files_unchanged": 82,
+  "regression_scope": "All inherited M2 gameplay fields and Identity fields except Icon verified in T11 native suite; Builder house reference remapped explicitly. T05-T10 completed suites NOT RERUN.",
+  "review": "Local source inspection: actor paths, normalized weights, finite normals, bind pose, animation channels, deterministic output, inherited rules and manifest boundaries checked; no independent subagent review."
+}

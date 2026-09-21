@@ -170,3 +170,13 @@
 - 修正色帶被屋簷遮蔽與極小尺寸門高；後者改比例縮放及測試。最終程式唯讀複查通過；所有最終場次來源固定，證據evidence/t10-*。
 - T10 DONE只涵蓋靜態暫用匯入；M4 IN_PROGRESS，T11 TODO。未用Blender、未做人物骨架／動畫、LOD、效能、建造／毀滅或正式HUD；模型與繼承footprint有空白邊界。
 - T07精確彈道／停機位、T08攻擊gate與T16–T18未完成限制保留。只本機提交，不push；最新交接SESSION-HANDOFF-2026-09-21-T10.md。
+
+### 2026-09-21～22 T11 原創美術垂直切片
+
+- 按T10交接從master 9d36013、clean開工；實際官方R28 binary／public.zip與T10一致，82個既有Mod檔逐檔保留。只新增隔離T11子模板／actor／map與工具，沒有C++、上游public或M2正式模板修改。
+- 先寫t11-art-slice.md最小範圍及A11-01～06；調查本機工具與固定v0.28.0 PMD／PSA／skeleton匯入器。PATH及/Applications無Blender／Assimp，採Python標準庫原創rigid7骨、5clip、色塊貼圖與3圖示；重用原T10房屋exporter但獨立輸出。來源／授權見assets/epoch-rts/t11-slice/README.md。
+- 首輪原生匯入即產生PMD／PSA；修正驗收將@parent誤列玩法比較的3項誤判。補上worker Builder唯一house引用重映射，讓原創圖示連到原創施工／完工；新增施工狀態、房屋數量及50木扣款檢查。
+- 最終seed42／7各126項PASS、兩原始重播suite／來源相同且EOF exit0；兩GUI均126項、正常exit0、0錯誤警告。無hash行，不宣稱完整狀態同步。09-22补拍含手動按鈕建房、50木扣款、人口20→30、揮矛雙姿勢、不可用提示、人物近照；這些為suite後操作，未混稱原兩seed重播內容。
+- 5項工具測試、確定性--check、JS語法與來源核對PASS。原生5個PSA均7骨、有限數值且多幀變化；詳見evidence/t11-*。來源程式本機逐項檢視；未使用子代理，未宣稱獨立審查。未重跑T05–T10已完成限定驗收。
+- T11／M4 DONE只限低面數樣板。完整人体rig／所有採集／跑步／動畫過渡／材質／LOD／正式HUD未完成；鷹架仍public。M4／16GB、小場景57–60 FPS僅觀察，T14未驗收。主線下一步T12先定義最小AI及官方R28 Petra介面調查。
+- T07即時防空、90m落地區、精確彈道／停機位／建築避碰限制與T08攻擊gate未完成保留；T16–T18 TODO。沒有付費、push／發布、背景任務或私有記憶同步。交接入口SESSION-HANDOFF-2026-09-22-T11.md，本批本機提交由Git歷史追溯。

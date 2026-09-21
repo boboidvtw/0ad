@@ -1,0 +1,109 @@
+{
+  "status": "PASS bounded visual slice",
+  "renderer": "official R28 native runtime",
+  "requested_resolution": [
+    1280,
+    800
+  ],
+  "captured_window_pixels": [
+    1188,
+    768
+  ],
+  "locale": "zh_TW",
+  "original_speed": "1x",
+  "images": {
+    "t11-closeout-attack-a.png": {
+      "sha256": "e9c6652acc4c44153a278a49351e460d0166375d1a2397c7854e75325b7f734f",
+      "bytes": 399917,
+      "run_id": "20260921T221140284926Z-validation-seed-42"
+    },
+    "t11-closeout-attack-b.png": {
+      "sha256": "795ea0e5fa32b4ea45016c5008cfad7b88ee0b92ce3a769b0ca59ac670d4d32f",
+      "bytes": 399798,
+      "run_id": "20260921T221140284926Z-validation-seed-42"
+    },
+    "t11-closeout-death.png": {
+      "sha256": "b7f87e0c1b1165831cdb15165575605e5acac18eb773cd3ad1589904ffae4dfc",
+      "bytes": 396907,
+      "run_id": "20260921T221140284926Z-validation-seed-42"
+    },
+    "t11-closeout-disabled.png": {
+      "sha256": "ee9022bba1deb67fc517271d669f94b8d704c36da8875f6b7bae048c0a8b40ee",
+      "bytes": 393929,
+      "run_id": "20260921T221140284926Z-validation-seed-42"
+    },
+    "t11-closeout-gather.png": {
+      "sha256": "503af33d32ee67f1614a7e998aa6aa5720a800f1a2168f9a72b96297cc497066",
+      "bytes": 403446,
+      "run_id": "20260921T221140284926Z-validation-seed-42"
+    },
+    "t11-closeout-house-hud.png": {
+      "sha256": "99953343a5f4de29d46672025e03fd6bedf6075fd9263a8b65dd6e11a19bc1d0",
+      "bytes": 415211,
+      "run_id": "20260921T221140284926Z-validation-seed-42"
+    },
+    "t11-closeout-manual-build.png": {
+      "sha256": "cc2a152a1d3d3e02073cd916d4dadae0e0eeb89dc1b8c52aea93b616ab27a0a0",
+      "bytes": 398371,
+      "run_id": "20260921T221140284926Z-validation-seed-42"
+    },
+    "t11-closeout-silhouettes.png": {
+      "sha256": "1ee4ba858b478537ebcf568393a6f4ad9137b564794edb541c02b0901f3de373",
+      "bytes": 420300,
+      "run_id": "20260921T221140284926Z-validation-seed-42"
+    },
+    "t11-final-build-pose-a.png": {
+      "sha256": "dc4465e722199b286809aaafff088a6212a961e6ec0d2b382fe0d1ccaff6a8e7",
+      "bytes": 400201,
+      "run_id": "20260921T121519722301Z-validation-seed-42"
+    },
+    "t11-final-construction.png": {
+      "sha256": "fcbdb4a02f219f051432207032cbd21b08dbd9717f4211ac58749f603e8e00dd",
+      "bytes": 395191,
+      "run_id": "20260921T121519722301Z-validation-seed-42"
+    },
+    "t11-final-overview.png": {
+      "sha256": "c2325e4e4b4a6adab2225536be6a008f9f8a3795f7704449d6f8e0f08ffb24c1",
+      "bytes": 417644,
+      "run_id": "20260921T121519722301Z-validation-seed-42"
+    },
+    "t11-final-red-worker.png": {
+      "sha256": "bfd9c5f92b28c4b7aac5174f678e654aff065ee2034b5b89622d8aef6c7e711e",
+      "bytes": 407826,
+      "run_id": "20260921T121519722301Z-validation-seed-42"
+    }
+  },
+  "observations": [
+    "Worker hat and soldier spear/shield silhouettes distinguish roles; blue/red chest panels and house bands distinguish owners.",
+    "Custom worker/soldier/house portraits, selection circles and HP visible.",
+    "Tree supply 200 to 190, worker carries 10 wood. Work clip renders, stiff rigid limbs remain a prototype limitation.",
+    "Scripted construction shows scaffold, progress and original completed house; scaffold remains upstream public art.",
+    "Manual post-suite GUI build from new house button: wood 200 to 150, house finishes and population cap 20 to 30.",
+    "Manual post-suite soldier attack has visibly different spear angles; red house takes damage.",
+    "Scripted Health.Kill on red worker and soldier shows both prone corpses; not a full combat death matrix.",
+    "Disabled inherited forge button shows Iron Age requirement; three original icons only, not a complete HUD redesign."
+  ],
+  "fps_observation": {
+    "range_seen": [
+      57,
+      60
+    ],
+    "initial_entities": {
+      "workers": 2,
+      "soldiers": 2,
+      "houses": 2,
+      "tree": 1
+    },
+    "script_built_houses": 1,
+    "manual_additional_houses": 1,
+    "method": "on-screen FPS counter snapshots, not frame-time telemetry",
+    "status": "OBSERVATION ONLY; no large-scale performance acceptance"
+  },
+  "limitations": [
+    "Five authored clips; run and non-wood resource actions are fallbacks, not fully validated.",
+    "Animation transitions, formations, slopes, LOD, normal/specular maps, full building destruction, large-scale performance and final-release art NOT RUN.",
+    "No full-state replay hash or multiplayer claim."
+  ],
+  "normal_exit_verified": true,
+  "errors_or_warnings": 0
+}
