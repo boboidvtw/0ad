@@ -1,0 +1,56 @@
+{
+  "m1_smoke": {
+    "runtime": "0.28.0",
+    "mod": "epoch_rts 0.3.0",
+    "seed": 42,
+    "map": "random/epoch_frontier",
+    "suite": null,
+    "size": 192,
+    "players": 2,
+    "map_ready_marker": true,
+    "last_turn": 1389,
+    "stopped_after_turn_limit": true,
+    "stop_condition": "at least 100 turns",
+    "exit_code": -15,
+    "errors_or_warnings": [],
+    "engine_html_error_or_warning": false,
+    "visual_verified": false,
+    "passed": true,
+    "run_id": "20260921T004218068748Z-seed-42"
+  },
+  "export_check": {
+    "mode": "check",
+    "metrics": {
+      "vertices": 162,
+      "triangles": 80,
+      "bounds_min": [
+        -5.5,
+        0,
+        -4.5
+      ],
+      "bounds_max": [
+        5.5,
+        6,
+        4.5
+      ],
+      "up_axis": "Y_UP",
+      "meters_per_unit": 1,
+      "uv_sets": 1,
+      "texture_size": [
+        64,
+        16
+      ],
+      "bones": 0,
+      "animations": 0
+    },
+    "outputs": {
+      "binaries/data/mods/epoch_rts/art/meshes/structural/epoch_rts/t10_house.dae": "2eeea7494e20768625acbcdbad9f7d600db9cc1e159dd3349ded2b46173ef08b",
+      "binaries/data/mods/epoch_rts/art/textures/skins/structural/epoch_rts/t10_house.png": "07b1618aeb8468ea876bdbaac26423e21a0003d0f8f33d5fa659898734d33ff9"
+    }
+  },
+  "exporter_tests": {
+    "exit_code": 0,
+    "output": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.003s\n\nOK\n"
+  },
+  "t05_t08_rerun": false
+}

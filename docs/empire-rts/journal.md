@@ -161,3 +161,12 @@
 - t09-engine-decision.md定義重新評估native修改的正確性／3D需求／性能／同步門檻；沒有證據就不因概念複雜而修改C++，也不保證Mod可以滿足全部需求。
 - 唯讀審查通過；文件連結、JSON、來源雜湊、Git diff與任務狀態一致性核對完成。T09 DONE、M3 DONE只涵蓋限定原型／調查／決策；主線下一步T10。T05–T08本次未重跑。
 - 全部變更是文件與核對紀錄，本機提交、未push；無背景任務或遊戲進程。新接續入口SESSION-HANDOFF-2026-09-21.md。
+
+### 2026-09-21 T10 暫用房屋與原生匯入完成
+
+- 起點master 6221d74、clean；R28 ARM64 binary／public.zip核對與T08一致，既有75個Mod檔未變。未修改C++、M2玩法或上游public。
+- 新增原創參數房屋、標準庫COLLADA／PNG exporter、actor／模板、隔離地圖／13項探針與runner。來源、署名、授權、尺寸／UV與重現方法記於assets/epoch-rts/t10-house/README.md；工具4測試及--check通過。
+- 實際原生匯入產生PMD／DDS；最終seed42／7各13項PASS，兩重播suite／來源一致、EOF exit0；無hash行，不宣稱多人同步。GUI13項、三張截圖、藍／紅玩家色與選取300HP，正常exit0。全部0錯誤／0警告；M1載入回歸PASS，T05–T08不重跑。
+- 修正色帶被屋簷遮蔽與極小尺寸門高；後者改比例縮放及測試。最終程式唯讀複查通過；所有最終場次來源固定，證據evidence/t10-*。
+- T10 DONE只涵蓋靜態暫用匯入；M4 IN_PROGRESS，T11 TODO。未用Blender、未做人物骨架／動畫、LOD、效能、建造／毀滅或正式HUD；模型與繼承footprint有空白邊界。
+- T07精確彈道／停機位、T08攻擊gate與T16–T18未完成限制保留。只本機提交，不push；最新交接SESSION-HANDOFF-2026-09-21-T10.md。

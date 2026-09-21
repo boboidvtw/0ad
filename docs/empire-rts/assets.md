@@ -1,7 +1,7 @@
 <!-- Purpose: M1 temporary asset provenance; Created: 2026-09-06. -->
-# M1 暫用素材登錄
+# 素材登錄
 
-本階段沒有製作正式模型，也沒有購買素材。下列項目由官方 0 A.D. Release 28 的 `public` Mod 提供，Epoch RTS 透過模板或名稱引用，未複製素材二進位檔。
+M1階段沒有製作正式模型，也沒有購買素材。下列項目由官方 0 A.D. Release 28 的 `public` Mod 提供，Epoch RTS 透過模板或名稱引用，未複製素材二進位檔。
 
 | ID | 用途／引用路徑（public 內） | 狀態 | 作者與來源 | 授權證據 |
 | --- | --- | --- | --- | --- |
@@ -14,7 +14,7 @@
 
 取得日期：2026-09-06。來源下載網址與 SHA-256 見 [基線與執行方式](baseline.md)。原始圖像／模型的作者不得統一改署名為 Epoch RTS。這是原型的依賴登錄，不是完整發行用逐檔授權清單；發行前仍須枚舉傳遞依賴與全部所需署名。
 
-自訂內容：`epoch_frontier.js`、對應地圖設定與 `pioneer.xml` 為本專案新增程式／設定，GPL-2.0-or-later。沒有新增模型、貼圖、圖示、音樂或原作 Empire Earth 素材。
+自訂內容：`epoch_frontier.js`、對應地圖設定與 `pioneer.xml` 為本專案新增程式／設定，GPL-2.0-or-later。M1當時沒有新增模型、貼圖、圖示、音樂或原作 Empire Earth 素材。
 
 資產替換時在此表新增新來源、作者、授權、原始檔、匯出設定與遊戲內證據；不得把暫用狀態直接改成正式而省略驗收。
 
@@ -45,3 +45,17 @@
 - 原生 `units/athen/ship_scout` 衍生測試船；模型為 `art/actors/structures/athenians/pentekonter_scout.xml`，圖示 `units/athen/ship_scout.png`，以及繼承的船舶音效。水域使用 `medit_sand_wet` 與官方 ocean 水面、cirrus 天空。
 - 僅引用固定 R28 public，沒有複製美術二進位、購買素材或加入 Empire Earth 素材。作者 Wildfire Games／各素材作者，CC BY-SA 3.0 及來源署名沿用上文；T08截圖同樣含上述美術。
 - 船模型高桅杆不適合作正式潛艇，偵測後即使 y16 仍可能有桅杆露水；只用於可見性與位置探針，不代表完成水下美術。
+
+## T10 原創暫用靜態樣板（2026-09-21）
+
+| 欄位 | T10-A01 房屋 |
+| --- | --- |
+| 用途／狀態 | A04靜態匯入樣板，暫用；獨立T10地圖，未替換M2房屋 |
+| 作者／來源 | Epoch RTS contributors；原創參數幾何與色塊貼圖，非上游模型改作 |
+| 授權 | 新美術CC BY-SA3.0；產生工具GPL-2.0-or-later；[來源、署名與授權](../../assets/epoch-rts/t10-house/README.md) |
+| 可編輯來源／工具 | assets/epoch-rts/t10-house/house.json；tools/epoch-rts/export-house.py；Python3.9.6標準庫 |
+| 輸出 | epoch_rts/art/下t10_house.dae、t10_house.png與actor；精確路徑見手冊 |
+| 規格 | COLLADA1.4.1、Y_UP、1單位1公尺、11×6×9公尺；80三角形／162頂點、1組UV、64×16RGBA；無骨架／動畫 |
+| 上游依賴 | R28 player_trans.xml／model shader；M2房屋繼承的圖示、音效等仍引用public，未複製；Wildfire Games署名沿用上文 |
+| 驗收 | [T10報告](evidence/t10-validation.md)：兩seed各13項、重播、GUI玩家色／選取、M1回歸與確定性匯出 |
+| 未完成 | 正式美術、Blender、LOD、人物動畫、建造／毀滅、效能；沒有逐檔發行授權清單 |

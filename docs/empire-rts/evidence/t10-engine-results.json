@@ -1,0 +1,2608 @@
+{
+  "runs": [
+    {
+      "replay_matches_baseline": null,
+      "replay_completed": null,
+      "hash_checks_ok": 0,
+      "asset_sources": {
+        "assets/epoch-rts/t10-house/house.json": "4aec58a9ca8fbe45065b7e29d45aedd7aff8ba67a16c2e741f6319ed0e266def",
+        "tools/epoch-rts/export-house.py": "293e8b59cb4ca14f7748f503c96d00b945d7b5b3a89d9bfd7f3acfe62fbb0d00"
+      },
+      "runner_sha256": "572a93b9a0a6651aa48d1dc15b95aa6c80bd3e14838d609143fb83bb8f45e6be",
+      "runtime": "0.28.0",
+      "mode": "validation",
+      "seed": 42,
+      "size": 192,
+      "replay": false,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": -15,
+      "suite": {
+        "mode": "validation",
+        "passed": true,
+        "failure": null,
+        "checks": [
+          {
+            "id": "asset.inherited.Cost",
+            "actual": {
+              "BuildTime": "25",
+              "Population": "0",
+              "Resources": {
+                "food": "0",
+                "metal": "0",
+                "stone": "0",
+                "wood": "50"
+              }
+            },
+            "expected": {
+              "BuildTime": "25",
+              "Population": "0",
+              "Resources": {
+                "food": "0",
+                "metal": "0",
+                "stone": "0",
+                "wood": "50"
+              }
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.inherited.Health",
+            "actual": {
+              "DamageVariants": {
+                "heavydamage": "0.35",
+                "lightdamage": "0.85",
+                "mediumdamage": "0.65"
+              },
+              "DeathType": "corpse",
+              "IdleRegenRate": "0",
+              "Max": "300",
+              "RegenRate": "0",
+              "SpawnEntityOnDeath": "decay|rubble/rubble_stone_3x3",
+              "Unhealable": "true"
+            },
+            "expected": {
+              "DamageVariants": {
+                "heavydamage": "0.35",
+                "lightdamage": "0.85",
+                "mediumdamage": "0.65"
+              },
+              "DeathType": "corpse",
+              "IdleRegenRate": "0",
+              "Max": "300",
+              "RegenRate": "0",
+              "SpawnEntityOnDeath": "decay|rubble/rubble_stone_3x3",
+              "Unhealable": "true"
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.inherited.Footprint",
+            "actual": {
+              "Height": "5.0",
+              "Square": {
+                "@depth": "16.0",
+                "@width": "16.0"
+              }
+            },
+            "expected": {
+              "Height": "5.0",
+              "Square": {
+                "@depth": "16.0",
+                "@width": "16.0"
+              }
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.inherited.Obstruction",
+            "actual": {
+              "Active": "true",
+              "BlockConstruction": "false",
+              "BlockFoundation": "true",
+              "BlockMovement": "true",
+              "BlockPathfinding": "true",
+              "DeleteUponConstruction": "false",
+              "DisableBlockMovement": "false",
+              "DisableBlockPathfinding": "false",
+              "Static": {
+                "@depth": "14.0",
+                "@width": "14.0"
+              }
+            },
+            "expected": {
+              "Active": "true",
+              "BlockConstruction": "false",
+              "BlockFoundation": "true",
+              "BlockMovement": "true",
+              "BlockPathfinding": "true",
+              "DeleteUponConstruction": "false",
+              "DisableBlockMovement": "false",
+              "DisableBlockPathfinding": "false",
+              "Static": {
+                "@depth": "14.0",
+                "@width": "14.0"
+              }
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.inherited.Population",
+            "actual": {
+              "Bonus": "10"
+            },
+            "expected": {
+              "Bonus": "10"
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.inherited.BuildRestrictions",
+            "actual": {
+              "Category": "Structure",
+              "PlacementType": "land",
+              "Territory": "own neutral"
+            },
+            "expected": {
+              "Category": "Structure",
+              "PlacementType": "land",
+              "Territory": "own neutral"
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.newActor",
+            "actual": "structures/epoch_rts/t10_house.xml",
+            "expected": "structures/epoch_rts/t10_house.xml",
+            "passed": true
+          },
+          {
+            "id": "asset.HP",
+            "actual": 300,
+            "expected": 300,
+            "passed": true
+          },
+          {
+            "id": "asset.grounded",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "asset.playerOwners",
+            "actual": [
+              1,
+              2
+            ],
+            "expected": [
+              1,
+              2
+            ],
+            "passed": true
+          },
+          {
+            "id": "asset.workerReached",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "asset.workerDetour",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "asset.sampleStillHealthy",
+            "actual": 300,
+            "expected": 300,
+            "passed": true
+          }
+        ],
+        "observations": [
+          {
+            "id": "asset.fixture",
+            "position": {
+              "x": 320,
+              "y": 23,
+              "z": 300
+            },
+            "ground": 23,
+            "footprint": {
+              "Height": "5.0",
+              "Square": {
+                "@depth": "16.0",
+                "@width": "16.0"
+              }
+            },
+            "obstruction": {
+              "Active": "true",
+              "BlockConstruction": "false",
+              "BlockFoundation": "true",
+              "BlockMovement": "true",
+              "BlockPathfinding": "true",
+              "DeleteUponConstruction": "false",
+              "DisableBlockMovement": "false",
+              "DisableBlockPathfinding": "false",
+              "Static": {
+                "@depth": "14.0",
+                "@width": "14.0"
+              }
+            },
+            "entities": {
+              "blue": 5,
+              "red": 6,
+              "reference": 7,
+              "worker": 8
+            }
+          },
+          {
+            "id": "asset.workerPath",
+            "samples": [
+              {
+                "x": 290.66395568847656,
+                "z": 300.2213134765625
+              },
+              {
+                "x": 292.3536071777344,
+                "z": 300.49082946777344
+              },
+              {
+                "x": 294.1534729003906,
+                "z": 300.4714813232422
+              },
+              {
+                "x": 295.9533386230469,
+                "z": 300.45213317871094
+              },
+              {
+                "x": 297.7532043457031,
+                "z": 300.4327850341797
+              },
+              {
+                "x": 299.5530700683594,
+                "z": 300.41343688964844
+              },
+              {
+                "x": 301.3529357910156,
+                "z": 300.3940887451172
+              },
+              {
+                "x": 303.1528015136719,
+                "z": 300.37474060058594
+              },
+              {
+                "x": 304.9526672363281,
+                "z": 300.3553924560547
+              },
+              {
+                "x": 306.7525329589844,
+                "z": 300.33604431152344
+              },
+              {
+                "x": 308.5523986816406,
+                "z": 300.3166961669922
+              },
+              {
+                "x": 310.3522644042969,
+                "z": 300.29734802246094
+              },
+              {
+                "x": 312.1521301269531,
+                "z": 300.2779998779297
+              },
+              {
+                "x": 312.1521301269531,
+                "z": 300.2779998779297
+              },
+              {
+                "x": 312.15087890625,
+                "z": 300.93328857421875
+              },
+              {
+                "x": 312.1475524902344,
+                "z": 302.66236877441406
+              },
+              {
+                "x": 312.1440887451172,
+                "z": 304.46234130859375
+              },
+              {
+                "x": 312.14060974121094,
+                "z": 306.26231384277344
+              },
+              {
+                "x": 312.14231872558594,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 312.96063232421875,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 314.7322692871094,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 316.53224182128906,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 318.33221435546875,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 320.13218688964844,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 321.9321594238281,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 323.7321319580078,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 325.5321044921875,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 327.3320770263672,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 328.42820739746094,
+                "z": 306.9689483642578
+              },
+              {
+                "x": 329.39105224609375,
+                "z": 305.4481506347656
+              },
+              {
+                "x": 330.35389709472656,
+                "z": 303.92735290527344
+              },
+              {
+                "x": 331.3316192626953,
+                "z": 302.4356231689453
+              },
+              {
+                "x": 333.0067138671875,
+                "z": 301.8238067626953
+              },
+              {
+                "x": 334.6974334716797,
+                "z": 301.2062683105469
+              },
+              {
+                "x": 336.3881530761719,
+                "z": 300.58872985839844
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              }
+            ]
+          }
+        ]
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "07e6dde87fe0455eb46c48d6922a0da7896b18728c6dcb59e2788db078cfa010",
+      "source_changed_during_run": false,
+      "run_id": "20260921T004215750705Z-validation-seed-42",
+      "log_sha256": "9ebe082fe6c930794ee902f257122e042cd9f0a44c6d87719eeaf535e0a237fe"
+    },
+    {
+      "replay_matches_baseline": true,
+      "replay_completed": true,
+      "hash_checks_ok": 0,
+      "asset_sources": {
+        "assets/epoch-rts/t10-house/house.json": "4aec58a9ca8fbe45065b7e29d45aedd7aff8ba67a16c2e741f6319ed0e266def",
+        "tools/epoch-rts/export-house.py": "293e8b59cb4ca14f7748f503c96d00b945d7b5b3a89d9bfd7f3acfe62fbb0d00"
+      },
+      "runner_sha256": "572a93b9a0a6651aa48d1dc15b95aa6c80bd3e14838d609143fb83bb8f45e6be",
+      "runtime": "0.28.0",
+      "mode": "validation",
+      "seed": 42,
+      "size": 192,
+      "replay": true,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "mode": "validation",
+        "passed": true,
+        "failure": null,
+        "checks": [
+          {
+            "id": "asset.inherited.Cost",
+            "actual": {
+              "BuildTime": "25",
+              "Population": "0",
+              "Resources": {
+                "food": "0",
+                "metal": "0",
+                "stone": "0",
+                "wood": "50"
+              }
+            },
+            "expected": {
+              "BuildTime": "25",
+              "Population": "0",
+              "Resources": {
+                "food": "0",
+                "metal": "0",
+                "stone": "0",
+                "wood": "50"
+              }
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.inherited.Health",
+            "actual": {
+              "DamageVariants": {
+                "heavydamage": "0.35",
+                "lightdamage": "0.85",
+                "mediumdamage": "0.65"
+              },
+              "DeathType": "corpse",
+              "IdleRegenRate": "0",
+              "Max": "300",
+              "RegenRate": "0",
+              "SpawnEntityOnDeath": "decay|rubble/rubble_stone_3x3",
+              "Unhealable": "true"
+            },
+            "expected": {
+              "DamageVariants": {
+                "heavydamage": "0.35",
+                "lightdamage": "0.85",
+                "mediumdamage": "0.65"
+              },
+              "DeathType": "corpse",
+              "IdleRegenRate": "0",
+              "Max": "300",
+              "RegenRate": "0",
+              "SpawnEntityOnDeath": "decay|rubble/rubble_stone_3x3",
+              "Unhealable": "true"
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.inherited.Footprint",
+            "actual": {
+              "Height": "5.0",
+              "Square": {
+                "@depth": "16.0",
+                "@width": "16.0"
+              }
+            },
+            "expected": {
+              "Height": "5.0",
+              "Square": {
+                "@depth": "16.0",
+                "@width": "16.0"
+              }
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.inherited.Obstruction",
+            "actual": {
+              "Active": "true",
+              "BlockConstruction": "false",
+              "BlockFoundation": "true",
+              "BlockMovement": "true",
+              "BlockPathfinding": "true",
+              "DeleteUponConstruction": "false",
+              "DisableBlockMovement": "false",
+              "DisableBlockPathfinding": "false",
+              "Static": {
+                "@depth": "14.0",
+                "@width": "14.0"
+              }
+            },
+            "expected": {
+              "Active": "true",
+              "BlockConstruction": "false",
+              "BlockFoundation": "true",
+              "BlockMovement": "true",
+              "BlockPathfinding": "true",
+              "DeleteUponConstruction": "false",
+              "DisableBlockMovement": "false",
+              "DisableBlockPathfinding": "false",
+              "Static": {
+                "@depth": "14.0",
+                "@width": "14.0"
+              }
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.inherited.Population",
+            "actual": {
+              "Bonus": "10"
+            },
+            "expected": {
+              "Bonus": "10"
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.inherited.BuildRestrictions",
+            "actual": {
+              "Category": "Structure",
+              "PlacementType": "land",
+              "Territory": "own neutral"
+            },
+            "expected": {
+              "Category": "Structure",
+              "PlacementType": "land",
+              "Territory": "own neutral"
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.newActor",
+            "actual": "structures/epoch_rts/t10_house.xml",
+            "expected": "structures/epoch_rts/t10_house.xml",
+            "passed": true
+          },
+          {
+            "id": "asset.HP",
+            "actual": 300,
+            "expected": 300,
+            "passed": true
+          },
+          {
+            "id": "asset.grounded",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "asset.playerOwners",
+            "actual": [
+              1,
+              2
+            ],
+            "expected": [
+              1,
+              2
+            ],
+            "passed": true
+          },
+          {
+            "id": "asset.workerReached",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "asset.workerDetour",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "asset.sampleStillHealthy",
+            "actual": 300,
+            "expected": 300,
+            "passed": true
+          }
+        ],
+        "observations": [
+          {
+            "id": "asset.fixture",
+            "position": {
+              "x": 320,
+              "y": 23,
+              "z": 300
+            },
+            "ground": 23,
+            "footprint": {
+              "Height": "5.0",
+              "Square": {
+                "@depth": "16.0",
+                "@width": "16.0"
+              }
+            },
+            "obstruction": {
+              "Active": "true",
+              "BlockConstruction": "false",
+              "BlockFoundation": "true",
+              "BlockMovement": "true",
+              "BlockPathfinding": "true",
+              "DeleteUponConstruction": "false",
+              "DisableBlockMovement": "false",
+              "DisableBlockPathfinding": "false",
+              "Static": {
+                "@depth": "14.0",
+                "@width": "14.0"
+              }
+            },
+            "entities": {
+              "blue": 5,
+              "red": 6,
+              "reference": 7,
+              "worker": 8
+            }
+          },
+          {
+            "id": "asset.workerPath",
+            "samples": [
+              {
+                "x": 290.66395568847656,
+                "z": 300.2213134765625
+              },
+              {
+                "x": 292.3536071777344,
+                "z": 300.49082946777344
+              },
+              {
+                "x": 294.1534729003906,
+                "z": 300.4714813232422
+              },
+              {
+                "x": 295.9533386230469,
+                "z": 300.45213317871094
+              },
+              {
+                "x": 297.7532043457031,
+                "z": 300.4327850341797
+              },
+              {
+                "x": 299.5530700683594,
+                "z": 300.41343688964844
+              },
+              {
+                "x": 301.3529357910156,
+                "z": 300.3940887451172
+              },
+              {
+                "x": 303.1528015136719,
+                "z": 300.37474060058594
+              },
+              {
+                "x": 304.9526672363281,
+                "z": 300.3553924560547
+              },
+              {
+                "x": 306.7525329589844,
+                "z": 300.33604431152344
+              },
+              {
+                "x": 308.5523986816406,
+                "z": 300.3166961669922
+              },
+              {
+                "x": 310.3522644042969,
+                "z": 300.29734802246094
+              },
+              {
+                "x": 312.1521301269531,
+                "z": 300.2779998779297
+              },
+              {
+                "x": 312.1521301269531,
+                "z": 300.2779998779297
+              },
+              {
+                "x": 312.15087890625,
+                "z": 300.93328857421875
+              },
+              {
+                "x": 312.1475524902344,
+                "z": 302.66236877441406
+              },
+              {
+                "x": 312.1440887451172,
+                "z": 304.46234130859375
+              },
+              {
+                "x": 312.14060974121094,
+                "z": 306.26231384277344
+              },
+              {
+                "x": 312.14231872558594,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 312.96063232421875,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 314.7322692871094,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 316.53224182128906,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 318.33221435546875,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 320.13218688964844,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 321.9321594238281,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 323.7321319580078,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 325.5321044921875,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 327.3320770263672,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 328.42820739746094,
+                "z": 306.9689483642578
+              },
+              {
+                "x": 329.39105224609375,
+                "z": 305.4481506347656
+              },
+              {
+                "x": 330.35389709472656,
+                "z": 303.92735290527344
+              },
+              {
+                "x": 331.3316192626953,
+                "z": 302.4356231689453
+              },
+              {
+                "x": 333.0067138671875,
+                "z": 301.8238067626953
+              },
+              {
+                "x": 334.6974334716797,
+                "z": 301.2062683105469
+              },
+              {
+                "x": 336.3881530761719,
+                "z": 300.58872985839844
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              }
+            ]
+          }
+        ]
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "07e6dde87fe0455eb46c48d6922a0da7896b18728c6dcb59e2788db078cfa010",
+      "source_changed_during_run": false,
+      "run_id": "20260921T004216226210Z-validation-seed-42",
+      "log_sha256": "0adcf64424ffafe4d9b84eb2b1caa75d5bc1653926795ce73324a281dd8d278d"
+    },
+    {
+      "replay_matches_baseline": null,
+      "replay_completed": null,
+      "hash_checks_ok": 0,
+      "asset_sources": {
+        "assets/epoch-rts/t10-house/house.json": "4aec58a9ca8fbe45065b7e29d45aedd7aff8ba67a16c2e741f6319ed0e266def",
+        "tools/epoch-rts/export-house.py": "293e8b59cb4ca14f7748f503c96d00b945d7b5b3a89d9bfd7f3acfe62fbb0d00"
+      },
+      "runner_sha256": "572a93b9a0a6651aa48d1dc15b95aa6c80bd3e14838d609143fb83bb8f45e6be",
+      "runtime": "0.28.0",
+      "mode": "validation",
+      "seed": 7,
+      "size": 192,
+      "replay": false,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": -15,
+      "suite": {
+        "mode": "validation",
+        "passed": true,
+        "failure": null,
+        "checks": [
+          {
+            "id": "asset.inherited.Cost",
+            "actual": {
+              "BuildTime": "25",
+              "Population": "0",
+              "Resources": {
+                "food": "0",
+                "metal": "0",
+                "stone": "0",
+                "wood": "50"
+              }
+            },
+            "expected": {
+              "BuildTime": "25",
+              "Population": "0",
+              "Resources": {
+                "food": "0",
+                "metal": "0",
+                "stone": "0",
+                "wood": "50"
+              }
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.inherited.Health",
+            "actual": {
+              "DamageVariants": {
+                "heavydamage": "0.35",
+                "lightdamage": "0.85",
+                "mediumdamage": "0.65"
+              },
+              "DeathType": "corpse",
+              "IdleRegenRate": "0",
+              "Max": "300",
+              "RegenRate": "0",
+              "SpawnEntityOnDeath": "decay|rubble/rubble_stone_3x3",
+              "Unhealable": "true"
+            },
+            "expected": {
+              "DamageVariants": {
+                "heavydamage": "0.35",
+                "lightdamage": "0.85",
+                "mediumdamage": "0.65"
+              },
+              "DeathType": "corpse",
+              "IdleRegenRate": "0",
+              "Max": "300",
+              "RegenRate": "0",
+              "SpawnEntityOnDeath": "decay|rubble/rubble_stone_3x3",
+              "Unhealable": "true"
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.inherited.Footprint",
+            "actual": {
+              "Height": "5.0",
+              "Square": {
+                "@depth": "16.0",
+                "@width": "16.0"
+              }
+            },
+            "expected": {
+              "Height": "5.0",
+              "Square": {
+                "@depth": "16.0",
+                "@width": "16.0"
+              }
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.inherited.Obstruction",
+            "actual": {
+              "Active": "true",
+              "BlockConstruction": "false",
+              "BlockFoundation": "true",
+              "BlockMovement": "true",
+              "BlockPathfinding": "true",
+              "DeleteUponConstruction": "false",
+              "DisableBlockMovement": "false",
+              "DisableBlockPathfinding": "false",
+              "Static": {
+                "@depth": "14.0",
+                "@width": "14.0"
+              }
+            },
+            "expected": {
+              "Active": "true",
+              "BlockConstruction": "false",
+              "BlockFoundation": "true",
+              "BlockMovement": "true",
+              "BlockPathfinding": "true",
+              "DeleteUponConstruction": "false",
+              "DisableBlockMovement": "false",
+              "DisableBlockPathfinding": "false",
+              "Static": {
+                "@depth": "14.0",
+                "@width": "14.0"
+              }
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.inherited.Population",
+            "actual": {
+              "Bonus": "10"
+            },
+            "expected": {
+              "Bonus": "10"
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.inherited.BuildRestrictions",
+            "actual": {
+              "Category": "Structure",
+              "PlacementType": "land",
+              "Territory": "own neutral"
+            },
+            "expected": {
+              "Category": "Structure",
+              "PlacementType": "land",
+              "Territory": "own neutral"
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.newActor",
+            "actual": "structures/epoch_rts/t10_house.xml",
+            "expected": "structures/epoch_rts/t10_house.xml",
+            "passed": true
+          },
+          {
+            "id": "asset.HP",
+            "actual": 300,
+            "expected": 300,
+            "passed": true
+          },
+          {
+            "id": "asset.grounded",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "asset.playerOwners",
+            "actual": [
+              1,
+              2
+            ],
+            "expected": [
+              1,
+              2
+            ],
+            "passed": true
+          },
+          {
+            "id": "asset.workerReached",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "asset.workerDetour",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "asset.sampleStillHealthy",
+            "actual": 300,
+            "expected": 300,
+            "passed": true
+          }
+        ],
+        "observations": [
+          {
+            "id": "asset.fixture",
+            "position": {
+              "x": 320,
+              "y": 23,
+              "z": 300
+            },
+            "ground": 23,
+            "footprint": {
+              "Height": "5.0",
+              "Square": {
+                "@depth": "16.0",
+                "@width": "16.0"
+              }
+            },
+            "obstruction": {
+              "Active": "true",
+              "BlockConstruction": "false",
+              "BlockFoundation": "true",
+              "BlockMovement": "true",
+              "BlockPathfinding": "true",
+              "DeleteUponConstruction": "false",
+              "DisableBlockMovement": "false",
+              "DisableBlockPathfinding": "false",
+              "Static": {
+                "@depth": "14.0",
+                "@width": "14.0"
+              }
+            },
+            "entities": {
+              "blue": 5,
+              "red": 6,
+              "reference": 7,
+              "worker": 8
+            }
+          },
+          {
+            "id": "asset.workerPath",
+            "samples": [
+              {
+                "x": 290.66395568847656,
+                "z": 300.2213134765625
+              },
+              {
+                "x": 292.3536071777344,
+                "z": 300.49082946777344
+              },
+              {
+                "x": 294.1534729003906,
+                "z": 300.4714813232422
+              },
+              {
+                "x": 295.9533386230469,
+                "z": 300.45213317871094
+              },
+              {
+                "x": 297.7532043457031,
+                "z": 300.4327850341797
+              },
+              {
+                "x": 299.5530700683594,
+                "z": 300.41343688964844
+              },
+              {
+                "x": 301.3529357910156,
+                "z": 300.3940887451172
+              },
+              {
+                "x": 303.1528015136719,
+                "z": 300.37474060058594
+              },
+              {
+                "x": 304.9526672363281,
+                "z": 300.3553924560547
+              },
+              {
+                "x": 306.7525329589844,
+                "z": 300.33604431152344
+              },
+              {
+                "x": 308.5523986816406,
+                "z": 300.3166961669922
+              },
+              {
+                "x": 310.3522644042969,
+                "z": 300.29734802246094
+              },
+              {
+                "x": 312.1521301269531,
+                "z": 300.2779998779297
+              },
+              {
+                "x": 312.1521301269531,
+                "z": 300.2779998779297
+              },
+              {
+                "x": 312.15087890625,
+                "z": 300.93328857421875
+              },
+              {
+                "x": 312.1475524902344,
+                "z": 302.66236877441406
+              },
+              {
+                "x": 312.1440887451172,
+                "z": 304.46234130859375
+              },
+              {
+                "x": 312.14060974121094,
+                "z": 306.26231384277344
+              },
+              {
+                "x": 312.14231872558594,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 312.96063232421875,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 314.7322692871094,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 316.53224182128906,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 318.33221435546875,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 320.13218688964844,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 321.9321594238281,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 323.7321319580078,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 325.5321044921875,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 327.3320770263672,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 328.42820739746094,
+                "z": 306.9689483642578
+              },
+              {
+                "x": 329.39105224609375,
+                "z": 305.4481506347656
+              },
+              {
+                "x": 330.35389709472656,
+                "z": 303.92735290527344
+              },
+              {
+                "x": 331.3316192626953,
+                "z": 302.4356231689453
+              },
+              {
+                "x": 333.0067138671875,
+                "z": 301.8238067626953
+              },
+              {
+                "x": 334.6974334716797,
+                "z": 301.2062683105469
+              },
+              {
+                "x": 336.3881530761719,
+                "z": 300.58872985839844
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              }
+            ]
+          }
+        ]
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "07e6dde87fe0455eb46c48d6922a0da7896b18728c6dcb59e2788db078cfa010",
+      "source_changed_during_run": false,
+      "run_id": "20260921T004216908327Z-validation-seed-7",
+      "log_sha256": "0f49347ff4e540eb3aef5ebc12f16d37a88d3095348ec1ff8376a6caecc7c132"
+    },
+    {
+      "replay_matches_baseline": true,
+      "replay_completed": true,
+      "hash_checks_ok": 0,
+      "asset_sources": {
+        "assets/epoch-rts/t10-house/house.json": "4aec58a9ca8fbe45065b7e29d45aedd7aff8ba67a16c2e741f6319ed0e266def",
+        "tools/epoch-rts/export-house.py": "293e8b59cb4ca14f7748f503c96d00b945d7b5b3a89d9bfd7f3acfe62fbb0d00"
+      },
+      "runner_sha256": "572a93b9a0a6651aa48d1dc15b95aa6c80bd3e14838d609143fb83bb8f45e6be",
+      "runtime": "0.28.0",
+      "mode": "validation",
+      "seed": 7,
+      "size": 192,
+      "replay": true,
+      "visual_requested": false,
+      "visual_verified": false,
+      "exit_code": 0,
+      "suite": {
+        "mode": "validation",
+        "passed": true,
+        "failure": null,
+        "checks": [
+          {
+            "id": "asset.inherited.Cost",
+            "actual": {
+              "BuildTime": "25",
+              "Population": "0",
+              "Resources": {
+                "food": "0",
+                "metal": "0",
+                "stone": "0",
+                "wood": "50"
+              }
+            },
+            "expected": {
+              "BuildTime": "25",
+              "Population": "0",
+              "Resources": {
+                "food": "0",
+                "metal": "0",
+                "stone": "0",
+                "wood": "50"
+              }
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.inherited.Health",
+            "actual": {
+              "DamageVariants": {
+                "heavydamage": "0.35",
+                "lightdamage": "0.85",
+                "mediumdamage": "0.65"
+              },
+              "DeathType": "corpse",
+              "IdleRegenRate": "0",
+              "Max": "300",
+              "RegenRate": "0",
+              "SpawnEntityOnDeath": "decay|rubble/rubble_stone_3x3",
+              "Unhealable": "true"
+            },
+            "expected": {
+              "DamageVariants": {
+                "heavydamage": "0.35",
+                "lightdamage": "0.85",
+                "mediumdamage": "0.65"
+              },
+              "DeathType": "corpse",
+              "IdleRegenRate": "0",
+              "Max": "300",
+              "RegenRate": "0",
+              "SpawnEntityOnDeath": "decay|rubble/rubble_stone_3x3",
+              "Unhealable": "true"
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.inherited.Footprint",
+            "actual": {
+              "Height": "5.0",
+              "Square": {
+                "@depth": "16.0",
+                "@width": "16.0"
+              }
+            },
+            "expected": {
+              "Height": "5.0",
+              "Square": {
+                "@depth": "16.0",
+                "@width": "16.0"
+              }
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.inherited.Obstruction",
+            "actual": {
+              "Active": "true",
+              "BlockConstruction": "false",
+              "BlockFoundation": "true",
+              "BlockMovement": "true",
+              "BlockPathfinding": "true",
+              "DeleteUponConstruction": "false",
+              "DisableBlockMovement": "false",
+              "DisableBlockPathfinding": "false",
+              "Static": {
+                "@depth": "14.0",
+                "@width": "14.0"
+              }
+            },
+            "expected": {
+              "Active": "true",
+              "BlockConstruction": "false",
+              "BlockFoundation": "true",
+              "BlockMovement": "true",
+              "BlockPathfinding": "true",
+              "DeleteUponConstruction": "false",
+              "DisableBlockMovement": "false",
+              "DisableBlockPathfinding": "false",
+              "Static": {
+                "@depth": "14.0",
+                "@width": "14.0"
+              }
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.inherited.Population",
+            "actual": {
+              "Bonus": "10"
+            },
+            "expected": {
+              "Bonus": "10"
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.inherited.BuildRestrictions",
+            "actual": {
+              "Category": "Structure",
+              "PlacementType": "land",
+              "Territory": "own neutral"
+            },
+            "expected": {
+              "Category": "Structure",
+              "PlacementType": "land",
+              "Territory": "own neutral"
+            },
+            "passed": true
+          },
+          {
+            "id": "asset.newActor",
+            "actual": "structures/epoch_rts/t10_house.xml",
+            "expected": "structures/epoch_rts/t10_house.xml",
+            "passed": true
+          },
+          {
+            "id": "asset.HP",
+            "actual": 300,
+            "expected": 300,
+            "passed": true
+          },
+          {
+            "id": "asset.grounded",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "asset.playerOwners",
+            "actual": [
+              1,
+              2
+            ],
+            "expected": [
+              1,
+              2
+            ],
+            "passed": true
+          },
+          {
+            "id": "asset.workerReached",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "asset.workerDetour",
+            "actual": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "id": "asset.sampleStillHealthy",
+            "actual": 300,
+            "expected": 300,
+            "passed": true
+          }
+        ],
+        "observations": [
+          {
+            "id": "asset.fixture",
+            "position": {
+              "x": 320,
+              "y": 23,
+              "z": 300
+            },
+            "ground": 23,
+            "footprint": {
+              "Height": "5.0",
+              "Square": {
+                "@depth": "16.0",
+                "@width": "16.0"
+              }
+            },
+            "obstruction": {
+              "Active": "true",
+              "BlockConstruction": "false",
+              "BlockFoundation": "true",
+              "BlockMovement": "true",
+              "BlockPathfinding": "true",
+              "DeleteUponConstruction": "false",
+              "DisableBlockMovement": "false",
+              "DisableBlockPathfinding": "false",
+              "Static": {
+                "@depth": "14.0",
+                "@width": "14.0"
+              }
+            },
+            "entities": {
+              "blue": 5,
+              "red": 6,
+              "reference": 7,
+              "worker": 8
+            }
+          },
+          {
+            "id": "asset.workerPath",
+            "samples": [
+              {
+                "x": 290.66395568847656,
+                "z": 300.2213134765625
+              },
+              {
+                "x": 292.3536071777344,
+                "z": 300.49082946777344
+              },
+              {
+                "x": 294.1534729003906,
+                "z": 300.4714813232422
+              },
+              {
+                "x": 295.9533386230469,
+                "z": 300.45213317871094
+              },
+              {
+                "x": 297.7532043457031,
+                "z": 300.4327850341797
+              },
+              {
+                "x": 299.5530700683594,
+                "z": 300.41343688964844
+              },
+              {
+                "x": 301.3529357910156,
+                "z": 300.3940887451172
+              },
+              {
+                "x": 303.1528015136719,
+                "z": 300.37474060058594
+              },
+              {
+                "x": 304.9526672363281,
+                "z": 300.3553924560547
+              },
+              {
+                "x": 306.7525329589844,
+                "z": 300.33604431152344
+              },
+              {
+                "x": 308.5523986816406,
+                "z": 300.3166961669922
+              },
+              {
+                "x": 310.3522644042969,
+                "z": 300.29734802246094
+              },
+              {
+                "x": 312.1521301269531,
+                "z": 300.2779998779297
+              },
+              {
+                "x": 312.1521301269531,
+                "z": 300.2779998779297
+              },
+              {
+                "x": 312.15087890625,
+                "z": 300.93328857421875
+              },
+              {
+                "x": 312.1475524902344,
+                "z": 302.66236877441406
+              },
+              {
+                "x": 312.1440887451172,
+                "z": 304.46234130859375
+              },
+              {
+                "x": 312.14060974121094,
+                "z": 306.26231384277344
+              },
+              {
+                "x": 312.14231872558594,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 312.96063232421875,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 314.7322692871094,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 316.53224182128906,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 318.33221435546875,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 320.13218688964844,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 321.9321594238281,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 323.7321319580078,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 325.5321044921875,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 327.3320770263672,
+                "z": 307.86248779296875
+              },
+              {
+                "x": 328.42820739746094,
+                "z": 306.9689483642578
+              },
+              {
+                "x": 329.39105224609375,
+                "z": 305.4481506347656
+              },
+              {
+                "x": 330.35389709472656,
+                "z": 303.92735290527344
+              },
+              {
+                "x": 331.3316192626953,
+                "z": 302.4356231689453
+              },
+              {
+                "x": 333.0067138671875,
+                "z": 301.8238067626953
+              },
+              {
+                "x": 334.6974334716797,
+                "z": 301.2062683105469
+              },
+              {
+                "x": 336.3881530761719,
+                "z": 300.58872985839844
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              },
+              {
+                "x": 338,
+                "z": 300
+              }
+            ]
+          }
+        ]
+      },
+      "errors_or_warnings": [],
+      "engine_html_error_or_warning": false,
+      "passed": true,
+      "source_sha256": "07e6dde87fe0455eb46c48d6922a0da7896b18728c6dcb59e2788db078cfa010",
+      "source_changed_during_run": false,
+      "run_id": "20260921T004217380509Z-validation-seed-7",
+      "log_sha256": "02b77bb6a4d681271e3c68a5c4d20c485f443ea2c9e0f2c4ae345b88e7a02abe"
+    }
+  ]
+}

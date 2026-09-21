@@ -1,7 +1,7 @@
 <!-- Purpose: 跨時代 RTS 目標、架構與可驗收路線；Created: 2026-09-06. -->
 # 開發計畫
 
-更新日期：2026-09-21。狀態：M1、M2 最小流程驗收完成；T03–T07 已完成限定原型驗收，T08 [潛艇調查](evidence/t08-validation.md)完成，完整潛艇延後；[T09決策](t09-engine-decision.md)已完成：維持R28、暫不改C++，M3限定可行性階段完成；下一步T10。完整攻擊檢查／潛艇／精確空戰另列T16–T18 TODO。飛行限制與證據見 [T07報告](evidence/t07-validation.md)。M2 限定標準資源脚本玩家與固定防守對手，不代表通用 AI 完成。專案入口：[README](../../README.md)；執行狀態：[進度追蹤](progress.md)。
+更新日期：2026-09-21。狀態：M1、M2 最小流程驗收完成；T03–T07 已完成限定原型驗收，T08 [潛艇調查](evidence/t08-validation.md)完成，完整潛艇延後；[T09決策](t09-engine-decision.md)已完成：維持R28、暫不改C++，M3限定可行性階段完成；[T10靜態匯入](evidence/t10-validation.md)已完成，M4 IN_PROGRESS，下一步T11。完整攻擊檢查／潛艇／精確空戰另列T16–T18 TODO。飛行限制與證據見 [T07報告](evidence/t07-validation.md)。M2 限定標準資源脚本玩家與固定防守對手，不代表通用 AI 完成。專案入口：[README](../../README.md)；執行狀態：[進度追蹤](progress.md)。
 
 ## 1. 產品目標與邊界
 

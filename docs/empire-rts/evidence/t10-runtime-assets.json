@@ -1,0 +1,47 @@
+{
+  "runtime": "0.28.0",
+  "platform": "macOS ARM64",
+  "starting_head": "6221d74",
+  "binary_sha256": "531981d016596b0abde110cd239feaed98998c3fdaa837d0fa8d6f75482c81ef",
+  "public_zip_sha256": "ccb24dedee399e6d2810ccb62b0b1b77a937999d9f1dedffbc189b3e359f2429",
+  "runtime_matches_t08": true,
+  "existing_t08_mod_files_unchanged": 75,
+  "python_version": "Python 3.9.6",
+  "blender_used": false,
+  "native_cache_artifacts": [
+    {
+      "cache_file": "art/meshes/structural/epoch_rts/t10_house.dae.84011a8671e73280.pmd",
+      "sha256": "410eccd219ea086f2cfa9c859e9165bd9f56738d629f4a6067ce4830ba250dec",
+      "size": 6333,
+      "mtime_utc": "2026-09-21T00:37:08.794380+00:00"
+    },
+    {
+      "cache_file": "art/meshes/structural/epoch_rts/t10_house.dae.9a8947564fd1faba.pmd",
+      "sha256": "62f4fddd0206d3bfbc8c851d2c4dfc96c836453c23a7fba4831015b4e5220c01",
+      "size": 8557,
+      "mtime_utc": "2026-09-21T00:38:11.959181+00:00"
+    },
+    {
+      "cache_file": "art/textures/skins/structural/epoch_rts/t10_house.png.3ff27039b389aa49.dds",
+      "sha256": "f3f2651b32ca0fdbcabc59143eef33e1f6ede927d5e66d08187596bc4b56e29c",
+      "size": 1552,
+      "mtime_utc": "2026-09-21T00:37:09.099188+00:00"
+    },
+    {
+      "cache_file": "art/textures/skins/structural/epoch_rts/t10_house.png.ae0609cb17eed49c.dds",
+      "sha256": "f3f2651b32ca0fdbcabc59143eef33e1f6ede927d5e66d08187596bc4b56e29c",
+      "size": 1552,
+      "mtime_utc": "2026-09-21T00:38:12.047729+00:00"
+    }
+  ],
+  "public_direct_dependencies": {
+    "art/materials/player_trans.xml": "041da51207a5faf33b6af48026759dd68c6006df0b61be36af07aca0ec3c0793",
+    "shaders/effects/model.xml": "30108ba7c9a177c48c58a9f6f954761e90edee44c559f5a33eaab6f61fbdcd0e",
+    "art/LICENSE.txt": "ef98babd771c206032e005f3d440a1e610df409d9a9191f03e64deaa4abefbd9",
+    "simulation/templates/structures/athen/house.xml": "d7654588a8f2b828291000be1d50da988efd48e077abed7fddfc9f686e94c7f9",
+    "art/actors/structures/hellenes/house.xml": "012c96f92f281dec5f25cce058bb63ecedf6689324432fde194b681b7509da91"
+  },
+  "public_archive_dae_count": 0,
+  "geometry_reference_url": "https://gitea.wildfiregames.com/0ad/0ad/media/tag/v0.28.0/binaries/data/mods/public/art/meshes/props/wrld_crate_a.dae",
+  "geometry_copied": false
+}

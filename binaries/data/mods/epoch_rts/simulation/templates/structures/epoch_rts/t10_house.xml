@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Purpose: Isolated T10 asset fixture inheriting M2 house gameplay. Created: 2026-09-21. -->
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<Entity parent="structures/epoch_rts/house">
+  <Identity><GenericName>T10 Import Sample</GenericName><SpecificName>T10 Import Sample</SpecificName></Identity>
+  <VisualActor><Actor>structures/epoch_rts/t10_house.xml</Actor></VisualActor>
+</Entity>

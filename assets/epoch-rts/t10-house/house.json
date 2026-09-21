@@ -1,0 +1,16 @@
+{
+  "purpose": "Editable temporary static house import sample; not final art",
+  "created": "2026-09-21",
+  "license": "CC-BY-SA-3.0",
+  "width": 10,
+  "depth": 8,
+  "wall_height": 4,
+  "roof_height": 2,
+  "roof_overhang": 0.5,
+  "palette": {
+    "wall": [207, 183, 142, 255],
+    "roof": [139, 65, 43, 255],
+    "wood": [73, 48, 29, 255],
+    "player": [220, 220, 220, 0]
+  }
+}

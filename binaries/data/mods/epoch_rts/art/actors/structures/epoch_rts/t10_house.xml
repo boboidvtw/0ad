@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Purpose: T10 authored static house asset import. Created: 2026-09-21. -->
+<!-- SPDX-License-Identifier: CC-BY-SA-3.0 -->
+<actor version="1">
+  <castshadow/>
+  <group><variant frequency="100" name="base">
+    <mesh>structural/epoch_rts/t10_house.dae</mesh>
+    <textures><texture file="structural/epoch_rts/t10_house.png" name="baseTex"/></textures>
+  </variant></group>
+  <material>player_trans.xml</material>
+</actor>

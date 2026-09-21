@@ -1,0 +1,24 @@
+{
+  "settings": {
+    "Name": "Epoch RTS - T10 asset import",
+    "Script": "epoch_t10_validation.js",
+    "Description": "Static COLLADA import evidence. Not final art.",
+    "CircularMap": false,
+    "Keywords": [
+      "demo"
+    ],
+    "SupportedBiomes": [],
+    "PlayerData": [
+      {
+        "Civ": "epoch"
+      },
+      {
+        "Civ": "epoch"
+      }
+    ],
+    "TriggerScripts": [
+      "scripts/epoch_rts/FrontierDuel.js",
+      "scripts/epoch_rts/T10Validation.js"
+    ]
+  }
+}
