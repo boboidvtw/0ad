@@ -87,3 +87,14 @@ python3 tools/epoch-rts/smoke-macos.py --app '/path/to/0 A.D..app' --scenario t0
 `tools/epoch-rts/launch-macos.sh research-demo` 提供四資源各 1000 與一棟完成兵營，方便檢查研究 UI；示範關閉失焦暫停，正式 duel 保留原設定。兩者都不寫入永久偏好。按市中心底部 II 研究鐵器，完成後由工人建造鍛造所，再研究鍛造兵器。這不是標準開局完整對局。
 
 新增 `smoke-macos.py --scenario t05 --seed 42`（也測 seed 7）。完整步驟、結果與範圍見 [T05 報告](evidence/t05-validation.md)。
+
+
+## T12 限定 AI（2026-09-27）
+
+新增獨立 `epoch_petra`，沿用官方R28 Petra，以局部路徑／時代／編軍適配支援epoch。驗收為正常難度、192 tiles、兩seed，對固定防守方自行經營、研究鐵器及進攻。原duel啟動方式不變。
+
+```sh
+/usr/bin/python3 tools/epoch-rts/t12-macos.py --app '../runtime/0 A.D..app' --seed 42 --visual --timeout 240
+```
+
+此為20×觀察者GUI驗收場，可選取單位與查看戰場，完成後Cmd-Q正常退出。不是1×玩家體驗或AI選單驗收。其他seed／重播／工具操作及邊界見[T12使用與契約](t12-ai-acceptance.md)，實測見[證據](evidence/t12-validation.md)。T13／T14仍未完成。

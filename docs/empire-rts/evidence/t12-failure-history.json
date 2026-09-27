@@ -1,0 +1,37 @@
+{
+  "scope": "Historical pre-final framing failures; artifacts retained locally",
+  "runs": [
+    {
+      "run_id": "20260922T092752670829Z-validation-42",
+      "passed": false,
+      "suite_missing": true,
+      "engine_exit": 0,
+      "result_sha256": "7f8f2ecc0ac0d8302132c577656d562d60483d6a3ef96988b85233b1f0d34df9",
+      "log_sha256": "4a7ce97ee3e7fc06e98e080970ccf753128ba26db65d591a3e3bbcc697d569e9"
+    },
+    {
+      "run_id": "20260922T092829260659Z-validation-42",
+      "passed": false,
+      "suite_missing": true,
+      "engine_exit": 0,
+      "result_sha256": "7f8f2ecc0ac0d8302132c577656d562d60483d6a3ef96988b85233b1f0d34df9",
+      "log_sha256": "089d54ef65ccc312787a4e0a1ce4cd7283dfe1fb513ba540eea00c4c563077cd"
+    },
+    {
+      "run_id": "20260922T093009969964Z-validation-42",
+      "passed": false,
+      "suite_missing": true,
+      "engine_exit": 0,
+      "result_sha256": "7f8f2ecc0ac0d8302132c577656d562d60483d6a3ef96988b85233b1f0d34df9",
+      "log_sha256": "1630bfe748976249d795e6b9c7f2d059c1d48c87277981435a8d1317bb406632"
+    },
+    {
+      "run_id": "20260922T093135646598Z-validation-42",
+      "passed": false,
+      "suite_missing": true,
+      "engine_exit": 0,
+      "result_sha256": "7f8f2ecc0ac0d8302132c577656d562d60483d6a3ef96988b85233b1f0d34df9",
+      "log_sha256": "0a02f1159e44fbd3c0a2d42c93a1c64161af88f8162fc5f177921139f8573881"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "tools/epoch-rts/t12-probe-macos.py": "b5f5a0f90745bf24bd912116613bf2d7433c0126db8dab89be69fc28bc970dfc",
+  "tools/epoch-rts/test-t12-tools.py": "9158a22f53d7654c1f309d1f2449c6d85da6ffee9f8235ee58994704ec35cfa9",
+  "tools/epoch-rts/test-t12-adapter.cjs": "2c4e886259bb763e09b3f514218f26939d920c4085e23655ee46026d725a165a"
+}

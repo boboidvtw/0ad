@@ -1,0 +1,5456 @@
+[
+  {
+    "mode": "validation",
+    "seed": 42,
+    "ai": "epoch_petra",
+    "command": [
+      "<home>/Documents/Codex/2026-09-06/new-chat/work/runtime/0 A.D..app/Contents/MacOS/pyrogenesis",
+      "-mod=mod",
+      "-mod=public",
+      "-mod=epoch_rts",
+      "-autostart=random/epoch_t12_validation",
+      "-autostart-players=2",
+      "-autostart-size=192",
+      "-autostart-seed=42",
+      "-autostart-aiseed=42",
+      "-autostart-civ=1:epoch",
+      "-autostart-civ=2:epoch",
+      "-autostart-ai=2:epoch_petra",
+      "-autostart-aidiff=2:3",
+      "-autostart-nonvisual"
+    ],
+    "exit_code": 0,
+    "errors": [],
+    "html_error": false,
+    "source_unchanged": true,
+    "suite": {
+      "mode": "validation",
+      "passed": true,
+      "reason": "game-ended",
+      "time": 884600,
+      "checks": [
+        {
+          "id": "opening.resources.1",
+          "actual": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "expected": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "passed": true
+        },
+        {
+          "id": "opening.population.1",
+          "actual": [
+            8,
+            20,
+            100
+          ],
+          "expected": [
+            8,
+            20,
+            100
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.ai.1",
+          "actual": false,
+          "expected": false,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.food.fruit",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.food.grain",
+          "actual": 0.5,
+          "expected": 0.5,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.wood.tree",
+          "actual": 0.7,
+          "expected": 0.7,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.stone.rock",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.metal.ore",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "opening.resources.2",
+          "actual": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "expected": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "passed": true
+        },
+        {
+          "id": "opening.population.2",
+          "actual": [
+            8,
+            20,
+            100
+          ],
+          "expected": [
+            8,
+            20,
+            100
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.ai.2",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.food.fruit",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.food.grain",
+          "actual": 0.5,
+          "expected": 0.5,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.wood.tree",
+          "actual": 0.7,
+          "expected": 0.7,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.stone.rock",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.metal.ore",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "gather.food",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "gather.wood",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "gather.metal",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "built.house",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "built.barracks",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "built.house-capacity",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "trained.pioneer",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "trained.iron_swordsman",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.house",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.barracks",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.worker",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.swordsman",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.paid",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.finished",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.duration",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.prerequisites",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "attack.command",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "attack.centre-damaged",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "winner.ai",
+          "actual": "won",
+          "expected": "won",
+          "passed": true
+        },
+        {
+          "id": "loser.defender",
+          "actual": "defeated",
+          "expected": "defeated",
+          "passed": true
+        },
+        {
+          "id": "no-cheat-command",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "id": "deadline",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        }
+      ],
+      "events": [
+        {
+          "1": {
+            "resources": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "population": [
+              8,
+              20,
+              100
+            ],
+            "ai": false,
+            "rates": {
+              "food.fruit": 1,
+              "food.grain": 0.5,
+              "metal.ore": 0.35,
+              "stone.rock": 0.35,
+              "wood.tree": 0.7
+            }
+          },
+          "2": {
+            "resources": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "population": [
+              8,
+              20,
+              100
+            ],
+            "ai": true,
+            "rates": {
+              "food.fruit": 1,
+              "food.grain": 0.5,
+              "metal.ore": 0.35,
+              "stone.rock": 0.35,
+              "wood.tree": 0.7
+            }
+          },
+          "time": 0,
+          "kind": "opening"
+        },
+        {
+          "time": 19000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 25400,
+          "kind": "built",
+          "name": "structures/epoch_rts/storehouse",
+          "populationLimit": 20
+        },
+        {
+          "time": 33000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 47000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 56600,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 30
+        },
+        {
+          "time": 61000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 75000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 89000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 116800,
+          "kind": "built",
+          "name": "structures/epoch_rts/barracks",
+          "populationLimit": 30
+        },
+        {
+          "time": 118000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 118000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 147000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 147000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 170600,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 40
+        },
+        {
+          "time": 176000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 176000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 205000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 205000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 234000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 234000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 263000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 263000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 279600,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 40
+        },
+        {
+          "time": 292000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 292000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 296800,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 40
+        },
+        {
+          "time": 315000,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 50
+        },
+        {
+          "time": 321000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 321000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 325200,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 50
+        },
+        {
+          "time": 344200,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 50
+        },
+        {
+          "time": 350000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 350000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 379000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 379000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 400200,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 60
+        },
+        {
+          "time": 408000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 408000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 427400,
+          "kind": "built",
+          "name": "structures/epoch_rts/barracks",
+          "populationLimit": 60
+        },
+        {
+          "time": 437000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 437000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 459600,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 60
+        },
+        {
+          "time": 466000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 466000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 525000,
+          "kind": "iron-finished"
+        },
+        {
+          "time": 548800,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 70
+        },
+        {
+          "time": 554000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 554000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 575400,
+          "kind": "built",
+          "name": "structures/epoch_rts/storehouse",
+          "populationLimit": 70
+        },
+        {
+          "time": 584800,
+          "kind": "built",
+          "name": "structures/epoch_rts/barracks",
+          "populationLimit": 70
+        },
+        {
+          "time": 603800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 603800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 603800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 617200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 617200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 617200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 623600,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 80
+        },
+        {
+          "time": 628600,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 90
+        },
+        {
+          "time": 677800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 677800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 677800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 700000,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 100
+        },
+        {
+          "time": 706200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 706200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 706200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 724400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 724400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 724400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 751800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 751800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 751800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 831000,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 831000,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 831000,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 832600,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 832600,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 832600,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 844400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 844400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 844400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 867000,
+          "kind": "enemy-centre-damaged",
+          "hp": 991.3906558000002
+        },
+        {
+          "time": 884600,
+          "kind": "won",
+          "player": 2
+        }
+      ],
+      "commands": {
+        "gather": 206,
+        "construct": 105,
+        "stop": 102,
+        "repair": 84,
+        "train": 42,
+        "unset-rallypoint": 35,
+        "set-dropsite-sharing": 2,
+        "returnresource": 63,
+        "stop-production": 5,
+        "research": 1,
+        "attack-request": 1,
+        "walk-to-range": 22,
+        "aichat": 1,
+        "attack-walk": 5,
+        "attack": 85
+      },
+      "ironPayment": {
+        "time": 453600,
+        "type": "research",
+        "template": "phase_epoch_iron",
+        "count": 1,
+        "cost": {
+          "food": 400,
+          "wood": 200,
+          "stone": 0,
+          "metal": 100
+        },
+        "bronze": true,
+        "barracks": true
+      },
+      "paymentCount": 63,
+      "gathered": {
+        "vegetarianFood": 5735,
+        "food": 5735,
+        "wood": 3007,
+        "stone": 1021,
+        "metal": 1748
+      },
+      "maxUnits": {
+        "structures/epoch_rts/civil_centre": 1,
+        "units/epoch_rts/pioneer": 54,
+        "units/epoch_rts/spearman": 2,
+        "foundation|structures/epoch_rts/storehouse": 1,
+        "foundation|structures/epoch_rts/house": 2,
+        "structures/epoch_rts/storehouse": 2,
+        "structures/epoch_rts/house": 8,
+        "foundation|structures/epoch_rts/barracks": 1,
+        "structures/epoch_rts/barracks": 3,
+        "foundation|structures/epoch_rts/field": 2,
+        "structures/epoch_rts/field": 5,
+        "units/epoch_rts/slinger": 15,
+        "units/epoch_rts/iron_swordsman": 12
+      }
+    },
+    "replay_count": 1,
+    "visual_requested": false,
+    "visual_verified": false,
+    "replay_match": null,
+    "replay_complete": null,
+    "binary_sha256": "531981d016596b0abde110cd239feaed98998c3fdaa837d0fa8d6f75482c81ef",
+    "public_zip_sha256": "ccb24dedee399e6d2810ccb62b0b1b77a937999d9f1dedffbc189b3e359f2429",
+    "passed": true,
+    "run_id": "20260926T004323034695Z-validation-42",
+    "artifacts_sha256": {
+      "commands-0.txt": "f607a6a206c6eae0519232cea209a9203b3d616856d4d193d66a72ca0bb85853",
+      "engine.log": "97a38cf07a20348efc55884bdb670b3c842524b5917333107501ee9118c869ce",
+      "interestinglog.html": "d40a13f4535e13b5e130acc24e6c31f82b2b13a137461faa185bc4198192bec1",
+      "result.json": "97478e6870d68c68c61fd08e74098fda70a13de9ece5a6b9370d66daee9c3294",
+      "source-manifest.json": "43e0eb931ede34d05d292ae8704a68c9bf75335e4aafcaf6caaf3a5e55684b74"
+    }
+  },
+  {
+    "mode": "validation",
+    "seed": 7,
+    "ai": "epoch_petra",
+    "command": [
+      "<home>/Documents/Codex/2026-09-06/new-chat/work/runtime/0 A.D..app/Contents/MacOS/pyrogenesis",
+      "-mod=mod",
+      "-mod=public",
+      "-mod=epoch_rts",
+      "-autostart=random/epoch_t12_validation",
+      "-autostart-players=2",
+      "-autostart-size=192",
+      "-autostart-seed=7",
+      "-autostart-aiseed=7",
+      "-autostart-civ=1:epoch",
+      "-autostart-civ=2:epoch",
+      "-autostart-ai=2:epoch_petra",
+      "-autostart-aidiff=2:3",
+      "-autostart-nonvisual"
+    ],
+    "exit_code": 0,
+    "errors": [],
+    "html_error": false,
+    "source_unchanged": true,
+    "suite": {
+      "mode": "validation",
+      "passed": true,
+      "reason": "game-ended",
+      "time": 894600,
+      "checks": [
+        {
+          "id": "opening.resources.1",
+          "actual": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "expected": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "passed": true
+        },
+        {
+          "id": "opening.population.1",
+          "actual": [
+            8,
+            20,
+            100
+          ],
+          "expected": [
+            8,
+            20,
+            100
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.ai.1",
+          "actual": false,
+          "expected": false,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.food.fruit",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.food.grain",
+          "actual": 0.5,
+          "expected": 0.5,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.wood.tree",
+          "actual": 0.7,
+          "expected": 0.7,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.stone.rock",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.metal.ore",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "opening.resources.2",
+          "actual": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "expected": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "passed": true
+        },
+        {
+          "id": "opening.population.2",
+          "actual": [
+            8,
+            20,
+            100
+          ],
+          "expected": [
+            8,
+            20,
+            100
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.ai.2",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.food.fruit",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.food.grain",
+          "actual": 0.5,
+          "expected": 0.5,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.wood.tree",
+          "actual": 0.7,
+          "expected": 0.7,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.stone.rock",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.metal.ore",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "gather.food",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "gather.wood",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "gather.metal",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "built.house",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "built.barracks",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "built.house-capacity",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "trained.pioneer",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "trained.iron_swordsman",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.house",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.barracks",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.worker",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.swordsman",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.paid",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.finished",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.duration",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.prerequisites",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "attack.command",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "attack.centre-damaged",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "winner.ai",
+          "actual": "won",
+          "expected": "won",
+          "passed": true
+        },
+        {
+          "id": "loser.defender",
+          "actual": "defeated",
+          "expected": "defeated",
+          "passed": true
+        },
+        {
+          "id": "no-cheat-command",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "id": "deadline",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        }
+      ],
+      "events": [
+        {
+          "1": {
+            "resources": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "population": [
+              8,
+              20,
+              100
+            ],
+            "ai": false,
+            "rates": {
+              "food.fruit": 1,
+              "food.grain": 0.5,
+              "metal.ore": 0.35,
+              "stone.rock": 0.35,
+              "wood.tree": 0.7
+            }
+          },
+          "2": {
+            "resources": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "population": [
+              8,
+              20,
+              100
+            ],
+            "ai": true,
+            "rates": {
+              "food.fruit": 1,
+              "food.grain": 0.5,
+              "metal.ore": 0.35,
+              "stone.rock": 0.35,
+              "wood.tree": 0.7
+            }
+          },
+          "time": 0,
+          "kind": "opening"
+        },
+        {
+          "time": 19000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 24800,
+          "kind": "built",
+          "name": "structures/epoch_rts/storehouse",
+          "populationLimit": 20
+        },
+        {
+          "time": 33000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 47000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 59000,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 30
+        },
+        {
+          "time": 61000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 75000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 89000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 118000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 118000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 129800,
+          "kind": "built",
+          "name": "structures/epoch_rts/barracks",
+          "populationLimit": 30
+        },
+        {
+          "time": 147000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 147000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 176000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 176000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 177800,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 40
+        },
+        {
+          "time": 205000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 205000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 234000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 234000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 263000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 263000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 274400,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 40
+        },
+        {
+          "time": 277400,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 40
+        },
+        {
+          "time": 292000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 292000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 319000,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 50
+        },
+        {
+          "time": 321000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 321000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 331200,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 50
+        },
+        {
+          "time": 349000,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 50
+        },
+        {
+          "time": 350000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 350000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 379000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 379000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 383800,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 50
+        },
+        {
+          "time": 408000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 408000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 411400,
+          "kind": "built",
+          "name": "structures/epoch_rts/barracks",
+          "populationLimit": 50
+        },
+        {
+          "time": 412400,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 60
+        },
+        {
+          "time": 437000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 437000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 466000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 466000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 525000,
+          "kind": "iron-finished"
+        },
+        {
+          "time": 554000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 554000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 556400,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 70
+        },
+        {
+          "time": 603800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 603800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 603800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 617200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 617200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 617200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 628600,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 80
+        },
+        {
+          "time": 637000,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 90
+        },
+        {
+          "time": 639800,
+          "kind": "built",
+          "name": "structures/epoch_rts/barracks",
+          "populationLimit": 90
+        },
+        {
+          "time": 677800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 677800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 677800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 704800,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 100
+        },
+        {
+          "time": 706200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 706200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 706200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 715800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 715800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 715800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 766800,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 766800,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 766800,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 845400,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 845400,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 845400,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 847000,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 847000,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 847000,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 858800,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 858800,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 858800,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 876000,
+          "kind": "enemy-centre-damaged",
+          "hp": 994.8343934800001
+        },
+        {
+          "time": 894600,
+          "kind": "won",
+          "player": 2
+        }
+      ],
+      "commands": {
+        "gather": 197,
+        "construct": 18,
+        "stop": 81,
+        "repair": 78,
+        "train": 42,
+        "unset-rallypoint": 35,
+        "set-dropsite-sharing": 1,
+        "returnresource": 60,
+        "stop-production": 5,
+        "research": 1,
+        "attack-request": 1,
+        "walk-to-range": 22,
+        "aichat": 1,
+        "attack-walk": 6,
+        "attack": 85
+      },
+      "ironPayment": {
+        "time": 453600,
+        "type": "research",
+        "template": "phase_epoch_iron",
+        "count": 1,
+        "cost": {
+          "food": 400,
+          "wood": 200,
+          "stone": 0,
+          "metal": 100
+        },
+        "bronze": true,
+        "barracks": true
+      },
+      "paymentCount": 61,
+      "gathered": {
+        "vegetarianFood": 5803,
+        "food": 5803,
+        "wood": 2843,
+        "stone": 1037,
+        "metal": 1692
+      },
+      "maxUnits": {
+        "structures/epoch_rts/civil_centre": 1,
+        "units/epoch_rts/pioneer": 54,
+        "units/epoch_rts/spearman": 2,
+        "foundation|structures/epoch_rts/storehouse": 1,
+        "foundation|structures/epoch_rts/house": 2,
+        "structures/epoch_rts/storehouse": 1,
+        "structures/epoch_rts/house": 8,
+        "foundation|structures/epoch_rts/barracks": 1,
+        "structures/epoch_rts/barracks": 3,
+        "foundation|structures/epoch_rts/field": 2,
+        "structures/epoch_rts/field": 5,
+        "units/epoch_rts/slinger": 15,
+        "units/epoch_rts/iron_swordsman": 12
+      }
+    },
+    "replay_count": 1,
+    "visual_requested": false,
+    "visual_verified": false,
+    "replay_match": null,
+    "replay_complete": null,
+    "binary_sha256": "531981d016596b0abde110cd239feaed98998c3fdaa837d0fa8d6f75482c81ef",
+    "public_zip_sha256": "ccb24dedee399e6d2810ccb62b0b1b77a937999d9f1dedffbc189b3e359f2429",
+    "passed": true,
+    "run_id": "20260926T004344451799Z-validation-7",
+    "artifacts_sha256": {
+      "commands-0.txt": "015d56ddb6bb4007e9c7376bd1493554039d3ff9972aa71ff586d515aac7a12d",
+      "engine.log": "c330d73aad3899acf8edfd27a52d2cb664dbc54497e1e5c75384551580bc16c5",
+      "interestinglog.html": "313c8eca7f5eebbe096220af68328732d30bb972ecef68cafe1e7a674337b8be",
+      "result.json": "3062e909ccd24ee09dd8073a5bdb205e9fd98b9df5c9aec96d5072ec1891ba7f",
+      "source-manifest.json": "43e0eb931ede34d05d292ae8704a68c9bf75335e4aafcaf6caaf3a5e55684b74"
+    }
+  },
+  {
+    "mode": "validation",
+    "seed": 42,
+    "ai": "epoch_petra",
+    "command": [
+      "<home>/Documents/Codex/2026-09-06/new-chat/work/runtime/0 A.D..app/Contents/MacOS/pyrogenesis",
+      "-mod=mod",
+      "-mod=public",
+      "-mod=epoch_rts",
+      "-replay=<repo>/work/t12-validation/20260926T004323034695Z-validation-42/commands-0.txt",
+      "-replay-directory=<repo>/work/t12-validation/20260926T004441245479Z-validation-42"
+    ],
+    "exit_code": 0,
+    "errors": [],
+    "html_error": false,
+    "source_unchanged": true,
+    "suite": {
+      "mode": "validation",
+      "passed": true,
+      "reason": "game-ended",
+      "time": 884600,
+      "checks": [
+        {
+          "id": "opening.resources.1",
+          "actual": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "expected": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "passed": true
+        },
+        {
+          "id": "opening.population.1",
+          "actual": [
+            8,
+            20,
+            100
+          ],
+          "expected": [
+            8,
+            20,
+            100
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.ai.1",
+          "actual": false,
+          "expected": false,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.food.fruit",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.food.grain",
+          "actual": 0.5,
+          "expected": 0.5,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.wood.tree",
+          "actual": 0.7,
+          "expected": 0.7,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.stone.rock",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.metal.ore",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "opening.resources.2",
+          "actual": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "expected": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "passed": true
+        },
+        {
+          "id": "opening.population.2",
+          "actual": [
+            8,
+            20,
+            100
+          ],
+          "expected": [
+            8,
+            20,
+            100
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.ai.2",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.food.fruit",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.food.grain",
+          "actual": 0.5,
+          "expected": 0.5,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.wood.tree",
+          "actual": 0.7,
+          "expected": 0.7,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.stone.rock",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.metal.ore",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "gather.food",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "gather.wood",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "gather.metal",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "built.house",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "built.barracks",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "built.house-capacity",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "trained.pioneer",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "trained.iron_swordsman",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.house",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.barracks",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.worker",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.swordsman",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.paid",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.finished",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.duration",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.prerequisites",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "attack.command",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "attack.centre-damaged",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "winner.ai",
+          "actual": "won",
+          "expected": "won",
+          "passed": true
+        },
+        {
+          "id": "loser.defender",
+          "actual": "defeated",
+          "expected": "defeated",
+          "passed": true
+        },
+        {
+          "id": "no-cheat-command",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "id": "deadline",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        }
+      ],
+      "events": [
+        {
+          "1": {
+            "resources": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "population": [
+              8,
+              20,
+              100
+            ],
+            "ai": false,
+            "rates": {
+              "food.fruit": 1,
+              "food.grain": 0.5,
+              "metal.ore": 0.35,
+              "stone.rock": 0.35,
+              "wood.tree": 0.7
+            }
+          },
+          "2": {
+            "resources": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "population": [
+              8,
+              20,
+              100
+            ],
+            "ai": true,
+            "rates": {
+              "food.fruit": 1,
+              "food.grain": 0.5,
+              "metal.ore": 0.35,
+              "stone.rock": 0.35,
+              "wood.tree": 0.7
+            }
+          },
+          "time": 0,
+          "kind": "opening"
+        },
+        {
+          "time": 19000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 25400,
+          "kind": "built",
+          "name": "structures/epoch_rts/storehouse",
+          "populationLimit": 20
+        },
+        {
+          "time": 33000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 47000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 56600,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 30
+        },
+        {
+          "time": 61000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 75000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 89000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 116800,
+          "kind": "built",
+          "name": "structures/epoch_rts/barracks",
+          "populationLimit": 30
+        },
+        {
+          "time": 118000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 118000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 147000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 147000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 170600,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 40
+        },
+        {
+          "time": 176000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 176000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 205000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 205000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 234000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 234000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 263000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 263000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 279600,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 40
+        },
+        {
+          "time": 292000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 292000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 296800,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 40
+        },
+        {
+          "time": 315000,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 50
+        },
+        {
+          "time": 321000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 321000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 325200,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 50
+        },
+        {
+          "time": 344200,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 50
+        },
+        {
+          "time": 350000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 350000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 379000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 379000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 400200,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 60
+        },
+        {
+          "time": 408000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 408000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 427400,
+          "kind": "built",
+          "name": "structures/epoch_rts/barracks",
+          "populationLimit": 60
+        },
+        {
+          "time": 437000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 437000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 459600,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 60
+        },
+        {
+          "time": 466000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 466000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 525000,
+          "kind": "iron-finished"
+        },
+        {
+          "time": 548800,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 70
+        },
+        {
+          "time": 554000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 554000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 575400,
+          "kind": "built",
+          "name": "structures/epoch_rts/storehouse",
+          "populationLimit": 70
+        },
+        {
+          "time": 584800,
+          "kind": "built",
+          "name": "structures/epoch_rts/barracks",
+          "populationLimit": 70
+        },
+        {
+          "time": 603800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 603800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 603800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 617200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 617200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 617200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 623600,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 80
+        },
+        {
+          "time": 628600,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 90
+        },
+        {
+          "time": 677800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 677800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 677800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 700000,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 100
+        },
+        {
+          "time": 706200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 706200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 706200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 724400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 724400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 724400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 751800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 751800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 751800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 831000,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 831000,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 831000,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 832600,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 832600,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 832600,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 844400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 844400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 844400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 867000,
+          "kind": "enemy-centre-damaged",
+          "hp": 991.3906558000002
+        },
+        {
+          "time": 884600,
+          "kind": "won",
+          "player": 2
+        }
+      ],
+      "commands": {
+        "gather": 206,
+        "construct": 105,
+        "stop": 102,
+        "repair": 84,
+        "train": 42,
+        "unset-rallypoint": 35,
+        "set-dropsite-sharing": 2,
+        "returnresource": 63,
+        "stop-production": 5,
+        "research": 1,
+        "attack-request": 1,
+        "walk-to-range": 22,
+        "aichat": 1,
+        "attack-walk": 5,
+        "attack": 85
+      },
+      "ironPayment": {
+        "time": 453600,
+        "type": "research",
+        "template": "phase_epoch_iron",
+        "count": 1,
+        "cost": {
+          "food": 400,
+          "wood": 200,
+          "stone": 0,
+          "metal": 100
+        },
+        "bronze": true,
+        "barracks": true
+      },
+      "paymentCount": 63,
+      "gathered": {
+        "vegetarianFood": 5735,
+        "food": 5735,
+        "wood": 3007,
+        "stone": 1021,
+        "metal": 1748
+      },
+      "maxUnits": {
+        "structures/epoch_rts/civil_centre": 1,
+        "units/epoch_rts/pioneer": 54,
+        "units/epoch_rts/spearman": 2,
+        "foundation|structures/epoch_rts/storehouse": 1,
+        "foundation|structures/epoch_rts/house": 2,
+        "structures/epoch_rts/storehouse": 2,
+        "structures/epoch_rts/house": 8,
+        "foundation|structures/epoch_rts/barracks": 1,
+        "structures/epoch_rts/barracks": 3,
+        "foundation|structures/epoch_rts/field": 2,
+        "structures/epoch_rts/field": 5,
+        "units/epoch_rts/slinger": 15,
+        "units/epoch_rts/iron_swordsman": 12
+      }
+    },
+    "replay_count": 0,
+    "visual_requested": false,
+    "visual_verified": false,
+    "replay_match": true,
+    "replay_complete": true,
+    "binary_sha256": "531981d016596b0abde110cd239feaed98998c3fdaa837d0fa8d6f75482c81ef",
+    "public_zip_sha256": "ccb24dedee399e6d2810ccb62b0b1b77a937999d9f1dedffbc189b3e359f2429",
+    "passed": true,
+    "run_id": "20260926T004441245479Z-validation-42",
+    "artifacts_sha256": {
+      "engine.log": "3fd1694109ccff03951b8e531da77478eb634c9207d43afe6f74a2ac60877394",
+      "interestinglog.html": "313c8eca7f5eebbe096220af68328732d30bb972ecef68cafe1e7a674337b8be",
+      "result.json": "93ffe6de294abbd2dc2d9da56f3b4ebab49bd07d0dc6aeb0746ab62f63f77c6b",
+      "source-manifest.json": "43e0eb931ede34d05d292ae8704a68c9bf75335e4aafcaf6caaf3a5e55684b74"
+    }
+  },
+  {
+    "mode": "validation",
+    "seed": 7,
+    "ai": "epoch_petra",
+    "command": [
+      "<home>/Documents/Codex/2026-09-06/new-chat/work/runtime/0 A.D..app/Contents/MacOS/pyrogenesis",
+      "-mod=mod",
+      "-mod=public",
+      "-mod=epoch_rts",
+      "-replay=<repo>/work/t12-validation/20260926T004344451799Z-validation-7/commands-0.txt",
+      "-replay-directory=<repo>/work/t12-validation/20260926T004510728304Z-validation-7"
+    ],
+    "exit_code": 0,
+    "errors": [],
+    "html_error": false,
+    "source_unchanged": true,
+    "suite": {
+      "mode": "validation",
+      "passed": true,
+      "reason": "game-ended",
+      "time": 894600,
+      "checks": [
+        {
+          "id": "opening.resources.1",
+          "actual": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "expected": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "passed": true
+        },
+        {
+          "id": "opening.population.1",
+          "actual": [
+            8,
+            20,
+            100
+          ],
+          "expected": [
+            8,
+            20,
+            100
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.ai.1",
+          "actual": false,
+          "expected": false,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.food.fruit",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.food.grain",
+          "actual": 0.5,
+          "expected": 0.5,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.wood.tree",
+          "actual": 0.7,
+          "expected": 0.7,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.stone.rock",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.metal.ore",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "opening.resources.2",
+          "actual": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "expected": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "passed": true
+        },
+        {
+          "id": "opening.population.2",
+          "actual": [
+            8,
+            20,
+            100
+          ],
+          "expected": [
+            8,
+            20,
+            100
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.ai.2",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.food.fruit",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.food.grain",
+          "actual": 0.5,
+          "expected": 0.5,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.wood.tree",
+          "actual": 0.7,
+          "expected": 0.7,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.stone.rock",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.metal.ore",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "gather.food",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "gather.wood",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "gather.metal",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "built.house",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "built.barracks",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "built.house-capacity",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "trained.pioneer",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "trained.iron_swordsman",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.house",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.barracks",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.worker",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.swordsman",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.paid",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.finished",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.duration",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.prerequisites",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "attack.command",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "attack.centre-damaged",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "winner.ai",
+          "actual": "won",
+          "expected": "won",
+          "passed": true
+        },
+        {
+          "id": "loser.defender",
+          "actual": "defeated",
+          "expected": "defeated",
+          "passed": true
+        },
+        {
+          "id": "no-cheat-command",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "id": "deadline",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        }
+      ],
+      "events": [
+        {
+          "1": {
+            "resources": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "population": [
+              8,
+              20,
+              100
+            ],
+            "ai": false,
+            "rates": {
+              "food.fruit": 1,
+              "food.grain": 0.5,
+              "metal.ore": 0.35,
+              "stone.rock": 0.35,
+              "wood.tree": 0.7
+            }
+          },
+          "2": {
+            "resources": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "population": [
+              8,
+              20,
+              100
+            ],
+            "ai": true,
+            "rates": {
+              "food.fruit": 1,
+              "food.grain": 0.5,
+              "metal.ore": 0.35,
+              "stone.rock": 0.35,
+              "wood.tree": 0.7
+            }
+          },
+          "time": 0,
+          "kind": "opening"
+        },
+        {
+          "time": 19000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 24800,
+          "kind": "built",
+          "name": "structures/epoch_rts/storehouse",
+          "populationLimit": 20
+        },
+        {
+          "time": 33000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 47000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 59000,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 30
+        },
+        {
+          "time": 61000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 75000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 89000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 118000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 118000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 129800,
+          "kind": "built",
+          "name": "structures/epoch_rts/barracks",
+          "populationLimit": 30
+        },
+        {
+          "time": 147000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 147000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 176000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 176000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 177800,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 40
+        },
+        {
+          "time": 205000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 205000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 234000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 234000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 263000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 263000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 274400,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 40
+        },
+        {
+          "time": 277400,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 40
+        },
+        {
+          "time": 292000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 292000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 319000,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 50
+        },
+        {
+          "time": 321000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 321000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 331200,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 50
+        },
+        {
+          "time": 349000,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 50
+        },
+        {
+          "time": 350000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 350000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 379000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 379000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 383800,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 50
+        },
+        {
+          "time": 408000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 408000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 411400,
+          "kind": "built",
+          "name": "structures/epoch_rts/barracks",
+          "populationLimit": 50
+        },
+        {
+          "time": 412400,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 60
+        },
+        {
+          "time": 437000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 437000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 466000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 466000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 525000,
+          "kind": "iron-finished"
+        },
+        {
+          "time": 554000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 554000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 556400,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 70
+        },
+        {
+          "time": 603800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 603800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 603800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 617200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 617200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 617200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 628600,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 80
+        },
+        {
+          "time": 637000,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 90
+        },
+        {
+          "time": 639800,
+          "kind": "built",
+          "name": "structures/epoch_rts/barracks",
+          "populationLimit": 90
+        },
+        {
+          "time": 677800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 677800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 677800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 704800,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 100
+        },
+        {
+          "time": 706200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 706200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 706200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 715800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 715800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 715800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 766800,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 766800,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 766800,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 845400,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 845400,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 845400,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 847000,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 847000,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 847000,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 858800,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 858800,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 858800,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 876000,
+          "kind": "enemy-centre-damaged",
+          "hp": 994.8343934800001
+        },
+        {
+          "time": 894600,
+          "kind": "won",
+          "player": 2
+        }
+      ],
+      "commands": {
+        "gather": 197,
+        "construct": 18,
+        "stop": 81,
+        "repair": 78,
+        "train": 42,
+        "unset-rallypoint": 35,
+        "set-dropsite-sharing": 1,
+        "returnresource": 60,
+        "stop-production": 5,
+        "research": 1,
+        "attack-request": 1,
+        "walk-to-range": 22,
+        "aichat": 1,
+        "attack-walk": 6,
+        "attack": 85
+      },
+      "ironPayment": {
+        "time": 453600,
+        "type": "research",
+        "template": "phase_epoch_iron",
+        "count": 1,
+        "cost": {
+          "food": 400,
+          "wood": 200,
+          "stone": 0,
+          "metal": 100
+        },
+        "bronze": true,
+        "barracks": true
+      },
+      "paymentCount": 61,
+      "gathered": {
+        "vegetarianFood": 5803,
+        "food": 5803,
+        "wood": 2843,
+        "stone": 1037,
+        "metal": 1692
+      },
+      "maxUnits": {
+        "structures/epoch_rts/civil_centre": 1,
+        "units/epoch_rts/pioneer": 54,
+        "units/epoch_rts/spearman": 2,
+        "foundation|structures/epoch_rts/storehouse": 1,
+        "foundation|structures/epoch_rts/house": 2,
+        "structures/epoch_rts/storehouse": 1,
+        "structures/epoch_rts/house": 8,
+        "foundation|structures/epoch_rts/barracks": 1,
+        "structures/epoch_rts/barracks": 3,
+        "foundation|structures/epoch_rts/field": 2,
+        "structures/epoch_rts/field": 5,
+        "units/epoch_rts/slinger": 15,
+        "units/epoch_rts/iron_swordsman": 12
+      }
+    },
+    "replay_count": 0,
+    "visual_requested": false,
+    "visual_verified": false,
+    "replay_match": true,
+    "replay_complete": true,
+    "binary_sha256": "531981d016596b0abde110cd239feaed98998c3fdaa837d0fa8d6f75482c81ef",
+    "public_zip_sha256": "ccb24dedee399e6d2810ccb62b0b1b77a937999d9f1dedffbc189b3e359f2429",
+    "passed": true,
+    "run_id": "20260926T004510728304Z-validation-7",
+    "artifacts_sha256": {
+      "engine.log": "f950d97105af86f3daf0aa872ba90d9f7880280f4f7db439d374ad5a0cb56b5f",
+      "interestinglog.html": "313c8eca7f5eebbe096220af68328732d30bb972ecef68cafe1e7a674337b8be",
+      "result.json": "8023501ca00adadb9634e9c7d193f5eaf009008bed5b008f583bc65dbe3d1a6e",
+      "source-manifest.json": "43e0eb931ede34d05d292ae8704a68c9bf75335e4aafcaf6caaf3a5e55684b74"
+    }
+  },
+  {
+    "mode": "validation",
+    "seed": 42,
+    "ai": "epoch_petra",
+    "command": [
+      "<home>/Documents/Codex/2026-09-06/new-chat/work/runtime/0 A.D..app/Contents/MacOS/pyrogenesis",
+      "-mod=mod",
+      "-mod=public",
+      "-mod=epoch_rts",
+      "-autostart=random/epoch_t12_validation",
+      "-autostart-players=2",
+      "-autostart-size=192",
+      "-autostart-seed=42",
+      "-autostart-aiseed=42",
+      "-autostart-civ=1:epoch",
+      "-autostart-civ=2:epoch",
+      "-autostart-ai=2:epoch_petra",
+      "-autostart-aidiff=2:3",
+      "-conf=windowed:true",
+      "-xres=1280",
+      "-yres=800",
+      "-conf=locale:zh_TW",
+      "-conf=pauseonfocusloss:false",
+      "-autostart-player=-1",
+      "-autostart-speed=20"
+    ],
+    "exit_code": 0,
+    "errors": [],
+    "html_error": false,
+    "source_unchanged": true,
+    "suite": {
+      "mode": "validation",
+      "passed": true,
+      "reason": "game-ended",
+      "time": 884600,
+      "checks": [
+        {
+          "id": "opening.resources.1",
+          "actual": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "expected": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "passed": true
+        },
+        {
+          "id": "opening.population.1",
+          "actual": [
+            8,
+            20,
+            100
+          ],
+          "expected": [
+            8,
+            20,
+            100
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.ai.1",
+          "actual": false,
+          "expected": false,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.food.fruit",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.food.grain",
+          "actual": 0.5,
+          "expected": 0.5,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.wood.tree",
+          "actual": 0.7,
+          "expected": 0.7,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.stone.rock",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.metal.ore",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "opening.resources.2",
+          "actual": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "expected": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "passed": true
+        },
+        {
+          "id": "opening.population.2",
+          "actual": [
+            8,
+            20,
+            100
+          ],
+          "expected": [
+            8,
+            20,
+            100
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.ai.2",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.food.fruit",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.food.grain",
+          "actual": 0.5,
+          "expected": 0.5,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.wood.tree",
+          "actual": 0.7,
+          "expected": 0.7,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.stone.rock",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.metal.ore",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "gather.food",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "gather.wood",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "gather.metal",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "built.house",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "built.barracks",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "built.house-capacity",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "trained.pioneer",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "trained.iron_swordsman",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.house",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.barracks",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.worker",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.swordsman",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.paid",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.finished",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.duration",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.prerequisites",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "attack.command",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "attack.centre-damaged",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "winner.ai",
+          "actual": "won",
+          "expected": "won",
+          "passed": true
+        },
+        {
+          "id": "loser.defender",
+          "actual": "defeated",
+          "expected": "defeated",
+          "passed": true
+        },
+        {
+          "id": "no-cheat-command",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "id": "deadline",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        }
+      ],
+      "events": [
+        {
+          "1": {
+            "resources": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "population": [
+              8,
+              20,
+              100
+            ],
+            "ai": false,
+            "rates": {
+              "food.fruit": 1,
+              "food.grain": 0.5,
+              "metal.ore": 0.35,
+              "stone.rock": 0.35,
+              "wood.tree": 0.7
+            }
+          },
+          "2": {
+            "resources": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "population": [
+              8,
+              20,
+              100
+            ],
+            "ai": true,
+            "rates": {
+              "food.fruit": 1,
+              "food.grain": 0.5,
+              "metal.ore": 0.35,
+              "stone.rock": 0.35,
+              "wood.tree": 0.7
+            }
+          },
+          "time": 0,
+          "kind": "opening"
+        },
+        {
+          "time": 19000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 25400,
+          "kind": "built",
+          "name": "structures/epoch_rts/storehouse",
+          "populationLimit": 20
+        },
+        {
+          "time": 33000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 47000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 56600,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 30
+        },
+        {
+          "time": 61000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 75000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 89000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 116800,
+          "kind": "built",
+          "name": "structures/epoch_rts/barracks",
+          "populationLimit": 30
+        },
+        {
+          "time": 118000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 118000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 147000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 147000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 170600,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 40
+        },
+        {
+          "time": 176000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 176000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 205000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 205000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 234000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 234000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 263000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 263000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 279600,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 40
+        },
+        {
+          "time": 292000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 292000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 296800,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 40
+        },
+        {
+          "time": 315000,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 50
+        },
+        {
+          "time": 321000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 321000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 325200,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 50
+        },
+        {
+          "time": 344200,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 50
+        },
+        {
+          "time": 350000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 350000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 379000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 379000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 400200,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 60
+        },
+        {
+          "time": 408000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 408000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 427400,
+          "kind": "built",
+          "name": "structures/epoch_rts/barracks",
+          "populationLimit": 60
+        },
+        {
+          "time": 437000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 437000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 459600,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 60
+        },
+        {
+          "time": 466000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 466000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 525000,
+          "kind": "iron-finished"
+        },
+        {
+          "time": 548800,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 70
+        },
+        {
+          "time": 554000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 554000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 575400,
+          "kind": "built",
+          "name": "structures/epoch_rts/storehouse",
+          "populationLimit": 70
+        },
+        {
+          "time": 584800,
+          "kind": "built",
+          "name": "structures/epoch_rts/barracks",
+          "populationLimit": 70
+        },
+        {
+          "time": 603800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 603800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 603800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 617200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 617200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 617200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 623600,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 80
+        },
+        {
+          "time": 628600,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 90
+        },
+        {
+          "time": 677800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 677800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 677800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 700000,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 100
+        },
+        {
+          "time": 706200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 706200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 706200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 724400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 724400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 724400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 751800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 751800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 751800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 831000,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 831000,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 831000,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 832600,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 832600,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 832600,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 844400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 844400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 844400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 867000,
+          "kind": "enemy-centre-damaged",
+          "hp": 991.3906558000002
+        },
+        {
+          "time": 884600,
+          "kind": "won",
+          "player": 2
+        }
+      ],
+      "commands": {
+        "gather": 206,
+        "construct": 105,
+        "stop": 102,
+        "repair": 84,
+        "train": 42,
+        "unset-rallypoint": 35,
+        "set-dropsite-sharing": 2,
+        "returnresource": 63,
+        "stop-production": 5,
+        "research": 1,
+        "attack-request": 1,
+        "walk-to-range": 22,
+        "aichat": 1,
+        "attack-walk": 5,
+        "attack": 85
+      },
+      "ironPayment": {
+        "time": 453600,
+        "type": "research",
+        "template": "phase_epoch_iron",
+        "count": 1,
+        "cost": {
+          "food": 400,
+          "wood": 200,
+          "stone": 0,
+          "metal": 100
+        },
+        "bronze": true,
+        "barracks": true
+      },
+      "paymentCount": 63,
+      "gathered": {
+        "vegetarianFood": 5735,
+        "food": 5735,
+        "wood": 3007,
+        "stone": 1021,
+        "metal": 1748
+      },
+      "maxUnits": {
+        "structures/epoch_rts/civil_centre": 1,
+        "units/epoch_rts/pioneer": 54,
+        "units/epoch_rts/spearman": 2,
+        "foundation|structures/epoch_rts/storehouse": 1,
+        "foundation|structures/epoch_rts/house": 2,
+        "structures/epoch_rts/storehouse": 2,
+        "structures/epoch_rts/house": 8,
+        "foundation|structures/epoch_rts/barracks": 1,
+        "structures/epoch_rts/barracks": 3,
+        "foundation|structures/epoch_rts/field": 2,
+        "structures/epoch_rts/field": 5,
+        "units/epoch_rts/slinger": 15,
+        "units/epoch_rts/iron_swordsman": 12
+      }
+    },
+    "replay_count": 1,
+    "visual_requested": true,
+    "visual_verified": false,
+    "replay_match": null,
+    "replay_complete": null,
+    "binary_sha256": "531981d016596b0abde110cd239feaed98998c3fdaa837d0fa8d6f75482c81ef",
+    "public_zip_sha256": "ccb24dedee399e6d2810ccb62b0b1b77a937999d9f1dedffbc189b3e359f2429",
+    "passed": true,
+    "run_id": "20260926T004607948253Z-validation-42",
+    "artifacts_sha256": {
+      "commands-0.txt": "71aa6e00330a4d812571c0d6a629b443fcdffca1ac75688d1324d73ac72ef23a",
+      "engine.log": "9da81c0cb3de5f282129736b2008cc914bbe66ed92156ae3dc46d850b5b64cbb",
+      "interestinglog.html": "1fb6192b6779040ce0e9f40b5aacb4f42cc00caafba3cc7847250210f2e1902d",
+      "result.json": "ce3a5bffe6a9035d204ddf006867fedbc2a90453261925eb6519a242022247d1",
+      "source-manifest.json": "43e0eb931ede34d05d292ae8704a68c9bf75335e4aafcaf6caaf3a5e55684b74"
+    }
+  },
+  {
+    "mode": "validation",
+    "seed": 42,
+    "ai": "epoch_petra",
+    "command": [
+      "<home>/Documents/Codex/2026-09-06/new-chat/work/runtime/0 A.D..app/Contents/MacOS/pyrogenesis",
+      "-mod=mod",
+      "-mod=public",
+      "-mod=epoch_rts",
+      "-autostart=random/epoch_t12_validation",
+      "-autostart-players=2",
+      "-autostart-size=192",
+      "-autostart-seed=42",
+      "-autostart-aiseed=42",
+      "-autostart-civ=1:epoch",
+      "-autostart-civ=2:epoch",
+      "-autostart-ai=2:epoch_petra",
+      "-autostart-aidiff=2:3",
+      "-conf=windowed:true",
+      "-xres=1280",
+      "-yres=800",
+      "-conf=locale:zh_TW",
+      "-conf=pauseonfocusloss:false",
+      "-autostart-player=-1",
+      "-autostart-speed=20"
+    ],
+    "exit_code": 0,
+    "errors": [],
+    "html_error": false,
+    "source_unchanged": true,
+    "suite": {
+      "mode": "validation",
+      "passed": true,
+      "reason": "game-ended",
+      "time": 884600,
+      "checks": [
+        {
+          "id": "opening.resources.1",
+          "actual": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "expected": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "passed": true
+        },
+        {
+          "id": "opening.population.1",
+          "actual": [
+            8,
+            20,
+            100
+          ],
+          "expected": [
+            8,
+            20,
+            100
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.ai.1",
+          "actual": false,
+          "expected": false,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.food.fruit",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.food.grain",
+          "actual": 0.5,
+          "expected": 0.5,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.wood.tree",
+          "actual": 0.7,
+          "expected": 0.7,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.stone.rock",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.1.metal.ore",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "opening.resources.2",
+          "actual": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "expected": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "passed": true
+        },
+        {
+          "id": "opening.population.2",
+          "actual": [
+            8,
+            20,
+            100
+          ],
+          "expected": [
+            8,
+            20,
+            100
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.ai.2",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.food.fruit",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.food.grain",
+          "actual": 0.5,
+          "expected": 0.5,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.wood.tree",
+          "actual": 0.7,
+          "expected": 0.7,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.stone.rock",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "opening.gatherRate.2.metal.ore",
+          "actual": 0.35,
+          "expected": 0.35,
+          "passed": true
+        },
+        {
+          "id": "gather.food",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "gather.wood",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "gather.metal",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "built.house",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "built.barracks",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "built.house-capacity",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "trained.pioneer",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "trained.iron_swordsman",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.house",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.barracks",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.worker",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "paid.swordsman",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.paid",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.finished",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.duration",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "iron.prerequisites",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "attack.command",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "attack.centre-damaged",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "id": "winner.ai",
+          "actual": "won",
+          "expected": "won",
+          "passed": true
+        },
+        {
+          "id": "loser.defender",
+          "actual": "defeated",
+          "expected": "defeated",
+          "passed": true
+        },
+        {
+          "id": "no-cheat-command",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "id": "deadline",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        }
+      ],
+      "events": [
+        {
+          "1": {
+            "resources": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "population": [
+              8,
+              20,
+              100
+            ],
+            "ai": false,
+            "rates": {
+              "food.fruit": 1,
+              "food.grain": 0.5,
+              "metal.ore": 0.35,
+              "stone.rock": 0.35,
+              "wood.tree": 0.7
+            }
+          },
+          "2": {
+            "resources": {
+              "food": 300,
+              "wood": 250,
+              "stone": 100,
+              "metal": 0
+            },
+            "population": [
+              8,
+              20,
+              100
+            ],
+            "ai": true,
+            "rates": {
+              "food.fruit": 1,
+              "food.grain": 0.5,
+              "metal.ore": 0.35,
+              "stone.rock": 0.35,
+              "wood.tree": 0.7
+            }
+          },
+          "time": 0,
+          "kind": "opening"
+        },
+        {
+          "time": 19000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 25400,
+          "kind": "built",
+          "name": "structures/epoch_rts/storehouse",
+          "populationLimit": 20
+        },
+        {
+          "time": 33000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 47000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 56600,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 30
+        },
+        {
+          "time": 61000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 75000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 89000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 116800,
+          "kind": "built",
+          "name": "structures/epoch_rts/barracks",
+          "populationLimit": 30
+        },
+        {
+          "time": 118000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 118000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 147000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 147000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 170600,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 40
+        },
+        {
+          "time": 176000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 176000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 205000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 205000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 234000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 234000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 263000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 263000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 279600,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 40
+        },
+        {
+          "time": 292000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 292000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 296800,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 40
+        },
+        {
+          "time": 315000,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 50
+        },
+        {
+          "time": 321000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 321000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 325200,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 50
+        },
+        {
+          "time": 344200,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 50
+        },
+        {
+          "time": 350000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 350000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 379000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 379000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 400200,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 60
+        },
+        {
+          "time": 408000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 408000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 427400,
+          "kind": "built",
+          "name": "structures/epoch_rts/barracks",
+          "populationLimit": 60
+        },
+        {
+          "time": 437000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 437000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 459600,
+          "kind": "built",
+          "name": "structures/epoch_rts/field",
+          "populationLimit": 60
+        },
+        {
+          "time": 466000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 466000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 525000,
+          "kind": "iron-finished"
+        },
+        {
+          "time": 548800,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 70
+        },
+        {
+          "time": 554000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 554000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 575400,
+          "kind": "built",
+          "name": "structures/epoch_rts/storehouse",
+          "populationLimit": 70
+        },
+        {
+          "time": 584800,
+          "kind": "built",
+          "name": "structures/epoch_rts/barracks",
+          "populationLimit": 70
+        },
+        {
+          "time": 603800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 603800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 603800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 613000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 617200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 617200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 617200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 623600,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 80
+        },
+        {
+          "time": 628600,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 90
+        },
+        {
+          "time": 677800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 677800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 677800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 687000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 700000,
+          "kind": "built",
+          "name": "structures/epoch_rts/house",
+          "populationLimit": 100
+        },
+        {
+          "time": 706200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 706200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 706200,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 724400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 724400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 724400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 751800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 751800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 751800,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 761000,
+          "kind": "trained",
+          "name": "units/epoch_rts/pioneer"
+        },
+        {
+          "time": 831000,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 831000,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 831000,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 832600,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 832600,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 832600,
+          "kind": "trained",
+          "name": "units/epoch_rts/slinger"
+        },
+        {
+          "time": 844400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 844400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 844400,
+          "kind": "trained",
+          "name": "units/epoch_rts/iron_swordsman"
+        },
+        {
+          "time": 867000,
+          "kind": "enemy-centre-damaged",
+          "hp": 991.3906558000002
+        },
+        {
+          "time": 884600,
+          "kind": "won",
+          "player": 2
+        }
+      ],
+      "commands": {
+        "gather": 206,
+        "construct": 105,
+        "stop": 102,
+        "repair": 84,
+        "train": 42,
+        "unset-rallypoint": 35,
+        "set-dropsite-sharing": 2,
+        "returnresource": 63,
+        "stop-production": 5,
+        "research": 1,
+        "attack-request": 1,
+        "walk-to-range": 22,
+        "aichat": 1,
+        "attack-walk": 5,
+        "attack": 85
+      },
+      "ironPayment": {
+        "time": 453600,
+        "type": "research",
+        "template": "phase_epoch_iron",
+        "count": 1,
+        "cost": {
+          "food": 400,
+          "wood": 200,
+          "stone": 0,
+          "metal": 100
+        },
+        "bronze": true,
+        "barracks": true
+      },
+      "paymentCount": 63,
+      "gathered": {
+        "vegetarianFood": 5735,
+        "food": 5735,
+        "wood": 3007,
+        "stone": 1021,
+        "metal": 1748
+      },
+      "maxUnits": {
+        "structures/epoch_rts/civil_centre": 1,
+        "units/epoch_rts/pioneer": 54,
+        "units/epoch_rts/spearman": 2,
+        "foundation|structures/epoch_rts/storehouse": 1,
+        "foundation|structures/epoch_rts/house": 2,
+        "structures/epoch_rts/storehouse": 2,
+        "structures/epoch_rts/house": 8,
+        "foundation|structures/epoch_rts/barracks": 1,
+        "structures/epoch_rts/barracks": 3,
+        "foundation|structures/epoch_rts/field": 2,
+        "structures/epoch_rts/field": 5,
+        "units/epoch_rts/slinger": 15,
+        "units/epoch_rts/iron_swordsman": 12
+      }
+    },
+    "replay_count": 1,
+    "visual_requested": true,
+    "visual_verified": false,
+    "replay_match": null,
+    "replay_complete": null,
+    "binary_sha256": "531981d016596b0abde110cd239feaed98998c3fdaa837d0fa8d6f75482c81ef",
+    "public_zip_sha256": "ccb24dedee399e6d2810ccb62b0b1b77a937999d9f1dedffbc189b3e359f2429",
+    "passed": true,
+    "run_id": "20260927T023449080415Z-validation-42",
+    "artifacts_sha256": {
+      "commands-0.txt": "0bf8b05fe62e867061ac7cc48d1a358cba53ea0045ef20c78f6e2be4669d9b53",
+      "engine.log": "a3530a145df6e1da0be8ecd030cba26cd90eb716514e2b2528ec215a3281f74d",
+      "interestinglog.html": "52c9f487c78a132026c02b02ae1a3ac6a44640d92de8acec9b9938f69be85e5f",
+      "result.json": "ce3a5bffe6a9035d204ddf006867fedbc2a90453261925eb6519a242022247d1",
+      "source-manifest.json": "43e0eb931ede34d05d292ae8704a68c9bf75335e4aafcaf6caaf3a5e55684b74"
+    }
+  }
+]

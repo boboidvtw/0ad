@@ -1,0 +1,60 @@
+{
+  "review_date": "2026-09-27",
+  "scope": "Actual GUI, observer, 20x, zh_TW; manual visual review separate from runner visual_verified=false",
+  "actions": [
+    "minimap navigation",
+    "unit selection",
+    "F2 screenshots",
+    "Cmd-Q normal exit"
+  ],
+  "not_tested": [
+    "1x full match",
+    "AI setup menu",
+    "full HUD operation",
+    "attack-in-progress screenshot"
+  ],
+  "screenshots": [
+    {
+      "file": "t12-historical-base.png",
+      "original": "screenshot0001.png",
+      "sha256": "cf5be4a06bf3d94a07924d46f10d796e4aa893c0402fafa2e8a82e66c7d31d8b",
+      "description": "2026-09-22 AI base; Iron and victory notifications",
+      "run_id": "20260922T093404473733Z-validation-42"
+    },
+    {
+      "file": "t12-historical-enemy-site.png",
+      "original": "screenshot0002.png",
+      "sha256": "305e127dfc05b0474af480e1b8186b6c7d4ba70fec93bd094f9eecafb7b94ab0",
+      "description": "2026-09-22 former enemy centre site; no victory notification visible",
+      "run_id": "20260922T093404473733Z-validation-42"
+    },
+    {
+      "file": "t12-historical-slinger.png",
+      "original": "screenshot0003.png",
+      "sha256": "bf27f852d39732b45d2066a68a0800f00a5e14c1ca338be9c272bbaccebf554f",
+      "description": "2026-09-22 slinger HUD",
+      "run_id": "20260922T093404473733Z-validation-42"
+    },
+    {
+      "file": "t12-base.png",
+      "original": "screenshot0004.png",
+      "sha256": "8d3ff13344534a1158dc35b4a3f77c0e3c6e41f6f5641fa3e83ed676dcdff2fe",
+      "description": "2026-09-27 AI base, farming, wood and mining workers",
+      "run_id": "20260927T023449080415Z-validation-42"
+    },
+    {
+      "file": "t12-victory.png",
+      "original": "screenshot0005.png",
+      "sha256": "e3c10dcdc949f5936e2093e982484578c29c5707fc064b6e26d554508556757c",
+      "description": "2026-09-27 Iron/victory/defeat notifications and destroyed centre site",
+      "run_id": "20260927T023449080415Z-validation-42"
+    },
+    {
+      "file": "t12-swordsman.png",
+      "original": "screenshot0006.png",
+      "sha256": "e31451b0e0bf4a7afce64a6067211d49b190ae756f95e529bfa88ed245765da7",
+      "description": "2026-09-27 Iron Swordsman HUD, 137/140 HP",
+      "run_id": "20260927T023449080415Z-validation-42"
+    }
+  ]
+}

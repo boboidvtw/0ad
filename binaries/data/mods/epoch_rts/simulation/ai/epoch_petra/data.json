@@ -1,0 +1,7 @@
+{
+  "name": "Epoch Petra (experimental)",
+  "description": "R28 Petra adapter for the bounded Epoch Bronze-to-Iron prototype. T12 validation in progress.",
+  "constructor": "EpochPetraBot",
+  "filename": "_epochbot.js",
+  "useShared": true
+}

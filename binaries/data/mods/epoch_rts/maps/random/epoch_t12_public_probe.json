@@ -1,0 +1,23 @@
+{
+  "settings": {
+    "Name": "Epoch T12 public read-only probe",
+    "Script": "mainland.js",
+    "Description": "A typical map without any water.",
+    "Preview": "mainland.png",
+    "Keywords": [
+      "multiplayer"
+    ],
+    "SupportedBiomes": "generic/",
+    "CircularMap": true,
+    "PlayerPlacements": [
+      "circle",
+      "river",
+      "groupedLines",
+      "randomGroup",
+      "stronghold"
+    ],
+    "TriggerScripts": [
+      "scripts/epoch_rts/T12Probe.js"
+    ]
+  }
+}

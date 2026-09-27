@@ -1,0 +1,234 @@
+{
+  "date": "2026-09-22",
+  "head": "d372345",
+  "scope": "Handoff audit and preliminary unmodified Petra probes; not T12 acceptance",
+  "runtime": "0.28.0",
+  "binary_sha256": "531981d016596b0abde110cd239feaed98998c3fdaa837d0fa8d6f75482c81ef",
+  "public_zip_sha256": "ccb24dedee399e6d2810ccb62b0b1b77a937999d9f1dedffbc189b3e359f2429",
+  "t11_manifest_files": 105,
+  "t11_manifest_mismatches": [],
+  "t10_preserved_mod_files": 82,
+  "probe_runs": [
+    {
+      "run_id": "20260922T004759Z/42",
+      "map": "maps/random/epoch_frontier_duel",
+      "settings": {
+        "Ceasefire": 0,
+        "CheatsEnabled": true,
+        "CircularMap": true,
+        "DisableSpies": false,
+        "DisableTreasures": false,
+        "LastManStanding": false,
+        "LockTeams": false,
+        "RevealMap": false,
+        "ExploreMap": false,
+        "AllyView": false,
+        "mapName": "Epoch RTS - Frontier Duel",
+        "mapPreview": "cropped:0.78125,0.5859375:session/icons/mappreview/nopreview.png",
+        "Size": 192,
+        "Nomad": false,
+        "PlayerData": [
+          {
+            "AI": false,
+            "Civ": "epoch",
+            "Color": {
+              "r": 10,
+              "g": 10,
+              "b": 190
+            },
+            "Name": "anonymous",
+            "Team": -1
+          },
+          {
+            "AI": "petra",
+            "AIDiff": 3,
+            "AIBehavior": "balanced",
+            "Civ": "epoch",
+            "Color": {
+              "r": 230,
+              "g": 10,
+              "b": 10
+            },
+            "Name": "Frontier Defender",
+            "Team": -1
+          }
+        ],
+        "PopulationCapType": "player",
+        "PopulationCap": 300,
+        "Seed": 42,
+        "AISeed": 42,
+        "StartingResources": 300,
+        "TriggerScripts": [
+          "scripts/NonVisualTrigger.js",
+          "scripts/TriggerHelper.js",
+          "scripts/ConquestCommon.js",
+          "scripts/Conquest.js",
+          "scripts/epoch_rts/FrontierDuel.js"
+        ],
+        "VictoryConditions": [
+          "conquest"
+        ]
+      },
+      "last_stdout_turn": 3028,
+      "replay_turn_count": 3030,
+      "cmd_record_count": 0,
+      "exit_code": -15,
+      "log_sha256": "a9e0fb3987f462324938c97b4c3ef677932e4bb70e570991af6e6f4af58f4838",
+      "replay_sha256": "663d12a06fb38e364be38d65a5ce76409479f8f8f518124c2da24d6b212d8fa7",
+      "errors_or_warnings": []
+    },
+    {
+      "run_id": "20260922T004759Z/7",
+      "map": "maps/random/epoch_frontier_duel",
+      "settings": {
+        "Ceasefire": 0,
+        "CheatsEnabled": true,
+        "CircularMap": true,
+        "DisableSpies": false,
+        "DisableTreasures": false,
+        "LastManStanding": false,
+        "LockTeams": false,
+        "RevealMap": false,
+        "ExploreMap": false,
+        "AllyView": false,
+        "mapName": "Epoch RTS - Frontier Duel",
+        "mapPreview": "cropped:0.78125,0.5859375:session/icons/mappreview/nopreview.png",
+        "Size": 192,
+        "Nomad": false,
+        "PlayerData": [
+          {
+            "AI": false,
+            "Civ": "epoch",
+            "Color": {
+              "r": 10,
+              "g": 10,
+              "b": 190
+            },
+            "Name": "anonymous",
+            "Team": -1
+          },
+          {
+            "AI": "petra",
+            "AIDiff": 3,
+            "AIBehavior": "balanced",
+            "Civ": "epoch",
+            "Color": {
+              "r": 230,
+              "g": 10,
+              "b": 10
+            },
+            "Name": "Frontier Defender",
+            "Team": -1
+          }
+        ],
+        "PopulationCapType": "player",
+        "PopulationCap": 300,
+        "Seed": 7,
+        "AISeed": 7,
+        "StartingResources": 300,
+        "TriggerScripts": [
+          "scripts/NonVisualTrigger.js",
+          "scripts/TriggerHelper.js",
+          "scripts/ConquestCommon.js",
+          "scripts/Conquest.js",
+          "scripts/epoch_rts/FrontierDuel.js"
+        ],
+        "VictoryConditions": [
+          "conquest"
+        ]
+      },
+      "last_stdout_turn": 2553,
+      "replay_turn_count": 2555,
+      "cmd_record_count": 0,
+      "exit_code": -15,
+      "log_sha256": "7cae9d81dab8e5fc8c684dc54ba9a0db83a47ee50c80e695b683362b63c894d0",
+      "replay_sha256": "a8ffbfe18acd117c9804d039ffa004c214af3f6becfad7896b2059e289c8d831",
+      "errors_or_warnings": []
+    },
+    {
+      "run_id": "20260922T004759Z/public-control",
+      "map": "maps/random/mainland",
+      "settings": {
+        "Biome": "generic/alpine",
+        "Ceasefire": 0,
+        "CheatsEnabled": true,
+        "CircularMap": true,
+        "DisableSpies": false,
+        "DisableTreasures": false,
+        "LastManStanding": false,
+        "LockTeams": false,
+        "RevealMap": false,
+        "ExploreMap": false,
+        "AllyView": false,
+        "mapName": "Mainland",
+        "mapPreview": "cropped:0.78125,0.5859375:session/icons/mappreview/mainland.png",
+        "Size": 192,
+        "Nomad": false,
+        "PlayerData": [
+          {
+            "AI": false,
+            "Civ": "athen",
+            "Color": {
+              "r": 10,
+              "g": 10,
+              "b": 190
+            },
+            "Name": "anonymous",
+            "Team": -1
+          },
+          {
+            "AI": "petra",
+            "AIDiff": 3,
+            "AIBehavior": "balanced",
+            "Civ": "athen",
+            "Color": {
+              "r": 230,
+              "g": 10,
+              "b": 10
+            },
+            "Name": "Alcibiades",
+            "Team": -1
+          }
+        ],
+        "PlayerPlacement": "randomGroup",
+        "PopulationCapType": "player",
+        "PopulationCap": 300,
+        "Seed": 42,
+        "AISeed": 42,
+        "StartingResources": 300,
+        "TriggerScripts": [
+          "scripts/NonVisualTrigger.js",
+          "scripts/TriggerHelper.js",
+          "scripts/ConquestCommon.js",
+          "scripts/Conquest.js"
+        ],
+        "VictoryConditions": [
+          "conquest"
+        ]
+      },
+      "last_stdout_turn": 2019,
+      "replay_turn_count": 2021,
+      "cmd_record_count": 0,
+      "exit_code": -15,
+      "log_sha256": "5035b8052ca274c5aa392cfa37f8a7b285fa2e58c22b5ea013534048277c7ddf",
+      "replay_sha256": "7ddac03c31bfc564b23c2d572b264eb787eeee5628d02026e85e06c6283461f5",
+      "errors_or_warnings": []
+    }
+  ],
+  "limitations": [
+    "No AI state or action instrumentation",
+    "Public control also has no cmd records; absence is not proof of inactivity",
+    "No replay execution or GUI acceptance",
+    "CLI autostart enables cheats; no cheat command sent; formal acceptance must verify no economic bonuses",
+    "No architecture selected or AI implementation changed"
+  ],
+  "inspected_public_sources": {
+    "simulation/ai/common-api/gamestate.js": "3bb9c6c1fb3306bbd3d2aa5614d4f8fd6ccdb5db323496b6d4b10ece8b790896",
+    "simulation/ai/petra/headquarters.js": "8db3b41fefa8da38f0c1690d009d0955ddccf286e541a7d47af564387033c540",
+    "simulation/ai/petra/startingStrategy.js": "0df0c35d600b13cfbae1e9ccb02493665aa056316b0c2c9faab672560d12ef4d",
+    "simulation/ai/petra/_petrabot.js": "b7d39186e44ec6da9d736d4503682991c14142343f11c8cc94c8bde42e5d1ad5",
+    "simulation/helpers/InitGame.js": "3e0ac773c0d0c73989dff1e5fe3592f55f16dedf86a474f7b35a673c86cdd4eb",
+    "autostart/autostart.js": "c5705df4ca113e161fd576fbe4d0fa876aa8e6dbc41d26b8e48ac5910ca98435",
+    "autostart/cmd_line_args.js": "ab016ff6eda4791a7af2860d97375acab698c2ffa32579e13e884c2582b59268"
+  }
+}

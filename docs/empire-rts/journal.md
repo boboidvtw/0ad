@@ -180,3 +180,35 @@
 - 5項工具測試、確定性--check、JS語法與來源核對PASS。原生5個PSA均7骨、有限數值且多幀變化；詳見evidence/t11-*。來源程式本機逐項檢視；未使用子代理，未宣稱獨立審查。未重跑T05–T10已完成限定驗收。
 - T11／M4 DONE只限低面數樣板。完整人体rig／所有採集／跑步／動畫過渡／材質／LOD／正式HUD未完成；鷹架仍public。M4／16GB、小場景57–60 FPS僅觀察，T14未驗收。主線下一步T12先定義最小AI及官方R28 Petra介面調查。
 - T07即時防空、90m落地區、精確彈道／停機位／建築避碰限制與T08攻擊gate未完成保留；T16–T18 TODO。沒有付費、push／發布、背景任務或私有記憶同步。交接入口SESSION-HANDOFF-2026-09-22-T11.md，本批本機提交由Git歷史追溯。
+
+### 2026-09-22 T12 接續核對與初步探針
+
+- 核對master d372345、起始clean；T11 manifest105檔符合，T10時82個Mod檔未變，官方R28 binary／public.zip及Mod連結符合。T11／M4限定完成範圍不變，未重做T05–T11驗收。
+- 實際public.zip顯示Petra的structures/{civ}路徑與epoch_rts目錄不同；phase_epoch_iron前綴符合，完整phase鏈與class仍需調查。未修改AI、模板、C++或上游public。
+- 兩seed短探針後加入固定AI seed的兩局與官方athen對照。重播header確認Petra設定，但三份重播均無cmd記錄；正向觀測尚未建立，不能推論epoch AI失效或相容。所有場次受控停止，未做重播執行或GUI。
+- 最小候選驗收、來源雜湊、失敗／限制與下一步寫入t12-ai-preflight.md及evidence/t12-preflight.json。T12／M5 IN_PROGRESS僅代表調查開工，AI經營／升級／進攻未完成。
+- 本次只本機文件與探針紀錄，未commit／push；沒有背景任務。下一步先完成官方Petra的有效AI行為觀測，再選接入架構。
+
+### 2026-09-24 T12 未提交接續檢查點
+
+- 使用者要求新session接續指令，將目前工程與證據保存在SESSION-HANDOFF-2026-09-24-T12.md。HEAD仍d372345；本輪T12未commit／push。
+- 09-22已完成局部Petra適配：AI自身的模板路徑／phase链與進攻plan分類；未改舊Mod模板或C++。原生Petra實際能經營，早期無cmd重播不能推論AI停擺。
+- 最終兩seed各37項PASS，884.6／894.6秒勝利；兩次重播suite相同、自然EOF。GUI37項與seed42 suite相同、exit0、無錯誤／警告；人工看過基地、升級／勝利及投石兵HUD。截圖尚未整理至evidence。
+- 本日唯讀再核對5份113檔manifest完全相同且符合現有來源；T11的105個manifest檔仍相同。沒有pyrogenesis进程。
+- T12 PARTIAL：尚待完整審查、工具驗證／必要回歸、公開證據／GUI紀錄及文件定稿。未追蹤profile.txt／profile2.jsonp留原位，勿誤提交或刪除。無背景任務或排程。
+
+
+### 2026-09-26～27 T12 限定驗收收尾
+
+- 依09-24交接，先核對HEAD d372345、全部未提交變更、官方0.28.0 binary/public.zip及五場113檔來源。T11 manifest105檔仍相同；保留profile.txt/profile2.jsonp，未刪、未stage／commit。
+- 本機逐檔審查adapter、地圖、觀測、兩runner及測試；查對官方R28 phase、attackPlan collections／buildOrders、TechnologyManager研究事件及Commands正常交易。未使用子代理，不宣稱獨立審查；AI／C++／既有模板未改。
+- 修正parser忽略損壞frame的缺口，新增房屋容量驗收。8項Python測試、Node instance隔離／collection mock及JS語法PASS；非以mock替代引擎。
+- 最終兩seed各38項PASS，884.6／894.6秒AI勝利；兩重播suite相同／EOF／exit0，兩GUI引擎場均38項／exit0。09-27補拍採集、勝利與鐵刃步兵137/140HP HUD，Cmd-Q正常退出；全部最終場來源113檔相同、無錯誤／警告。
+- 官方athen／Petra回歸125個sample、1241秒，經營／建造／生產／升級有實際證據；引擎自然exit0，因未到1800秒標記，probe complete=false／runner exit1仍原樣保存。另11項正向回歸PASS，不混稱定時觀測完成。
+- 整理evidence/t12-*來源、結果、失敗hash、6張原圖及GUI紀錄；更正09-22第二張截圖沒有勝利通知。初步調查與旧交接加歷史標記，定稿t12-ai-acceptance.md、baseline與progress。
+- T12標限定DONE，M5仍IN_PROGRESS；未重做T05–T11，未開T13。沒有push／發布、付費或背景排程。完整原始證據留work，公開摘要去除個人絕對路徑；本批全部未commit。收尾交接SESSION-HANDOFF-2026-09-27-T12.md。
+
+### T12 本機提交
+
+- 使用者選擇「先做T12本機commit」，明確授權限定提交，不push。再次核對T12來源113檔、額外工具3檔及T11保留105檔均符合manifest；只調整文件提交狀態，未改已驗收程式，因此不重跑引擎。
+- 精確納入T12 Mod、runner、測試、文件及證據；profile.txt／profile2.jsonp與work不納入。提交識別以本紀錄所在Git commit為準，父提交d372345。T13未開工。

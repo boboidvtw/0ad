@@ -1,0 +1,76 @@
+{
+  "date": "2026-09-27",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.9.6",
+  "node": "v26.0.0",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "tools/epoch-rts/test-t12-tools.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_archived_successful_logs (__main__.FramingTests) ... ok\ntest_failed_suite_is_retained (__main__.FramingTests) ... ok\ntest_inconsistent_pass_and_empty_checks (__main__.FramingTests) ... ok\ntest_invalid_frame_types (__main__.FramingTests) ... ok\ntest_malformed_extra_frame_cannot_be_ignored (__main__.FramingTests) ... ok\ntest_missing_duplicate_and_reordered (__main__.FramingTests) ... ok\ntest_roundtrip_with_log_noise (__main__.FramingTests) ... ok\ntest_truncated_payload_and_no_result (__main__.FramingTests) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.002s\n\nOK\n"
+    },
+    {
+      "command": [
+        "node",
+        "tools/epoch-rts/test-t12-adapter.cjs"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: instance isolation, phase mapping, Bronze gate, collection lifecycle, build orders, idempotence; mocked API, not engine acceptance\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "binaries/data/mods/epoch_rts/maps/scripts/epoch_rts/T12Validation.js"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "binaries/data/mods/epoch_rts/maps/scripts/epoch_rts/T12Probe.js"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "binaries/data/mods/epoch_rts/simulation/ai/epoch_petra/_epochbot.js"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "passed": true,
+  "closeout_audit": {
+    "git_diff_check": "PASS",
+    "documentation_relative_links_checked": 70,
+    "documentation_relative_links": "PASS",
+    "final_source_files_checked": 113,
+    "additional_tool_files_checked": 3,
+    "t11_preserved_files_checked": 105,
+    "screenshot_hashes_checked": 6,
+    "public_evidence_absolute_personal_paths_absent": true,
+    "game_processes_running": 0,
+    "git_index_empty": true,
+    "profile_artifacts_present": [
+      "profile.txt",
+      "profile2.jsonp"
+    ],
+    "head": "d3723459714a6b140572ee1dd3568bf057d1a2f0",
+    "commit_created": false,
+    "push_performed": false
+  }
+}
