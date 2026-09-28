@@ -212,3 +212,31 @@
 
 - 使用者選擇「先做T12本機commit」，明確授權限定提交，不push。再次核對T12來源113檔、額外工具3檔及T11保留105檔均符合manifest；只調整文件提交狀態，未改已驗收程式，因此不重跑引擎。
 - 精確納入T12 Mod、runner、測試、文件及證據；profile.txt／profile2.jsonp與work不納入。提交識別以本紀錄所在Git commit為準，父提交d372345。T13未開工。
+
+### 2026-09-27 T13 開工
+
+- 使用者確認繼續T13；核對46045f8、僅兩profile未追蹤，官方R28 binary/public.zip雜湊符合T12。定義t13-save-network.md，不重做T05–T12。
+- 查對實際public.zip的autostart與存檔GUI，以及官方Gitea v0.28.0的SavedGame、GameSetup、Paths與Network來源。GitHub舊鏡像無R28，改用官方Gitea。計畫獨立測試Mod與-writableRoot app副本，避免共享日誌覆寫；未改官方來源。
+
+### 2026-09-28 — T13 原生存讀檔與網路實測（進行中）
+- 核對HEAD 46045f8，保留既有profiles；官方R28 binary/public.zip hash與T12相同，codesign驗證成功。
+- 原生存檔在120/480/700秒成功；480秒讀檔的列明狀態完全一致。觀測器在讀檔後捕捉舊Trigger實例，漏記付款，已改為每次正常指令時查詢目前Trigger，新增生命週期mock回歸；沒有改AI決策。
+- 原生athen/Petra對照同樣出現不中斷場與讀檔續局的最終狀態差異（1575.2秒對1552.2秒），載入瞬間一致、兩場同一勝方、無ERROR/WARNING。因此不把未證實的逐步續局一致性寫成PASS；後續須分開報告功能續局和相同行為。
+- 放棄app副本+writableRoot方式：副本曾退出-9且缺少可判定原因的日誌；副本新增資源會破壞簽章。改用未修改官方app、每程序-unique-logs、原生獨立replay目錄及各自stdout/work目錄。共用user設定只讀CLI覆蓋，system_info/userreport診斷檔共用，不宣稱全使用者目錄隔離。
+- 首次讀檔bootstrap未載入（mainmenu使用ES module與明列腳本，不會讀任意pregame目錄檔）；改用可選測試Mod的最小page_pregame入口呼叫官方StartSavedGame。失敗產物保留work/t13-save。
+- 最終seed7第一次回歸（20260928T092918101412Z-7）在共同final後發生主機送封包失敗；整局快照及原生hash一致，但no_errors=False，保留FAIL。調整僅network模式的GUI關閉順序為主機3秒、client10秒，讓server關閉時peer仍存在；新增角色／延遲／save-load分支mock，重新跑seed7。舊GUI來源封存work/t13-source-before-network-exit，存讀檔矩陣不因這個network-only收尾調整重跑。
+
+### 2026-09-28 — T13 限定驗收收尾
+- 使用者接受列明狀態還原＋AI功能續局＋真實雙客戶端同步，不保證讀檔後逐步重現；原生對照及失敗留存，未改寫AI或C++。
+- 兩seed各三個原生存檔／新程序讀檔，8場各38項功能PASS；六次快照完全相等，研究中／研究後時點證據及存檔hash齊全。修正付款觀測器舊Trigger引用與快照Map漏序列化。
+- 兩場實際loopback雙客戶端完整對局PASS，各端發出正常命令並驗執行，原生full／quick hash從起點至final連續一致；兩端exit0，無錯誤／警告／OOS。seed7為最終觀測器來源回歸。
+- 付款生命週期mock、5項parser（一般／-O）、3項native hash負例及既有T12 adapter／8項parser PASS；完成程式與工具審查、GUI截圖、129檔來源表、公開結果與交接。T05–T11未重做。
+- T13標記限定DONE，T14未開工；T13未提交、未push。profile.txt/profile2.jsonp保留原9/26時間；所有自啟驗證程序已結束，無排程或背景任務。
+
+### 2026-09-29 — T13 本機提交核對
+
+- 使用者明確授權僅限T13本機提交。起點46045f8；官方R28 0.28.0、binary與public.zip SHA-256及codesign均通過，129檔來源與公開manifest完全一致。
+- 核對八場存讀檔原始result／engine.log／source-manifest hash，重新解析日誌快照與result一致；每場38項PASS，六次loaded與saved快照相等，六份原生存檔及封存副本hash吻合。存讀檔manifest唯一現行差異為network關閉順序GUI，舊版封存hash吻合，符合原交接說明。
+- 核對兩場成功網路與一場保留失敗的result、native-audit、封存replay與HTML hash；從封存replay重新檢查到共同final的連續full／quick hash一致。失敗場仍保留FAIL。七份工具測試紀錄及兩張GUI截圖已核對；人工檢查T13差異、runner、harness與測試，未發現影響限定驗收的提交阻礙。
+- 本次只改文件提交狀態；程式、manifest及原始證據未改，因此不重跑已通過的引擎／GUI驗收。提交前檢查文件連結、diff空白與限定暫存清單。提交識別以本紀錄所在commit為準，父提交46045f8。
+- profile.txt、profile2.jsonp及work維持本機、不提交或刪除；T13限定DONE，T14未開工，無AI重寫或C++修改，未push或建立背景任務／排程。

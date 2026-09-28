@@ -1,0 +1,997 @@
+{
+  "failed_network_runs": [
+    {
+      "run": "work/t13-network/20260928T092918101412Z-7",
+      "checks": {
+        "not_timeout": true,
+        "exit": true,
+        "no_errors": false,
+        "sources_unchanged": true,
+        "complete": true,
+        "synchronized": true,
+        "both_senders": true,
+        "both_commands_executed": true,
+        "fixture_checks": true,
+        "winner": true
+      },
+      "result_sha256": "7a221ec18395c8c879b06bbb22bdcd25125920a086c06cd18bf36cd1314d1cb2",
+      "native_audit": {
+        "final_time": 630000,
+        "checks": {
+          "run_passed": false,
+          "native_hashes_equal_through_final": true,
+          "native_logs_present": true,
+          "native_logs_clean": false
+        },
+        "passed": false,
+        "artifacts": {
+          "host": {
+            "replay_sha256": "c43de59ebdacaab57346a64a2a3b2a28df9c50f35a656f793cce7e25d1b85c74",
+            "native_logs": {
+              "interestinglog_1790587758_47275.html": "0e8a06bca95215eb60f65a65fa63cc7a9aaf93f59022ffe134171f03ab35fad4",
+              "mainlog_1790587758_47275.html": "9fc096d1b5275fe9d373b6e033e08828da4644d04052229f6bed7f247c8cc6f8"
+            },
+            "hash_count": 3200,
+            "full_hashes": 161
+          },
+          "client": {
+            "replay_sha256": "c43de59ebdacaab57346a64a2a3b2a28df9c50f35a656f793cce7e25d1b85c74",
+            "native_logs": {
+              "mainlog_1790587761_47284.html": "583a96ed346214f76c0812699a917f7ab89de6744f35484e2aa30afac6f7a17b",
+              "interestinglog_1790587761_47284.html": "9ef07c95fccf56000b79f899ff9a292ba669092acf3b2b27d264763ee6b1cc30"
+            },
+            "hash_count": 3200,
+            "full_hashes": 161
+          }
+        },
+        "errors": {
+          "host": [
+            "<p class=\"error\">ERROR: Net: Failed to send packet to peer</p>",
+            "<p class=\"error\">ERROR: Net: Failed to send packet to peer</p>"
+          ],
+          "client": []
+        }
+      }
+    }
+  ],
+  "scope": "R28 macOS ARM64; exact listed save state and functional AI continuation; loopback two clients only; no identical post-load trajectory claim",
+  "runtime": {
+    "Contents/MacOS/pyrogenesis": "531981d016596b0abde110cd239feaed98998c3fdaa837d0fa8d6f75482c81ef",
+    "Contents/Resources/data/mods/public/public.zip": "ccb24dedee399e6d2810ccb62b0b1b77a937999d9f1dedffbc189b3e359f2429"
+  },
+  "save_load_runs": [
+    {
+      "run": "work/t13-save/20260928T024918799142Z-save-42",
+      "mode": "save",
+      "seed": 42,
+      "checkpoint": null,
+      "checks": {
+        "exit": true,
+        "no_errors": true,
+        "not_timeout": true,
+        "framing": true,
+        "suite": true,
+        "sources_unchanged": true,
+        "final_snapshot": true,
+        "three_checkpoints": true,
+        "native_save_files": true,
+        "winner": true,
+        "research_in_progress": true,
+        "post_research_checkpoint": true
+      },
+      "suite_checks": 38,
+      "suite_passed": true,
+      "exit_code": 0,
+      "errors": [],
+      "observations": {},
+      "snapshot_times": {
+        "saved-120000": 120000,
+        "saved-480000": 480000,
+        "saved-700000": 700200,
+        "final": 884600
+      },
+      "snapshot_sha256": {
+        "saved-120000": "a833c397623ff59a644d27af71e230368087f80ea40c9787947638638536cd08",
+        "saved-480000": "3d3cc1fbe1c515534ec9f2e258401027f2f7a212d7bd01f43deebfce69961459",
+        "saved-700000": "5a17944f237f727483ad633b1293c81e056e46f2958e2fc5223d2054e39911cc",
+        "final": "fa4e271331e4c503d5ede0f2bb68851b05e3d3781e81f31798fe3e15eb406d3f"
+      },
+      "save_hashes": {
+        "t13-20260928T024918799142Z-120000.0adsave": "2909e65279c9967b4f3e5474f1813c76dff980a0f9eb6306a6f60e2fec482109",
+        "t13-20260928T024918799142Z-480000.0adsave": "5017c736b9dd6d34d08a3ec75b13f4077be4ac4818b19998aed4e2450ff14bab",
+        "t13-20260928T024918799142Z-700000.0adsave": "b6da4b0ec36b895c5c06d71d8bc6cf7865757ae62f3301d1d874e3b44fef620e"
+      },
+      "result_sha256": "4dc639dcf194a7b2185fd565738e31a8402fd0191549e57f51913a249af2e979",
+      "engine_log_sha256": "162de0f4be2f6727aba05cd59a0fd71eaa92f7589d54ed5121e2e998477fd50b",
+      "source_manifest_sha256": "11bfc5e8a035e45e757accc25211b2dc4b71230390fc3d076204ef5b1f2c3021"
+    },
+    {
+      "run": "work/t13-save/20260928T092412818750Z-load-42",
+      "mode": "load",
+      "seed": 42,
+      "checkpoint": 480000,
+      "checks": {
+        "exit": true,
+        "no_errors": true,
+        "not_timeout": true,
+        "framing": true,
+        "suite": true,
+        "sources_unchanged": true,
+        "final_snapshot": true,
+        "restored_snapshot": true,
+        "baseline_sources": true,
+        "baseline_runtime": true,
+        "native_save_files": true,
+        "save_hashes_unchanged": true,
+        "winner": true
+      },
+      "suite_checks": 38,
+      "suite_passed": true,
+      "exit_code": 0,
+      "errors": [],
+      "observations": {
+        "identical_continued_suite": false,
+        "identical_continued_final_state": false
+      },
+      "snapshot_times": {
+        "loaded": 480000,
+        "final": 968000
+      },
+      "snapshot_sha256": {
+        "loaded": "3d3cc1fbe1c515534ec9f2e258401027f2f7a212d7bd01f43deebfce69961459",
+        "final": "c14006bc53cce7ec0b0a104be86d21b9cea31bdc2fd634dd62e0a3ffdd70c1b0"
+      },
+      "save_hashes": {
+        "t13-20260928T024918799142Z-120000.0adsave": "2909e65279c9967b4f3e5474f1813c76dff980a0f9eb6306a6f60e2fec482109",
+        "t13-20260928T024918799142Z-480000.0adsave": "5017c736b9dd6d34d08a3ec75b13f4077be4ac4818b19998aed4e2450ff14bab",
+        "t13-20260928T024918799142Z-700000.0adsave": "b6da4b0ec36b895c5c06d71d8bc6cf7865757ae62f3301d1d874e3b44fef620e"
+      },
+      "result_sha256": "10504a7fbe4adf2b18f897b78ba3cda48e5bbb76ddc00249f9860a805c936c3f",
+      "engine_log_sha256": "ff0e880a911ec4fc15176c5b28107aeefc9956dc0fc1fd15516dea30474da5fa",
+      "source_manifest_sha256": "11bfc5e8a035e45e757accc25211b2dc4b71230390fc3d076204ef5b1f2c3021"
+    },
+    {
+      "run": "work/t13-save/20260928T092519742463Z-load-42",
+      "mode": "load",
+      "seed": 42,
+      "checkpoint": 120000,
+      "checks": {
+        "exit": true,
+        "no_errors": true,
+        "not_timeout": true,
+        "framing": true,
+        "suite": true,
+        "sources_unchanged": true,
+        "final_snapshot": true,
+        "restored_snapshot": true,
+        "baseline_sources": true,
+        "baseline_runtime": true,
+        "native_save_files": true,
+        "save_hashes_unchanged": true,
+        "winner": true
+      },
+      "suite_checks": 38,
+      "suite_passed": true,
+      "exit_code": 0,
+      "errors": [],
+      "observations": {
+        "identical_continued_suite": false,
+        "identical_continued_final_state": false
+      },
+      "snapshot_times": {
+        "loaded": 120000,
+        "final": 928000
+      },
+      "snapshot_sha256": {
+        "loaded": "a833c397623ff59a644d27af71e230368087f80ea40c9787947638638536cd08",
+        "final": "8a50fc5cfbd398fdd0579aa9747b90c5ca9e0c0eedb87ead9cbb012aec05077a"
+      },
+      "save_hashes": {
+        "t13-20260928T024918799142Z-120000.0adsave": "2909e65279c9967b4f3e5474f1813c76dff980a0f9eb6306a6f60e2fec482109",
+        "t13-20260928T024918799142Z-480000.0adsave": "5017c736b9dd6d34d08a3ec75b13f4077be4ac4818b19998aed4e2450ff14bab",
+        "t13-20260928T024918799142Z-700000.0adsave": "b6da4b0ec36b895c5c06d71d8bc6cf7865757ae62f3301d1d874e3b44fef620e"
+      },
+      "result_sha256": "408bdcf2170869e28f6369d248430d426f878df096549b3494f471dcfaa66faf",
+      "engine_log_sha256": "4eb3924fab6e43bdd79c7f988988823eda9ce31d2d745d7ad7144fc6c370ae0f",
+      "source_manifest_sha256": "11bfc5e8a035e45e757accc25211b2dc4b71230390fc3d076204ef5b1f2c3021"
+    },
+    {
+      "run": "work/t13-save/20260928T092604673096Z-load-42",
+      "mode": "load",
+      "seed": 42,
+      "checkpoint": 700000,
+      "checks": {
+        "exit": true,
+        "no_errors": true,
+        "not_timeout": true,
+        "framing": true,
+        "suite": true,
+        "sources_unchanged": true,
+        "final_snapshot": true,
+        "restored_snapshot": true,
+        "baseline_sources": true,
+        "baseline_runtime": true,
+        "native_save_files": true,
+        "save_hashes_unchanged": true,
+        "winner": true
+      },
+      "suite_checks": 38,
+      "suite_passed": true,
+      "exit_code": 0,
+      "errors": [],
+      "observations": {
+        "identical_continued_suite": false,
+        "identical_continued_final_state": false
+      },
+      "snapshot_times": {
+        "loaded": 700200,
+        "final": 884400
+      },
+      "snapshot_sha256": {
+        "loaded": "5a17944f237f727483ad633b1293c81e056e46f2958e2fc5223d2054e39911cc",
+        "final": "48fd828b83fab3ac796803910a3e941ec11a2404bead7de146201ad6cfba84a8"
+      },
+      "save_hashes": {
+        "t13-20260928T024918799142Z-120000.0adsave": "2909e65279c9967b4f3e5474f1813c76dff980a0f9eb6306a6f60e2fec482109",
+        "t13-20260928T024918799142Z-480000.0adsave": "5017c736b9dd6d34d08a3ec75b13f4077be4ac4818b19998aed4e2450ff14bab",
+        "t13-20260928T024918799142Z-700000.0adsave": "b6da4b0ec36b895c5c06d71d8bc6cf7865757ae62f3301d1d874e3b44fef620e"
+      },
+      "result_sha256": "2922936f3bdc07ce984457cff37233e9c495ab049fe649b6dd3c1b255dc1073c",
+      "engine_log_sha256": "6880099826a7aabbf8017287087fe83d4267de820c04715e9cd709386bad1e31",
+      "source_manifest_sha256": "11bfc5e8a035e45e757accc25211b2dc4b71230390fc3d076204ef5b1f2c3021"
+    },
+    {
+      "run": "work/t13-save/20260928T092618453821Z-save-7",
+      "mode": "save",
+      "seed": 7,
+      "checkpoint": null,
+      "checks": {
+        "exit": true,
+        "no_errors": true,
+        "not_timeout": true,
+        "framing": true,
+        "suite": true,
+        "sources_unchanged": true,
+        "final_snapshot": true,
+        "three_checkpoints": true,
+        "native_save_files": true,
+        "winner": true,
+        "research_in_progress": true,
+        "post_research_checkpoint": true
+      },
+      "suite_checks": 38,
+      "suite_passed": true,
+      "exit_code": 0,
+      "errors": [],
+      "observations": {},
+      "snapshot_times": {
+        "saved-120000": 120200,
+        "saved-480000": 480000,
+        "saved-700000": 700200,
+        "final": 894800
+      },
+      "snapshot_sha256": {
+        "saved-120000": "8abf362831cb0debcf8631d493b97b4485948c155f2e20a69d3a7940bfc3f9d0",
+        "saved-480000": "01ee00488f302167be5cf6f55942a61f10f470712ce5d8205afb550ae3163d2c",
+        "saved-700000": "7fb724ee074df59a9227a8fdb9a5490fc8150745be2d1d7d77739468153aecf6",
+        "final": "d15589d2dac26547b7d6972e4bf918abfd692e0222d6cd74884650e371d0e22c"
+      },
+      "save_hashes": {
+        "t13-20260928T092618453821Z-480000.0adsave": "d90b7148af66e59962674de2e581d243e89e3a7a9ef3ed72da347f8a23725590",
+        "t13-20260928T092618453821Z-700000.0adsave": "a9789924d81ad8b15f6841e009461b76534944fe45d276a693b9044eeabd05a9",
+        "t13-20260928T092618453821Z-120000.0adsave": "93bcfd0ebaf9dea57973d0f54d7bfb0a3c9fd3e76d49a993241df5f8602bb1e7"
+      },
+      "result_sha256": "da132cb81d16f7af8cafbbf7ed6f741d8ff1ea3b466bd6c9da10a9d0c1b60169",
+      "engine_log_sha256": "8dcb9269a8cb16aac2eba7649cda2650ccb226bc7eec53f86b11c028730e8f8e",
+      "source_manifest_sha256": "11bfc5e8a035e45e757accc25211b2dc4b71230390fc3d076204ef5b1f2c3021"
+    },
+    {
+      "run": "work/t13-save/20260928T092707676226Z-load-7",
+      "mode": "load",
+      "seed": 7,
+      "checkpoint": 120000,
+      "checks": {
+        "exit": true,
+        "no_errors": true,
+        "not_timeout": true,
+        "framing": true,
+        "suite": true,
+        "sources_unchanged": true,
+        "final_snapshot": true,
+        "restored_snapshot": true,
+        "baseline_sources": true,
+        "baseline_runtime": true,
+        "native_save_files": true,
+        "save_hashes_unchanged": true,
+        "winner": true
+      },
+      "suite_checks": 38,
+      "suite_passed": true,
+      "exit_code": 0,
+      "errors": [],
+      "observations": {
+        "identical_continued_suite": false,
+        "identical_continued_final_state": false
+      },
+      "snapshot_times": {
+        "loaded": 120200,
+        "final": 947800
+      },
+      "snapshot_sha256": {
+        "loaded": "8abf362831cb0debcf8631d493b97b4485948c155f2e20a69d3a7940bfc3f9d0",
+        "final": "81e667f7a3c5b82443e1e95490326cbbb1d7960dec3d032aa118937af416913a"
+      },
+      "save_hashes": {
+        "t13-20260928T092618453821Z-480000.0adsave": "d90b7148af66e59962674de2e581d243e89e3a7a9ef3ed72da347f8a23725590",
+        "t13-20260928T092618453821Z-700000.0adsave": "a9789924d81ad8b15f6841e009461b76534944fe45d276a693b9044eeabd05a9",
+        "t13-20260928T092618453821Z-120000.0adsave": "93bcfd0ebaf9dea57973d0f54d7bfb0a3c9fd3e76d49a993241df5f8602bb1e7"
+      },
+      "result_sha256": "b771fd0cd375a7d183886c86f11b7a50550df540a6295cc6758fd7093eb61fe5",
+      "engine_log_sha256": "7baaf797b2ad3a517a6333a12325e5d24648ed25a5a9a6fe18b881a056463c26",
+      "source_manifest_sha256": "11bfc5e8a035e45e757accc25211b2dc4b71230390fc3d076204ef5b1f2c3021"
+    },
+    {
+      "run": "work/t13-save/20260928T092753076669Z-load-7",
+      "mode": "load",
+      "seed": 7,
+      "checkpoint": 480000,
+      "checks": {
+        "exit": true,
+        "no_errors": true,
+        "not_timeout": true,
+        "framing": true,
+        "suite": true,
+        "sources_unchanged": true,
+        "final_snapshot": true,
+        "restored_snapshot": true,
+        "baseline_sources": true,
+        "baseline_runtime": true,
+        "native_save_files": true,
+        "save_hashes_unchanged": true,
+        "winner": true
+      },
+      "suite_checks": 38,
+      "suite_passed": true,
+      "exit_code": 0,
+      "errors": [],
+      "observations": {
+        "identical_continued_suite": false,
+        "identical_continued_final_state": false
+      },
+      "snapshot_times": {
+        "loaded": 480000,
+        "final": 934000
+      },
+      "snapshot_sha256": {
+        "loaded": "01ee00488f302167be5cf6f55942a61f10f470712ce5d8205afb550ae3163d2c",
+        "final": "b0751ece22a2a10d6b1a5fd5266b66a23507825d354a2ed253f5950b7fc5922a"
+      },
+      "save_hashes": {
+        "t13-20260928T092618453821Z-480000.0adsave": "d90b7148af66e59962674de2e581d243e89e3a7a9ef3ed72da347f8a23725590",
+        "t13-20260928T092618453821Z-700000.0adsave": "a9789924d81ad8b15f6841e009461b76534944fe45d276a693b9044eeabd05a9",
+        "t13-20260928T092618453821Z-120000.0adsave": "93bcfd0ebaf9dea57973d0f54d7bfb0a3c9fd3e76d49a993241df5f8602bb1e7"
+      },
+      "result_sha256": "c207cacf6d6e1036b66603548beeef5c8bbfbcc870b2b0aa1315de5ebb03105d",
+      "engine_log_sha256": "54a162bcaa4ff1207725c5087f3a9109a899d23b3638399dea87723a53b30862",
+      "source_manifest_sha256": "11bfc5e8a035e45e757accc25211b2dc4b71230390fc3d076204ef5b1f2c3021"
+    },
+    {
+      "run": "work/t13-save/20260928T092819547626Z-load-7",
+      "mode": "load",
+      "seed": 7,
+      "checkpoint": 700000,
+      "checks": {
+        "exit": true,
+        "no_errors": true,
+        "not_timeout": true,
+        "framing": true,
+        "suite": true,
+        "sources_unchanged": true,
+        "final_snapshot": true,
+        "restored_snapshot": true,
+        "baseline_sources": true,
+        "baseline_runtime": true,
+        "native_save_files": true,
+        "save_hashes_unchanged": true,
+        "winner": true
+      },
+      "suite_checks": 38,
+      "suite_passed": true,
+      "exit_code": 0,
+      "errors": [],
+      "observations": {
+        "identical_continued_suite": false,
+        "identical_continued_final_state": false
+      },
+      "snapshot_times": {
+        "loaded": 700200,
+        "final": 896000
+      },
+      "snapshot_sha256": {
+        "loaded": "7fb724ee074df59a9227a8fdb9a5490fc8150745be2d1d7d77739468153aecf6",
+        "final": "1eb07c2f261324e1031191544405e1e065a7b897dcad34c09f55417c7b65910e"
+      },
+      "save_hashes": {
+        "t13-20260928T092618453821Z-480000.0adsave": "d90b7148af66e59962674de2e581d243e89e3a7a9ef3ed72da347f8a23725590",
+        "t13-20260928T092618453821Z-700000.0adsave": "a9789924d81ad8b15f6841e009461b76534944fe45d276a693b9044eeabd05a9",
+        "t13-20260928T092618453821Z-120000.0adsave": "93bcfd0ebaf9dea57973d0f54d7bfb0a3c9fd3e76d49a993241df5f8602bb1e7"
+      },
+      "result_sha256": "a3e585ab6094203996d08031fce05de5c35fdfd0148417005734c64ca616dd9b",
+      "engine_log_sha256": "cd5dcb880c475de8dd88b955dc56bcdc48e9ce4c76cede8281eefe4056a49f49",
+      "source_manifest_sha256": "11bfc5e8a035e45e757accc25211b2dc4b71230390fc3d076204ef5b1f2c3021"
+    }
+  ],
+  "network_runs": [
+    {
+      "run": "work/t13-network/20260928T024238463836Z-42",
+      "seed": 42,
+      "checks": {
+        "not_timeout": true,
+        "exit": true,
+        "no_errors": true,
+        "sources_unchanged": true,
+        "complete": true,
+        "synchronized": true,
+        "both_senders": true,
+        "both_commands_executed": true,
+        "fixture_checks": true,
+        "winner": true
+      },
+      "native_audit": {
+        "final_time": 660000,
+        "checks": {
+          "run_passed": true,
+          "native_hashes_equal_through_final": true,
+          "native_logs_present": true,
+          "native_logs_clean": true
+        },
+        "passed": true,
+        "artifacts": {
+          "host": {
+            "replay_sha256": "2bbd9b5222ef6838839992161089dbca2137fc7662620d0b96c90bcc21c3b109",
+            "native_logs": {
+              "mainlog_1790563358_3058.html": "c1d619c2c188cdf7a9b63ef1c3c292f7052d2742b6a59f8c24a10b84bf271b56",
+              "interestinglog_1790563358_3058.html": "535c52c3ba571807391af38f63e0c2f67730ea1044f56e94db9061d391486fb0"
+            },
+            "hash_count": 3350,
+            "full_hashes": 168
+          },
+          "client": {
+            "replay_sha256": "f67e303fac0616cd55eb430c6202587294ca427b1c4a9be31c9ebff272496044",
+            "native_logs": {
+              "mainlog_1790563361_3068.html": "6f0ad2a765d48ae5e5c392b000cf5b2d280d62beec0cca82973127ef7fc08320",
+              "interestinglog_1790563361_3068.html": "b875689421fb8bb577f60dc63d68691335c0940458570cb06aa1b1a144cb540f"
+            },
+            "hash_count": 3348,
+            "full_hashes": 168
+          }
+        },
+        "errors": {
+          "host": [],
+          "client": []
+        }
+      },
+      "snapshot_count": 66,
+      "both_command_records": {
+        "command-2": {
+          "player": 2,
+          "command": {
+            "type": "stance",
+            "entities": [
+              203
+            ],
+            "name": "standground",
+            "t13": true
+          },
+          "entities": [
+            {
+              "entity": 203,
+              "owner": 2,
+              "stance": "standground"
+            }
+          ]
+        },
+        "command-1": {
+          "player": 1,
+          "command": {
+            "type": "stance",
+            "entities": [
+              157
+            ],
+            "name": "standground",
+            "t13": true
+          },
+          "entities": [
+            {
+              "entity": 157,
+              "owner": 1,
+              "stance": "standground"
+            }
+          ]
+        }
+      },
+      "fixture_checks": [
+        {
+          "id": "baseline.conquest",
+          "actual": [
+            "ConquestCritical+!Foundation"
+          ],
+          "expected": [
+            "ConquestCritical+!Foundation"
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.resources.1",
+          "actual": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "expected": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "passed": true
+        },
+        {
+          "id": "opening.population.1",
+          "actual": [
+            8,
+            20,
+            100
+          ],
+          "expected": [
+            8,
+            20,
+            100
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.age.1",
+          "actual": [
+            true,
+            false
+          ],
+          "expected": [
+            true,
+            false
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.entities.1",
+          "actual": 9,
+          "expected": 9,
+          "passed": true
+        },
+        {
+          "id": "opening.critical.1",
+          "actual": [
+            150
+          ],
+          "expected": [
+            150
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.resources.2",
+          "actual": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "expected": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "passed": true
+        },
+        {
+          "id": "opening.population.2",
+          "actual": [
+            8,
+            20,
+            100
+          ],
+          "expected": [
+            8,
+            20,
+            100
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.age.2",
+          "actual": [
+            true,
+            false
+          ],
+          "expected": [
+            true,
+            false
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.entities.2",
+          "actual": 9,
+          "expected": 9,
+          "passed": true
+        },
+        {
+          "id": "opening.critical.2",
+          "actual": [
+            196
+          ],
+          "expected": [
+            196
+          ],
+          "passed": true
+        },
+        {
+          "id": "full.enemyCentreDead",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "id": "full.states",
+          "actual": [
+            "won",
+            "defeated"
+          ],
+          "expected": [
+            "won",
+            "defeated"
+          ],
+          "passed": true
+        },
+        {
+          "id": "full.technologies",
+          "actual": [
+            true,
+            true
+          ],
+          "expected": [
+            true,
+            true
+          ],
+          "passed": true
+        },
+        {
+          "id": "full.singleWin",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        }
+      ],
+      "final_snapshot_sha256": "411640114fe09e4bb2e9c6fc630808aeeb9165fcc47ce710a79c7e836c8ebe7f",
+      "result_sha256": "c636042b314696e54d2676cee8ab7781fdff2c09379641d3428ae4d7191ff080",
+      "source_manifest_sha256": "1c43ce15bc10f4c32b94904d4811213b435fd4dabf1aa251fe68d8ee9b31a2ce"
+    },
+    {
+      "run": "work/t13-network/20260928T093541710725Z-7",
+      "seed": 7,
+      "checks": {
+        "not_timeout": true,
+        "exit": true,
+        "no_errors": true,
+        "sources_unchanged": true,
+        "complete": true,
+        "synchronized": true,
+        "both_senders": true,
+        "both_commands_executed": true,
+        "fixture_checks": true,
+        "winner": true
+      },
+      "native_audit": {
+        "final_time": 630000,
+        "checks": {
+          "run_passed": true,
+          "native_hashes_equal_through_final": true,
+          "native_logs_present": true,
+          "native_logs_clean": true
+        },
+        "passed": true,
+        "artifacts": {
+          "host": {
+            "replay_sha256": "19d23c5b6640fd8805c18f7d8c7b6daa7c963ed4e1905973bf3cf93fd131e5ab",
+            "native_logs": {
+              "mainlog_1790588141_48966.html": "cd5a735ae5be1e11892ae9b1f96e4846728ae06a8cb1299114ae20780a55cdf8",
+              "interestinglog_1790588141_48966.html": "a1e36351c1654a771e9b3f6dc77e86bc95abd8d53f4a55be5d94a9bb00884a20"
+            },
+            "hash_count": 3180,
+            "full_hashes": 160
+          },
+          "client": {
+            "replay_sha256": "1c5fbe1f235384066cfe199180627348626b03d30b1f39894813ba3373a4f716",
+            "native_logs": {
+              "mainlog_1790588144_48974.html": "15e506def295bec82cb222745047c9ab90cd6203dafd2cbc4332dc38ecab2e1c",
+              "interestinglog_1790588144_48974.html": "0d3473c93866268f352299fe2187272ebb8fa7cba49eb7236d5837b4559c435e"
+            },
+            "hash_count": 3179,
+            "full_hashes": 159
+          }
+        },
+        "errors": {
+          "host": [],
+          "client": []
+        }
+      },
+      "snapshot_count": 63,
+      "both_command_records": {
+        "command-2": {
+          "player": 2,
+          "command": {
+            "type": "stance",
+            "entities": [
+              203
+            ],
+            "name": "standground",
+            "t13": true
+          },
+          "entities": [
+            {
+              "entity": 203,
+              "owner": 2,
+              "stance": "standground"
+            }
+          ]
+        },
+        "command-1": {
+          "player": 1,
+          "command": {
+            "type": "stance",
+            "entities": [
+              157
+            ],
+            "name": "standground",
+            "t13": true
+          },
+          "entities": [
+            {
+              "entity": 157,
+              "owner": 1,
+              "stance": "standground"
+            }
+          ]
+        }
+      },
+      "fixture_checks": [
+        {
+          "id": "baseline.conquest",
+          "actual": [
+            "ConquestCritical+!Foundation"
+          ],
+          "expected": [
+            "ConquestCritical+!Foundation"
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.resources.1",
+          "actual": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "expected": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "passed": true
+        },
+        {
+          "id": "opening.population.1",
+          "actual": [
+            8,
+            20,
+            100
+          ],
+          "expected": [
+            8,
+            20,
+            100
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.age.1",
+          "actual": [
+            true,
+            false
+          ],
+          "expected": [
+            true,
+            false
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.entities.1",
+          "actual": 9,
+          "expected": 9,
+          "passed": true
+        },
+        {
+          "id": "opening.critical.1",
+          "actual": [
+            150
+          ],
+          "expected": [
+            150
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.resources.2",
+          "actual": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "expected": {
+            "food": 300,
+            "wood": 250,
+            "stone": 100,
+            "metal": 0
+          },
+          "passed": true
+        },
+        {
+          "id": "opening.population.2",
+          "actual": [
+            8,
+            20,
+            100
+          ],
+          "expected": [
+            8,
+            20,
+            100
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.age.2",
+          "actual": [
+            true,
+            false
+          ],
+          "expected": [
+            true,
+            false
+          ],
+          "passed": true
+        },
+        {
+          "id": "opening.entities.2",
+          "actual": 9,
+          "expected": 9,
+          "passed": true
+        },
+        {
+          "id": "opening.critical.2",
+          "actual": [
+            196
+          ],
+          "expected": [
+            196
+          ],
+          "passed": true
+        },
+        {
+          "id": "full.enemyCentreDead",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "id": "full.states",
+          "actual": [
+            "won",
+            "defeated"
+          ],
+          "expected": [
+            "won",
+            "defeated"
+          ],
+          "passed": true
+        },
+        {
+          "id": "full.technologies",
+          "actual": [
+            true,
+            true
+          ],
+          "expected": [
+            true,
+            true
+          ],
+          "passed": true
+        },
+        {
+          "id": "full.singleWin",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        }
+      ],
+      "final_snapshot_sha256": "99e5d8253b0725560115c08cfca9925bea8373b8dc3a09380fe74add8f97a9e5",
+      "result_sha256": "71c422b1c8d230aef78ae6d6af67be4f31e57136c438901b2dcda8ae5abbd44d",
+      "source_manifest_sha256": "ed972137b778133ccdd61fdc792977f57c93e8ea46c70c7551b516e1c70fdd17"
+    }
+  ],
+  "tool_runs": [
+    {
+      "command": [
+        "node",
+        "tools/epoch-rts/test-t13-payment.cjs"
+      ],
+      "exit": 0,
+      "log": "0.log"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "tools/epoch-rts/test-t13-tools.py"
+      ],
+      "exit": 0,
+      "log": "1.log"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-O",
+        "tools/epoch-rts/test-t13-tools.py"
+      ],
+      "exit": 0,
+      "log": "2.log"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "tools/epoch-rts/test-t13-native.py"
+      ],
+      "exit": 0,
+      "log": "3.log"
+    },
+    {
+      "command": [
+        "node",
+        "tools/epoch-rts/test-t12-adapter.cjs"
+      ],
+      "exit": 0,
+      "log": "4.log"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "tools/epoch-rts/test-t12-tools.py"
+      ],
+      "exit": 0,
+      "log": "5.log"
+    },
+    {
+      "command": [
+        "node",
+        "tools/epoch-rts/test-t13-session.cjs"
+      ],
+      "exit": 0,
+      "log": "session.log"
+    }
+  ]
+}

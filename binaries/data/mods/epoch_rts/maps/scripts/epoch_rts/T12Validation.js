@@ -164,21 +164,23 @@ Trigger.prototype.T12Finish = function(reason)
         const original = g_Commands[type];
         g_Commands[type] = function(player, cmd, data)
         {
-            if (player != 2 || !trigger.t12)
+            // Loading replaces component instances; never retain the pre-load Trigger.
+            const activeTrigger = Engine.QueryInterface(SYSTEM_ENTITY, IID_Trigger);
+            if (player != 2 || !activeTrigger.t12)
                 return original(player, cmd, data);
             const p = QueryPlayerIDInterface(player);
             const before = {...p.GetResourceCounts()};
             const bronze = QueryPlayerIDInterface(player, IID_TechnologyManager).IsTechnologyResearched('phase_epoch_bronze');
-            const barracks = trigger.T12Entities(player).some(e => trigger.T12Name(e) == 'structures/epoch_rts/barracks');
+            const barracks = activeTrigger.T12Entities(player).some(e => activeTrigger.T12Name(e) == 'structures/epoch_rts/barracks');
             const result = original(player, cmd, data);
             const after = p.GetResourceCounts(), cost = {};
             for (const key of ['food', 'wood', 'stone', 'metal'])
                 cost[key] = before[key] - after[key];
             if (Object.values(cost).some(value => value > 0))
             {
-                const payment = {time: trigger.T12Time(), type, template: cmd.template, count: cmd.count || 1,
+                const payment = {time: activeTrigger.T12Time(), type, template: cmd.template, count: cmd.count || 1,
                     cost, bronze, barracks};
-                trigger.t12.payments.push(payment);
+                activeTrigger.t12.payments.push(payment);
                 print('EPOCH_T12_PAYMENT ' + JSON.stringify(payment));
             }
             return result;
