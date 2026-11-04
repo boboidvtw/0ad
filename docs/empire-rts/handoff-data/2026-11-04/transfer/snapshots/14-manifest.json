@@ -1,0 +1,821 @@
+{
+  "schema": 1,
+  "purpose": "Exact bounded DESIGN ONLY history full-byte representation amendment; no container/source implementation or SOURCE approval",
+  "createdUTC": "2026-10-29T21:35:44.792874+00:00",
+  "status": "DESIGN_REVIEW_PENDING_ALL_THREE",
+  "normativeContract": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/CONTRACT-v1.md",
+  "priorApprovedDesignManifestSHA256": "f597e8d5c5bcf214ccb6a74d7e0920914441c3dece4b6851aa895a5c4607b2d4",
+  "priorBlockedSOURCEManifestSHA256": "68a60a7a42d07d6113e4427fabac9d0b9b81c3ac288d06baa6a0faddd56db4cf",
+  "bindingCount": 94,
+  "snapshotBytes": 3409262,
+  "limits": {
+    "bindingsMax": 128,
+    "snapshotBytesMax": 33554432
+  },
+  "bindings": [
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3.9",
+      "bytes": 53200,
+      "sha256": "6e7ae61f68a3838094fc56590f84c52069a97d7816f6bb79e0e85995b340e464",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3.9"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/hashlib.py",
+      "bytes": 10010,
+      "sha256": "a25e6f24d6ae5b5205844e2717f3d6dbeda005c1afeaf4d450b4f2c363a3d34a",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/hashlib.py"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/_bootstrap_external.py",
+      "bytes": 64569,
+      "sha256": "ae0b9f573429b63e40942e8d3365c73a7ed37302fff6dfc7eebbd2bb62b6bd85",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/_bootstrap_external.py"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/io.py",
+      "bytes": 3541,
+      "sha256": "01907eff5e1a17d37e967b4d6d1bd2230e03d30f56cc1a1384a14dd77be5ff60",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/io.py"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py",
+      "bytes": 14017,
+      "sha256": "332fabb72a4a1ed02c9207a7619ab339dac8f0b6862e16f6499147121b302a27",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_hashlib.cpython-39-darwin.so",
+      "bytes": 90640,
+      "sha256": "df2522e0043b85940cc9fa28e4807211a15edec673f648d1f501483a5736d641",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_hashlib.cpython-39-darwin.so"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/zlib.cpython-39-darwin.so",
+      "bytes": 88848,
+      "sha256": "d63129e2be45719a8ebd16cc0c74a2146bc96dff91a8fca65f9958f55e643d3a",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/zlib.cpython-39-darwin.so"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/os.py",
+      "bytes": 39404,
+      "sha256": "8dbe2d2e9f228747cacbbcc6758721e794b652e5c22b6224cb07e303ebbc620d",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/os.py"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/zipfile.py",
+      "bytes": 87278,
+      "sha256": "df6e2da67a3394a47ed57cfbd44298109d26f71ea22948a8840b6b56b0f6189d",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/zipfile.py"
+    },
+    {
+      "path": "docs/empire-rts/AUTONOMOUS-EXECUTION-T14-T18-2026-10-11.md",
+      "bytes": 4420,
+      "sha256": "ca5cc725d177366fa3593f1eb3cc47dede4c183435ce2e0a7fb17cc21b862f52",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/docs/empire-rts/AUTONOMOUS-EXECUTION-T14-T18-2026-10-11.md"
+    },
+    {
+      "path": "docs/empire-rts/SESSION-HANDOFF-2026-10-26-TRANSFER-T14-T18.md",
+      "bytes": 4140,
+      "sha256": "30c1e3e2eddc4c376ac1e771bcbd3822b6a3865d694ceba8d72835da984d48aa",
+      "requireCurrentMatchForDesignApproval": false,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/docs/empire-rts/SESSION-HANDOFF-2026-10-26-TRANSFER-T14-T18.md"
+    },
+    {
+      "path": "docs/empire-rts/SESSION-HANDOFF-2026-10-27-T14-T18.md",
+      "bytes": 11321,
+      "sha256": "5910f87250d58548060813b2a99ef316fc0febed76efc9c0363dbc9414375a5a",
+      "requireCurrentMatchForDesignApproval": false,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/docs/empire-rts/SESSION-HANDOFF-2026-10-27-T14-T18.md"
+    },
+    {
+      "path": "docs/empire-rts/SESSION-HANDOFF-2026-10-28-T14-T18.md",
+      "bytes": 10108,
+      "sha256": "5c80052322a24f332cf407f3669891ba90d36dc6aa442dac06a7ceaf186d1c78",
+      "requireCurrentMatchForDesignApproval": false,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/docs/empire-rts/SESSION-HANDOFF-2026-10-28-T14-T18.md"
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-five-mod-analysis-schema.json",
+      "bytes": 15491,
+      "sha256": "280357ab50426d73f1265cb07458d8d4f86f226ab3b02d68025d1762d7975191",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/tools/epoch-rts/t17-save-five-mod-analysis-schema.json"
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-five-mod-capture.py",
+      "bytes": 53952,
+      "sha256": "d687c19c9be59ba4e241d0d6fc4d0b331cb7ec3555f2267b4fa125e56bdb5022",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/tools/epoch-rts/t17-save-five-mod-capture.py"
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs",
+      "bytes": 21653,
+      "sha256": "e7100dd52b755cc7dedefa07624520dbacdd41ccf8e20428160ec2c588f2c3b1",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs"
+    },
+    {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+      "bytes": 52819,
+      "sha256": "5320b54f890413668046c4c8e2edf2d96ce8509b9d1b05296064f7bf35d036d3",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/tools/epoch-rts/test-t17-save-five-mod-capture.py"
+    },
+    {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-preservation-bridge.py",
+      "bytes": 58834,
+      "sha256": "43d62bd8d37012856763846113c5423bd8e19ff695a2471cea84a7d959229e5f",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/tools/epoch-rts/test-t17-save-five-mod-preservation-bridge.py"
+    },
+    {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-required-fault-controls-helpers.py",
+      "bytes": 6353,
+      "sha256": "edea973786e19a27527f8b061ad83321bba49c45c7943bb5cddd981645396a18",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/tools/epoch-rts/test-t17-save-five-mod-required-fault-controls-helpers.py"
+    },
+    {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py",
+      "bytes": 53703,
+      "sha256": "356c2ba66452b2dc35731921363a188e6f8cb5c5f7c51c784ed10aa905c03041",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py"
+    },
+    {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+      "bytes": 18136,
+      "sha256": "efae7d0fb9c2f716e8d9a32c294b56abe10c83689de02f4a5e1a25d61fefc748",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs"
+    },
+    {
+      "path": "work/t14-t18-session-transfer-20261026/current-checkpoint.json",
+      "bytes": 38868,
+      "sha256": "561db935c86b6c5f0628503f358de331fc6a9c85b0d76e0d7be387b500c58163",
+      "requireCurrentMatchForDesignApproval": false,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t14-t18-session-transfer-20261026/current-checkpoint.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/ANALYSIS-SCHEMA.json",
+      "bytes": 15491,
+      "sha256": "280357ab50426d73f1265cb07458d8d4f86f226ab3b02d68025d1762d7975191",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/ANALYSIS-SCHEMA.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/FAULT-GATES.json",
+      "bytes": 1078,
+      "sha256": "45464555dab05940e9ee1510ddde616aedac2c25c5e056e923b032660064a10e",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/FAULT-GATES.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/LIMITS.json",
+      "bytes": 723,
+      "sha256": "801ff553f5af6bf34e12037a90af1dd41aea5888f8e52b0cc880116fb6311446",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/LIMITS.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-EXAMPLES-AND-TEST-PLAN.json",
+      "bytes": 3777,
+      "sha256": "8445763ba88295fe66c38ac2f25dd0f009ed570b59961f906545552eba4efae4",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-EXAMPLES-AND-TEST-PLAN.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-PRODUCERS.json",
+      "bytes": 4149,
+      "sha256": "24cd10015fd396d639d0eeda874ce9566a4f6003b5cdf543ec1d3ee99a05117f",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-PRODUCERS.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/OWNERSHIP-AND-REVIEW.md",
+      "bytes": 2459,
+      "sha256": "2653625025ab921440dc174b8edef6101eec064c58230206c92c1a2297cc5766",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/OWNERSHIP-AND-REVIEW.md"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/PROTOCOL.md",
+      "bytes": 8212,
+      "sha256": "9307c44a13c5be7e8a35a0ae950bbda36cbf7f445bcd92f3ee2a2c0790ce04b1",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/PROTOCOL.md"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/ROW-EXAMPLES.json",
+      "bytes": 3082,
+      "sha256": "105eef5ffb635a6a043da757f7cb311f13f1e75a5f087e6d8a491b8e4563b329",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/ROW-EXAMPLES.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SCHEMA-TEST-PLAN.json",
+      "bytes": 2000,
+      "sha256": "e59270c4566f96e96839faaa378c6867ea9c9ceb6e9e4ba26b8df62074bb6635",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SCHEMA-TEST-PLAN.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SOURCE-RELATIONS.json",
+      "bytes": 5733,
+      "sha256": "a5f781e0352c750c56c54f8ce2cb537763cc0925516d90cd2d6f90a9a4962203",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SOURCE-RELATIONS.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SPEC.md",
+      "bytes": 9685,
+      "sha256": "d6615fa1d694d57ce3f2de3d2b505eae0afd09afffd3eb82632a56235b2f5f14",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SPEC.md"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/TEST-PLAN.json",
+      "bytes": 4526,
+      "sha256": "48619d53e653717d3af835c5026b5249d3e1079818ea9a595e8c971dc6d2d842",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/TEST-PLAN.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/AMENDMENT.md",
+      "bytes": 5594,
+      "sha256": "22d2c40d26eb0dbb64186347bc9f4bc1e44c87ed01bcd05dc7c4814f0a24c9a8",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/AMENDMENT.md"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/completion-design-only.json",
+      "bytes": 1890,
+      "sha256": "a531a7ddc99f6693832adcd363a537db96e7c7d785cadf16873cd709645202f3",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/completion-design-only.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/manifest.json",
+      "bytes": 40952,
+      "sha256": "5f9ec01494e032f78e6311ff0103ad014e22908a69eaede9a6670d1ed2f530f7",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/manifest.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-python/terminal-fix-v1/CONTRACT-DELTA.md",
+      "bytes": 2615,
+      "sha256": "7686d5f09a585acd7156c5cb64ede91ee249f39ff80dbc295e1dd704467eb72d",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-python/terminal-fix-v1/CONTRACT-DELTA.md"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/coverage.json",
+      "bytes": 2135,
+      "sha256": "57ed904cd36534daa8dd5c22a1872460ed26f06ac696a00ee48e6edd82b2700d",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/coverage.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+      "bytes": 49905,
+      "sha256": "4a0d526d2d37afb5a2af3132511641e02e287757620eddf39956d29f59abb8a9",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/code-source-review-v1.json",
+      "bytes": 174759,
+      "sha256": "6e6e33cddeb7ce280a4790cc393be72b4e4ddf2c1142cb86e5de0853b1210ca9",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/code-source-review-v1.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/completion-source-review-only.json",
+      "bytes": 2275,
+      "sha256": "486950895d0de41041cdba7e7d0c48b58419bf1d45ceb8936124c5563ceeada0",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/completion-source-review-only.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/js-api-source-review-v1.json",
+      "bytes": 153976,
+      "sha256": "fb00c18cf5bd0fe3be313edc6f7303d00cf8c5b3ce98de814bae46b7bd7cb9cd",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/js-api-source-review-v1.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/manifest.json",
+      "bytes": 140780,
+      "sha256": "38b45c79f05a93d340319c2e55bd0317898c74473d676e093f185d73a0a62557",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/manifest.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/python-source-review-v1.json",
+      "bytes": 204076,
+      "sha256": "3293b781007111b823b8368c5bf513081bcd980256a7b05453e4a32f5f95fb26",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/python-source-review-v1.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/AMENDMENT.md",
+      "bytes": 9631,
+      "sha256": "c48289e3d2bc1db05e1d0dadd7c25b7ac28a779a2df5202fb62a6c49a329c48f",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/AMENDMENT.md"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/completion-design-only.json",
+      "bytes": 1724,
+      "sha256": "6a61276c04d68c1c1ff435a3cf4198bfeaaefc00028ebb0c507fac5896925071",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/completion-design-only.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/manifest.json",
+      "bytes": 16426,
+      "sha256": "bd162e15363202b7832dd0f8a189aef3bc44d1ff215e3494ad67f8601e25b5b7",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/manifest.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/CONTRACT-v1.md",
+      "bytes": 14295,
+      "sha256": "97845716ecc42518ef68addb749c63173d3d68317db252b6ddd0aac4a4a6f8ce",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/CONTRACT-v1.md"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/execution-preparation-v1/bounded-runtime-closeout-v1.json",
+      "bytes": 5599,
+      "sha256": "8ec74e51d55ebd6c46fdc2e9746e5ace5a2c37486f8b1384ab7d8b2afddedd47",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/execution-preparation-v1/bounded-runtime-closeout-v1.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/fixture-oracle.json",
+      "bytes": 4943,
+      "sha256": "d3361786bd195f3596ea6785919e7715bc3af387c515dc90c9dd49538cb90310",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/fixture-oracle.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/next-coverage-preparation-v1/coverage-reconciliation-v1.json",
+      "bytes": 81362,
+      "sha256": "d527316662da7d3b90a7e5c894cf27f14b4f48ad0a2e89071716d5a38bdcfdab",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/next-coverage-preparation-v1/coverage-reconciliation-v1.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/next-coverage-preparation-v1/coverage-reconciliation-v1.md",
+      "bytes": 5570,
+      "sha256": "4e0c998bb08e18055df7a3a9f6928dd76df1766d3b1f630323430aa7f0a53a12",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/next-coverage-preparation-v1/coverage-reconciliation-v1.md"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/CONTRACT-v5.md",
+      "bytes": 8926,
+      "sha256": "41f52fa6dea5053377b6f831e1ae09bd6325bd9a947d3b6b8a1138c042a9e5e5",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/CONTRACT-v5.md"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/completion-source-review-only-v5.json",
+      "bytes": 2587,
+      "sha256": "16792262b63258c9311c000753ad77651826d7c04d869e488240cdd299b0108b",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/completion-source-review-only-v5.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/CONTRACT-v1.md",
+      "bytes": 10206,
+      "sha256": "45b8b9f9408f5039b190c4dbd94455a4752af04c690cb90d3c4f34110daf0d2d",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/CONTRACT-v1.md"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/HISTORY-INVENTORY-v1.json",
+      "bytes": 102244,
+      "sha256": "7e6a8251a4c6c35e3ce0184bf75e61e19c6d444b1c9da2031eb48e631cc4c5b9",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/HISTORY-INVENTORY-v1.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/HISTORY-SCHEMA-v1.json",
+      "bytes": 14675,
+      "sha256": "f5c173c56cc349387013f93b3eab196d5587366bf6ce693567dcfc38c9e3c446",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/HISTORY-SCHEMA-v1.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-block-closeout-v1.json",
+      "bytes": 9504,
+      "sha256": "6eb268e18e0de91e259a3e799b1b71b2aed124bd52a54a74770d34a692ee8a2f",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-block-closeout-v1.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-code-review-v1.json",
+      "bytes": 84403,
+      "sha256": "ee87e5891f10d5c9fdb34ca9320374003b351ee040cd96010a64793ad7f0c24b",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-code-review-v1.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-code-review-v1.md",
+      "bytes": 3028,
+      "sha256": "e77b6038e402720383ad18737985670a65822738fb06c321108aae5912c58c37",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-code-review-v1.md"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-code-review-v2.json",
+      "bytes": 94620,
+      "sha256": "729c7244721d05f39b2ee6c4593323ac28bab80f62f4ba7446ed3cf96aa6faeb",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-code-review-v2.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-code-review-v2.md",
+      "bytes": 2705,
+      "sha256": "b7a3832b518720a0c697a9cd998473f78fb47c157dcb1fa99fbd1b3a9a5cd81b",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-code-review-v2.md"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-completion-v2.json",
+      "bytes": 2366,
+      "sha256": "bae792e723440805f97024314bb5e4a3a02d80f677cce7f59a9929a45972bcdc",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-completion-v2.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-js-review-v1/review.json",
+      "bytes": 74262,
+      "sha256": "b98b778c1f736b16c394151975a8d85f1bf34bed0d94dee70bec793a6412b0e8",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-js-review-v1/review.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-js-review-v1/review.md",
+      "bytes": 4240,
+      "sha256": "bd27929e552fb8e81086b2b74758c5f565cc8951acd426d18839a4bac4e50fd8",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-js-review-v1/review.md"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-js-review-v2/review.json",
+      "bytes": 88460,
+      "sha256": "06f6ceaa04033e2db6986835ba8ed7b0b8c2f9b376b04be4f5f8de99b7d198c5",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-js-review-v2/review.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-js-review-v2/review.md",
+      "bytes": 3773,
+      "sha256": "732433e084a4c05d755831348e4c5b525aa318a9ce2863b15522ca3f56975f42",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-js-review-v2/review.md"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-python-review-v1.json",
+      "bytes": 46492,
+      "sha256": "52d495f82cfaca08b45ddf1e3aa9378abeb623c65cbc756ef7aff90c11a89e02",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-python-review-v1.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-python-review-v1.md",
+      "bytes": 3206,
+      "sha256": "f451e4605819fdc9d93f996a665d4a42469c033294eaa277414cff15f6db253a",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-python-review-v1.md"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-python-review-v2.json",
+      "bytes": 54710,
+      "sha256": "284d922e3b028353bfecfe6db36b090b882aebbb593376a5a8c456365aa7eb53",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-python-review-v2.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-python-review-v2.md",
+      "bytes": 3383,
+      "sha256": "6823bd6669a2ee479fc6e88839d684ff0502e4f3b95defa5cb34347424b932fa",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-python-review-v2.md"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/HELPER-PLAN-v1.json",
+      "bytes": 7985,
+      "sha256": "cdd67792a8435cac07c3c31ca6868f852f6c4b49a5ba8f71ff50ef946d9f684a",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/HELPER-PLAN-v1.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/SOURCE-INTERFACE-v1.md",
+      "bytes": 6380,
+      "sha256": "5b9b17e5e18cb01442104d4f562f5138dc87daab37891df8c68884a375bc3eeb",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/SOURCE-INTERFACE-v1.md"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/LATE-HELPER-PLAN-v1.json",
+      "bytes": 4848,
+      "sha256": "a05321fe90675132360430caccc26777b19342413d1b57030c4c7315c8f52926",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/LATE-HELPER-PLAN-v1.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/SOURCE-BLOCK-FIX-PROPOSAL-v1.json",
+      "bytes": 13321,
+      "sha256": "9a63a3fd6913b89a12179094f2be20ba6e1f4de1e28334d44d2163d2565444bb",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/SOURCE-BLOCK-FIX-PROPOSAL-v1.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/late-ledger-memory-helpers-v1.py",
+      "bytes": 7978,
+      "sha256": "08a6c91ba3c6ce3d193d869e3ffc50057adb62a9864309e38e4d6d35d27c31e4",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/late-ledger-memory-helpers-v1.py"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-block-closeout-v1.json",
+      "bytes": 38315,
+      "sha256": "d5fd174a70b9d3b5965a8ab63e8878763dea4f568ab20d696398bec337d97e50",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-block-closeout-v1.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-context-freeze-v1/manifest.json",
+      "bytes": 85235,
+      "sha256": "68a60a7a42d07d6113e4427fabac9d0b9b81c3ac288d06baa6a0faddd56db4cf",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-context-freeze-v1/manifest.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-CODE-v1.json",
+      "bytes": 179901,
+      "sha256": "053e4e6bc81c6b146ca526db4afc36ae653cc2182d06a24b149f5cd0bbc6ce0d",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-CODE-v1.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-CODE-v1.md",
+      "bytes": 3046,
+      "sha256": "ae244f99d651c5e26535cee1799320bffbf4cb3861ce77bfcb03fe0bd1d1831e",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-CODE-v1.md"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-JSAPI-v1.json",
+      "bytes": 223420,
+      "sha256": "ecaa648210e009b46080a152f6d951e9ac0da2c7c056ef08a526e9842508ea1e",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-JSAPI-v1.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-JSAPI-v1.md",
+      "bytes": 2904,
+      "sha256": "c990b65d0ac7551c6e0a3706cc3982b39c8207abb6c19ffa4c77cfeda9f1fe1d",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-JSAPI-v1.md"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-preliminary-finding-v1.json",
+      "bytes": 1490,
+      "sha256": "bf5749fe6399187ab4cfffcfc920785184334b5673046c4617c3a3b4617ada08",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-preliminary-finding-v1.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-supplement-v1.json",
+      "bytes": 2854,
+      "sha256": "1ec35df8666a22f4978a444350c07da74c269fa9484ecf6b95b66ff68778a6af",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-supplement-v1.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-supplement-v1.md",
+      "bytes": 1296,
+      "sha256": "11e30f078d48ef42b8c5a9fcc8499f93cd2b44b5974e2b99b922aef569ca96aa",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-supplement-v1.md"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-v1.json",
+      "bytes": 225853,
+      "sha256": "1ac8ca0b183fd1581b80b45b26f1bae4fb16e1ebb72a998b5f96d21c2dd2f121",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-v1.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-v1.md",
+      "bytes": 3638,
+      "sha256": "7caa6683517bae80b98d5a64b1c5f6211e857f825a79be576a0c2f0b62ee3ea3",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-v1.md"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CASE-ORACLE-v1.json",
+      "bytes": 111385,
+      "sha256": "c29ae4c2b9cdd74d2ad9fde92c4867aea3921a07f6b77475ba28d854cb45c271",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CASE-ORACLE-v1.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md",
+      "bytes": 16148,
+      "sha256": "616f58093179f2af073b658dd0f9ac9c88121b10eb1456425b36e155dfda82d1",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/freeze-construction-observation.json",
+      "bytes": 362,
+      "sha256": "570f2f4d29b2bcce08f1c46b382b78a579ff5c45dd4e3364d0717b1dac6b40c6",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/freeze-construction-observation.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/manifest.json",
+      "bytes": 31421,
+      "sha256": "e488202701017b7a5c212bf3ad8cbf5ec43d4d8b00efb3ea2c8781615a668178",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/manifest.json"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v2/CONTRACT-v2.md",
+      "bytes": 9571,
+      "sha256": "8afebe343e3529236e775f9e8cbab214fc67ed419a2f7bb2a25364b242c1eef6",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_APPROVED_V2_PRIMARY_NORMATIVE_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v2/CONTRACT-v2.md"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v2/manifest.json",
+      "bytes": 37394,
+      "sha256": "f597e8d5c5bcf214ccb6a74d7e0920914441c3dece4b6851aa895a5c4607b2d4",
+      "requireCurrentMatchForDesignApproval": true,
+      "role": "FULL_AMENDMENT_PRIMARY_CONTEXT",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v2/manifest.json"
+    }
+  ],
+  "scope": "Explicitly propose53 fixed history-only originals represented by one complete canonicalbase64 JSON container; all current executable/normative/64primary remain direct; physical/logical accounting separate. No bundle exists.",
+  "old126FullReviewDuty": "All three DESIGN reviewers must independently fully read/hash all old126 full snapshots and effective inputs listed by direct opaque old68manifest, plus every inventory candidate full original, including all fullraw/preimages/wholeSOURCE reports. No recursive copying old126/272/512 into this primarysnapshot union. Author recorded actual126 fullSHA/bytes readback MATCH; it is not reviewer acceptance.",
+  "historyInventory": {
+    "selectedEntries": 53,
+    "decodedBytes": 1042748,
+    "predictedEncodedBytes": 1408405,
+    "predictedContainerSHA256": "2caa72716cb1ac21e4c9163ce6ca2461851fc71ba0381f785a04515d5c18ce74",
+    "actualContainer": "NOT_CREATED",
+    "proposedSourcePhysicalRows": 101,
+    "proposedSourceLogicalContexts": 153,
+    "futureCounts": "RESERVATIONS_ONLY_NOT_ACTUAL_IMPLEMENTED_SOURCE"
+  },
+  "reviewOutputs": [
+    {
+      "role": "CODE",
+      "jsonPath": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/design-review-CODE-v1.json",
+      "markdownPath": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/design-review-CODE-v1.md",
+      "requiredVerdict": "APPROVE_DESIGN_ONLY",
+      "inputManifestSHA256": "ACTUAL_SHA256_OF_THIS_FILE"
+    },
+    {
+      "role": "Python",
+      "jsonPath": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/design-review-Python-v1.json",
+      "markdownPath": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/design-review-Python-v1.md",
+      "requiredVerdict": "APPROVE_DESIGN_ONLY",
+      "inputManifestSHA256": "ACTUAL_SHA256_OF_THIS_FILE"
+    },
+    {
+      "role": "JSAPI",
+      "jsonPath": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/design-review-JSAPI-v1.json",
+      "markdownPath": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/design-review-JSAPI-v1.md",
+      "requiredVerdict": "APPROVE_DESIGN_ONLY",
+      "inputManifestSHA256": "ACTUAL_SHA256_OF_THIS_FILE"
+    }
+  ],
+  "approval": "NONE_AUTHOR_CANNOT_APPROVE",
+  "source": "UNCHANGED356c_BLOCK",
+  "existingSOURCEfreeze": "UNCHANGED68a60_BLOCK",
+  "helpers": "ALL24_DONE_NO_RERUN_NO_NEW",
+  "actualContainer": "NOT_CREATED",
+  "controllerValidatorImplementation": "NOT_STARTED",
+  "SOURCEfreezeV2": "NOT_CREATED",
+  "producerImport": "NOT_RUN",
+  "tests": "NOT_RUN",
+  "observer": "NOT_RUN",
+  "fixtures": "NOT_CREATED",
+  "runtimeProbes": "NOT_RUN",
+  "guard": "NOT_CREATED",
+  "attempt": "NOT_CREATED",
+  "threeCases": "NOT_RUN",
+  "native": false,
+  "officialCaptureApproved": false
+}

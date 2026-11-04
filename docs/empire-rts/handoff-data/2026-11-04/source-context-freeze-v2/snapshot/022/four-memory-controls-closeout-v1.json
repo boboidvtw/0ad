@@ -1,0 +1,57 @@
+{
+  "purpose": "Rootnew4purememoryhelpercloseoutwithresidualfunctionalSOURCEfindingretained",
+  "createdUTC": "2026-10-29T11:34:23.693826+00:00",
+  "status": "PARTIAL_4_MEMORY_PASS_RESIDUAL_DIAGNOSTIC_TAIL_MEDIUM",
+  "controllerAtRunSHA256": "ee4e2579e24cbcf97cd076fa863eb6c25a015159fc0447586583fb3c775ddfb3",
+  "limitedCODEReviewSHA256": "5348aaa0a1350324d7466e69c134a2e26b21029c11abbb249e7f2cdf53df59c5",
+  "rootAdmissionSHA256": "96e00c96747031d02fb9c7d5ace0390e3fa4e56d05aca72a0ef73e379532859b",
+  "run": {
+    "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-helpers-v1-run.json",
+    "sha256": "bb4c654221414c3f5eaf74cde2824caca260a3e6a670dc35efd6d3e98414c834",
+    "observation": {
+      "purpose": "Oneactualnew4memoryhelperinvocation, notproducer case acceptance",
+      "createdUTC": "2026-10-29T11:32:45.670919+00:00",
+      "admissionSHA256": "96e00c96747031d02fb9c7d5ace0390e3fa4e56d05aca72a0ef73e379532859b",
+      "status": "4_OF_4_PASS_MEMORY_ONLY",
+      "outcome": "RETURNED",
+      "exitCode": 0,
+      "inclusiveSecondsObserved": 0.04805583299999999,
+      "stdout": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-helpers-v1.stdout.raw",
+        "bytes": 327,
+        "sha256": "a1c61b725f8b0a273d2f5fb40a4990bdeccc3f58c9b99e1562e80cbe8930f220"
+      },
+      "stderr": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-helpers-v1.stderr.raw",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "expectedRawMATCH": true,
+      "controllerSHA256": "ee4e2579e24cbcf97cd076fa863eb6c25a015159fc0447586583fb3c775ddfb3",
+      "helperSHA256": "08a6c91ba3c6ce3d193d869e3ffc50057adb62a9864309e38e4d6d35d27c31e4",
+      "planSHA256": "a05321fe90675132360430caccc26777b19342413d1b57030c4c7315c8f52926",
+      "old20": "NOT_RERUN",
+      "sourceApproval": false,
+      "cases": "THREE_NOT_RUN",
+      "attempt": "NOT_CREATED",
+      "native": false
+    }
+  },
+  "residualFinding": {
+    "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/author-diagnostic-tail-finding-v1.json",
+    "sha256": "6e08123976c59ebc044ab713b3f1c5935d74fd8ce9d8da4ad43e4ff4f283754f",
+    "severity": "MEDIUM",
+    "status": "STATIC_CONFIRMED_NOT_FIXED_YET"
+  },
+  "original20": "DONE_ONCE_NOT_RERUN",
+  "cumulativeMemoryAssertionsDone": 24,
+  "newControlsRemaining": 0,
+  "fullSourceFreeze": "NOT_CREATED",
+  "sourceApproval": false,
+  "stageCAdmitted": false,
+  "cases": "THREE_NOT_RUN",
+  "producer": "NOT_IMPORTED_NOT_RUN",
+  "native": false,
+  "reviewerQuotaError": "aftercompleteLIMITEDreportdurable; no report rerun",
+  "next": "Smallestsource-onlyfreshstdoutupdatedledgerfix, no helper reruns, thenexactfullSOURCEfreeze/freshfullCODEPythonJSreviews."
+}

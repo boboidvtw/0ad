@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "purpose": "Parent validated child receipt and existing heartbeat migration only",
+  "createdUTC": "2026-11-02T01:35:40.116821+00:00",
+  "sourceThreadId": "01a18567-d39e-7941-9a29-32a5f4371832",
+  "targetThreadId": "01a199e4-c227-7c61-b356-9bd863dccd2d",
+  "childReadbackSHA256": "b083760972d54f2ef5882fd411c6a2bd12dffad79f834747fbbcda1c37cbd842",
+  "childReadbackBytes": 15999,
+  "childOriginalsMATCH": 16,
+  "childSnapshotsMATCH": 16,
+  "HEAD": "726a3aefcae830f605de438cd13192cc6330414e",
+  "indexEmpty": true,
+  "automationId": "0ad-t14",
+  "automationBeforeSHA256": "1b21ae69922b97941d7e5dc87f522d958c82417468cbb77c2278a3e654d1d925",
+  "automationAfterSHA256": "1b99b59be063923d40a9989776a32f6748ff85e452638f1dede1ea6b4967dfd1",
+  "changedFields": [
+    "updated_at",
+    "prompt",
+    "target_thread_id"
+  ],
+  "cadencePreserved": true,
+  "status": "MATCH_EXISTING_HEARTBEAT_MIGRATED",
+  "sourceApproval": false,
+  "formalCases": "THREE_NOT_RUN",
+  "next": "Child may resume exact full independent SOURCE-v2 reviews after live usage. No helper reruns/source execution before gates."
+}

@@ -1,0 +1,826 @@
+{
+  "schema": 1,
+  "scope": "PROPOSED_DESIGN_ONLY_SEPARATE_BOUNDED_TRAVERSAL_AND_CANDIDATE_COUNTS",
+  "sourceApproval": false,
+  "native": false,
+  "normativeAmendment": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/AMENDMENT.md",
+  "bindings": [
+    {
+      "path": "tools/epoch-rts/t17-save-five-mod-capture.py",
+      "bytes": 50703,
+      "sha256": "a27a318a9275d8dbeac9ce02e66e5b9b65cf69792c8844c09883801348cb5243"
+    },
+    {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+      "bytes": 43606,
+      "sha256": "5b1242fa598504085cbdb419f3d4e06cbd4145e92b17bb25e63422e18d9c0192"
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs",
+      "bytes": 21317,
+      "sha256": "054ac9d099cd369db3022b9e8f3d5f349ee0db7967fa9c71764914e48091808a"
+    },
+    {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+      "bytes": 14109,
+      "sha256": "e7ccf1b06d8eba57da99aee39f354126796d46419e6d39015cc8314039e02eaf"
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-five-mod-analysis-schema.json",
+      "bytes": 15491,
+      "sha256": "280357ab50426d73f1265cb07458d8d4f86f226ab3b02d68025d1762d7975191"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/manifest.json",
+      "bytes": 16426,
+      "sha256": "bd162e15363202b7832dd0f8a189aef3bc44d1ff215e3494ad67f8601e25b5b7"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/ANALYSIS-SCHEMA.json",
+      "bytes": 15491,
+      "sha256": "280357ab50426d73f1265cb07458d8d4f86f226ab3b02d68025d1762d7975191"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/BEFORE.json",
+      "bytes": 7563,
+      "sha256": "6701415de58cd4c4b4e5668a2a050520d5b8079bc8e88321afa1fd93365e19dc"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/CORRECTION-20261025.json",
+      "bytes": 523,
+      "sha256": "9fa0974b015292913f89ba0fadd6a397fa0fcbf84183b961030353866945ba3b"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/FAULT-GATES.json",
+      "bytes": 1078,
+      "sha256": "45464555dab05940e9ee1510ddde616aedac2c25c5e056e923b032660064a10e"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/FINAL-REVIEW-BINDINGS.json",
+      "bytes": 3462,
+      "sha256": "664902d602ab90fe0fc2bb89f6e4b297616585a102d62fb938bb2550a3965fc5"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/FIX-DISPOSITION.json",
+      "bytes": 993,
+      "sha256": "a80d2b257d3202866075d1df8a8b89cdfb169c806ec8b394657066c9bbd1e77b"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/LIMITS.json",
+      "bytes": 723,
+      "sha256": "801ff553f5af6bf34e12037a90af1dd41aea5888f8e52b0cc880116fb6311446"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-EXAMPLES-AND-TEST-PLAN.json",
+      "bytes": 3777,
+      "sha256": "8445763ba88295fe66c38ac2f25dd0f009ed570b59961f906545552eba4efae4"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-PRODUCERS.json",
+      "bytes": 4149,
+      "sha256": "24cd10015fd396d639d0eeda874ce9566a4f6003b5cdf543ec1d3ee99a05117f"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/OWNERSHIP-AND-REVIEW.md",
+      "bytes": 2459,
+      "sha256": "2653625025ab921440dc174b8edef6101eec064c58230206c92c1a2297cc5766"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/PROTOCOL.md",
+      "bytes": 8212,
+      "sha256": "9307c44a13c5be7e8a35a0ae950bbda36cbf7f445bcd92f3ee2a2c0790ce04b1"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/ROW-EXAMPLES.json",
+      "bytes": 3082,
+      "sha256": "105eef5ffb635a6a043da757f7cb311f13f1e75a5f087e6d8a491b8e4563b329"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SCHEMA-TEST-PLAN.json",
+      "bytes": 2000,
+      "sha256": "e59270c4566f96e96839faaa378c6867ea9c9ceb6e9e4ba26b8df62074bb6635"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SOURCE-RELATIONS.json",
+      "bytes": 5733,
+      "sha256": "a5f781e0352c750c56c54f8ce2cb537763cc0925516d90cd2d6f90a9a4962203"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SPEC.md",
+      "bytes": 9685,
+      "sha256": "d6615fa1d694d57ce3f2de3d2b505eae0afd09afffd3eb82632a56235b2f5f14"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/TEST-PLAN.json",
+      "bytes": 4526,
+      "sha256": "48619d53e653717d3af835c5026b5249d3e1079818ea9a595e8c971dc6d2d842"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/tools/epoch-rts/t17-save-five-mod-source-inventory.cjs",
+      "bytes": 10369,
+      "sha256": "134a2b81c4217378055da0b923600f233c6904ca3fc2d186a8fee3a0b8d061c6"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/ANALYSIS-SCHEMA.json",
+      "bytes": 15348,
+      "sha256": "ffb5428f4d1fdf7378715b3d93ec21da39622282483dd4fed5114b106826b0eb"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/FAULT-GATES.json",
+      "bytes": 1078,
+      "sha256": "45464555dab05940e9ee1510ddde616aedac2c25c5e056e923b032660064a10e"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/FIX-DISPOSITION.json",
+      "bytes": 1157,
+      "sha256": "20a654d9edde6741f1e304ddf2e2b3a43457eb822dcc5ad14fdea35156fef0f0"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/LIMITS.json",
+      "bytes": 723,
+      "sha256": "801ff553f5af6bf34e12037a90af1dd41aea5888f8e52b0cc880116fb6311446"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/OWNERSHIP-AND-REVIEW.md",
+      "bytes": 2210,
+      "sha256": "f2d9625c03048521d6095781ef3a2a0aa85c8f13b7ee8d89b2de01139151cbf2"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/PROTOCOL.md",
+      "bytes": 7544,
+      "sha256": "a6aa65a59f746c79d75c95e9c3b2389d769a17be5915812fcbce489430c0e015"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/ROW-EXAMPLES.json",
+      "bytes": 3082,
+      "sha256": "105eef5ffb635a6a043da757f7cb311f13f1e75a5f087e6d8a491b8e4563b329"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/SCHEMA-TEST-PLAN.json",
+      "bytes": 1876,
+      "sha256": "8ec4c61ce2d6feb7576b73ed3f898d4e48216500dcd9a476ce8442481a60a45a"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/SOURCE-RELATIONS.json",
+      "bytes": 5205,
+      "sha256": "3d328cdf21ea5106906e25b7a94e2224de9d7a115f231f83ac44286ceb783baf"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/SPEC.md",
+      "bytes": 9329,
+      "sha256": "70327f7e7c3753b8396a080b65eb395ff0dd4667e547c1db6b8ee4f40ea2dd2b"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/TEST-PLAN.json",
+      "bytes": 4526,
+      "sha256": "48619d53e653717d3af835c5026b5249d3e1079818ea9a595e8c971dc6d2d842"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/code-design-review-v1.json",
+      "bytes": 15684,
+      "sha256": "d517bc2d447be129a86f4b80584ddc1e3477fe31c10a3af42fddd2cfcaf0bd45"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/code-design-review-v1.md",
+      "bytes": 3891,
+      "sha256": "c382e942fb114d9f5194f46652c862fef32c6f1cf77176c7bf28b3756990e275"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/js-api-design-review-v1.json",
+      "bytes": 21837,
+      "sha256": "2d92bafa60077f52c47002481306430061ad965d3851f5ce517ffc71486461ec"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/js-api-design-review-v1.md",
+      "bytes": 2338,
+      "sha256": "07bb341572d15a80e667cb09487490aaa25cc1f29fbab33c10a938e5b1cfa626"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/manifest.json",
+      "bytes": 7042,
+      "sha256": "a1e15967f9af25f224814542dc94f1735ad82968a3884a4c2101e4ab9b5b5359"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/python-design-review-v1.json",
+      "bytes": 16368,
+      "sha256": "b6f5b67f9cfcb29a5a6c910aaa86331b13b61aca59878bd721e543acae04dc52"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before-provisional-correction/BEFORE.json",
+      "bytes": 7289,
+      "sha256": "f5177d1802ff4e4c11a0d220bd78f36fe2aa9574277bff73315d7baf974e1039"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before-provisional-correction/FIX-DISPOSITION.json",
+      "bytes": 760,
+      "sha256": "19a97b63280683407f7af06513d90b152e77b0d6b0b1d126aca64a1d1a589214"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/final-review-context/code-design-review-v1.json",
+      "bytes": 15684,
+      "sha256": "d517bc2d447be129a86f4b80584ddc1e3477fe31c10a3af42fddd2cfcaf0bd45"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/final-review-context/code-design-review-v1.md",
+      "bytes": 3891,
+      "sha256": "c382e942fb114d9f5194f46652c862fef32c6f1cf77176c7bf28b3756990e275"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/final-review-context/js-api-design-review-v1.json",
+      "bytes": 21837,
+      "sha256": "2d92bafa60077f52c47002481306430061ad965d3851f5ce517ffc71486461ec"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/final-review-context/js-api-design-review-v1.md",
+      "bytes": 2338,
+      "sha256": "07bb341572d15a80e667cb09487490aaa25cc1f29fbab33c10a938e5b1cfa626"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/final-review-context/python-design-review-v1.json",
+      "bytes": 19339,
+      "sha256": "0bfdd5bd9afa25d1d83d108e015d01e20e147398bde7a0e5f698e2edbc95fdaa"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/final-review-context/python-design-review-v1.md",
+      "bytes": 5557,
+      "sha256": "e9626d5b36c1d1056ff86a977834de097838c63cb51c800f837872f64c83da22"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/final-review-context/python-design-review-v1.provisional-snapshot.json",
+      "bytes": 16368,
+      "sha256": "b6f5b67f9cfcb29a5a6c910aaa86331b13b61aca59878bd721e543acae04dc52"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/pre-final-report-merge/BEFORE.json",
+      "bytes": 7349,
+      "sha256": "577546d63efc1992b4c8bcf6f4e648f699dd3f012db5c4edb7085fbf93340dbb"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/pre-final-report-merge/FIX-DISPOSITION.json",
+      "bytes": 875,
+      "sha256": "ff3f588385aa6e22d951527b93e202a249eb9169df41b4c6800fa14f83075998"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/manifest.json",
+      "bytes": 11690,
+      "sha256": "e77f9f1b204c148910595c108b7a1dd5fa333bee507529d82980efc10238c72d"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/AMENDMENT.md",
+      "bytes": 8418,
+      "sha256": "122b57f47b34389935af51ea4463efa6dea1f5fe74391c21985e9997cf93e365"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/source-before.json",
+      "bytes": 1834,
+      "sha256": "93aa1580cb1eef4240926a2ca99a8b1dd3f55066f909e7d3d7d4beaa1914e61f"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-python/terminal-fix-v1/CONTRACT-DELTA.md",
+      "bytes": 2615,
+      "sha256": "7686d5f09a585acd7156c5cb64ede91ee249f39ff80dbc295e1dd704467eb72d"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/before/tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs",
+      "bytes": 21317,
+      "sha256": "054ac9d099cd369db3022b9e8f3d5f349ee0db7967fa9c71764914e48091808a"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/before/tools/epoch-rts/t17-save-five-mod-capture.py",
+      "bytes": 44248,
+      "sha256": "05282153c402eb5efde85628216811b0feed63067d84c2432fecfe09503355ea"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/before/tools/epoch-rts/t17-save-five-mod-analysis-schema.json",
+      "bytes": 15491,
+      "sha256": "280357ab50426d73f1265cb07458d8d4f86f226ab3b02d68025d1762d7975191"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/before/tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+      "bytes": 14109,
+      "sha256": "e7ccf1b06d8eba57da99aee39f354126796d46419e6d39015cc8314039e02eaf"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/before/tools/epoch-rts/test-t17-save-five-mod-capture.py",
+      "bytes": 14129,
+      "sha256": "d296fb672b8a7e6109d58a5847b67147f3322ff75f0c393c931c6ad29c631ba5"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/manifest.json",
+      "bytes": 14158,
+      "sha256": "faa76a79a7479663c5ad9f5c91e0ab138ebb5c9d2b17f6a437873d81aa67ecd2"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/code-design-review-v1.json",
+      "bytes": 33687,
+      "sha256": "072b49423fb8b9fc8df52dc6c1a29716508149d22d5abfa0f7fd1ed157281aa7"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/code-design-review-v1.md",
+      "bytes": 3092,
+      "sha256": "1b70aedfb8bad9ead781f5589ab3cd46de0d4fc7d179d9280a351805d8e87111"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/js-api-design-review-v1.json",
+      "bytes": 30372,
+      "sha256": "fd183abdbe6f5a3516f6170166cb24b48e81d5b7c7b96b39c553502ab53bda52"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/js-api-design-review-v1.md",
+      "bytes": 2929,
+      "sha256": "406a699c80e813a1b1c9c8c4a0532e0ec1289b4159e54cc379af2627b276f795"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/python-design-review-v1.json",
+      "bytes": 33284,
+      "sha256": "d630cbe5bee4ba04e806b03b1f6f60987ec35ba3e93c99a38a6400fbed250bf2"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/python-design-review-v1.md",
+      "bytes": 3192,
+      "sha256": "efdbe9706c2989df6950cd26811d9b91858e6e7a02625cd8bd625a6a9c4f7182"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/AMENDMENT.md",
+      "bytes": 9631,
+      "sha256": "c48289e3d2bc1db05e1d0dadd7c25b7ac28a779a2df5202fb62a6c49a329c48f"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/FIX-DISPOSITION.json",
+      "bytes": 677,
+      "sha256": "c95e0e8c96505fc52816adf3341d7b29f4ecc5fcbfe29306cd02e004f12f94f6"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/completion-design-only.json",
+      "bytes": 1724,
+      "sha256": "6a61276c04d68c1c1ff435a3cf4198bfeaaefc00028ebb0c507fac5896925071"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/code-design-review-v1.json",
+      "bytes": 30343,
+      "sha256": "c8112150ebac437ac40efe993fed709e1e0750654bfbafad2d98a7c26dc87bdc"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/python-design-review-v1.json",
+      "bytes": 35837,
+      "sha256": "4dd545b73e6e81dc62fbb3990283e2044cad5864cc2d19b35d5c335083b3d96b"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/js-api-design-review-v1.json",
+      "bytes": 28637,
+      "sha256": "014ff6aaf9c2ddefcfa667bd0b8cb5582e01cef685536e369f6ddc5ed1af38c3"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3.9",
+      "bytes": 53200,
+      "sha256": "6e7ae61f68a3838094fc56590f84c52069a97d7816f6bb79e0e85995b340e464"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/zipfile.py",
+      "bytes": 87278,
+      "sha256": "df6e2da67a3394a47ed57cfbd44298109d26f71ea22948a8840b6b56b0f6189d"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/hashlib.py",
+      "bytes": 10010,
+      "sha256": "a25e6f24d6ae5b5205844e2717f3d6dbeda005c1afeaf4d450b4f2c363a3d34a"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/io.py",
+      "bytes": 3541,
+      "sha256": "01907eff5e1a17d37e967b4d6d1bd2230e03d30f56cc1a1384a14dd77be5ff60"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py",
+      "bytes": 14017,
+      "sha256": "332fabb72a4a1ed02c9207a7619ab339dac8f0b6862e16f6499147121b302a27"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/os.py",
+      "bytes": 39404,
+      "sha256": "8dbe2d2e9f228747cacbbcc6758721e794b652e5c22b6224cb07e303ebbc620d"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_hashlib.cpython-39-darwin.so",
+      "bytes": 90640,
+      "sha256": "df2522e0043b85940cc9fa28e4807211a15edec673f648d1f501483a5736d641"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/zlib.cpython-39-darwin.so",
+      "bytes": 88848,
+      "sha256": "d63129e2be45719a8ebd16cc0c74a2146bc96dff91a8fca65f9958f55e643d3a"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/author-readback.json",
+      "bytes": 18677,
+      "sha256": "da0e11218c7e62c89e7a2b3718b1759d4c806840617ffe6328a0b2fc77ce992e"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/compile.log",
+      "bytes": 248,
+      "sha256": "f4b5fa2bb147b2ee0bf26d819864c581c7dcee017caeea9961b30bd21b0dcc2f"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/coverage-matrix.json",
+      "bytes": 30629,
+      "sha256": "1556c75887526a2800463c847f8b456ea5bffea7a444c75d74afd1c94b826d7a"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/final-normal.log",
+      "bytes": 4119,
+      "sha256": "84bac2f1dedc69d53a9d4b184b5214ab80894f0c5128f70f9e9877598c3e6ff5"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/final-optimized.log",
+      "bytes": 4119,
+      "sha256": "fdc3d5a02e49d31eaaedd15f9183f4ab93044b5654c3453aee4e3516c0da4409"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/final2-compile.json",
+      "bytes": 564,
+      "sha256": "3e0ac2f5e892ccc5c21b2e426824b34364e182b3bd261600921d23a92b761cea"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/final2-normal.log",
+      "bytes": 4399,
+      "sha256": "38cd9a5a72c4537124d89e419ece33efc398b4d90597771a7750787b0fdf754b"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/final2-optimized.log",
+      "bytes": 4399,
+      "sha256": "7ae1820e2b836927508748bf0c48eb847439692525e2acad5199a909cb8f8f85"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration1-normal.log",
+      "bytes": 6812,
+      "sha256": "6d2901b1986782a7f4fa9c677f3df618335a6a373552f047799c935d2677bc96"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration1-source.py",
+      "bytes": 50496,
+      "sha256": "78819a6599b15e3bba696e0890431b6c73b82c62dbb68969137e6b31d91a116a"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration2-normal.log",
+      "bytes": 750,
+      "sha256": "6a55f223d07dd81ed27bfcfcd74f73909f547fe5fa3dc29b7de9a5df98f5a985"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration2-source.py",
+      "bytes": 50703,
+      "sha256": "a27a318a9275d8dbeac9ce02e66e5b9b65cf69792c8844c09883801348cb5243"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration2-test.py",
+      "bytes": 22111,
+      "sha256": "1c125a3eea778251d23e3f89cffb2eac2c434ad27fc9ce80778847d1505cd2eb"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration3-required-normal.log",
+      "bytes": 1934,
+      "sha256": "da2d1dc2ee3ae6174449c1b9747fe797bb952b08160532368613ab366a4c2e0d"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration3-test.py",
+      "bytes": 33546,
+      "sha256": "9bc717645104fa9aeedbb5f9c5ecec37f2e5219a59c6d7e7367ba06d667c62fb"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration4-normal.log",
+      "bytes": 2272,
+      "sha256": "2b725a206712489125343d97b7cfde42cadaa6367a077debb4baedf9067e7ce6"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration4-test.py",
+      "bytes": 41758,
+      "sha256": "3ad0af7e6847ff2220105081b2354afb87b3805b85b72b3d4b68292d10b9d9c8"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration5-test.py",
+      "bytes": 41758,
+      "sha256": "8255d3a3ce8e373bbcdae2ef22d8f1f0b09cc73a35ce44733e35380a840326d8"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration6-test.py",
+      "bytes": 43606,
+      "sha256": "5b1242fa598504085cbdb419f3d4e06cbd4145e92b17bb25e63422e18d9c0192"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/red-normal.log",
+      "bytes": 6548,
+      "sha256": "0d17ffbd69c1245d553337b40fac436a54c7aa3e6f07d172e7d3a1d72d94b3e2"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/red-test.py",
+      "bytes": 21993,
+      "sha256": "d07c36d4d03eb85ea9f04eb2e1c60900f3ccaa58b7d2ede548e830ca2499788f"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/runtime-observed.json",
+      "bytes": 3302,
+      "sha256": "300869873d0e6208ca39e3f5f77308fe5163c57ede936f77988f781dfcb37ada"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/sparse-zip64-plan.md",
+      "bytes": 1600,
+      "sha256": "8754279cd631537c67a7c0b83c9e5b1de6b7f8333738a0ad1d5ba4855252eaae"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/case-artifacts.json",
+      "bytes": 765535,
+      "sha256": "d9ae613ef8e38b27ebd98b8f43e0f6a2e8b1d2cd0cae9b313b6a00282fb635ca"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/source-diff.patch",
+      "bytes": 21815,
+      "sha256": "24eda2b5ebf4128802f9c9ccba6c36baef2959cd53aa285abf67b4a119c081e6"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/ASSESSMENT.md",
+      "bytes": 2459,
+      "sha256": "d6414d1fa819b881315623bfa5f35078d770c10fd96cd885c110242adf8b2424"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/BEFORE.json",
+      "bytes": 415,
+      "sha256": "845b0d821793ddba05ca5a724a3c65250e8171ec906734bbc586d1f8a17a43dd"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/CHECKPOINT-20261026.json",
+      "bytes": 597,
+      "sha256": "96f0b7883ff3e3a023491d957a6902da86a6e0723b2b753a984ae4848cc0916a"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/CONTRACT.md",
+      "bytes": 1346,
+      "sha256": "e679dbf601bf1d95d96059f79b3d55a703207419488b4866c12d7c05d05fabf4"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/DIRECT-SOURCE-BINDINGS.json",
+      "bytes": 7586,
+      "sha256": "0fcffd9f4722e0de3a83e6f9503ac2a4f1b6125a60e42da8d0c755b22a9c84ce"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/INTERFACE-READBACK.json",
+      "bytes": 901,
+      "sha256": "2fcf43af268072d45c9e4ee0668c9fadb3153a9095bf258b0e617e65061c0460"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/RUNTIME-IDENTIFICATION.json",
+      "bytes": 1082,
+      "sha256": "42190fec9e64f3286e1184586b4efdafef6cc3c0d7f09186b75b53c2b8953e88"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/acorn-node26-source.txt",
+      "bytes": 242818,
+      "sha256": "2261c5f0e4abe860e889dfc67081683a4ba4d27deb7f4cbc8ad06a1b7fdd510c"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/acorn-runtime-current.txt",
+      "bytes": 242818,
+      "sha256": "2261c5f0e4abe860e889dfc67081683a4ba4d27deb7f4cbc8ad06a1b7fdd510c"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/before/tools/epoch-rts/t17-save-five-mod-source-inventory.cjs",
+      "bytes": 10369,
+      "sha256": "134a2b81c4217378055da0b923600f233c6904ca3fc2d186a8fee3a0b8d061c6"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v1.json",
+      "bytes": 97,
+      "sha256": "3484b27bd0a3c08a4533d314050681b1be9dc9d15a42309ee9ee6a8b65e8fb0e"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v1.stderr",
+      "bytes": 1174,
+      "sha256": "ede063558df379138e454528f39f3b3d4953e149745208b3944eefac6c21dd4f"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v1.stdout",
+      "bytes": 173,
+      "sha256": "05f08a35aaea4b5e297af06db8f355187878dd607b9a830d893160c3321854ef"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v2.json",
+      "bytes": 97,
+      "sha256": "33bac370fe2a970145c193f7e44b57b1d519975b92181f0d9ed920135a5d3da6"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v2.stdout",
+      "bytes": 552,
+      "sha256": "688e015a3e5952cb3c565e3216999fb7dd91d014c01eae484f710d218db902fb"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v3.json",
+      "bytes": 110,
+      "sha256": "6fcd126c3962a3d27a40ca59ae6c9b9cffc7acb93213d0a2c5948bada438c9fa"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v3.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v3.stdout",
+      "bytes": 1035,
+      "sha256": "81306cae8daa69d9c5d7ca75e2af938e6597e4b8aa3a693e7bafa8d7d46b7766"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/depth-fix-before/FAIL.json",
+      "bytes": 225,
+      "sha256": "fedff2332ef05465356fe116ed8997c26ea11c64748cba657bb92a433fdf800b"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/depth-fix-before/t17-save-five-mod-source-inventory-v2.cjs",
+      "bytes": 21289,
+      "sha256": "17f4e35eb3ed479d02c031dd976544c4089f71c433fcb4695100a0f6dc64e5c1"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/depth-fix-before/test-t17-save-five-mod-source-inventory-v2.cjs",
+      "bytes": 6717,
+      "sha256": "63cfdc5b532fa09773181c0f53a860137a4aaef4e7116580b505b9787dfa529e"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/missing-source-red.json",
+      "bytes": 104,
+      "sha256": "6d6c75f078aa0e131de1646448df397b3ddca7edb86113b0620b92a5722de2b0"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/missing-source-red.stderr",
+      "bytes": 1244,
+      "sha256": "e3af5847536373908cbdc2b8788e5b03ac7e0a14e9448fe386c87bb99d286f9b"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/missing-source-red.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/producer-byte-comparison.json",
+      "bytes": 300,
+      "sha256": "539f032ad43174eb0c0a9d7282fce4ca78f47c1377ed91d356f8a6ed5d9874c1"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/runtime-v1.json",
+      "bytes": 630,
+      "sha256": "5a65cb09df80f1054e70a9719e16a5ec06c2d5423ad6434ddb088519b4481788"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/tools/epoch-rts/t17-save-five-mod-analysis-schema.json",
+      "bytes": 15491,
+      "sha256": "280357ab50426d73f1265cb07458d8d4f86f226ab3b02d68025d1762d7975191"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs",
+      "bytes": 21317,
+      "sha256": "054ac9d099cd369db3022b9e8f3d5f349ee0db7967fa9c71764914e48091808a"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+      "bytes": 14109,
+      "sha256": "e7ccf1b06d8eba57da99aee39f354126796d46419e6d39015cc8314039e02eaf"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/ANALYSIS-SCHEMA.json",
+      "bytes": 15491,
+      "sha256": "280357ab50426d73f1265cb07458d8d4f86f226ab3b02d68025d1762d7975191"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/FAULT-GATES.json",
+      "bytes": 1078,
+      "sha256": "45464555dab05940e9ee1510ddde616aedac2c25c5e056e923b032660064a10e"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/LIMITS.json",
+      "bytes": 723,
+      "sha256": "801ff553f5af6bf34e12037a90af1dd41aea5888f8e52b0cc880116fb6311446"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-EXAMPLES-AND-TEST-PLAN.json",
+      "bytes": 3777,
+      "sha256": "8445763ba88295fe66c38ac2f25dd0f009ed570b59961f906545552eba4efae4"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-PRODUCERS.json",
+      "bytes": 4149,
+      "sha256": "24cd10015fd396d639d0eeda874ce9566a4f6003b5cdf543ec1d3ee99a05117f"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/PROTOCOL.md",
+      "bytes": 8212,
+      "sha256": "9307c44a13c5be7e8a35a0ae950bbda36cbf7f445bcd92f3ee2a2c0790ce04b1"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SCHEMA-TEST-PLAN.json",
+      "bytes": 2000,
+      "sha256": "e59270c4566f96e96839faaa378c6867ea9c9ceb6e9e4ba26b8df62074bb6635"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SOURCE-RELATIONS.json",
+      "bytes": 5733,
+      "sha256": "a5f781e0352c750c56c54f8ce2cb537763cc0925516d90cd2d6f90a9a4962203"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SPEC.md",
+      "bytes": 9685,
+      "sha256": "d6615fa1d694d57ce3f2de3d2b505eae0afd09afffd3eb82632a56235b2f5f14"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/TEST-PLAN.json",
+      "bytes": 4526,
+      "sha256": "48619d53e653717d3af835c5026b5249d3e1079818ea9a595e8c971dc6d2d842"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/code-design-review-v1.json",
+      "bytes": 18956,
+      "sha256": "f68457270515733fab63686ca2b221c0d44ba99c6243fea9cbba69b97532e131"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/completion-design-only.json",
+      "bytes": 1655,
+      "sha256": "cca1a2d5de244af9321357329921e8b787bdff2985667f8a5357edd7c35fe6ed"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/js-api-design-review-v1.json",
+      "bytes": 29615,
+      "sha256": "68a2de96c9a9b1f9ddac143fe916fe096a9cd0168180f79c647d8cd3b7549c92"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/manifest.json",
+      "bytes": 11690,
+      "sha256": "e77f9f1b204c148910595c108b7a1dd5fa333bee507529d82980efc10238c72d"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/python-design-review-v1.json",
+      "bytes": 24715,
+      "sha256": "a2b1c52830287f51b67d5a0026d3b8bf4460c5ee83f98d6824e78f3b3f31db6f"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/syntax-v1.json",
+      "bytes": 279,
+      "sha256": "33111e7a4078ec59bc5d23d15bef25b6a8525112ee83e44cfed74d8250d4db49"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/source-context-freeze-v1/manifest.json",
+      "bytes": 57360,
+      "sha256": "606444fdef94e3f101d1d7804ee88e9b32955e502efe876e2b15c7e74f2ba695"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/manifest.json",
+      "bytes": 12120,
+      "sha256": "2ed80c64f2e5ec80415bf6f58830d81df6d0d1f47dbc0d7d8e1b6de084ac0a37"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/manifest.json",
+      "bytes": 82005,
+      "sha256": "56c949717cbb8d5732c0bb765ad1300fd570600036a9b350ee6ed87a630b8cfa"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/AMENDMENT.md",
+      "bytes": 5594,
+      "sha256": "22d2c40d26eb0dbb64186347bc9f4bc1e44c87ed01bcd05dc7c4814f0a24c9a8"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-source-review-v1.json",
+      "bytes": 110185,
+      "sha256": "07d21de016fc962d99109add07a009bec71dfcf14da3ba0dedb74f5f019d0d9c"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-source-review-v1.md",
+      "bytes": 5441,
+      "sha256": "acc965b5658fa0b1bb273a786148550d1a98d4a174b36a4c3d9010b7458eab28"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/js-api-source-review-v1.json",
+      "bytes": 95043,
+      "sha256": "1772a917d872ad5194d43602ed52cbf7053ed268515b49f7b5ec0be32ddcba16"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/js-api-source-review-v1.md",
+      "bytes": 2964,
+      "sha256": "883d29baa7c4365f1b43b24de0706ca4fabdbd623caaaaf6d61b0db82cef26dd"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-source-review-v1.json",
+      "bytes": 121341,
+      "sha256": "d4fc12b1fd21d243bd39d203d8f3d5d73cfe514f2c5e6af00c2db52ed75a331d"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-source-review-v1.md",
+      "bytes": 4467,
+      "sha256": "6beffd2f89ac53992640e7bdb618e4d1f9d2b756774c92d7dfbee1cc87cb75b9"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/noncandidate-count-gate-v1/result.json",
+      "bytes": 470,
+      "sha256": "ee8a416b7e3143646bf707adb67c7036fdadf9ba4ee502f75288dd2e13b81d85"
+    }
+  ],
+  "reviews": "PENDING_FULL_CODE_PYTHON_JS_DESIGN",
+  "oldJointSourceStatus": "BLOCK_SOURCE_ONLY_IMMUTABLE"
+}

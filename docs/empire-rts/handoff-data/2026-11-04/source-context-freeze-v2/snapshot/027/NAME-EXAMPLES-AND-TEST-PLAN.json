@@ -1,0 +1,121 @@
+{
+  "schema": 1,
+  "status": "DESIGN_GOLDEN_EXPECTATIONS_NOT_EXECUTED",
+  "producer": "Actual locked Node/Acorn source future tests; no parser rerun now",
+  "positiveCases": [
+    {
+      "source": "function \\u0066() {}",
+      "expectedTop": {
+        "kind": "function",
+        "name": "f"
+      },
+      "expectedFunctionsName": [
+        "f"
+      ],
+      "reason": "Decoded own identifier; not raw escape"
+    },
+    {
+      "source": "const \\u0066 = () => {};",
+      "expectedTop": {
+        "kind": "variable",
+        "name": "\\u0066"
+      },
+      "expectedFunctionsName": [
+        "\\u0066"
+      ],
+      "reason": "Raw variable id and anonymous function parent-variable branch"
+    },
+    {
+      "source": "const \\u0066 = function \\u0067() {};",
+      "expectedTop": {
+        "kind": "variable",
+        "name": "\\u0066"
+      },
+      "expectedFunctionsName": [
+        "g"
+      ],
+      "reason": "Named function expression own decoded id precedes parentraw"
+    },
+    {
+      "source": "o.\\u0066 = function() {};",
+      "expectedFunctionsName": [
+        "o.\\u0066"
+      ],
+      "reason": "Anonymous assignment branch exact rawleft"
+    },
+    {
+      "source": "function \\u0066(){ use(() => {}); }",
+      "expectedTop": {
+        "kind": "function",
+        "name": "f"
+      },
+      "expectedFunctionsName": [
+        "f",
+        "f::<anonymous@1>"
+      ],
+      "reason": "Named decoded parent context propagated then synthesized anonymous label"
+    },
+    {
+      "source": "function \\u{10400}() {}",
+      "expectedTop": {
+        "kind": "function",
+        "name": "\ud801\udc00"
+      },
+      "expectedFunctionsName": [
+        "\ud801\udc00"
+      ],
+      "reason": "Actual astral decoded identifier, UTF16name2 units; raw escaped spelling longer"
+    },
+    {
+      "source": "function \ud801\udc00() {}",
+      "expectedTop": {
+        "kind": "function",
+        "name": "\ud801\udc00"
+      },
+      "expectedFunctionsName": [
+        "\ud801\udc00"
+      ],
+      "reason": "Literal astral identifier; offsets still UTF16 not codepoint"
+    },
+    {
+      "source": "const {x: \\u0066} = o;",
+      "expectedTop": {
+        "kind": "variable",
+        "name": "{x: \\u0066}"
+      },
+      "expectedFunctionsName": [],
+      "reason": "Full raw destructuring id, no identifier-only projection"
+    }
+  ],
+  "negativeCases": [
+    {
+      "owner": "Node producer tests",
+      "case": "Replace decoded topLevel.function f with raw \\u0066; must fail originalproducer comparison, not a Python JSdecoder claim"
+    },
+    {
+      "owner": "Node producer tests",
+      "case": "Decode variable/raw pattern name or anonymous variable/assignmentname; must fail exactslice comparison"
+    },
+    {
+      "owner": "Node producer tests",
+      "case": "Choose parentraw for named function expression despite own n.id; wrongprecedence"
+    },
+    {
+      "owner": "Node producer tests",
+      "case": "Synthetic nested anonymous context retains raw parent identifier instead of decoded own functionid; wrongincomingcontext"
+    },
+    {
+      "owner": "Node+Python validators",
+      "case": "Wrong JSON type/extra namekind/omittedkind/invalidkind/emptyname/nullname violates unchanged exactschema"
+    },
+    {
+      "owner": "Node+Python consistency",
+      "case": "Astral names/codeunitlength and functionoffsets use codepoint/bytes; reject consistency mismatch"
+    },
+    {
+      "owner": "Node errorclassification",
+      "case": "Anonymous default export function nullid originaldereference => NODE_ANALYSIS ABORT, not invented raw/decodedlabel"
+    }
+  ],
+  "semanticBoundary": "No name string/raw/decoded/synthetic/context is object/callee/constructor identity proof. Python does not implement JSidentifier parsing."
+}

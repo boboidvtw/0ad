@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "normative": true,
+  "source": "tools/epoch-rts/t17-save-five-mod-source-inventory.cjs",
+  "sourceSHA256": "134a2b81c4217378055da0b923600f233c6904ca3fc2d186a8fee3a0b8d061c6",
+  "purpose": "Preserve original field producers exactly; no decoded/raw normalization or source-identity assertion.",
+  "textHelper": "text(n) is source.slice(n.start,n.end) using JavaScript UTF16 offsets when n is present, null otherwise. These slices preserve actual escapes/BOM/text, not n.name. Nonnull id/left/arg fields use raw text.",
+  "fileTopLevelDeclarations": [
+    {
+      "when": "VariableDeclarator visited with incoming top===true",
+      "kind": "variable",
+      "name": "text(n.id), raw exact identifier OR destructuring pattern slice",
+      "line": "n.loc.start.line"
+    },
+    {
+      "when": "FunctionDeclaration visited with incoming top===true",
+      "kind": "function",
+      "name": "n.id.name, Acorn decoded Identifier.name (escaped identifier decoded)",
+      "line": "n.loc.start.line",
+      "nullId": "If original producer would dereference null n.id (e.g. anonymous default export declaration), unexpected analyzer error => ABORT NODE_ANALYSIS; do not fabricate/drop row or silently add a new fallback."
+    }
+  ],
+  "functionsNameOrderedBranches": [
+    {
+      "priority": 1,
+      "when": "FunctionDeclaration/FunctionExpression/ArrowFunctionExpression with truthy n.id",
+      "producer": "n.id.name decoded, regardless parent binding rawname"
+    },
+    {
+      "priority": 2,
+      "when": "No own n.id, parent.type===VariableDeclarator",
+      "producer": "text(parent.id) raw exact identifier/pattern"
+    },
+    {
+      "priority": 3,
+      "when": "No own n.id and parent.type===AssignmentExpression",
+      "producer": "text(parent.left) raw exact expression"
+    },
+    {
+      "priority": 4,
+      "when": "No own n.id and neither above parent case",
+      "producer": "incoming context + \"::<anonymous@\" + n.loc.start.line decimal + \">\""
+    }
+  ],
+  "contextTraversal": {
+    "initial": "visit(ast) receives context=\"(file)\",top=true,parent=null",
+    "ordinaryNode": "next=context,nextTop=top. Row contexts are incoming context, not current receiver or component identity. Recurse child AST nodes with computed next,nextTop,parent=n.",
+    "functionNode": "Compute next by ordered branches, set nextTop=false, append functions row name=next; descendants receive next. Named nested functions reset to own decoded name; anonymous labels use incoming context, without claiming lexical binding uniqueness.",
+    "parentMeaning": "Immediate AST parent passed by actual traversal; not a symbol resolver or arbitrary caller certificate.",
+    "topFlag": "Original top boolean follows recursive traversal and is disabled under function nodes; block nodes do not independently clear top. Label fileTopLevelDeclarations is retained evidence naming, not a new sound lexical scope guarantee."
+  },
+  "otherFields": {
+    "aliases.name": "text(n.id) raw",
+    "aliases.value": "text(n.init) raw or null when no initializer",
+    "call.callee": "text(n.callee) raw",
+    "call.args": "Each text(n.arguments[i]) raw incl SpreadElement text",
+    "assignment.left": "text(n.left) raw; update/delete use text(n.argument)",
+    "assignment.right": "text(n.right) raw only AssignmentExpression",
+    "params": "Each text(n.params[i]) raw; no decode",
+    "directWriter.literalName": "Actual named argument Literal.value if type string, decoded JS string (incl empty), otherwise null",
+    "writer.target": "Direct membercallee object text raw else null; expanded alias args[0] raw else null",
+    "aliasWriter.alias": "Captured aliases.name raw, equals captured call.callee; not a resolved calleeidentity",
+    "lineAndOffsets": "Acorn loc line and start/end original units; no added raw columns or spelling conversion"
+  },
+  "validationBoundary": "Node actual-parser controls verify semantic producer branches against fixed source examples. Python validates shapes/budgets/correlations and original native/archive gates; no JS parsing or private normalization invented. All unknown source semantics remain OPEN."
+}

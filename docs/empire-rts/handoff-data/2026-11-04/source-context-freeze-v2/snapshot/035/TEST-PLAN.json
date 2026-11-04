@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "phase": "DESIGN_ONLY_NOT_RUN",
+  "requiredGroups": [
+    {
+      "id": "R01",
+      "owner": "Python+Node",
+      "cases": [
+        "Reproduce old CODE archive replacement logical counterexample with oldsource retained; new sameFD capture cannot label replacement B as authority A",
+        "JS old attempt1 INVALID remains invalid; v2 intendedFAIL retained separately"
+      ]
+    },
+    {
+      "id": "R02",
+      "owner": "Python",
+      "cases": [
+        "Real symlink parent negative nooutsidewrite",
+        "Existing output root",
+        "Two concurrent reservations exactlyonewinner",
+        "Concurrent existing inventory sentinel unchanged",
+        "Every fixed artifact OEXCL check incl fault/manifest/completed/rawinitialopen"
+      ]
+    },
+    {
+      "id": "R03",
+      "owner": "Python",
+      "cases": [
+        "Path replacement after fullSHA stillheldAbytes",
+        "Path A\u2192B\u2192A",
+        "Inplace changedchunk mismatch before any Bbytes returned",
+        "Samefstat forgedmetadata doesnotbypass chunkhash",
+        "Chunk mutated then restored returns onlyauthorityA",
+        "Cache immutableA after mutation allowed expressly"
+      ]
+    },
+    {
+      "id": "R04",
+      "owner": "Python",
+      "cases": [
+        "short firstpass read",
+        "truncate during firstpass",
+        "truncate later uncachedchunk",
+        "pread exception/interrupt terminal",
+        "emptyEOF only atsize",
+        "lastpartialchunk",
+        "crosschunkread",
+        "readinto ifimplemented",
+        "seekallwhence valid andinvalid",
+        "No rawfd/pathbypass spy"
+      ]
+    },
+    {
+      "id": "R05",
+      "owner": "Python",
+      "cases": [
+        "Normal stored/deflated ZIP CRC",
+        "ZIP64 small archive",
+        "ZIP64 sparse >4GiB fixture with boundedchunkstream and explicit synthetic label",
+        "Centraldirlimit before oversizedread",
+        "Duplicate names/pathtraversal/symlink/device/unsupportedmethod/zipbomb selected size limit"
+      ]
+    },
+    {
+      "id": "R06",
+      "owner": "Python",
+      "cases": [
+        "Loose source leaf/ancestor symlink",
+        "Selected loosefile content changes",
+        "Source enum directory changes detected",
+        "No claim instantaneous multi-file snapshot",
+        "root/parentrename-replacement persistent checkfail",
+        "ephemeral malicioussameUID race labeled unsupported not fake zeroescape proof"
+      ]
+    },
+    {
+      "id": "R07",
+      "owner": "Node+Python",
+      "cases": [
+        "Real subprocess main integration captures selected sources and fixed3outputs",
+        "Node doesnotopen archive/loosesource/output paths",
+        "FINISH cannot supply filenames/expectedSHA/closure",
+        "Digest/index/count/reordered/duplicate rows reject",
+        "Sourcebodybase64 corruption reject",
+        "DuplicateJSONkeys NaN invalidUTF8 frame malformed/outoforder/extra frame reject"
+      ]
+    },
+    {
+      "id": "R08",
+      "owner": "Node",
+      "cases": [
+        "StrictsourceUTF8 invalid rejects before AST; validBOM preserved",
+        "Original7 ASTcontrols necessaryv2 regression only; oldsuite notrerun",
+        "parseerrors distinctfromUTF8 errors",
+        "fullcallback/alias/unknown forms retained unresolved",
+        "OriginalselectHighest exactsame candidate priority/shadowed facts on fixture"
+      ]
+    },
+    {
+      "id": "R09",
+      "owner": "Python+Node",
+      "cases": [
+        "Injected output shortwrite/fsync/permission/diskfull leavepartial nohealthycomplete",
+        "faultwritefailure durableFaultfalse",
+        "child crash/timeout/EOF/exit0withoutCOMPLETED/COMPLETEDnonzero UNKNOWN",
+        "reap/closefault no retry/delete",
+        "stdoutfailaftercompleted retain disk-vs-callerunknown distinction"
+      ]
+    },
+    {
+      "id": "R10",
+      "owner": "Python+Node",
+      "cases": [
+        "All limits exactedge+oneover",
+        "boundedmemory noarchive readall (spyread sizes + measured context, not memory guarantee from onecache)",
+        "Noengine/network/C++/commit/delete",
+        "Full sourcefreeze/partnerbindings freshCODE+Python+JS review before realcandidatecapture"
+      ]
+    }
+  ],
+  "redBeforeImplementation": true,
+  "allRawRetained": true,
+  "actual3_5GBArchiveMutation": "PROHIBITED_TESTS_USE_SYNTHETIC_ARCHIVES",
+  "native": "NOT_RUN",
+  "normativeAnalysisSchema": "ANALYSIS-SCHEMA.json",
+  "normativeSourceRelations": "SOURCE-RELATIONS.json",
+  "schemaVariantControls": "SCHEMA-TEST-PLAN.json"
+}

@@ -1,0 +1,259 @@
+{
+  "purpose": "CompleteexactthreewayfullSOURCEBLOCKcloseout; originalreports/severitydifferencesimmutable",
+  "createdUTC": "2026-10-29T21:30:33.629569+00:00",
+  "status": "THREE_FULL_SOURCE_BLOCK_3_UNIQUE_DEFECTS",
+  "manifestSHA256": "68a60a7a42d07d6113e4427fabac9d0b9b81c3ac288d06baa6a0faddd56db4cf",
+  "canonicalBindingsSHA256": "4af5ec2dd10836c08a2d0d077f4b4111eefbb8b45479b641650c843360d01ef8",
+  "rootCurrentAndSnapshotMATCH": 126,
+  "snapshotBytes": 2988296,
+  "controllerSHA256": "356c2ba66452b2dc35731921363a188e6f8cb5c5f7c51c784ed10aa905c03041",
+  "reports": [
+    {
+      "role": "CODE",
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-CODE-v1.json",
+      "bytes": 179901,
+      "sha256": "053e4e6bc81c6b146ca526db4afc36ae653cc2182d06a24b149f5cd0bbc6ce0d",
+      "verdict": "BLOCK",
+      "findings": [
+        {
+          "id": "CODE-SOURCE-01",
+          "severity": "MEDIUM",
+          "confidence": 0.99,
+          "title": "Cleanup in physical_dir and census can replace the original primary and lose phase-tagged UNKNOWN",
+          "path": "tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py",
+          "lines": [
+            130,
+            131,
+            718,
+            719
+          ],
+          "issue": "physical_dir catches an original child-open or previous-close failure, then calls os.close(current) without a nested guard. If that cleanup fails, its exception replaces the original escaping exception. census iterator.close runs in an unguarded finally before the outer primary variable is assigned; an enumeration/cap failure plus iterator-close failure similarly reaches the outer ledger as only the close exception. Python implicit __context__ is not serialized by FailureLedger.record (which stores type/str/cleanupUnknown only). Thus original error and/or the later owned-resource UNKNOWN disappear from external ledger despite the campaign never claiming healthy PASS.",
+          "staticExamples": [
+            "child os.open at126 raises OSError(primary); except at130 executes os.close(current), which raises OSError(secondary); caller ledger sees secondary, no structured original/cleanupUnknown.",
+            "require TREE_ENTRY_BOUND at716 raises Rejected(primary); finally iterator.close at719 raises secondary; outer except at732 sets primary=secondary; FailureLedger receives only secondary."
+          ],
+          "fix": "Guard each once-only cleanup independently while retaining first exception object and appending phase-tagged cleanup UNKNOWN, including iterator uncertainty. Do not retry unknown closes. Propagate structured facts to the bounded ledger; refreeze/review source before any StageC admission.",
+          "basis": [
+            "v1 independent-oracle/raw/ownership and bounded-finalization requirements",
+            "AUTHOR-LATE-LEDGER-01 first-primary/all-later-uncertainty requirement"
+          ],
+          "scope": "Controller functional SOURCE; no source execution or countercase performed."
+        },
+        {
+          "id": "CODE-SOURCE-02",
+          "severity": "MEDIUM",
+          "confidence": 0.99,
+          "title": "Case marked consumed before fallible evidence write and before producer body entry",
+          "path": "tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py",
+          "lines": [
+            880,
+            881,
+            882,
+            883
+          ],
+          "issue": "run_case sets result.consumed=True and attempts producer-body-entry.json before load_producer is even called. If Store.put fails, the outer exception/finalization returns consumed=True with producerCalls=0 and no producer import/body. The evidence file is also named as a body-entry claim before entry. v1/v2 define consumption on first actual producer body entry, while preflight/setup failures may retain partial evidence without consuming a case. Conservative stopping does not make this false accounting match the contract.",
+          "staticExamples": [
+            "Fixture setup/census/deadline succeed; producer-body-entry evidence put raises; load_producer is unreachable; case result remains consumed True. No runtime reproduction was performed."
+          ],
+          "fix": "Separate a preparation-intent marker from the actual producer-body-entry boundary. Set consumption exactly at the admitted private module execution boundary with no preceding fallible evidence operation after setting it; preserve entry/return/error facts. A source repair does not authorize rerun/reuse of any runtime namespace.",
+          "basis": [
+            "CONTRACT-v1 fixed target/case accounting: once any producer body begins its case is consumed",
+            "CONTRACT-v2 StageC: before producer-body entry setup failure differs from actual consumption"
+          ],
+          "scope": "Controller accounting and truthful evidence; does not independently allow any retry."
+        }
+      ],
+      "markdown": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-CODE-v1.md",
+        "bytes": 3046,
+        "sha256": "ae244f99d651c5e26535cee1799320bffbf4cb3861ce77bfcb03fe0bd1d1831e"
+      }
+    },
+    {
+      "role": "Python",
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-v1.json",
+      "bytes": 225853,
+      "sha256": "1ac8ca0b183fd1581b80b45b26f1bae4fb16e1ebb72a998b5f96d21c2dd2f121",
+      "verdict": "BLOCK",
+      "findings": [
+        {
+          "id": "PY-FULL-PRIMARY-CLEANUP-01",
+          "severity": "HIGH",
+          "path": "tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py",
+          "lines": [
+            121,
+            132
+          ],
+          "issue": "physical_dir except cleanup os.close(current) can raise while handling an earlier open/close error; cleanup error replaces original primary and drops original context from FailureLedger. A failed previous close also lacks an explicit phase-tagged owned descriptor UNKNOWN record.",
+          "fix": "Preserve first exception and append separately guarded once-only cleanup UNKNOWN details without retrying uncertain descriptors.",
+          "normativeBasis": [
+            "CONTRACT-v1: first failure and later cleanup UNKNOWN retained; no swallowed close failure or uncertain descriptor retry",
+            "CONTRACT-v2 Stage B/C: full SOURCE includes complete observer/restoration/finalization and unchanged error ownership gates",
+            "SOURCE-INTERFACE-v1: late error independently guarded, primary preserved, nondurable channels explicitly UNKNOWN"
+          ],
+          "evidenceKind": "Static control-flow inspection only; no fault reproduction or authored source execution",
+          "acceptanceImpact": "Nonzero failure may still occur, but the original cause and distinct later cleanup uncertainty are lost; complete SOURCE contract is not met. This is not a claim of healthy PASS escape.",
+          "blocking": true
+        },
+        {
+          "id": "PY-FULL-PRIMARY-CLEANUP-02",
+          "severity": "HIGH",
+          "path": "tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py",
+          "lines": [
+            711,
+            719
+          ],
+          "issue": "census iterator.close() in unguarded finally can replace iterator/entry-bound primary. Outer handler sees only close exception; original failure and distinct cleanup phase are lost.",
+          "fix": "Track original iteration failure and separately guarded iterator cleanup error, preserve original primary and append cleanup UNKNOWN.",
+          "normativeBasis": [
+            "CONTRACT-v1: first failure and later cleanup UNKNOWN retained; no swallowed close failure or uncertain descriptor retry",
+            "CONTRACT-v2 Stage B/C: full SOURCE includes complete observer/restoration/finalization and unchanged error ownership gates",
+            "SOURCE-INTERFACE-v1: late error independently guarded, primary preserved, nondurable channels explicitly UNKNOWN"
+          ],
+          "evidenceKind": "Static control-flow inspection only; no fault reproduction or authored source execution",
+          "acceptanceImpact": "Nonzero failure may still occur, but the original cause and distinct later cleanup uncertainty are lost; complete SOURCE contract is not met. This is not a claim of healthy PASS escape.",
+          "blocking": true
+        }
+      ],
+      "markdown": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-v1.md",
+        "bytes": 3638,
+        "sha256": "7caa6683517bae80b98d5a64b1c5f6211e857f825a79be576a0c2f0b62ee3ea3"
+      }
+    },
+    {
+      "role": "JSAPI",
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-JSAPI-v1.json",
+      "bytes": 223420,
+      "sha256": "ecaa648210e009b46080a152f6d951e9ac0da2c7c056ef08a526e9842508ea1e",
+      "verdict": "BLOCK",
+      "findings": [
+        {
+          "id": "JSAPI-SOURCE-01",
+          "severity": "MEDIUM",
+          "priority": "P2",
+          "path": "tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py",
+          "lineStart": 130,
+          "lineEnd": 132,
+          "title": "Preserve traversal primary when cleanup close is uncertain",
+          "trigger": "Directory traversal os.open or previous-descriptor os.close raises, followed by failure of the unguarded os.close(current) in the exception handler.",
+          "actual": "The second close exception escapes in place of the original traversal error. Although Python may retain __context__, FailureLedger.record serializes only type/str/cleanupUnknown, so the original phase error and cleanup distinction are lost from bounded recorded evidence.",
+          "required": "Retain the original error object as primary; attempt owned cleanup once under a separate guard and append phase-tagged close UNKNOWN details, then re-raise the original. Do not retry uncertain descriptors.",
+          "basis": "v1 CONTRACT first-primary and later uncertainty/owned-FD cleanup requirements; AUTHOR-LATE-LEDGER-01.",
+          "proof": "Static control flow; no countercase, syscall fault injection or authored execution performed.",
+          "blocks": "Complete functional SOURCE approval; not a claim of healthy acceptance bypass."
+        },
+        {
+          "id": "JSAPI-SOURCE-02",
+          "severity": "MEDIUM",
+          "priority": "P2",
+          "path": "tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py",
+          "lineStart": 718,
+          "lineEnd": 719,
+          "title": "Keep census iteration failure separate from iterator-close UNKNOWN",
+          "trigger": "scandir iteration or TREE_ENTRY_BOUND raises and iterator.close() in finally also raises.",
+          "actual": "The iterator-close exception replaces the iteration/bound primary before the outer except sets primary. The outer directory-FD cleanup preserves only that replacement. FailureLedger does not serialize __context__, so the first error is not retained as required.",
+          "required": "Track the iteration primary before iterator finalization; close the iterator once using independently guarded ownership, preserve the original primary and attach later close UNKNOWN; retain existing outer FD close semantics.",
+          "basis": "v1 CONTRACT independent evidence/owned-close guards and first failure retention; enumeration-count amendment explicitly requires constructor/next/close error ownership.",
+          "proof": "Static control flow; no countercase or iterator/producer execution performed.",
+          "blocks": "Complete functional SOURCE approval; no runtime result or case consumption implied."
+        },
+        {
+          "id": "JSAPI-SOURCE-03",
+          "severity": "MEDIUM",
+          "priority": "P2",
+          "path": "tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py",
+          "lineStart": 881,
+          "lineEnd": 883,
+          "title": "Do not attest producer entry before its evidence write succeeds",
+          "trigger": "store.put of producer-body-entry.json fails before load_producer is called.",
+          "actual": "run_case already sets consumed=True, despite no producer module-body entry. Subsequent case/result evidence claims consumption for an admission/evidence-write failure. Safety remains fail-closed and no retry is permitted, but the actual attempt ledger contradicts the v1/v2 first-body-entry accounting rule.",
+          "required": "Separate pre-entry reservation/admission from actual body-entry consumption. Preserve the once-only root/no-retry policy while accurately recording whether producer body began; a failed pre-entry evidence write must retain consumed=False/producerCalls=0 with its failure.",
+          "basis": "v1 fixed target and case accounting; v2 Stage C first body-entry consumption rule.",
+          "proof": "Static call ordering; no countercase, evidence write or producer import performed.",
+          "blocks": "Complete functional SOURCE approval for accurate ledger; not a retry authorization or healthy-PASS bypass."
+        }
+      ],
+      "markdown": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-JSAPI-v1.md",
+        "bytes": 2904,
+        "sha256": "c990b65d0ac7551c6e0a3706cc3982b39c8207abb6c19ffa4c77cfeda9f1fe1d"
+      }
+    },
+    {
+      "role": "PythonSupplement",
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-supplement-v1.json",
+      "bytes": 2854,
+      "sha256": "1ec35df8666a22f4978a444350c07da74c269fa9484ecf6b95b66ff68778a6af",
+      "verdict": "BLOCK",
+      "findings": [
+        {
+          "id": "PY-FULL-CONSUMPTION-03",
+          "severity": "MEDIUM",
+          "blocking": true,
+          "path": "tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py",
+          "lines": [
+            767,
+            773,
+            880,
+            883
+          ],
+          "issue": "run_case sets consumed=True then performs fallible store.put(producer-body-entry.json), before calling load_producer. If that evidence write fails, unchanged producer module is never loaded and its body never starts, but result consumed remains True. load_producer also performs fallible spec/module preparation before exec_module. Fixed contract defines consumption by first producer body entry; pre-entry admission failure must not be mislabeled actual body consumption.",
+          "fix": "Keep admission/evidence preparation separate from actual producer-body entry accounting. Preserve attempted/UNKNOWN status where entry cannot be established, retain all evidence and fixed-root retry0/no-reuse policy; never treat uncertain entry as permission to rerun.",
+          "evidenceKind": "Independent static control-flow inspection after CODE finding referral; no execution/reproduction",
+          "normativeBasis": "CONTRACT-v1 Fixed target/case accounting and CONTRACT-v2 Stage C: consumed on first producer body entry; preflight/setup may retain partial admission evidence but no retry/reuse.",
+          "acceptanceImpact": "Overcounts consumption and falsely labels producer-body-entry evidence. It is not an unauthorized retry or healthy-PASS path; conservative stop still holds."
+        }
+      ],
+      "markdown": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-supplement-v1.md",
+        "bytes": 1296,
+        "sha256": "11e30f078d48ef42b8c5a9fcc8499f93cd2b44b5974e2b99b922aef569ca96aa"
+      }
+    }
+  ],
+  "uniqueDefects": [
+    "physical_dir cleanup mayreplace firstprimary/loseUNKNOWN",
+    "census iterator.close mayreplace firstprimary/loseUNKNOWN",
+    "consumed=True beforefalliblemarkerwrite/actualproducerbodyentry"
+  ],
+  "severityRule": "Python2HIGH+1MEDIUM inclsupplement;CODE2MEDIUM consolidatescleanup;JSAPI3MEDIUM. Preserveallindependentseverities, noflattenedupgrade/downgrade.",
+  "all24Helpers": "DONE_ONCE_NO_RERUN",
+  "runtimeNamespace": "originalrequired-fault-controls-preparation-v1/execution-v1",
+  "producerImport": "NOT_RUN",
+  "cases": "THREE_NOT_RUN",
+  "attempt": "NOT_CREATED",
+  "sourceApproval": false,
+  "stageCAdmitted": false,
+  "native": false,
+  "quotaErrors": [
+    "Python aftercompletedbaseandsupplement",
+    "author beforeproposalfile"
+  ],
+  "liveUsage": {
+    "at": "2026-10-29T21:29:01.255Z",
+    "ordinaryUsageAllowed": true,
+    "primaryUsedPercent": 0,
+    "secondaryUsedPercent": 80,
+    "credits": 0,
+    "resetCredits": 0
+  },
+  "next": "Finishread-onlyminimalfix/128rowcontextaccountingproposal; no sourcechangesuntilrootboundedassignment. Currentfull126freeze/reportsareimmutableBLOCK. No furtherhelpers orcases.",
+  "git": {
+    "HEAD": {
+      "stdout": "726a3aefcae830f605de438cd13192cc6330414e\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    "index": {
+      "stdout": "",
+      "stderr": "",
+      "returncode": 0
+    },
+    "dirty": {
+      "stdout": " M README.md\n M docs/empire-rts/journal.md\n M docs/empire-rts/plan.md\n M docs/empire-rts/progress.md\n?? docs/empire-rts/AUTONOMOUS-CONTINUATION-2026-10-11.md\n?? docs/empire-rts/AUTONOMOUS-EXECUTION-T14-T18-2026-10-11.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-09-30-T14.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-01-T14.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-03-T14.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-04-T14-MIXED-DIAGNOSIS.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-04-T14-MIXED.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-04-T14-PROFILE.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-04-T14.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-05-T14-CALLBACK-DIAGNOSIS.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-05-T14-FINE-PROFILE.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-05-T14-RESISTANCE-PROFILE.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-05-T14-SEARCH-PROFILE.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-05-T14-SEARCH-TRIGGER-DIAGNOSIS.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-05-T14-SIM-DIAGNOSIS.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-06-T14-QUERY-OBSERVABILITY.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-06-T14-RESISTANCE-DIAGNOSIS.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-08-T14-CANATTACK-AGGREGATE.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-08-T14-CANATTACK-COUNT.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-08-T14-CANATTACK-PROFILE.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-08-T14-QUERY-OBSERVABILITY.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-09-T14-CANATTACK-DELTA.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-09-T14-CANATTACK-MEMORY.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-09-T14-CANATTACK-OFFLINE-REPLAY.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-10-T14-LIVE-STORAGE-ASSESSMENT.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-10-T14-STORAGE-FAILURE-PROOF.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-10-T14-STORAGE-PARSER-INTEGRATION.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-11-T14-LIVE-INTEGRATION-GAPS.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-11-T14-STORAGE-RUNNER-INTEGRATION.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-12-T14-T18.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-13-T14-T18.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-14-T14-T18.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-15-T14-T18.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-16-T14-T18.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-17-T14-T18.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-18-T14-T18.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-20-T14-T18.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-21-T14-T18.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-22-T14-T18.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-23-T14-T18.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-24-T14-T18.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-25-T14-T18.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-26-T14-T18.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-26-TRANSFER-T14-T18.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-27-T14-T18.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-28-T14-T18.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-29-T14-T18.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-10-29-TRANSFER-T14-T18.md\n?? docs/empire-rts/evidence/t14-600-warmup.png\n?? docs/empire-rts/evidence/t14-aa-results.json\n?? docs/empire-rts/evidence/t14-aa-source-manifest.json\n?? docs/empire-rts/evidence/t14-aa-validation.md\n?? docs/empire-rts/evidence/t14-battle-results.json\n?? docs/empire-rts/evidence/t14-battle-source-manifest.json\n?? docs/empire-rts/evidence/t14-battle-validation.md\n?? docs/empire-rts/evidence/t14-callback-diagnosis-results.json\n?? docs/empire-rts/evidence/t14-callback-diagnosis-source-manifest.json\n?? docs/empire-rts/evidence/t14-callback-diagnosis-validation.md\n?? docs/empire-rts/evidence/t14-canattack-aggregate-assessment-results.json\n?? docs/empire-rts/evidence/t14-canattack-aggregate-assessment-validation.md\n?? docs/empire-rts/evidence/t14-canattack-count-results.json\n?? docs/empire-rts/evidence/t14-canattack-count-validation.md\n?? docs/empire-rts/evidence/t14-canattack-delta-results.json\n?? docs/empire-rts/evidence/t14-canattack-delta-validation.md\n?? docs/empire-rts/evidence/t14-canattack-memory-assessment-results.json\n?? docs/empire-rts/evidence/t14-canattack-memory-assessment-validation.md\n?? docs/empire-rts/evidence/t14-canattack-offline-replay-results.json\n?? docs/empire-rts/evidence/t14-canattack-offline-replay-validation.md\n?? docs/empire-rts/evidence/t14-canattack-profile-results.json\n?? docs/empire-rts/evidence/t14-canattack-profile-source-manifest.json\n?? docs/empire-rts/evidence/t14-canattack-profile-validation.md\n?? docs/empire-rts/evidence/t14-diagnosis-results.json\n?? docs/empire-rts/evidence/t14-diagnosis-source-manifest.json\n?? docs/empire-rts/evidence/t14-diagnosis-validation.md\n?? docs/empire-rts/evidence/t14-dual-results.json\n?? docs/empire-rts/evidence/t14-dual-source-manifest.json\n?? docs/empire-rts/evidence/t14-dual-validation.md\n?? docs/empire-rts/evidence/t14-economy-seed7.png\n?? docs/empire-rts/evidence/t14-fine-profile-results.json\n?? docs/empire-rts/evidence/t14-fine-profile-source-manifest.json\n?? docs/empire-rts/evidence/t14-fine-profile-validation.md\n?? docs/empire-rts/evidence/t14-flight-results.json\n?? docs/empire-rts/evidence/t14-flight-source-manifest.json\n?? docs/empire-rts/evidence/t14-flight-validation.md\n?? docs/empire-rts/evidence/t14-live-integration-gap-assessment-results.json\n?? docs/empire-rts/evidence/t14-live-integration-gap-assessment-validation.md\n?? docs/empire-rts/evidence/t14-live-storage-assessment-results.json\n?? docs/empire-rts/evidence/t14-live-storage-assessment-validation.md\n?? docs/empire-rts/evidence/t14-match-repeatability-results.json\n?? docs/empire-rts/evidence/t14-match-repeatability-source-manifest.json\n?? docs/empire-rts/evidence/t14-match-repeatability-validation.md\n?? docs/empire-rts/evidence/t14-match-results.json\n?? docs/empire-rts/evidence/t14-match-seed7-results.json\n?? docs/empire-rts/evidence/t14-match-seed7-source-manifest.json\n?? docs/empire-rts/evidence/t14-match-seed7-validation.md\n?? docs/empire-rts/evidence/t14-match-source-manifest.json\n?? docs/empire-rts/evidence/t14-match-validation.md\n?? docs/empire-rts/evidence/t14-mixed-diagnosis-results.json\n?? docs/empire-rts/evidence/t14-mixed-diagnosis-timeline.png\n?? docs/empire-rts/evidence/t14-mixed-diagnosis-validation.md\n?? docs/empire-rts/evidence/t14-mixed-profile-attempt1-source-manifest.json\n?? docs/empire-rts/evidence/t14-mixed-profile-results.json\n?? docs/empire-rts/evidence/t14-mixed-profile-source-manifest.json\n?? docs/empire-rts/evidence/t14-mixed-profile-validation.md\n?? docs/empire-rts/evidence/t14-mixed-results.json\n?? docs/empire-rts/evidence/t14-mixed-source-manifest.json\n?? docs/empire-rts/evidence/t14-mixed-validation.md\n?? docs/empire-rts/evidence/t14-query-observability-results.json\n?? docs/empire-rts/evidence/t14-query-observability-source-manifest.json\n?? docs/empire-rts/evidence/t14-query-observability-validation.md\n?? docs/empire-rts/evidence/t14-resistance-diagnosis-results.json\n?? docs/empire-rts/evidence/t14-resistance-diagnosis-source-manifest.json\n?? docs/empire-rts/evidence/t14-resistance-diagnosis-validation.md\n?? docs/empire-rts/evidence/t14-resistance-profile-results.json\n?? docs/empire-rts/evidence/t14-resistance-profile-source-manifest.json\n?? docs/empire-rts/evidence/t14-resistance-profile-validation.md\n?? docs/empire-rts/evidence/t14-results.json\n?? docs/empire-rts/evidence/t14-search-profile-results.json\n?? docs/empire-rts/evidence/t14-search-profile-source-manifest.json\n?? docs/empire-rts/evidence/t14-search-profile-validation.md\n?? docs/empire-rts/evidence/t14-search-trigger-diagnosis-results.json\n?? docs/empire-rts/evidence/t14-search-trigger-diagnosis-source-manifest.json\n?? docs/empire-rts/evidence/t14-search-trigger-diagnosis-validation.md\n?? docs/empire-rts/evidence/t14-sim-diagnosis-results.json\n?? docs/empire-rts/evidence/t14-sim-diagnosis-source-manifest.json\n?? docs/empire-rts/evidence/t14-sim-diagnosis-validation.md\n?? docs/empire-rts/evidence/t14-soak-results.json\n?? docs/empire-rts/evidence/t14-soak-source-manifest.json\n?? docs/empire-rts/evidence/t14-soak-validation.md\n?? docs/empire-rts/evidence/t14-source-manifest.json\n?? docs/empire-rts/evidence/t14-storage-failure-proof-results.json\n?? docs/empire-rts/evidence/t14-storage-failure-proof-validation.md\n?? docs/empire-rts/evidence/t14-storage-parser-integration-results.json\n?? docs/empire-rts/evidence/t14-storage-parser-integration-validation.md\n?? docs/empire-rts/evidence/t14-storage-runner-integration-results.json\n?? docs/empire-rts/evidence/t14-storage-runner-integration-validation.md\n?? docs/empire-rts/evidence/t14-strike-results.json\n?? docs/empire-rts/evidence/t14-strike-source-manifest.json\n?? docs/empire-rts/evidence/t14-strike-validation.md\n?? docs/empire-rts/evidence/t14-validation.md\n?? docs/empire-rts/evidence/t14-workload-results.json\n?? docs/empire-rts/evidence/t14-workload-source-manifest.json\n?? docs/empire-rts/evidence/t14-workload-validation.md\n?? docs/empire-rts/evidence/t15-local-package-validation.md\n?? docs/empire-rts/evidence/t17-controller-native42-validation.md\n?? docs/empire-rts/evidence/t17-owner-gui-native42-validation.md\n?? docs/empire-rts/evidence/t18-output-protocol-native42-validation.md\n?? docs/empire-rts/evidence/t18-parking-native42-validation.md\n?? docs/empire-rts/evidence/t18-precision-gui-native42-validation.md\n?? docs/empire-rts/evidence/t18-precision-native-validation.md\n?? docs/empire-rts/t14-aa.md\n?? docs/empire-rts/t14-battle.md\n?? docs/empire-rts/t14-callback-diagnosis.md\n?? docs/empire-rts/t14-canattack-aggregate-assessment.md\n?? docs/empire-rts/t14-canattack-count.md\n?? docs/empire-rts/t14-canattack-delta.md\n?? docs/empire-rts/t14-canattack-memory-assessment.md\n?? docs/empire-rts/t14-canattack-offline-replay.md\n?? docs/empire-rts/t14-canattack-profile.md\n?? docs/empire-rts/t14-diagnosis.md\n?? docs/empire-rts/t14-dual.md\n?? docs/empire-rts/t14-fine-profile.md\n?? docs/empire-rts/t14-flight.md\n?? docs/empire-rts/t14-live-integration-gap-assessment.md\n?? docs/empire-rts/t14-live-storage-assessment.md\n?? docs/empire-rts/t14-match-repeatability.md\n?? docs/empire-rts/t14-match-seed7.md\n?? docs/empire-rts/t14-match.md\n?? docs/empire-rts/t14-mixed-diagnosis.md\n?? docs/empire-rts/t14-mixed-profile.md\n?? docs/empire-rts/t14-mixed.md\n?? docs/empire-rts/t14-performance.md\n?? docs/empire-rts/t14-query-observability.md\n?? docs/empire-rts/t14-resistance-diagnosis.md\n?? docs/empire-rts/t14-resistance-profile.md\n?? docs/empire-rts/t14-search-profile.md\n?? docs/empire-rts/t14-search-trigger-diagnosis.md\n?? docs/empire-rts/t14-sim-diagnosis.md\n?? docs/empire-rts/t14-soak.md\n?? docs/empire-rts/t14-storage-failure-proof.md\n?? docs/empire-rts/t14-storage-parser-integration.md\n?? docs/empire-rts/t14-storage-runner-integration.md\n?? docs/empire-rts/t14-strike.md\n?? docs/empire-rts/t14-workloads.md\n?? docs/empire-rts/t15-candidate-runtime-contract.md\n?? docs/empire-rts/t15-candidate-runtime-native-path-assessment.md\n?? docs/empire-rts/t15-local-package-contract-2026-10-12.md\n?? docs/empire-rts/t15-native-transport-contract.md\n?? docs/empire-rts/t15-native-transport-offline-contract.md\n?? docs/empire-rts/t15-release-preparation.md\n?? docs/empire-rts/t16-attack-check.md\n?? docs/empire-rts/t16-fixture-schedule.md\n?? docs/empire-rts/t16-native-death-contract.md\n?? docs/empire-rts/t16-runtime-applicability.md\n?? docs/empire-rts/t16-runtime-runner.md\n?? docs/empire-rts/t17-save-network-assessment.md\n?? docs/empire-rts/t17-submarine-controller-contract.md\n?? docs/empire-rts/t17-submarine-fixture-contract.md\n?? docs/empire-rts/t17-submarine-runtime-contract.md\n?? docs/empire-rts/t18-native-output-protocol-contract.md\n?? docs/empire-rts/t18-parking-implementation-contract.md\n?? docs/empire-rts/t18-parking-native-fixture-contract.md\n?? docs/empire-rts/t18-parking-native-runtime-contract.md\n?? docs/empire-rts/t18-parking-obstruction-api-assessment.md\n?? docs/empire-rts/t18-precision-fixture-contract.md\n?? docs/empire-rts/t18-precision-gui-contract.md\n?? docs/empire-rts/t18-precision-gui-runtime-contract.md\n?? docs/empire-rts/t18-precision-implementation.md\n?? docs/empire-rts/t18-precision-parking.md\n?? docs/empire-rts/t18-precision-runtime-contract.md\n?? docs/empire-rts/t18-window-capture-contract.md\n?? profile.txt\n?? profile2.jsonp\n?? tools/epoch-rts/t14-aa-harness/\n?? tools/epoch-rts/t14-battle-harness/\n?? tools/epoch-rts/t14-canattack-count-harness/\n?? tools/epoch-rts/t14-canattack-count-macos.py\n?? tools/epoch-rts/t14-canattack-delta-harness/\n?? tools/epoch-rts/t14-canattack-delta-macos.py\n?? tools/epoch-rts/t14-canattack-offline-replay.py\n?? tools/epoch-rts/t14-canattack-profile-harness/\n?? tools/epoch-rts/t14-canattack-profile-macos.py\n?? tools/epoch-rts/t14-dual-harness/\n?? tools/epoch-rts/t14-fine-profile-harness/\n?? tools/epoch-rts/t14-fine-profile-macos.py\n?? tools/epoch-rts/t14-flight-harness/\n?? tools/epoch-rts/t14-harness/\n?? tools/epoch-rts/t14-macos.py\n?? tools/epoch-rts/t14-match-harness/\n?? tools/epoch-rts/t14-mixed-harness/\n?? tools/epoch-rts/t14-mixed-profile-harness/\n?? tools/epoch-rts/t14-profile-macos.py\n?? tools/epoch-rts/t14-resistance-profile-harness/\n?? tools/epoch-rts/t14-resistance-profile-macos.py\n?? tools/epoch-rts/t14-search-profile-harness/\n?? tools/epoch-rts/t14-search-profile-macos.py\n?? tools/epoch-rts/t14-soak-harness/\n?? tools/epoch-rts/t14-storage-failure-proof.py\n?? tools/epoch-rts/t14-storage-parser-integration-proof.py\n?? tools/epoch-rts/t14-storage-runner-integration-proof.py\n?? tools/epoch-rts/t14-storage-runner-integration.py\n?? tools/epoch-rts/t14-strike-harness/\n?? tools/epoch-rts/t14-workload-harness/\n?? tools/epoch-rts/t14_aa.py\n?? tools/epoch-rts/t14_battle.py\n?? tools/epoch-rts/t14_canattack_count.py\n?? tools/epoch-rts/t14_canattack_delta.py\n?? tools/epoch-rts/t14_canattack_offline_replay.py\n?? tools/epoch-rts/t14_canattack_profile.py\n?? tools/epoch-rts/t14_dual.py\n?? tools/epoch-rts/t14_fine_profile.py\n?? tools/epoch-rts/t14_flight.py\n?? tools/epoch-rts/t14_match.py\n?? tools/epoch-rts/t14_mixed.py\n?? tools/epoch-rts/t14_mixed_profile.py\n?? tools/epoch-rts/t14_profile.py\n?? tools/epoch-rts/t14_resistance_profile.py\n?? tools/epoch-rts/t14_search_profile.py\n?? tools/epoch-rts/t14_soak.py\n?? tools/epoch-rts/t14_storage_failure.py\n?? tools/epoch-rts/t14_storage_parser_integration.py\n?? tools/epoch-rts/t14_storage_runner_integration.py\n?? tools/epoch-rts/t14_strike.py\n?? tools/epoch-rts/t14_workload.py\n?? tools/epoch-rts/t15-candidate-runtime.py\n?? tools/epoch-rts/t15-package.py\n?? tools/epoch-rts/t15-runtime-harness/\n?? tools/epoch-rts/t15_candidate_runtime.py\n?? tools/epoch-rts/t15_native_transport.py\n?? tools/epoch-rts/t15_package.py\n?? tools/epoch-rts/t16-harness/\n?? tools/epoch-rts/t16-macos.py\n?? tools/epoch-rts/t16-native-death.py\n?? tools/epoch-rts/t16_native_death.py\n?? tools/epoch-rts/t16_runtime.py\n?? tools/epoch-rts/t17-gui-harness/\n?? tools/epoch-rts/t17-gui-native-harness/\n?? tools/epoch-rts/t17-gui-native.py\n?? tools/epoch-rts/t17-harness/\n?? tools/epoch-rts/t17-save-allocation-witness/\n?? tools/epoch-rts/t17-save-five-mod-analysis-schema.json\n?? tools/epoch-rts/t17-save-five-mod-capture.py\n?? tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs\n?? tools/epoch-rts/t17-save-five-mod-source-inventory.cjs\n?? tools/epoch-rts/t17-save-harness/\n?? tools/epoch-rts/t17-submarine.py\n?? tools/epoch-rts/t17_gui_native_runtime.py\n?? tools/epoch-rts/t17_save_archive.py\n?? tools/epoch-rts/t17_save_metadata.py\n?? tools/epoch-rts/t17_save_prearm.py\n?? tools/epoch-rts/t17_save_queue_prefix.py\n?? tools/epoch-rts/t17_save_raw_capture.py\n?? tools/epoch-rts/t17_submarine_runtime.py\n?? tools/epoch-rts/t18-harness/\n?? tools/epoch-rts/t18-output-protocol-harness/\n?? tools/epoch-rts/t18-output-protocol.py\n?? tools/epoch-rts/t18-parking-harness/\n?? tools/epoch-rts/t18-parking.py\n?? tools/epoch-rts/t18-precision-gui-harness/\n?? tools/epoch-rts/t18-precision-gui.py\n?? tools/epoch-rts/t18-precision.py\n?? tools/epoch-rts/t18-window-capture.swift\n?? tools/epoch-rts/t18_output_protocol.py\n?? tools/epoch-rts/t18_parking_runtime.py\n?? tools/epoch-rts/t18_precision_gui_runtime.py\n?? tools/epoch-rts/t18_precision_runtime.py\n?? tools/epoch-rts/test-t14-aa.cjs\n?? tools/epoch-rts/test-t14-aa.py\n?? tools/epoch-rts/test-t14-battle.cjs\n?? tools/epoch-rts/test-t14-battle.py\n?? tools/epoch-rts/test-t14-canattack-count-runner.py\n?? tools/epoch-rts/test-t14-canattack-count.cjs\n?? tools/epoch-rts/test-t14-canattack-count.py\n?? tools/epoch-rts/test-t14-canattack-delta-runner.py\n?? tools/epoch-rts/test-t14-canattack-delta.cjs\n?? tools/epoch-rts/test-t14-canattack-delta.py\n?? tools/epoch-rts/test-t14-canattack-offline-replay.py\n?? tools/epoch-rts/test-t14-canattack-profile.cjs\n?? tools/epoch-rts/test-t14-canattack-profile.py\n?? tools/epoch-rts/test-t14-dual.cjs\n?? tools/epoch-rts/test-t14-dual.py\n?? tools/epoch-rts/test-t14-fine-profile.cjs\n?? tools/epoch-rts/test-t14-fine-profile.py\n?? tools/epoch-rts/test-t14-flight.cjs\n?? tools/epoch-rts/test-t14-flight.py\n?? tools/epoch-rts/test-t14-match.cjs\n?? tools/epoch-rts/test-t14-match.py\n?? tools/epoch-rts/test-t14-mixed-profile.cjs\n?? tools/epoch-rts/test-t14-mixed-profile.py\n?? tools/epoch-rts/test-t14-mixed.cjs\n?? tools/epoch-rts/test-t14-mixed.py\n?? tools/epoch-rts/test-t14-profile-runner.py\n?? tools/epoch-rts/test-t14-resistance-profile.cjs\n?? tools/epoch-rts/test-t14-resistance-profile.py\n?? tools/epoch-rts/test-t14-search-profile.cjs\n?? tools/epoch-rts/test-t14-search-profile.py\n?? tools/epoch-rts/test-t14-soak.cjs\n?? tools/epoch-rts/test-t14-soak.py\n?? tools/epoch-rts/test-t14-storage-failure.py\n?? tools/epoch-rts/test-t14-storage-parser-integration.py\n?? tools/epoch-rts/test-t14-storage-runner-integration.py\n?? tools/epoch-rts/test-t14-strike.cjs\n?? tools/epoch-rts/test-t14-strike.py\n?? tools/epoch-rts/test-t14-tools.py\n?? tools/epoch-rts/test-t14-workload.cjs\n?? tools/epoch-rts/test-t15-candidate-fixture.cjs\n?? tools/epoch-rts/test-t15-candidate-runtime.py\n?? tools/epoch-rts/test-t15-native-transport.py\n?? tools/epoch-rts/test-t15-package.py\n?? tools/epoch-rts/test-t16-attack.cjs\n?? tools/epoch-rts/test-t16-fixture.cjs\n?? tools/epoch-rts/test-t16-native-death.cjs\n?? tools/epoch-rts/test-t16-native-death.py\n?? tools/epoch-rts/test-t16-runner.py\n?? tools/epoch-rts/test-t17-fixture.cjs\n?? tools/epoch-rts/test-t17-gui-driver.cjs\n?? tools/epoch-rts/test-t17-gui-fixture.cjs\n?? tools/epoch-rts/test-t17-gui-native.py\n?? tools/epoch-rts/test-t17-gui.cjs\n?? tools/epoch-rts/test-t17-save-admission.cjs\n?? tools/epoch-rts/test-t17-save-allocation-consumer.cjs\n?? tools/epoch-rts/test-t17-save-allocation-witness.cjs\n?? tools/epoch-rts/test-t17-save-archive.py\n?? tools/epoch-rts/test-t17-save-command-creators.cjs\n?? tools/epoch-rts/test-t17-save-command-witness.cjs\n?? tools/epoch-rts/test-t17-save-complete-witness.cjs\n?? tools/epoch-rts/test-t17-save-five-mod-bridge.cjs\n?? tools/epoch-rts/test-t17-save-five-mod-capture.py\n?? tools/epoch-rts/test-t17-save-five-mod-preservation-bridge.py\n?? tools/epoch-rts/test-t17-save-five-mod-required-fault-controls-helpers.py\n?? tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py\n?? tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs\n?? tools/epoch-rts/test-t17-save-five-mod-source-inventory.cjs\n?? tools/epoch-rts/test-t17-save-fixture-base.py\n?? tools/epoch-rts/test-t17-save-fixture-commands.cjs\n?? tools/epoch-rts/test-t17-save-graph.cjs\n?? tools/epoch-rts/test-t17-save-map-script.cjs\n?? tools/epoch-rts/test-t17-save-metadata.py\n?? tools/epoch-rts/test-t17-save-prearm.py\n?? tools/epoch-rts/test-t17-save-producer-witness.cjs\n?? tools/epoch-rts/test-t17-save-queue-prefix.py\n?? tools/epoch-rts/test-t17-save-raw-capture.py\n?? tools/epoch-rts/test-t17-save-scenario.cjs\n?? tools/epoch-rts/test-t17-save-session-transaction.cjs\n?? tools/epoch-rts/test-t17-save-typed-graph.cjs\n?? tools/epoch-rts/test-t17-submarine-runtime.py\n?? tools/epoch-rts/test-t17-submarine.cjs\n?? tools/epoch-rts/test-t18-fixture.cjs\n?? tools/epoch-rts/test-t18-output-protocol.cjs\n?? tools/epoch-rts/test-t18-output-protocol.py\n?? tools/epoch-rts/test-t18-parking-fixture.cjs\n?? tools/epoch-rts/test-t18-parking-runtime.py\n?? tools/epoch-rts/test-t18-parking.cjs\n?? tools/epoch-rts/test-t18-precision-gui-runtime.py\n?? tools/epoch-rts/test-t18-precision-gui.cjs\n?? tools/epoch-rts/test-t18-precision-runtime.py\n?? tools/epoch-rts/test-t18-precision.cjs\n",
+      "stderr": "",
+      "returncode": 0
+    }
+  }
+}

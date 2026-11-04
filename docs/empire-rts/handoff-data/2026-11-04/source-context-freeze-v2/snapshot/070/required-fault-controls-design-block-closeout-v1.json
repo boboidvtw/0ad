@@ -1,0 +1,99 @@
+{
+  "purpose": "Root closeout of complete threeway exact DESIGN BLOCK; no tests or implementation",
+  "createdUTC": "2026-10-28T20:32:17.052164+00:00",
+  "status": "BLOCK_DESIGN_ONLY_ONE_UNIQUE_MEDIUM_GATE_AMBIGUITY",
+  "manifest": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/manifest.json",
+  "manifestSHA256": "e488202701017b7a5c212bf3ad8cbf5ec43d4d8b00efb3ea2c8781615a668178",
+  "rootReadback55": "work/t14-t18-resume-20261028/required-fault-controls-design-root-readback-v1.json",
+  "reports": {
+    "CODE": {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-code-review-v1.json",
+      "bytes": 84403,
+      "sha256": "ee87e5891f10d5c9fdb34ca9320374003b351ee040cd96010a64793ad7f0c24b",
+      "recordedVerdict": "BLOCK",
+      "finding": {
+        "id": "DESIGN-CODE-F01",
+        "severity": "MEDIUM",
+        "confidence": 0.98,
+        "file": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md",
+        "line": 51,
+        "relatedLines": [
+          3
+        ],
+        "title": "Focused pre-SOURCE helper tests and all-gates test prohibition lack an explicit disjoint scope",
+        "rootCause": "The sequence explicitly places implementation and focused tests after DESIGN/root readback but before SOURCE freeze/reviews, then says no fixture/producer _run/import/test before these gates. The opening paragraph authorizes no test under this document. The scope of test/import and referent of these gates do not explicitly exempt nonproducer pure helpers; strict reading blocks required focused tests, permissive reading may accidentally admit producer import/case execution early. Author intention in a message is outside the frozen normative packet.",
+        "effect": "No single deterministic implementation/testing admission rule exists for the proposed controller. This is a design authorization boundary ambiguity, not evidence that unauthorized tests occurred. Current runtime/fixture remains unexecuted.",
+        "fix": "Freeze a normative amendment that expressly permits only bounded pure controller helpers/AST/literal arithmetic (and separately named tiny noncampaign hostfiles if intended) after three DESIGN approvals plus root readback/separate source scope. State whether inert controller import is allowed, forbid producer import/_run/body, preregistered execution-v1/case roots/fixtures and all three consumed cases until full fresh SOURCE reviews/rootreadback/guard/distinct execution call. Explicitly state helpers cannot consume or retry cases. Do not rely on a chat intention to grant this distinction."
+      }
+    },
+    "Python": {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-python-review-v1.json",
+      "bytes": 46492,
+      "sha256": "52d495f82cfaca08b45ddf1e3aa9378abeb623c65cbc756ef7aff90c11a89e02",
+      "recordedVerdict": "BLOCK_DESIGN_ONLY",
+      "finding": {
+        "id": "PY-DESIGN-F01",
+        "severity": "MEDIUM",
+        "title": "Frozen dependency gates do not define the intended pre-SOURCE pure-helper exception",
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md",
+        "line": 51,
+        "relatedLines": [
+          4,
+          18
+        ],
+        "rootCause": "Line51 places implementation and focused tests after DESIGN/root readback, but its final sentence prohibits fixture/producer _run/import/test before the entire preceding SOURCE/guard/separate-call gates without distinguishing pure helper tests. Line4 likewise uses a broad no-test statement for this preparation. The intended exception explained in author/root messages (pure helpers after DESIGN without producer import/_run/execution-v1/three cases) is absent from the frozen contract/oracle authority boundaries. A reader cannot unambiguously decide which pre-SOURCE tests are permitted and which count as consumed cases.",
+        "impact": "Approval of exact e488 design would leave contradictory execution ordering for the next implementation/test phase; either legitimate focused pure tests are blocked or a broad interpretation may run producer fixtures/cases before source review. No execution bypass or actual violation occurred in this review.",
+        "fix": "Make a new immutable amendment/freeze explicitly separate: DESIGN+root readback permit controller/oracle/helper source implementation and specifically bounded pure-helper tests only, with no producer import/_run, fixture/execution-v1 reservation, three-case consumption or process/runtime invocation. Full frozen SOURCE approval+current readback+independent freshguard+explicit later call alone permit real fixture admission/producer import/_run and exactly three cases. State whether any helper may create its own separate unit-only hostroot, or forbid it explicitly. Bind helper scope/counters/results so no pure control is counted as a true F01/F02 pass. Preserve e488 and prior raw unchanged.",
+        "confidence": "HIGH",
+        "evidenceScope": "Static exact contract sequencing only; no tests/import/fixtures/cases executed",
+        "blocking": "DESIGN_ONLY; all other reviewed design axes below have no additional blocking finding"
+      }
+    },
+    "JSAPI": {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-js-review-v1/review.json",
+      "bytes": 74262,
+      "sha256": "b98b778c1f736b16c394151975a8d85f1bf34bed0d94dee70bec793a6412b0e8",
+      "recordedVerdict": "BLOCK",
+      "finding": {
+        "id": "JS-DESIGN-01",
+        "severity": "MEDIUM",
+        "blocking": true,
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md",
+        "line": 51,
+        "title": "Focused helper tests and producer execution do not have an unambiguous staged authorization boundary",
+        "evidence": [
+          {
+            "line": 3,
+            "text": "No producer import, implementation, test, fixture creation, locks, guard or attempt is authorized by this document; DESIGN/readback precede controller implementation."
+          },
+          {
+            "line": 51,
+            "text": "Sequence places minimal NEW controller/fixture/oracle source implementation and focused tests before current freeze and SOURCE reviews, then says No fixture/producer _run/import/test before these gates."
+          }
+        ],
+        "rootCause": "One dependency sequence groups pure helper verification, fixture/oracle source implementation and producer/test execution, while the following blanket/slash prohibition refers to these gates without defining which completed gate applies to each operation. There is no normative definition restricting pre-SOURCE focused tests to pure helpers and excluding producer import/_run, fixed execution root and actual three-case fixtures. The separate author intent reported through root is not an amendment to the exact frozen contract.",
+        "impact": "An implementer cannot derive a single executable allowed-operation matrix from the frozen packet: either required focused tests appear forbidden until after their own SOURCE review, or tests before SOURCE could be read to include actual consumed producer cases. This is an execution-authority/design sequencing defect, not a claim that a case has already run or any runtime PASS loophole was exercised.",
+        "fix": "Create a new sealed contract/manifest, preserving this v1. Explicitly authorize only implementation and finite pure helper tests after triple exact DESIGN approval/root readback/separate source-scope authorization, with no producer import/_run/runtime_context/Capture.build/observer/setup/fixed execution-v1 fixture/case/attempt. State separately that creating actual fixed execution fixtures and invoking each of the three producer cases requires current exact SOURCE freeze/full triple SOURCE approval, physical/runtime/resource/ownership readback, independent fresh guard and distinct later root call. Define attempted/consumed only at actual producer body entry and never count pure helpers as these cases. Keep fixed IDs/order/roots, retry0 and all prohibitions/limits unchanged. Fresh full independent DESIGN reviews must assess the new exact contract."
+      }
+    }
+  },
+  "originalPacket": "IMMUTABLE_KEEP",
+  "implementation": "NOT_CREATED",
+  "tests": "NOT_RUN",
+  "fixture": "NOT_CREATED",
+  "attempt": "NOT_CREATED",
+  "cases": 3,
+  "retry": 0,
+  "next": "Minimal NEWv2 normativecontract explicitly staged purehelper vs threeproducercases gates, exactnewfreeze and freshfullthreewayDESIGN review before implementation. No changeoracle/cases/roots/caps/currentproducer/classification.",
+  "quotaErrors": [
+    "Python v1review usage-limit error after durable complete report",
+    "JS v1review usage-limit error after durable complete report"
+  ],
+  "rootCloseoutPreparationErrors": [
+    "KeyError before writes due assumption allreports inputManifestSHA256",
+    "AssertionError before writes due assumption JS report reviewedManifest field; inspected completeactual keys and verified role-specific manifest metadata; no source/report/run mutations"
+  ],
+  "eligibility": "20:31Z live ordinaryUsageAllowed true primary0 secondary32 credits0/reset0, same settings only; do not redo completedv1reviews",
+  "native": false,
+  "officialCaptureApproved": false
+}

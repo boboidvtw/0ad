@@ -1,0 +1,2561 @@
+{
+  "schema": 1,
+  "purpose": "Complete independent CODE SOURCE review of current repaired pair, not only prior finding confirmation",
+  "reviewer": "/root/preservation_code_design",
+  "createdUTC": "2026-10-26T18:25:42.068261+00:00",
+  "userFacingDateTaipei": "2026-10-27",
+  "verdict": "APPROVE_SOURCE_ONLY",
+  "sourceApproval": true,
+  "approvalScope": "EXACT_REVIEWED_LOCAL_CANDIDATE_SOURCE_ONLY; NO_EXECUTION_AUTHORITY",
+  "coverageApproval": false,
+  "bridgeApproval": false,
+  "officialCaptureApproval": false,
+  "runtimeApproval": false,
+  "sourceClosure": false,
+  "native": false,
+  "reviewedManifest": {
+    "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/manifest.json",
+    "bytes": 140780,
+    "sha256": "38b45c79f05a93d340319c2e55bd0317898c74473d676e093f185d73a0a62557",
+    "bindings": 272,
+    "liveAndSnapshotMatch": 272
+  },
+  "currentSources": {
+    "currentPythonSHA256": "d687c19c9be59ba4e241d0d6fc4d0b331cb7ec3555f2267b4fa125e56bdb5022",
+    "currentPythonTestSHA256": "5320b54f890413668046c4c8e2edf2d96ce8509b9d1b05296064f7bf35d036d3",
+    "currentNodeSHA256": "e7100dd52b755cc7dedefa07624520dbacdd41ccf8e20428160ec2c588f2c3b1",
+    "currentNodeTestSHA256": "efae7d0fb9c2f716e8d9a32c294b56abe10c83689de02f4a5e1a25d61fefc748"
+  },
+  "schemaSHA256": "280357ab50426d73f1265cb07458d8d4f86f226ab3b02d68025d1762d7975191",
+  "scope": {
+    "fullCurrentPair": [
+      "tools/epoch-rts/t17-save-five-mod-capture.py",
+      "tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs",
+      "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+      "tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+      "tools/epoch-rts/t17-save-five-mod-analysis-schema.json"
+    ],
+    "fullNormativeContext": [
+      "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SPEC.md",
+      "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/PROTOCOL.md",
+      "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/LIMITS.json",
+      "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/FAULT-GATES.json",
+      "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/ANALYSIS-SCHEMA.json",
+      "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SOURCE-RELATIONS.json",
+      "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-PRODUCERS.json",
+      "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/TEST-PLAN.json",
+      "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SCHEMA-TEST-PLAN.json",
+      "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-EXAMPLES-AND-TEST-PLAN.json",
+      "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/ROW-EXAMPLES.json",
+      "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/OWNERSHIP-AND-REVIEW.md",
+      "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/AMENDMENT.md",
+      "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/AMENDMENT.md",
+      "work/t17-save-five-mod-inventory-repair-preparation/implementation-python/terminal-fix-v1/CONTRACT-DELTA.md"
+    ],
+    "method": "Complete source and tests reviewed with surrounding callers, shared interfaces and dependency information, current repaired functions fully read, all272 current/snapshot bytes freshly verified. Unchanged normative context fully read within this same reviewer session and rechecked by frozen SHA. Historical design/source approvals not reused.",
+    "coverageContext": [
+      "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+      "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/coverage.json"
+    ],
+    "runtimeContext": [
+      "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/runtime-observed.json",
+      "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/runtime.json",
+      "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/RUNTIME-IDENTIFICATION.json"
+    ],
+    "excluded": "Bridge draft/harness execution contract and true main/OS-pipe integration are outside this current SOURCE approval. This is not general production readiness, full coverage, source execution attestation, official archive or native acceptance."
+  },
+  "bindingReadback": [
+    {
+      "path": "tools/epoch-rts/t17-save-five-mod-capture.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/tools/epoch-rts/t17-save-five-mod-capture.py",
+      "actualBytes": 53952,
+      "actualSHA256": "d687c19c9be59ba4e241d0d6fc4d0b331cb7ec3555f2267b4fa125e56bdb5022",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/tools/epoch-rts/test-t17-save-five-mod-capture.py",
+      "actualBytes": 52819,
+      "actualSHA256": "5320b54f890413668046c4c8e2edf2d96ce8509b9d1b05296064f7bf35d036d3",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs",
+      "actualBytes": 21653,
+      "actualSHA256": "e7100dd52b755cc7dedefa07624520dbacdd41ccf8e20428160ec2c588f2c3b1",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+      "actualBytes": 18136,
+      "actualSHA256": "efae7d0fb9c2f716e8d9a32c294b56abe10c83689de02f4a5e1a25d61fefc748",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-five-mod-analysis-schema.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/tools/epoch-rts/t17-save-five-mod-analysis-schema.json",
+      "actualBytes": 15491,
+      "actualSHA256": "280357ab50426d73f1265cb07458d8d4f86f226ab3b02d68025d1762d7975191",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/inputs/repo/tools/epoch-rts/t17-save-five-mod-capture.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/inputs/repo/tools/epoch-rts/t17-save-five-mod-capture.py",
+      "actualBytes": 50703,
+      "actualSHA256": "a27a318a9275d8dbeac9ce02e66e5b9b65cf69792c8844c09883801348cb5243",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/inputs/repo/tools/epoch-rts/test-t17-save-five-mod-capture.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/inputs/repo/tools/epoch-rts/test-t17-save-five-mod-capture.py",
+      "actualBytes": 43606,
+      "actualSHA256": "5b1242fa598504085cbdb419f3d4e06cbd4145e92b17bb25e63422e18d9c0192",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/inputs/repo/tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/inputs/repo/tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs",
+      "actualBytes": 21317,
+      "actualSHA256": "054ac9d099cd369db3022b9e8f3d5f349ee0db7967fa9c71764914e48091808a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/inputs/repo/tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/inputs/repo/tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+      "actualBytes": 14109,
+      "actualSHA256": "e7ccf1b06d8eba57da99aee39f354126796d46419e6d39015cc8314039e02eaf",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/manifest.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/manifest.json",
+      "actualBytes": 16426,
+      "actualSHA256": "bd162e15363202b7832dd0f8a189aef3bc44d1ff215e3494ad67f8601e25b5b7",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/ANALYSIS-SCHEMA.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/ANALYSIS-SCHEMA.json",
+      "actualBytes": 15491,
+      "actualSHA256": "280357ab50426d73f1265cb07458d8d4f86f226ab3b02d68025d1762d7975191",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/BEFORE.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/BEFORE.json",
+      "actualBytes": 7563,
+      "actualSHA256": "6701415de58cd4c4b4e5668a2a050520d5b8079bc8e88321afa1fd93365e19dc",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/CORRECTION-20261025.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/CORRECTION-20261025.json",
+      "actualBytes": 523,
+      "actualSHA256": "9fa0974b015292913f89ba0fadd6a397fa0fcbf84183b961030353866945ba3b",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/FAULT-GATES.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/FAULT-GATES.json",
+      "actualBytes": 1078,
+      "actualSHA256": "45464555dab05940e9ee1510ddde616aedac2c25c5e056e923b032660064a10e",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/FINAL-REVIEW-BINDINGS.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/FINAL-REVIEW-BINDINGS.json",
+      "actualBytes": 3462,
+      "actualSHA256": "664902d602ab90fe0fc2bb89f6e4b297616585a102d62fb938bb2550a3965fc5",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/FIX-DISPOSITION.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/FIX-DISPOSITION.json",
+      "actualBytes": 993,
+      "actualSHA256": "a80d2b257d3202866075d1df8a8b89cdfb169c806ec8b394657066c9bbd1e77b",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/LIMITS.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/LIMITS.json",
+      "actualBytes": 723,
+      "actualSHA256": "801ff553f5af6bf34e12037a90af1dd41aea5888f8e52b0cc880116fb6311446",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-EXAMPLES-AND-TEST-PLAN.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-EXAMPLES-AND-TEST-PLAN.json",
+      "actualBytes": 3777,
+      "actualSHA256": "8445763ba88295fe66c38ac2f25dd0f009ed570b59961f906545552eba4efae4",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-PRODUCERS.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-PRODUCERS.json",
+      "actualBytes": 4149,
+      "actualSHA256": "24cd10015fd396d639d0eeda874ce9566a4f6003b5cdf543ec1d3ee99a05117f",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/OWNERSHIP-AND-REVIEW.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/OWNERSHIP-AND-REVIEW.md",
+      "actualBytes": 2459,
+      "actualSHA256": "2653625025ab921440dc174b8edef6101eec064c58230206c92c1a2297cc5766",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/PROTOCOL.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/PROTOCOL.md",
+      "actualBytes": 8212,
+      "actualSHA256": "9307c44a13c5be7e8a35a0ae950bbda36cbf7f445bcd92f3ee2a2c0790ce04b1",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/ROW-EXAMPLES.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/ROW-EXAMPLES.json",
+      "actualBytes": 3082,
+      "actualSHA256": "105eef5ffb635a6a043da757f7cb311f13f1e75a5f087e6d8a491b8e4563b329",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SCHEMA-TEST-PLAN.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SCHEMA-TEST-PLAN.json",
+      "actualBytes": 2000,
+      "actualSHA256": "e59270c4566f96e96839faaa378c6867ea9c9ceb6e9e4ba26b8df62074bb6635",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SOURCE-RELATIONS.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SOURCE-RELATIONS.json",
+      "actualBytes": 5733,
+      "actualSHA256": "a5f781e0352c750c56c54f8ce2cb537763cc0925516d90cd2d6f90a9a4962203",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SPEC.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SPEC.md",
+      "actualBytes": 9685,
+      "actualSHA256": "d6615fa1d694d57ce3f2de3d2b505eae0afd09afffd3eb82632a56235b2f5f14",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/TEST-PLAN.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/TEST-PLAN.json",
+      "actualBytes": 4526,
+      "actualSHA256": "48619d53e653717d3af835c5026b5249d3e1079818ea9a595e8c971dc6d2d842",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/tools/epoch-rts/t17-save-five-mod-source-inventory.cjs",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/tools/epoch-rts/t17-save-five-mod-source-inventory.cjs",
+      "actualBytes": 10369,
+      "actualSHA256": "134a2b81c4217378055da0b923600f233c6904ca3fc2d186a8fee3a0b8d061c6",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/ANALYSIS-SCHEMA.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/ANALYSIS-SCHEMA.json",
+      "actualBytes": 15348,
+      "actualSHA256": "ffb5428f4d1fdf7378715b3d93ec21da39622282483dd4fed5114b106826b0eb",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/FAULT-GATES.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/FAULT-GATES.json",
+      "actualBytes": 1078,
+      "actualSHA256": "45464555dab05940e9ee1510ddde616aedac2c25c5e056e923b032660064a10e",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/FIX-DISPOSITION.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/FIX-DISPOSITION.json",
+      "actualBytes": 1157,
+      "actualSHA256": "20a654d9edde6741f1e304ddf2e2b3a43457eb822dcc5ad14fdea35156fef0f0",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/LIMITS.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/LIMITS.json",
+      "actualBytes": 723,
+      "actualSHA256": "801ff553f5af6bf34e12037a90af1dd41aea5888f8e52b0cc880116fb6311446",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/OWNERSHIP-AND-REVIEW.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/OWNERSHIP-AND-REVIEW.md",
+      "actualBytes": 2210,
+      "actualSHA256": "f2d9625c03048521d6095781ef3a2a0aa85c8f13b7ee8d89b2de01139151cbf2",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/PROTOCOL.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/PROTOCOL.md",
+      "actualBytes": 7544,
+      "actualSHA256": "a6aa65a59f746c79d75c95e9c3b2389d769a17be5915812fcbce489430c0e015",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/ROW-EXAMPLES.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/ROW-EXAMPLES.json",
+      "actualBytes": 3082,
+      "actualSHA256": "105eef5ffb635a6a043da757f7cb311f13f1e75a5f087e6d8a491b8e4563b329",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/SCHEMA-TEST-PLAN.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/SCHEMA-TEST-PLAN.json",
+      "actualBytes": 1876,
+      "actualSHA256": "8ec4c61ce2d6feb7576b73ed3f898d4e48216500dcd9a476ce8442481a60a45a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/SOURCE-RELATIONS.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/SOURCE-RELATIONS.json",
+      "actualBytes": 5205,
+      "actualSHA256": "3d328cdf21ea5106906e25b7a94e2224de9d7a115f231f83ac44286ceb783baf",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/SPEC.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/SPEC.md",
+      "actualBytes": 9329,
+      "actualSHA256": "70327f7e7c3753b8396a080b65eb395ff0dd4667e547c1db6b8ee4f40ea2dd2b",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/TEST-PLAN.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/TEST-PLAN.json",
+      "actualBytes": 4526,
+      "actualSHA256": "48619d53e653717d3af835c5026b5249d3e1079818ea9a595e8c971dc6d2d842",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/code-design-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/code-design-review-v1.json",
+      "actualBytes": 15684,
+      "actualSHA256": "d517bc2d447be129a86f4b80584ddc1e3477fe31c10a3af42fddd2cfcaf0bd45",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/code-design-review-v1.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/code-design-review-v1.md",
+      "actualBytes": 3891,
+      "actualSHA256": "c382e942fb114d9f5194f46652c862fef32c6f1cf77176c7bf28b3756990e275",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/js-api-design-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/js-api-design-review-v1.json",
+      "actualBytes": 21837,
+      "actualSHA256": "2d92bafa60077f52c47002481306430061ad965d3851f5ce517ffc71486461ec",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/js-api-design-review-v1.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/js-api-design-review-v1.md",
+      "actualBytes": 2338,
+      "actualSHA256": "07bb341572d15a80e667cb09487490aaa25cc1f29fbab33c10a938e5b1cfa626",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/manifest.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/manifest.json",
+      "actualBytes": 7042,
+      "actualSHA256": "a1e15967f9af25f224814542dc94f1735ad82968a3884a4c2101e4ab9b5b5359",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/python-design-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v1/python-design-review-v1.json",
+      "actualBytes": 16368,
+      "actualSHA256": "b6f5b67f9cfcb29a5a6c910aaa86331b13b61aca59878bd721e543acae04dc52",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before-provisional-correction/BEFORE.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before-provisional-correction/BEFORE.json",
+      "actualBytes": 7289,
+      "actualSHA256": "f5177d1802ff4e4c11a0d220bd78f36fe2aa9574277bff73315d7baf974e1039",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before-provisional-correction/FIX-DISPOSITION.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/before-provisional-correction/FIX-DISPOSITION.json",
+      "actualBytes": 760,
+      "actualSHA256": "19a97b63280683407f7af06513d90b152e77b0d6b0b1d126aca64a1d1a589214",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/final-review-context/code-design-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/final-review-context/code-design-review-v1.json",
+      "actualBytes": 15684,
+      "actualSHA256": "d517bc2d447be129a86f4b80584ddc1e3477fe31c10a3af42fddd2cfcaf0bd45",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/final-review-context/code-design-review-v1.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/final-review-context/code-design-review-v1.md",
+      "actualBytes": 3891,
+      "actualSHA256": "c382e942fb114d9f5194f46652c862fef32c6f1cf77176c7bf28b3756990e275",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/final-review-context/js-api-design-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/final-review-context/js-api-design-review-v1.json",
+      "actualBytes": 21837,
+      "actualSHA256": "2d92bafa60077f52c47002481306430061ad965d3851f5ce517ffc71486461ec",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/final-review-context/js-api-design-review-v1.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/final-review-context/js-api-design-review-v1.md",
+      "actualBytes": 2338,
+      "actualSHA256": "07bb341572d15a80e667cb09487490aaa25cc1f29fbab33c10a938e5b1cfa626",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/final-review-context/python-design-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/final-review-context/python-design-review-v1.json",
+      "actualBytes": 19339,
+      "actualSHA256": "0bfdd5bd9afa25d1d83d108e015d01e20e147398bde7a0e5f698e2edbc95fdaa",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/final-review-context/python-design-review-v1.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/final-review-context/python-design-review-v1.md",
+      "actualBytes": 5557,
+      "actualSHA256": "e9626d5b36c1d1056ff86a977834de097838c63cb51c800f837872f64c83da22",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/final-review-context/python-design-review-v1.provisional-snapshot.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/final-review-context/python-design-review-v1.provisional-snapshot.json",
+      "actualBytes": 16368,
+      "actualSHA256": "b6f5b67f9cfcb29a5a6c910aaa86331b13b61aca59878bd721e543acae04dc52",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/pre-final-report-merge/BEFORE.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/pre-final-report-merge/BEFORE.json",
+      "actualBytes": 7349,
+      "actualSHA256": "577546d63efc1992b4c8bcf6f4e648f699dd3f012db5c4edb7085fbf93340dbb",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/pre-final-report-merge/FIX-DISPOSITION.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/pre-final-report-merge/FIX-DISPOSITION.json",
+      "actualBytes": 875,
+      "actualSHA256": "ff3f588385aa6e22d951527b93e202a249eb9169df41b4c6800fa14f83075998",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/manifest.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/manifest.json",
+      "actualBytes": 11690,
+      "actualSHA256": "e77f9f1b204c148910595c108b7a1dd5fa333bee507529d82980efc10238c72d",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/AMENDMENT.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/AMENDMENT.md",
+      "actualBytes": 8418,
+      "actualSHA256": "122b57f47b34389935af51ea4463efa6dea1f5fe74391c21985e9997cf93e365",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/source-before.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/source-before.json",
+      "actualBytes": 1834,
+      "actualSHA256": "93aa1580cb1eef4240926a2ca99a8b1dd3f55066f909e7d3d7d4beaa1914e61f",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-python/terminal-fix-v1/CONTRACT-DELTA.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-python/terminal-fix-v1/CONTRACT-DELTA.md",
+      "actualBytes": 2615,
+      "actualSHA256": "7686d5f09a585acd7156c5cb64ede91ee249f39ff80dbc295e1dd704467eb72d",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/before/tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/before/tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs",
+      "actualBytes": 21317,
+      "actualSHA256": "054ac9d099cd369db3022b9e8f3d5f349ee0db7967fa9c71764914e48091808a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/before/tools/epoch-rts/t17-save-five-mod-capture.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/before/tools/epoch-rts/t17-save-five-mod-capture.py",
+      "actualBytes": 44248,
+      "actualSHA256": "05282153c402eb5efde85628216811b0feed63067d84c2432fecfe09503355ea",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/before/tools/epoch-rts/t17-save-five-mod-analysis-schema.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/before/tools/epoch-rts/t17-save-five-mod-analysis-schema.json",
+      "actualBytes": 15491,
+      "actualSHA256": "280357ab50426d73f1265cb07458d8d4f86f226ab3b02d68025d1762d7975191",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/before/tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/before/tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+      "actualBytes": 14109,
+      "actualSHA256": "e7ccf1b06d8eba57da99aee39f354126796d46419e6d39015cc8314039e02eaf",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/before/tools/epoch-rts/test-t17-save-five-mod-capture.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/before/tools/epoch-rts/test-t17-save-five-mod-capture.py",
+      "actualBytes": 14129,
+      "actualSHA256": "d296fb672b8a7e6109d58a5847b67147f3322ff75f0c393c931c6ad29c631ba5",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/manifest.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/manifest.json",
+      "actualBytes": 14158,
+      "actualSHA256": "faa76a79a7479663c5ad9f5c91e0ab138ebb5c9d2b17f6a437873d81aa67ecd2",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/code-design-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/code-design-review-v1.json",
+      "actualBytes": 33687,
+      "actualSHA256": "072b49423fb8b9fc8df52dc6c1a29716508149d22d5abfa0f7fd1ed157281aa7",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/code-design-review-v1.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/code-design-review-v1.md",
+      "actualBytes": 3092,
+      "actualSHA256": "1b70aedfb8bad9ead781f5589ab3cd46de0d4fc7d179d9280a351805d8e87111",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/js-api-design-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/js-api-design-review-v1.json",
+      "actualBytes": 30372,
+      "actualSHA256": "fd183abdbe6f5a3516f6170166cb24b48e81d5b7c7b96b39c553502ab53bda52",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/js-api-design-review-v1.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/js-api-design-review-v1.md",
+      "actualBytes": 2929,
+      "actualSHA256": "406a699c80e813a1b1c9c8c4a0532e0ec1289b4159e54cc379af2627b276f795",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/python-design-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/python-design-review-v1.json",
+      "actualBytes": 33284,
+      "actualSHA256": "d630cbe5bee4ba04e806b03b1f6f60987ec35ba3e93c99a38a6400fbed250bf2",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/python-design-review-v1.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/python-design-review-v1.md",
+      "actualBytes": 3192,
+      "actualSHA256": "efdbe9706c2989df6950cd26811d9b91858e6e7a02625cd8bd625a6a9c4f7182",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/AMENDMENT.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/AMENDMENT.md",
+      "actualBytes": 9631,
+      "actualSHA256": "c48289e3d2bc1db05e1d0dadd7c25b7ac28a779a2df5202fb62a6c49a329c48f",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/FIX-DISPOSITION.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/FIX-DISPOSITION.json",
+      "actualBytes": 677,
+      "actualSHA256": "c95e0e8c96505fc52816adf3341d7b29f4ecc5fcbfe29306cd02e004f12f94f6",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/completion-design-only.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/completion-design-only.json",
+      "actualBytes": 1724,
+      "actualSHA256": "6a61276c04d68c1c1ff435a3cf4198bfeaaefc00028ebb0c507fac5896925071",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/code-design-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/code-design-review-v1.json",
+      "actualBytes": 30343,
+      "actualSHA256": "c8112150ebac437ac40efe993fed709e1e0750654bfbafad2d98a7c26dc87bdc",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/python-design-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/python-design-review-v1.json",
+      "actualBytes": 35837,
+      "actualSHA256": "4dd545b73e6e81dc62fbb3990283e2044cad5864cc2d19b35d5c335083b3d96b",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/js-api-design-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/js-api-design-review-v1.json",
+      "actualBytes": 28637,
+      "actualSHA256": "014ff6aaf9c2ddefcfa667bd0b8cb5582e01cef685536e369f6ddc5ed1af38c3",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3.9",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/absolute/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3.9",
+      "actualBytes": 53200,
+      "actualSHA256": "6e7ae61f68a3838094fc56590f84c52069a97d7816f6bb79e0e85995b340e464",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/zipfile.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/absolute/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/zipfile.py",
+      "actualBytes": 87278,
+      "actualSHA256": "df6e2da67a3394a47ed57cfbd44298109d26f71ea22948a8840b6b56b0f6189d",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/hashlib.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/absolute/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/hashlib.py",
+      "actualBytes": 10010,
+      "actualSHA256": "a25e6f24d6ae5b5205844e2717f3d6dbeda005c1afeaf4d450b4f2c363a3d34a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/io.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/absolute/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/io.py",
+      "actualBytes": 3541,
+      "actualSHA256": "01907eff5e1a17d37e967b4d6d1bd2230e03d30f56cc1a1384a14dd77be5ff60",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/absolute/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py",
+      "actualBytes": 14017,
+      "actualSHA256": "332fabb72a4a1ed02c9207a7619ab339dac8f0b6862e16f6499147121b302a27",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/os.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/absolute/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/os.py",
+      "actualBytes": 39404,
+      "actualSHA256": "8dbe2d2e9f228747cacbbcc6758721e794b652e5c22b6224cb07e303ebbc620d",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_hashlib.cpython-39-darwin.so",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/absolute/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_hashlib.cpython-39-darwin.so",
+      "actualBytes": 90640,
+      "actualSHA256": "df2522e0043b85940cc9fa28e4807211a15edec673f648d1f501483a5736d641",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/zlib.cpython-39-darwin.so",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/absolute/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/zlib.cpython-39-darwin.so",
+      "actualBytes": 88848,
+      "actualSHA256": "d63129e2be45719a8ebd16cc0c74a2146bc96dff91a8fca65f9958f55e643d3a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/author-readback.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/author-readback.json",
+      "actualBytes": 18677,
+      "actualSHA256": "da0e11218c7e62c89e7a2b3718b1759d4c806840617ffe6328a0b2fc77ce992e",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/compile.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/compile.log",
+      "actualBytes": 248,
+      "actualSHA256": "f4b5fa2bb147b2ee0bf26d819864c581c7dcee017caeea9961b30bd21b0dcc2f",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/coverage-matrix.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/coverage-matrix.json",
+      "actualBytes": 30629,
+      "actualSHA256": "1556c75887526a2800463c847f8b456ea5bffea7a444c75d74afd1c94b826d7a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/final-normal.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/final-normal.log",
+      "actualBytes": 4119,
+      "actualSHA256": "84bac2f1dedc69d53a9d4b184b5214ab80894f0c5128f70f9e9877598c3e6ff5",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/final-optimized.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/final-optimized.log",
+      "actualBytes": 4119,
+      "actualSHA256": "fdc3d5a02e49d31eaaedd15f9183f4ab93044b5654c3453aee4e3516c0da4409",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/final2-compile.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/final2-compile.json",
+      "actualBytes": 564,
+      "actualSHA256": "3e0ac2f5e892ccc5c21b2e426824b34364e182b3bd261600921d23a92b761cea",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/final2-normal.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/final2-normal.log",
+      "actualBytes": 4399,
+      "actualSHA256": "38cd9a5a72c4537124d89e419ece33efc398b4d90597771a7750787b0fdf754b",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/final2-optimized.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/final2-optimized.log",
+      "actualBytes": 4399,
+      "actualSHA256": "7ae1820e2b836927508748bf0c48eb847439692525e2acad5199a909cb8f8f85",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration1-normal.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration1-normal.log",
+      "actualBytes": 6812,
+      "actualSHA256": "6d2901b1986782a7f4fa9c677f3df618335a6a373552f047799c935d2677bc96",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration1-source.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration1-source.py",
+      "actualBytes": 50496,
+      "actualSHA256": "78819a6599b15e3bba696e0890431b6c73b82c62dbb68969137e6b31d91a116a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration2-normal.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration2-normal.log",
+      "actualBytes": 750,
+      "actualSHA256": "6a55f223d07dd81ed27bfcfcd74f73909f547fe5fa3dc29b7de9a5df98f5a985",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration2-source.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration2-source.py",
+      "actualBytes": 50703,
+      "actualSHA256": "a27a318a9275d8dbeac9ce02e66e5b9b65cf69792c8844c09883801348cb5243",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration2-test.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration2-test.py",
+      "actualBytes": 22111,
+      "actualSHA256": "1c125a3eea778251d23e3f89cffb2eac2c434ad27fc9ce80778847d1505cd2eb",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration3-required-normal.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration3-required-normal.log",
+      "actualBytes": 1934,
+      "actualSHA256": "da2d1dc2ee3ae6174449c1b9747fe797bb952b08160532368613ab366a4c2e0d",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration3-test.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration3-test.py",
+      "actualBytes": 33546,
+      "actualSHA256": "9bc717645104fa9aeedbb5f9c5ecec37f2e5219a59c6d7e7367ba06d667c62fb",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration4-normal.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration4-normal.log",
+      "actualBytes": 2272,
+      "actualSHA256": "2b725a206712489125343d97b7cfde42cadaa6367a077debb4baedf9067e7ce6",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration4-test.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration4-test.py",
+      "actualBytes": 41758,
+      "actualSHA256": "3ad0af7e6847ff2220105081b2354afb87b3805b85b72b3d4b68292d10b9d9c8",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration5-test.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration5-test.py",
+      "actualBytes": 41758,
+      "actualSHA256": "8255d3a3ce8e373bbcdae2ef22d8f1f0b09cc73a35ce44733e35380a840326d8",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration6-test.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/iteration6-test.py",
+      "actualBytes": 43606,
+      "actualSHA256": "5b1242fa598504085cbdb419f3d4e06cbd4145e92b17bb25e63422e18d9c0192",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/red-normal.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/red-normal.log",
+      "actualBytes": 6548,
+      "actualSHA256": "0d17ffbd69c1245d553337b40fac436a54c7aa3e6f07d172e7d3a1d72d94b3e2",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/red-test.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/red-test.py",
+      "actualBytes": 21993,
+      "actualSHA256": "d07c36d4d03eb85ea9f04eb2e1c60900f3ccaa58b7d2ede548e830ca2499788f",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/runtime-observed.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/runtime-observed.json",
+      "actualBytes": 3302,
+      "actualSHA256": "300869873d0e6208ca39e3f5f77308fe5163c57ede936f77988f781dfcb37ada",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/sparse-zip64-plan.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/sparse-zip64-plan.md",
+      "actualBytes": 1600,
+      "actualSHA256": "8754279cd631537c67a7c0b83c9e5b1de6b7f8333738a0ad1d5ba4855252eaae",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/case-artifacts.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/case-artifacts.json",
+      "actualBytes": 765535,
+      "actualSHA256": "d9ae613ef8e38b27ebd98b8f43e0f6a2e8b1d2cd0cae9b313b6a00282fb635ca",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/source-diff.patch",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/source-diff.patch",
+      "actualBytes": 21815,
+      "actualSHA256": "24eda2b5ebf4128802f9c9ccba6c36baef2959cd53aa285abf67b4a119c081e6",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/ASSESSMENT.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/ASSESSMENT.md",
+      "actualBytes": 2459,
+      "actualSHA256": "d6414d1fa819b881315623bfa5f35078d770c10fd96cd885c110242adf8b2424",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/BEFORE.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/BEFORE.json",
+      "actualBytes": 415,
+      "actualSHA256": "845b0d821793ddba05ca5a724a3c65250e8171ec906734bbc586d1f8a17a43dd",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/CHECKPOINT-20261026.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/CHECKPOINT-20261026.json",
+      "actualBytes": 597,
+      "actualSHA256": "96f0b7883ff3e3a023491d957a6902da86a6e0723b2b753a984ae4848cc0916a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/CONTRACT.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/CONTRACT.md",
+      "actualBytes": 1346,
+      "actualSHA256": "e679dbf601bf1d95d96059f79b3d55a703207419488b4866c12d7c05d05fabf4",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/DIRECT-SOURCE-BINDINGS.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/DIRECT-SOURCE-BINDINGS.json",
+      "actualBytes": 7586,
+      "actualSHA256": "0fcffd9f4722e0de3a83e6f9503ac2a4f1b6125a60e42da8d0c755b22a9c84ce",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/INTERFACE-READBACK.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/INTERFACE-READBACK.json",
+      "actualBytes": 901,
+      "actualSHA256": "2fcf43af268072d45c9e4ee0668c9fadb3153a9095bf258b0e617e65061c0460",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/RUNTIME-IDENTIFICATION.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/RUNTIME-IDENTIFICATION.json",
+      "actualBytes": 1082,
+      "actualSHA256": "42190fec9e64f3286e1184586b4efdafef6cc3c0d7f09186b75b53c2b8953e88",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/acorn-node26-source.txt",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/acorn-node26-source.txt",
+      "actualBytes": 242818,
+      "actualSHA256": "2261c5f0e4abe860e889dfc67081683a4ba4d27deb7f4cbc8ad06a1b7fdd510c",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/acorn-runtime-current.txt",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/acorn-runtime-current.txt",
+      "actualBytes": 242818,
+      "actualSHA256": "2261c5f0e4abe860e889dfc67081683a4ba4d27deb7f4cbc8ad06a1b7fdd510c",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/before/tools/epoch-rts/t17-save-five-mod-source-inventory.cjs",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/before/tools/epoch-rts/t17-save-five-mod-source-inventory.cjs",
+      "actualBytes": 10369,
+      "actualSHA256": "134a2b81c4217378055da0b923600f233c6904ca3fc2d186a8fee3a0b8d061c6",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v1.json",
+      "actualBytes": 97,
+      "actualSHA256": "3484b27bd0a3c08a4533d314050681b1be9dc9d15a42309ee9ee6a8b65e8fb0e",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v1.stderr",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v1.stderr",
+      "actualBytes": 1174,
+      "actualSHA256": "ede063558df379138e454528f39f3b3d4953e149745208b3944eefac6c21dd4f",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v1.stdout",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v1.stdout",
+      "actualBytes": 173,
+      "actualSHA256": "05f08a35aaea4b5e297af06db8f355187878dd607b9a830d893160c3321854ef",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v2.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v2.json",
+      "actualBytes": 97,
+      "actualSHA256": "33bac370fe2a970145c193f7e44b57b1d519975b92181f0d9ed920135a5d3da6",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v2.stderr",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v2.stderr",
+      "actualBytes": 0,
+      "actualSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v2.stdout",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v2.stdout",
+      "actualBytes": 552,
+      "actualSHA256": "688e015a3e5952cb3c565e3216999fb7dd91d014c01eae484f710d218db902fb",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v3.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v3.json",
+      "actualBytes": 110,
+      "actualSHA256": "6fcd126c3962a3d27a40ca59ae6c9b9cffc7acb93213d0a2c5948bada438c9fa",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v3.stderr",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v3.stderr",
+      "actualBytes": 0,
+      "actualSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v3.stdout",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/controls-v3.stdout",
+      "actualBytes": 1035,
+      "actualSHA256": "81306cae8daa69d9c5d7ca75e2af938e6597e4b8aa3a693e7bafa8d7d46b7766",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/depth-fix-before/FAIL.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/depth-fix-before/FAIL.json",
+      "actualBytes": 225,
+      "actualSHA256": "fedff2332ef05465356fe116ed8997c26ea11c64748cba657bb92a433fdf800b",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/depth-fix-before/t17-save-five-mod-source-inventory-v2.cjs",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/depth-fix-before/t17-save-five-mod-source-inventory-v2.cjs",
+      "actualBytes": 21289,
+      "actualSHA256": "17f4e35eb3ed479d02c031dd976544c4089f71c433fcb4695100a0f6dc64e5c1",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/depth-fix-before/test-t17-save-five-mod-source-inventory-v2.cjs",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/depth-fix-before/test-t17-save-five-mod-source-inventory-v2.cjs",
+      "actualBytes": 6717,
+      "actualSHA256": "63cfdc5b532fa09773181c0f53a860137a4aaef4e7116580b505b9787dfa529e",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/missing-source-red.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/missing-source-red.json",
+      "actualBytes": 104,
+      "actualSHA256": "6d6c75f078aa0e131de1646448df397b3ddca7edb86113b0620b92a5722de2b0",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/missing-source-red.stderr",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/missing-source-red.stderr",
+      "actualBytes": 1244,
+      "actualSHA256": "e3af5847536373908cbdc2b8788e5b03ac7e0a14e9448fe386c87bb99d286f9b",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/missing-source-red.stdout",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/missing-source-red.stdout",
+      "actualBytes": 0,
+      "actualSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/producer-byte-comparison.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/producer-byte-comparison.json",
+      "actualBytes": 300,
+      "actualSHA256": "539f032ad43174eb0c0a9d7282fce4ca78f47c1377ed91d356f8a6ed5d9874c1",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/runtime-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/runtime-v1.json",
+      "actualBytes": 630,
+      "actualSHA256": "5a65cb09df80f1054e70a9719e16a5ec06c2d5423ad6434ddb088519b4481788",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/tools/epoch-rts/t17-save-five-mod-analysis-schema.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/tools/epoch-rts/t17-save-five-mod-analysis-schema.json",
+      "actualBytes": 15491,
+      "actualSHA256": "280357ab50426d73f1265cb07458d8d4f86f226ab3b02d68025d1762d7975191",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs",
+      "actualBytes": 21317,
+      "actualSHA256": "054ac9d099cd369db3022b9e8f3d5f349ee0db7967fa9c71764914e48091808a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+      "actualBytes": 14109,
+      "actualSHA256": "e7ccf1b06d8eba57da99aee39f354126796d46419e6d39015cc8314039e02eaf",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/ANALYSIS-SCHEMA.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/ANALYSIS-SCHEMA.json",
+      "actualBytes": 15491,
+      "actualSHA256": "280357ab50426d73f1265cb07458d8d4f86f226ab3b02d68025d1762d7975191",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/FAULT-GATES.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/FAULT-GATES.json",
+      "actualBytes": 1078,
+      "actualSHA256": "45464555dab05940e9ee1510ddde616aedac2c25c5e056e923b032660064a10e",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/LIMITS.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/LIMITS.json",
+      "actualBytes": 723,
+      "actualSHA256": "801ff553f5af6bf34e12037a90af1dd41aea5888f8e52b0cc880116fb6311446",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-EXAMPLES-AND-TEST-PLAN.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-EXAMPLES-AND-TEST-PLAN.json",
+      "actualBytes": 3777,
+      "actualSHA256": "8445763ba88295fe66c38ac2f25dd0f009ed570b59961f906545552eba4efae4",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-PRODUCERS.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-PRODUCERS.json",
+      "actualBytes": 4149,
+      "actualSHA256": "24cd10015fd396d639d0eeda874ce9566a4f6003b5cdf543ec1d3ee99a05117f",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/PROTOCOL.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/PROTOCOL.md",
+      "actualBytes": 8212,
+      "actualSHA256": "9307c44a13c5be7e8a35a0ae950bbda36cbf7f445bcd92f3ee2a2c0790ce04b1",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SCHEMA-TEST-PLAN.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SCHEMA-TEST-PLAN.json",
+      "actualBytes": 2000,
+      "actualSHA256": "e59270c4566f96e96839faaa378c6867ea9c9ceb6e9e4ba26b8df62074bb6635",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SOURCE-RELATIONS.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SOURCE-RELATIONS.json",
+      "actualBytes": 5733,
+      "actualSHA256": "a5f781e0352c750c56c54f8ce2cb537763cc0925516d90cd2d6f90a9a4962203",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SPEC.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SPEC.md",
+      "actualBytes": 9685,
+      "actualSHA256": "d6615fa1d694d57ce3f2de3d2b505eae0afd09afffd3eb82632a56235b2f5f14",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/TEST-PLAN.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/TEST-PLAN.json",
+      "actualBytes": 4526,
+      "actualSHA256": "48619d53e653717d3af835c5026b5249d3e1079818ea9a595e8c971dc6d2d842",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/code-design-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/code-design-review-v1.json",
+      "actualBytes": 18956,
+      "actualSHA256": "f68457270515733fab63686ca2b221c0d44ba99c6243fea9cbba69b97532e131",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/completion-design-only.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/completion-design-only.json",
+      "actualBytes": 1655,
+      "actualSHA256": "cca1a2d5de244af9321357329921e8b787bdff2985667f8a5357edd7c35fe6ed",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/js-api-design-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/js-api-design-review-v1.json",
+      "actualBytes": 29615,
+      "actualSHA256": "68a2de96c9a9b1f9ddac143fe916fe096a9cd0168180f79c647d8cd3b7549c92",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/manifest.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/manifest.json",
+      "actualBytes": 11690,
+      "actualSHA256": "e77f9f1b204c148910595c108b7a1dd5fa333bee507529d82980efc10238c72d",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/python-design-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/source-freeze-v1/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/python-design-review-v1.json",
+      "actualBytes": 24715,
+      "actualSHA256": "a2b1c52830287f51b67d5a0026d3b8bf4460c5ee83f98d6824e78f3b3f31db6f",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/syntax-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/syntax-v1.json",
+      "actualBytes": 279,
+      "actualSHA256": "33111e7a4078ec59bc5d23d15bef25b6a8525112ee83e44cfed74d8250d4db49",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/source-context-freeze-v1/manifest.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/source-context-freeze-v1/manifest.json",
+      "actualBytes": 57360,
+      "actualSHA256": "606444fdef94e3f101d1d7804ee88e9b32955e502efe876e2b15c7e74f2ba695",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-node/manifest.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-node/manifest.json",
+      "actualBytes": 12120,
+      "actualSHA256": "2ed80c64f2e5ec80415bf6f58830d81df6d0d1f47dbc0d7d8e1b6de084ac0a37",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/manifest.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/manifest.json",
+      "actualBytes": 82005,
+      "actualSHA256": "56c949717cbb8d5732c0bb765ad1300fd570600036a9b350ee6ed87a630b8cfa",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/AMENDMENT.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/AMENDMENT.md",
+      "actualBytes": 5594,
+      "actualSHA256": "22d2c40d26eb0dbb64186347bc9f4bc1e44c87ed01bcd05dc7c4814f0a24c9a8",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-source-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-source-review-v1.json",
+      "actualBytes": 110185,
+      "actualSHA256": "07d21de016fc962d99109add07a009bec71dfcf14da3ba0dedb74f5f019d0d9c",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-source-review-v1.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-source-review-v1.md",
+      "actualBytes": 5441,
+      "actualSHA256": "acc965b5658fa0b1bb273a786148550d1a98d4a174b36a4c3d9010b7458eab28",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/js-api-source-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/js-api-source-review-v1.json",
+      "actualBytes": 95043,
+      "actualSHA256": "1772a917d872ad5194d43602ed52cbf7053ed268515b49f7b5ec0be32ddcba16",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/js-api-source-review-v1.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/js-api-source-review-v1.md",
+      "actualBytes": 2964,
+      "actualSHA256": "883d29baa7c4365f1b43b24de0706ca4fabdbd623caaaaf6d61b0db82cef26dd",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-source-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-source-review-v1.json",
+      "actualBytes": 121341,
+      "actualSHA256": "d4fc12b1fd21d243bd39d203d8f3d5d73cfe514f2c5e6af00c2db52ed75a331d",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-source-review-v1.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-source-review-v1.md",
+      "actualBytes": 4467,
+      "actualSHA256": "6beffd2f89ac53992640e7bdb618e4d1f9d2b756774c92d7dfbee1cc87cb75b9",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/noncandidate-count-gate-v1/result.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/noncandidate-count-gate-v1/result.json",
+      "actualBytes": 470,
+      "actualSHA256": "ee8a416b7e3143646bf707adb67c7036fdadf9ba4ee502f75288dd2e13b81d85",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/source-block-closeout.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/source-block-closeout.json",
+      "actualBytes": 1844,
+      "actualSHA256": "80d6876dfc75e4c1692f350e82071f0dcec328ec298e37eb144758835333eb16",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/code-design-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/code-design-review-v1.json",
+      "actualBytes": 59442,
+      "actualSHA256": "bb678e69eaeac1abfbaf4591b7ab6f72a1d20bd848f861200658b8d6cf95b5b6",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/code-design-review-v1.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/code-design-review-v1.md",
+      "actualBytes": 3228,
+      "actualSHA256": "81002667130536f065978a6096f129797785bcbbb7fee59ebe8ab691694d432c",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/completion-design-only.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/completion-design-only.json",
+      "actualBytes": 1890,
+      "actualSHA256": "a531a7ddc99f6693832adcd363a537db96e7c7d785cadf16873cd709645202f3",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/js-api-design-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/js-api-design-review-v1.json",
+      "actualBytes": 77891,
+      "actualSHA256": "ac41003f9349f91af8f39b5351c4265a864ae724f4402c45a5424df580085b8b",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/js-api-design-review-v1.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/js-api-design-review-v1.md",
+      "actualBytes": 2231,
+      "actualSHA256": "0cb5c2620ba2aa098dd6bb447b206c62031a426c4e97c0983b67aee83b319b7e",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/manifest.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/manifest.json",
+      "actualBytes": 40952,
+      "actualSHA256": "5f9ec01494e032f78e6311ff0103ad014e22908a69eaede9a6670d1ed2f530f7",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/python-design-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/python-design-review-v1.json",
+      "actualBytes": 51377,
+      "actualSHA256": "0f557998c5fe67ee622f42439346fb3ecf8854bd36a9fc62006e939c332f9a30",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/python-design-review-v1.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/python-design-review-v1.md",
+      "actualBytes": 2569,
+      "actualSHA256": "16362cfc15b1d54986e94e52c376f2333e3ad44fe08665f7af990223aaf815af",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/python-iterator-capability-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/python-iterator-capability-v1.json",
+      "actualBytes": 4908,
+      "actualSHA256": "4ea38d56b9dd5325a1564ffea7f3d3071d6250c3bcfca3635a19c78bed037ed5",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/code-design-review-v1.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/code-design-review-v1.md",
+      "actualBytes": 3241,
+      "actualSHA256": "ec7b3795bba2d8747596ff368dac8511d3f6135f4d41183ae44b784e13bd7eb0",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/js-api-design-review-v1.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/js-api-design-review-v1.md",
+      "actualBytes": 2467,
+      "actualSHA256": "9801912988fc88b81effec7de7584224135217e2c4f31c4d05b461390fa500ed",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/python-design-review-v1.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/python-design-review-v1.md",
+      "actualBytes": 2275,
+      "actualSHA256": "e909d67e7154d9a9a4b4e9e87db6bef5fa25ec61af126c5d74275be34698d01e",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/allocation-readback.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/allocation-readback.py",
+      "actualBytes": 2577,
+      "actualSHA256": "d929e03869222db8b9a6240042cca6ec68efb7e8a87dbac44f403650c2a572e0",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/output/layer-metadata/model0/mod.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/output/layer-metadata/model0/mod.json",
+      "actualBytes": 2,
+      "actualSHA256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/output/layer-metadata/model1/mod.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/output/layer-metadata/model1/mod.json",
+      "actualBytes": 2,
+      "actualSHA256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/output/layer-metadata/model2/mod.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/output/layer-metadata/model2/mod.json",
+      "actualBytes": 2,
+      "actualSHA256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/output/layer-metadata/model3/mod.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/output/layer-metadata/model3/mod.json",
+      "actualBytes": 2,
+      "actualSHA256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/output/layer-metadata/public/mod.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/output/layer-metadata/public/mod.json",
+      "actualBytes": 2,
+      "actualSHA256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/output/layer-sources/model0/mod.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/output/layer-sources/model0/mod.json",
+      "actualBytes": 2,
+      "actualSHA256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/output/layer-sources/model1/mod.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/output/layer-sources/model1/mod.json",
+      "actualBytes": 2,
+      "actualSHA256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/output/layer-sources/model2/mod.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/output/layer-sources/model2/mod.json",
+      "actualBytes": 2,
+      "actualSHA256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/output/layer-sources/model3/mod.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/output/layer-sources/model3/mod.json",
+      "actualBytes": 2,
+      "actualSHA256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/output/layer-sources/public/mod.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/output/layer-sources/public/mod.json",
+      "actualBytes": 2,
+      "actualSHA256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/output/layer-sources/public/simulation/helpers/Body.js",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/output/layer-sources/public/simulation/helpers/Body.js",
+      "actualBytes": 65536,
+      "actualSHA256": "22a0b5e32e868f89473cdf90827693e5138c577d056017fe5ea10e166ce71ce8",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/root0/mod.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/root0/mod.json",
+      "actualBytes": 2,
+      "actualSHA256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/root1/mod.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/root1/mod.json",
+      "actualBytes": 2,
+      "actualSHA256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/root2/mod.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/root2/mod.json",
+      "actualBytes": 2,
+      "actualSHA256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/root3/mod.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/root3/mod.json",
+      "actualBytes": 2,
+      "actualSHA256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/tiny.zip",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/fixture/tiny.zip",
+      "actualBytes": 65780,
+      "actualSHA256": "61a02bcbe2dc9b596e017e6c117f35fbbfe9e3d5f7513e2df2c9e9c1b941c4ae",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/process.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/process.json",
+      "actualBytes": 371,
+      "actualSHA256": "0e24fede0476616e3f5810b9dbeb1de1a24ccd23710a4f9dc8866955804fc64f",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/stderr.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/stderr.log",
+      "actualBytes": 0,
+      "actualSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/stdout.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/code-counterexample-v1/stdout.log",
+      "actualBytes": 3067,
+      "actualSHA256": "815388d85ca31e8225bddcbbb5697ef99d2d265f0c05aa27f8f93bd1425766a2",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/js-newcases-v1/execution.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/js-newcases-v1/execution.json",
+      "actualBytes": 1148,
+      "actualSHA256": "476bb8df3573040a6452b9afca4171254573710d05b3780540a8d9f073b7d64a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/js-newcases-v1/node.stderr",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/js-newcases-v1/node.stderr",
+      "actualBytes": 0,
+      "actualSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/js-newcases-v1/node.stdout",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/js-newcases-v1/node.stdout",
+      "actualBytes": 11666,
+      "actualSHA256": "abda1bbce015b676518477a8786167e14fa31a3700aa263d99b72aa9a3f6460f",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/js-newcases-v1/parser-internal-error.cjs",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/js-newcases-v1/parser-internal-error.cjs",
+      "actualBytes": 1122,
+      "actualSHA256": "76a717a249d8bf42d2e7b75ad53cccffdeced330c7c8522a691c1123a3206ca9",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/js-newcases-v1/protocol-session-classification.cjs",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/js-newcases-v1/protocol-session-classification.cjs",
+      "actualBytes": 2012,
+      "actualSHA256": "8a02c29c040e5a0810872bd12267ba3dee3efc736b4d5f5e2d7b4713335edaa1",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/js-newcases-v1/python-validation.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/js-newcases-v1/python-validation.json",
+      "actualBytes": 1007,
+      "actualSHA256": "6e0ea7dc93f19627ba347d38f63504a2b4d0f5c3bad9ed3454f9e42ffb2652ef",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/js-newcases-v1/session.stderr",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/js-newcases-v1/session.stderr",
+      "actualBytes": 0,
+      "actualSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/js-newcases-v1/session.stdout",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/js-newcases-v1/session.stdout",
+      "actualBytes": 908,
+      "actualSHA256": "3830dba9ba5537d6ece0a2bcbd870b09bcd8142e6277623f3cf2be343afa8a69",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/compile-stderr.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/compile-stderr.log",
+      "actualBytes": 0,
+      "actualSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/compile-stdout.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/compile-stdout.log",
+      "actualBytes": 20,
+      "actualSHA256": "034a6d0b227178351a8524ca57d96642cd1164218de5bea6a671d7d270f5633c",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/noncandidate-count-gate-v1/loose/mod.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/noncandidate-count-gate-v1/loose/mod.json",
+      "actualBytes": 2,
+      "actualSHA256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/noncandidate-count-gate-v1/loose/unrelated-a.txt",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/noncandidate-count-gate-v1/loose/unrelated-a.txt",
+      "actualBytes": 1,
+      "actualSHA256": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/noncandidate-count-gate-v1/loose/unrelated-b.txt",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/noncandidate-count-gate-v1/loose/unrelated-b.txt",
+      "actualBytes": 1,
+      "actualSHA256": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/normal-stderr.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/normal-stderr.log",
+      "actualBytes": 4399,
+      "actualSHA256": "f9685bc969715d421981958eea5b8ea71dda3c020908edea2ab3463b6b8b41d9",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/normal-stdout.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/normal-stdout.log",
+      "actualBytes": 0,
+      "actualSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/optimized-stderr.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/optimized-stderr.log",
+      "actualBytes": 4399,
+      "actualSHA256": "d5963242a8126e6ef4fa518216e750e1ec4812f9784ea0f1ebbdeb8bb19ab3f2",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/optimized-stdout.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/optimized-stdout.log",
+      "actualBytes": 0,
+      "actualSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/output-parent-fstat-fault-v1/result.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/output-parent-fstat-fault-v1/result.json",
+      "actualBytes": 546,
+      "actualSHA256": "b63dcf60f88da2d13f05b6870eb1fae459a30857a02b0ca5f0f9c11ccc89a02b",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/runs.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/runs.json",
+      "actualBytes": 794,
+      "actualSHA256": "7f925b209107ef44934ece5c30f159068317e9e88bafbb352776d58eec5cf474",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/runtime-observed.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/python-review-evidence-v1/runtime-observed.json",
+      "actualBytes": 3302,
+      "actualSHA256": "300869873d0e6208ca39e3f5f77308fe5163c57ede936f77988f781dfcb37ada",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/manifest.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/manifest.json",
+      "actualBytes": 42141,
+      "actualSHA256": "4c43d87865980369dceaeed3098ce2b27a0afab03ac7e7b05a48197323ae06d5",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/author-input-readback.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/author-input-readback.json",
+      "actualBytes": 5040,
+      "actualSHA256": "ea76ca56e7130a4aa43cbf4a030a8f73fc9b79d9fccefa8b7877283e293c428a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/case-artifacts.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/case-artifacts.json",
+      "actualBytes": 345306,
+      "actualSHA256": "875b4ae60c8b9ceff7e42ef13e128349413459a4a6439b9b6b3000c34f91f681",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/compile-and-binding.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/compile-and-binding.json",
+      "actualBytes": 869,
+      "actualSHA256": "66bfb4fca6aea6ea696f65f81df354cb69569a8c40f5b321f04a57a13ac2b5a3",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+      "actualBytes": 49905,
+      "actualSHA256": "4a0d526d2d37afb5a2af3132511641e02e287757620eddf39956d29f59abb8a9",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/final-normal.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/final-normal.log",
+      "actualBytes": 5171,
+      "actualSHA256": "30f4d55ca246efa0d6f12de5cba09b7efce278c56332ab2abc680985c46d0a3b",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/final-optimized.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/final-optimized.log",
+      "actualBytes": 5171,
+      "actualSHA256": "e00c83b92c271151db65806cbaf61760fa8ebf3ee23eb1ef5465236f85f5110d",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/fix-disposition.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/fix-disposition.json",
+      "actualBytes": 18280,
+      "actualSHA256": "020cf061423cd48bcd3659fe21a4786d28bf9d697fa5bef4bf67eb4cb28db369",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/historical-design-binding-applicability.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/historical-design-binding-applicability.json",
+      "actualBytes": 110216,
+      "actualSHA256": "a80822c83764a9c041d70ead6af9790b69a5565876fc5e483ece33fce0d4bbaf",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/historical-review-evidence-readback.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/historical-review-evidence-readback.json",
+      "actualBytes": 12646,
+      "actualSHA256": "e6ade0def95600ad5dc688def05adb37de6be3d5653165320e4b047bc97eb54e",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/iteration1-normal.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/iteration1-normal.log",
+      "actualBytes": 2010,
+      "actualSHA256": "a5c4365f86ce0caf3b1d57447fc2f39973c3e291203d1d00c6c270260877df53",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/iteration1-source.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/iteration1-source.py",
+      "actualBytes": 53518,
+      "actualSHA256": "f0ead917e9d23f0e50d615c929a73ed7ad819b06ae5cc8ddc4fe9a913ab77c21",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/iteration2-normal.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/iteration2-normal.log",
+      "actualBytes": 708,
+      "actualSHA256": "a655044cb4a2e6e77be9de0ed54417bea703bab9acfd3d066a579b5fd406a060",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/iteration2-source.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/iteration2-source.py",
+      "actualBytes": 53836,
+      "actualSHA256": "01556a027e686f187e0e02ee7fb77945627dad090bc567380a1f65eca9b3d195",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/iteration2-test.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/iteration2-test.py",
+      "actualBytes": 51060,
+      "actualSHA256": "022912c7e93e581b24582bde1e1400a1bee19b0e950080a74341dddd5cad909e",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/iteration3-normal.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/iteration3-normal.log",
+      "actualBytes": 871,
+      "actualSHA256": "1ae25af99d290c21607627ff263b13e5d50e757ee402e93dff940dc05b2c9432",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/iteration3-source.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/iteration3-source.py",
+      "actualBytes": 53952,
+      "actualSHA256": "d687c19c9be59ba4e241d0d6fc4d0b331cb7ec3555f2267b4fa125e56bdb5022",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/iteration3-test.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/iteration3-test.py",
+      "actualBytes": 52819,
+      "actualSHA256": "5320b54f890413668046c4c8e2edf2d96ce8509b9d1b05296064f7bf35d036d3",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/red-normal.log",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/red-normal.log",
+      "actualBytes": 13507,
+      "actualSHA256": "152af5f9d1b15e43f93ef8709e362684f0944735f4401a0c72d425af51ec33cb",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/red-test.py",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/red-test.py",
+      "actualBytes": 51467,
+      "actualSHA256": "0597f4e8ae8ddc66970a3bc0e42227ecfda17673608a4bd6706b410c26977abb",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/run-ledger.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/run-ledger.json",
+      "actualBytes": 1775,
+      "actualSHA256": "432fd33388895bc898cb352983aaf5e991b1786eb820cdfc541a34bb54fc037a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/runtime-observed.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/runtime-observed.json",
+      "actualBytes": 3302,
+      "actualSHA256": "300869873d0e6208ca39e3f5f77308fe5163c57ede936f77988f781dfcb37ada",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/source-diff.patch",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/source-diff.patch",
+      "actualBytes": 13961,
+      "actualSHA256": "4431afbbcacb1b1f67ab0b6c9366e7c3539f465bd1f7e13904b83a833859f12f",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/code-design-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/code-design-review-v1.json",
+      "actualBytes": 18956,
+      "actualSHA256": "f68457270515733fab63686ca2b221c0d44ba99c6243fea9cbba69b97532e131",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/code-design-review-v1.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/code-design-review-v1.md",
+      "actualBytes": 3744,
+      "actualSHA256": "657c645651be020ae558c6da3db7d31611c74b2e80d1809b039c170f3599f53f",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/completion-design-only.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/completion-design-only.json",
+      "actualBytes": 1655,
+      "actualSHA256": "cca1a2d5de244af9321357329921e8b787bdff2985667f8a5357edd7c35fe6ed",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/js-api-design-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/js-api-design-review-v1.json",
+      "actualBytes": 29615,
+      "actualSHA256": "68a2de96c9a9b1f9ddac143fe916fe096a9cd0168180f79c647d8cd3b7549c92",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/js-api-design-review-v1.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/js-api-design-review-v1.md",
+      "actualBytes": 2314,
+      "actualSHA256": "12be248100e101269e0476f4ee800ad1f71a491bbdbe42a304a1768c03d069d0",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/python-design-review-v1.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/python-design-review-v1.json",
+      "actualBytes": 24715,
+      "actualSHA256": "a2b1c52830287f51b67d5a0026d3b8bf4460c5ee83f98d6824e78f3b3f31db6f",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/python-design-review-v1.md",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/python-design-review-v1.md",
+      "actualBytes": 5782,
+      "actualSHA256": "92f5843e6fbc70af2f0637363fcfb32d8a11fd19a1308baef46d1c54b13e75c0",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/before/t17-save-five-mod-source-inventory-v2.cjs",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/before/t17-save-five-mod-source-inventory-v2.cjs",
+      "actualBytes": 21317,
+      "actualSHA256": "054ac9d099cd369db3022b9e8f3d5f349ee0db7967fa9c71764914e48091808a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/before/test-t17-save-five-mod-source-inventory-v2.cjs",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/before/test-t17-save-five-mod-source-inventory-v2.cjs",
+      "actualBytes": 14109,
+      "actualSHA256": "e7ccf1b06d8eba57da99aee39f354126796d46419e6d39015cc8314039e02eaf",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/before.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/before.json",
+      "actualBytes": 374,
+      "actualSHA256": "a3b088fdb7c68a2e71d15d6a8454c7ff257c17fa61773a1593e81f5013b87a43",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/coverage.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/coverage.json",
+      "actualBytes": 2135,
+      "actualSHA256": "57ed904cd36534daa8dd5c22a1872460ed26f06ac696a00ee48e6edd82b2700d",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/green-full-run.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/green-full-run.json",
+      "actualBytes": 167,
+      "actualSHA256": "4b453a7ab13e8e9ed158110518b735f6db10f1d45db45569c2a742edc04d3c19",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/green-full.stderr",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/green-full.stderr",
+      "actualBytes": 0,
+      "actualSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/green-full.stdout",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/green-full.stdout",
+      "actualBytes": 1375,
+      "actualSHA256": "20e5c846cc000523ca4dbb639a9bf9624e2c858ae0e98f7514d5f117506633c3",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/red-abort.stderr",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/red-abort.stderr",
+      "actualBytes": 580,
+      "actualSHA256": "b5ba5301b9cd882161ca77761da9f3791eccee9feda96e6a0875d61891fd2f0d",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/red-abort.stdout",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/red-abort.stdout",
+      "actualBytes": 0,
+      "actualSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/red-classification.stderr",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/red-classification.stderr",
+      "actualBytes": 1199,
+      "actualSHA256": "7ca561b5469342b80ddd3271753dd2383dd6e70ec8206669bab17a628319a92c",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/red-classification.stdout",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/red-classification.stdout",
+      "actualBytes": 0,
+      "actualSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/red-counts.stderr",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/red-counts.stderr",
+      "actualBytes": 1194,
+      "actualSHA256": "907acf0b6e869070256a6e026402f3d6c87af2a003384c9584a382f5e125d8c2",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/red-counts.stdout",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/red-counts.stdout",
+      "actualBytes": 0,
+      "actualSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/red-parser.stderr",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/red-parser.stderr",
+      "actualBytes": 1203,
+      "actualSHA256": "4d2fc1ffccbf88a8686e59c4fffa341bcbacf521642eb105463881c524352abd",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/red-parser.stdout",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/red-parser.stdout",
+      "actualBytes": 0,
+      "actualSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/red-runs.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/red-runs.json",
+      "actualBytes": 866,
+      "actualSHA256": "61218a80d30ea5da3e4dfbf4bc4d94ef219a28fffa9fd8dd0c7d53d2de680e80",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/runtime.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/runtime.json",
+      "actualBytes": 608,
+      "actualSHA256": "ca953d47cb323c614fb81bdd7812dbe663a8dc6e16dd2ca42cec836a59981ad4",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/syntax.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/syntax.json",
+      "actualBytes": 416,
+      "actualSHA256": "27f116e4154a0bfc69cf1665093c0f4ed2a29c83f16684800946e03bec18e406",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/t17-save-five-mod-source-inventory-v2.cjs.diff",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/t17-save-five-mod-source-inventory-v2.cjs.diff",
+      "actualBytes": 2903,
+      "actualSHA256": "76a7649f39bd9d20f6959d14b4e40e53ad1d8d399d3b759fb2a490cebb7828d9",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/test-t17-save-five-mod-source-inventory-v2.cjs.diff",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/test-t17-save-five-mod-source-inventory-v2.cjs.diff",
+      "actualBytes": 6803,
+      "actualSHA256": "1d4b1d6d90414fd0cc0c45f0ffa0c56622c16d1b2cdd37f7a5c7cddf7a628fad",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/source-context-freeze-v1/manifest.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/source-context-freeze-v1/manifest.json",
+      "actualBytes": 182238,
+      "actualSHA256": "98084ef0fb0e96fd7224cd4b1519a93325cd765b75ef30f0809935f50758dd5a",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/author-completion.json",
+      "snapshotPath": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/inputs/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/author-completion.json",
+      "actualBytes": 114203,
+      "actualSHA256": "edc1a0676f63fd1f0129c3fb46a2e840feb45f73276e99e0dfee040882e4faa2",
+      "liveStatus": "MATCH",
+      "snapshotStatus": "MATCH"
+    }
+  ],
+  "runtimeDependenciesFreshReadback": [
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3.9",
+      "bytes": 53200,
+      "sha256": "6e7ae61f68a3838094fc56590f84c52069a97d7816f6bb79e0e85995b340e464",
+      "status": "MATCH"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/zipfile.py",
+      "bytes": 87278,
+      "sha256": "df6e2da67a3394a47ed57cfbd44298109d26f71ea22948a8840b6b56b0f6189d",
+      "status": "MATCH"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/hashlib.py",
+      "bytes": 10010,
+      "sha256": "a25e6f24d6ae5b5205844e2717f3d6dbeda005c1afeaf4d450b4f2c363a3d34a",
+      "status": "MATCH"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/io.py",
+      "bytes": 3541,
+      "sha256": "01907eff5e1a17d37e967b4d6d1bd2230e03d30f56cc1a1384a14dd77be5ff60",
+      "status": "MATCH"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py",
+      "bytes": 14017,
+      "sha256": "332fabb72a4a1ed02c9207a7619ab339dac8f0b6862e16f6499147121b302a27",
+      "status": "MATCH"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/os.py",
+      "bytes": 39404,
+      "sha256": "8dbe2d2e9f228747cacbbcc6758721e794b652e5c22b6224cb07e303ebbc620d",
+      "status": "MATCH"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_hashlib.cpython-39-darwin.so",
+      "bytes": 90640,
+      "sha256": "df2522e0043b85940cc9fa28e4807211a15edec673f648d1f501483a5736d641",
+      "status": "MATCH"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/zlib.cpython-39-darwin.so",
+      "bytes": 88848,
+      "sha256": "d63129e2be45719a8ebd16cc0c74a2146bc96dff91a8fca65f9958f55e643d3a",
+      "status": "MATCH"
+    }
+  ],
+  "findings": [],
+  "severityCounts": {
+    "CRITICAL": 0,
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 0
+  },
+  "completeAreaReview": [
+    {
+      "area": "Physical source/archive acquisition and authority",
+      "paths": [
+        "tools/epoch-rts/t17-save-five-mod-capture.py:120-193",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:581-592"
+      ],
+      "result": "SOURCE_REVIEW_NO_FINDING",
+      "reason": "Physical directory chain/leaf O_NOFOLLOW and regular FD checks, fixed actual archive authority, full bounded pread digest and private ordered chunk table, immutable cache and authenticate-before-return crosschunk path retained. Same archive FD feeds stdlib ZipFile; no arbitrary caller authority, raw FD/path extraction bypass or rebuild-table-on-mismatch path identified. Archive pathname freshness/native VFS identity is not claimed."
+    },
+    {
+      "area": "ZIP64/CRC/path/type and bounded I/O",
+      "paths": [
+        "tools/epoch-rts/t17-save-five-mod-capture.py:195-218",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:558-579"
+      ],
+      "result": "SOURCE_REVIEW_NO_FINDING",
+      "reason": "Standard zipfile ZIP64 parser over authenticated seekable reader, preallocation request cap, advertised source size, bounded STREAM_CHUNK extraction and actual count/eof/digest handling; corrupted ZIP/CRC errors terminal. orig_filename NUL/traversal/duplicate/type/method safety present. ZIP metadata allocation still limited by central read budget and entry count, not a whole-archive body copy. Large-offset/sparse ZIP64, true64MiB centraldir and zipbomb controls remain incomplete."
+    },
+    {
+      "area": "Phase A streaming and stdlib allocation scope",
+      "paths": [
+        "tools/epoch-rts/t17-save-five-mod-capture.py:274-344",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:558-603",
+        "tools/epoch-rts/test-t17-save-five-mod-capture.py:598-630"
+      ],
+      "result": "SOURCE_REVIEW_NO_FINDING_NOT_RSS_CERTIFICATION",
+      "reason": "Output.capture streams source64KiB, hashes/writes/releases chunk, bounded readback; metadata copy_snapshot uses held snapshot FD streaming. No read_candidate parts/full-body join or all-layer body dictionaries remain in phase A. Output.write no longer rereads a complete body. Existing AuthenticatedReader fourMiB authority cache, bounded ZIP metadata/buffers and input chunks are separate from source-body accumulation. Author tracing now visits actual Python plus stdlib ZipFile frames; observed256KiB compressed tiny context has no whole-body source object and <=64KiB payload objects. It is finite observed object/context evidence, not all allocator/RSS/C-buffer or actual8MiB/full-archive proof."
+    },
+    {
+      "area": "Phase B selected memory and finite budgets",
+      "paths": [
+        "tools/epoch-rts/t17-save-five-mod-capture.py:23-31",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:594-617"
+      ],
+      "result": "SOURCE_REVIEW_NO_FINDING",
+      "reason": "All candidate rows accounted globally16384, union4096 and all-five metadata8MiB before capture; all candidate source advertised8MiB cap; highest-priority selection then selected-only64MiB. PhaseB bodies load exclusively from owned snapshots with retainTrue; chunks/join/validation/base64/JSON copies are permitted bounded phaseB overhead and not described as64MiB total RSS. No independent archive/all-layer64MiB cap remains."
+    },
+    {
+      "area": "Independent candidate/traversal and name allocation",
+      "paths": [
+        "tools/epoch-rts/t17-save-five-mod-capture.py:497-557",
+        "tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs:171-188"
+      ],
+      "result": "SOURCE_REVIEW_NO_FINDING",
+      "reason": "Shared candidate_count increments only fixed-predicate archive/loose candidates, global rows validated again. LOOSE_ENUM_MAX is separate per-root counter including every child directory/file once, root excluded, shared through recursion; no per-dir reset. HeldFD os.scandir retains names only after deadline/count/path checks and rejects first overlimit before append/sort. Node sums all five layer.entries arrays in addition to per-array limits. Same numeric caps remain independently testable; explicit new traversal admission does not rewrite old counterexample."
+    },
+    {
+      "area": "Iterator/constructor/source/output FD ownership",
+      "paths": [
+        "tools/epoch-rts/t17-save-five-mod-capture.py:105-147",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:220-237",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:497-530",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:544-554",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:654-670"
+      ],
+      "result": "SOURCE_REVIEW_NO_FINDING_NOT_FULLHOST_FD_PROOF",
+      "reason": "Initial Output parent fstat now lies inside cleanup try. Iterator acquisition assigned owner before post-deadline check; finally close once, primary error retained, close exception records RESOURCE_CLOSE_UNKNOWN, original directory FD remains separately owned. Candidate/root/directory FD entries are owned before subsequent fstat; stream finally close, once-close ownership transfer and unknown ledgers retained. Real FD and injected iterator controls cover specific paths; no exhaustive hidden stdlib FD leak, descriptor exhaustion or fullhost process assurance inferred."
+    },
+    {
+      "area": "Complete layer bytes and independent copies",
+      "paths": [
+        "tools/epoch-rts/t17-save-five-mod-capture.py:286-344",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:581-640"
+      ],
+      "result": "SOURCE_REVIEW_NO_FINDING",
+      "reason": "Each archive/loose candidate writes durable-exclusive layer-sources bytes and digest before proceeding; all mod.json copies independently streamed, not links. Later failures retain snapshots/partials and no healthy completion. Selected source bytes read from owned snapshots, never recapture original source. Empty-body EOF/hash paths retained."
+    },
+    {
+      "area": "Layer/selected/shadowed bijection and final readback",
+      "paths": [
+        "tools/epoch-rts/t17-save-five-mod-capture.py:323-364",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:620-640",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:861-869"
+      ],
+      "result": "SOURCE_REVIEW_NO_FINDING",
+      "reason": "Every snapshot row correlates mod/vfs/size/SHA; physical snapshot namespace set rejects missing/unrecorded files, regular nlink1 anchored readback checks digest/size and before-after/named identity. Highest-layer selected and ordered shadowed list match original layer rows and actual body hashes. Effective/metadata and closed analyses undergo final verify_files before manifest; whole-layer identity transitively bound by COMPLETED manifest digest, captureId explicitly selected-only. Scope assumes cooperating namespace; hostile ephemeral sameUID ancestor races remain unsupported."
+    },
+    {
+      "area": "Source mutation and post-valid-FINISH order",
+      "paths": [
+        "tools/epoch-rts/t17-save-five-mod-capture.py:641-653",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:853-865"
+      ],
+      "result": "SOURCE_REVIEW_NO_FINDING",
+      "reason": "FINISH full receive and schema/source/capture correlation validate before retained loose bytes/digest/metadata/parent-name, directory/root identities rechecked. Capture cleanup/output anchors then preservation/final file checks precede success outputs. Existing P09 private FINISH model and physical source mutation controls remain limited local evidence, not main-process integration or atomic multi-file snapshot."
+    },
+    {
+      "area": "Strict shared wire, schema and correlations",
+      "paths": [
+        "tools/epoch-rts/t17-save-five-mod-capture.py:55-85",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:375-485",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:741-805",
+        "tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs:54-235"
+      ],
+      "result": "SOURCE_REVIEW_NO_FINDING",
+      "reason": "Exact object keysets/tagged unions, duplicate-key/UTF8/depth/finite-number limits, source canonical-base64/length/SHA/index/order, sourceCount and selectedDigest/captureId, source-vfs/JS-vs-metadata/UTF16/BOM/CRLF/surrogate boundaries, writers/aliases/calls/line source-shape relations retained. Python does not reparse JS or elevate shape checks to semantic closure. No caller filename/output/authority field introduced."
+    },
+    {
+      "area": "Parser/AST/name producer error boundary",
+      "paths": [
+        "tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs:14-41",
+        "tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs:121-137",
+        "tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs:210-221"
+      ],
+      "result": "SOURCE_REVIEW_NO_FINDING",
+      "reason": "Only actual SyntaxError retries module or emits parse block; RangeError/internal/lookalike/null propagate into analysisFor NODE_ANALYSIS and exactly-one permitted ABORT path before FINISH_READY. Existing raw/decoded identifier branch/name/traversal/context/alias writer/mutation producers preserved. New actual-Acorn and VM classification/ABORT controls are scope-labelled. Name string does not prove receiver/callee identity; complete actual-producer/semantic writer matrix remains OPEN."
+    },
+    {
+      "area": "Runtime/source/schema actual dependency binding",
+      "paths": [
+        "tools/epoch-rts/t17-save-five-mod-capture.py:672-739",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:820-846",
+        "tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs:239-249"
+      ],
+      "result": "SOURCE_REVIEW_NO_FINDING_NOT_EXECUTION_ATTESTATION",
+      "reason": "Python fixed runtime3.9.6/launcher absolute path, two observed launcher hops and physical target SHA remain checked without generic link traversal. Runtime dependencies observed with held physical files; eight actual files freshly hash-read MATCH. Python NODE_SOURCE_EXPECTED equals current actual e710 Node source; Node fixed version26/Acorn8.16 and schema SHA remain. Full host/native-library/loaded-code/profile/source-runtime-original-copy attestation and guard remain outside current evidence."
+    },
+    {
+      "area": "Raw, FAULT, completion and UNKNOWN",
+      "paths": [
+        "tools/epoch-rts/t17-save-five-mod-capture.py:741-805",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:817-917",
+        "tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs:250-333"
+      ],
+      "result": "SOURCE_REVIEW_NO_FINDING",
+      "reason": "Received original BEGIN retained rather than reconstructed; raw owned exclusively by Python, active logs excluded from whole-file manifest hashes. Failure conservative FAULT durableFaultfalse, primary/secondary cleanup UNKNOWN retained and no descriptor retry/delete/respawn. Disk completed may exist while terminal stdout/caller UNKNOWN; no second healthy/fault rewrite. Success requires exact COMPLETED plus drained child close/exit0, and exposed Node diskReadback claim remains limited. This source review does not independently observe real Python wait/reap or full directionpipe byte equality."
+    },
+    {
+      "area": "Deadline, child lifecycle and resource failure",
+      "paths": [
+        "tools/epoch-rts/t17-save-five-mod-capture.py:87-104",
+        "tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs:250-333"
+      ],
+      "result": "SOURCE_REVIEW_NO_FINDING_NOT_REAL_CHILD_ACCEPTANCE",
+      "reason": "Deadline monotonic/backward/expired terminal rules; resource-open postcheck cleanup, once-only ABORT in allowed state, 600s fixed capture timer and bounded TERM/KILL/reap timers; no new attempt/retry. Child crashes/EOF/nonzero/extra frame/missing completion/unknown reap never convert to healthy source closure. Lifecycle controls remain VM models until new separately contracted bridge; timeout cannot fabricate durable raw evidence if writes/cleanup fail."
+    },
+    {
+      "area": "Test coverage and preservation of historical failures",
+      "paths": [
+        "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+        "tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+        "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/coverage.json"
+      ],
+      "result": "PARTIAL_COVERAGE_NO_UPGRADE",
+      "reason": "Current68normal/68-O+compile and Node17 author controls include source-fixed regressions. Independent Python reviewer68normal/-O logs exist and are read, not rerun by CODE. R02.4 now names actual concurrent host-thread sentinel test; R10.2 explicitly bounds source+stdlib internal tracing to256KiB context and notRSS. Historical returned-wrapper evidence and old source56c949 BLOCK/raw remain immutable; current source-only verdict does not retroactively approve old freezes."
+    }
+  ],
+  "historicalFindingDisposition": [
+    {
+      "old": "CODE-SOURCE-01",
+      "currentSource": "Nodee710 line15 SyntaxError-only fallback and analysisFor fatal path",
+      "status": "IMPLEMENTATION_PATH_REPAIRED_ON_NEW_FREEZE; originalNode054BLOCK immutable"
+    },
+    {
+      "old": "CODE-SOURCE-02",
+      "currentSource": "Python d687 Output.capture/readback/copy_snapshot streaming and expanded tracing",
+      "status": "IMPLEMENTATION_PATH_REPAIRED_ON_NEW_FREEZE; originala27fullbodytrace immutable; RSS/large workload not verified"
+    },
+    {
+      "old": "CODE-SOURCE-03",
+      "currentSource": "PythonOutput initial fstat inside try and new once-close fault controls",
+      "status": "IMPLEMENTATION_PATH_REPAIRED_ON_NEW_FREEZE; originalFDleak evidence retained"
+    },
+    {
+      "old": "CODE-SOURCE-04",
+      "currentSource": "Independent bounded loose enumeration and global actual candidate counts under explicitly approved amendment; Nodeglobal sum",
+      "status": "NEW_SOURCE_CONTRACT_MATCHES_REVIEWED_AMENDMENT; originalscaledFAIL not upgraded"
+    }
+  ],
+  "coverage": {
+    "status": "PARTIAL_FULL_COVERAGE_NOT_ESTABLISHED",
+    "pythonMatrix": {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+      "bytes": 49905,
+      "sha256": "4a0d526d2d37afb5a2af3132511641e02e287757620eddf39956d29f59abb8a9"
+    },
+    "nodeMatrix": {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/coverage.json",
+      "bytes": 2135,
+      "sha256": "57ed904cd36534daa8dd5c22a1872460ed26f06ac696a00ee48e6edd82b2700d"
+    },
+    "baseRows": 54,
+    "schemaRows": 14,
+    "preservationRows": 9,
+    "sourceFixRows": 3,
+    "authorTests": "68 normal/68optimized/compile; Node17groups/2syntax; evidence scope remains local/model",
+    "independentPythonEvidence": [
+      {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/python-review-evidence-v1/runs.json",
+        "bytes": 786,
+        "sha256": "ed7b8edac854a695d8cffc565a70aef24940af9e9b10904bd516d9bb4faf87fa"
+      },
+      {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/python-review-evidence-v1/normal-stdout.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/python-review-evidence-v1/normal-stderr.log",
+        "bytes": 5171,
+        "sha256": "7f1444f183d7a15e771a93c912840e51305cf5e4ad7f97a20caae8c0c09c2452"
+      },
+      {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/python-review-evidence-v1/optimized-stdout.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/python-review-evidence-v1/optimized-stderr.log",
+        "bytes": 5171,
+        "sha256": "87ab495994b941a62d8490fcd7a42d0f41df936cb9f80c7fccf9f1e5dd2605a8"
+      },
+      {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/python-review-evidence-v1/compile-stdout.log",
+        "bytes": 20,
+        "sha256": "034a6d0b227178351a8524ca57d96642cd1164218de5bea6a671d7d270f5633c"
+      },
+      {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/python-review-evidence-v1/compile-stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/python-review-evidence-v1/runtime-observed.json",
+        "bytes": 3302,
+        "sha256": "300869873d0e6208ca39e3f5f77308fe5163c57ede936f77988f781dfcb37ada"
+      }
+    ],
+    "CODEExecution": "No suite/counterexample/bridge execution during v2 review; only read/hash verification",
+    "open": [
+      "Actual large/sparse >4GiB ZIP64 and large-offset support acceptance",
+      "Actual64MiB/8MiB/central directory/all limits physical boundary matrix",
+      "RSS/allocator/fullarchive runtime memory bounds",
+      "True current Node/Python OS-pipe/main bridge and fixed collision cases",
+      "Complete actual-Acorn/shared producer and semantic/full40 writer controls",
+      "Independent real child/Python wait-reap/fullhost/hiddenFD-exhaustion/pipe byte observation",
+      "Native/save/freshload/GUI/network/profileinventory/source-runtime-original-copy locks/fresh guard"
+    ]
+  },
+  "execution": {
+    "gitHEAD": "726a3aefcae830f605de438cd13192cc6330414e",
+    "stagedDiff": "EMPTY",
+    "inputReadback": "272/272 live+snapshot MATCH",
+    "newCODETests": "NOT_RUN",
+    "oldTestsCounterexamples": "NOT_RERUN",
+    "sourceTrackingEdits": false,
+    "bridgeOfficialNativeEngineNetworkPaidDeleteCommit": "NOT_USED"
+  },
+  "unknowns": [
+    "No finding reported above80% confidence; absence of findings is not full coverage/runtime certification",
+    "Fresh independent partner SOURCE reviews and root exact readback remain required to close joint review gate",
+    "Source approval is only exact current pair; any subsequent source/hash/dependency change invalidates it",
+    "Bridge CONTRACT-DRAFT is not reviewed/runnable or authorized by this result",
+    "Actualproducer/noProxy/full40/nativecaller/clone/restore/realconsumer/fullhost/archive/metadata/rawreap/count0/GUIACK/freshload/profileinventorylocks/freshguard remain OPEN",
+    "Original failed old source154 freeze, original countscaled counterexample, bridgef0b701/collisionNOTRUN and all formalFAIL/STOP/UNKNOWN/raw/seals/consumed attempts stay immutable"
+  ],
+  "requiredNext": "Root reads all fresh full current SOURCE reports and independently verifies exact freeze. Complete remaining bounded coverage/preflight and separately frozen/reviewed bridge contract/guard before considering any new integration execution. This report is no execution authority."
+}

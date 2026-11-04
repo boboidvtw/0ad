@@ -1,0 +1,255 @@
+{
+  "schema": 1,
+  "purpose": "Preregistered memory-only helper assertions before first controller import; no helper executed",
+  "createdUTC": "2026-10-28T20:47:52.989852+00:00",
+  "stage": "B_SOURCE_WRITES_ONLY_AWAIT_ROOT_STATIC_TOPLEVEL_ADMISSION",
+  "designManifestSHA256": "f597e8d5c5bcf214ccb6a74d7e0920914441c3dece4b6851aa895a5c4607b2d4",
+  "rootAssignmentSHA256": "bae792e723440805f97024314bb5e4a3a02d80f677cce7f59a9929a45972bcdc",
+  "oracleSHA256": "c29ae4c2b9cdd74d2ad9fde92c4867aea3921a07f6b77475ba28d854cb45c271",
+  "assertionCount": 20,
+  "assertionsMax": 24,
+  "inclusiveSecondsMax": 20,
+  "perInputBytesMax": 1048576,
+  "retainedInputsBytesMax": 8388608,
+  "actualLiteralInputEncodingBytes": 2209,
+  "helperDataSource": "Literal table in this plan and helper source only; no producer/oracle output bootstrap or actual filesystem fixture",
+  "assertions": [
+    {
+      "name": "H01_compact_json_literal",
+      "input": {
+        "v": 1,
+        "kind": "ABORT"
+      },
+      "expectedLiteral": "{\"v\":1,\"kind\":\"ABORT\"}",
+      "acceptance": "named comparison is exactly True"
+    },
+    {
+      "name": "H02_empty_sha",
+      "input": {
+        "bytesBase64": ""
+      },
+      "expectedLiteral": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "acceptance": "named comparison is exactly True"
+    },
+    {
+      "name": "H03_strict_literal",
+      "input": {
+        "raw": "{\"v\":1}"
+      },
+      "expectedLiteral": {
+        "v": 1
+      },
+      "acceptance": "named comparison is exactly True"
+    },
+    {
+      "name": "H04_duplicate_rejected",
+      "input": {
+        "raw": "{\"v\":1,\"v\":2}"
+      },
+      "expectedLiteral": "REJECTED",
+      "acceptance": "named comparison is exactly True"
+    },
+    {
+      "name": "H05_nan_rejected",
+      "input": {
+        "raw": "{\"v\":NaN}"
+      },
+      "expectedLiteral": "REJECTED",
+      "acceptance": "named comparison is exactly True"
+    },
+    {
+      "name": "H06_base64_literal",
+      "input": {
+        "encoded": "YWJj"
+      },
+      "expectedLiteral": {
+        "bytesBase64": "YWJj",
+        "ascii": "abc"
+      },
+      "acceptance": "named comparison is exactly True"
+    },
+    {
+      "name": "H07_base64_malformed",
+      "input": {
+        "encoded": "!!!!"
+      },
+      "expectedLiteral": "REJECTED",
+      "acceptance": "named comparison is exactly True"
+    },
+    {
+      "name": "H08_relative_parts",
+      "input": {
+        "value": "a/b.json"
+      },
+      "expectedLiteral": [
+        "a",
+        "b.json"
+      ],
+      "acceptance": "named comparison is exactly True"
+    },
+    {
+      "name": "H09_parent_path_rejected",
+      "input": {
+        "value": "a/../b"
+      },
+      "expectedLiteral": "REJECTED",
+      "acceptance": "named comparison is exactly True"
+    },
+    {
+      "name": "H10_absolute_parent_rejected",
+      "input": {
+        "value": "/a/../b"
+      },
+      "expectedLiteral": "REJECTED",
+      "acceptance": "named comparison is exactly True"
+    },
+    {
+      "name": "H11_deadline_edge",
+      "input": {
+        "start": 1,
+        "now": 21,
+        "budget": 20
+      },
+      "expectedLiteral": 21,
+      "acceptance": "named comparison is exactly True"
+    },
+    {
+      "name": "H12_deadline_over",
+      "input": {
+        "start": 1,
+        "now": 21.001,
+        "budget": 20
+      },
+      "expectedLiteral": "REJECTED",
+      "acceptance": "named comparison is exactly True"
+    },
+    {
+      "name": "H13_primary_retained",
+      "input": {
+        "primary": "primary",
+        "secondary": "secondary"
+      },
+      "expectedLiteral": "primary",
+      "acceptance": "named comparison is exactly True"
+    },
+    {
+      "name": "H14_first_error_selected",
+      "input": {
+        "primary": null,
+        "secondary": "secondary"
+      },
+      "expectedLiteral": "secondary",
+      "acceptance": "named comparison is exactly True"
+    },
+    {
+      "name": "H15_fault_predicate",
+      "input": {
+        "caseId": "F01_EACCES_CAPTURE_INPUT_RESERVE",
+        "name": "capture-inputs.json",
+        "parent": "/fixed",
+        "root": "/fixed",
+        "rootGeneration": 7,
+        "actualGeneration": 7,
+        "flags": "O_WRONLY|O_CREAT|O_EXCL|O_NOFOLLOW"
+      },
+      "expectedLiteral": true,
+      "acceptance": "named comparison is exactly True"
+    },
+    {
+      "name": "H16_generation_mismatch",
+      "input": {
+        "caseId": "F01_EACCES_CAPTURE_INPUT_RESERVE",
+        "name": "capture-inputs.json",
+        "parent": "/fixed",
+        "root": "/fixed",
+        "rootGeneration": 7,
+        "actualGeneration": 8,
+        "flags": "O_WRONLY|O_CREAT|O_EXCL|O_NOFOLLOW"
+      },
+      "expectedLiteral": false,
+      "acceptance": "named comparison is exactly True"
+    },
+    {
+      "name": "H17_filename_mismatch",
+      "input": {
+        "caseId": "F01_EACCES_CAPTURE_INPUT_RESERVE",
+        "name": "other.json",
+        "parent": "/fixed",
+        "root": "/fixed",
+        "rootGeneration": 7,
+        "actualGeneration": 7,
+        "flags": "O_WRONLY|O_CREAT|O_EXCL|O_NOFOLLOW"
+      },
+      "expectedLiteral": false,
+      "acceptance": "named comparison is exactly True"
+    },
+    {
+      "name": "H18_once_close_record",
+      "input": {
+        "closeAttempts": 1,
+        "closeStatus": "OK"
+      },
+      "expectedLiteral": true,
+      "acceptance": "named comparison is exactly True"
+    },
+    {
+      "name": "H19_unknown_close_record",
+      "input": {
+        "closeAttempts": 1,
+        "closeStatus": "UNKNOWN"
+      },
+      "expectedLiteral": false,
+      "acceptance": "named comparison is exactly True"
+    },
+    {
+      "name": "H20_binding_order",
+      "input": [
+        {
+          "path": "/z",
+          "bytes": 0,
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "path": "/a",
+          "bytes": 1,
+          "sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+        }
+      ],
+      "expectedLiteral": [
+        {
+          "path": "/a",
+          "bytes": 1,
+          "sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        {
+          "path": "/z",
+          "bytes": 0,
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "acceptance": "named comparison is exactly True"
+    }
+  ],
+  "inertImportPolicy": "Only NEW controller after root static readback; stdlib dependencies, functions/classes/static Path constants only. No producer module imported even indirectly; -B/PYTHONDONTWRITEBYTECODE required; no default CLI effect.",
+  "testBodyPolicy": "Pure memory only; lexical Path values do not access filesystem. Root-reviewed source may be read outside test bodies solely to hash/execute inert controller definitions after static admission. No host fixture/unit root/observer/probe/_run/runtime_context/Capture.build/producer/case/locks/guard/attempt. Helpers cannot be F01/F02 passes or consumed cases.",
+  "runCommandOnlyAfterRootAdmission": {
+    "program": "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "args": [
+      "-B",
+      "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/tools/epoch-rts/test-t17-save-five-mod-required-fault-controls-helpers.py",
+      "--run-memory-only-after-root-admission",
+      "EXACT_CURRENT_CONTROLLER_SHA256"
+    ],
+    "environment": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "output": "bounded stdout/stderr preserved by root at separately assigned implementation evidence; no campaign namespace"
+  },
+  "stop": "First helper failure/timeout stops; retain exact results, no producer reproduction. Source repair and necessary changed-helper checks only within separately assigned scope.",
+  "status": "NOT_RUN",
+  "producerImport": "NOT_RUN",
+  "threeCases": "NOT_RUN",
+  "attempt": "NOT_CREATED",
+  "native": false,
+  "officialCaptureApproved": false
+}

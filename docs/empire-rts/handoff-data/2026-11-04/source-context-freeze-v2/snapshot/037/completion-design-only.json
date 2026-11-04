@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "createdUTC": "2026-10-26T13:29:41.198802+00:00",
+  "status": "DONE_BOUNDED_THREE_WAY_DESIGN_ONLY",
+  "manifestSHA256": "5f9ec01494e032f78e6311ff0103ad014e22908a69eaede9a6670d1ed2f530f7",
+  "rootBindingsMATCH": 163,
+  "independentFullReviews": [
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/code-design-review-v1.json",
+      "bytes": 59442,
+      "sha256": "bb678e69eaeac1abfbaf4591b7ab6f72a1d20bd848f861200658b8d6cf95b5b6",
+      "verdict": "APPROVE_DESIGN_ONLY"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/python-design-review-v1.json",
+      "bytes": 51377,
+      "sha256": "0f557998c5fe67ee622f42439346fb3ecf8854bd36a9fc62006e939c332f9a30",
+      "verdict": "APPROVE_DESIGN_ONLY"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/js-api-design-review-v1.json",
+      "bytes": 77891,
+      "sha256": "ac41003f9349f91af8f39b5351c4265a864ae724f4402c45a5424df580085b8b",
+      "verdict": "APPROVE_DESIGN_ONLY"
+    }
+  ],
+  "positiveRuntimeCapability": {
+    "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/python-iterator-capability-v1.json",
+    "sha256": "4ea38d56b9dd5325a1564ffea7f3d3071d6250c3bcfca3635a19c78bed037ed5",
+    "scope": "Readonly fixedPython3.9.6 scandir(heldFD) positive capability, not implementation/fault/reap proof"
+  },
+  "sourceApproval": false,
+  "officialCaptureApproval": false,
+  "bridgeApproval": false,
+  "native": false,
+  "authorizedNext": "Within existing human scope, minimal Node parser/globalcount fixes + Python phaseA streaming/FDownership/independentcandidate-traversal iterator fixes + necessary new regressions; update pinnedNodeSHA and exact newjoint/fullindependentreviews before any capture"
+}

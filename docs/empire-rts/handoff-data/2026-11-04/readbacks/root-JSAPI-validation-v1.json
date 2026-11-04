@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "purpose": "Root validation of actual complete independent JSAPI SOURCE-only report; one of three, no campaign admission",
+  "createdUTC": "2026-11-03T16:49:53.264693+00:00",
+  "reviewerRole": "JSAPI",
+  "report": {
+    "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-JSAPI-v2.json",
+    "bytes": 439600,
+    "sha256": "bb06b9e1e479941d4072ff1ebf217653bb3491a8481adc8ce8510307085588bc"
+  },
+  "markdown": {
+    "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-JSAPI-v2.md",
+    "bytes": 63964,
+    "sha256": "49cd462b7b298643dfac8dede15bd642f8452e0b84a92743c57181d38b613a57"
+  },
+  "inputManifestSHA256": "d69d3456754b19f0592682824c4772c72d62169799fc9c02f0466d8291f951d4",
+  "reviewedBindingsSHA256": "f75394caf7e909cc6ccdd5817204d5e646b35f6e2a301c9375b95d441d84f184",
+  "historyContainerSHA256": "2caa72716cb1ac21e4c9163ce6ca2461851fc71ba0381f785a04515d5c18ce74",
+  "expandedLogicalBindingsSHA256": "bcbb171acdda034552fc462203570edb9aad9d6726718d4446177b3b3f9ad104",
+  "physicalBindingCount": 113,
+  "logicalContextCount": 165,
+  "decodedHistoryBytes": 1042748,
+  "encodedHistoryBytes": 1408405,
+  "perPhysicalReadbacksValidated": 113,
+  "perInnerReadbacksValidated": 53,
+  "fullSemanticCoverageDeclaredAndProgressCorroborated": true,
+  "binaryScope": "FULL_BYTE_IDENTITY_ONLY_NO_DISASSEMBLY_OR_LOADED_BODY_CLAIM",
+  "functionalAxesReadInFullByRoot": 14,
+  "rootValidationCorrection": "Initial root assertion compared raw relative manifest paths with normalized absolute report paths; observed mismatch retained here. Correct validation resolves all original/effective/snapshot paths against exact repo, preserves all identities and digests. No source/report change.",
+  "verdict": "VALID_JSAPI_APPROVE_SOURCE_ONLY",
+  "allThreeSourceApproved": false,
+  "stageCAdmitted": false,
+  "formalCases": "THREE_NOT_RUN",
+  "authoredExecution": "NOT_RUN",
+  "next": "Await full CODE/Python reports and root validation; retain all separate current physical-runtime-resource-owner/freshguard/distinct-call gates"
+}

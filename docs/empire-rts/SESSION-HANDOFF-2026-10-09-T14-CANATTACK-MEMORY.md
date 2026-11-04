@@ -1,0 +1,12 @@
+<!-- Purpose: CanAttack memory source assessment continuation；Created: 2026-10-09. -->
+# T14 CanAttack heap／GC／出口離線評估交接
+
+Repo `/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad`。HEAD726a3aefcae830f605de438cd13192cc6330414e/index空；T13限定DONE，T14PARTIAL，T14未commit。先核Git/progress/diff/locks/R28/engine-runner，不只摘要。
+
+[本批assessment](t14-canattack-memory-assessment.md)新增runtime0/retry0/產品0，固定officialcommit a2cae4d69f816e9e9d7eecb6bf88f762afc0c90d 的17sources保存/hashes。GameSetup553–557主context384MiB/growth12，Game82/Main738 simulation與GUI同context；default16/2不自動適用、不是observer獨享budget/RSS上限。GCincremental6ms/perzonefalse/minlastditch0，不移除可達ledger。old methodsArray/Map含method-ID JSONkey/row/token一直留存；末尾128MiBserializedcap/chunk12000不形成liveheapbound。GuiInterfaceCall双向structuredclone不是零copy；print转wstring/UTF8/fflush未查返回，不證durableACK；GUIWriteJSON先完整string/WriteBuffer，simulationreadonlyVFS無direct WriteJSON。僅固定source與設計推論，沒有runtimeheap讀回、allocation歸屬、唯一OOM因果或overhead。
+
+優先B完整delta shards不同觀測設計，A method-local最大單method/nested界線不足、C GUI drain同turn可能滿queue、D取消method-instance是不同問題不救舊FAIL。B仍NOT READY：新schema/stack/shard/record長度/flush前預留/在途sink與完整seq/hash/totals/footer、原this/arguments/return/throw/sync順序/unknown/noninitial/outside/parent/phase守恆、OOM前可失敗退出及nativeuniqueattr cardinality都須實際界線證據。增量離線加總不是合併gameplaycall，不默丟/sampling/topN，不調heap/GC或縮cap/trace救PASS。新工具實作/tests/runtime NOT RUN，後續量測需新問題/樣本seedfixturecamera時長gates比較stopretry/tests/獨立review/lock/guard。
+
+原count raw20261008T110801722750Z engine0但OOM/simulationERROR/runner1，game/captureFAIL、ledgerGUI出口全缺，retry0；6794summary/1422763entered只是974完整frame子集合、48慢marker interval全留。原dense raw20261008T005749621540Z validgame/captureFAIL、expected964缺426completeframe markers，469304CanAttack是640frame子集合，無retry、不混算。全部原mixed性能/活動FAIL、舊no-profiler/工具流程FAIL仍保留。修復/overhead/正式勝負 NOT RUN，entity288 Death→Timer→Flush未解，不擴長壓/熱GPU/跨硬體/空戰/潛艇/T05–T13。
+
+[validation](evidence/t14-canattack-memory-assessment-validation.md)/[results](evidence/t14-canattack-memory-assessment-results.json)与work/t14-canattack-memory-assessment preflight/source-provenance/source-review/search-interruption/closeout/evidence-lock/seal-verification限定範圍。284產品/47raw保留、前551seal與3mutabletracking逐byteprior-state後更新，舊809/674/T13_129/80/432/28/22不覆寫。source稀疏gitgrep可能lazyfetch兩次已停止，未繼續網路/無背景殘留，以保存來源完成判定。R28雙hash/profile保留、engine/runner/ports/HEAD/index/diff/hashes以closeout為準。無commit/push/刪檔/背景/排程、不改C++/AI/玩法。

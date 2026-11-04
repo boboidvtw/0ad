@@ -1,0 +1,27 @@
+{
+  "chunkBytes": 4194304,
+  "archiveMaxBytes": 8589934592,
+  "sourceFileMaxBytes": 8388608,
+  "selectedTotalMaxBytes": 67108864,
+  "archiveCentralDirectoryMaxBytes": 67108864,
+  "zipEntryCountMax": 250000,
+  "candidateCountMax": 4096,
+  "vfsPathUtf8MaxBytes": 1024,
+  "ndjsonFrameMaxBytes": 33554432,
+  "analysisPayloadTotalMaxBytes": 134217728,
+  "protocolVersion": 1,
+  "retry": 0,
+  "wallSecondsMax": 600,
+  "nodeMaxOldSpaceMiB": 512,
+  "pythonAuthenticatedChunkCache": 1,
+  "zipCompressionMethods": [
+    0,
+    8
+  ],
+  "zip64": true,
+  "protocolRawTotalMaxBytes": 268435456,
+  "diagnosticsTotalMaxBytes": 1048576,
+  "jsonNestingMax": 128,
+  "candidateLayerEntryCountMax": 16384,
+  "metadataTotalMaxBytes": 8388608
+}

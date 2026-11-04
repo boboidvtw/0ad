@@ -22,7 +22,10 @@
 
 - **M1 DONE**：官方 R28 macOS ARM64 基線已驗證；`epoch_rts` Mod 與 Frontier 01 測試地圖已建立。
 - 已通過：seed 42、7 引擎測試、Pioneer 實際畫面／選取／移動與正常退出，最終日誌 0 錯誤／0 警告。
-- **M2 DONE**：兩時代最小流程完成；T06 兩 seed 戰鬥、勝負邊界與標準資源脚本整局通過，附勝利畫面與限制。[T06 證據](docs/empire-rts/evidence/t06-validation.md)。[T07獨立飛行原型](docs/empire-rts/evidence/t07-validation.md) 已完成限定驗收，[T08潛艇可行性調查](docs/empire-rts/evidence/t08-validation.md)已完成，完整潛艇功能延後，[T09架構決策](docs/empire-rts/t09-engine-decision.md)已完成，維持R28與Mod、暫不改C++，[T10暫用靜態模型匯入](docs/empire-rts/evidence/t10-validation.md)已完成，[T11原創低面數美術切片](docs/empire-rts/evidence/t11-validation.md)完成限定工人／長矛兵／房屋／三圖示驗收；主線下一步T12。通用 AI、正式全套美術、存讀檔及多人尚未驗收。
+- **M2 DONE**：兩時代最小流程完成；T06 兩 seed 戰鬥、勝負邊界與標準資源脚本整局通過，見 [T06 證據](docs/empire-rts/evidence/t06-validation.md)。T07 飛行原型、T08 潛艇調查、T09 架構決策、T10 靜態匯入與 T11 原創低面數美術切片已完成各自限定驗收；完整潛艇、精確飛行彈道及全套美術尚未完成，維持 R28 與 Mod、暫不改 C++。
+- **T12、T13 限定 DONE**：[T12 AI](docs/empire-rts/evidence/t12-validation.md)限兩 seed 對固定防守；[T13 存讀檔與多人](docs/empire-rts/evidence/t13-validation.md)限已驗收存檔與本機 loopback，不代表通用 AI、任意存檔相容或跨機多人完成。
+- **T14 PARTIAL**：已有多項限定效能與完整局證據，但原不限 FPS、重複性及混合交戰 FAIL 仍保留。隔離 storage parser／runner 接線已完成；真實 live integration、量化 observer overhead 與安全玩法修復尚未驗收。以 [進度主表](docs/empire-rts/progress.md)及 [2026-11-04 收工交接](docs/empire-rts/SESSION-CLOSEOUT-2026-11-04-T14-T18.md)為準，不以 synthetic proof 取代 runtime 驗收。
+- **T15–T18 TODO**：擴充與發行規格、專用攻擊檢查、潛艇垂直切片、精確彈道與停機位仍是後續項目；既有原型不等於這些項目已完成。
 - **T05 DONE**：[研究功能與驗收證據](docs/empire-rts/evidence/t05-validation.md)。兩 seed 各 77 項研究與 183 項經濟回歸通過；已確認解鎖單位、鍛造研究及三類繁中不足提示。
 - [T04 經濟原型驗收](docs/empire-rts/evidence/t04-validation.md)：兩 seed 各 177 項引擎檢查、GUI 操作及 M1 回歸通過。
 - [開始執行與重現測試](docs/empire-rts/baseline.md) · [驗收證據](docs/empire-rts/evidence/m1-validation.md) · [暫用素材](docs/empire-rts/assets.md)
@@ -33,6 +36,12 @@
 
 ## 維護方式
 
-開始工作先讀計畫與進度；完成一項工作後，在同一批變更中更新任務狀態、實際驗證證據及工作紀錄。未驗證的功能不能標記 DONE。沒有排程或背景服務，文件不會自行更新。
+開始工作先讀計畫與進度；完成一項工作後，在同一批變更中更新任務狀態、實際驗證證據及工作紀錄。未驗證的功能不能標記 DONE。既有 `0ad-t14` 每 5 小時排程的 Nov2 移轉結果與後續 heartbeat 已記錄在交接中；本次收工未修改或新建排程，不保證額度恢復後立即啟動。文件仍须由實際執行的工作更新，不會因排程存在而自動標記任務完成。
 
 本 README 是 Fork 的新入口；原始 README、上游署名及授權文件仍保留。
+
+## 2026-11-04 交接快照 / Handoff snapshot
+
+[收工說明](docs/empire-rts/SESSION-CLOSEOUT-2026-11-04-T14-T18.md) · [下一步](docs/empire-rts/reference_t14_t18_next_steps.md) · [交接資料與逐檔SHA](docs/empire-rts/handoff-data/2026-11-04/README.md)。CODE、JS/API僅SOURCE核可；Python正式報告待完成，三正式案例NOT RUN，整體T14–T18仍PARTIAL。原始work/raw/seals與其他未提交工作保留本機；本快照不是完整可執行發行包。
+
+CODE and JS/API approve the exact frozen source only. The Python final report is pending; all three formal cases remain NOT RUN. This scoped handoff exports text evidence and data, with three runtime binaries identified but kept local. It is not a game release or full-machine backup; retain the original working directory and follow the continuation checklist.

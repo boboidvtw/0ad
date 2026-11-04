@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "scope": "AUTHOR_LOCAL_SOURCE_CONTROLS_NOT_SOURCE_APPROVAL",
+  "groups": [
+    {
+      "group": "repair parser",
+      "observed": "PASS",
+      "kind": "actual pinned Acorn 8194byte recursion plus exact ProtocolSession syntheticmetadata",
+      "proves": "actual RangeError propagated; NODE_ANALYSIS while ANALYZING, zero analysisBlocks",
+      "doesNotProve": "real Python/bridge/FS capture"
+    },
+    {
+      "group": "repair classification",
+      "observed": "PASS",
+      "kind": "actual ordinarysyntax script/module plus injected parser errors in VM",
+      "proves": "genuine SyntaxError controls unchanged; RangeError/Error/lookalike/null preserve thrown identity and no inappropriate fallback in script/module phases",
+      "doesNotProve": "all parser runtime failures or full producer matrix"
+    },
+    {
+      "group": "repair counts",
+      "observed": "PASS",
+      "kind": "actual16384 threshold in synthetic arrays, not truefilesystem",
+      "proves": "aggregate edge16384 accepted/16385 rejected while eacharrayunder16384; perarray16385 retained rejection",
+      "doesNotProve": "physical unique VFS/layer completeness or archive/loose traversal"
+    },
+    {
+      "group": "repair abort",
+      "observed": "PASS",
+      "kind": "actualAcorn plus VM child/clock",
+      "proves": "BEGIN followed exactlyone ABORT NODE_ANALYSIS; no FINISH, one spawn and cleared timers",
+      "doesNotProve": "real subprocess close/reap/pipe/native"
+    },
+    {
+      "group": "historical13 affectedregression",
+      "observed": "13PASS once currentdependency changed",
+      "kind": "actualAcorn+private protocol/VM models",
+      "proves": "declared existing producer/protocol/lifecycle controls preserved on new source",
+      "doesNotProve": "complete54base/14schema/full40/fullhost/runtime/native"
+    }
+  ],
+  "open": [
+    "full actual producer matrix",
+    "real Node/Python subprocess",
+    "large/sparse ZIP64",
+    "actual64MiB/8MiB body boundaries",
+    "RSS",
+    "runtime original copy/profileinventory locks",
+    "independent freshguard",
+    "bridge/official/native/GUI/save/network"
+  ]
+}

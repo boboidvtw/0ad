@@ -1,0 +1,41 @@
+{
+  "purpose": "Exact fifth full three-way harness SOURCE approval only; not runtime authority",
+  "createdUTC": "2026-10-28T10:32:49.955980+00:00",
+  "inputManifestSHA256": "78526322338ecac7d2f717a932e72bccd7dbefbdac28e9fc9ad1823d04fc6f7e",
+  "bindings": 511,
+  "rootCurrentAndSnapshotsMATCH": 511,
+  "canonicalUnion": 512,
+  "canonicalUnionSHA256": "bc0491710b98d01a1e645c806c02b7df6ff1dc9a8b1fed7af8cc39fefeb18641",
+  "harnessSHA256": "43d62bd8d37012856763846113c5423bd8e19ff695a2471cea84a7d959229e5f",
+  "reviews": {
+    "CODE": {
+      "path": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/reviews-code-v5/code-source-review-v5.json",
+      "sha256": "d434d8ad8e29e5bd1dd11d1928e6a50cc61e88e1b10f30af7fbeb20317f419f1",
+      "verdict": "APPROVE_SOURCE_ONLY"
+    },
+    "Python": {
+      "path": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/reviews-python-v5/python-source-review-v5.json",
+      "sha256": "6fb19e5096e17ae13f8158af4475150e1921f0d60a28d899d4a5c59691ea7ff6",
+      "verdict": "APPROVE_SOURCE_ONLY"
+    },
+    "JS": {
+      "path": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/reviews-js-v5/review.json",
+      "sha256": "bdf890cc42e4d997df473e347be7e916882111bce05c8335313d6663e5b7eb25",
+      "verdict": "APPROVE_SOURCE_ONLY"
+    }
+  },
+  "independentCurrentHelpers": {
+    "path": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/reviews-python-v5/helper-run.json",
+    "sha256": "2cd55a63d1ae659f6cc6a9f8fc792a324f9cdbb7799260a1336f88689ac72207",
+    "result": "33/33 PASS once on final43d"
+  },
+  "authorIntermediate": "33 tested71942e then oneFIX_PREP URI atom changed; complete chronology/reversehash retained; not falsely current33",
+  "status": "DONE_BOUNDED_THREE_WAY_SOURCE_REVIEW_ONLY",
+  "coverage": "PARTIAL_SOURCE_AND_HELPER_ONLY",
+  "bridge": "NOT_RUN",
+  "official": "NOT_RUN",
+  "native": false,
+  "freshGuard": "NOT_CREATED",
+  "attempt": "NOT_CREATED",
+  "boundaries": "Original49/40/f8/735 BLOCK+supplements/raw/FAIL immutable; exactcurrentapproval neverretroactive"
+}

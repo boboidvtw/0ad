@@ -1,0 +1,151 @@
+{
+  "schema": 1,
+  "purpose": "Preregister ONLY four affected pure-memory controls for AUTHOR-LATE-LEDGER-01; original20 are DONE and never rerun",
+  "createdDate": "2026-10-29",
+  "status": "SOURCE_PLAN_WRITES_ONLY_NOT_RUN",
+  "previousPlan": "../HELPER-PLAN-v1.json",
+  "previousAssertionsDone": 20,
+  "newAssertions": 4,
+  "cumulativeAssertions": 24,
+  "assertionsMax": 24,
+  "inclusiveSecondsMax": 20,
+  "perInputBytesMax": 1048576,
+  "retainedInputsBytesMax": 8388608,
+  "helperSource": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/late-ledger-memory-helpers-v1.py",
+  "assertions": [
+    {
+      "name": "H21_case_merge_first_primary_and_secondary",
+      "input": {
+        "caseId": "F01",
+        "primary": {
+          "type": "ValueError",
+          "message": "body",
+          "cleanupUnknown": [
+            "body-close"
+          ]
+        },
+        "secondary": {
+          "type": "RuntimeError",
+          "message": "result",
+          "phase": "case result evidence"
+        }
+      },
+      "expectedLiteral": {
+        "originalPrimaryIdentity": true,
+        "primaryPhase": "F01 / producer body",
+        "primaryCleanup": [
+          "body-close"
+        ],
+        "secondaryPhases": [
+          "F01 / case result evidence"
+        ],
+        "completeness": "COMPLETE_MEMORY_ONLY"
+      }
+    },
+    {
+      "name": "H22_all_late_phases_and_fd_unknown",
+      "input": {
+        "primary": "original",
+        "phases": [
+          "post source /bound",
+          "post runtime readback",
+          "campaign result evidence",
+          "store close",
+          "cleanup final deadline",
+          "campaign final deadline",
+          "stderr diagnostic channel UNKNOWN"
+        ],
+        "fabricatedClose": [
+          {
+            "fd": 7,
+            "status": "CLOSE_UNKNOWN",
+            "error": "fabricated close"
+          }
+        ],
+        "suppliedDeadline": {
+          "start": 1,
+          "now": 121.001,
+          "budget": 120
+        }
+      },
+      "expectedLiteral": {
+        "originalPrimaryIdentity": true,
+        "secondaryPhases": [
+          "post source /bound",
+          "post runtime readback",
+          "campaign result evidence",
+          "store close",
+          "cleanup final deadline",
+          "campaign final deadline",
+          "stderr diagnostic channel UNKNOWN"
+        ],
+        "closeCleanup": [
+          {
+            "fd": 7,
+            "status": "CLOSE_UNKNOWN",
+            "error": "fabricated close"
+          }
+        ],
+        "status": "UNKNOWN_OR_FAIL",
+        "durableFinalLedger": "NOT_ATTESTED"
+      }
+    },
+    {
+      "name": "H23_bound_is_unknown_never_complete",
+      "input": {
+        "sharedMessageCharacter": "x",
+        "sharedMessageLength": 131072,
+        "sameErrorRecordCalls": 9,
+        "phase": "overflow"
+      },
+      "expandedInputBytes": 131072,
+      "expectedLiteral": {
+        "originalPrimaryIdentity": true,
+        "secondaryCount": 6,
+        "unretainedEvents": 2,
+        "ledgerCompleteness": "UNKNOWN",
+        "status": "UNKNOWN_OR_FAIL"
+      }
+    },
+    {
+      "name": "H24_serialization_failure_and_channel_bookkeeping",
+      "input": {
+        "primaryType": "Unprintable",
+        "primaryStrRaises": "ValueError",
+        "phase": "case body",
+        "channelError": {
+          "type": "OSError",
+          "message": "fabricated channel failure",
+          "phase": "stdout fallback channel UNKNOWN"
+        }
+      },
+      "expectedLiteral": {
+        "originalPrimaryIdentity": true,
+        "primaryPhase": "case body",
+        "primaryMessage": "UNKNOWN_LEDGER_RECORD_NOT_FULLY_RETAINED",
+        "primaryCleanup": "UNKNOWN_SEE_BOUNDED_MARKERS",
+        "unretainedEvents": 1,
+        "ledgerCompleteness": "UNKNOWN",
+        "secondaryPhases": [
+          "stdout fallback channel UNKNOWN"
+        ],
+        "status": "UNKNOWN_OR_FAIL"
+      }
+    }
+  ],
+  "inertAdmission": "Fresh independent limited static CODE + root exact controller/helper/plan SHA readmission BEFORE import. Only checked immutable SourceFileLoader bytes; -B/PYTHONDONTWRITEBYTECODE.",
+  "callgraph": "FailureLedger record/merge_case/snapshot/apply, canonical/strict JSON, supplied numeric future_deadline; fabricated errors/FD records only. No emit_failure/diagnostic I/O/campaign/observer/producer or host fixture.",
+  "execution": "Root separately preserves bounded stdout/stderr and inclusive wall time, one invocation only after admission; stop first failure, no rerun original20; each channel <=1MiB; retained input <8MiB.",
+  "notRun": [
+    "controller import",
+    "helpers",
+    "producer",
+    "fixtures",
+    "observer",
+    "campaign",
+    "engine"
+  ],
+  "sourceFreeze": "NOT_CREATED",
+  "cases": "THREE_NOT_RUN",
+  "native": false
+}

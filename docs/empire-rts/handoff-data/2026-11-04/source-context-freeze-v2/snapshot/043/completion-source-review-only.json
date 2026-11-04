@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "createdUTC": "2026-10-26T18:26:50.337760+00:00",
+  "status": "DONE_BOUNDED_THREE_WAY_SOURCE_REVIEW_ONLY_FULL_COVERAGE_OPEN",
+  "jointManifestSHA256": "38b45c79f05a93d340319c2e55bd0317898c74473d676e093f185d73a0a62557",
+  "rootBindingsMATCH": 272,
+  "rootSnapshotsMATCH": 272,
+  "independentFullReviews": [
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/code-source-review-v1.json",
+      "bytes": 174759,
+      "sha256": "6e6e33cddeb7ce280a4790cc393be72b4e4ddf2c1142cb86e5de0853b1210ca9",
+      "verdict": "APPROVE_SOURCE_ONLY"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/python-source-review-v1.json",
+      "bytes": 204076,
+      "sha256": "3293b781007111b823b8368c5bf513081bcd980256a7b05453e4a32f5f95fb26",
+      "verdict": "APPROVE_SOURCE_ONLY"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/js-api-source-review-v1.json",
+      "bytes": 153976,
+      "sha256": "fb00c18cf5bd0fe3be313edc6f7303d00cf8c5b3ce98de814bae46b7bd7cb9cd",
+      "verdict": "APPROVE_SOURCE_ONLY"
+    }
+  ],
+  "currentPythonSHA256": "d687c19c9be59ba4e241d0d6fc4d0b331cb7ec3555f2267b4fa125e56bdb5022",
+  "currentNodeSHA256": "e7100dd52b755cc7dedefa07624520dbacdd41ccf8e20428160ec2c588f2c3b1",
+  "expectedNodeSHAMatch": true,
+  "tests": "Python68normal/68optimized/compile author+independentPASS, Node17sourcegroups/2syntax authorPASS + new independentactualAcorn/localvalidator controls; all limits scope preserved",
+  "historicalResults": "Old56c949 SOURCEBLOCK/allraw/countercases unchanged; new approval limited to changed d687/e710 pair, not retroactive originalcase PASS",
+  "sourceReviewApproved": true,
+  "coverage": "PARTIAL_FULL_REQUIRED_COVERAGE_NOT_ESTABLISHED",
+  "bridgeApproval": false,
+  "officialCaptureApproval": false,
+  "nativeApproval": false,
+  "runtimeApproval": false,
+  "next": "Prepare concrete bounded SOURCE_MODEL_CONFIG_ADAPTED preservation bridge harness/contract; independently review all newcode/context, current source-lock/rootreadback/separate freshguard before another tool call may execute. Coverage large/sparseZIP64/actual64MiB/RSS/actualfullproducer/native locks remainOPEN."
+}

@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "purpose": "Closeout root validation of complete CODE SOURCE-only report; no runtime admission",
+  "createdUTC": "2026-11-04T01:51:39.151132+00:00",
+  "report": {
+    "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-CODE-v2.json",
+    "bytes": 191340,
+    "sha256": "0fce6590b93571a4222072cfc4957e429b7b7531fc68d1aaa5aae8a995a1c001"
+  },
+  "markdown": {
+    "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-CODE-v2.md",
+    "bytes": 66198,
+    "sha256": "fb6966624949797ef1de96fdd9580143a63ed64d0d3bd7f35cb99f4e30177593"
+  },
+  "reviewerRole": "CODE",
+  "verdict": "VALID_CODE_APPROVE_SOURCE_ONLY",
+  "inputManifestSHA256": "d69d3456754b19f0592682824c4772c72d62169799fc9c02f0466d8291f951d4",
+  "reviewedBindingsSHA256": "f75394caf7e909cc6ccdd5817204d5e646b35f6e2a301c9375b95d441d84f184",
+  "historyContainerSHA256": "2caa72716cb1ac21e4c9163ce6ca2461851fc71ba0381f785a04515d5c18ce74",
+  "expandedLogicalBindingsSHA256": "bcbb171acdda034552fc462203570edb9aad9d6726718d4446177b3b3f9ad104",
+  "physicalBindingCount": 113,
+  "logicalContextCount": 165,
+  "decodedHistoryBytes": 1042748,
+  "encodedHistoryBytes": 1408405,
+  "perPhysicalAndInnerReadbacksValidatedEarlierThisCloseout": {
+    "physical": 113,
+    "inner": 53
+  },
+  "functionalAxesReadByRoot": 10,
+  "reasoningChronologyReadByRoot": 15,
+  "sourceApprovalAllThree": false,
+  "stageCAdmitted": false,
+  "formalCases": "THREE_NOT_RUN",
+  "next": "Preserve completed CODE/JSAPI reviews. Python fixed formal JSON/MD absent; resume Python final joins/report only after new task or authorized heartbeat and live usage."
+}

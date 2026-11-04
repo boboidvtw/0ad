@@ -1,0 +1,51 @@
+{
+  "purpose": "RootfullthreewayDESIGNcompletionandseparateboundedsource-onlyassignment",
+  "createdUTC": "2026-10-29T21:40:41.987498+00:00",
+  "status": "DONE_THREE_WAY_DESIGN_ONLY_SOURCE_WORK_SEPARATELY_ASSIGNED",
+  "inputManifestSHA256": "20e7e2e53967afdce38b7b594c8cedab0e83cbd9aec61fb7af09e5a24a6b914e",
+  "rootRequiredAndSnapshotMATCH": 94,
+  "reviews": [
+    {
+      "role": "CODE",
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/design-review-CODE-v1.json",
+      "bytes": 273635,
+      "sha256": "1e6d9c82ee924f1ae365f13fd01afd67c81e5e7429a3fd30ce070b6743dcbe90",
+      "verdict": "APPROVE_DESIGN_ONLY",
+      "markdownSHA256": "d7da6134728d20ca58fbb39737d3783394e08a2d0b0d8fb948c13e99260cb07b"
+    },
+    {
+      "role": "Python",
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/design-review-Python-v1.json",
+      "bytes": 393193,
+      "sha256": "28c1785de944c62aba45d122448ddd6b3d82c52288ec248b87349d322f06cc16",
+      "verdict": "APPROVE_DESIGN_ONLY",
+      "markdownSHA256": "3455c2e228e7c429236e67977229e5fff76abb10012bb0fe7d5b2b09a0ba37e2"
+    },
+    {
+      "role": "JSAPI",
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/design-review-JSAPI-v1.json",
+      "bytes": 339028,
+      "sha256": "8002c42ccf332f24d075ebe02867049f588cfdd03902694c6ba1bcdf58f9ca77",
+      "verdict": "APPROVE_DESIGN_ONLY",
+      "markdownSHA256": "272eca74315afcb8c6bd95d175d533087e8212bb7cfeaa5af6c300386d79a74f"
+    }
+  ],
+  "rootHistoryDataReadbackSHA256": "8247f4d6895e1e00a5341238fd87d2db60f31f6e364ab92779958195603b9ff2",
+  "assignmentOwner": "/root/fault_ledger_author",
+  "ownedSource": "tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py",
+  "ownedNewEvidence": [
+    "required-fault-controls-implementation-v1/source-fix-v2/",
+    "required-fault-controls-implementation-v1/source-context-freeze-v2/",
+    "required-fault-controls-implementation-v1/SOURCE-INTERFACE-context-v2.md"
+  ],
+  "sourceScope": "Onlythreeknowncleanup/actualbodyentrydefects+exactapprovedhistorycontainer/sourcevalidator/review-root-guarddualjoins/versionpaths; noothercore/helperchanges",
+  "fullSourceFreezeAfterWork": "Required<=128physicalrows/32MiB,transparentlogicalcount/53fullhistoryonlyunchanged",
+  "helpers24": "DONE_NO_RERUN_NO_ADDITIONAL_ASSERTIONS",
+  "sourceImport": "NOT_ADMITTED",
+  "tests": "NOT_ADMITTED",
+  "producerCases": "THREE_NOT_RUN_NOT_ADMITTED",
+  "StageC": "SeparatefuturefreshfullSOURCEreviews+rootphysical-runtime-resource-owner+independentfreshguard+distinctcallmandatory",
+  "sourceApproval": false,
+  "native": false,
+  "old68a60": "THREE_FULL_SOURCE_BLOCK_IMMUTABLE"
+}

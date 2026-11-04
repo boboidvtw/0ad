@@ -1,0 +1,18 @@
+{
+  "purpose": "Complete read-only CPython3.9 source compatibility reference; not import/run/profile/loadedbody attestation",
+  "dateAsiaTaipei": "2026-10-30",
+  "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/profile.py",
+  "bytes": 22871,
+  "sha256": "ad5a4287ca103316f25a424b87fa827ee1b28b4f9c0271f2e021f717b9ebea67",
+  "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-fix-v2/API-context/profile.py.source-snapshot",
+  "referenceRanges": [
+    "256-289 frame.f_code/co_filename/co_name call identity",
+    "418-435 setprofile try/finally restoration"
+  ],
+  "notRun": [
+    "import",
+    "runctx",
+    "profile install",
+    "tests"
+  ]
+}

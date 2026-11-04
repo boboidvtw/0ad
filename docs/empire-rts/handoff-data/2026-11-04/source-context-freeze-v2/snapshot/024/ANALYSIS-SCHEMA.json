@@ -1,0 +1,708 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:t17:five-mod-capture:analysis:design-fix-v2",
+  "$comment": "Normative DESIGN schema. Source relations and LIMITS are equally required. All fields required unless explicit null union. Extra keys forbidden. No jsonschema dependency installation or source authority is implied. Name field semantics are normative NAME-PRODUCERS.json, with kind-specific raw versus decoded spelling. No new row fields or producer changes.",
+  "allOf": [
+    {
+      "$ref": "#/$defs/finish"
+    }
+  ],
+  "$defs": {
+    "functionRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "line",
+        "endLine",
+        "params",
+        "start",
+        "end"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 8388608
+        },
+        "line": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8388609
+        },
+        "endLine": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8388609
+        },
+        "params": {
+          "type": "array",
+          "maxItems": 4096,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 8388608
+          }
+        },
+        "start": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 8388608
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 8388608
+        }
+      }
+    },
+    "callRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "callee",
+        "args",
+        "line",
+        "context",
+        "kind"
+      ],
+      "properties": {
+        "callee": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 8388608
+        },
+        "args": {
+          "type": "array",
+          "maxItems": 4096,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 8388608
+          }
+        },
+        "line": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8388609
+        },
+        "context": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 8388608
+        },
+        "kind": {
+          "enum": [
+            "CallExpression",
+            "NewExpression"
+          ]
+        }
+      }
+    },
+    "directWriterRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "callee",
+        "args",
+        "line",
+        "context",
+        "kind",
+        "literalName",
+        "nameArgumentIndex",
+        "target"
+      ],
+      "properties": {
+        "callee": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 8388608
+        },
+        "args": {
+          "type": "array",
+          "maxItems": 4096,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 8388608
+          }
+        },
+        "line": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8388609
+        },
+        "context": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 8388608
+        },
+        "kind": {
+          "enum": [
+            "RegisterGlobal",
+            "RegisterComponentType",
+            "RegisterSystemComponentType",
+            "ReRegisterComponentType",
+            "RegisterInterface",
+            "RegisterMessageType",
+            "SetGlobal",
+            "SetProperty",
+            "defineProperty",
+            "defineProperties",
+            "assign",
+            "setPrototypeOf",
+            "set",
+            "deleteProperty",
+            "eval",
+            "Function",
+            "LoadScript",
+            "LoadGlobalScript",
+            "LoadComponentScript",
+            "LoadLibrary",
+            "IncludeScript",
+            "RunJobs"
+          ]
+        },
+        "literalName": {
+          "oneOf": [
+            {
+              "type": "string",
+              "maxLength": 8388608
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "nameArgumentIndex": {
+          "enum": [
+            0,
+            1
+          ]
+        },
+        "target": {
+          "oneOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 8388608
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "aliasWriterRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "callee",
+        "args",
+        "line",
+        "context",
+        "kind",
+        "alias",
+        "aliasSource",
+        "aliasDeclarationLine",
+        "literalName",
+        "target"
+      ],
+      "properties": {
+        "callee": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 8388608
+        },
+        "args": {
+          "type": "array",
+          "maxItems": 4096,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 8388608
+          }
+        },
+        "line": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8388609
+        },
+        "context": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 8388608
+        },
+        "kind": {
+          "enum": [
+            "defineProperty",
+            "defineProperties",
+            "assign",
+            "set",
+            "deleteProperty"
+          ]
+        },
+        "alias": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 8388608
+        },
+        "aliasSource": {
+          "enum": [
+            "Object.defineProperty",
+            "Object.defineProperties",
+            "Object.assign",
+            "Object.set",
+            "Object.deleteProperty",
+            "Reflect.defineProperty",
+            "Reflect.defineProperties",
+            "Reflect.assign",
+            "Reflect.set",
+            "Reflect.deleteProperty"
+          ]
+        },
+        "aliasDeclarationLine": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8388609
+        },
+        "literalName": {
+          "const": null
+        },
+        "target": {
+          "oneOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 8388608
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "aliasRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "value",
+        "line",
+        "context"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 8388608
+        },
+        "value": {
+          "oneOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 8388608
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "line": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8388609
+        },
+        "context": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 8388608
+        }
+      }
+    },
+    "assignmentRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "left",
+        "right",
+        "line",
+        "context"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "=",
+            "+=",
+            "-=",
+            "*=",
+            "/=",
+            "%=",
+            "**=",
+            "<<=",
+            ">>=",
+            ">>>=",
+            "|=",
+            "^=",
+            "&=",
+            "||=",
+            "&&=",
+            "??="
+          ]
+        },
+        "left": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 8388608
+        },
+        "right": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 8388608
+        },
+        "line": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8388609
+        },
+        "context": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 8388608
+        }
+      }
+    },
+    "updateRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "left",
+        "line",
+        "context"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "++",
+            "--"
+          ]
+        },
+        "left": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 8388608
+        },
+        "line": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8388609
+        },
+        "context": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 8388608
+        }
+      }
+    },
+    "deleteRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "left",
+        "line",
+        "context"
+      ],
+      "properties": {
+        "kind": {
+          "const": "delete"
+        },
+        "left": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 8388608
+        },
+        "line": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8388609
+        },
+        "context": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 8388608
+        }
+      }
+    },
+    "topLevelRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "name",
+        "line"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "variable",
+            "function"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 8388608
+        },
+        "line": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8388609
+        }
+      }
+    },
+    "parsed": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "vfs",
+        "parseStatus",
+        "mode",
+        "functions",
+        "calls",
+        "writerSites",
+        "aliases",
+        "assignments",
+        "fileTopLevelDeclarations",
+        "closure"
+      ],
+      "properties": {
+        "vfs": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 8388608
+        },
+        "parseStatus": {
+          "const": "PARSED"
+        },
+        "mode": {
+          "enum": [
+            "script",
+            "module"
+          ]
+        },
+        "functions": {
+          "type": "array",
+          "maxItems": 65536,
+          "items": {
+            "$ref": "#/$defs/functionRow"
+          }
+        },
+        "calls": {
+          "type": "array",
+          "maxItems": 65536,
+          "items": {
+            "$ref": "#/$defs/callRow"
+          }
+        },
+        "writerSites": {
+          "type": "array",
+          "maxItems": 65536,
+          "items": {
+            "oneOf": [
+              {
+                "$ref": "#/$defs/directWriterRow"
+              },
+              {
+                "$ref": "#/$defs/aliasWriterRow"
+              }
+            ]
+          }
+        },
+        "aliases": {
+          "type": "array",
+          "maxItems": 65536,
+          "items": {
+            "$ref": "#/$defs/aliasRow"
+          }
+        },
+        "assignments": {
+          "type": "array",
+          "maxItems": 65536,
+          "items": {
+            "oneOf": [
+              {
+                "$ref": "#/$defs/assignmentRow"
+              },
+              {
+                "$ref": "#/$defs/updateRow"
+              },
+              {
+                "$ref": "#/$defs/deleteRow"
+              }
+            ]
+          }
+        },
+        "fileTopLevelDeclarations": {
+          "type": "array",
+          "maxItems": 65536,
+          "items": {
+            "$ref": "#/$defs/topLevelRow"
+          }
+        },
+        "closure": {
+          "const": "OPEN_REQUIRES_POSITIVE_SEMANTIC_CALLER_PROOF"
+        }
+      }
+    },
+    "parseError": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "vfs",
+        "parseStatus",
+        "error",
+        "closure"
+      ],
+      "properties": {
+        "vfs": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 8388608
+        },
+        "parseStatus": {
+          "const": "BLOCK_PARSE_ERROR"
+        },
+        "error": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 65536
+        },
+        "closure": {
+          "const": "OPEN_PARSE_ERROR"
+        }
+      }
+    },
+    "utf8Error": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "vfs",
+        "parseStatus",
+        "closure"
+      ],
+      "properties": {
+        "vfs": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 8388608
+        },
+        "parseStatus": {
+          "const": "BLOCK_UTF8_ERROR"
+        },
+        "closure": {
+          "const": "OPEN_INVALID_SOURCE_ENCODING"
+        }
+      }
+    },
+    "analysis": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/parsed"
+        },
+        {
+          "$ref": "#/$defs/parseError"
+        },
+        {
+          "$ref": "#/$defs/utf8Error"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "analysisEnvelope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "index",
+        "sha256",
+        "analysis"
+      ],
+      "properties": {
+        "index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4095
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "analysis": {
+          "$ref": "#/$defs/analysis"
+        }
+      }
+    },
+    "finish": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "v",
+        "kind",
+        "captureId",
+        "analyses",
+        "tool"
+      ],
+      "properties": {
+        "v": {
+          "const": 1
+        },
+        "kind": {
+          "const": "FINISH"
+        },
+        "captureId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "analyses": {
+          "type": "array",
+          "maxItems": 4096,
+          "items": {
+            "$ref": "#/$defs/analysisEnvelope"
+          }
+        },
+        "tool": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "nodeVersion",
+            "acornVersion",
+            "nodeSourceSHA256"
+          ],
+          "properties": {
+            "nodeVersion": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128
+            },
+            "acornVersion": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128
+            },
+            "nodeSourceSHA256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          }
+        }
+      }
+    }
+  }
+}

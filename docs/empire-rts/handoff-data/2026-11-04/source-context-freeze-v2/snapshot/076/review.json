@@ -1,0 +1,1325 @@
+{
+  "schema": 1,
+  "purpose": "Independent complete JS/API interface DESIGN review of exact required fault-controls packet",
+  "reviewer": "/root/preservation_js_design",
+  "independentFromAuthor": true,
+  "author": "/root/coverage_fault_author",
+  "createdUTC": "2026-10-28T15:48:20.075882+00:00",
+  "verdict": "BLOCK",
+  "manifest": {
+    "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/manifest.json",
+    "bytes": 31421,
+    "sha256": "e488202701017b7a5c212bf3ad8cbf5ec43d4d8b00efb3ea2c8781615a668178",
+    "bindings": 55,
+    "snapshotBytes": 1794240,
+    "allSnapshotsMatch": true,
+    "allCurrentRequiredMatch": true,
+    "allCurrentIncludingHistoryMatchAtReview": true
+  },
+  "contractSHA256": "616f58093179f2af073b658dd0f9ac9c88121b10eb1456425b36e155dfda82d1",
+  "oracleSHA256": "c29ae4c2b9cdd74d2ad9fde92c4867aea3921a07f6b77475ba28d854cb45c271",
+  "scope": "FULL DESIGN: contract/oracle/all55 full exact snapshot context/currentAPI/schema/wire/source/test/coverage/runtime descriptor relations. Binary/stdlib context is identity/source-compatible evidence, not execution or disassembly/native completeness proof. Not finding-only.",
+  "findings": [
+    {
+      "id": "JS-DESIGN-01",
+      "severity": "MEDIUM",
+      "blocking": true,
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md",
+      "line": 51,
+      "title": "Focused helper tests and producer execution do not have an unambiguous staged authorization boundary",
+      "evidence": [
+        {
+          "line": 3,
+          "text": "No producer import, implementation, test, fixture creation, locks, guard or attempt is authorized by this document; DESIGN/readback precede controller implementation."
+        },
+        {
+          "line": 51,
+          "text": "Sequence places minimal NEW controller/fixture/oracle source implementation and focused tests before current freeze and SOURCE reviews, then says No fixture/producer _run/import/test before these gates."
+        }
+      ],
+      "rootCause": "One dependency sequence groups pure helper verification, fixture/oracle source implementation and producer/test execution, while the following blanket/slash prohibition refers to these gates without defining which completed gate applies to each operation. There is no normative definition restricting pre-SOURCE focused tests to pure helpers and excluding producer import/_run, fixed execution root and actual three-case fixtures. The separate author intent reported through root is not an amendment to the exact frozen contract.",
+      "impact": "An implementer cannot derive a single executable allowed-operation matrix from the frozen packet: either required focused tests appear forbidden until after their own SOURCE review, or tests before SOURCE could be read to include actual consumed producer cases. This is an execution-authority/design sequencing defect, not a claim that a case has already run or any runtime PASS loophole was exercised.",
+      "fix": "Create a new sealed contract/manifest, preserving this v1. Explicitly authorize only implementation and finite pure helper tests after triple exact DESIGN approval/root readback/separate source-scope authorization, with no producer import/_run/runtime_context/Capture.build/observer/setup/fixed execution-v1 fixture/case/attempt. State separately that creating actual fixed execution fixtures and invoking each of the three producer cases requires current exact SOURCE freeze/full triple SOURCE approval, physical/runtime/resource/ownership readback, independent fresh guard and distinct later root call. Define attempted/consumed only at actual producer body entry and never count pure helpers as these cases. Keep fixed IDs/order/roots, retry0 and all prohibitions/limits unchanged. Fresh full independent DESIGN reviews must assess the new exact contract."
+    }
+  ],
+  "findingCounts": {
+    "CRITICAL": 0,
+    "HIGH": 0,
+    "MEDIUM": 1,
+    "LOW": 0
+  },
+  "reviewAreas": [
+    {
+      "id": "exact-scope-freeze",
+      "assessment": "55 full snapshot files,1794240 bytes independently read/hash-verified with current originals; mutable handoffs are explicitly point-in-time context. No recursive inheritance of272/511 historical bindings; binary/stdlib bytes are observed dependency context, not OS completeness or native attestation. No production changes proposed.",
+      "evidence": [
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/manifest.json",
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md:3"
+      ]
+    },
+    {
+      "id": "case-accounting-and-freshness",
+      "assessment": "Exactly2 families/3 distinct once-only negative cases, F01 then F02-R then F02-W. Failure stops later cases; no positive capture, retry, normal/-O duplicate runs, alternate timestamp root, deletion or overwritten old evidence. Fixed execution-v1 is not created by this review. Producer leaf absent/OEXCL physical0700 parents and0600 files; preexisting sentinel remains independent.",
+      "evidence": [
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md:9",
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md:11"
+      ]
+    },
+    {
+      "id": "literal-fixture",
+      "assessment": "Independent d3361786 fixture table gives13 layer rows [3,2,2,2,4],5 selected,5 metadata including empty JS. Literal archive517 bytes/cea88 digest and each decoded source size/SHA are source data.23 body copies derive13 layer +5 metadata +5 effective. No old bridge/controller/setup run and no expectations sampled from actual output.",
+      "evidence": [
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md:15",
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CASE-ORACLE-v1.json"
+      ]
+    },
+    {
+      "id": "private-config-runtime",
+      "assessment": "Only7 explicit private globals rebound; source/schema/digest constants and all functions/limits/runtime checks unchanged. Fixed Python3.9.6 launcher chain and physical target hash maintained by runtime_context; copied Node remains byteexact e710, not executed. Runtime dependencies remain observed subset. Real permission/OS child/node/native proof not claimed.",
+      "evidence": [
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md:17",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:678",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:715"
+      ]
+    },
+    {
+      "id": "wire-input-and-model-timing",
+      "assessment": "Literal98-byte BEGIN+ABORT_NODE_LIMIT input is strict ASCII NDJSON exact keys/types. BytesIO is supplied-input model, not genuine Node sending ABORT after CAPTURED or independent directional pipe. Producer interprets ABORT only after CAPTURED in F02; F01 buffers then fault-retains unread ABORT. No FINISH/healthy completion, Node/Acorn or subprocess execution.",
+      "evidence": [
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md:19",
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md:22",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:754",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:853"
+      ]
+    },
+    {
+      "id": "source-captured-raw-and-correlations",
+      "assessment": "Static audit confirms expected SOURCE raw own-key ordering/types/base64/size/SHA and contiguous5 indices; F02 CAPTURED literal raw order matches Python dict construction/canon. All13 layers/sourceDisplay/root paths, selected order and complete shadowed arrays independently correlate with fixed table. selectedDigest and captureId match current formula; different case absolute paths do not change selected-only ID. unsupportedRuntimeRules exact full literal; archive517/onechunk valid Python-rebound model. Unchanged actual Node hardcodes official archive SHA, so these fixture CAPTURED frames are not claimed to be accepted by unmodified Node; only shared shape/semantics are compared.",
+      "evidence": [
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md:39",
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CASE-ORACLE-v1.json",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:583",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:616",
+        "tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs:169"
+      ]
+    },
+    {
+      "id": "F01-primary-errno",
+      "assessment": "Real unchanged _run/Capture.build/Output.write through five SOURCE emissions then archive-auth. Only exact capture-inputs reservation under actual producer-held root generation denied EACCES. Deadline.io classifies non-write/fsync OSError SOURCE_TYPE in ARCHIVE_AND_SOURCES. No CAPTURED, capture-inputs absent, writable fault snapshot has outputCleanupComplete=false and terminal durableFault=false. No errno relabel to OUTPUT_WRITE_OR_FSYNC.",
+      "evidence": [
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md:31",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:95",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:847",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:852"
+      ]
+    },
+    {
+      "id": "F02-reservation-and-partial-write",
+      "assessment": "After actual interpreted ABORT primary ABORT_NODE_LIMIT in FINISH, F02-R fault reservation fails EACCES with no FD/file. F02-W reserves real fault FD, original os.write receives exactly first9 literal phase-prefix bytes then wrapper raises EACCES once; unexpected actual count fails with no retry. Prefix retained invalidJSON; no fabricated parsed snapshot. Output.write catch owns fault FD once, preserving ABORT primary despite secondary SOURCE_TYPE/OUTPUT_WRITE_OR_FSYNC. Earlier capture-inputs/body/raw retained.",
+      "evidence": [
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md:32",
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md:33",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:261",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:275",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:854",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:889"
+      ]
+    },
+    {
+      "id": "fault-terminal-and-raw-seal",
+      "assessment": "Producer faults close capture, attempt pre-output-close fault snapshot, record exact terminal frame to raw, finish raw logs/output close, send same bytes, stderr primary, return1. No durableFault=true promise, no sourceClosure/native health or completed files. Expected raw sink equality and buffered input retained; partial/raw/diagnostics must survive later evidence failures, no rewrite or final durable-cleanup seal inferred.",
+      "evidence": [
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md:35",
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md:41",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:874",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:895"
+      ]
+    },
+    {
+      "id": "injection-observer-and-FD-ownership",
+      "assessment": "Transparent saved-syscall wrappers target producer-root identity plus FD open generation and exact basename; fault write also exact acquired generation. Other calls forward unchanged; bounded observers do not replace _run/build/write/deadline/runtime/protocol. Once-close actual outcomes differ from attempts/UNKNOWN, no numeric FD guess/reclose. Hidden ZipFile/iterator/native handles and whole-host absence are expressly outside observer proof. Unexpected cleanup uncertainty fails case/stops, not accepted healthy negative. Implementation must separately prove wrapper uninstallation and first-primary preservation.",
+      "evidence": [
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md:29",
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md:43",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:107",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:364",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:654"
+      ]
+    },
+    {
+      "id": "limits-deadlines-and-finalization",
+      "assessment": "Additional tiny controller caps do not monkeypatch producer600s or global structural/selected/metadata/path/raw/schema limits.20s includes each case source/sentinel/setup/body/readback; setup30/sharedcleanup30/overall120. Cooperative blocking OS calls cannot be killed hard; post-call overrun/uncertainty disallows healthy summary. First-primary retention independently guards evidence/snapshot/close/finalization. Future source review must verify concrete counters and final gates rather than accept capsule tags.",
+      "evidence": [
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md:47",
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md:49",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:87"
+      ]
+    },
+    {
+      "id": "analysis-schema-and-unchanged-producer",
+      "assessment": "Schema280 finite FINISH tagged unions, exact-key/source/UTF8/UTF16/AST/name relations unchanged; no FINISH/analysis is supplied in these negatives and no coverage gained for semantic AST producers. Node genuine SyntaxError fallback/NODE_ANALYSIS fatal and onceABORT path remain source context only. Python validates ABORT exact key/version/code before retaining primary; literal frames cannot prove actual Node limit triggered.",
+      "evidence": [
+        "tools/epoch-rts/t17-save-five-mod-analysis-schema.json",
+        "tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs:15",
+        "tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs:265",
+        "tools/epoch-rts/t17-save-five-mod-capture.py:854"
+      ]
+    },
+    {
+      "id": "base-preservation-count-and-output-contracts",
+      "assessment": "All-layer layer-sources snapshot bijection, effective/metadata copies, selected-only64MiB/digest/captureId vs whole-layer manifest identity, global16384 candidate rows and separate per-root16384 traversal remain unchanged. Post-valid-FINISH recheck and COMPLETED manifest transitivedigest are still required for future healthy captures, but these three negatives terminate earlier and never exercise/approve those paths.",
+      "evidence": [
+        "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/PROTOCOL.md",
+        "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/AMENDMENT.md",
+        "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/AMENDMENT.md"
+      ]
+    },
+    {
+      "id": "historical-coverage-and-native",
+      "assessment": "Core38 approvals, old f0b701 FAIL/original collision NOT_RUN, consumed accepted tiny R07 and full required-coverage reconciliation retained as context. No old DONE suites requeued. Future R09 injectederrno controls do not prove real OS EACCES policy, negative child kill/wait/reap/pipe, fullproducer/native caller/noProxy/full40/clone/restore/GUI/save/fullhost, sparseZIP64/true8–64MiB/RSS/profilelocks/nativefreshguard or official capture.",
+      "evidence": [
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md:5",
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md:53",
+        "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/next-coverage-preparation-v1/coverage-reconciliation-v1.md"
+      ]
+    },
+    {
+      "id": "approval-sequence",
+      "assessment": "Exact contract does not define a unique allowed-operation boundary between post-DESIGN pure focused tests and post-SOURCE fixed producer cases. Author intent conveyed separately cannot repair frozen line51. Blocking JS-DESIGN-01 requires new precise contract/manifest and fresh full reviews; this report grants no implementation/test authority.",
+      "evidence": [
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md:3",
+        "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md:51"
+      ]
+    }
+  ],
+  "staticOracleAudit": [
+    {
+      "id": "F01_EACCES_CAPTURE_INPUT_RESERVE",
+      "root": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F01_EACCES_CAPTURE_INPUT_RESERVE",
+      "frameKinds": [
+        "SOURCE",
+        "SOURCE",
+        "SOURCE",
+        "SOURCE",
+        "SOURCE",
+        "FAULT"
+      ],
+      "frameOwnKeyOrder": [
+        [
+          "v",
+          "kind",
+          "index",
+          "vfs",
+          "mod",
+          "sha256",
+          "bytes",
+          "bodyBase64"
+        ],
+        [
+          "v",
+          "kind",
+          "index",
+          "vfs",
+          "mod",
+          "sha256",
+          "bytes",
+          "bodyBase64"
+        ],
+        [
+          "v",
+          "kind",
+          "index",
+          "vfs",
+          "mod",
+          "sha256",
+          "bytes",
+          "bodyBase64"
+        ],
+        [
+          "v",
+          "kind",
+          "index",
+          "vfs",
+          "mod",
+          "sha256",
+          "bytes",
+          "bodyBase64"
+        ],
+        [
+          "v",
+          "kind",
+          "index",
+          "vfs",
+          "mod",
+          "sha256",
+          "bytes",
+          "bodyBase64"
+        ],
+        [
+          "v",
+          "kind",
+          "phase",
+          "code",
+          "durableFault"
+        ]
+      ],
+      "rawCanonicalExact": true,
+      "rawBytes": 1407,
+      "rawSHA256": "daf27e92ce21177c53c537b1ed34f0794f73c21abb819107ec9cbadc8eccf8f5",
+      "rawBytesAndSHAMatch": true,
+      "expectedReturn": 1,
+      "expectedPrimary": "SOURCE_TYPE",
+      "expectedPhase": "ARCHIVE_AND_SOURCES",
+      "expectedStderr": "CAPTURE_FAULT ARCHIVE_AND_SOURCES SOURCE_TYPE\n",
+      "expectedFaultFile": "VALID_PRE_OUTPUT_CLOSE_SNAPSHOT",
+      "expectedBodyCopies": 23,
+      "scope": "STATIC_LITERAL_ORACLE_CONSISTENCY_ONLY_NOT_EXECUTED_CASE"
+    },
+    {
+      "id": "F02_R_EACCES_FAULT_RESERVE",
+      "root": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE",
+      "frameKinds": [
+        "SOURCE",
+        "SOURCE",
+        "SOURCE",
+        "SOURCE",
+        "SOURCE",
+        "CAPTURED",
+        "FAULT"
+      ],
+      "frameOwnKeyOrder": [
+        [
+          "v",
+          "kind",
+          "index",
+          "vfs",
+          "mod",
+          "sha256",
+          "bytes",
+          "bodyBase64"
+        ],
+        [
+          "v",
+          "kind",
+          "index",
+          "vfs",
+          "mod",
+          "sha256",
+          "bytes",
+          "bodyBase64"
+        ],
+        [
+          "v",
+          "kind",
+          "index",
+          "vfs",
+          "mod",
+          "sha256",
+          "bytes",
+          "bodyBase64"
+        ],
+        [
+          "v",
+          "kind",
+          "index",
+          "vfs",
+          "mod",
+          "sha256",
+          "bytes",
+          "bodyBase64"
+        ],
+        [
+          "v",
+          "kind",
+          "index",
+          "vfs",
+          "mod",
+          "sha256",
+          "bytes",
+          "bodyBase64"
+        ],
+        [
+          "v",
+          "kind",
+          "captureId",
+          "sourceCount",
+          "selectedDigest",
+          "layers",
+          "selected",
+          "archive",
+          "unsupportedRuntimeRules"
+        ],
+        [
+          "v",
+          "kind",
+          "phase",
+          "code",
+          "durableFault"
+        ]
+      ],
+      "rawCanonicalExact": true,
+      "rawBytes": 13363,
+      "rawSHA256": "44f843363ae7c91e6f6f8e0b97644d5b85b95a2fdf72384c9f8e9e7def1d287f",
+      "rawBytesAndSHAMatch": true,
+      "expectedReturn": 1,
+      "expectedPrimary": "ABORT_NODE_LIMIT",
+      "expectedPhase": "FINISH",
+      "expectedStderr": "CAPTURE_FAULT FINISH ABORT_NODE_LIMIT\n",
+      "expectedFaultFile": "ABSENT",
+      "expectedBodyCopies": 23,
+      "scope": "STATIC_LITERAL_ORACLE_CONSISTENCY_ONLY_NOT_EXECUTED_CASE",
+      "selectedDigest": "56af00ffeba998813afc52afc139ba971e65fb0b178f23c91396e78dbb4df88f",
+      "selectedDigestMatch": true,
+      "captureId": "f5dab7b72086eead0fa74192c36b4ce7394eb25cca53ffccda8a62be73d053e0",
+      "captureIdMatch": true,
+      "capturedFrameExact": true,
+      "layers": [
+        {
+          "name": "public",
+          "entries": 3
+        },
+        {
+          "name": "epoch_rts",
+          "entries": 2
+        },
+        {
+          "name": "epoch_t16_harness",
+          "entries": 2
+        },
+        {
+          "name": "epoch_t17_save_harness",
+          "entries": 2
+        },
+        {
+          "name": "epoch_t17_save_allocation_witness",
+          "entries": 4
+        }
+      ],
+      "independentFixture13RowsRootDisplaySelectedAndCompleteShadowed": "STATIC_MATCH_AGAINST_d3361786_LITERAL_TABLE_NO_CAPTURE_BOOTSTRAP"
+    },
+    {
+      "id": "F02_W_EACCES_FAULT_WRITE_PREFIX",
+      "root": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX",
+      "frameKinds": [
+        "SOURCE",
+        "SOURCE",
+        "SOURCE",
+        "SOURCE",
+        "SOURCE",
+        "CAPTURED",
+        "FAULT"
+      ],
+      "frameOwnKeyOrder": [
+        [
+          "v",
+          "kind",
+          "index",
+          "vfs",
+          "mod",
+          "sha256",
+          "bytes",
+          "bodyBase64"
+        ],
+        [
+          "v",
+          "kind",
+          "index",
+          "vfs",
+          "mod",
+          "sha256",
+          "bytes",
+          "bodyBase64"
+        ],
+        [
+          "v",
+          "kind",
+          "index",
+          "vfs",
+          "mod",
+          "sha256",
+          "bytes",
+          "bodyBase64"
+        ],
+        [
+          "v",
+          "kind",
+          "index",
+          "vfs",
+          "mod",
+          "sha256",
+          "bytes",
+          "bodyBase64"
+        ],
+        [
+          "v",
+          "kind",
+          "index",
+          "vfs",
+          "mod",
+          "sha256",
+          "bytes",
+          "bodyBase64"
+        ],
+        [
+          "v",
+          "kind",
+          "captureId",
+          "sourceCount",
+          "selectedDigest",
+          "layers",
+          "selected",
+          "archive",
+          "unsupportedRuntimeRules"
+        ],
+        [
+          "v",
+          "kind",
+          "phase",
+          "code",
+          "durableFault"
+        ]
+      ],
+      "rawCanonicalExact": true,
+      "rawBytes": 13493,
+      "rawSHA256": "081b838880cf6bdf171408f286333316eb64ec2a78f5d459a11314c5cc7aadaf",
+      "rawBytesAndSHAMatch": true,
+      "expectedReturn": 1,
+      "expectedPrimary": "ABORT_NODE_LIMIT",
+      "expectedPhase": "FINISH",
+      "expectedStderr": "CAPTURE_FAULT FINISH ABORT_NODE_LIMIT\n",
+      "expectedFaultFile": "EXACT_9_BYTE_INVALID_JSON_PREFIX",
+      "expectedBodyCopies": 23,
+      "scope": "STATIC_LITERAL_ORACLE_CONSISTENCY_ONLY_NOT_EXECUTED_CASE",
+      "selectedDigest": "56af00ffeba998813afc52afc139ba971e65fb0b178f23c91396e78dbb4df88f",
+      "selectedDigestMatch": true,
+      "captureId": "f5dab7b72086eead0fa74192c36b4ce7394eb25cca53ffccda8a62be73d053e0",
+      "captureIdMatch": true,
+      "capturedFrameExact": true,
+      "layers": [
+        {
+          "name": "public",
+          "entries": 3
+        },
+        {
+          "name": "epoch_rts",
+          "entries": 2
+        },
+        {
+          "name": "epoch_t16_harness",
+          "entries": 2
+        },
+        {
+          "name": "epoch_t17_save_harness",
+          "entries": 2
+        },
+        {
+          "name": "epoch_t17_save_allocation_witness",
+          "entries": 4
+        }
+      ],
+      "independentFixture13RowsRootDisplaySelectedAndCompleteShadowed": "STATIC_MATCH_AGAINST_d3361786_LITERAL_TABLE_NO_CAPTURE_BOOTSTRAP"
+    }
+  ],
+  "staticInput": {
+    "bytes": 98,
+    "sha256": "d5d311493348948de98239f18714e1c56a0d477c03a09a7125659870ce5187bd",
+    "prefixBase64": "eyJwaGFzZSI6",
+    "prefixBytes": 9,
+    "prefixSHA256": "0134c78da7f4b497e2b89ad71483610188f10326bbd605c3bd00e09435066654"
+  },
+  "bindingAudit": [
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md",
+      "bytes": 16148,
+      "sha256": "616f58093179f2af073b658dd0f9ac9c88121b10eb1456425b36e155dfda82d1",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 16148,
+      "actualCurrentSHA256": "616f58093179f2af073b658dd0f9ac9c88121b10eb1456425b36e155dfda82d1",
+      "actualSnapshotBytes": 16148,
+      "actualSnapshotSHA256": "616f58093179f2af073b658dd0f9ac9c88121b10eb1456425b36e155dfda82d1",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CASE-ORACLE-v1.json",
+      "bytes": 111385,
+      "sha256": "c29ae4c2b9cdd74d2ad9fde92c4867aea3921a07f6b77475ba28d854cb45c271",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CASE-ORACLE-v1.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 111385,
+      "actualCurrentSHA256": "c29ae4c2b9cdd74d2ad9fde92c4867aea3921a07f6b77475ba28d854cb45c271",
+      "actualSnapshotBytes": 111385,
+      "actualSnapshotSHA256": "c29ae4c2b9cdd74d2ad9fde92c4867aea3921a07f6b77475ba28d854cb45c271",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/freeze-construction-observation.json",
+      "bytes": 362,
+      "sha256": "570f2f4d29b2bcce08f1c46b382b78a579ff5c45dd4e3364d0717b1dac6b40c6",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/freeze-construction-observation.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 362,
+      "actualCurrentSHA256": "570f2f4d29b2bcce08f1c46b382b78a579ff5c45dd4e3364d0717b1dac6b40c6",
+      "actualSnapshotBytes": 362,
+      "actualSnapshotSHA256": "570f2f4d29b2bcce08f1c46b382b78a579ff5c45dd4e3364d0717b1dac6b40c6",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-five-mod-capture.py",
+      "bytes": 53952,
+      "sha256": "d687c19c9be59ba4e241d0d6fc4d0b331cb7ec3555f2267b4fa125e56bdb5022",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/tools/epoch-rts/t17-save-five-mod-capture.py",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 53952,
+      "actualCurrentSHA256": "d687c19c9be59ba4e241d0d6fc4d0b331cb7ec3555f2267b4fa125e56bdb5022",
+      "actualSnapshotBytes": 53952,
+      "actualSnapshotSHA256": "d687c19c9be59ba4e241d0d6fc4d0b331cb7ec3555f2267b4fa125e56bdb5022",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+      "bytes": 52819,
+      "sha256": "5320b54f890413668046c4c8e2edf2d96ce8509b9d1b05296064f7bf35d036d3",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/tools/epoch-rts/test-t17-save-five-mod-capture.py",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 52819,
+      "actualCurrentSHA256": "5320b54f890413668046c4c8e2edf2d96ce8509b9d1b05296064f7bf35d036d3",
+      "actualSnapshotBytes": 52819,
+      "actualSnapshotSHA256": "5320b54f890413668046c4c8e2edf2d96ce8509b9d1b05296064f7bf35d036d3",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs",
+      "bytes": 21653,
+      "sha256": "e7100dd52b755cc7dedefa07624520dbacdd41ccf8e20428160ec2c588f2c3b1",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 21653,
+      "actualCurrentSHA256": "e7100dd52b755cc7dedefa07624520dbacdd41ccf8e20428160ec2c588f2c3b1",
+      "actualSnapshotBytes": 21653,
+      "actualSnapshotSHA256": "e7100dd52b755cc7dedefa07624520dbacdd41ccf8e20428160ec2c588f2c3b1",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+      "bytes": 18136,
+      "sha256": "efae7d0fb9c2f716e8d9a32c294b56abe10c83689de02f4a5e1a25d61fefc748",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 18136,
+      "actualCurrentSHA256": "efae7d0fb9c2f716e8d9a32c294b56abe10c83689de02f4a5e1a25d61fefc748",
+      "actualSnapshotBytes": 18136,
+      "actualSnapshotSHA256": "efae7d0fb9c2f716e8d9a32c294b56abe10c83689de02f4a5e1a25d61fefc748",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-five-mod-analysis-schema.json",
+      "bytes": 15491,
+      "sha256": "280357ab50426d73f1265cb07458d8d4f86f226ab3b02d68025d1762d7975191",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/tools/epoch-rts/t17-save-five-mod-analysis-schema.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 15491,
+      "actualCurrentSHA256": "280357ab50426d73f1265cb07458d8d4f86f226ab3b02d68025d1762d7975191",
+      "actualSnapshotBytes": 15491,
+      "actualSnapshotSHA256": "280357ab50426d73f1265cb07458d8d4f86f226ab3b02d68025d1762d7975191",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-preservation-bridge.py",
+      "bytes": 58834,
+      "sha256": "43d62bd8d37012856763846113c5423bd8e19ff695a2471cea84a7d959229e5f",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/tools/epoch-rts/test-t17-save-five-mod-preservation-bridge.py",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 58834,
+      "actualCurrentSHA256": "43d62bd8d37012856763846113c5423bd8e19ff695a2471cea84a7d959229e5f",
+      "actualSnapshotBytes": 58834,
+      "actualSnapshotSHA256": "43d62bd8d37012856763846113c5423bd8e19ff695a2471cea84a7d959229e5f",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SPEC.md",
+      "bytes": 9685,
+      "sha256": "d6615fa1d694d57ce3f2de3d2b505eae0afd09afffd3eb82632a56235b2f5f14",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SPEC.md",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 9685,
+      "actualCurrentSHA256": "d6615fa1d694d57ce3f2de3d2b505eae0afd09afffd3eb82632a56235b2f5f14",
+      "actualSnapshotBytes": 9685,
+      "actualSnapshotSHA256": "d6615fa1d694d57ce3f2de3d2b505eae0afd09afffd3eb82632a56235b2f5f14",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/PROTOCOL.md",
+      "bytes": 8212,
+      "sha256": "9307c44a13c5be7e8a35a0ae950bbda36cbf7f445bcd92f3ee2a2c0790ce04b1",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/PROTOCOL.md",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 8212,
+      "actualCurrentSHA256": "9307c44a13c5be7e8a35a0ae950bbda36cbf7f445bcd92f3ee2a2c0790ce04b1",
+      "actualSnapshotBytes": 8212,
+      "actualSnapshotSHA256": "9307c44a13c5be7e8a35a0ae950bbda36cbf7f445bcd92f3ee2a2c0790ce04b1",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/LIMITS.json",
+      "bytes": 723,
+      "sha256": "801ff553f5af6bf34e12037a90af1dd41aea5888f8e52b0cc880116fb6311446",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/LIMITS.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 723,
+      "actualCurrentSHA256": "801ff553f5af6bf34e12037a90af1dd41aea5888f8e52b0cc880116fb6311446",
+      "actualSnapshotBytes": 723,
+      "actualSnapshotSHA256": "801ff553f5af6bf34e12037a90af1dd41aea5888f8e52b0cc880116fb6311446",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/TEST-PLAN.json",
+      "bytes": 4526,
+      "sha256": "48619d53e653717d3af835c5026b5249d3e1079818ea9a595e8c971dc6d2d842",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/TEST-PLAN.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 4526,
+      "actualCurrentSHA256": "48619d53e653717d3af835c5026b5249d3e1079818ea9a595e8c971dc6d2d842",
+      "actualSnapshotBytes": 4526,
+      "actualSnapshotSHA256": "48619d53e653717d3af835c5026b5249d3e1079818ea9a595e8c971dc6d2d842",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/FAULT-GATES.json",
+      "bytes": 1078,
+      "sha256": "45464555dab05940e9ee1510ddde616aedac2c25c5e056e923b032660064a10e",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/FAULT-GATES.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 1078,
+      "actualCurrentSHA256": "45464555dab05940e9ee1510ddde616aedac2c25c5e056e923b032660064a10e",
+      "actualSnapshotBytes": 1078,
+      "actualSnapshotSHA256": "45464555dab05940e9ee1510ddde616aedac2c25c5e056e923b032660064a10e",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/ANALYSIS-SCHEMA.json",
+      "bytes": 15491,
+      "sha256": "280357ab50426d73f1265cb07458d8d4f86f226ab3b02d68025d1762d7975191",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/ANALYSIS-SCHEMA.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 15491,
+      "actualCurrentSHA256": "280357ab50426d73f1265cb07458d8d4f86f226ab3b02d68025d1762d7975191",
+      "actualSnapshotBytes": 15491,
+      "actualSnapshotSHA256": "280357ab50426d73f1265cb07458d8d4f86f226ab3b02d68025d1762d7975191",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SOURCE-RELATIONS.json",
+      "bytes": 5733,
+      "sha256": "a5f781e0352c750c56c54f8ce2cb537763cc0925516d90cd2d6f90a9a4962203",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SOURCE-RELATIONS.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 5733,
+      "actualCurrentSHA256": "a5f781e0352c750c56c54f8ce2cb537763cc0925516d90cd2d6f90a9a4962203",
+      "actualSnapshotBytes": 5733,
+      "actualSnapshotSHA256": "a5f781e0352c750c56c54f8ce2cb537763cc0925516d90cd2d6f90a9a4962203",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-PRODUCERS.json",
+      "bytes": 4149,
+      "sha256": "24cd10015fd396d639d0eeda874ce9566a4f6003b5cdf543ec1d3ee99a05117f",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-PRODUCERS.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 4149,
+      "actualCurrentSHA256": "24cd10015fd396d639d0eeda874ce9566a4f6003b5cdf543ec1d3ee99a05117f",
+      "actualSnapshotBytes": 4149,
+      "actualSnapshotSHA256": "24cd10015fd396d639d0eeda874ce9566a4f6003b5cdf543ec1d3ee99a05117f",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-EXAMPLES-AND-TEST-PLAN.json",
+      "bytes": 3777,
+      "sha256": "8445763ba88295fe66c38ac2f25dd0f009ed570b59961f906545552eba4efae4",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-EXAMPLES-AND-TEST-PLAN.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 3777,
+      "actualCurrentSHA256": "8445763ba88295fe66c38ac2f25dd0f009ed570b59961f906545552eba4efae4",
+      "actualSnapshotBytes": 3777,
+      "actualSnapshotSHA256": "8445763ba88295fe66c38ac2f25dd0f009ed570b59961f906545552eba4efae4",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SCHEMA-TEST-PLAN.json",
+      "bytes": 2000,
+      "sha256": "e59270c4566f96e96839faaa378c6867ea9c9ceb6e9e4ba26b8df62074bb6635",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SCHEMA-TEST-PLAN.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 2000,
+      "actualCurrentSHA256": "e59270c4566f96e96839faaa378c6867ea9c9ceb6e9e4ba26b8df62074bb6635",
+      "actualSnapshotBytes": 2000,
+      "actualSnapshotSHA256": "e59270c4566f96e96839faaa378c6867ea9c9ceb6e9e4ba26b8df62074bb6635",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/OWNERSHIP-AND-REVIEW.md",
+      "bytes": 2459,
+      "sha256": "2653625025ab921440dc174b8edef6101eec064c58230206c92c1a2297cc5766",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/OWNERSHIP-AND-REVIEW.md",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 2459,
+      "actualCurrentSHA256": "2653625025ab921440dc174b8edef6101eec064c58230206c92c1a2297cc5766",
+      "actualSnapshotBytes": 2459,
+      "actualSnapshotSHA256": "2653625025ab921440dc174b8edef6101eec064c58230206c92c1a2297cc5766",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/ROW-EXAMPLES.json",
+      "bytes": 3082,
+      "sha256": "105eef5ffb635a6a043da757f7cb311f13f1e75a5f087e6d8a491b8e4563b329",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/ROW-EXAMPLES.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 3082,
+      "actualCurrentSHA256": "105eef5ffb635a6a043da757f7cb311f13f1e75a5f087e6d8a491b8e4563b329",
+      "actualSnapshotBytes": 3082,
+      "actualSnapshotSHA256": "105eef5ffb635a6a043da757f7cb311f13f1e75a5f087e6d8a491b8e4563b329",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-python/terminal-fix-v1/CONTRACT-DELTA.md",
+      "bytes": 2615,
+      "sha256": "7686d5f09a585acd7156c5cb64ede91ee249f39ff80dbc295e1dd704467eb72d",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-python/terminal-fix-v1/CONTRACT-DELTA.md",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 2615,
+      "actualCurrentSHA256": "7686d5f09a585acd7156c5cb64ede91ee249f39ff80dbc295e1dd704467eb72d",
+      "actualSnapshotBytes": 2615,
+      "actualSnapshotSHA256": "7686d5f09a585acd7156c5cb64ede91ee249f39ff80dbc295e1dd704467eb72d",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/AMENDMENT.md",
+      "bytes": 9631,
+      "sha256": "c48289e3d2bc1db05e1d0dadd7c25b7ac28a779a2df5202fb62a6c49a329c48f",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/AMENDMENT.md",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 9631,
+      "actualCurrentSHA256": "c48289e3d2bc1db05e1d0dadd7c25b7ac28a779a2df5202fb62a6c49a329c48f",
+      "actualSnapshotBytes": 9631,
+      "actualSnapshotSHA256": "c48289e3d2bc1db05e1d0dadd7c25b7ac28a779a2df5202fb62a6c49a329c48f",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/AMENDMENT.md",
+      "bytes": 5594,
+      "sha256": "22d2c40d26eb0dbb64186347bc9f4bc1e44c87ed01bcd05dc7c4814f0a24c9a8",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/AMENDMENT.md",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 5594,
+      "actualCurrentSHA256": "22d2c40d26eb0dbb64186347bc9f4bc1e44c87ed01bcd05dc7c4814f0a24c9a8",
+      "actualSnapshotBytes": 5594,
+      "actualSnapshotSHA256": "22d2c40d26eb0dbb64186347bc9f4bc1e44c87ed01bcd05dc7c4814f0a24c9a8",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/manifest.json",
+      "bytes": 16426,
+      "sha256": "bd162e15363202b7832dd0f8a189aef3bc44d1ff215e3494ad67f8601e25b5b7",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/manifest.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 16426,
+      "actualCurrentSHA256": "bd162e15363202b7832dd0f8a189aef3bc44d1ff215e3494ad67f8601e25b5b7",
+      "actualSnapshotBytes": 16426,
+      "actualSnapshotSHA256": "bd162e15363202b7832dd0f8a189aef3bc44d1ff215e3494ad67f8601e25b5b7",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/completion-design-only.json",
+      "bytes": 1724,
+      "sha256": "6a61276c04d68c1c1ff435a3cf4198bfeaaefc00028ebb0c507fac5896925071",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/completion-design-only.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 1724,
+      "actualCurrentSHA256": "6a61276c04d68c1c1ff435a3cf4198bfeaaefc00028ebb0c507fac5896925071",
+      "actualSnapshotBytes": 1724,
+      "actualSnapshotSHA256": "6a61276c04d68c1c1ff435a3cf4198bfeaaefc00028ebb0c507fac5896925071",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/manifest.json",
+      "bytes": 40952,
+      "sha256": "5f9ec01494e032f78e6311ff0103ad014e22908a69eaede9a6670d1ed2f530f7",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/manifest.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 40952,
+      "actualCurrentSHA256": "5f9ec01494e032f78e6311ff0103ad014e22908a69eaede9a6670d1ed2f530f7",
+      "actualSnapshotBytes": 40952,
+      "actualSnapshotSHA256": "5f9ec01494e032f78e6311ff0103ad014e22908a69eaede9a6670d1ed2f530f7",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/completion-design-only.json",
+      "bytes": 1890,
+      "sha256": "a531a7ddc99f6693832adcd363a537db96e7c7d785cadf16873cd709645202f3",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/completion-design-only.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 1890,
+      "actualCurrentSHA256": "a531a7ddc99f6693832adcd363a537db96e7c7d785cadf16873cd709645202f3",
+      "actualSnapshotBytes": 1890,
+      "actualSnapshotSHA256": "a531a7ddc99f6693832adcd363a537db96e7c7d785cadf16873cd709645202f3",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/manifest.json",
+      "bytes": 140780,
+      "sha256": "38b45c79f05a93d340319c2e55bd0317898c74473d676e093f185d73a0a62557",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/manifest.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 140780,
+      "actualCurrentSHA256": "38b45c79f05a93d340319c2e55bd0317898c74473d676e093f185d73a0a62557",
+      "actualSnapshotBytes": 140780,
+      "actualSnapshotSHA256": "38b45c79f05a93d340319c2e55bd0317898c74473d676e093f185d73a0a62557",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/code-source-review-v1.json",
+      "bytes": 174759,
+      "sha256": "6e6e33cddeb7ce280a4790cc393be72b4e4ddf2c1142cb86e5de0853b1210ca9",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/code-source-review-v1.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 174759,
+      "actualCurrentSHA256": "6e6e33cddeb7ce280a4790cc393be72b4e4ddf2c1142cb86e5de0853b1210ca9",
+      "actualSnapshotBytes": 174759,
+      "actualSnapshotSHA256": "6e6e33cddeb7ce280a4790cc393be72b4e4ddf2c1142cb86e5de0853b1210ca9",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/python-source-review-v1.json",
+      "bytes": 204076,
+      "sha256": "3293b781007111b823b8368c5bf513081bcd980256a7b05453e4a32f5f95fb26",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/python-source-review-v1.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 204076,
+      "actualCurrentSHA256": "3293b781007111b823b8368c5bf513081bcd980256a7b05453e4a32f5f95fb26",
+      "actualSnapshotBytes": 204076,
+      "actualSnapshotSHA256": "3293b781007111b823b8368c5bf513081bcd980256a7b05453e4a32f5f95fb26",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/js-api-source-review-v1.json",
+      "bytes": 153976,
+      "sha256": "fb00c18cf5bd0fe3be313edc6f7303d00cf8c5b3ce98de814bae46b7bd7cb9cd",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/js-api-source-review-v1.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 153976,
+      "actualCurrentSHA256": "fb00c18cf5bd0fe3be313edc6f7303d00cf8c5b3ce98de814bae46b7bd7cb9cd",
+      "actualSnapshotBytes": 153976,
+      "actualSnapshotSHA256": "fb00c18cf5bd0fe3be313edc6f7303d00cf8c5b3ce98de814bae46b7bd7cb9cd",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/completion-source-review-only.json",
+      "bytes": 2275,
+      "sha256": "486950895d0de41041cdba7e7d0c48b58419bf1d45ceb8936124c5563ceeada0",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/completion-source-review-only.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 2275,
+      "actualCurrentSHA256": "486950895d0de41041cdba7e7d0c48b58419bf1d45ceb8936124c5563ceeada0",
+      "actualSnapshotBytes": 2275,
+      "actualSnapshotSHA256": "486950895d0de41041cdba7e7d0c48b58419bf1d45ceb8936124c5563ceeada0",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+      "bytes": 49905,
+      "sha256": "4a0d526d2d37afb5a2af3132511641e02e287757620eddf39956d29f59abb8a9",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 49905,
+      "actualCurrentSHA256": "4a0d526d2d37afb5a2af3132511641e02e287757620eddf39956d29f59abb8a9",
+      "actualSnapshotBytes": 49905,
+      "actualSnapshotSHA256": "4a0d526d2d37afb5a2af3132511641e02e287757620eddf39956d29f59abb8a9",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/coverage.json",
+      "bytes": 2135,
+      "sha256": "57ed904cd36534daa8dd5c22a1872460ed26f06ac696a00ee48e6edd82b2700d",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/coverage.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 2135,
+      "actualCurrentSHA256": "57ed904cd36534daa8dd5c22a1872460ed26f06ac696a00ee48e6edd82b2700d",
+      "actualSnapshotBytes": 2135,
+      "actualSnapshotSHA256": "57ed904cd36534daa8dd5c22a1872460ed26f06ac696a00ee48e6edd82b2700d",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/fixture-oracle.json",
+      "bytes": 4943,
+      "sha256": "d3361786bd195f3596ea6785919e7715bc3af387c515dc90c9dd49538cb90310",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/fixture-oracle.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 4943,
+      "actualCurrentSHA256": "d3361786bd195f3596ea6785919e7715bc3af387c515dc90c9dd49538cb90310",
+      "actualSnapshotBytes": 4943,
+      "actualSnapshotSHA256": "d3361786bd195f3596ea6785919e7715bc3af387c515dc90c9dd49538cb90310",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/CONTRACT-v1.md",
+      "bytes": 14295,
+      "sha256": "97845716ecc42518ef68addb749c63173d3d68317db252b6ddd0aac4a4a6f8ce",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/CONTRACT-v1.md",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 14295,
+      "actualCurrentSHA256": "97845716ecc42518ef68addb749c63173d3d68317db252b6ddd0aac4a4a6f8ce",
+      "actualSnapshotBytes": 14295,
+      "actualSnapshotSHA256": "97845716ecc42518ef68addb749c63173d3d68317db252b6ddd0aac4a4a6f8ce",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/CONTRACT-v5.md",
+      "bytes": 8926,
+      "sha256": "41f52fa6dea5053377b6f831e1ae09bd6325bd9a947d3b6b8a1138c042a9e5e5",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/CONTRACT-v5.md",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 8926,
+      "actualCurrentSHA256": "41f52fa6dea5053377b6f831e1ae09bd6325bd9a947d3b6b8a1138c042a9e5e5",
+      "actualSnapshotBytes": 8926,
+      "actualSnapshotSHA256": "41f52fa6dea5053377b6f831e1ae09bd6325bd9a947d3b6b8a1138c042a9e5e5",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/completion-source-review-only-v5.json",
+      "bytes": 2587,
+      "sha256": "16792262b63258c9311c000753ad77651826d7c04d869e488240cdd299b0108b",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/completion-source-review-only-v5.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 2587,
+      "actualCurrentSHA256": "16792262b63258c9311c000753ad77651826d7c04d869e488240cdd299b0108b",
+      "actualSnapshotBytes": 2587,
+      "actualSnapshotSHA256": "16792262b63258c9311c000753ad77651826d7c04d869e488240cdd299b0108b",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/execution-preparation-v1/bounded-runtime-closeout-v1.json",
+      "bytes": 5599,
+      "sha256": "8ec74e51d55ebd6c46fdc2e9746e5ace5a2c37486f8b1384ab7d8b2afddedd47",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/execution-preparation-v1/bounded-runtime-closeout-v1.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 5599,
+      "actualCurrentSHA256": "8ec74e51d55ebd6c46fdc2e9746e5ace5a2c37486f8b1384ab7d8b2afddedd47",
+      "actualSnapshotBytes": 5599,
+      "actualSnapshotSHA256": "8ec74e51d55ebd6c46fdc2e9746e5ace5a2c37486f8b1384ab7d8b2afddedd47",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/next-coverage-preparation-v1/coverage-reconciliation-v1.json",
+      "bytes": 81362,
+      "sha256": "d527316662da7d3b90a7e5c894cf27f14b4f48ad0a2e89071716d5a38bdcfdab",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/next-coverage-preparation-v1/coverage-reconciliation-v1.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 81362,
+      "actualCurrentSHA256": "d527316662da7d3b90a7e5c894cf27f14b4f48ad0a2e89071716d5a38bdcfdab",
+      "actualSnapshotBytes": 81362,
+      "actualSnapshotSHA256": "d527316662da7d3b90a7e5c894cf27f14b4f48ad0a2e89071716d5a38bdcfdab",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/next-coverage-preparation-v1/coverage-reconciliation-v1.md",
+      "bytes": 5570,
+      "sha256": "4e0c998bb08e18055df7a3a9f6928dd76df1766d3b1f630323430aa7f0a53a12",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/next-coverage-preparation-v1/coverage-reconciliation-v1.md",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 5570,
+      "actualCurrentSHA256": "4e0c998bb08e18055df7a3a9f6928dd76df1766d3b1f630323430aa7f0a53a12",
+      "actualSnapshotBytes": 5570,
+      "actualSnapshotSHA256": "4e0c998bb08e18055df7a3a9f6928dd76df1766d3b1f630323430aa7f0a53a12",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "docs/empire-rts/AUTONOMOUS-EXECUTION-T14-T18-2026-10-11.md",
+      "bytes": 4420,
+      "sha256": "ca5cc725d177366fa3593f1eb3cc47dede4c183435ce2e0a7fb17cc21b862f52",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/docs/empire-rts/AUTONOMOUS-EXECUTION-T14-T18-2026-10-11.md",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 4420,
+      "actualCurrentSHA256": "ca5cc725d177366fa3593f1eb3cc47dede4c183435ce2e0a7fb17cc21b862f52",
+      "actualSnapshotBytes": 4420,
+      "actualSnapshotSHA256": "ca5cc725d177366fa3593f1eb3cc47dede4c183435ce2e0a7fb17cc21b862f52",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "docs/empire-rts/SESSION-HANDOFF-2026-10-26-TRANSFER-T14-T18.md",
+      "bytes": 4140,
+      "sha256": "30c1e3e2eddc4c376ac1e771bcbd3822b6a3865d694ceba8d72835da984d48aa",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/docs/empire-rts/SESSION-HANDOFF-2026-10-26-TRANSFER-T14-T18.md",
+      "role": "POINT_IN_TIME_HISTORY",
+      "requireCurrentMatchForDesignApproval": false,
+      "actualCurrentBytes": 4140,
+      "actualCurrentSHA256": "30c1e3e2eddc4c376ac1e771bcbd3822b6a3865d694ceba8d72835da984d48aa",
+      "actualSnapshotBytes": 4140,
+      "actualSnapshotSHA256": "30c1e3e2eddc4c376ac1e771bcbd3822b6a3865d694ceba8d72835da984d48aa",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "docs/empire-rts/SESSION-HANDOFF-2026-10-27-T14-T18.md",
+      "bytes": 11321,
+      "sha256": "5910f87250d58548060813b2a99ef316fc0febed76efc9c0363dbc9414375a5a",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/docs/empire-rts/SESSION-HANDOFF-2026-10-27-T14-T18.md",
+      "role": "POINT_IN_TIME_HISTORY",
+      "requireCurrentMatchForDesignApproval": false,
+      "actualCurrentBytes": 11321,
+      "actualCurrentSHA256": "5910f87250d58548060813b2a99ef316fc0febed76efc9c0363dbc9414375a5a",
+      "actualSnapshotBytes": 11321,
+      "actualSnapshotSHA256": "5910f87250d58548060813b2a99ef316fc0febed76efc9c0363dbc9414375a5a",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "docs/empire-rts/SESSION-HANDOFF-2026-10-28-T14-T18.md",
+      "bytes": 10108,
+      "sha256": "5c80052322a24f332cf407f3669891ba90d36dc6aa442dac06a7ceaf186d1c78",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/docs/empire-rts/SESSION-HANDOFF-2026-10-28-T14-T18.md",
+      "role": "POINT_IN_TIME_HISTORY",
+      "requireCurrentMatchForDesignApproval": false,
+      "actualCurrentBytes": 10108,
+      "actualCurrentSHA256": "5c80052322a24f332cf407f3669891ba90d36dc6aa442dac06a7ceaf186d1c78",
+      "actualSnapshotBytes": 10108,
+      "actualSnapshotSHA256": "5c80052322a24f332cf407f3669891ba90d36dc6aa442dac06a7ceaf186d1c78",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "work/t14-t18-session-transfer-20261026/current-checkpoint.json",
+      "bytes": 37598,
+      "sha256": "03e51113e9a257e1fd422d2087d1c9684a7f5ea7a3f5bf8743ffd57551802d50",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t14-t18-session-transfer-20261026/current-checkpoint.json",
+      "role": "POINT_IN_TIME_HISTORY",
+      "requireCurrentMatchForDesignApproval": false,
+      "actualCurrentBytes": 37598,
+      "actualCurrentSHA256": "03e51113e9a257e1fd422d2087d1c9684a7f5ea7a3f5bf8743ffd57551802d50",
+      "actualSnapshotBytes": 37598,
+      "actualSnapshotSHA256": "03e51113e9a257e1fd422d2087d1c9684a7f5ea7a3f5bf8743ffd57551802d50",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3.9",
+      "bytes": 53200,
+      "sha256": "6e7ae61f68a3838094fc56590f84c52069a97d7816f6bb79e0e85995b340e464",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3.9",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 53200,
+      "actualCurrentSHA256": "6e7ae61f68a3838094fc56590f84c52069a97d7816f6bb79e0e85995b340e464",
+      "actualSnapshotBytes": 53200,
+      "actualSnapshotSHA256": "6e7ae61f68a3838094fc56590f84c52069a97d7816f6bb79e0e85995b340e464",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/zipfile.py",
+      "bytes": 87278,
+      "sha256": "df6e2da67a3394a47ed57cfbd44298109d26f71ea22948a8840b6b56b0f6189d",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/zipfile.py",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 87278,
+      "actualCurrentSHA256": "df6e2da67a3394a47ed57cfbd44298109d26f71ea22948a8840b6b56b0f6189d",
+      "actualSnapshotBytes": 87278,
+      "actualSnapshotSHA256": "df6e2da67a3394a47ed57cfbd44298109d26f71ea22948a8840b6b56b0f6189d",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/hashlib.py",
+      "bytes": 10010,
+      "sha256": "a25e6f24d6ae5b5205844e2717f3d6dbeda005c1afeaf4d450b4f2c363a3d34a",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/hashlib.py",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 10010,
+      "actualCurrentSHA256": "a25e6f24d6ae5b5205844e2717f3d6dbeda005c1afeaf4d450b4f2c363a3d34a",
+      "actualSnapshotBytes": 10010,
+      "actualSnapshotSHA256": "a25e6f24d6ae5b5205844e2717f3d6dbeda005c1afeaf4d450b4f2c363a3d34a",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/io.py",
+      "bytes": 3541,
+      "sha256": "01907eff5e1a17d37e967b4d6d1bd2230e03d30f56cc1a1384a14dd77be5ff60",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/io.py",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 3541,
+      "actualCurrentSHA256": "01907eff5e1a17d37e967b4d6d1bd2230e03d30f56cc1a1384a14dd77be5ff60",
+      "actualSnapshotBytes": 3541,
+      "actualSnapshotSHA256": "01907eff5e1a17d37e967b4d6d1bd2230e03d30f56cc1a1384a14dd77be5ff60",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py",
+      "bytes": 14017,
+      "sha256": "332fabb72a4a1ed02c9207a7619ab339dac8f0b6862e16f6499147121b302a27",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 14017,
+      "actualCurrentSHA256": "332fabb72a4a1ed02c9207a7619ab339dac8f0b6862e16f6499147121b302a27",
+      "actualSnapshotBytes": 14017,
+      "actualSnapshotSHA256": "332fabb72a4a1ed02c9207a7619ab339dac8f0b6862e16f6499147121b302a27",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/os.py",
+      "bytes": 39404,
+      "sha256": "8dbe2d2e9f228747cacbbcc6758721e794b652e5c22b6224cb07e303ebbc620d",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/os.py",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 39404,
+      "actualCurrentSHA256": "8dbe2d2e9f228747cacbbcc6758721e794b652e5c22b6224cb07e303ebbc620d",
+      "actualSnapshotBytes": 39404,
+      "actualSnapshotSHA256": "8dbe2d2e9f228747cacbbcc6758721e794b652e5c22b6224cb07e303ebbc620d",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_hashlib.cpython-39-darwin.so",
+      "bytes": 90640,
+      "sha256": "df2522e0043b85940cc9fa28e4807211a15edec673f648d1f501483a5736d641",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_hashlib.cpython-39-darwin.so",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 90640,
+      "actualCurrentSHA256": "df2522e0043b85940cc9fa28e4807211a15edec673f648d1f501483a5736d641",
+      "actualSnapshotBytes": 90640,
+      "actualSnapshotSHA256": "df2522e0043b85940cc9fa28e4807211a15edec673f648d1f501483a5736d641",
+      "currentMatch": true,
+      "snapshotMatch": true
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/zlib.cpython-39-darwin.so",
+      "bytes": 88848,
+      "sha256": "d63129e2be45719a8ebd16cc0c74a2146bc96dff91a8fca65f9958f55e643d3a",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/zlib.cpython-39-darwin.so",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "actualCurrentBytes": 88848,
+      "actualCurrentSHA256": "d63129e2be45719a8ebd16cc0c74a2146bc96dff91a8fca65f9958f55e643d3a",
+      "actualSnapshotBytes": 88848,
+      "actualSnapshotSHA256": "d63129e2be45719a8ebd16cc0c74a2146bc96dff91a8fca65f9958f55e643d3a",
+      "currentMatch": true,
+      "snapshotMatch": true
+    }
+  ],
+  "notRun": [
+    "producer import",
+    "project tests",
+    "fixtures",
+    "producer _run",
+    "Node/Acorn",
+    "Popen/subprocess",
+    "observer setup",
+    "actual three fixed cases",
+    "bridge",
+    "old DONE suites",
+    "engine",
+    "attempt",
+    "network"
+  ],
+  "staticChecks": "Only file reads/hash/JSON inspection and independent literal-data canonicalization/hash/correlation algebra; no project-code import or case execution.",
+  "implementation": "NOT_CREATED_NOT_AUTHORIZED_BY_THIS_BLOCKED_DESIGN",
+  "native": false,
+  "officialCaptureApproved": false,
+  "fullCoverage": "OPEN_PARTIAL_NOT_APPROVED",
+  "futureExecution": "ALL_THREE_CASES_NOT_RUN_ATTEMPT_NOT_CREATED",
+  "typecheckLint": "Not run: explicit document/interface DESIGN scope, no TS source change or canonical package in scoped tools; no PR/merge readiness applicable.",
+  "writes": "Exclusive new sibling required-fault-controls-design-js-review-v1/review.json and review.md only; sealed authorplan/core/tests/raw/tracking untouched."
+}

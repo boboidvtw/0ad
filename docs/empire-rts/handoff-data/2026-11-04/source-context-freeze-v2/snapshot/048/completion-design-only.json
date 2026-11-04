@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "status": "DONE_BOUNDED_THREE_WAY_DESIGN_ONLY",
+  "createdUTC": "2026-10-26T01:01:14.954357+00:00",
+  "manifest": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/manifest.json",
+  "manifestSHA256": "bd162e15363202b7832dd0f8a189aef3bc44d1ff215e3494ad67f8601e25b5b7",
+  "rootBindingsMATCH": 63,
+  "independentFullReviews": [
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/code-design-review-v1.json",
+      "bytes": 30343,
+      "sha256": "c8112150ebac437ac40efe993fed709e1e0750654bfbafad2d98a7c26dc87bdc",
+      "verdict": "APPROVE_DESIGN_ONLY"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/python-design-review-v1.json",
+      "bytes": 35837,
+      "sha256": "4dd545b73e6e81dc62fbb3990283e2044cad5864cc2d19b35d5c335083b3d96b",
+      "verdict": "APPROVE_DESIGN_ONLY"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/js-api-design-review-v1.json",
+      "bytes": 28637,
+      "sha256": "014ff6aaf9c2ddefcfa667bd0b8cb5582e01cef685536e369f6ddc5ed1af38c3",
+      "verdict": "APPROVE_DESIGN_ONLY"
+    }
+  ],
+  "authorizedNext": "Python-only local source+tests for exact preservation amendment; root decision within existing human-authorized T14-T18 scope",
+  "sourceApproval": false,
+  "bridgeApproval": false,
+  "officialCaptureApproval": false,
+  "nativeApproval": false,
+  "oldV1BlockRetained": true,
+  "requiredLater": "full base/schema coverage; exact current joint freeze; independent full CODE/Python/JS source reviews; separately bounded source-fixed bridge contract; no official/native before gates"
+}

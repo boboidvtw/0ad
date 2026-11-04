@@ -1,0 +1,545 @@
+--- 356c-preimage
++++ tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py
+@@ -7,6 +7,7 @@
+ import errno
+ import hashlib
+ import importlib.util
++import importlib.machinery
+ import io
+ import json
+ import math
+@@ -23,7 +24,7 @@
+ IMPL = BASE / 'required-fault-controls-implementation-v1'
+ EXEC = V1 / 'execution-v1'
+ PREP = IMPL / 'execution-preparation-v1'
+-SOURCE_FREEZE = IMPL / 'source-context-freeze-v1/manifest.json'
++SOURCE_FREEZE = IMPL / 'source-context-freeze-v2/manifest.json'
+ ORACLE = V1 / 'CASE-ORACLE-v1.json'
+ ORACLE_SHA = 'c29ae4c2b9cdd74d2ad9fde92c4867aea3921a07f6b77475ba28d854cb45c271'
+ FIXTURE = BASE / 'preservation-bridge-regression-preparation/implementation-v1/fixture-oracle.json'
+@@ -48,6 +49,19 @@
+         (Path('/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3'), 'python3.9'))
+ PYTHON_TARGET = Path('/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3.9')
+ PYTHON_SHA = '6e7ae61f68a3838094fc56590f84c52069a97d7816f6bb79e0e85995b340e464'
++# Purpose/date: approved history-only representation and fresh SOURCE-v2 joins;
++# 2026-10-30. These constants/definitions are inert until separately admitted.
++CONTEXT = BASE / 'required-fault-controls-context-amendment-v1'
++CONTEXT_SHA = '20e7e2e53967afdce38b7b594c8cedab0e83cbd9aec61fb7af09e5a24a6b914e'
++HISTORY = IMPL / 'source-context-freeze-v2/history-full-bytes-v1.json'
++HISTORY_SHA = '2caa72716cb1ac21e4c9163ce6ca2461851fc71ba0381f785a04515d5c18ce74'
++INVENTORY_SHA = '7e6a8251a4c6c35e3ce0184bf75e61e19c6d444b1c9da2031eb48e631cc4c5b9'
++HISTORY_SCHEMA_SHA = 'f5c173c56cc349387013f93b3eab196d5587366bf6ce693567dcfc38c9e3c446'
++CONTEXT_REPORTS = (
++    ('CODE', '1e6d9c82ee924f1ae365f13fd01afd67c81e5e7429a3fd30ce070b6743dcbe90'),
++    ('Python', '28c1785de944c62aba45d122448ddd6b3d82c52288ec248b87349d322f06cc16'),
++    ('JSAPI', '8002c42ccf332f24d075ebe02867049f588cfdd03902694c6ba1bcdf58f9ca77'))
++CONTEXT_COMPLETION_SHA = 'ae68305d3cc86c6464e4ac868aa3f170fecafe9b0f452cf6a3ba1be95fae64c8'
+ RESOURCE_POLICY = {'availableDiskMin': 134217728, 'physicalRAMMin': 2147483648,
+                    'reclaimableEstimateMin': 1073741824, 'softFDMin': 256}
+ 
+@@ -118,6 +132,19 @@
+     return Path(value)
+ 
+ 
++def retain_unknown(primary, error, phase, resource):
++    """Keep exact first exception and a structured once-only cleanup observation."""
++    chosen = first_error(primary, error)
++    try:
++        message = str(error)
++    except BaseException:
++        message = 'UNKNOWN_ERROR_MESSAGE'
++    fact = {'phase': phase, 'status': 'UNKNOWN', 'resource': resource,
++            'type': type(error).__name__, 'message': message}
++    chosen.cleanupUnknown = list(getattr(chosen, 'cleanupUnknown', [])) + [fact]
++    return chosen
++
++
+ def physical_dir(path):
+     path = absolute(str(path))
+     current = os.open('/', os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW)
+@@ -125,10 +152,19 @@
+         for part in path.parts[1:]:
+             child = os.open(part, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW, dir_fd=current)
+             previous, current = current, child
+-            os.close(previous)
++            try:
++                os.close(previous)  # Ownership consumed by this one attempt.
++            except BaseException as error:
++                retain_unknown(error, error, 'physical_dir previous close',
++                               {'fd': previous, 'closeAttempts': 1})
++                raise
+         return current
+-    except BaseException:
+-        os.close(current)
++    except BaseException as primary:
++        try:
++            os.close(current)  # Distinct current owner; never retry previous.
++        except BaseException as error:
++            retain_unknown(primary, error, 'physical_dir current cleanup close',
++                           {'fd': current, 'closeAttempts': 1})
+         raise
+ 
+ 
+@@ -366,15 +402,136 @@
+     return row['closeAttempts'] == 1 and row['closeStatus'] == 'OK'
+ 
+ 
++def context_authority():
++    """Approved DESIGN data and full immutable snapshots, never old-source current."""
++    manifest = strict(checked_file(CONTEXT / 'manifest.json', CONTEXT_SHA))
++    bindings = manifest['bindings']
++    require(type(bindings) is list and len(bindings) == 94, 'CONTEXT_DESIGN_COUNT')
++    total, seen = 0, set()
++    for row in bindings:
++        require(row['path'] not in seen, 'CONTEXT_DESIGN_DUPLICATE')
++        seen.add(row['path'])
++        snapshot = absolute(row['snapshot']) if row['snapshot'].startswith('/') else REPO / row['snapshot']
++        raw = read_file(snapshot)
++        require(len(raw) == row['bytes'] and digest(raw) == row['sha256'], 'CONTEXT_DESIGN_SNAPSHOT')
++        superseded = row['path'] == 'tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py'
++        if row['requireCurrentMatchForDesignApproval'] and not superseded:
++            original = absolute(row['path']) if row['path'].startswith('/') else REPO / row['path']
++            current = read_file(original)
++            require(len(current) == row['bytes'] and digest(current) == row['sha256'], 'CONTEXT_CURRENT_UNCHANGED_AUTHORITY')
++        total += len(raw)
++    require(total == 3409262 and total <= 33554432, 'CONTEXT_DESIGN_BYTES')
++    # 356c in this historical design packet is superseded, not current executable.
++    for role, sha in CONTEXT_REPORTS:
++        report = strict(checked_file(CONTEXT / ('design-review-' + role + '-v1.json'), sha))
++        require(report['verdict'] == 'APPROVE_DESIGN_ONLY' and report['reviewerRole'] == role
++                and report['inputManifestSHA256'] == CONTEXT_SHA, 'CONTEXT_DESIGN_REVIEW')
++    completion = strict(checked_file(CONTEXT / 'completion-design-only-v1.json', CONTEXT_COMPLETION_SHA))
++    require(completion['inputManifestSHA256'] == CONTEXT_SHA
++            and completion['rootRequiredAndSnapshotMATCH'] == 94, 'CONTEXT_COMPLETION')
++    for (role, sha), desc in zip(CONTEXT_REPORTS, completion['reviews']):
++        require(desc['role'] == role and desc['sha256'] == sha, 'CONTEXT_COMPLETION_REVIEW_JOIN')
++        checked_file(CONTEXT / ('design-review-' + role + '-v1.md'), desc['markdownSHA256'])
++    root = strict(checked_file(CONTEXT / 'root-readback-v1.json',
++        'f46ab74712bb26b5471d1bfc9584c1eefbf1d102bdee7837b32b9c999d8806f4'))
++    require(root['inputManifestSHA256'] == CONTEXT_SHA and root['bindingsMATCH'] == 94
++            and root['status'] == 'MATCH_DESIGN_INPUT_ONLY', 'CONTEXT_DESIGN_ROOT')
++    history = strict(checked_file(CONTEXT / 'root-history-data-readback-v1.json',
++        '8247f4d6895e1e00a5341238fd87d2db60f31f6e364ab92779958195603b9ff2'))
++    require(history['inputManifestSHA256'] == CONTEXT_SHA and history['originsReadMATCH'] == 53
++            and history['predictedSHA256'] == HISTORY_SHA, 'CONTEXT_DESIGN_HISTORY_ROOT')
++
++
++def shallow_ascii_json(raw):
++    """Bound depth before JSON object allocation, ignoring quoted punctuation."""
++    require(type(raw) is bytes and len(raw) <= 2097152, 'HISTORY_ENCODED_BOUND')
++    raw.decode('ascii', 'strict')
++    depth, quoted, escaped, entry_commas = 0, False, False, 0
++    for value in raw:
++        if quoted:
++            if escaped:
++                escaped = False
++            elif value == 92:
++                escaped = True
++            elif value == 34:
++                quoted = False
++        elif value == 34:
++            quoted = True
++        elif value == 44 and depth == 2:
++            entry_commas += 1
++            require(entry_commas < 64, 'HISTORY_PREPARSE_ENTRY_BOUND')
++        elif value in (123, 91):
++            depth += 1
++            require(depth <= 3, 'HISTORY_JSON_DEPTH')  # primitives are level4.
++        elif value in (125, 93):
++            depth -= 1
++            require(depth >= 0, 'HISTORY_JSON_DEPTH')
++    require(depth == 0 and not quoted, 'HISTORY_JSON_DEPTH')
++    return strict(raw)
++
++
++def read_history_container(descriptor):
++    keys = {'path', 'bytes', 'sha256', 'inventory', 'schema', 'logicalContextCount',
++            'physicalBindingCount', 'decodedHistoryBytes', 'encodedHistoryBytes',
++            'expandedLogicalBindingsSHA256'}
++    require(set(descriptor) == keys and descriptor['path'] == str(HISTORY)
++            and descriptor['sha256'] == HISTORY_SHA, 'HISTORY_DESCRIPTOR')
++    for key, name, expected in (('inventory', 'HISTORY-INVENTORY-v1.json', INVENTORY_SHA),
++                                ('schema', 'HISTORY-SCHEMA-v1.json', HISTORY_SCHEMA_SHA)):
++        desc = descriptor[key]
++        require(set(desc) == {'path', 'bytes', 'sha256'} and desc['path'] == str(CONTEXT / name)
++                and desc['sha256'] == expected and type(desc['bytes']) is int, 'HISTORY_AUTHORITY_DESCRIPTOR')
++        raw = checked_file(CONTEXT / name, expected)
++        require(len(raw) == desc['bytes'], 'HISTORY_AUTHORITY_BYTES')
++        if key == 'inventory':
++            inventory = strict(raw)
++    rows = inventory['fixedEntries']
++    require(type(rows) is list and len(rows) == 53, 'HISTORY_INVENTORY_COUNT')
++    raw = read_file(HISTORY, 2097152)
++    require(type(descriptor['bytes']) is int and len(raw) == descriptor['bytes'] == 1408405
++            and digest(raw) == HISTORY_SHA, 'HISTORY_CONTAINER_BYTES_SHA')
++    value = shallow_ascii_json(raw)
++    require(type(value) is dict and list(value) == ['schema', 'containerId', 'entries']
++            and type(value['schema']) is int and value['schema'] == 1
++            and value['containerId'] == 't17-required-fault-controls-history-v1', 'HISTORY_KEYS')
++    entries = value['entries']
++    require(type(entries) is list and len(entries) == 53 and len(entries) <= 64, 'HISTORY_COUNT')
++    require(canonical(value) == raw, 'HISTORY_CANONICAL_ASCII')
++    result, total, previous = [], 0, None
++    for index, (row, expected) in enumerate(zip(entries, rows)):
++        require(type(row) is dict and list(row) == ['path', 'bytes', 'sha256', 'bodyBase64'], 'HISTORY_ENTRY_KEYS')
++        path = str(absolute(row['path']))
++        require(len(path.encode('utf-8')) <= 1024 and (previous is None or previous < path.encode('utf-8')), 'HISTORY_PATH_ORDER_UNIQUE')
++        previous = path.encode('utf-8')
++        require(expected['entryIndex'] == index and expected['historyOnly'] is True
++                and (path, row['bytes'], row['sha256']) == (expected['path'], expected['bytes'], expected['sha256']), 'HISTORY_EXACT_WHITELIST')
++        size = row['bytes']
++        require(type(size) is int and 0 <= size <= 262144, 'HISTORY_ENTRY_BYTES')
++        total += size
++        require(total <= 1048576, 'HISTORY_DECODED_AGGREGATE')
++        body = row['bodyBase64']
++        require(type(body) is str and len(body) == 4 * ((size + 2) // 3)
++                and len(body) <= 349528, 'HISTORY_BASE64_ALLOCATION_BOUND')
++        decoded = decode(body)
++        require(len(decoded) == size and digest(decoded) == row['sha256'], 'HISTORY_DECODED_SHA')
++        original = read_file(path, 262144)
++        require(original == decoded and len(original) == size and digest(original) == row['sha256'], 'HISTORY_FULL_ORIGINAL_READBACK')
++        # Retain only metadata. No extraction, imports or decoded duplicate vectors.
++        result.append({'path': path, 'bytes': size, 'sha256': row['sha256']})
++    require(total == 1042748 and descriptor['decodedHistoryBytes'] == total
++            and descriptor['encodedHistoryBytes'] == len(raw), 'HISTORY_AGGREGATE_FACTS')
++    return result
++
++
+ def read_source_freeze(descriptor):
+     require(set(descriptor) == {'path', 'sha256'} and descriptor['path'] == str(SOURCE_FREEZE), 'FREEZE_PATH')
+     manifest = strict(checked_file(SOURCE_FREEZE, descriptor['sha256']))
+     rows = manifest['bindings']
+     require(type(rows) is list and len(rows) <= 128, 'FREEZE_COUNT')
+-    result, originals, total = [], {}, 0
++    result, originals, logical, total = [], {}, [], 0
+     for row in rows:
+         original = row['path']
+-        require(original not in originals, 'FREEZE_DUPLICATE')
++        require(original not in originals and type(row['requireCurrentMatchForDesignApproval']) is bool, 'FREEZE_DUPLICATE_OR_FLAG')
+         originals[original] = row
+         snapshot = absolute(row['snapshot']) if row['snapshot'].startswith('/') else REPO / row['snapshot']
+         raw = read_file(snapshot)
+@@ -383,25 +540,52 @@
+         current = read_file(path)
+         require(len(current) == row['bytes'] and digest(current) == row['sha256'], 'CURRENT_BINDING')
+         total += len(raw)
++        require(total <= 33554432, 'FREEZE_BYTES')  # Full encoded container counted.
+         result.append({'path': str(path), 'bytes': len(current), 'sha256': digest(current)})
+-    require(total <= 33554432, 'FREEZE_BYTES')
++        original_path = absolute(original) if original.startswith('/') else REPO / original
++        if original_path != HISTORY:
++            logical.append({'path': str(original_path), 'bytes': len(current), 'sha256': digest(current)})
+     design = strict(checked_file(V2 / 'manifest.json', DESIGN_SHA))
+     for required in design['bindings']:
+         original = required['path']
+         require(original in originals, 'MISSING_DESIGN_CONTEXT:' + original)
+         actual = originals[original]
+         require((actual['bytes'], actual['sha256']) == (required['bytes'], required['sha256']), 'DESIGN_CONTEXT_CHANGED')
+-        if not required.get('requireCurrentMatchForDesignApproval', True):
+-            require(actual.get('requireCurrentMatchForDesignApproval') is False, 'HISTORY_NOT_SNAPSHOT')
++        require(actual['requireCurrentMatchForDesignApproval'] == required['requireCurrentMatchForDesignApproval'], 'DESIGN_CONTEXT_FLAG')
+     mandatory = [Path(__file__).absolute(), IMPL / 'HELPER-PLAN-v1.json',
+                  REPO / 'tools/epoch-rts/test-t17-save-five-mod-required-fault-controls-helpers.py',
+-                 V2 / 'manifest.json', BASE / 'required-fault-controls-design-completion-v2.json']
++                 IMPL / 'late-ledger-fix-v1/late-ledger-memory-helpers-v1.py',
++                 IMPL / 'late-ledger-fix-v1/LATE-HELPER-PLAN-v1.json',
++                 IMPL / 'SOURCE-INTERFACE-v1.md', IMPL / 'SOURCE-INTERFACE-context-v2.md',
++                 V2 / 'manifest.json', BASE / 'required-fault-controls-design-completion-v2.json',
++                 HISTORY, CONTEXT / 'manifest.json', CONTEXT / 'CONTRACT-v1.md',
++                 CONTEXT / 'HISTORY-INVENTORY-v1.json', CONTEXT / 'HISTORY-SCHEMA-v1.json',
++                 CONTEXT / 'completion-design-only-v1.json', CONTEXT / 'root-readback-v1.json',
++                 CONTEXT / 'root-history-data-readback-v1.json']
+     mandatory.extend(BASE / row[1] for row in DESIGN_REPORTS)
++    for role, _ in CONTEXT_REPORTS:
++        mandatory.extend(CONTEXT / ('design-review-' + role + '-v1.' + ext) for ext in ('json', 'md'))
+     for path in mandatory:
+         key = str(path.relative_to(REPO)) if str(path).startswith(str(REPO) + '/') else str(path)
+         require(key in originals, 'MISSING_NEW_CONTEXT:' + key)
++        require(originals[key]['requireCurrentMatchForDesignApproval'] is True, 'CURRENT_CONTEXT_CANNOT_BE_HISTORY')
++    context_authority()
++    inner = read_history_container(manifest['historyContainer'])
++    # canonical_rows rejects any original path represented both direct and inner.
++    expanded = canonical_rows(logical + inner)
++    logical_sha = digest(canonical(expanded))
+     normalized = canonical_rows(result)
+-    return manifest, normalized, digest(canonical(normalized))
++    history = {'historyContainerSHA256': HISTORY_SHA,
++               'expandedLogicalBindingsSHA256': logical_sha,
++               'physicalBindingCount': len(normalized), 'logicalContextCount': len(expanded),
++               'decodedHistoryBytes': 1042748, 'encodedHistoryBytes': 1408405}
++    desc = manifest['historyContainer']
++    require(type(desc['logicalContextCount']) is int and type(desc['physicalBindingCount']) is int
++            and len(expanded) == desc['logicalContextCount'] <= 191
++            and len(normalized) == desc['physicalBindingCount'] <= 128
++            and logical_sha == desc['expandedLogicalBindingsSHA256'], 'HISTORY_LOGICAL_JOIN')
++    require(manifest['bindingCount'] == len(normalized) and manifest['snapshotBytes'] == total, 'FREEZE_ACCOUNTING')
++    return manifest, normalized, digest(canonical(normalized)), history
+ 
+ 
+ def runtime_rows():
+@@ -431,10 +615,11 @@
+     return result
+ 
+ 
+-def report_fresh(report, core_sha, rows, rows_sha, runtime, now):
++def report_fresh(report, core_sha, rows, rows_sha, runtime, now, history):
+     require(report['capsuleId'] == 't17-required-fault-controls-v1' and report['capsuleCoreSHA256'] == core_sha, 'REPORT_CORE')
+     require(report['sourceBindings'] == rows and report['sourceBindingsSHA256'] == rows_sha, 'REPORT_BINDINGS')
+     require(report['runtimeRows'] == runtime and report['resourcePolicy'] == RESOURCE_POLICY, 'REPORT_RUNTIME')
++    require(all(report[key] == value for key, value in history.items()), 'REPORT_EXPANDED_HISTORY_JOIN')
+     checked, expires = report['checkedUnixSeconds'], report['expiresUnixSeconds']
+     require(type(checked) in (int, float) and type(expires) in (int, float)
+             and math.isfinite(checked) and math.isfinite(expires), 'REPORT_CLOCK')
+@@ -456,7 +641,7 @@
+     require(capsule['runRoot'] == str(EXEC) and capsule['caseIds'] == list(IDS)
+             and type(capsule['retry']) is int and capsule['retry'] == 0 and capsule['seed'] is False, 'CAPSULE_CASES')
+     require(sys.version_info[:3] == (3, 9, 6) and Path(sys.executable) == LAUNCHER and sys.dont_write_bytecode, 'FIXED_PYTHON')
+-    manifest, rows, rows_sha = read_source_freeze(capsule['sourceFreeze'])
++    manifest, rows, rows_sha, history = read_source_freeze(capsule['sourceFreeze'])
+     require(capsule['sourceBindings'] == rows, 'CAPSULE_BINDINGS')
+     require(checked_file(BASE / 'required-fault-controls-design-completion-v2.json', COMPLETION_SHA), 'DESIGN_COMPLETION')
+     for role, path, sha in DESIGN_REPORTS:
+@@ -466,12 +651,13 @@
+     require(type(reviews) is list and len(reviews) == 3, 'SOURCE_REVIEW_COUNT')
+     review_paths = set()
+     for role, desc in zip(('CODE', 'Python', 'JSAPI'), reviews):
+-        path = IMPL / ('source-review-' + role + '-v1.json')
++        path = IMPL / ('source-review-' + role + '-v2.json')
+         require(set(desc) == {'role', 'path', 'sha256'} and desc['role'] == role and desc['path'] == str(path), 'SOURCE_REVIEW_PATH')
+         report = strict(checked_file(path, desc['sha256']))
+         require(report['verdict'] == 'APPROVE_SOURCE_ONLY' and report['reviewerRole'] == role
+                 and report['inputManifestSHA256'] == capsule['sourceFreeze']['sha256']
+-                and report['reviewedBindingsSHA256'] == rows_sha, 'SOURCE_REVIEW_LINK')
++                and report['reviewedBindingsSHA256'] == rows_sha
++                and all(report[key] == value for key, value in history.items()), 'SOURCE_REVIEW_LINK')
+         require(str(path) not in review_paths, 'SOURCE_REVIEW_DISTINCT')
+         review_paths.add(str(path))
+     runtime = runtime_rows()
+@@ -484,14 +670,14 @@
+         require(set(desc) == {'path', 'sha256'} and desc['path'] == str(PREP / filename), 'CURRENT_REPORT_PATH')
+         report = strict(checked_file(desc['path'], desc['sha256']))
+         require(report['sourceFreezeSHA256'] == capsule['sourceFreeze']['sha256'], 'REPORT_FREEZE')
+-        report_fresh(report, core_sha, rows, rows_sha, runtime, time.time())
++        report_fresh(report, core_sha, rows, rows_sha, runtime, time.time(), history)
+         paths.append(desc['path'])
+     require(len(set(paths)) == 2, 'INDEPENDENT_REPORT_DISTINCT')
+     require(not os.path.lexists(EXEC), 'RUN_ROOT_EXISTS')
+     # Actual available-disk observation supplements the two independent resource records.
+     disk = os.statvfs(V1)
+     require(disk.f_bavail * disk.f_frsize >= RESOURCE_POLICY['availableDiskMin'], 'CURRENT_DISK')
+-    return capsule, rows, rows_sha, runtime
++    return capsule, rows, rows_sha, runtime, history
+ 
+ 
+ class Store:
+@@ -708,15 +894,26 @@
+         fd = physical_dir(directory)
+         primary = None
+         try:
+-            iterator = os.scandir(fd)
++            iterator = os.scandir(fd)  # Failed constructor acquires no iterator.
++            iteration_primary = None
+             try:
+                 names = []
+                 for item in iterator:
+                     count += 1
+                     require(count <= files_cap, 'TREE_ENTRY_BOUND')
+                     names.append(item.name)
++            except BaseException as error:
++                iteration_primary = error
++                raise
+             finally:
+-                iterator.close()
++                try:
++                    iterator.close()  # One acquired iterator, one close attempt.
++                except BaseException as error:
++                    chosen = retain_unknown(iteration_primary, error,
++                                            'census iterator close',
++                                            {'directory': str(directory), 'closeAttempts': 1})
++                    if iteration_primary is None:
++                        raise chosen
+             for name in sorted(names, key=lambda value: value.encode('utf-8')):
+                 relative_parts(name)
+                 st = os.stat(name, dir_fd=fd, follow_symlinks=False)
+@@ -737,8 +934,11 @@
+                 os.close(fd)
+             except BaseException as error:
+                 if primary is not None:
+-                    primary.cleanupUnknown = getattr(primary, 'cleanupUnknown', []) + [repr(error)]
++                    retain_unknown(primary, error, 'census directory FD close',
++                                   {'fd': fd, 'closeAttempts': 1})
+                 else:
++                    retain_unknown(error, error, 'census directory FD close',
++                                   {'fd': fd, 'closeAttempts': 1})
+                     raise
+     walk(path, '')
+     return {'files': rows, 'entries': count, 'bytes': total}
+@@ -764,13 +964,104 @@
+     return tooling
+ 
+ 
+-def load_producer(tooling, case_id):
+-    # STAGE C ONLY. Never invoked by import/default CLI or memory helpers.
++class CheckedProducerLoader(importlib.machinery.SourceFileLoader):
++    """STAGE C ONLY: standard import dispatch over one checked immutable body."""
++    def __init__(self, path, fullname, raw):
++        require(type(raw) is bytes and len(raw) <= 131072 and digest(raw) == SOURCE_SHAS[0], 'PRODUCER_CHECKED_BYTES')
++        super().__init__(fullname, str(path))
++        self.fullname, self.checked_bytes = fullname, raw
++        self.body_code, self.used = None, False
++
++    def get_code(self, fullname):
++        require(fullname == self.fullname and not self.used and digest(self.checked_bytes) == SOURCE_SHAS[0], 'PRODUCER_LOADER_ORIGIN_OR_REUSE')
++        self.used = True
++        # Inherited exec_module consumes exactly this captured object. No direct
++        # eval/exec, source path reread or bytecode cache supplies another body.
++        self.body_code = self.source_to_code(self.checked_bytes, self.path, _optimize=0)
++        return self.body_code
++
++    def get_data(self, path):
++        raise ImportError('PRODUCER_SOURCE_AND_CACHE_REREAD_FORBIDDEN')
++
++    def set_data(self, path, data, **kwargs):
++        raise ImportError('PRODUCER_BYTECODE_WRITE_FORBIDDEN')
++
++
++def load_producer(tooling, case_id, result):
++    # STAGE C ONLY. No producer/profile installation from import/default/helper.
+     path = tooling[SOURCE_NAMES[0]]
+-    spec = importlib.util.spec_from_file_location('_required_fault_' + case_id, str(path))
+-    require(spec is not None and spec.loader is not None, 'PRODUCER_SPEC')
++    require(path == EXEC / case_id / 'fixture/tooling' / SOURCE_NAMES[0]
++            and case_id in IDS, 'PRODUCER_PRIVATE_PATH')
++    fullname = '_required_fault_' + case_id
++    raw = checked_file(path, SOURCE_SHAS[0])
++    loader = CheckedProducerLoader(path, fullname, raw)
++    spec = importlib.util.spec_from_file_location(fullname, str(path), loader=loader)
++    require(spec is not None and spec.loader is loader, 'PRODUCER_SPEC')
+     module = importlib.util.module_from_spec(spec)
+-    spec.loader.exec_module(module)
++    saved_profile = sys.getprofile()
++    require(saved_profile is None, 'UNRELATED_PROFILE_OWNER')
++    primary, install_attempted, installed, dispatched = None, False, False, False
++
++    def entry_profile(frame, event, arg):
++        if (event == 'call' and frame.f_code is loader.body_code
++                and frame.f_globals is module.__dict__
++                and frame.f_code.co_name == '<module>'
++                and frame.f_code.co_filename == str(path)):
++            result['moduleBodyEntryEvents'] += 1
++            # A real module frame has begun, even if this callback/body later fails.
++            result['consumed'] = True
++            result['entryStatus'] = 'ENTERED_BODY_CALL'
++            result['moduleBodyEntryObservation'] = {
++                'sourcePath': str(path), 'sourceSHA256': SOURCE_SHAS[0],
++                'moduleName': fullname, 'moduleCodeIdentity': id(loader.body_code),
++                'frameCodeIdentity': id(frame.f_code),
++                'moduleGlobalsIdentity': id(module.__dict__),
++                'frameGlobalsIdentity': id(frame.f_globals),
++                'codeName': frame.f_code.co_name, 'codeFilename': frame.f_code.co_filename,
++                'scope': 'OBSERVED_EXACT_MODULE_FRAME_CALL_NOT_FULLHOST_ATTESTATION'}
++            require(result['moduleBodyEntryEvents'] == 1, 'MODULE_ENTRY_CARDINALITY')
++
++    try:
++        install_attempted = True
++        sys.setprofile(entry_profile)
++        installed = True
++        require(sys.getprofile() is entry_profile, 'PROFILE_INSTALL_UNKNOWN')
++        dispatched = True
++        result['entryStatus'], result['consumed'] = 'DISPATCH_PENDING', None
++        spec.loader.exec_module(module)  # Standard loader; callback observes entry.
++        result['moduleBodyReturned'] = True
++        require(result['consumed'] is True and result['moduleBodyEntryEvents'] == 1, 'MODULE_ENTRY_UNKNOWN')
++    except BaseException as error:
++        primary = error
++    finally:
++        if install_attempted:
++            owner_known, owner = False, None
++            try:
++                owner = sys.getprofile()
++                owner_known = True
++            except BaseException as error:
++                primary = retain_unknown(primary, error, 'module entry profile owner readback',
++                                         {'restoration': 'NOT_ATTEMPTED_OWNER_UNKNOWN'})
++            if owner_known and owner is entry_profile:
++                try:
++                    sys.setprofile(saved_profile)  # One restoration attempt only.
++                    require(sys.getprofile() is saved_profile, 'PROFILE_RESTORE_UNKNOWN')
++                except BaseException as error:
++                    primary = retain_unknown(primary, error, 'module entry profile restore',
++                                             {'restoreAttempts': 1})
++            elif owner_known and (installed or owner is not saved_profile):
++                error = Rejected('PROFILE_OWNER_CHANGED_UNKNOWN')
++                primary = retain_unknown(primary, error, 'module entry profile owner changed',
++                                         {'restoration': 'NOT_ATTEMPTED_UNRELATED_OR_UNKNOWN_OWNER'})
++        if result['consumed'] is not True:
++            if not dispatched or loader.body_code is None:
++                # Dispatch never began, or compilation never produced a body.
++                result['entryStatus'], result['consumed'] = 'NOT_ENTERED', False
++            else:
++                # exec_module attempt without an observed body is not false proof.
++                result['entryStatus'], result['consumed'] = 'UNKNOWN', None
++    if primary is not None:
++        raise primary
+     fixture_root = EXEC / case_id / 'fixture'
+     config = {'REPO': fixture_root / 'fixture-repo', 'ARCHIVE_PATH': fixture_root / 'synthetic-public.zip',
+               'ARCHIVE_SHA': 'cea88db14e39f8f6ef63c315a8f88d4fc18a0a6c12e33dca97d38d636849b132',
+@@ -866,7 +1157,9 @@
+ def run_case(store, case, fixture, campaign_start):
+     started = time.monotonic()
+     result = {'caseId': case['id'], 'status': 'ADMISSION', 'consumed': False, 'producerCalls': 0,
+-              'primary': None, 'secondary': [], 'native': False, 'sourceClosure': False}
++              'primary': None, 'secondary': [], 'native': False, 'sourceClosure': False,
++              'entryStatus': 'NOT_ENTERED', 'moduleBodyEntryEvents': 0,
++              'moduleBodyReturned': False, 'moduleBodyEntryObservation': None}
+     ledger = FailureLedger()
+     observer, saved_stderr = None, None
+     sent, stderr = BoundedBytes(), BoundedText()
+@@ -877,10 +1170,10 @@
+         require(before['bytes'] <= 1048576 + 262144, 'FIXTURE_PAYLOAD_BOUND')
+         future_deadline(started, time.monotonic(), 20)
+         future_deadline(campaign_start, time.monotonic(), 120)
+-        # Private producer import executes its module body and consumes the case.
+-        result['consumed'] = True
+-        store.put(case['id'] + '/evidence/producer-body-entry.json', canonical(result) + b'\n')
+-        module, config = load_producer(tooling, case['id'])
++        # Intent is not entry: every fallible operation before a real frame call
++        # retains NOT_ENTERED/consumedFalse. Observer callback writes memory only.
++        store.put(case['id'] + '/evidence/producer-entry-admission.json', canonical(result) + b'\n')
++        module, config = load_producer(tooling, case['id'], result)
+         output = config['OUTPUT_PARENT'] / 'fault_fixture_v1'
+         observer = Observer(case['id'], output)
+         saved_stderr = sys.stderr
+@@ -922,7 +1215,10 @@
+                 ledger.record('observer restore', error)
+         if saved_stderr is not None:
+             sys.stderr = saved_stderr
+-        channels = [('outer-stdout.raw', lambda: sent.getvalue()),
++        channels = [('producer-entry-observation.json', lambda: canonical({key: result[key] for key in
++                    ('caseId', 'consumed', 'entryStatus', 'moduleBodyEntryEvents',
++                     'moduleBodyReturned', 'moduleBodyEntryObservation', 'producerCalls')}) + b'\n'),
++                    ('outer-stdout.raw', lambda: sent.getvalue()),
+                     ('outer-stderr.raw', lambda: stderr.getvalue().encode('utf-8'))]
+         if observer is not None:
+             channels.append(('observer.json', lambda: canonical(observer.facts()) + b'\n'))
+@@ -961,7 +1257,7 @@
+     store, result, rows, runtime = None, None, None, None
+     ledger = FailureLedger()
+     try:
+-        capsule, rows, rows_sha, runtime = admit(capsule_path, capsule_sha)
++        capsule, rows, rows_sha, runtime, history = admit(capsule_path, capsule_sha)
+         oracle = strict(checked_file(ORACLE, ORACLE_SHA))
+         fixture = strict(checked_file(FIXTURE, FIXTURE_SHA))
+         require(oracle['caseCount'] == 3 and [row['id'] for row in oracle['cases']] == list(IDS), 'ORACLE_CASES')
+@@ -1009,6 +1305,11 @@
+                 except BaseException as error:
+                     ledger.record('post source ' + row['path'], error)
+             try:
++                _, post_rows, post_sha, post_history = read_source_freeze(capsule['sourceFreeze'])
++                require(post_rows == rows and post_sha == rows_sha and post_history == history, 'POST_EXPANDED_HISTORY_CHANGED')
++            except BaseException as error:
++                ledger.record('post full source and expanded history readback', error)
++            try:
+                 require(runtime_rows() == runtime, 'POST_RUNTIME_CHANGED')
+             except BaseException as error:
+                 ledger.record('post runtime readback', error)

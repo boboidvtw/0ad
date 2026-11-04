@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "purpose": "Root complete source/diff/interface static readback and independent full input/history data accounting only; no authored execution or SOURCE approval",
+  "createdUTC": "2026-10-30T02:35:50.831889+00:00",
+  "controllerSHA256": "fd1948d65cdd57cb851f651128639499f958a59f003707889bfb32e9f6f24e9b",
+  "authorCheckpointSHA256": "ab18ed0702184d21ae7b3bb14cc8fc713899a1d66b9fd37a82eb073b81d4c8a7",
+  "inventorySHA256": "a42aad596118292c31ecc1ac465c75f71d2118531c4d1324db7e78b31f48bfc3",
+  "authorBindingsMATCH": [
+    {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py",
+      "bytes": 72311,
+      "sha256": "fd1948d65cdd57cb851f651128639499f958a59f003707889bfb32e9f6f24e9b"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/SOURCE-INTERFACE-context-v2.md",
+      "bytes": 9729,
+      "sha256": "6dd0d9d474663e2ca1f269c6bf55f296c7a887a0b83bdcab5e370094949dcdee"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-context-freeze-v2/history-full-bytes-v1.json",
+      "bytes": 1408405,
+      "sha256": "2caa72716cb1ac21e4c9163ce6ca2461851fc71ba0381f785a04515d5c18ce74"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-fix-v2/API-context/profile-source-context-v1.json",
+      "bytes": 768,
+      "sha256": "1722859984a949b641c16bd4b468ca0b17296d808104cff9751b15bd54981d49"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-fix-v2/API-context/profile.py.source-snapshot",
+      "bytes": 22871,
+      "sha256": "ad5a4287ca103316f25a424b87fa827ee1b28b4f9c0271f2e021f717b9ebea67"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-fix-v2/author-WIP-checkpoint-v1.json",
+      "bytes": 3229,
+      "sha256": "47fc0eeee3577ce949fd2e606a66c1ddb1ee9e98bd8b9485b37d14d85d9a3b42"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-fix-v2/author-static-AST-data-v1.json",
+      "bytes": 3023,
+      "sha256": "21fd96caf86e68e5adebb3ce3eac6ab85abcc91fb8782e5c3d7fe4faef1ab9ad"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-fix-v2/controller-source-diff-v2.patch",
+      "bytes": 31985,
+      "sha256": "75814c90d87de0fddee50166d9120bf4b65231b2a98f435b35133f07e97ef22b"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-fix-v2/controller-source-v2.py",
+      "bytes": 72311,
+      "sha256": "fd1948d65cdd57cb851f651128639499f958a59f003707889bfb32e9f6f24e9b"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-fix-v2/preimages-manifest.json",
+      "bytes": 1195,
+      "sha256": "9f721d01bae160e8f4437d7e2fa563a196e3338ffd746788dd95f668359ee790"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-fix-v2/preimages/tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py",
+      "bytes": 53703,
+      "sha256": "356c2ba66452b2dc35731921363a188e6f8cb5c5f7c51c784ed10aa905c03041"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-fix-v2/preimages/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/SOURCE-INTERFACE-v1.md",
+      "bytes": 6380,
+      "sha256": "5b9b17e5e18cb01442104d4f562f5138dc87daab37891df8c68884a375bc3eeb"
+    }
+  ],
+  "fullPhysicalInputReadMATCH": 111,
+  "inventorySelfAdditionalRow": {
+    "path": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-fix-v2/next-source-input-inventory-v2.json",
+    "bytes": 100929,
+    "sha256": "a42aad596118292c31ecc1ac465c75f71d2118531c4d1324db7e78b31f48bfc3"
+  },
+  "projectedPhysicalBindingCount": 112,
+  "projectedLogicalContextCount": 164,
+  "projectedSnapshotBytes": 5722509,
+  "historyOriginalsFullReadMATCH": 53,
+  "decodedHistoryBytes": 1042748,
+  "encodedHistoryBytes": 1408405,
+  "historyContainerSHA256": "2caa72716cb1ac21e4c9163ce6ca2461851fc71ba0381f785a04515d5c18ce74",
+  "changedDefinitions": [
+    "physical_dir",
+    "read_source_freeze",
+    "report_fresh",
+    "admit",
+    "census",
+    "load_producer",
+    "run_case",
+    "campaign"
+  ],
+  "addedDefinitions": [
+    "retain_unknown",
+    "context_authority",
+    "shallow_ascii_json",
+    "read_history_container",
+    "CheckedProducerLoader"
+  ],
+  "HEAD": "726a3aefcae830f605de438cd13192cc6330414e",
+  "indexEmpty": true,
+  "rootStaticFinding": "No additional definite blocker established by this bounded static read; fresh full independent SOURCE reviews required",
+  "sourceFreezeManifest": "NOT_CREATED",
+  "sourceApproval": false,
+  "formalThreeCases": "NOT_RUN",
+  "helpers24": "DONE_NO_RERUN",
+  "authorUsageLimitErrorPreserved": true,
+  "liveUsage": {
+    "ordinaryUsageAllowed": true,
+    "primaryUsedPercent": 3,
+    "secondaryUsedPercent": 96,
+    "credits": 0,
+    "resetCredits": 0
+  },
+  "next": "Prepare exact full SOURCE-v2 freeze separately; fresh full CODE/Python/JSAPI reviews only after current immutable packet exists. No authored import/compile/tests/helpers/profile/producer/guard/attempt/engine invoked."
+}

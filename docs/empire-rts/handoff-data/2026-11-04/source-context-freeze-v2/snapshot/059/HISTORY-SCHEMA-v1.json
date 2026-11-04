@@ -1,0 +1,116 @@
+{
+  "title": "History full bytes v1 proposed strict schema; semantic bounds in contract also mandatory",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "containerId",
+    "entries"
+  ],
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "containerId": {
+      "const": "t17-required-fault-controls-history-v1"
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 53,
+      "maxItems": 53,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "bytes",
+          "sha256",
+          "bodyBase64"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "enum": [
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/author-pre-freeze-finding-v1.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/author-source-checkpoint-v1.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/author-source-checkpoint-v2.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/before-inert-loader-fix-v1/manifest.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/before-inert-loader-fix-v1/tools/epoch-rts/test-t17-save-five-mod-required-fault-controls-helpers.py",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/before-inert-loader-fix-v1/tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/before-inert-loader-fix-v1/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/HELPER-PLAN-v1.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/before-inert-loader-fix-v1/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/SOURCE-INTERFACE-v1.md",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/before-inert-loader-fix-v1/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/author-source-checkpoint-v1.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/helpers-v1-outer-tool-result.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/helpers-v1-root-readback.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/helpers-v1.stderr.raw",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/helpers-v1.stdout.raw",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/inert-loader-fix-v1/FIX-NOTE-v1.md",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/inert-loader-fix-v1/importlib-source-context.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/inert-static-code-review-v1.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/inert-static-code-review-v1.md",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/inert-static-code-review-v2.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/inert-static-code-review-v2.md",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-helpers-v1-run.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-helpers-v1.stderr.raw",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-helpers-v1.stdout.raw",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/author-checkpoint-v1.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/author-diagnostic-tail-finding-v1.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/controller-diff-v1.patch",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/preimages-manifest.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/preimages/tools/epoch-rts/test-t17-save-five-mod-required-fault-controls-helpers.py",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/preimages/tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/preimages/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/HELPER-PLAN-v1.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/preimages/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/SOURCE-INTERFACE-v1.md",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/preimages/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/author-pre-freeze-finding-v1.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/source/controller-source-v1.py",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/tail-fix-v1/author-tail-checkpoint-v1.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/tail-fix-v1/controller-tail-diff-v1.patch",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/tail-fix-v1/preimages-manifest.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/tail-fix-v1/preimages/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/author-pre-freeze-finding-v1.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/tail-fix-v1/preimages/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/LATE-HELPER-PLAN-v1.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/tail-fix-v1/preimages/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/author-diagnostic-tail-finding-v1.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/tail-fix-v1/preimages/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-fix-v1/late-ledger-memory-helpers-v1.py",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-limited-code-review-v1/review.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-limited-code-review-v1/review.md",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-ledger-root-inert-admission-v1.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/root-inert-helper-admission-v1.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-context-freeze-v1/manifest.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-CODE-v1.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-CODE-v1.md",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-JSAPI-v1.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-JSAPI-v1.md",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-preliminary-finding-v1.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-supplement-v1.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-supplement-v1.md",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-v1.json",
+              "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-v1.md"
+            ],
+            "maxLength": 1024
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 262144
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "bodyBase64": {
+            "type": "string",
+            "maxLength": 349528,
+            "pattern": "^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$"
+          }
+        }
+      }
+    }
+  },
+  "semanticRequirements": [
+    "Exact inventory53 path/bytes/SHA one-to-one; no duplicates, UTF8 absolute-path byte sort",
+    "Encoded input<=2097152, decodedaggregate<=1048576, each<=262144, hardentries<=64, JSONdepth<=4",
+    "Strict duplicate-key rejection at every object, reject booleans for integer schema/bytes, no NaN/Infinity/BOM/trailingbytes",
+    "Canonical compactASCII JSON fixed key order schema,containerId,entries and rowpath,bytes,sha256,bodyBase64; compare canonicalbytes to input",
+    "Strict validatedbase64 with canonical re-encode equality; decodedlength/SHA matchinventory andimmutableoriginalfullbytes",
+    "No decode-to-host/extraction/import/evaluation/execution; no native/fullhost approval from validation"
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "purpose": "Closeout of one authorized fixed preservation bridge, not a retry of original bridge",
+  "createdUTC": "2026-10-28T15:31:43.742721+00:00",
+  "status": "DONE_BOUNDED_TWO_FIXED_SOURCE_MODEL_CASES_ONLY",
+  "scope": "SOURCE_MODEL_CONFIG_ADAPTED",
+  "sourceClosure": false,
+  "native": false,
+  "sourceFreezeSHA256": "38b45c79f05a93d340319c2e55bd0317898c74473d676e093f185d73a0a62557",
+  "harnessFreezeSHA256": "78526322338ecac7d2f717a932e72bccd7dbefbdac28e9fc9ad1823d04fc6f7e",
+  "capsule": {
+    "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/execution-preparation-v1/capsule-v1.json",
+    "bytes": 179897,
+    "sha256": "85b406b13d7290de2ba619386d5a1e7a5b30c8448b46acbdc620e16014b4227e"
+  },
+  "rootPostrun": {
+    "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/execution-preparation-v1/root-postrun-readback-v1.json",
+    "bytes": 206632,
+    "sha256": "b46acf321d3d4aa1f2d37a9dc63fc82120441e2737a010890ded0e82e88383d8"
+  },
+  "independentAudits": [
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/execution-preparation-v1/postrun-independent-audit-v1.json",
+      "bytes": 659579,
+      "sha256": "ccbaf0e76682ea90ee93baff39369668956a1b46bd5b52d244817185cf71bcf6"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/execution-preparation-v1/postrun-independent-audit-supplement-v1.json",
+      "bytes": 13167,
+      "sha256": "e72bd0d16d35ac5c71d18a1f3b372e19c5687b6070e181b52da6959a1e9a3eab"
+    }
+  ],
+  "outerLaunch": {
+    "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/execution-preparation-v1/outer-launch-result-v1.json",
+    "bytes": 870,
+    "sha256": "7b62daa4dc0fbbb6bbdbc0ba891ef3ced1745984835f7e60ef17cd76602235d7"
+  },
+  "result": {
+    "scope": "SOURCE_MODEL_CONFIG_ADAPTED",
+    "case1": "PASS_BOUNDED_SOURCE_MODEL",
+    "case2": "PASS_BOUNDED_SOURCE_MODEL",
+    "sourceClosure": false,
+    "native": false,
+    "open": [
+      "independent Python OS wait/reap",
+      "independent directional pipe bytes",
+      "fullhost process tree/FD closure",
+      "full producer matrix",
+      "large/sparse ZIP64",
+      "actual64MiB/8MiB boundary/RSS",
+      "official archive/native/GUI/save/network"
+    ],
+    "retry": 0,
+    "invocations": {
+      "case1": {
+        "attempted": true,
+        "spawned": true,
+        "pid": 76586
+      },
+      "case2": {
+        "attempted": true,
+        "spawned": true,
+        "pid": 76592
+      }
+    },
+    "status": "TWO_FIXED_PRESERVATION_REGRESSION_CASES_PASS",
+    "pythonChildClose": "SOURCE_COMPATIBLE_INFERENCE_FROM_FROZEN_NODE_SUCCESS_PATH",
+    "supervisorWriteFaults": []
+  },
+  "attempt": "CONSUMED_ONCE_NO_RETRY",
+  "case1": "PASS_BOUNDED_SOURCE_MODEL",
+  "case2": "PASS_BOUNDED_SOURCE_MODEL_COLLISION_NEGATIVE",
+  "invocations": 2,
+  "retry": 0,
+  "seed": false,
+  "oracleAudit": {
+    "layerEntries": 13,
+    "selected": 5,
+    "modMetadataBodies": 5,
+    "literalBodyCopies": 23,
+    "producerFiles": 33,
+    "artifactHashes": 28,
+    "completedHashes": 4,
+    "emptyBody": true,
+    "case2Sentinel": "MATCH"
+  },
+  "raw": {
+    "case1OuterStdoutBytes": 618,
+    "case2OuterStdoutBytes": 165,
+    "outerStderrBytes": 0,
+    "producerInputBytes": 2367,
+    "producerOutputBytes": 13848,
+    "diagnosticsBytes": 0,
+    "producerWholeFileRawSeal": "NOT_CLAIMED; independent retained-artifact preservation hashes are not independent pipe equality"
+  },
+  "coverage": "PARTIAL_R07_TINY_BRIDGE_COMPLETE_ONLY",
+  "open": [
+    "independent Python OS wait/reap",
+    "independent directional pipe bytes",
+    "fullhost process tree/FD closure",
+    "full producer matrix",
+    "large/sparse ZIP64",
+    "actual64MiB/8MiB boundary/RSS",
+    "official archive/native/GUI/save/network"
+  ],
+  "originalBridge": "f0b701 FAIL_TOOLING_SOURCE_TYPE retained; original collision NOT_RUN; no original attempt rerun",
+  "originalT14": "PARTIAL; SQLitecause Insufficient data",
+  "originalNativeFailures": "ownerGUI42/protocol42/K344/GUI272/T17445 FAIL and seed7STOP retained",
+  "executionTiming": "Outer tool wall_time0.375892667 and supervisor last event0.489193083 have distinct clock/scope; both retained literally, no shared-origin assertion. Exact independent launchwall timestamp unavailable. Gate actual read accepted current fresh reports before namespace creation.",
+  "quota": {
+    "CODEPostrunAgent": "usage-limit errored after complete audit+supplement files; retained; no repeat audit",
+    "PythonCoverageAgent": "usage-limit errored with no finalcoverage files; pending same task",
+    "latestHeartbeat": "2026-10-28T15:30:22.017Z",
+    "latestLiveOrdinaryUsageAllowed": true,
+    "primaryUsedPercent": 0,
+    "secondaryUsedPercent": 16,
+    "credits": 0,
+    "resetCredits": 0,
+    "action": "same-settings continuation only; no paid/reset/modelchange"
+  },
+  "next": "Finish read-only mandatory coverage reconciliation, then concrete bounded coverage contract + complete independent DESIGN reviews before new implementation/tests; no rerun of these consumed cases. Official/native remain OPEN.",
+  "evidenceSealPath": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/execution-preparation-v1/bounded-runtime-evidence-seal-v1.json"
+}

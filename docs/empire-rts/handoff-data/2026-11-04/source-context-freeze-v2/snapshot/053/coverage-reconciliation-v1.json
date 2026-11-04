@@ -1,0 +1,1769 @@
+{
+  "schema": 1,
+  "createdUTC": "2026-10-28T15:34:40.444621+00:00",
+  "purpose": "Read-only current required-coverage reconciliation after accepted narrow tiny preservation bridge; no implementation/tests/runtime execution",
+  "status": "PARTIAL_REQUIRED_COVERAGE_OPEN_OFFICIAL_NOT_AUTHORIZED",
+  "currentCoreFreeze": "38b45c79f05a93d340319c2e55bd0317898c74473d676e093f185d73a0a62557",
+  "currentHarnessFreeze": "78526322338ecac7d2f717a932e72bccd7dbefbdac28e9fc9ad1823d04fc6f7e",
+  "currentInputs": [
+    {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+      "bytes": 52819,
+      "sha256": "5320b54f890413668046c4c8e2edf2d96ce8509b9d1b05296064f7bf35d036d3"
+    },
+    {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+      "bytes": 18136,
+      "sha256": "efae7d0fb9c2f716e8d9a32c294b56abe10c83689de02f4a5e1a25d61fefc748"
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-five-mod-capture.py",
+      "bytes": 53952,
+      "sha256": "d687c19c9be59ba4e241d0d6fc4d0b331cb7ec3555f2267b4fa125e56bdb5022"
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs",
+      "bytes": 21653,
+      "sha256": "e7100dd52b755cc7dedefa07624520dbacdd41ccf8e20428160ec2c588f2c3b1"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/manifest.json",
+      "bytes": 140780,
+      "sha256": "38b45c79f05a93d340319c2e55bd0317898c74473d676e093f185d73a0a62557"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/python-source-review-v1.json",
+      "bytes": 204076,
+      "sha256": "3293b781007111b823b8368c5bf513081bcd980256a7b05453e4a32f5f95fb26"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/code-source-review-v1.json",
+      "bytes": 174759,
+      "sha256": "6e6e33cddeb7ce280a4790cc393be72b4e4ddf2c1142cb86e5de0853b1210ca9"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/js-api-source-review-v1.json",
+      "bytes": 153976,
+      "sha256": "fb00c18cf5bd0fe3be313edc6f7303d00cf8c5b3ce98de814bae46b7bd7cb9cd"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/completion-source-review-only.json",
+      "bytes": 2275,
+      "sha256": "486950895d0de41041cdba7e7d0c48b58419bf1d45ceb8936124c5563ceeada0"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/python-review-evidence-v1/runs.json",
+      "bytes": 786,
+      "sha256": "ed7b8edac854a695d8cffc565a70aef24940af9e9b10904bd516d9bb4faf87fa"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/python-review-evidence-v1/normal-stderr.log",
+      "bytes": 5171,
+      "sha256": "7f1444f183d7a15e771a93c912840e51305cf5e4ad7f97a20caae8c0c09c2452"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/python-review-evidence-v1/optimized-stderr.log",
+      "bytes": 5171,
+      "sha256": "87ab495994b941a62d8490fcd7a42d0f41df936cb9f80c7fccf9f1e5dd2605a8"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+      "bytes": 49905,
+      "sha256": "4a0d526d2d37afb5a2af3132511641e02e287757620eddf39956d29f59abb8a9"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/coverage.json",
+      "bytes": 2135,
+      "sha256": "57ed904cd36534daa8dd5c22a1872460ed26f06ac696a00ee48e6edd82b2700d"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/TEST-PLAN.json",
+      "bytes": 4526,
+      "sha256": "48619d53e653717d3af835c5026b5249d3e1079818ea9a595e8c971dc6d2d842"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/LIMITS.json",
+      "bytes": 723,
+      "sha256": "801ff553f5af6bf34e12037a90af1dd41aea5888f8e52b0cc880116fb6311446"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/AMENDMENT.md",
+      "bytes": 9631,
+      "sha256": "c48289e3d2bc1db05e1d0dadd7c25b7ac28a779a2df5202fb62a6c49a329c48f"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/AMENDMENT.md",
+      "bytes": 5594,
+      "sha256": "22d2c40d26eb0dbb64186347bc9f4bc1e44c87ed01bcd05dc7c4814f0a24c9a8"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/CONTRACT-v1.md",
+      "bytes": 14295,
+      "sha256": "97845716ecc42518ef68addb749c63173d3d68317db252b6ddd0aac4a4a6f8ce"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/CONTRACT-v5.md",
+      "bytes": 8926,
+      "sha256": "41f52fa6dea5053377b6f831e1ae09bd6325bd9a947d3b6b8a1138c042a9e5e5"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/manifest.json",
+      "bytes": 347435,
+      "sha256": "78526322338ecac7d2f717a932e72bccd7dbefbdac28e9fc9ad1823d04fc6f7e"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/completion-source-review-only-v5.json",
+      "bytes": 2587,
+      "sha256": "16792262b63258c9311c000753ad77651826d7c04d869e488240cdd299b0108b"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/execution-preparation-v1/outer-launch-result-v1.json",
+      "bytes": 870,
+      "sha256": "7b62daa4dc0fbbb6bbdbc0ba891ef3ced1745984835f7e60ef17cd76602235d7"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/execution-preparation-v1/root-postrun-readback-v1.json",
+      "bytes": 206632,
+      "sha256": "b46acf321d3d4aa1f2d37a9dc63fc82120441e2737a010890ded0e82e88383d8"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/execution-preparation-v1/postrun-independent-audit-v1.json",
+      "bytes": 659579,
+      "sha256": "ccbaf0e76682ea90ee93baff39369668956a1b46bd5b52d244817185cf71bcf6"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/execution-preparation-v1/postrun-independent-audit-supplement-v1.json",
+      "bytes": 13167,
+      "sha256": "e72bd0d16d35ac5c71d18a1f3b372e19c5687b6070e181b52da6959a1e9a3eab"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/preservation-regression-v1/result.json",
+      "bytes": 679,
+      "sha256": "7d2b619e7fc3670c53fac1ace6e807eba30b2f5e205a53a790e778003161dbe0"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/preservation-regression-v1/case1.lifecycle.json",
+      "bytes": 1480,
+      "sha256": "81c6967cf6872f52b98f83e4f57a2ba032c273e4f504abc3a7e59c08180ae418"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/preservation-regression-v1/case2.lifecycle.json",
+      "bytes": 1479,
+      "sha256": "db7ced3f77dd4528f4d1d6fc346b136fb7cc9354ba102518d98bd2f9b55c9b3d"
+    }
+  ],
+  "existingEvidence": {
+    "python": "68 normal+68-O+memorycompile PASS retained; current test definitions68 independently enumerated by ast only; not imported/run here. Full54base/14schema/P01-P09/current SourceFix groups read from latest matrix+source, not old child-gap list.",
+    "node": "Current17 actualAcorn/protocol/VM groups, including fatal recursion repair/global16384 rows/ABORT and original13 affected controls. No Node executed here.",
+    "R07": "One new tiny real Node/Python fixed positive capture+collision has outerexit0 and both boundedcases PASS; CODE audit+supp ACCEPT_BOUNDED_SOURCE_MODEL_CONFIG_ADAPTED_ONLY with0 anomalies now read. This reconciliation relies on that audit rather than reauditing/rerunning.",
+    "R07facts": {
+      "zipBytes": 517,
+      "layerRows": 13,
+      "selected": 5,
+      "metadata": 5,
+      "literalCopies": 23,
+      "producerFiles": 33,
+      "artifactHashes": 28,
+      "completedHashes": 4,
+      "directNodeExitCodes": [
+        0,
+        1
+      ],
+      "outerDrainComplete": [
+        true,
+        true
+      ],
+      "pythonWait": "NOT_INDEPENDENTLY_OBSERVED",
+      "directionalPipeEquality": "NOT_INDEPENDENTLY_VERIFIED",
+      "sourceClosure": false,
+      "native": false
+    }
+  },
+  "base54Reconciliation": [
+    {
+      "id": "R01.1",
+      "requirement": "Reproduce old CODE archive replacement logical counterexample with oldsource retained; new sameFD capture cannot label replacement B as authority A",
+      "historicalAuthorMatrixStatus": "HISTORICAL_RETAINED_NOT_RERUN",
+      "reconciledStatus": "HISTORICAL_RETAINED_NOT_RERUN",
+      "assessment": "Original oldCODE and JS attempt1 artifacts remain immutable; new held-FD physical controls do not rerun old tool.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 23,
+          "note": "test_archive_held_fd_replacement"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 6
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R01.2",
+      "requirement": "JS old attempt1 INVALID remains invalid; v2 intendedFAIL retained separately",
+      "historicalAuthorMatrixStatus": "HISTORICAL_RETAINED_NOT_RERUN",
+      "reconciledStatus": "HISTORICAL_RETAINED_NOT_RERUN",
+      "assessment": "Historical old attempts, not a new execution obligation.",
+      "evidence": [],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 17
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R02.1",
+      "requirement": "Real symlink parent negative nooutsidewrite",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "Real physical parent symlink; no case created through link.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 52,
+          "note": "test_output_exclusive_and_symlink_parent"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 26
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R02.2",
+      "requirement": "Existing output root",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "Exclusive root collision retains bytes.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 52,
+          "note": "test_output_exclusive_and_symlink_parent"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 37
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R02.3",
+      "requirement": "Two concurrent reservations exactlyonewinner",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "Two concurrent host threads, real mkdir; exactly one winner; no subprocess.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 347,
+          "note": "test_R02_concurrent_root_and_every_artifact_exclusive"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 48
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R02.4",
+      "requirement": "Concurrent existing inventory sentinel unchanged",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL_REAL_OS_CONCURRENT_HOST_THREADS",
+      "reconciledStatus": "COVERED_REAL_CONCURRENT_HOST_THREADS",
+      "assessment": "Current68 includes barrier-start two-writer existing inventory sentinel; historical sequential-coverage concern is resolved. No rerun needed.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 724,
+          "note": "test_FIX_actual_concurrent_existing_inventory_sentinel"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 59
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R02.5",
+      "requirement": "Every fixed artifact OEXCL check incl fault/manifest/completed/rawinitialopen",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "All14 fixed names incl new layer snapshot; same reserve/write path; raw initial reservation shares OEXCL.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 347,
+          "note": "test_R02_concurrent_root_and_every_artifact_exclusive"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 70
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R03.1",
+      "requirement": "Path replacement after fullSHA stillheldAbytes",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "Physical replacement reads original held FD.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 23,
+          "note": "test_archive_held_fd_replacement"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 81
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R03.2",
+      "requirement": "Path A→B→A",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "Physical rename A-B-A.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 363,
+          "note": "test_R03_ABA_forged_metadata_and_restore"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 92
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R03.3",
+      "requirement": "Inplace changedchunk mismatch before any Bbytes returned",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "Uncached modified byte rejected.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 27,
+          "note": "test_archive_uncached_inplace_rejects"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 103
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R03.4",
+      "requirement": "Samefstat forgedmetadata doesnotbypass chunkhash",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "Private forged fstat fixture; digest remains authority.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 363,
+          "note": "test_R03_ABA_forged_metadata_and_restore"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 114
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R03.5",
+      "requirement": "Chunk mutated then restored returns onlyauthorityA",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "Uncached mutation then restore returns A.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 363,
+          "note": "test_R03_ABA_forged_metadata_and_restore"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 125
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R03.6",
+      "requirement": "Cache immutableA after mutation allowed expressly",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "Original cached authority A remains immutable.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 33,
+          "note": "test_cache_is_immutable_authority"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 136
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R04.1",
+      "requirement": "short firstpass read",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "Injected short pread.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 39,
+          "note": "test_wrongsha_shortpread_and_exception"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 147
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R04.2",
+      "requirement": "truncate during firstpass",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "Physical truncate after first scan read.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 372,
+          "note": "test_R04_truncate_interrupt_and_no_path_bypass"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 158
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R04.3",
+      "requirement": "truncate later uncachedchunk",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "Physical uncached suffix truncate.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 372,
+          "note": "test_R04_truncate_interrupt_and_no_path_bypass"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 169
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R04.4",
+      "requirement": "pread exception/interrupt terminal",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "Injected InterruptedError converts terminal CaptureError.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 372,
+          "note": "test_R04_truncate_interrupt_and_no_path_bypass"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 180
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R04.5",
+      "requirement": "emptyEOF only atsize",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "EOF suffix and zero read.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 35,
+          "note": "test_seek_whence_eof_and_size_limit"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 191
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R04.6",
+      "requirement": "lastpartialchunk",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "Physical final partial chunk.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 31,
+          "note": "test_crosschunk_and_partial"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 202
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R04.7",
+      "requirement": "crosschunkread",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "Physical crosschunk.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 31,
+          "note": "test_crosschunk_and_partial"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 213
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R04.8",
+      "requirement": "readinto ifimplemented",
+      "historicalAuthorMatrixStatus": "NOT_APPLICABLE",
+      "reconciledStatus": "NOT_APPLICABLE",
+      "assessment": "No readinto implementation; zipfile uses read/seek/tell.",
+      "evidence": [],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 224
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R04.9",
+      "requirement": "seekallwhence valid andinvalid",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "All whence options plus invalid ranges.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 35,
+          "note": "test_seek_whence_eof_and_size_limit"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 233
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R04.10",
+      "requirement": "No rawfd/pathbypass spy",
+      "historicalAuthorMatrixStatus": "PARTIAL_LOCAL",
+      "reconciledStatus": "COVERED_LOCAL_SPY_AND_CURRENT_SOURCE_REVIEW",
+      "assessment": "Current source38 triple SOURCE reviews inspect authenticated reader/zip reader path and actual pread spies. No fullhost syscall attestation claimed; not a reason to rerun all R04.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 372,
+          "note": "test_R04_truncate_interrupt_and_no_path_bypass"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 275,
+          "note": "test_P07_live_body_retention_and_requests"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 597,
+          "note": "test_FIX_phaseA_internal_allocations"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 244
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R05.1",
+      "requirement": "Normal stored/deflated ZIP CRC",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "Real stored/deflated tiny ZIP and corrupted CRC.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 390,
+          "note": "test_R05_real_stored_deflated_crc_and_entry_gates"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 405,
+          "note": "test_R05_crc_corrupt_body_and_central_read_cap_model"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 257
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R05.2",
+      "requirement": "ZIP64 small archive",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "Actual force_zip64 small entry; not sparse large-offset ZIP64.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 44,
+          "note": "test_zip64_small_and_unsafe_names"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 269
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R05.3",
+      "requirement": "ZIP64 sparse >4GiB fixture with boundedchunkstream and explicit synthetic label",
+      "historicalAuthorMatrixStatus": "NOT_RUN",
+      "reconciledStatus": "OPEN_EXPLICIT_REQUIRED_NOT_RUN",
+      "assessment": "TEST-PLAN R05 explicitly requires sparse >4GiB ZIP64; small force_zip64 is insufficient. Requires a new bounded synthetic contract, not official archive mutation.",
+      "evidence": [],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 280
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R05.4",
+      "requirement": "Centraldirlimit before oversizedread",
+      "historicalAuthorMatrixStatus": "PARTIAL_MODEL",
+      "reconciledStatus": "COVERED_SCALED_REJECTION_ACTUAL64M_READ_OPEN",
+      "assessment": "CENTRAL_MAX=1 rejects read before allocation. Actual64MiB exact/oneover large central data is not measured. Choose explicit reviewed true-size/format plan; do not silently call model full physical proof.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 405,
+          "note": "test_R05_crc_corrupt_body_and_central_read_cap_model"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 289
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R05.5",
+      "requirement": "Duplicate names/pathtraversal/symlink/device/unsupportedmethod/zipbomb selected size limit",
+      "historicalAuthorMatrixStatus": "PARTIAL_LOCAL_MODEL",
+      "reconciledStatus": "PARTIAL_PHYSICAL_AND_METADATA_MODEL",
+      "assessment": "Physical NUL/duplicate plus path validators and ZipInfo symlink/device/method/advertised oversize. Complete actual malformed ZIP/decompression negative matrix not established; no giant zipbomb required to test rejection.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 118,
+          "note": "test_protocol_real_zip_nul_and_duplicate"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 44,
+          "note": "test_zip64_small_and_unsafe_names"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 390,
+          "note": "test_R05_real_stored_deflated_crc_and_entry_gates"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 300
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R06.1",
+      "requirement": "Loose source leaf/ancestor symlink",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "Physical loose leaf+ancestor symlinks.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 420,
+          "note": "test_R06_symlinks_enum_and_root_replacement"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 313
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R06.2",
+      "requirement": "Selected loosefile content changes",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "Actual loose bytes mutated; held snapshot stays captured; terminal rejects.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 271,
+          "note": "test_P06_original_mutation_never_substitutes"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 285,
+          "note": "test_P09_post_FINISH_terminal_source_change"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 324
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R06.3",
+      "requirement": "Source enum directory changes detected",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "Scandir-backed physical new entry after iterator creation; held directory identity changed; no instantaneous snapshot claim.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 472,
+          "note": "test_R06_directory_changed_during_enumeration"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 336
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R06.4",
+      "requirement": "No claim instantaneous multi-file snapshot",
+      "historicalAuthorMatrixStatus": "BOUNDARY_NOTE",
+      "reconciledStatus": "BOUNDARY_NOTE",
+      "assessment": "Retained checks do not claim atomic simultaneous multifile snapshot.",
+      "evidence": [],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 347
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R06.5",
+      "requirement": "root/parentrename-replacement persistent checkfail",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL",
+      "reconciledStatus": "PASS_LOCAL",
+      "assessment": "Persistent source root rename/replacement rejected through original anchors.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 420,
+          "note": "test_R06_symlinks_enum_and_root_replacement"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 356
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R06.6",
+      "requirement": "ephemeral malicioussameUID race labeled unsupported not fake zeroescape proof",
+      "historicalAuthorMatrixStatus": "UNSUPPORTED_BOUNDARY",
+      "reconciledStatus": "UNSUPPORTED_BOUNDARY",
+      "assessment": "Arbitrary ephemeral malicious sameUID race remains unsupported, no zeroescape claim.",
+      "evidence": [],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 367
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R07.1",
+      "requirement": "Real subprocess main integration captures selected sources and fixed3outputs",
+      "historicalAuthorMatrixStatus": "NOT_RUN_REAL_SUBPROCESS",
+      "reconciledStatus": "ACCEPTED_TINY_REAL_CONFIG_ADAPTED_BRIDGE",
+      "assessment": "New outerexit0 both fixedcases PASS with CODE independent postrun audit+supp ACCEPT_BOUNDED_SOURCE_MODEL_CONFIG_ADAPTED_ONLY. This is genuine Node→Python OS pipes with fixed tiny source snapshots; no rerun.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 439,
+          "note": "test_R07_local_import_finish_and_manifest"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 376
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R07.2",
+      "requirement": "Node doesnotopen archive/loosesource/output paths",
+      "historicalAuthorMatrixStatus": "NOT_RUN_INDEPENDENT_NODE_REVIEW",
+      "reconciledStatus": "COVERED_SOURCE_PLUS_VM_NOT_FULLHOST",
+      "assessment": "Current e710 source was independently reviewed; Node VM reads/spawn spy exists. Tiny bridge confirms normal path, not global proof no hidden filesystem access. Old matrix prose Node unchanged/not-reviewed is stale.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+          "line": 259,
+          "note": "VM no-FS spy; current Node source independently reviewed"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 387
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R07.3",
+      "requirement": "FINISH cannot supply filenames/expectedSHA/closure",
+      "historicalAuthorMatrixStatus": "PARTIAL_LOCAL",
+      "reconciledStatus": "COVERED_EXACT_SCHEMA_LOCAL_AND_VM",
+      "assessment": "Python unknown-field/correlation controls and actual Node protocol methods cover contract shape; tiny normal exchange adds integration but not every negative wire case.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 145,
+          "note": "test_protocol_depth_utf8_and_no_output_override"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 97,
+          "note": "test_protocol_finish_exact_null_correlations"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 396
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R07.4",
+      "requirement": "Digest/index/count/reordered/duplicate rows reject",
+      "historicalAuthorMatrixStatus": "PARTIAL_LOCAL",
+      "reconciledStatus": "COVERED_LOCAL_PROTOCOL_MODELS",
+      "assessment": "Current Python schema/correlation controls and Node wrong order/hash/key metadata controls; does not mean every malformed frame traversed real OS pipes.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 97,
+          "note": "test_protocol_finish_exact_null_correlations"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 509,
+          "note": "test_schema_every_nested_key_extra_and_wrongshape"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 408
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R07.5",
+      "requirement": "Sourcebodybase64 corruption reject",
+      "historicalAuthorMatrixStatus": "NOT_RUN_NODE_SIDE",
+      "reconciledStatus": "COVERED_NODE_PROTOCOL_METHOD_MODEL",
+      "assessment": "Current Node test100-110 mutates SOURCE base64/hash/metadata and rejects; old Python matrix NOT_RUN_NODE_SIDE is not current joint coverage. Real corrupted-pipe integration remains unmeasured.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+          "line": 100,
+          "note": "real ProtocolSession method, synthetic SOURCE frame"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 420
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R07.6",
+      "requirement": "DuplicateJSONkeys NaN invalidUTF8 frame malformed/outoforder/extra frame reject",
+      "historicalAuthorMatrixStatus": "PARTIAL_LOCAL",
+      "reconciledStatus": "COVERED_PYTHON_AND_NODE_LOCAL_MODELS",
+      "assessment": "Python strict/depth/extra/EOF and actual Node decoder/ProtocolSession negative controls exist. Normal real bridge is not negative runtime coverage.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 59,
+          "note": "test_json_duplicate_depth_bool_and_schema"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 145,
+          "note": "test_protocol_depth_utf8_and_no_output_override"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 185,
+          "note": "test_protocol_extra_buffer_and_eof"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 429
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R08.1",
+      "requirement": "StrictsourceUTF8 invalid rejects before AST; validBOM preserved",
+      "historicalAuthorMatrixStatus": "NOT_RUN_NODE_ACTUAL",
+      "reconciledStatus": "COVERED_ACTUAL_ACORN_UTF8_BOM",
+      "assessment": "Current Node17 includes actual pinned Acorn and strictDecode/BOM variants; old NOT_RUN_NODE_ACTUAL prose is obsolete for these groups.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 103,
+          "note": "test_protocol_finish_utf8_and_variant_exactness"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+          "line": 38
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 442
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R08.2",
+      "requirement": "Original7 ASTcontrols necessaryv2 regression only; oldsuite notrerun",
+      "historicalAuthorMatrixStatus": "NOT_RUN_NODE_ACTUAL",
+      "reconciledStatus": "COVERED_CURRENT_AFFECTED17_GROUPS",
+      "assessment": "Actual escaped/astral name/Unicode producer branches and affected original13+new4 retained; no old original suite rerun needed.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+          "line": 18
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+          "line": 123
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 453
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R08.3",
+      "requirement": "parseerrors distinctfromUTF8 errors",
+      "historicalAuthorMatrixStatus": "PARTIAL_SCHEMA_MODEL",
+      "reconciledStatus": "COVERED_ACTUAL_VARIANTS_PLUS_SCHEMA_MODELS",
+      "assessment": "Actual syntax/UTF8 distinction and fatal RangeError repair controls now exist, not merely hand-authored Python schema shapes.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 562,
+          "note": "test_schema_parse_utf8_metadata_variants"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+          "line": 38
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+          "line": 199
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 462
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R08.4",
+      "requirement": "fullcallback/alias/unknown forms retained unresolved",
+      "historicalAuthorMatrixStatus": "NOT_RUN_NODE_ACTUAL",
+      "reconciledStatus": "PARTIAL_ACTUAL_FORMS_SEMANTIC_CLOSURE_OPEN",
+      "assessment": "Nested aliases/assignments/direct literals have actual producer checks; hand-authored14 schema groups do not establish all producer forms or full40/writer/caller semantics.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+          "line": 47
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 473
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R08.5",
+      "requirement": "OriginalselectHighest exactsame candidate priority/shadowed facts on fixture",
+      "historicalAuthorMatrixStatus": "PARTIAL_LOCAL",
+      "reconciledStatus": "COVERED_FIXED_PRIORITY_FIXTURE_OLD_FULL_EQUIVALENCE_OPEN",
+      "assessment": "Tiny actual bridge matches independently frozen five-layer expected priority/shadows. Old selectHighest source9-12 and current Python603-614 preserve later-layer win/shadow chain; old localeCompare ordering is not a universal UTF8-order equality proof. No old suite/producer rerun and no full equivalence claim.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 224,
+          "note": "test_P01_all_layers_roundtrip"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 482
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R09.1",
+      "requirement": "Injected output shortwrite/fsync/permission/diskfull leavepartial nohealthycomplete",
+      "historicalAuthorMatrixStatus": "PARTIAL_LOCAL_INJECTED",
+      "reconciledStatus": "PARTIAL_INJECTED_EXPLICIT_PERMISSION_MISSING",
+      "assessment": "Actual tiny output partials under shortwrite/fsync/close/ENOSPC exist. Explicit permission EACCES negative remains absent in current68.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 325,
+          "note": "test_P08_short_fsync_close_enospc_and_final_readback"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 465,
+          "note": "test_P08_partial_layer_fault_retains_prior_and_raw"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 493
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R09.2",
+      "requirement": "faultwritefailure durableFaultfalse",
+      "historicalAuthorMatrixStatus": "PARTIAL_LOCAL",
+      "reconciledStatus": "OPEN_EXPLICIT_FAULT_FILE_WRITE_FAILURE",
+      "assessment": "durableFault=false and same raw/sent terminal plus final close fault are tested; actual fault.json write/reserve failure control is still missing.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 138,
+          "note": "test_protocol_raw_sent_fault_exact_after_close_unknown"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 505
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R09.3",
+      "requirement": "child crash/timeout/EOF/exit0withoutCOMPLETED/COMPLETEDnonzero UNKNOWN",
+      "historicalAuthorMatrixStatus": "PARTIAL_LOCAL",
+      "reconciledStatus": "COVERED_VM_FAILURE_BRANCHES_REAL_NEGATIVE_OS_OPEN",
+      "assessment": "Current Node VM child tests missingcomplete/nonzero/extra/truncated/badUTF8/spawn/stdin/timeout/reapunknown. New tiny bridge measures only healthy and collision Node lifecycles, not real crash/timeout/kill paths.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 185,
+          "note": "test_protocol_extra_buffer_and_eof"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 480,
+          "note": "test_R10_path_raw_deadline_edges_models"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+          "line": 272
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+          "line": 287
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 516
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R09.4",
+      "requirement": "reap/closefault no retry/delete",
+      "historicalAuthorMatrixStatus": "PARTIAL_LOCAL",
+      "reconciledStatus": "COVERED_FD_INJECTION_AND_VM_REAL_NEGATIVE_REAP_OPEN",
+      "assessment": "Close-once actual-FD injected tests and VM escalation exist; tiny direct Node poll+drain/reap healthy/collision accepted. No independent Python wait/fullhost or negative real kill/reap claim.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 175,
+          "note": "test_ledger_capture_close_unknown_all_once"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+          "line": 287
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 528
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R09.5",
+      "requirement": "stdoutfailaftercompleted retain disk-vs-callerunknown distinction",
+      "historicalAuthorMatrixStatus": "PASS_LOCAL_MODEL",
+      "reconciledStatus": "PASS_LOCAL_MODEL",
+      "assessment": "Python import/privatepatched FINISH; actual completed disk retained, stdout throws, result1 no second FAULT.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 444,
+          "note": "test_R09_stdout_after_completed_disk_caller_unknown"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 539
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R10.1",
+      "requirement": "All limits exactedge+oneover",
+      "historicalAuthorMatrixStatus": "PARTIAL_MODEL",
+      "reconciledStatus": "PARTIAL_SCALED_ALL_LIMITS_NOT_COMPLETE",
+      "assessment": "Perfile/selected/metadata/count/layer/raw/frame/schema/deadline models exist; real1024-byte path edge and Node16384 synthetic-row threshold exist. Physical4096/16384/250000,8MiB/64MiB,32MiB frame/256MiB raw/128MiB analyses/64MiB central all-limits exact matrix not established.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 236,
+          "note": "test_P03_selected_file_metadata_edges_model"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 303,
+          "note": "test_P03_selected_one_over_and_metadata_over_model"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 308,
+          "note": "test_P03_metadata_one_over_before_capture_model"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 452,
+          "note": "test_R10_count_and_layer_edges_model"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 455,
+          "note": "test_R10_count_oneover_before_body_model"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 459,
+          "note": "test_R10_layer_oneover_before_body_model"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 480,
+          "note": "test_R10_path_raw_deadline_edges_models"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 571,
+          "note": "test_schema_scaled_array_string_frame_limits_and_utf16"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 550
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R10.2",
+      "requirement": "boundedmemory noarchive readall (spyread sizes + measured context, not memory guarantee from onecache)",
+      "historicalAuthorMatrixStatus": "PARTIAL_MEASURED_INTERNAL_FRAME_INSTRUMENTATION",
+      "reconciledStatus": "PARTIAL_MEASURED_256K_INTERNALS_NO_RSS",
+      "assessment": "Current source+stdlib frame tracing observes zero whole256KiB body in phaseA, max visible object64KiB; authenticated reader multi4MiB controls exist. No archive-scale/8–64MiB/RSS/C-heap measurement.",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 597,
+          "note": "test_FIX_phaseA_internal_allocations"
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 275,
+          "note": "test_P07_live_body_retention_and_requests"
+        }
+      ],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 568
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R10.3",
+      "requirement": "Noengine/network/C++/commit/delete",
+      "historicalAuthorMatrixStatus": "EXECUTION_SCOPE_BOUNDARY",
+      "reconciledStatus": "EXECUTION_SCOPE_BOUNDARY",
+      "assessment": "No engine/network/C++/commit/delete used by this author; no synthetic upgrade of runtime.",
+      "evidence": [],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 580
+      },
+      "rerunOldSuiteRecommended": false
+    },
+    {
+      "id": "R10.4",
+      "requirement": "Full sourcefreeze/partnerbindings freshCODE+Python+JS review before realcandidatecapture",
+      "historicalAuthorMatrixStatus": "PENDING_ROOT_INDEPENDENT_REVIEWS",
+      "reconciledStatus": "COVERED_CURRENT_SOURCE_REVIEW_NOT_CAPTURE_AUTHORITY",
+      "assessment": "Core38/272 and harness785/511 have complete exact triple SOURCE approvals; current postrun audit accepted. Official run still needs its own exact current readback/target/resource contract/freshguard and explicit later call; bridge guard is consumed scope/time.",
+      "evidence": [],
+      "matrixCitation": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+        "line": 589
+      },
+      "rerunOldSuiteRecommended": false
+    }
+  ],
+  "schema14": {
+    "coverage": "Retained hand-authored exact schema/source-shape groups plus some actual pinnedAcorn producers; not all14 groups actual producer coverage",
+    "matrixRows": [
+      {
+        "id": "positiveGroups.1",
+        "requirement": "Actual NodeAcorn PARSED script/module retaining original vfs plus sixvectors; no field projection",
+        "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+        "tests": [
+          "test_schema_every_nested_key_extra_and_wrongshape",
+          "test_schema_every_tag_and_source_correlation",
+          "test_schema_parse_utf8_metadata_variants",
+          "test_schema_scaled_array_string_frame_limits_and_utf16"
+        ],
+        "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+      },
+      {
+        "id": "positiveGroups.2",
+        "requirement": "Actual script thenmodule parsefailure; real invalidUTF8; metadata null",
+        "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+        "tests": [
+          "test_schema_every_nested_key_extra_and_wrongshape",
+          "test_schema_every_tag_and_source_correlation",
+          "test_schema_parse_utf8_metadata_variants",
+          "test_schema_scaled_array_string_frame_limits_and_utf16"
+        ],
+        "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+      },
+      {
+        "id": "positiveGroups.3",
+        "requirement": "All nested variants from real parser: uninitializedalias/null, direct and alias writers, emptyliteralName, interpreted escaped lone surrogate literalName, every assignmentoperator and update/delete",
+        "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+        "tests": [
+          "test_schema_every_nested_key_extra_and_wrongshape",
+          "test_schema_every_tag_and_source_correlation",
+          "test_schema_parse_utf8_metadata_variants",
+          "test_schema_scaled_array_string_frame_limits_and_utf16"
+        ],
+        "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+      },
+      {
+        "id": "positiveGroups.4",
+        "requirement": "Function UTF16/BOM/astral/CRLF/CR/LF/U+2028/U+2029 correlations",
+        "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+        "tests": [
+          "test_schema_every_nested_key_extra_and_wrongshape",
+          "test_schema_every_tag_and_source_correlation",
+          "test_schema_parse_utf8_metadata_variants",
+          "test_schema_scaled_array_string_frame_limits_and_utf16"
+        ],
+        "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+      },
+      {
+        "id": "positiveGroups.5",
+        "requirement": "Preserve complete alias expansion multiplicity and traversalorder; source writers remain OPEN",
+        "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+        "tests": [
+          "test_schema_every_nested_key_extra_and_wrongshape",
+          "test_schema_every_tag_and_source_correlation",
+          "test_schema_parse_utf8_metadata_variants",
+          "test_schema_scaled_array_string_frame_limits_and_utf16"
+        ],
+        "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+      },
+      {
+        "id": "negativeGroups.1",
+        "requirement": "For each variant missingeachrequiredkey/extraunknownkey/wrongtype/nullwrong/arraywrong, including Python bool masquerading integer",
+        "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+        "tests": [
+          "test_schema_every_nested_key_extra_and_wrongshape",
+          "test_schema_every_tag_and_source_correlation",
+          "test_schema_parse_utf8_metadata_variants",
+          "test_schema_scaled_array_string_frame_limits_and_utf16"
+        ],
+        "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+      },
+      {
+        "id": "negativeGroups.2",
+        "requirement": "vfs/index/SHA/count/captureId mismatch; JSnull and nonJSnonnull",
+        "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+        "tests": [
+          "test_schema_every_nested_key_extra_and_wrongshape",
+          "test_schema_every_tag_and_source_correlation",
+          "test_schema_parse_utf8_metadata_variants",
+          "test_schema_scaled_array_string_frame_limits_and_utf16"
+        ],
+        "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+      },
+      {
+        "id": "negativeGroups.3",
+        "requirement": "PARSED missingmode/vectors/closure/errorfieldextra; parseerror missingerror/wrongclosure; utf8error errorfieldextra; validUTF8 mislabeledinvalid",
+        "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+        "tests": [
+          "test_schema_every_nested_key_extra_and_wrongshape",
+          "test_schema_every_tag_and_source_correlation",
+          "test_schema_parse_utf8_metadata_variants",
+          "test_schema_scaled_array_string_frame_limits_and_utf16"
+        ],
+        "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+      },
+      {
+        "id": "negativeGroups.4",
+        "requirement": "directwriter wrongnameindex/aliasfieldextra; aliaswriter directindexextra/methodsuffixwrong/calleewrong/targetwrong/missingaliasrow orcalltuple",
+        "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+        "tests": [
+          "test_schema_every_nested_key_extra_and_wrongshape",
+          "test_schema_every_tag_and_source_correlation",
+          "test_schema_parse_utf8_metadata_variants",
+          "test_schema_scaled_array_string_frame_limits_and_utf16"
+        ],
+        "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+      },
+      {
+        "id": "negativeGroups.5",
+        "requirement": "Assignment missingright; update/delete rightpresent/null; invalidoperator/topLevelkind; alias.value missing versus allowednull",
+        "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+        "tests": [
+          "test_schema_every_nested_key_extra_and_wrongshape",
+          "test_schema_every_tag_and_source_correlation",
+          "test_schema_parse_utf8_metadata_variants",
+          "test_schema_scaled_array_string_frame_limits_and_utf16"
+        ],
+        "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+      },
+      {
+        "id": "negativeGroups.6",
+        "requirement": "NaN/Infinity/duplicateJSONkeys/depth/vector/args/params/serializedframe/string limits; no truncation",
+        "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+        "tests": [
+          "test_schema_every_nested_key_extra_and_wrongshape",
+          "test_schema_every_tag_and_source_correlation",
+          "test_schema_parse_utf8_metadata_variants",
+          "test_schema_scaled_array_string_frame_limits_and_utf16"
+        ],
+        "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+      },
+      {
+        "id": "negativeGroups.7",
+        "requirement": "Function end<=start/bytevsUTF16offset/rangelinewrong/CRLFsplit/surrogatesplit",
+        "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+        "tests": [
+          "test_schema_every_nested_key_extra_and_wrongshape",
+          "test_schema_every_tag_and_source_correlation",
+          "test_schema_parse_utf8_metadata_variants",
+          "test_schema_scaled_array_string_frame_limits_and_utf16"
+        ],
+        "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+      },
+      {
+        "id": "negativeGroups.8",
+        "requirement": "Unexpected parser/recursion/internalthrow ABORT_NODE_ANALYSIS distinctfrom decoder failure",
+        "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+        "tests": [
+          "test_schema_every_nested_key_extra_and_wrongshape",
+          "test_schema_every_tag_and_source_correlation",
+          "test_schema_parse_utf8_metadata_variants",
+          "test_schema_scaled_array_string_frame_limits_and_utf16"
+        ],
+        "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+      },
+      {
+        "id": "negativeGroups.9",
+        "requirement": "Source semanticcallback wrong despite validschema remainsunproved; schema nevercertifiescalleeidentity",
+        "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+        "tests": [
+          "test_schema_every_nested_key_extra_and_wrongshape",
+          "test_schema_every_tag_and_source_correlation",
+          "test_schema_parse_utf8_metadata_variants",
+          "test_schema_scaled_array_string_frame_limits_and_utf16"
+        ],
+        "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+      }
+    ],
+    "testCitation": {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+      "line": 495
+    }
+  },
+  "preservationP01P09": {
+    "matrixRows": [
+      {
+        "id": "P01",
+        "red": "ERROR_NEW_API_NOT_IMPLEMENTED",
+        "final": "PASS_LOCAL_SYNTHETIC",
+        "boundary": "Tiny physical source/output files plus narrowly injected OS/protocol failures; P09 receives hand-authored FINISH."
+      },
+      {
+        "id": "P02",
+        "red": "ERROR_NEW_API_NOT_IMPLEMENTED",
+        "final": "PASS_LOCAL_SYNTHETIC",
+        "boundary": "Scaled boundary/privatepatch controls are models; no actual >64MiB or native proof."
+      },
+      {
+        "id": "P03",
+        "red": "ERROR_NEW_API_NOT_IMPLEMENTED",
+        "final": "PASS_LOCAL_SYNTHETIC",
+        "boundary": "Scaled boundary/privatepatch controls are models; no actual >64MiB or native proof."
+      },
+      {
+        "id": "P04",
+        "red": "ERROR_NEW_API_NOT_IMPLEMENTED",
+        "final": "PASS_LOCAL_SYNTHETIC",
+        "boundary": "Scaled boundary/privatepatch controls are models; no actual >64MiB or native proof."
+      },
+      {
+        "id": "P05",
+        "red": "ERROR_NEW_API_NOT_IMPLEMENTED",
+        "final": "PASS_LOCAL_SYNTHETIC",
+        "boundary": "Tiny physical source/output files plus narrowly injected OS/protocol failures; P09 receives hand-authored FINISH."
+      },
+      {
+        "id": "P06",
+        "red": "ERROR_NEW_API_NOT_IMPLEMENTED",
+        "final": "PASS_LOCAL_SYNTHETIC",
+        "boundary": "Tiny physical source/output files plus narrowly injected OS/protocol failures; P09 receives hand-authored FINISH."
+      },
+      {
+        "id": "P07",
+        "red": "ERROR_NEW_API_NOT_IMPLEMENTED",
+        "final": "PASS_LOCAL_SYNTHETIC",
+        "boundary": "Tiny physical source/output files plus narrowly injected OS/protocol failures; P09 receives hand-authored FINISH."
+      },
+      {
+        "id": "P08",
+        "red": "ERROR_NEW_API_NOT_IMPLEMENTED",
+        "final": "PASS_LOCAL_SYNTHETIC",
+        "boundary": "Tiny physical source/output files plus narrowly injected OS/protocol failures; P09 receives hand-authored FINISH."
+      },
+      {
+        "id": "P09",
+        "red": "PASS_RETAINED_PREEXISTING_TERMINAL_REGRESSION",
+        "final": "PASS_LOCAL_SYNTHETIC",
+        "boundary": "Tiny physical source/output files plus narrowly injected OS/protocol failures; P09 receives hand-authored FINISH."
+      }
+    ],
+    "currentSourceCitation": {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+      "line": 224
+    },
+    "P07Correction": {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+      "line": 597,
+      "note": "full internal source+stdlib Python frame tracing on256KiB; old wrapper-only proof is historical inadequate"
+    },
+    "P09Citation": {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+      "line": 285,
+      "note": "actual loose mutation afterCAPTURED; hand-authored validFINISH/local _run not realNode race"
+    }
+  },
+  "sourceFixControlsSummary": {
+    "constructor": [
+      "test_FIX_constructor_initial_fstat_fault_owned",
+      "test_FIX_constructor_initial_deadline_and_unknown_close"
+    ],
+    "traversalAndOwnership": [
+      "test_FIX_constructor_initial_fstat_fault_owned",
+      "test_FIX_constructor_initial_deadline_and_unknown_close",
+      "test_FIX_independent_candidate_traversal_budget",
+      "test_FIX_nested_traversal_edge_and_one_over",
+      "test_FIX_iterator_constructor_next_close_timeout",
+      "test_FIX_iterator_post_constructor_deadline_owned",
+      "test_FIX_actual_concurrent_existing_inventory_sentinel",
+      "test_FIX_global_candidate_vs_union_archive_noncandidates",
+      "test_FIX_iterator_path_overflow_and_special_type"
+    ],
+    "scope": "Tiny physical realFD+injected iterator faults+scaled counters, not physical16384/full hiddenFD proof"
+  },
+  "mandatoryAndPartialGaps": [
+    {
+      "id": "G1",
+      "requirement": "R05.3 sparse ZIP64 >4GiB",
+      "classification": "EXPLICIT_REQUIRED_UNPROVEN",
+      "evidence": [
+        {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/TEST-PLAN.json",
+          "line": 58
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 44,
+          "note": "small forcedZIP64 only"
+        },
+        {
+          "path": "tools/epoch-rts/t17-save-five-mod-capture.py",
+          "line": 149
+        },
+        {
+          "path": "tools/epoch-rts/t17-save-five-mod-capture.py",
+          "line": 203
+        }
+      ],
+      "minimumNext": "Freeze one synthetic sparse ZIP64 valid archive with at least one local header/central offset crossing4GiB, tiny STORED candidate and exact literal oracle. Real AuthenticatedReader first pass over full logical bytes, bounded pread and CRC/body read; retain logical size/allocated blocks/SHA/offsets/read-size+cache/memory context. Logical hole is still >4GiB of authenticated reads, not a cheap small archive. No official archive mutation/copy.",
+      "authorization": "New workload budget/free disk/RAM/deadline/physical sparse support+immutable source/context freeze and independent review before any creation/run; currently not authorized by this report."
+    },
+    {
+      "id": "G2",
+      "requirement": "R09.1 explicit permission and R09.2 fault.json write failure",
+      "classification": "EXPLICIT_REQUIRED_UNPROVEN_CHEAPEST_NEW_CONTROLS",
+      "evidence": [
+        {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/TEST-PLAN.json",
+          "line": 102
+        },
+        {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/TEST-PLAN.json",
+          "line": 103
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 325
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 138
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 465
+        }
+      ],
+      "minimumNext": "Exactly two new tiny private-fixture controls: F01 inject EACCES at actual producer-owned output reservation/write boundary after a retained prefix; F02 fail only fault.json reserve/write on an already failing same case. Assert first failure retained, no healthy completed, durableFault=false, raw terminal bytes match sent bytes when writable, preexisting evidence unchanged, cleanup once and UNKNOWN kept. Do not use root chmod assumptions or fill a disk. Label injected errno/hand-authored protocol as models, not real disk exhaustion or production child failures.",
+      "authorization": "Only design recommendation now; new tests/harness require separate bounded source/test ownership and review. No old cases rerun."
+    },
+    {
+      "id": "G3",
+      "requirement": "R10.1 incomplete all-limits and P02/P03/P04 true-size admission/memory effects",
+      "classification": "REQUIRED_LIMIT_BEHAVIOR_PARTIAL_MODELS_ACTUAL_SIZE_OPEN",
+      "evidence": [
+        {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/TEST-PLAN.json",
+          "line": 113
+        },
+        {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/AMENDMENT.md",
+          "line": 24
+        },
+        {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/AMENDMENT.md",
+          "line": 28
+        },
+        {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/AMENDMENT.md",
+          "line": 34
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 232
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 303
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 480
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 571
+        }
+      ],
+      "minimumNext": "First write an exact uncovered-limit ledger, separating model edge proof from physical boundary proof. Recommended bounded actual-size family: one file8388608 accepted vs8388609 rejected; selected total67108864 including selected mod.json accepted vs+1 rejected; archive/all-lower totals>67108864 with final-selected below limit accepted; metadata total8388608 edge/+1 with allfive mod.json. Keep each source within FILE_MAX except the one deliberately rejected. Freeze body table, expected preserved copies and output/disk-byte envelope before generating. Do not patch production limits for a claim of actual-sized acceptance. Then decide which remaining central/count/frame/raw/analysis boundaries require physical runs vs sufficient labelled models under an explicit contract.",
+      "qualification": "Amendment34 explicitly permits modest physical files or labelled mocked limits; physical16384/every huge byte limit is not automatically a separate mandatory stress run. R10 completeness is still not established; never silently promote scaled models into true-size measurements."
+    },
+    {
+      "id": "G4",
+      "requirement": "R10.2 bounded-allocation measured context",
+      "classification": "REQUIRED_INSTRUMENTATION_PARTLY_MET_LARGE_CONTEXT_OPEN",
+      "evidence": [
+        {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/TEST-PLAN.json",
+          "line": 114
+        },
+        {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/AMENDMENT.md",
+          "line": 28
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 597
+        },
+        {
+          "path": "tools/epoch-rts/t17-save-five-mod-capture.py",
+          "line": 177
+        }
+      ],
+      "minimumNext": "Measure context during the newly justified G1/G3 fixtures, not a separate old-suite rerun: archive reads/cache, phaseA live source+stdlib buffers, phaseB retained selected bodies and permitted copies, peak RSS/allocator/native buffering if available. State OS/version/units/sampling/child scope. 4MiB cache or64KiB Python object is not totalRSS. Predeclare a resource-stop bound for the test as a safety budget, not an invented production guarantee; no source-prescribed absolute Python RSS ceiling exists.",
+      "qualification": "No finite measurement proves all-host/fullarchive worst-case RSS; dont require unrelated fullhost/native telemetry or claim it closed."
+    },
+    {
+      "id": "G5",
+      "requirement": "R05.5/R07-R09 residual method models vs complete producer/OS failure matrix",
+      "classification": "PARTIAL_NEGATIVE_MODELS_NOT_ALL_REAL_RUNTIME",
+      "evidence": [
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+          "line": 399
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+          "line": 100
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+          "line": 272
+        },
+        {
+          "path": "tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+          "line": 287
+        },
+        {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/TEST-PLAN.json",
+          "line": 60
+        },
+        {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/TEST-PLAN.json",
+          "line": 104
+        }
+      ],
+      "minimumNext": "Retain existing model coverage; do not queue all old R02/R03/R04/R06 again. If root requires real-negative process acceptance before unattended official capture, separately freeze finite negative lifecycle fixtures for crash/EOF/exit0withoutCOMPLETED/COMPLETEDnonzero/timeout; explicitly distinguish synthetic child fixture from real unchanged producer. No need to retrofit a Python-descendant/fullhost supervisor into narrow R07. ZIP metadata gates can use tiny malformed real ZIP fixtures; no resource-unbounded zipbomb."
+    },
+    {
+      "id": "G6",
+      "requirement": "Official target/run-specific admission",
+      "classification": "MANDATORY_BEFORE_OFFICIAL_SEPARATE_SCOPE",
+      "evidence": [
+        {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SPEC.md",
+          "line": 40
+        },
+        {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/AMENDMENT.md",
+          "line": 26
+        },
+        {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/AMENDMENT.md",
+          "line": 25
+        },
+        {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/CONTRACT-v1.md",
+          "line": 12
+        }
+      ],
+      "minimumNext": "After agreed remaining coverage closes or a formally reviewed narrower acceptance decision, create a separate bounded official candidate capture contract: exact source/runtime/launcher/archive expectation and fixed exclusive output, originals/provenance in scope, actual budget/disk/RAM admission, cooperating namespace/owners/current locks and fresh independent guard, explicit later root launch. Reuse valid unchanged source approvals only for their exact bytes; never reuse expired tiny bridge guard or treat original FAIL as retryable. No archive copy/mutation or actual capture occurs in reconciliation.",
+      "qualification": "This is candidate-only data capture; full40/noProxy/native caller/clone/restore/consumer/GUI/save/network/fullhost are not silently converted into prerequisites or passes by this task."
+    }
+  ],
+  "smallestNextDependency": {
+    "action": "Prepare one finite REQUIRED-GAPS contract/source-review packet, beginning only with new F01 EACCES and F02 fault.json-writefailure tiny controls; in separate explicitly budgeted partitions specify sparse ZIP64 and actual-size/memory evidence before requesting execution. Do not immediately run official archive or redo R07.",
+    "why": "R02/R03/R04/R06 were already materially covered by current68; two missing R09 controls are cheapest explicit omissions. R05.3 remains explicit and heavy, R10 remains partial, so passing two controls alone still does not authorize official capture.",
+    "gate": "No code/run here. Any new helper/harness/source changes need exact frozen inputs and appropriate independent full review; core changes invalidate source approvals. New runtime workloads require concrete approved budgets/current readback/fresh guard/separate call.",
+    "boundedPlanningCeilings": "Proposal only: tiny F01/F02 <=1MiB payload each, exclusive fixed roots; sparse fixture logical4GiB+small<=8GiB/allocated-block cap declared before creation, tiny source entries, full logical scan accounted; G3 <=8MiB+1 per deliberate reject and selected64MiB+1, total all-layer/evidence envelope explicitly computed before creation. No fixed directory/attempt IDs or actual resource reservations created."
+  },
+  "doNotRequeue": [
+    "R02 physical symlink/existing/root concurrency/every-artifact OEXCL/current concurrent inventory sentinel",
+    "R03 heldFD/path replacement/ABA/forgedfstat/restore/cache",
+    "R04 short/truncate/interrupt/EOF/crosschunk/seek/local spies",
+    "R06 symlink/loose mutation/P09/enum change/persistent root replacement",
+    "current68/Node17/harness33/tiny R07 already completed tests",
+    "old original bridgeFAIL/oldDONE/nativeT14 suites"
+  ],
+  "boundaryDecisions": [
+    "Original TEST-PLAN requiredGroups still normative; preservation/enumeration amendments add not replace. Source approval does not mean full coverage.",
+    "Amendment34 and enumeration23 expressly permit labelled tiny/scaled controls: do not invent a requirement to physically stress every largest count/byte ceiling. Actual64MiB/8MiB/RSS is OPEN and needs a deliberate bounded acceptance plan if claimed.",
+    "R05.3 sparse>4GiB is explicit original required case, not covered by small force_zip64, and cannot be silently waived because official archive is3.5GB.",
+    "RSS obligation is live-retention/request-size instrumentation plus honest measured context, not an existing universal absolute RSS guarantee.",
+    "Fullhost/independent Python wait/directional pipe/full semantic producer/noProxy/full40/native caller/GUI/save/network remain OPEN but are not prerequisites of narrow accepted R07 per scope addendum; no expansion of oldT14.",
+    "Tiny bridge raw/artifact/sentinel observations do not claim producer wholefile rawseal or independent Python writer closure.",
+    "Current official preflight/runtime/source provenance/locks/freshguard are scope/time-bound and must be prepared afresh; no reuse of tiny run authorization."
+  ],
+  "executedThisReconciliation": "READ_ONLY filesystem text/hash/AST inspection and two exclusive report writes only; zero tests/imported source/runtime/Node/engine/officialarchive/copy/locks/attempt",
+  "native": false,
+  "sourceClosure": false,
+  "officialCaptureApproval": false,
+  "fullCoverageApproval": false
+}

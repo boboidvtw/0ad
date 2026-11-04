@@ -1,0 +1,134 @@
+{
+  "purpose": "Design specimens only. They illustrate variant structure, not actual parser observations or measured control PASS. Future tests must use actual parser and captured source correlation.",
+  "analysisVariants": [
+    {
+      "vfs": "simulation/helpers/Example.js",
+      "parseStatus": "PARSED",
+      "mode": "script",
+      "functions": [],
+      "calls": [],
+      "writerSites": [],
+      "aliases": [],
+      "assignments": [],
+      "fileTopLevelDeclarations": [],
+      "closure": "OPEN_REQUIRES_POSITIVE_SEMANTIC_CALLER_PROOF"
+    },
+    {
+      "vfs": "simulation/helpers/Example.js",
+      "parseStatus": "PARSED",
+      "mode": "module",
+      "functions": [],
+      "calls": [],
+      "writerSites": [],
+      "aliases": [],
+      "assignments": [],
+      "fileTopLevelDeclarations": [],
+      "closure": "OPEN_REQUIRES_POSITIVE_SEMANTIC_CALLER_PROOF"
+    },
+    {
+      "vfs": "simulation/helpers/Example.js",
+      "parseStatus": "BLOCK_PARSE_ERROR",
+      "error": "Unexpected token (1:0)",
+      "closure": "OPEN_PARSE_ERROR"
+    },
+    {
+      "vfs": "simulation/helpers/Example.js",
+      "parseStatus": "BLOCK_UTF8_ERROR",
+      "closure": "OPEN_INVALID_SOURCE_ENCODING"
+    },
+    null
+  ],
+  "rowVariants": {
+    "functionRow": {
+      "name": "f",
+      "line": 1,
+      "endLine": 1,
+      "params": [],
+      "start": 0,
+      "end": 14
+    },
+    "callRow": {
+      "callee": "x",
+      "args": [],
+      "line": 1,
+      "context": "(file)",
+      "kind": "CallExpression"
+    },
+    "directWriterRow": {
+      "callee": "Engine.RegisterGlobal",
+      "args": [
+        "\"X\"",
+        "x"
+      ],
+      "line": 1,
+      "context": "(file)",
+      "kind": "RegisterGlobal",
+      "literalName": "X",
+      "nameArgumentIndex": 0,
+      "target": "Engine"
+    },
+    "directWriterEmptyLiteralName": {
+      "callee": "Engine.RegisterGlobal",
+      "args": [
+        "\"\"",
+        "x"
+      ],
+      "line": 1,
+      "context": "(file)",
+      "kind": "RegisterGlobal",
+      "literalName": "",
+      "nameArgumentIndex": 0,
+      "target": "Engine"
+    },
+    "aliasWriterRow": {
+      "callee": "assign",
+      "args": [
+        "o",
+        "a"
+      ],
+      "line": 1,
+      "context": "(file)",
+      "kind": "assign",
+      "alias": "assign",
+      "aliasSource": "Object.assign",
+      "aliasDeclarationLine": 1,
+      "literalName": null,
+      "target": "o"
+    },
+    "aliasRow": {
+      "name": "uninit",
+      "value": null,
+      "line": 1,
+      "context": "(file)"
+    },
+    "assignmentRow": {
+      "kind": "+=",
+      "left": "n",
+      "right": "a",
+      "line": 1,
+      "context": "(file)"
+    },
+    "updateRow": {
+      "kind": "++",
+      "left": "n",
+      "line": 1,
+      "context": "(file)"
+    },
+    "deleteRow": {
+      "kind": "delete",
+      "left": "o[k]",
+      "line": 1,
+      "context": "(file)"
+    },
+    "topLevelVariable": {
+      "kind": "variable",
+      "name": "uninit",
+      "line": 1
+    },
+    "topLevelFunction": {
+      "kind": "function",
+      "name": "f",
+      "line": 1
+    }
+  }
+}

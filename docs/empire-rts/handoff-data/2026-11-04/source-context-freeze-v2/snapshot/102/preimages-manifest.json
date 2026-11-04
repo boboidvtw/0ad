@@ -1,0 +1,19 @@
+{
+  "purpose": "Source-only three approved defect repairs and approved exact history context implementation; no execution",
+  "dateAsiaTaipei": "2026-10-30",
+  "contextDesignCompletionSHA256": "ae68305d3cc86c6464e4ac868aa3f170fecafe9b0f452cf6a3ba1be95fae64c8",
+  "bindings": [
+    {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-fix-v2/preimages/tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py",
+      "bytes": 53703,
+      "sha256": "356c2ba66452b2dc35731921363a188e6f8cb5c5f7c51c784ed10aa905c03041"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/SOURCE-INTERFACE-v1.md",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-fix-v2/preimages/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/SOURCE-INTERFACE-v1.md",
+      "bytes": 6380,
+      "sha256": "5b9b17e5e18cb01442104d4f562f5138dc87daab37891df8c68884a375bc3eeb"
+    }
+  ]
+}

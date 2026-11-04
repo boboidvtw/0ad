@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "normative": true,
+  "relations": [
+    {
+      "id": "F1",
+      "rule": "FINISH.captureId equals private CAPTURED.captureId. analyses length equals selected count. analyses[i].index equals i exactly; each index once, same SHA256 as Python-held selected bytes."
+    },
+    {
+      "id": "F2",
+      "rule": "selected[i].vfs ends with exact .js => nonnull analysis; every other selected path => null. Every nonnull analysis.vfs equals selected[i].vfs exactly without normalization. VFS UTF8-byte limit1024 applies in addition to schema string cap."
+    },
+    {
+      "id": "F3",
+      "rule": "Python independently strict-decodes captured UTF8 preserving BOM. InvalidUTF8 allows only utf8Error. ValidUTF8 prohibits utf8Error; PARSED or parseError is Node parser outcome. Node scriptfail thenmodulefail yields parseError using second error.message. Unexpected parser/stack/internal error yields ABORT NODE_ANALYSIS, never fake UTF8/parseerror."
+    },
+    {
+      "id": "F4",
+      "rule": "JSON integer values exclude Python bool, fractions, NaN/Infinity. Numeric negativezero parses as numeric0; lexical distinction is not source evidence. Every number is finite and safe <=2^53-1, then tighter schema bounds. Duplicate JSON keys invalid at every nesting. Protocol strictUTF8 applies to frame bytes; escaped JS surrogate codeunits in literalName/error are retained losslessly, not normalized or falsely invalidated as UTF8."
+    },
+    {
+      "id": "S1",
+      "rule": "U is JavaScript UTF16 codeunit length of independently decoded source: astral scalar2, BMP1, BOM retained. Function 0<=start<end<=U; line<=endLine<=sourceLineCount. line equals lineAt(start), endLine equals lineAt(end); Acorn end is exclusive. Do not substitute UTF8 byte or Unicode codepoint offset."
+    },
+    {
+      "id": "S2",
+      "rule": "lineAt scans CRLF as one break; isolatedCR/LF/U+2028/U+2029 each one. Function start/end cannot split surrogatepairs or CRLF. At valid boundary beginning nextline, lineAt is new line. Other row line and aliasDeclarationLine range1..sourceLineCount; no invented column."
+    },
+    {
+      "id": "S3",
+      "rule": "Source-expression strings params/callee/args/aliases.name/aliases.value/assignment.left/right/writer.target/writer.alias and topLevel.name ONLY WHEN kind=variable are exact full source slices, nonempty when nonnull, <=U UTF16 units. topLevel.name WHEN kind=function is Acorn decoded n.id.name, not source slice. functions.name and every context follow NAME-PRODUCERS.json exact original branch semantics; both bounded by U+4096 and schema MAX. Decoded topLevel function labels bounded <=U; decoded label is not identity or raw-expression assertion. literalName permits empty/escaped lone JS surrogate and <=U UTF16 units; error max65536. No truncation/normalization."
+    },
+    {
+      "id": "S4",
+      "rule": "Each top vector max65536, params/args max4096. Total nested row objects per analysis max262144. Count object rows in six vectors plus all writer/call/function rows once per occurrence; primitive params/args have separate4096 limits. Frame32MiB/rawtotal/selectedtotal/analysispayloadtotal/depth caps apply too. Overflow must BLOCK, never sample/drop."
+    },
+    {
+      "id": "W1",
+      "rule": "Direct writer nameArgumentIndex is1 iff kind RegisterComponentType/RegisterSystemComponentType/ReRegisterComponentType, else0. literalName is string (including empty) iff named argument Acorn node is string Literal, otherwise null. target is source member-callee object expression else null. Python validates shape/range but cannot infer Acorn-node semantics from spelling."
+    },
+    {
+      "id": "W2",
+      "rule": "Alias writer aliasSource suffix equals kind and prefix Object/Reflect; alias equals callee; literalName alwaysnull; target equals args[0] when nonempty else null. No nameArgumentIndex. aliasDeclarationLine must match retained aliases row name=alias,value=aliasSource,line=same. Preserve duplicate expansions and order rather than dedup."
+    },
+    {
+      "id": "W3",
+      "rule": "Each direct/alias writer tuple callee/args/line/context must occur in calls with kind CallExpression or NewExpression. Writer.kind replaces calls.kind. Same call may have both direct-recognized and alias-expanded rows; preserve both. Syntactic consistency never proves actual callee/alias identity."
+    },
+    {
+      "id": "W4",
+      "rule": "Assignmentoperator variant requires right; update/delete must OMIT right (not null). aliases.value always required and null allowed for missing initializer. topLevel.kind variable/function only. Exact keys all required per tagged variant, no implicit optional fields; traversal order/multiplicity preserved."
+    },
+    {
+      "id": "A1",
+      "rule": "Python validates exact shape/budget/capture correlation, not independent JavaScript AST semantics. Semantic expression/context/line claims come from locked Node+Acorn source operating on held bytes; shape/offset consistency is not execution attestation or allwriter proof. Source-lock/runtime/unknown exports remain OPEN and before-probe BLOCK. Name raw/decoded/synthetic branches are producer semantics and Node actual-Acorn regression obligations, not a demand that Python invent a JavaScript identifier decoder. Python validates exact shape, unit/range and capture correlations; it does not certify decoded-name semantics from label spelling."
+    }
+  ],
+  "faultClassification": {
+    "schema": "PROTOCOL_SCHEMA",
+    "limit": "PROTOCOL_LIMIT",
+    "indexSHAcaptureIdvfsMismatch": "PROTOCOL_DIGEST",
+    "unexpectedAnalyzerFailure": "ABORT_NODE_ANALYSIS"
+  },
+  "sourceClosure": false,
+  "native": false,
+  "normativeNameProducer": "NAME-PRODUCERS.json"
+}

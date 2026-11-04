@@ -1,0 +1,1324 @@
+{
+  "schema": 1,
+  "status": "PARTIAL_FULL_SOURCE_GATES_NOT_APPROVED",
+  "baseCases": [
+    {
+      "id": "R01.1",
+      "owner": "Python+Node",
+      "requirement": "Reproduce old CODE archive replacement logical counterexample with oldsource retained; new sameFD capture cannot label replacement B as authority A",
+      "status": "HISTORICAL_RETAINED_NOT_RERUN",
+      "tests": [
+        "test_archive_held_fd_replacement"
+      ],
+      "boundary": "Original oldCODE and JS attempt1 artifacts remain immutable; new held-FD physical controls do not rerun old tool.",
+      "historicalStatus": "HISTORICAL_RETAINED_NOT_RERUN"
+    },
+    {
+      "id": "R01.2",
+      "owner": "Python+Node",
+      "requirement": "JS old attempt1 INVALID remains invalid; v2 intendedFAIL retained separately",
+      "status": "HISTORICAL_RETAINED_NOT_RERUN",
+      "tests": [],
+      "boundary": "Historical old attempts, not a new execution obligation.",
+      "historicalStatus": "HISTORICAL_RETAINED_NOT_RERUN"
+    },
+    {
+      "id": "R02.1",
+      "owner": "Python",
+      "requirement": "Real symlink parent negative nooutsidewrite",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_output_exclusive_and_symlink_parent"
+      ],
+      "boundary": "Real physical parent symlink; no case created through link.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R02.2",
+      "owner": "Python",
+      "requirement": "Existing output root",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_output_exclusive_and_symlink_parent"
+      ],
+      "boundary": "Exclusive root collision retains bytes.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R02.3",
+      "owner": "Python",
+      "requirement": "Two concurrent reservations exactlyonewinner",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_R02_concurrent_root_and_every_artifact_exclusive"
+      ],
+      "boundary": "Two concurrent host threads, real mkdir; exactly one winner; no subprocess.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R02.4",
+      "owner": "Python",
+      "requirement": "Concurrent existing inventory sentinel unchanged",
+      "status": "PASS_LOCAL_REAL_OS_CONCURRENT_HOST_THREADS",
+      "tests": [
+        "test_FIX_actual_concurrent_existing_inventory_sentinel"
+      ],
+      "boundary": "Correction: historical PASS_LOCAL represented sequential sentinel loop, not concurrency. New two host threads start at barrier, both OEXCL reject same existing inventory, sentinel unchanged. No subprocess/bridge/native claim.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R02.5",
+      "owner": "Python",
+      "requirement": "Every fixed artifact OEXCL check incl fault/manifest/completed/rawinitialopen",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_R02_concurrent_root_and_every_artifact_exclusive"
+      ],
+      "boundary": "All14 fixed names incl new layer snapshot; same reserve/write path; raw initial reservation shares OEXCL.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R03.1",
+      "owner": "Python",
+      "requirement": "Path replacement after fullSHA stillheldAbytes",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_archive_held_fd_replacement"
+      ],
+      "boundary": "Physical replacement reads original held FD.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R03.2",
+      "owner": "Python",
+      "requirement": "Path A\u2192B\u2192A",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_R03_ABA_forged_metadata_and_restore"
+      ],
+      "boundary": "Physical rename A-B-A.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R03.3",
+      "owner": "Python",
+      "requirement": "Inplace changedchunk mismatch before any Bbytes returned",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_archive_uncached_inplace_rejects"
+      ],
+      "boundary": "Uncached modified byte rejected.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R03.4",
+      "owner": "Python",
+      "requirement": "Samefstat forgedmetadata doesnotbypass chunkhash",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_R03_ABA_forged_metadata_and_restore"
+      ],
+      "boundary": "Private forged fstat fixture; digest remains authority.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R03.5",
+      "owner": "Python",
+      "requirement": "Chunk mutated then restored returns onlyauthorityA",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_R03_ABA_forged_metadata_and_restore"
+      ],
+      "boundary": "Uncached mutation then restore returns A.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R03.6",
+      "owner": "Python",
+      "requirement": "Cache immutableA after mutation allowed expressly",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_cache_is_immutable_authority"
+      ],
+      "boundary": "Original cached authority A remains immutable.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R04.1",
+      "owner": "Python",
+      "requirement": "short firstpass read",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_wrongsha_shortpread_and_exception"
+      ],
+      "boundary": "Injected short pread.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R04.2",
+      "owner": "Python",
+      "requirement": "truncate during firstpass",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_R04_truncate_interrupt_and_no_path_bypass"
+      ],
+      "boundary": "Physical truncate after first scan read.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R04.3",
+      "owner": "Python",
+      "requirement": "truncate later uncachedchunk",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_R04_truncate_interrupt_and_no_path_bypass"
+      ],
+      "boundary": "Physical uncached suffix truncate.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R04.4",
+      "owner": "Python",
+      "requirement": "pread exception/interrupt terminal",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_R04_truncate_interrupt_and_no_path_bypass"
+      ],
+      "boundary": "Injected InterruptedError converts terminal CaptureError.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R04.5",
+      "owner": "Python",
+      "requirement": "emptyEOF only atsize",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_seek_whence_eof_and_size_limit"
+      ],
+      "boundary": "EOF suffix and zero read.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R04.6",
+      "owner": "Python",
+      "requirement": "lastpartialchunk",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_crosschunk_and_partial"
+      ],
+      "boundary": "Physical final partial chunk.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R04.7",
+      "owner": "Python",
+      "requirement": "crosschunkread",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_crosschunk_and_partial"
+      ],
+      "boundary": "Physical crosschunk.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R04.8",
+      "owner": "Python",
+      "requirement": "readinto ifimplemented",
+      "status": "NOT_APPLICABLE",
+      "tests": [],
+      "boundary": "No readinto implementation; zipfile uses read/seek/tell.",
+      "historicalStatus": "NOT_APPLICABLE"
+    },
+    {
+      "id": "R04.9",
+      "owner": "Python",
+      "requirement": "seekallwhence valid andinvalid",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_seek_whence_eof_and_size_limit"
+      ],
+      "boundary": "All whence options plus invalid ranges.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R04.10",
+      "owner": "Python",
+      "requirement": "No rawfd/pathbypass spy",
+      "status": "PARTIAL_LOCAL",
+      "tests": [
+        "test_R04_truncate_interrupt_and_no_path_bypass",
+        "test_P07_live_body_retention_and_requests",
+        "test_FIX_phaseA_internal_allocations"
+      ],
+      "boundary": "Physical pread target/request spies; full independent source review still required to exclude every bypass.",
+      "historicalStatus": "PARTIAL_LOCAL"
+    },
+    {
+      "id": "R05.1",
+      "owner": "Python",
+      "requirement": "Normal stored/deflated ZIP CRC",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_R05_real_stored_deflated_crc_and_entry_gates",
+        "test_R05_crc_corrupt_body_and_central_read_cap_model"
+      ],
+      "boundary": "Real stored/deflated tiny ZIP and corrupted CRC.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R05.2",
+      "owner": "Python",
+      "requirement": "ZIP64 small archive",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_zip64_small_and_unsafe_names"
+      ],
+      "boundary": "Actual force_zip64 small entry; not sparse large-offset ZIP64.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R05.3",
+      "owner": "Python",
+      "requirement": "ZIP64 sparse >4GiB fixture with boundedchunkstream and explicit synthetic label",
+      "status": "NOT_RUN",
+      "tests": [],
+      "boundary": "Explicitly outside author execution authority; precise sparse plan provided.",
+      "historicalStatus": "NOT_RUN"
+    },
+    {
+      "id": "R05.4",
+      "owner": "Python",
+      "requirement": "Centraldirlimit before oversizedread",
+      "status": "PARTIAL_MODEL",
+      "tests": [
+        "test_R05_crc_corrupt_body_and_central_read_cap_model"
+      ],
+      "boundary": "Private CENTRAL_MAX=1 rejects bounded reader request before returned bytes; dedicated actual64MiB central directory not exercised.",
+      "historicalStatus": "PARTIAL_MODEL"
+    },
+    {
+      "id": "R05.5",
+      "owner": "Python",
+      "requirement": "Duplicate names/pathtraversal/symlink/device/unsupportedmethod/zipbomb selected size limit",
+      "status": "PARTIAL_LOCAL_MODEL",
+      "tests": [
+        "test_protocol_real_zip_nul_and_duplicate",
+        "test_zip64_small_and_unsafe_names",
+        "test_R05_real_stored_deflated_crc_and_entry_gates"
+      ],
+      "boundary": "Actual NUL/duplicate/traversal; ZipInfo symlink/device/method/oversize synthetic metadata; no actual zipbomb payload.",
+      "historicalStatus": "PARTIAL_LOCAL_MODEL"
+    },
+    {
+      "id": "R06.1",
+      "owner": "Python",
+      "requirement": "Loose source leaf/ancestor symlink",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_R06_symlinks_enum_and_root_replacement"
+      ],
+      "boundary": "Physical loose leaf+ancestor symlinks.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R06.2",
+      "owner": "Python",
+      "requirement": "Selected loosefile content changes",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_P06_original_mutation_never_substitutes",
+        "test_P09_post_FINISH_terminal_source_change"
+      ],
+      "boundary": "Actual loose bytes mutated; held snapshot stays captured; terminal rejects.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R06.3",
+      "owner": "Python",
+      "requirement": "Source enum directory changes detected",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_R06_directory_changed_during_enumeration"
+      ],
+      "boundary": "Scandir-backed physical new entry after iterator creation; held directory identity changed; no instantaneous snapshot claim.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R06.4",
+      "owner": "Python",
+      "requirement": "No claim instantaneous multi-file snapshot",
+      "status": "BOUNDARY_NOTE",
+      "tests": [],
+      "boundary": "Retained checks do not claim atomic simultaneous multifile snapshot.",
+      "historicalStatus": "BOUNDARY_NOTE"
+    },
+    {
+      "id": "R06.5",
+      "owner": "Python",
+      "requirement": "root/parentrename-replacement persistent checkfail",
+      "status": "PASS_LOCAL",
+      "tests": [
+        "test_R06_symlinks_enum_and_root_replacement"
+      ],
+      "boundary": "Persistent source root rename/replacement rejected through original anchors.",
+      "historicalStatus": "PASS_LOCAL"
+    },
+    {
+      "id": "R06.6",
+      "owner": "Python",
+      "requirement": "ephemeral malicioussameUID race labeled unsupported not fake zeroescape proof",
+      "status": "UNSUPPORTED_BOUNDARY",
+      "tests": [],
+      "boundary": "Arbitrary ephemeral malicious sameUID race remains unsupported, no zeroescape claim.",
+      "historicalStatus": "UNSUPPORTED_BOUNDARY"
+    },
+    {
+      "id": "R07.1",
+      "owner": "Node+Python",
+      "requirement": "Real subprocess main integration captures selected sources and fixed3outputs",
+      "status": "NOT_RUN_REAL_SUBPROCESS",
+      "tests": [
+        "test_R07_local_import_finish_and_manifest"
+      ],
+      "boundary": "Import/privatepatched protocol metadata model completes and hashes manifests; genuine Node/Python bridge awaits separate contract.",
+      "historicalStatus": "NOT_RUN_REAL_SUBPROCESS"
+    },
+    {
+      "id": "R07.2",
+      "owner": "Node+Python",
+      "requirement": "Node doesnotopen archive/loosesource/output paths",
+      "status": "NOT_RUN_INDEPENDENT_NODE_REVIEW",
+      "tests": [],
+      "boundary": "Node source unchanged; no actual Node run authorized here.",
+      "historicalStatus": "NOT_RUN_INDEPENDENT_NODE_REVIEW"
+    },
+    {
+      "id": "R07.3",
+      "owner": "Node+Python",
+      "requirement": "FINISH cannot supply filenames/expectedSHA/closure",
+      "status": "PARTIAL_LOCAL",
+      "tests": [
+        "test_protocol_depth_utf8_and_no_output_override",
+        "test_protocol_finish_exact_null_correlations"
+      ],
+      "boundary": "Python exact unknown fields/correlation checked; Node-side producer behavior not run.",
+      "historicalStatus": "PARTIAL_LOCAL"
+    },
+    {
+      "id": "R07.4",
+      "owner": "Node+Python",
+      "requirement": "Digest/index/count/reordered/duplicate rows reject",
+      "status": "PARTIAL_LOCAL",
+      "tests": [
+        "test_protocol_finish_exact_null_correlations",
+        "test_schema_every_nested_key_extra_and_wrongshape"
+      ],
+      "boundary": "Index/count/SHA/metadata/privatepack correlation covered; genuine shared exchange not run.",
+      "historicalStatus": "PARTIAL_LOCAL"
+    },
+    {
+      "id": "R07.5",
+      "owner": "Node+Python",
+      "requirement": "Sourcebodybase64 corruption reject",
+      "status": "NOT_RUN_NODE_SIDE",
+      "tests": [],
+      "boundary": "SOURCE base64 decoder is Node ownership; Python emitted payload uses standard base64.",
+      "historicalStatus": "NOT_RUN_NODE_SIDE"
+    },
+    {
+      "id": "R07.6",
+      "owner": "Node+Python",
+      "requirement": "DuplicateJSONkeys NaN invalidUTF8 frame malformed/outoforder/extra frame reject",
+      "status": "PARTIAL_LOCAL",
+      "tests": [
+        "test_json_duplicate_depth_bool_and_schema",
+        "test_protocol_depth_utf8_and_no_output_override",
+        "test_protocol_extra_buffer_and_eof"
+      ],
+      "boundary": "Python duplicate/NaN/UTF8/depth/extra/EOF executed; real process out-of-order Node paths not run.",
+      "historicalStatus": "PARTIAL_LOCAL"
+    },
+    {
+      "id": "R08.1",
+      "owner": "Node",
+      "requirement": "StrictsourceUTF8 invalid rejects before AST; validBOM preserved",
+      "status": "NOT_RUN_NODE_ACTUAL",
+      "tests": [
+        "test_protocol_finish_utf8_and_variant_exactness"
+      ],
+      "boundary": "Python source encoding correlation only; actual Acorn/BOM producer remains Node obligation.",
+      "historicalStatus": "NOT_RUN_NODE_ACTUAL"
+    },
+    {
+      "id": "R08.2",
+      "owner": "Node",
+      "requirement": "Original7 ASTcontrols necessaryv2 regression only; oldsuite notrerun",
+      "status": "NOT_RUN_NODE_ACTUAL",
+      "tests": [],
+      "boundary": "Unchanged original Node13groups not rerun by Python author.",
+      "historicalStatus": "NOT_RUN_NODE_ACTUAL"
+    },
+    {
+      "id": "R08.3",
+      "owner": "Node",
+      "requirement": "parseerrors distinctfromUTF8 errors",
+      "status": "PARTIAL_SCHEMA_MODEL",
+      "tests": [
+        "test_schema_parse_utf8_metadata_variants"
+      ],
+      "boundary": "Python exact shapes for distinct blocks; no actual parser invocation.",
+      "historicalStatus": "PARTIAL_SCHEMA_MODEL"
+    },
+    {
+      "id": "R08.4",
+      "owner": "Node",
+      "requirement": "fullcallback/alias/unknown forms retained unresolved",
+      "status": "NOT_RUN_NODE_ACTUAL",
+      "tests": [],
+      "boundary": "Source labels remain unresolved; no inferred semantic closure.",
+      "historicalStatus": "NOT_RUN_NODE_ACTUAL"
+    },
+    {
+      "id": "R08.5",
+      "owner": "Node",
+      "requirement": "OriginalselectHighest exactsame candidate priority/shadowed facts on fixture",
+      "status": "PARTIAL_LOCAL",
+      "tests": [
+        "test_P01_all_layers_roundtrip"
+      ],
+      "boundary": "Five physical layer override/shadowed bytes; comparison to actual original Node selectHighest not executed.",
+      "historicalStatus": "PARTIAL_LOCAL"
+    },
+    {
+      "id": "R09.1",
+      "owner": "Python+Node",
+      "requirement": "Injected output shortwrite/fsync/permission/diskfull leavepartial nohealthycomplete",
+      "status": "PARTIAL_LOCAL_INJECTED",
+      "tests": [
+        "test_P08_short_fsync_close_enospc_and_final_readback",
+        "test_P08_partial_layer_fault_retains_prior_and_raw"
+      ],
+      "boundary": "Real output files with injected write/fsync/close/ENOSPC; explicit permission fault not separately injected.",
+      "historicalStatus": "PARTIAL_LOCAL_INJECTED"
+    },
+    {
+      "id": "R09.2",
+      "owner": "Python+Node",
+      "requirement": "faultwritefailure durableFaultfalse",
+      "status": "PARTIAL_LOCAL",
+      "tests": [
+        "test_protocol_raw_sent_fault_exact_after_close_unknown"
+      ],
+      "boundary": "Conservative durableFault=false/raw exact after injected final close; actual fault.json write failure control remains open.",
+      "historicalStatus": "PARTIAL_LOCAL"
+    },
+    {
+      "id": "R09.3",
+      "owner": "Python+Node",
+      "requirement": "child crash/timeout/EOF/exit0withoutCOMPLETED/COMPLETEDnonzero UNKNOWN",
+      "status": "PARTIAL_LOCAL",
+      "tests": [
+        "test_protocol_extra_buffer_and_eof",
+        "test_R10_path_raw_deadline_edges_models"
+      ],
+      "boundary": "Local EOF and mocked clock boundary; real child crash/exit statuses/reap not run.",
+      "historicalStatus": "PARTIAL_LOCAL"
+    },
+    {
+      "id": "R09.4",
+      "owner": "Python+Node",
+      "requirement": "reap/closefault no retry/delete",
+      "status": "PARTIAL_LOCAL",
+      "tests": [
+        "test_ledger_capture_close_unknown_all_once"
+      ],
+      "boundary": "Source/output FD close uncertainties/no retry preserved; Node child reap not run.",
+      "historicalStatus": "PARTIAL_LOCAL"
+    },
+    {
+      "id": "R09.5",
+      "owner": "Python+Node",
+      "requirement": "stdoutfailaftercompleted retain disk-vs-callerunknown distinction",
+      "status": "PASS_LOCAL_MODEL",
+      "tests": [
+        "test_R09_stdout_after_completed_disk_caller_unknown"
+      ],
+      "boundary": "Python import/privatepatched FINISH; actual completed disk retained, stdout throws, result1 no second FAULT.",
+      "historicalStatus": "PASS_LOCAL_MODEL"
+    },
+    {
+      "id": "R10.1",
+      "owner": "Python+Node",
+      "requirement": "All limits exactedge+oneover",
+      "status": "PARTIAL_MODEL",
+      "tests": [
+        "test_P03_selected_file_metadata_edges_model",
+        "test_P03_selected_one_over_and_metadata_over_model",
+        "test_P03_metadata_one_over_before_capture_model",
+        "test_R10_count_and_layer_edges_model",
+        "test_R10_count_oneover_before_body_model",
+        "test_R10_layer_oneover_before_body_model",
+        "test_R10_path_raw_deadline_edges_models",
+        "test_schema_scaled_array_string_frame_limits_and_utf16"
+      ],
+      "boundary": "Scaled selected/perfile/metadata/count/layer/frame/raw/array/deadline edges; real1024 UTF8 bytes. Full all-limits true-sized matrix not measured. New independently scaled globalcandidate/perroottraversal controls added; actual16384 threshold not measured.",
+      "historicalStatus": "PARTIAL_MODEL"
+    },
+    {
+      "id": "R10.2",
+      "owner": "Python+Node",
+      "requirement": "boundedmemory noarchive readall (spyread sizes + measured context, not memory guarantee from onecache)",
+      "status": "PARTIAL_MEASURED_INTERNAL_FRAME_INSTRUMENTATION",
+      "tests": [
+        "test_FIX_phaseA_internal_allocations",
+        "test_P07_live_body_retention_and_requests"
+      ],
+      "boundary": "Historical returned-wrapper-only proof was inadequate and BLOCK retained. New source+stdlib ZipFile line-frame tracing observes internal read/write/readback buffers on256KiB physical body: no whole-body phaseA object, largest<=65536; not8MiB/full archive/RSS proof.",
+      "historicalStatus": "PARTIAL_MEASURED_INSTRUMENTATION"
+    },
+    {
+      "id": "R10.3",
+      "owner": "Python+Node",
+      "requirement": "Noengine/network/C++/commit/delete",
+      "status": "EXECUTION_SCOPE_BOUNDARY",
+      "tests": [],
+      "boundary": "No engine/network/C++/commit/delete used by this author; no synthetic upgrade of runtime.",
+      "historicalStatus": "EXECUTION_SCOPE_BOUNDARY"
+    },
+    {
+      "id": "R10.4",
+      "owner": "Python+Node",
+      "requirement": "Full sourcefreeze/partnerbindings freshCODE+Python+JS review before realcandidatecapture",
+      "status": "PENDING_ROOT_INDEPENDENT_REVIEWS",
+      "tests": [],
+      "boundary": "This exact snapshot supplies review inputs; no source approval granted by author.",
+      "historicalStatus": "PENDING_ROOT_INDEPENDENT_REVIEWS"
+    }
+  ],
+  "schemaCases": [
+    {
+      "id": "positiveGroups.1",
+      "requirement": "Actual NodeAcorn PARSED script/module retaining original vfs plus sixvectors; no field projection",
+      "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+      "tests": [
+        "test_schema_every_nested_key_extra_and_wrongshape",
+        "test_schema_every_tag_and_source_correlation",
+        "test_schema_parse_utf8_metadata_variants",
+        "test_schema_scaled_array_string_frame_limits_and_utf16"
+      ],
+      "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+    },
+    {
+      "id": "positiveGroups.2",
+      "requirement": "Actual script thenmodule parsefailure; real invalidUTF8; metadata null",
+      "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+      "tests": [
+        "test_schema_every_nested_key_extra_and_wrongshape",
+        "test_schema_every_tag_and_source_correlation",
+        "test_schema_parse_utf8_metadata_variants",
+        "test_schema_scaled_array_string_frame_limits_and_utf16"
+      ],
+      "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+    },
+    {
+      "id": "positiveGroups.3",
+      "requirement": "All nested variants from real parser: uninitializedalias/null, direct and alias writers, emptyliteralName, interpreted escaped lone surrogate literalName, every assignmentoperator and update/delete",
+      "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+      "tests": [
+        "test_schema_every_nested_key_extra_and_wrongshape",
+        "test_schema_every_tag_and_source_correlation",
+        "test_schema_parse_utf8_metadata_variants",
+        "test_schema_scaled_array_string_frame_limits_and_utf16"
+      ],
+      "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+    },
+    {
+      "id": "positiveGroups.4",
+      "requirement": "Function UTF16/BOM/astral/CRLF/CR/LF/U+2028/U+2029 correlations",
+      "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+      "tests": [
+        "test_schema_every_nested_key_extra_and_wrongshape",
+        "test_schema_every_tag_and_source_correlation",
+        "test_schema_parse_utf8_metadata_variants",
+        "test_schema_scaled_array_string_frame_limits_and_utf16"
+      ],
+      "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+    },
+    {
+      "id": "positiveGroups.5",
+      "requirement": "Preserve complete alias expansion multiplicity and traversalorder; source writers remain OPEN",
+      "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+      "tests": [
+        "test_schema_every_nested_key_extra_and_wrongshape",
+        "test_schema_every_tag_and_source_correlation",
+        "test_schema_parse_utf8_metadata_variants",
+        "test_schema_scaled_array_string_frame_limits_and_utf16"
+      ],
+      "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+    },
+    {
+      "id": "negativeGroups.1",
+      "requirement": "For each variant missingeachrequiredkey/extraunknownkey/wrongtype/nullwrong/arraywrong, including Python bool masquerading integer",
+      "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+      "tests": [
+        "test_schema_every_nested_key_extra_and_wrongshape",
+        "test_schema_every_tag_and_source_correlation",
+        "test_schema_parse_utf8_metadata_variants",
+        "test_schema_scaled_array_string_frame_limits_and_utf16"
+      ],
+      "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+    },
+    {
+      "id": "negativeGroups.2",
+      "requirement": "vfs/index/SHA/count/captureId mismatch; JSnull and nonJSnonnull",
+      "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+      "tests": [
+        "test_schema_every_nested_key_extra_and_wrongshape",
+        "test_schema_every_tag_and_source_correlation",
+        "test_schema_parse_utf8_metadata_variants",
+        "test_schema_scaled_array_string_frame_limits_and_utf16"
+      ],
+      "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+    },
+    {
+      "id": "negativeGroups.3",
+      "requirement": "PARSED missingmode/vectors/closure/errorfieldextra; parseerror missingerror/wrongclosure; utf8error errorfieldextra; validUTF8 mislabeledinvalid",
+      "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+      "tests": [
+        "test_schema_every_nested_key_extra_and_wrongshape",
+        "test_schema_every_tag_and_source_correlation",
+        "test_schema_parse_utf8_metadata_variants",
+        "test_schema_scaled_array_string_frame_limits_and_utf16"
+      ],
+      "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+    },
+    {
+      "id": "negativeGroups.4",
+      "requirement": "directwriter wrongnameindex/aliasfieldextra; aliaswriter directindexextra/methodsuffixwrong/calleewrong/targetwrong/missingaliasrow orcalltuple",
+      "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+      "tests": [
+        "test_schema_every_nested_key_extra_and_wrongshape",
+        "test_schema_every_tag_and_source_correlation",
+        "test_schema_parse_utf8_metadata_variants",
+        "test_schema_scaled_array_string_frame_limits_and_utf16"
+      ],
+      "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+    },
+    {
+      "id": "negativeGroups.5",
+      "requirement": "Assignment missingright; update/delete rightpresent/null; invalidoperator/topLevelkind; alias.value missing versus allowednull",
+      "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+      "tests": [
+        "test_schema_every_nested_key_extra_and_wrongshape",
+        "test_schema_every_tag_and_source_correlation",
+        "test_schema_parse_utf8_metadata_variants",
+        "test_schema_scaled_array_string_frame_limits_and_utf16"
+      ],
+      "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+    },
+    {
+      "id": "negativeGroups.6",
+      "requirement": "NaN/Infinity/duplicateJSONkeys/depth/vector/args/params/serializedframe/string limits; no truncation",
+      "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+      "tests": [
+        "test_schema_every_nested_key_extra_and_wrongshape",
+        "test_schema_every_tag_and_source_correlation",
+        "test_schema_parse_utf8_metadata_variants",
+        "test_schema_scaled_array_string_frame_limits_and_utf16"
+      ],
+      "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+    },
+    {
+      "id": "negativeGroups.7",
+      "requirement": "Function end<=start/bytevsUTF16offset/rangelinewrong/CRLFsplit/surrogatesplit",
+      "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+      "tests": [
+        "test_schema_every_nested_key_extra_and_wrongshape",
+        "test_schema_every_tag_and_source_correlation",
+        "test_schema_parse_utf8_metadata_variants",
+        "test_schema_scaled_array_string_frame_limits_and_utf16"
+      ],
+      "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+    },
+    {
+      "id": "negativeGroups.8",
+      "requirement": "Unexpected parser/recursion/internalthrow ABORT_NODE_ANALYSIS distinctfrom decoder failure",
+      "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+      "tests": [
+        "test_schema_every_nested_key_extra_and_wrongshape",
+        "test_schema_every_tag_and_source_correlation",
+        "test_schema_parse_utf8_metadata_variants",
+        "test_schema_scaled_array_string_frame_limits_and_utf16"
+      ],
+      "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+    },
+    {
+      "id": "negativeGroups.9",
+      "requirement": "Source semanticcallback wrong despite validschema remainsunproved; schema nevercertifiescalleeidentity",
+      "status": "PARTIAL_HAND_AUTHORED_SCHEMA_MODEL_ACTUAL_PRODUCER_NOT_RUN",
+      "tests": [
+        "test_schema_every_nested_key_extra_and_wrongshape",
+        "test_schema_every_tag_and_source_correlation",
+        "test_schema_parse_utf8_metadata_variants",
+        "test_schema_scaled_array_string_frame_limits_and_utf16"
+      ],
+      "boundary": "Actual Node/Acorn producer semantics/parse errors/ABORT require independent Node controls; no reparse or synthetic semantic attestation."
+    }
+  ],
+  "preservationControls": [
+    {
+      "id": "P01",
+      "red": "ERROR_NEW_API_NOT_IMPLEMENTED",
+      "final": "PASS_LOCAL_SYNTHETIC",
+      "boundary": "Tiny physical source/output files plus narrowly injected OS/protocol failures; P09 receives hand-authored FINISH."
+    },
+    {
+      "id": "P02",
+      "red": "ERROR_NEW_API_NOT_IMPLEMENTED",
+      "final": "PASS_LOCAL_SYNTHETIC",
+      "boundary": "Scaled boundary/privatepatch controls are models; no actual >64MiB or native proof."
+    },
+    {
+      "id": "P03",
+      "red": "ERROR_NEW_API_NOT_IMPLEMENTED",
+      "final": "PASS_LOCAL_SYNTHETIC",
+      "boundary": "Scaled boundary/privatepatch controls are models; no actual >64MiB or native proof."
+    },
+    {
+      "id": "P04",
+      "red": "ERROR_NEW_API_NOT_IMPLEMENTED",
+      "final": "PASS_LOCAL_SYNTHETIC",
+      "boundary": "Scaled boundary/privatepatch controls are models; no actual >64MiB or native proof."
+    },
+    {
+      "id": "P05",
+      "red": "ERROR_NEW_API_NOT_IMPLEMENTED",
+      "final": "PASS_LOCAL_SYNTHETIC",
+      "boundary": "Tiny physical source/output files plus narrowly injected OS/protocol failures; P09 receives hand-authored FINISH."
+    },
+    {
+      "id": "P06",
+      "red": "ERROR_NEW_API_NOT_IMPLEMENTED",
+      "final": "PASS_LOCAL_SYNTHETIC",
+      "boundary": "Tiny physical source/output files plus narrowly injected OS/protocol failures; P09 receives hand-authored FINISH."
+    },
+    {
+      "id": "P07",
+      "red": "ERROR_NEW_API_NOT_IMPLEMENTED",
+      "final": "PASS_LOCAL_SYNTHETIC",
+      "boundary": "Tiny physical source/output files plus narrowly injected OS/protocol failures; P09 receives hand-authored FINISH."
+    },
+    {
+      "id": "P08",
+      "red": "ERROR_NEW_API_NOT_IMPLEMENTED",
+      "final": "PASS_LOCAL_SYNTHETIC",
+      "boundary": "Tiny physical source/output files plus narrowly injected OS/protocol failures; P09 receives hand-authored FINISH."
+    },
+    {
+      "id": "P09",
+      "red": "PASS_RETAINED_PREEXISTING_TERMINAL_REGRESSION",
+      "final": "PASS_LOCAL_SYNTHETIC",
+      "boundary": "Tiny physical source/output files plus narrowly injected OS/protocol failures; P09 receives hand-authored FINISH."
+    }
+  ],
+  "finalNormalLog": "final-normal.log",
+  "finalOptimizedLog": "final-optimized.log",
+  "testsPerRun": 68,
+  "native": false,
+  "sourceApproval": false,
+  "historicalMatrix": {
+    "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1/coverage-matrix.json",
+    "bytes": 30629,
+    "sha256": "1556c75887526a2800463c847f8b456ea5bffea7a444c75d74afd1c94b826d7a"
+  },
+  "sourceFixControls": [
+    {
+      "requirement": "phaseA complete body duplication",
+      "tests": [
+        "test_FIX_phaseA_internal_allocations"
+      ],
+      "result": "PASS_INTERNAL_OBJECTS_PHYSICAL_256KiB_NOT_RSS",
+      "observations": [
+        {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/cases-1793021675656393000/test_FIX_phaseA_internal_allocations/allocation-observations.json",
+          "rows": 11858,
+          "largestPayloadObject": 262144,
+          "maxWhole256KiBSourceBodies": 2,
+          "maxObservedPayloadBytesAcrossFrames": 524288,
+          "functions": [
+            "<genexpr>",
+            "<lambda>",
+            "<listcomp>",
+            "<setcomp>",
+            "__init__",
+            "build",
+            "candidate",
+            "check",
+            "cleanup_close",
+            "default_folder",
+            "directory",
+            "finish_fd",
+            "ident",
+            "io",
+            "loose_layer",
+            "once_close",
+            "open_source",
+            "open_zip",
+            "physical",
+            "put",
+            "read",
+            "read_candidate",
+            "read_source_fd",
+            "reserve",
+            "safe_vfs",
+            "seek",
+            "seekable",
+            "sha",
+            "tell",
+            "validate_zip",
+            "walk",
+            "write"
+          ],
+          "record": {
+            "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/cases-1793021675656393000/test_FIX_phaseA_internal_allocations/allocation-observations.json",
+            "bytes": 1170460,
+            "sha256": "e17b44be251892c9713c276c34c2e7d3806e97d3c2929e04542999a22ed75e9e"
+          }
+        },
+        {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/cases-1793021703678486000/test_FIX_phaseA_internal_allocations/allocation-observations.json",
+          "rows": 22206,
+          "largestPayloadObject": 65536,
+          "maxWhole256KiBSourceBodies": 0,
+          "maxObservedPayloadBytesAcrossFrames": 131072,
+          "functions": [
+            "<genexpr>",
+            "<lambda>",
+            "<listcomp>",
+            "<setcomp>",
+            "__init__",
+            "build",
+            "candidate",
+            "capture",
+            "capture_candidate",
+            "check",
+            "cleanup_close",
+            "copy_snapshot",
+            "default_folder",
+            "directory",
+            "enumerate_names",
+            "finish_fd",
+            "ident",
+            "io",
+            "loose_layer",
+            "once_close",
+            "open_source",
+            "open_zip",
+            "physical",
+            "put",
+            "read",
+            "readback",
+            "reserve",
+            "safe_vfs",
+            "seek",
+            "seekable",
+            "sha",
+            "tell",
+            "validate_zip",
+            "walk"
+          ],
+          "record": {
+            "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/cases-1793021703678486000/test_FIX_phaseA_internal_allocations/allocation-observations.json",
+            "bytes": 2146021,
+            "sha256": "0053bfb97ccbcbc9e7444793ee32d5d32809738ad1d155d36eb26606aa304f4f"
+          }
+        },
+        {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/cases-1793021771849429000/test_FIX_phaseA_internal_allocations/allocation-observations.json",
+          "rows": 22308,
+          "largestPayloadObject": 65536,
+          "maxWhole256KiBSourceBodies": 0,
+          "maxObservedPayloadBytesAcrossFrames": 131072,
+          "functions": [
+            "<genexpr>",
+            "<lambda>",
+            "<listcomp>",
+            "<setcomp>",
+            "__init__",
+            "build",
+            "candidate",
+            "capture",
+            "capture_candidate",
+            "check",
+            "cleanup_close",
+            "copy_snapshot",
+            "default_folder",
+            "directory",
+            "enumerate_names",
+            "finish_fd",
+            "ident",
+            "io",
+            "loose_layer",
+            "once_close",
+            "open_source",
+            "open_zip",
+            "physical",
+            "put",
+            "read",
+            "readback",
+            "register_candidate",
+            "reserve",
+            "safe_vfs",
+            "seek",
+            "seekable",
+            "sha",
+            "tell",
+            "validate_zip",
+            "walk"
+          ],
+          "record": {
+            "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/cases-1793021771849429000/test_FIX_phaseA_internal_allocations/allocation-observations.json",
+            "bytes": 2156305,
+            "sha256": "40f3b2c1724160a2470c6677028bfc8055fd25531608e912180125060a439a52"
+          }
+        },
+        {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/cases-1793021863065346000/test_FIX_phaseA_internal_allocations/allocation-observations.json",
+          "rows": 22926,
+          "largestPayloadObject": 65536,
+          "maxWhole256KiBSourceBodies": 0,
+          "maxObservedPayloadBytesAcrossFrames": 131072,
+          "functions": [
+            "<genexpr>",
+            "<lambda>",
+            "<listcomp>",
+            "<setcomp>",
+            "_EndRecData",
+            "_EndRecData64",
+            "_RealGetContents",
+            "__init__",
+            "_check_compression",
+            "_decodeExtra",
+            "_fpclose",
+            "_get_decompressor",
+            "_read1",
+            "_read2",
+            "_update_crc",
+            "build",
+            "candidate",
+            "capture",
+            "capture_candidate",
+            "check",
+            "cleanup_close",
+            "close",
+            "copy_snapshot",
+            "default_folder",
+            "directory",
+            "enumerate_names",
+            "finish_fd",
+            "ident",
+            "infolist",
+            "io",
+            "is_dir",
+            "loose_layer",
+            "once_close",
+            "open",
+            "open_source",
+            "open_zip",
+            "physical",
+            "put",
+            "read",
+            "readback",
+            "register_candidate",
+            "reserve",
+            "safe_vfs",
+            "seek",
+            "seekable",
+            "sha",
+            "tell",
+            "validate_zip",
+            "walk"
+          ],
+          "record": {
+            "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/cases-1793021863065346000/test_FIX_phaseA_internal_allocations/allocation-observations.json",
+            "bytes": 2218918,
+            "sha256": "7b50edaae02a3bc2b8731472f4130177a9e1c0deff36def88daf28774ce83a27"
+          }
+        },
+        {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/cases-1793021889801711000/test_FIX_phaseA_internal_allocations/allocation-observations.json",
+          "rows": 22926,
+          "largestPayloadObject": 65536,
+          "maxWhole256KiBSourceBodies": 0,
+          "maxObservedPayloadBytesAcrossFrames": 131072,
+          "functions": [
+            "<genexpr>",
+            "<lambda>",
+            "<listcomp>",
+            "<setcomp>",
+            "_EndRecData",
+            "_EndRecData64",
+            "_RealGetContents",
+            "__init__",
+            "_check_compression",
+            "_decodeExtra",
+            "_fpclose",
+            "_get_decompressor",
+            "_read1",
+            "_read2",
+            "_update_crc",
+            "build",
+            "candidate",
+            "capture",
+            "capture_candidate",
+            "check",
+            "cleanup_close",
+            "close",
+            "copy_snapshot",
+            "default_folder",
+            "directory",
+            "enumerate_names",
+            "finish_fd",
+            "ident",
+            "infolist",
+            "io",
+            "is_dir",
+            "loose_layer",
+            "once_close",
+            "open",
+            "open_source",
+            "open_zip",
+            "physical",
+            "put",
+            "read",
+            "readback",
+            "register_candidate",
+            "reserve",
+            "safe_vfs",
+            "seek",
+            "seekable",
+            "sha",
+            "tell",
+            "validate_zip",
+            "walk"
+          ],
+          "record": {
+            "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/cases-1793021889801711000/test_FIX_phaseA_internal_allocations/allocation-observations.json",
+            "bytes": 2218918,
+            "sha256": "7b50edaae02a3bc2b8731472f4130177a9e1c0deff36def88daf28774ce83a27"
+          }
+        },
+        {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/cases-1793021889801711000/test_P07_live_body_retention_and_requests/allocation-observations.json",
+          "rows": 22926,
+          "largestPayloadObject": 65536,
+          "maxWhole256KiBSourceBodies": 0,
+          "maxObservedPayloadBytesAcrossFrames": 131072,
+          "functions": [
+            "<genexpr>",
+            "<lambda>",
+            "<listcomp>",
+            "<setcomp>",
+            "_EndRecData",
+            "_EndRecData64",
+            "_RealGetContents",
+            "__init__",
+            "_check_compression",
+            "_decodeExtra",
+            "_fpclose",
+            "_get_decompressor",
+            "_read1",
+            "_read2",
+            "_update_crc",
+            "build",
+            "candidate",
+            "capture",
+            "capture_candidate",
+            "check",
+            "cleanup_close",
+            "close",
+            "copy_snapshot",
+            "default_folder",
+            "directory",
+            "enumerate_names",
+            "finish_fd",
+            "ident",
+            "infolist",
+            "io",
+            "is_dir",
+            "loose_layer",
+            "once_close",
+            "open",
+            "open_source",
+            "open_zip",
+            "physical",
+            "put",
+            "read",
+            "readback",
+            "register_candidate",
+            "reserve",
+            "safe_vfs",
+            "seek",
+            "seekable",
+            "sha",
+            "tell",
+            "validate_zip",
+            "walk"
+          ],
+          "record": {
+            "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/cases-1793021889801711000/test_P07_live_body_retention_and_requests/allocation-observations.json",
+            "bytes": 2218918,
+            "sha256": "7b50edaae02a3bc2b8731472f4130177a9e1c0deff36def88daf28774ce83a27"
+          }
+        },
+        {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/cases-1793021889817847000/test_FIX_phaseA_internal_allocations/allocation-observations.json",
+          "rows": 22924,
+          "largestPayloadObject": 65536,
+          "maxWhole256KiBSourceBodies": 0,
+          "maxObservedPayloadBytesAcrossFrames": 131072,
+          "functions": [
+            "<genexpr>",
+            "<lambda>",
+            "<listcomp>",
+            "<setcomp>",
+            "_EndRecData",
+            "_EndRecData64",
+            "_RealGetContents",
+            "__init__",
+            "_check_compression",
+            "_decodeExtra",
+            "_fpclose",
+            "_get_decompressor",
+            "_read1",
+            "_read2",
+            "_update_crc",
+            "build",
+            "candidate",
+            "capture",
+            "capture_candidate",
+            "check",
+            "cleanup_close",
+            "close",
+            "copy_snapshot",
+            "default_folder",
+            "directory",
+            "enumerate_names",
+            "finish_fd",
+            "ident",
+            "infolist",
+            "io",
+            "is_dir",
+            "loose_layer",
+            "once_close",
+            "open",
+            "open_source",
+            "open_zip",
+            "physical",
+            "put",
+            "read",
+            "readback",
+            "register_candidate",
+            "reserve",
+            "safe_vfs",
+            "seek",
+            "seekable",
+            "sha",
+            "tell",
+            "validate_zip",
+            "walk"
+          ],
+          "record": {
+            "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/cases-1793021889817847000/test_FIX_phaseA_internal_allocations/allocation-observations.json",
+            "bytes": 2218720,
+            "sha256": "3ce17cea77a27ea4c5fa93d0b32a6ca07e15fe0e575047f1992c5551b1db6dfb"
+          }
+        },
+        {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/cases-1793021889817847000/test_P07_live_body_retention_and_requests/allocation-observations.json",
+          "rows": 22924,
+          "largestPayloadObject": 65536,
+          "maxWhole256KiBSourceBodies": 0,
+          "maxObservedPayloadBytesAcrossFrames": 131072,
+          "functions": [
+            "<genexpr>",
+            "<lambda>",
+            "<listcomp>",
+            "<setcomp>",
+            "_EndRecData",
+            "_EndRecData64",
+            "_RealGetContents",
+            "__init__",
+            "_check_compression",
+            "_decodeExtra",
+            "_fpclose",
+            "_get_decompressor",
+            "_read1",
+            "_read2",
+            "_update_crc",
+            "build",
+            "candidate",
+            "capture",
+            "capture_candidate",
+            "check",
+            "cleanup_close",
+            "close",
+            "copy_snapshot",
+            "default_folder",
+            "directory",
+            "enumerate_names",
+            "finish_fd",
+            "ident",
+            "infolist",
+            "io",
+            "is_dir",
+            "loose_layer",
+            "once_close",
+            "open",
+            "open_source",
+            "open_zip",
+            "physical",
+            "put",
+            "read",
+            "readback",
+            "register_candidate",
+            "reserve",
+            "safe_vfs",
+            "seek",
+            "seekable",
+            "sha",
+            "tell",
+            "validate_zip",
+            "walk"
+          ],
+          "record": {
+            "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/cases-1793021889817847000/test_P07_live_body_retention_and_requests/allocation-observations.json",
+            "bytes": 2218720,
+            "sha256": "3ce17cea77a27ea4c5fa93d0b32a6ca07e15fe0e575047f1992c5551b1db6dfb"
+          }
+        }
+      ]
+    },
+    {
+      "requirement": "constructor initial fstat/deadline/uncertainclose ownership",
+      "tests": [
+        "test_FIX_constructor_initial_fstat_fault_owned",
+        "test_FIX_constructor_initial_deadline_and_unknown_close"
+      ],
+      "result": "PASS_REAL_FD_INJECTED_FAILURE_CLOSE_ONCE_UNKNOWN_RETAINED"
+    },
+    {
+      "requirement": "globalcandidate vs perlooseroot traversal; names bound before append/sort",
+      "tests": [
+        "test_FIX_independent_candidate_traversal_budget",
+        "test_FIX_nested_traversal_edge_and_one_over",
+        "test_FIX_global_candidate_vs_union_archive_noncandidates",
+        "test_FIX_iterator_constructor_next_close_timeout",
+        "test_FIX_iterator_post_constructor_deadline_owned",
+        "test_FIX_iterator_path_overflow_and_special_type"
+      ],
+      "result": "PASS_TINY_PHYSICAL_PLUS_PRIVATE_SCALED_ITERATOR_FAULTS",
+      "boundary": "No actual16384 stress; fake iterator close UNKNOWN and original realFD survival are distinct from allhiddenFD leak proof."
+    }
+  ]
+}

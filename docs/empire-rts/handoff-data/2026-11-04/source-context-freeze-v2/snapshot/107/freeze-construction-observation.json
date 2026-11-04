@@ -1,0 +1,1 @@
+{"purpose": "retain author preparation tooling error, not a producer attempt", "error": "Python3.9 Path.stat follow_symlinks unsupported", "effect": "snapshot directory created empty, zero copied inputs, no producer import/run", "resolution": "use os.stat(...,follow_symlinks=False); reuse same empty preparation snapshot, no deletion/alternate test namespace"}

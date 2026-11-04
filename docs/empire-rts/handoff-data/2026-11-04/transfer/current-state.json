@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "purpose": "Complete transfer readback required before work/migration; not SOURCE approval",
+  "createdUTC": "2026-11-02T01:34:18.513367+00:00",
+  "sourceThreadId": "01a18567-d39e-7941-9a29-32a5f4371832",
+  "repo": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad",
+  "HEAD": "726a3aefcae830f605de438cd13192cc6330414e",
+  "indexEmpty": true,
+  "canonicalCheckpoint": "work/t14-t18-session-transfer-20261026/current-checkpoint.json",
+  "handoff": "docs/empire-rts/SESSION-HANDOFF-2026-11-02-TRANSFER-T14-T18.md",
+  "bindings": [
+    {
+      "path": "docs/empire-rts/SESSION-HANDOFF-2026-11-02-TRANSFER-T14-T18.md",
+      "snapshot": "work/t14-t18-session-transfer-20261102/snapshot/docs/empire-rts/SESSION-HANDOFF-2026-11-02-TRANSFER-T14-T18.md",
+      "bytes": 5958,
+      "sha256": "0115bed0696406e23f766ad4797690ad05237f6cc9b15349cd8476cea80d3326"
+    },
+    {
+      "path": "work/t14-t18-session-transfer-20261026/current-checkpoint.json",
+      "snapshot": "work/t14-t18-session-transfer-20261102/snapshot/work/t14-t18-session-transfer-20261026/current-checkpoint.json",
+      "bytes": 49221,
+      "sha256": "17377e24483297a357c1b9131b35bff7eb8453f31e8abe237cd70b028e0518a9"
+    },
+    {
+      "path": "docs/empire-rts/progress.md",
+      "snapshot": "work/t14-t18-session-transfer-20261102/snapshot/docs/empire-rts/progress.md",
+      "bytes": 156571,
+      "sha256": "0242f981215c84b699db222f34a9a71cb3cb077612b36ac3604358139226007d"
+    },
+    {
+      "path": "docs/empire-rts/plan.md",
+      "snapshot": "work/t14-t18-session-transfer-20261102/snapshot/docs/empire-rts/plan.md",
+      "bytes": 165190,
+      "sha256": "47d78740471ac813a1927deb98a41dfd9ae29411e032b29d43ab8d9be0e2a08f"
+    },
+    {
+      "path": "docs/empire-rts/journal.md",
+      "snapshot": "work/t14-t18-session-transfer-20261102/snapshot/docs/empire-rts/journal.md",
+      "bytes": 203227,
+      "sha256": "749639417ab06668022acff6b4f01ffc1547e4dd171c0f096fcf6c6c00406520"
+    },
+    {
+      "path": "docs/empire-rts/SESSION-HANDOFF-2026-10-30-T14-T18.md",
+      "snapshot": "work/t14-t18-session-transfer-20261102/snapshot/docs/empire-rts/SESSION-HANDOFF-2026-10-30-T14-T18.md",
+      "bytes": 6538,
+      "sha256": "67d05b913cfb184c2eb2144f53230c3607c1e5cab1a9d6ba5b5afb0bffc4c38a"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-context-freeze-v2/manifest.json",
+      "snapshot": "work/t14-t18-session-transfer-20261102/snapshot/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-context-freeze-v2/manifest.json",
+      "bytes": 65446,
+      "sha256": "d69d3456754b19f0592682824c4772c72d62169799fc9c02f0466d8291f951d4"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-freeze-root-readback-v2.json",
+      "snapshot": "work/t14-t18-session-transfer-20261102/snapshot/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-freeze-root-readback-v2.json",
+      "bytes": 912,
+      "sha256": "2489fc6e23dd7995d5cea39fec501086c670c7570c1b73382aedeb6cd1a4fbe2"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-fix-v2/root-static-readback-v1.json",
+      "snapshot": "work/t14-t18-session-transfer-20261102/snapshot/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-fix-v2/root-static-readback-v1.json",
+      "bytes": 5730,
+      "sha256": "a6578c7972be63ee7246b8a3f66bf8bd037f5b6e8b70375b4a84d220fd770aff"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-fix-v2/author-source-checkpoint-v2.json",
+      "snapshot": "work/t14-t18-session-transfer-20261102/snapshot/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-fix-v2/author-source-checkpoint-v2.json",
+      "bytes": 7514,
+      "sha256": "ab18ed0702184d21ae7b3bb14cc8fc713899a1d66b9fd37a82eb073b81d4c8a7"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-fix-v2/next-source-input-inventory-v2.json",
+      "snapshot": "work/t14-t18-session-transfer-20261102/snapshot/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-fix-v2/next-source-input-inventory-v2.json",
+      "bytes": 100929,
+      "sha256": "a42aad596118292c31ecc1ac465c75f71d2118531c4d1324db7e78b31f48bfc3"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/SOURCE-INTERFACE-context-v2.md",
+      "snapshot": "work/t14-t18-session-transfer-20261102/snapshot/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/SOURCE-INTERFACE-context-v2.md",
+      "bytes": 9729,
+      "sha256": "6dd0d9d474663e2ca1f269c6bf55f296c7a887a0b83bdcab5e370094949dcdee"
+    },
+    {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py",
+      "snapshot": "work/t14-t18-session-transfer-20261102/snapshot/tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py",
+      "bytes": 72311,
+      "sha256": "fd1948d65cdd57cb851f651128639499f958a59f003707889bfb32e9f6f24e9b"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-block-closeout-v1.json",
+      "snapshot": "work/t14-t18-session-transfer-20261102/snapshot/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-block-closeout-v1.json",
+      "bytes": 38315,
+      "sha256": "d5fd174a70b9d3b5965a8ab63e8878763dea4f568ab20d696398bec337d97e50"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/manifest.json",
+      "snapshot": "work/t14-t18-session-transfer-20261102/snapshot/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/manifest.json",
+      "bytes": 59062,
+      "sha256": "20e7e2e53967afdce38b7b594c8cedab0e83cbd9aec61fb7af09e5a24a6b914e"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/completion-design-only-v1.json",
+      "snapshot": "work/t14-t18-session-transfer-20261102/snapshot/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1/completion-design-only-v1.json",
+      "bytes": 2792,
+      "sha256": "ae68305d3cc86c6464e4ac868aa3f170fecafe9b0f452cf6a3ba1be95fae64c8"
+    }
+  ],
+  "bindingCount": 16,
+  "sourceReviewStatus": "THREE_USAGE_LIMIT_ERRORS_NO_REPORTS",
+  "next": "Verify all transfer originals+snapshots SHA+bytes; write child-readback.json OEXCL then STOP for parent migration. No authored execution/tests/reviews until parent followup."
+}

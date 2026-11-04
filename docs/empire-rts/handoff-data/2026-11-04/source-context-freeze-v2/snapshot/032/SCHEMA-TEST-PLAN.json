@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "status": "DESIGN_NOT_IMPLEMENTED_NOT_RUN",
+  "positiveGroups": [
+    "Actual NodeAcorn PARSED script/module retaining original vfs plus sixvectors; no field projection",
+    "Actual script thenmodule parsefailure; real invalidUTF8; metadata null",
+    "All nested variants from real parser: uninitializedalias/null, direct and alias writers, emptyliteralName, interpreted escaped lone surrogate literalName, every assignmentoperator and update/delete",
+    "Function UTF16/BOM/astral/CRLF/CR/LF/U+2028/U+2029 correlations",
+    "Preserve complete alias expansion multiplicity and traversalorder; source writers remain OPEN"
+  ],
+  "negativeGroups": [
+    "For each variant missingeachrequiredkey/extraunknownkey/wrongtype/nullwrong/arraywrong, including Python bool masquerading integer",
+    "vfs/index/SHA/count/captureId mismatch; JSnull and nonJSnonnull",
+    "PARSED missingmode/vectors/closure/errorfieldextra; parseerror missingerror/wrongclosure; utf8error errorfieldextra; validUTF8 mislabeledinvalid",
+    "directwriter wrongnameindex/aliasfieldextra; aliaswriter directindexextra/methodsuffixwrong/calleewrong/targetwrong/missingaliasrow orcalltuple",
+    "Assignment missingright; update/delete rightpresent/null; invalidoperator/topLevelkind; alias.value missing versus allowednull",
+    "NaN/Infinity/duplicateJSONkeys/depth/vector/args/params/serializedframe/string limits; no truncation",
+    "Function end<=start/bytevsUTF16offset/rangelinewrong/CRLFsplit/surrogatesplit",
+    "Unexpected parser/recursion/internalthrow ABORT_NODE_ANALYSIS distinctfrom decoder failure",
+    "Source semanticcallback wrong despite validschema remainsunproved; schema nevercertifiescalleeidentity"
+  ],
+  "review": "Fresh full CODE+Python+JS DESIGN on exact amendedfreeze before implementation",
+  "oldControls": "Preserved, not rerun",
+  "engine": false,
+  "normativeNameProducers": "NAME-PRODUCERS.json",
+  "actualEscapedAstralNameControls": "NAME-EXAMPLES-AND-TEST-PLAN.json"
+}

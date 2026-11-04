@@ -1,0 +1,199 @@
+{
+  "schema": 1,
+  "purpose": "READ-ONLY minimal SOURCE defect repair and next packet budget proposal; no implementation/freeze authority",
+  "dateAsiaTaipei": "2026-10-30",
+  "status": "PROPOSAL_ONLY_SOURCE_AND_NEXT_FREEZE_BLOCKED_PENDING_ROOT_DIRECTION",
+  "unchangedSource": {
+    "path": "tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py",
+    "bytes": 53703,
+    "sha256": "356c2ba66452b2dc35731921363a188e6f8cb5c5f7c51c784ed10aa905c03041"
+  },
+  "unchangedFreeze": {
+    "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-context-freeze-v1/manifest.json",
+    "sha256": "68a60a7a42d07d6113e4427fabac9d0b9b81c3ac288d06baa6a0faddd56db4cf",
+    "bindings": 126,
+    "snapshotBytes": 2988296
+  },
+  "reviewInputs": [
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-CODE-v1.json",
+      "bytes": 179901,
+      "sha256": "053e4e6bc81c6b146ca526db4afc36ae653cc2182d06a24b149f5cd0bbc6ce0d"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-CODE-v1.md",
+      "bytes": 3046,
+      "sha256": "ae244f99d651c5e26535cee1799320bffbf4cb3861ce77bfcb03fe0bd1d1831e"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-JSAPI-v1.json",
+      "bytes": 223420,
+      "sha256": "ecaa648210e009b46080a152f6d951e9ac0da2c7c056ef08a526e9842508ea1e"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-JSAPI-v1.md",
+      "bytes": 2904,
+      "sha256": "c990b65d0ac7551c6e0a3706cc3982b39c8207abb6c19ffa4c77cfeda9f1fe1d"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-preliminary-finding-v1.json",
+      "bytes": 1490,
+      "sha256": "bf5749fe6399187ab4cfffcfc920785184334b5673046c4617c3a3b4617ada08"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-supplement-v1.json",
+      "bytes": 2854,
+      "sha256": "1ec35df8666a22f4978a444350c07da74c269fa9484ecf6b95b66ff68778a6af"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-supplement-v1.md",
+      "bytes": 1296,
+      "sha256": "11e30f078d48ef42b8c5a9fcc8499f93cd2b44b5974e2b99b922aef569ca96aa"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-v1.json",
+      "bytes": 225853,
+      "sha256": "1ac8ca0b183fd1581b80b45b26f1bae4fb16e1ebb72a998b5f96d21c2dd2f121"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-v1.md",
+      "bytes": 3638,
+      "sha256": "7caa6683517bae80b98d5a64b1c5f6211e857f825a79be576a0c2f0b62ee3ea3"
+    }
+  ],
+  "severityReconciliation": {
+    "physicalDirectoryCleanup": {
+      "Python": "HIGH",
+      "JSAPI": "MEDIUM",
+      "CODE": "MEDIUM"
+    },
+    "censusIteratorCleanup": {
+      "Python": "HIGH",
+      "JSAPI": "MEDIUM",
+      "CODE": "MEDIUM"
+    },
+    "producerConsumption": {
+      "PythonSupplement": "MEDIUM",
+      "JSAPI": "MEDIUM",
+      "CODE": "MEDIUM"
+    },
+    "uniqueDefects": 3,
+    "rule": "Preserve each complete original report and its own severity; no reclassification or averaging. CODE groups the two cleanup defects in one finding."
+  },
+  "minimalFixProposal": [
+    {
+      "function": "physical_dir",
+      "currentLines": [
+        121,
+        132
+      ],
+      "change": "Track owned current descriptor and the previous-close phase separately. Catch the original traversal/open/previous-close exception object. If previous-close failed, append a phase-tagged fd/closeAttempts1/CLOSE_UNKNOWN record for that previous ownership and never retry that fd. Attempt cleanup of the distinct current owned descriptor once in its own guard; append its phase-tagged UNKNOWN if close fails; bare re-raise the original exception. A successful prior close is not retried. Opening slash failure acquires no descriptor and needs no invented cleanup.",
+      "preservation": "Original primary object identity survives; both previous/current uncertainty facts can reach FailureLedger.cleanupUnknown; no numeric reuse guessing or cleanup repair."
+    },
+    {
+      "function": "census.walk",
+      "currentLines": [
+        711,
+        742
+      ],
+      "change": "After successful scandir constructor, maintain iteration_primary. Capture iteration/entry-cap error before finally. Close the acquired iterator exactly once under a separate guard. Attach phase-tagged ITERATOR_CLOSE_UNKNOWN to the iteration primary if it exists; otherwise the exact iterator-close exception becomes primary with owned-iterator UNKNOWN. Constructor failure has no acquired iterator to close. Keep the outer physical directory-FD once-only guard and propagate all cleanupUnknown; do not let inner iterator close replace the first error.",
+      "basis": "Enumeration amendment explicitly covers constructor/next/close error ownership; no listdir/pathname fallback or cap change."
+    },
+    {
+      "function": "run_case/load_producer",
+      "currentLines": [
+        767,
+        773,
+        880,
+        883
+      ],
+      "change": "Keep pre-entry intent/admission marker consumedFalse. Move actual consumedTrue assignment into a narrowly scoped module-body call-entry observation, rather than immediately before exec_module or after successful import. Preserve module-entry/return/error separately from _run producerCalls. A pre-entry evidence/spec/module/compile failure is not consumed; a detected module call followed by import error is consumed; ambiguous observer state is explicitly UNKNOWN and never permits reuse. Body-entry evidence is written only after the observed fact exists, under normal guarded evidence finalization; evidence failure cannot retroactively negate real consumption.",
+      "proposedObservation": "StageC-only optional sys.setprofile allowed by v1. Ordinary SourceFileLoader get_code can capture the exact code object actually returned to inherited exec_module; a fixed-name/path loader and module globals identity join to that code object. A profile call event must match frame.f_code is capturedCode, frame.f_globals is exact module.__dict__, co_name <module>, fixed copied producer path plus source SHA already verified. Only then set consumedTrue in memory; do no filesystem/evidence writes inside callback. Standard loader dispatch remains standard, no direct eval/exec or producer function replacements. No producer import in StageB.",
+      "guardRequirements": [
+        "Save/check existing profile state before installation; do not silently displace an unrelated profiler (reject pre-entry if unsupported).",
+        "Profile installation/dispatch/restoration each have guarded failure bookkeeping retaining original primary and phase-tagged observer UNKNOWN; restore saved state once, no repeated restoration or arbitrary overwrite after uncertain outcome.",
+        "Compile/spec/module preparation can fail before any body frame; detected body call followed by exception remains consumedTrue. An exec_module attempt is not itself entry.",
+        "If exact actual entry cannot be established, report entryStatus UNKNOWN, do not assert FALSE/NOT_CONSUMED as proof; fixed root remains blocked/no retry regardless. Exact result representation for UNKNOWN needs root decision and full independent SOURCE review.",
+        "Capture entry-count cardinality, full exact source/code/frame/global identity and immutable observer facts in bounded evidence; no widening producer seven-private-global configuration or actual wire semantics."
+      ],
+      "tradeoff": "A profile observer is more invasive than moving one boolean but gives actual body-frame entry evidence; mere pre-exec flag still overcounts compile/loader failures and mere post-success flag undercounts bodies that raise. This is proposal only; full source reviewers must assess the observer restoration/error path before StageC."
+    }
+  ],
+  "packetBudget": {
+    "bindingMaxUnchanged": 128,
+    "snapshotBytesMaxUnchanged": 33554432,
+    "baselineRows": 126,
+    "baselineSnapshotBytes": 2988296,
+    "newFullReportFilesActuallyPresent": 9,
+    "newFullReportBytesActuallyPresent": 644402,
+    "oldManifestBytes": 85235,
+    "existingCompleteUnionRowsBeforeAnyRepair": 136,
+    "existingCompleteUnionBytesBeforeAnyRepair": 3717933,
+    "knownRequiredFutureAdditionalRows": [
+      {
+        "kind": "preserved356c controller preimage",
+        "count": 1,
+        "bytesKnown": 53703
+      },
+      {
+        "kind": "sourcefix complete diff",
+        "count": 1,
+        "bytes": "NOT_CREATED_UNKNOWN"
+      },
+      {
+        "kind": "author sourcefix checkpoint",
+        "count": 1,
+        "bytes": "NOT_CREATED_UNKNOWN"
+      },
+      {
+        "kind": "this complete proposal",
+        "count": 1,
+        "bytes": "SELF_FINAL_BYTES_NOT_INCLUDED"
+      },
+      {
+        "kind": "root SOURCE BLOCK closeout",
+        "count": 1,
+        "bytes": "NOT_YET_OBSERVED_NOT_ASSUMED"
+      }
+    ],
+    "minimumProjectedRowsWithFirstFourAdditionalFiles": 140,
+    "withRootCloseout": 141,
+    "budgetVerdict": "ROW_BUDGET_BLOCK_ALREADY136_GT128_BEFORE_REPAIR; bytes3717933_LT32MiB. Future unknown bytes cannot be invented.",
+    "importantAccounting": "Actual nine extra files are three complete SOURCE JSON+MD, complete Python supplement JSON+MD, and original preliminary Python finding JSON. Even omitting preliminary without authority would leave135 rows before repair, still over cap. No omission is performed."
+  },
+  "contextRetentionRequirements": [
+    "All64 approvedv2 primary normative/source/runtime/oracle contexts remain complete direct primary rows, four historical provenance bytes preserved from approved immutable snapshots.",
+    "Current controller/old and new helper/plans/interface, all old complete preimages/manifests/diffs/checkpoints, e542/residual6e081, full limited reviews/readmissions and original20+new4 raw/run/root closeouts remain preserved and fully read.",
+    "All three complete full SOURCE BLOCK reports/MD plus Python supplement/preliminary, old SOURCE manifest and next fix complete preimage/diff/checkpoint must be retained, never summarized to save count.",
+    "Historical manifests may remain opaque descriptors without expanding their nested old272/512 snapshot lists. This avoids recursive growth only; it does not by itself authorize dropping expressly required direct126 inputs or substituting an external reference for a required full new snapshot."
+  ],
+  "opaqueHistoryAssessment": {
+    "safeExistingRule": "Do not recursively expand old manifest binding lists beyond explicitly required primary contexts; preserve each historical manifest/report fully as descriptor input.",
+    "insufficientAuthority": "The existing SOURCE-INTERFACE and root freeze assignment explicitly required complete primary context/preimages/raw inputs. Reclassifying selected old direct rows into one manifest while leaving their full bytes outside the new primary count changes packet representation/readback accounting. The prior opaque272/512 rule does not clearly authorize that for the expressly required126.",
+    "conclusion": "Cannot legally claim <=128 by silent direct-row removal, bundling, representation change or cap increase. Need a bounded root-reviewed normative context-accounting amendment (and any required independent DESIGN approval) that precisely lists direct current normative rows and separately immutable complete historical evidence/readback obligations. Until then next SOURCE packet is BUDGET_BLOCKED. All original data stays unchanged on disk.",
+    "notProposed": "No cap increase, no bundling or data deletion performed; no old approval is reused for changed source."
+  },
+  "acceptanceAfterAnyFutureRootAuthorization": [
+    "Only three isolated source repairs and fresh exact full SOURCE freeze permitted after explicit scope/budget resolution.",
+    "No helper tests:24 are DONE and cannot rerun or expand; full static independent CODE/Python/JS SOURCE review required for actual changed source including profile observer and cleanup paths.",
+    "No StageC import/producer/observer/fixtures/guards/attempt until all exact SOURCE approvals and independent physical gates plus distinct root call.",
+    "Original original-v1 execution root/caseIDs/order/retry0/seedfalse/caps and all consumed historical attempts/FAIL/STOP/raw/seals remain unchanged."
+  ],
+  "executionThisProposal": {
+    "sourceEdits": "NONE",
+    "freezeEdits": "NONE",
+    "trackingEdits": "NONE",
+    "helperEdits": "NONE",
+    "import": "NOT_RUN",
+    "compile": "NOT_RUN",
+    "helpers": "NOT_RUN",
+    "tests": "NOT_RUN",
+    "producer": "NOT_RUN",
+    "observer": "NOT_RUN",
+    "runtimeProbes": "NOT_RUN",
+    "fixtures": "NOT_CREATED",
+    "guard": "NOT_CREATED",
+    "attempt": "NOT_CREATED",
+    "engine": "NOT_RUN"
+  }
+}

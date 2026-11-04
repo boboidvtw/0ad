@@ -1,0 +1,52 @@
+{
+  "purpose": "Root exactthreeway DESIGN completion and bounded separate STAGE_B source assignment",
+  "createdUTC": "2026-10-28T20:42:15.787881+00:00",
+  "status": "DONE_BOUNDED_THREE_WAY_DESIGN_ONLY_STAGE_B_SOURCE_ASSIGNED",
+  "manifestSHA256": "f597e8d5c5bcf214ccb6a74d7e0920914441c3dece4b6851aa895a5c4607b2d4",
+  "rootCurrentRequiredAndSnapshotMATCH": 64,
+  "reviews": {
+    "CODE": {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-code-review-v2.json",
+      "sha256": "729c7244721d05f39b2ee6c4593323ac28bab80f62f4ba7446ed3cf96aa6faeb",
+      "verdict": "APPROVE_DESIGN_ONLY"
+    },
+    "Python": {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-python-review-v2.json",
+      "sha256": "284d922e3b028353bfecfe6db36b090b882aebbb593376a5a8c456365aa7eb53",
+      "verdict": "APPROVE_DESIGN_ONLY"
+    },
+    "JSAPI": {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-js-review-v2/review.json",
+      "sha256": "06f6ceaa04033e2db6986835ba8ed7b0b8c2f9b376b04be4f5f8de99b7d198c5",
+      "verdict": "APPROVE_DESIGN_ONLY"
+    }
+  },
+  "owner": "/root/coverage_fault_author",
+  "sourceOwnership": [
+    "tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py",
+    "tools/epoch-rts/test-t17-save-five-mod-required-fault-controls-helpers.py",
+    "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/"
+  ],
+  "firstSubphase": "SOURCE_AND_HELPER_PLAN_WRITES_ONLY_NO_IMPORT_OR_TEST_UNTIL_ROOT_STATIC_TOPLEVEL_READBACK",
+  "stageB": {
+    "producerImport": false,
+    "producerRun": false,
+    "fixtures": false,
+    "observerInstall": false,
+    "runtimeProbe": false,
+    "campaignAttempt": false,
+    "unitHostFiles": false,
+    "pureMemoryHelpersAfterRootStaticAdmission": true,
+    "maxPreregisteredAssertions": 24,
+    "maxSeconds": 20
+  },
+  "stageC": "NOT_ADMITTED_REQUIRES_FULLCURRENT_SOURCE_REVIEWS_ROOT_FRESHGUARD_DISTINCTCALL",
+  "oracleSHA256": "c29ae4c2b9cdd74d2ad9fde92c4867aea3921a07f6b77475ba28d854cb45c271",
+  "cases": "THREE_NOT_RUN",
+  "retry": 0,
+  "sourceChanges": "No production/core/schema/oldtest/oldharness changes authorized",
+  "native": false,
+  "fullCoverage": "PARTIAL",
+  "oldV1": "BLOCK_IMMUTABLE",
+  "officialCaptureApproved": false
+}

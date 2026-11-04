@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "purpose": "Root independent data-only full original/effective+snapshot and decoded history readback after freeze; not runtime/source approval",
+  "createdUTC": "2026-10-30T02:36:36.616588+00:00",
+  "inputManifestSHA256": "d69d3456754b19f0592682824c4772c72d62169799fc9c02f0466d8291f951d4",
+  "reviewedBindingsSHA256": "f75394caf7e909cc6ccdd5817204d5e646b35f6e2a301c9375b95d441d84f184",
+  "historyContainerSHA256": "2caa72716cb1ac21e4c9163ce6ca2461851fc71ba0381f785a04515d5c18ce74",
+  "expandedLogicalBindingsSHA256": "bcbb171acdda034552fc462203570edb9aad9d6726718d4446177b3b3f9ad104",
+  "physicalBindingCount": 113,
+  "logicalContextCount": 165,
+  "decodedHistoryBytes": 1042748,
+  "encodedHistoryBytes": 1408405,
+  "physicalBindingsMATCH": 113,
+  "snapshotsMATCH": 113,
+  "historyOriginalsFullReadMATCH": 53,
+  "snapshotBytes": 5728239,
+  "sourceApproval": false,
+  "stageCAdmitted": false
+}

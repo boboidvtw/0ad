@@ -1,0 +1,776 @@
+{
+  "schema": 1,
+  "createdUTC": "2026-10-28T15:46:54.205553+00:00",
+  "purpose": "Independent FULL Python/API DESIGN review of exact required fault controls packet, not source/runtime approval",
+  "reviewer": "preservation_python_design; independent of author coverage_fault_author",
+  "verdict": "BLOCK_DESIGN_ONLY",
+  "inputManifestSHA256": "e488202701017b7a5c212bf3ad8cbf5ec43d4d8b00efb3ea2c8781615a668178",
+  "reviewedManifest": {
+    "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/manifest.json",
+    "bytes": 31421,
+    "sha256": "e488202701017b7a5c212bf3ad8cbf5ec43d4d8b00efb3ea2c8781615a668178"
+  },
+  "bindingCount": 55,
+  "snapshotBytes": 1794240,
+  "bindings": [
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md",
+      "bytes": 16148,
+      "sha256": "616f58093179f2af073b658dd0f9ac9c88121b10eb1456425b36e155dfda82d1",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CASE-ORACLE-v1.json",
+      "bytes": 111385,
+      "sha256": "c29ae4c2b9cdd74d2ad9fde92c4867aea3921a07f6b77475ba28d854cb45c271",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CASE-ORACLE-v1.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/freeze-construction-observation.json",
+      "bytes": 362,
+      "sha256": "570f2f4d29b2bcce08f1c46b382b78a579ff5c45dd4e3364d0717b1dac6b40c6",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/freeze-construction-observation.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-five-mod-capture.py",
+      "bytes": 53952,
+      "sha256": "d687c19c9be59ba4e241d0d6fc4d0b331cb7ec3555f2267b4fa125e56bdb5022",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/tools/epoch-rts/t17-save-five-mod-capture.py",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+      "bytes": 52819,
+      "sha256": "5320b54f890413668046c4c8e2edf2d96ce8509b9d1b05296064f7bf35d036d3",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/tools/epoch-rts/test-t17-save-five-mod-capture.py",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs",
+      "bytes": 21653,
+      "sha256": "e7100dd52b755cc7dedefa07624520dbacdd41ccf8e20428160ec2c588f2c3b1",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+      "bytes": 18136,
+      "sha256": "efae7d0fb9c2f716e8d9a32c294b56abe10c83689de02f4a5e1a25d61fefc748",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-five-mod-analysis-schema.json",
+      "bytes": 15491,
+      "sha256": "280357ab50426d73f1265cb07458d8d4f86f226ab3b02d68025d1762d7975191",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/tools/epoch-rts/t17-save-five-mod-analysis-schema.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-preservation-bridge.py",
+      "bytes": 58834,
+      "sha256": "43d62bd8d37012856763846113c5423bd8e19ff695a2471cea84a7d959229e5f",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/tools/epoch-rts/test-t17-save-five-mod-preservation-bridge.py",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SPEC.md",
+      "bytes": 9685,
+      "sha256": "d6615fa1d694d57ce3f2de3d2b505eae0afd09afffd3eb82632a56235b2f5f14",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SPEC.md",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/PROTOCOL.md",
+      "bytes": 8212,
+      "sha256": "9307c44a13c5be7e8a35a0ae950bbda36cbf7f445bcd92f3ee2a2c0790ce04b1",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/PROTOCOL.md",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/LIMITS.json",
+      "bytes": 723,
+      "sha256": "801ff553f5af6bf34e12037a90af1dd41aea5888f8e52b0cc880116fb6311446",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/LIMITS.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/TEST-PLAN.json",
+      "bytes": 4526,
+      "sha256": "48619d53e653717d3af835c5026b5249d3e1079818ea9a595e8c971dc6d2d842",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/TEST-PLAN.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/FAULT-GATES.json",
+      "bytes": 1078,
+      "sha256": "45464555dab05940e9ee1510ddde616aedac2c25c5e056e923b032660064a10e",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/FAULT-GATES.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/ANALYSIS-SCHEMA.json",
+      "bytes": 15491,
+      "sha256": "280357ab50426d73f1265cb07458d8d4f86f226ab3b02d68025d1762d7975191",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/ANALYSIS-SCHEMA.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SOURCE-RELATIONS.json",
+      "bytes": 5733,
+      "sha256": "a5f781e0352c750c56c54f8ce2cb537763cc0925516d90cd2d6f90a9a4962203",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SOURCE-RELATIONS.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-PRODUCERS.json",
+      "bytes": 4149,
+      "sha256": "24cd10015fd396d639d0eeda874ce9566a4f6003b5cdf543ec1d3ee99a05117f",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-PRODUCERS.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-EXAMPLES-AND-TEST-PLAN.json",
+      "bytes": 3777,
+      "sha256": "8445763ba88295fe66c38ac2f25dd0f009ed570b59961f906545552eba4efae4",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/NAME-EXAMPLES-AND-TEST-PLAN.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SCHEMA-TEST-PLAN.json",
+      "bytes": 2000,
+      "sha256": "e59270c4566f96e96839faaa378c6867ea9c9ceb6e9e4ba26b8df62074bb6635",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/SCHEMA-TEST-PLAN.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/OWNERSHIP-AND-REVIEW.md",
+      "bytes": 2459,
+      "sha256": "2653625025ab921440dc174b8edef6101eec064c58230206c92c1a2297cc5766",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/OWNERSHIP-AND-REVIEW.md",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/ROW-EXAMPLES.json",
+      "bytes": 3082,
+      "sha256": "105eef5ffb635a6a043da757f7cb311f13f1e75a5f087e6d8a491b8e4563b329",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/design-fix-v2/ROW-EXAMPLES.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/implementation-python/terminal-fix-v1/CONTRACT-DELTA.md",
+      "bytes": 2615,
+      "sha256": "7686d5f09a585acd7156c5cb64ede91ee249f39ff80dbc295e1dd704467eb72d",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/implementation-python/terminal-fix-v1/CONTRACT-DELTA.md",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/AMENDMENT.md",
+      "bytes": 9631,
+      "sha256": "c48289e3d2bc1db05e1d0dadd7c25b7ac28a779a2df5202fb62a6c49a329c48f",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/AMENDMENT.md",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/AMENDMENT.md",
+      "bytes": 5594,
+      "sha256": "22d2c40d26eb0dbb64186347bc9f4bc1e44c87ed01bcd05dc7c4814f0a24c9a8",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/AMENDMENT.md",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/manifest.json",
+      "bytes": 16426,
+      "sha256": "bd162e15363202b7832dd0f8a189aef3bc44d1ff215e3494ad67f8601e25b5b7",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/manifest.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/completion-design-only.json",
+      "bytes": 1724,
+      "sha256": "6a61276c04d68c1c1ff435a3cf4198bfeaaefc00028ebb0c507fac5896925071",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/completion-design-only.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/manifest.json",
+      "bytes": 40952,
+      "sha256": "5f9ec01494e032f78e6311ff0103ad014e22908a69eaede9a6670d1ed2f530f7",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/manifest.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/completion-design-only.json",
+      "bytes": 1890,
+      "sha256": "a531a7ddc99f6693832adcd363a537db96e7c7d785cadf16873cd709645202f3",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/completion-design-only.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/manifest.json",
+      "bytes": 140780,
+      "sha256": "38b45c79f05a93d340319c2e55bd0317898c74473d676e093f185d73a0a62557",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/manifest.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/code-source-review-v1.json",
+      "bytes": 174759,
+      "sha256": "6e6e33cddeb7ce280a4790cc393be72b4e4ddf2c1142cb86e5de0853b1210ca9",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/code-source-review-v1.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/python-source-review-v1.json",
+      "bytes": 204076,
+      "sha256": "3293b781007111b823b8368c5bf513081bcd980256a7b05453e4a32f5f95fb26",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/python-source-review-v1.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/js-api-source-review-v1.json",
+      "bytes": 153976,
+      "sha256": "fb00c18cf5bd0fe3be313edc6f7303d00cf8c5b3ce98de814bae46b7bd7cb9cd",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/js-api-source-review-v1.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/completion-source-review-only.json",
+      "bytes": 2275,
+      "sha256": "486950895d0de41041cdba7e7d0c48b58419bf1d45ceb8936124c5563ceeada0",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/completion-source-review-only.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+      "bytes": 49905,
+      "sha256": "4a0d526d2d37afb5a2af3132511641e02e287757620eddf39956d29f59abb8a9",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/coverage-matrix.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/coverage.json",
+      "bytes": 2135,
+      "sha256": "57ed904cd36534daa8dd5c22a1872460ed26f06ac696a00ee48e6edd82b2700d",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/coverage.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/fixture-oracle.json",
+      "bytes": 4943,
+      "sha256": "d3361786bd195f3596ea6785919e7715bc3af387c515dc90c9dd49538cb90310",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/fixture-oracle.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/CONTRACT-v1.md",
+      "bytes": 14295,
+      "sha256": "97845716ecc42518ef68addb749c63173d3d68317db252b6ddd0aac4a4a6f8ce",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/CONTRACT-v1.md",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/CONTRACT-v5.md",
+      "bytes": 8926,
+      "sha256": "41f52fa6dea5053377b6f831e1ae09bd6325bd9a947d3b6b8a1138c042a9e5e5",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/CONTRACT-v5.md",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/completion-source-review-only-v5.json",
+      "bytes": 2587,
+      "sha256": "16792262b63258c9311c000753ad77651826d7c04d869e488240cdd299b0108b",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/completion-source-review-only-v5.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/execution-preparation-v1/bounded-runtime-closeout-v1.json",
+      "bytes": 5599,
+      "sha256": "8ec74e51d55ebd6c46fdc2e9746e5ace5a2c37486f8b1384ab7d8b2afddedd47",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/execution-preparation-v1/bounded-runtime-closeout-v1.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/next-coverage-preparation-v1/coverage-reconciliation-v1.json",
+      "bytes": 81362,
+      "sha256": "d527316662da7d3b90a7e5c894cf27f14b4f48ad0a2e89071716d5a38bdcfdab",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/next-coverage-preparation-v1/coverage-reconciliation-v1.json",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/next-coverage-preparation-v1/coverage-reconciliation-v1.md",
+      "bytes": 5570,
+      "sha256": "4e0c998bb08e18055df7a3a9f6928dd76df1766d3b1f630323430aa7f0a53a12",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/next-coverage-preparation-v1/coverage-reconciliation-v1.md",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "docs/empire-rts/AUTONOMOUS-EXECUTION-T14-T18-2026-10-11.md",
+      "bytes": 4420,
+      "sha256": "ca5cc725d177366fa3593f1eb3cc47dede4c183435ce2e0a7fb17cc21b862f52",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/docs/empire-rts/AUTONOMOUS-EXECUTION-T14-T18-2026-10-11.md",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "docs/empire-rts/SESSION-HANDOFF-2026-10-26-TRANSFER-T14-T18.md",
+      "bytes": 4140,
+      "sha256": "30c1e3e2eddc4c376ac1e771bcbd3822b6a3865d694ceba8d72835da984d48aa",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/docs/empire-rts/SESSION-HANDOFF-2026-10-26-TRANSFER-T14-T18.md",
+      "role": "POINT_IN_TIME_HISTORY",
+      "requireCurrentMatchForDesignApproval": false,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "docs/empire-rts/SESSION-HANDOFF-2026-10-27-T14-T18.md",
+      "bytes": 11321,
+      "sha256": "5910f87250d58548060813b2a99ef316fc0febed76efc9c0363dbc9414375a5a",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/docs/empire-rts/SESSION-HANDOFF-2026-10-27-T14-T18.md",
+      "role": "POINT_IN_TIME_HISTORY",
+      "requireCurrentMatchForDesignApproval": false,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "docs/empire-rts/SESSION-HANDOFF-2026-10-28-T14-T18.md",
+      "bytes": 10108,
+      "sha256": "5c80052322a24f332cf407f3669891ba90d36dc6aa442dac06a7ceaf186d1c78",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/docs/empire-rts/SESSION-HANDOFF-2026-10-28-T14-T18.md",
+      "role": "POINT_IN_TIME_HISTORY",
+      "requireCurrentMatchForDesignApproval": false,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "work/t14-t18-session-transfer-20261026/current-checkpoint.json",
+      "bytes": 37598,
+      "sha256": "03e51113e9a257e1fd422d2087d1c9684a7f5ea7a3f5bf8743ffd57551802d50",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/repo/work/t14-t18-session-transfer-20261026/current-checkpoint.json",
+      "role": "POINT_IN_TIME_HISTORY",
+      "requireCurrentMatchForDesignApproval": false,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3.9",
+      "bytes": 53200,
+      "sha256": "6e7ae61f68a3838094fc56590f84c52069a97d7816f6bb79e0e85995b340e464",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3.9",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/zipfile.py",
+      "bytes": 87278,
+      "sha256": "df6e2da67a3394a47ed57cfbd44298109d26f71ea22948a8840b6b56b0f6189d",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/zipfile.py",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/hashlib.py",
+      "bytes": 10010,
+      "sha256": "a25e6f24d6ae5b5205844e2717f3d6dbeda005c1afeaf4d450b4f2c363a3d34a",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/hashlib.py",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/io.py",
+      "bytes": 3541,
+      "sha256": "01907eff5e1a17d37e967b4d6d1bd2230e03d30f56cc1a1384a14dd77be5ff60",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/io.py",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py",
+      "bytes": 14017,
+      "sha256": "332fabb72a4a1ed02c9207a7619ab339dac8f0b6862e16f6499147121b302a27",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/os.py",
+      "bytes": 39404,
+      "sha256": "8dbe2d2e9f228747cacbbcc6758721e794b652e5c22b6224cb07e303ebbc620d",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/os.py",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_hashlib.cpython-39-darwin.so",
+      "bytes": 90640,
+      "sha256": "df2522e0043b85940cc9fa28e4807211a15edec673f648d1f501483a5736d641",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_hashlib.cpython-39-darwin.so",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    },
+    {
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/zlib.cpython-39-darwin.so",
+      "bytes": 88848,
+      "sha256": "d63129e2be45719a8ebd16cc0c74a2146bc96dff91a8fca65f9958f55e643d3a",
+      "snapshot": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/snapshot/host/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/zlib.cpython-39-darwin.so",
+      "role": "FULL_PRIMARY_CONTEXT",
+      "requireCurrentMatchForDesignApproval": true,
+      "currentReadback": "MATCH",
+      "snapshotReadback": "MATCH"
+    }
+  ],
+  "currentReadback": "ALL55MATCH",
+  "snapshotReadback": "ALL55MATCH",
+  "reviewedContract": {
+    "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md",
+    "bytes": 16148,
+    "sha256": "616f58093179f2af073b658dd0f9ac9c88121b10eb1456425b36e155dfda82d1"
+  },
+  "reviewedOracle": {
+    "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CASE-ORACLE-v1.json",
+    "bytes": 111385,
+    "sha256": "c29ae4c2b9cdd74d2ad9fde92c4867aea3921a07f6b77475ba28d854cb45c271"
+  },
+  "findings": [
+    {
+      "id": "PY-DESIGN-F01",
+      "severity": "MEDIUM",
+      "title": "Frozen dependency gates do not define the intended pre-SOURCE pure-helper exception",
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/CONTRACT-v1.md",
+      "line": 51,
+      "relatedLines": [
+        4,
+        18
+      ],
+      "rootCause": "Line51 places implementation and focused tests after DESIGN/root readback, but its final sentence prohibits fixture/producer _run/import/test before the entire preceding SOURCE/guard/separate-call gates without distinguishing pure helper tests. Line4 likewise uses a broad no-test statement for this preparation. The intended exception explained in author/root messages (pure helpers after DESIGN without producer import/_run/execution-v1/three cases) is absent from the frozen contract/oracle authority boundaries. A reader cannot unambiguously decide which pre-SOURCE tests are permitted and which count as consumed cases.",
+      "impact": "Approval of exact e488 design would leave contradictory execution ordering for the next implementation/test phase; either legitimate focused pure tests are blocked or a broad interpretation may run producer fixtures/cases before source review. No execution bypass or actual violation occurred in this review.",
+      "fix": "Make a new immutable amendment/freeze explicitly separate: DESIGN+root readback permit controller/oracle/helper source implementation and specifically bounded pure-helper tests only, with no producer import/_run, fixture/execution-v1 reservation, three-case consumption or process/runtime invocation. Full frozen SOURCE approval+current readback+independent freshguard+explicit later call alone permit real fixture admission/producer import/_run and exactly three cases. State whether any helper may create its own separate unit-only hostroot, or forbid it explicitly. Bind helper scope/counters/results so no pure control is counted as a true F01/F02 pass. Preserve e488 and prior raw unchanged.",
+      "confidence": "HIGH",
+      "evidenceScope": "Static exact contract sequencing only; no tests/import/fixtures/cases executed",
+      "blocking": "DESIGN_ONLY; all other reviewed design axes below have no additional blocking finding"
+    }
+  ],
+  "severityCounts": {
+    "CRITICAL": 0,
+    "HIGH": 0,
+    "MEDIUM": 1,
+    "LOW": 0
+  },
+  "fullScope": [
+    {
+      "axis": "exact freeze/context",
+      "assessment": "55 primary+55 complete snapshots independently hashed, all currentMATCH at both readbacks;1794240 bytes below128files/32MiB. Descriptor manifests do not recursively drag old512 into active union.51 current-required plus4 mutable point-in-time provenance rows distinguished. No oldsource/core38/harness43d approval borrowed for new controller."
+    },
+    {
+      "axis": "three fixed negative cases and oracle",
+      "assessment": "Two families/three fixed ordered cases are explicit, not a retry or normal/-O repeat. Independent literal oracle covers input98bytes, five SOURCE frames and F02 CAPTURED, terminal FAULT, raw lengths/hashes and actual9byte prefix. All oracle frame compact serialization/base64 hashes and literal selected body/table/layer/digest/captureId relations verified by read-only data calculations, no producer import/capture."
+    },
+    {
+      "axis": "F01 syscall classification",
+      "contractLines": [
+        27,
+        29,
+        31
+      ],
+      "sourceLines": [
+        95,
+        99,
+        261,
+        264,
+        847,
+        852,
+        874,
+        889,
+        895
+      ],
+      "assessment": "Only capture-inputs.json OEXCL open matching producer rootFD generation is denied. Existing Deadline.io open EACCES maps SOURCE_TYPE, phase ARCHIVE_AND_SOURCES; no relabel/fix. All23 bodies/archive-auth preexist, no CAPTURED/completed, normal fault snapshot remains outputCleanupCompletefalse/nativefalse/sourceClosurefalse."
+    },
+    {
+      "axis": "F02 reserve and write ownership",
+      "contractLines": [
+        32,
+        33,
+        35
+      ],
+      "sourceLines": [
+        266,
+        281,
+        854,
+        857,
+        879,
+        890,
+        895,
+        912
+      ],
+      "assessment": "Valid manual ABORT_NODE_LIMIT is first producer failure at FINISH; faultreserve EACCES has no acquired targetFD. Faultwrite uses actual saved write of exactly9byte literalprefix, records actual return9 then raises once from same syscall wrapper; actual partial invalidJSON retained, no invented parsed snapshot. Current secondary SOURCE_TYPE/OUTPUT_WRITE_OR_FSYNC do not replace terminal primary."
+    },
+    {
+      "axis": "raw/sent/protocol",
+      "contractLines": [
+        20,
+        23,
+        39,
+        41
+      ],
+      "sourceLines": [
+        754,
+        772,
+        785,
+        799,
+        876,
+        878,
+        893,
+        904
+      ],
+      "assessment": "Literal BytesIO preloads BEGIN+ABORT. Current receive reads98bytes and F01 cleanup writes buffered unframed ABORT, so full inputraw98bytes expected in all3. Outputraw records exact terminal before send; five SOURCE and only F02 CAPTURED, no duplicate/completed. Sink bytes byte-equal retained outputraw; actual input consumption supplied-vs-framed distinguished. This is manualprotocol local API coverage, no Node/pipe/reap proof."
+    },
+    {
+      "axis": "injection/observation/restore",
+      "contractLines": [
+        18,
+        29,
+        43
+      ],
+      "assessment": "Transparent os.open/write wrappers forward exact nonmatching calls; match root identity+open generation, writefault exact acquiredgeneration; no numericFD/basename-only trigger. Controller evidence must not be intercepted. Install only after admission, restore in guarded finally preserving earliest controller error. Future source review must check callable identity keeps unchanged Deadline.io classification and all restoration paths. No function/runtime/crypto/limit substitutes except narrowly declared syscall injection/transparent observers."
+    },
+    {
+      "axis": "FD generations and observable close",
+      "contractLines": [
+        29,
+        43
+      ],
+      "sourceLines": [
+        107,
+        148,
+        263,
+        280,
+        498,
+        525,
+        880,
+        901
+      ],
+      "assessment": "Observed successful os.open generation gets one close attempt with outcome, number reuse separated by monotonic generation/identity, UNKNOWN never retried. Capture/output close and runtimeFD cleanup are observed compatibility paths, not proof all ZipFile/scandir/native/internal FDs were visible. No process/hiddenFD/fullhost or finaldurablecleanup claim. Unexpected cleanupUNKNOWN fails/stops remainingcases."
+    },
+    {
+      "axis": "physical outputs/census/oracle facts",
+      "contractLines": [
+        12,
+        16,
+        39,
+        41,
+        43
+      ],
+      "assessment": "Exclusive fixed execution-v1/case roots and private captures leaf, held parentFD nonrecursive0700/0600 OEXCL NOFOLLOW; no source/evidence overwrite/delete/renames. Literal sentinel before/after andimmutable context/source preimages; independently volatile runtime/FD facts not constant fabricated. Future source expectedfilecensus must enforce F01 capture-inputs absent/F02 present, fault absent or9prefix bycase and all5 analysis/manifest/completed forbidden."
+    },
+    {
+      "axis": "resource/deadline/finalization",
+      "contractLines": [
+        47,
+        49,
+        51
+      ],
+      "assessment": "1MiB inputs,256KiB copiedcontext,8MiB producer/evidence each,256entries,32MiB campaign and16kledger percase, bounded stdout/stderr; no truncationPASS. Setup30/case20 inclusive/sharedcleanup30/overall120 supplementary and cooperative, production600 unchanged. Postcall checks before dependent nextcase and success completion required; no hard interrupt/RSS/FDreservation claims. Independent guarded evidence/snapshot/ownedclose preserve first error andsecondary; consumes once at producerbody; unexpected event stops latercases. Source implementation must demonstrate this, not yet done."
+    },
+    {
+      "axis": "gate sequence and scope",
+      "assessment": "Newcontroller SOURCE freeze/reviews/currentphysical/resource/ownership/freshguard/separatecall needed; threecases NOTRUN/attemptNOTCREATED. Purehelper pre-SOURCE exception missing is soleblockingfinding. Negative results close only injectedR09.1/.2 coverage; no official/sparse/8–64MiB/RSS/negativeprocess/fullproducer/fullhost/native closure."
+    }
+  ],
+  "sourceTruth": [
+    {
+      "path": "tools/epoch-rts/t17-save-five-mod-capture.py",
+      "bytes": 53952,
+      "sha256": "d687c19c9be59ba4e241d0d6fc4d0b331cb7ec3555f2267b4fa125e56bdb5022"
+    },
+    {
+      "path": "tools/epoch-rts/test-t17-save-five-mod-capture.py",
+      "bytes": 52819,
+      "sha256": "5320b54f890413668046c4c8e2edf2d96ce8509b9d1b05296064f7bf35d036d3"
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs",
+      "bytes": 21653,
+      "sha256": "e7100dd52b755cc7dedefa07624520dbacdd41ccf8e20428160ec2c588f2c3b1"
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-five-mod-analysis-schema.json",
+      "bytes": 15491,
+      "sha256": "280357ab50426d73f1265cb07458d8d4f86f226ab3b02d68025d1762d7975191"
+    }
+  ],
+  "completeReadMethod": "Read/hash every primary+snapshot including full current source/tests/normative contexts/runtime binary/source compatibility files. New entire contract/oracle and actual _run/Deadline/Protocol/Output/Capture ownership paths examined; unchanged fullbase/core/source reviews from this continuing review sequence remain exactSHA-reverified. JSON oracle read-only calculations do not import producer or execute helpers. Mutable4 handoffs/checkpoint are frozen point-in-time provenance, not futurecurrent gate.",
+  "oracleReadOnlyIntegrity": {
+    "inputBytes": 98,
+    "partialFaultBytes": 9,
+    "partialLiteral": "{\"phase\":",
+    "stdoutBytes": [
+      1407,
+      13363,
+      13493
+    ],
+    "stdoutHashes": [
+      "daf27e92ce21177c53c537b1ed34f0794f73c21abb819107ec9cbadc8eccf8f5",
+      "44f843363ae7c91e6f6f8e0b97644d5b85b95a2fdf72384c9f8e9e7def1d287f",
+      "081b838880cf6bdf171408f286333316eb64ec2a78f5d459a11314c5cc7aadaf"
+    ],
+    "result": "ALL_CASE_RAW_FRAME_LENGTH_HASH_LITERAL_BODY_LAYER_SELECTED_CORRELATIONS_MATCH_STATIC_DATA"
+  },
+  "execution": "NONE; no producer/controller import, helper/test execution, fixture/execution-v1/case/lock/guard/attempt/engine/network/source edit; only read-only inspection and two exclusive sibling reviewfiles",
+  "unknown": [
+    "No implementation exists: syscall matching/cardinality/generation ledger/restoration/caps/deadlines/controller finalization still need exact SOURCE review",
+    "No observed real fault invocation/close-generation run",
+    "Real OSpermission/diskfull/childOSwait/pipe/fullhost/producerwhole-rawseal not established",
+    "SparseZIP64/actual8–64MiB/RSS/alllimits/actualproducer/full40/noProxy/nativecaller/clone/restore/consumer/official/native/GUI/save/network remainOPEN"
+  ],
+  "sourceApproval": false,
+  "implementationApproved": false,
+  "runtimeApproved": false,
+  "officialCaptureApproval": false,
+  "sourceClosure": false,
+  "native": false
+}

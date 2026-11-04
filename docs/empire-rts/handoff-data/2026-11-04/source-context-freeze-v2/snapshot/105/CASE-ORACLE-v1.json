@@ -1,0 +1,1235 @@
+{
+  "schema": 1,
+  "purpose": "DESIGN ONLY preregistered literal expectations; generated solely from frozen table/static source literals without source import/run",
+  "createdDate": "2026-10-28",
+  "families": 2,
+  "caseCount": 3,
+  "retry": 0,
+  "seed": false,
+  "runtime": "NOT_CREATED",
+  "attempt": "NOT_CREATED",
+  "expectedInputBase64": "eyJ2IjoxLCJraW5kIjoiQkVHSU4iLCJvdXRwdXRMZWFmIjoiZmF1bHRfZml4dHVyZV92MSJ9CnsidiI6MSwia2luZCI6IkFCT1JUIiwiY29kZSI6Ik5PREVfTElNSVQifQo=",
+  "expectedInputBytes": 98,
+  "expectedInputSHA256": "d5d311493348948de98239f18714e1c56a0d477c03a09a7125659870ce5187bd",
+  "partialFaultBase64": "eyJwaGFzZSI6",
+  "partialFaultBytes": 9,
+  "partialFaultSHA256": "0134c78da7f4b497e2b89ad71483610188f10326bbd605c3bd00e09435066654",
+  "sentinelBase64": "RjAxRjAyIGltbXV0YWJsZSBwcmVmaXgK",
+  "cases": [
+    {
+      "id": "F01_EACCES_CAPTURE_INPUT_RESERVE",
+      "root": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F01_EACCES_CAPTURE_INPUT_RESERVE",
+      "producerLeaf": "fault_fixture_v1",
+      "status": "NOT_RUN",
+      "retry": 0,
+      "seed": false,
+      "expectedReturn": 1,
+      "expectedPhase": "ARCHIVE_AND_SOURCES",
+      "expectedPrimaryCode": "SOURCE_TYPE",
+      "expectedInjectionCount": 1,
+      "expectedFrames": [
+        {
+          "v": 1,
+          "kind": "SOURCE",
+          "index": 0,
+          "vfs": "globalscripts/ArchiveOnly.js",
+          "mod": "public",
+          "sha256": "624db9c73026e1d1cbd03be8692ade7d91b8ca417339f98d133fc16327b00f28",
+          "bytes": 59,
+          "bodyBase64": "RW5naW5lLlJlZ2lzdGVyR2xvYmFsKCJTeW50aGV0aWNQcmVzZXJ2YXRpb25BcmNoaXZlIiwge30pOwo="
+        },
+        {
+          "v": 1,
+          "kind": "SOURCE",
+          "index": 1,
+          "vfs": "mod.json",
+          "mod": "epoch_t17_save_allocation_witness",
+          "sha256": "52d8ff7bff23e5dc7c2ad82c1781ec63c431bb27fb12b16e16d92a81ed67f07b",
+          "bytes": 83,
+          "bodyBase64": "eyJuYW1lIjoiZXBvY2hfdDE3X3NhdmVfYWxsb2NhdGlvbl93aXRuZXNzIiwidmVyc2lvbiI6IlNZTlRIRVRJQ19QUkVTRVJWQVRJT05fVjEifQo="
+        },
+        {
+          "v": 1,
+          "kind": "SOURCE",
+          "index": 2,
+          "vfs": "simulation/helpers/Empty.js",
+          "mod": "epoch_t17_save_allocation_witness",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "bodyBase64": ""
+        },
+        {
+          "v": 1,
+          "kind": "SOURCE",
+          "index": 3,
+          "vfs": "simulation/helpers/Shadow.js",
+          "mod": "epoch_t17_save_allocation_witness",
+          "sha256": "8ac6b2f522363c1df0d841ef322d1cc573ea00a6fe8eb4735dc00063c7fb2750",
+          "bytes": 51,
+          "bodyBase64": "Y29uc3QgbGF5ZXIgPSAiZXBvY2hfdDE3X3NhdmVfYWxsb2NhdGlvbl93aXRuZXNzIjsK"
+        },
+        {
+          "v": 1,
+          "kind": "SOURCE",
+          "index": 4,
+          "vfs": "simulation/helpers/TopOnly.js",
+          "mod": "epoch_t17_save_allocation_witness",
+          "sha256": "dba36c43af1c97e18cbc1b1b685cc33ccb34bdfa9ac39e451c00864ca17ab1be",
+          "bytes": 13,
+          "bodyBase64": "bGV0IHdpdG5lc3M7Cg=="
+        },
+        {
+          "v": 1,
+          "kind": "FAULT",
+          "phase": "ARCHIVE_AND_SOURCES",
+          "code": "SOURCE_TYPE",
+          "durableFault": false
+        }
+      ],
+      "expectedStdoutBase64": "eyJ2IjoxLCJraW5kIjoiU09VUkNFIiwiaW5kZXgiOjAsInZmcyI6Imdsb2JhbHNjcmlwdHMvQXJjaGl2ZU9ubHkuanMiLCJtb2QiOiJwdWJsaWMiLCJzaGEyNTYiOiI2MjRkYjljNzMwMjZlMWQxY2JkMDNiZTg2OTJhZGU3ZDkxYjhjYTQxNzMzOWY5OGQxMzNmYzE2MzI3YjAwZjI4IiwiYnl0ZXMiOjU5LCJib2R5QmFzZTY0IjoiUlc1bmFXNWxMbEpsWjJsemRHVnlSMnh2WW1Gc0tDSlRlVzUwYUdWMGFXTlFjbVZ6WlhKMllYUnBiMjVCY21Ob2FYWmxJaXdnZTMwcE93bz0ifQp7InYiOjEsImtpbmQiOiJTT1VSQ0UiLCJpbmRleCI6MSwidmZzIjoibW9kLmpzb24iLCJtb2QiOiJlcG9jaF90MTdfc2F2ZV9hbGxvY2F0aW9uX3dpdG5lc3MiLCJzaGEyNTYiOiI1MmQ4ZmY3YmZmMjNlNWRjN2MyYWQ4MmMxNzgxZWM2M2M0MzFiYjI3ZmIxMmIxNmUxNmQ5MmE4MWVkNjdmMDdiIiwiYnl0ZXMiOjgzLCJib2R5QmFzZTY0IjoiZXlKdVlXMWxJam9pWlhCdlkyaGZkREUzWDNOaGRtVmZZV3hzYjJOaGRHbHZibDkzYVhSdVpYTnpJaXdpZG1WeWMybHZiaUk2SWxOWlRsUklSVlJKUTE5UVVrVlRSVkpXUVZSSlQwNWZWakVpZlFvPSJ9CnsidiI6MSwia2luZCI6IlNPVVJDRSIsImluZGV4IjoyLCJ2ZnMiOiJzaW11bGF0aW9uL2hlbHBlcnMvRW1wdHkuanMiLCJtb2QiOiJlcG9jaF90MTdfc2F2ZV9hbGxvY2F0aW9uX3dpdG5lc3MiLCJzaGEyNTYiOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1IiwiYnl0ZXMiOjAsImJvZHlCYXNlNjQiOiIifQp7InYiOjEsImtpbmQiOiJTT1VSQ0UiLCJpbmRleCI6MywidmZzIjoic2ltdWxhdGlvbi9oZWxwZXJzL1NoYWRvdy5qcyIsIm1vZCI6ImVwb2NoX3QxN19zYXZlX2FsbG9jYXRpb25fd2l0bmVzcyIsInNoYTI1NiI6IjhhYzZiMmY1MjIzNjNjMWRmMGQ4NDFlZjMyMmQxY2M1NzNlYTAwYTZmZThlYjQ3MzVkYzAwMDYzYzdmYjI3NTAiLCJieXRlcyI6NTEsImJvZHlCYXNlNjQiOiJZMjl1YzNRZ2JHRjVaWElnUFNBaVpYQnZZMmhmZERFM1gzTmhkbVZmWVd4c2IyTmhkR2x2Ymw5M2FYUnVaWE56SWpzSyJ9CnsidiI6MSwia2luZCI6IlNPVVJDRSIsImluZGV4Ijo0LCJ2ZnMiOiJzaW11bGF0aW9uL2hlbHBlcnMvVG9wT25seS5qcyIsIm1vZCI6ImVwb2NoX3QxN19zYXZlX2FsbG9jYXRpb25fd2l0bmVzcyIsInNoYTI1NiI6ImRiYTM2YzQzYWYxYzk3ZTE4Y2JjMWIxYjY4NWNjMzNjY2IzNGJkZmE5YWMzOWU0NTFjMDA4NjRjYTE3YWIxYmUiLCJieXRlcyI6MTMsImJvZHlCYXNlNjQiOiJiR1YwSUhkcGRHNWxjM003Q2c9PSJ9CnsidiI6MSwia2luZCI6IkZBVUxUIiwicGhhc2UiOiJBUkNISVZFX0FORF9TT1VSQ0VTIiwiY29kZSI6IlNPVVJDRV9UWVBFIiwiZHVyYWJsZUZhdWx0IjpmYWxzZX0K",
+      "expectedStdoutBytes": 1407,
+      "expectedStdoutSHA256": "daf27e92ce21177c53c537b1ed34f0794f73c21abb819107ec9cbadc8eccf8f5",
+      "expectedStderr": "CAPTURE_FAULT ARCHIVE_AND_SOURCES SOURCE_TYPE\n",
+      "faultFile": "VALID_PRE_OUTPUT_CLOSE_SNAPSHOT",
+      "expectedCaptured": null,
+      "expectedBodyCopies": 23,
+      "forbiddenFiles": [
+        "inventory.json",
+        "layer-inputs.json",
+        "writer-sites.json",
+        "manifest.json",
+        "completed.json"
+      ],
+      "injectedErrno": "EACCES",
+      "injectionTarget": "capture-inputs.json open"
+    },
+    {
+      "id": "F02_R_EACCES_FAULT_RESERVE",
+      "root": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE",
+      "producerLeaf": "fault_fixture_v1",
+      "status": "NOT_RUN",
+      "retry": 0,
+      "seed": false,
+      "expectedReturn": 1,
+      "expectedPhase": "FINISH",
+      "expectedPrimaryCode": "ABORT_NODE_LIMIT",
+      "expectedInjectionCount": 1,
+      "expectedFrames": [
+        {
+          "v": 1,
+          "kind": "SOURCE",
+          "index": 0,
+          "vfs": "globalscripts/ArchiveOnly.js",
+          "mod": "public",
+          "sha256": "624db9c73026e1d1cbd03be8692ade7d91b8ca417339f98d133fc16327b00f28",
+          "bytes": 59,
+          "bodyBase64": "RW5naW5lLlJlZ2lzdGVyR2xvYmFsKCJTeW50aGV0aWNQcmVzZXJ2YXRpb25BcmNoaXZlIiwge30pOwo="
+        },
+        {
+          "v": 1,
+          "kind": "SOURCE",
+          "index": 1,
+          "vfs": "mod.json",
+          "mod": "epoch_t17_save_allocation_witness",
+          "sha256": "52d8ff7bff23e5dc7c2ad82c1781ec63c431bb27fb12b16e16d92a81ed67f07b",
+          "bytes": 83,
+          "bodyBase64": "eyJuYW1lIjoiZXBvY2hfdDE3X3NhdmVfYWxsb2NhdGlvbl93aXRuZXNzIiwidmVyc2lvbiI6IlNZTlRIRVRJQ19QUkVTRVJWQVRJT05fVjEifQo="
+        },
+        {
+          "v": 1,
+          "kind": "SOURCE",
+          "index": 2,
+          "vfs": "simulation/helpers/Empty.js",
+          "mod": "epoch_t17_save_allocation_witness",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "bodyBase64": ""
+        },
+        {
+          "v": 1,
+          "kind": "SOURCE",
+          "index": 3,
+          "vfs": "simulation/helpers/Shadow.js",
+          "mod": "epoch_t17_save_allocation_witness",
+          "sha256": "8ac6b2f522363c1df0d841ef322d1cc573ea00a6fe8eb4735dc00063c7fb2750",
+          "bytes": 51,
+          "bodyBase64": "Y29uc3QgbGF5ZXIgPSAiZXBvY2hfdDE3X3NhdmVfYWxsb2NhdGlvbl93aXRuZXNzIjsK"
+        },
+        {
+          "v": 1,
+          "kind": "SOURCE",
+          "index": 4,
+          "vfs": "simulation/helpers/TopOnly.js",
+          "mod": "epoch_t17_save_allocation_witness",
+          "sha256": "dba36c43af1c97e18cbc1b1b685cc33ccb34bdfa9ac39e451c00864ca17ab1be",
+          "bytes": 13,
+          "bodyBase64": "bGV0IHdpdG5lc3M7Cg=="
+        },
+        {
+          "v": 1,
+          "kind": "CAPTURED",
+          "captureId": "f5dab7b72086eead0fa74192c36b4ce7394eb25cca53ffccda8a62be73d053e0",
+          "sourceCount": 5,
+          "selectedDigest": "56af00ffeba998813afc52afc139ba971e65fb0b178f23c91396e78dbb4df88f",
+          "layers": [
+            {
+              "name": "public",
+              "rootKind": "archive",
+              "rootDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/synthetic-public.zip",
+              "entries": [
+                {
+                  "vfs": "globalscripts/ArchiveOnly.js",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/synthetic-public.zip::globalscripts/ArchiveOnly.js",
+                  "bytes": 59,
+                  "sha256": "624db9c73026e1d1cbd03be8692ade7d91b8ca417339f98d133fc16327b00f28"
+                },
+                {
+                  "vfs": "mod.json",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/synthetic-public.zip::mod.json",
+                  "bytes": 56,
+                  "sha256": "1c5f060e6a06f4db748127a161a6be25767bb660a840614f7b4fac80897ea0cf"
+                },
+                {
+                  "vfs": "simulation/helpers/Shadow.js",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/synthetic-public.zip::simulation/helpers/Shadow.js",
+                  "bytes": 24,
+                  "sha256": "1f80220d28f31df37fc252333b75b900d94e4dbea9713201ba18f70c637a3194"
+                }
+              ]
+            },
+            {
+              "name": "epoch_rts",
+              "rootKind": "loose",
+              "rootDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/binaries/data/mods/epoch_rts",
+              "entries": [
+                {
+                  "vfs": "mod.json",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/binaries/data/mods/epoch_rts/mod.json",
+                  "bytes": 59,
+                  "sha256": "c6f90fc75343ae4339f644c6d50d28ca179df5967446de7e6048cbb07e14d7e5"
+                },
+                {
+                  "vfs": "simulation/helpers/Shadow.js",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/binaries/data/mods/epoch_rts/simulation/helpers/Shadow.js",
+                  "bytes": 27,
+                  "sha256": "9a4b3814c6bc09c1a5c10bd6e4e0a8b9f25514394c8333557c4ffecc3682df01"
+                }
+              ]
+            },
+            {
+              "name": "epoch_t16_harness",
+              "rootKind": "loose",
+              "rootDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t16-harness",
+              "entries": [
+                {
+                  "vfs": "mod.json",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t16-harness/mod.json",
+                  "bytes": 67,
+                  "sha256": "e4a6d6666306a67110bca3d90ce9bae034f139a259105b2b25bd4b0abb33ab96"
+                },
+                {
+                  "vfs": "simulation/helpers/Shadow.js",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t16-harness/simulation/helpers/Shadow.js",
+                  "bytes": 35,
+                  "sha256": "358b9ce6b30931d40bd841b7704bb7c5dd101e2ede24616e94c22279cb4ee1dd"
+                }
+              ]
+            },
+            {
+              "name": "epoch_t17_save_harness",
+              "rootKind": "loose",
+              "rootDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t17-save-harness",
+              "entries": [
+                {
+                  "vfs": "mod.json",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t17-save-harness/mod.json",
+                  "bytes": 72,
+                  "sha256": "924b38381d7a691bc6f020dad4f6f021cef693c69bec5af9b1979907905fa45e"
+                },
+                {
+                  "vfs": "simulation/helpers/Shadow.js",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t17-save-harness/simulation/helpers/Shadow.js",
+                  "bytes": 40,
+                  "sha256": "fe55fec1770cc3d2bb0a49842f85fa4911f4a0b8c03d0c9c5ccbd3a81143d3c9"
+                }
+              ]
+            },
+            {
+              "name": "epoch_t17_save_allocation_witness",
+              "rootKind": "loose",
+              "rootDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t17-save-allocation-witness",
+              "entries": [
+                {
+                  "vfs": "mod.json",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t17-save-allocation-witness/mod.json",
+                  "bytes": 83,
+                  "sha256": "52d8ff7bff23e5dc7c2ad82c1781ec63c431bb27fb12b16e16d92a81ed67f07b"
+                },
+                {
+                  "vfs": "simulation/helpers/Empty.js",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t17-save-allocation-witness/simulation/helpers/Empty.js",
+                  "bytes": 0,
+                  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                },
+                {
+                  "vfs": "simulation/helpers/Shadow.js",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t17-save-allocation-witness/simulation/helpers/Shadow.js",
+                  "bytes": 51,
+                  "sha256": "8ac6b2f522363c1df0d841ef322d1cc573ea00a6fe8eb4735dc00063c7fb2750"
+                },
+                {
+                  "vfs": "simulation/helpers/TopOnly.js",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t17-save-allocation-witness/simulation/helpers/TopOnly.js",
+                  "bytes": 13,
+                  "sha256": "dba36c43af1c97e18cbc1b1b685cc33ccb34bdfa9ac39e451c00864ca17ab1be"
+                }
+              ]
+            }
+          ],
+          "selected": [
+            {
+              "index": 0,
+              "vfs": "globalscripts/ArchiveOnly.js",
+              "mod": "public",
+              "sha256": "624db9c73026e1d1cbd03be8692ade7d91b8ca417339f98d133fc16327b00f28",
+              "bytes": 59,
+              "shadowed": [],
+              "archiveEntry": "globalscripts/ArchiveOnly.js",
+              "defaultLoaderFolder": "globalscripts/",
+              "realm": "SIMULATION_CANDIDATE"
+            },
+            {
+              "index": 1,
+              "vfs": "mod.json",
+              "mod": "epoch_t17_save_allocation_witness",
+              "sha256": "52d8ff7bff23e5dc7c2ad82c1781ec63c431bb27fb12b16e16d92a81ed67f07b",
+              "bytes": 83,
+              "shadowed": [
+                {
+                  "mod": "public",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/synthetic-public.zip::mod.json",
+                  "sha256": "1c5f060e6a06f4db748127a161a6be25767bb660a840614f7b4fac80897ea0cf"
+                },
+                {
+                  "mod": "epoch_rts",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/binaries/data/mods/epoch_rts/mod.json",
+                  "sha256": "c6f90fc75343ae4339f644c6d50d28ca179df5967446de7e6048cbb07e14d7e5"
+                },
+                {
+                  "mod": "epoch_t16_harness",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t16-harness/mod.json",
+                  "sha256": "e4a6d6666306a67110bca3d90ce9bae034f139a259105b2b25bd4b0abb33ab96"
+                },
+                {
+                  "mod": "epoch_t17_save_harness",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t17-save-harness/mod.json",
+                  "sha256": "924b38381d7a691bc6f020dad4f6f021cef693c69bec5af9b1979907905fa45e"
+                }
+              ],
+              "archiveEntry": null,
+              "defaultLoaderFolder": null,
+              "realm": "METADATA"
+            },
+            {
+              "index": 2,
+              "vfs": "simulation/helpers/Empty.js",
+              "mod": "epoch_t17_save_allocation_witness",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "bytes": 0,
+              "shadowed": [],
+              "archiveEntry": null,
+              "defaultLoaderFolder": "simulation/helpers/",
+              "realm": "SIMULATION_CANDIDATE"
+            },
+            {
+              "index": 3,
+              "vfs": "simulation/helpers/Shadow.js",
+              "mod": "epoch_t17_save_allocation_witness",
+              "sha256": "8ac6b2f522363c1df0d841ef322d1cc573ea00a6fe8eb4735dc00063c7fb2750",
+              "bytes": 51,
+              "shadowed": [
+                {
+                  "mod": "public",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/synthetic-public.zip::simulation/helpers/Shadow.js",
+                  "sha256": "1f80220d28f31df37fc252333b75b900d94e4dbea9713201ba18f70c637a3194"
+                },
+                {
+                  "mod": "epoch_rts",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/binaries/data/mods/epoch_rts/simulation/helpers/Shadow.js",
+                  "sha256": "9a4b3814c6bc09c1a5c10bd6e4e0a8b9f25514394c8333557c4ffecc3682df01"
+                },
+                {
+                  "mod": "epoch_t16_harness",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t16-harness/simulation/helpers/Shadow.js",
+                  "sha256": "358b9ce6b30931d40bd841b7704bb7c5dd101e2ede24616e94c22279cb4ee1dd"
+                },
+                {
+                  "mod": "epoch_t17_save_harness",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t17-save-harness/simulation/helpers/Shadow.js",
+                  "sha256": "fe55fec1770cc3d2bb0a49842f85fa4911f4a0b8c03d0c9c5ccbd3a81143d3c9"
+                }
+              ],
+              "archiveEntry": null,
+              "defaultLoaderFolder": "simulation/helpers/",
+              "realm": "SIMULATION_CANDIDATE"
+            },
+            {
+              "index": 4,
+              "vfs": "simulation/helpers/TopOnly.js",
+              "mod": "epoch_t17_save_allocation_witness",
+              "sha256": "dba36c43af1c97e18cbc1b1b685cc33ccb34bdfa9ac39e451c00864ca17ab1be",
+              "bytes": 13,
+              "shadowed": [],
+              "archiveEntry": null,
+              "defaultLoaderFolder": "simulation/helpers/",
+              "realm": "SIMULATION_CANDIDATE"
+            }
+          ],
+          "archive": {
+            "expectedSHA": "cea88db14e39f8f6ef63c315a8f88d4fc18a0a6c12e33dca97d38d636849b132",
+            "actualSHA": "cea88db14e39f8f6ef63c315a8f88d4fc18a0a6c12e33dca97d38d636849b132",
+            "size": 517,
+            "chunkBytes": 4194304,
+            "chunkCount": 1,
+            "authorityKind": "VERIFIED_HELD_FD_BYTES"
+          },
+          "unsupportedRuntimeRules": [
+            "implicit engine mod mount",
+            "user/rdata higher overrides",
+            "DELETED tombstones",
+            "loose/archive and archive ordering",
+            "mtime arbitration",
+            "actual runtime mount/profile inventory",
+            "map startup/trigger/native job caller closure"
+          ]
+        },
+        {
+          "v": 1,
+          "kind": "FAULT",
+          "phase": "FINISH",
+          "code": "ABORT_NODE_LIMIT",
+          "durableFault": false
+        }
+      ],
+      "expectedStdoutBase64": "eyJ2IjoxLCJraW5kIjoiU09VUkNFIiwiaW5kZXgiOjAsInZmcyI6Imdsb2JhbHNjcmlwdHMvQXJjaGl2ZU9ubHkuanMiLCJtb2QiOiJwdWJsaWMiLCJzaGEyNTYiOiI2MjRkYjljNzMwMjZlMWQxY2JkMDNiZTg2OTJhZGU3ZDkxYjhjYTQxNzMzOWY5OGQxMzNmYzE2MzI3YjAwZjI4IiwiYnl0ZXMiOjU5LCJib2R5QmFzZTY0IjoiUlc1bmFXNWxMbEpsWjJsemRHVnlSMnh2WW1Gc0tDSlRlVzUwYUdWMGFXTlFjbVZ6WlhKMllYUnBiMjVCY21Ob2FYWmxJaXdnZTMwcE93bz0ifQp7InYiOjEsImtpbmQiOiJTT1VSQ0UiLCJpbmRleCI6MSwidmZzIjoibW9kLmpzb24iLCJtb2QiOiJlcG9jaF90MTdfc2F2ZV9hbGxvY2F0aW9uX3dpdG5lc3MiLCJzaGEyNTYiOiI1MmQ4ZmY3YmZmMjNlNWRjN2MyYWQ4MmMxNzgxZWM2M2M0MzFiYjI3ZmIxMmIxNmUxNmQ5MmE4MWVkNjdmMDdiIiwiYnl0ZXMiOjgzLCJib2R5QmFzZTY0IjoiZXlKdVlXMWxJam9pWlhCdlkyaGZkREUzWDNOaGRtVmZZV3hzYjJOaGRHbHZibDkzYVhSdVpYTnpJaXdpZG1WeWMybHZiaUk2SWxOWlRsUklSVlJKUTE5UVVrVlRSVkpXUVZSSlQwNWZWakVpZlFvPSJ9CnsidiI6MSwia2luZCI6IlNPVVJDRSIsImluZGV4IjoyLCJ2ZnMiOiJzaW11bGF0aW9uL2hlbHBlcnMvRW1wdHkuanMiLCJtb2QiOiJlcG9jaF90MTdfc2F2ZV9hbGxvY2F0aW9uX3dpdG5lc3MiLCJzaGEyNTYiOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1IiwiYnl0ZXMiOjAsImJvZHlCYXNlNjQiOiIifQp7InYiOjEsImtpbmQiOiJTT1VSQ0UiLCJpbmRleCI6MywidmZzIjoic2ltdWxhdGlvbi9oZWxwZXJzL1NoYWRvdy5qcyIsIm1vZCI6ImVwb2NoX3QxN19zYXZlX2FsbG9jYXRpb25fd2l0bmVzcyIsInNoYTI1NiI6IjhhYzZiMmY1MjIzNjNjMWRmMGQ4NDFlZjMyMmQxY2M1NzNlYTAwYTZmZThlYjQ3MzVkYzAwMDYzYzdmYjI3NTAiLCJieXRlcyI6NTEsImJvZHlCYXNlNjQiOiJZMjl1YzNRZ2JHRjVaWElnUFNBaVpYQnZZMmhmZERFM1gzTmhkbVZmWVd4c2IyTmhkR2x2Ymw5M2FYUnVaWE56SWpzSyJ9CnsidiI6MSwia2luZCI6IlNPVVJDRSIsImluZGV4Ijo0LCJ2ZnMiOiJzaW11bGF0aW9uL2hlbHBlcnMvVG9wT25seS5qcyIsIm1vZCI6ImVwb2NoX3QxN19zYXZlX2FsbG9jYXRpb25fd2l0bmVzcyIsInNoYTI1NiI6ImRiYTM2YzQzYWYxYzk3ZTE4Y2JjMWIxYjY4NWNjMzNjY2IzNGJkZmE5YWMzOWU0NTFjMDA4NjRjYTE3YWIxYmUiLCJieXRlcyI6MTMsImJvZHlCYXNlNjQiOiJiR1YwSUhkcGRHNWxjM003Q2c9PSJ9CnsidiI6MSwia2luZCI6IkNBUFRVUkVEIiwiY2FwdHVyZUlkIjoiZjVkYWI3YjcyMDg2ZWVhZDBmYTc0MTkyYzM2YjRjZTczOTRlYjI1Y2NhNTNmZmNjZGE4YTYyYmU3M2QwNTNlMCIsInNvdXJjZUNvdW50Ijo1LCJzZWxlY3RlZERpZ2VzdCI6IjU2YWYwMGZmZWJhOTk4ODEzYWZjNTJhZmMxMzliYTk3MWU2NWZiMGIxNzhmMjNjOTEzOTZlNzhkYmI0ZGY4OGYiLCJsYXllcnMiOlt7Im5hbWUiOiJwdWJsaWMiLCJyb290S2luZCI6ImFyY2hpdmUiLCJyb290RGlzcGxheSI6Ii9Vc2Vycy9saXl1bmdjaGloL0RvY3VtZW50cy9Db2RleC8yMDI2LTA5LTA2L25ldy1jaGF0L3dvcmsvMGFkL3dvcmsvdDE3LXNhdmUtZml2ZS1tb2QtaW52ZW50b3J5LXJlcGFpci1wcmVwYXJhdGlvbi9yZXF1aXJlZC1mYXVsdC1jb250cm9scy1wcmVwYXJhdGlvbi12MS9leGVjdXRpb24tdjEvRjAyX1JfRUFDQ0VTX0ZBVUxUX1JFU0VSVkUvZml4dHVyZS9zeW50aGV0aWMtcHVibGljLnppcCIsImVudHJpZXMiOlt7InZmcyI6Imdsb2JhbHNjcmlwdHMvQXJjaGl2ZU9ubHkuanMiLCJzb3VyY2VEaXNwbGF5IjoiL1VzZXJzL2xpeXVuZ2NoaWgvRG9jdW1lbnRzL0NvZGV4LzIwMjYtMDktMDYvbmV3LWNoYXQvd29yay8wYWQvd29yay90MTctc2F2ZS1maXZlLW1vZC1pbnZlbnRvcnktcmVwYWlyLXByZXBhcmF0aW9uL3JlcXVpcmVkLWZhdWx0LWNvbnRyb2xzLXByZXBhcmF0aW9uLXYxL2V4ZWN1dGlvbi12MS9GMDJfUl9FQUNDRVNfRkFVTFRfUkVTRVJWRS9maXh0dXJlL3N5bnRoZXRpYy1wdWJsaWMuemlwOjpnbG9iYWxzY3JpcHRzL0FyY2hpdmVPbmx5LmpzIiwiYnl0ZXMiOjU5LCJzaGEyNTYiOiI2MjRkYjljNzMwMjZlMWQxY2JkMDNiZTg2OTJhZGU3ZDkxYjhjYTQxNzMzOWY5OGQxMzNmYzE2MzI3YjAwZjI4In0seyJ2ZnMiOiJtb2QuanNvbiIsInNvdXJjZURpc3BsYXkiOiIvVXNlcnMvbGl5dW5nY2hpaC9Eb2N1bWVudHMvQ29kZXgvMjAyNi0wOS0wNi9uZXctY2hhdC93b3JrLzBhZC93b3JrL3QxNy1zYXZlLWZpdmUtbW9kLWludmVudG9yeS1yZXBhaXItcHJlcGFyYXRpb24vcmVxdWlyZWQtZmF1bHQtY29udHJvbHMtcHJlcGFyYXRpb24tdjEvZXhlY3V0aW9uLXYxL0YwMl9SX0VBQ0NFU19GQVVMVF9SRVNFUlZFL2ZpeHR1cmUvc3ludGhldGljLXB1YmxpYy56aXA6Om1vZC5qc29uIiwiYnl0ZXMiOjU2LCJzaGEyNTYiOiIxYzVmMDYwZTZhMDZmNGRiNzQ4MTI3YTE2MWE2YmUyNTc2N2JiNjYwYTg0MDYxNGY3YjRmYWM4MDg5N2VhMGNmIn0seyJ2ZnMiOiJzaW11bGF0aW9uL2hlbHBlcnMvU2hhZG93LmpzIiwic291cmNlRGlzcGxheSI6Ii9Vc2Vycy9saXl1bmdjaGloL0RvY3VtZW50cy9Db2RleC8yMDI2LTA5LTA2L25ldy1jaGF0L3dvcmsvMGFkL3dvcmsvdDE3LXNhdmUtZml2ZS1tb2QtaW52ZW50b3J5LXJlcGFpci1wcmVwYXJhdGlvbi9yZXF1aXJlZC1mYXVsdC1jb250cm9scy1wcmVwYXJhdGlvbi12MS9leGVjdXRpb24tdjEvRjAyX1JfRUFDQ0VTX0ZBVUxUX1JFU0VSVkUvZml4dHVyZS9zeW50aGV0aWMtcHVibGljLnppcDo6c2ltdWxhdGlvbi9oZWxwZXJzL1NoYWRvdy5qcyIsImJ5dGVzIjoyNCwic2hhMjU2IjoiMWY4MDIyMGQyOGYzMWRmMzdmYzI1MjMzM2I3NWI5MDBkOTRlNGRiZWE5NzEzMjAxYmExOGY3MGM2MzdhMzE5NCJ9XX0seyJuYW1lIjoiZXBvY2hfcnRzIiwicm9vdEtpbmQiOiJsb29zZSIsInJvb3REaXNwbGF5IjoiL1VzZXJzL2xpeXVuZ2NoaWgvRG9jdW1lbnRzL0NvZGV4LzIwMjYtMDktMDYvbmV3LWNoYXQvd29yay8wYWQvd29yay90MTctc2F2ZS1maXZlLW1vZC1pbnZlbnRvcnktcmVwYWlyLXByZXBhcmF0aW9uL3JlcXVpcmVkLWZhdWx0LWNvbnRyb2xzLXByZXBhcmF0aW9uLXYxL2V4ZWN1dGlvbi12MS9GMDJfUl9FQUNDRVNfRkFVTFRfUkVTRVJWRS9maXh0dXJlL2ZpeHR1cmUtcmVwby9iaW5hcmllcy9kYXRhL21vZHMvZXBvY2hfcnRzIiwiZW50cmllcyI6W3sidmZzIjoibW9kLmpzb24iLCJzb3VyY2VEaXNwbGF5IjoiL1VzZXJzL2xpeXVuZ2NoaWgvRG9jdW1lbnRzL0NvZGV4LzIwMjYtMDktMDYvbmV3LWNoYXQvd29yay8wYWQvd29yay90MTctc2F2ZS1maXZlLW1vZC1pbnZlbnRvcnktcmVwYWlyLXByZXBhcmF0aW9uL3JlcXVpcmVkLWZhdWx0LWNvbnRyb2xzLXByZXBhcmF0aW9uLXYxL2V4ZWN1dGlvbi12MS9GMDJfUl9FQUNDRVNfRkFVTFRfUkVTRVJWRS9maXh0dXJlL2ZpeHR1cmUtcmVwby9iaW5hcmllcy9kYXRhL21vZHMvZXBvY2hfcnRzL21vZC5qc29uIiwiYnl0ZXMiOjU5LCJzaGEyNTYiOiJjNmY5MGZjNzUzNDNhZTQzMzlmNjQ0YzZkNTBkMjhjYTE3OWRmNTk2NzQ0NmRlN2U2MDQ4Y2JiMDdlMTRkN2U1In0seyJ2ZnMiOiJzaW11bGF0aW9uL2hlbHBlcnMvU2hhZG93LmpzIiwic291cmNlRGlzcGxheSI6Ii9Vc2Vycy9saXl1bmdjaGloL0RvY3VtZW50cy9Db2RleC8yMDI2LTA5LTA2L25ldy1jaGF0L3dvcmsvMGFkL3dvcmsvdDE3LXNhdmUtZml2ZS1tb2QtaW52ZW50b3J5LXJlcGFpci1wcmVwYXJhdGlvbi9yZXF1aXJlZC1mYXVsdC1jb250cm9scy1wcmVwYXJhdGlvbi12MS9leGVjdXRpb24tdjEvRjAyX1JfRUFDQ0VTX0ZBVUxUX1JFU0VSVkUvZml4dHVyZS9maXh0dXJlLXJlcG8vYmluYXJpZXMvZGF0YS9tb2RzL2Vwb2NoX3J0cy9zaW11bGF0aW9uL2hlbHBlcnMvU2hhZG93LmpzIiwiYnl0ZXMiOjI3LCJzaGEyNTYiOiI5YTRiMzgxNGM2YmMwOWMxYTVjMTBiZDZlNGUwYThiOWYyNTUxNDM5NGM4MzMzNTU3YzRmZmVjYzM2ODJkZjAxIn1dfSx7Im5hbWUiOiJlcG9jaF90MTZfaGFybmVzcyIsInJvb3RLaW5kIjoibG9vc2UiLCJyb290RGlzcGxheSI6Ii9Vc2Vycy9saXl1bmdjaGloL0RvY3VtZW50cy9Db2RleC8yMDI2LTA5LTA2L25ldy1jaGF0L3dvcmsvMGFkL3dvcmsvdDE3LXNhdmUtZml2ZS1tb2QtaW52ZW50b3J5LXJlcGFpci1wcmVwYXJhdGlvbi9yZXF1aXJlZC1mYXVsdC1jb250cm9scy1wcmVwYXJhdGlvbi12MS9leGVjdXRpb24tdjEvRjAyX1JfRUFDQ0VTX0ZBVUxUX1JFU0VSVkUvZml4dHVyZS9maXh0dXJlLXJlcG8vdG9vbHMvZXBvY2gtcnRzL3QxNi1oYXJuZXNzIiwiZW50cmllcyI6W3sidmZzIjoibW9kLmpzb24iLCJzb3VyY2VEaXNwbGF5IjoiL1VzZXJzL2xpeXVuZ2NoaWgvRG9jdW1lbnRzL0NvZGV4LzIwMjYtMDktMDYvbmV3LWNoYXQvd29yay8wYWQvd29yay90MTctc2F2ZS1maXZlLW1vZC1pbnZlbnRvcnktcmVwYWlyLXByZXBhcmF0aW9uL3JlcXVpcmVkLWZhdWx0LWNvbnRyb2xzLXByZXBhcmF0aW9uLXYxL2V4ZWN1dGlvbi12MS9GMDJfUl9FQUNDRVNfRkFVTFRfUkVTRVJWRS9maXh0dXJlL2ZpeHR1cmUtcmVwby90b29scy9lcG9jaC1ydHMvdDE2LWhhcm5lc3MvbW9kLmpzb24iLCJieXRlcyI6NjcsInNoYTI1NiI6ImU0YTZkNjY2NjMwNmE2NzExMGJjYTNkOTBjZTliYWUwMzRmMTM5YTI1OTEwNWIyYjI1YmQ0YjBhYmIzM2FiOTYifSx7InZmcyI6InNpbXVsYXRpb24vaGVscGVycy9TaGFkb3cuanMiLCJzb3VyY2VEaXNwbGF5IjoiL1VzZXJzL2xpeXVuZ2NoaWgvRG9jdW1lbnRzL0NvZGV4LzIwMjYtMDktMDYvbmV3LWNoYXQvd29yay8wYWQvd29yay90MTctc2F2ZS1maXZlLW1vZC1pbnZlbnRvcnktcmVwYWlyLXByZXBhcmF0aW9uL3JlcXVpcmVkLWZhdWx0LWNvbnRyb2xzLXByZXBhcmF0aW9uLXYxL2V4ZWN1dGlvbi12MS9GMDJfUl9FQUNDRVNfRkFVTFRfUkVTRVJWRS9maXh0dXJlL2ZpeHR1cmUtcmVwby90b29scy9lcG9jaC1ydHMvdDE2LWhhcm5lc3Mvc2ltdWxhdGlvbi9oZWxwZXJzL1NoYWRvdy5qcyIsImJ5dGVzIjozNSwic2hhMjU2IjoiMzU4YjljZTZiMzA5MzFkNDBiZDg0MWI3NzA0YmI3YzVkZDEwMWUyZWRlMjQ2MTZlOTRjMjIyNzljYjRlZTFkZCJ9XX0seyJuYW1lIjoiZXBvY2hfdDE3X3NhdmVfaGFybmVzcyIsInJvb3RLaW5kIjoibG9vc2UiLCJyb290RGlzcGxheSI6Ii9Vc2Vycy9saXl1bmdjaGloL0RvY3VtZW50cy9Db2RleC8yMDI2LTA5LTA2L25ldy1jaGF0L3dvcmsvMGFkL3dvcmsvdDE3LXNhdmUtZml2ZS1tb2QtaW52ZW50b3J5LXJlcGFpci1wcmVwYXJhdGlvbi9yZXF1aXJlZC1mYXVsdC1jb250cm9scy1wcmVwYXJhdGlvbi12MS9leGVjdXRpb24tdjEvRjAyX1JfRUFDQ0VTX0ZBVUxUX1JFU0VSVkUvZml4dHVyZS9maXh0dXJlLXJlcG8vdG9vbHMvZXBvY2gtcnRzL3QxNy1zYXZlLWhhcm5lc3MiLCJlbnRyaWVzIjpbeyJ2ZnMiOiJtb2QuanNvbiIsInNvdXJjZURpc3BsYXkiOiIvVXNlcnMvbGl5dW5nY2hpaC9Eb2N1bWVudHMvQ29kZXgvMjAyNi0wOS0wNi9uZXctY2hhdC93b3JrLzBhZC93b3JrL3QxNy1zYXZlLWZpdmUtbW9kLWludmVudG9yeS1yZXBhaXItcHJlcGFyYXRpb24vcmVxdWlyZWQtZmF1bHQtY29udHJvbHMtcHJlcGFyYXRpb24tdjEvZXhlY3V0aW9uLXYxL0YwMl9SX0VBQ0NFU19GQVVMVF9SRVNFUlZFL2ZpeHR1cmUvZml4dHVyZS1yZXBvL3Rvb2xzL2Vwb2NoLXJ0cy90MTctc2F2ZS1oYXJuZXNzL21vZC5qc29uIiwiYnl0ZXMiOjcyLCJzaGEyNTYiOiI5MjRiMzgzODFkN2E2OTFiYzZmMDIwZGFkNGY2ZjAyMWNlZjY5M2M2OWJlYzVhZjliMTk3OTkwNzkwNWZhNDVlIn0seyJ2ZnMiOiJzaW11bGF0aW9uL2hlbHBlcnMvU2hhZG93LmpzIiwic291cmNlRGlzcGxheSI6Ii9Vc2Vycy9saXl1bmdjaGloL0RvY3VtZW50cy9Db2RleC8yMDI2LTA5LTA2L25ldy1jaGF0L3dvcmsvMGFkL3dvcmsvdDE3LXNhdmUtZml2ZS1tb2QtaW52ZW50b3J5LXJlcGFpci1wcmVwYXJhdGlvbi9yZXF1aXJlZC1mYXVsdC1jb250cm9scy1wcmVwYXJhdGlvbi12MS9leGVjdXRpb24tdjEvRjAyX1JfRUFDQ0VTX0ZBVUxUX1JFU0VSVkUvZml4dHVyZS9maXh0dXJlLXJlcG8vdG9vbHMvZXBvY2gtcnRzL3QxNy1zYXZlLWhhcm5lc3Mvc2ltdWxhdGlvbi9oZWxwZXJzL1NoYWRvdy5qcyIsImJ5dGVzIjo0MCwic2hhMjU2IjoiZmU1NWZlYzE3NzBjYzNkMmJiMGE0OTg0MmY4NWZhNDkxMWY0YTBiOGMwM2QwYzljNWNjYmQzYTgxMTQzZDNjOSJ9XX0seyJuYW1lIjoiZXBvY2hfdDE3X3NhdmVfYWxsb2NhdGlvbl93aXRuZXNzIiwicm9vdEtpbmQiOiJsb29zZSIsInJvb3REaXNwbGF5IjoiL1VzZXJzL2xpeXVuZ2NoaWgvRG9jdW1lbnRzL0NvZGV4LzIwMjYtMDktMDYvbmV3LWNoYXQvd29yay8wYWQvd29yay90MTctc2F2ZS1maXZlLW1vZC1pbnZlbnRvcnktcmVwYWlyLXByZXBhcmF0aW9uL3JlcXVpcmVkLWZhdWx0LWNvbnRyb2xzLXByZXBhcmF0aW9uLXYxL2V4ZWN1dGlvbi12MS9GMDJfUl9FQUNDRVNfRkFVTFRfUkVTRVJWRS9maXh0dXJlL2ZpeHR1cmUtcmVwby90b29scy9lcG9jaC1ydHMvdDE3LXNhdmUtYWxsb2NhdGlvbi13aXRuZXNzIiwiZW50cmllcyI6W3sidmZzIjoibW9kLmpzb24iLCJzb3VyY2VEaXNwbGF5IjoiL1VzZXJzL2xpeXVuZ2NoaWgvRG9jdW1lbnRzL0NvZGV4LzIwMjYtMDktMDYvbmV3LWNoYXQvd29yay8wYWQvd29yay90MTctc2F2ZS1maXZlLW1vZC1pbnZlbnRvcnktcmVwYWlyLXByZXBhcmF0aW9uL3JlcXVpcmVkLWZhdWx0LWNvbnRyb2xzLXByZXBhcmF0aW9uLXYxL2V4ZWN1dGlvbi12MS9GMDJfUl9FQUNDRVNfRkFVTFRfUkVTRVJWRS9maXh0dXJlL2ZpeHR1cmUtcmVwby90b29scy9lcG9jaC1ydHMvdDE3LXNhdmUtYWxsb2NhdGlvbi13aXRuZXNzL21vZC5qc29uIiwiYnl0ZXMiOjgzLCJzaGEyNTYiOiI1MmQ4ZmY3YmZmMjNlNWRjN2MyYWQ4MmMxNzgxZWM2M2M0MzFiYjI3ZmIxMmIxNmUxNmQ5MmE4MWVkNjdmMDdiIn0seyJ2ZnMiOiJzaW11bGF0aW9uL2hlbHBlcnMvRW1wdHkuanMiLCJzb3VyY2VEaXNwbGF5IjoiL1VzZXJzL2xpeXVuZ2NoaWgvRG9jdW1lbnRzL0NvZGV4LzIwMjYtMDktMDYvbmV3LWNoYXQvd29yay8wYWQvd29yay90MTctc2F2ZS1maXZlLW1vZC1pbnZlbnRvcnktcmVwYWlyLXByZXBhcmF0aW9uL3JlcXVpcmVkLWZhdWx0LWNvbnRyb2xzLXByZXBhcmF0aW9uLXYxL2V4ZWN1dGlvbi12MS9GMDJfUl9FQUNDRVNfRkFVTFRfUkVTRVJWRS9maXh0dXJlL2ZpeHR1cmUtcmVwby90b29scy9lcG9jaC1ydHMvdDE3LXNhdmUtYWxsb2NhdGlvbi13aXRuZXNzL3NpbXVsYXRpb24vaGVscGVycy9FbXB0eS5qcyIsImJ5dGVzIjowLCJzaGEyNTYiOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0seyJ2ZnMiOiJzaW11bGF0aW9uL2hlbHBlcnMvU2hhZG93LmpzIiwic291cmNlRGlzcGxheSI6Ii9Vc2Vycy9saXl1bmdjaGloL0RvY3VtZW50cy9Db2RleC8yMDI2LTA5LTA2L25ldy1jaGF0L3dvcmsvMGFkL3dvcmsvdDE3LXNhdmUtZml2ZS1tb2QtaW52ZW50b3J5LXJlcGFpci1wcmVwYXJhdGlvbi9yZXF1aXJlZC1mYXVsdC1jb250cm9scy1wcmVwYXJhdGlvbi12MS9leGVjdXRpb24tdjEvRjAyX1JfRUFDQ0VTX0ZBVUxUX1JFU0VSVkUvZml4dHVyZS9maXh0dXJlLXJlcG8vdG9vbHMvZXBvY2gtcnRzL3QxNy1zYXZlLWFsbG9jYXRpb24td2l0bmVzcy9zaW11bGF0aW9uL2hlbHBlcnMvU2hhZG93LmpzIiwiYnl0ZXMiOjUxLCJzaGEyNTYiOiI4YWM2YjJmNTIyMzYzYzFkZjBkODQxZWYzMjJkMWNjNTczZWEwMGE2ZmU4ZWI0NzM1ZGMwMDA2M2M3ZmIyNzUwIn0seyJ2ZnMiOiJzaW11bGF0aW9uL2hlbHBlcnMvVG9wT25seS5qcyIsInNvdXJjZURpc3BsYXkiOiIvVXNlcnMvbGl5dW5nY2hpaC9Eb2N1bWVudHMvQ29kZXgvMjAyNi0wOS0wNi9uZXctY2hhdC93b3JrLzBhZC93b3JrL3QxNy1zYXZlLWZpdmUtbW9kLWludmVudG9yeS1yZXBhaXItcHJlcGFyYXRpb24vcmVxdWlyZWQtZmF1bHQtY29udHJvbHMtcHJlcGFyYXRpb24tdjEvZXhlY3V0aW9uLXYxL0YwMl9SX0VBQ0NFU19GQVVMVF9SRVNFUlZFL2ZpeHR1cmUvZml4dHVyZS1yZXBvL3Rvb2xzL2Vwb2NoLXJ0cy90MTctc2F2ZS1hbGxvY2F0aW9uLXdpdG5lc3Mvc2ltdWxhdGlvbi9oZWxwZXJzL1RvcE9ubHkuanMiLCJieXRlcyI6MTMsInNoYTI1NiI6ImRiYTM2YzQzYWYxYzk3ZTE4Y2JjMWIxYjY4NWNjMzNjY2IzNGJkZmE5YWMzOWU0NTFjMDA4NjRjYTE3YWIxYmUifV19XSwic2VsZWN0ZWQiOlt7ImluZGV4IjowLCJ2ZnMiOiJnbG9iYWxzY3JpcHRzL0FyY2hpdmVPbmx5LmpzIiwibW9kIjoicHVibGljIiwic2hhMjU2IjoiNjI0ZGI5YzczMDI2ZTFkMWNiZDAzYmU4NjkyYWRlN2Q5MWI4Y2E0MTczMzlmOThkMTMzZmMxNjMyN2IwMGYyOCIsImJ5dGVzIjo1OSwic2hhZG93ZWQiOltdLCJhcmNoaXZlRW50cnkiOiJnbG9iYWxzY3JpcHRzL0FyY2hpdmVPbmx5LmpzIiwiZGVmYXVsdExvYWRlckZvbGRlciI6Imdsb2JhbHNjcmlwdHMvIiwicmVhbG0iOiJTSU1VTEFUSU9OX0NBTkRJREFURSJ9LHsiaW5kZXgiOjEsInZmcyI6Im1vZC5qc29uIiwibW9kIjoiZXBvY2hfdDE3X3NhdmVfYWxsb2NhdGlvbl93aXRuZXNzIiwic2hhMjU2IjoiNTJkOGZmN2JmZjIzZTVkYzdjMmFkODJjMTc4MWVjNjNjNDMxYmIyN2ZiMTJiMTZlMTZkOTJhODFlZDY3ZjA3YiIsImJ5dGVzIjo4Mywic2hhZG93ZWQiOlt7Im1vZCI6InB1YmxpYyIsInNvdXJjZURpc3BsYXkiOiIvVXNlcnMvbGl5dW5nY2hpaC9Eb2N1bWVudHMvQ29kZXgvMjAyNi0wOS0wNi9uZXctY2hhdC93b3JrLzBhZC93b3JrL3QxNy1zYXZlLWZpdmUtbW9kLWludmVudG9yeS1yZXBhaXItcHJlcGFyYXRpb24vcmVxdWlyZWQtZmF1bHQtY29udHJvbHMtcHJlcGFyYXRpb24tdjEvZXhlY3V0aW9uLXYxL0YwMl9SX0VBQ0NFU19GQVVMVF9SRVNFUlZFL2ZpeHR1cmUvc3ludGhldGljLXB1YmxpYy56aXA6Om1vZC5qc29uIiwic2hhMjU2IjoiMWM1ZjA2MGU2YTA2ZjRkYjc0ODEyN2ExNjFhNmJlMjU3NjdiYjY2MGE4NDA2MTRmN2I0ZmFjODA4OTdlYTBjZiJ9LHsibW9kIjoiZXBvY2hfcnRzIiwic291cmNlRGlzcGxheSI6Ii9Vc2Vycy9saXl1bmdjaGloL0RvY3VtZW50cy9Db2RleC8yMDI2LTA5LTA2L25ldy1jaGF0L3dvcmsvMGFkL3dvcmsvdDE3LXNhdmUtZml2ZS1tb2QtaW52ZW50b3J5LXJlcGFpci1wcmVwYXJhdGlvbi9yZXF1aXJlZC1mYXVsdC1jb250cm9scy1wcmVwYXJhdGlvbi12MS9leGVjdXRpb24tdjEvRjAyX1JfRUFDQ0VTX0ZBVUxUX1JFU0VSVkUvZml4dHVyZS9maXh0dXJlLXJlcG8vYmluYXJpZXMvZGF0YS9tb2RzL2Vwb2NoX3J0cy9tb2QuanNvbiIsInNoYTI1NiI6ImM2ZjkwZmM3NTM0M2FlNDMzOWY2NDRjNmQ1MGQyOGNhMTc5ZGY1OTY3NDQ2ZGU3ZTYwNDhjYmIwN2UxNGQ3ZTUifSx7Im1vZCI6ImVwb2NoX3QxNl9oYXJuZXNzIiwic291cmNlRGlzcGxheSI6Ii9Vc2Vycy9saXl1bmdjaGloL0RvY3VtZW50cy9Db2RleC8yMDI2LTA5LTA2L25ldy1jaGF0L3dvcmsvMGFkL3dvcmsvdDE3LXNhdmUtZml2ZS1tb2QtaW52ZW50b3J5LXJlcGFpci1wcmVwYXJhdGlvbi9yZXF1aXJlZC1mYXVsdC1jb250cm9scy1wcmVwYXJhdGlvbi12MS9leGVjdXRpb24tdjEvRjAyX1JfRUFDQ0VTX0ZBVUxUX1JFU0VSVkUvZml4dHVyZS9maXh0dXJlLXJlcG8vdG9vbHMvZXBvY2gtcnRzL3QxNi1oYXJuZXNzL21vZC5qc29uIiwic2hhMjU2IjoiZTRhNmQ2NjY2MzA2YTY3MTEwYmNhM2Q5MGNlOWJhZTAzNGYxMzlhMjU5MTA1YjJiMjViZDRiMGFiYjMzYWI5NiJ9LHsibW9kIjoiZXBvY2hfdDE3X3NhdmVfaGFybmVzcyIsInNvdXJjZURpc3BsYXkiOiIvVXNlcnMvbGl5dW5nY2hpaC9Eb2N1bWVudHMvQ29kZXgvMjAyNi0wOS0wNi9uZXctY2hhdC93b3JrLzBhZC93b3JrL3QxNy1zYXZlLWZpdmUtbW9kLWludmVudG9yeS1yZXBhaXItcHJlcGFyYXRpb24vcmVxdWlyZWQtZmF1bHQtY29udHJvbHMtcHJlcGFyYXRpb24tdjEvZXhlY3V0aW9uLXYxL0YwMl9SX0VBQ0NFU19GQVVMVF9SRVNFUlZFL2ZpeHR1cmUvZml4dHVyZS1yZXBvL3Rvb2xzL2Vwb2NoLXJ0cy90MTctc2F2ZS1oYXJuZXNzL21vZC5qc29uIiwic2hhMjU2IjoiOTI0YjM4MzgxZDdhNjkxYmM2ZjAyMGRhZDRmNmYwMjFjZWY2OTNjNjliZWM1YWY5YjE5Nzk5MDc5MDVmYTQ1ZSJ9XSwiYXJjaGl2ZUVudHJ5IjpudWxsLCJkZWZhdWx0TG9hZGVyRm9sZGVyIjpudWxsLCJyZWFsbSI6Ik1FVEFEQVRBIn0seyJpbmRleCI6MiwidmZzIjoic2ltdWxhdGlvbi9oZWxwZXJzL0VtcHR5LmpzIiwibW9kIjoiZXBvY2hfdDE3X3NhdmVfYWxsb2NhdGlvbl93aXRuZXNzIiwic2hhMjU2IjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImJ5dGVzIjowLCJzaGFkb3dlZCI6W10sImFyY2hpdmVFbnRyeSI6bnVsbCwiZGVmYXVsdExvYWRlckZvbGRlciI6InNpbXVsYXRpb24vaGVscGVycy8iLCJyZWFsbSI6IlNJTVVMQVRJT05fQ0FORElEQVRFIn0seyJpbmRleCI6MywidmZzIjoic2ltdWxhdGlvbi9oZWxwZXJzL1NoYWRvdy5qcyIsIm1vZCI6ImVwb2NoX3QxN19zYXZlX2FsbG9jYXRpb25fd2l0bmVzcyIsInNoYTI1NiI6IjhhYzZiMmY1MjIzNjNjMWRmMGQ4NDFlZjMyMmQxY2M1NzNlYTAwYTZmZThlYjQ3MzVkYzAwMDYzYzdmYjI3NTAiLCJieXRlcyI6NTEsInNoYWRvd2VkIjpbeyJtb2QiOiJwdWJsaWMiLCJzb3VyY2VEaXNwbGF5IjoiL1VzZXJzL2xpeXVuZ2NoaWgvRG9jdW1lbnRzL0NvZGV4LzIwMjYtMDktMDYvbmV3LWNoYXQvd29yay8wYWQvd29yay90MTctc2F2ZS1maXZlLW1vZC1pbnZlbnRvcnktcmVwYWlyLXByZXBhcmF0aW9uL3JlcXVpcmVkLWZhdWx0LWNvbnRyb2xzLXByZXBhcmF0aW9uLXYxL2V4ZWN1dGlvbi12MS9GMDJfUl9FQUNDRVNfRkFVTFRfUkVTRVJWRS9maXh0dXJlL3N5bnRoZXRpYy1wdWJsaWMuemlwOjpzaW11bGF0aW9uL2hlbHBlcnMvU2hhZG93LmpzIiwic2hhMjU2IjoiMWY4MDIyMGQyOGYzMWRmMzdmYzI1MjMzM2I3NWI5MDBkOTRlNGRiZWE5NzEzMjAxYmExOGY3MGM2MzdhMzE5NCJ9LHsibW9kIjoiZXBvY2hfcnRzIiwic291cmNlRGlzcGxheSI6Ii9Vc2Vycy9saXl1bmdjaGloL0RvY3VtZW50cy9Db2RleC8yMDI2LTA5LTA2L25ldy1jaGF0L3dvcmsvMGFkL3dvcmsvdDE3LXNhdmUtZml2ZS1tb2QtaW52ZW50b3J5LXJlcGFpci1wcmVwYXJhdGlvbi9yZXF1aXJlZC1mYXVsdC1jb250cm9scy1wcmVwYXJhdGlvbi12MS9leGVjdXRpb24tdjEvRjAyX1JfRUFDQ0VTX0ZBVUxUX1JFU0VSVkUvZml4dHVyZS9maXh0dXJlLXJlcG8vYmluYXJpZXMvZGF0YS9tb2RzL2Vwb2NoX3J0cy9zaW11bGF0aW9uL2hlbHBlcnMvU2hhZG93LmpzIiwic2hhMjU2IjoiOWE0YjM4MTRjNmJjMDljMWE1YzEwYmQ2ZTRlMGE4YjlmMjU1MTQzOTRjODMzMzU1N2M0ZmZlY2MzNjgyZGYwMSJ9LHsibW9kIjoiZXBvY2hfdDE2X2hhcm5lc3MiLCJzb3VyY2VEaXNwbGF5IjoiL1VzZXJzL2xpeXVuZ2NoaWgvRG9jdW1lbnRzL0NvZGV4LzIwMjYtMDktMDYvbmV3LWNoYXQvd29yay8wYWQvd29yay90MTctc2F2ZS1maXZlLW1vZC1pbnZlbnRvcnktcmVwYWlyLXByZXBhcmF0aW9uL3JlcXVpcmVkLWZhdWx0LWNvbnRyb2xzLXByZXBhcmF0aW9uLXYxL2V4ZWN1dGlvbi12MS9GMDJfUl9FQUNDRVNfRkFVTFRfUkVTRVJWRS9maXh0dXJlL2ZpeHR1cmUtcmVwby90b29scy9lcG9jaC1ydHMvdDE2LWhhcm5lc3Mvc2ltdWxhdGlvbi9oZWxwZXJzL1NoYWRvdy5qcyIsInNoYTI1NiI6IjM1OGI5Y2U2YjMwOTMxZDQwYmQ4NDFiNzcwNGJiN2M1ZGQxMDFlMmVkZTI0NjE2ZTk0YzIyMjc5Y2I0ZWUxZGQifSx7Im1vZCI6ImVwb2NoX3QxN19zYXZlX2hhcm5lc3MiLCJzb3VyY2VEaXNwbGF5IjoiL1VzZXJzL2xpeXVuZ2NoaWgvRG9jdW1lbnRzL0NvZGV4LzIwMjYtMDktMDYvbmV3LWNoYXQvd29yay8wYWQvd29yay90MTctc2F2ZS1maXZlLW1vZC1pbnZlbnRvcnktcmVwYWlyLXByZXBhcmF0aW9uL3JlcXVpcmVkLWZhdWx0LWNvbnRyb2xzLXByZXBhcmF0aW9uLXYxL2V4ZWN1dGlvbi12MS9GMDJfUl9FQUNDRVNfRkFVTFRfUkVTRVJWRS9maXh0dXJlL2ZpeHR1cmUtcmVwby90b29scy9lcG9jaC1ydHMvdDE3LXNhdmUtaGFybmVzcy9zaW11bGF0aW9uL2hlbHBlcnMvU2hhZG93LmpzIiwic2hhMjU2IjoiZmU1NWZlYzE3NzBjYzNkMmJiMGE0OTg0MmY4NWZhNDkxMWY0YTBiOGMwM2QwYzljNWNjYmQzYTgxMTQzZDNjOSJ9XSwiYXJjaGl2ZUVudHJ5IjpudWxsLCJkZWZhdWx0TG9hZGVyRm9sZGVyIjoic2ltdWxhdGlvbi9oZWxwZXJzLyIsInJlYWxtIjoiU0lNVUxBVElPTl9DQU5ESURBVEUifSx7ImluZGV4Ijo0LCJ2ZnMiOiJzaW11bGF0aW9uL2hlbHBlcnMvVG9wT25seS5qcyIsIm1vZCI6ImVwb2NoX3QxN19zYXZlX2FsbG9jYXRpb25fd2l0bmVzcyIsInNoYTI1NiI6ImRiYTM2YzQzYWYxYzk3ZTE4Y2JjMWIxYjY4NWNjMzNjY2IzNGJkZmE5YWMzOWU0NTFjMDA4NjRjYTE3YWIxYmUiLCJieXRlcyI6MTMsInNoYWRvd2VkIjpbXSwiYXJjaGl2ZUVudHJ5IjpudWxsLCJkZWZhdWx0TG9hZGVyRm9sZGVyIjoic2ltdWxhdGlvbi9oZWxwZXJzLyIsInJlYWxtIjoiU0lNVUxBVElPTl9DQU5ESURBVEUifV0sImFyY2hpdmUiOnsiZXhwZWN0ZWRTSEEiOiJjZWE4OGRiMTRlMzlmOGY2ZWY2M2MzMTVhOGY4OGQ0ZmMxOGEwYTZjMTJlMzNkY2E5N2QzOGQ2MzY4NDliMTMyIiwiYWN0dWFsU0hBIjoiY2VhODhkYjE0ZTM5ZjhmNmVmNjNjMzE1YThmODhkNGZjMThhMGE2YzEyZTMzZGNhOTdkMzhkNjM2ODQ5YjEzMiIsInNpemUiOjUxNywiY2h1bmtCeXRlcyI6NDE5NDMwNCwiY2h1bmtDb3VudCI6MSwiYXV0aG9yaXR5S2luZCI6IlZFUklGSUVEX0hFTERfRkRfQllURVMifSwidW5zdXBwb3J0ZWRSdW50aW1lUnVsZXMiOlsiaW1wbGljaXQgZW5naW5lIG1vZCBtb3VudCIsInVzZXIvcmRhdGEgaGlnaGVyIG92ZXJyaWRlcyIsIkRFTEVURUQgdG9tYnN0b25lcyIsImxvb3NlL2FyY2hpdmUgYW5kIGFyY2hpdmUgb3JkZXJpbmciLCJtdGltZSBhcmJpdHJhdGlvbiIsImFjdHVhbCBydW50aW1lIG1vdW50L3Byb2ZpbGUgaW52ZW50b3J5IiwibWFwIHN0YXJ0dXAvdHJpZ2dlci9uYXRpdmUgam9iIGNhbGxlciBjbG9zdXJlIl19CnsidiI6MSwia2luZCI6IkZBVUxUIiwicGhhc2UiOiJGSU5JU0giLCJjb2RlIjoiQUJPUlRfTk9ERV9MSU1JVCIsImR1cmFibGVGYXVsdCI6ZmFsc2V9Cg==",
+      "expectedStdoutBytes": 13363,
+      "expectedStdoutSHA256": "44f843363ae7c91e6f6f8e0b97644d5b85b95a2fdf72384c9f8e9e7def1d287f",
+      "expectedStderr": "CAPTURE_FAULT FINISH ABORT_NODE_LIMIT\n",
+      "faultFile": "ABSENT",
+      "expectedCaptured": {
+        "v": 1,
+        "kind": "CAPTURED",
+        "captureId": "f5dab7b72086eead0fa74192c36b4ce7394eb25cca53ffccda8a62be73d053e0",
+        "sourceCount": 5,
+        "selectedDigest": "56af00ffeba998813afc52afc139ba971e65fb0b178f23c91396e78dbb4df88f",
+        "layers": [
+          {
+            "name": "public",
+            "rootKind": "archive",
+            "rootDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/synthetic-public.zip",
+            "entries": [
+              {
+                "vfs": "globalscripts/ArchiveOnly.js",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/synthetic-public.zip::globalscripts/ArchiveOnly.js",
+                "bytes": 59,
+                "sha256": "624db9c73026e1d1cbd03be8692ade7d91b8ca417339f98d133fc16327b00f28"
+              },
+              {
+                "vfs": "mod.json",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/synthetic-public.zip::mod.json",
+                "bytes": 56,
+                "sha256": "1c5f060e6a06f4db748127a161a6be25767bb660a840614f7b4fac80897ea0cf"
+              },
+              {
+                "vfs": "simulation/helpers/Shadow.js",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/synthetic-public.zip::simulation/helpers/Shadow.js",
+                "bytes": 24,
+                "sha256": "1f80220d28f31df37fc252333b75b900d94e4dbea9713201ba18f70c637a3194"
+              }
+            ]
+          },
+          {
+            "name": "epoch_rts",
+            "rootKind": "loose",
+            "rootDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/binaries/data/mods/epoch_rts",
+            "entries": [
+              {
+                "vfs": "mod.json",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/binaries/data/mods/epoch_rts/mod.json",
+                "bytes": 59,
+                "sha256": "c6f90fc75343ae4339f644c6d50d28ca179df5967446de7e6048cbb07e14d7e5"
+              },
+              {
+                "vfs": "simulation/helpers/Shadow.js",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/binaries/data/mods/epoch_rts/simulation/helpers/Shadow.js",
+                "bytes": 27,
+                "sha256": "9a4b3814c6bc09c1a5c10bd6e4e0a8b9f25514394c8333557c4ffecc3682df01"
+              }
+            ]
+          },
+          {
+            "name": "epoch_t16_harness",
+            "rootKind": "loose",
+            "rootDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t16-harness",
+            "entries": [
+              {
+                "vfs": "mod.json",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t16-harness/mod.json",
+                "bytes": 67,
+                "sha256": "e4a6d6666306a67110bca3d90ce9bae034f139a259105b2b25bd4b0abb33ab96"
+              },
+              {
+                "vfs": "simulation/helpers/Shadow.js",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t16-harness/simulation/helpers/Shadow.js",
+                "bytes": 35,
+                "sha256": "358b9ce6b30931d40bd841b7704bb7c5dd101e2ede24616e94c22279cb4ee1dd"
+              }
+            ]
+          },
+          {
+            "name": "epoch_t17_save_harness",
+            "rootKind": "loose",
+            "rootDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t17-save-harness",
+            "entries": [
+              {
+                "vfs": "mod.json",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t17-save-harness/mod.json",
+                "bytes": 72,
+                "sha256": "924b38381d7a691bc6f020dad4f6f021cef693c69bec5af9b1979907905fa45e"
+              },
+              {
+                "vfs": "simulation/helpers/Shadow.js",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t17-save-harness/simulation/helpers/Shadow.js",
+                "bytes": 40,
+                "sha256": "fe55fec1770cc3d2bb0a49842f85fa4911f4a0b8c03d0c9c5ccbd3a81143d3c9"
+              }
+            ]
+          },
+          {
+            "name": "epoch_t17_save_allocation_witness",
+            "rootKind": "loose",
+            "rootDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t17-save-allocation-witness",
+            "entries": [
+              {
+                "vfs": "mod.json",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t17-save-allocation-witness/mod.json",
+                "bytes": 83,
+                "sha256": "52d8ff7bff23e5dc7c2ad82c1781ec63c431bb27fb12b16e16d92a81ed67f07b"
+              },
+              {
+                "vfs": "simulation/helpers/Empty.js",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t17-save-allocation-witness/simulation/helpers/Empty.js",
+                "bytes": 0,
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+              },
+              {
+                "vfs": "simulation/helpers/Shadow.js",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t17-save-allocation-witness/simulation/helpers/Shadow.js",
+                "bytes": 51,
+                "sha256": "8ac6b2f522363c1df0d841ef322d1cc573ea00a6fe8eb4735dc00063c7fb2750"
+              },
+              {
+                "vfs": "simulation/helpers/TopOnly.js",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t17-save-allocation-witness/simulation/helpers/TopOnly.js",
+                "bytes": 13,
+                "sha256": "dba36c43af1c97e18cbc1b1b685cc33ccb34bdfa9ac39e451c00864ca17ab1be"
+              }
+            ]
+          }
+        ],
+        "selected": [
+          {
+            "index": 0,
+            "vfs": "globalscripts/ArchiveOnly.js",
+            "mod": "public",
+            "sha256": "624db9c73026e1d1cbd03be8692ade7d91b8ca417339f98d133fc16327b00f28",
+            "bytes": 59,
+            "shadowed": [],
+            "archiveEntry": "globalscripts/ArchiveOnly.js",
+            "defaultLoaderFolder": "globalscripts/",
+            "realm": "SIMULATION_CANDIDATE"
+          },
+          {
+            "index": 1,
+            "vfs": "mod.json",
+            "mod": "epoch_t17_save_allocation_witness",
+            "sha256": "52d8ff7bff23e5dc7c2ad82c1781ec63c431bb27fb12b16e16d92a81ed67f07b",
+            "bytes": 83,
+            "shadowed": [
+              {
+                "mod": "public",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/synthetic-public.zip::mod.json",
+                "sha256": "1c5f060e6a06f4db748127a161a6be25767bb660a840614f7b4fac80897ea0cf"
+              },
+              {
+                "mod": "epoch_rts",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/binaries/data/mods/epoch_rts/mod.json",
+                "sha256": "c6f90fc75343ae4339f644c6d50d28ca179df5967446de7e6048cbb07e14d7e5"
+              },
+              {
+                "mod": "epoch_t16_harness",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t16-harness/mod.json",
+                "sha256": "e4a6d6666306a67110bca3d90ce9bae034f139a259105b2b25bd4b0abb33ab96"
+              },
+              {
+                "mod": "epoch_t17_save_harness",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t17-save-harness/mod.json",
+                "sha256": "924b38381d7a691bc6f020dad4f6f021cef693c69bec5af9b1979907905fa45e"
+              }
+            ],
+            "archiveEntry": null,
+            "defaultLoaderFolder": null,
+            "realm": "METADATA"
+          },
+          {
+            "index": 2,
+            "vfs": "simulation/helpers/Empty.js",
+            "mod": "epoch_t17_save_allocation_witness",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0,
+            "shadowed": [],
+            "archiveEntry": null,
+            "defaultLoaderFolder": "simulation/helpers/",
+            "realm": "SIMULATION_CANDIDATE"
+          },
+          {
+            "index": 3,
+            "vfs": "simulation/helpers/Shadow.js",
+            "mod": "epoch_t17_save_allocation_witness",
+            "sha256": "8ac6b2f522363c1df0d841ef322d1cc573ea00a6fe8eb4735dc00063c7fb2750",
+            "bytes": 51,
+            "shadowed": [
+              {
+                "mod": "public",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/synthetic-public.zip::simulation/helpers/Shadow.js",
+                "sha256": "1f80220d28f31df37fc252333b75b900d94e4dbea9713201ba18f70c637a3194"
+              },
+              {
+                "mod": "epoch_rts",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/binaries/data/mods/epoch_rts/simulation/helpers/Shadow.js",
+                "sha256": "9a4b3814c6bc09c1a5c10bd6e4e0a8b9f25514394c8333557c4ffecc3682df01"
+              },
+              {
+                "mod": "epoch_t16_harness",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t16-harness/simulation/helpers/Shadow.js",
+                "sha256": "358b9ce6b30931d40bd841b7704bb7c5dd101e2ede24616e94c22279cb4ee1dd"
+              },
+              {
+                "mod": "epoch_t17_save_harness",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_R_EACCES_FAULT_RESERVE/fixture/fixture-repo/tools/epoch-rts/t17-save-harness/simulation/helpers/Shadow.js",
+                "sha256": "fe55fec1770cc3d2bb0a49842f85fa4911f4a0b8c03d0c9c5ccbd3a81143d3c9"
+              }
+            ],
+            "archiveEntry": null,
+            "defaultLoaderFolder": "simulation/helpers/",
+            "realm": "SIMULATION_CANDIDATE"
+          },
+          {
+            "index": 4,
+            "vfs": "simulation/helpers/TopOnly.js",
+            "mod": "epoch_t17_save_allocation_witness",
+            "sha256": "dba36c43af1c97e18cbc1b1b685cc33ccb34bdfa9ac39e451c00864ca17ab1be",
+            "bytes": 13,
+            "shadowed": [],
+            "archiveEntry": null,
+            "defaultLoaderFolder": "simulation/helpers/",
+            "realm": "SIMULATION_CANDIDATE"
+          }
+        ],
+        "archive": {
+          "expectedSHA": "cea88db14e39f8f6ef63c315a8f88d4fc18a0a6c12e33dca97d38d636849b132",
+          "actualSHA": "cea88db14e39f8f6ef63c315a8f88d4fc18a0a6c12e33dca97d38d636849b132",
+          "size": 517,
+          "chunkBytes": 4194304,
+          "chunkCount": 1,
+          "authorityKind": "VERIFIED_HELD_FD_BYTES"
+        },
+        "unsupportedRuntimeRules": [
+          "implicit engine mod mount",
+          "user/rdata higher overrides",
+          "DELETED tombstones",
+          "loose/archive and archive ordering",
+          "mtime arbitration",
+          "actual runtime mount/profile inventory",
+          "map startup/trigger/native job caller closure"
+        ]
+      },
+      "expectedBodyCopies": 23,
+      "forbiddenFiles": [
+        "inventory.json",
+        "layer-inputs.json",
+        "writer-sites.json",
+        "manifest.json",
+        "completed.json"
+      ],
+      "injectedErrno": "EACCES",
+      "injectionTarget": "fault.json open"
+    },
+    {
+      "id": "F02_W_EACCES_FAULT_WRITE_PREFIX",
+      "root": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX",
+      "producerLeaf": "fault_fixture_v1",
+      "status": "NOT_RUN",
+      "retry": 0,
+      "seed": false,
+      "expectedReturn": 1,
+      "expectedPhase": "FINISH",
+      "expectedPrimaryCode": "ABORT_NODE_LIMIT",
+      "expectedInjectionCount": 1,
+      "expectedFrames": [
+        {
+          "v": 1,
+          "kind": "SOURCE",
+          "index": 0,
+          "vfs": "globalscripts/ArchiveOnly.js",
+          "mod": "public",
+          "sha256": "624db9c73026e1d1cbd03be8692ade7d91b8ca417339f98d133fc16327b00f28",
+          "bytes": 59,
+          "bodyBase64": "RW5naW5lLlJlZ2lzdGVyR2xvYmFsKCJTeW50aGV0aWNQcmVzZXJ2YXRpb25BcmNoaXZlIiwge30pOwo="
+        },
+        {
+          "v": 1,
+          "kind": "SOURCE",
+          "index": 1,
+          "vfs": "mod.json",
+          "mod": "epoch_t17_save_allocation_witness",
+          "sha256": "52d8ff7bff23e5dc7c2ad82c1781ec63c431bb27fb12b16e16d92a81ed67f07b",
+          "bytes": 83,
+          "bodyBase64": "eyJuYW1lIjoiZXBvY2hfdDE3X3NhdmVfYWxsb2NhdGlvbl93aXRuZXNzIiwidmVyc2lvbiI6IlNZTlRIRVRJQ19QUkVTRVJWQVRJT05fVjEifQo="
+        },
+        {
+          "v": 1,
+          "kind": "SOURCE",
+          "index": 2,
+          "vfs": "simulation/helpers/Empty.js",
+          "mod": "epoch_t17_save_allocation_witness",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "bodyBase64": ""
+        },
+        {
+          "v": 1,
+          "kind": "SOURCE",
+          "index": 3,
+          "vfs": "simulation/helpers/Shadow.js",
+          "mod": "epoch_t17_save_allocation_witness",
+          "sha256": "8ac6b2f522363c1df0d841ef322d1cc573ea00a6fe8eb4735dc00063c7fb2750",
+          "bytes": 51,
+          "bodyBase64": "Y29uc3QgbGF5ZXIgPSAiZXBvY2hfdDE3X3NhdmVfYWxsb2NhdGlvbl93aXRuZXNzIjsK"
+        },
+        {
+          "v": 1,
+          "kind": "SOURCE",
+          "index": 4,
+          "vfs": "simulation/helpers/TopOnly.js",
+          "mod": "epoch_t17_save_allocation_witness",
+          "sha256": "dba36c43af1c97e18cbc1b1b685cc33ccb34bdfa9ac39e451c00864ca17ab1be",
+          "bytes": 13,
+          "bodyBase64": "bGV0IHdpdG5lc3M7Cg=="
+        },
+        {
+          "v": 1,
+          "kind": "CAPTURED",
+          "captureId": "f5dab7b72086eead0fa74192c36b4ce7394eb25cca53ffccda8a62be73d053e0",
+          "sourceCount": 5,
+          "selectedDigest": "56af00ffeba998813afc52afc139ba971e65fb0b178f23c91396e78dbb4df88f",
+          "layers": [
+            {
+              "name": "public",
+              "rootKind": "archive",
+              "rootDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/synthetic-public.zip",
+              "entries": [
+                {
+                  "vfs": "globalscripts/ArchiveOnly.js",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/synthetic-public.zip::globalscripts/ArchiveOnly.js",
+                  "bytes": 59,
+                  "sha256": "624db9c73026e1d1cbd03be8692ade7d91b8ca417339f98d133fc16327b00f28"
+                },
+                {
+                  "vfs": "mod.json",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/synthetic-public.zip::mod.json",
+                  "bytes": 56,
+                  "sha256": "1c5f060e6a06f4db748127a161a6be25767bb660a840614f7b4fac80897ea0cf"
+                },
+                {
+                  "vfs": "simulation/helpers/Shadow.js",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/synthetic-public.zip::simulation/helpers/Shadow.js",
+                  "bytes": 24,
+                  "sha256": "1f80220d28f31df37fc252333b75b900d94e4dbea9713201ba18f70c637a3194"
+                }
+              ]
+            },
+            {
+              "name": "epoch_rts",
+              "rootKind": "loose",
+              "rootDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/binaries/data/mods/epoch_rts",
+              "entries": [
+                {
+                  "vfs": "mod.json",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/binaries/data/mods/epoch_rts/mod.json",
+                  "bytes": 59,
+                  "sha256": "c6f90fc75343ae4339f644c6d50d28ca179df5967446de7e6048cbb07e14d7e5"
+                },
+                {
+                  "vfs": "simulation/helpers/Shadow.js",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/binaries/data/mods/epoch_rts/simulation/helpers/Shadow.js",
+                  "bytes": 27,
+                  "sha256": "9a4b3814c6bc09c1a5c10bd6e4e0a8b9f25514394c8333557c4ffecc3682df01"
+                }
+              ]
+            },
+            {
+              "name": "epoch_t16_harness",
+              "rootKind": "loose",
+              "rootDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t16-harness",
+              "entries": [
+                {
+                  "vfs": "mod.json",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t16-harness/mod.json",
+                  "bytes": 67,
+                  "sha256": "e4a6d6666306a67110bca3d90ce9bae034f139a259105b2b25bd4b0abb33ab96"
+                },
+                {
+                  "vfs": "simulation/helpers/Shadow.js",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t16-harness/simulation/helpers/Shadow.js",
+                  "bytes": 35,
+                  "sha256": "358b9ce6b30931d40bd841b7704bb7c5dd101e2ede24616e94c22279cb4ee1dd"
+                }
+              ]
+            },
+            {
+              "name": "epoch_t17_save_harness",
+              "rootKind": "loose",
+              "rootDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t17-save-harness",
+              "entries": [
+                {
+                  "vfs": "mod.json",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t17-save-harness/mod.json",
+                  "bytes": 72,
+                  "sha256": "924b38381d7a691bc6f020dad4f6f021cef693c69bec5af9b1979907905fa45e"
+                },
+                {
+                  "vfs": "simulation/helpers/Shadow.js",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t17-save-harness/simulation/helpers/Shadow.js",
+                  "bytes": 40,
+                  "sha256": "fe55fec1770cc3d2bb0a49842f85fa4911f4a0b8c03d0c9c5ccbd3a81143d3c9"
+                }
+              ]
+            },
+            {
+              "name": "epoch_t17_save_allocation_witness",
+              "rootKind": "loose",
+              "rootDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t17-save-allocation-witness",
+              "entries": [
+                {
+                  "vfs": "mod.json",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t17-save-allocation-witness/mod.json",
+                  "bytes": 83,
+                  "sha256": "52d8ff7bff23e5dc7c2ad82c1781ec63c431bb27fb12b16e16d92a81ed67f07b"
+                },
+                {
+                  "vfs": "simulation/helpers/Empty.js",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t17-save-allocation-witness/simulation/helpers/Empty.js",
+                  "bytes": 0,
+                  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                },
+                {
+                  "vfs": "simulation/helpers/Shadow.js",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t17-save-allocation-witness/simulation/helpers/Shadow.js",
+                  "bytes": 51,
+                  "sha256": "8ac6b2f522363c1df0d841ef322d1cc573ea00a6fe8eb4735dc00063c7fb2750"
+                },
+                {
+                  "vfs": "simulation/helpers/TopOnly.js",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t17-save-allocation-witness/simulation/helpers/TopOnly.js",
+                  "bytes": 13,
+                  "sha256": "dba36c43af1c97e18cbc1b1b685cc33ccb34bdfa9ac39e451c00864ca17ab1be"
+                }
+              ]
+            }
+          ],
+          "selected": [
+            {
+              "index": 0,
+              "vfs": "globalscripts/ArchiveOnly.js",
+              "mod": "public",
+              "sha256": "624db9c73026e1d1cbd03be8692ade7d91b8ca417339f98d133fc16327b00f28",
+              "bytes": 59,
+              "shadowed": [],
+              "archiveEntry": "globalscripts/ArchiveOnly.js",
+              "defaultLoaderFolder": "globalscripts/",
+              "realm": "SIMULATION_CANDIDATE"
+            },
+            {
+              "index": 1,
+              "vfs": "mod.json",
+              "mod": "epoch_t17_save_allocation_witness",
+              "sha256": "52d8ff7bff23e5dc7c2ad82c1781ec63c431bb27fb12b16e16d92a81ed67f07b",
+              "bytes": 83,
+              "shadowed": [
+                {
+                  "mod": "public",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/synthetic-public.zip::mod.json",
+                  "sha256": "1c5f060e6a06f4db748127a161a6be25767bb660a840614f7b4fac80897ea0cf"
+                },
+                {
+                  "mod": "epoch_rts",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/binaries/data/mods/epoch_rts/mod.json",
+                  "sha256": "c6f90fc75343ae4339f644c6d50d28ca179df5967446de7e6048cbb07e14d7e5"
+                },
+                {
+                  "mod": "epoch_t16_harness",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t16-harness/mod.json",
+                  "sha256": "e4a6d6666306a67110bca3d90ce9bae034f139a259105b2b25bd4b0abb33ab96"
+                },
+                {
+                  "mod": "epoch_t17_save_harness",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t17-save-harness/mod.json",
+                  "sha256": "924b38381d7a691bc6f020dad4f6f021cef693c69bec5af9b1979907905fa45e"
+                }
+              ],
+              "archiveEntry": null,
+              "defaultLoaderFolder": null,
+              "realm": "METADATA"
+            },
+            {
+              "index": 2,
+              "vfs": "simulation/helpers/Empty.js",
+              "mod": "epoch_t17_save_allocation_witness",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "bytes": 0,
+              "shadowed": [],
+              "archiveEntry": null,
+              "defaultLoaderFolder": "simulation/helpers/",
+              "realm": "SIMULATION_CANDIDATE"
+            },
+            {
+              "index": 3,
+              "vfs": "simulation/helpers/Shadow.js",
+              "mod": "epoch_t17_save_allocation_witness",
+              "sha256": "8ac6b2f522363c1df0d841ef322d1cc573ea00a6fe8eb4735dc00063c7fb2750",
+              "bytes": 51,
+              "shadowed": [
+                {
+                  "mod": "public",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/synthetic-public.zip::simulation/helpers/Shadow.js",
+                  "sha256": "1f80220d28f31df37fc252333b75b900d94e4dbea9713201ba18f70c637a3194"
+                },
+                {
+                  "mod": "epoch_rts",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/binaries/data/mods/epoch_rts/simulation/helpers/Shadow.js",
+                  "sha256": "9a4b3814c6bc09c1a5c10bd6e4e0a8b9f25514394c8333557c4ffecc3682df01"
+                },
+                {
+                  "mod": "epoch_t16_harness",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t16-harness/simulation/helpers/Shadow.js",
+                  "sha256": "358b9ce6b30931d40bd841b7704bb7c5dd101e2ede24616e94c22279cb4ee1dd"
+                },
+                {
+                  "mod": "epoch_t17_save_harness",
+                  "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t17-save-harness/simulation/helpers/Shadow.js",
+                  "sha256": "fe55fec1770cc3d2bb0a49842f85fa4911f4a0b8c03d0c9c5ccbd3a81143d3c9"
+                }
+              ],
+              "archiveEntry": null,
+              "defaultLoaderFolder": "simulation/helpers/",
+              "realm": "SIMULATION_CANDIDATE"
+            },
+            {
+              "index": 4,
+              "vfs": "simulation/helpers/TopOnly.js",
+              "mod": "epoch_t17_save_allocation_witness",
+              "sha256": "dba36c43af1c97e18cbc1b1b685cc33ccb34bdfa9ac39e451c00864ca17ab1be",
+              "bytes": 13,
+              "shadowed": [],
+              "archiveEntry": null,
+              "defaultLoaderFolder": "simulation/helpers/",
+              "realm": "SIMULATION_CANDIDATE"
+            }
+          ],
+          "archive": {
+            "expectedSHA": "cea88db14e39f8f6ef63c315a8f88d4fc18a0a6c12e33dca97d38d636849b132",
+            "actualSHA": "cea88db14e39f8f6ef63c315a8f88d4fc18a0a6c12e33dca97d38d636849b132",
+            "size": 517,
+            "chunkBytes": 4194304,
+            "chunkCount": 1,
+            "authorityKind": "VERIFIED_HELD_FD_BYTES"
+          },
+          "unsupportedRuntimeRules": [
+            "implicit engine mod mount",
+            "user/rdata higher overrides",
+            "DELETED tombstones",
+            "loose/archive and archive ordering",
+            "mtime arbitration",
+            "actual runtime mount/profile inventory",
+            "map startup/trigger/native job caller closure"
+          ]
+        },
+        {
+          "v": 1,
+          "kind": "FAULT",
+          "phase": "FINISH",
+          "code": "ABORT_NODE_LIMIT",
+          "durableFault": false
+        }
+      ],
+      "expectedStdoutBase64": "eyJ2IjoxLCJraW5kIjoiU09VUkNFIiwiaW5kZXgiOjAsInZmcyI6Imdsb2JhbHNjcmlwdHMvQXJjaGl2ZU9ubHkuanMiLCJtb2QiOiJwdWJsaWMiLCJzaGEyNTYiOiI2MjRkYjljNzMwMjZlMWQxY2JkMDNiZTg2OTJhZGU3ZDkxYjhjYTQxNzMzOWY5OGQxMzNmYzE2MzI3YjAwZjI4IiwiYnl0ZXMiOjU5LCJib2R5QmFzZTY0IjoiUlc1bmFXNWxMbEpsWjJsemRHVnlSMnh2WW1Gc0tDSlRlVzUwYUdWMGFXTlFjbVZ6WlhKMllYUnBiMjVCY21Ob2FYWmxJaXdnZTMwcE93bz0ifQp7InYiOjEsImtpbmQiOiJTT1VSQ0UiLCJpbmRleCI6MSwidmZzIjoibW9kLmpzb24iLCJtb2QiOiJlcG9jaF90MTdfc2F2ZV9hbGxvY2F0aW9uX3dpdG5lc3MiLCJzaGEyNTYiOiI1MmQ4ZmY3YmZmMjNlNWRjN2MyYWQ4MmMxNzgxZWM2M2M0MzFiYjI3ZmIxMmIxNmUxNmQ5MmE4MWVkNjdmMDdiIiwiYnl0ZXMiOjgzLCJib2R5QmFzZTY0IjoiZXlKdVlXMWxJam9pWlhCdlkyaGZkREUzWDNOaGRtVmZZV3hzYjJOaGRHbHZibDkzYVhSdVpYTnpJaXdpZG1WeWMybHZiaUk2SWxOWlRsUklSVlJKUTE5UVVrVlRSVkpXUVZSSlQwNWZWakVpZlFvPSJ9CnsidiI6MSwia2luZCI6IlNPVVJDRSIsImluZGV4IjoyLCJ2ZnMiOiJzaW11bGF0aW9uL2hlbHBlcnMvRW1wdHkuanMiLCJtb2QiOiJlcG9jaF90MTdfc2F2ZV9hbGxvY2F0aW9uX3dpdG5lc3MiLCJzaGEyNTYiOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1IiwiYnl0ZXMiOjAsImJvZHlCYXNlNjQiOiIifQp7InYiOjEsImtpbmQiOiJTT1VSQ0UiLCJpbmRleCI6MywidmZzIjoic2ltdWxhdGlvbi9oZWxwZXJzL1NoYWRvdy5qcyIsIm1vZCI6ImVwb2NoX3QxN19zYXZlX2FsbG9jYXRpb25fd2l0bmVzcyIsInNoYTI1NiI6IjhhYzZiMmY1MjIzNjNjMWRmMGQ4NDFlZjMyMmQxY2M1NzNlYTAwYTZmZThlYjQ3MzVkYzAwMDYzYzdmYjI3NTAiLCJieXRlcyI6NTEsImJvZHlCYXNlNjQiOiJZMjl1YzNRZ2JHRjVaWElnUFNBaVpYQnZZMmhmZERFM1gzTmhkbVZmWVd4c2IyTmhkR2x2Ymw5M2FYUnVaWE56SWpzSyJ9CnsidiI6MSwia2luZCI6IlNPVVJDRSIsImluZGV4Ijo0LCJ2ZnMiOiJzaW11bGF0aW9uL2hlbHBlcnMvVG9wT25seS5qcyIsIm1vZCI6ImVwb2NoX3QxN19zYXZlX2FsbG9jYXRpb25fd2l0bmVzcyIsInNoYTI1NiI6ImRiYTM2YzQzYWYxYzk3ZTE4Y2JjMWIxYjY4NWNjMzNjY2IzNGJkZmE5YWMzOWU0NTFjMDA4NjRjYTE3YWIxYmUiLCJieXRlcyI6MTMsImJvZHlCYXNlNjQiOiJiR1YwSUhkcGRHNWxjM003Q2c9PSJ9CnsidiI6MSwia2luZCI6IkNBUFRVUkVEIiwiY2FwdHVyZUlkIjoiZjVkYWI3YjcyMDg2ZWVhZDBmYTc0MTkyYzM2YjRjZTczOTRlYjI1Y2NhNTNmZmNjZGE4YTYyYmU3M2QwNTNlMCIsInNvdXJjZUNvdW50Ijo1LCJzZWxlY3RlZERpZ2VzdCI6IjU2YWYwMGZmZWJhOTk4ODEzYWZjNTJhZmMxMzliYTk3MWU2NWZiMGIxNzhmMjNjOTEzOTZlNzhkYmI0ZGY4OGYiLCJsYXllcnMiOlt7Im5hbWUiOiJwdWJsaWMiLCJyb290S2luZCI6ImFyY2hpdmUiLCJyb290RGlzcGxheSI6Ii9Vc2Vycy9saXl1bmdjaGloL0RvY3VtZW50cy9Db2RleC8yMDI2LTA5LTA2L25ldy1jaGF0L3dvcmsvMGFkL3dvcmsvdDE3LXNhdmUtZml2ZS1tb2QtaW52ZW50b3J5LXJlcGFpci1wcmVwYXJhdGlvbi9yZXF1aXJlZC1mYXVsdC1jb250cm9scy1wcmVwYXJhdGlvbi12MS9leGVjdXRpb24tdjEvRjAyX1dfRUFDQ0VTX0ZBVUxUX1dSSVRFX1BSRUZJWC9maXh0dXJlL3N5bnRoZXRpYy1wdWJsaWMuemlwIiwiZW50cmllcyI6W3sidmZzIjoiZ2xvYmFsc2NyaXB0cy9BcmNoaXZlT25seS5qcyIsInNvdXJjZURpc3BsYXkiOiIvVXNlcnMvbGl5dW5nY2hpaC9Eb2N1bWVudHMvQ29kZXgvMjAyNi0wOS0wNi9uZXctY2hhdC93b3JrLzBhZC93b3JrL3QxNy1zYXZlLWZpdmUtbW9kLWludmVudG9yeS1yZXBhaXItcHJlcGFyYXRpb24vcmVxdWlyZWQtZmF1bHQtY29udHJvbHMtcHJlcGFyYXRpb24tdjEvZXhlY3V0aW9uLXYxL0YwMl9XX0VBQ0NFU19GQVVMVF9XUklURV9QUkVGSVgvZml4dHVyZS9zeW50aGV0aWMtcHVibGljLnppcDo6Z2xvYmFsc2NyaXB0cy9BcmNoaXZlT25seS5qcyIsImJ5dGVzIjo1OSwic2hhMjU2IjoiNjI0ZGI5YzczMDI2ZTFkMWNiZDAzYmU4NjkyYWRlN2Q5MWI4Y2E0MTczMzlmOThkMTMzZmMxNjMyN2IwMGYyOCJ9LHsidmZzIjoibW9kLmpzb24iLCJzb3VyY2VEaXNwbGF5IjoiL1VzZXJzL2xpeXVuZ2NoaWgvRG9jdW1lbnRzL0NvZGV4LzIwMjYtMDktMDYvbmV3LWNoYXQvd29yay8wYWQvd29yay90MTctc2F2ZS1maXZlLW1vZC1pbnZlbnRvcnktcmVwYWlyLXByZXBhcmF0aW9uL3JlcXVpcmVkLWZhdWx0LWNvbnRyb2xzLXByZXBhcmF0aW9uLXYxL2V4ZWN1dGlvbi12MS9GMDJfV19FQUNDRVNfRkFVTFRfV1JJVEVfUFJFRklYL2ZpeHR1cmUvc3ludGhldGljLXB1YmxpYy56aXA6Om1vZC5qc29uIiwiYnl0ZXMiOjU2LCJzaGEyNTYiOiIxYzVmMDYwZTZhMDZmNGRiNzQ4MTI3YTE2MWE2YmUyNTc2N2JiNjYwYTg0MDYxNGY3YjRmYWM4MDg5N2VhMGNmIn0seyJ2ZnMiOiJzaW11bGF0aW9uL2hlbHBlcnMvU2hhZG93LmpzIiwic291cmNlRGlzcGxheSI6Ii9Vc2Vycy9saXl1bmdjaGloL0RvY3VtZW50cy9Db2RleC8yMDI2LTA5LTA2L25ldy1jaGF0L3dvcmsvMGFkL3dvcmsvdDE3LXNhdmUtZml2ZS1tb2QtaW52ZW50b3J5LXJlcGFpci1wcmVwYXJhdGlvbi9yZXF1aXJlZC1mYXVsdC1jb250cm9scy1wcmVwYXJhdGlvbi12MS9leGVjdXRpb24tdjEvRjAyX1dfRUFDQ0VTX0ZBVUxUX1dSSVRFX1BSRUZJWC9maXh0dXJlL3N5bnRoZXRpYy1wdWJsaWMuemlwOjpzaW11bGF0aW9uL2hlbHBlcnMvU2hhZG93LmpzIiwiYnl0ZXMiOjI0LCJzaGEyNTYiOiIxZjgwMjIwZDI4ZjMxZGYzN2ZjMjUyMzMzYjc1YjkwMGQ5NGU0ZGJlYTk3MTMyMDFiYTE4ZjcwYzYzN2EzMTk0In1dfSx7Im5hbWUiOiJlcG9jaF9ydHMiLCJyb290S2luZCI6Imxvb3NlIiwicm9vdERpc3BsYXkiOiIvVXNlcnMvbGl5dW5nY2hpaC9Eb2N1bWVudHMvQ29kZXgvMjAyNi0wOS0wNi9uZXctY2hhdC93b3JrLzBhZC93b3JrL3QxNy1zYXZlLWZpdmUtbW9kLWludmVudG9yeS1yZXBhaXItcHJlcGFyYXRpb24vcmVxdWlyZWQtZmF1bHQtY29udHJvbHMtcHJlcGFyYXRpb24tdjEvZXhlY3V0aW9uLXYxL0YwMl9XX0VBQ0NFU19GQVVMVF9XUklURV9QUkVGSVgvZml4dHVyZS9maXh0dXJlLXJlcG8vYmluYXJpZXMvZGF0YS9tb2RzL2Vwb2NoX3J0cyIsImVudHJpZXMiOlt7InZmcyI6Im1vZC5qc29uIiwic291cmNlRGlzcGxheSI6Ii9Vc2Vycy9saXl1bmdjaGloL0RvY3VtZW50cy9Db2RleC8yMDI2LTA5LTA2L25ldy1jaGF0L3dvcmsvMGFkL3dvcmsvdDE3LXNhdmUtZml2ZS1tb2QtaW52ZW50b3J5LXJlcGFpci1wcmVwYXJhdGlvbi9yZXF1aXJlZC1mYXVsdC1jb250cm9scy1wcmVwYXJhdGlvbi12MS9leGVjdXRpb24tdjEvRjAyX1dfRUFDQ0VTX0ZBVUxUX1dSSVRFX1BSRUZJWC9maXh0dXJlL2ZpeHR1cmUtcmVwby9iaW5hcmllcy9kYXRhL21vZHMvZXBvY2hfcnRzL21vZC5qc29uIiwiYnl0ZXMiOjU5LCJzaGEyNTYiOiJjNmY5MGZjNzUzNDNhZTQzMzlmNjQ0YzZkNTBkMjhjYTE3OWRmNTk2NzQ0NmRlN2U2MDQ4Y2JiMDdlMTRkN2U1In0seyJ2ZnMiOiJzaW11bGF0aW9uL2hlbHBlcnMvU2hhZG93LmpzIiwic291cmNlRGlzcGxheSI6Ii9Vc2Vycy9saXl1bmdjaGloL0RvY3VtZW50cy9Db2RleC8yMDI2LTA5LTA2L25ldy1jaGF0L3dvcmsvMGFkL3dvcmsvdDE3LXNhdmUtZml2ZS1tb2QtaW52ZW50b3J5LXJlcGFpci1wcmVwYXJhdGlvbi9yZXF1aXJlZC1mYXVsdC1jb250cm9scy1wcmVwYXJhdGlvbi12MS9leGVjdXRpb24tdjEvRjAyX1dfRUFDQ0VTX0ZBVUxUX1dSSVRFX1BSRUZJWC9maXh0dXJlL2ZpeHR1cmUtcmVwby9iaW5hcmllcy9kYXRhL21vZHMvZXBvY2hfcnRzL3NpbXVsYXRpb24vaGVscGVycy9TaGFkb3cuanMiLCJieXRlcyI6MjcsInNoYTI1NiI6IjlhNGIzODE0YzZiYzA5YzFhNWMxMGJkNmU0ZTBhOGI5ZjI1NTE0Mzk0YzgzMzM1NTdjNGZmZWNjMzY4MmRmMDEifV19LHsibmFtZSI6ImVwb2NoX3QxNl9oYXJuZXNzIiwicm9vdEtpbmQiOiJsb29zZSIsInJvb3REaXNwbGF5IjoiL1VzZXJzL2xpeXVuZ2NoaWgvRG9jdW1lbnRzL0NvZGV4LzIwMjYtMDktMDYvbmV3LWNoYXQvd29yay8wYWQvd29yay90MTctc2F2ZS1maXZlLW1vZC1pbnZlbnRvcnktcmVwYWlyLXByZXBhcmF0aW9uL3JlcXVpcmVkLWZhdWx0LWNvbnRyb2xzLXByZXBhcmF0aW9uLXYxL2V4ZWN1dGlvbi12MS9GMDJfV19FQUNDRVNfRkFVTFRfV1JJVEVfUFJFRklYL2ZpeHR1cmUvZml4dHVyZS1yZXBvL3Rvb2xzL2Vwb2NoLXJ0cy90MTYtaGFybmVzcyIsImVudHJpZXMiOlt7InZmcyI6Im1vZC5qc29uIiwic291cmNlRGlzcGxheSI6Ii9Vc2Vycy9saXl1bmdjaGloL0RvY3VtZW50cy9Db2RleC8yMDI2LTA5LTA2L25ldy1jaGF0L3dvcmsvMGFkL3dvcmsvdDE3LXNhdmUtZml2ZS1tb2QtaW52ZW50b3J5LXJlcGFpci1wcmVwYXJhdGlvbi9yZXF1aXJlZC1mYXVsdC1jb250cm9scy1wcmVwYXJhdGlvbi12MS9leGVjdXRpb24tdjEvRjAyX1dfRUFDQ0VTX0ZBVUxUX1dSSVRFX1BSRUZJWC9maXh0dXJlL2ZpeHR1cmUtcmVwby90b29scy9lcG9jaC1ydHMvdDE2LWhhcm5lc3MvbW9kLmpzb24iLCJieXRlcyI6NjcsInNoYTI1NiI6ImU0YTZkNjY2NjMwNmE2NzExMGJjYTNkOTBjZTliYWUwMzRmMTM5YTI1OTEwNWIyYjI1YmQ0YjBhYmIzM2FiOTYifSx7InZmcyI6InNpbXVsYXRpb24vaGVscGVycy9TaGFkb3cuanMiLCJzb3VyY2VEaXNwbGF5IjoiL1VzZXJzL2xpeXVuZ2NoaWgvRG9jdW1lbnRzL0NvZGV4LzIwMjYtMDktMDYvbmV3LWNoYXQvd29yay8wYWQvd29yay90MTctc2F2ZS1maXZlLW1vZC1pbnZlbnRvcnktcmVwYWlyLXByZXBhcmF0aW9uL3JlcXVpcmVkLWZhdWx0LWNvbnRyb2xzLXByZXBhcmF0aW9uLXYxL2V4ZWN1dGlvbi12MS9GMDJfV19FQUNDRVNfRkFVTFRfV1JJVEVfUFJFRklYL2ZpeHR1cmUvZml4dHVyZS1yZXBvL3Rvb2xzL2Vwb2NoLXJ0cy90MTYtaGFybmVzcy9zaW11bGF0aW9uL2hlbHBlcnMvU2hhZG93LmpzIiwiYnl0ZXMiOjM1LCJzaGEyNTYiOiIzNThiOWNlNmIzMDkzMWQ0MGJkODQxYjc3MDRiYjdjNWRkMTAxZTJlZGUyNDYxNmU5NGMyMjI3OWNiNGVlMWRkIn1dfSx7Im5hbWUiOiJlcG9jaF90MTdfc2F2ZV9oYXJuZXNzIiwicm9vdEtpbmQiOiJsb29zZSIsInJvb3REaXNwbGF5IjoiL1VzZXJzL2xpeXVuZ2NoaWgvRG9jdW1lbnRzL0NvZGV4LzIwMjYtMDktMDYvbmV3LWNoYXQvd29yay8wYWQvd29yay90MTctc2F2ZS1maXZlLW1vZC1pbnZlbnRvcnktcmVwYWlyLXByZXBhcmF0aW9uL3JlcXVpcmVkLWZhdWx0LWNvbnRyb2xzLXByZXBhcmF0aW9uLXYxL2V4ZWN1dGlvbi12MS9GMDJfV19FQUNDRVNfRkFVTFRfV1JJVEVfUFJFRklYL2ZpeHR1cmUvZml4dHVyZS1yZXBvL3Rvb2xzL2Vwb2NoLXJ0cy90MTctc2F2ZS1oYXJuZXNzIiwiZW50cmllcyI6W3sidmZzIjoibW9kLmpzb24iLCJzb3VyY2VEaXNwbGF5IjoiL1VzZXJzL2xpeXVuZ2NoaWgvRG9jdW1lbnRzL0NvZGV4LzIwMjYtMDktMDYvbmV3LWNoYXQvd29yay8wYWQvd29yay90MTctc2F2ZS1maXZlLW1vZC1pbnZlbnRvcnktcmVwYWlyLXByZXBhcmF0aW9uL3JlcXVpcmVkLWZhdWx0LWNvbnRyb2xzLXByZXBhcmF0aW9uLXYxL2V4ZWN1dGlvbi12MS9GMDJfV19FQUNDRVNfRkFVTFRfV1JJVEVfUFJFRklYL2ZpeHR1cmUvZml4dHVyZS1yZXBvL3Rvb2xzL2Vwb2NoLXJ0cy90MTctc2F2ZS1oYXJuZXNzL21vZC5qc29uIiwiYnl0ZXMiOjcyLCJzaGEyNTYiOiI5MjRiMzgzODFkN2E2OTFiYzZmMDIwZGFkNGY2ZjAyMWNlZjY5M2M2OWJlYzVhZjliMTk3OTkwNzkwNWZhNDVlIn0seyJ2ZnMiOiJzaW11bGF0aW9uL2hlbHBlcnMvU2hhZG93LmpzIiwic291cmNlRGlzcGxheSI6Ii9Vc2Vycy9saXl1bmdjaGloL0RvY3VtZW50cy9Db2RleC8yMDI2LTA5LTA2L25ldy1jaGF0L3dvcmsvMGFkL3dvcmsvdDE3LXNhdmUtZml2ZS1tb2QtaW52ZW50b3J5LXJlcGFpci1wcmVwYXJhdGlvbi9yZXF1aXJlZC1mYXVsdC1jb250cm9scy1wcmVwYXJhdGlvbi12MS9leGVjdXRpb24tdjEvRjAyX1dfRUFDQ0VTX0ZBVUxUX1dSSVRFX1BSRUZJWC9maXh0dXJlL2ZpeHR1cmUtcmVwby90b29scy9lcG9jaC1ydHMvdDE3LXNhdmUtaGFybmVzcy9zaW11bGF0aW9uL2hlbHBlcnMvU2hhZG93LmpzIiwiYnl0ZXMiOjQwLCJzaGEyNTYiOiJmZTU1ZmVjMTc3MGNjM2QyYmIwYTQ5ODQyZjg1ZmE0OTExZjRhMGI4YzAzZDBjOWM1Y2NiZDNhODExNDNkM2M5In1dfSx7Im5hbWUiOiJlcG9jaF90MTdfc2F2ZV9hbGxvY2F0aW9uX3dpdG5lc3MiLCJyb290S2luZCI6Imxvb3NlIiwicm9vdERpc3BsYXkiOiIvVXNlcnMvbGl5dW5nY2hpaC9Eb2N1bWVudHMvQ29kZXgvMjAyNi0wOS0wNi9uZXctY2hhdC93b3JrLzBhZC93b3JrL3QxNy1zYXZlLWZpdmUtbW9kLWludmVudG9yeS1yZXBhaXItcHJlcGFyYXRpb24vcmVxdWlyZWQtZmF1bHQtY29udHJvbHMtcHJlcGFyYXRpb24tdjEvZXhlY3V0aW9uLXYxL0YwMl9XX0VBQ0NFU19GQVVMVF9XUklURV9QUkVGSVgvZml4dHVyZS9maXh0dXJlLXJlcG8vdG9vbHMvZXBvY2gtcnRzL3QxNy1zYXZlLWFsbG9jYXRpb24td2l0bmVzcyIsImVudHJpZXMiOlt7InZmcyI6Im1vZC5qc29uIiwic291cmNlRGlzcGxheSI6Ii9Vc2Vycy9saXl1bmdjaGloL0RvY3VtZW50cy9Db2RleC8yMDI2LTA5LTA2L25ldy1jaGF0L3dvcmsvMGFkL3dvcmsvdDE3LXNhdmUtZml2ZS1tb2QtaW52ZW50b3J5LXJlcGFpci1wcmVwYXJhdGlvbi9yZXF1aXJlZC1mYXVsdC1jb250cm9scy1wcmVwYXJhdGlvbi12MS9leGVjdXRpb24tdjEvRjAyX1dfRUFDQ0VTX0ZBVUxUX1dSSVRFX1BSRUZJWC9maXh0dXJlL2ZpeHR1cmUtcmVwby90b29scy9lcG9jaC1ydHMvdDE3LXNhdmUtYWxsb2NhdGlvbi13aXRuZXNzL21vZC5qc29uIiwiYnl0ZXMiOjgzLCJzaGEyNTYiOiI1MmQ4ZmY3YmZmMjNlNWRjN2MyYWQ4MmMxNzgxZWM2M2M0MzFiYjI3ZmIxMmIxNmUxNmQ5MmE4MWVkNjdmMDdiIn0seyJ2ZnMiOiJzaW11bGF0aW9uL2hlbHBlcnMvRW1wdHkuanMiLCJzb3VyY2VEaXNwbGF5IjoiL1VzZXJzL2xpeXVuZ2NoaWgvRG9jdW1lbnRzL0NvZGV4LzIwMjYtMDktMDYvbmV3LWNoYXQvd29yay8wYWQvd29yay90MTctc2F2ZS1maXZlLW1vZC1pbnZlbnRvcnktcmVwYWlyLXByZXBhcmF0aW9uL3JlcXVpcmVkLWZhdWx0LWNvbnRyb2xzLXByZXBhcmF0aW9uLXYxL2V4ZWN1dGlvbi12MS9GMDJfV19FQUNDRVNfRkFVTFRfV1JJVEVfUFJFRklYL2ZpeHR1cmUvZml4dHVyZS1yZXBvL3Rvb2xzL2Vwb2NoLXJ0cy90MTctc2F2ZS1hbGxvY2F0aW9uLXdpdG5lc3Mvc2ltdWxhdGlvbi9oZWxwZXJzL0VtcHR5LmpzIiwiYnl0ZXMiOjAsInNoYTI1NiI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifSx7InZmcyI6InNpbXVsYXRpb24vaGVscGVycy9TaGFkb3cuanMiLCJzb3VyY2VEaXNwbGF5IjoiL1VzZXJzL2xpeXVuZ2NoaWgvRG9jdW1lbnRzL0NvZGV4LzIwMjYtMDktMDYvbmV3LWNoYXQvd29yay8wYWQvd29yay90MTctc2F2ZS1maXZlLW1vZC1pbnZlbnRvcnktcmVwYWlyLXByZXBhcmF0aW9uL3JlcXVpcmVkLWZhdWx0LWNvbnRyb2xzLXByZXBhcmF0aW9uLXYxL2V4ZWN1dGlvbi12MS9GMDJfV19FQUNDRVNfRkFVTFRfV1JJVEVfUFJFRklYL2ZpeHR1cmUvZml4dHVyZS1yZXBvL3Rvb2xzL2Vwb2NoLXJ0cy90MTctc2F2ZS1hbGxvY2F0aW9uLXdpdG5lc3Mvc2ltdWxhdGlvbi9oZWxwZXJzL1NoYWRvdy5qcyIsImJ5dGVzIjo1MSwic2hhMjU2IjoiOGFjNmIyZjUyMjM2M2MxZGYwZDg0MWVmMzIyZDFjYzU3M2VhMDBhNmZlOGViNDczNWRjMDAwNjNjN2ZiMjc1MCJ9LHsidmZzIjoic2ltdWxhdGlvbi9oZWxwZXJzL1RvcE9ubHkuanMiLCJzb3VyY2VEaXNwbGF5IjoiL1VzZXJzL2xpeXVuZ2NoaWgvRG9jdW1lbnRzL0NvZGV4LzIwMjYtMDktMDYvbmV3LWNoYXQvd29yay8wYWQvd29yay90MTctc2F2ZS1maXZlLW1vZC1pbnZlbnRvcnktcmVwYWlyLXByZXBhcmF0aW9uL3JlcXVpcmVkLWZhdWx0LWNvbnRyb2xzLXByZXBhcmF0aW9uLXYxL2V4ZWN1dGlvbi12MS9GMDJfV19FQUNDRVNfRkFVTFRfV1JJVEVfUFJFRklYL2ZpeHR1cmUvZml4dHVyZS1yZXBvL3Rvb2xzL2Vwb2NoLXJ0cy90MTctc2F2ZS1hbGxvY2F0aW9uLXdpdG5lc3Mvc2ltdWxhdGlvbi9oZWxwZXJzL1RvcE9ubHkuanMiLCJieXRlcyI6MTMsInNoYTI1NiI6ImRiYTM2YzQzYWYxYzk3ZTE4Y2JjMWIxYjY4NWNjMzNjY2IzNGJkZmE5YWMzOWU0NTFjMDA4NjRjYTE3YWIxYmUifV19XSwic2VsZWN0ZWQiOlt7ImluZGV4IjowLCJ2ZnMiOiJnbG9iYWxzY3JpcHRzL0FyY2hpdmVPbmx5LmpzIiwibW9kIjoicHVibGljIiwic2hhMjU2IjoiNjI0ZGI5YzczMDI2ZTFkMWNiZDAzYmU4NjkyYWRlN2Q5MWI4Y2E0MTczMzlmOThkMTMzZmMxNjMyN2IwMGYyOCIsImJ5dGVzIjo1OSwic2hhZG93ZWQiOltdLCJhcmNoaXZlRW50cnkiOiJnbG9iYWxzY3JpcHRzL0FyY2hpdmVPbmx5LmpzIiwiZGVmYXVsdExvYWRlckZvbGRlciI6Imdsb2JhbHNjcmlwdHMvIiwicmVhbG0iOiJTSU1VTEFUSU9OX0NBTkRJREFURSJ9LHsiaW5kZXgiOjEsInZmcyI6Im1vZC5qc29uIiwibW9kIjoiZXBvY2hfdDE3X3NhdmVfYWxsb2NhdGlvbl93aXRuZXNzIiwic2hhMjU2IjoiNTJkOGZmN2JmZjIzZTVkYzdjMmFkODJjMTc4MWVjNjNjNDMxYmIyN2ZiMTJiMTZlMTZkOTJhODFlZDY3ZjA3YiIsImJ5dGVzIjo4Mywic2hhZG93ZWQiOlt7Im1vZCI6InB1YmxpYyIsInNvdXJjZURpc3BsYXkiOiIvVXNlcnMvbGl5dW5nY2hpaC9Eb2N1bWVudHMvQ29kZXgvMjAyNi0wOS0wNi9uZXctY2hhdC93b3JrLzBhZC93b3JrL3QxNy1zYXZlLWZpdmUtbW9kLWludmVudG9yeS1yZXBhaXItcHJlcGFyYXRpb24vcmVxdWlyZWQtZmF1bHQtY29udHJvbHMtcHJlcGFyYXRpb24tdjEvZXhlY3V0aW9uLXYxL0YwMl9XX0VBQ0NFU19GQVVMVF9XUklURV9QUkVGSVgvZml4dHVyZS9zeW50aGV0aWMtcHVibGljLnppcDo6bW9kLmpzb24iLCJzaGEyNTYiOiIxYzVmMDYwZTZhMDZmNGRiNzQ4MTI3YTE2MWE2YmUyNTc2N2JiNjYwYTg0MDYxNGY3YjRmYWM4MDg5N2VhMGNmIn0seyJtb2QiOiJlcG9jaF9ydHMiLCJzb3VyY2VEaXNwbGF5IjoiL1VzZXJzL2xpeXVuZ2NoaWgvRG9jdW1lbnRzL0NvZGV4LzIwMjYtMDktMDYvbmV3LWNoYXQvd29yay8wYWQvd29yay90MTctc2F2ZS1maXZlLW1vZC1pbnZlbnRvcnktcmVwYWlyLXByZXBhcmF0aW9uL3JlcXVpcmVkLWZhdWx0LWNvbnRyb2xzLXByZXBhcmF0aW9uLXYxL2V4ZWN1dGlvbi12MS9GMDJfV19FQUNDRVNfRkFVTFRfV1JJVEVfUFJFRklYL2ZpeHR1cmUvZml4dHVyZS1yZXBvL2JpbmFyaWVzL2RhdGEvbW9kcy9lcG9jaF9ydHMvbW9kLmpzb24iLCJzaGEyNTYiOiJjNmY5MGZjNzUzNDNhZTQzMzlmNjQ0YzZkNTBkMjhjYTE3OWRmNTk2NzQ0NmRlN2U2MDQ4Y2JiMDdlMTRkN2U1In0seyJtb2QiOiJlcG9jaF90MTZfaGFybmVzcyIsInNvdXJjZURpc3BsYXkiOiIvVXNlcnMvbGl5dW5nY2hpaC9Eb2N1bWVudHMvQ29kZXgvMjAyNi0wOS0wNi9uZXctY2hhdC93b3JrLzBhZC93b3JrL3QxNy1zYXZlLWZpdmUtbW9kLWludmVudG9yeS1yZXBhaXItcHJlcGFyYXRpb24vcmVxdWlyZWQtZmF1bHQtY29udHJvbHMtcHJlcGFyYXRpb24tdjEvZXhlY3V0aW9uLXYxL0YwMl9XX0VBQ0NFU19GQVVMVF9XUklURV9QUkVGSVgvZml4dHVyZS9maXh0dXJlLXJlcG8vdG9vbHMvZXBvY2gtcnRzL3QxNi1oYXJuZXNzL21vZC5qc29uIiwic2hhMjU2IjoiZTRhNmQ2NjY2MzA2YTY3MTEwYmNhM2Q5MGNlOWJhZTAzNGYxMzlhMjU5MTA1YjJiMjViZDRiMGFiYjMzYWI5NiJ9LHsibW9kIjoiZXBvY2hfdDE3X3NhdmVfaGFybmVzcyIsInNvdXJjZURpc3BsYXkiOiIvVXNlcnMvbGl5dW5nY2hpaC9Eb2N1bWVudHMvQ29kZXgvMjAyNi0wOS0wNi9uZXctY2hhdC93b3JrLzBhZC93b3JrL3QxNy1zYXZlLWZpdmUtbW9kLWludmVudG9yeS1yZXBhaXItcHJlcGFyYXRpb24vcmVxdWlyZWQtZmF1bHQtY29udHJvbHMtcHJlcGFyYXRpb24tdjEvZXhlY3V0aW9uLXYxL0YwMl9XX0VBQ0NFU19GQVVMVF9XUklURV9QUkVGSVgvZml4dHVyZS9maXh0dXJlLXJlcG8vdG9vbHMvZXBvY2gtcnRzL3QxNy1zYXZlLWhhcm5lc3MvbW9kLmpzb24iLCJzaGEyNTYiOiI5MjRiMzgzODFkN2E2OTFiYzZmMDIwZGFkNGY2ZjAyMWNlZjY5M2M2OWJlYzVhZjliMTk3OTkwNzkwNWZhNDVlIn1dLCJhcmNoaXZlRW50cnkiOm51bGwsImRlZmF1bHRMb2FkZXJGb2xkZXIiOm51bGwsInJlYWxtIjoiTUVUQURBVEEifSx7ImluZGV4IjoyLCJ2ZnMiOiJzaW11bGF0aW9uL2hlbHBlcnMvRW1wdHkuanMiLCJtb2QiOiJlcG9jaF90MTdfc2F2ZV9hbGxvY2F0aW9uX3dpdG5lc3MiLCJzaGEyNTYiOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1IiwiYnl0ZXMiOjAsInNoYWRvd2VkIjpbXSwiYXJjaGl2ZUVudHJ5IjpudWxsLCJkZWZhdWx0TG9hZGVyRm9sZGVyIjoic2ltdWxhdGlvbi9oZWxwZXJzLyIsInJlYWxtIjoiU0lNVUxBVElPTl9DQU5ESURBVEUifSx7ImluZGV4IjozLCJ2ZnMiOiJzaW11bGF0aW9uL2hlbHBlcnMvU2hhZG93LmpzIiwibW9kIjoiZXBvY2hfdDE3X3NhdmVfYWxsb2NhdGlvbl93aXRuZXNzIiwic2hhMjU2IjoiOGFjNmIyZjUyMjM2M2MxZGYwZDg0MWVmMzIyZDFjYzU3M2VhMDBhNmZlOGViNDczNWRjMDAwNjNjN2ZiMjc1MCIsImJ5dGVzIjo1MSwic2hhZG93ZWQiOlt7Im1vZCI6InB1YmxpYyIsInNvdXJjZURpc3BsYXkiOiIvVXNlcnMvbGl5dW5nY2hpaC9Eb2N1bWVudHMvQ29kZXgvMjAyNi0wOS0wNi9uZXctY2hhdC93b3JrLzBhZC93b3JrL3QxNy1zYXZlLWZpdmUtbW9kLWludmVudG9yeS1yZXBhaXItcHJlcGFyYXRpb24vcmVxdWlyZWQtZmF1bHQtY29udHJvbHMtcHJlcGFyYXRpb24tdjEvZXhlY3V0aW9uLXYxL0YwMl9XX0VBQ0NFU19GQVVMVF9XUklURV9QUkVGSVgvZml4dHVyZS9zeW50aGV0aWMtcHVibGljLnppcDo6c2ltdWxhdGlvbi9oZWxwZXJzL1NoYWRvdy5qcyIsInNoYTI1NiI6IjFmODAyMjBkMjhmMzFkZjM3ZmMyNTIzMzNiNzViOTAwZDk0ZTRkYmVhOTcxMzIwMWJhMThmNzBjNjM3YTMxOTQifSx7Im1vZCI6ImVwb2NoX3J0cyIsInNvdXJjZURpc3BsYXkiOiIvVXNlcnMvbGl5dW5nY2hpaC9Eb2N1bWVudHMvQ29kZXgvMjAyNi0wOS0wNi9uZXctY2hhdC93b3JrLzBhZC93b3JrL3QxNy1zYXZlLWZpdmUtbW9kLWludmVudG9yeS1yZXBhaXItcHJlcGFyYXRpb24vcmVxdWlyZWQtZmF1bHQtY29udHJvbHMtcHJlcGFyYXRpb24tdjEvZXhlY3V0aW9uLXYxL0YwMl9XX0VBQ0NFU19GQVVMVF9XUklURV9QUkVGSVgvZml4dHVyZS9maXh0dXJlLXJlcG8vYmluYXJpZXMvZGF0YS9tb2RzL2Vwb2NoX3J0cy9zaW11bGF0aW9uL2hlbHBlcnMvU2hhZG93LmpzIiwic2hhMjU2IjoiOWE0YjM4MTRjNmJjMDljMWE1YzEwYmQ2ZTRlMGE4YjlmMjU1MTQzOTRjODMzMzU1N2M0ZmZlY2MzNjgyZGYwMSJ9LHsibW9kIjoiZXBvY2hfdDE2X2hhcm5lc3MiLCJzb3VyY2VEaXNwbGF5IjoiL1VzZXJzL2xpeXVuZ2NoaWgvRG9jdW1lbnRzL0NvZGV4LzIwMjYtMDktMDYvbmV3LWNoYXQvd29yay8wYWQvd29yay90MTctc2F2ZS1maXZlLW1vZC1pbnZlbnRvcnktcmVwYWlyLXByZXBhcmF0aW9uL3JlcXVpcmVkLWZhdWx0LWNvbnRyb2xzLXByZXBhcmF0aW9uLXYxL2V4ZWN1dGlvbi12MS9GMDJfV19FQUNDRVNfRkFVTFRfV1JJVEVfUFJFRklYL2ZpeHR1cmUvZml4dHVyZS1yZXBvL3Rvb2xzL2Vwb2NoLXJ0cy90MTYtaGFybmVzcy9zaW11bGF0aW9uL2hlbHBlcnMvU2hhZG93LmpzIiwic2hhMjU2IjoiMzU4YjljZTZiMzA5MzFkNDBiZDg0MWI3NzA0YmI3YzVkZDEwMWUyZWRlMjQ2MTZlOTRjMjIyNzljYjRlZTFkZCJ9LHsibW9kIjoiZXBvY2hfdDE3X3NhdmVfaGFybmVzcyIsInNvdXJjZURpc3BsYXkiOiIvVXNlcnMvbGl5dW5nY2hpaC9Eb2N1bWVudHMvQ29kZXgvMjAyNi0wOS0wNi9uZXctY2hhdC93b3JrLzBhZC93b3JrL3QxNy1zYXZlLWZpdmUtbW9kLWludmVudG9yeS1yZXBhaXItcHJlcGFyYXRpb24vcmVxdWlyZWQtZmF1bHQtY29udHJvbHMtcHJlcGFyYXRpb24tdjEvZXhlY3V0aW9uLXYxL0YwMl9XX0VBQ0NFU19GQVVMVF9XUklURV9QUkVGSVgvZml4dHVyZS9maXh0dXJlLXJlcG8vdG9vbHMvZXBvY2gtcnRzL3QxNy1zYXZlLWhhcm5lc3Mvc2ltdWxhdGlvbi9oZWxwZXJzL1NoYWRvdy5qcyIsInNoYTI1NiI6ImZlNTVmZWMxNzcwY2MzZDJiYjBhNDk4NDJmODVmYTQ5MTFmNGEwYjhjMDNkMGM5YzVjY2JkM2E4MTE0M2QzYzkifV0sImFyY2hpdmVFbnRyeSI6bnVsbCwiZGVmYXVsdExvYWRlckZvbGRlciI6InNpbXVsYXRpb24vaGVscGVycy8iLCJyZWFsbSI6IlNJTVVMQVRJT05fQ0FORElEQVRFIn0seyJpbmRleCI6NCwidmZzIjoic2ltdWxhdGlvbi9oZWxwZXJzL1RvcE9ubHkuanMiLCJtb2QiOiJlcG9jaF90MTdfc2F2ZV9hbGxvY2F0aW9uX3dpdG5lc3MiLCJzaGEyNTYiOiJkYmEzNmM0M2FmMWM5N2UxOGNiYzFiMWI2ODVjYzMzY2NiMzRiZGZhOWFjMzllNDUxYzAwODY0Y2ExN2FiMWJlIiwiYnl0ZXMiOjEzLCJzaGFkb3dlZCI6W10sImFyY2hpdmVFbnRyeSI6bnVsbCwiZGVmYXVsdExvYWRlckZvbGRlciI6InNpbXVsYXRpb24vaGVscGVycy8iLCJyZWFsbSI6IlNJTVVMQVRJT05fQ0FORElEQVRFIn1dLCJhcmNoaXZlIjp7ImV4cGVjdGVkU0hBIjoiY2VhODhkYjE0ZTM5ZjhmNmVmNjNjMzE1YThmODhkNGZjMThhMGE2YzEyZTMzZGNhOTdkMzhkNjM2ODQ5YjEzMiIsImFjdHVhbFNIQSI6ImNlYTg4ZGIxNGUzOWY4ZjZlZjYzYzMxNWE4Zjg4ZDRmYzE4YTBhNmMxMmUzM2RjYTk3ZDM4ZDYzNjg0OWIxMzIiLCJzaXplIjo1MTcsImNodW5rQnl0ZXMiOjQxOTQzMDQsImNodW5rQ291bnQiOjEsImF1dGhvcml0eUtpbmQiOiJWRVJJRklFRF9IRUxEX0ZEX0JZVEVTIn0sInVuc3VwcG9ydGVkUnVudGltZVJ1bGVzIjpbImltcGxpY2l0IGVuZ2luZSBtb2QgbW91bnQiLCJ1c2VyL3JkYXRhIGhpZ2hlciBvdmVycmlkZXMiLCJERUxFVEVEIHRvbWJzdG9uZXMiLCJsb29zZS9hcmNoaXZlIGFuZCBhcmNoaXZlIG9yZGVyaW5nIiwibXRpbWUgYXJiaXRyYXRpb24iLCJhY3R1YWwgcnVudGltZSBtb3VudC9wcm9maWxlIGludmVudG9yeSIsIm1hcCBzdGFydHVwL3RyaWdnZXIvbmF0aXZlIGpvYiBjYWxsZXIgY2xvc3VyZSJdfQp7InYiOjEsImtpbmQiOiJGQVVMVCIsInBoYXNlIjoiRklOSVNIIiwiY29kZSI6IkFCT1JUX05PREVfTElNSVQiLCJkdXJhYmxlRmF1bHQiOmZhbHNlfQo=",
+      "expectedStdoutBytes": 13493,
+      "expectedStdoutSHA256": "081b838880cf6bdf171408f286333316eb64ec2a78f5d459a11314c5cc7aadaf",
+      "expectedStderr": "CAPTURE_FAULT FINISH ABORT_NODE_LIMIT\n",
+      "faultFile": "EXACT_9_BYTE_INVALID_JSON_PREFIX",
+      "expectedCaptured": {
+        "v": 1,
+        "kind": "CAPTURED",
+        "captureId": "f5dab7b72086eead0fa74192c36b4ce7394eb25cca53ffccda8a62be73d053e0",
+        "sourceCount": 5,
+        "selectedDigest": "56af00ffeba998813afc52afc139ba971e65fb0b178f23c91396e78dbb4df88f",
+        "layers": [
+          {
+            "name": "public",
+            "rootKind": "archive",
+            "rootDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/synthetic-public.zip",
+            "entries": [
+              {
+                "vfs": "globalscripts/ArchiveOnly.js",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/synthetic-public.zip::globalscripts/ArchiveOnly.js",
+                "bytes": 59,
+                "sha256": "624db9c73026e1d1cbd03be8692ade7d91b8ca417339f98d133fc16327b00f28"
+              },
+              {
+                "vfs": "mod.json",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/synthetic-public.zip::mod.json",
+                "bytes": 56,
+                "sha256": "1c5f060e6a06f4db748127a161a6be25767bb660a840614f7b4fac80897ea0cf"
+              },
+              {
+                "vfs": "simulation/helpers/Shadow.js",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/synthetic-public.zip::simulation/helpers/Shadow.js",
+                "bytes": 24,
+                "sha256": "1f80220d28f31df37fc252333b75b900d94e4dbea9713201ba18f70c637a3194"
+              }
+            ]
+          },
+          {
+            "name": "epoch_rts",
+            "rootKind": "loose",
+            "rootDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/binaries/data/mods/epoch_rts",
+            "entries": [
+              {
+                "vfs": "mod.json",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/binaries/data/mods/epoch_rts/mod.json",
+                "bytes": 59,
+                "sha256": "c6f90fc75343ae4339f644c6d50d28ca179df5967446de7e6048cbb07e14d7e5"
+              },
+              {
+                "vfs": "simulation/helpers/Shadow.js",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/binaries/data/mods/epoch_rts/simulation/helpers/Shadow.js",
+                "bytes": 27,
+                "sha256": "9a4b3814c6bc09c1a5c10bd6e4e0a8b9f25514394c8333557c4ffecc3682df01"
+              }
+            ]
+          },
+          {
+            "name": "epoch_t16_harness",
+            "rootKind": "loose",
+            "rootDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t16-harness",
+            "entries": [
+              {
+                "vfs": "mod.json",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t16-harness/mod.json",
+                "bytes": 67,
+                "sha256": "e4a6d6666306a67110bca3d90ce9bae034f139a259105b2b25bd4b0abb33ab96"
+              },
+              {
+                "vfs": "simulation/helpers/Shadow.js",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t16-harness/simulation/helpers/Shadow.js",
+                "bytes": 35,
+                "sha256": "358b9ce6b30931d40bd841b7704bb7c5dd101e2ede24616e94c22279cb4ee1dd"
+              }
+            ]
+          },
+          {
+            "name": "epoch_t17_save_harness",
+            "rootKind": "loose",
+            "rootDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t17-save-harness",
+            "entries": [
+              {
+                "vfs": "mod.json",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t17-save-harness/mod.json",
+                "bytes": 72,
+                "sha256": "924b38381d7a691bc6f020dad4f6f021cef693c69bec5af9b1979907905fa45e"
+              },
+              {
+                "vfs": "simulation/helpers/Shadow.js",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t17-save-harness/simulation/helpers/Shadow.js",
+                "bytes": 40,
+                "sha256": "fe55fec1770cc3d2bb0a49842f85fa4911f4a0b8c03d0c9c5ccbd3a81143d3c9"
+              }
+            ]
+          },
+          {
+            "name": "epoch_t17_save_allocation_witness",
+            "rootKind": "loose",
+            "rootDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t17-save-allocation-witness",
+            "entries": [
+              {
+                "vfs": "mod.json",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t17-save-allocation-witness/mod.json",
+                "bytes": 83,
+                "sha256": "52d8ff7bff23e5dc7c2ad82c1781ec63c431bb27fb12b16e16d92a81ed67f07b"
+              },
+              {
+                "vfs": "simulation/helpers/Empty.js",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t17-save-allocation-witness/simulation/helpers/Empty.js",
+                "bytes": 0,
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+              },
+              {
+                "vfs": "simulation/helpers/Shadow.js",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t17-save-allocation-witness/simulation/helpers/Shadow.js",
+                "bytes": 51,
+                "sha256": "8ac6b2f522363c1df0d841ef322d1cc573ea00a6fe8eb4735dc00063c7fb2750"
+              },
+              {
+                "vfs": "simulation/helpers/TopOnly.js",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t17-save-allocation-witness/simulation/helpers/TopOnly.js",
+                "bytes": 13,
+                "sha256": "dba36c43af1c97e18cbc1b1b685cc33ccb34bdfa9ac39e451c00864ca17ab1be"
+              }
+            ]
+          }
+        ],
+        "selected": [
+          {
+            "index": 0,
+            "vfs": "globalscripts/ArchiveOnly.js",
+            "mod": "public",
+            "sha256": "624db9c73026e1d1cbd03be8692ade7d91b8ca417339f98d133fc16327b00f28",
+            "bytes": 59,
+            "shadowed": [],
+            "archiveEntry": "globalscripts/ArchiveOnly.js",
+            "defaultLoaderFolder": "globalscripts/",
+            "realm": "SIMULATION_CANDIDATE"
+          },
+          {
+            "index": 1,
+            "vfs": "mod.json",
+            "mod": "epoch_t17_save_allocation_witness",
+            "sha256": "52d8ff7bff23e5dc7c2ad82c1781ec63c431bb27fb12b16e16d92a81ed67f07b",
+            "bytes": 83,
+            "shadowed": [
+              {
+                "mod": "public",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/synthetic-public.zip::mod.json",
+                "sha256": "1c5f060e6a06f4db748127a161a6be25767bb660a840614f7b4fac80897ea0cf"
+              },
+              {
+                "mod": "epoch_rts",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/binaries/data/mods/epoch_rts/mod.json",
+                "sha256": "c6f90fc75343ae4339f644c6d50d28ca179df5967446de7e6048cbb07e14d7e5"
+              },
+              {
+                "mod": "epoch_t16_harness",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t16-harness/mod.json",
+                "sha256": "e4a6d6666306a67110bca3d90ce9bae034f139a259105b2b25bd4b0abb33ab96"
+              },
+              {
+                "mod": "epoch_t17_save_harness",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t17-save-harness/mod.json",
+                "sha256": "924b38381d7a691bc6f020dad4f6f021cef693c69bec5af9b1979907905fa45e"
+              }
+            ],
+            "archiveEntry": null,
+            "defaultLoaderFolder": null,
+            "realm": "METADATA"
+          },
+          {
+            "index": 2,
+            "vfs": "simulation/helpers/Empty.js",
+            "mod": "epoch_t17_save_allocation_witness",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0,
+            "shadowed": [],
+            "archiveEntry": null,
+            "defaultLoaderFolder": "simulation/helpers/",
+            "realm": "SIMULATION_CANDIDATE"
+          },
+          {
+            "index": 3,
+            "vfs": "simulation/helpers/Shadow.js",
+            "mod": "epoch_t17_save_allocation_witness",
+            "sha256": "8ac6b2f522363c1df0d841ef322d1cc573ea00a6fe8eb4735dc00063c7fb2750",
+            "bytes": 51,
+            "shadowed": [
+              {
+                "mod": "public",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/synthetic-public.zip::simulation/helpers/Shadow.js",
+                "sha256": "1f80220d28f31df37fc252333b75b900d94e4dbea9713201ba18f70c637a3194"
+              },
+              {
+                "mod": "epoch_rts",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/binaries/data/mods/epoch_rts/simulation/helpers/Shadow.js",
+                "sha256": "9a4b3814c6bc09c1a5c10bd6e4e0a8b9f25514394c8333557c4ffecc3682df01"
+              },
+              {
+                "mod": "epoch_t16_harness",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t16-harness/simulation/helpers/Shadow.js",
+                "sha256": "358b9ce6b30931d40bd841b7704bb7c5dd101e2ede24616e94c22279cb4ee1dd"
+              },
+              {
+                "mod": "epoch_t17_save_harness",
+                "sourceDisplay": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1/F02_W_EACCES_FAULT_WRITE_PREFIX/fixture/fixture-repo/tools/epoch-rts/t17-save-harness/simulation/helpers/Shadow.js",
+                "sha256": "fe55fec1770cc3d2bb0a49842f85fa4911f4a0b8c03d0c9c5ccbd3a81143d3c9"
+              }
+            ],
+            "archiveEntry": null,
+            "defaultLoaderFolder": "simulation/helpers/",
+            "realm": "SIMULATION_CANDIDATE"
+          },
+          {
+            "index": 4,
+            "vfs": "simulation/helpers/TopOnly.js",
+            "mod": "epoch_t17_save_allocation_witness",
+            "sha256": "dba36c43af1c97e18cbc1b1b685cc33ccb34bdfa9ac39e451c00864ca17ab1be",
+            "bytes": 13,
+            "shadowed": [],
+            "archiveEntry": null,
+            "defaultLoaderFolder": "simulation/helpers/",
+            "realm": "SIMULATION_CANDIDATE"
+          }
+        ],
+        "archive": {
+          "expectedSHA": "cea88db14e39f8f6ef63c315a8f88d4fc18a0a6c12e33dca97d38d636849b132",
+          "actualSHA": "cea88db14e39f8f6ef63c315a8f88d4fc18a0a6c12e33dca97d38d636849b132",
+          "size": 517,
+          "chunkBytes": 4194304,
+          "chunkCount": 1,
+          "authorityKind": "VERIFIED_HELD_FD_BYTES"
+        },
+        "unsupportedRuntimeRules": [
+          "implicit engine mod mount",
+          "user/rdata higher overrides",
+          "DELETED tombstones",
+          "loose/archive and archive ordering",
+          "mtime arbitration",
+          "actual runtime mount/profile inventory",
+          "map startup/trigger/native job caller closure"
+        ]
+      },
+      "expectedBodyCopies": 23,
+      "forbiddenFiles": [
+        "inventory.json",
+        "layer-inputs.json",
+        "writer-sites.json",
+        "manifest.json",
+        "completed.json"
+      ],
+      "injectedErrno": "EACCES",
+      "injectionTarget": "fault.json write after real9byte prefix"
+    }
+  ],
+  "scope": "INJECTED_ERRNO_HAND_AUTHORED_PROTOCOL_MODEL_ONLY",
+  "sourceClosure": false,
+  "native": false,
+  "officialCaptureApproved": false
+}

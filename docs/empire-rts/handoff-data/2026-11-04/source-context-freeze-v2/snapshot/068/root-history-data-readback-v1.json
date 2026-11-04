@@ -1,0 +1,13 @@
+{
+  "purpose": "Rootimmutablehistorydatareadbackandcanonicalarithmetic only; no container adoption or source execution",
+  "createdUTC": "2026-10-29T21:39:20.804857+00:00",
+  "status": "MATCH_DATA_ONLY_DESIGN_NOT_APPROVED_YET",
+  "inputManifestSHA256": "20e7e2e53967afdce38b7b594c8cedab0e83cbd9aec61fb7af09e5a24a6b914e",
+  "originsReadMATCH": 53,
+  "decodedBytes": 1042748,
+  "predictedEncodedBytes": 1408405,
+  "predictedSHA256": "2caa72716cb1ac21e4c9163ce6ca2461851fc71ba0381f785a04515d5c18ce74",
+  "actualBundleCreated": false,
+  "helperTestsRun": false,
+  "producerCases": "THREE_NOT_RUN"
+}
