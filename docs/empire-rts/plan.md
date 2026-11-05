@@ -1,7 +1,9 @@
 <!-- Purpose: 跨時代 RTS 目標、架構與可驗收路線；Created: 2026-09-06. -->
 # 開發計畫
 
-更新日期：2026-10-08。狀態：M1、M2 最小流程驗收完成；T03–T07 已完成限定原型驗收，T08 [潛艇調查](evidence/t08-validation.md)完成，完整潛艇延後；[T09決策](t09-engine-decision.md)已完成：維持R28、暫不改C++，M3限定可行性階段完成；[T10靜態匯入](evidence/t10-validation.md)已完成，[T11原創低面數切片](evidence/t11-validation.md)完成限定驗收，M4 DONE（樣板範圍），T12、T13已限定DONE；T14已取得[限定效能基線](evidence/t14-validation.md)，不限FPS效能門檻未通過；[600單位60fps診斷](evidence/t14-diagnosis-validation.md)通過，完整效能維持PARTIAL。完整攻擊檢查／潛艇／精確空戰另列T16–T18 TODO。飛行限制與證據見 [T07報告](evidence/t07-validation.md)。M2 限定標準資源脚本玩家與固定防守對手，不代表通用 AI 完成。專案入口：[README](../../README.md)；執行狀態：[進度追蹤](progress.md)。
+更新日期：2026-11-05。最新盤點：19項主任務，14項限定DONE、5項未完成；[完整評估與18工作包](PROJECT-ASSESSMENT-2026-11-05.md)優先於下列歷史進度。三SOURCE核可已完成，readiness STOP／一次guard刷新待具體決策；不等native核可。
+
+歷史里程碑摘要（2026-10-08）：M1、M2 最小流程驗收完成；T03–T07 已完成限定原型驗收，T08 [潛艇調查](evidence/t08-validation.md)完成，完整潛艇延後；[T09決策](t09-engine-decision.md)已完成：維持R28、暫不改C++，M3限定可行性階段完成；[T10靜態匯入](evidence/t10-validation.md)已完成，[T11原創低面數切片](evidence/t11-validation.md)完成限定驗收，M4 DONE（樣板範圍），T12、T13已限定DONE；T14已取得[限定效能基線](evidence/t14-validation.md)，不限FPS效能門檻未通過；[600單位60fps診斷](evidence/t14-diagnosis-validation.md)通過，完整效能維持PARTIAL。完整攻擊檢查／潛艇／精確空戰另列T16–T18 TODO。飛行限制與證據見 [T07報告](evidence/t07-validation.md)。M2 限定標準資源脚本玩家與固定防守對手，不代表通用 AI 完成。專案入口：[README](../../README.md)；執行狀態：[進度追蹤](progress.md)。
 
 ## 1. 產品目標與邊界
 
@@ -845,3 +847,11 @@ Exactd69d source不變。JSAPI完整APPROVE_SOURCE_ONLY JSON439600/bb06b9e1、MD
 ## 2026-11-04 使用者收工／GitHub交接
 
 使用者明確要求收工並推送交接文件與資料；停止來源實作與Python審查續跑。CODE正式APPROVE_SOURCE_ONLY0fce6590/191340與JSAPI bb06b9e1/439600均已根端讀回；Python固定formal JSON/MD不存在，僅progress-v12 9e8f93b0/158687，overallSOURCE未核可/StageC=false，三cases NOT RUN。收工文件 docs/empire-rts/SESSION-CLOSEOUT-2026-11-04-T14-T18.md、後續 docs/empire-rts/reference_t14_t18_next_steps.md、公開資料包docs/empire-rts/handoff-data/2026-11-04（110文字snapshots，3runtimebinary僅本機識別，16transfer snapshots與reports/receipts/最新checkpoint）。完整原raw/seals/其他dirty留本機；推送限定交接分支codex/t14-t18-closeout-20261104，不覆寫遠端master。所有T14PARTIAL/Insufficientdata/FAIL STOP UNKNOWN與24helper耗用禁令保持，未執行tests/producer/fixture/guard/attempt/engine。此次preimages在work/t14-t18-closeout-20261104/preimages-manifest.json。
+
+### 2026-11-05 接續 checkpoint
+
+三方 SOURCE-v2 核可已根端驗證；新編排 sampler-v5/wrapper-v2 限定靜態審查亦核可。原 readiness age 約79秒超過60秒 STOP保留；三案例NOT_RUN，無controller/producer執行。完整一次guard refresh方案已備，待明確新決策，不自動覆寫固定guard。詳 SESSION-HANDOFF-2026-11-05-SOURCE-APPROVED-READINESS-STOP.md。
+
+## 2026-11-05 使用者要求整體盤點／GitHub更新後按計劃接續
+
+五項未完成任務T14–T18保持PARTIAL；18個工作包是計劃粒度，無新增案例授權。先更新文件與文字證據，GitHub採獨立codex/t14-t18-assessment-20261105分支；發布後做R06 metadata跨計劃對照。R01一次guard例外仍待同一具體決策，R02/R03不得提前執行。詳[評估](PROJECT-ASSESSMENT-2026-11-05.md)。

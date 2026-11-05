@@ -1,0 +1,92 @@
+{
+  "createdUTC": "2026-11-05T09:32:32.469168+00:00",
+  "sourceChat": "01a1a452-b27e-7bf2-9dfe-eb13f08d30db",
+  "repo": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad",
+  "head": "d5133455c3dffba7d2d3f2465f75b82532ebcd3d",
+  "indexEmpty": true,
+  "bindings": [
+    {
+      "original": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t14-t18-session-transfer-20261026/current-checkpoint.json",
+      "snapshot": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t14-t18-session-transfer-20261105/snapshots/00-current-checkpoint.json",
+      "bytes": 57535,
+      "sha256": "be70b0534c416f2bba37ee46e2ef6914b7aafe0a4d3d0769731b6c60bc094a51"
+    },
+    {
+      "original": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/docs/empire-rts/SESSION-HANDOFF-2026-11-05-SOURCE-APPROVED-READINESS-STOP.md",
+      "snapshot": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t14-t18-session-transfer-20261105/snapshots/01-SESSION-HANDOFF-2026-11-05-SOURCE-APPROVED-READINESS-STOP.md",
+      "bytes": 6355,
+      "sha256": "8355298121d00d7f2433afb5447b3e1f07187c0b592eebb64a6bb36c4bf450d0"
+    },
+    {
+      "original": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t14-t18-resume-20261104-current/source-review-Python-v2-root-validation-v1.json",
+      "snapshot": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t14-t18-session-transfer-20261105/snapshots/02-source-review-Python-v2-root-validation-v1.json",
+      "bytes": 113095,
+      "sha256": "7418a88649b0a627f81a1fccb1f60c06765d46b2cc30fc8e01f777f0d6e54cc0"
+    },
+    {
+      "original": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t14-t18-resume-20261104-current/root-readiness-expired-stop-v1.json",
+      "snapshot": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t14-t18-session-transfer-20261105/snapshots/03-root-readiness-expired-stop-v1.json",
+      "bytes": 2277,
+      "sha256": "cd09b0cd2162f08cd9e8193de22ae5f30453c5d32902c5574ba83d21d5daee0a"
+    },
+    {
+      "original": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t14-t18-resume-20261104-current/root-sampler-v5-root-validation-v1.json",
+      "snapshot": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t14-t18-session-transfer-20261105/snapshots/04-root-sampler-v5-root-validation-v1.json",
+      "bytes": 2050,
+      "sha256": "c7b68dd72da182d6d95a7b32b7cbb43d926ba2ab7af7181f5f0f507cf11b6ff4"
+    },
+    {
+      "original": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t14-t18-resume-20261104-current/root-sampler-review-v5.json",
+      "snapshot": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t14-t18-session-transfer-20261105/snapshots/05-root-sampler-review-v5.json",
+      "bytes": 12932,
+      "sha256": "1670aec9b86d5cbb9ce1780de84e240d8051b073012590694a75886a2c8eb2fb"
+    },
+    {
+      "original": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t14-t18-resume-20261104-current/prepared-root-readiness-sampler-v5.py",
+      "snapshot": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t14-t18-session-transfer-20261105/snapshots/06-prepared-root-readiness-sampler-v5.py",
+      "bytes": 16789,
+      "sha256": "12824cbc5ee18a22c5a626eaab00e3fb763e90e9c95f462f25bb6b37ed41e65a"
+    },
+    {
+      "original": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t14-t18-resume-20261104-current/prepared-distinct-execution-wrapper-v2.py",
+      "snapshot": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t14-t18-session-transfer-20261105/snapshots/07-prepared-distinct-execution-wrapper-v2.py",
+      "bytes": 9972,
+      "sha256": "4fae31d809b3609d66888d65923a55dddd21dbfac84a5242323fcb407973d031"
+    },
+    {
+      "original": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-context-freeze-v2/manifest.json",
+      "snapshot": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t14-t18-session-transfer-20261105/snapshots/08-manifest.json",
+      "bytes": 65446,
+      "sha256": "d69d3456754b19f0592682824c4772c72d62169799fc9c02f0466d8291f951d4"
+    },
+    {
+      "original": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-v2.json",
+      "snapshot": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t14-t18-session-transfer-20261105/snapshots/09-source-review-Python-v2.json",
+      "bytes": 134453,
+      "sha256": "7be007359971e6c77ff35d8ad2cb068c766d273758f3dc587deb16c416c8d62d"
+    },
+    {
+      "original": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/execution-preparation-v1/freshguard-v1.json",
+      "snapshot": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t14-t18-session-transfer-20261105/snapshots/10-freshguard-v1.json",
+      "bytes": 244755,
+      "sha256": "afb3339b0471f8ecd857957c18752dafc291854e6cd4d54f9c5b6baf4d6257f5"
+    },
+    {
+      "original": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/execution-preparation-v1/capsule-core-v1.json",
+      "snapshot": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t14-t18-session-transfer-20261105/snapshots/11-capsule-core-v1.json",
+      "bytes": 33404,
+      "sha256": "b75b8b33dad3223a396844e2b53db0a6b0faeffe4ca5ab19b11f8e9233011dd7"
+    },
+    {
+      "original": "/Users/liyungchih/Documents/Codex/2026-11-04/referenced-chatgpt-conversation-this-is-an/outputs/0AD-一次準備重取樣方案.md",
+      "snapshot": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t14-t18-session-transfer-20261105/snapshots/12-0AD-一次準備重取樣方案.md",
+      "bytes": 2999,
+      "sha256": "ee3e4b03b18d87e2515b33e5fa23ae6f4989ad5e4c17b932e619e7cc30ffbeb3"
+    }
+  ],
+  "status": "TRANSFER_PREPARED_PENDING_CHILD_READBACK",
+  "task": "boboidvtw/0ad RTS T14-T18, not FreshMart",
+  "next": "Read canonical checkpoint/latest handoff and exact transfer files. Three SOURCE approvals and limited orchestration approval complete. Pending explicit one-time pre-campaign guard refresh decision; session transfer alone is NOT approval. No guard rewrite, rootreport/capsule/EXEC or cases. Preserve original STOP and retry0. Do not rerun completed reviews/helpers/cases.",
+  "automation": "Existing 0ad-t14 ACTIVE every5h, no duplicate",
+  "prohibitions": "No C++/commit/push/delete/external messages/publication/paid/reset/model workaround; do not assume source_v2_python usable in new session."
+}

@@ -1,0 +1,990 @@
+{
+  "schema": 1,
+  "threadId": "01a1a452-b27e-7bf2-9dfe-eb13f08d30db",
+  "status": "THREE_SOURCE_APPROVED_ORCHESTRATION_SOURCE_APPROVED_READINESS_STOP_PENDING_ONE_TIME_REFRESH_DECISION",
+  "transferReadback": "work/t14-t18-session-transfer-20261026/child-readback.json",
+  "migrationReadback": "work/t14-t18-session-transfer-20261026/migration-readback.json",
+  "priorState": "work/t14-t18-session-transfer-20261026/current-state.json",
+  "trackingPreimages": "work/t14-t18-session-transfer-20261026/child-tracking-before/manifest.json",
+  "design": {
+    "manifest": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/manifest.json",
+    "sha256": "bd162e15363202b7832dd0f8a189aef3bc44d1ff215e3494ad67f8601e25b5b7",
+    "bindings": 63,
+    "CODE": "APPROVE_DESIGN_ONLY",
+    "Python": "APPROVE_DESIGN_ONLY",
+    "JSAPI": "APPROVE_DESIGN_ONLY",
+    "rootBindingsMATCH": 63,
+    "completion": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v2/completion-design-only.json"
+  },
+  "sourceChanges": {
+    "Python": "a27a318a9275d8dbeac9ce02e66e5b9b65cf69792c8844c09883801348cb5243",
+    "PythonTest": "5b1242fa598504085cbdb419f3d4e06cbd4145e92b17bb25e63422e18d9c0192",
+    "Node": "054ac9d099cd369db3022b9e8f3d5f349ee0db7967fa9c71764914e48091808a"
+  },
+  "bridge": "ORIGINAL_FAIL_RETAINED_NO_RERUN",
+  "officialCapture": "NOT_RUN",
+  "engine": "NOT_RUN",
+  "next": "Await explicit one-time pre-campaign freshguard refresh/fixed-path replacement decision on completed proposal. Do not resample/rewrite guard or create rootreport/capsule/EXEC or run cases until decision and all original gates. Heartbeat quiet while pending.",
+  "quota": {
+    "at": "2026-11-02T01:34:18.513367+00:00",
+    "ordinaryUsageAllowed": true,
+    "primaryUsedPercent": 13,
+    "secondaryUsedPercent": 2,
+    "credits": 0,
+    "availableResetCredits": 1,
+    "resetCreditsUsed": 0
+  },
+  "boundaries": "Original FAIL/PARTIAL/STOP/seals and consumed attempts unchanged; no C++/commit/push/delete/external messages/new paid/new schedules",
+  "designV1": {
+    "manifest": "work/t17-save-five-mod-inventory-repair-preparation/preservation-amendment-v1/manifest.json",
+    "sha256": "faa76a79a7479663c5ad9f5c91e0ab138ebb5c9d2b17f6a437873d81aa67ecd2",
+    "CODE": "APPROVE_DESIGN_ONLY",
+    "Python": "BLOCK_DESIGN_ONLY_1_HIGH",
+    "JSAPI": "APPROVE_DESIGN_ONLY",
+    "reportErratum": "Python related capture.recheck preimage line716 shouldbe712; formal report unchanged"
+  },
+  "coverageGapInventory": "work/t14-t18-session-transfer-20261026/child-test-coverage-gaps.json",
+  "implementation": {
+    "author": "/root/preservation_python_author",
+    "ownedFiles": [
+      "tools/epoch-rts/t17-save-five-mod-capture.py",
+      "tools/epoch-rts/test-t17-save-five-mod-capture.py"
+    ],
+    "evidence": "work/t17-save-five-mod-inventory-repair-preparation/preservation-implementation-v1",
+    "scope": "Exact approved v2 local source+tests only; no bridge/official/native authority",
+    "sourceApproval": "NOT_REVIEWED_WIP",
+    "red": "red-normal.log: 9 cases =8ERROR newinterfaces missing+P09 existing terminalorder PASS; not9RED",
+    "authorLatestObservation": "final2 normal/optimized each58 PASS reported; logs and current source context freeze still being finalized; root not independently source-approved",
+    "iterationFinding": "SelectedTOTAL_MAX was incorrectly reused for authenticated ZIP read bound; split to independent same64MiB CENTRAL_MAX; iteration1 failure retained",
+    "coverage": "Full per-case matrix in preparation; true subprocess/large-boundary/sparseZIP64/RSS remain OPEN"
+  },
+  "updatedUTC": "2026-11-04T18:25:20.306605+00:00",
+  "heartbeatInputUTC": "2026-11-04T17:54:13.405Z",
+  "quotaHistory": [
+    {
+      "status": "USAGE_LIMIT_ERROR",
+      "agents": [
+        "preservation_python_author",
+        "preservation_code_design"
+      ],
+      "observation": "Both errored after prior dispatch; original error messages retained in chat. Python completed new RED tests only before quota interruption; code draft not created."
+    },
+    {
+      "observedDuringHeartbeat": "2026-10-26T08:17:05.376Z",
+      "ordinaryUsageAllowed": true,
+      "primaryUsedPercent": 2,
+      "weeklyUsedPercent": 0,
+      "credits": 0,
+      "action": "Resume same agents/settings from disk after live allowed readback; no credit purchase/reset/model change"
+    },
+    {
+      "status": "USAGE_LIMIT_ERROR",
+      "agents": [
+        "preservation_python_design",
+        "preservation_code_design",
+        "preservation_js_design"
+      ],
+      "observation": "Reviewers interrupted near prior source report closeout; all raw preserved, JS report already written."
+    },
+    {
+      "observedDuringHeartbeat": "2026-10-26T13:19:06.792Z",
+      "ordinaryUsageAllowed": true,
+      "primaryUsedPercent": 0,
+      "weeklyUsedPercent": 16,
+      "credits": 0,
+      "action": "Resume same reviewers/settings to finish reports only; no counterexample/test reruns/reset/modelchange"
+    },
+    {
+      "status": "USAGE_LIMIT_ERROR",
+      "agents": [
+        "preservation_code_design",
+        "preservation_js_design",
+        "preservation_python_design"
+      ],
+      "observation": "v2 fullreviews interrupted before formalreports; original error retained, no approval inferred"
+    },
+    {
+      "observedDuringHeartbeat": "2026-10-26T18:22:08.356Z",
+      "ordinaryUsageAllowed": true,
+      "primaryUsedPercent": 1,
+      "weeklyUsedPercent": 33,
+      "credits": 0,
+      "action": "Resume same reviewers/settings from disk; no tests/countercase rerun if already saved; noreset/paid/modelchange"
+    },
+    {
+      "status": "USAGE_LIMIT_ERROR",
+      "agents": [
+        "preservation_code_design",
+        "preservation_python_design",
+        "preservation_js_design"
+      ],
+      "observation": "Harness full reviews interrupted. CODE and JS static gate/freeze linkage finding pending formal report. Python final12helper suite already successful retained; do not rerun."
+    },
+    {
+      "observedDuringHeartbeat": "2026-10-27T04:24:11.391Z",
+      "ordinaryUsageAllowed": true,
+      "primaryUsedPercent": 0,
+      "weeklyUsedPercent": 49,
+      "credits": 0,
+      "resetCredits": 0,
+      "action": "Resume same reviewers/settings from disk; final12helpers not rerun; no purchase/reset/modelchange"
+    },
+    {
+      "status": "USAGE_LIMIT_ERROR",
+      "agents": [
+        "preservation_python_design",
+        "preservation_code_design",
+        "preservation_js_design"
+      ],
+      "observation": "Full40/386 harness reviews interrupted before formal reports; CODE+JS new static postspawn lifecycle-write/casestate finding retained. Independent affected20helper suite NOT_RUN pending clarification, not assumed PASS."
+    },
+    {
+      "observedDuringHeartbeat": "2026-10-27T09:25:12.907Z",
+      "ordinaryUsageAllowed": true,
+      "primaryUsedPercent": 0,
+      "weeklyUsedPercent": 65,
+      "credits": 0,
+      "resetCredits": 0,
+      "action": "Same reviewers/settings resume disk. Clarify two existing invalid-capsule immediate-preflight run_reviewed calls only; all actualrun/setup/Popen/attempt remain forbidden in review."
+    },
+    {
+      "status": "USAGE_LIMIT_ERROR",
+      "agents": [
+        "preservation_code_design",
+        "preservation_js_design",
+        "preservation_python_design"
+      ],
+      "observation": "Full94b/f8/433 reviews interrupted before formal reports. Python affected25 helper log already saved; do not rerun."
+    },
+    {
+      "observedDuringHeartbeat": "2026-10-27T14:27:44.377Z",
+      "ordinaryUsageAllowed": true,
+      "primaryUsedPercent": 0,
+      "weeklyUsedPercent": 82,
+      "credits": 0,
+      "resetCredits": 0,
+      "action": "Resume same fullreview agents/settings from disk, no completedtests/countercases rerun; no reset/credits/modelchange"
+    },
+    {
+      "status": "USAGE_LIMIT_ERROR",
+      "agents": [
+        "capture_node_fix_author"
+      ],
+      "observation": "Finalization source-fix-v4 author stopped after saving905before and estimating508manifest/509union rows; no RED or repair/test completion inferred."
+    },
+    {
+      "observedDuringHeartbeat": "2026-10-28T00:26:47.480Z",
+      "priorHeartbeatInput": "2026-10-27T19:27:15.939Z",
+      "ordinaryUsageAllowed": true,
+      "primaryUsedPercent": 0,
+      "weeklyUsedPercent": 98,
+      "credits": 0,
+      "resetCredits": 0,
+      "action": "Same author/settings resume smallest localrepair from disk; save WIP and stop when quota insufficient. No fullreview/runtime inference or reset/paid/modelchange."
+    },
+    {
+      "status": "USAGE_LIMIT_ERROR",
+      "agents": [
+        "capture_node_fix_author"
+      ],
+      "observation": "Author froze785/511 and canonical512 then usageerror; all completed evidence read back, no reviewer approval inferred."
+    },
+    {
+      "observedDuringHeartbeat": "2026-10-28T10:23:20.507Z",
+      "priorHeartbeatInput": "2026-10-28T05:22:48.984Z",
+      "ordinaryUsageAllowed": true,
+      "primaryUsedPercent": 4,
+      "weeklyUsedPercent": 1,
+      "credits": 0,
+      "resetCredits": 0,
+      "action": "Live eligibility verified; same reviewer/settings resumed, no paid/reset/modelchange. No assertion about why quota counters changed."
+    },
+    {
+      "at": "2026-10-28T15:30:22.017Z",
+      "ordinaryUsageAllowed": true,
+      "primaryUsedPercent": 0,
+      "secondaryUsedPercent": 16,
+      "credits": 0,
+      "resetCredits": 0,
+      "preservedErrors": [
+        "CODE postrun agent quotaerror after complete audit+supplement",
+        "Python coverage agent quotaerror before output"
+      ],
+      "action": "resume same settings/read-only pending coverage task only, no accepted case/audit rerun"
+    },
+    {
+      "at": "2026-10-28T20:31:23.601Z",
+      "ordinaryUsageAllowed": true,
+      "primaryUsedPercent": 0,
+      "secondaryUsedPercent": 32,
+      "credits": 0,
+      "resetCredits": 0,
+      "errors": "Python/JSv1review usage-limit afterdurablecompletereports retained",
+      "action": "same-settingsauthorv2minimalprep, no completedreview rerun"
+    },
+    {
+      "at": "2026-10-29T01:28:25.153Z",
+      "ordinaryUsageAllowed": true,
+      "primaryUsedPercent": 0,
+      "secondaryUsedPercent": 48,
+      "credits": 0,
+      "resetCredits": 0,
+      "latestError": "author usage-limit aftersavedlateledgerfinding, nofix/freeze",
+      "action": "userrequestedfreshsessionhandoff, noquotaworkaround"
+    },
+    {
+      "at": "2026-10-29T11:31:28.179Z",
+      "ordinaryUsageAllowed": true,
+      "primaryUsedPercent": 2,
+      "secondaryUsedPercent": 64,
+      "credits": 0,
+      "resetCredits": 0,
+      "error": "fault_ledger_code_review usageerrorafterdurablecompletereport5348",
+      "action": "readback existingcomplete report; no rerun; oneadmitted new4 memorycontrols only"
+    },
+    {
+      "at": "2026-10-29T21:29:01.255Z",
+      "ordinaryUsageAllowed": true,
+      "primaryUsedPercent": 0,
+      "secondaryUsedPercent": 80,
+      "credits": 0,
+      "resetCredits": 0,
+      "errors": [
+        "Pythonafterdurablereports+supplement",
+        "authorbeforeproposal"
+      ],
+      "action": "resumeonlysame-settingsreadonlyproposal, noreview/controlrerun"
+    },
+    {
+      "createdUTC": "2026-11-02T10:45:02.412526+00:00",
+      "source": "Nov2 heartbeat live readback",
+      "ordinaryUsageAllowed": true,
+      "primaryUsedPercent": 0,
+      "secondaryUsedPercent": 16,
+      "creditsBalance": "0",
+      "resetCreditsUsed": 0,
+      "errorsPreserved": "work/t14-t18-resume-20261102/source-v2-usage-errors-and-resume-v1.json"
+    },
+    {
+      "createdUTC": "2026-11-03T06:49:56.522141+00:00",
+      "ordinaryUsageAllowed": true,
+      "primaryUsedPercent": 3,
+      "secondaryUsedPercent": 66,
+      "creditsBalance": "0",
+      "resetCreditsUsed": 0,
+      "resumeEvidence": "work/t14-t18-resume-20261103/source-v2-review-resume-v2.json"
+    },
+    {
+      "createdUTC": "2026-11-03T16:51:50.868072+00:00",
+      "ordinaryUsageAllowed": true,
+      "primaryUsedPercent": 1,
+      "secondaryUsedPercent": 98,
+      "creditsBalance": "0",
+      "resetCreditsUsed": 0,
+      "resumeEvidence": "work/t14-t18-resume-20261104/source-v2-review-closeout-pending-v1.json"
+    }
+  ],
+  "bridgePreparation": {
+    "directory": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation",
+    "draftSHA256": "c89c9f3360b9220a346436aef97b761fc6b9d866356525b3378f678bb63e022e",
+    "checkpointSHA256": "64c178e036738aa0742b07e36d9d5243fdbc5b653f3eeae25c2b1be96caba3c9",
+    "status": "EXACT785_511_FULL_TRIPLE_SOURCE_APPROVED_ROOT512_MATCH_RUNTIME_GUARD_PREPARATION",
+    "cases": "13layer5selected preservation + conditional sameoutput collision; source/runtime/freshguard pending",
+    "scopeLimits": "Actual Nodeparent/stream/wait can be measured; child.close source-compatible inference; independentPythonwait/pipe/fullhost OPEN",
+    "implementationOwner": "/root/capture_node_fix_author",
+    "implementationDirectory": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1",
+    "manifest": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/manifest.json",
+    "manifestSHA256": "3e28bb464197f73a1a553ced81bbd9741f3215cae630ce41e491eec821ae0c5a",
+    "harnessSHA256": "1598b38e2f7976d6bbb13610dc18146794ed76403da6c2b8abb189176bc20a72",
+    "rootReadback": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/root-readback-v1.json",
+    "rootBindingsMATCH": 49,
+    "independentReviews": {
+      "CODE": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/reviews-code-v1/code-source-review-v1.json",
+        "bytes": 48744,
+        "sha256": "ef080d48e72f44a2628213f0df9849b483de004c8142f5682b0bfe42bedeb52e",
+        "verdict": "BLOCK"
+      },
+      "Python": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/reviews-python-v1/python-source-review-v1.json",
+        "bytes": 51260,
+        "sha256": "09a20ccf1f68d80b7193afb1f2edc2dab741f64b76fb11e8f84387fd01edbcdf",
+        "verdict": "BLOCK"
+      },
+      "JSAPI": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/reviews-js-v1/review.json",
+        "bytes": 44151,
+        "sha256": "d9ea6c06f386f11c81b9f9af32c4e4f35af7bb486f8a8c2e121365cc93dd8406",
+        "verdict": "BLOCK"
+      },
+      "JSAPISupplement": {
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/reviews-js-v1/supplement.json",
+        "sha256": "cb77e658b981dd7b02fd26ea418f2a3453e5671a3982eeba82787a8d68aff541"
+      }
+    },
+    "helperReviewObservation": "Independent fixedPython final12helper suite PASS once, helper-run.json/raw retained; not bridge or source approval",
+    "pendingFinding": "CODE+JS static: approved freeze manifest not linked to capsule current sourceBindings; formal full review pending",
+    "blockCloseout": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-block-closeout-v1.json",
+    "blockCloseoutSHA256": "089e9014a7c10245d5cc966c7965ec888d56a8e4379c303dcd708594ead74e7f",
+    "fixOwner": "/root/capture_node_fix_author",
+    "fixDirectory": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v1",
+    "old49Applicability": "Root49 and each reviewer49 MATCH before source-fix. Any live harness change makes oldlivebindings historical; immutable snapshots/BLOCK never rewritten.",
+    "sourceFix": {
+      "manifest": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v1/manifest.json",
+      "sha256": "40aaf85a1e0473552b3421cb626b8a0370ac288ba3894b11953c300539c3f53b",
+      "bindings": 386,
+      "rootBindingsMATCH": 386,
+      "rootReadback": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v1/root-readback-v2.json",
+      "harnessSHA256": "a506ef1d978f1ee2c74d2a37fd449f339db871c02025275695abae3ae0c61fb3",
+      "authorAffectedHelperTests": "20/20 PASS once; source+model only",
+      "fullCODE": "IN_PROGRESS",
+      "fullPython": "IN_PROGRESS_INDEPENDENT20_ONCE",
+      "fullJSAPI": "IN_PROGRESS",
+      "attempt": "NOT_CREATED",
+      "bridge": "NOT_RUN",
+      "newPendingFinding": "CODE+JS independent static: lifecycle store.json can fail after actual spawn before nodeSpawned error tag; result can incorrectly retain case NOT_RUN. Formal report pending; no bridge/attempt.",
+      "status": "THREE_FULL_BLOCK_SOURCE_ONLY",
+      "independentHelpers": "20/20 PASS once; source/model only",
+      "reports": {
+        "CODE": {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v1/reviews-code-v2/code-source-review-v2.json",
+          "bytes": 265028,
+          "sha256": "1cc3863274db15029ca000f64a79f4db4a83aaf7242da2f81651141b2c4ed956",
+          "verdict": "BLOCK",
+          "reviewerSeverity": "2 MEDIUM"
+        },
+        "Python": {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v1/reviews-python-v2/python-source-review-v2.json",
+          "bytes": 302743,
+          "sha256": "c990571f5f7b4a7adf85a9a465e5a86c2d602c95ea9e00ffc5468e0c3bc191b6",
+          "verdict": "BLOCK",
+          "reviewerSeverity": "1 HIGH +1 MEDIUM"
+        },
+        "JSAPI": {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v1/reviews-js-v2/review.json",
+          "bytes": 385371,
+          "sha256": "3ab183de6c8ec3920f120f845911e3dfd31158c6f94ecf4f487855a06fe369f1",
+          "verdict": "BLOCK",
+          "reviewerSeverity": "1 MEDIUM plus supplement1 MEDIUM"
+        },
+        "JSAPISupplement": {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v1/reviews-js-v2/supplement.json",
+          "sha256": "0b41d97031a1bd4fa6ca7e38378c5d11985d4ba7f3b448779bd6b4ae783f91b4"
+        }
+      },
+      "blockCloseout": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v1/source-block-closeout-v2.json",
+      "blockCloseoutSHA256": "a5d07246938f0bf472d5f339f2ff5e85667e04920ad519ecae125895cb785cf4"
+    },
+    "sourceFixV2": {
+      "owner": "/root/capture_node_fix_author",
+      "evidenceDirectory": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v2",
+      "status": "THREE_FULL_SOURCE_BLOCK_ONE_MEDIUM_DEADLINE_FAMILY",
+      "coreSources": "d687/e710/schema unchanged",
+      "runtimeNamespace": "same implementation-v1/preservation-regression-v1",
+      "attempt": "NOT_CREATED",
+      "bridge": "NOT_RUN",
+      "manifest": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v2/manifest.json",
+      "sha256": "f8d16f004a6d52bae09f6750b189fe34956c73f998f9956168f1e3869f1c89f3",
+      "bindings": 433,
+      "rootBindingsMATCH": 433,
+      "rootReadback": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v2/root-readback-v3.json",
+      "harnessSHA256": "94b5576c6d57028733fe28d17ab8ebe5fc8f583559deedde06145622c0eda173",
+      "authorAffectedTests": "25 PASS once; pure/tinyhostfile only, oldcontext2models not rerun; actualmanifest434purederive",
+      "fullCODE": "IN_PROGRESS",
+      "fullPython": "IN_PROGRESS_INDEPENDENT25_ONCE",
+      "fullJSAPI": "IN_PROGRESS",
+      "newPendingFinding": "Independent CODE/Python/JS agree deadline family: case2 prePopen must gate originalactive cutoff after rawsink setup; final postStoreclose acceptance must recheck originaloverall270. Static only, formalreports pending; no Popen/bridge/attempt.",
+      "reports": {
+        "CODE": {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v2/reviews-code-v3/code-source-review-v3.json",
+          "bytes": 331162,
+          "sha256": "7f900f5260af755fbc225e8e40697513ce29796d5967169388ba0fd935f8e2ea",
+          "verdict": "BLOCK",
+          "findingSeverity": "1 MEDIUM"
+        },
+        "Python": {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v2/reviews-python-v3/python-source-review-v3.json",
+          "bytes": 336965,
+          "sha256": "a3a183ba7a5a209410feab3a6bc1f91b771a7369bd690cd948bf909536e63458",
+          "verdict": "BLOCK",
+          "findingSeverity": "1 MEDIUM"
+        },
+        "JSAPI": {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v2/reviews-js-v3/review.json",
+          "bytes": 435240,
+          "sha256": "2104321fcafc3f32bde15213f9c248e12a2e15d45d39ad78b0150c3bf2e9606b",
+          "verdict": "BLOCK",
+          "findingSeverity": "1 MEDIUM"
+        }
+      },
+      "independentAffectedHelpers": "25/25 PASS once; source/model only",
+      "blockCloseout": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v2/source-block-closeout-v3.json",
+      "blockCloseoutSHA256": "7819a8259020bb5094d8eeadf3146f664d90bf511f20ac08bae0a1f8e132089a"
+    },
+    "sourceFixV3": {
+      "owner": "/root/capture_node_fix_author",
+      "evidenceDirectory": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v3",
+      "status": "EFFECTIVE_ALL_THREE_BLOCK_ONE_MEDIUM_PRIMARY_PRESERVATION",
+      "runtimeNamespace": "same implementation-v1/preservation-regression-v1",
+      "coreSources": "d687/e710/schema unchanged",
+      "attempt": "NOT_CREATED",
+      "bridge": "NOT_RUN",
+      "manifest": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v3/manifest.json",
+      "sha256": "735bfde8293fc4208b6175f5d53759590dd55d408c28f9582a96b3543d4a679e",
+      "bindings": 473,
+      "rootBindingsMATCH": 473,
+      "rootReadback": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v3/root-readback-v4.json",
+      "harnessSHA256": "9052b9cca61da20cc2c75dda8f8c0fd23b918563524b05a80995e9fa8aa3291f",
+      "authorAffectedHelpers": "28 PASS once; pure/tinyhostfiles/isolatedclock only",
+      "fullCODE": "IN_PROGRESS",
+      "fullPython": "IN_PROGRESS_INDEPENDENT28_ONCE",
+      "fullJSAPI": "IN_PROGRESS",
+      "reports": {
+        "CODEOriginal": {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v3/reviews-code-v4/code-source-review-v4.json",
+          "bytes": 362067,
+          "sha256": "df09e79f572ce1d722a3e24f603328ae71915debffe6b056bfc80627228ec2d7",
+          "recordedVerdict": "APPROVE_SOURCE_ONLY"
+        },
+        "CODESupplement": {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v3/reviews-code-v4/primary-preservation-supplement-v1.json",
+          "bytes": 4647,
+          "sha256": "afc01a48b3429e23fc50e2647ce5a16564e6ac922fef3d1cf15a7164bf609bb9",
+          "recordedVerdict": "BLOCK"
+        },
+        "Python": {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v3/reviews-python-v4/python-source-review-v4.json",
+          "bytes": 373133,
+          "sha256": "8cd63ec683c743f2f240bb11705972c8e880299f20398f48aaff6c7899364ab7",
+          "recordedVerdict": "BLOCK"
+        },
+        "JSAPIOriginal": {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v3/reviews-js-v4/review.json",
+          "bytes": 474245,
+          "sha256": "6ce3fe0d5fd4794cda5e2db29c74accbe409a6a284c24d7d3e8b18ee6f20c10f",
+          "recordedVerdict": "APPROVE_SOURCE_ONLY"
+        },
+        "JSAPISupplement": {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v3/reviews-js-v4/supplement.json",
+          "bytes": 3443,
+          "sha256": "ac04626dc7e83e93954e6a8a228792edbb82b5030d79d090477db4cdd622f4c6",
+          "recordedVerdict": "BLOCK"
+        }
+      },
+      "independentAffectedHelpers": "28/28 PASS once; pure/model only",
+      "blockCloseout": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v3/source-block-closeout-v4.json",
+      "blockCloseoutSHA256": "6bd0491739d5793a84882bb7b350a4c40e96bf51935b247db8c2b0bdac5689c4",
+      "warning": "Original CODE/JS APPROVE immutable but laterBLOCKsupplements supersede applicability; no unanimous currentapproval"
+    },
+    "sourceFixV4": {
+      "owner": "/root/capture_node_fix_author",
+      "evidenceDirectory": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4",
+      "status": "DONE_BOUNDED_THREE_WAY_SOURCE_REVIEW_ONLY",
+      "runtimeNamespace": "same implementation-v1/preservation-regression-v1",
+      "coreSources": "d687/e710/schema unchanged",
+      "attempt": "CONSUMED_ONCE_NO_RETRY",
+      "bridge": "DONE_BOUNDED_TWO_FIXED_SOURCE_MODEL_CASES_ONLY",
+      "lastRootSourceReadbackSHA256": "9052b9cca61da20cc2c75dda8f8c0fd23b918563524b05a80995e9fa8aa3291f",
+      "lastRootReadbackUTC": "2026-10-28T00:27:48.537062+00:00",
+      "authorUsageErrorPreserved": true,
+      "estimatedBindings": 508,
+      "estimatedCanonicalUnion": 509,
+      "hardCanonicalUnionMax": 512,
+      "testsAtResume": "NoRED/completion on disk yet; all WIP must be read from latest author checkpoint, do not assume outcomes",
+      "manifest": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/manifest.json",
+      "manifestSHA256": "78526322338ecac7d2f717a932e72bccd7dbefbdac28e9fc9ad1823d04fc6f7e",
+      "bindings": 511,
+      "canonicalUnion": 512,
+      "rootCanonicalUnionMATCH": 512,
+      "harnessSHA256": "43d62bd8d37012856763846113c5423bd8e19ff695a2471cea84a7d959229e5f",
+      "reviews": {
+        "CODE": {
+          "path": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/reviews-code-v5/code-source-review-v5.json",
+          "sha256": "d434d8ad8e29e5bd1dd11d1928e6a50cc61e88e1b10f30af7fbeb20317f419f1",
+          "verdict": "APPROVE_SOURCE_ONLY"
+        },
+        "Python": {
+          "path": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/reviews-python-v5/python-source-review-v5.json",
+          "sha256": "6fb19e5096e17ae13f8158af4475150e1921f0d60a28d899d4a5c59691ea7ff6",
+          "verdict": "APPROVE_SOURCE_ONLY"
+        },
+        "JS": {
+          "path": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/reviews-js-v5/review.json",
+          "sha256": "bdf890cc42e4d997df473e347be7e916882111bce05c8335313d6663e5b7eb25",
+          "verdict": "APPROVE_SOURCE_ONLY"
+        }
+      },
+      "independentCurrentHelpers": "33/33 PASS once final43d",
+      "completion": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/source-fix-v4/completion-source-review-only-v5.json",
+      "completionSHA256": "16792262b63258c9311c000753ad77651826d7c04d869e488240cdd299b0108b",
+      "executionPreparation": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/execution-preparation-v1",
+      "freshGuard": "DONE_MATCH_SOURCE_MODEL_ONLY",
+      "runtimeResult": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/preservation-regression-v1/result.json",
+      "runtimeCloseout": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/execution-preparation-v1/bounded-runtime-closeout-v1.json",
+      "runtimeCloseoutSHA256": "8ec74e51d55ebd6c46fdc2e9746e5ace5a2c37486f8b1384ab7d8b2afddedd47",
+      "evidenceSeal": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/execution-preparation-v1/bounded-runtime-evidence-seal-v1.json",
+      "evidenceSealSHA256": "1817a451d377eb9354acc1d27987cb632393ddeceed3ba0e99bd2b8eed27915c",
+      "evidenceSealBindings": 128,
+      "independentPostrun": "ACCEPT_BOUNDED_SOURCE_MODEL_CONFIG_ADAPTED_ONLY",
+      "independentPostrunSHA256": "ccbaf0e76682ea90ee93baff39369668956a1b46bd5b52d244817185cf71bcf6",
+      "independentSupplementSHA256": "e72bd0d16d35ac5c71d18a1f3b372e19c5687b6070e181b52da6959a1e9a3eab",
+      "rootPostrun512": "MATCH",
+      "runtimePostrun5": "MATCH"
+    }
+  },
+  "heartbeatIntegrity": [
+    "heartbeat-seal-attempt-readback-20261026T081705Z.json",
+    "heartbeat-protocol-attempt-closeout-supplement.json"
+  ],
+  "jointSource": {
+    "manifest": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/manifest.json",
+    "sha256": "38b45c79f05a93d340319c2e55bd0317898c74473d676e093f185d73a0a62557",
+    "bindings": 272,
+    "rootBindingsMATCH": 272,
+    "currentPythonSHA256": "d687c19c9be59ba4e241d0d6fc4d0b331cb7ec3555f2267b4fa125e56bdb5022",
+    "currentNodeSHA256": "e7100dd52b755cc7dedefa07624520dbacdd41ccf8e20428160ec2c588f2c3b1",
+    "pinnedNodeSHAActualMatch": true,
+    "CODE": "APPROVE_SOURCE_ONLY",
+    "Python": "APPROVE_SOURCE_ONLY",
+    "JSAPI": "APPROVE_SOURCE_ONLY",
+    "coverage": "PARTIAL: new bounded tinyR07 Node/Python integration completed; fullbridge/fullproducer/independentPythonwait-pipe/fullhost/largeZIP64/actual8-64MiB/RSS/native/official OPEN",
+    "completion": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v2/completion-source-review-only.json",
+    "completionSHA256": "486950895d0de41041cdba7e7d0c48b58419bf1d45ceb8936124c5563ceeada0",
+    "sourceReviewApproved": true,
+    "officialCaptureApproved": false,
+    "bridgeApproved": false,
+    "nativeApproved": false
+  },
+  "countAmendment": {
+    "manifest": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/manifest.json",
+    "sha256": "5f9ec01494e032f78e6311ff0103ad014e22908a69eaede9a6670d1ed2f530f7",
+    "bindings": 163,
+    "status": "DONE_BOUNDED_THREE_WAY_DESIGN_ONLY",
+    "change": "Explicit separate perlooseroot traversal16384 vs global candidate16384, bounded iterator before name-vector allocation; no source changes yet",
+    "rootBindingsMATCH": 163,
+    "completion": "work/t17-save-five-mod-inventory-repair-preparation/enumeration-count-amendment-v1/completion-design-only.json",
+    "completionSHA256": "a531a7ddc99f6693832adcd363a537db96e7c7d785cadf16873cd709645202f3"
+  },
+  "sourceFixAuthors": {
+    "Node": {
+      "owner": "/root/capture_node_fix_author",
+      "files": [
+        "tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs",
+        "tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs"
+      ],
+      "evidence": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node",
+      "scope": "Only genuineSyntaxError fallback; unexpected=>NODE_ANALYSIS; globalcandidate16384; no schema/hook changes",
+      "status": "AUTHOR_FROZEN_UNREVIEWED",
+      "sourceSHA256": "e7100dd52b755cc7dedefa07624520dbacdd41ccf8e20428160ec2c588f2c3b1",
+      "testSHA256": "efae7d0fb9c2f716e8d9a32c294b56abe10c83689de02f4a5e1a25d61fefc748",
+      "manifest": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/node/manifest.json",
+      "manifestSHA256": "4c43d87865980369dceaeed3098ce2b27a0afab03ac7e7b05a48197323ae06d5",
+      "bindings": 80,
+      "rootBindingsMATCH": 80,
+      "tests": "17sourcegroupsPASS/2syntax; fourREDcases retained; actualAcorn+syntheticmetadata+VMchild only, notrealbridge"
+    },
+    "Python": {
+      "owner": "/root/preservation_python_author",
+      "files": [
+        "tools/epoch-rts/t17-save-five-mod-capture.py",
+        "tools/epoch-rts/test-t17-save-five-mod-capture.py"
+      ],
+      "evidence": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python",
+      "scope": "Boundedstreaming/innerallocation controls; immediateFD/iteratorownership; separate traversalbudget/candidate accounting; bind final newNodeSHA",
+      "status": "AUTHOR_FROZEN_UNREVIEWED",
+      "sourceSHA256": "d687c19c9be59ba4e241d0d6fc4d0b331cb7ec3555f2267b4fa125e56bdb5022",
+      "testSHA256": "5320b54f890413668046c4c8e2edf2d96ce8509b9d1b05296064f7bf35d036d3",
+      "manifest": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-fix-v1/python/source-context-freeze-v1/manifest.json",
+      "manifestSHA256": "98084ef0fb0e96fd7224cd4b1519a93325cd765b75ef30f0809935f50758dd5a",
+      "bindings": 243,
+      "rootBindingsMATCH": 243,
+      "tests": "68normal/68optimized/compile authorPASS; old58/raw/SOURCEBLOCK retained"
+    }
+  },
+  "oldFreezeApplicability": "56c949/154 and5f9ec/163 were MATCH at pre-fix readback; live source changes intentionally invalidate those historical live bindings, immutable snapshots/reports retain exact old bytes. Never rewriteoldfreeze or claimoldcurrentapproval.",
+  "clientDate": "2026-11-05",
+  "oldJointSource": {
+    "manifest": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/manifest.json",
+    "sha256": "56c949717cbb8d5732c0bb765ad1300fd570600036a9b350ee6ed87a630b8cfa",
+    "bindings": 154,
+    "rootBindingsMATCH": 154,
+    "CODE": "BLOCK_SOURCE_ONLY_1HIGH_3MEDIUM",
+    "Python": "BLOCK_SOURCE_ONLY_3HIGH_1MEDIUM",
+    "JSAPI": "BLOCK_SOURCE_ONLY_1HIGH",
+    "JSReportSHA256": "1772a917d872ad5194d43602ed52cbf7053ed268515b49f7b5ec0be32ddcba16",
+    "coverage": "PARTIAL_FULL_COVERAGE_NOT_ESTABLISHED",
+    "closeout": "work/t17-save-five-mod-inventory-repair-preparation/joint-source-review-v1/source-block-closeout.json"
+  },
+  "historicalSourceFindings": [
+    {
+      "id": "JS-SOURCE-01",
+      "status": "FORMAL_BLOCK_HIGH",
+      "cause": "Actual Acorn RangeError incorrectly classified BLOCK_PARSE_ERROR then FINISH rather than fatal NODE_ANALYSIS",
+      "evidence": "joint-source-review-v1/js-newcases-v1",
+      "boundary": "Actual Acorn + synthetic ProtocolSession + pure Python validator/synthesize; no main/bridge/disk completion"
+    },
+    {
+      "id": "PHASE_A_BODY_COPY",
+      "status": "CODE_PYTHON_FULL_REVIEW_FINDING_FINAL_REPORT_PENDING",
+      "cause": "Output.write keeps input and full raw readback, archive read_candidate parts+join retains full copies; P07 tracks returned wrappers only",
+      "evidenceSHA256": "815388d85ca31e8225bddcbbb5697ef99d2d265f0c05aa27f8f93bd1425766a2",
+      "boundary": "Tiny65536byte actual objects; no actual8MiB or RSS claim"
+    },
+    {
+      "id": "OUTPUT_PARENT_FD",
+      "status": "REVIEW_FINDING_CONFIRMED_FINAL_REPORT_PENDING",
+      "cause": "Parentfd acquired then fstat before constructor try cleanup; injected error leaks ownership",
+      "evidenceSHA256": "b63dcf60f88da2d13f05b6870eb1fae459a30857a02b0ca5f0f9c11ccc89a02b",
+      "boundary": "Tiny fault injection, actual fd observed then reviewer once-closed"
+    },
+    {
+      "id": "ENUMERATION_CANDIDATE_COUNT",
+      "status": "CONTRACT_CLARIFICATION_NEEDED",
+      "cause": "Loose walker counts directories/noncandidate files using candidateLayerEntryCountMax; scaled1candidate2noncandidate cap2 rejects",
+      "evidenceSHA256": "ee8a416b7e3143646bf707adb67c7036fdadf9ba4ee502f75288dd2e13b81d85",
+      "boundary": "Scaled model, not actual16k threshold"
+    }
+  ],
+  "historicalSourceFindingsBoundary": "Original old56c949/a27/054 counterexamples and all3BLOCK unchanged. Newd687/e710 correctness fixes approved exact272source scope, not originalcases changed-toPASS.",
+  "lastGitReadback": {
+    "createdUTC": "2026-11-04T02:00:53.471269+00:00",
+    "HEAD": "d5133455c3dffba7d2d3f2465f75b82532ebcd3d",
+    "baseHEADBeforeUserAuthorizedCloseoutCommit": "726a3aefcae830f605de438cd13192cc6330414e",
+    "branch": "codex/t14-t18-closeout-20261104",
+    "indexEmpty": true,
+    "trackedWorkingTreeClean": true,
+    "retainedUntrackedEntries": 595,
+    "upstreamAhead": 0,
+    "upstreamBehind": 0,
+    "networkGuardForLocalObjectReads": "GIT_NO_LAZY_FETCH=1 GIT_ALLOW_PROTOCOL=",
+    "sourceCodeChanged": false
+  },
+  "latestHandoff": "docs/empire-rts/SESSION-HANDOFF-2026-11-05-SOURCE-APPROVED-READINESS-STOP.md",
+  "latestHandoffSHA256": "8355298121d00d7f2433afb5447b3e1f07187c0b592eebb64a6bb36c4bf450d0",
+  "newPreservationBridge": {
+    "status": "DONE_BOUNDED_TWO_FIXED_SOURCE_MODEL_CASES_ONLY",
+    "scope": "SOURCE_MODEL_CONFIG_ADAPTED",
+    "case1": "PASS_BOUNDED_SOURCE_MODEL",
+    "case2": "PASS_BOUNDED_SOURCE_MODEL_COLLISION_NEGATIVE",
+    "attempt": "CONSUMED_ONCE_NO_RETRY",
+    "invocations": 2,
+    "retry": 0,
+    "fullCoverage": "PARTIAL",
+    "native": false,
+    "officialCaptureApproved": false,
+    "producerWholeFileRawSeal": "NOT_CLAIMED",
+    "nextCoveragePreparation": "work/t17-save-five-mod-inventory-repair-preparation/preservation-bridge-regression-preparation/implementation-v1/next-coverage-preparation-v1",
+    "coverageReconciliation": "DONE_READ_ONLY_NO_FULLCOVERAGE_APPROVAL",
+    "coverageReconciliationJSONSHA256": "d527316662da7d3b90a7e5c894cf27f14b4f48ad0a2e89071716d5a38bdcfdab"
+  },
+  "runtimeCloseoutTrackingPreimages": "work/t14-t18-resume-20261028/before-preservation-runtime-closeout-20261028T104800Z/manifest.json",
+  "requiredFaultControls": {
+    "status": "SOURCE_V2_THREE_APPROVED_READINESS_PREPARATION_STOP",
+    "owner": "/root/coverage_fault_author",
+    "directory": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1",
+    "families": 2,
+    "fixedCases": 3,
+    "implementation": "NEW_SOURCE_WRITTEN_FULL_FUNCTIONAL_SOURCE_REVIEW_PENDING",
+    "tests": "NOT_RUN",
+    "attempt": "NOT_CREATED",
+    "retry": 0,
+    "v1ManifestSHA256": "e488202701017b7a5c212bf3ad8cbf5ec43d4d8b00efb3ea2c8781615a668178",
+    "v1RootBindingsMATCH": 55,
+    "v1Reports": {
+      "CODE": "ee87e5891f10d5c9fdb34ca9320374003b351ee040cd96010a64793ad7f0c24b",
+      "Python": "52d495f82cfaca08b45ddf1e3aa9378abeb623c65cbc756ef7aff90c11a89e02",
+      "JSAPI": "b98b778c1f736b16c394151975a8d85f1bf34bed0d94dee70bec793a6412b0e8"
+    },
+    "v1Closeout": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-block-closeout-v1.json",
+    "v1CloseoutSHA256": "6eb268e18e0de91e259a3e799b1b71b2aed124bd52a54a74770d34a692ee8a2f",
+    "v2Directory": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v2",
+    "runtimeNamespace": "same original required-fault-controls-preparation-v1/execution-v1",
+    "designApproval": true,
+    "v2ManifestSHA256": "f597e8d5c5bcf214ccb6a74d7e0920914441c3dece4b6851aa895a5c4607b2d4",
+    "v2RootBindingsMATCH": 64,
+    "v2Reviews": {
+      "CODE": "729c7244721d05f39b2ee6c4593323ac28bab80f62f4ba7446ed3cf96aa6faeb",
+      "Python": "284d922e3b028353bfecfe6db36b090b882aebbb593376a5a8c456365aa7eb53",
+      "JSAPI": "06f6ceaa04033e2db6986835ba8ed7b0b8c2f9b376b04be4f5f8de99b7d198c5"
+    },
+    "designCompletion": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-design-completion-v2.json",
+    "designCompletionSHA256": "bae792e723440805f97024314bb5e4a3a02d80f677cce7f59a9929a45972bcdc",
+    "stage": "SOURCE_V2_APPROVED_ROOT_READINESS_STOP_NO_CAMPAIGN",
+    "rootInertImportAdmission": "DONE_ONCE_MEMORY_ONLY",
+    "helperTests": "20_OF_20_PASS_MEMORY_MODELS_ONLY_ONCE",
+    "producerImport": "NOT_RUN",
+    "producerCases": "THREE_NOT_RUN",
+    "implementationDirectory": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1",
+    "sourceApproval": true,
+    "stageCAdmitted": false,
+    "controllerSHA256": "a77c64092238b26d07d941cee1a9a3c64687c90aec8543008a62ebca275e92ea",
+    "helperBeforeFixSHA256": "02e0fc5295b1d0e5f6e995dd9943bec7ca2891b1629c631c6eafa959bd25949f",
+    "helperPlanSHA256": "cdd67792a8435cac07c3c31ca6868f852f6c4b49a5ba8f71ff50ef946d9f684a",
+    "limitedStaticCODEReview": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/inert-static-code-review-v1.json",
+    "limitedStaticCODEReviewSHA256": "48539f0a0c7ebb1c41d37a282e57b524b77600677047f2e04ff4a0767cdece43",
+    "limitedStaticVerdict": "BLOCK_ONE_MEDIUM_CONTROLLER_HASHEDBYTES_NOT_BOUND_TO_IMPORT",
+    "helperSHA256": "edea973786e19a27527f8b061ad83321bba49c45c7943bb5cddd981645396a18",
+    "limitedStaticCODEV2Review": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/inert-static-code-review-v2.json",
+    "limitedStaticCODEV2SHA256": "4b393b9696661f376c81fe8f7419e6439790de1adc1dbbb4ec7d68397185f6a7",
+    "rootInertImportAdmissionSHA256": "5fee51fcbe4af3531b352622e24e82e6d255982bed417bf0837e88b8e4603384",
+    "helperStdoutBytes": 967,
+    "helperStderrBytes": 0,
+    "helperRootReadbackSHA256": "e936eca685a94611a887c07e30c1381d4c0e5fe13ecbee867b7634d3bed5417a",
+    "sourceFreeze": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-context-freeze-v1/manifest.json",
+    "authorPreFreezeFinding": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/author-pre-freeze-finding-v1.json",
+    "authorPreFreezeFindingSHA256": "e54219234dc0456a50683ab643251d62c17062a14fb51aa9b6a3341e4cfae0e4",
+    "sourceRepair": "SOURCE_ONLY_COMPLETE_ROOT_STATIC_READBACK_NO_EXECUTION",
+    "latestAuthorUsageErrorPreserved": true,
+    "remainingNewPureControlsMax": 0,
+    "newOwner": "/root/fault_ledger_author",
+    "lateLedgerDispatch": "work/t14-t18-resume-20261029/late-ledger-dispatch-v1.json",
+    "controllerAtLatestMemoryRunSHA256": "ee4e2579e24cbcf97cd076fa863eb6c25a015159fc0447586583fb3c775ddfb3",
+    "newMemoryHelpers": "H21_H24_DONE_ONCE_PASS",
+    "newMemoryRun": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/late-helpers-v1-run.json",
+    "cumulativeMemoryAssertionsDone": 24,
+    "diagnosticTailFindingSHA256": "6e08123976c59ebc044ab713b3f1c5935d74fd8ce9d8da4ad43e4ff4f283754f",
+    "currentControllerSHA256": "fd1948d65cdd57cb851f651128639499f958a59f003707889bfb32e9f6f24e9b",
+    "sourceFreezeSHA256": "68a60a7a42d07d6113e4427fabac9d0b9b81c3ac288d06baa6a0faddd56db4cf",
+    "sourceFreezeBindings": 126,
+    "sourceFreezeSnapshotBytes": 2988296,
+    "sourceReviewStatus": "ALL_THREE_BLOCK",
+    "sourceBlockCloseout": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-block-closeout-v1.json",
+    "sourceBlockCloseoutSHA256": "d5fd174a70b9d3b5965a8ab63e8878763dea4f568ab20d696398bec337d97e50",
+    "fullSourceReviews": [
+      {
+        "role": "CODE",
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-CODE-v1.json",
+        "bytes": 179901,
+        "sha256": "053e4e6bc81c6b146ca526db4afc36ae653cc2182d06a24b149f5cd0bbc6ce0d",
+        "verdict": "BLOCK",
+        "markdown": {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-CODE-v1.md",
+          "bytes": 3046,
+          "sha256": "ae244f99d651c5e26535cee1799320bffbf4cb3861ce77bfcb03fe0bd1d1831e"
+        }
+      },
+      {
+        "role": "Python",
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-v1.json",
+        "bytes": 225853,
+        "sha256": "1ac8ca0b183fd1581b80b45b26f1bae4fb16e1ebb72a998b5f96d21c2dd2f121",
+        "verdict": "BLOCK",
+        "markdown": {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-v1.md",
+          "bytes": 3638,
+          "sha256": "7caa6683517bae80b98d5a64b1c5f6211e857f825a79be576a0c2f0b62ee3ea3"
+        }
+      },
+      {
+        "role": "JSAPI",
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-JSAPI-v1.json",
+        "bytes": 223420,
+        "sha256": "ecaa648210e009b46080a152f6d951e9ac0da2c7c056ef08a526e9842508ea1e",
+        "verdict": "BLOCK",
+        "markdown": {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-JSAPI-v1.md",
+          "bytes": 2904,
+          "sha256": "c990b65d0ac7551c6e0a3706cc3982b39c8207abb6c19ffa4c77cfeda9f1fe1d"
+        }
+      },
+      {
+        "role": "PythonSupplement",
+        "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-supplement-v1.json",
+        "bytes": 2854,
+        "sha256": "1ec35df8666a22f4978a444350c07da74c269fa9484ecf6b95b66ff68778a6af",
+        "verdict": "BLOCK",
+        "markdown": {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-supplement-v1.md",
+          "bytes": 1296,
+          "sha256": "11e30f078d48ef42b8c5a9fcc8499f93cd2b44b5974e2b99b922aef569ca96aa"
+        }
+      }
+    ],
+    "contextAccountingProposalSHA256": "9a63a3fd6913b89a12179094f2be20ba6e1f4de1e28334d44d2163d2565444bb",
+    "contextAmendmentDirectory": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-context-amendment-v1",
+    "contextAmendmentStatus": "THREE_FULL_DESIGN_APPROVE_ONLY_ROOT94MATCH_SOURCE_ASSIGNED",
+    "contextAmendmentManifestSHA256": "20e7e2e53967afdce38b7b594c8cedab0e83cbd9aec61fb7af09e5a24a6b914e",
+    "contextAmendmentCompletionSHA256": "ae68305d3cc86c6464e4ac868aa3f170fecafe9b0f452cf6a3ba1be95fae64c8",
+    "historyContainer": "SOURCE_ONLY_PREPARATION_NOT_RUNTIME_ACCEPTANCE",
+    "sourceFreezeV2": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-context-freeze-v2/manifest.json",
+    "sourceFreezeV2SHA256": "d69d3456754b19f0592682824c4772c72d62169799fc9c02f0466d8291f951d4",
+    "sourceFreezeV2PhysicalCount": 113,
+    "sourceFreezeV2LogicalCount": 165,
+    "sourceFreezeV2SnapshotBytes": 5728239,
+    "sourceFreezeV2RootReadbackSHA256": "2489fc6e23dd7995d5cea39fec501086c670c7570c1b73382aedeb6cd1a4fbe2",
+    "sourceFixV2RootStaticReadbackSHA256": "a6578c7972be63ee7246b8a3f66bf8bd037f5b6e8b70375b4a84d220fd770aff",
+    "sourceReviewV2Status": "THREE_FORMAL_APPROVE_SOURCE_ONLY_ROOT_VALIDATED",
+    "latestRootDataReadback": "work/t14-t18-resume-20261102/source-v2-root-data-readback-v1.json",
+    "latestRoleProgress": [
+      {
+        "role": "CODE",
+        "progress": {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-CODE-v2-progress-v13.json",
+          "bytes": 178144,
+          "sha256": "a038b74fde868a1ad2c218db6da775f87fd3d319fb799e0b10eb577197466d1b"
+        },
+        "json": {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-CODE-v2.json",
+          "bytes": 191340,
+          "sha256": "0fce6590b93571a4222072cfc4957e429b7b7531fc68d1aaa5aae8a995a1c001"
+        },
+        "md": {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-CODE-v2.md",
+          "bytes": 66198,
+          "sha256": "fb6966624949797ef1de96fdd9580143a63ed64d0d3bd7f35cb99f4e30177593"
+        },
+        "rootValidatedSOURCEOnly": false
+      },
+      {
+        "role": "Python",
+        "progress": {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-v2-progress-v12.json",
+          "bytes": 158687,
+          "sha256": "9e8f93b0602682adb366e50c5d8b5c352894ac654f59727c5a2c5c751fd0c775"
+        },
+        "rootValidatedSOURCEOnly": false
+      },
+      {
+        "role": "JSAPI",
+        "progress": {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-JSAPI-v2-progress-v10.json",
+          "bytes": 201808,
+          "sha256": "cde4e0eb1cbbac2de4217c676569e267eeb0463a76163de794833d48ac012f93"
+        },
+        "json": {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-JSAPI-v2.json",
+          "bytes": 439600,
+          "sha256": "bb06b9e1e479941d4072ff1ebf217653bb3491a8481adc8ce8510307085588bc"
+        },
+        "md": {
+          "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-JSAPI-v2.md",
+          "bytes": 63964,
+          "sha256": "49cd462b7b298643dfac8dede15bd642f8452e0b84a92743c57181d38b613a57"
+        },
+        "rootValidatedSOURCEOnly": true
+      }
+    ],
+    "JSAPISourceV2RootValidation": "work/t14-t18-resume-20261103/source-review-JSAPI-v2-root-validation-v1.json",
+    "CODESourceV2RootValidation": "work/t14-t18-resume-20261104/source-review-CODE-v2-root-validation-v1.json",
+    "sourceReviewStatusScope": "HISTORICAL_SOURCE_V1_ALL_THREE_BLOCK_UNCHANGED",
+    "PythonSourceV2RootValidation": "work/t14-t18-resume-20261104-current/source-review-Python-v2-root-validation-v1.json",
+    "rootReadinessStop": "work/t14-t18-resume-20261104-current/root-readiness-expired-stop-v1.json",
+    "preparedOrchestrationReviewV2": "BLOCK_PREPARED_ROOT_ORCHESTRATION_ONLY",
+    "preparedOrchestrationV4Review": "BLOCK_1HIGH_1MEDIUM_RETAINED",
+    "preparedOrchestrationV5Review": "APPROVE_LIMITED_ORCHESTRATION_SOURCE_ONLY",
+    "preparedOrchestrationV5RootValidation": "work/t14-t18-resume-20261104-current/root-sampler-v5-root-validation-v1.json"
+  },
+  "metadataExpectedControlsJSDesign": {
+    "status": "APPROVE_DESIGN_ONLY_SINGLE_JS_API_REVIEW",
+    "manifestSHA256": "17eb3663cc51be04f880be2d2045bbbc1d5fe8fcf461cc2a82191ed9aa85e599",
+    "artifactsMATCH": 48,
+    "liveBindingsMATCH": 13,
+    "report": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1-review-js-v1/review.json",
+    "reportSHA256": "ccc2ef605452c2748626eb7305a72de5dc976636f0042d1b96395101b62315fe",
+    "blocking": 0,
+    "LOW": 1,
+    "LOWDescription": "camera getter GetValue not GetSmoothedValue; preserve authorplan, exact futuregettercontrols",
+    "implementation": "NOT_RUN",
+    "native": "OPEN",
+    "fullThreeWayDesignApproval": false
+  },
+  "latestDispatch": "work/t14-t18-resume-20261102/source-v2-review-dispatch-v1.json",
+  "latestTrackingPreimages": "work/t14-t18-resume-20261104-current/tracking-before-refresh-decision-v1/manifest.json",
+  "latestDesignDispatch": "work/t14-t18-resume-20261028/required-fault-controls-design-dispatch-v1.json",
+  "latestCheckpointPreimage": {
+    "path": "work/t14-t18-resume-20261030/checkpoint-before-context-design-completion-v1.json",
+    "sha256": "d6baefb436a2ac99db5b1e420969810d5191312f3c936d277798a4b3de85f5f9"
+  },
+  "newSessionTransfer": {
+    "directory": "work/t14-t18-session-transfer-20261102",
+    "status": "MATCH_CHILD_READBACK_AND_EXISTING_HEARTBEAT_MIGRATED",
+    "sourceChat": "01a18567-d39e-7941-9a29-32a5f4371832",
+    "targetChat": "01a199e4-c227-7c61-b356-9bd863dccd2d",
+    "childReadbackSHA256": "b083760972d54f2ef5882fd411c6a2bd12dffad79f834747fbbcda1c37cbd842",
+    "migrationReadbackSHA256": "120ecd8444fdb12c234439e53475bb72b6b0c282ede63ef4ebeb0771f0aa3ca5",
+    "automationId": "0ad-t14",
+    "sameCadencePreserved": true
+  },
+  "priorOwnerThreadId": "01a18567-d39e-7941-9a29-32a5f4371832",
+  "latestFourMemoryControlsCloseout": {
+    "path": "work/t14-t18-resume-20261029/four-memory-controls-closeout-v1.json",
+    "sha256": "1645729b8ea92538412dabfa2f862a0e4434cbe650fe0ec546f7d6cf7711401d"
+  },
+  "newSessionTransferPending": null,
+  "latestReviewResume": "work/t14-t18-resume-20261104-current/child-readback-v1.json",
+  "sessionCloseout": {
+    "requestedByUser": true,
+    "sourceWorkStopped": true,
+    "scope": "Scoped documentation/data commit and push only",
+    "githubBranch": "codex/t14-t18-closeout-20261104",
+    "githubPush": "CONFIRMED_REMOTE_COMMIT_MATCH",
+    "rawAndOtherDirtyPreserved": true,
+    "pythonFormalReportAbsent": true,
+    "noNewScheduleResetPaidModelBypass": true,
+    "githubCommit": "d5133455c3dffba7d2d3f2465f75b82532ebcd3d",
+    "pushReceipt": "work/t14-t18-closeout-20261104/push-receipt.json",
+    "pushReceiptSHA256": "95b1c2f0c6e749a9c57b99a6a4c3e91efc23ca62bec400642b5e4d4860a676e8",
+    "remainingUntrackedEntries": 595,
+    "safeToDeleteOriginalWorktree": false,
+    "historicalCloseoutSupersededByUserResume": true
+  },
+  "currentResume": {
+    "userAuthorizedContinue": true,
+    "userAuthorizedOnePythonReviewer": true,
+    "userAuthorizedQuotaRecoveryAutomaticContinuation": true,
+    "sourceWorkResumedAfterCloseout": true,
+    "sourceIntegrityReceipt": "work/t14-t18-resume-20261104-current/root-source-integrity-readback-v1.json",
+    "migrationReceipt": "work/t14-t18-resume-20261104-current/migration-readback-v1.json",
+    "formalCases": "THREE_NOT_RUN",
+    "allThreeSourceApproved": true,
+    "stageCAdmitted": false,
+    "migrationReceiptSHA256": "16d09eeb7406c33d9b3f3bf16661cb79c474ff72e6520636fe318965c72277e4",
+    "heartbeatTargetVerified": "01a1a452-b27e-7bf2-9dfe-eb13f08d30db",
+    "pythonLatestProgress": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-v2-progress-v35.json",
+    "pythonLatestProgressSHA256": "d5bde7f4f4dfa89704704ddcd488fdc921c727f5ef01a9c47255c32a8c482a42",
+    "pythonPersonalCoverageAtV16": {
+      "physicalTextComplete": 40,
+      "physicalTextPending": 70,
+      "innerComplete": 29,
+      "innerPending": 24
+    },
+    "quotaErrorRecoveryReceipt": "work/t14-t18-resume-20261104-current/reviewer-quota-recovery-v1.json",
+    "pythonPersonalCoverageLatest": {
+      "physicalTextComplete": 110,
+      "physicalTextPending": 0,
+      "innerComplete": 53,
+      "innerPending": 0
+    },
+    "pythonReviewStatus": "VALID_PYTHON_APPROVE_SOURCE_ONLY",
+    "latestHeartbeatResumeReceipt": "work/t14-t18-resume-20261104-current/heartbeat-review-resume-20261104T1754Z.json",
+    "latestHeartbeatResumeReceiptSHA256": "cd80588455ce8ba5eb2ff5bfde4e62d39aac84f081717f70c45c88d3a7026918",
+    "stageCReadOnlyPreparationAdmitted": true,
+    "pythonFormalJSON": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/source-review-Python-v2.json",
+    "pythonFormalJSONSHA256": "7be007359971e6c77ff35d8ad2cb068c766d273758f3dc587deb16c416c8d62d",
+    "pythonRootValidation": "work/t14-t18-resume-20261104-current/source-review-Python-v2-root-validation-v1.json",
+    "pythonRootValidationSHA256": "7418a88649b0a627f81a1fccb1f60c06765d46b2cc30fc8e01f777f0d6e54cc0",
+    "stageCPreparationAdmission": "work/t14-t18-resume-20261104-current/stage-c-preparation-admission-v1.json",
+    "rootReadinessStatus": "EXPIRED_GUARD_STOP",
+    "guardCurrentSHA256": "afb3339b0471f8ecd857957c18752dafc291854e6cd4d54f9c5b6baf4d6257f5",
+    "fixedGuardRewritten": false,
+    "capsuleCreated": false,
+    "rootReportCreated": false,
+    "controllerInvoked": false,
+    "producerInvoked": false,
+    "caseBodyEntries": 0,
+    "newGuardRefreshDecision": "PENDING_EXPLICIT_USER_DECISION",
+    "preparedOrchestrationV2Verdict": "BLOCK_1HIGH_2MEDIUM",
+    "preparedOrchestrationV4Verdict": "BLOCK_1HIGH_1MEDIUM_RETAINED",
+    "preparedOrchestrationV5Verdict": "APPROVE_LIMITED_ORCHESTRATION_SOURCE_ONLY",
+    "proposal": "/Users/liyungchih/Documents/Codex/2026-11-04/referenced-chatgpt-conversation-this-is-an/outputs/0AD-一次準備重取樣方案.md",
+    "guardRefreshApproved": false
+  },
+  "latestSessionTransfer": {
+    "directory": "work/t14-t18-session-transfer-20261105",
+    "status": "MATCH_EXISTING_HEARTBEAT_MIGRATED",
+    "targetThreadId": "01a1ab0d-bce1-7f31-b9a9-33be9aaf3f6a",
+    "childReadbackSHA256": "5913e5d3eda2ae15103ac9152f2a332e5ad0a3a85d8e71975857d384537d53b0",
+    "migrationReadbackSHA256": "508d1763515f5beff45628da2be17066276280a347cd1e2659a4dc0d65de4d86",
+    "pendingGuardDecisionPreserved": true
+  }
+}

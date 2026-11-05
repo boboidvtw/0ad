@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "purpose": "Root explicitly admits source-approved read-only StageC preparation only; no campaign execution",
+  "createdUTC": "2026-11-04T18:00:41.278803+00:00",
+  "sourceValidation": "work/t14-t18-resume-20261104-current/source-review-Python-v2-root-validation-v1.json",
+  "allThreeSourceApproved": true,
+  "preparationAdmitted": true,
+  "campaignAdmitted": false,
+  "capsuleCorePath": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/execution-preparation-v1/capsule-core-v1.json",
+  "capsuleCoreBytes": 33404,
+  "capsuleCoreSHA256": "b75b8b33dad3223a396844e2b53db0a6b0faeffe4ca5ab19b11f8e9233011dd7",
+  "sourceBindingsSHA256": "f75394caf7e909cc6ccdd5817204d5e646b35f6e2a301c9375b95d441d84f184",
+  "historyContext": {
+    "historyContainerSHA256": "2caa72716cb1ac21e4c9163ce6ca2461851fc71ba0381f785a04515d5c18ce74",
+    "expandedLogicalBindingsSHA256": "bcbb171acdda034552fc462203570edb9aad9d6726718d4446177b3b3f9ad104",
+    "physicalBindingCount": 113,
+    "logicalContextCount": 165,
+    "decodedHistoryBytes": 1042748,
+    "encodedHistoryBytes": 1408405
+  },
+  "fixedRunRootAbsent": true,
+  "formalCases": "THREE_NOT_RUN",
+  "resourceOwnerFinalSampling": "PENDING_DISTINCT_ACTUAL_ROOT_AND_INDEPENDENT_SAMPLERS",
+  "rootReadback": "NOT_CREATED",
+  "independentGuard": "NOT_CREATED",
+  "capsule": "NOT_CREATED",
+  "fixture": "NOT_CREATED",
+  "attempt": "NOT_CREATED",
+  "engine": "NOT_RUN",
+  "binaryRuntime": "TWO_LITERAL_SYMLINKS_AND_PHYSICAL_TARGET_IDENTITIES_OBSERVED_NO_PRODUCER",
+  "samplerPlan": "Only readonly independent stdlib file/source/runtime/resource/owner/rootabsence observations; no target import or test. Final root/guard sampled only once both actors READY, TTL0..60s/expiry>=120/TTL120..600 before a distinct execution call."
+}

@@ -1,0 +1,220 @@
+{
+  "schema": 1,
+  "purpose": "Complete LIMITED CODE/Python static reassessment of prepared root sampler v5 and distinct execution wrapper v2",
+  "createdUTC": "2026-11-04T18:21:31.046508+00:00",
+  "reviewer": "/root/source_v2_python same sole authorized independent actor",
+  "verdict": "APPROVE_LIMITED_ORCHESTRATION_SOURCE_ONLY",
+  "inputs": [
+    {
+      "path": "work/t14-t18-resume-20261104-current/prepared-root-readiness-sampler-v5.py",
+      "bytes": 16789,
+      "sha256": "12824cbc5ee18a22c5a626eaab00e3fb763e90e9c95f462f25bb6b37ed41e65a"
+    },
+    {
+      "path": "work/t14-t18-resume-20261104-current/prepared-distinct-execution-wrapper-v2.py",
+      "bytes": 9972,
+      "sha256": "4fae31d809b3609d66888d65923a55dddd21dbfac84a5242323fcb407973d031"
+    }
+  ],
+  "personalCompleteSourceCoverage": [
+    {
+      "path": "prepared-root-readiness-sampler-v5.py",
+      "totalLines": 213,
+      "exactPriorPersonallyReadLines": 204,
+      "newChangedLinesPersonallyReadFromFullDiff": 9,
+      "priorCompleteSource": "prepared-root-readiness-sampler-v4.py",
+      "priorSHA256": "216d4e2745b350c83079d76e2db83f5b6672306ff6d2f17d0f643b648cd5ceb9",
+      "wholeSourceLosslessReconstructionMATCH": true,
+      "mapping": [
+        {
+          "kind": "replace",
+          "oldStart1": 1,
+          "oldEndInclusive": 1,
+          "newStart1": 1,
+          "newEndInclusive": 1
+        },
+        {
+          "kind": "equal",
+          "oldStart1": 2,
+          "oldEndInclusive": 4,
+          "newStart1": 2,
+          "newEndInclusive": 4
+        },
+        {
+          "kind": "replace",
+          "oldStart1": 5,
+          "oldEndInclusive": 5,
+          "newStart1": 5,
+          "newEndInclusive": 5
+        },
+        {
+          "kind": "equal",
+          "oldStart1": 6,
+          "oldEndInclusive": 132,
+          "newStart1": 6,
+          "newEndInclusive": 132
+        },
+        {
+          "kind": "replace",
+          "oldStart1": 133,
+          "oldEndInclusive": 133,
+          "newStart1": 133,
+          "newEndInclusive": 133
+        },
+        {
+          "kind": "equal",
+          "oldStart1": 134,
+          "oldEndInclusive": 134,
+          "newStart1": 134,
+          "newEndInclusive": 134
+        },
+        {
+          "kind": "replace",
+          "oldStart1": 135,
+          "oldEndInclusive": 135,
+          "newStart1": 135,
+          "newEndInclusive": 140
+        },
+        {
+          "kind": "equal",
+          "oldStart1": 136,
+          "oldEndInclusive": 208,
+          "newStart1": 141,
+          "newEndInclusive": 213
+        }
+      ]
+    },
+    {
+      "path": "prepared-distinct-execution-wrapper-v2.py",
+      "totalLines": 160,
+      "exactPriorPersonallyReadLines": 147,
+      "newChangedLinesPersonallyReadFromFullDiff": 13,
+      "priorCompleteSource": "prepared-distinct-execution-wrapper-v1.py",
+      "priorSHA256": "e76a671a40a4b658e0f6a297d1d28b9fd6274658d3f2e6711b4c0fc7e9869ff8",
+      "wholeSourceLosslessReconstructionMATCH": true,
+      "mapping": [
+        {
+          "kind": "replace",
+          "oldStart1": 1,
+          "oldEndInclusive": 1,
+          "newStart1": 1,
+          "newEndInclusive": 1
+        },
+        {
+          "kind": "equal",
+          "oldStart1": 2,
+          "oldEndInclusive": 138,
+          "newStart1": 2,
+          "newEndInclusive": 138
+        },
+        {
+          "kind": "insert",
+          "oldStart1": 139,
+          "oldEndInclusive": 138,
+          "newStart1": 139,
+          "newEndInclusive": 150
+        },
+        {
+          "kind": "equal",
+          "oldStart1": 139,
+          "oldEndInclusive": 148,
+          "newStart1": 151,
+          "newEndInclusive": 160
+        }
+      ]
+    }
+  ],
+  "findings": [],
+  "summary": {
+    "CRITICAL": 0,
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 0
+  },
+  "fullAssessment": [
+    {
+      "axis": "Full current scope and provenance",
+      "assessment": "Personally reviewed prior complete208-line sampler and148-line wrapper, now independently verified unchanged priorSHA and every current byte/length/SHA. All213 current sampler lines and160 current wrapper lines accounted through exact contiguous identical line mapping plus all9/13 newchanged lines completely read in full diff. Wholebytes reconstruction equality asserted. This is full functional reassessment using personal unchanged content, not delta-only inherited approval or a claim of full raw newtext display."
+    },
+    {
+      "axis": "Owner executable and option handling",
+      "assessment": "Sampler133 lowers executable basename, so Darwin capital Python enters same sequential interpreter parser. Unknownexe branch136-140 examines complete argv tokens only; exactcontroller/basename/fixedRUN descendants rejectUNKNOWN rather than silently ownerAbsent. It does not substring-search shell/heredoc code. -W/-X operands, attached variants, --, simpleflags and relevant unsupported combined/indirect/stdin cases retain conservative rejection. Known exacttarget parsedscript remains owner and stops readiness. Prior ORCH-V4-OWNER-01 resolved in exactv5 source; ps rendering still scoped point-in-time, not fullhost native argv attestation."
+    },
+    {
+      "axis": "Last moment freshness",
+      "assessment": "Wrapper139-150 rereads both exact report SHA+strict JSON after all log/stream/fsync/dup2/close operations. It then checksphysicalRUNabsence, captures final_now, validates both finite int/float clocks excludingbool, age0-60, expiry>=final_now+120, TTL120-600 and immediately execv without further authored I/O/probes/diagnostics. Exactreport hash equality means earlier completeidentity/source/runtime/policy/history/resource checks remain applicable. Failure retains outerSTOP and never reachesexec. Prior ORCH-V4-LAST-FRESHNESS-02 resolved at source level; scheduler/kernel and cooperative race limits remain, controller must independently recheck admission."
+    },
+    {
+      "axis": "Once-only FD ownership and primary retention",
+      "assessment": "parent adopts acquiredchild before previousclose; failure preservesoriginal and oneguarded distinctcurrentclose. cleanup attempts each listed ownershiponce and appends UNKNOWN to firstexception. read/absence/runtime parentclosures guarded; put leaf and owned/borrowed parent ownership separate. No retry of uncertainFD, no cleanup deletion. Exceptional interpreter-allocation/diagnosticstr failure still not a comprehensive fault runtime proof."
+    },
+    {
+      "axis": "Physical fullsource reads and exclusive evidence writes",
+      "assessment": "Every read absolute no.. heldcomponent O_DIRECTORY/NOFOLLOW, leafregularnlink1 bounded, ninefield named/held before/after equal. put validates owned non-group/world-writable parent and current anchor dev/ino, O_EXCL/NOFOLLOW0600, completes writes/fsync/fileidentity/readback. BorrowedprepFD held through report/capsule creations then onceclosed. Outerlog separateDATA path; exactRUN/case namespace untouched by sampler/wrapper preparation. No arbitrary hostile sameUID race containment or universal directory-entry crashdurability claim."
+    },
+    {
+      "axis": "Complete fixed context/history/source/runtime gates",
+      "assessment": "Sampler fixedcoreSHA/d69dmanifest/full113effective+snapshot/53canonicaldecode+original/context94/threeformalSOURCE complete checks retained. Exactpins constrain corpus and falseprovenance snapshots; oldcontroller356 only historicalsupersededctx. Physical and expandedcanonicaldigests/counts/fullencodedbytes/6historyfacts remain; no272/512 recursive authority. Fixedlauncher hops/targetSHA/exact9fieldcore rows checked. Wrapper exactcapsule/core/controller/manifestSHA and exactroot+guard descriptors/fulljoins remain, followedby originalcontroller independent completeadmit."
+    },
+    {
+      "axis": "Guard semantic parity",
+      "assessment": "CapsuleId/runRoot/status/absence booleans, canonical sourceBindings/runtimeRows/resourcePolicy, sourceFreeze/reviewedfreeze, physicaldigest and exacttyped6historyfacts, finite clocktypes and intresources are checked; originalage60/expiry120/TTL120-600 unchanged. No trustedboolean or replacedguardSHA alone substitutes content checks. Actual independent root/guard physical sampling remains external future requirement, not established by this source."
+    },
+    {
+      "axis": "Resource and elapsed bounds",
+      "assessment": "statvfs available blocks, hw.memsize, vm_stat free+inactive+speculative and softRLIMIT actual probes retained; reclaimable is explicit estimate, purgeable excluded, not reservation/RSS. Probes lack hardtimeout/outputcap; hang cannot create valid eventualfreshsampler acceptance but can block preparation. Finaldeadline is cooperative, not hardOSpreemption. Unchanged operational limitation, not new relaxedgate or measuredPASS."
+    },
+    {
+      "axis": "One distinct same-process invocation",
+      "assessment": "Wrapper enforces fixedPython3.9.6/executable/-B/nonoptimized, exact64hexexpectedcapsule SHA and immutablecore. Single os.execv receives fixedlauncher -B originalcontroller --execute-reviewed fixedcapsule andSHA. NoPopen/Node/producerimport/case content change. dup2 raw streams1/2 then closes originalheldfds/parentonce, finalreadiness checks before exec. This is execution-capable source and may only run after separately explicit authorized refresh/admission/distinct-call decisions."
+    },
+    {
+      "axis": "Retention and diagnostic limits",
+      "assessment": "All outerlog/start/raw files exclusive, preservepartial onerror, no delete/reuse/retry. Controller alone createscampaignroot/cases and enforcesactualbodyconsumption. Sampler partialrootreport/capsule does not independently proveadmission; laterfailure STOP retainsfiles. JSONdiagnostic capped1MiB, traceback additional uncapped output; no claim entirestderr cap or finaldurableledger when channels fail. Rawretention/logfsync do not equal measuredwholehost durability."
+    },
+    {
+      "axis": "Security and mode",
+      "assessment": "No shellinterpolation, fixedtarget/core/hashargv only; duplicate/nonfinite JSON reject, canonicalASCII hash. Sampler explicit no-O and bytecodedisabled; wrapper additionally fixedlauncher/version. Operational launch must preserve exactreviewedsourceSHA/knownrepo cwd/-B/noopt, not arbitrarysampler interpreter/code changes. No newconfirmed functional/security blocker in exactv5/v2 scopedsource."
+    },
+    {
+      "axis": "Timing improvement and approval boundary",
+      "assessment": "Prewriting complete sampler/wrapper allows future shortcalls afterguard rather than draftinglongtools within60s. Source supports removing that avoidable draftingdelay, not proven actualtimingPASS. Toolqueue/probe/I/O/scheduler delay may still expiregates and mustSTOP. This limitedsourceapproval does not authorize refresh/replacement orcampaign. Priorpreflightfailure no-retry/reuse interpretation and pendingexplicit one-time refresh/fixedpath handling decision remain. OriginalBLOCK/STOP/expiredguard/raw/seals andcontrollerSOURCEapproval unchanged."
+    }
+  ],
+  "priorFindingDisposition": [
+    {
+      "id": "ORCH-V4-OWNER-01",
+      "status": "SOURCE_REPAIRED_EXACT_V5",
+      "evidence": "basename.lower plus relevant exactargv unknownexe->UNKNOWN; sequentialoptions unchanged"
+    },
+    {
+      "id": "ORCH-V4-LAST-FRESHNESS-02",
+      "status": "SOURCE_REPAIRED_EXACT_WRAPPER_V2",
+      "evidence": "allfalliblepreexecIO then bothreportSHA+JSON reread/rootabsence/final_now/fullclockchecks/immediateexec"
+    }
+  ],
+  "verification": {
+    "authoredExecution": "NONE",
+    "samplerWrapper": "NOT_RUN",
+    "importsCompileASTTestsHelpers": "NOT_RUN_BY_REVIEWER",
+    "guard": "NOT_RESAMPLED_NOT_REWRITTEN",
+    "rootReportCapsule": "NOT_CREATED_BY_REVIEWER",
+    "controllerProducerFixtureCaseEngine": "NOT_RUN",
+    "sourceEdits": "NONE",
+    "writes": "Only own NEW root-sampler-review-v5.json/.md viaOEXCL"
+  },
+  "limitations": [
+    "Static scopedsource approval only; no actual60second sequencing/owner/resource/FD/probe/exec/runtime success measured.",
+    "ps renderedargv and resources scopedobservations/estimates only, not fullhost attestation/reservation.",
+    "Probes have no hardtimeout/outputcap; traceback beyond JSONcap; extremechannel/interpreter failures nondurability and cooperativeOSdelay remain.",
+    "PreserveexactsourceSHA, knownrepo cwd/-B/nonoptimized invocation and actualindependent gates; anydrift requires reassessment.",
+    "Read-only guardrefresh/replacement remains unapproved pendingexplicit newuserdecision; unconsumedcases do not grantautomaticpreflightretry.",
+    "Originalcase IDs/root/order/retry0/sourcefreeze/controller approvals unchanged; no native/official/fullcoverage acceptance."
+  ],
+  "limitedOrchestrationSourceApproved": true,
+  "guardRefreshApproved": false,
+  "campaignApproved": false,
+  "runtimeApproved": false,
+  "controllerSourceApprovalChanged": false,
+  "native": false
+}

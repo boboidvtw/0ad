@@ -1,0 +1,14 @@
+{
+  "createdUTC": "2026-11-05T09:34:28.573652+00:00",
+  "status": "MATCH_EXISTING_HEARTBEAT_MIGRATED",
+  "automationId": "0ad-t14",
+  "targetThreadId": "01a1ab0d-bce1-7f31-b9a9-33be9aaf3f6a",
+  "sameCadence": "FREQ=HOURLY;INTERVAL=5",
+  "active": true,
+  "beforeSHA256": "a3ff66380dda65ad3ec9db6181a42eeda4c3b28a67e1e6b3e7f9bf37f675e0d5",
+  "afterSHA256": "da47f51b502ea882f208f9fe1d217c801b5c5a76c11b900b8ef2e276be8306eb",
+  "childReadbackSHA256": "5913e5d3eda2ae15103ac9152f2a332e5ad0a3a85d8e71975857d384537d53b0",
+  "guardRefreshApproved": false,
+  "formalCases": "THREE_NOT_RUN",
+  "newScheduleCreated": false
+}

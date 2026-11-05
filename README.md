@@ -24,8 +24,9 @@
 - 已通過：seed 42、7 引擎測試、Pioneer 實際畫面／選取／移動與正常退出，最終日誌 0 錯誤／0 警告。
 - **M2 DONE**：兩時代最小流程完成；T06 兩 seed 戰鬥、勝負邊界與標準資源脚本整局通過，見 [T06 證據](docs/empire-rts/evidence/t06-validation.md)。T07 飛行原型、T08 潛艇調查、T09 架構決策、T10 靜態匯入與 T11 原創低面數美術切片已完成各自限定驗收；完整潛艇、精確飛行彈道及全套美術尚未完成，維持 R28 與 Mod、暫不改 C++。
 - **T12、T13 限定 DONE**：[T12 AI](docs/empire-rts/evidence/t12-validation.md)限兩 seed 對固定防守；[T13 存讀檔與多人](docs/empire-rts/evidence/t13-validation.md)限已驗收存檔與本機 loopback，不代表通用 AI、任意存檔相容或跨機多人完成。
-- **T14 PARTIAL**：已有多項限定效能與完整局證據，但原不限 FPS、重複性及混合交戰 FAIL 仍保留。隔離 storage parser／runner 接線已完成；真實 live integration、量化 observer overhead 與安全玩法修復尚未驗收。以 [進度主表](docs/empire-rts/progress.md)及 [2026-11-04 收工交接](docs/empire-rts/SESSION-CLOSEOUT-2026-11-04-T14-T18.md)為準，不以 synthetic proof 取代 runtime 驗收。
-- **T15–T18 TODO**：擴充與發行規格、專用攻擊檢查、潛艇垂直切片、精確彈道與停機位仍是後續項目；既有原型不等於這些項目已完成。
+- **T14 PARTIAL**：已有多項限定效能與完整局證據，但原不限 FPS、重複性及混合交戰 FAIL 仍保留。隔離 storage parser／runner 接線已完成；真實 live integration、量化 observer overhead 與安全玩法修復尚未驗收。以 [進度主表](docs/empire-rts/progress.md)及 [2026-11-05 整體評估與計劃](docs/empire-rts/PROJECT-ASSESSMENT-2026-11-05.md)為準，不以 synthetic proof 取代 runtime 驗收。
+- **T15–T18 PARTIAL**：已有本機封包、元件／來源切片及精確彈道非圖像有界驗收；GUI、停機位、完整潛艇、存讀檔／network等必要驗收未完成，原正式FAIL與STOP保留。
+- **任務盤點：19項（T00–T18）中14項限定DONE、5項未完成**。五項剩餘工作拆成18個計劃工作包，見[整體評估](docs/empire-rts/PROJECT-ASSESSMENT-2026-11-05.md)；不代表遊戲完成百分比。SOURCE-v2三方正式來源核可已完成，原readiness過期STOP／guard待決策，三正式案例仍NOT_RUN。
 - **T05 DONE**：[研究功能與驗收證據](docs/empire-rts/evidence/t05-validation.md)。兩 seed 各 77 項研究與 183 項經濟回歸通過；已確認解鎖單位、鍛造研究及三類繁中不足提示。
 - [T04 經濟原型驗收](docs/empire-rts/evidence/t04-validation.md)：兩 seed 各 177 項引擎檢查、GUI 操作及 M1 回歸通過。
 - [開始執行與重現測試](docs/empire-rts/baseline.md) · [驗收證據](docs/empire-rts/evidence/m1-validation.md) · [暫用素材](docs/empire-rts/assets.md)
@@ -40,7 +41,13 @@
 
 本 README 是 Fork 的新入口；原始 README、上游署名及授權文件仍保留。
 
-## 2026-11-04 交接快照 / Handoff snapshot
+## 2026-11-05 最新評估與資料
+
+[成果評估與剩餘計劃](docs/empire-rts/PROJECT-ASSESSMENT-2026-11-05.md) · [接續工作](docs/empire-rts/reference_t14_t18_next_steps.md) · [本次文字證據包](docs/empire-rts/handoff-data/2026-11-05/README.md)。此節取代下方歷史快照的當時NEXT；三SOURCE核可不等於native／GUI／official驗收。
+
+## 2026-11-04 歷史交接快照 / Historical handoff snapshot
+
+以下保留當時狀態；Python報告目前已完成，以Nov5評估為準。
 
 [收工說明](docs/empire-rts/SESSION-CLOSEOUT-2026-11-04-T14-T18.md) · [下一步](docs/empire-rts/reference_t14_t18_next_steps.md) · [交接資料與逐檔SHA](docs/empire-rts/handoff-data/2026-11-04/README.md)。CODE、JS/API僅SOURCE核可；Python正式報告待完成，三正式案例NOT RUN，整體T14–T18仍PARTIAL。原始work/raw/seals與其他未提交工作保留本機；本快照不是完整可執行發行包。
 

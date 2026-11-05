@@ -1087,3 +1087,21 @@ Exactd69d source不變。JSAPI完整APPROVE_SOURCE_ONLY JSON439600/bb06b9e1、MD
 ## 2026-11-04 使用者收工／GitHub交接
 
 使用者明確要求收工並推送交接文件與資料；停止來源實作與Python審查續跑。CODE正式APPROVE_SOURCE_ONLY0fce6590/191340與JSAPI bb06b9e1/439600均已根端讀回；Python固定formal JSON/MD不存在，僅progress-v12 9e8f93b0/158687，overallSOURCE未核可/StageC=false，三cases NOT RUN。收工文件 docs/empire-rts/SESSION-CLOSEOUT-2026-11-04-T14-T18.md、後續 docs/empire-rts/reference_t14_t18_next_steps.md、公開資料包docs/empire-rts/handoff-data/2026-11-04（110文字snapshots，3runtimebinary僅本機識別，16transfer snapshots與reports/receipts/最新checkpoint）。完整原raw/seals/其他dirty留本機；推送限定交接分支codex/t14-t18-closeout-20261104，不覆寫遠端master。所有T14PARTIAL/Insufficientdata/FAIL STOP UNKNOWN與24helper耗用禁令保持，未執行tests/producer/fixture/guard/attempt/engine。此次preimages在work/t14-t18-closeout-20261104/preimages-manifest.json。
+
+
+## 2026-11-04 本 chat 授權接續／RTS 身分更正
+
+使用者更正為 boboidvtw/0ad RTS，FreshMart/Docker描述不適用。current root113+113/53+53 fullbytes與兩digest MATCH；CODE/JSAPI exactreports保留。唯一明確授權 Python reviewer usage-limit後待live恢復，現已原task續作並保存progress-v13，正式報告仍須實際驗證。canonical與SESSION-RESUME-2026-11-04-CURRENT-T14-T18.md為新入口；原收工歷史不抹除。使用者要求額度恢復自動續作，僅更新既有0ad-t14 ACTIVE每5h至本chat，實際migration receipt另存。三正式cases仍NOTRUN、24helpers不得重跑/加，無source改動/tests/engine/commit/push。tracking preimages work/t14-t18-resume-20261104-current/tracking-before-resume-v1/manifest.json。
+
+
+## 2026-11-05 三SOURCE-only核可／root readiness過期STOP
+
+Python正式134453/7be00735、MD1960ad9a與本人110text/53inner完成，root full113+53/兩digest核對7418a886；CODE/JSAPI保留，三SOURCE-only齊備。隨後獨立guard採樣MATCH，但根端長inline工具準備耗時~78.977s，超過age60門檻而exit1；完整STOP/roottool/expiredguard保留，無controller/producer或case invocation、capsule/rootreport/EXEC未建立。新prepared sampler-v2獨立BLOCK(1HIGH/2MEDIUM)，v4與distinct execution wrapper僅source修正/ASTdata解析，完整複核待實際結果。原controller凍結與三SOURCE核可不變。先完成這兩prepared source複核，再提出一次guard refresh明確新決策；未授權不得重寫固定guard/重採/重跑case。新交接SESSION-HANDOFF-2026-11-05-SOURCE-APPROVED-READINESS-STOP.md及canonical為入口，0ad-t14保持ACTIVE每5h/同target、待決策時quiet。所有原FAIL/STOP/raw/seals/T14PARTIAL/24helpers耗用保留。
+
+### 2026-11-05 接續 checkpoint
+
+三方 SOURCE-v2 核可已根端驗證；新編排 sampler-v5/wrapper-v2 限定靜態審查亦核可。原 readiness age 約79秒超過60秒 STOP保留；三案例NOT_RUN，無controller/producer執行。完整一次guard refresh方案已備，待明確新決策，不自動覆寫固定guard。詳 SESSION-HANDOFF-2026-11-05-SOURCE-APPROVED-READINESS-STOP.md。
+
+## 2026-11-05：使用者授權成果評估、剩餘計劃與GitHub文件／資料更新
+
+盤點T00–T18共19主任務，14限定DONE、T14–T18共5項未完；不是完成百分比。修正README的Python缺報告與T18早期準備摘要，歷史收工／FAIL／STOP不改。18工作包明列依賴、驗收與新契約／獨立review gates；原一次guard重取樣決策仍待回覆。先保存6份文件／canonical preimages、Git status與完整tracked diff於work/t14-t18-assessment-20261105，再新增評估／機器資料及文字證據包。使用者本次明確GitHub更新授權僅文件與資料，目標獨立codex/t14-t18-assessment-20261105；不更動master、不提交其他未選scope實作／raw。發布後僅續R06新跨計劃對照；技術缺口不以文件完成升PASS。

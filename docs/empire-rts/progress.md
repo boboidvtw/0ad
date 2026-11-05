@@ -1,6 +1,8 @@
 <!-- Purpose: 任務狀態與證據的唯一主表；Created: 2026-09-06. -->
 # 進度追蹤
 
+最新總覽（2026-11-05）：**19項主任務／14項限定DONE／5項未完成**；詳[成果評估與18工作包](PROJECT-ASSESSMENT-2026-11-05.md)。SOURCE-v2三方核可已完成；readiness STOP、guard刷新待決策，三案例NOT_RUN。歷史段落保留原當時結論。
+
 ### 2026-10-10 — T14 storage failure preservation 合成候選有界 DONE
 
 新增3隔離工具，原301逐hash不改/現304；22unit tests一般/-O與兩獨立review一般/-O PASS、code/Python APPROVE、312source-lock及獨立guard17 PASS後另一call執行6 fake-resourceCLI，各一次/retry0，actual exits0/1/1/1/1/1與所有diagnostic assertions/readback PASS。connect/body/close/report-write與body+close主次failure各自保存，partial/原sentinel拒覆寫證據完整保留；初次Python BLOCK/2resolved findings與所有準備logs/fixtures/reviews留存。這是隔離candidate proof，未接入live runner，live integration NOT RUN；新增engine0/HTTP0/SQLiteconnect0/完整offline0。原18/1114seal與tracking替代/48raw/唯一delta與offline attempts保留，最終docsreview/closeout/seal見work/t14-storage-failure-proof。首次runner/性能/尾活動FAIL、190slowframes/T14PARTIAL保持；原SQLite唯一cause Insufficient data，overhead/安全玩法修復/正式勝負NOT RUN。不把synthetic FULL/IO或既有檔案拒覆寫當原runtime原因。無commit/push/delete/外部訊息/新排程，完成本有界項目後不額外量測。[契約](t14-storage-failure-proof.md) · [validation](evidence/t14-storage-failure-proof-validation.md) · [交接](SESSION-HANDOFF-2026-10-10-T14-STORAGE-FAILURE-PROOF.md)。本批收尾盤點helper誤把總控attempt-record算入fixture共7而FAIL，preservation.json原檔保留；精確核六scenario檔名+1總控後preservation-final.json PASS，原source/raw/6proof未失敗且未重跑。
@@ -128,10 +130,10 @@ T07防空仍採即時傷害；精確空中彈道、停機位／跑道／建築�
 | T12 | M5 AI 兩時代經營與進攻 | DONE | T06 | Amy | [限定契約](t12-ai-acceptance.md)、[38項／兩重播／GUI／工具與回歸](evidence/t12-validation.md)、[收尾交接](SESSION-HANDOFF-2026-09-27-T12.md)；僅R28兩seed對固定防守，非通用AI；本機提交，未push |
 | T13 | M5 存讀檔與多人同步 | DONE | T06 | Amy | [限定契約](t13-save-network.md)、[兩seed六次讀檔／雙端native hash／GUI與工具](evidence/t13-validation.md)、[交接](SESSION-HANDOFF-2026-09-28-T13.md)；不保證讀檔逐步重現，僅loopback；本機提交、未push |
 | T14 | M5 效能基線與回歸 | PARTIAL | T06 | Amy | [契約](t14-performance.md)、[七場實測](evidence/t14-validation.md)、[交接](SESSION-HANDOFF-2026-10-04-T14.md)；資料完整性／來源回歸PASS；[FPS對照與原生profiler](evidence/t14-diagnosis-validation.md)支持600單位cap60緩解，不限FPS未達0.95；[AI片段四場PASS](evidence/t14-workload-validation.md)；[64架飛行兩片段PASS](evidence/t14-flight-validation.md)，另[即時防空兩片段PASS](evidence/t14-aa-validation.md)；[對地攻擊兩片段PASS](evidence/t14-strike-validation.md)，[seed42完整局PASS](evidence/t14-match-validation.md)及[地圖seed7完整局PASS](evidence/t14-match-seed7-validation.md)，潛艇／大混戰仍NOT RUN；[同條件3場重複性PASS](evidence/t14-match-repeatability-validation.md)，45窗口與14共同分鐘離散度通過，舊FAIL仍保留；[雙AI單seed完整局PASS](evidence/t14-dual-validation.md)，25分鐘窗口達標/短尾觀測；[600單位30分鐘性能/RSS PASS](evidence/t14-soak-validation.md)，30窗達標/首場camera FAIL保留/熱NOT RUN，[初始600士兵地面交戰PASS](evidence/t14-battle-validation.md)，兩窗達標/23慢幀保留/正式勝負NOT RUN，[混合600交戰FAIL](evidence/t14-mixed-validation.md)、[CPU診斷取證PASS](evidence/t14-mixed-profile-validation.md)、該批歷史220來源/原FAIL保留；整體PARTIAL |
-| T15 | M6 擴充內容與發行規格 | PARTIAL | T09、T11–T14 | Amy | 本機可重現封包DONE；候選42正式FAIL保持；新離線reader完整28checks及路徑宣告讀回DONE，freshness NOT PROVEN；GUI／存讀檔／多人尚待驗收 |
-| T16 | 特殊機制後續：專用攻擊檢查驗證 | PARTIAL | T09 | Amy | 原海戰42 FAIL完成36/221；新死亡42完整121原生checks PASS但固定位置gate FAIL；兩場耗用retry0與封存保留，seed7停止 |
-| T17 | 特殊機制後續：潛艇最小垂直切片 | PARTIAL | T16 | Amy | New controller native42 formal runner FAIL; 145 native checks pass only observed, strict suffix parser failure retained; seed7 STOPPED. GUI/save/network pending |
-| T18 | 特殊機制後續：精確彈道與停機位 | IN_PROGRESS | T09 | Amy | 精確彈道兩seed各55requests／275turn／31HIT22MISS2REJECTED正式PASS、非圖像有界DONE；K地形修正11source／21mocks與CODE／JS核可；200s獨立native fixture準備中，GUI6source／19tests待review |
+| T15 | M6 擴充內容與發行規格 | PARTIAL | T09、T11–T14 | Amy | 本機可重現封包及離線reader限定DONE；candidate42 formal FAIL與freshness未證保留；安裝／GUI／save/network及交付closure待驗，見[新計劃](PROJECT-ASSESSMENT-2026-11-05.md)。 |
+| T16 | 特殊機制後續：專用攻擊檢查驗證 | PARTIAL | T09 | Amy | 原海戰42 36/221 FAIL；death42 121原生checks為觀察且固定位置gate FAIL；耗用retry0／seed7 STOP保留，缺項先定不同必要契約，不重跑原案例。 |
+| T17 | 特殊機制後續：潛艇最小垂直切片 | PARTIAL | T16 | Amy | controller42／ownerGUI42正式FAIL與seed7 STOP保留；capture joint SOURCE及tiny bridge有界DONE；fault SOURCE-v2三方正式核可、sampler v5限定來源核可；readiness過期STOP／一次guard決策待回，三負向cases NOT_RUN；save/network/fullhost仍OPEN。 |
+| T18 | 特殊機制後續：精確彈道與停機位 | PARTIAL | T09 | Amy | PARTIAL：精確彈道兩seed非圖像55requests／275turn／31HIT22MISS2REJECTED有界DONE；GUI42／K42／protocol42 formal FAIL與耗用attempt保留；parking／visual／save/network整合仍OPEN。 |
 
 ## 里程碑狀態
 
@@ -143,7 +145,7 @@ T07防空仍採即時傷害；精確空中彈道、停機位／跑道／建築�
 | M3 特殊機制可行性 | DONE | 僅T07限定原型、T08調查、T09決策；完整特殊機制T16–T18仍TODO，未改C++ |
 | M4 美術垂直切片 | DONE | T10靜態匯入、T11原創低面數樣板及最小動作／圖示通過；完整人物／建築／正式HUD與效能未完成 |
 | M5 穩定性與對戰 | IN_PROGRESS | T12限定AI DONE；T13限定DONE，T14 PARTIAL |
-| M6 擴充與發行準備 | TODO | 沒有發布日期承諾 |
+| M6 擴充與發行準備 | IN_PROGRESS | T15本機包限定完成；整體交付及T16–T18必要整合未完成，沒有發布日期承諾 |
 
 ## 尚待定稿
 
@@ -783,3 +785,21 @@ Exactd69d source不變。JSAPI完整APPROVE_SOURCE_ONLY JSON439600/bb06b9e1、MD
 ## 2026-11-04 使用者收工／GitHub交接
 
 使用者明確要求收工並推送交接文件與資料；停止來源實作與Python審查續跑。CODE正式APPROVE_SOURCE_ONLY0fce6590/191340與JSAPI bb06b9e1/439600均已根端讀回；Python固定formal JSON/MD不存在，僅progress-v12 9e8f93b0/158687，overallSOURCE未核可/StageC=false，三cases NOT RUN。收工文件 docs/empire-rts/SESSION-CLOSEOUT-2026-11-04-T14-T18.md、後續 docs/empire-rts/reference_t14_t18_next_steps.md、公開資料包docs/empire-rts/handoff-data/2026-11-04（110文字snapshots，3runtimebinary僅本機識別，16transfer snapshots與reports/receipts/最新checkpoint）。完整原raw/seals/其他dirty留本機；推送限定交接分支codex/t14-t18-closeout-20261104，不覆寫遠端master。所有T14PARTIAL/Insufficientdata/FAIL STOP UNKNOWN與24helper耗用禁令保持，未執行tests/producer/fixture/guard/attempt/engine。此次preimages在work/t14-t18-closeout-20261104/preimages-manifest.json。
+
+
+## 2026-11-04 本 chat 授權接續／RTS 身分更正
+
+使用者更正為 boboidvtw/0ad RTS，FreshMart/Docker描述不適用。current root113+113/53+53 fullbytes與兩digest MATCH；CODE/JSAPI exactreports保留。唯一明確授權 Python reviewer usage-limit後待live恢復，現已原task續作並保存progress-v13，正式報告仍須實際驗證。canonical與SESSION-RESUME-2026-11-04-CURRENT-T14-T18.md為新入口；原收工歷史不抹除。使用者要求額度恢復自動續作，僅更新既有0ad-t14 ACTIVE每5h至本chat，實際migration receipt另存。三正式cases仍NOTRUN、24helpers不得重跑/加，無source改動/tests/engine/commit/push。tracking preimages work/t14-t18-resume-20261104-current/tracking-before-resume-v1/manifest.json。
+
+
+## 2026-11-05 三SOURCE-only核可／root readiness過期STOP
+
+Python正式134453/7be00735、MD1960ad9a與本人110text/53inner完成，root full113+53/兩digest核對7418a886；CODE/JSAPI保留，三SOURCE-only齊備。隨後獨立guard採樣MATCH，但根端長inline工具準備耗時~78.977s，超過age60門檻而exit1；完整STOP/roottool/expiredguard保留，無controller/producer或case invocation、capsule/rootreport/EXEC未建立。新prepared sampler-v2獨立BLOCK(1HIGH/2MEDIUM)，v4與distinct execution wrapper僅source修正/ASTdata解析，完整複核待實際結果。原controller凍結與三SOURCE核可不變。先完成這兩prepared source複核，再提出一次guard refresh明確新決策；未授權不得重寫固定guard/重採/重跑case。新交接SESSION-HANDOFF-2026-11-05-SOURCE-APPROVED-READINESS-STOP.md及canonical為入口，0ad-t14保持ACTIVE每5h/同target、待決策時quiet。所有原FAIL/STOP/raw/seals/T14PARTIAL/24helpers耗用保留。
+
+### 2026-11-05 接續 checkpoint
+
+三方 SOURCE-v2 核可已根端驗證；新編排 sampler-v5/wrapper-v2 限定靜態審查亦核可。原 readiness age 約79秒超過60秒 STOP保留；三案例NOT_RUN，無controller/producer執行。完整一次guard refresh方案已備，待明確新決策，不自動覆寫固定guard。詳 SESSION-HANDOFF-2026-11-05-SOURCE-APPROVED-READINESS-STOP.md。
+
+## 2026-11-05 整體評估及計劃發布準備
+
+使用者明確要求評估已做成果、計算未完成任務、寫計劃並更新GitHub後接續。主表19項中14項限定DONE、5項未完成；T18由較早IN_PROGRESS摘要正規化為PARTIAL，原非圖像PASS／所有正式FAIL與STOP不變。新計劃18工作包，原guard例外不由一般接續推定。新增Nov5完整文字證據包；保留Nov4歸檔與原機work/raw/seals、其他dirty。無case／engine／producer或C++修改。

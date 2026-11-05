@@ -1,0 +1,37 @@
+{
+  "createdUTC": "2026-11-05T09:35:24.154718+00:00",
+  "status": "TRANSFER_MATCH_PARENT_MIGRATED_PENDING_SAME_GUARD_DECISION",
+  "childReadback": {
+    "path": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t14-t18-session-transfer-20261105/child-readback.json",
+    "bytes": 9851,
+    "sha256": "5913e5d3eda2ae15103ac9152f2a332e5ad0a3a85d8e71975857d384537d53b0"
+  },
+  "initialReadback": "13 originals + 13 snapshots all MATCH at receipt time",
+  "finalReadback": "25 of 26 unchanged; canonical solely gained parent latestSessionTransfer record, bound by migration receipt",
+  "migrationReceiptSHA256": "508d1763515f5beff45628da2be17066276280a347cd1e2659a4dc0d65de4d86",
+  "canonicalCurrentSHA256": "07044bf45ebb5fdbe42afbebc9e9ade4cba03fd5c385f21af7f987f91de05ff8",
+  "controllerSHA256": "fd1948d65cdd57cb851f651128639499f958a59f003707889bfb32e9f6f24e9b",
+  "absent": [
+    "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/execution-preparation-v1/root-readback-v1.json",
+    "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/execution-preparation-v1/capsule-v1.json",
+    "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1"
+  ],
+  "head": "d5133455c3dffba7d2d3f2465f75b82532ebcd3d",
+  "indexEmpty": true,
+  "trackedDirtyPreserved": [
+    "docs/empire-rts/journal.md",
+    "docs/empire-rts/plan.md",
+    "docs/empire-rts/progress.md"
+  ],
+  "sourceReviews": "EXISTING_THREE_APPROVE_SOURCE_ONLY_ROOT_VALIDATED_NOT_RERUN",
+  "orchestration": "EXISTING_LIMITED_ORCHESTRATION_SOURCE_ONLY_NOT_EXECUTED",
+  "independentNecessaryWork": "No currently actionable required work identified independent of pending guard decision in current dependency chain",
+  "formalCases": "THREE_NOT_RUN",
+  "guardRefreshApproved": false,
+  "canonicalModifiedByThisChild": false,
+  "automationModifiedByThisChild": false,
+  "externalMessageSent": false,
+  "next": "Quietly wait for same explicit one-time refresh decision; session continuation is not refresh approval.",
+  "limits": "Transfer/dependency readback only; not new SOURCE review or runtime/native/GUI/official acceptance. Original STOP/FAIL/UNKNOWN and consumed cases/helpers unchanged.",
+  "verificationNotes": "First final-check assertion detected parent canonical migration; second detected dirty tracking documents. Neither modified files. Parent migration verified; dirty tracking preserved without claiming a clean tree."
+}

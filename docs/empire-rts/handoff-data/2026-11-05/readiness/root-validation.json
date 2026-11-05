@@ -1,0 +1,48 @@
+{
+  "createdUTC": "2026-11-04T18:25:20.306605+00:00",
+  "status": "MATCH_LIMITED_ORCHESTRATION_SOURCE_ONLY",
+  "artifacts": [
+    {
+      "path": "work/t14-t18-resume-20261104-current/prepared-root-readiness-sampler-v5.py",
+      "bytes": 16789,
+      "sha256": "12824cbc5ee18a22c5a626eaab00e3fb763e90e9c95f462f25bb6b37ed41e65a",
+      "match": true
+    },
+    {
+      "path": "work/t14-t18-resume-20261104-current/prepared-distinct-execution-wrapper-v2.py",
+      "bytes": 9972,
+      "sha256": "4fae31d809b3609d66888d65923a55dddd21dbfac84a5242323fcb407973d031",
+      "match": true
+    },
+    {
+      "path": "work/t14-t18-resume-20261104-current/root-sampler-review-v5.json",
+      "bytes": 12932,
+      "sha256": "1670aec9b86d5cbb9ce1780de84e240d8051b073012590694a75886a2c8eb2fb",
+      "match": true
+    },
+    {
+      "path": "work/t14-t18-resume-20261104-current/root-sampler-review-v5.md",
+      "bytes": 1911,
+      "sha256": "e20759c65d0a2cd4ff30322389c174e48b38770de2a469aa92335c89e199e929",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/execution-preparation-v1/freshguard-v1.json",
+      "bytes": 244755,
+      "sha256": "afb3339b0471f8ecd857957c18752dafc291854e6cd4d54f9c5b6baf4d6257f5",
+      "match": true
+    }
+  ],
+  "fullIndependentAssessmentRead": 12,
+  "findings": [],
+  "absent": [
+    "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/execution-preparation-v1/root-readback-v1.json",
+    "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-implementation-v1/execution-preparation-v1/capsule-v1.json",
+    "work/t17-save-five-mod-inventory-repair-preparation/required-fault-controls-preparation-v1/execution-v1"
+  ],
+  "sourceExecution": "NONE",
+  "guardRefreshApproved": false,
+  "stageCAdmitted": false,
+  "formalCases": "THREE_NOT_RUN",
+  "scope": "Root validates exact reviewer attribution/full functional reasoning and file identities; no runtime claim."
+}
