@@ -1,0 +1,28 @@
+<!-- Purpose: minimal future expected-controls host API contract draft; no implementation. Created: 2026-10-26. -->
+# Host API 草案：分離固定plan、獨立nativecontrol、既有comparator
+
+這是待後續source設計／實作的文字契約，沒有新runtime API、GUI hook、wire extension、controlproducer或權威物件。不是給caller填trusted=true/sourceVouched=true的JSONschema。任意JSON、opaqueidentity、frozenclass、hash/label本身都不能證source/native provenance。遇缺任何必要producer應BLOCK/OPEN，不回預填expectedmetadata。
+
+## 最小三步
+
+1. **PrepareMetadataControlPlan(lockedProfile, immutableCasePlan, verifiedOriginControlReference?)**：host source-ownedfactory在launch/Save之前固定case/PID/source/profile lineage、phase/checkpoint/ordinal、principal1、description literal、五mod預期順序及完整source metadata、engine identity期望、GUI baseinit literal含top-levelscript、seed/binding、十emptygroups、origin nominalcamera指令及load verifiedorigincontrols關係。Timestamp和實際nativefloat不能猜填。Input不接actualmetadata/archive decodedmetadata。Load以之前獨立驗證且已預承諾的origin expectedcontrol作base，原archivebytes/SHA只是資料lineage，不讓未驗archive自帶expected。
+
+2. **BindIndependentNativeControls(plan, sourceOwnedCaptureReferences)**：future capture必真實來自同一guardedprocess/realm/phase和source-ownedcaller，含Engine.GetEngineInfo全值、GetPlayerID邊界、完整nativeGetInitAttributes或實際可得且preSave的replaystart行、nativecamera getter全值。Host應保原raw/records/caller source/hash/sequence/immutable持久化，而不是接受一份自稱native的dict。Validate完整baseinit/settings/binding與全部已知native transformation，所有未知key/extra futurefield/模糊來源BLOCK。timestamp是當次nativeReplayStart產物，engine/mods另與independentengineinfo與precommittedprofile一致。Control需在該Save之前由source因果鏈建立，host commit/readback與接收順序需要實作證明；bufferedstdout/replay不可假定及時。
+
+3. **MaterializeExpectedMetadata(plan, boundControls)**：只有上一步實際source/native/caller/phase義務全關閉才source-owned組合immutable UTF8六欄bytes；不含頂層time。返回值仍是comparator輸入，不能宣告nativePASS或runtimeproof。既有validate_metadata另外拿actual原metadata bytes與獨立epoch interval作完整值比較。API不接受actualmetadata參數、不複製actual來填timestamp/camera/mods、不在mismatch後normalize／重建expected／retry。所有preimage/原raw/mismatch保留。
+
+## 每欄組合規則
+
+- engine_version／mods：取已綁nativeGetEngineInfocontrol並與預承諾的實際binary/runtime/moddata來源一致；完整mods array四keys逐筆保留，不能走AreModsPlayCompatible忽略GUI-onlymods。這份plan未填實際版本字串，當前仍OPEN。
+- playerID：期望literal1，實際nativeboundarycontrol校核；nativeQueryCaller不是替代品。
+- initAttributes：完整value不是GUIliteral投影。Origin base含mapType/random、map、script epoch_t17_save_six.js、七settings字段及exactPlayerData；native Replay覆加timestamp/engine_version/mods，其他startupwriters尚未證明無變更不得猜。Load基於已獨立核過origin base，再按本次Replay重寫的三欄組合；精確保存nestedtimestamp，絕不套用頂層time豁免。Nativegetter若帶未知futurekey，不能把那個key學成expected。
+- gui：source固定10emptygroups，camera六欄映射獨立native gettercontrols；load需已驗originalcontrol ancestry，不能用roundtripmetadata取同值自證。Nativefloat JSON實值不從nominal0.6推算、不epsilon／取整／投影。完整JSON值與未知key都交既有comparator精確核。
+- description：僅immutableCasePlan derive `T17 save origin <checkpoint>` 或 `T17 save load <checkpoint>`，不自archive讀回做expected。
+
+## 整合上的保留界線
+
+本輪沒有新增GetEngineInfo/GetInitAttributes raw producer，既有GUI只有CAMERA_READBACK與boundarychecks，沒有完整controls transport。純source可用getter不等vouched producer。未選定實際caller/readback/host持久化方法，就保持OPEN，不能用stub完成上列Bind。
+
+Origin若host能在發既有prearmpermit之前固定完整既有startupcontrols，可在原規則內消化；實際可得性尚未證。Freshload仍launch前arm、session首nativePause、firstL0與唯一Save、不warmquery替代，不加turn/flush/額外Save/新case/retry/延期來取controls。尤其replaystart未flush不能用等待補救。任何新增capture位置／transport都需獨立source方案與fresh reviews，不能冒已部署或擅改已核wire/context6keys。完整control未來是否能在現有load5秒取得目前Insufficient data，這不是放寬cap的理由。
+
+Hostmonotonic transaction D與native epoch時間是不同authority。Nestedstartup timestamp精確source值不能用hostwallclock區間猜；metadata最外time的existingintervalgate仍獨立，與D不可混用。此草案不擴完整runner、watchdog、archive、admission、fullgraph/replay/visual實作。

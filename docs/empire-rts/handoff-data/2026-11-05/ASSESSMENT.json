@@ -17,7 +17,9 @@
     "remainingWorkPackagesAtPlanCreation": 18,
     "notAnEstimateOfCaseCount": true,
     "notCompletionPercentage": true,
-    "longTermContentUnspecified": true
+    "longTermContentUnspecified": true,
+    "completedPlanningWorkPackages": 1,
+    "remainingWorkPackagesCurrent": 17
   },
   "topLevelTasks": [
     {
@@ -209,15 +211,17 @@
       "id": "R06",
       "parent": "T17",
       "title": "metadata 六欄與十一項缺口的跨計劃對照",
-      "status": "READY_READ_ONLY",
+      "status": "DONE_READ_ONLY_TRACEABILITY_ONLY",
       "dependsOn": [],
-      "acceptance": "對既有 source-plan、唯一 JS DESIGN review、目前 host/control 契約作新執行計劃 crosswalk；指出 GetValue 修正、精確來源與待審／待實作／待量測；只完成對照，不重做舊 review 或升核可。"
+      "acceptance": "對既有 source-plan、唯一 JS DESIGN review、目前 host/control 契約作新執行計劃 crosswalk；指出 GetValue 修正、精確來源與待審／待實作／待量測；只完成對照，不重做舊 review 或升核可。",
+      "evidence": "METADATA-CROSSWALK.json",
+      "technicalObligationsClosed": 0
     },
     {
       "id": "R07",
       "parent": "T17",
       "title": "metadata 獨立 expected controls 設計／實作核可",
-      "status": "BLOCKED_DEPENDENCY",
+      "status": "READY_FOR_PROSPECTIVE_DESIGN_AND_REQUIRED_INDEPENDENT_REVIEW",
       "dependsOn": [
         "R06"
       ],
@@ -359,5 +363,12 @@
     "Original FAIL/STOP/UNKNOWN/raw/seals and consumed attempts retained",
     "No automatic guard refresh or retry",
     "No C++ or game-code changes; no engine, paid/reset, new schedule or external messages"
-  ]
+  ],
+  "executionAfterInitialPublication": {
+    "commit": "fc289bd2bb09ab8d752f738d67ec14d2cce2b21a",
+    "R06": "DONE_READ_ONLY_TRACEABILITY_ONLY",
+    "technicalObligationsClosed": 0,
+    "R07": "NEXT_REQUIRED_DESIGN_REVIEW_NO_IMPLEMENTATION_ADMISSION",
+    "R01": "PENDING_SAME_EXPLICIT_USER_DECISION"
+  }
 }

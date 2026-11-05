@@ -1,0 +1,255 @@
+{
+  "schema": 1,
+  "scope": "BOUNDED_READONLY_SIX_METADATA_FIELDS_EXPECTED_CONTROLS_SOURCE_PLAN",
+  "createdClientDate": "2026-10-26",
+  "status": "DONE_SOURCE_PLAN_ONLY_IMPLEMENTATION_PROVENANCE_RUNTIME_OPEN",
+  "artifacts": [
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/CONTRACT.md",
+      "bytes": 1015,
+      "sha256": "0c1555dc923ac8e631944390273dc497f478fdb828929696217ee5d9705ebbd8"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FIELD-MATRIX.md",
+      "bytes": 9024,
+      "sha256": "46c39e138d5000490411bd00761770af199827504d7e3d404a05bce524d2ed59"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FUTURE-SCHEDULE-ABSENCE.md",
+      "bytes": 2980,
+      "sha256": "ebc80f289f848639200f3f46cab489a07d5b18fb5765ef6bcaa561ca57a48fa1"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/HOST-API-DRAFT.md",
+      "bytes": 5202,
+      "sha256": "b7cb74ad399938c3445325b9d98f1323559078b9555e156f870e5356aa3091d5"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/OPEN-obligations.json",
+      "bytes": 2839,
+      "sha256": "b699853bc8fc25b095556fc4b0e86b9343d0bc80c55efd3f01538e8694f28426"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/checkpoint.json",
+      "bytes": 1376,
+      "sha256": "e72cf3b68a5c00e49ad4536cb6f734ec2fb4b569d7411c54c81ede249a382091"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js",
+      "bytes": 69380,
+      "sha256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/tools/epoch-rts/t17_save_metadata.py",
+      "bytes": 5818,
+      "sha256": "96d9e51e6280b1998410d7a591eaf65c11dfd11bc68c3816255201bac30bfd43"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/simulation2/scripting/JSInterface_Simulation.cpp",
+      "bytes": 8060,
+      "sha256": "b9dfa717c7317c9f5731c6ed9fd4c4c4b4be12b430f9903bde5a19127932ce40"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/code-review-v1.md",
+      "bytes": 6732,
+      "sha256": "49b761dbbe8ad1d14c0ddc817c95fcb8be6d5a90f1d65f23d31bff0e4923fde6"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/completion-source-only.json",
+      "bytes": 1756,
+      "sha256": "4167dc102b3075f50e6d45c96e50c15b3ca4e524c3ccbca7fdfe7e61ddf64e28"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/manifest.json",
+      "bytes": 4534,
+      "sha256": "85f93c30ba9484b2cce4129e0ec930b7f85449ef7d5e363da94ae8814a4b4d30"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/python-review-v1.md",
+      "bytes": 5646,
+      "sha256": "8d8a6b9b8f1c43788ac91a652aa11afa8231a58c758452d68a2a1be7795b7dff"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md",
+      "bytes": 41941,
+      "sha256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/wire-schema.json",
+      "bytes": 28262,
+      "sha256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/code-review-v1.json",
+      "bytes": 36970,
+      "sha256": "bb2bdb8bbd8e295ef8a396f601a894acb4bd84df68850581e7832bead78cea5b"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/completion-source-only.json",
+      "bytes": 1537,
+      "sha256": "a296be8ebc5e142b8cdc578d9990417c27866639bee70dba6d75a413e72c0431"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/js-api-review-v1.json",
+      "bytes": 60034,
+      "sha256": "071cc8318e875f70e1d3500cfa032f5146e4fd04090d0bbc76cee0773141f832"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/manifest.json",
+      "bytes": 27089,
+      "sha256": "06a9cd6b7f8651d03daf5d57103d0aacc3025af0c92ab9c97b053d09ba0f1c9a"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context-bindings.json",
+      "bytes": 4844,
+      "sha256": "591322503804584305793e9f69ae5e063954bbffcecebdcb9c495653989c34b1"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/official-bindings.json",
+      "bytes": 886,
+      "sha256": "5ca0aacaadc5b442df61f06b531a1235b8685ccc785124f5d2d52b145065cace"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primary-bindings.json",
+      "bytes": 8005,
+      "sha256": "d426f3d161bb5c65deef3fffbb81352342aeb5bc099af577c9b3b10656ce46b4"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/gui/session/selection.js",
+      "bytes": 14510,
+      "sha256": "55d296bddff20db103bf81f6a61a5c7f435ebfab0cb89fdd5f2206a6c7c7d049"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/gui/session/session.js",
+      "bytes": 25386,
+      "sha256": "04649d5ef27fe135adcdec6e85df07296d4bb085cce2df5b9ef3feaf61a9750e"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/simulation/components/GuiInterface.js",
+      "bytes": 73967,
+      "sha256": "9eaf481d5c965cc4df0cbe1fd51d2db81af162cea26c50fc67484633dd867b40"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/Camera.cpp",
+      "bytes": 14760,
+      "sha256": "612b86c16a0bd62189a07ea5d767e7b0411a61e5f3edb58f24244bf6a5cbd0ae"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/Camera.h",
+      "bytes": 4549,
+      "sha256": "d3da9c24b67686586a84b0f76e2199d6d04ff03fae6f5e239fcb9e170084f4f9"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/CameraController.cpp",
+      "bytes": 22474,
+      "sha256": "025e6176b09730bc22f70bb9f8b14f2563e2b0852e84a00ed71ea3a97ff23d6d"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/CameraController.h",
+      "bytes": 3573,
+      "sha256": "4d75277bde51e38c9c7220a49bc9026256531c1c06399dac8fd0fbca77a7bedf"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/GameView.cpp",
+      "bytes": 10458,
+      "sha256": "707449873cae736f9413dc0aa743bd9575c32a9821e2f1a2c22bf0143a06f51c"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/GameView.h",
+      "bytes": 3102,
+      "sha256": "6290324c12a10a09dc65a09ae174f45fe3c6a8e172a7a035c512dd420525dc23"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/scripting/JSInterface_GameView.cpp",
+      "bytes": 6184,
+      "sha256": "6503fba660c6d38f2392b9e96557dd4d4d8a52871bd27f4399ec5cccd68fe64b"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/maths/Fixed.h",
+      "bytes": 12193,
+      "sha256": "a79e050e2d47e44203d51fcd192527363b8169684343373259153431ae3543ea"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Game.cpp",
+      "bytes": 13301,
+      "sha256": "766c220c7b8568d26ad04bcde19eeddfdc9fdd6539e56dba9fbf8d472a6e4a8a"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Globals.cpp",
+      "bytes": 2497,
+      "sha256": "b774643b17b636ac84dfca6d91ef83474771128bb25991a24ae4543f37a087f7"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Mod.cpp",
+      "bytes": 10443,
+      "sha256": "c8252d851566ac8a4065420f2c9a1f3cd1f5b592fc4efbecace93bfb5c00fcab"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Mod.h",
+      "bytes": 3765,
+      "sha256": "3c1ad042624f0bf355afde8f9dcd6b893f9e7e58c6226da1ace2b1d1c18ae7c9"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Pyrogenesis.h",
+      "bytes": 1175,
+      "sha256": "13e88bd20b945638cd4634f3760ed7fcd5464ef3efbbe38259f5b7b68d479dcc"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Replay.cpp",
+      "bytes": 10344,
+      "sha256": "18d01f424d0ea6627dd92b004e70d108d0286124719cdcd188b5e79f9f3546ad"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/SavedGame.cpp",
+      "bytes": 10000,
+      "sha256": "6fa08d0a0f57b386484bc328ec95b41e73120b9358aeb48afc7d216f662d5267"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_Game.cpp",
+      "bytes": 4759,
+      "sha256": "ac71e18e4361f079de5295535014c4b9263a61b11c0f389fa27061c86139b7bc"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_Mod.cpp",
+      "bytes": 5679,
+      "sha256": "5a916c62580cd26d41fba808a0c81529ccd2dee5b9697f6434a5c4af4fa72eb0"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_SavedGame.cpp",
+      "bytes": 4664,
+      "sha256": "59716fec2776d0e6e9fa2f3ddecbab0abcda7379b81c2de779282487d360a42a"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/scriptinterface/ScriptConversions.cpp",
+      "bytes": 9827,
+      "sha256": "7342f0a5ce4f99ca242a4d699572cec836d394aa0077db7f6720c4a413da07c6"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/scriptinterface/ScriptConversions.h",
+      "bytes": 4622,
+      "sha256": "e97e4a6769b8ab74e75c973ccd8fae510e2189a3067a3b8577f36d7929745ffe"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/simulation2/Simulation2.cpp",
+      "bytes": 31497,
+      "sha256": "78260ac802da5569bbf19abca7de69297788aa458f1551553b7fdf8593e096ed"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/simulation2/helpers/Position.h",
+      "bytes": 1316,
+      "sha256": "342921a030bc603efb4c2158c4c7c7fe2f3b7bed3d470964cd795f48be1094c0"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/simulation2/system/Entity.h",
+      "bytes": 3303,
+      "sha256": "4bc98f0256b8173e9ddccb6e971e43bd4c20e4a96ae77d646c78b87e67c5e062"
+    }
+  ],
+  "native": "NOT_RUN",
+  "modelsTests": "NOT_RUN",
+  "guards": "NOT_RUN",
+  "implementation": false,
+  "approvedSourceAndComparatorModified": false,
+  "newRuntimeProofJSON": false,
+  "next": "Independent nativecontrolproducer/caller/precommit source design may use this plan; no actualmetadata selfbootstrap, no runtimeapproval or hostrunner expansion."
+}

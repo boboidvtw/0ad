@@ -48,7 +48,7 @@
 | R03 | T17 | F01／F02-R／F02-W 三個固定負向案例 | NOT_RUN | R02；原 v1/execution-v1、原 IDs/order/caps/retry0/seedfalse；另一次 root call；保存完整 outer exit/raw/FD-generation/partial/first-error；unexpected 即停後續。僅 injected-errno／手寫協定 models。 |
 | R04 | T17 | 剩餘 coverage 與 limits 的具體驗收契約 | NEEDS_BOUNDED_CONTRACT | R03；以已完成 coverage reconciliation 為基礎，只處理未證的 sparse ZIP64、size/retention/RSS 等必要缺項；先確認哪些需實體量測，不能憑空新增 RSS 上限／stress 或重跑已 DONE tests。 |
 | R05 | T17 | 完整 producer／五 mod inventory 與 caller 來源閉合 | SOURCE_GAPS_OPEN | R03；補足 actual producer/noProxy/full40、writer/export/intrinsic/child/native caller/clone/restore/consumer 與官方 archive 等原必要 gates；source-only 與 binary runtime compatibility 分開；未閉合不可 official capture。 |
-| R06 | T17 | metadata 六欄與十一項缺口的跨計劃對照 | READY_READ_ONLY | 無前置執行；對既有 source-plan、唯一 JS DESIGN review、目前 host/control 契約作新執行計劃 crosswalk；指出 GetValue 修正、精確來源與待審／待實作／待量測；只完成對照，不重做舊 review 或升核可。 |
+| R06 | T17 | metadata 六欄與十一項缺口的跨計劃對照 | DONE_READ_ONLY_TRACEABILITY_ONLY | 無前置執行；對既有 source-plan、唯一 JS DESIGN review、目前 host/control 契約作新執行計劃 crosswalk；指出 GetValue 修正、精確來源與待審／待實作／待量測；只完成對照，不重做舊 review 或升核可。 |
 | R07 | T17 | metadata 獨立 expected controls 設計／實作核可 | BLOCKED_DEPENDENCY | R06；先完成必要完整設計審查，再限定實作、全來源審查；六欄、native getter、full initattrs mutation closure、precommit timing 與 future absence 必須獨立；禁止 actual metadata bootstrap。 |
 | R08 | T17 | save host 完整來源與真實 consumer 閉合 | BLOCKED_DEPENDENCY | R05、R07；原 host full freeze BLOCK 不因 SOURCE_SCOPE 核可清除；producer/caller/realm/transport、loader、來源/runtime/original-copy/profile inventory locks 全部有明確證據。 |
 | R09 | T17 | 新 save/load 契約及原生分支驗收 | NOT_RUN | R08；按原六 family／origin+fresh-load 分支與600/6×90/30/80/cleanup90等實際完整契約，42完整PASS才conditional7、retry0；L0零Advance、不得 warmturn/flush/多存檔或由actual值建立expected。 |
@@ -79,3 +79,7 @@
 - [按計劃接續入口](reference_t14_t18_next_steps.md)
 
 本次GitHub授權僅文件與資料更新，不是公開遊戲發行、遠端master合併、付費、刪除或C++修改授權。完整舊work/raw/seals、runtime與未提交實作仍須保留原機；GitHub資料包不構成可執行備份。
+
+## 計劃發布後的實際接續
+
+首批文件／資料已由GitHub commit fc289bd2bb09ab8d752f738d67ec14d2cce2b21a讀回。接續R06已完成[metadata六欄／十一義務對照](METADATA-CONTROLS-CROSSWALK-2026-11-05.md)，原48artifact byte bindings全部MATCH；只關閉計劃對照工作包，技術義務關閉0。18工作包中1項文件工作完成、17項未完成；五主功能任務仍PARTIAL。R07下一步為prospective設計與必要完整獨立審查，未取得implementation准入；R01同一guard例外待決策不變。

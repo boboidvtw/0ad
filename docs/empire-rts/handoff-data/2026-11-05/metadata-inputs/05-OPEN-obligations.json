@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "updatedClientDate": "2026-10-26",
+  "scope": "Six non-time metadatafield source plan only",
+  "status": "BOUNDED_PLAN_COMPLETE_IMPLEMENTATION_AND_RUNTIME_OPEN",
+  "obligations": [
+    {
+      "id": "ENGINE_INFO_RUNTIME",
+      "status": "OPEN",
+      "gap": "No actual source-owned engineinfo getter capture or fixed compiledengine_version/runtimefive-moddata/order yet; static source declaration is not actualruntime."
+    },
+    {
+      "id": "PRINCIPAL_CAPTURE",
+      "status": "OPEN",
+      "gap": "Literal1 known; actual host nativeGetPlayerID boundary correlation/provenance unimplemented; nativeviewcaller cannot substitute."
+    },
+    {
+      "id": "FULL_INITATTRS_PRODUCER",
+      "status": "OPEN",
+      "gap": "GUIliteral plus Replay3 is known, but complete startup/settings mutation closure and guarded fullnativegetter capture not implemented/vouched."
+    },
+    {
+      "id": "LOAD_NESTED_TIMESTAMP",
+      "status": "OPEN",
+      "gap": "Native StartSavedGame uses ReplayLogger again; fresh nestedtimestamp must independently equal actualproducer output, not copied/dropped fromoriginalmetadata."
+    },
+    {
+      "id": "REPLAY_START_AVAILABILITY",
+      "status": "OPEN",
+      "gap": "StartGame startline not flushed; immediatefreshloadpreSave availability unproved. No warmturn/flush/retry/extraSave allowed."
+    },
+    {
+      "id": "CAMERA_CONTROL",
+      "status": "OPEN",
+      "gap": "Nativefixed setter/float getters sourceknown; exact origin/loadrawcontrol lineage/timing/nonmutation/JSONnumber mapping unmeasured."
+    },
+    {
+      "id": "GROUPS_INPUT_CLOSURE",
+      "status": "OPEN",
+      "gap": "10emptygroups sourcefixed; actualnohuman/groupmutation/unsafeprototype/toJSON effects not guarded inthisplan."
+    },
+    {
+      "id": "STATIC_DESCRIPTION_HOST_FACTORY",
+      "status": "OPEN",
+      "gap": "Exactliteral derivation known; independenthostfactory/caller/oncephasecontrol not implemented."
+    },
+    {
+      "id": "PRECOMMIT_TRANSPORT",
+      "status": "OPEN",
+      "gap": "No newcapture/wire/contextscheme deployed. Existing6keycontext andfinalACK unchanged; realpreSavecapture/hostimmutablecommit timing/caller/sourceguard remainOPEN."
+    },
+    {
+      "id": "FUTURE_SCHEDULE_ABSENCE",
+      "status": "OPEN",
+      "gap": "Fullvaluecompare cannot prove absence when expected contains samefuturefields. Completeproducer/mutator closure + independentcontrols +actualvalues required."
+    },
+    {
+      "id": "FULL_NATIVE_PIPELINE",
+      "status": "OPEN",
+      "gap": "Noengine/copy/guard/archive/newSave/metadata/nativecollection/comparatorrerun/modeltest; allactualruntime/budget/load5s/wholepipeline obligations NOT_RUN."
+    }
+  ],
+  "metadataComparatorChanged": false,
+  "runtimeProofJSONProduced": false,
+  "native": "NOT_RUN",
+  "testsModels": "NOT_RUN"
+}

@@ -211,10 +211,70 @@
       "source": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t14-t18-session-transfer-20261105/snapshots/12-0AD-一次準備重取樣方案.md",
       "bytes": 2999,
       "sha256": "ee3e4b03b18d87e2515b33e5fa23ae6f4989ad5e4c17b932e619e7cc30ffbeb3"
+    },
+    {
+      "path": "metadata-inputs/00-manifest.json",
+      "source": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-metadata-expected-controls-preparation/source-plan-v1/manifest.json",
+      "bytes": 12729,
+      "sha256": "17eb3663cc51be04f880be2d2045bbbc1d5fe8fcf461cc2a82191ed9aa85e599"
+    },
+    {
+      "path": "metadata-inputs/01-CONTRACT.md",
+      "source": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-metadata-expected-controls-preparation/source-plan-v1/CONTRACT.md",
+      "bytes": 1015,
+      "sha256": "0c1555dc923ac8e631944390273dc497f478fdb828929696217ee5d9705ebbd8"
+    },
+    {
+      "path": "metadata-inputs/02-FIELD-MATRIX.md",
+      "source": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FIELD-MATRIX.md",
+      "bytes": 9024,
+      "sha256": "46c39e138d5000490411bd00761770af199827504d7e3d404a05bce524d2ed59"
+    },
+    {
+      "path": "metadata-inputs/03-HOST-API-DRAFT.md",
+      "source": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-metadata-expected-controls-preparation/source-plan-v1/HOST-API-DRAFT.md",
+      "bytes": 5202,
+      "sha256": "b7cb74ad399938c3445325b9d98f1323559078b9555e156f870e5356aa3091d5"
+    },
+    {
+      "path": "metadata-inputs/04-FUTURE-SCHEDULE-ABSENCE.md",
+      "source": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FUTURE-SCHEDULE-ABSENCE.md",
+      "bytes": 2980,
+      "sha256": "ebc80f289f848639200f3f46cab489a07d5b18fb5765ef6bcaa561ca57a48fa1"
+    },
+    {
+      "path": "metadata-inputs/05-OPEN-obligations.json",
+      "source": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-metadata-expected-controls-preparation/source-plan-v1/OPEN-obligations.json",
+      "bytes": 2839,
+      "sha256": "b699853bc8fc25b095556fc4b0e86b9343d0bc80c55efd3f01538e8694f28426"
+    },
+    {
+      "path": "metadata-inputs/06-review.json",
+      "source": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-metadata-expected-controls-preparation/source-plan-v1-review-js-v1/review.json",
+      "bytes": 48313,
+      "sha256": "ccc2ef605452c2748626eb7305a72de5dc976636f0042d1b96395101b62315fe"
+    },
+    {
+      "path": "metadata-inputs/07-CameraController.cpp",
+      "source": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/CameraController.cpp",
+      "bytes": 22474,
+      "sha256": "025e6176b09730bc22f70bb9f8b14f2563e2b0852e84a00ed71ea3a97ff23d6d"
+    },
+    {
+      "path": "metadata-inputs/08-Replay.cpp",
+      "source": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Replay.cpp",
+      "bytes": 10344,
+      "sha256": "18d01f424d0ea6627dd92b004e70d108d0286124719cdcd188b5e79f9f3546ad"
+    },
+    {
+      "path": "metadata-inputs/09-SavedGame.cpp",
+      "source": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad/work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/SavedGame.cpp",
+      "bytes": 10000,
+      "sha256": "6fa08d0a0f57b386484bc328ec95b41e73120b9358aeb48afc7d216f662d5267"
     }
   ],
-  "filesCount": 35,
-  "totalBytes": 1373539,
+  "filesCount": 45,
+  "totalBytes": 1498459,
   "priorArchive": "../2026-11-04",
   "fullPacketRestorableFromGitHubAlone": false,
   "binaryExported": false,
