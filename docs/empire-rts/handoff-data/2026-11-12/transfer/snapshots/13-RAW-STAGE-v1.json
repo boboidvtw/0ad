@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "purpose": "Declarative proposed new external raw stage, not runtime authority",
+  "outerExactKeys": [
+    "kind",
+    "data"
+  ],
+  "kind": "METADATA_CONTROLS_CAPTURED_V1",
+  "dataExactKeys": [
+    "schema",
+    "identity",
+    "principalBoundary",
+    "controls"
+  ],
+  "schemaLiteral": "T17_METADATA_CONTROLS_V1",
+  "identityExactKeys": [
+    "campaignNonce",
+    "caseNonce",
+    "sourceManifestSHA",
+    "seed",
+    "caseID",
+    "checkpoint",
+    "phase",
+    "transactionOrdinal",
+    "archiveName",
+    "S"
+  ],
+  "principalBoundary": [
+    1,
+    1
+  ],
+  "controlsExactKeys": [
+    "engine_version",
+    "playerID",
+    "mods",
+    "initAttributes",
+    "gui",
+    "description"
+  ],
+  "playerID": 1,
+  "modsRowExactKeys": [
+    "mod",
+    "name",
+    "version",
+    "ignoreInCompatibilityChecks"
+  ],
+  "guiExactKeys": [
+    "groups",
+    "camera"
+  ],
+  "groups": "exact10 source-fixed empty {groups:{},ents:{}} records",
+  "cameraExactKeys": [
+    "PosX",
+    "PosY",
+    "PosZ",
+    "RotX",
+    "RotY",
+    "Zoom"
+  ],
+  "cameraGetter": "GetValue",
+  "cameraNumbers": "finite exact JSON binary64 semantics; no epsilon/rounding",
+  "initAttributes": "full source-resolved prelaunch transformation authority REQUIRED; currently OPEN, no unknown keys learned from actual/getter",
+  "caps": {
+    "maxRawFrameBytes": 16777216,
+    "maxDepth": 256,
+    "caseRawBytesUnchanged": 67108864,
+    "transactionNsUnchanged": 5000000000
+  },
+  "order": [
+    "PRELAUNCH_STATIC_PLAN",
+    "SOURCE_CAUSAL_CAPTURE_AND_IMMUTABLE_ENCODING",
+    "METADATA_CONTROLS_CAPTURED_V1",
+    "SAVE_CALL",
+    "SOLE_SAVE",
+    "SAVE_RETURN",
+    "REQUEST_READY",
+    "HOST_CONTROL_RAW_PERSIST_READBACK",
+    "HOST_EXPECTED_PERSIST_READBACK",
+    "FIRST_ACTUAL_METADATA_READ",
+    "ORIGINAL_COMPARISON_AND_ACK"
+  ],
+  "partialOrderNote": "Host receive can interleave native producer stages; every host expected commit precedes first actual metadata read; no host-before-Save receipt is claimed.",
+  "unchanged": [
+    "boot/request/ACK/context sixkeys",
+    "original case/seed/order/retry/deadlines",
+    "FIRST native pause, firstL0, zeroAdvance, soleSave",
+    "noWarmTurn/flush/wait/extraSave",
+    "allFAIL/STOP/raw/seals"
+  ],
+  "runtime": "NOT_ADMITTED"
+}

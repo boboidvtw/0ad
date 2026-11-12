@@ -1,0 +1,759 @@
+{
+  "schema": 1,
+  "purpose": "Independent full JS/API DESIGN review; no executable producer or native approval",
+  "reviewer": "/root/preservation_js_design",
+  "independentFromAuthor": true,
+  "createdUTC": "2026-10-28T15:39:48.875418+00:00",
+  "verdict": "APPROVE_DESIGN_ONLY",
+  "manifest": {
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/manifest.json",
+    "sha256": "17eb3663cc51be04f880be2d2045bbbc1d5fe8fcf461cc2a82191ed9aa85e599",
+    "bytes": 12729,
+    "artifactCount": 48,
+    "allBindingsMatch": true
+  },
+  "scope": "Complete read-only six metadata expected-control source plan and pinned native/official/currentmapfix/comparator API call contracts; no implementation, tests or runtime acceptance.",
+  "reviewAreas": [
+    {
+      "id": "scope-and-exact-freeze",
+      "conclusion": "Read-only expected-control SOURCE PLAN, not executable producer, runner or runtime approval. Complete plan CONTRACT, FIELD-MATRIX, HOST-API-DRAFT, FUTURE-SCHEDULE-ABSENCE, OPEN obligations, checkpoint and binding catalogs reviewed; all48 artifacts independently read and byte/SHA checked. Historical currentmapfix/comparator reports are context, not inherited approval.",
+      "evidence": [
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/CONTRACT.md:4",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/checkpoint.json",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/manifest.json"
+      ]
+    },
+    {
+      "id": "six-field-native-save-order",
+      "conclusion": "SavedGames::Save obtains outer native time before SerializeState; only afterwards reads full simulation initAttributes and enabled mods/player; reads GUI structured clone, overlays six native camera fields, description then JSON stringifies. No assumption all getters precede serialization; future no-mutation/producer closure remains mandatory.",
+      "evidence": [
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/SavedGame.cpp:75",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/SavedGame.cpp:79",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/SavedGame.cpp:83",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/SavedGame.cpp:98",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/SavedGame.cpp:122"
+      ]
+    },
+    {
+      "id": "engine-and-mods",
+      "conclusion": "Save and GetEngineInfo share engine_version and g_Mods.GetEnabledModsData. Mod list preserves enabled order, excludes mod/user, does not filter ignoreInCompatibilityChecks; each record has exact mod/name/version/ignoreInCompatibilityChecks. Precommitted five-mod identity/order/full source metadata and actual binary/build/native getter correlation remain OPEN. No package-version guess or AreModsPlayCompatible projection.",
+      "evidence": [
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FIELD-MATRIX.md:10",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FIELD-MATRIX.md:12",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Mod.cpp:184",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_Mod.cpp:35",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_Mod.cpp:113"
+      ]
+    },
+    {
+      "id": "principal-and-description",
+      "conclusion": "Expected principal literal1 is independent from payload/view player. Native GetPlayerID returns real game principal; Save reads it directly. Existing once official Save argument is T17 save + phase + checkpoint; future host derives this independently from immutable case/ordinal, rather than reading archive.description. Actual native caller/returned receipt/boundary raw closure unimplemented.",
+      "evidence": [
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FIELD-MATRIX.md:11",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FIELD-MATRIX.md:15",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js:167",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js:177",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_Game.cpp:62"
+      ]
+    },
+    {
+      "id": "origin-init-producer",
+      "conclusion": "Current initialAttrs literal has exact top-level mapType/map/script/settings with seven settings fields and two PlayerData records. StartGame clones GUI attrs into simulation, CGame calls Replay before RegisterInit/SetInitAttributes; Replay overwrites/adds timestamp/engine_version/mods. Simulation LoadMapSettings freezes attrs and exposes InitAttributes, but startup/map/trigger and all writers remain closure obligations. The known literal is not final native fullattrs.",
+      "evidence": [
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js:84",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_Game.cpp:39",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Game.cpp:382",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Game.cpp:219",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/simulation2/Simulation2.cpp:843",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FIELD-MATRIX.md:19"
+      ]
+    },
+    {
+      "id": "freshload-native-replay-rewrite",
+      "conclusion": "StartSavedGame loads original metadata, creates CGame(true), crosscompartment clones attrs and restores player before CGame::StartGame. Replay again mutates nested timestamp/engine_version/mods before registration. Thus freshload controls must bind its own producer/startup, not force fullattrs equal origin or use time interval for nested timestamp. Origin and load timestamps may equal by coincidence. Original verified control ancestry is required; original metadata serves load data, not expected authority.",
+      "evidence": [
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_SavedGame.cpp:78",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_SavedGame.cpp:98",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_SavedGame.cpp:104",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Replay.cpp:71",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FIELD-MATRIX.md:21",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FIELD-MATRIX.md:23"
+      ]
+    },
+    {
+      "id": "native-init-getter-realm",
+      "conclusion": "Official GetInitAttributes returns full InitAttributes and is exposed. Native GuiInterfaceCall clones GUI request to simulation, passes actual viewed player and clones result back. This is a candidate genuine mechanism only; source-owned caller/guarded native realm/read-only closure/capture/transport are not implemented in current GUI. View player does not replace native principal authentication.",
+      "evidence": [
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/simulation/components/GuiInterface.js:202",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/simulation/components/GuiInterface.js:2066",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/simulation2/scripting/JSInterface_Simulation.cpp:46",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FIELD-MATRIX.md:27"
+      ]
+    },
+    {
+      "id": "replay-buffer-and-L0",
+      "conclusion": "Replay StartGame writes start JSON plus newline without flush. Turn explicitly flushes. No guaranteed preSave disk visibility follows from start return; deleting/closing the stream later is not a preSave producer. Freshload remains prelaunch arm, first native pause in wrapped session init, upstream restoration, first L0/one roundtrip Save/L1. No warm turn/query replacement/flush/wait/extra Save/new case/retry or cap extension may obtain controls. Current startup controls availability inside unchanged5s is Insufficient data.",
+      "evidence": [
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Replay.cpp:87",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Replay.cpp:91",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FIELD-MATRIX.md:29",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/HOST-API-DRAFT.md:26",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js:261",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js:265"
+      ]
+    },
+    {
+      "id": "camera-fixed-float-and-native-getter",
+      "conclusion": "SetCameraData six entity_pos_t parameters use CFixed_15_16 then ToFloat; fixed conversion can round and float conversion can lose precision. Controller SetValue plus FocusHeight may alter state. Getters and Save use the same CGameView native getters; mappings are position.x/y/z -> PosX/Y/Z, rotation.x/y -> RotX/Y, zoom -> Zoom. Critically actual controller getters call GetValue(), not GetSmoothedValue(); future implementation must bind that exact native GetValue()/float-to-JSON path and fixed controls, never substitute smoothed values, nominal0.6, epsilon or recomputed rounding. Load official restoration re-enters fixed setter; fresh getter is needed and exact origin-camera equality is not presumed.",
+      "evidence": [
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FIELD-MATRIX.md:33",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FIELD-MATRIX.md:35",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/scripting/JSInterface_GameView.cpp:76",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/scripting/JSInterface_GameView.cpp:147",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/CameraController.cpp:418",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/CameraController.cpp:434",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/maths/Fixed.h:151",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/GameView.cpp:317",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/gui/session/session.js:591"
+      ]
+    },
+    {
+      "id": "ten-groups-provenance",
+      "conclusion": "Official EntityGroups has own empty groups/ents; container creates ten, getSavedGameData returns g_Groups.groups; restore assigns groups/ents then updateGroups. Ten exact empty records may be source-precommitted but actual no-input/no-mutation/prototype/toJSON/clone/serialization closure is OPEN. No projection from nonempty observed state, no copying roundtrip metadata as expected.",
+      "evidence": [
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/gui/session/selection.js:41",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/gui/session/selection.js:529",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/gui/session/selection.js:589",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/gui/session/session.js:584",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/gui/session/session.js:602",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FIELD-MATRIX.md:37"
+      ]
+    },
+    {
+      "id": "host-api-authority-and-precommit",
+      "conclusion": "Prepare fixes static expected controls, Bind must consume genuine source-owned guarded process/realm/phase captures, and Materialize is unavailable until all necessary obligations close. References/frozen JSON/hash/trusted labels do not authenticate native origin. API excludes actualmetadata input; decoded original archive is data lineage only after independent controls verification. Host persist/readback and causal preSave ordering remain explicitly OPEN; buffered stdout/replay is not a timely channel proof.",
+      "evidence": [
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/HOST-API-DRAFT.md:4",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/HOST-API-DRAFT.md:8",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/HOST-API-DRAFT.md:10",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/HOST-API-DRAFT.md:12",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/HOST-API-DRAFT.md:24"
+      ]
+    },
+    {
+      "id": "comparator-full-value-and-time",
+      "conclusion": "Pinned comparator accepts immutable bytes only, strictUTF8/16MiB/depth256, duplicate rejection/finite binary64 parsing, exact7 actual and6 expected top keys and principal1. Full recursive semantic equality retains all nested keys/array order/Number bits, does not normalize strings or camera. Only outer time has independently supplied epoch interval; nested timestamp exact. MATCH_METADATA_VALUES_ONLY/runtime_bound=false/native_verified=false authenticate neither producer nor future schedule absence. Existing DONE suite was not rerun.",
+      "evidence": [
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/tools/epoch-rts/t17_save_metadata.py:37",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/tools/epoch-rts/t17_save_metadata.py:104",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/tools/epoch-rts/t17_save_metadata.py:114",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/tools/epoch-rts/t17_save_metadata.py:135",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FIELD-MATRIX.md:4",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/HOST-API-DRAFT.md:28"
+      ]
+    },
+    {
+      "id": "future-schedule-absence",
+      "conclusion": "Full-value equality alone allows equal contaminated controls; explicit independent full producer/mutator and dataflow closure remains required. GUI future commands/schedules/cursors/nonces/arm/ACK/witness counters stay external lexical/host state, not metadata/g_Groups/initattrs/components/scenario/timers. Legitimate existing native gameplay timers remain; unknown nested values/writers fail closed, not learned into expected. Serializedgraph/nativequeue/guards/integration/native absence remain OPEN.",
+      "evidence": [
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FUTURE-SCHEDULE-ABSENCE.md:4",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FUTURE-SCHEDULE-ABSENCE.md:8",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FUTURE-SCHEDULE-ABSENCE.md:9",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FUTURE-SCHEDULE-ABSENCE.md:10",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FUTURE-SCHEDULE-ABSENCE.md:12",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FUTURE-SCHEDULE-ABSENCE.md:13"
+      ]
+    },
+    {
+      "id": "compatibility-and-history",
+      "conclusion": "Plan adds no wire/schema/context fields, changes no source/comparator and does not authorize a runner. Currentmapfix includes top-level script but its historical review is bounded source-only; first native pause refers to wrapped session init, not all GUI global loading. Existing all40roots/zeroAdvance/queue0/raw/full archive/simulation.dat/source inventories/immutable ACK/deadline guards remain separate. Original FAIL/DONE/native results are not upgraded.",
+      "evidence": [
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/CONTRACT.md:4",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/HOST-API-DRAFT.md:26",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md:195",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md:197",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/js-api-review-v1.json"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "JS-DESIGN-LOW-001",
+      "severity": "LOW",
+      "blocking": false,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FIELD-MATRIX.md",
+      "line": 33,
+      "title": "Camera getter description conflates GetValue with smoothed getter",
+      "rootCause": "Plan labels returned native float state smoothed; pinned CameraController getters418–432 explicitly call CSmoothedValue::GetValue(), whereas smoothing paths elsewhere call GetSmoothedValue(). Storage class name does not select getter semantics.",
+      "evidence": [
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/CameraController.cpp:418",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/CameraController.cpp:423",
+        "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/CameraController.cpp:429"
+      ],
+      "impact": "Nonblocking wording precision: plan already requires exact same native getter outputs as SavedGames::Save and forbids nominal/epsilon reconstruction. No executable implementation exists to select the wrong path.",
+      "fix": "In a future reviewed amendment replace smoothed native float with exact native GetValue() float state. Future implementation must bind GetValue()/native float JSON serialization and fixed controls, never use GetSmoothedValue() as a substitute. Preserve sealed authorplan unchanged in this review."
+    }
+  ],
+  "findingCounts": {
+    "CRITICAL": 0,
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 1
+  },
+  "bindingAudit": [
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/CONTRACT.md",
+      "expectedBytes": 1015,
+      "actualBytes": 1015,
+      "expectedSHA256": "0c1555dc923ac8e631944390273dc497f478fdb828929696217ee5d9705ebbd8",
+      "actualSHA256": "0c1555dc923ac8e631944390273dc497f478fdb828929696217ee5d9705ebbd8",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FIELD-MATRIX.md",
+      "expectedBytes": 9024,
+      "actualBytes": 9024,
+      "expectedSHA256": "46c39e138d5000490411bd00761770af199827504d7e3d404a05bce524d2ed59",
+      "actualSHA256": "46c39e138d5000490411bd00761770af199827504d7e3d404a05bce524d2ed59",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FUTURE-SCHEDULE-ABSENCE.md",
+      "expectedBytes": 2980,
+      "actualBytes": 2980,
+      "expectedSHA256": "ebc80f289f848639200f3f46cab489a07d5b18fb5765ef6bcaa561ca57a48fa1",
+      "actualSHA256": "ebc80f289f848639200f3f46cab489a07d5b18fb5765ef6bcaa561ca57a48fa1",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/HOST-API-DRAFT.md",
+      "expectedBytes": 5202,
+      "actualBytes": 5202,
+      "expectedSHA256": "b7cb74ad399938c3445325b9d98f1323559078b9555e156f870e5356aa3091d5",
+      "actualSHA256": "b7cb74ad399938c3445325b9d98f1323559078b9555e156f870e5356aa3091d5",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/OPEN-obligations.json",
+      "expectedBytes": 2839,
+      "actualBytes": 2839,
+      "expectedSHA256": "b699853bc8fc25b095556fc4b0e86b9343d0bc80c55efd3f01538e8694f28426",
+      "actualSHA256": "b699853bc8fc25b095556fc4b0e86b9343d0bc80c55efd3f01538e8694f28426",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/checkpoint.json",
+      "expectedBytes": 1376,
+      "actualBytes": 1376,
+      "expectedSHA256": "e72cf3b68a5c00e49ad4536cb6f734ec2fb4b569d7411c54c81ede249a382091",
+      "actualSHA256": "e72cf3b68a5c00e49ad4536cb6f734ec2fb4b569d7411c54c81ede249a382091",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js",
+      "expectedBytes": 69380,
+      "actualBytes": 69380,
+      "expectedSHA256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885",
+      "actualSHA256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/tools/epoch-rts/t17_save_metadata.py",
+      "expectedBytes": 5818,
+      "actualBytes": 5818,
+      "expectedSHA256": "96d9e51e6280b1998410d7a591eaf65c11dfd11bc68c3816255201bac30bfd43",
+      "actualSHA256": "96d9e51e6280b1998410d7a591eaf65c11dfd11bc68c3816255201bac30bfd43",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/simulation2/scripting/JSInterface_Simulation.cpp",
+      "expectedBytes": 8060,
+      "actualBytes": 8060,
+      "expectedSHA256": "b9dfa717c7317c9f5731c6ed9fd4c4c4b4be12b430f9903bde5a19127932ce40",
+      "actualSHA256": "b9dfa717c7317c9f5731c6ed9fd4c4c4b4be12b430f9903bde5a19127932ce40",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/code-review-v1.md",
+      "expectedBytes": 6732,
+      "actualBytes": 6732,
+      "expectedSHA256": "49b761dbbe8ad1d14c0ddc817c95fcb8be6d5a90f1d65f23d31bff0e4923fde6",
+      "actualSHA256": "49b761dbbe8ad1d14c0ddc817c95fcb8be6d5a90f1d65f23d31bff0e4923fde6",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/completion-source-only.json",
+      "expectedBytes": 1756,
+      "actualBytes": 1756,
+      "expectedSHA256": "4167dc102b3075f50e6d45c96e50c15b3ca4e524c3ccbca7fdfe7e61ddf64e28",
+      "actualSHA256": "4167dc102b3075f50e6d45c96e50c15b3ca4e524c3ccbca7fdfe7e61ddf64e28",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/manifest.json",
+      "expectedBytes": 4534,
+      "actualBytes": 4534,
+      "expectedSHA256": "85f93c30ba9484b2cce4129e0ec930b7f85449ef7d5e363da94ae8814a4b4d30",
+      "actualSHA256": "85f93c30ba9484b2cce4129e0ec930b7f85449ef7d5e363da94ae8814a4b4d30",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/python-review-v1.md",
+      "expectedBytes": 5646,
+      "actualBytes": 5646,
+      "expectedSHA256": "8d8a6b9b8f1c43788ac91a652aa11afa8231a58c758452d68a2a1be7795b7dff",
+      "actualSHA256": "8d8a6b9b8f1c43788ac91a652aa11afa8231a58c758452d68a2a1be7795b7dff",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md",
+      "expectedBytes": 41941,
+      "actualBytes": 41941,
+      "expectedSHA256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b",
+      "actualSHA256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/wire-schema.json",
+      "expectedBytes": 28262,
+      "actualBytes": 28262,
+      "expectedSHA256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+      "actualSHA256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/code-review-v1.json",
+      "expectedBytes": 36970,
+      "actualBytes": 36970,
+      "expectedSHA256": "bb2bdb8bbd8e295ef8a396f601a894acb4bd84df68850581e7832bead78cea5b",
+      "actualSHA256": "bb2bdb8bbd8e295ef8a396f601a894acb4bd84df68850581e7832bead78cea5b",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/completion-source-only.json",
+      "expectedBytes": 1537,
+      "actualBytes": 1537,
+      "expectedSHA256": "a296be8ebc5e142b8cdc578d9990417c27866639bee70dba6d75a413e72c0431",
+      "actualSHA256": "a296be8ebc5e142b8cdc578d9990417c27866639bee70dba6d75a413e72c0431",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/js-api-review-v1.json",
+      "expectedBytes": 60034,
+      "actualBytes": 60034,
+      "expectedSHA256": "071cc8318e875f70e1d3500cfa032f5146e4fd04090d0bbc76cee0773141f832",
+      "actualSHA256": "071cc8318e875f70e1d3500cfa032f5146e4fd04090d0bbc76cee0773141f832",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/manifest.json",
+      "expectedBytes": 27089,
+      "actualBytes": 27089,
+      "expectedSHA256": "06a9cd6b7f8651d03daf5d57103d0aacc3025af0c92ab9c97b053d09ba0f1c9a",
+      "actualSHA256": "06a9cd6b7f8651d03daf5d57103d0aacc3025af0c92ab9c97b053d09ba0f1c9a",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context-bindings.json",
+      "expectedBytes": 4844,
+      "actualBytes": 4844,
+      "expectedSHA256": "591322503804584305793e9f69ae5e063954bbffcecebdcb9c495653989c34b1",
+      "actualSHA256": "591322503804584305793e9f69ae5e063954bbffcecebdcb9c495653989c34b1",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/official-bindings.json",
+      "expectedBytes": 886,
+      "actualBytes": 886,
+      "expectedSHA256": "5ca0aacaadc5b442df61f06b531a1235b8685ccc785124f5d2d52b145065cace",
+      "actualSHA256": "5ca0aacaadc5b442df61f06b531a1235b8685ccc785124f5d2d52b145065cace",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primary-bindings.json",
+      "expectedBytes": 8005,
+      "actualBytes": 8005,
+      "expectedSHA256": "d426f3d161bb5c65deef3fffbb81352342aeb5bc099af577c9b3b10656ce46b4",
+      "actualSHA256": "d426f3d161bb5c65deef3fffbb81352342aeb5bc099af577c9b3b10656ce46b4",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/gui/session/selection.js",
+      "expectedBytes": 14510,
+      "actualBytes": 14510,
+      "expectedSHA256": "55d296bddff20db103bf81f6a61a5c7f435ebfab0cb89fdd5f2206a6c7c7d049",
+      "actualSHA256": "55d296bddff20db103bf81f6a61a5c7f435ebfab0cb89fdd5f2206a6c7c7d049",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/gui/session/session.js",
+      "expectedBytes": 25386,
+      "actualBytes": 25386,
+      "expectedSHA256": "04649d5ef27fe135adcdec6e85df07296d4bb085cce2df5b9ef3feaf61a9750e",
+      "actualSHA256": "04649d5ef27fe135adcdec6e85df07296d4bb085cce2df5b9ef3feaf61a9750e",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/simulation/components/GuiInterface.js",
+      "expectedBytes": 73967,
+      "actualBytes": 73967,
+      "expectedSHA256": "9eaf481d5c965cc4df0cbe1fd51d2db81af162cea26c50fc67484633dd867b40",
+      "actualSHA256": "9eaf481d5c965cc4df0cbe1fd51d2db81af162cea26c50fc67484633dd867b40",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/Camera.cpp",
+      "expectedBytes": 14760,
+      "actualBytes": 14760,
+      "expectedSHA256": "612b86c16a0bd62189a07ea5d767e7b0411a61e5f3edb58f24244bf6a5cbd0ae",
+      "actualSHA256": "612b86c16a0bd62189a07ea5d767e7b0411a61e5f3edb58f24244bf6a5cbd0ae",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/Camera.h",
+      "expectedBytes": 4549,
+      "actualBytes": 4549,
+      "expectedSHA256": "d3da9c24b67686586a84b0f76e2199d6d04ff03fae6f5e239fcb9e170084f4f9",
+      "actualSHA256": "d3da9c24b67686586a84b0f76e2199d6d04ff03fae6f5e239fcb9e170084f4f9",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/CameraController.cpp",
+      "expectedBytes": 22474,
+      "actualBytes": 22474,
+      "expectedSHA256": "025e6176b09730bc22f70bb9f8b14f2563e2b0852e84a00ed71ea3a97ff23d6d",
+      "actualSHA256": "025e6176b09730bc22f70bb9f8b14f2563e2b0852e84a00ed71ea3a97ff23d6d",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/CameraController.h",
+      "expectedBytes": 3573,
+      "actualBytes": 3573,
+      "expectedSHA256": "4d75277bde51e38c9c7220a49bc9026256531c1c06399dac8fd0fbca77a7bedf",
+      "actualSHA256": "4d75277bde51e38c9c7220a49bc9026256531c1c06399dac8fd0fbca77a7bedf",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/GameView.cpp",
+      "expectedBytes": 10458,
+      "actualBytes": 10458,
+      "expectedSHA256": "707449873cae736f9413dc0aa743bd9575c32a9821e2f1a2c22bf0143a06f51c",
+      "actualSHA256": "707449873cae736f9413dc0aa743bd9575c32a9821e2f1a2c22bf0143a06f51c",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/GameView.h",
+      "expectedBytes": 3102,
+      "actualBytes": 3102,
+      "expectedSHA256": "6290324c12a10a09dc65a09ae174f45fe3c6a8e172a7a035c512dd420525dc23",
+      "actualSHA256": "6290324c12a10a09dc65a09ae174f45fe3c6a8e172a7a035c512dd420525dc23",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/scripting/JSInterface_GameView.cpp",
+      "expectedBytes": 6184,
+      "actualBytes": 6184,
+      "expectedSHA256": "6503fba660c6d38f2392b9e96557dd4d4d8a52871bd27f4399ec5cccd68fe64b",
+      "actualSHA256": "6503fba660c6d38f2392b9e96557dd4d4d8a52871bd27f4399ec5cccd68fe64b",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/maths/Fixed.h",
+      "expectedBytes": 12193,
+      "actualBytes": 12193,
+      "expectedSHA256": "a79e050e2d47e44203d51fcd192527363b8169684343373259153431ae3543ea",
+      "actualSHA256": "a79e050e2d47e44203d51fcd192527363b8169684343373259153431ae3543ea",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Game.cpp",
+      "expectedBytes": 13301,
+      "actualBytes": 13301,
+      "expectedSHA256": "766c220c7b8568d26ad04bcde19eeddfdc9fdd6539e56dba9fbf8d472a6e4a8a",
+      "actualSHA256": "766c220c7b8568d26ad04bcde19eeddfdc9fdd6539e56dba9fbf8d472a6e4a8a",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Globals.cpp",
+      "expectedBytes": 2497,
+      "actualBytes": 2497,
+      "expectedSHA256": "b774643b17b636ac84dfca6d91ef83474771128bb25991a24ae4543f37a087f7",
+      "actualSHA256": "b774643b17b636ac84dfca6d91ef83474771128bb25991a24ae4543f37a087f7",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Mod.cpp",
+      "expectedBytes": 10443,
+      "actualBytes": 10443,
+      "expectedSHA256": "c8252d851566ac8a4065420f2c9a1f3cd1f5b592fc4efbecace93bfb5c00fcab",
+      "actualSHA256": "c8252d851566ac8a4065420f2c9a1f3cd1f5b592fc4efbecace93bfb5c00fcab",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Mod.h",
+      "expectedBytes": 3765,
+      "actualBytes": 3765,
+      "expectedSHA256": "3c1ad042624f0bf355afde8f9dcd6b893f9e7e58c6226da1ace2b1d1c18ae7c9",
+      "actualSHA256": "3c1ad042624f0bf355afde8f9dcd6b893f9e7e58c6226da1ace2b1d1c18ae7c9",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Pyrogenesis.h",
+      "expectedBytes": 1175,
+      "actualBytes": 1175,
+      "expectedSHA256": "13e88bd20b945638cd4634f3760ed7fcd5464ef3efbbe38259f5b7b68d479dcc",
+      "actualSHA256": "13e88bd20b945638cd4634f3760ed7fcd5464ef3efbbe38259f5b7b68d479dcc",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Replay.cpp",
+      "expectedBytes": 10344,
+      "actualBytes": 10344,
+      "expectedSHA256": "18d01f424d0ea6627dd92b004e70d108d0286124719cdcd188b5e79f9f3546ad",
+      "actualSHA256": "18d01f424d0ea6627dd92b004e70d108d0286124719cdcd188b5e79f9f3546ad",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/SavedGame.cpp",
+      "expectedBytes": 10000,
+      "actualBytes": 10000,
+      "expectedSHA256": "6fa08d0a0f57b386484bc328ec95b41e73120b9358aeb48afc7d216f662d5267",
+      "actualSHA256": "6fa08d0a0f57b386484bc328ec95b41e73120b9358aeb48afc7d216f662d5267",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_Game.cpp",
+      "expectedBytes": 4759,
+      "actualBytes": 4759,
+      "expectedSHA256": "ac71e18e4361f079de5295535014c4b9263a61b11c0f389fa27061c86139b7bc",
+      "actualSHA256": "ac71e18e4361f079de5295535014c4b9263a61b11c0f389fa27061c86139b7bc",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_Mod.cpp",
+      "expectedBytes": 5679,
+      "actualBytes": 5679,
+      "expectedSHA256": "5a916c62580cd26d41fba808a0c81529ccd2dee5b9697f6434a5c4af4fa72eb0",
+      "actualSHA256": "5a916c62580cd26d41fba808a0c81529ccd2dee5b9697f6434a5c4af4fa72eb0",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_SavedGame.cpp",
+      "expectedBytes": 4664,
+      "actualBytes": 4664,
+      "expectedSHA256": "59716fec2776d0e6e9fa2f3ddecbab0abcda7379b81c2de779282487d360a42a",
+      "actualSHA256": "59716fec2776d0e6e9fa2f3ddecbab0abcda7379b81c2de779282487d360a42a",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/scriptinterface/ScriptConversions.cpp",
+      "expectedBytes": 9827,
+      "actualBytes": 9827,
+      "expectedSHA256": "7342f0a5ce4f99ca242a4d699572cec836d394aa0077db7f6720c4a413da07c6",
+      "actualSHA256": "7342f0a5ce4f99ca242a4d699572cec836d394aa0077db7f6720c4a413da07c6",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/scriptinterface/ScriptConversions.h",
+      "expectedBytes": 4622,
+      "actualBytes": 4622,
+      "expectedSHA256": "e97e4a6769b8ab74e75c973ccd8fae510e2189a3067a3b8577f36d7929745ffe",
+      "actualSHA256": "e97e4a6769b8ab74e75c973ccd8fae510e2189a3067a3b8577f36d7929745ffe",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/simulation2/Simulation2.cpp",
+      "expectedBytes": 31497,
+      "actualBytes": 31497,
+      "expectedSHA256": "78260ac802da5569bbf19abca7de69297788aa458f1551553b7fdf8593e096ed",
+      "actualSHA256": "78260ac802da5569bbf19abca7de69297788aa458f1551553b7fdf8593e096ed",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/simulation2/helpers/Position.h",
+      "expectedBytes": 1316,
+      "actualBytes": 1316,
+      "expectedSHA256": "342921a030bc603efb4c2158c4c7c7fe2f3b7bed3d470964cd795f48be1094c0",
+      "actualSHA256": "342921a030bc603efb4c2158c4c7c7fe2f3b7bed3d470964cd795f48be1094c0",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/simulation2/system/Entity.h",
+      "expectedBytes": 3303,
+      "actualBytes": 3303,
+      "expectedSHA256": "4bc98f0256b8173e9ddccb6e971e43bd4c20e4a96ae77d646c78b87e67c5e062",
+      "actualSHA256": "4bc98f0256b8173e9ddccb6e971e43bd4c20e4a96ae77d646c78b87e67c5e062",
+      "match": true
+    }
+  ],
+  "liveContextReadback": [
+    {
+      "path": "tools/epoch-rts/t17_save_metadata.py",
+      "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/tools/epoch-rts/t17_save_metadata.py",
+      "available": true,
+      "currentSHA256": "96d9e51e6280b1998410d7a591eaf65c11dfd11bc68c3816255201bac30bfd43",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/manifest.json",
+      "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/manifest.json",
+      "available": true,
+      "currentSHA256": "85f93c30ba9484b2cce4129e0ec930b7f85449ef7d5e363da94ae8814a4b4d30",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/completion-source-only.json",
+      "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/completion-source-only.json",
+      "available": true,
+      "currentSHA256": "4167dc102b3075f50e6d45c96e50c15b3ca4e524c3ccbca7fdfe7e61ddf64e28",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/code-review-v1.md",
+      "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/code-review-v1.md",
+      "available": true,
+      "currentSHA256": "49b761dbbe8ad1d14c0ddc817c95fcb8be6d5a90f1d65f23d31bff0e4923fde6",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/python-review-v1.md",
+      "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/python-review-v1.md",
+      "available": true,
+      "currentSHA256": "8d8a6b9b8f1c43788ac91a652aa11afa8231a58c758452d68a2a1be7795b7dff",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md",
+      "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md",
+      "available": true,
+      "currentSHA256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/wire-schema.json",
+      "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/wire-schema.json",
+      "available": true,
+      "currentSHA256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+      "match": true
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js",
+      "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js",
+      "available": true,
+      "currentSHA256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/manifest.json",
+      "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/manifest.json",
+      "available": true,
+      "currentSHA256": "06a9cd6b7f8651d03daf5d57103d0aacc3025af0c92ab9c97b053d09ba0f1c9a",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/completion-source-only.json",
+      "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/completion-source-only.json",
+      "available": true,
+      "currentSHA256": "a296be8ebc5e142b8cdc578d9990417c27866639bee70dba6d75a413e72c0431",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/code-review-v1.json",
+      "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/code-review-v1.json",
+      "available": true,
+      "currentSHA256": "bb2bdb8bbd8e295ef8a396f601a894acb4bd84df68850581e7832bead78cea5b",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/js-api-review-v1.json",
+      "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/js-api-review-v1.json",
+      "available": true,
+      "currentSHA256": "071cc8318e875f70e1d3500cfa032f5146e4fd04090d0bbc76cee0773141f832",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/simulation2/scripting/JSInterface_Simulation.cpp",
+      "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/simulation2/scripting/JSInterface_Simulation.cpp",
+      "available": true,
+      "currentSHA256": "b9dfa717c7317c9f5731c6ed9fd4c4c4b4be12b430f9903bde5a19127932ce40",
+      "match": true
+    }
+  ],
+  "openObligations": [
+    {
+      "id": "ENGINE_INFO_RUNTIME",
+      "status": "OPEN",
+      "gap": "No actual source-owned engineinfo getter capture or fixed compiledengine_version/runtimefive-moddata/order yet; static source declaration is not actualruntime."
+    },
+    {
+      "id": "PRINCIPAL_CAPTURE",
+      "status": "OPEN",
+      "gap": "Literal1 known; actual host nativeGetPlayerID boundary correlation/provenance unimplemented; nativeviewcaller cannot substitute."
+    },
+    {
+      "id": "FULL_INITATTRS_PRODUCER",
+      "status": "OPEN",
+      "gap": "GUIliteral plus Replay3 is known, but complete startup/settings mutation closure and guarded fullnativegetter capture not implemented/vouched."
+    },
+    {
+      "id": "LOAD_NESTED_TIMESTAMP",
+      "status": "OPEN",
+      "gap": "Native StartSavedGame uses ReplayLogger again; fresh nestedtimestamp must independently equal actualproducer output, not copied/dropped fromoriginalmetadata."
+    },
+    {
+      "id": "REPLAY_START_AVAILABILITY",
+      "status": "OPEN",
+      "gap": "StartGame startline not flushed; immediatefreshloadpreSave availability unproved. No warmturn/flush/retry/extraSave allowed."
+    },
+    {
+      "id": "CAMERA_CONTROL",
+      "status": "OPEN",
+      "gap": "Nativefixed setter/float getters sourceknown; exact origin/loadrawcontrol lineage/timing/nonmutation/JSONnumber mapping unmeasured."
+    },
+    {
+      "id": "GROUPS_INPUT_CLOSURE",
+      "status": "OPEN",
+      "gap": "10emptygroups sourcefixed; actualnohuman/groupmutation/unsafeprototype/toJSON effects not guarded inthisplan."
+    },
+    {
+      "id": "STATIC_DESCRIPTION_HOST_FACTORY",
+      "status": "OPEN",
+      "gap": "Exactliteral derivation known; independenthostfactory/caller/oncephasecontrol not implemented."
+    },
+    {
+      "id": "PRECOMMIT_TRANSPORT",
+      "status": "OPEN",
+      "gap": "No newcapture/wire/contextscheme deployed. Existing6keycontext andfinalACK unchanged; realpreSavecapture/hostimmutablecommit timing/caller/sourceguard remainOPEN."
+    },
+    {
+      "id": "FUTURE_SCHEDULE_ABSENCE",
+      "status": "OPEN",
+      "gap": "Fullvaluecompare cannot prove absence when expected contains samefuturefields. Completeproducer/mutator closure + independentcontrols +actualvalues required."
+    },
+    {
+      "id": "FULL_NATIVE_PIPELINE",
+      "status": "OPEN",
+      "gap": "Noengine/copy/guard/archive/newSave/metadata/nativecollection/comparatorrerun/modeltest; allactualruntime/budget/load5s/wholepipeline obligations NOT_RUN."
+    }
+  ],
+  "native": "NOT_RUN_OPEN_NOT_APPROVED",
+  "implementation": "NOT_IMPLEMENTED_NOT_APPROVED",
+  "fullProducerCallerRealmTransportAndFutureAbsence": "OPEN",
+  "loadControlsWithinOriginal5s": "INSUFFICIENT_DATA_NO_EXTENSION_ALLOWED",
+  "runtimeTests": "NOT_RUN_NO_DUPLICATE_DONE_SUITE",
+  "mergeReadiness": "NOT_APPLICABLE_LOCAL_FIXED_DOCUMENT_PLAN_NO_PR_METADATA",
+  "typecheckLint": "NOT_RUN_NO_TS_OR_JS_CHANGE_PLAN_ONLY_NO_PROJECT_PACKAGE_CHECK_DISCOVERED_IN_SCOPE",
+  "executions": {
+    "projectCode": false,
+    "Node": false,
+    "tests": false,
+    "Popen": false,
+    "engine": false,
+    "copy": false,
+    "guard": false,
+    "attempt": false,
+    "network": false
+  },
+  "writes": "Only new sibling source-plan-v1-review-js-v1/review.json and review.md; no author/source/tracking edits.",
+  "preservation": "All previous FAIL/DONE/raw/reports unchanged; existing tracked README/docs dirty work untouched."
+}

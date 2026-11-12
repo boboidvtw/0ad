@@ -1,0 +1,28 @@
+{
+  "status": "PREREGISTERED_CANDIDATE_ONLY_NOT_ADMITTED_OR_RUN",
+  "scope": "Only targeted new structural/model tests after design approvals and separate root source assignment; no old helper/test/case reruns",
+  "cases": [
+    "strict duplicate/unknown/top-key rejection",
+    "int1 vs bool principal rejection",
+    "wrong tuple/case/phase/source/ordinal rejection",
+    "duplicate/missing/out-of-order control stage rejection",
+    "mods completefourkeys/order/unknown rejection",
+    "full initattrs base and transformation unknown rejection",
+    "nested timestamp exact vs outertime independence",
+    "GetValue camera exactfinite/-0 Number semantics, no epsilon",
+    "groups10empty no actualprojection",
+    "description source factory exact values",
+    "actualmetadata never input to controls/expectedfactory",
+    "host controls+expected commit precedes firstactualmetadata read",
+    "control record late/partial raw sticky rejection",
+    "evidence reserve/shortwrite/fsync/closeUNKNOWN keeps firsterror",
+    "samecallback soleSave model does not claim native timing",
+    "missing source/realm/body provenance cannot produce native authority"
+  ],
+  "maxNewNamedAssertions": 16,
+  "maxSimultaneouslyRetainedModelInputs": 8388608,
+  "perModelInputMax": 1048576,
+  "modelBudgetSeconds": 20,
+  "nativeProof": false,
+  "oldFaultHelpers": "24 consumed, unchanged, not these future tests"
+}

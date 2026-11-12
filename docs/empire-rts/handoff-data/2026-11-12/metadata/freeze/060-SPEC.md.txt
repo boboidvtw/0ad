@@ -1,0 +1,40 @@
+<!-- Purpose: design-only repair for whole-transaction host monotonic5s proof. Created: 2026-10-23. -->
+# Prearm deadline amendment — DESIGN_REVIEW_PENDING
+
+本案是原d334／wirev4的最小加法修正，不修改任何已核可檔案。本輪只寫這個新設計目錄與原來源證據copy，沒有依新channel改GUI/host/simulation實作，也沒有執行test/model/proof/engine。原GUI交易WIP的完整5秒時界仍BLOCK。兩份fresh完整CODE＋JS/API DESIGN核可前，不能把TRANSACTION_ARMED當已准入。
+
+## 問題與source證據
+
+原SPEC R5是Pause→A/L0→SaveGame→B/L1→onceWriteJSON→完整valueReadback→REQUEST_READY後host才讀request。舊wire唯一檔案是boot/request/hostACKtmp/finalACK，沒有pretransactionhostarm。現有raw/archive/metadata/queue工具也沒有hostrunner起點。GetMicroseconds原生回JS_Now（epochmicroseconds）；把它當hostmonotonic是錯誤，已保存GUI錯誤WIPbefore且移除假clockauthority。
+
+晚到TX_BEGIN stdout不能回溯證明它何時開始，REQUEST_READY本來就在Save後；以兩者receive時刻當5秒起點會漏算Pause/Save。不能用rawflush即時假設、wallclock、GUIcounter、nativeS相同、額外Save／branch／改cap或換名救PASS。
+
+## 唯一wire組合
+
+原wirev4全部request/ACK/typedgraph/receipts/campaignpolicy保持完整深等值。新義務以SPEC.json及WIRE-EXTENSION.json組合，欄位與cap由後者精確列出。
+
+每checkpoint加兩個logicalimmutable資料：phase-arm-request.json、phase-arm-permit.json；permit.tmp為原子發佈且保留的hardlinkartifact，所以精確新增三個physicalpath。phase是origin或load，均在原caseRoot/checkpoint/，不新增整樹排除。原origin/load request與ARCHIVE_VERIFIED finalACK完全保留，permit決策只能TRANSACTION_ARMED，從不是archive/casePASS。
+
+boot只新增transactionArms array，origin五筆／load一筆，每筆exactcheckpoint/armNonce。Nonce在原caseprelaunch一開始固定，全部fingerprint／sourceguard例外精確綁定；simulation InitAttributes/Timer/coordinator/metadata沒有armnonce/deadline/future schedule。
+
+Origin的armintent由固定GUIliteral在前一200ms lattice（checkpointstart−200）唯一寫入；只規劃label，沒有謊稱actualS。無outstanding普通command，nativeprincipal/viewcaller1；這次arm寫檔不Pause／不送普通command／不改simstate。Host核immutableactualraw後先記t_arm，再發permit；GUI只能在原合法S窗內完整核permit才開始Pause。若permit太晚導致超窗，直接FAIL／STOP，沒有等待到成功、加時或rearm。
+
+Load尚無GUI，loadarmrequest由host從immutableboot/originalarchiveplan寫入；它不是虛構nativecaller/actualS。Host在Popen以前reserve t_arm並發permit。GUI session init仍必FIRST NATIVE ACTION SetPaused(true,false)，不能先pollpermit或getter；它的前界已由host-before-Popen證明，所以無需破壞原freshload順序。upstreaminit後核boot/permit，第一個完整L0直接送唯一roundtripSave/L1，不以第二次warmquery替代L0。
+
+## 5秒同一時鐘與端點
+
+D=t_arm+5,000,000,000ns，以同一hostmonotonic整數算。D從reserve即不可改，全部原case/campaign截止同時生效（新work<C+80且<T0+540、casecleanupC+90、campaignfinalT0+600）。Permitwrite/fsync/close/reopen／atomiclink／dirsync、remainingguards／Popen／loadstartup（load）、Pause/A或L0/Save/B或L1、requestreadback、host原全部archive/metadata/count0/graphgates、原finalACK發布與GUI核ACK都吃這一個D。不能REQUEST_READY才開錶，也不能重設D補滿5秒。
+
+Load剩餘fullguards／reservation／獨立freshguard及nativeStartSavedGame載入成本全部消耗這個保守5秒prefix；原startup10秒與prelaunch30秒仍同時約束，較早者勝。若機器或guard成本無法達成，保持BLOCK/FAIL/NOT_RUN，不移後t_arm、不warmup、不略guard、不多engineattempt／archive／load、不retry。
+
+僅hostfinalACK發布<D仍不足證GUI已看見ACK。GUI完成完整ACK/S/principal/pause/全40roots核實後、resume前，必發GUI_ACK_VERIFIED rawstage（完整baseACK值與全部transaction/armidentity）。Host必在D及outercutoffs以前收到完整記錄，才能對此5秒gate給PASS。Receive是GUI已核ACK的因果上界，不是假設stdout即時；buffered／late／missing記錄只會FAIL/UNKNOWN，絕不換起點。
+
+Host守門必獨立在D停止newwork並走原boundedcleanup。作業系統排程、blockingIO或kill不能及時完成時，不保證神奇hardbound：原件/latebytes保留並UNKNOWN/FAIL，不給casePASS。Permit本身是immutableoldtoken，不讓GUI拿hostns與JSepoch比較；仍須hostprivateledger/currentclock/actualraw證明deadline。未知liveD不可用payload字串自證。
+
+## 不變項與原子完整性
+
+每phasearmrequest與permit各一次。任意missing/late/duplicate/mutated/nonce-path-source-phase-ordinal mismatch、hostclockback/unavailable/overflow、shortwrite/fsync/close/readerror、tmp/finalinode不符、partiallink或afterdeadline均stickyFAIL/UNKNOWN且不rearm。GUIWriteJSON仍void/nonexclusive，GUIonceattempt/readback不冒O_EXCL；host實讀原path綁length/SHA及identity。Hostloadintent與permittmp用O_EXCL/O_NOFOLLOW/private0700/0600，全write/flush/fsync/close/postclosefullreadback，linkfinal no-replace，tmp保留sameinode，dirsync及finalactualreadback。不存在renameoverwrite/unlink/fallbackchannel。
+
+全部600/6×90/30/80/cleanup90、42thenconditional7/retry0、5origin+5freshload+5roundtrip、原固定windows/commands/negativecases、Complete真次數、all40roots/fullprefix與A/B/L0/L1精確相等、nativecount0/principal1/readonlyviewcaller、原metadata/noFutureCommands/physics/LOS/HP/orders/death/hostreplay/rawpostclose/sourceprofileguards/獨立freshguard，以及所有原FAIL/PARTIAL/STOP/seals一律保留。新設計不增任何engine/Save/branch/試次/付費/外部/C++範圍。
+
+本輪下一步只有fresh完整CODE＋JS/API DESIGN審；雙核後另作有before/tests/sourcefreeze的實作與fresh雙source審。actualnativeclock/path/watch/phase/runtimeadmission/wholepipeline仍NOT_RUN/OPEN。

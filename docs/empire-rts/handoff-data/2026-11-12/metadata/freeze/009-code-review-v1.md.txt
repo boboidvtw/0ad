@@ -1,0 +1,59 @@
+<!-- Purpose: independent complete CODE review for bounded metadata comparator. Date: 2026-10-22. -->
+# Metadata complete CODE review
+
+**APPROVE_SOURCE_ONLY**, 0 findings. All19 bindings match manifest `85f93c30ba9484b2cce4129e0ec930b7f85449ef7d5e363da94ae8814a4b4d30`. Full metadata semantic equality only; actual expected producer controls/authentication remainOPEN.
+
+## Exact complete scope and retained failures
+
+All19 bindings independently verified exact bytes/SHA against85f93c. Entire comparator/test/CONTRACT/ASSESSMENT read; all three before snapshots independently verified. Source unchanged between initial alias-control test FAIL and current tests; only pair creates independent decoded nested controls now. ImportRED and initial14group4FAIL log remain unchanged. Current14normal/14-O/2compile author results inspected, not rerun. No old DONE/native evidence promoted.
+
+## Primary metadata shape / compatibility
+
+Pinned SavedGames::Save creates exactly engine_version,time(double time_t),playerID,mods,initAttributes,gui,description; reads actual enabled mod list in effective order, actual initattrs, cloned GUI groups then adds exact camera PosX/Y/Z RotX/Y Zoom before JSON stringification. Official getSavedGameData returns groups; load restores camera/groups. These primary source facts are compatibility evidence only, not official binary equivalence or actual savedbytes. Mod skips mod/user metadata entries; expected actual list/versions remain externally derived and locked.
+
+## Raw JSON ingress / syntax
+
+Only exact bytes accepted; checks<=16MiB before UTF8strict decode; Python str JSON rejects BOM, trailing nonwhitespace/junk, malformed escapes/controlchars. Structural string/escape-aware preflight rejects depth>256 before recursive graph parse; braces within quoted/escaped strings do not count. Every object uses duplicate-key hook including nested/decoded-key collisions. No eval, coercion, deserialization hooks, network or filesystem. Parse failure gives stable reason while caller retains original full inputs.
+
+## Finite JS Number semantics
+
+parse_float is binary64 finite-only, rejects NaN/Infinity/overflow and malformed huge values. parse_int validates finite binary64 then keeps source integer except -0 deliberately stays float negativezero. Full comparator packs both int/float to exact big-endian binary64 bytes:1 and1.0 same JSON Number, rounded large int spellings compare as JS Numbers, +0/-0 distinct, bool never aliases1. Decimal underflow follows binary64 semantics. No string normalization/filtering or silent nonfinite fallback.
+
+## Schema and scalar fields
+
+Exact actual top keys seven and expected six without time; missing/extra/timeinexpected rejected. Top engine_version/description exact str,mods list,initAttributes/gui dict for both. playerID must literal decoded int1, rejecting bool/1.0/strings/otherprincipal per literal-integer wire rule. These are bounded top native type checks, not a nested creator whitelist. All nested unknown keys must compare exactly; comparator does not independently certify future schedule absence.
+
+## Time interval
+
+Caller intervals must exact ints, nonnegative ordered and<=2^53-1; bool/float/negative/reversed rejected. Actual time exact int/float finite, nonnegative integral and<=2^53-1 inside inclusive external interval. Integer and100.0 time valid, no invented/current clock lookup or source-implied real save date. Only time excluded from pairwise value equality as native wallclock; separately validated timestamp reported. Origin/roundtrip differing native times do not relax simulation.dat or gameplay equality.
+
+## Full nested equality
+
+Iterative pending traversal compares all non-time actual fields against complete expected metadata. Dict keysets exact with object order ignored; list length/order exact; types distinct outside JSON numbers; every nested key/value preserved. No selected-field projection, dropping unknown GUI/attrs/mods/description, sorting arrays, normalization or substitution of expected data. Comparison only projects the single explicitly excluded native time top key.
+
+## Immutable result / errors / effects
+
+Frozen MetadataComparison holds exact original bytes and SHA256s/timestamp; status initFalse MATCH_METADATA_VALUES_ONLY and runtime_bound/native_verified false cannot be supplied via ordinary constructor as approval flags. Decoded mutable structures stay local, no mutation of caller bytes or external state. SaveMetadataError stable reason only; malformed raw retained by caller rather than logged/leaked/coerced. No implicit retry/repair/fallback/runtime clock/archive work.
+
+## Test adequacy
+
+14currentgroups cover fullraw/status, object order/number spelling, every native top field/nested bindings, extra/missing top keys, principal literal1, time window/type/integrality, native types, unknownnested fields, arrayorder/boolnumber, positive/negativezero inclliteral-0, nested/topduplicate, UTF8/BOM/trailing/nonfinite/overflow, depth/size/string structuraltokens and immutable input types. Critical prior shallowcopy expected alias now removed with independent decoded controls. Tests are source models with explicit MODEL values; no actual engine/version/mod/camera claimed.
+
+## Resource and authentication boundaries
+
+16MiB raw cap and depth256 bound input/parser structure; equality iterative but decoded JSON plus pending pairs may expand memory relative to raw. No hard CPU/heap/IO/wallclock deadline promised. Comparing any two equal providedblobs proves semantic equality only; source-locked expected creator/control/camera/nativeengine/modlist/principal provenance, nofutureGUI schedule/metadata counters and runtime archive association remain caller obligations. No blanket safeJSON/noProxy/producer proof inferred.
+
+## Whole pipeline remaining
+
+Independent current Python review still required before integration. Actual expected controls/GUI route/metadata producer and absencefuturecontrols OPEN, native saved bytes NOT_RUN. Existing archive framing/full simulation byte equality/queue0/noMutation/all40roots/zeroAdvance/native receipts/Complete/pauseimmutableACK/rawfdpathpostclose/fullhostrunner/source/runtimeprofilecopy inventories/freshguard remain separate OPEN gates. No appcopy/engine/attempt/retry/C++/commit/push/delete/external/paid operation.
+
+## Review Summary
+
+| Severity | Count | Status |
+|----------|-------|--------|
+| CRITICAL | 0 | pass |
+| HIGH | 0 | pass |
+| MEDIUM | 0 | pass |
+| LOW | 0 | pass |
+
+Verdict: APPROVE_SOURCE_ONLY — full raw JSON semantic comparison under independently supplied expected controls; no native/archive/producer authentication approval. Current independent Python review and full integration/runtime gates remainOPEN/NOT_RUN.

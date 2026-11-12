@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "createdUTC": "2026-11-05T10:05:57.460421+00:00",
+  "status": "R07_SOURCE_DESIGN_INVESTIGATION_IN_PROGRESS",
+  "userAuthorizedContinueAndQuotaRecovery": true,
+  "usage": {
+    "ordinaryUsageAllowed": true,
+    "primaryUsedPercent": 71,
+    "weeklyUsedPercent": 72,
+    "credits": 0,
+    "resetCredits": 0
+  },
+  "automationReadback": "work/t17-metadata-controls-design-20261105/automation-update-readback-v1.json",
+  "contextManifest": {
+    "path": "work/t17-metadata-controls-design-20261105/context-manifest-v1.json",
+    "bytes": 28197,
+    "sha256": "f3ca2c1e38538f8a80921f7fa1c53898004231e4fac0b10e949a43ada649c02a"
+  },
+  "tasks": {
+    "native": "/root/r07_native_design",
+    "host": "/root/r07_host_design"
+  },
+  "authorizations": "Applicable /Users/liyungchih/AGENTS.md Delegation instruction for complex subtasks; two necessary metadata-only design investigations, not full review approval and not guard actor substitution. Same configured model/settings inherited; no quota workaround.",
+  "next": "Receive exact two source-design feasibility reports. Preserve partial reading progress; synthesize one prospective design only if constraints can be satisfied. Full fresh independent CODE/Python/JS DESIGN reviews still required before implementation.",
+  "guardRefreshApproved": false,
+  "formalCases": "THREE_NOT_RUN",
+  "faultHelpers": "24_CONSUMED_NO_RERUN",
+  "native": "NOT_RUN",
+  "implementation": "NOT_ADMITTED",
+  "publication": "LOCAL_ONLY_NO_NEW_COMMIT_OR_PUSH"
+}

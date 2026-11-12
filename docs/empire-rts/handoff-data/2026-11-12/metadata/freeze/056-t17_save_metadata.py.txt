@@ -1,0 +1,160 @@
+"""Purpose: complete raw metadata value comparison, no runtime authority. Date: 2026-10-22."""
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+import hashlib
+import json
+import math
+import struct
+from typing import Literal
+
+MAX_BYTES = 16 * 1024 * 1024
+MAX_DEPTH = 256
+_FIELDS = frozenset(('engine_version', 'playerID', 'mods', 'initAttributes', 'gui', 'description'))
+
+
+class SaveMetadataError(ValueError):
+    """Stable reason only. Caller retains original actual and expected bytes on rejection."""
+    def __init__(self, reason: str):
+        self.reason = reason
+        super().__init__(reason)
+
+
+@dataclass(frozen=True)
+class MetadataComparison:
+    actual_raw: bytes
+    expected_without_time_raw: bytes
+    actual_sha256: str
+    expected_sha256: str
+    timestamp: int
+    status: Literal['MATCH_METADATA_VALUES_ONLY'] = field(default='MATCH_METADATA_VALUES_ONLY', init=False)
+    runtime_bound: Literal[False] = field(default=False, init=False)
+    native_verified: Literal[False] = field(default=False, init=False)
+
+
+def _fail(reason: str):
+    raise SaveMetadataError(reason)
+
+
+def _decode(raw: bytes):
+    if type(raw) is not bytes:
+        _fail('IMMUTABLE_BYTES_REQUIRED')
+    if len(raw) > MAX_BYTES:
+        _fail('SIZE_CAP')
+    try:
+        text = raw.decode('utf-8', 'strict')
+    except UnicodeDecodeError:
+        _fail('INVALID_UTF8')
+    # Bound parser nesting before allocating a recursive decoded graph. Brackets
+    # in strings and escaped quotes are not structural tokens.
+    quoted = escaped = False
+    depth = 0
+    for char in text:
+        if quoted:
+            if escaped:
+                escaped = False
+            elif char == '\\':
+                escaped = True
+            elif char == '"':
+                quoted = False
+        elif char == '"':
+            quoted = True
+        elif char in '[{':
+            depth += 1
+            if depth > MAX_DEPTH:
+                _fail('DEPTH_CAP')
+        elif char in ']}':
+            depth -= 1
+
+    def pairs(rows):
+        result = {}
+        for key, value in rows:
+            if key in result:
+                _fail('DUPLICATE_KEY')
+            result[key] = value
+        return result
+
+    def number(token):
+        try:
+            val = float(token)
+        except (ValueError, OverflowError):
+            _fail('NONFINITE_NUMBER')
+        if not math.isfinite(val):
+            _fail('NONFINITE_NUMBER')
+        return val
+
+    def integer(token):
+        # Preserve JSON -0, which Python int would otherwise silently normalize.
+        value = number(token)
+        return value if value == 0 and token.startswith('-') else int(token)
+
+    try:
+        value = json.loads(text, object_pairs_hook=pairs, parse_int=integer,
+                           parse_float=number, parse_constant=lambda _: _fail('NONFINITE_NUMBER'))
+    except SaveMetadataError:
+        raise
+    except (ValueError, RecursionError, OverflowError):
+        _fail('INVALID_JSON')
+    return value
+
+
+def _schema(value, *, actual: bool) -> None:
+    if type(value) is not dict or set(value) != (_FIELDS | {'time'} if actual else _FIELDS):
+        _fail('TOP_LEVEL_SCHEMA')
+    if type(value['playerID']) is not int or value['playerID'] != 1:
+        _fail('PRINCIPAL')
+    if (type(value['engine_version']) is not str or type(value['description']) is not str
+            or type(value['mods']) is not list or type(value['initAttributes']) is not dict
+            or type(value['gui']) is not dict):
+        _fail('TOP_LEVEL_TYPES')
+
+
+def _same(left, right) -> bool:
+    pending = [(left, right)]
+    while pending:
+        a, b = pending.pop()
+        # JSON int/float both represent JS Number, but booleans are separate.
+        if type(a) in (int, float) and type(b) in (int, float):
+            if struct.pack('>d', float(a)) != struct.pack('>d', float(b)):
+                return False
+        elif type(a) is not type(b):
+            return False
+        elif type(a) is dict:
+            if a.keys() != b.keys():
+                return False
+            pending.extend((a[k], b[k]) for k in a)
+        elif type(a) is list:
+            if len(a) != len(b):
+                return False
+            pending.extend(zip(a, b))
+        elif a != b:
+            return False
+    return True
+
+
+def validate_metadata(actual_raw: bytes, expected_without_time_raw: bytes, *,
+                      earliest_epoch: int, latest_epoch: int) -> MetadataComparison:
+    """Compare full values with separately supplied controls; never authenticate them.
+
+    Expected values must be precommitted by a source-locked caller, including all
+    mods, attributes, GUI state/camera and absence of future schedule/counters.
+    This pure comparator cannot establish that provenance. No current clock is
+    read; caller supplies the inclusive native-save wall-clock interval.
+    """
+    if (type(earliest_epoch) is not int or type(latest_epoch) is not int
+            or not 0 <= earliest_epoch <= latest_epoch <= 2**53 - 1):
+        _fail('TIME_INTERVAL')
+    actual = _decode(actual_raw)
+    expected = _decode(expected_without_time_raw)
+    _schema(actual, actual=True)
+    _schema(expected, actual=False)
+    timestamp = actual['time']
+    if (type(timestamp) not in (int, float) or not math.isfinite(timestamp)
+            or timestamp < 0 or timestamp > 2**53 - 1 or timestamp != int(timestamp)
+            or not earliest_epoch <= timestamp <= latest_epoch):
+        _fail('SAVE_TIME')
+    if not _same({key: actual[key] for key in _FIELDS}, expected):
+        _fail('VALUE_MISMATCH')
+    return MetadataComparison(actual_raw, expected_without_time_raw,
+                              hashlib.sha256(actual_raw).hexdigest(),
+                              hashlib.sha256(expected_without_time_raw).hexdigest(), int(timestamp))

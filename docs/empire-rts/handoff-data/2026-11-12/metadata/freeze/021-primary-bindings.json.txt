@@ -1,0 +1,209 @@
+[
+  {
+    "source": "source/ps/SavedGame.cpp",
+    "exit": 0,
+    "stderr": "",
+    "transport": "prohibited",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/SavedGame.cpp",
+    "bytes": 10000,
+    "sha256": "6fa08d0a0f57b386484bc328ec95b41e73120b9358aeb48afc7d216f662d5267"
+  },
+  {
+    "source": "source/ps/Mod.cpp",
+    "exit": 0,
+    "stderr": "",
+    "transport": "prohibited",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Mod.cpp",
+    "bytes": 10443,
+    "sha256": "c8252d851566ac8a4065420f2c9a1f3cd1f5b592fc4efbecace93bfb5c00fcab"
+  },
+  {
+    "source": "source/ps/Mod.h",
+    "exit": 0,
+    "stderr": "",
+    "transport": "prohibited",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Mod.h",
+    "bytes": 3765,
+    "sha256": "3c1ad042624f0bf355afde8f9dcd6b893f9e7e58c6226da1ace2b1d1c18ae7c9"
+  },
+  {
+    "source": "source/ps/scripting/JSInterface_Mod.cpp",
+    "exit": 0,
+    "stderr": "",
+    "transport": "prohibited",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_Mod.cpp",
+    "bytes": 5679,
+    "sha256": "5a916c62580cd26d41fba808a0c81529ccd2dee5b9697f6434a5c4af4fa72eb0"
+  },
+  {
+    "source": "source/graphics/scripting/JSInterface_GameView.cpp",
+    "exit": 0,
+    "stderr": "",
+    "transport": "prohibited",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/scripting/JSInterface_GameView.cpp",
+    "bytes": 6184,
+    "sha256": "6503fba660c6d38f2392b9e96557dd4d4d8a52871bd27f4399ec5cccd68fe64b"
+  },
+  {
+    "source": "source/graphics/GameView.cpp",
+    "exit": 0,
+    "stderr": "",
+    "transport": "prohibited",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/GameView.cpp",
+    "bytes": 10458,
+    "sha256": "707449873cae736f9413dc0aa743bd9575c32a9821e2f1a2c22bf0143a06f51c"
+  },
+  {
+    "source": "source/graphics/GameView.h",
+    "exit": 0,
+    "stderr": "",
+    "transport": "prohibited",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/GameView.h",
+    "bytes": 3102,
+    "sha256": "6290324c12a10a09dc65a09ae174f45fe3c6a8e172a7a035c512dd420525dc23"
+  },
+  {
+    "source": "source/graphics/Camera.cpp",
+    "exit": 0,
+    "stderr": "",
+    "transport": "prohibited",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/Camera.cpp",
+    "bytes": 14760,
+    "sha256": "612b86c16a0bd62189a07ea5d767e7b0411a61e5f3edb58f24244bf6a5cbd0ae"
+  },
+  {
+    "source": "source/graphics/Camera.h",
+    "exit": 0,
+    "stderr": "",
+    "transport": "prohibited",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/Camera.h",
+    "bytes": 4549,
+    "sha256": "d3da9c24b67686586a84b0f76e2199d6d04ff03fae6f5e239fcb9e170084f4f9"
+  },
+  {
+    "source": "source/ps/Pyrogenesis.h",
+    "exit": 0,
+    "stderr": "",
+    "transport": "prohibited",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Pyrogenesis.h",
+    "bytes": 1175,
+    "sha256": "13e88bd20b945638cd4634f3760ed7fcd5464ef3efbbe38259f5b7b68d479dcc"
+  },
+  {
+    "source": "source/ps/Globals.cpp",
+    "exit": 0,
+    "stderr": "",
+    "transport": "prohibited",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Globals.cpp",
+    "bytes": 2497,
+    "sha256": "b774643b17b636ac84dfca6d91ef83474771128bb25991a24ae4543f37a087f7"
+  },
+  {
+    "source": "source/ps/scripting/JSInterface_SavedGame.cpp",
+    "exit": 0,
+    "stderr": "",
+    "transport": "prohibited",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_SavedGame.cpp",
+    "bytes": 4664,
+    "sha256": "59716fec2776d0e6e9fa2f3ddecbab0abcda7379b81c2de779282487d360a42a"
+  },
+  {
+    "source": "source/ps/scripting/JSInterface_Game.cpp",
+    "exit": 0,
+    "stderr": "",
+    "transport": "prohibited",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_Game.cpp",
+    "bytes": 4759,
+    "sha256": "ac71e18e4361f079de5295535014c4b9263a61b11c0f389fa27061c86139b7bc"
+  },
+  {
+    "source": "source/simulation2/Simulation2.cpp",
+    "exit": 0,
+    "stderr": "",
+    "transport": "prohibited",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/simulation2/Simulation2.cpp",
+    "bytes": 31497,
+    "sha256": "78260ac802da5569bbf19abca7de69297788aa458f1551553b7fdf8593e096ed"
+  },
+  {
+    "source": "source/graphics/CameraController.cpp",
+    "exit": 0,
+    "stderr": "",
+    "transport": "prohibited",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/CameraController.cpp",
+    "bytes": 22474,
+    "sha256": "025e6176b09730bc22f70bb9f8b14f2563e2b0852e84a00ed71ea3a97ff23d6d"
+  },
+  {
+    "source": "source/graphics/CameraController.h",
+    "exit": 0,
+    "stderr": "",
+    "transport": "prohibited",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/CameraController.h",
+    "bytes": 3573,
+    "sha256": "4d75277bde51e38c9c7220a49bc9026256531c1c06399dac8fd0fbca77a7bedf"
+  },
+  {
+    "source": "source/maths/Fixed.h",
+    "exit": 0,
+    "stderr": "",
+    "transport": "prohibited",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/maths/Fixed.h",
+    "bytes": 12193,
+    "sha256": "a79e050e2d47e44203d51fcd192527363b8169684343373259153431ae3543ea"
+  },
+  {
+    "source": "source/scriptinterface/ScriptConversions.cpp",
+    "exit": 0,
+    "stderr": "",
+    "transport": "prohibited",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/scriptinterface/ScriptConversions.cpp",
+    "bytes": 9827,
+    "sha256": "7342f0a5ce4f99ca242a4d699572cec836d394aa0077db7f6720c4a413da07c6"
+  },
+  {
+    "source": "source/scriptinterface/ScriptConversions.h",
+    "exit": 0,
+    "stderr": "",
+    "transport": "prohibited",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/scriptinterface/ScriptConversions.h",
+    "bytes": 4622,
+    "sha256": "e97e4a6769b8ab74e75c973ccd8fae510e2189a3067a3b8577f36d7929745ffe"
+  },
+  {
+    "source": "source/simulation2/system/Entity.h",
+    "exit": 0,
+    "stderr": "",
+    "transport": "prohibited",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/simulation2/system/Entity.h",
+    "bytes": 3303,
+    "sha256": "4bc98f0256b8173e9ddccb6e971e43bd4c20e4a96ae77d646c78b87e67c5e062"
+  },
+  {
+    "source": "source/ps/Replay.cpp",
+    "exit": 0,
+    "stderr": "",
+    "transport": "prohibited",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Replay.cpp",
+    "bytes": 10344,
+    "sha256": "18d01f424d0ea6627dd92b004e70d108d0286124719cdcd188b5e79f9f3546ad"
+  },
+  {
+    "source": "source/ps/Game.cpp",
+    "exit": 0,
+    "stderr": "",
+    "transport": "prohibited",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Game.cpp",
+    "bytes": 13301,
+    "sha256": "766c220c7b8568d26ad04bcde19eeddfdc9fdd6539e56dba9fbf8d472a6e4a8a"
+  },
+  {
+    "source": "source/simulation2/helpers/Position.h",
+    "exit": 0,
+    "stderr": "",
+    "transport": "prohibited",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/simulation2/helpers/Position.h",
+    "bytes": 1316,
+    "sha256": "342921a030bc603efb4c2158c4c7c7fe2f3b7bed3d470964cd795f48be1094c0"
+  }
+]

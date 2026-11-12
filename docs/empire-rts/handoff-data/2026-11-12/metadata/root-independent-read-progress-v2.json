@@ -1,0 +1,1655 @@
+{
+  "schema": 1,
+  "purpose": "Root independent staged content review; never a replacement CODE/Python/JSAPI verdict",
+  "createdUTC": "2026-11-11T15:23:32.726992+00:00",
+  "ownerThread": "01a1c8d0-ce47-7a13-8800-a59b935f0ce0",
+  "reviewerRole": "ROOT_INDEPENDENT_READBACK",
+  "inputManifestSHA256": "e73e6c48bd2a7ea31742aef7ad4b1744e6f28dbed799c39b28b25a3f9079b93a",
+  "status": "IN_PROGRESS_NO_ADMISSION_NO_VERDICT",
+  "coverage": {
+    "full": 43,
+    "partial": 0,
+    "unread": 42
+  },
+  "bindings": [
+    {
+      "index": 0,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/CONTRACT.md",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 1015,
+          "sha256": "0c1555dc923ac8e631944390273dc497f478fdb828929696217ee5d9705ebbd8",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 1015,
+          "sha256": "0c1555dc923ac8e631944390273dc497f478fdb828929696217ee5d9705ebbd8",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 1,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FIELD-MATRIX.md",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 9024,
+          "sha256": "46c39e138d5000490411bd00761770af199827504d7e3d404a05bce524d2ed59",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 9024,
+          "sha256": "46c39e138d5000490411bd00761770af199827504d7e3d404a05bce524d2ed59",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 2,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FUTURE-SCHEDULE-ABSENCE.md",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 2980,
+          "sha256": "ebc80f289f848639200f3f46cab489a07d5b18fb5765ef6bcaa561ca57a48fa1",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 2980,
+          "sha256": "ebc80f289f848639200f3f46cab489a07d5b18fb5765ef6bcaa561ca57a48fa1",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 3,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/HOST-API-DRAFT.md",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 5202,
+          "sha256": "b7cb74ad399938c3445325b9d98f1323559078b9555e156f870e5356aa3091d5",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 5202,
+          "sha256": "b7cb74ad399938c3445325b9d98f1323559078b9555e156f870e5356aa3091d5",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 4,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/OPEN-obligations.json",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 2839,
+          "sha256": "b699853bc8fc25b095556fc4b0e86b9343d0bc80c55efd3f01538e8694f28426",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 2839,
+          "sha256": "b699853bc8fc25b095556fc4b0e86b9343d0bc80c55efd3f01538e8694f28426",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 5,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/checkpoint.json",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 1376,
+          "sha256": "e72cf3b68a5c00e49ad4536cb6f734ec2fb4b569d7411c54c81ede249a382091",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 1376,
+          "sha256": "e72cf3b68a5c00e49ad4536cb6f734ec2fb4b569d7411c54c81ede249a382091",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 6,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 69380,
+          "sha256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 69380,
+          "sha256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 7,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/tools/epoch-rts/t17_save_metadata.py",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 5818,
+          "sha256": "96d9e51e6280b1998410d7a591eaf65c11dfd11bc68c3816255201bac30bfd43",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 5818,
+          "sha256": "96d9e51e6280b1998410d7a591eaf65c11dfd11bc68c3816255201bac30bfd43",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 8,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/simulation2/scripting/JSInterface_Simulation.cpp",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 8060,
+          "sha256": "b9dfa717c7317c9f5731c6ed9fd4c4c4b4be12b430f9903bde5a19127932ce40",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 8060,
+          "sha256": "b9dfa717c7317c9f5731c6ed9fd4c4c4b4be12b430f9903bde5a19127932ce40",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 9,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/code-review-v1.md",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content",
+      "integrity": {
+        "path": {
+          "bytes": 6732,
+          "sha256": "49b761dbbe8ad1d14c0ddc817c95fcb8be6d5a90f1d65f23d31bff0e4923fde6",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 6732,
+          "sha256": "49b761dbbe8ad1d14c0ddc817c95fcb8be6d5a90f1d65f23d31bff0e4923fde6",
+          "match": true
+        }
+      },
+      "fullReadRecordedUTC": "2026-11-11T15:23:32.726992+00:00"
+    },
+    {
+      "index": 10,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/completion-source-only.json",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content",
+      "integrity": {
+        "path": {
+          "bytes": 1756,
+          "sha256": "4167dc102b3075f50e6d45c96e50c15b3ca4e524c3ccbca7fdfe7e61ddf64e28",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 1756,
+          "sha256": "4167dc102b3075f50e6d45c96e50c15b3ca4e524c3ccbca7fdfe7e61ddf64e28",
+          "match": true
+        }
+      },
+      "fullReadRecordedUTC": "2026-11-11T15:23:32.726992+00:00"
+    },
+    {
+      "index": 11,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/manifest.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 4534,
+          "sha256": "85f93c30ba9484b2cce4129e0ec930b7f85449ef7d5e363da94ae8814a4b4d30",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 4534,
+          "sha256": "85f93c30ba9484b2cce4129e0ec930b7f85449ef7d5e363da94ae8814a4b4d30",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 12,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/python-review-v1.md",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content",
+      "integrity": {
+        "path": {
+          "bytes": 5646,
+          "sha256": "8d8a6b9b8f1c43788ac91a652aa11afa8231a58c758452d68a2a1be7795b7dff",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 5646,
+          "sha256": "8d8a6b9b8f1c43788ac91a652aa11afa8231a58c758452d68a2a1be7795b7dff",
+          "match": true
+        }
+      },
+      "fullReadRecordedUTC": "2026-11-11T15:23:32.726992+00:00"
+    },
+    {
+      "index": 13,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 41941,
+          "sha256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 41941,
+          "sha256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 14,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/wire-schema.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 28262,
+          "sha256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 28262,
+          "sha256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 15,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/code-review-v1.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 36970,
+          "sha256": "bb2bdb8bbd8e295ef8a396f601a894acb4bd84df68850581e7832bead78cea5b",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 36970,
+          "sha256": "bb2bdb8bbd8e295ef8a396f601a894acb4bd84df68850581e7832bead78cea5b",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 16,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/completion-source-only.json",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content",
+      "integrity": {
+        "path": {
+          "bytes": 1537,
+          "sha256": "a296be8ebc5e142b8cdc578d9990417c27866639bee70dba6d75a413e72c0431",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 1537,
+          "sha256": "a296be8ebc5e142b8cdc578d9990417c27866639bee70dba6d75a413e72c0431",
+          "match": true
+        }
+      },
+      "fullReadRecordedUTC": "2026-11-11T15:23:32.726992+00:00"
+    },
+    {
+      "index": 17,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/js-api-review-v1.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 60034,
+          "sha256": "071cc8318e875f70e1d3500cfa032f5146e4fd04090d0bbc76cee0773141f832",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 60034,
+          "sha256": "071cc8318e875f70e1d3500cfa032f5146e4fd04090d0bbc76cee0773141f832",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 18,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/manifest.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 27089,
+          "sha256": "06a9cd6b7f8651d03daf5d57103d0aacc3025af0c92ab9c97b053d09ba0f1c9a",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 27089,
+          "sha256": "06a9cd6b7f8651d03daf5d57103d0aacc3025af0c92ab9c97b053d09ba0f1c9a",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 19,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context-bindings.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 4844,
+          "sha256": "591322503804584305793e9f69ae5e063954bbffcecebdcb9c495653989c34b1",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 4844,
+          "sha256": "591322503804584305793e9f69ae5e063954bbffcecebdcb9c495653989c34b1",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 20,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/official-bindings.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 886,
+          "sha256": "5ca0aacaadc5b442df61f06b531a1235b8685ccc785124f5d2d52b145065cace",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 886,
+          "sha256": "5ca0aacaadc5b442df61f06b531a1235b8685ccc785124f5d2d52b145065cace",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 21,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primary-bindings.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 8005,
+          "sha256": "d426f3d161bb5c65deef3fffbb81352342aeb5bc099af577c9b3b10656ce46b4",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 8005,
+          "sha256": "d426f3d161bb5c65deef3fffbb81352342aeb5bc099af577c9b3b10656ce46b4",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 22,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/gui/session/selection.js",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 14510,
+          "sha256": "55d296bddff20db103bf81f6a61a5c7f435ebfab0cb89fdd5f2206a6c7c7d049",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 14510,
+          "sha256": "55d296bddff20db103bf81f6a61a5c7f435ebfab0cb89fdd5f2206a6c7c7d049",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 23,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/gui/session/session.js",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 25386,
+          "sha256": "04649d5ef27fe135adcdec6e85df07296d4bb085cce2df5b9ef3feaf61a9750e",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 25386,
+          "sha256": "04649d5ef27fe135adcdec6e85df07296d4bb085cce2df5b9ef3feaf61a9750e",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 24,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/simulation/components/GuiInterface.js",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 73967,
+          "sha256": "9eaf481d5c965cc4df0cbe1fd51d2db81af162cea26c50fc67484633dd867b40",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 73967,
+          "sha256": "9eaf481d5c965cc4df0cbe1fd51d2db81af162cea26c50fc67484633dd867b40",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 25,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/Camera.cpp",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 14760,
+          "sha256": "612b86c16a0bd62189a07ea5d767e7b0411a61e5f3edb58f24244bf6a5cbd0ae",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 14760,
+          "sha256": "612b86c16a0bd62189a07ea5d767e7b0411a61e5f3edb58f24244bf6a5cbd0ae",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 26,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/Camera.h",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content",
+      "integrity": {
+        "path": {
+          "bytes": 4549,
+          "sha256": "d3da9c24b67686586a84b0f76e2199d6d04ff03fae6f5e239fcb9e170084f4f9",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 4549,
+          "sha256": "d3da9c24b67686586a84b0f76e2199d6d04ff03fae6f5e239fcb9e170084f4f9",
+          "match": true
+        }
+      },
+      "fullReadRecordedUTC": "2026-11-11T15:23:32.726992+00:00"
+    },
+    {
+      "index": 27,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/CameraController.cpp",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content",
+      "integrity": {
+        "path": {
+          "bytes": 22474,
+          "sha256": "025e6176b09730bc22f70bb9f8b14f2563e2b0852e84a00ed71ea3a97ff23d6d",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 22474,
+          "sha256": "025e6176b09730bc22f70bb9f8b14f2563e2b0852e84a00ed71ea3a97ff23d6d",
+          "match": true
+        }
+      },
+      "fullReadRecordedUTC": "2026-11-11T15:23:32.726992+00:00"
+    },
+    {
+      "index": 28,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/CameraController.h",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content",
+      "integrity": {
+        "path": {
+          "bytes": 3573,
+          "sha256": "4d75277bde51e38c9c7220a49bc9026256531c1c06399dac8fd0fbca77a7bedf",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 3573,
+          "sha256": "4d75277bde51e38c9c7220a49bc9026256531c1c06399dac8fd0fbca77a7bedf",
+          "match": true
+        }
+      },
+      "fullReadRecordedUTC": "2026-11-11T15:23:32.726992+00:00"
+    },
+    {
+      "index": 29,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/GameView.cpp",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content",
+      "integrity": {
+        "path": {
+          "bytes": 10458,
+          "sha256": "707449873cae736f9413dc0aa743bd9575c32a9821e2f1a2c22bf0143a06f51c",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 10458,
+          "sha256": "707449873cae736f9413dc0aa743bd9575c32a9821e2f1a2c22bf0143a06f51c",
+          "match": true
+        }
+      },
+      "fullReadRecordedUTC": "2026-11-11T15:23:32.726992+00:00"
+    },
+    {
+      "index": 30,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/GameView.h",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content",
+      "integrity": {
+        "path": {
+          "bytes": 3102,
+          "sha256": "6290324c12a10a09dc65a09ae174f45fe3c6a8e172a7a035c512dd420525dc23",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 3102,
+          "sha256": "6290324c12a10a09dc65a09ae174f45fe3c6a8e172a7a035c512dd420525dc23",
+          "match": true
+        }
+      },
+      "fullReadRecordedUTC": "2026-11-11T15:23:32.726992+00:00"
+    },
+    {
+      "index": 31,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/scripting/JSInterface_GameView.cpp",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 6184,
+          "sha256": "6503fba660c6d38f2392b9e96557dd4d4d8a52871bd27f4399ec5cccd68fe64b",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 6184,
+          "sha256": "6503fba660c6d38f2392b9e96557dd4d4d8a52871bd27f4399ec5cccd68fe64b",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 32,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/maths/Fixed.h",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 12193,
+          "sha256": "a79e050e2d47e44203d51fcd192527363b8169684343373259153431ae3543ea",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 12193,
+          "sha256": "a79e050e2d47e44203d51fcd192527363b8169684343373259153431ae3543ea",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 33,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Game.cpp",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 13301,
+          "sha256": "766c220c7b8568d26ad04bcde19eeddfdc9fdd6539e56dba9fbf8d472a6e4a8a",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 13301,
+          "sha256": "766c220c7b8568d26ad04bcde19eeddfdc9fdd6539e56dba9fbf8d472a6e4a8a",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 34,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Globals.cpp",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content",
+      "integrity": {
+        "path": {
+          "bytes": 2497,
+          "sha256": "b774643b17b636ac84dfca6d91ef83474771128bb25991a24ae4543f37a087f7",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 2497,
+          "sha256": "b774643b17b636ac84dfca6d91ef83474771128bb25991a24ae4543f37a087f7",
+          "match": true
+        }
+      },
+      "fullReadRecordedUTC": "2026-11-11T15:23:32.726992+00:00"
+    },
+    {
+      "index": 35,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Mod.cpp",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 10443,
+          "sha256": "c8252d851566ac8a4065420f2c9a1f3cd1f5b592fc4efbecace93bfb5c00fcab",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 10443,
+          "sha256": "c8252d851566ac8a4065420f2c9a1f3cd1f5b592fc4efbecace93bfb5c00fcab",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 36,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Mod.h",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content",
+      "integrity": {
+        "path": {
+          "bytes": 3765,
+          "sha256": "3c1ad042624f0bf355afde8f9dcd6b893f9e7e58c6226da1ace2b1d1c18ae7c9",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 3765,
+          "sha256": "3c1ad042624f0bf355afde8f9dcd6b893f9e7e58c6226da1ace2b1d1c18ae7c9",
+          "match": true
+        }
+      },
+      "fullReadRecordedUTC": "2026-11-11T15:23:32.726992+00:00"
+    },
+    {
+      "index": 37,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Pyrogenesis.h",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content",
+      "integrity": {
+        "path": {
+          "bytes": 1175,
+          "sha256": "13e88bd20b945638cd4634f3760ed7fcd5464ef3efbbe38259f5b7b68d479dcc",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 1175,
+          "sha256": "13e88bd20b945638cd4634f3760ed7fcd5464ef3efbbe38259f5b7b68d479dcc",
+          "match": true
+        }
+      },
+      "fullReadRecordedUTC": "2026-11-11T15:23:32.726992+00:00"
+    },
+    {
+      "index": 38,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Replay.cpp",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 10344,
+          "sha256": "18d01f424d0ea6627dd92b004e70d108d0286124719cdcd188b5e79f9f3546ad",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 10344,
+          "sha256": "18d01f424d0ea6627dd92b004e70d108d0286124719cdcd188b5e79f9f3546ad",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 39,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/SavedGame.cpp",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 10000,
+          "sha256": "6fa08d0a0f57b386484bc328ec95b41e73120b9358aeb48afc7d216f662d5267",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 10000,
+          "sha256": "6fa08d0a0f57b386484bc328ec95b41e73120b9358aeb48afc7d216f662d5267",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 40,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_Game.cpp",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 4759,
+          "sha256": "ac71e18e4361f079de5295535014c4b9263a61b11c0f389fa27061c86139b7bc",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 4759,
+          "sha256": "ac71e18e4361f079de5295535014c4b9263a61b11c0f389fa27061c86139b7bc",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 41,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_Mod.cpp",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 5679,
+          "sha256": "5a916c62580cd26d41fba808a0c81529ccd2dee5b9697f6434a5c4af4fa72eb0",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 5679,
+          "sha256": "5a916c62580cd26d41fba808a0c81529ccd2dee5b9697f6434a5c4af4fa72eb0",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 42,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_SavedGame.cpp",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 4664,
+          "sha256": "59716fec2776d0e6e9fa2f3ddecbab0abcda7379b81c2de779282487d360a42a",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 4664,
+          "sha256": "59716fec2776d0e6e9fa2f3ddecbab0abcda7379b81c2de779282487d360a42a",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 43,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/scriptinterface/ScriptConversions.cpp",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 9827,
+          "sha256": "7342f0a5ce4f99ca242a4d699572cec836d394aa0077db7f6720c4a413da07c6",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 9827,
+          "sha256": "7342f0a5ce4f99ca242a4d699572cec836d394aa0077db7f6720c4a413da07c6",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 44,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/scriptinterface/ScriptConversions.h",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content",
+      "integrity": {
+        "path": {
+          "bytes": 4622,
+          "sha256": "e97e4a6769b8ab74e75c973ccd8fae510e2189a3067a3b8577f36d7929745ffe",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 4622,
+          "sha256": "e97e4a6769b8ab74e75c973ccd8fae510e2189a3067a3b8577f36d7929745ffe",
+          "match": true
+        }
+      },
+      "fullReadRecordedUTC": "2026-11-11T15:23:32.726992+00:00"
+    },
+    {
+      "index": 45,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/simulation2/Simulation2.cpp",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 31497,
+          "sha256": "78260ac802da5569bbf19abca7de69297788aa458f1551553b7fdf8593e096ed",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 31497,
+          "sha256": "78260ac802da5569bbf19abca7de69297788aa458f1551553b7fdf8593e096ed",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 46,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/simulation2/helpers/Position.h",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content",
+      "integrity": {
+        "path": {
+          "bytes": 1316,
+          "sha256": "342921a030bc603efb4c2158c4c7c7fe2f3b7bed3d470964cd795f48be1094c0",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 1316,
+          "sha256": "342921a030bc603efb4c2158c4c7c7fe2f3b7bed3d470964cd795f48be1094c0",
+          "match": true
+        }
+      },
+      "fullReadRecordedUTC": "2026-11-11T15:23:32.726992+00:00"
+    },
+    {
+      "index": 47,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/simulation2/system/Entity.h",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content",
+      "integrity": {
+        "path": {
+          "bytes": 3303,
+          "sha256": "4bc98f0256b8173e9ddccb6e971e43bd4c20e4a96ae77d646c78b87e67c5e062",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 3303,
+          "sha256": "4bc98f0256b8173e9ddccb6e971e43bd4c20e4a96ae77d646c78b87e67c5e062",
+          "match": true
+        }
+      },
+      "fullReadRecordedUTC": "2026-11-11T15:23:32.726992+00:00"
+    },
+    {
+      "index": 48,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/manifest.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 12729,
+          "sha256": "17eb3663cc51be04f880be2d2045bbbc1d5fe8fcf461cc2a82191ed9aa85e599",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 12729,
+          "sha256": "17eb3663cc51be04f880be2d2045bbbc1d5fe8fcf461cc2a82191ed9aa85e599",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 49,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1-review-js-v1/review.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 48313,
+          "sha256": "ccc2ef605452c2748626eb7305a72de5dc976636f0042d1b96395101b62315fe",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 48313,
+          "sha256": "ccc2ef605452c2748626eb7305a72de5dc976636f0042d1b96395101b62315fe",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 50,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1-review-js-v1/review.md",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 3216,
+          "sha256": "4ec61b9d59353c6afccb21bdf96f6fb76d6b04a17a66f7ce207fd8d7569d26f7",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 3216,
+          "sha256": "4ec61b9d59353c6afccb21bdf96f6fb76d6b04a17a66f7ce207fd8d7569d26f7",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 51,
+      "path": "docs/empire-rts/METADATA-CONTROLS-CROSSWALK-2026-11-05.md",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 5600,
+          "sha256": "7870cb6f94937d493c228af1d24ada0a4f8b0784602806955e10d5952fe2b951",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 5600,
+          "sha256": "7870cb6f94937d493c228af1d24ada0a4f8b0784602806955e10d5952fe2b951",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 52,
+      "path": "docs/empire-rts/handoff-data/2026-11-05/METADATA-CROSSWALK.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 9887,
+          "sha256": "ff7570e2ec7dfa81c4770235c6f4c8a8856ad4d4797b4a060913402dd8f11034",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 9887,
+          "sha256": "ff7570e2ec7dfa81c4770235c6f4c8a8856ad4d4797b4a060913402dd8f11034",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 53,
+      "path": "docs/empire-rts/PROJECT-ASSESSMENT-2026-11-05.md",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 11805,
+          "sha256": "922a2439c6fb13f86f6bca4289f673ccc3581435423358d9a47f8e0ae2bdb54c",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 11805,
+          "sha256": "922a2439c6fb13f86f6bca4289f673ccc3581435423358d9a47f8e0ae2bdb54c",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 54,
+      "path": "docs/empire-rts/handoff-data/2026-11-05/ASSESSMENT.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 17288,
+          "sha256": "531d43cf61d36dd768fa78a81a4951d2a8df9e9b776a603cca077d5b63e17ab5",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 17288,
+          "sha256": "531d43cf61d36dd768fa78a81a4951d2a8df9e9b776a603cca077d5b63e17ab5",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 55,
+      "path": "tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 69380,
+          "sha256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 69380,
+          "sha256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 56,
+      "path": "tools/epoch-rts/t17_save_metadata.py",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 5818,
+          "sha256": "96d9e51e6280b1998410d7a591eaf65c11dfd11bc68c3816255201bac30bfd43",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 5818,
+          "sha256": "96d9e51e6280b1998410d7a591eaf65c11dfd11bc68c3816255201bac30bfd43",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 57,
+      "path": "tools/epoch-rts/t17_save_prearm.py",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 36753,
+          "sha256": "4a892751fb9bf8924bb96b05c23695d1def1cca7e9fae070e48e2618ea1d62bd",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 36753,
+          "sha256": "4a892751fb9bf8924bb96b05c23695d1def1cca7e9fae070e48e2618ea1d62bd",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 58,
+      "path": "work/t17-save-host-prearm-preparation/source-scope-v1/SCOPE-RATIONALE.md",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 2490,
+          "sha256": "3e800200307b62ad5285680fc0f65d340034c9c4ca335f0528d48939fc51c76e",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 2490,
+          "sha256": "3e800200307b62ad5285680fc0f65d340034c9c4ca335f0528d48939fc51c76e",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 59,
+      "path": "work/t17-save-host-prearm-preparation/source-scope-v1/completion-source-scope-only.json",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 1627,
+          "sha256": "14a0630ddc1ee54b3a1df2a55621026504741d4a468a1f834e64303533aead65",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 1627,
+          "sha256": "14a0630ddc1ee54b3a1df2a55621026504741d4a468a1f834e64303533aead65",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 60,
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/SPEC.md",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 6167,
+          "sha256": "bbde20a000d4e3e5bdaed90073c1a9d3a886048d3e9602d46af3ed665c93410e",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 6167,
+          "sha256": "bbde20a000d4e3e5bdaed90073c1a9d3a886048d3e9602d46af3ed665c93410e",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 61,
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/SPEC.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 35505,
+          "sha256": "2271dfdee03523a3438527bfbb8a480de6757fff8925d9d09fc5c51ea61f4009",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 35505,
+          "sha256": "2271dfdee03523a3438527bfbb8a480de6757fff8925d9d09fc5c51ea61f4009",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 62,
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/WIRE-EXTENSION.json",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 5731,
+          "sha256": "05ee5b55406a5d88af2331782afd9ef18452e374572fbb843b8c2c9c67747baf",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 5731,
+          "sha256": "05ee5b55406a5d88af2331782afd9ef18452e374572fbb843b8c2c9c67747baf",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 63,
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/timeline.json",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 1639,
+          "sha256": "0c18f3ccfe551cdbf6a9986336ec1dccafab396b08fed8de1699c44805b393f4",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 1639,
+          "sha256": "0c18f3ccfe551cdbf6a9986336ec1dccafab396b08fed8de1699c44805b393f4",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 64,
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/manifest.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 6579,
+          "sha256": "7c07a7de8e959ecd2711a29e892eaa3a34669a80a7420ab5dbe51bc627d76ee5",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 6579,
+          "sha256": "7c07a7de8e959ecd2711a29e892eaa3a34669a80a7420ab5dbe51bc627d76ee5",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 65,
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/code-design-review-v1.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 7362,
+          "sha256": "42384e8486999f79cf54e2e2fc102fdd5dc01235b1092ed540be61e324466634",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 7362,
+          "sha256": "42384e8486999f79cf54e2e2fc102fdd5dc01235b1092ed540be61e324466634",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 66,
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/js-api-design-review-v1.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 16482,
+          "sha256": "041858593dba7b11b6e112e64ce26fe08f40447ccc341e6fb572092f7d740630",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 16482,
+          "sha256": "041858593dba7b11b6e112e64ce26fe08f40447ccc341e6fb572092f7d740630",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 67,
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/completion-design-only.json",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 991,
+          "sha256": "ac8aa276c96afe5c6c2eec7b829d8ac9556b1cc159d5f051bec466ea436ab690",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 991,
+          "sha256": "ac8aa276c96afe5c6c2eec7b829d8ac9556b1cc159d5f051bec466ea436ab690",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 68,
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 41941,
+          "sha256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 41941,
+          "sha256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 69,
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/wire-schema.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 28262,
+          "sha256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 28262,
+          "sha256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 70,
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/source-registry.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 247916,
+          "sha256": "3e6278f49bfe22d5298e8539497819fc14406319d695fe975a6e0e091995674b",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 247916,
+          "sha256": "3e6278f49bfe22d5298e8539497819fc14406319d695fe975a6e0e091995674b",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 71,
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/source-registry.md",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 23583,
+          "sha256": "5ff62cf4c16b584827f583b54f2ada09f69f665fce70168a4593c6ca82aa469b",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 23583,
+          "sha256": "5ff62cf4c16b584827f583b54f2ada09f69f665fce70168a4593c6ca82aa469b",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 72,
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/code-review.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 20162,
+          "sha256": "c25a6e9ac8e6c24bba5be10115119ff80c36b8b16ea81b2eaac763edf4e427cb",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 20162,
+          "sha256": "c25a6e9ac8e6c24bba5be10115119ff80c36b8b16ea81b2eaac763edf4e427cb",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 73,
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/js-api-review.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 16383,
+          "sha256": "3b16e62ff2e2e93c2a67ea0f26ef1124a0a064f706154120d1a4173f68fcca84",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 16383,
+          "sha256": "3b16e62ff2e2e93c2a67ea0f26ef1124a0a064f706154120d1a4173f68fcca84",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 74,
+      "path": "work/t17-metadata-controls-design-20261105/DESIGN-v1.md",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 14580,
+          "sha256": "d190ebf684348feba069fed69f8a92587fda378bc1fd7a9a5391c8867e1b1284",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 14580,
+          "sha256": "d190ebf684348feba069fed69f8a92587fda378bc1fd7a9a5391c8867e1b1284",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 75,
+      "path": "work/t17-metadata-controls-design-20261105/RAW-STAGE-v1.json",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 2266,
+          "sha256": "b641b520ab8ebb5a3273a63947edc776c3c671c21896152caefeaba6c71e9681",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 2266,
+          "sha256": "b641b520ab8ebb5a3273a63947edc776c3c671c21896152caefeaba6c71e9681",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 76,
+      "path": "work/t17-metadata-controls-design-20261105/FUTURE-TEST-PLAN-v1.json",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 1401,
+          "sha256": "20374b2ee6154a67386f35f16874c90ce5da355732abdb96ee0e505f18121608",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 1401,
+          "sha256": "20374b2ee6154a67386f35f16874c90ce5da355732abdb96ee0e505f18121608",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 77,
+      "path": "work/t17-metadata-controls-design-20261105/ROOT-CAUSALITY-CORRECTION-v1.json",
+      "readStatus": "FULL",
+      "readRange": "entire displayed content across this child chat",
+      "integrity": {
+        "path": {
+          "bytes": 621,
+          "sha256": "2c284dacef98520457e7ce45ce2833f60621c2fc3b6a1ee6cb551a042fca1cd3",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 621,
+          "sha256": "2c284dacef98520457e7ce45ce2833f60621c2fc3b6a1ee6cb551a042fca1cd3",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 78,
+      "path": "work/t17-metadata-controls-design-20261105/host-design-investigation-v1.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 9773,
+          "sha256": "9c51cda36c3f0a3263775d0bb060b0c0b172c6ab5264d9b8e3412143854e8a90",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 9773,
+          "sha256": "9c51cda36c3f0a3263775d0bb060b0c0b172c6ab5264d9b8e3412143854e8a90",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 79,
+      "path": "work/t17-metadata-controls-design-20261105/host-design-investigation-v1.md",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 17105,
+          "sha256": "da798cc2c6a9337adadb1e1437f6e02de7eace56cdd4b032e6742a274f4486a4",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 17105,
+          "sha256": "da798cc2c6a9337adadb1e1437f6e02de7eace56cdd4b032e6742a274f4486a4",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 80,
+      "path": "work/t17-metadata-controls-design-20261105/native-design-investigation-v1.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 12866,
+          "sha256": "f3f3c735cfab0af0faf93fde164815477e579ccb05d60296f13133b5d75e2ee8",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 12866,
+          "sha256": "f3f3c735cfab0af0faf93fde164815477e579ccb05d60296f13133b5d75e2ee8",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 81,
+      "path": "work/t17-metadata-controls-design-20261105/native-design-investigation-v1.md",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 20319,
+          "sha256": "45c5bb6941a008ee54790ad4191a77cdfb9bda2a393c8769defc9a7de8267aba",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 20319,
+          "sha256": "45c5bb6941a008ee54790ad4191a77cdfb9bda2a393c8769defc9a7de8267aba",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 82,
+      "path": "work/t17-metadata-controls-design-20261105/context-manifest-v1.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 28197,
+          "sha256": "f3ca2c1e38538f8a80921f7fa1c53898004231e4fac0b10e949a43ada649c02a",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 28197,
+          "sha256": "f3ca2c1e38538f8a80921f7fa1c53898004231e4fac0b10e949a43ada649c02a",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 83,
+      "path": "work/t17-metadata-controls-design-20261105/before-r06-causality-correction/docs/empire-rts/METADATA-CONTROLS-CROSSWALK-2026-11-05.md",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 4882,
+          "sha256": "5397dcd51de5e0811e93253db256462c068eef22e36455899abf66296c1d5c15",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 4882,
+          "sha256": "5397dcd51de5e0811e93253db256462c068eef22e36455899abf66296c1d5c15",
+          "match": true
+        }
+      }
+    },
+    {
+      "index": 84,
+      "path": "work/t17-metadata-controls-design-20261105/before-r06-causality-correction/docs/empire-rts/handoff-data/2026-11-05/METADATA-CROSSWALK.json",
+      "readStatus": "UNREAD",
+      "readRange": null,
+      "integrity": {
+        "path": {
+          "bytes": 9378,
+          "sha256": "10960a9b2d4d7a02c40335e53df4065a5971ed41c2ce21b580fa4dce4b47e5db",
+          "match": true
+        },
+        "snapshot": {
+          "bytes": 9378,
+          "sha256": "10960a9b2d4d7a02c40335e53df4065a5971ed41c2ce21b580fa4dce4b47e5db",
+          "match": true
+        }
+      }
+    }
+  ],
+  "functionalReasoningSoFar": [
+    {
+      "topic": "Capture-to-Save mutation window",
+      "evidenceIndices": [
+        39,
+        42
+      ],
+      "assessment": "GUI metadata structured clone occurs before SavedGames::Save; SerializeState occurs before final init/mod/player/camera capture. Paused same callback alone cannot establish nonmutation. Future SOURCE closure remains mandatory."
+    },
+    {
+      "topic": "Freshload attributes",
+      "evidenceIndices": [
+        38,
+        42
+      ],
+      "assessment": "StartSavedGame calls CGame.StartGame and Replay.StartGame overwrites nested timestamp/engine_version/mods. Fresh controls must use this load lineage; no origin-metadata bootstrap. Replay StartGame does not explicitly flush; no new wait/turn permitted."
+    },
+    {
+      "topic": "Principal and realm",
+      "evidenceIndices": [
+        8,
+        40
+      ],
+      "assessment": "GuiInterfaceCall invokes simulation with actual viewed player and cross-compartment cloned values; GetPlayerID is separate. Literal or payload principal cannot stand in for native caller provenance."
+    },
+    {
+      "topic": "Metadata numeric comparison",
+      "evidenceIndices": [
+        7,
+        56
+      ],
+      "assessment": "Existing comparator preserves JSON -0 and compares numeric values using binary64 bytes; booleans remain distinct. New structural materializer must preserve agreed number semantics and cannot weaken comparator or infer native provenance from MATCH."
+    },
+    {
+      "topic": "Camera",
+      "evidenceIndices": [
+        27,
+        31,
+        39,
+        50
+      ],
+      "assessment": "Getter/Save mapping reviewed; complete CameraController and GameView bodies are now read in v2. Actual caller/runtime/controller identity and no-intervening-mutation closure remain OPEN; see v2 camera update assessment."
+    },
+    {
+      "topic": "Whole transaction deadline",
+      "evidenceIndices": [
+        60,
+        62,
+        63,
+        67
+      ],
+      "assessment": "Controls encode/transport/persist/readback/expected and comparison must consume unchanged t_arm+5s and outer limits. GUI ACK endpoint receipt remains required; controls stage cannot reset deadline."
+    },
+    {
+      "topic": "Camera updates and restore height adjustment",
+      "evidenceIndices": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        46
+      ],
+      "assessment": "Full GameView.cpp Update calls camera Update(deltaRealTime), gated by touch/focus/cinema and without a pause check in this body. CameraController Update responds to hotkeys/mouse/follow/zoom/height and can mutate controls. SetCamera also calls FocusHeight(false), which may adjust Y with constraints enabled. Getter bodies use GetValue, not smoothed presentation values. Therefore simulation pause or nominal setter values alone do not establish unchanged saved-camera controls. Same synchronous callback/nonreentrancy plus source/runtime/input/serializer closure and fresh getter lineage remain mandatory. This is a source observation, not an observed native mismatch or new formal DESIGN blocker."
+    }
+  ],
+  "formalFindingStatus": "NOT_FINALIZED_PENDING_COMPLETE_CONTENT_REVIEW",
+  "allThreeDesignApproved": false,
+  "implementationAdmitted": false,
+  "historicalCanonicalAndContractsReadComplete": false,
+  "next": "Continue unread manifest contents and canonical/historical contracts; inspect original three formal reports only when available; never borrow their coverage. Full root review plus three formal approvals required before separate source assignment.",
+  "limits": "Static text and SHA/bytes inspection only. No project-code execution/tests/helpers/native/guard/producer/fixture/engine. All prior FAIL/STOP/UNKNOWN/raw/seals retained.",
+  "priorProgress": "work/t17-metadata-controls-design-20261105/root-independent-read-progress-v1.json",
+  "newlyFullIndices": [
+    9,
+    10,
+    12,
+    16,
+    26,
+    27,
+    28,
+    29,
+    30,
+    34,
+    36,
+    37,
+    44,
+    46,
+    47
+  ],
+  "newFullFromUnreadCount": 14,
+  "partialToFullCount": 1
+}

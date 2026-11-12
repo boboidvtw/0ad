@@ -1,0 +1,1152 @@
+{
+  "schema": "T17_MAP_SCRIPT_FIX_JS_API_REVIEW_V1",
+  "createdClientDate": "2026-10-25",
+  "reviewer": "/root/scenario_js_review",
+  "independentFromAuthor": true,
+  "verdict": "APPROVE_SOURCE_ONLY",
+  "manifestSHA256": "06a9cd6b7f8651d03daf5d57103d0aacc3025af0c92ab9c97b053d09ba0f1c9a",
+  "runtimeSourceSHA256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885",
+  "findingCounts": {
+    "CRITICAL": 0,
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 0
+  },
+  "findings": [],
+  "scope": "Fresh complete current GUI transaction source/API review of map-script repair with owned pregame/codec/XML/command dependencies, actual official/native selection contracts, wire and retained source evidence. Native execution/full pipeline excluded.",
+  "all98BindingsMatch": true,
+  "bindingCounts": {
+    "artifacts": 55,
+    "referenceInputs": 43,
+    "total": 98
+  },
+  "bindingAudit": [
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/CONTRACT.md",
+      "bytes": 2069,
+      "sha256": "c795225a7ea63b2e3dabba0a698fa2f88d050b38d62006732a9bff0ecb583375",
+      "bindingKind": "artifacts",
+      "actualBytes": 2069,
+      "actualSHA256": "c795225a7ea63b2e3dabba0a698fa2f88d050b38d62006732a9bff0ecb583375",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/SOURCEPROOF.md",
+      "bytes": 3133,
+      "sha256": "049f464afdb86f35486d11a393dd56f5240e9aa6b17acb7352d1437bc559c46e",
+      "bindingKind": "artifacts",
+      "actualBytes": 3133,
+      "actualSHA256": "049f464afdb86f35486d11a393dd56f5240e9aa6b17acb7352d1437bc559c46e",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/before/tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js",
+      "bytes": 69349,
+      "sha256": "65713fd54def4325f0b6cad32504cb386248572a1e0732b2bb1aa48f6a02db14",
+      "bindingKind": "artifacts",
+      "actualBytes": 69349,
+      "actualSHA256": "65713fd54def4325f0b6cad32504cb386248572a1e0732b2bb1aa48f6a02db14",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/before-mapping.json",
+      "bytes": 421,
+      "sha256": "cedb527cd1867f59ed07c6180d7ffd5c266e277fd3f43c63b5d7239c1575f254",
+      "bindingKind": "artifacts",
+      "actualBytes": 421,
+      "actualSHA256": "cedb527cd1867f59ed07c6180d7ffd5c266e277fd3f43c63b5d7239c1575f254",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/checkpoint.json",
+      "bytes": 1081,
+      "sha256": "0709522ecd07f567323ee6d292ba32034873fa7c0ea044bbd6cf69b3864494be",
+      "bindingKind": "artifacts",
+      "actualBytes": 1081,
+      "actualSHA256": "0709522ecd07f567323ee6d292ba32034873fa7c0ea044bbd6cf69b3864494be",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/tools/epoch-rts/t17-save-harness/gui/t17_save/command_creators.js",
+      "bytes": 3098,
+      "sha256": "689ae8db68126b76c521e22e4925eeb4f94e2bdc68403110ed054f862fd5fd65",
+      "bindingKind": "artifacts",
+      "actualBytes": 3098,
+      "actualSHA256": "689ae8db68126b76c521e22e4925eeb4f94e2bdc68403110ed054f862fd5fd65",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/tools/epoch-rts/t17-save-harness/maps/random/epoch_t17_save_six.js",
+      "bytes": 1055,
+      "sha256": "9736a6ee035bce491a1b29d818b7589381ed5257bbbb498f6a22f59969a57209",
+      "bindingKind": "artifacts",
+      "actualBytes": 1055,
+      "actualSHA256": "9736a6ee035bce491a1b29d818b7589381ed5257bbbb498f6a22f59969a57209",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/tools/epoch-rts/t17-save-harness/maps/random/epoch_t17_save_six.json",
+      "bytes": 542,
+      "sha256": "09a0c65a4d3c9532e12414d6d9f0d8b5565c115f467b9304b2502f90d2a7476f",
+      "bindingKind": "artifacts",
+      "actualBytes": 542,
+      "actualSHA256": "09a0c65a4d3c9532e12414d6d9f0d8b5565c115f467b9304b2502f90d2a7476f",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/tools/epoch-rts/t17-save-harness/simulation/helpers/ZZZZT17SaveTypedGraph.js",
+      "bytes": 22809,
+      "sha256": "f2d8d3869039b137f6746444a43cae0bd745288725b45ac4de2449e1f0531557",
+      "bindingKind": "artifacts",
+      "actualBytes": 22809,
+      "actualSHA256": "f2d8d3869039b137f6746444a43cae0bd745288725b45ac4de2449e1f0531557",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/GUI-RMS-PRODUCER-GAP.md",
+      "bytes": 3043,
+      "sha256": "052e041bf07061e1aac7005d13d35556bd8bb807d781b56227548936e7900105",
+      "bindingKind": "artifacts",
+      "actualBytes": 3043,
+      "actualSHA256": "052e041bf07061e1aac7005d13d35556bd8bb807d781b56227548936e7900105",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/OPEN-obligations.json",
+      "bytes": 4364,
+      "sha256": "c5ecae7618e204fc52c9e3785f51ae33a548b28c35071a0988d285e571297754",
+      "bindingKind": "artifacts",
+      "actualBytes": 4364,
+      "actualSHA256": "c5ecae7618e204fc52c9e3785f51ae33a548b28c35071a0988d285e571297754",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/manifest.json",
+      "bytes": 15888,
+      "sha256": "6fec187562f1c4390468bc015262f07e5282996919864fc5f509d9fb35c0064f",
+      "bindingKind": "artifacts",
+      "actualBytes": 15888,
+      "actualSHA256": "6fec187562f1c4390468bc015262f07e5282996919864fc5f509d9fb35c0064f",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/native-callgraph.json",
+      "bytes": 29489,
+      "sha256": "3cc23d185289f03784f8492c140aeabe1b9cdbbd1f98b1b21f1f2fa16c7c1c5e",
+      "bindingKind": "artifacts",
+      "actualBytes": 29489,
+      "actualSHA256": "3cc23d185289f03784f8492c140aeabe1b9cdbbd1f98b1b21f1f2fa16c7c1c5e",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gamesettings/GameSettings.js",
+      "bytes": 5396,
+      "sha256": "ab2291fdfccc0ebbb810fb78dffb6da0cbe46c13e20bf9eb2a949e263e44e2b0",
+      "bindingKind": "artifacts",
+      "actualBytes": 5396,
+      "actualSHA256": "ab2291fdfccc0ebbb810fb78dffb6da0cbe46c13e20bf9eb2a949e263e44e2b0",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gamesettings/attributes/Map.js",
+      "bytes": 1443,
+      "sha256": "fe0de95e3307fdd9d7fafd425d8122ed0e827acbaca25feb85cc9f5078239b7c",
+      "bindingKind": "artifacts",
+      "actualBytes": 1443,
+      "actualSHA256": "fe0de95e3307fdd9d7fafd425d8122ed0e827acbaca25feb85cc9f5078239b7c",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gui/common/settings.js",
+      "bytes": 9960,
+      "sha256": "cb934430ed04d64016212a34754254672df95f3ba1bb19deac3048d3e99bab49",
+      "bindingKind": "artifacts",
+      "actualBytes": 9960,
+      "actualSHA256": "cb934430ed04d64016212a34754254672df95f3ba1bb19deac3048d3e99bab49",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gui/gamesetup/Controllers/GameSettingsController.js",
+      "bytes": 10364,
+      "sha256": "7406731a0c37af7169bc8554f655f99509fbe87cb65b0dfb65f828b1b9aa926c",
+      "bindingKind": "artifacts",
+      "actualBytes": 10364,
+      "actualSHA256": "7406731a0c37af7169bc8554f655f99509fbe87cb65b0dfb65f828b1b9aa926c",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gui/maps/MapCache.js",
+      "bytes": 2403,
+      "sha256": "51a871abdd0bbe3fd3174aa9bff579198c0719728cee9a3bbf1edf3777f484e7",
+      "bindingKind": "artifacts",
+      "actualBytes": 2403,
+      "actualSHA256": "51a871abdd0bbe3fd3174aa9bff579198c0719728cee9a3bbf1edf3777f484e7",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/graphics/MapReader.cpp",
+      "bytes": 47069,
+      "sha256": "a7505e5b56defd8253726c866854ba3f69d3155caf985336bf64d34c0e1d350b",
+      "bindingKind": "artifacts",
+      "actualBytes": 47069,
+      "actualSHA256": "a7505e5b56defd8253726c866854ba3f69d3155caf985336bf64d34c0e1d350b",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/ps/Game.cpp",
+      "bytes": 13301,
+      "sha256": "766c220c7b8568d26ad04bcde19eeddfdc9fdd6539e56dba9fbf8d472a6e4a8a",
+      "bindingKind": "artifacts",
+      "actualBytes": 13301,
+      "actualSHA256": "766c220c7b8568d26ad04bcde19eeddfdc9fdd6539e56dba9fbf8d472a6e4a8a",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/ps/World.cpp",
+      "bytes": 3942,
+      "sha256": "fbd8f9147930f1f231492117299a880ad84755e6881c9d4ddd4a80b32c274363",
+      "bindingKind": "artifacts",
+      "actualBytes": 3942,
+      "actualSHA256": "fbd8f9147930f1f231492117299a880ad84755e6881c9d4ddd4a80b32c274363",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md",
+      "bytes": 41941,
+      "sha256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b",
+      "bindingKind": "artifacts",
+      "actualBytes": 41941,
+      "actualSHA256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/source-registry.json",
+      "bytes": 247916,
+      "sha256": "3e6278f49bfe22d5298e8539497819fc14406319d695fe975a6e0e091995674b",
+      "bindingKind": "artifacts",
+      "actualBytes": 247916,
+      "actualSHA256": "3e6278f49bfe22d5298e8539497819fc14406319d695fe975a6e0e091995674b",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/wire-schema.json",
+      "bytes": 28262,
+      "sha256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+      "bindingKind": "artifacts",
+      "actualBytes": 28262,
+      "actualSHA256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/CONTRACT.md",
+      "bytes": 8225,
+      "sha256": "bb06a3abcf09479266ee2a5f7668b86ff8beb9de7139e220d60be36c45e7134d",
+      "bindingKind": "artifacts",
+      "actualBytes": 8225,
+      "actualSHA256": "bb06a3abcf09479266ee2a5f7668b86ff8beb9de7139e220d60be36c45e7134d",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/SOURCEPROOF.md",
+      "bytes": 2869,
+      "sha256": "9cfaeefcc433818e8098bae9dd3aa91271b6e51befb2b56c40fab89d3d56c1d9",
+      "bindingKind": "artifacts",
+      "actualBytes": 2869,
+      "actualSHA256": "9cfaeefcc433818e8098bae9dd3aa91271b6e51befb2b56c40fab89d3d56c1d9",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/attempt-07.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bindingKind": "artifacts",
+      "actualBytes": 0,
+      "actualSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/attempt-07.stdout.log",
+      "bytes": 1867,
+      "sha256": "ca123b4c07fdb3afbe2dc4692fe272aae1186d8770cda43b0a2665071b8bed53",
+      "bindingKind": "artifacts",
+      "actualBytes": 1867,
+      "actualSHA256": "ca123b4c07fdb3afbe2dc4692fe272aae1186d8770cda43b0a2665071b8bed53",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/code-review-v1.json",
+      "bytes": 54132,
+      "sha256": "07a0c9c5ff1c5abceafffcdb96242c90f14f93bc05487c1e1eab70a091f12c2b",
+      "bindingKind": "artifacts",
+      "actualBytes": 54132,
+      "actualSHA256": "07a0c9c5ff1c5abceafffcdb96242c90f14f93bc05487c1e1eab70a091f12c2b",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/code-review-v1.md",
+      "bytes": 9728,
+      "sha256": "8c7c9cfd130910dac5c733c137a2d2a675a163a869b404dd06bf423e0c1b16ee",
+      "bindingKind": "artifacts",
+      "actualBytes": 9728,
+      "actualSHA256": "8c7c9cfd130910dac5c733c137a2d2a675a163a869b404dd06bf423e0c1b16ee",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/js-api-review-v1.json",
+      "bytes": 72439,
+      "sha256": "c575ffd5f2cb8356056fc7e1b261bef51f128b1f292a85e456a924708d580a17",
+      "bindingKind": "artifacts",
+      "actualBytes": 72439,
+      "actualSHA256": "c575ffd5f2cb8356056fc7e1b261bef51f128b1f292a85e456a924708d580a17",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/js-api-review-v1.md",
+      "bytes": 7483,
+      "sha256": "318eb1b1859d10bef8887d5cc69e029b82aaee08c9700ba4952945c4148cdddb",
+      "bindingKind": "artifacts",
+      "actualBytes": 7483,
+      "actualSHA256": "318eb1b1859d10bef8887d5cc69e029b82aaee08c9700ba4952945c4148cdddb",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/manifest.json",
+      "bytes": 41039,
+      "sha256": "89e1048d75d9a2bb5961e7c6d47b6e86df386bb9c7413ef64df9f31b451bff09",
+      "bindingKind": "artifacts",
+      "actualBytes": 41039,
+      "actualSHA256": "89e1048d75d9a2bb5961e7c6d47b6e86df386bb9c7413ef64df9f31b451bff09",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/map-start-applicability-withdrawal.json",
+      "bytes": 1197,
+      "sha256": "d65c7f506c4b67293b27f41ae795125f5da4540ccc1fea975a304b16fab50fec",
+      "bindingKind": "artifacts",
+      "actualBytes": 1197,
+      "actualSHA256": "d65c7f506c4b67293b27f41ae795125f5da4540ccc1fea975a304b16fab50fec",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/proof-matrix.json",
+      "bytes": 3546,
+      "sha256": "25adf54d1f20aae06c6e167a02c25fefcb31e0eedd5129423c41c3511c2e7356",
+      "bindingKind": "artifacts",
+      "actualBytes": 3546,
+      "actualSHA256": "25adf54d1f20aae06c6e167a02c25fefcb31e0eedd5129423c41c3511c2e7356",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/SPEC.json",
+      "bytes": 35505,
+      "sha256": "2271dfdee03523a3438527bfbb8a480de6757fff8925d9d09fc5c51ea61f4009",
+      "bindingKind": "artifacts",
+      "actualBytes": 35505,
+      "actualSHA256": "2271dfdee03523a3438527bfbb8a480de6757fff8925d9d09fc5c51ea61f4009",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/SPEC.md",
+      "bytes": 6167,
+      "sha256": "bbde20a000d4e3e5bdaed90073c1a9d3a886048d3e9602d46af3ed665c93410e",
+      "bindingKind": "artifacts",
+      "actualBytes": 6167,
+      "actualSHA256": "bbde20a000d4e3e5bdaed90073c1a9d3a886048d3e9602d46af3ed665c93410e",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/WIRE-EXTENSION.json",
+      "bytes": 5731,
+      "sha256": "05ee5b55406a5d88af2331782afd9ef18452e374572fbb843b8c2c9c67747baf",
+      "bindingKind": "artifacts",
+      "actualBytes": 5731,
+      "actualSHA256": "05ee5b55406a5d88af2331782afd9ef18452e374572fbb843b8c2c9c67747baf",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/code-design-review-v1.json",
+      "bytes": 7362,
+      "sha256": "42384e8486999f79cf54e2e2fc102fdd5dc01235b1092ed540be61e324466634",
+      "bindingKind": "artifacts",
+      "actualBytes": 7362,
+      "actualSHA256": "42384e8486999f79cf54e2e2fc102fdd5dc01235b1092ed540be61e324466634",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/js-api-design-review-v1.json",
+      "bytes": 16482,
+      "sha256": "041858593dba7b11b6e112e64ce26fe08f40447ccc341e6fb572092f7d740630",
+      "bindingKind": "artifacts",
+      "actualBytes": 16482,
+      "actualSHA256": "041858593dba7b11b6e112e64ce26fe08f40447ccc341e6fb572092f7d740630",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/manifest.json",
+      "bytes": 6579,
+      "sha256": "7c07a7de8e959ecd2711a29e892eaa3a34669a80a7420ab5dbe51bc627d76ee5",
+      "bindingKind": "artifacts",
+      "actualBytes": 6579,
+      "actualSHA256": "7c07a7de8e959ecd2711a29e892eaa3a34669a80a7420ab5dbe51bc627d76ee5",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/exact-source-diff.patch",
+      "bytes": 1229,
+      "sha256": "fa7b1a2d99e08048646436d0d3079d1fdb140ab2829c5acf394a23b9589bd531",
+      "bindingKind": "artifacts",
+      "actualBytes": 1229,
+      "actualSHA256": "fa7b1a2d99e08048646436d0d3079d1fdb140ab2829c5acf394a23b9589bd531",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/frozen-source/tools/epoch-rts/t17-save-harness/gui/pregame/mainmenu.js",
+      "bytes": 1118,
+      "sha256": "7f6de02d91282d62f1de03274a770241c801fbc7bbbb5719c15fff8bdc7052b7",
+      "bindingKind": "artifacts",
+      "actualBytes": 1118,
+      "actualSHA256": "7f6de02d91282d62f1de03274a770241c801fbc7bbbb5719c15fff8bdc7052b7",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/frozen-source/tools/epoch-rts/t17-save-harness/gui/pregame/t17_save_upstream_mainmenu.js",
+      "bytes": 830,
+      "sha256": "48672defb66d9520033c47468c3b39b9abca23495cb64c97ba1769ea2a3cd2c1",
+      "bindingKind": "artifacts",
+      "actualBytes": 830,
+      "actualSHA256": "48672defb66d9520033c47468c3b39b9abca23495cb64c97ba1769ea2a3cd2c1",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/frozen-source/tools/epoch-rts/t17-save-harness/gui/session/session.xml",
+      "bytes": 4489,
+      "sha256": "dd4855d1ccde6fdc75fc40fca9d51475ef36c9d25e4a43bae5046150b482cad6",
+      "bindingKind": "artifacts",
+      "actualBytes": 4489,
+      "actualSHA256": "dd4855d1ccde6fdc75fc40fca9d51475ef36c9d25e4a43bae5046150b482cad6",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/frozen-source/tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js",
+      "bytes": 69380,
+      "sha256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885",
+      "bindingKind": "artifacts",
+      "actualBytes": 69380,
+      "actualSHA256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/frozen-source/tools/epoch-rts/t17-save-harness/gui/t17_save/typed_graph_gui.js",
+      "bytes": 22824,
+      "sha256": "eb6303d734b85b714aaaa3c6179f27f2987a50dc86954d9b40e324bc714ed5c8",
+      "bindingKind": "artifacts",
+      "actualBytes": 22824,
+      "actualSHA256": "eb6303d734b85b714aaaa3c6179f27f2987a50dc86954d9b40e324bc714ed5c8",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/frozen-source/tools/epoch-rts/test-t17-save-map-script.cjs",
+      "bytes": 8109,
+      "sha256": "7fd6f56f68d3c418ada4aac7406a5b034c28298066be01763ee1eab49af8f139",
+      "bindingKind": "artifacts",
+      "actualBytes": 8109,
+      "actualSHA256": "7fd6f56f68d3c418ada4aac7406a5b034c28298066be01763ee1eab49af8f139",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/frozen-source/tools/epoch-rts/test-t17-save-session-transaction.cjs",
+      "bytes": 28175,
+      "sha256": "4d340138621bf2c61c05f3fa4e9749147bd48a71ed0c847acced055f017a661b",
+      "bindingKind": "artifacts",
+      "actualBytes": 28175,
+      "actualSHA256": "4d340138621bf2c61c05f3fa4e9749147bd48a71ed0c847acced055f017a661b",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/green.stderr.log",
+      "bytes": 173,
+      "sha256": "a67a59a2a55d20c0f942466d65816966da768ab7795feda2459225f7ca6a73e5",
+      "bindingKind": "artifacts",
+      "actualBytes": 173,
+      "actualSHA256": "a67a59a2a55d20c0f942466d65816966da768ab7795feda2459225f7ca6a73e5",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/green.stdout.log",
+      "bytes": 469,
+      "sha256": "1c60d829e129e7e44f412e5e0bcebc9b2388e5ce128751da99fc53424835d226",
+      "bindingKind": "artifacts",
+      "actualBytes": 469,
+      "actualSHA256": "1c60d829e129e7e44f412e5e0bcebc9b2388e5ce128751da99fc53424835d226",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/red.stderr.log",
+      "bytes": 865,
+      "sha256": "d2af839c6baeaa5a04d9af63c416ab350a25f66d90873c80afeccd38d36fd10b",
+      "bindingKind": "artifacts",
+      "actualBytes": 865,
+      "actualSHA256": "d2af839c6baeaa5a04d9af63c416ab350a25f66d90873c80afeccd38d36fd10b",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/red.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bindingKind": "artifacts",
+      "actualBytes": 0,
+      "actualSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/source-context-mapping.json",
+      "bytes": 18511,
+      "sha256": "e35a4294adf92e250b654438dc4f163248cd6728eb7b65f53549c00ee2b5ef9b",
+      "bindingKind": "artifacts",
+      "actualBytes": 18511,
+      "actualSHA256": "e35a4294adf92e250b654438dc4f163248cd6728eb7b65f53549c00ee2b5ef9b",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/syntax.json",
+      "bytes": 361,
+      "sha256": "28d66d6e8d921977bc936e42a39e47a8d6e19d6a81d5e6f2dfc24b641925e34b",
+      "bindingKind": "artifacts",
+      "actualBytes": 361,
+      "actualSHA256": "28d66d6e8d921977bc936e42a39e47a8d6e19d6a81d5e6f2dfc24b641925e34b",
+      "match": true
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js",
+      "role": "source",
+      "bytes": 69380,
+      "sha256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 69380,
+      "actualSHA256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885",
+      "match": true
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-harness/gui/t17_save/typed_graph_gui.js",
+      "role": "source",
+      "bytes": 22824,
+      "sha256": "eb6303d734b85b714aaaa3c6179f27f2987a50dc86954d9b40e324bc714ed5c8",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 22824,
+      "actualSHA256": "eb6303d734b85b714aaaa3c6179f27f2987a50dc86954d9b40e324bc714ed5c8",
+      "match": true
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-harness/gui/pregame/mainmenu.js",
+      "role": "source",
+      "bytes": 1118,
+      "sha256": "7f6de02d91282d62f1de03274a770241c801fbc7bbbb5719c15fff8bdc7052b7",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 1118,
+      "actualSHA256": "7f6de02d91282d62f1de03274a770241c801fbc7bbbb5719c15fff8bdc7052b7",
+      "match": true
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-harness/gui/pregame/t17_save_upstream_mainmenu.js",
+      "role": "source",
+      "bytes": 830,
+      "sha256": "48672defb66d9520033c47468c3b39b9abca23495cb64c97ba1769ea2a3cd2c1",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 830,
+      "actualSHA256": "48672defb66d9520033c47468c3b39b9abca23495cb64c97ba1769ea2a3cd2c1",
+      "match": true
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-harness/gui/session/session.xml",
+      "role": "source",
+      "bytes": 4489,
+      "sha256": "dd4855d1ccde6fdc75fc40fca9d51475ef36c9d25e4a43bae5046150b482cad6",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 4489,
+      "actualSHA256": "dd4855d1ccde6fdc75fc40fca9d51475ef36c9d25e4a43bae5046150b482cad6",
+      "match": true
+    },
+    {
+      "path": "tools/epoch-rts/test-t17-save-session-transaction.cjs",
+      "role": "source",
+      "bytes": 28175,
+      "sha256": "4d340138621bf2c61c05f3fa4e9749147bd48a71ed0c847acced055f017a661b",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 28175,
+      "actualSHA256": "4d340138621bf2c61c05f3fa4e9749147bd48a71ed0c847acced055f017a661b",
+      "match": true
+    },
+    {
+      "path": "tools/epoch-rts/test-t17-save-map-script.cjs",
+      "role": "source",
+      "bytes": 8109,
+      "sha256": "7fd6f56f68d3c418ada4aac7406a5b034c28298066be01763ee1eab49af8f139",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 8109,
+      "actualSHA256": "7fd6f56f68d3c418ada4aac7406a5b034c28298066be01763ee1eab49af8f139",
+      "match": true
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-harness/gui/t17_save/command_creators.js",
+      "role": "context",
+      "bytes": 3098,
+      "sha256": "689ae8db68126b76c521e22e4925eeb4f94e2bdc68403110ed054f862fd5fd65",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 3098,
+      "actualSHA256": "689ae8db68126b76c521e22e4925eeb4f94e2bdc68403110ed054f862fd5fd65",
+      "match": true
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-harness/simulation/helpers/ZZZZT17SaveTypedGraph.js",
+      "role": "context",
+      "bytes": 22809,
+      "sha256": "f2d8d3869039b137f6746444a43cae0bd745288725b45ac4de2449e1f0531557",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 22809,
+      "actualSHA256": "f2d8d3869039b137f6746444a43cae0bd745288725b45ac4de2449e1f0531557",
+      "match": true
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-harness/maps/random/epoch_t17_save_six.json",
+      "role": "context",
+      "bytes": 542,
+      "sha256": "09a0c65a4d3c9532e12414d6d9f0d8b5565c115f467b9304b2502f90d2a7476f",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 542,
+      "actualSHA256": "09a0c65a4d3c9532e12414d6d9f0d8b5565c115f467b9304b2502f90d2a7476f",
+      "match": true
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-harness/maps/random/epoch_t17_save_six.js",
+      "role": "context",
+      "bytes": 1055,
+      "sha256": "9736a6ee035bce491a1b29d818b7589381ed5257bbbb498f6a22f59969a57209",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 1055,
+      "actualSHA256": "9736a6ee035bce491a1b29d818b7589381ed5257bbbb498f6a22f59969a57209",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/manifest.json",
+      "role": "context",
+      "bytes": 15888,
+      "sha256": "6fec187562f1c4390468bc015262f07e5282996919864fc5f509d9fb35c0064f",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 15888,
+      "actualSHA256": "6fec187562f1c4390468bc015262f07e5282996919864fc5f509d9fb35c0064f",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/native-callgraph.json",
+      "role": "context",
+      "bytes": 29489,
+      "sha256": "3cc23d185289f03784f8492c140aeabe1b9cdbbd1f98b1b21f1f2fa16c7c1c5e",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 29489,
+      "actualSHA256": "3cc23d185289f03784f8492c140aeabe1b9cdbbd1f98b1b21f1f2fa16c7c1c5e",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/GUI-RMS-PRODUCER-GAP.md",
+      "role": "context",
+      "bytes": 3043,
+      "sha256": "052e041bf07061e1aac7005d13d35556bd8bb807d781b56227548936e7900105",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 3043,
+      "actualSHA256": "052e041bf07061e1aac7005d13d35556bd8bb807d781b56227548936e7900105",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/OPEN-obligations.json",
+      "role": "context",
+      "bytes": 4364,
+      "sha256": "c5ecae7618e204fc52c9e3785f51ae33a548b28c35071a0988d285e571297754",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 4364,
+      "actualSHA256": "c5ecae7618e204fc52c9e3785f51ae33a548b28c35071a0988d285e571297754",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/ps/Game.cpp",
+      "role": "context",
+      "bytes": 13301,
+      "sha256": "766c220c7b8568d26ad04bcde19eeddfdc9fdd6539e56dba9fbf8d472a6e4a8a",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 13301,
+      "actualSHA256": "766c220c7b8568d26ad04bcde19eeddfdc9fdd6539e56dba9fbf8d472a6e4a8a",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/ps/World.cpp",
+      "role": "context",
+      "bytes": 3942,
+      "sha256": "fbd8f9147930f1f231492117299a880ad84755e6881c9d4ddd4a80b32c274363",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 3942,
+      "actualSHA256": "fbd8f9147930f1f231492117299a880ad84755e6881c9d4ddd4a80b32c274363",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/graphics/MapReader.cpp",
+      "role": "context",
+      "bytes": 47069,
+      "sha256": "a7505e5b56defd8253726c866854ba3f69d3155caf985336bf64d34c0e1d350b",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 47069,
+      "actualSHA256": "a7505e5b56defd8253726c866854ba3f69d3155caf985336bf64d34c0e1d350b",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gamesettings/attributes/Map.js",
+      "role": "context",
+      "bytes": 1443,
+      "sha256": "fe0de95e3307fdd9d7fafd425d8122ed0e827acbaca25feb85cc9f5078239b7c",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 1443,
+      "actualSHA256": "fe0de95e3307fdd9d7fafd425d8122ed0e827acbaca25feb85cc9f5078239b7c",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gamesettings/GameSettings.js",
+      "role": "context",
+      "bytes": 5396,
+      "sha256": "ab2291fdfccc0ebbb810fb78dffb6da0cbe46c13e20bf9eb2a949e263e44e2b0",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 5396,
+      "actualSHA256": "ab2291fdfccc0ebbb810fb78dffb6da0cbe46c13e20bf9eb2a949e263e44e2b0",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gui/maps/MapCache.js",
+      "role": "context",
+      "bytes": 2403,
+      "sha256": "51a871abdd0bbe3fd3174aa9bff579198c0719728cee9a3bbf1edf3777f484e7",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 2403,
+      "actualSHA256": "51a871abdd0bbe3fd3174aa9bff579198c0719728cee9a3bbf1edf3777f484e7",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gui/common/settings.js",
+      "role": "context",
+      "bytes": 9960,
+      "sha256": "cb934430ed04d64016212a34754254672df95f3ba1bb19deac3048d3e99bab49",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 9960,
+      "actualSHA256": "cb934430ed04d64016212a34754254672df95f3ba1bb19deac3048d3e99bab49",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gui/gamesetup/Controllers/GameSettingsController.js",
+      "role": "context",
+      "bytes": 10364,
+      "sha256": "7406731a0c37af7169bc8554f655f99509fbe87cb65b0dfb65f828b1b9aa926c",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 10364,
+      "actualSHA256": "7406731a0c37af7169bc8554f655f99509fbe87cb65b0dfb65f828b1b9aa926c",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/CONTRACT.md",
+      "role": "context",
+      "bytes": 8225,
+      "sha256": "bb06a3abcf09479266ee2a5f7668b86ff8beb9de7139e220d60be36c45e7134d",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 8225,
+      "actualSHA256": "bb06a3abcf09479266ee2a5f7668b86ff8beb9de7139e220d60be36c45e7134d",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/SOURCEPROOF.md",
+      "role": "context",
+      "bytes": 2869,
+      "sha256": "9cfaeefcc433818e8098bae9dd3aa91271b6e51befb2b56c40fab89d3d56c1d9",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 2869,
+      "actualSHA256": "9cfaeefcc433818e8098bae9dd3aa91271b6e51befb2b56c40fab89d3d56c1d9",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/proof-matrix.json",
+      "role": "context",
+      "bytes": 3546,
+      "sha256": "25adf54d1f20aae06c6e167a02c25fefcb31e0eedd5129423c41c3511c2e7356",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 3546,
+      "actualSHA256": "25adf54d1f20aae06c6e167a02c25fefcb31e0eedd5129423c41c3511c2e7356",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/attempt-07.stdout.log",
+      "role": "context",
+      "bytes": 1867,
+      "sha256": "ca123b4c07fdb3afbe2dc4692fe272aae1186d8770cda43b0a2665071b8bed53",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 1867,
+      "actualSHA256": "ca123b4c07fdb3afbe2dc4692fe272aae1186d8770cda43b0a2665071b8bed53",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/attempt-07.stderr.log",
+      "role": "context",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 0,
+      "actualSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/manifest.json",
+      "role": "context",
+      "bytes": 41039,
+      "sha256": "89e1048d75d9a2bb5961e7c6d47b6e86df386bb9c7413ef64df9f31b451bff09",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 41039,
+      "actualSHA256": "89e1048d75d9a2bb5961e7c6d47b6e86df386bb9c7413ef64df9f31b451bff09",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/code-review-v1.json",
+      "role": "context",
+      "bytes": 54132,
+      "sha256": "07a0c9c5ff1c5abceafffcdb96242c90f14f93bc05487c1e1eab70a091f12c2b",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 54132,
+      "actualSHA256": "07a0c9c5ff1c5abceafffcdb96242c90f14f93bc05487c1e1eab70a091f12c2b",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/code-review-v1.md",
+      "role": "context",
+      "bytes": 9728,
+      "sha256": "8c7c9cfd130910dac5c733c137a2d2a675a163a869b404dd06bf423e0c1b16ee",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 9728,
+      "actualSHA256": "8c7c9cfd130910dac5c733c137a2d2a675a163a869b404dd06bf423e0c1b16ee",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/js-api-review-v1.json",
+      "role": "context",
+      "bytes": 72439,
+      "sha256": "c575ffd5f2cb8356056fc7e1b261bef51f128b1f292a85e456a924708d580a17",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 72439,
+      "actualSHA256": "c575ffd5f2cb8356056fc7e1b261bef51f128b1f292a85e456a924708d580a17",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/js-api-review-v1.md",
+      "role": "context",
+      "bytes": 7483,
+      "sha256": "318eb1b1859d10bef8887d5cc69e029b82aaee08c9700ba4952945c4148cdddb",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 7483,
+      "actualSHA256": "318eb1b1859d10bef8887d5cc69e029b82aaee08c9700ba4952945c4148cdddb",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/map-start-applicability-withdrawal.json",
+      "role": "context",
+      "bytes": 1197,
+      "sha256": "d65c7f506c4b67293b27f41ae795125f5da4540ccc1fea975a304b16fab50fec",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 1197,
+      "actualSHA256": "d65c7f506c4b67293b27f41ae795125f5da4540ccc1fea975a304b16fab50fec",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md",
+      "role": "context",
+      "bytes": 41941,
+      "sha256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 41941,
+      "actualSHA256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/wire-schema.json",
+      "role": "context",
+      "bytes": 28262,
+      "sha256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 28262,
+      "actualSHA256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/source-registry.json",
+      "role": "context",
+      "bytes": 247916,
+      "sha256": "3e6278f49bfe22d5298e8539497819fc14406319d695fe975a6e0e091995674b",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 247916,
+      "actualSHA256": "3e6278f49bfe22d5298e8539497819fc14406319d695fe975a6e0e091995674b",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/SPEC.json",
+      "role": "context",
+      "bytes": 35505,
+      "sha256": "2271dfdee03523a3438527bfbb8a480de6757fff8925d9d09fc5c51ea61f4009",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 35505,
+      "actualSHA256": "2271dfdee03523a3438527bfbb8a480de6757fff8925d9d09fc5c51ea61f4009",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/SPEC.md",
+      "role": "context",
+      "bytes": 6167,
+      "sha256": "bbde20a000d4e3e5bdaed90073c1a9d3a886048d3e9602d46af3ed665c93410e",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 6167,
+      "actualSHA256": "bbde20a000d4e3e5bdaed90073c1a9d3a886048d3e9602d46af3ed665c93410e",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/WIRE-EXTENSION.json",
+      "role": "context",
+      "bytes": 5731,
+      "sha256": "05ee5b55406a5d88af2331782afd9ef18452e374572fbb843b8c2c9c67747baf",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 5731,
+      "actualSHA256": "05ee5b55406a5d88af2331782afd9ef18452e374572fbb843b8c2c9c67747baf",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/manifest.json",
+      "role": "context",
+      "bytes": 6579,
+      "sha256": "7c07a7de8e959ecd2711a29e892eaa3a34669a80a7420ab5dbe51bc627d76ee5",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 6579,
+      "actualSHA256": "7c07a7de8e959ecd2711a29e892eaa3a34669a80a7420ab5dbe51bc627d76ee5",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/code-design-review-v1.json",
+      "role": "context",
+      "bytes": 7362,
+      "sha256": "42384e8486999f79cf54e2e2fc102fdd5dc01235b1092ed540be61e324466634",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 7362,
+      "actualSHA256": "42384e8486999f79cf54e2e2fc102fdd5dc01235b1092ed540be61e324466634",
+      "match": true
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/js-api-design-review-v1.json",
+      "role": "context",
+      "bytes": 16482,
+      "sha256": "041858593dba7b11b6e112e64ce26fe08f40447ccc341e6fb572092f7d740630",
+      "bindingKind": "referenceInputs",
+      "actualBytes": 16482,
+      "actualSHA256": "041858593dba7b11b6e112e64ce26fe08f40447ccc341e6fb572092f7d740630",
+      "match": true
+    }
+  ],
+  "exactRuntimeDelta": {
+    "addedBytes": ",script:'epoch_t17_save_six.js'",
+    "occurrences": 1,
+    "removalRestoresCompleteBefore": true,
+    "beforeBytes": 69349,
+    "beforeSHA256": "65713fd54def4325f0b6cad32504cb386248572a1e0732b2bb1aa48f6a02db14",
+    "currentBytes": 69380,
+    "currentSHA256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885"
+  },
+  "embeddedWireDeepExact": true,
+  "embeddedPrearmDeepExact": true,
+  "reviewAreas": [
+    {
+      "id": "FULL-SCOPE-AND-EXACT-CHANGE",
+      "conclusion": "Read complete current297-line transaction, complete new pregame test, wrapper/upstream ESM/XML/GUIcodec/creator and map inputs; reviewed current full contracts, basewire/prearm policy, previous18-test source and preserved evidence, native/official RMS producer context and old withdrawal. All98 bindings match actual bytes. Independently removing exactly the one new literal property restores the complete69349-byte before file and its SHA. Other transaction methods, boot/wire policy, schedules, codec, creators and owned loader inputs are unchanged; source approval is based on current source review, not inherited old verdict.",
+      "evidence": [
+        "CONTRACT.md",
+        "SOURCEPROOF.md",
+        "exact-source-diff.patch",
+        "source-context-mapping.json",
+        "current session_transaction.js:1-297"
+      ]
+    },
+    {
+      "id": "CANONICAL-RMS-PRODUCER",
+      "conclusion": "Official random GetData reads mapPath.json; MapCache retains that data; Map.updateMapMetadata copies this.data.settings.Script to this.script; Map.toInitAttributes emits top-level attribs.script separately from map and mapType. GameSettings launchGame sends finalizedAttributes to StartGame. Fixture metadata fixes Script to epoch_t17_save_six.js. Candidate initialAttrs84 now independently provides that exact fixed basename as top-level script. It is not a settings.Script fallback, user-supplied path or future command schedule.",
+      "evidence": [
+        "official-public/gui/common/settings.js:181-188",
+        "official-public/gui/maps/MapCache.js:19-40",
+        "official-public/gamesettings/attributes/Map.js:17-23,41-53",
+        "official-public/gamesettings/GameSettings.js:65-75,141-160",
+        "fixture epoch_t17_save_six.json",
+        "session_transaction.js:84"
+      ]
+    },
+    {
+      "id": "NATIVE-CONSUMER-CONTRACT",
+      "conclusion": "Pinned Game.cpp248-257 random branch reads attribs.script and settings then passes scriptFile to World.RegisterInitRMS; it does not use attribs.map for random script selection. World forwards the argument to MapReader.LoadRandomMap. MapReader1349 prefixes nonempty basename with maps/random/ before RunMapGenerationScript. The new basename therefore produces the fixed source path without double-prefix. Missing local MapGenerator.cpp remains Insufficient data and no body or runtime selection result is invented. Native source selection compatibility is established at this boundary; C++ execution/map generation/loading success is NOT_RUN.",
+      "evidence": [
+        "native-loader-closure/primaryrefs/source/ps/Game.cpp:248-257",
+        "native-loader-closure/primaryrefs/source/ps/World.cpp:101ff",
+        "native-loader-closure/primaryrefs/source/graphics/MapReader.cpp:181ff,1336-1355",
+        "native-loader-closure/OPEN-obligations.json MAPGEN_PRIMARY_BODY"
+      ]
+    },
+    {
+      "id": "PREGAME-ESM-LIFECYCLE",
+      "conclusion": "Actual wrapper imports exact upstream and two side-effect modules, reexports live getHotloadData, applies upstream init with original receiver/arguments and returns the same upstream Promise. It installs a mainMenuPage tick wrapper that invokes prior tick with its receiver/args and preserves return, then attempts ReadBoot/StartFromBoot once. It does not await the lifetime close-page Promise. The complete new test links these actual ESM modules; all five UI imports are explicitly SyntheticModule models. This checks source wiring and lifecycle through StartGame arguments, not complete engine GUI loader behavior.",
+      "evidence": [
+        "gui/pregame/mainmenu.js:1-23",
+        "gui/pregame/t17_save_upstream_mainmenu.js:1-27",
+        "test-t17-save-map-script.cjs pregame/moduleFor/firstgroup",
+        "SOURCEPROOF.md"
+      ]
+    },
+    {
+      "id": "BOOT-AND-START-BOUNDARIES",
+      "conclusion": "Boot still requires unique canonical path, exact keys/caps, seed42/7, five origin or selected load archive records, precommitted distinct arm nonces and fresh admitted WeakSet identity. startFromBoot latches before calls, checks noNet and pregame native player-1, origin calls StartGame(attrs,1,true) once then requires player1 and passes the same attrs to loading page. Load still calls StartSavedGame once and uses original saved metadata attrs; the newly created initialAttrs object is unused in that load branch. No archive attrs or host expected controls are bootstrapped from observed metadata by this repair.",
+      "evidence": [
+        "session_transaction.js:26-47,84-93",
+        "test-t17-save-map-script.cjs:53ff",
+        "prearm-client-implementation/CONTRACT.md"
+      ]
+    },
+    {
+      "id": "SESSION-LOADER-AND-UPSTREAM-ORDER",
+      "conclusion": "Current session XML preserves official original bytes after independently removing exactly the three explicit creator/codec/transaction tags; transaction is last and these files sit outside scanned gui/session directory. Upstream mainmenu remains exact official bytes. Session hook still first calls SetPaused within its wrapped init, then applies original init with full this/arguments and original return; onTick and onSimulationUpdate preserve upstream behavior. This is first native action only within that wrapper: official session top-level, loading, upstream init, native SimUpdate/queues and freshload paths have prior effects whose full noMutation/zeroAdvance proof remains OPEN.",
+      "evidence": [
+        "gui/session/session.xml",
+        "session_transaction.js:282-297",
+        "prearm-client-implementation/CONTRACT.md",
+        "prior js-api-review-v1.json/readback context"
+      ]
+    },
+    {
+      "id": "FULL-GRAPH-AND-CODEC",
+      "conclusion": "GUI adapter is complete simulation codec with only footer changed to globalThis.T17SaveGuiCodec and exposing existing strict ParseWire; independently inspected exact adapter diff. It does not invent GUI RegisterGlobal. Encode checks source-created identity admission before observed-object reflection; ValidateJSON parses independent wire data with fixed15 prototype sentinels and cannot create live object authority from labels. Complete profile roots/nodes/ordered properties/descriptors/Map/Set/aliases/cycles/buffer/view/-0/nonfinite/UTF16/depth/node/byte gates remain. Base WIRE and PREARM constants independently match exact parsed authoritative JSON. Actual GUI/native clone ingress identity and every live child producer still require independent proof; source catalog is not full admission.",
+      "evidence": [
+        "gui/t17_save/typed_graph_gui.js complete",
+        "simulation/helpers/ZZZZT17SaveTypedGraph.js footer",
+        "session_transaction.js:5-8,52-82,103",
+        "base wire-schema.json",
+        "prearm WIRE-EXTENSION.json"
+      ]
+    },
+    {
+      "id": "COMMANDS-PRINCIPAL-AND-RECEIPTS",
+      "conclusion": "Complete source creator still admits primitive fixed steps/entities before reflection and returns fresh literal payloads with no artificial player/ordinal fields; optional formation is absent at creation. Send switches genuine native player1/2, synchronizes GUI viewed player and holds owner through a complete contiguous native ENTRY/RETURNED EXIT with exact binding, principal, handler, command graph, actual applicationT/Timer and full before/after graphs. WAITING/PENDING never restore1. Rejected shallow2200/oldowner14200 require full graph equality. Three owner/health fixture commands retain exact native timing/principal policy; GUI labels do not prove native authentication.",
+      "evidence": [
+        "gui/t17_save/command_creators.js complete",
+        "session_transaction.js:94-143",
+        "base wire commandReceipts",
+        "old18-test source controls"
+      ]
+    },
+    {
+      "id": "PREARM-DEADLINE-AND-TRANSACTION",
+      "conclusion": "Origin arm is once at windowstart-200 on original200ms lattice, no outstanding command and native player/view1, with latch before void/nonexclusive write/readback. Exact request/permit binding and retained tmp/final text are checked; string start+5e9 validates arithmetic only. Host must reserve actual monotonic t_arm before Pause/or before load Popen and keep all guards/startup/transaction within the same strict D, outer deadlines and cleanup. Transaction performs original pause/A or L0/one official Save/B or L1/full equality/request/readback, then full baseACK/graph/S/principal/camera checks before GUI_ACK_VERIFIED and any resume. GUI cannot prove actual current clock/SHA/inode or hardlink identity from strings. Full host received raw endpoint<D and immutable no-replace hardlink publication remain OPEN. No deadline, retry, archive or save count is relaxed.",
+      "evidence": [
+        "session_transaction.js:144-198",
+        "prearm-deadline-amendment-v2/SPEC.md complete",
+        "prearm WIRE-EXTENSION.json complete",
+        "prearm-client-implementation/CONTRACT.md"
+      ]
+    },
+    {
+      "id": "SCHEDULES-LIFECYCLE-AND-NOMUTATION",
+      "conclusion": "Reviewed whole origin7command/5save and all5 load schedules plus fixed checkpoint/lifecycle/camera/tick gates. Time windows, owner reset passive, hidden/visible/geometry, no old attack, stable orders/HP/positions, required damage windows and lethal/no resurrection checks remain unchanged. Complete invocation count/event order still require actual separate witnesses, not state equivalence. Scheduler, arms/cursors and future plans remain GUI closure only; Save uses original getSavedGameData unmodified and does not attach schedules to simulation Timer/Scenario/component ownfields or metadata. Source-only model graphs cannot establish actual no-mutation/serialization/queue0/restore equality.",
+      "evidence": [
+        "session_transaction.js:94-110,198-281",
+        "prearm-client-implementation/CONTRACT.md",
+        "base SPEC.md and source-registry.json",
+        "old18-test source"
+      ]
+    },
+    {
+      "id": "RAW-FRAMING-AND-FAIL-CLOSED",
+      "conclusion": "Native print source120-134 writes each string via debug_printf and fflush but adds no newline; current emit and BOOT_BLOCK explicitly append one. Emit failure is terminal, stores opaque error reference and cannot continue normal Post/Save/resume; guarded operations block and pause. GUI_ACK_VERIFIED envelope retains32768 canonicalASCII cap excluding prefix/newline. No immediate flush/receive timing is assumed; late/missing stdout only fails the host proof and does not shift t_arm. Native print primary was additionally read through the hash bound in the preserved old manifest.",
+      "evidence": [
+        "session_transaction.js:22-24,185-195",
+        "gui/pregame/mainmenu.js BOOT_BLOCK",
+        "prearm-client-implementation/primaryrefs/ScriptInterface.cpp:120-134",
+        "prearm-client-implementation/SOURCEPROOF.md"
+      ]
+    },
+    {
+      "id": "METADATA-CONTROLS-AND-OLD-WITHDRAWAL",
+      "conclusion": "Old89e source map-start applicability is formally withdrawn and preserved; this is a fresh exact freeze, not a retroactive edit to old review/raw. New top-level script now also belongs to source-owned expected initAttributes controls. Host must independently precommit and compare it along with all old engine/mod/map/settings/gui/camera controls, never derive expected from actual metadata. That host integration has not been implemented; actual script selection, TriggerScripts and other dynamic native inputs, runtime profiles/source guards, save metadata/count0 and whole pipeline remain OPEN. This source approval repairs the caller producer only.",
+      "evidence": [
+        "map-start-applicability-withdrawal.json",
+        "map-script-fix/CONTRACT.md",
+        "map-script-fix/SOURCEPROOF.md",
+        "native-loader-closure/GUI-RMS-PRODUCER-GAP.md",
+        "native-loader-closure/OPEN-obligations.json"
+      ]
+    },
+    {
+      "id": "TEST-ADEQUACY-AND-EVIDENCE-LIMITS",
+      "conclusion": "Read complete new regression: actual ReadBoot/StartFromBoot via ESM wrapper with source codec captures exact4 top-level attributes and deep settings, seed42/7, player1, storeReplaytrue, loadingpage attrs, upstream Promise/live export/prior tick/once behavior; exact unmodified official Map writer methods yield same script; missing/settings-only/wrong/double-prefix/empty negatives cannot project to fixed path. Native projection is explicitly a regex/body contract assertion of pinned C++ field/prefix, not a C++ interpreter or executed RMS. UI imported classes are synthetic. The retained RED is actual undefined top-level script assertion, GREEN3 groups and2syntax exit0 are read, VM warning retained. Old18 source is unchanged; inspected its full coverage and prior evidence without rerunning. No new counterexample is needed because no concrete current defect was found.",
+      "evidence": [
+        "test-t17-save-map-script.cjs complete",
+        "red.stderr.log",
+        "green.stdout.log",
+        "green.stderr.log",
+        "syntax.json",
+        "test-t17-save-session-transaction.cjs complete",
+        "prearm-client-implementation/attempt-07.stdout.log"
+      ]
+    }
+  ],
+  "additionalPrimaryRead": {
+    "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/primaryrefs/ScriptInterface.cpp",
+    "sha256": "5d595c185858bda57199042ac98576c7aed437668c90c5923dce98bba477ebc0",
+    "authority": "exact entry in preserved old89e manifest; print120-134 readback"
+  },
+  "evidenceRead": {
+    "newFocusedModelGroups": 3,
+    "newSyntaxChecks": 2,
+    "missingTopLevelScriptRED": "PRESERVED actualundefined assertion",
+    "green": "PASS_SOURCE_MODEL_ONLY",
+    "UI": "EXPLICIT_SYNTHETIC_UI_ONLY",
+    "nativeProjection": "SOURCE_DERIVED_CONTRACT_NOT_CPP_EXECUTION",
+    "old18SuiteSource": "UNCHANGED_INSPECTED_NOT_RERUN",
+    "reviewerReranSuites": false,
+    "newCounterexamples": []
+  },
+  "checks": {
+    "typescript": "NOT_APPLICABLE_JS_ONLY",
+    "eslint": "NOT_RUN_NO_INSTALL_NPX",
+    "localReviewNoPR": true,
+    "scopeAuthority": "exact98bindingfreeze and byteforbyte before/delta; no PR metadata needed"
+  },
+  "old89eMapStartApplicability": "WITHDRAWN_HISTORY_PRESERVED_NEW_REPAIR_NOT_RETROACTIVE",
+  "hostExpectedMetadataInitControls": "OPEN_NOT_IMPLEMENTED_SOURCE_OWNED_SCRIPT_MUST_BE_PRECOMMITTED",
+  "actualNativeRMSSelection": "NOT_RUN",
+  "actualGUICloneAdmissionRestoreFullClosure": "OPEN",
+  "actualHost5sNativeQueue0ArchiveMetadataAndWholePipeline": "OPEN",
+  "actualEffectiveSourceProfileGuards": "OPEN",
+  "nativeMapGeneratorBody": "INSUFFICIENT_DATA_LOCAL_BLOB_UNAVAILABLE_NO_FETCH",
+  "native": "NOT_RUN_NOT_APPROVED",
+  "unchangedGates": [
+    "600campaign",
+    "6x90",
+    "30prelaunch",
+    "80stopnewwork",
+    "cleanup90",
+    "540enginecutoff",
+    "600finalreadback",
+    "42thenconditional7",
+    "retry0",
+    "all40roots",
+    "fullrealnativeeventprefix",
+    "noUnknownBeforeReflection",
+    "noFutureMetadata",
+    "originalrawFAILsealsConsumedAttempts"
+  ],
+  "writes": [
+    "work/t17-save-session-transaction-preparation/map-script-fix/js-api-review-v1.json",
+    "work/t17-save-session-transaction-preparation/map-script-fix/js-api-review-v1.md"
+  ],
+  "sourceEdits": false,
+  "engineNetworkCppCommitDelete": "NOT_DONE"
+}

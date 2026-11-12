@@ -1,0 +1,80 @@
+[
+  {
+    "source": "tools/epoch-rts/t17_save_metadata.py",
+    "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/tools/epoch-rts/t17_save_metadata.py",
+    "bytes": 5818,
+    "sha256": "96d9e51e6280b1998410d7a591eaf65c11dfd11bc68c3816255201bac30bfd43"
+  },
+  {
+    "source": "work/t17-save-metadata-preparation/manifest.json",
+    "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/manifest.json",
+    "bytes": 4534,
+    "sha256": "85f93c30ba9484b2cce4129e0ec930b7f85449ef7d5e363da94ae8814a4b4d30"
+  },
+  {
+    "source": "work/t17-save-metadata-preparation/completion-source-only.json",
+    "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/completion-source-only.json",
+    "bytes": 1756,
+    "sha256": "4167dc102b3075f50e6d45c96e50c15b3ca4e524c3ccbca7fdfe7e61ddf64e28"
+  },
+  {
+    "source": "work/t17-save-metadata-preparation/code-review-v1.md",
+    "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/code-review-v1.md",
+    "bytes": 6732,
+    "sha256": "49b761dbbe8ad1d14c0ddc817c95fcb8be6d5a90f1d65f23d31bff0e4923fde6"
+  },
+  {
+    "source": "work/t17-save-metadata-preparation/python-review-v1.md",
+    "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/python-review-v1.md",
+    "bytes": 5646,
+    "sha256": "8d8a6b9b8f1c43788ac91a652aa11afa8231a58c758452d68a2a1be7795b7dff"
+  },
+  {
+    "source": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md",
+    "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md",
+    "bytes": 41941,
+    "sha256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b"
+  },
+  {
+    "source": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/wire-schema.json",
+    "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/wire-schema.json",
+    "bytes": 28262,
+    "sha256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de"
+  },
+  {
+    "source": "tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js",
+    "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js",
+    "bytes": 69380,
+    "sha256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885"
+  },
+  {
+    "source": "work/t17-save-session-transaction-preparation/map-script-fix/manifest.json",
+    "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/manifest.json",
+    "bytes": 27089,
+    "sha256": "06a9cd6b7f8651d03daf5d57103d0aacc3025af0c92ab9c97b053d09ba0f1c9a"
+  },
+  {
+    "source": "work/t17-save-session-transaction-preparation/map-script-fix/completion-source-only.json",
+    "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/completion-source-only.json",
+    "bytes": 1537,
+    "sha256": "a296be8ebc5e142b8cdc578d9990417c27866639bee70dba6d75a413e72c0431"
+  },
+  {
+    "source": "work/t17-save-session-transaction-preparation/map-script-fix/code-review-v1.json",
+    "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/code-review-v1.json",
+    "bytes": 36970,
+    "sha256": "bb2bdb8bbd8e295ef8a396f601a894acb4bd84df68850581e7832bead78cea5b"
+  },
+  {
+    "source": "work/t17-save-session-transaction-preparation/map-script-fix/js-api-review-v1.json",
+    "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/js-api-review-v1.json",
+    "bytes": 60034,
+    "sha256": "071cc8318e875f70e1d3500cfa032f5146e4fd04090d0bbc76cee0773141f832"
+  },
+  {
+    "source": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/simulation2/scripting/JSInterface_Simulation.cpp",
+    "snapshot": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/simulation2/scripting/JSInterface_Simulation.cpp",
+    "bytes": 8060,
+    "sha256": "b9dfa717c7317c9f5731c6ed9fd4c4c4b4be12b430f9903bde5a19127932ce40"
+  }
+]

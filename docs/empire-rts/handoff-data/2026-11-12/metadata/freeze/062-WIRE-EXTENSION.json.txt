@@ -1,0 +1,147 @@
+{
+  "schema": 1,
+  "purpose": "Normative additive wire amendment only; basewirev4 retained unchanged pending fresh full dualdesign approval",
+  "composition": "After dual APPROVE_DESIGN_ONLY, implementation uses exact basewirev4 plus only additions listed here. Before approval no implementation/newchannel admission.",
+  "strict": "reject missing/extra/duplicate/unknown keys, wrongtypes/trailingjunk/badUTF8, unsafe paths; actualhostbytes/SHA authoritative; GUI value readback not nativebytehash",
+  "commonFields": {
+    "campaignNonce/caseNonce/sourceManifestSHA/armNonce": "primitive64lowerhex; exactboot/hostledgerbinding",
+    "seed": "literal42or7",
+    "caseID": "existingbasecaseIDenum",
+    "checkpoint": "existingbasecheckpointenum",
+    "phase": "origin/load with originalcase relationship",
+    "transactionOrdinal": "origin1..5 matching fixedcheckpointorder; load literal1"
+  },
+  "boot": {
+    "existingRequiredUnchanged": true,
+    "additionalRequired": [
+      "transactionArms"
+    ],
+    "transactionArms": {
+      "kind": "array",
+      "recordExactRequired": [
+        "checkpoint",
+        "armNonce"
+      ],
+      "originCount": 5,
+      "loadCount": 1,
+      "order": "originalcheckpointorder fororigin; selectedloadcheckpoint only forload",
+      "noncePolicy": "precommittedimmutable distinct64lowerhex per transaction; no regenerate/retry/reset"
+    }
+  },
+  "armRequest": {
+    "schemaLiteral": "T17_SAVE_TX_ARM_REQUEST_V1",
+    "exactRequired": [
+      "schema",
+      "campaignNonce",
+      "caseNonce",
+      "sourceManifestSHA",
+      "seed",
+      "caseID",
+      "checkpoint",
+      "phase",
+      "transactionOrdinal",
+      "armNonce",
+      "plannedWindow"
+    ],
+    "plannedWindow": {
+      "exactRequired": [
+        "start",
+        "end"
+      ],
+      "types": "integers exact fixedwindow forcheckpoint perSPEC.json",
+      "originNativeTruth": "planned label only, actuallegalS and nativecontext separately verified byGUI source and finalrequest/host graph checks",
+      "loadNativeTruth": "host prelaunch plannedcontrol, not fabricated actualnative caller/time beforegame"
+    }
+  },
+  "permit": {
+    "schemaLiteral": "T17_SAVE_TX_ARM_PERMIT_V1",
+    "exactRequired": [
+      "schema",
+      "campaignNonce",
+      "caseNonce",
+      "sourceManifestSHA",
+      "seed",
+      "caseID",
+      "checkpoint",
+      "phase",
+      "transactionOrdinal",
+      "armNonce",
+      "armRequestActualBytes",
+      "armRequestActualSHA",
+      "hostMonotonicStartNs",
+      "hostMonotonicDeadlineNs",
+      "decision"
+    ],
+    "decisionLiteral": "TRANSACTION_ARMED",
+    "armRequestActualBytes": "positiveinteger<=8192 exactactualhostpersistedrawlength",
+    "armRequestActualSHA": "64lowerhex exacthosthash ofimmutablearmrequest raw",
+    "hostMonotonicStartNs": "canonicalunsigneddecimalstring fromactualhostmonotonic_ns, privateledger bound",
+    "hostMonotonicDeadlineNs": "sameinteger domain; exactstart+5000000000; noepoch comparison/IEEE rounding/reset",
+    "authority": "host publication occurs only while now<D andbeforeouterworkcutoffs; readerformat/binding isnotcurrentclockauthentication byitself"
+  },
+  "GUIAckVerifiedRaw": {
+    "existingTransport": "complete receivedrawstdout transcript only; no extraVFS file/newarchiveACK",
+    "kindLiteral": "GUI_ACK_VERIFIED",
+    "dataExactRequired": [
+      "campaignNonce",
+      "caseNonce",
+      "sourceManifestSHA",
+      "seed",
+      "caseID",
+      "checkpoint",
+      "phase",
+      "transactionOrdinal",
+      "armNonce",
+      "S",
+      "ack"
+    ],
+    "S": "actualsamepausedS asfinalrequest andoriginalfinalACK",
+    "ack": "complete originalvalidatedbasewirev4ACK object; noinventedGUIbytehash; rawhostchecks samevalue/asactualpublishedACK",
+    "causality": "GUI emits only afterfullACK/value/S/principal/pause/all40root revalidation, before anyresume. Hostcomplete-recordreceive monotonic timestamp<actualdeadline is conservative endpointupperbound; delayed/missingraw => FAIL/UNKNOWN, never laterstart.",
+    "maxCanonicalASCIIBytes": 32768
+  },
+  "caps": {
+    "armRequestBytes": 8192,
+    "permitBytes": 8192,
+    "bootMaxBytesUnchanged": 8192,
+    "ackMaxBytesUnchanged": 16384,
+    "requestMaxBytesUnchanged": 16777216,
+    "fullReceivedRawCaseCapUnchanged": 67108864,
+    "transactionNs": 5000000000
+  },
+  "exactNewAllowlist": {
+    "caseRoot": "unchanged policies.vfs.caseRootTemplate",
+    "directory": "existing checkpoint subdirectory",
+    "originNew": [
+      "origin-arm-request.json",
+      "origin-arm-permit.tmp",
+      "origin-arm-permit.json"
+    ],
+    "loadNew": [
+      "load-arm-request.json",
+      "load-arm-permit.tmp",
+      "load-arm-permit.json"
+    ],
+    "logicalRecords": "two logical immutable records armrequest+permit; retained tmp is atomic-publication artifact, final/tmp hardlinked same inode",
+    "allOldFilesUnchanged": {
+      "caseRootTemplate": "moddata/t17-save/{campaignNonce}/{seed}/{caseID}/",
+      "physicalRootTemplate": "isolatedApp/Contents/Resources/data/mods/user/moddata/t17-save/{campaignNonce}/{seed}/{caseID}/",
+      "checkpointDirectoryTemplate": "{caseRoot}/{checkpoint}/",
+      "bootFilename": "boot.json",
+      "originFiles": [
+        "origin-request.json",
+        "origin-host-ack.tmp",
+        "origin-host-ack.json"
+      ],
+      "loadFiles": [
+        "load-request.json",
+        "load-host-ack.tmp",
+        "load-host-ack.json"
+      ],
+      "hostDecisionLiteral": "ARCHIVE_VERIFIED",
+      "sourceException": "only exactcase boot/request/tmp/ack data files, each bounded and bound by actual bytes/SHA; never whole usertree exclusion"
+    }
+  },
+  "baseRequestAckTypedGraphReceiptsUnchanged": true,
+  "simulationSavedDataUnchanged": true
+}

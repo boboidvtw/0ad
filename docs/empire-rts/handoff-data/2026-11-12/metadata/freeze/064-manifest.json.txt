@@ -1,0 +1,133 @@
+{
+  "schema": 1,
+  "scope": "T17_PREARM_ADDITIVE_FULL5S_HOSTMONOTONIC_DESIGN_ONLY",
+  "createdClientDate": "2026-10-23",
+  "artifacts": [
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/SPEC.json",
+      "bytes": 35505,
+      "sha256": "2271dfdee03523a3438527bfbb8a480de6757fff8925d9d09fc5c51ea61f4009"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/SPEC.md",
+      "bytes": 6167,
+      "sha256": "bbde20a000d4e3e5bdaed90073c1a9d3a886048d3e9602d46af3ed665c93410e"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/WIRE-EXTENSION.json",
+      "bytes": 5731,
+      "sha256": "05ee5b55406a5d88af2331782afd9ef18452e374572fbb843b8c2c9c67747baf"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/before/work/t17-save-admission-source-audit/refs/pinned-head/source/ps/scripting/JSInterface_VFS.cpp",
+      "bytes": 10217,
+      "sha256": "a2a53f27ea33dfd9883b6e6a0dfeeef0176275045785124498276c6971e747f4"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/before/work/t17-save-network-preparation/save-source-design-20261018/schema-fix/primaryrefs/primary-head/source/ps/scripting/JSInterface_Game.cpp",
+      "bytes": 4759,
+      "sha256": "ac71e18e4361f079de5295535014c4b9263a61b11c0f389fa27061c86139b7bc"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/before/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md",
+      "bytes": 41941,
+      "sha256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/before/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/code-review.json",
+      "bytes": 20162,
+      "sha256": "c25a6e9ac8e6c24bba5be10115119ff80c36b8b16ea81b2eaac763edf4e427cb"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/before/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/js-api-review.json",
+      "bytes": 16383,
+      "sha256": "3b16e62ff2e2e93c2a67ea0f26ef1124a0a064f706154120d1a4173f68fcca84"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/before/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/manifest.json",
+      "bytes": 95073,
+      "sha256": "d33403ef9359bf0092ab55740114a0bc81104738c52fb31b982199f7a3ce4d43"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/before/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/source-registry.json",
+      "bytes": 247916,
+      "sha256": "3e6278f49bfe22d5298e8539497819fc14406319d695fe975a6e0e091995674b"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/before/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/wire-schema.json",
+      "bytes": 28262,
+      "sha256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/before-mapping.json",
+      "bytes": 4102,
+      "sha256": "b3369b9df463180e82db352c7b11cb0e18c08c75cca647d52d7176cc9b9de84f"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/checkpoint.json",
+      "bytes": 596,
+      "sha256": "ce0b04f98d537642fd0618780e571cf9725485ae50e55e0fb722ada4285ce3e6"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/primaryrefs/pinned-head/source/ps/scripting/JSInterface_Debug.cpp",
+      "bytes": 3282,
+      "sha256": "5fde0a1afb41ea58185a08566699228fd0533d862dc10d28da7a809c5f57a13c"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/primaryrefs/pinned-head/source/ps/scripting/JSInterface_SavedGame.cpp",
+      "bytes": 4664,
+      "sha256": "59716fec2776d0e6e9fa2f3ddecbab0abcda7379b81c2de779282487d360a42a"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/timeline.json",
+      "bytes": 1639,
+      "sha256": "0c18f3ccfe551cdbf6a9986336ec1dccafab396b08fed8de1699c44805b393f4"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/revision.json",
+      "bytes": 654,
+      "sha256": "fabfac84ec6976d89e333f7a3ce405f5911fd1b14f0db5ca8d3c3b26e512aa07"
+    }
+  ],
+  "referenceInputs": [
+    {
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/manifest.json",
+      "bytes": 95073,
+      "sha256": "d33403ef9359bf0092ab55740114a0bc81104738c52fb31b982199f7a3ce4d43"
+    },
+    {
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md",
+      "bytes": 41941,
+      "sha256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b"
+    },
+    {
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/wire-schema.json",
+      "bytes": 28262,
+      "sha256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de"
+    },
+    {
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/source-registry.json",
+      "bytes": 247916,
+      "sha256": "3e6278f49bfe22d5298e8539497819fc14406319d695fe975a6e0e091995674b"
+    },
+    {
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/code-review.json",
+      "bytes": 20162,
+      "sha256": "c25a6e9ac8e6c24bba5be10115119ff80c36b8b16ea81b2eaac763edf4e427cb"
+    },
+    {
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/js-api-review.json",
+      "bytes": 16383,
+      "sha256": "3b16e62ff2e2e93c2a67ea0f26ef1124a0a064f706154120d1a4173f68fcca84"
+    }
+  ],
+  "newChannelImplemented": false,
+  "oldWireModified": false,
+  "designReviews": "PENDING_FRESH_FULL_CODE_JS_API",
+  "testsModelsEngineForDesign": "NOT_RUN",
+  "nativeAuthority": false,
+  "previousFreeze": {
+    "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment/manifest.json",
+    "sha256": "ace606801b25faa5d8b8b441e33558342b191e5518c53fa7a608e83ecc618496"
+  }
+}

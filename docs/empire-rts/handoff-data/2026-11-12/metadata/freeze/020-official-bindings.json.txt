@@ -1,0 +1,20 @@
+[
+  {
+    "entry": "gui/session/session.js",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/gui/session/session.js",
+    "bytes": 25386,
+    "sha256": "04649d5ef27fe135adcdec6e85df07296d4bb085cce2df5b9ef3feaf61a9750e"
+  },
+  {
+    "entry": "gui/session/selection.js",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/gui/session/selection.js",
+    "bytes": 14510,
+    "sha256": "55d296bddff20db103bf81f6a61a5c7f435ebfab0cb89fdd5f2206a6c7c7d049"
+  },
+  {
+    "entry": "simulation/components/GuiInterface.js",
+    "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/simulation/components/GuiInterface.js",
+    "bytes": 73967,
+    "sha256": "9eaf481d5c965cc4df0cbe1fd51d2db81af162cea26c50fc67484633dd867b40"
+  }
+]

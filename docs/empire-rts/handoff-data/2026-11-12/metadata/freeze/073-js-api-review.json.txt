@@ -1,0 +1,165 @@
+{
+  "schema": 1,
+  "purpose": "Complete fresh independent JS/API design review of exact typed-root-fix freeze; decision only whether source implementation may begin",
+  "createdUTC": "2026-10-19T10:22:18.213663+00:00",
+  "reviewer": {
+    "task": "fixture_js_review",
+    "role": "independent JS/API design reviewer",
+    "independentOfDesignAuthor": true
+  },
+  "verdict": "APPROVE_DESIGN",
+  "sourceImplementationReady": true,
+  "engineAuthority": false,
+  "verdictScope": "Exact-current design is coherent enough to start bounded source implementation without lowering full-field or native gates. No implemented code, closure, test, runtime or engine acceptance is granted.",
+  "sourceManifest": {
+    "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/manifest.json",
+    "sha256": "d33403ef9359bf0092ab55740114a0bc81104738c52fb31b982199f7a3ce4d43"
+  },
+  "specification": {
+    "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md",
+    "sha256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b"
+  },
+  "wireAuthority": {
+    "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/wire-schema.json",
+    "sha256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+    "version": 4
+  },
+  "inputRecord": {
+    "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/js-api-review-input.json",
+    "sha256": "a12c23443e8ef8130e0d27d94467acc6201efc05253c3163fb0597d97a51b268"
+  },
+  "manifestVerification": {
+    "entriesVerifiedOnce": 236,
+    "primarySnapshots": 195,
+    "references": 16,
+    "preimages": 16,
+    "outputs": 9,
+    "mismatches": [],
+    "unchangedDoneSuitesRerun": 0,
+    "sourceAnalysisReuse": "Prior complete independent analysis of unchanged primary bytes, current hashes matched; current complete design reassessed"
+  },
+  "findings": [],
+  "severityCounts": {
+    "CRITICAL": 0,
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 0
+  },
+  "completeReviewEvidence": [
+    {
+      "topic": "Exact-current complete scope and input binding",
+      "assessment": "Read full typed-root-fix SPEC/md/json, wirev4, registry/md/json, findings/checkpoint/preimages/inventory. All195primary+16references+16preimages+9outputs=236 actual files matched expected bytes/SHA once. Unchanged source review reused only after current hash match; complete current design reassessed, not a delta-only approval. No DONE suite/unrelated source discovery repeated. New input record and final report read back."
+    },
+    {
+      "topic": "Four exact graph profiles and preservation of full gameplay coverage",
+      "assessment": "wirev4 requires encoding/profile/roots/nodes only and finite GAMEPLAY_FULL_V1/COMMAND_VALUE_V1/HANDLER_RETURN_V1/ERROR_OWN_DESCRIPTORS_V1. Independently compared40 literal gameplay roots to registry rootOrder: Timer; six roles creation order times controller/navalState/UnitAI/Attack/ActorEvents; nativeWorld; PlayerManager; player0/1/2 each Player/Diplomacy; Scenario. This exactly expands previous grouped order and retains full fields, ordered own descriptors, genuine event prefix and explicit absent-root values; absent actors do not remove roots. Field-specific mapping covers A/B/L0/L1, ENTRYbefore/EXITafter, command, return and safe exception. Exact root name/count/order/profile/envelope mismatch or unknown/duplicate/extra rejects; no autodetection/fallback."
+    },
+    {
+      "topic": "Single-value layout, known undefined and safe error diagnostics",
+      "assessment": "commandGraph has exactly command root with complete original nonnull native object, no selected projection or injected ordinal/player. returnValueGraph has exactly returnValue; normal RETURNED undefined is known {t:undefined}, nodes=[] when no refs. Error graph has exactly exceptionOwnDescriptors: actual target full ordered own data descriptors/prototype/ref graph or actual primitive/null/undefined thrown value; no implicit Error-prototype exemption, inherited getters/message/stack/stringification. Unknown/accessor/function/symbol/Proxy stays stickyFAIL. Unavailable exact t/reason is restricted to return THREW/OBSERVATION_FAULT or impossible error capture OBSERVATION_FAULT, never gameplay/command/node items; diagnostic only and cannot PASS/restore1. RETURNED throwInfo=null. Shared codec aliases/cycles/MapSetorder/rawbits/UTF16/depth/node/size/unknown gates unchanged; node IDs local per graph, no unsupported crossgraph identity assertion."
+    },
+    {
+      "topic": "Explicit native receipt bridge and final replay separation",
+      "assessment": "R3a now defines pure Engine.RegisterGlobal T17ReadSaveCommandReceipts reader over private helper lexical append-only writer state; late opt-in GuiInterface method/exposedFunctions, max2 contiguous event range, writer highwater/fault/inFlight and GUI-only cursor/pending-entry cache. Only complete matching ENTRY+RETURNED EXIT without fault permits restore1; RETURNED is handler completion, never command acceptance. WAITING/PENDING cannot extend semantic/case deadlines. Host final replay/native external raw/GUI sent three-way validation is separate, not live flush/fileACK; no additional per-command channel. Prior missing live receipt finding is resolved at design level."
+    },
+    {
+      "topic": "Principal, binding, helper order and purity",
+      "assessment": "Native ScriptCall caller is viewed player, correctly distinct from genuine GetPlayerID and original ProcessCommand actualPlayer. ExpectedPrincipal/sendOrdinal are correlation, not observed authority. Stable deepfrozen InitAttributes profile/campaign/source/seed is source-backed; sourceHash is guarded semanticbinding, not selfhash. Loaded initattrs unchanged; fresh caseNonce/caseID/PID authority explicitly stays external host/GUI. Helper filename order places fixed fixture commands before witness; global readonly export plus component-level late prototype API crosses native per-file scopes without adding serialized fields. Writer preserves this/args/oneReflect.apply/return/same throw; immutable detached snapshots, terminal bounded overflow, no read consume/clear/lazybind/counters/getters/customSerialize, no component/Timer/queue writes. Implementation/native still unproved."
+    },
+    {
+      "topic": "Current machine authority and fixed caps",
+      "assessment": "SPEC.json points to wirev4 policies for600global/540engine cutoff/90case/30prelaunch/10startup/80stop/5transaction/60finalreserve, paths and stance. No previous competing110cutoff/runNonce machine field. ArchiveACK remains ARCHIVE_VERIFIED transaction-only and datafiles allowlist unchanged.600 is explicit unrun pre-freeze candidate, not extension of consumed attempts; feasibility NOT_RUN."
+    },
+    {
+      "topic": "Legal stance initialization and source schema",
+      "assessment": "Frozen UnitAI Schema allows passive and excludes none. Current proposed XML uses passive, with one explicit origin-only SwitchToStance(none) after normal complete AddEntity/OnCreate and position/owner setup. Source Init→SetStance(passive), IDLE.enter StartTimer100, SwitchToStance heldposition/SetStance/SetupRangeQueries and UnitStanceChanged are all preserved. Observer only captures messages actually observed after construction, never fabricates early Init events. Setup is mutation-bearing and outside readonly save intervals. Load never repeats setup. Original stance-schema HIGH resolved at design level without changing product/schema or disabling validation."
+    },
+    {
+      "topic": "Ownership natural reset and branch semantics",
+      "assessment": "UnitAI OnOwnershipChanged3674-3711 naturally clears/reset FSM/orders/rangequeries and returns to template passive on real13200/16000 transfers. Revised design explicitly retains this, does not force none afterward or restore old state, and keeps all original fixed HP/order/position/LOS/no-oldattack/no-autonomousattack gates. Passive may alter motion/reactions; any mismatch remains original once-case FAIL, no relaxation. This is an explicit pre-run source design choice, not measured equivalence or nativePASS."
+    },
+    {
+      "topic": "Conditional XML merge and six active rosters",
+      "assessment": "ParamNode merge-only absent-child return, disable/replace, parent/mixin order and relevant source XML agree with corrected Builder absence. Six existing rosters35/34/34/34/35/35 plus newObserver match stated36/35/35/35/36/36, with available Builder constructor separated from actual instances. Full45special-attribute source inventory/traces, nested tokens/op and filtered0 are recorded. Normal native template validator remains required; source roster still requires actual conformance. Original Builder-merge HIGH resolved."
+    },
+    {
+      "topic": "Fixed native timing and each load branch",
+      "assessment": "Source200ms SP delay1/FlushTurn-before-Timer update supports postGUI T→nativepreT→postT+200 candidate; actual send/dispatch/replay timing required, not inferred. NEW5600 is reachable candidate after5000Dive/before6000Walk and never upgrades old5500. Origin checkpoints2000/4000/9000/11000/14000 and surfaced/pendingDive/deepHidden/pendingSurface/ownerCanceled absolute branch actions/damage/death windows retained; no wait-until-success. Health.Reduce lethal tests genuine lifecycle path, not whole combat proof. Geometry/movement/native damage/event order remain unmeasured."
+    },
+    {
+      "topic": "Full descriptors, prototypes, identity and native getter effects",
+      "assessment": "All required actual ownfields/data descriptors retained; source own-assignment catalogs are not whitelist. Ordered Map/Set, cycles/sharedrefs, array holes/extras, undefined/null/-0/nonfinite/rawbits, buffer/view topology and registered vector/component prototypes specified; unknown function/accessor/symbol/prototype/Proxy blocks. Position valid API names and IsInWorld-first, priorx/z-currentheight meaning, turret-parent closure and LOS dirty/scripted Visibility→State/Detector transitives are correctly retained. Player/gaia/system and customSerialize/null/nestedprototype sources remain closure obligations. Destroyed roles keep IDs/templates with explicit unavailable keys and complete Timer map, no fabricated currentHP/owner or omitted history. All actual cold-load safety/descriptor/value coverage still pending implementation/native review."
+    },
+    {
+      "topic": "Persistent vs external witnesses and exact callback count",
+      "assessment": "Persistent Scenario immutable role mapping+true actor event prefix and ActorEvents ownfields remain fullgraph; dispatch and Complete counters only external lexical/raw. Rejected handler before/delegateonce/after occurs beforeMT_Update; true persistent changes fail, external witness rows do not alter graph. Lateprototype Complete wrapper is designed after constructor export/before origin/load creation, preserves exact this/originalargs/oneReflect.apply/same return or original throw object, with observer errors unable to suppress original execution. Native timers/deadlines/data unmodified; missing/rawfault or unexpectedinvoke fails. Exact callbackcount remains NOT_PROVEN until implementation and real transcript, not stable-state shorthand."
+    },
+    {
+      "topic": "Save/load and GUI module/loader routes",
+      "assessment": "Official SaveGame void/synchronous stream, StartSavedGame noGame/Net and metadata principal restoration are real. mainmenu ESM init/live getHotloadData and lifetimePromise preserved; wrapper schedules real mainMenuPage.onTick without awaiting page close. Session XML late explicit outside-sessiondir script avoids doubleload and preserves init/onTick/onSimulationUpdate receiver/args/returns. Default ScriptComponent Deserialize restores saved fields without running ActorEvents.Init; no rebind/setup/rearm. Deserialized/Interpolate precede sessionpause prehook and cannot be suppressed; A/B/L0/L1 and unnormalized bytes capture drift; first Advance/getter safety not proven."
+    },
+    {
+      "topic": "Observed count0, serialization and no-mutation intervals",
+      "assessment": "Exact byte0 prefix schema consumes TemplateManager/actualAI0/CinemaManager before unique CommandQueue actual U32. Only observed0 yields complete vector[]; any nonzero/unknown blocks, never assumedempty or arbitrary offset. To bind QO/QL serializer instants to A/B/L0/L1 and rejected-command intervals, complete exact-current source noqueuewrite/Flush-reentry/customSerialize/getter/metadata/GUI closure remains mandatory. Whole simulation.dat equality is additional serialized-output evidence, not a replacement for typed graph. No decoder/sourceproof executed."
+    },
+    {
+      "topic": "Archive ACK and actual raw persistence",
+      "assessment": "Archive transaction wire is now explicit: once GUI nativeJSON freshdir/latch/semantic readback then externalREADY; host actual persisted UTF8 size/hash authority, strict duplicate/unknown/depth/node/caps, exact ZIPentries/metadata/actual0, tmp O_EXCL/fsync/readback and hardlink final noreplace with retained sameinode paths. GUI ACK semanticbinding is separate from host rawhash authority; ARCHIVE_VERIFIED not casePASS. WATCH/read/repopulate/mainloop source supports candidate but actualvisibility unproven. Mandatory fd/path devino/writecounts and final close/reopenoriginalpath full diskbytes vs persistedbackup prevent telemetryflag promotion, preserve latebytes/failures and prohibit rawrepair. No IO/native result claimed."
+    }
+  ],
+  "resolvedHistoricalFindings": [
+    {
+      "id": "T17-SAVE-RECEIPTFIX-JSAPI-MEDIUM-TYPEDROOT-PROFILES",
+      "status": "RESOLVED_AT_DESIGN_LEVEL_NOT_IMPLEMENTED",
+      "evidence": "wirev4 typedGraph profiles/contextSelection/unavailable/strictContextValidation plus coherent SPEC R4a and registry exact40 rootOrder"
+    },
+    {
+      "id": "T17-SAVE-SCHEMAFIX-JSAPI-HIGH-LIVE-DISPATCH-RECEIPT",
+      "status": "RESOLVED_AT_DESIGN_LEVEL_NOT_IMPLEMENTED",
+      "evidence": "R3a concrete pure range reader/native receipts/GUI cursor and independent host final replay"
+    },
+    {
+      "id": "T17-SAVE-REFIX-JSAPI-HIGH-STANCE-SCHEMA",
+      "status": "REMAINS_DESIGN_RESOLVED",
+      "evidence": "passive XML plus once originSwitch none and preserved natural effects"
+    },
+    {
+      "id": "T17-SAVE-REFIX-JSAPI-HIGH-MERGE-ROSTER",
+      "status": "REMAINS_DESIGN_RESOLVED",
+      "evidence": "merge-onlyBuilder skip and exactsixrosters"
+    },
+    {
+      "id": "T17-SAVE-REFIX-JSAPI-MEDIUM-AUTHORITY-DRIFT",
+      "status": "REMAINS_DESIGN_RESOLVED",
+      "evidence": "one wirev3 machineauthority/pointers"
+    }
+  ],
+  "nextRequiredAction": "Combine both exact-current independent design decisions. If both approve, implement only the bounded NEW source proposal. Then freeze actual code and obtain independent implementation reviews and necessary tests. No engine/attempt authority is implied.",
+  "boundaries": {
+    "sourceImplementation": "NOT_IMPLEMENTED_NOT_ACCEPTED",
+    "native": "NOT_RUN",
+    "sourceBehaviorJSExecution": 0,
+    "simulationDatDecoderExecution": 0,
+    "testsOrProofs": 0,
+    "helperExecution": 0,
+    "engineRuns": 0,
+    "sourceSpecOldReportEdits": false,
+    "copyLinkLockGuardAttempt": false,
+    "oldFailStopRawSealsModified": false,
+    "ownedWritesOnly": [
+      "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/js-api-review-input.json",
+      "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/js-api-review.json",
+      "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/js-api-review.md"
+    ]
+  },
+  "limitations": [
+    "LocalHEAD compatibility sources do not prove officialR28 binary equivalence.",
+    "All future source purity/getter/serialize/noMutation, actual native roster/typedfields/count0/zeroAdvance/receipt/principal/replay/Complete/VFSACK/rawdisk/motiondamage/death/window/budget evidence remains NOT_RUN/NOT_PROVEN.",
+    "No original failure/STOP upgraded; opaque serialized equality or producer flags never replace fullfield/native evidence."
+  ],
+  "recoverableCheckpoint": {
+    "status": "COMPLETE",
+    "remainingReviewWork": [],
+    "next": "Actual implementation then new exact-current implementation review; native remains separately gated"
+  }
+}

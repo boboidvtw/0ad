@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "createdUTC": "2026-10-25T02:10:58.949780+00:00",
+  "status": "DONE_BOUNDED_MAP_SCRIPT_PRODUCER_SOURCE_ONLY",
+  "manifest": {
+    "path": "work/t17-save-session-transaction-preparation/map-script-fix/manifest.json",
+    "bytes": 27089,
+    "sha256": "06a9cd6b7f8651d03daf5d57103d0aacc3025af0c92ab9c97b053d09ba0f1c9a"
+  },
+  "source": {
+    "path": "tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js",
+    "bytes": 69380,
+    "sha256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885"
+  },
+  "reviews": [
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/code-review-v1.json",
+      "bytes": 36970,
+      "sha256": "bb2bdb8bbd8e295ef8a396f601a894acb4bd84df68850581e7832bead78cea5b",
+      "verdict": "APPROVE_SOURCE_ONLY"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/js-api-review-v1.json",
+      "bytes": 60034,
+      "sha256": "071cc8318e875f70e1d3500cfa032f5146e4fd04090d0bbc76cee0773141f832",
+      "verdict": "APPROVE_SOURCE_ONLY"
+    }
+  ],
+  "tests": "3 focused pregame/canonical/native-projection SOURCE_MODEL groups,2syntax; missing-scriptRED retained; original18DONE unchanged not rerun",
+  "old89e": "map-start applicability withdrawn; oldreports unchanged",
+  "hostMetadataExpectedInitControls": "NOT_IMPLEMENTED_MUST_INDEPENDENTLY_PRECOMMIT_SCRIPT_VALUE_NO_ACTUAL_METADATA_BOOTSTRAP",
+  "actualLoaderSourceClosure": "OPEN",
+  "native": "NOT_RUN",
+  "appCopyLocksGuardAttempt": "NOT_CREATED"
+}

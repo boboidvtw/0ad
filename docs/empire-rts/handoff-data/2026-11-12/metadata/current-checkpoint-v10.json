@@ -1,0 +1,172 @@
+{
+  "schema": 1,
+  "createdUTC": "2026-11-12T01:27:30.616539+00:00",
+  "status": "ROOT_INDEPENDENT_CONTENT_REVIEW_PROGRESS_DESIGN_REPORTS_PENDING",
+  "priorCheckpoint": "current-checkpoint-v9.json",
+  "childThread": "01a1c8d0-ce47-7a13-8800-a59b935f0ce0",
+  "transferReceipt": "work/t14-t18-session-transfer-20261111/child-readback.json",
+  "manifestSHA256": "e73e6c48bd2a7ea31742aef7ad4b1744e6f28dbed799c39b28b25a3f9079b93a",
+  "designIntegrityReadback": "work/t14-t18-session-transfer-20261111/design-integrity-readback-v1.json",
+  "all170IntegrityChecksMatch": true,
+  "latestProgress": {
+    "CODE": {
+      "path": "work/t17-metadata-controls-design-20261105/design-review-CODE-progress-v10.json",
+      "sha256": "1adef648232cda736def5646d7c0c63c4cfb993ce15d7f601fc8aacb281bb128",
+      "counts": {
+        "full": 69,
+        "partial": 0,
+        "unread": 16
+      },
+      "reviewStatus": "IN_PROGRESS_NOT_APPROVAL",
+      "formalJSONExists": false,
+      "formalMDExists": false,
+      "next": "Unread: 15,17,18,22,23,24,45,48,53,54,61,70,71,72,73,82"
+    },
+    "Python": {
+      "path": "work/t17-metadata-controls-design-20261105/design-review-Python-progress-v6.json",
+      "sha256": "30c2148bb69996da155da3f36d5595311f541e6f94e2fa6a1668f459b22c5b9a",
+      "counts": {
+        "full": 78,
+        "partial": 1,
+        "unread": 6
+      },
+      "reviewStatus": "IN_PROGRESS_NO_VERDICT",
+      "formalJSONExists": false,
+      "formalMDExists": false,
+      "next": "070 source-registry.json chars105000..end then071-073,082-084; full reasoning still pending."
+    },
+    "JSAPI": {
+      "path": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v13.json",
+      "sha256": "915170fd02fc43a9af506925aee3a6f3209ae84bd5fea6dca21172119d8aca24",
+      "counts": {
+        "full": 68,
+        "partial": 1,
+        "unread": 16
+      },
+      "reviewStatus": "IN_PROGRESS_NOT_APPROVAL",
+      "formalJSONExists": false,
+      "formalMDExists": false,
+      "next": [
+        13,
+        14,
+        15,
+        17,
+        18,
+        24,
+        48,
+        49,
+        57,
+        61,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        82
+      ]
+    }
+  },
+  "quotaObserved": {
+    "ordinaryUsageAllowed": true,
+    "primaryUsedPercent": 2,
+    "weeklyUsedPercent": 26,
+    "credits": 0,
+    "resetCredits": 0
+  },
+  "allThreeDesignApproved": false,
+  "implementationAdmitted": false,
+  "rootIndependentFull85ContentReviewComplete": false,
+  "guardRefreshApproved": false,
+  "formalCases": "THREE_NOT_RUN",
+  "automationObserved": {
+    "id": "0ad-t14",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=5",
+    "targetThread": "01a1c8d0-ce47-7a13-8800-a59b935f0ce0",
+    "modifiedByChild": false,
+    "migrationReadback": "work/t14-t18-session-transfer-20261111/migration-readback.json",
+    "observation": "Read actual existing automation file; parent completed migration; no new schedule created"
+  },
+  "rootReadThisSession": [
+    "Nov11 handoff/transfer anchor",
+    "Nov6 handoff",
+    "Nov5 assessment/checkpoint",
+    "R06 crosswalk",
+    "DESIGN-v1",
+    "RAW-STAGE-v1",
+    "FUTURE-TEST-PLAN-v1",
+    "Latest three role progress status/coverage/provisional reasoning; no formal reports exist"
+  ],
+  "rootHistoricalReading": "Full canonical and remaining historical contracts still required before dependent implementation; no implementation performed",
+  "next": "Continue unread manifest contents and canonical/historical contracts; inspect original three formal reports only when available; never borrow their coverage. Full root review plus three formal approvals required before separate source assignment.",
+  "boundaries": "All prior FAIL/STOP/UNKNOWN/raw/seals retained. No author-code imports/compiles/tests/helpers/profile/producer/probe/fixtures/guard/attempt/engine; no C++/commit/push/delete/external messages/paid/reset/credits/model change/new schedule.",
+  "rootIndependentReviewProgress": "work/t17-metadata-controls-design-20261105/root-independent-read-progress-v4.json",
+  "rootIndependentCoverage": {
+    "full": 57,
+    "partial": 0,
+    "unread": 28
+  },
+  "gitObserved": {
+    "head": "d5133455c3dffba7d2d3f2465f75b82532ebcd3d",
+    "branch": "codex/t14-t18-closeout-20261104",
+    "indexEmpty": true
+  },
+  "originalReviewersAvailableInThisChat": false,
+  "originalReviewersAvailabilityEvidence": "collaboration.list_agents returned only /root; no cross-chat manipulation attempted",
+  "heartbeatInputUTC": "2026-11-12T01:26:02.697Z",
+  "latestRootSourceObservation": {
+    "topic": "Camera updates and restore height adjustment",
+    "evidenceIndices": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      34,
+      46
+    ],
+    "assessment": "Full GameView.cpp Update calls camera Update(deltaRealTime), gated by touch/focus/cinema and without a pause check in this body. CameraController Update responds to hotkeys/mouse/follow/zoom/height and can mutate controls. SetCamera also calls FocusHeight(false), which may adjust Y with constraints enabled. Getter bodies use GetValue, not smoothed presentation values. Therefore simulation pause or nominal setter values alone do not establish unchanged saved-camera controls. Same synchronous callback/nonreentrancy plus source/runtime/input/serializer closure and fresh getter lineage remain mandatory. This is a source observation, not an observed native mismatch or new formal DESIGN blocker."
+  },
+  "originalFormalReportsObserved": "CODE/Python/JSAPI JSON+MD all absent; original progress versions10/6/13 unchanged",
+  "latestRootSourceObservations": [
+    {
+      "topic": "Actual GUI transaction insertion and raw-stage semantics",
+      "evidenceIndices": [
+        55,
+        74,
+        75
+      ],
+      "assessment": "Current transaction validates permit, pauses origin, captures A or retains first L0, validates checkpoint, resolves ordinal/name, emits SAVE_CALL, checks cameraSame, calls official SaveGame once, captures B/L1, validates zeroAdvance and camera, then emits REQUEST_READY. SAVE_RETURN is appended to request.callOrder; no independent SAVE_RETURN emit exists in this source. Future source assignment/reader must explicitly distinguish that list marker from a separately received stdout event. Do not invent existing raw event or add another raw kind implicitly. Full design review remains pending; this is an open clarification, not finalized BLOCK or amendment."
+    },
+    {
+      "topic": "First L0 and load initialization",
+      "evidenceIndices": [
+        55,
+        23,
+        33,
+        38,
+        42
+      ],
+      "assessment": "Installed init wrapper performs SetPaused before upstream init; upstream may restore GUI, then initialize reads context, captures current camera and first graph, passes that same first graph to load transaction. Original CGame StartGame invokes Replay before RegisterInit and ReallyStartGame performs Interpolate(0,0); GUI first pause must not be represented as forbidding all upstream native restore/interpolation. No additional graph may replace first L0 to obtain metadata controls."
+    },
+    {
+      "topic": "Existing cameraSame is not proposed exact metadata comparison",
+      "evidenceIndices": [
+        55,
+        56,
+        57
+      ],
+      "assessment": "GUI cameraSame uses ascii(JSON.stringify)-based equality, while metadata comparator uses binary64 bits. Future capture/materializer must implement the prospective metadata numeric contract explicitly; unchanged old camera baseline check cannot by itself prove precise -0/serialization semantics or native provenance. No old approved source modified or old tests rerun."
+    }
+  ],
+  "priorAutomationObservation": {
+    "id": "0ad-t14",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=5",
+    "targetThread": "01a1ab0d-bce1-7f31-b9a9-33be9aaf3f6a",
+    "modifiedByChild": false,
+    "transferResponsibility": "Parent reads child receipt and migrates existing id; child must not create duplicate"
+  }
+}

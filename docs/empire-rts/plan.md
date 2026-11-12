@@ -855,3 +855,7 @@ Exactd69d source不變。JSAPI完整APPROVE_SOURCE_ONLY JSON439600/bb06b9e1、MD
 ## 2026-11-05 使用者要求整體盤點／GitHub更新後按計劃接續
 
 五項未完成任務T14–T18保持PARTIAL；18個工作包是計劃粒度，無新增案例授權。先更新文件與文字證據，GitHub採獨立codex/t14-t18-assessment-20261105分支；發布後做R06 metadata跨計劃對照。R01一次guard例外仍待同一具體決策，R02/R03不得提前執行。詳[評估](PROJECT-ASSESSMENT-2026-11-05.md)。
+
+## 2026-11-06 R07獨立來源調查完成／新metadata設計三方審查中
+
+本次live恢復後沿原native/host調查task續作，兩quota錯誤保留，未重開設定。兩調查明確區分原HOST-API:10的source-preSave controls與host持久化-before-actual-read，根端R06較強host-before-Save推論已保preimage更正，不新增原契約gate。新prospective metadata DESIGN-v1／RAW-STAGE-v1／FUTURE-TEST-PLAN已凍結，85完整bindings/1,447,275bytes，manifest SHA e73e6c48bd2a7ea31742aef7ad4b1744e6f28dbed799c39b28b25a3f9079b93a；三個必要獨立CODE/Python/JSAPI DESIGN reviewer各85current+snapshot byte MATCH，完整內容閱讀未完，不給核可。最新versionedcheckpoint在work/t17-metadata-controls-design-20261105/；同角色settings額度不足存精確已讀/未讀後等既有0ad-t14每5h，readback顯示只更新prompt/updated_at。R07仍PARTIAL／11技術義務OPEN，未准入任何實作或native。原R01 guard重取樣待決策、afb3339b/STOP、3cases NOT_RUN、24helpers耗用與全部舊FAIL/seals不變；無C++/commit/push/delete/外部訊息/新付費/新排程。

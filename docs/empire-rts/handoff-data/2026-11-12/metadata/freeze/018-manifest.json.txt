@@ -1,0 +1,552 @@
+{
+  "schema": 1,
+  "scope": "MINIMAL_GUI_TOP_LEVEL_MAP_SCRIPT_FIX_FULL_SOURCE_REVIEW_INPUT",
+  "status": "PENDING_FRESH_FULL_CODE_AND_JS_API_SOURCE_REVIEWS",
+  "createdClientDate": "2026-10-25",
+  "artifacts": [
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/CONTRACT.md",
+      "bytes": 2069,
+      "sha256": "c795225a7ea63b2e3dabba0a698fa2f88d050b38d62006732a9bff0ecb583375"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/SOURCEPROOF.md",
+      "bytes": 3133,
+      "sha256": "049f464afdb86f35486d11a393dd56f5240e9aa6b17acb7352d1437bc559c46e"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/before/tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js",
+      "bytes": 69349,
+      "sha256": "65713fd54def4325f0b6cad32504cb386248572a1e0732b2bb1aa48f6a02db14"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/before-mapping.json",
+      "bytes": 421,
+      "sha256": "cedb527cd1867f59ed07c6180d7ffd5c266e277fd3f43c63b5d7239c1575f254"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/checkpoint.json",
+      "bytes": 1081,
+      "sha256": "0709522ecd07f567323ee6d292ba32034873fa7c0ea044bbd6cf69b3864494be"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/tools/epoch-rts/t17-save-harness/gui/t17_save/command_creators.js",
+      "bytes": 3098,
+      "sha256": "689ae8db68126b76c521e22e4925eeb4f94e2bdc68403110ed054f862fd5fd65"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/tools/epoch-rts/t17-save-harness/maps/random/epoch_t17_save_six.js",
+      "bytes": 1055,
+      "sha256": "9736a6ee035bce491a1b29d818b7589381ed5257bbbb498f6a22f59969a57209"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/tools/epoch-rts/t17-save-harness/maps/random/epoch_t17_save_six.json",
+      "bytes": 542,
+      "sha256": "09a0c65a4d3c9532e12414d6d9f0d8b5565c115f467b9304b2502f90d2a7476f"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/tools/epoch-rts/t17-save-harness/simulation/helpers/ZZZZT17SaveTypedGraph.js",
+      "bytes": 22809,
+      "sha256": "f2d8d3869039b137f6746444a43cae0bd745288725b45ac4de2449e1f0531557"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/GUI-RMS-PRODUCER-GAP.md",
+      "bytes": 3043,
+      "sha256": "052e041bf07061e1aac7005d13d35556bd8bb807d781b56227548936e7900105"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/OPEN-obligations.json",
+      "bytes": 4364,
+      "sha256": "c5ecae7618e204fc52c9e3785f51ae33a548b28c35071a0988d285e571297754"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/manifest.json",
+      "bytes": 15888,
+      "sha256": "6fec187562f1c4390468bc015262f07e5282996919864fc5f509d9fb35c0064f"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/native-callgraph.json",
+      "bytes": 29489,
+      "sha256": "3cc23d185289f03784f8492c140aeabe1b9cdbbd1f98b1b21f1f2fa16c7c1c5e"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gamesettings/GameSettings.js",
+      "bytes": 5396,
+      "sha256": "ab2291fdfccc0ebbb810fb78dffb6da0cbe46c13e20bf9eb2a949e263e44e2b0"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gamesettings/attributes/Map.js",
+      "bytes": 1443,
+      "sha256": "fe0de95e3307fdd9d7fafd425d8122ed0e827acbaca25feb85cc9f5078239b7c"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gui/common/settings.js",
+      "bytes": 9960,
+      "sha256": "cb934430ed04d64016212a34754254672df95f3ba1bb19deac3048d3e99bab49"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gui/gamesetup/Controllers/GameSettingsController.js",
+      "bytes": 10364,
+      "sha256": "7406731a0c37af7169bc8554f655f99509fbe87cb65b0dfb65f828b1b9aa926c"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gui/maps/MapCache.js",
+      "bytes": 2403,
+      "sha256": "51a871abdd0bbe3fd3174aa9bff579198c0719728cee9a3bbf1edf3777f484e7"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/graphics/MapReader.cpp",
+      "bytes": 47069,
+      "sha256": "a7505e5b56defd8253726c866854ba3f69d3155caf985336bf64d34c0e1d350b"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/ps/Game.cpp",
+      "bytes": 13301,
+      "sha256": "766c220c7b8568d26ad04bcde19eeddfdc9fdd6539e56dba9fbf8d472a6e4a8a"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/ps/World.cpp",
+      "bytes": 3942,
+      "sha256": "fbd8f9147930f1f231492117299a880ad84755e6881c9d4ddd4a80b32c274363"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md",
+      "bytes": 41941,
+      "sha256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/source-registry.json",
+      "bytes": 247916,
+      "sha256": "3e6278f49bfe22d5298e8539497819fc14406319d695fe975a6e0e091995674b"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/wire-schema.json",
+      "bytes": 28262,
+      "sha256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/CONTRACT.md",
+      "bytes": 8225,
+      "sha256": "bb06a3abcf09479266ee2a5f7668b86ff8beb9de7139e220d60be36c45e7134d"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/SOURCEPROOF.md",
+      "bytes": 2869,
+      "sha256": "9cfaeefcc433818e8098bae9dd3aa91271b6e51befb2b56c40fab89d3d56c1d9"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/attempt-07.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/attempt-07.stdout.log",
+      "bytes": 1867,
+      "sha256": "ca123b4c07fdb3afbe2dc4692fe272aae1186d8770cda43b0a2665071b8bed53"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/code-review-v1.json",
+      "bytes": 54132,
+      "sha256": "07a0c9c5ff1c5abceafffcdb96242c90f14f93bc05487c1e1eab70a091f12c2b"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/code-review-v1.md",
+      "bytes": 9728,
+      "sha256": "8c7c9cfd130910dac5c733c137a2d2a675a163a869b404dd06bf423e0c1b16ee"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/js-api-review-v1.json",
+      "bytes": 72439,
+      "sha256": "c575ffd5f2cb8356056fc7e1b261bef51f128b1f292a85e456a924708d580a17"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/js-api-review-v1.md",
+      "bytes": 7483,
+      "sha256": "318eb1b1859d10bef8887d5cc69e029b82aaee08c9700ba4952945c4148cdddb"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/manifest.json",
+      "bytes": 41039,
+      "sha256": "89e1048d75d9a2bb5961e7c6d47b6e86df386bb9c7413ef64df9f31b451bff09"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/map-start-applicability-withdrawal.json",
+      "bytes": 1197,
+      "sha256": "d65c7f506c4b67293b27f41ae795125f5da4540ccc1fea975a304b16fab50fec"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/proof-matrix.json",
+      "bytes": 3546,
+      "sha256": "25adf54d1f20aae06c6e167a02c25fefcb31e0eedd5129423c41c3511c2e7356"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/SPEC.json",
+      "bytes": 35505,
+      "sha256": "2271dfdee03523a3438527bfbb8a480de6757fff8925d9d09fc5c51ea61f4009"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/SPEC.md",
+      "bytes": 6167,
+      "sha256": "bbde20a000d4e3e5bdaed90073c1a9d3a886048d3e9602d46af3ed665c93410e"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/WIRE-EXTENSION.json",
+      "bytes": 5731,
+      "sha256": "05ee5b55406a5d88af2331782afd9ef18452e374572fbb843b8c2c9c67747baf"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/code-design-review-v1.json",
+      "bytes": 7362,
+      "sha256": "42384e8486999f79cf54e2e2fc102fdd5dc01235b1092ed540be61e324466634"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/js-api-design-review-v1.json",
+      "bytes": 16482,
+      "sha256": "041858593dba7b11b6e112e64ce26fe08f40447ccc341e6fb572092f7d740630"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/manifest.json",
+      "bytes": 6579,
+      "sha256": "7c07a7de8e959ecd2711a29e892eaa3a34669a80a7420ab5dbe51bc627d76ee5"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/exact-source-diff.patch",
+      "bytes": 1229,
+      "sha256": "fa7b1a2d99e08048646436d0d3079d1fdb140ab2829c5acf394a23b9589bd531"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/frozen-source/tools/epoch-rts/t17-save-harness/gui/pregame/mainmenu.js",
+      "bytes": 1118,
+      "sha256": "7f6de02d91282d62f1de03274a770241c801fbc7bbbb5719c15fff8bdc7052b7"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/frozen-source/tools/epoch-rts/t17-save-harness/gui/pregame/t17_save_upstream_mainmenu.js",
+      "bytes": 830,
+      "sha256": "48672defb66d9520033c47468c3b39b9abca23495cb64c97ba1769ea2a3cd2c1"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/frozen-source/tools/epoch-rts/t17-save-harness/gui/session/session.xml",
+      "bytes": 4489,
+      "sha256": "dd4855d1ccde6fdc75fc40fca9d51475ef36c9d25e4a43bae5046150b482cad6"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/frozen-source/tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js",
+      "bytes": 69380,
+      "sha256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/frozen-source/tools/epoch-rts/t17-save-harness/gui/t17_save/typed_graph_gui.js",
+      "bytes": 22824,
+      "sha256": "eb6303d734b85b714aaaa3c6179f27f2987a50dc86954d9b40e324bc714ed5c8"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/frozen-source/tools/epoch-rts/test-t17-save-map-script.cjs",
+      "bytes": 8109,
+      "sha256": "7fd6f56f68d3c418ada4aac7406a5b034c28298066be01763ee1eab49af8f139"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/frozen-source/tools/epoch-rts/test-t17-save-session-transaction.cjs",
+      "bytes": 28175,
+      "sha256": "4d340138621bf2c61c05f3fa4e9749147bd48a71ed0c847acced055f017a661b"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/green.stderr.log",
+      "bytes": 173,
+      "sha256": "a67a59a2a55d20c0f942466d65816966da768ab7795feda2459225f7ca6a73e5"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/green.stdout.log",
+      "bytes": 469,
+      "sha256": "1c60d829e129e7e44f412e5e0bcebc9b2388e5ce128751da99fc53424835d226"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/red.stderr.log",
+      "bytes": 865,
+      "sha256": "d2af839c6baeaa5a04d9af63c416ab350a25f66d90873c80afeccd38d36fd10b"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/red.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/source-context-mapping.json",
+      "bytes": 18511,
+      "sha256": "e35a4294adf92e250b654438dc4f163248cd6728eb7b65f53549c00ee2b5ef9b"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/syntax.json",
+      "bytes": 361,
+      "sha256": "28d66d6e8d921977bc936e42a39e47a8d6e19d6a81d5e6f2dfc24b641925e34b"
+    }
+  ],
+  "referenceInputs": [
+    {
+      "path": "tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js",
+      "role": "source",
+      "bytes": 69380,
+      "sha256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885"
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-harness/gui/t17_save/typed_graph_gui.js",
+      "role": "source",
+      "bytes": 22824,
+      "sha256": "eb6303d734b85b714aaaa3c6179f27f2987a50dc86954d9b40e324bc714ed5c8"
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-harness/gui/pregame/mainmenu.js",
+      "role": "source",
+      "bytes": 1118,
+      "sha256": "7f6de02d91282d62f1de03274a770241c801fbc7bbbb5719c15fff8bdc7052b7"
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-harness/gui/pregame/t17_save_upstream_mainmenu.js",
+      "role": "source",
+      "bytes": 830,
+      "sha256": "48672defb66d9520033c47468c3b39b9abca23495cb64c97ba1769ea2a3cd2c1"
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-harness/gui/session/session.xml",
+      "role": "source",
+      "bytes": 4489,
+      "sha256": "dd4855d1ccde6fdc75fc40fca9d51475ef36c9d25e4a43bae5046150b482cad6"
+    },
+    {
+      "path": "tools/epoch-rts/test-t17-save-session-transaction.cjs",
+      "role": "source",
+      "bytes": 28175,
+      "sha256": "4d340138621bf2c61c05f3fa4e9749147bd48a71ed0c847acced055f017a661b"
+    },
+    {
+      "path": "tools/epoch-rts/test-t17-save-map-script.cjs",
+      "role": "source",
+      "bytes": 8109,
+      "sha256": "7fd6f56f68d3c418ada4aac7406a5b034c28298066be01763ee1eab49af8f139"
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-harness/gui/t17_save/command_creators.js",
+      "role": "context",
+      "bytes": 3098,
+      "sha256": "689ae8db68126b76c521e22e4925eeb4f94e2bdc68403110ed054f862fd5fd65"
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-harness/simulation/helpers/ZZZZT17SaveTypedGraph.js",
+      "role": "context",
+      "bytes": 22809,
+      "sha256": "f2d8d3869039b137f6746444a43cae0bd745288725b45ac4de2449e1f0531557"
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-harness/maps/random/epoch_t17_save_six.json",
+      "role": "context",
+      "bytes": 542,
+      "sha256": "09a0c65a4d3c9532e12414d6d9f0d8b5565c115f467b9304b2502f90d2a7476f"
+    },
+    {
+      "path": "tools/epoch-rts/t17-save-harness/maps/random/epoch_t17_save_six.js",
+      "role": "context",
+      "bytes": 1055,
+      "sha256": "9736a6ee035bce491a1b29d818b7589381ed5257bbbb498f6a22f59969a57209"
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/manifest.json",
+      "role": "context",
+      "bytes": 15888,
+      "sha256": "6fec187562f1c4390468bc015262f07e5282996919864fc5f509d9fb35c0064f"
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/native-callgraph.json",
+      "role": "context",
+      "bytes": 29489,
+      "sha256": "3cc23d185289f03784f8492c140aeabe1b9cdbbd1f98b1b21f1f2fa16c7c1c5e"
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/GUI-RMS-PRODUCER-GAP.md",
+      "role": "context",
+      "bytes": 3043,
+      "sha256": "052e041bf07061e1aac7005d13d35556bd8bb807d781b56227548936e7900105"
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/OPEN-obligations.json",
+      "role": "context",
+      "bytes": 4364,
+      "sha256": "c5ecae7618e204fc52c9e3785f51ae33a548b28c35071a0988d285e571297754"
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/ps/Game.cpp",
+      "role": "context",
+      "bytes": 13301,
+      "sha256": "766c220c7b8568d26ad04bcde19eeddfdc9fdd6539e56dba9fbf8d472a6e4a8a"
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/ps/World.cpp",
+      "role": "context",
+      "bytes": 3942,
+      "sha256": "fbd8f9147930f1f231492117299a880ad84755e6881c9d4ddd4a80b32c274363"
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/graphics/MapReader.cpp",
+      "role": "context",
+      "bytes": 47069,
+      "sha256": "a7505e5b56defd8253726c866854ba3f69d3155caf985336bf64d34c0e1d350b"
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gamesettings/attributes/Map.js",
+      "role": "context",
+      "bytes": 1443,
+      "sha256": "fe0de95e3307fdd9d7fafd425d8122ed0e827acbaca25feb85cc9f5078239b7c"
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gamesettings/GameSettings.js",
+      "role": "context",
+      "bytes": 5396,
+      "sha256": "ab2291fdfccc0ebbb810fb78dffb6da0cbe46c13e20bf9eb2a949e263e44e2b0"
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gui/maps/MapCache.js",
+      "role": "context",
+      "bytes": 2403,
+      "sha256": "51a871abdd0bbe3fd3174aa9bff579198c0719728cee9a3bbf1edf3777f484e7"
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gui/common/settings.js",
+      "role": "context",
+      "bytes": 9960,
+      "sha256": "cb934430ed04d64016212a34754254672df95f3ba1bb19deac3048d3e99bab49"
+    },
+    {
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gui/gamesetup/Controllers/GameSettingsController.js",
+      "role": "context",
+      "bytes": 10364,
+      "sha256": "7406731a0c37af7169bc8554f655f99509fbe87cb65b0dfb65f828b1b9aa926c"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/CONTRACT.md",
+      "role": "context",
+      "bytes": 8225,
+      "sha256": "bb06a3abcf09479266ee2a5f7668b86ff8beb9de7139e220d60be36c45e7134d"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/SOURCEPROOF.md",
+      "role": "context",
+      "bytes": 2869,
+      "sha256": "9cfaeefcc433818e8098bae9dd3aa91271b6e51befb2b56c40fab89d3d56c1d9"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/proof-matrix.json",
+      "role": "context",
+      "bytes": 3546,
+      "sha256": "25adf54d1f20aae06c6e167a02c25fefcb31e0eedd5129423c41c3511c2e7356"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/attempt-07.stdout.log",
+      "role": "context",
+      "bytes": 1867,
+      "sha256": "ca123b4c07fdb3afbe2dc4692fe272aae1186d8770cda43b0a2665071b8bed53"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/attempt-07.stderr.log",
+      "role": "context",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/manifest.json",
+      "role": "context",
+      "bytes": 41039,
+      "sha256": "89e1048d75d9a2bb5961e7c6d47b6e86df386bb9c7413ef64df9f31b451bff09"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/code-review-v1.json",
+      "role": "context",
+      "bytes": 54132,
+      "sha256": "07a0c9c5ff1c5abceafffcdb96242c90f14f93bc05487c1e1eab70a091f12c2b"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/code-review-v1.md",
+      "role": "context",
+      "bytes": 9728,
+      "sha256": "8c7c9cfd130910dac5c733c137a2d2a675a163a869b404dd06bf423e0c1b16ee"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/js-api-review-v1.json",
+      "role": "context",
+      "bytes": 72439,
+      "sha256": "c575ffd5f2cb8356056fc7e1b261bef51f128b1f292a85e456a924708d580a17"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/js-api-review-v1.md",
+      "role": "context",
+      "bytes": 7483,
+      "sha256": "318eb1b1859d10bef8887d5cc69e029b82aaee08c9700ba4952945c4148cdddb"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/map-start-applicability-withdrawal.json",
+      "role": "context",
+      "bytes": 1197,
+      "sha256": "d65c7f506c4b67293b27f41ae795125f5da4540ccc1fea975a304b16fab50fec"
+    },
+    {
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md",
+      "role": "context",
+      "bytes": 41941,
+      "sha256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b"
+    },
+    {
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/wire-schema.json",
+      "role": "context",
+      "bytes": 28262,
+      "sha256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de"
+    },
+    {
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/source-registry.json",
+      "role": "context",
+      "bytes": 247916,
+      "sha256": "3e6278f49bfe22d5298e8539497819fc14406319d695fe975a6e0e091995674b"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/SPEC.json",
+      "role": "context",
+      "bytes": 35505,
+      "sha256": "2271dfdee03523a3438527bfbb8a480de6757fff8925d9d09fc5c51ea61f4009"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/SPEC.md",
+      "role": "context",
+      "bytes": 6167,
+      "sha256": "bbde20a000d4e3e5bdaed90073c1a9d3a886048d3e9602d46af3ed665c93410e"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/WIRE-EXTENSION.json",
+      "role": "context",
+      "bytes": 5731,
+      "sha256": "05ee5b55406a5d88af2331782afd9ef18452e374572fbb843b8c2c9c67747baf"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/manifest.json",
+      "role": "context",
+      "bytes": 6579,
+      "sha256": "7c07a7de8e959ecd2711a29e892eaa3a34669a80a7420ab5dbe51bc627d76ee5"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/code-design-review-v1.json",
+      "role": "context",
+      "bytes": 7362,
+      "sha256": "42384e8486999f79cf54e2e2fc102fdd5dc01235b1092ed540be61e324466634"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/js-api-design-review-v1.json",
+      "role": "context",
+      "bytes": 16482,
+      "sha256": "041858593dba7b11b6e112e64ce26fe08f40447ccc341e6fb572092f7d740630"
+    }
+  ],
+  "verification": {
+    "newFocusedSourceModelGroups": 3,
+    "native": false,
+    "newChangedSyntaxFiles": 2,
+    "existing18Suite": "source unchanged, not rerun",
+    "hostMetadataExpectedInitControls": "NOT_IMPLEMENTED_INTEGRATION_OPEN",
+    "fullActualSourceClosure": "OPEN_BLOCK"
+  },
+  "reviewInstructions": "Read full current GUI6 plus new regression, CONTRACT/SOURCEPROOF, canonical official/native source, full wire/prearm authority, old review withdrawal. Only runtime edit is top-level script literal; no recursive history packaging or native claim."
+}

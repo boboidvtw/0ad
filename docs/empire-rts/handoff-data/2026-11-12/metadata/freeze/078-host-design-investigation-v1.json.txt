@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "purpose": "R07 bounded host-side prospective source design investigation, not author or formal three-party DESIGN review",
+  "dateTaipei": "2026-11-06",
+  "ownerTask": "r07_host_design",
+  "status": "PROSPECTIVE_SOURCE_DESIGN_CANDIDATE_OPEN",
+  "implementationAdmitted": false,
+  "formalDesignApproval": false,
+  "sourceApproval": false,
+  "technicalObligationsClosed": 0,
+  "runtime": "NOT_RUN",
+  "earlierHypothesis": {
+    "status": "RETRACTED_PRELIMINARY_NOT_NORMATIVE",
+    "claim": "host durable commit/readback must precede Save; unchanged callback therefore blocked",
+    "retainedIn": ["host-progress-v1.json", "host-design-investigation-v1.md preliminary body"],
+    "correction": "HOST-API-DRAFT:10 explicitly orders source control establishment before Save but does not explicitly order host durable commit before Save. R06 derived wording cannot create an additional unapproved gate. Candidate source capture-beforeSave plus host expected-before-actualmetadata-read remains possible."
+  },
+  "normativeCitations": [
+    {"path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/HOST-API-DRAFT.md", "lines": [4,8,10,12,24,26], "use": "source controls beforeSave, authentic caller/realm/provenance, host commit/readback/receive order proof, actual exclusion, no wait/turn/flush/extraSave"},
+    {"path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/SPEC.md", "lines": [22,26,28,30], "use": "prelaunch t_arm, first pause/L0 uniqueSave, immutable sameD, complete GUI ACK endpoint"},
+    {"path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md", "lines": [191,193,195,197], "use": "original fixed Save/request/ACK order, real archive obligations"},
+    {"path": "work/t17-save-host-prearm-preparation/source-scope-v1/SCOPE-RATIONALE.md", "lines": [9,11], "use": "source-scope approval does not erase fullfreeze BLOCK or runtime/profile/inventory obligations"}
+  ],
+  "candidate": {
+    "prepare": "Source-owned immutable static case/phase/checkpoint/ordinal plan and independent binary/mod/profile/source locks. No arbitrary dict/trustedlabel/archive metadata expected input. PID remains pending until actual process ownership record.",
+    "capture": "After session first native pause and upstream init/restore, before first L0, source-owned same-callback capture real native engineinfo, GetPlayerID before/after, full GetInitAttributes and exact nativecamera. Preserve immutable primitive encoded original record in private lexical closure and emit via existing stdout; no wait, extraSave/turn/flush/C++.",
+    "bind": "Actual same-process owned pipe raw bytes and full exact frame/order/once/phase; full loader/caller/realm/nativeclone/writer/mutation closure independently proven. Host durable controls persistence/fullreadback, staticbase/native transformations validation. Do not authenticate source by payload labels/hash/frozen object alone.",
+    "materialize": "Host materializes immutable six-field expected bytes and durable readback before actualmetadata consumer may read metadata; capture-beforeSave is established by source causal chain, not host receive timing. Actual/archive metadata never fills expected.",
+    "comparison": "Only existing MATCH_METADATA_VALUES_ONLY; runtime_bound/native_verified false",
+    "sameD": "All capture/transport/persistence/materialization/archive/ACK costs remain within original t_arm+5e9ns and outercaps, no reset",
+    "unchanged": ["original physical boot/request/permit/ACK paths", "ReadSaveContext exact six keys", "base request and final ACK schemas", "first-native-pause", "first L0 then unique Save/L1 same callback", "zeroAdvance", "no wait/warmturn/flush/extraSave", "original attempts/guards/seals"],
+    "rawStageAdmission": "New raw kind/body is prospective producer interface, not deployed/approved. Existing emit supports kinds and prearm ignores nonendpoint; exact full runner/raw allowlist compatibility remains unproved and may require additive reviewed amendment.",
+    "unapprovedAmendmentsIfNeeded": ["new physical paths or channel", "paused tick wait for host commit", "two-way commit barrier", "changed L0/Save ordering", "changed exact context/ACK/request/boot schema", "native RPC/C++", "moving t_arm or increasing deadlines"],
+    "feasibilityWithinFiveSeconds": "INSUFFICIENT_DATA_NOT_RUN",
+    "nextStep": "Complete prospective capture/host raw-parser/expected-before-actual-read source design and closure/compatibility mapping, then necessary independent full review. Do not first demand no-wait relaxation merely because of retracted preSave-hostcommit hypothesis."
+  },
+  "selectedSourceCitations": [
+    {"path": "tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js", "ranges": ["48-58", "84-92", "151-177", "178-198", "257-265", "284-296"]},
+    {"path": "tools/epoch-rts/t17_save_prearm.py", "ranges": ["29-45", "444-497", "535-586", "598-601", "638-692", "706-721"]},
+    {"path": "tools/epoch-rts/t17_save_metadata.py", "ranges": ["23-32", "135-160"]},
+    {"path": "work/t17-metadata-controls-design-20261105/context-v1/008-JSInterface_Simulation.cpp", "ranges": ["46-64"]},
+    {"path": "work/t17-metadata-controls-design-20261105/context-v1/024-GuiInterface.js", "ranges": ["198-210"]},
+    {"path": "work/t17-metadata-controls-design-20261105/context-v1/027-CameraController.cpp", "ranges": ["418-452"]},
+    {"path": "work/t17-metadata-controls-design-20261105/context-v1/031-JSInterface_GameView.cpp", "ranges": ["76-116", "145-158"]},
+    {"path": "work/t17-metadata-controls-design-20261105/context-v1/038-Replay.cpp", "ranges": ["60-110"]},
+    {"path": "work/t17-metadata-controls-design-20261105/context-v1/039-SavedGame.cpp", "ranges": ["65-145"]},
+    {"path": "work/t17-metadata-controls-design-20261105/context-v1/040-JSInterface_Game.cpp", "ranges": ["35-80"]},
+    {"path": "work/t17-metadata-controls-design-20261105/context-v1/041-JSInterface_Mod.cpp", "ranges": ["110-135"]},
+    {"path": "work/t17-metadata-controls-design-20261105/context-v1/042-JSInterface_SavedGame.cpp", "ranges": ["35-52", "78-120"]},
+    {"path": "work/t17-metadata-controls-design-20261105/context-v1/023-session.js", "ranges": ["578-610"]}
+  ],
+  "coverage": {
+    "catalog": "work/t17-metadata-controls-design-20261105/context-manifest-v1.json",
+    "catalogReadComplete": true,
+    "bindingCount": 74,
+    "all74IndependentlyHashed": false,
+    "indexMeaning": "zero-padded context-v1 snapshot prefix; aliases counted by identical manifested body, not independent runtime proof",
+    "fullReadIndices": [0,1,2,3,4,7,21,49,50,51,53,56,57,58,59,60],
+    "partialReadIndices": [6,8,13,23,24,27,31,38,39,40,41,42,55,68],
+    "unreadContentIndices": [5,9,10,11,12,14,15,16,17,18,19,20,22,25,26,28,29,30,32,33,34,35,36,37,43,44,45,46,47,48,52,54,61,62,63,64,65,66,67,69,70,71,72,73],
+    "partialDetails": {
+      "6/55 session_transaction": "lines1-4 and6-297 read; embedded WIRE line5 output truncated, not claimed complete",
+      "8": "46-64",
+      "13/68 SPEC": "185-211 plus targeted metadata/source grep excerpts; full41941bytes not read",
+      "23": "578-610",
+      "24": "198-210",
+      "27": "418-452",
+      "31": "76-116,145-158",
+      "38": "60-110",
+      "39": "65-145",
+      "40": "35-80",
+      "41": "110-135",
+      "42": "35-52,78-120"
+    },
+    "additionalCompleteOutsideCatalog": ["/Users/liyungchih/AGENTS.md", "work/t17-save-host-prearm-preparation/CONTRACT.md", "work/t17-save-session-transaction-preparation/CONTRACT-WIP.md"],
+    "unclosedFullScope": ["complete74 source closure", "all source registry/loader/mutator/prototype/serialization paths", "actual launcher/pipe ownership and durable reader", "host expected-before-actualmetadata read integration", "fullhost original freeze/inventory/runtime/profile", "full GUI raw-stage allowlist compatibility", "all runtime/native evidence"],
+    "noFormalFullReviewClaim": true
+  },
+  "currentHashesRead": [
+    {"path": "work/t17-metadata-controls-design-20261105/context-manifest-v1.json", "sha256": "f3ca2c1e38538f8a80921f7fa1c53898004231e4fac0b10e949a43ada649c02a"},
+    {"path": "tools/epoch-rts/t17_save_prearm.py", "sha256": "4a892751fb9bf8924bb96b05c23695d1def1cca7e9fae070e48e2618ea1d62bd"},
+    {"path": "tools/epoch-rts/t17_save_metadata.py", "sha256": "96d9e51e6280b1998410d7a591eaf65c11dfd11bc68c3816255201bac30bfd43"},
+    {"path": "tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js", "sha256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885"}
+  ],
+  "openObligations": ["ENGINE_INFO_RUNTIME", "PRINCIPAL_CAPTURE", "FULL_INITATTRS_PRODUCER", "LOAD_NESTED_TIMESTAMP", "REPLAY_START_AVAILABILITY", "CAMERA_CONTROL", "GROUPS_INPUT_CLOSURE", "STATIC_DESCRIPTION_HOST_FACTORY", "PRECOMMIT_TRANSPORT", "FUTURE_SCHEDULE_ABSENCE", "FULL_NATIVE_PIPELINE"],
+  "preserved": ["SOURCE-v2 three approvals", "afb3339b guard STOP", "three cases NOT_RUN", "24 consumed helpers", "original fullhost BLOCK", "all prior FAIL/PARTIAL/STOP/seals", "prior quota error in root original records; no replacement role/model/settings"],
+  "executions": {"projectImport": false, "compile": false, "tests": false, "helpers": false, "models": false, "producer": false, "Popen": false, "engine": false, "guard": false, "probe": false, "fixture": false, "runtimeCopy": false, "network": false, "commit": false, "push": false, "delete": false},
+  "writesOnly": ["work/t17-metadata-controls-design-20261105/host-progress-v1.json", "work/t17-metadata-controls-design-20261105/host-design-investigation-v1.md", "work/t17-metadata-controls-design-20261105/host-design-investigation-v1.json", "work/t17-metadata-controls-design-20261105/host-progress-v2.json"]
+}

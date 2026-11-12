@@ -1,0 +1,735 @@
+# Purpose: immutable host-monotonic prearm publication and time/file correlation only.
+# Created: 2026-10-23. SPDX-License-Identifier: GPL-2.0-or-later
+"""No engine/archive/native/sourceguard authority, launcher, callback or verified flag.
+
+Full host runner, actual pipe persistence, guards and archive verification remain OPEN.
+All failures retain artifacts; no unlink/rename/overwrite/retry/clock extension exists.
+"""
+from __future__ import annotations
+
+from dataclasses import dataclass
+import hashlib
+import json
+import os
+from pathlib import Path
+import re
+import stat
+import time
+from types import MappingProxyType
+
+NS = 1_000_000_000
+U64 = (1 << 64) - 1
+SAFE = (1 << 53) - 1
+RAW_CAP = 64 * 1024 * 1024
+PREFIX = b'T17_SAVE_GUI '
+WINDOWS = {'surfaced': (2000, 2100), 'pendingDive': (4000, 4100),
+           'deepHidden': (9000, 9100), 'pendingSurface': (11000, 11100),
+           'ownerCanceled': (14000, 14100)}
+CHECKPOINTS = tuple(WINDOWS)
+COMMON = ('campaignNonce', 'caseNonce', 'sourceManifestSHA', 'seed', 'caseID',
+          'checkpoint', 'phase', 'transactionOrdinal', 'armNonce')
+ARM_KEYS = ('schema',) + COMMON + ('plannedWindow',)
+PERMIT_KEYS = ('schema',) + COMMON + ('armRequestActualBytes', 'armRequestActualSHA',
+              'hostMonotonicStartNs', 'hostMonotonicDeadlineNs', 'decision')
+ACK_KEYS = ('schema', 'campaignNonce', 'caseNonce', 'sourceManifestSHA', 'seed', 'caseID',
+            'checkpoint', 'phase', 'transactionOrdinal', 'archiveName', 'S',
+            'requestActualBytes', 'requestActualSHA', 'originArchive', 'roundtripArchive',
+            'actualNativeCount', 'guardsDigest', 'hoststageDecision', 'hostDeadlineDisplayUTC')
+REQUEST_KEYS = ('schema', 'campaignNonce', 'caseNonce', 'sourceManifestSHA', 'seed',
+                'caseID', 'checkpoint', 'phase', 'transactionOrdinal', 'archiveName',
+                'expectedOriginArchiveSHA', 'S', 'pauseBefore', 'pauseAfter',
+                'nativePrincipalBeforeAfter', 'queryCallerBeforeAfter', 'callOrder',
+                'graphs', 'explicitunknowns')
+BOOT_KEYS = ('schema', 'campaignNonce', 'caseNonce', 'sourceManifestSHA', 'seed', 'caseID',
+             'profileName', 'noNet', 'principal', 'sourceDerivedCaps', 'originArchives',
+             'loadArchive', 'transactionArms')
+CAMPAIGN_POLICY = MappingProxyType({'absoluteHostSeconds': 600, 'maxSerialCases': 6, 'caseAbsoluteHostSeconds': 90, 'casePrelaunchSeconds': 30, 'startupFromPopenSeconds': 10, 'caseStopNewWorkSeconds': 80, 'caseCleanupDeadlineSeconds': 90, 'archiveTransactionHostSeconds': 5, 'campaignEngineAndCaseCutoffSeconds': 540, 'campaignFinalReadbackDeadlineSeconds': 600, 'minimumRemainingToStartCaseSeconds': 90, 'caseDeadlineRule': 'min(caseStart+90,campaignStart+540); no new case without full90 remaining before540; all clocks monotonic, no reset', 'newWorkDeadlineRule': 'min(caseStart+80,campaignStart+540); Popen must also precede caseStart+30; startup deadline=min(Popen+10,caseStart+40)', 'finalReserveRule': '540..600 only final actualdisk inventory/readback/seal, no engine/commands/Save'})
+HEX = re.compile(r'[a-f0-9]{64}\Z')
+DECIMAL = re.compile(r'(?:0|[1-9][0-9]*)\Z')
+
+
+class PrearmError(RuntimeError):
+    """Sticky failure/unknown; artifacts must be preserved by the caller."""
+
+
+def canonical(value):
+    return json.dumps(value, ensure_ascii=True, separators=(',', ':'), allow_nan=False).encode('ascii')
+
+
+def strict_json(raw, cap):
+    if type(raw) is not bytes or not 0 < len(raw) <= cap:
+        raise ValueError('JSON_CAP_OR_BYTES')
+    text = raw.decode('utf-8', 'strict')
+    # Actual writers emit compact JSON and optionally one trailing newline.
+    if text != text.strip() and not (text.endswith('\n') and text[:-1] == text[:-1].strip()):
+        raise ValueError('JSON_TRAILING_WHITESPACE')
+    def pairs(items):
+        result = {}
+        for key, value in items:
+            if key in result:
+                raise ValueError('DUPLICATE_KEY')
+            result[key] = value
+        return result
+    def invalid(_):
+        raise ValueError('NONFINITE')
+    value = json.loads(text, object_pairs_hook=pairs, parse_constant=invalid)
+    def depth(v, level=0):
+        if level > 256:
+            raise ValueError('DEPTH')
+        if type(v) is dict:
+            for child in v.values():
+                depth(child, level + 1)
+        elif type(v) is list:
+            for child in v:
+                depth(child, level + 1)
+        elif type(v) is float and not (-float('inf') < v < float('inf')):
+            raise ValueError('NONFINITE')
+    depth(value)
+    return value
+
+
+def exact(v, keys):
+    if type(v) is not dict or set(v) != set(keys):
+        raise ValueError('EXACT_KEYS')
+
+
+def uint(v, maximum=SAFE):
+    if type(v) is not int or not 0 <= v <= maximum:
+        raise ValueError('INTEGER')
+    return v
+
+
+def sha(v):
+    if type(v) is not str or HEX.fullmatch(v) is None:
+        raise ValueError('SHA')
+    return v
+
+
+def decimal_ns(v):
+    if type(v) is not str or len(v) > 20 or DECIMAL.fullmatch(v) is None:
+        raise ValueError('CANONICAL_NS')
+    return uint(int(v), U64)
+
+
+def same(a, b):
+    if type(a) is not type(b):
+        return False
+    if type(a) is dict:
+        return set(a) == set(b) and all(same(a[k], b[k]) for k in a)
+    if type(a) is list:
+        return len(a) == len(b) and all(same(x, y) for x, y in zip(a, b))
+    return a == b
+
+
+def basename(v):
+    if type(v) is not str or not 0 < len(v) <= 255 or any(c in v for c in '/\\.'):
+        raise ValueError('BASENAME')
+    return v
+
+
+def identity(s):
+    return (s.st_dev, s.st_ino, s.st_size, s.st_mtime_ns, s.st_ctime_ns, s.st_nlink, stat.S_IMODE(s.st_mode))
+
+
+@dataclass(frozen=True)
+class _Reservation:
+    common_json: bytes
+    start_ns: int
+    deadline_ns: int
+    request_raw: bytes
+    request_identity: tuple
+
+
+class PrearmSession:
+    """In-process once-only ledger; crash/restart attempt persistence is NOT integrated."""
+    def __init__(self, case_root, campaign_start_ns, case_start_ns):
+        self._faults = []
+        self._active_prelaunch = False
+        self._unknown_fds = []
+        self._observations = []
+        self._root_fd = None
+        self._root_id = None
+        self._last_ns = None
+        self._attempted = []
+        self._arms = {}
+        self._published_acks = {}
+        self._checkpoint_ids = {}
+        self._endpoints = {}
+        self._chunks = []
+        self._raw_bytes = 0
+        self._buffer = bytearray()
+        self._scan = 0
+        self._stack = []
+        self._quoted = False
+        self._escaped = False
+        self._frame = None
+        self._json_end = None
+        try:
+            self._t0 = uint(campaign_start_ns, U64)
+            self._case = uint(case_start_ns, U64)
+            if self._case < self._t0 or self._case + 90 * NS > self._t0 + 540 * NS or self._t0 + 600 * NS > U64:
+                raise ValueError('CASE_BOUNDS')
+            self._work_end = min(self._case + 80 * NS, self._t0 + 540 * NS)
+            self._cleanup_end = min(self._case + 90 * NS, self._t0 + 540 * NS)
+            self._final_end = self._t0 + 600 * NS
+            if type(case_root) not in (str, type(Path())):
+                raise ValueError('PATH_TYPE')
+            p = Path(case_root)
+            if not p.is_absolute() or '..' in p.parts or '.' in p.parts:
+                raise ValueError('ABSOLUTE_PATH')
+            self._path = p
+            self._guard()
+            self._root_fd = self._walk()
+            s = self._io('ROOT_STAT', os.fstat, self._root_fd)
+            self._root_id = (s.st_dev, s.st_ino)
+            if stat.S_IMODE(s.st_mode) != 0o700:
+                raise ValueError('PRIVATE_CASE')
+            boot_raw, boot_id = self._read(self._root_fd, 'boot.json', 8192, 1)
+            self._boot_raw, self._boot_id = boot_raw, boot_id
+            self._boot = strict_json(boot_raw, 8192)
+            self._validate_boot()
+            self._guard()
+        except PrearmError as error:
+            self._init_cleanup()
+            self._refresh_error(error)
+            raise
+        except Exception:
+            self._faults.append({'reason':'INIT_INVALID_OR_IO','classification':'FAIL'})
+            self._init_cleanup()
+            self._fail('INIT_INVALID_OR_IO')
+
+    def _init_cleanup(self):
+        if self._root_fd is not None:
+            fd = self._root_fd
+            self._root_fd = None
+            try:
+                os.close(fd)
+            except Exception:
+                self._unknown_fds.append(fd)
+                self._faults.append({'reason':'CLOSE_UNKNOWN','classification':'UNKNOWN'})
+
+    def _fail(self, reason, unknown=False):
+        self._faults.append({'reason': reason, 'classification': 'UNKNOWN' if unknown else 'FAIL'})
+        error = PrearmError(reason)
+        self._refresh_error(error)
+        raise error
+
+    def _refresh_error(self, error):
+        error.evidence = {'faults':[dict(x) for x in self._faults],
+                          'unknownCloseDescriptors':list(self._unknown_fds),
+                          'fileObservations':tuple(self._observations)}
+
+    def _now(self):
+        try:
+            value = time.monotonic_ns()
+        except Exception:
+            self._fail('CLOCK_UNAVAILABLE', True)
+        if type(value) is not int or not 0 <= value <= U64:
+            self._fail('CLOCK_DOMAIN', True)
+        if self._last_ns is not None and value < self._last_ns:
+            self._fail('CLOCK_BACKWARDS', True)
+        self._last_ns = value
+        return value
+
+    def _guard(self, *, prelaunch=False):
+        if self._faults:
+            raise PrearmError('STICKY_FAILURE')
+        now = self._now()
+        if now < self._case or now >= self._work_end or ((prelaunch or self._active_prelaunch) and now >= self._case + 30 * NS):
+            self._fail('OUTER_WORK_CUTOFF')
+        for cp, arm in self._arms.items():
+            if cp not in self._endpoints and now >= arm.deadline_ns:
+                self._fail('TRANSACTION_DEADLINE')
+        return now
+
+    def _io(self, reason, fn, *args, **kwargs):
+        self._guard()
+        try:
+            value = fn(*args, **kwargs)
+        except Exception:
+            self._fail(reason, True)
+        try:
+            self._guard()
+        except PrearmError as error:
+            # An open may succeed but return after D. Close the KNOWN returned fd
+            # once as cleanup; never retry an uncertain close or start more work.
+            if reason in ('DIRECTORY_OPEN', 'CHECKPOINT_OPEN', 'READ_OPEN', 'WRITE_EXCLUSIVE_OPEN'):
+                try:
+                    os.close(value)
+                except Exception:
+                    self._unknown_fds.append(value)
+                    self._faults.append({'reason':'CLOSE_UNKNOWN','classification':'UNKNOWN'})
+            self._refresh_error(error)
+            raise
+        return value
+
+    def _close(self, fd, *, primary=None):
+        # Cleanup bypasses work preguards and runs once, even while unwinding.
+        # Never mask the first failure with an uncertain secondary close.
+        try:
+            os.close(fd)
+        except Exception:
+            self._unknown_fds.append(fd)
+            self._faults.append({'reason':'CLOSE_UNKNOWN','classification':'UNKNOWN'})
+            if primary is None:
+                error = PrearmError('CLOSE_UNKNOWN')
+                self._refresh_error(error)
+                raise error
+        if isinstance(primary, PrearmError):
+            self._refresh_error(primary)
+        if primary is None and not self._faults:
+            self._guard()
+
+    def _walk(self):
+        fd = self._io('DIRECTORY_OPEN', os.open, '/', os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW)
+        try:
+            for part in self._path.parts[1:]:
+                new = self._io('DIRECTORY_OPEN', os.open, part,
+                               os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW, dir_fd=fd)
+                old = fd
+                fd = new
+                self._close(old)
+            return fd
+        except BaseException as error:
+            try:
+                self._close(fd, primary=error)
+            except PrearmError:
+                pass
+            raise
+
+    def _root_check(self):
+        fd = self._walk()
+        primary = None
+        try:
+            s = self._io('ROOT_STAT', os.fstat, fd)
+            if (s.st_dev, s.st_ino) != self._root_id or stat.S_IMODE(s.st_mode) != 0o700:
+                self._fail('CASE_PATH_IDENTITY')
+        except BaseException as error:
+            primary = error
+            raise
+        finally:
+            self._close(fd, primary=primary)
+        raw, ident = self._read(self._root_fd, 'boot.json', 8192, 1)
+        if raw != self._boot_raw or ident != self._boot_id:
+            self._fail('BOOT_MUTATED')
+
+    def _directory(self, checkpoint):
+        self._root_check()
+        fd = self._io('CHECKPOINT_OPEN', os.open, checkpoint,
+                      os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW, dir_fd=self._root_fd)
+        try:
+            s = self._io('CHECKPOINT_STAT', os.fstat, fd)
+            if stat.S_IMODE(s.st_mode) != 0o700:
+                self._fail('PRIVATE_CHECKPOINT')
+            ident = (s.st_dev, s.st_ino)
+            if checkpoint in self._checkpoint_ids and self._checkpoint_ids[checkpoint] != ident:
+                self._fail('CHECKPOINT_CHANGED_IDENTITY')
+            self._checkpoint_ids[checkpoint] = ident
+            self._checkpoint_check(checkpoint, fd)
+            return fd
+        except BaseException as error:
+            self._close(fd, primary=error)
+            raise
+
+    def _checkpoint_check(self, checkpoint, fd):
+        self._root_check()
+        current = self._io('CHECKPOINT_PATH_STAT', os.stat, checkpoint,
+                           dir_fd=self._root_fd, follow_symlinks=False)
+        actual = self._io('CHECKPOINT_FD_STAT', os.fstat, fd)
+        expected = self._checkpoint_ids[checkpoint]
+        if not stat.S_ISDIR(current.st_mode) or stat.S_IMODE(current.st_mode) != 0o700 or (current.st_dev, current.st_ino) != expected or (actual.st_dev, actual.st_ino) != expected:
+            self._fail('CHECKPOINT_CHANGED_IDENTITY')
+
+    def _read(self, directory, name, cap, links, private=False):
+        fd = self._io('READ_OPEN', os.open, name, os.O_RDONLY | os.O_NOFOLLOW, dir_fd=directory)
+        data = bytearray()
+        primary = None
+        try:
+            before = self._io('READ_STAT', os.fstat, fd)
+            if not stat.S_ISREG(before.st_mode) or before.st_nlink != links or not 0 < before.st_size <= cap or (private and stat.S_IMODE(before.st_mode) != 0o600):
+                self._fail('READ_FILE_KIND_CAP_LINKS_MODE')
+            while len(data) <= before.st_size:
+                chunk = self._io('READ_ERROR', os.read, fd, min(65536, before.st_size + 1 - len(data)))
+                if not chunk:
+                    break
+                data.extend(chunk)
+            after = self._io('READ_STAT', os.fstat, fd)
+            if len(data) != before.st_size or identity(before) != identity(after):
+                self._fail('READ_MUTATED_OR_SHORT')
+        except BaseException as error:
+            primary = error
+            raise
+        finally:
+            self._observations.append({'name': name, 'raw': bytes(data)})
+            self._close(fd, primary=primary)
+        post = self._io('READ_PATH_STAT', os.stat, name, dir_fd=directory, follow_symlinks=False)
+        if identity(after) != identity(post):
+            self._fail('READ_PATH_IDENTITY')
+        return bytes(data), identity(post)
+
+    def _write_once(self, directory, name, raw):
+        fd = self._io('WRITE_EXCLUSIVE_OPEN', os.open, name,
+                      os.O_WRONLY | os.O_CREAT | os.O_EXCL | os.O_NOFOLLOW, 0o600, dir_fd=directory)
+        primary = None
+        try:
+            before = self._io('WRITE_STAT', os.fstat, fd)
+            if not stat.S_ISREG(before.st_mode) or before.st_nlink != 1 or stat.S_IMODE(before.st_mode) != 0o600:
+                self._fail('WRITE_FILE_IDENTITY')
+            count = self._io('WRITE_ERROR', os.write, fd, raw)
+            if type(count) is not int or count != len(raw):
+                self._fail('SHORT_WRITE')
+            self._io('FSYNC_ERROR', os.fsync, fd)
+            after = self._io('WRITE_STAT', os.fstat, fd)
+            if (before.st_dev, before.st_ino) != (after.st_dev, after.st_ino) or after.st_size != len(raw):
+                self._fail('WRITE_CHANGED_IDENTITY')
+        except BaseException as error:
+            primary = error
+            raise
+        finally:
+            self._close(fd, primary=primary)
+        disk, ident = self._read(directory, name, len(raw), 1, True)
+        if disk != raw or ident[:2] != (before.st_dev, before.st_ino):
+            self._fail('WRITE_POSTCLOSE_READBACK')
+        return ident
+
+    def _validate_boot(self):
+        b = self._boot
+        exact(b, BOOT_KEYS)
+        for k in ('campaignNonce', 'caseNonce', 'sourceManifestSHA'):
+            sha(b[k])
+        if b['schema'] != 'T17_SAVE_BOOT_V1' or type(b['seed']) is not int or b['seed'] not in (42, 7) or b['noNet'] is not True or type(b['principal']) is not int or b['principal'] != 1 or type(b['profileName']) is not str or not b['profileName'] or not same(b['sourceDerivedCaps'], dict(CAMPAIGN_POLICY)):
+            raise ValueError('BOOT_BINDING')
+        suffix = ('Contents', 'Resources', 'data', 'mods', 'user', 'moddata', 't17-save', b['campaignNonce'], str(b['seed']), b['caseID'])
+        if tuple(self._path.parts[-len(suffix):]) != suffix:
+            raise ValueError('EXACT_CASE_PATH')
+        if b['caseID'] == 'origin':
+            if b['loadArchive'] is not None or type(b['originArchives']) is not list or len(b['originArchives']) != 5:
+                raise ValueError('ORIGIN_BOOT')
+            names = set()
+            for cp, row in zip(CHECKPOINTS, b['originArchives']):
+                exact(row, ('checkpoint', 'archiveName'))
+                name = basename(row['archiveName'])
+                if row['checkpoint'] != cp or name in names:
+                    raise ValueError('ORIGIN_ARCHIVE')
+                names.add(name)
+            self._cps = CHECKPOINTS
+        else:
+            la = b['loadArchive']
+            exact(la, ('checkpoint', 'archiveName', 'actualArchiveSHA', 'expectedS', 'originCaseEvidenceSHA'))
+            cp = la['checkpoint']
+            if cp not in WINDOWS or b['caseID'] != 'load-' + cp or b['originArchives'] != []:
+                raise ValueError('LOAD_BOOT')
+            basename(la['archiveName']); basename(la['archiveName'] + '-roundtrip')
+            sha(la['actualArchiveSHA']); sha(la['originCaseEvidenceSHA'])
+            if not WINDOWS[cp][0] <= uint(la['expectedS'], 32000) <= WINDOWS[cp][1]:
+                raise ValueError('LOAD_S')
+            self._cps = (cp,)
+        arms = b['transactionArms']
+        if type(arms) is not list or len(arms) != len(self._cps):
+            raise ValueError('BOOT_ARMS')
+        nonces = set()
+        for cp, row in zip(self._cps, arms):
+            exact(row, ('checkpoint', 'armNonce')); sha(row['armNonce'])
+            if row['checkpoint'] != cp or row['armNonce'] in nonces:
+                raise ValueError('ARM_IDENTITY')
+            nonces.add(row['armNonce'])
+
+    def _common(self, checkpoint):
+        index = self._cps.index(checkpoint)
+        b = self._boot
+        return {**{k: b[k] for k in ('campaignNonce', 'caseNonce', 'sourceManifestSHA', 'seed', 'caseID')},
+                'checkpoint': checkpoint, 'phase': 'origin' if b['caseID'] == 'origin' else 'load',
+                'transactionOrdinal': index + 1, 'armNonce': b['transactionArms'][index]['armNonce']}
+
+    def arm(self, checkpoint):
+        self._active_prelaunch = self._boot['caseID'] != 'origin'
+        try:
+            self._guard(prelaunch=self._boot['caseID'] != 'origin')
+            if type(checkpoint) is not str or len(self._attempted) >= len(self._cps) or checkpoint != self._cps[len(self._attempted)] or any(cp not in self._endpoints for cp in self._attempted):
+                self._fail('DUPLICATE_REARM_OR_ORDER')
+            self._attempted.append(checkpoint)  # consumed before any file side effects
+            common = self._common(checkpoint)
+            expected = {'schema': 'T17_SAVE_TX_ARM_REQUEST_V1', **common,
+                        'plannedWindow': dict(zip(('start', 'end'), WINDOWS[checkpoint]))}
+            directory = self._directory(checkpoint)
+            primary = None
+            try:
+                name = common['phase'] + '-arm-request.json'
+                if common['phase'] == 'load':
+                    self._write_once(directory, name, canonical(expected))
+                raw, ident = self._read(directory, name, 8192, 1)
+                request = strict_json(raw, 8192); exact(request, ARM_KEYS)
+                if not same(request, expected):
+                    self._fail('ARM_REQUEST_BINDING')
+                start = self._guard(prelaunch=common['phase'] == 'load')
+                if start > U64 - 5 * NS:
+                    self._fail('DEADLINE_OVERFLOW')
+                reserve = _Reservation(canonical(common), start, start + 5 * NS, raw, ident)
+                self._arms[checkpoint] = reserve
+                permit = {'schema': 'T17_SAVE_TX_ARM_PERMIT_V1', **common,
+                          'armRequestActualBytes': len(raw), 'armRequestActualSHA': hashlib.sha256(raw).hexdigest(),
+                          'hostMonotonicStartNs': str(start), 'hostMonotonicDeadlineNs': str(reserve.deadline_ns),
+                          'decision': 'TRANSACTION_ARMED'}
+                payload = canonical(permit)
+                if len(payload) > 8192:
+                    self._fail('PERMIT_CAP')
+                tmp = common['phase'] + '-arm-permit.tmp'; final = common['phase'] + '-arm-permit.json'
+                original = self._write_once(directory, tmp, payload)
+                # The permit binds the ORIGINAL arm bytes. Detect any change during
+                # tmp I/O before making a final permit visible, not only at ACK time.
+                current_request, current_id = self._read(directory, name, 8192, 1)
+                if current_request != reserve.request_raw or current_id != reserve.request_identity:
+                    self._fail('ARM_REQUEST_CHANGED_BEFORE_PUBLICATION')
+                self._io('LINK_NO_REPLACE_ERROR', os.link, tmp, final, src_dir_fd=directory,
+                         dst_dir_fd=directory, follow_symlinks=False)
+                self._io('DIRECTORY_FSYNC_ERROR', os.fsync, directory)
+                left, li = self._read(directory, tmp, 8192, 2, True)
+                right, ri = self._read(directory, final, 8192, 2, True)
+                if left != payload or right != payload or li != ri or li[:2] != original[:2]:
+                    self._fail('PERMIT_PUBLICATION_IDENTITY')
+                final_request, final_request_id = self._read(directory, name, 8192, 1)
+                if final_request != reserve.request_raw or final_request_id != reserve.request_identity:
+                    self._fail('ARM_REQUEST_CHANGED_AT_PUBLICATION')
+                self._guard(prelaunch=common['phase'] == 'load')
+                self._checkpoint_check(checkpoint, directory)
+                self._permit_facts = getattr(self, '_permit_facts', {})
+                self._permit_facts[checkpoint] = (payload, li)
+                return json.loads(payload)
+            except BaseException as error:
+                primary = error
+                raise
+            finally:
+                self._close(directory, primary=primary)
+        except PrearmError as error:
+            self._refresh_error(error)
+            raise
+        except Exception:
+            self._fail('ARM_VALIDATION_OR_IO')
+        finally:
+            self._active_prelaunch = False
+
+    def _recheck_arm(self, cp, directory):
+        arm = self._arms[cp]; common = json.loads(arm.common_json)
+        raw, ident = self._read(directory, common['phase'] + '-arm-request.json', 8192, 1)
+        if raw != arm.request_raw or ident != arm.request_identity:
+            self._fail('ARM_REQUEST_MUTATED')
+        expected, old = self._permit_facts[cp]
+        for ext in ('tmp', 'json'):
+            data, current = self._read(directory, common['phase'] + '-arm-permit.' + ext, 8192, 2, True)
+            if data != expected or current != old:
+                self._fail('PERMIT_MUTATED')
+        p = strict_json(expected, 8192); exact(p, PERMIT_KEYS)
+        if decimal_ns(p['hostMonotonicStartNs']) != arm.start_ns or decimal_ns(p['hostMonotonicDeadlineNs']) != arm.deadline_ns or arm.deadline_ns - arm.start_ns != 5 * NS:
+            self._fail('PRIVATE_DEADLINE_BINDING')
+
+    def _summary(self, value):
+        exact(value, ('bytes', 'sha256', 'metadataEntry', 'simulationEntry'))
+        if uint(value['bytes']) == 0:
+            raise ValueError('ARCHIVE_BYTES')
+        sha(value['sha256'])
+        for k in ('metadataEntry', 'simulationEntry'):
+            exact(value[k], ('bytes', 'sha256')); sha(value[k]['sha256'])
+            if uint(value[k]['bytes']) == 0:
+                raise ValueError('ENTRY_BYTES')
+
+    def observe_published_ack(self, checkpoint):
+        """Correlate already published original ACK; never create/certify its archive decision."""
+        try:
+            self._guard()
+            if type(checkpoint) is not str or checkpoint not in self._arms or checkpoint in self._published_acks:
+                self._fail('ACK_ORDER_OR_DUPLICATE')
+            directory = self._directory(checkpoint)
+            primary = None
+            try:
+                self._recheck_arm(checkpoint, directory)
+                common = json.loads(self._arms[checkpoint].common_json); phase = common['phase']
+                request_raw, request_id = self._read(directory, phase + '-request.json', 16 * 1024 * 1024, 1)
+                req = strict_json(request_raw, 16 * 1024 * 1024); exact(req, REQUEST_KEYS)
+                for k in COMMON[:-1]:
+                    if not same(req[k], common[k]):
+                        self._fail('REQUEST_CORRELATION')
+                s = uint(req['S'], 32000)
+                if not WINDOWS[checkpoint][0] <= s <= WINDOWS[checkpoint][1]:
+                    self._fail('REQUEST_S')
+                if req['pauseBefore'] is not True or req['pauseAfter'] is not True or not same(req['nativePrincipalBeforeAfter'], [1, 1]) or not same(req['queryCallerBeforeAfter'], [1, 1]) or req['explicitunknowns'] != []:
+                    self._fail('REQUEST_DECLARED_GATE')
+                expected_order = ['PAUSE_CONFIRMED', 'A_CAPTURED', 'SAVE_CALL', 'SAVE_RETURN', 'B_CAPTURED'] if phase == 'origin' else ['PAUSE_CONFIRMED', 'L0_CAPTURED', 'SAVE_CALL', 'SAVE_RETURN', 'L1_CAPTURED']
+                if not same(req['callOrder'], expected_order):
+                    self._fail('REQUEST_CALL_ORDER')
+                exact(req['graphs'], ('A','B') if phase == 'origin' else ('L0','L1'))
+                raw, ack_id = self._read(directory, phase + '-host-ack.json', 16384, 2, True)
+                tmp, tmp_id = self._read(directory, phase + '-host-ack.tmp', 16384, 2, True)
+                if raw != tmp or ack_id != tmp_id:
+                    self._fail('ACK_ATOMIC_IDENTITY')
+                ack = strict_json(raw, 16384); exact(ack, ACK_KEYS)
+                for k in ('campaignNonce', 'caseNonce', 'sourceManifestSHA', 'seed', 'caseID', 'checkpoint', 'phase', 'transactionOrdinal', 'archiveName', 'S'):
+                    if not same(ack[k], req[k]):
+                        self._fail('ACK_BINDING')
+                archive_name = (self._boot['originArchives'][self._cps.index(checkpoint)]['archiveName'] if phase == 'origin' else self._boot['loadArchive']['archiveName'] + '-roundtrip')
+                if req['schema'] != 'T17_SAVE_TX_REQUEST_V1' or ack['schema'] != 'T17_SAVE_TX_ACK_V1' or req['archiveName'] != archive_name or ack['hoststageDecision'] != 'ARCHIVE_VERIFIED' or type(ack['actualNativeCount']) is not int or ack['actualNativeCount'] != 0:
+                    self._fail('ACK_DECLARED_SCHEMA')
+                if type(ack['requestActualBytes']) is not int or ack['requestActualBytes'] != len(request_raw) or ack['requestActualSHA'] != hashlib.sha256(request_raw).hexdigest():
+                    self._fail('ACK_ACTUAL_REQUEST_BYTES')
+                sha(ack['guardsDigest']); self._summary(ack['originArchive'])
+                if type(ack['hostDeadlineDisplayUTC']) is not str or not 0 < len(ack['hostDeadlineDisplayUTC']) <= 128:
+                    self._fail('ACK_DISPLAY')
+                if phase == 'origin':
+                    if ack['roundtripArchive'] is not None or req['expectedOriginArchiveSHA'] is not None:
+                        self._fail('ORIGIN_ARCHIVE_BINDING')
+                else:
+                    self._summary(ack['roundtripArchive'])
+                    if s != self._boot['loadArchive']['expectedS'] or req['expectedOriginArchiveSHA'] != self._boot['loadArchive']['actualArchiveSHA'] or ack['originArchive']['sha256'] != req['expectedOriginArchiveSHA']:
+                        self._fail('LOAD_ARCHIVE_BINDING')
+                self._checkpoint_check(checkpoint, directory)
+                self._published_acks[checkpoint] = (raw, ack_id, request_raw, request_id, s)
+                self._guard()
+                return {'status': 'ACK_FILE_OBSERVED_ONLY', 'archiveVerified': False, 'nativeVerified': False}
+            except BaseException as error:
+                primary = error
+                raise
+            finally:
+                self._close(directory, primary=primary)
+        except PrearmError as error:
+            self._refresh_error(error)
+            raise
+        except Exception:
+            self._fail('ACK_VALIDATION_OR_IO')
+
+    def _endpoint(self, raw, received_ns):
+        event = strict_json(raw, RAW_CAP); exact(event, ('kind', 'data'))
+        if event['kind'] != 'GUI_ACK_VERIFIED':
+            return
+        if len(canonical(event)) > 32768:
+            self._fail('ENDPOINT_CAP')
+        data = event['data']; exact(data, COMMON + ('S', 'ack'))
+        cp = data['checkpoint']
+        if type(cp) is not str or cp not in self._arms or cp in self._endpoints or cp not in self._published_acks:
+            self._fail('ENDPOINT_ORDER_DUPLICATE_OR_UNOBSERVED_ACK')
+        arm = self._arms[cp]; common = json.loads(arm.common_json)
+        for k in COMMON:
+            if not same(data[k], common[k]):
+                self._fail('ENDPOINT_BINDING')
+        ack_raw, _, _, _, s = self._published_acks[cp]
+        if not same(data['S'], s) or not same(data['ack'], strict_json(ack_raw, 16384)):
+            self._fail('ENDPOINT_COMPLETE_ACK_OR_S')
+        directory = self._directory(cp)
+        primary = None
+        try:
+            self._recheck_arm(cp, directory)
+            phase = common['phase']
+            for name, expected_raw, expected_id, cap, links in (
+                (phase + '-host-ack.json', self._published_acks[cp][0], self._published_acks[cp][1], 16384, 2),
+                (phase + '-host-ack.tmp', self._published_acks[cp][0], self._published_acks[cp][1], 16384, 2),
+                (phase + '-request.json', self._published_acks[cp][2], self._published_acks[cp][3], 16 * 1024 * 1024, 1)):
+                content, ident = self._read(directory, name, cap, links)
+                if content != expected_raw or ident != expected_id:
+                    self._fail('ACK_OR_REQUEST_CHANGED_AFTER_OBSERVATION')
+            self._checkpoint_check(cp, directory)
+        except BaseException as error:
+            primary = error
+            raise
+        finally:
+            self._close(directory, primary=primary)
+        if not arm.start_ns <= received_ns < min(arm.deadline_ns, self._work_end):
+            self._fail('ENDPOINT_RECEIVE_DEADLINE')
+        self._guard()
+        self._endpoints[cp] = received_ns
+
+    def receive_stdout(self, chunk):
+        if type(chunk) is not bytes:
+            self._fail('RAW_BYTES_REQUIRED')
+        self._chunks.append(chunk)  # preserve late/overflow bytes even after sticky failure
+        self._raw_bytes += len(chunk)
+        if self._raw_bytes > RAW_CAP:
+            self._fail('RAW_CASE_CAP')
+        received = self._guard()
+        self._buffer.extend(chunk)
+        try:
+            while self._scan < len(self._buffer):
+                i = self._scan; byte = self._buffer[i]
+                if self._json_end is not None:
+                    if byte != 10:
+                        self._fail('GUI_EXPLICIT_NEWLINE_REQUIRED')
+                    raw = bytes(self._buffer[self._frame:self._json_end])
+                    self._endpoint(raw, received)
+                    self._frame = None; self._json_end = None; self._scan += 1
+                    continue
+                if self._frame is None and not self._quoted and not self._stack:
+                    rest = bytes(self._buffer[i:i + len(PREFIX)])
+                    if len(rest) < len(PREFIX) and PREFIX.startswith(rest):
+                        break
+                    if rest == PREFIX:
+                        self._scan += len(PREFIX); self._frame = self._scan
+                        continue
+                if self._frame is not None and i == self._frame and byte != ord('{'):
+                    self._fail('GUI_OBJECT_FRAME')
+                if self._quoted:
+                    if self._escaped:
+                        self._escaped = False
+                    elif byte == 92:
+                        self._escaped = True
+                    elif byte == 34:
+                        self._quoted = False
+                elif byte == 34:
+                    self._quoted = True
+                elif byte in (123, 91):
+                    self._stack.append(byte)
+                    if len(self._stack) > 256:
+                        self._fail('RAW_JSON_DEPTH')
+                elif byte in (125, 93):
+                    expected = 123 if byte == 125 else 91
+                    if not self._stack or self._stack.pop() != expected:
+                        self._fail('RAW_FRAMING_UNKNOWN')
+                    if self._frame is not None and not self._stack:
+                        self._json_end = i + 1
+                self._scan += 1
+            self._guard()
+        except PrearmError as error:
+            self._refresh_error(error)
+            raise
+        except Exception:
+            self._fail('STDOUT_RECORD_INVALID')
+        return self.status()
+
+    def check_live(self):
+        self._guard()
+        return self.status()
+
+    def finish(self):
+        self._guard()
+        if not self._arms or any(cp not in self._endpoints for cp in self._arms):
+            self._fail('NO_COMPLETE_GUI_ENDPOINT')
+        if tuple(self._attempted) != self._cps:
+            self._fail('MISSING_REQUIRED_TRANSACTION_SET')
+        return self.status()
+
+    def status(self):
+        return {'status': 'FAIL_OR_UNKNOWN' if self._faults else ('TIME_AND_FILE_CORRELATED_ONLY' if self._arms and len(self._endpoints) == len(self._arms) else 'PENDING'),
+                'faults': [dict(x) for x in self._faults], 'rawBytesRetained': self._raw_bytes,
+                'arms': {cp: {'startNs': str(a.start_ns), 'deadlineNs': str(a.deadline_ns),
+                              'endpointReceiveNs': str(self._endpoints[cp]) if cp in self._endpoints else None} for cp, a in self._arms.items()},
+                'workCutoffNs': str(self._work_end), 'cleanupCutoffNs': str(self._cleanup_end),
+                'campaignFinalReadbackCutoffNs': str(self._final_end),
+                'archiveVerified': False, 'nativeVerified': False, 'fullHostPipelineIntegrated': False,
+                'caseComplete':False,'expectedTransactions':len(self._cps),'correlatedTransactions':len(self._endpoints),
+                'unknownCloseDescriptors': list(self._unknown_fds)}
+
+    def retained_evidence(self):
+        # Immutable bytes are returned, never discarded/normalized, even on FAIL.
+        return {'rawChunks':tuple(self._chunks),
+                'fileObservations':tuple({'name':x['name'],'raw':x['raw']} for x in self._observations),
+                'integration':'OPEN_NO_DURABLE_PIPE_READER_OR_FULL_HOST_RUNNER'}
+
+    def close(self):
+        if self._root_fd is not None:
+            fd = self._root_fd; self._root_fd = None
+            try:
+                os.close(fd)
+            except Exception:
+                self._unknown_fds.append(fd)
+                self._fail('CLOSE_UNKNOWN', True)
+            # Closing the retained root descriptor is cleanup, not new transaction
+            # work. It may use the original 80..90 reserve but cannot extend it.
+            if not self._faults and self._now() >= self._cleanup_end:
+                self._fail('CLEANUP_DEADLINE', True)
+

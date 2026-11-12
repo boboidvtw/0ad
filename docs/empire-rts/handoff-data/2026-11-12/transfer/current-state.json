@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "createdUTC": "2026-11-12T09:20:01.783025+00:00",
+  "repo": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad",
+  "parentThread": "01a1c8d0-ce47-7a13-8800-a59b935f0ce0",
+  "head": "d5133455c3dffba7d2d3f2465f75b82532ebcd3d",
+  "branch": "codex/t14-t18-closeout-20261104",
+  "indexEmpty": true,
+  "bindings": [
+    {
+      "path": "docs/empire-rts/SESSION-HANDOFF-2026-11-12-TRANSFER-T14-T18.md",
+      "snapshot": "work/t14-t18-session-transfer-20261112/snapshots/00-SESSION-HANDOFF-2026-11-12-TRANSFER-T14-T18.md",
+      "bytes": 3644,
+      "sha256": "123215b82063d7b0a86acbe727b2c66ba198ddea7c72dcbcde01cb38d5125fc4"
+    },
+    {
+      "path": "work/t17-metadata-controls-design-20261105/current-checkpoint-v11.json",
+      "snapshot": "work/t14-t18-session-transfer-20261112/snapshots/01-current-checkpoint-v11.json",
+      "bytes": 7343,
+      "sha256": "f736ca24ab2eb63c683afd1c88328abdf628ddd2ca09e2afb1d398a52d4575de"
+    },
+    {
+      "path": "work/t17-metadata-controls-design-20261105/root-independent-read-progress-v5.json",
+      "snapshot": "work/t14-t18-session-transfer-20261112/snapshots/02-root-independent-read-progress-v5.json",
+      "bytes": 63249,
+      "sha256": "a11a7514d2444a9d316dc19dea926974739c0a6c2644e15fbbcb02594cd9937e"
+    },
+    {
+      "path": "work/t17-metadata-controls-design-20261105/design-manifest-v1.json",
+      "snapshot": "work/t14-t18-session-transfer-20261112/snapshots/03-design-manifest-v1.json",
+      "bytes": 30214,
+      "sha256": "e73e6c48bd2a7ea31742aef7ad4b1744e6f28dbed799c39b28b25a3f9079b93a"
+    },
+    {
+      "path": "work/t17-metadata-controls-design-20261105/design-review-CODE-progress-v10.json",
+      "snapshot": "work/t14-t18-session-transfer-20261112/snapshots/04-design-review-CODE-progress-v10.json",
+      "bytes": 90656,
+      "sha256": "1adef648232cda736def5646d7c0c63c4cfb993ce15d7f601fc8aacb281bb128"
+    },
+    {
+      "path": "work/t17-metadata-controls-design-20261105/design-review-Python-progress-v6.json",
+      "snapshot": "work/t14-t18-session-transfer-20261112/snapshots/05-design-review-Python-progress-v6.json",
+      "bytes": 71698,
+      "sha256": "30c2148bb69996da155da3f36d5595311f541e6f94e2fa6a1668f459b22c5b9a"
+    },
+    {
+      "path": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v13.json",
+      "snapshot": "work/t14-t18-session-transfer-20261112/snapshots/06-design-review-JSAPI-progress-v13.json",
+      "bytes": 79319,
+      "sha256": "915170fd02fc43a9af506925aee3a6f3209ae84bd5fea6dca21172119d8aca24"
+    },
+    {
+      "path": "docs/empire-rts/SESSION-HANDOFF-2026-11-06-METADATA-DESIGN-REVIEW.md",
+      "snapshot": "work/t14-t18-session-transfer-20261112/snapshots/07-SESSION-HANDOFF-2026-11-06-METADATA-DESIGN-REVIEW.md",
+      "bytes": 3422,
+      "sha256": "0a22134dde6f7fd85a6205ada553e2df65d987379cc9fef7d173f35d0d83c329"
+    },
+    {
+      "path": "docs/empire-rts/PROJECT-ASSESSMENT-2026-11-05.md",
+      "snapshot": "work/t14-t18-session-transfer-20261112/snapshots/08-PROJECT-ASSESSMENT-2026-11-05.md",
+      "bytes": 11805,
+      "sha256": "922a2439c6fb13f86f6bca4289f673ccc3581435423358d9a47f8e0ae2bdb54c"
+    },
+    {
+      "path": "docs/empire-rts/METADATA-CONTROLS-CROSSWALK-2026-11-05.md",
+      "snapshot": "work/t14-t18-session-transfer-20261112/snapshots/09-METADATA-CONTROLS-CROSSWALK-2026-11-05.md",
+      "bytes": 5600,
+      "sha256": "7870cb6f94937d493c228af1d24ada0a4f8b0784602806955e10d5952fe2b951"
+    },
+    {
+      "path": "work/t14-t18-assessment-20261105/current-checkpoint.json",
+      "snapshot": "work/t14-t18-session-transfer-20261112/snapshots/10-current-checkpoint.json",
+      "bytes": 2684,
+      "sha256": "fd66f1d187fb04ec71a497788193fc3e6826ef6a2bc1f3a98d5d33707957b19a"
+    },
+    {
+      "path": "work/t14-t18-session-transfer-20261026/current-checkpoint.json",
+      "snapshot": "work/t14-t18-session-transfer-20261112/snapshots/11-current-checkpoint.json",
+      "bytes": 57977,
+      "sha256": "07044bf45ebb5fdbe42afbebc9e9ade4cba03fd5c385f21af7f987f91de05ff8"
+    },
+    {
+      "path": "work/t17-metadata-controls-design-20261105/DESIGN-v1.md",
+      "snapshot": "work/t14-t18-session-transfer-20261112/snapshots/12-DESIGN-v1.md",
+      "bytes": 14580,
+      "sha256": "d190ebf684348feba069fed69f8a92587fda378bc1fd7a9a5391c8867e1b1284"
+    },
+    {
+      "path": "work/t17-metadata-controls-design-20261105/RAW-STAGE-v1.json",
+      "snapshot": "work/t14-t18-session-transfer-20261112/snapshots/13-RAW-STAGE-v1.json",
+      "bytes": 2266,
+      "sha256": "b641b520ab8ebb5a3273a63947edc776c3c671c21896152caefeaba6c71e9681"
+    },
+    {
+      "path": "work/t17-metadata-controls-design-20261105/FUTURE-TEST-PLAN-v1.json",
+      "snapshot": "work/t14-t18-session-transfer-20261112/snapshots/14-FUTURE-TEST-PLAN-v1.json",
+      "bytes": 1401,
+      "sha256": "20374b2ee6154a67386f35f16874c90ce5da355732abdb96ee0e505f18121608"
+    }
+  ],
+  "rootReadingAttribution": "64 full belongs prior root; inheriting child must not claim personal full reading",
+  "allThreeDesignApproved": false,
+  "implementationAdmitted": false,
+  "guardRefreshApproved": false,
+  "formalCases": "THREE_NOT_RUN",
+  "next": "Child full transfer readback then disk receipt; parent migrates original automation after MATCH. Continue only unfinished authorized source review."
+}

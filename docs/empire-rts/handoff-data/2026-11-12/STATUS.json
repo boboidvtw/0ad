@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "purpose": "Archival documentation/data checkpoint; no implementation or native authority",
+  "createdUTC": "2026-11-12T10:08:42.616321+00:00",
+  "sourceManifestSHA256": "e73e6c48bd2a7ea31742aef7ad4b1744e6f28dbed799c39b28b25a3f9079b93a",
+  "designFreezeBindings": 85,
+  "designFreezeBytes": 1447275,
+  "integrityChecks": 170,
+  "integrityStatus": "MATCH",
+  "transferChecks": 30,
+  "transferStatus": "MATCH",
+  "rootHistoricalUnionCoverage": {
+    "full": 71,
+    "partial": 0,
+    "unread": 14
+  },
+  "rootPersonalCoverage": {
+    "full": 24,
+    "partial": 1,
+    "unread": 60
+  },
+  "rootPersonalThread": "01a1cf0e-d06d-7750-9e95-e1189d33c1a2",
+  "formalReportsExist": {
+    "CODE": {
+      "json": false,
+      "md": false
+    },
+    "Python": {
+      "json": false,
+      "md": false
+    },
+    "JSAPI": {
+      "json": false,
+      "md": false
+    }
+  },
+  "allThreeDesignApproved": false,
+  "implementationAdmitted": false,
+  "technicalObligationsOpen": 11,
+  "guardRefreshApproved": false,
+  "formalCases": "THREE_NOT_RUN",
+  "modelOrNativeTestsThisPublication": "NOT_RUN_DOCUMENTATION_DATA_ONLY",
+  "sourceCheckoutHead": "d5133455c3dffba7d2d3f2465f75b82532ebcd3d",
+  "sourceCheckoutBranch": "codex/t14-t18-closeout-20261104",
+  "publishParent": "fb4564363de4fd43aa72f768962487a5f4790ffd",
+  "publishBranch": "codex/t14-t18-checkpoint-20261112",
+  "fullRuntimeRestorableFromPackage": false,
+  "runtimeBinariesExported": false,
+  "automationConfigExported": false,
+  "note": "Snapshot paths are mapped in FILES.json; embedded original paths/HEADs and historical statements remain evidence of their capture time, not live guarantees. No frozen source or old checkpoint rewritten."
+}

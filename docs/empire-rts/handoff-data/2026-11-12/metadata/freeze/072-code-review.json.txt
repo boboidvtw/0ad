@@ -1,0 +1,277 @@
+{
+  "schema": 1,
+  "scope": "NEW_T17_SAVE_TYPED_ROOT_FIX_FRESH_COMPLETE_INDEPENDENT_CODE_DESIGN_REVIEW_ONLY",
+  "createdClientDate": "2026-10-19",
+  "reviewer": {
+    "task": "/root/driver_code_review",
+    "role": "independent CODE/source-design reviewer",
+    "independentOfImplementation": true
+  },
+  "sourceManifest": {
+    "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/manifest.json",
+    "sha256": "d33403ef9359bf0092ab55740114a0bc81104738c52fb31b982199f7a3ce4d43"
+  },
+  "specification": {
+    "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md",
+    "sha256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b"
+  },
+  "wireSpecification": {
+    "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/wire-schema.json",
+    "sha256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+    "version": 4
+  },
+  "independentInputs": {
+    "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/code-review-inputs.json",
+    "sha256": "34b8036e46ddba611f9dbbdff9e7a93ee01aed2dc4f8c88a444374877664dc8b"
+  },
+  "verdict": "APPROVE_DESIGN",
+  "approvalForSourceImplementation": true,
+  "approvalScope": "This independent CODE design gate only. Parent must also verify current complete independent JS/API design approval before bounded NEW source implementation. This is not implementation approval or any native execution/proof authority.",
+  "engineAuthority": false,
+  "findings": [],
+  "severityCounts": {
+    "CRITICAL": 0,
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 0
+  },
+  "priorFindingDisposition": [
+    {
+      "id": "SAVE-FIX-CODE-HIGH-STANCE-SCHEMA",
+      "status": "RESOLVED_DESIGN_ONLY",
+      "reason": "Legalpassive XML plus explicit once origin SwitchToStance none; initialization/ownership sideeffects and native gates retained."
+    },
+    {
+      "id": "SAVE-FIX-CODE-HIGH-MERGE-ROSTER",
+      "status": "RESOLVED_DESIGN_ONLY",
+      "reason": "Native merge-existing-only semantics,45attributeinventory,correctsixrolecounts and ctor-vsinstance distinction supplied."
+    },
+    {
+      "id": "SAVE-FIX-CODE-MEDIUM-CONTRACT-DUPLICATION",
+      "status": "RESOLVED_DESIGN_ONLY",
+      "reason": "Integratedprose and SPEC.json pointers to singlewire v2 budget/path/stance machineauthority."
+    },
+    {
+      "id": "SAVE-SCHEMA-CODE-MEDIUM-APPLY-RECEIPT-CONTRACT",
+      "status": "RESOLVED_DESIGN_ONLY",
+      "reason": "Exact pure external lexical native ENTRY/RETURNED EXIT range bridge specified with GUI polling/cursor/ordinal/fullcmd/player/T correlation and restore timing; host final replay separated; identity limits explicit. New graph-root schema finding is distinct."
+    },
+    {
+      "id": "SAVE-RECEIPT-CODE-MEDIUM-TYPED-ROOT-PROFILES",
+      "status": "RESOLVED_DESIGN_ONLY",
+      "reason": "Wirev4 defines finite exact context-selected profiles,40completegameplayroots plus individual command/return/error roots, knownundefined and restricted diagnosticunavailable; registry/prose/pointers agree without reduced gameplay coverage."
+    }
+  ],
+  "reviewedDesignAreas": [
+    {
+      "area": "Exact current inputs and complete design",
+      "assessment": "All236 exact-current entries actualbytes/length/SHA MATCH:195primary16preservedrefs16preimages9outputs. Primary195 is exactly identical to the previously completely source-reviewed set. Full current SPEC/registry/wire read and all-scope contract reviewed fresh; unchanged source checks reused only with exact identity. Source-registry changes are graph root expansion and typedContextRegistry; original required source fields/getters/prototypes/rosters remain unchanged."
+    },
+    {
+      "area": "Single policy/old findings",
+      "assessment": "Integrated SPEC and SPEC.json consistently refer to unique wire v4 authority for campaign/path/stance/profile/receipt/typed contexts. Original invalidstance/Builder/policy duplication and later live receipt/root-profile findings are resolved at design level. There is no current conflicting root or ACK authority. ARCHIVE_VERIFIED is archive-stage only. No implementation or runtime claim inferred."
+    },
+    {
+      "area": "Six actor/merge/template/source roster",
+      "assessment": "Six actors/owner/geometry/creation-order retained; exact immutable entity mapping measured later. ParamNode merge-existing-only correctly excludes athen Builder subtree; all45specialattrs incl Footprintreplace, nested tokens/arithmetic, UnitAI/Formations disable,9 top-level disables and zero filtered reviewed against native rules. Existing counts35/34/34/34/35/35 plus one NEWobserver each become36/35/35/35/36/36. Gaia3/player1and2 each10,15native13official scripted systems plus NEWscenario source roster present. Loaded available Builder is not an instance. All six unchanged T17 copies and stack exclusions retained."
+    },
+    {
+      "area": "Legal stance/origin initialization",
+      "assessment": "Actual Schema allows passive and not none; current XML defaultpassive is valid candidate. Complete AddEntity sequential component Init/Create precedes position/owner setup and exactly one runtime SwitchToStance(none) perrole. Natural idle100ms timer, UnitStanceChanged, heldposition/rangequeries retained. Observer provisionalbinding cannot query partial components; do not fabricate messages preceding observer construction. True ownership13200/16000 naturally resets passive; no load/setup repair, no timer/queue clearing. Natural motion/HP/orders mismatch is actual FAIL under retained gates."
+    },
+    {
+      "area": "Scope/budget/stop",
+      "assessment": "Oneorigin5saves+5freshloads each first roundtrip=10archives perseed;42thenconditional7,serial,retry0. Fixed600 campaign:6case90 with full90 remaining before540,prelaunch30 incl2fullguards and independent guard,startup10<=case40,stop80/cleanup90,tx5,final540..600 noengine.39second origin allocation remains source estimate, no actual cost guarantee. No engine campaign attempted; old120 is an author unrun candidate, not human cap and not rescued runtime. Blocking IO hardbound NOT_PROVEN and overrun preservesUNKNOWN."
+    },
+    {
+      "area": "Commands/principal/time",
+      "assessment": "Actual SetPlayerID/GetPlayerID and TurnManager native player, native ScriptCall viewedPlayer and handler actualPlayer are separately checked. One outstanding exactcmd/plannedT with complete native receipt before restore1; host three-way replay/dispatch/sent final gate is separate, no live replay dependency. Fixed200ms lattice/5600 candidate unchanged. Context native profile/campaign/source/seed binding comes from immutable InitAttributes; host source guards verify codebytes, freshcaseNonce/caseID/PID remain external authority, not native echo."
+    },
+    {
+      "area": "Receipt bridge/seq/cursor/errors/loader/purity",
+      "assessment": "Final fixture handler registrations precede witness helper; private lexical bounded append-only ENTRY/EXIT/fault/inFlight writer exports only a pure Engine.RegisterGlobal reader. Late GuiInterface prototype/exposedFunctions patch creates no componentownfields. Prior exact primary checks support constructor exports, viewedcaller and cloned requests/replies, immutable InitAttributes. Native32dispatch/64events/64fault,2events/read and ASCIIcaps fixed. No request-side player/ordinal/cmd filtering, query mutation/clear/consume/lazybind; fresh data copies and GUI cursor/pendingcache preserve every contiguous event. Original this/args/once/return/samethrow survive observation faults. Complete matching RETURNED EXIT and nofaults alone permit restore1; RETURNED/void is not semanticacceptance. Gameplay/command/return/error profiles are now explicitly context-bound; host final replay/raw gate independent."
+    },
+    {
+      "area": "Exact typed contexts/40 roots/undefined/diagnostics",
+      "assessment": "GAMEPLAY_FULL_V1 expands prior groups in the identical order:Timer1 + sixrole creationorder eachcontroller/navalState/UnitAI/Attack/ActorEvents30 + nativeWorld1 + PlayerManager1 + player0/1/2eachPlayer/Diplomacy6 + Scenario1 =40. Wire exact names match registry rootOrder; no absentroot omission or field trimming. All40 required for A/B/L0/L1/before/after. COMMAND_VALUE_V1 requires exactly command with full original nonnullobject. HANDLER_RETURN_V1 exactlyreturnValue, knownundefined {t:undefined} and nodes[] is distinct fromnull/unavailable. ERROR_OWN_DESCRIPTORS_V1 exactlyexceptionOwnDescriptors preserves actual own descriptors/prototype/transitivevalues or exactprimitive throw without getters/coercion. Exact encoding/profile/roots/nodes envelope and enclosing context reject unknown/extra/missing/duplicate/crossprofile/count/order mismatches. Unavailable exactt/reason only at permitted return/error roots, never gameplay/command/nodeproperties/collections, alwaysstickyFAIL/no restore. Unknown Error prototype/accessor/Proxy remains blocked, no implicit exception allowance. Common complete codec/sharing/cycles/order/holes/IEEE/UTF16/rawbits/limits remain intact."
+    },
+    {
+      "area": "Typed full required graph/purity",
+      "assessment": "All own descriptors includingentity/template, Timer entire ordered Map, six controller/state/UnitAI/Attack/ActorEvents roots, native values,PlayerManager/player0/1/2Player/Diplomacy and scenario immutablemapping/nativeprefix retained. Source assignment catalog cannot filter actualkeys. Encode sharing/cycles/order/holes/extras/undefined/null/UTF16/-0/nonfinite rawIEEE/bufferviews exactly; accessor/function/symbol/unknownprototype fails closed. NestedcustomSerialize and noMutation closure remain implementation obligations, not supplied-code proof. Source-native position/LOS/scripted detector getter transitives and previousposition currentheight semantics reviewed."
+    },
+    {
+      "area": "Rejection/external Complete witness",
+      "assessment": "Native handler entry/exit graph comparison occurs synchronously before MT_Update; rejected command must not append persistent artificial events. External witnesses may append raw/closure only; persistent actual actor events remain fullgraph. Lateprototype Complete wrapper after registration before entities/Deserialize preserves this/args/once/return/same thrownobject, no timerchanges/rearm. Encoding/emitfailure cannot block originalcall or replace outcome; missingentryexit stickyFAIL. Actualcounts5000/12000 once,cancel15000zero must be measured, not inferred from state."
+    },
+    {
+      "area": "Actual queue byte0/closure",
+      "assessment": "Sequential actual RNG/nextID/systemnames/full TemplateManager/AIactual0/CinemaManager prefix to CommandQueue U32count0; unknown/nonzero fails, no magic offsets or opaque skip. Full A-QO-B/L0-QL-L1 and branch noPush/Flush/Post/currentcustomSerialize/nestedprototype closure mandatory; Timer setup sideeffects are not local network vector evidence. Network pending/sent/apply retained independently. No decoder executed."
+    },
+    {
+      "area": "Native save/freshload/zeroAdvance",
+      "assessment": "Actual synchronous void SaveGame is not success ACK. Five fixed checkpoint windows and five fixed branches preserve absoluteS/timer identity and exact damage/movement/death gates. Health.Reduce lethal tests native lifecycle not fullcombat equivalence. Mainmenu ESM wrapper preserves livegetHotloadData and Promise; session XML last explicitfile outside original directory prevents doubleload; exact init/onTick/onSimulationUpdate forwarding required. Saved ReallyStartGame skipsInitGame but still Deserialized/Interpolate before session; cannot assume zeroAdvance or cold getter safety. Full L0/L1 and byte-identical original/roundtrip simulation.dat, actualcounts and allgraphs gate drift."
+    },
+    {
+      "area": "VFS transaction/wire",
+      "assessment": "GUI actual WriteJSON/FileExists/ReadJSON plus WATCH mainloop support a candidate, not visibility proof. CanonicalcampaignNonce/caseNonce/seed/case/checkpoint binding, strictkeys/types/dupes/depth/node/size bounds, postwrite value readback then REQUEST_READY beforehostdiskread, hostactualrequesthash authority, no GUIfakehash. Bootbaseline immutable in same prelaunch; exactdataexception only. O_EXCL nofollowtmp/fullreadback/fsync thenlink no-replace keeps twoactualinodeboundfiles, nooverwrite/unlink. HostARCHIVE_VERIFIED requires fullarchive2entries/CRC/metadata/actualcount0 and never substitutes final raw/casePASS."
+    },
+    {
+      "area": "Raw actual durability/isolation",
+      "assessment": "Receivedfirst completebackup beforeparse/write; original exclusive nofollowfd/path/parent identity and write-returnloop/fstat checks; errors sticky; bounded drain/reap then actualpostclose original length/fullbytes/SHA compared to separately persisted/rereadbackup. No rawrepair/reconstruction-as-proof. Latebytes/partialmarkers/diagnostics preservedFAIL. Sixprivate apps/profiles/saves/replays/logs, originalstock/profiles/source fences and fresh fullguard retained; no extra attempts or fallbackchannels. OriginalGUI42 raw0vs27309 remains consumedFAIL, causeInsufficientdata."
+    }
+  ],
+  "typedProfilesReadback": {
+    "profileEnum": [
+      "GAMEPLAY_FULL_V1",
+      "COMMAND_VALUE_V1",
+      "HANDLER_RETURN_V1",
+      "ERROR_OWN_DESCRIPTORS_V1"
+    ],
+    "gameplayRootNames": [
+      "Timer",
+      "actor.submarine.controller",
+      "actor.submarine.navalState",
+      "actor.submarine.UnitAI",
+      "actor.submarine.Attack",
+      "actor.submarine.ActorEvents",
+      "actor.cannon.controller",
+      "actor.cannon.navalState",
+      "actor.cannon.UnitAI",
+      "actor.cannon.Attack",
+      "actor.cannon.ActorEvents",
+      "actor.torpedo.controller",
+      "actor.torpedo.navalState",
+      "actor.torpedo.UnitAI",
+      "actor.torpedo.Attack",
+      "actor.torpedo.ActorEvents",
+      "actor.asw.controller",
+      "actor.asw.navalState",
+      "actor.asw.UnitAI",
+      "actor.asw.Attack",
+      "actor.asw.ActorEvents",
+      "actor.detector.controller",
+      "actor.detector.navalState",
+      "actor.detector.UnitAI",
+      "actor.detector.Attack",
+      "actor.detector.ActorEvents",
+      "actor.shallow.controller",
+      "actor.shallow.navalState",
+      "actor.shallow.UnitAI",
+      "actor.shallow.Attack",
+      "actor.shallow.ActorEvents",
+      "nativeWorld",
+      "PlayerManager",
+      "player0.Player",
+      "player0.Diplomacy",
+      "player1.Player",
+      "player1.Diplomacy",
+      "player2.Player",
+      "player2.Diplomacy",
+      "Scenario"
+    ],
+    "gameplayRootCount": 40,
+    "registryRootOrder": [
+      "Timer",
+      "actor.submarine.controller",
+      "actor.submarine.navalState",
+      "actor.submarine.UnitAI",
+      "actor.submarine.Attack",
+      "actor.submarine.ActorEvents",
+      "actor.cannon.controller",
+      "actor.cannon.navalState",
+      "actor.cannon.UnitAI",
+      "actor.cannon.Attack",
+      "actor.cannon.ActorEvents",
+      "actor.torpedo.controller",
+      "actor.torpedo.navalState",
+      "actor.torpedo.UnitAI",
+      "actor.torpedo.Attack",
+      "actor.torpedo.ActorEvents",
+      "actor.asw.controller",
+      "actor.asw.navalState",
+      "actor.asw.UnitAI",
+      "actor.asw.Attack",
+      "actor.asw.ActorEvents",
+      "actor.detector.controller",
+      "actor.detector.navalState",
+      "actor.detector.UnitAI",
+      "actor.detector.Attack",
+      "actor.detector.ActorEvents",
+      "actor.shallow.controller",
+      "actor.shallow.navalState",
+      "actor.shallow.UnitAI",
+      "actor.shallow.Attack",
+      "actor.shallow.ActorEvents",
+      "nativeWorld",
+      "PlayerManager",
+      "player0.Player",
+      "player0.Diplomacy",
+      "player1.Player",
+      "player1.Diplomacy",
+      "player2.Player",
+      "player2.Diplomacy",
+      "Scenario"
+    ],
+    "contextSelection": {
+      "request.graphs.A": "GAMEPLAY_FULL_V1",
+      "request.graphs.B": "GAMEPLAY_FULL_V1",
+      "request.graphs.L0": "GAMEPLAY_FULL_V1",
+      "request.graphs.L1": "GAMEPLAY_FULL_V1",
+      "commandReceipts.events.ENTRY.beforeGraph": "GAMEPLAY_FULL_V1",
+      "commandReceipts.events.EXIT.afterGraph": "GAMEPLAY_FULL_V1",
+      "commandReceipts.events.*.commandGraph": "COMMAND_VALUE_V1",
+      "commandReceipts.events.EXIT.returnValueGraph": "HANDLER_RETURN_V1",
+      "commandReceipts.events.EXIT.throwInfo.safeDescriptorGraph": "ERROR_OWN_DESCRIPTORS_V1; throwInfo=null on RETURNED, no error graph then"
+    },
+    "coverageAssessment": "All former grouped gameplay roots expanded without field/order loss; strict profile binding resolves prior schema conflict. This is design reading, not parser/encoder test execution."
+  },
+  "integrity": {
+    "entries": 236,
+    "actualBytesLengthSHAMismatches": [],
+    "groups": {
+      "primarySnapshots": 195,
+      "preservedSourceReferences": 16,
+      "preimages": 16,
+      "outputs": 9
+    },
+    "primary195ExactlySameAsPreviouslySourceReviewed": true,
+    "verification": "All236 actualbytes/length/SHA inspected once at beginning of this fresh review; no repeated DONE suites or unrelated source discovery."
+  },
+  "remainingDesignGate": "No unresolved material CODE design finding for this exact freeze. Current independent complete JS/API approval is separately required. Any future contract change needs a new exact design freeze and fresh independent reviews.",
+  "remainingImplementationGates": [
+    "All NEW scenario/observer/templates/encoder/nativecommand+Completewitness/pure receiptaccessor/GUIhooks/strictconsumer/byte0decoder/rawrunner implementations still absent. Build the authorized source scope only; preserve originalproduct/schema/evidence.",
+    "Validate actual normal template XML/merge/component availability, source helper/component ordering, prototype descriptors and perfile global exports; code/tests are not part of this design review.",
+    "Fresh complete independent reviews of exact implementation must cover all getter/customSerialize/nestedprototype/noMutation/queue-sink closures, typedcodec/context strict consumers, nativecaller/fullcmd/sent/receipt/replay correlation, original outcome forwarding, all raw/error/latebyte/drain/reap/cleanup paths.",
+    "Only after future required implementationchecks/currentapprovals may separate complete officialbundle/copy/runtime/profile/dataexception inventories, locks and fresh independentguard be prepared under the authorized nativecontract; no engine or attempt permission arises here."
+  ],
+  "runtimeUnknowns": [
+    "Native actualroster/descriptors/ownkeys/prototypes/coldgetters",
+    "Actual200ms command application/player/receipt/replay bijection",
+    "ActualCompleteentryexit counts/cancellation/death/motion/damage windows",
+    "Actualbyte0queuecount0 plus closure and byteidentical freshload/zeroAdvance",
+    "ActualpausedVFSwatch/ACK/archive/rawpostclose durability",
+    "Actual600/90stage feasibility and uninterruptible IO hardbound"
+  ],
+  "nativeStatus": "NOT_RUN / NOT_PROVEN. No save attempt, officialJS, parser/helper/engine or native proof executed. Previous consumed nativeGUI42 raw0vs27309 remains formalFAIL with retry0 and seed7STOP unchanged.",
+  "recoveryCheckpoint": {
+    "status": "COMPLETE_APPROVE_DESIGN_ONLY",
+    "allInputsVerified": true,
+    "remainingReviewWork": [],
+    "next": "Parent may consume this independent report with current complete JS/API design approval; then bounded NEW source implementation only. No implementation/engine permission transferred by this call."
+  },
+  "sideEffects": {
+    "writtenOnly": [
+      "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/code-review-inputs.json",
+      "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/code-review.json",
+      "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/code-review.md"
+    ],
+    "sourceSPECModified": false,
+    "oldReportsModified": false,
+    "testsOrProofExecuted": false,
+    "JSOrSimulationParserExecuted": false,
+    "helperExecuted": false,
+    "engineExecuted": false,
+    "attemptCreated": false,
+    "commitPushDelete": false
+  }
+}

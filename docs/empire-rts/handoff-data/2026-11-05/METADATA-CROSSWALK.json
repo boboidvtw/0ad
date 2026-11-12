@@ -131,7 +131,7 @@
       ],
       "nextWorkPackage": "R07/R08",
       "gap": "No newcapture/wire/contextscheme deployed. Existing6keycontext andfinalACK unchanged; realpreSavecapture/hostimmutablecommit timing/caller/sourceguard remainOPEN.",
-      "nextRequiredEvidence": "獨立capture原raw、sequence、source/caller/realm、同PID與host commit/readback在Save之前；不得加trusted label代替。"
+      "nextRequiredEvidence": "獨立controls由source因果鏈在Save前建立；同PID/caller/realm及raw順序須證。Host先持久化controls與固定expected，再讀actual metadata；不另推定host落盤必先Save。"
     },
     {
       "id": "FUTURE_SCHEDULE_ABSENCE",
@@ -221,5 +221,11 @@
   "producerImport": false,
   "guardResampled": false,
   "technicalObligationsClosed": 0,
-  "next": "R07 prospective bounded design and full independent review before any metadata implementation. R01 guard decision remains pending on separate branch."
+  "next": "R07 prospective bounded design and full independent review before any metadata implementation. R01 guard decision remains pending on separate branch.",
+  "wordingCorrection20261106": {
+    "reason": "Prior root-derived wording improperly combined source preSave capture with host durable commit timing",
+    "sourceAuthority": "HOST-API-DRAFT.md:10 and FUTURE-SCHEDULE-ABSENCE.md:12",
+    "correctedOrder": "source capture beforeSave; host control/expected commit before current actual-metadata semantic read; no host-beforeSave disk requirement inferred",
+    "implementationAdmitted": false
+  }
 }

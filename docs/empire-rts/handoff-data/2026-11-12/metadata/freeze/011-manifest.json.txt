@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "createdUTC": "2026-10-21T17:47:28.122681+00:00",
+  "scope": "NEW complete metadata value comparison source only; trusted expected/runtime binding remainsOPEN",
+  "status": "PENDING_COMPLETE_INDEPENDENT_CODE_AND_PYTHON_REVIEWS",
+  "sourceFiles": [
+    "tools/epoch-rts/t17_save_metadata.py",
+    "tools/epoch-rts/test-t17-save-metadata.py"
+  ],
+  "tests": {
+    "normal": 14,
+    "optimized": 14,
+    "compile": 2,
+    "evidence": "source-model only, no actual save metadata"
+  },
+  "entries": [
+    {
+      "path": "tools/epoch-rts/t17_save_metadata.py",
+      "bytes": 5818,
+      "sha256": "96d9e51e6280b1998410d7a591eaf65c11dfd11bc68c3816255201bac30bfd43"
+    },
+    {
+      "path": "tools/epoch-rts/test-t17-save-metadata.py",
+      "bytes": 7126,
+      "sha256": "14d2a562a726ee8f06171f0a5298356060d4417fbd10e1637b41247a4046075e"
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/ASSESSMENT.md",
+      "bytes": 2253,
+      "sha256": "8f81f16d046e013e525866c573452fe5beb40b223aaee1fa619fd09443a243e2"
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/CONTRACT.md",
+      "bytes": 3534,
+      "sha256": "089c7347fd60d8abad8734276bb4ef6a0ef7b18dfde15a8928f91370e3aed5e5"
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/before-independent-controls-fix/manifest.json",
+      "bytes": 1041,
+      "sha256": "f1d257e1a777d918f23eafcf926545fa5a527530b6e7bb2f900c930499d074ca"
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/before-independent-controls-fix/tools/epoch-rts/t17_save_metadata.py",
+      "bytes": 5818,
+      "sha256": "96d9e51e6280b1998410d7a591eaf65c11dfd11bc68c3816255201bac30bfd43"
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/before-independent-controls-fix/tools/epoch-rts/test-t17-save-metadata.py",
+      "bytes": 7108,
+      "sha256": "433e945aa1e02d29812b94efa6bd3abf8f1415313dafdbed692c55e091158ac5"
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/before-independent-controls-fix/work/t17-save-metadata-preparation/unit-normal.log",
+      "bytes": 4174,
+      "sha256": "921ee7268c8894ea8110c9e333672393a8d7a47d5195b719e60894d50ba8012b"
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/compile.json",
+      "bytes": 237,
+      "sha256": "c4114831be86c48365b77b480d273c9bfa53657d91bf7a3beb724fd4741b5d44"
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/primary-inputs.json",
+      "bytes": 1695,
+      "sha256": "f04a137c0c37893750de27efd0ffdad38c1bb1f8669c3d2ada7cd244c8f3d69c"
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/red-import.log",
+      "bytes": 298,
+      "sha256": "f5c20f1c3806d2cb339a12dd25af7f01f7669708ff7e37776eed2af399fb0498"
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/refs/source/ps/Mod.cpp",
+      "bytes": 10443,
+      "sha256": "c8252d851566ac8a4065420f2c9a1f3cd1f5b592fc4efbecace93bfb5c00fcab"
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/refs/source/ps/SavedGame.cpp",
+      "bytes": 10000,
+      "sha256": "6fa08d0a0f57b386484bc328ec95b41e73120b9358aeb48afc7d216f662d5267"
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/refs/work/t17-save-network-preparation/save-source-design-20261018/primaryrefs/official-public/gui/session/session.js",
+      "bytes": 25386,
+      "sha256": "04649d5ef27fe135adcdec6e85df07296d4bb085cce2df5b9ef3feaf61a9750e"
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/refs/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md",
+      "bytes": 41941,
+      "sha256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b"
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/refs/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/wire-schema.json",
+      "bytes": 28262,
+      "sha256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de"
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/unit-normal-independent.log",
+      "bytes": 1027,
+      "sha256": "3548f72bd63348244546d69769ba29a49e0a7a123d0013c72e0415695085c31f"
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/unit-normal.log",
+      "bytes": 4174,
+      "sha256": "921ee7268c8894ea8110c9e333672393a8d7a47d5195b719e60894d50ba8012b"
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/unit-optimized.log",
+      "bytes": 1027,
+      "sha256": "e3f04e1af65964a12ff4a99e191f608afd8ed5f108273108bf1a6ba6fa66bade"
+    }
+  ],
+  "native": "NOT_RUN"
+}

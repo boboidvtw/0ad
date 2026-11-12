@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "createdUTC": "2026-10-21T17:50:48.808446+00:00",
+  "status": "DONE_BOUNDED_SOURCE_SLICE_ONLY",
+  "manifestSHA256": "85f93c30ba9484b2cce4129e0ec930b7f85449ef7d5e363da94ae8814a4b4d30",
+  "reports": [
+    {
+      "path": "work/t17-save-metadata-preparation/code-review-v1.json",
+      "bytes": 7695,
+      "sha256": "a37249e5fc64a9d93b45d6361ae831e13109ff1393b11599c867f61e9fa7fcff"
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/code-review-v1.md",
+      "bytes": 6732,
+      "sha256": "49b761dbbe8ad1d14c0ddc817c95fcb8be6d5a90f1d65f23d31bff0e4923fde6"
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/code-review-v1-input.json",
+      "bytes": 9823,
+      "sha256": "14cff8447df8bbc8ed034082a05a671f23e9c8b1e58103c6b0208dd3302457f9"
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/python-review-v1.json",
+      "bytes": 3689,
+      "sha256": "1efa9ab88d142e95b64c9c3dc430e853938e06cab3c56cff9446aa38454a582c"
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/python-review-v1.md",
+      "bytes": 5646,
+      "sha256": "8d8a6b9b8f1c43788ac91a652aa11afa8231a58c758452d68a2a1be7795b7dff"
+    },
+    {
+      "path": "work/t17-save-metadata-preparation/python-review-v1-input.json",
+      "bytes": 13212,
+      "sha256": "0c913d354fa83a54c97031bd5cfebc7403abc79a773e2afaf67c51f6d89777e1"
+    }
+  ],
+  "integration": "NOT_INTEGRATED_NOT_AUTHORITY_FOR_ENGINE",
+  "native": "NOT_RUN",
+  "actualFullAdmissionCollector": "OPEN",
+  "remaining": "all40roots/producer/expectedcontrols/getter/receipt/Complete/GUIACK/host/guards/fullpipeline/runtime OPEN",
+  "unchangedSourceTests": "DO_NOT_RERUN_UNCHANGED",
+  "preserved": "all previous BLOCK/RED/FAIL/preimages/raw/seals remain unchanged"
+}

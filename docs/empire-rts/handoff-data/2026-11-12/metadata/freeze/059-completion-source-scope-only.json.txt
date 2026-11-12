@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "createdUTC": "2026-10-24T21:10:48.426091+00:00",
+  "status": "DONE_BOUNDED_PRODUCT_SOURCE_SCOPE_ONLY",
+  "manifest": {
+    "path": "work/t17-save-host-prearm-preparation/source-scope-v1/manifest.json",
+    "bytes": 81054,
+    "sha256": "8044223518c234672cd9bea3eb0afdeb3a02b3ad024c1bbbc1a262a30061ff8f"
+  },
+  "reviews": [
+    {
+      "path": "work/t17-save-host-prearm-preparation/source-scope-v1/code-review-v1.json",
+      "bytes": 80551,
+      "sha256": "578c57d20bffd53070b30a352cf40eb08fd469067dc483cf45cdda5be81fbc41",
+      "verdict": "APPROVE_SOURCE_SCOPE_ONLY"
+    },
+    {
+      "path": "work/t17-save-host-prearm-preparation/source-scope-v1/python-review-v1.json",
+      "bytes": 6138,
+      "sha256": "793659d663ba01b1928b48e66d814543ef6de3cb44812eb7cc8feed3504e58bc",
+      "verdict": "APPROVE_SOURCE_SCOPE_ONLY"
+    }
+  ],
+  "source": {
+    "path": "tools/epoch-rts/t17_save_prearm.py",
+    "bytes": 36753,
+    "sha256": "4a892751fb9bf8924bb96b05c23695d1def1cca7e9fae070e48e2618ea1d62bd"
+  },
+  "test": {
+    "path": "tools/epoch-rts/test-t17-save-prearm.py",
+    "bytes": 29097,
+    "sha256": "a28d1765af4637d2ba45ecfee1e902fb16e829d1df7ee2fdd4e3f3be92d07487"
+  },
+  "fullFreeze": "a32ef348abcc5717b71e131a8aaeddd8d14f4f3b461c4d11f5a17cdae2b240b8 remains BLOCK10939/10940",
+  "unknowns": "all metadata270 and historical/current attachment unknown retained; no metadata/inode/inventory/runtime authority",
+  "native": "NOT_RUN",
+  "fullPipeline": "NOT_INTEGRATED",
+  "engineGuardAttempt": "NOT_CREATED",
+  "tests": "unchanged57normal57optimized2compile author evidence; no old suite rerun"
+}

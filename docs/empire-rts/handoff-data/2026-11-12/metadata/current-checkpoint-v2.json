@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "createdUTC": "2026-11-05T19:04:59.301616+00:00",
+  "status": "R07_NEW_PROSPECTIVE_DESIGN_FROZEN_PENDING_FULL_INDEPENDENT_REVIEWS",
+  "priorCheckpoint": "current-checkpoint-v1.json",
+  "retainedUsageErrors": [
+    {
+      "task": "/root/r07_host_design",
+      "error": "You’ve hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/settings/usage to purchase more credits or try again at 9:56 PM."
+    },
+    {
+      "task": "/root/r07_native_design",
+      "error": "You’ve hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/settings/usage to purchase more credits or try again at 9:56 PM."
+    }
+  ],
+  "recovery": {
+    "heartbeatUTC": "2026-11-05T18:57:50.205Z",
+    "ordinaryUsageAllowed": true,
+    "primaryUsedPercent": 0,
+    "weeklyUsedPercent": 77,
+    "credits": 0,
+    "resetCredits": 0,
+    "sameTasksSettingsResumed": true
+  },
+  "investigations": "BOTH_DONE_SOURCE_INVESTIGATION_ONLY_NOT_FORMAL_REVIEWS",
+  "rootWordingCorrection": "ROOT-CAUSALITY-CORRECTION-v1.json",
+  "designManifest": {
+    "path": "work/t17-metadata-controls-design-20261105/design-manifest-v1.json",
+    "bytes": 30214,
+    "sha256": "e73e6c48bd2a7ea31742aef7ad4b1744e6f28dbed799c39b28b25a3f9079b93a"
+  },
+  "bindings": 85,
+  "bytes": 1447275,
+  "next": "Fresh full CODE/Python/JSAPI DESIGN review of exact new packet; no implementation until all three and root source-scope admission",
+  "guardRefreshApproved": false,
+  "formalCases": "THREE_NOT_RUN",
+  "automation": "same id ACTIVE every5h; readback saved",
+  "noCommitPushOrNative": true
+}

@@ -41,6 +41,10 @@
 
 本 README 是 Fork 的新入口；原始 README、上游署名及授權文件仍保留。
 
+## 2026-11-12 最新接續 checkpoint
+
+[交接與完整文字證據](docs/empire-rts/handoff-data/2026-11-12/README.md)：30項交接／170項設計完整性檢查MATCH；根端歷次合計閱讀71/85，本次本人24完整／1部分，歸屬分開。三方正式DESIGN報告仍缺，metadata實作未准入；11技術義務OPEN、guard待決策、三正式案例NOT_RUN。整體仍PARTIAL。
+
 ## 2026-11-05 最新評估與資料
 
 [成果評估與剩餘計劃](docs/empire-rts/PROJECT-ASSESSMENT-2026-11-05.md) · [接續工作](docs/empire-rts/reference_t14_t18_next_steps.md) · [本次文字證據包](docs/empire-rts/handoff-data/2026-11-05/README.md)。此節取代下方歷史快照的當時NEXT；三SOURCE核可不等於native／GUI／official驗收。

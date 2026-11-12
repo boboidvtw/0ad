@@ -1,0 +1,144 @@
+<!-- Purpose: Correct full source roster and legal stance/query/prototype registry; source design only. Created: 2026-10-19. -->
+# 現行source registry：merge-only與合法stance已修正
+
+**source-resolved roster已提供；不是尚缺清單。** native實例／descriptor/ownvalue與NEWcode closure仍未實作／量測；不能用這份source列表假稱runtime已驗。原0883錯誤roster只在before/preimages保存，不作current權威。
+
+## 實際merge規則與45個specialattrs
+
+TemplateLoader.cpp:47-55 foo|bar先bar再foo，:75-83先parent後當前layer。ParamNode.cpp:98-123先依實際attributes處理disable移除、replace移除再重建、**merge只能合併已存在節點，缺父節點立即return且整子樹不套**；:136-178 tokens保native增刪序／duplicates規則；:185-209 op用nativefixed add/mul/mul_round；:219-231 filtered只留當層指明children。不能拿簡單所有tags union當實例。
+
+本source ancestry45個specialattrs全列JSON，每個role每層top-level beforeExists/action/afterExists有trace。top-level conditional merge只有civ/athen Builder（ship父無Builder所以skip整Builder/Entities subtree）；top-levelreplace只有template_unit_ship Footprint；t16_torpedo/cannon/asw各disable Attack/Visibility/UnitAI共9項。nested UnitAI/Formations disable、其餘tokens/op全保原XML與native規則，不另製自訂float rounding；filtered實際零。這是資料/source逐層檢視，不是跑nativeTemplateLoader／新XML工具proof。完整native子欄位及schema驗證仍後續保持normal validator。
+
+## 六role source active component集合
+
+### submarine
+
+Parent `units/epoch_rts/t17_submarine`；既有35個，NEW EpochSaveActorEvents後36個。
+
+AIProxy, Cost, Decay, EpochNavalAttack, EpochNavalState, EpochNavalUnitAI, EpochNavalVisibility, EpochSubmarineController, Footprint, GarrisonHolder, Garrisonable, Guard, Health, Identity, Loot, Looter, Minimap, Obstruction, OverlayRenderer, Ownership, Position, RangeOverlayManager, RangeOverlayRenderer, Repairable, Resistance, Selectable, Sound, StatusBars, StatusEffectsReceiver, TrainingRestrictions, TreasureCollector, UnitMotion, Vision, VisionSharing, VisualActor。
+
+Actual merge layer順序：template_unit → template_unit_ship → template_unit_ship_warship → template_unit_ship_warship_scout → civ/athen → units/athen/ship_scout → units/epoch_rts/t16_torpedo → units/epoch_rts/t16_submarine → units/epoch_rts/t17_submarine。
+
+### cannon
+
+Parent `units/epoch_rts/t16_cannon`；既有34個，NEW EpochSaveActorEvents後35個。
+
+AIProxy, Cost, Decay, EpochNavalAttack, EpochNavalState, EpochNavalUnitAI, EpochNavalVisibility, Footprint, GarrisonHolder, Garrisonable, Guard, Health, Identity, Loot, Looter, Minimap, Obstruction, OverlayRenderer, Ownership, Position, RangeOverlayManager, RangeOverlayRenderer, Repairable, Resistance, Selectable, Sound, StatusBars, StatusEffectsReceiver, TrainingRestrictions, TreasureCollector, UnitMotion, Vision, VisionSharing, VisualActor。
+
+Actual merge layer順序：template_unit → template_unit_ship → template_unit_ship_warship → template_unit_ship_warship_scout → civ/athen → units/athen/ship_scout → units/epoch_rts/t16_cannon。
+
+### torpedo
+
+Parent `units/epoch_rts/t16_torpedo`；既有34個，NEW EpochSaveActorEvents後35個。
+
+AIProxy, Cost, Decay, EpochNavalAttack, EpochNavalState, EpochNavalUnitAI, EpochNavalVisibility, Footprint, GarrisonHolder, Garrisonable, Guard, Health, Identity, Loot, Looter, Minimap, Obstruction, OverlayRenderer, Ownership, Position, RangeOverlayManager, RangeOverlayRenderer, Repairable, Resistance, Selectable, Sound, StatusBars, StatusEffectsReceiver, TrainingRestrictions, TreasureCollector, UnitMotion, Vision, VisionSharing, VisualActor。
+
+Actual merge layer順序：template_unit → template_unit_ship → template_unit_ship_warship → template_unit_ship_warship_scout → civ/athen → units/athen/ship_scout → units/epoch_rts/t16_torpedo。
+
+### asw
+
+Parent `units/epoch_rts/t16_asw`；既有34個，NEW EpochSaveActorEvents後35個。
+
+AIProxy, Cost, Decay, EpochNavalAttack, EpochNavalState, EpochNavalUnitAI, EpochNavalVisibility, Footprint, GarrisonHolder, Garrisonable, Guard, Health, Identity, Loot, Looter, Minimap, Obstruction, OverlayRenderer, Ownership, Position, RangeOverlayManager, RangeOverlayRenderer, Repairable, Resistance, Selectable, Sound, StatusBars, StatusEffectsReceiver, TrainingRestrictions, TreasureCollector, UnitMotion, Vision, VisionSharing, VisualActor。
+
+Actual merge layer順序：template_unit → template_unit_ship → template_unit_ship_warship → template_unit_ship_warship_scout → civ/athen → units/athen/ship_scout → units/epoch_rts/t16_asw。
+
+### detector
+
+Parent `units/epoch_rts/t16_detector`；既有35個，NEW EpochSaveActorEvents後36個。
+
+AIProxy, Cost, Decay, EpochNavalAttack, EpochNavalDetector, EpochNavalState, EpochNavalUnitAI, EpochNavalVisibility, Footprint, GarrisonHolder, Garrisonable, Guard, Health, Identity, Loot, Looter, Minimap, Obstruction, OverlayRenderer, Ownership, Position, RangeOverlayManager, RangeOverlayRenderer, Repairable, Resistance, Selectable, Sound, StatusBars, StatusEffectsReceiver, TrainingRestrictions, TreasureCollector, UnitMotion, Vision, VisionSharing, VisualActor。
+
+Actual merge layer順序：template_unit → template_unit_ship → template_unit_ship_warship → template_unit_ship_warship_scout → civ/athen → units/athen/ship_scout → units/epoch_rts/t16_cannon → units/epoch_rts/t16_detector。
+
+### shallow
+
+Parent `units/epoch_rts/t17_submarine`；既有35個，NEW EpochSaveActorEvents後36個。
+
+AIProxy, Cost, Decay, EpochNavalAttack, EpochNavalState, EpochNavalUnitAI, EpochNavalVisibility, EpochSubmarineController, Footprint, GarrisonHolder, Garrisonable, Guard, Health, Identity, Loot, Looter, Minimap, Obstruction, OverlayRenderer, Ownership, Position, RangeOverlayManager, RangeOverlayRenderer, Repairable, Resistance, Selectable, Sound, StatusBars, StatusEffectsReceiver, TrainingRestrictions, TreasureCollector, UnitMotion, Vision, VisionSharing, VisualActor。
+
+Actual merge layer順序：template_unit → template_unit_ship → template_unit_ship_warship → template_unit_ship_warship_scout → civ/athen → units/athen/ship_scout → units/epoch_rts/t16_torpedo → units/epoch_rts/t16_submarine → units/epoch_rts/t17_submarine。
+
+Builder是available loadedconstructor source而非六actor實例；JSON ownfieldcatalog該項expectedActiveInstance=false，不能query缺失Builder也不能補Builder救PASS。t16無systemfixtures；原T17mod的EpochSubmarineFixture system不載。六bytecopy來源與SHA映射不變；NEWtemplate only加Role observer及合法passive DefaultStance，origin一次Switch none如SPEC，原Schema／產品均不改。
+
+## Player／system完整來源集合
+
+gaia `special/players/gaia` 3 components：Diplomacy, Identity, Player。
+
+player1 `special/players/epoch` 10 components：AttackDetection, BattleDetection, Diplomacy, EntityLimits, Identity, Player, ResourceTrickle, Sound, StatisticsTracker, TechnologyManager。
+
+player2 `special/players/epoch` 10 components：AttackDetection, BattleDetection, Diplomacy, EntityLimits, Identity, Player, ResourceTrickle, Sound, StatisticsTracker, TechnologyManager。
+
+Native systems：TemplateManager, CinemaManager, CommandQueue, ObstructionManager, ParticleManager, Pathfinder, ProjectileManager, RangeManager, SoundManager, Terrain, TerritoryManager, UnitMotionManager, UnitRenderer, WaterManager, AIManager。AIManager即使noAI仍是systeminstance候選，actual numAIs=0須實讀。
+
+Official script systems：AIInterface, Barter, CeasefireManager, DelayedDamage, EndGameManager, GuiInterface, ModifiersManager, PlayerManager, PopulationCapManager, TerritoryDecayManager, Timer, Trigger, ValueModificationManager，加NEW EpochSaveScenario；不是刪掉未知system來滿足graph。
+
+Global/player/template建構sourcecatalog和normal script/prototype registration均已提供。未預期dynamic formation／spawn／local GUI物件或其他native實例需區分source可解釋與requiredcoverage；不能忽略差異。selected ordinarycommands單entity/formationnone source路徑仍要implementationreview，vanish不能悄生replacement角色。
+
+## 合法passive→origin-only runtime none：副作用全部保留
+
+Schema:8-18明允passive，不允none。Init:3485-3501 SetStance(passive)已可能發UnitStanceChanged；OnCreate:3655-3662進INDIVIDUAL.IDLE、IDLE.enter:1646 StartTimer(100)。正常AddEntity包含所有components Init與PostCreate，故setup不能假定unitAI/timer/queue全空。
+
+每role source步驟：ActorEvents.Init由Roleenum／this.entity暫定綁角色，不讀不完整其他components；AddEntity完整返回驗actualID一致，位置／yaw／Owner設定後，SwitchToStance(none)恰一次（5977-5991：GetPosition→SetHeldPosition→SetStance→SetupRangeQueries）。SetStance:5966-5975發真UnitStanceChanged。所有自然timer、FSM/rangequery IDs、heldposition、setup messages及可觀察prefix保存，無手動清空／重置。初始訊息若在observer建立前發生就明列不可觀察，不能補造；observer已存在後的native UnitStanceChanged等按真順序保存。
+
+OwnershipChanged:3674-3711對真正ownership轉移自然Stop/清workOrders/FSM/rangequery並SetStance(template.DefaultStance=passive)。13200／16000這些真變化不可後補none；load也不再setup。其可能自然移動/反應等與全部原HP/orders/nativeLOS/no-oldattack/no-autonomousattack等acceptance照驗；若違反就FAIL，不放寬source條件／刪欄位。Timer100不是CommandQueue network/local vector條目，actualqueuecount0仍是獨立byte0實讀gate，不由Timerempty或setup意圖推導。
+
+## Required fields/getters／prototype／identity／absent actor
+
+JSON requiredFieldGetterRegistry、customPrototypeSerializationRegistry、scriptComponentOwnFieldRegistry、graphIdentityRules、absentActorSchema完整保留並作current義務；sourceassignmentkeys不作白名單，所有actual ownkeys/data descriptors都要保存。availablector（例如Builder）與requiredinstanceroot清楚分欄。以下逐requiredfield列來源與副作用closure：
+
+| Field/root | Current source與必要closure |
+| --- | --- |
+| Timer.* including complete timers Map / id/time/turnLength | official-public/simulation/components/Timer.js；own descriptor data graph; GetTime/GetLatestTurnLength only direct reads；No SetTimeout/SetInterval/CancelTimer/OnUpdate in read path; full orderedMap no filtering; unknown ownkeys kept, not clipped to source assignment catalog. |
+| Controller all own fields incl token/timer/target/startedAt/ownerAtStart/lastReason/depth/clearance/entity/template | mod/tools/epoch-rts/t17-harness/simulation/components/EpochSubmarineController.js；OwnPropertyDescriptors/Reflect.ownKeys; never call GetStatus as substitute；No RequestMode/Cancel/SetDepth/Quiesce/OnUpdate/Complete from query; prototype.Complete wrapper does not become ownfield. |
+| NavalState / UnitAI / Attack all own fields + new actor observer own fields | mod/tools/epoch-rts/t16-harness/simulation/components/EpochNaval{State,UnitAI,Attack}.js; proposed EpochSaveActorEvents；full descriptor graph, common registry; do not substitute GetOrders clone/scalar flags；Reject accessors/unknown function or prototype; no ProcessMessage/SetStance/AddOrder/GetBestAttack sideeffectful method calls. |
+| role/entityID/template/availability | primary-head/source/simulation2/components/CCmpTemplateManager.cpp; ComponentManager.cpp；immutable saved role mapping, actual QueryInterface availability and TemplateManager.GetCurrentTemplateName；GetCurrentTemplateName lookup only; never LoadTemplate/AddEntity/rebuild/allocate absent entity from query. |
+| native owner / HP | primary-head/source/simulation2/components/CCmpOwnership.cpp; official-public/simulation/components/Health.js；GetOwner / GetHitpoints actual values；No SetOwner/Reduce/Increase/SetHitpoints in read path; actual number validation, absent tagged unavailable not fabricated zero. |
+| inWorld/xy/y/offset/relative/floating/rotation/turretParent | primary-head/source/simulation2/components/CCmpPosition.cpp:412-469,479-540,603-615; ICmpPosition.cpp；IsInWorld first; getters const direct member reads, currentHeight through Terrain/Water; GetRotation parent recursion only if actual parent exists；Check actual turretParent is INVALID for these templates; unexpected parent needs registered full closure or BLOCK. No move/jump/turn/float setter. |
+| previousPosition / previousPosition2D | primary-head/source/simulation2/components/CCmpPosition.cpp:524-540；m_PrevX/m_PrevZ with current GetHeightAtFixed(environment), explicitly not historical stored full y；Compare exact returned semantic values, no assertion prior-y-cache equivalence; never query if absent/outOfWorld. |
+| native ground / water | primary-head/source/simulation2/components/CCmpTerrain.cpp:83-87; graphics/Terrain.cpp; CCmpWaterManager.cpp:129-131；Terrain.GetGroundLevel -> initialized heightmap exact fixed sample; Water.GetWaterLevel -> m_WaterHeight；Initialized map before reads mandatory; cold-load native safety NOT_RUN. No terrain/water setters/caches fabricated. |
+| LOS per1/2 and detector detection authority | primary-head/source/simulation2/components/CCmpRangeManager.cpp:1653-1784,1069-1095; mod/tools/epoch-rts/t16-harness/simulation/components/EpochNavalVisibility.js and EpochNavalState.js；GetLosVisibility may ComputeLosVisibility -> scripted Visibility.GetVisibility -> State.GetMode/IsDetectedBy -> GetEntitiesByPlayer/position/owner/HP/Detector.IsEnabled；Existing named getters read only; RequestVisibilityUpdate/ActivateScriptedVisibility only in normal event/update handlers, not query. Dirty/modified branches all remain covered; unknown Visibility implementation BLOCK. |
+| PlayerManager / player+gaia Player,Diplomacy full own; persistent scenario mapping/event prefix | official-public/simulation/components/{PlayerManager,Player,Diplomacy}.js; proposed EpochSaveScenario；full own descriptor graph, IDs matched actual playerMapping0/1/2; no GetSimulationState shortcut；Do not call mutation-bearing setup/deserialize/autoResearch/teamchange APIs; new scenario ReadRoot readonly obligation cannot be proven before code. |
+| camera/principal outside simulation graph evidence | primary-head/source/graphics/scripting/JSInterface_GameView.cpp:76-110,199-205; ps/scripting/JSInterface_Game.cpp; JSInterface_Simulation.cpp；GetCameraPosition/GetCameraRotation/GetCameraZoom, GetPlayerID and native GuiInterface ScriptCall caller; no invented GetViewedPlayer native API；SetCameraData only fixed setup/load restore before A/L0; SetPlayerID outside save transaction per principal policy; querycaller is readback not authorization. |
+| CommandQueue complete vector | primary-head/source/simulation2/components/CCmpCommandQueue.cpp; existing bytezero decoder assessment；host byte0 schema parse then actual count0 at QO/QL, nonzeroUNKNOWN/BLOCK；A-QO-B / L0-QL-L1 and branch queue-write invariance source obligations; no fictitious native getter or empty assumption. |
+
+GetPreviousPosition明定舊x/z＋目前地形／水高度，不是歷史完整y。LOS dirty/modified branch可能走script GetVisibility→NavalState.IsDetectedBy→Range entities/owner/position/HP/Detector getters；全部source都在名冊，不能用const跳過scriptclosure。nativeheightmap冷load安全仍未量測。
+
+Destroy後六role原ID/template/creationOrder不丟；actualavailability缺失用explicit tagged-unavailable，各requiredcomponent／scalar key保留但不捏造HP0/owner-1，不呼叫缺失／out-of-world Position getter，不回填last-live為當前值。完整TimerMap不filter，staletimer／resurrection FAIL，真正nativeevents前綴保全。last-live快照只external證據。
+
+原生serializer會呼custom Serialize/null/nestedItem，多於graphgetter本身；typedgraph只能讀descriptor值，不借custom Serialize投影丟ownfields。Map/Set/ArrayBuffer/view/vector／registeredcomponentproto按wire typednode保持sharing/order/cycle；unknown function/symbol/accessor/Proxy/prototype保unknown並BLOCK。原生cache/getter不可觀察不能捏造完整nativegraph。
+
+## NEWcode工程closure責任（來源清單已有，實碼尚未有）
+
+- `EpochSaveScenario.js`：Init, OnInitGame origin setup, BindProvisionalRole, FinalizeActualRole, AppendNativeEvent, ReadSaveRoots；允許 Only origin setup role mapping/provisional-finalize and explicit once per role SwitchToStance none after complete AddEntity/position/ownership; genuine observed native actor events append to persistent prefix. Read no writes; load no rearm/stance/setup.；禁止 any dispatch/Complete counters in ownfields; direct queue writes; Read calling metadata or mutation。
+
+- `EpochSaveActorEvents.js`：Init (origin only via normal AddEntity), OnUnitStanceChanged, OnUnitAIStateChanged, OnUnitAIOrderDataChanged, OnHealthChanged, OnOwnershipChanged, OnDestroy；允許 Init binds provisional native this.entity/template.Role only, no othercomponent queries; true native messages forward to persistent Scenario prefix; original AddEntity return finalizes sameID. Native Deserialize default restores fields; no load Init/rebind/setup.；禁止 faked initial messages from before observerconstructed; artificial dispatch/Complete persistentevents; query counters; hidden init/timer/queue operations; modifying historicalevententries。
+
+- `T17SaveGraph.js`：EncodeRequiredRoots, ReadDescriptors；允許 ephemeral local encoding buffers only；禁止 component mutation, setters, GetStatus/GetSimulationState substitutes, custom Serialize invocation。
+
+- `ZZZZT17SaveCompleteWitness.js`：install, Complete wrapper；允許 external module closure/raw only；禁止 component own methods/fields, timer changes, swallowing/replacing return/throw。
+
+- `ZZZZZT17SaveCommandWitness.js`：wrap g_Commands, ReadBeforeAfter；允許 external closure/raw only; test-only OwnerEvent/HealthEvent delegate allowed native setter at fixed dispatch；禁止 direct ProcessCommand injection, queue push/flush, queries mutating witness persistent roots。
+
+- `gui/t17_save/session_transaction.js`：init prehook, sendForOwner, saveTransaction, pollAck, resumeBranch；允許 GUI memory, exact request data path only; SetPlayerID outside save; pause/resume exactphase；禁止 simulation query writes/future commands in save metadata/timers, retry/overwrite/ACKfabrication。
+
+本次補的是設計與已存在source的精確資料，不宣稱未存在函式已pure。兩designreview接受後才實作，然後exact-current implementation review／必要tests／nativefullgate，任何unknown不替換成selectedscalars或opaquehashPASS。
+
+## 即時receipt追加registry（不增加simulation實例）
+
+完整既有195 primary snapshots直接逐檔SHA引用primaryrefs-inventory.json，沒有重做未變source discovery。原六role／player／gaia／system／getter／prototype／absence名冊與R1–R7 coverage保持。新增完整機器責任見source-registry.json.commandReceiptRegistry及receiptNoMutationObligations，唯一wire authority為wire-schema.json#/commandReceipts、#/profileBinding。
+
+NEW helpers/ZZZZAT17SaveFixtureCommands.js先註冊固定test handlers，helpers/ZZZZZT17SaveCommandWitness.js最後wrap並以Engine.RegisterGlobal匯出T17ReadSaveCommandReceipts；components/ZZZZZT17SaveGuiReceiptInterface.js在official constructor export後加prototype readonly ReadSaveCommandReceipts/exposedFunctions。只source-load安裝，不建立新component／ownfields，實際loader order與descriptor需實作審核。private lexical append-only writer與pure nonconsuming reader分權；GUI cursor/pendingcache不序列化。
+
+來源：JSInterface_Simulation.cpp:45-64傳viewedPlayer且clone args/result；official GuiInterface.js:202-205回InitAttributes、2128 ScriptCall按exposedFunctions分派；Simulation2.cpp:852-853 deepfreezes InitAttributes並設readonly global；ComponentManager constructor與RegisterGlobal支援perfile bridge。C++是compatibilitysource，不代表official binary執行證據。native caller是view，不獨證principal；GUI genuineGetPlayerID及handler nativeplayer交叉核。InitAttributes stable campaign/source/seed/profile為native binding，host fullsource guard核codebytes；freshcaseNonce/PID不偽裝native核可。
+
+reader完整closure必讀 immutable InitAttributes→private immutable snapshots/highwater/fault→freshdata typed reply→native clone；不能lazybind/querycount/cache/clear/consume/queuewrite或呼customSerialize/getter/toString。writer捕捉encoder/emit error仍原this/args一次原handler、保return/samethrow；error/unknown/stickyfault永久無PASS。GUI等matching complete native ENTRY+RETURNED EXIT才restore1，void不證接受；host final replay三方bijection另核，沒有live replay／每commandACK檔。完整limits/schema/poll/seq/correlation/fault見wire，未來實碼及native closure仍待完成。
+
+### R4a Exact typed graph context profiles
+
+wire-schema.json v4 typedGraph.profiles/contextSelection is the sole authority. Every envelope has exactly encoding/profile/roots/nodes; encoding stays T17_SAVE_FULL_GRAPH_V1. The finite profile enum separates common lossless nodes/values from exact required root layouts. A/B/L0/L1 and receipt beforeGraph/afterGraph require GAMEPLAY_FULL_V1, with all40 ordered roots: Timer; six roles in creationorder each controller/navalState/UnitAI/Attack/ActorEvents; nativeWorld; PlayerManager; player0/1/2 each Player/Diplomacy; Scenario. Exact names are in wire and registry. This expands the existing grouped roster without reducing fields/order or the original absence rules. No optional gameplay roots.
+
+commandGraph requires COMMAND_VALUE_V1, exactly one command root containing the complete original native command object. returnValueGraph requires HANDLER_RETURN_V1, exactly one returnValue root; RETURNED undefined is a known {t:"undefined"} value inside that root, with nodes=[] when no references. safeDescriptorGraph requires ERROR_OWN_DESCRIPTORS_V1, exactly one exceptionOwnDescriptors root holding the actual thrown object's full own-descriptor node/reference graph; primitive/null/undefined throws retain their exact primitive typed value (no own descriptors). No inherited getter/stack/message access, selected error projection or side-effect coercion is permitted. Unknown error prototype/accessor/function/symbol/Proxy remains unknown/stickyFAIL, with no automatic prototype exemption.
+
+THREW/OBSERVATION_FAULT return uses exactly {t:"unavailable",reason:"THREW" or "OBSERVATION_FAULT"}. Impossible safe-error capture permits only unavailable OBSERVATION_FAULT at its error root. These tags are diagnostic only, disallowed in gameplay/command/node properties/collection items and always prevent PASS/restore1. Normal undefined/null and existing actor absence are different. RETURNED has throwInfo=null, no invented error graph. Strict consumers select profile from the enclosing field and reject missing/extra/duplicate/unknown/crossprofile roots, wrong count/order or envelope keys. Common node-table, cycles/alias, Map/Set order, holes/extras, buffer/view rawbits, -0/nonfinite, UTF16 and complete descriptor rules remain unchanged. Each graph has local node IDs and preserves every within-graph crossroot alias; no crossgraph pointer identity is asserted.
+

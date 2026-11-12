@@ -1,0 +1,20 @@
+{
+  "status": "DONE_DESIGN_ONLY",
+  "manifest": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/manifest.json",
+  "sha256": "7c07a7de8e959ecd2711a29e892eaa3a34669a80a7420ab5dbe51bc627d76ee5",
+  "reviews": [
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/code-design-review-v1.json",
+      "sha256": "42384e8486999f79cf54e2e2fc102fdd5dc01235b1092ed540be61e324466634",
+      "verdict": "APPROVE_DESIGN_ONLY"
+    },
+    {
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/js-api-design-review-v1.json",
+      "sha256": "041858593dba7b11b6e112e64ce26fe08f40447ccc341e6fb572092f7d740630",
+      "verdict": "APPROVE_DESIGN_ONLY"
+    }
+  ],
+  "newChannelSourceAuthority": false,
+  "native": "NOT_RUN",
+  "next": "Separately frozen GUIclient andhosthelper implementations plus fresh complete independent source reviews; originalguard/fullpipeline/5sactualnativeproof remainsOPEN"
+}

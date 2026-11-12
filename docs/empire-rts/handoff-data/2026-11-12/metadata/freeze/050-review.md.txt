@@ -1,0 +1,16 @@
+<!-- Purpose: independent full metadata expected-control JS/API DESIGN review. Created: 2026-10-28. -->
+# Metadata expected-controls JS/API design review
+
+**APPROVE_DESIGN_ONLY** — 0 blocking findings；1 LOW 文案精確性 finding。作者計畫未修改。
+
+Exact manifest `17eb3663cc51be04f880be2d2045bbbc1d5fe8fcf461cc2a82191ed9aa85e599`；48/48 artifacts 獨立實核 bytes/SHA 全 MATCH。完整 CONTRACT、六欄矩陣、host API、future-schedule absence、OPEN/checkpoint/binding catalogs 與 pinned primary/currentmapfix/comparator 呼叫契約均審查。逐欄、呼叫順序、完整 binding audit 與 evidence 見 review.json。
+
+- 六欄 engine_version/playerID/mods/initAttributes/gui/description 有獨立來源分解；GetEngineInfo 與 Save 共用 native version/mod producer，保留 mods 順序與四欄，不套 compatibility filter。principal 固定1與 description 由 case plan 獨立派生。
+- Origin top-level script 必保留。Replay 在 origin 與每次 StartSavedGame 均覆寫 nested timestamp/engine_version/mods；nested timestamp 精確比較，只有最外層 metadata.time 使用獨立 epoch interval。不得從 actual metadata 反填 expected。
+- Replay StartGame 只有 newline，Turn 才明確 flush；不能假設 freshload preSave start 已可讀。L0、原5秒、唯一 roundtrip Save/L1、wrapped session init 首 pause 維持；不得增 warmturn、flush、wait、multisave、retry 或延期。
+- Camera 經 fixed setter/float getter；實際 getter 六值與 native Save 同源，load restore 又經 fixed setter。十個 empty groups 有 constructor 來源，但實際 input/mutator/prototype/serialization closure 未證。Native exact controls 不能用 nominal0.6、epsilon 或 roundtrip metadata 自證。
+- Prepare/Bind/Materialize 只是一份 fail-closed 草案；raw/source/caller/realm/process/phase/host commit/preSave 因果順序仍須實作與 fresh reviews。完整 metadata 相等不證 expected authenticity 或 future-schedule absence；GUI/host 排程與 counters 必留 external closure，合法 native timers 不刪。
+
+**LOW JS-DESIGN-LOW-001 — FIELD-MATRIX.md:33**：稱 camera getter 回 smoothed 狀態不精確。Pinned CameraController.cpp:418–432 實際使用 `GetValue()`；不是 `GetSmoothedValue()`。Root cause 是混淆 CSmoothedValue 儲存型別與實際取值 API。未來 reviewed amendment 應修正文案；future implementation 必綁 exact native `GetValue()`/float JSON serialization 與 fixed controls，不能用 smoothed substitute。現計畫本來要求 Save 同 getter exact 值，故此項不阻擋 bounded design approval。保留 sealed authorplan 原文。
+
+**OPEN**：實際五模組/runtime identity、完整 init startup writers、freshload nested timestamp 可得性、native camera/groups controls、source-owned caller/realm/transport/readback、future-schedule absence、完整 host/guard/archive/queue0/40roots/native pipeline。此核可不是 producer/source implementation、runner、capture 或 native acceptance；actual native 全 NOT_RUN。未執行 project code、Node、tests、Popen、engine、copy、guard、attempt 或網路；未重跑 DONE，未改 author/source/tracking/原 FAIL。

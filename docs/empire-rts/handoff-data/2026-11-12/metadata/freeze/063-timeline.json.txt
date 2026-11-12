@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "origin": {
+    "proofOrder": [
+      "host receives immutablearmintent",
+      "hostmonotonic t_arm sampled and D=t_arm+5s reserved",
+      "host publishes validatedimmutablepermit",
+      "GUI legalS verifiespermit",
+      "GUI Pause",
+      "A",
+      "SaveGame once",
+      "B",
+      "request write/value readback",
+      "host actualraw/archive/metadata/count0/graphverification",
+      "originalfinalACK publish",
+      "GUI finalACK+pausedS/principal/fullgraph verified",
+      "GUI_ACK_VERIFIED emitted",
+      "host receives complete endpoint beforeD",
+      "GUI may resume under originalgate"
+    ],
+    "assumptionNotUsed": "TX_BEGIN immediate stdout delivery or wallclock alignment"
+  },
+  "load": {
+    "proofOrder": [
+      "caseprelaunch once boot/armnonce/archive plan/hostintent prepared",
+      "hostmonotonic t_arm/D reserved beforePopen",
+      "permit publish plus all remainingguards/freshguard withinD",
+      "singlePopen within originalC+30 andsameD",
+      "StartSavedGame/nativeDeserialize/Interpolate/loading consume sameD",
+      "sessionfirstnativeactionSetPaused",
+      "upstreaminit/permitcheck/firstfullL0",
+      "unique roundtripSave/L1/request",
+      "originalhostverify/finalACK",
+      "GUI fullACK validation and rawendpoint hostreceive beforeD"
+    ],
+    "failure": "Conservative5s cannotfit -> BLOCK/FAIL/NOT_RUN; never laterreserve/retry/extraengine/skipguard"
+  },
+  "causalInequality": "host_t_arm <= actualPause <= GUI_ACK_verified <= endpointEmit <= host_endpointReceive < host_t_arm+5s; load host_t_arm < Popen < firstPause",
+  "actualExecution": "NONE_DESIGN_ONLY"
+}

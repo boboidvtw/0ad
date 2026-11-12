@@ -1,0 +1,538 @@
+{
+  "purpose": "Single current machine authority including native readonly command-receipt bridge and separate final replay gate; design only",
+  "version": 4,
+  "globalRules": {
+    "utf8": "strict",
+    "duplicateKeys": "reject",
+    "trailingBytes": "reject except final JSON whitespace explicitly allowed <=1 newline from actual writer; preserve full original bytes",
+    "unknownKeys": "reject at every envelope and node kind",
+    "maxRequestBytes": 16777216,
+    "maxAckBytes": 16384,
+    "maxBootBytes": 8192,
+    "maxDepth": 256,
+    "maxGraphNodes": 65536,
+    "maxReceivedRawBytesPerCaseForPASS": 67108864,
+    "excessRaw": "sticky FAIL, stop work and preserve all received and late bytes during bounded cleanup; no dropping data"
+  },
+  "atoms": {
+    "nonce": "exact 64 lowercase hex characters",
+    "sha256": "exact 64 lowercase hex characters",
+    "seed": "42 or 7",
+    "caseID": "origin or load-surfaced/load-pendingDive/load-deepHidden/load-pendingSurface/load-ownerCanceled",
+    "checkpoint": "surfaced/pendingDive/deepHidden/pendingSurface/ownerCanceled",
+    "phase": "origin/load",
+    "principal": "literal integer 1 at all save boundaries",
+    "S": "finite nonnegative integer <=32000 and in fixed checkpoint window",
+    "transactionOrdinal": "origin1..5 in fixed checkpoint order; load1",
+    "archiveName": "exact precommitted basename; no slash/backslash/dot traversal; archive entry names separately exactly metadata.json/simulation.dat"
+  },
+  "request": {
+    "schemaLiteral": "T17_SAVE_TX_REQUEST_V1",
+    "required": [
+      "schema",
+      "campaignNonce",
+      "caseNonce",
+      "sourceManifestSHA",
+      "seed",
+      "caseID",
+      "checkpoint",
+      "phase",
+      "transactionOrdinal",
+      "archiveName",
+      "expectedOriginArchiveSHA",
+      "S",
+      "pauseBefore",
+      "pauseAfter",
+      "nativePrincipalBeforeAfter",
+      "queryCallerBeforeAfter",
+      "callOrder",
+      "graphs",
+      "explicitunknowns"
+    ],
+    "fieldRules": {
+      "expectedOriginArchiveSHA": "origin null; load exact corresponding immutable original archive SHA",
+      "pauseBefore": "literal true",
+      "pauseAfter": "literal true",
+      "nativePrincipalBeforeAfter": "exact [1,1]",
+      "queryCallerBeforeAfter": "exact [1,1]",
+      "callOrder": "origin exact [PAUSE_CONFIRMED,A_CAPTURED,SAVE_CALL,SAVE_RETURN,B_CAPTURED]; load exact [PAUSE_CONFIRMED,L0_CAPTURED,SAVE_CALL,SAVE_RETURN,L1_CAPTURED]. REQUEST_WRITTEN and REQUEST_VALUE_READBACK only later external REQUEST_READY facts.",
+      "graphs": "origin exact A,B or load exact L0,L1; each complete GAMEPLAY_FULL_V1 envelope, all40 ordered roots mandatory",
+      "explicitunknowns": "array of {path,reason}; nonempty immediately blocks VERIFIED; preserve unknown raw"
+    }
+  },
+  "typedGraph": {
+    "required": [
+      "encoding",
+      "profile",
+      "roots",
+      "nodes"
+    ],
+    "encodingLiteral": "T17_SAVE_FULL_GRAPH_V1",
+    "roots": "Exact profile-specific ordered {name,value} array, root element keys exactly name,value. Reject duplicate/missing/extra/crossprofile names or wrong order. Gameplay roots never optional.",
+    "nodes": "ordered unique ascending id nodes assigned on first occurrence before children; id range1..65536",
+    "valueAlternatives": {
+      "undefined": [
+        "t=undefined"
+      ],
+      "null": [
+        "t=null"
+      ],
+      "boolean": [
+        "t=boolean",
+        "v=bool"
+      ],
+      "number": [
+        "t=number",
+        "ieee754be=exact16lowerhex including -0/nonfinite"
+      ],
+      "string": [
+        "t=string",
+        "utf16=ordered uint16 codeunits array"
+      ],
+      "reference": [
+        "t=ref",
+        "id=existing or in-construction nodeID"
+      ],
+      "unknown": [
+        "t=unknown",
+        "path=typed path",
+        "reason=nonemptystring; always blocks VERIFIED"
+      ],
+      "contextRestrictedUnavailable": [
+        "t=unavailable",
+        "reason=THREW or OBSERVATION_FAULT",
+        "valid only at exact permitted return/error root per typedGraph.unavailable; diagnostic stickyFAIL, never PASS"
+      ]
+    },
+    "everyObjectNode": [
+      "id",
+      "kind",
+      "prototype",
+      "ownKeys",
+      "properties"
+    ],
+    "prototype": "source registry key; no custom Serialize execution to derive key; unregistered blocks",
+    "ownKeys": "full ordered UTF16 string keys; symbol unknown blocks; exact equality with properties key order",
+    "properties": "ordered {key,enumerable,writable,configurable,value} data descriptors; accessors rejected before get value",
+    "additionalByKind": {
+      "Object": [],
+      "Array": [
+        "length=uint32; holes defined by missing indexed ownKeys; length descriptor must match"
+      ],
+      "Map": [
+        "entries=ordered pairs of values, no sorting"
+      ],
+      "Set": [
+        "entries=ordered values, no sorting"
+      ],
+      "ArrayBuffer": [
+        "bytesBase64",
+        "byteLength=exact decoded bytes"
+      ],
+      "TypedArray": [
+        "arrayKind exact known registry kind",
+        "buffer reference",
+        "byteOffset=uint32",
+        "length=uint32; bounds/types verify; own numeric properties preserved"
+      ],
+      "DataView": [
+        "buffer reference",
+        "byteOffset",
+        "byteLength; native serialization admissibility independently required"
+      ],
+      "Vector2D/Vector3D": [
+        "exact source registry prototype; full own descriptors, no method calls"
+      ],
+      "ScriptComponent": [
+        "constructor/source registry prototype; full own descriptors incl entity/template; no function value omission"
+      ]
+    },
+    "profileEnum": [
+      "GAMEPLAY_FULL_V1",
+      "COMMAND_VALUE_V1",
+      "HANDLER_RETURN_V1",
+      "ERROR_OWN_DESCRIPTORS_V1"
+    ],
+    "profiles": {
+      "GAMEPLAY_FULL_V1": {
+        "rootNames": [
+          "Timer",
+          "actor.submarine.controller",
+          "actor.submarine.navalState",
+          "actor.submarine.UnitAI",
+          "actor.submarine.Attack",
+          "actor.submarine.ActorEvents",
+          "actor.cannon.controller",
+          "actor.cannon.navalState",
+          "actor.cannon.UnitAI",
+          "actor.cannon.Attack",
+          "actor.cannon.ActorEvents",
+          "actor.torpedo.controller",
+          "actor.torpedo.navalState",
+          "actor.torpedo.UnitAI",
+          "actor.torpedo.Attack",
+          "actor.torpedo.ActorEvents",
+          "actor.asw.controller",
+          "actor.asw.navalState",
+          "actor.asw.UnitAI",
+          "actor.asw.Attack",
+          "actor.asw.ActorEvents",
+          "actor.detector.controller",
+          "actor.detector.navalState",
+          "actor.detector.UnitAI",
+          "actor.detector.Attack",
+          "actor.detector.ActorEvents",
+          "actor.shallow.controller",
+          "actor.shallow.navalState",
+          "actor.shallow.UnitAI",
+          "actor.shallow.Attack",
+          "actor.shallow.ActorEvents",
+          "nativeWorld",
+          "PlayerManager",
+          "player0.Player",
+          "player0.Diplomacy",
+          "player1.Player",
+          "player1.Diplomacy",
+          "player2.Player",
+          "player2.Diplomacy",
+          "Scenario"
+        ],
+        "rootCount": 40,
+        "rootLayout": "Each exact {name:ordered literal,value:full lossless typed value}. All existing required full fields retained. nativeWorld retains identity/template/owner/HP/position/terrain/water/LOS/detector; Scenario retains immutable mapping and true native eventprefix. Existing actor absence schema stays inside each required root; never omit absent roots.",
+        "allowedUnavailableEnvelope": false
+      },
+      "COMMAND_VALUE_V1": {
+        "rootNames": [
+          "command"
+        ],
+        "rootCount": 1,
+        "rootLayout": "exact [{name:\"command\",value:<original native cmd typed value>}]",
+        "valueRule": "Actual nonnull command object with complete original ownkeys/data descriptors/prototype/reference graph; no selected fields, additions, coercion. Primitive/null/undefined command is unknown + stickyFAIL.",
+        "allowedUnavailableEnvelope": false
+      },
+      "HANDLER_RETURN_V1": {
+        "rootNames": [
+          "returnValue"
+        ],
+        "rootCount": 1,
+        "rootLayout": "exact [{name:\"returnValue\",value:<actual return typed value or restricted unavailable>}]",
+        "valueRule": "RETURNED: any known lossless primitive/null/undefined/ref. Normal undefined exactly {t:\"undefined\"} in root.value, nodes=[] if no refs; it is known, not unavailable. THREW: unavailable THREW. Failed observation: unavailable OBSERVATION_FAULT plus stickyFAIL.",
+        "allowedUnavailableEnvelope": true
+      },
+      "ERROR_OWN_DESCRIPTORS_V1": {
+        "rootNames": [
+          "exceptionOwnDescriptors"
+        ],
+        "rootCount": 1,
+        "rootLayout": "exact [{name:\"exceptionOwnDescriptors\",value:<actual thrown value own-descriptor graph or restricted unavailable>}]",
+        "valueRule": "Object thrown: ref to actual target node with exact original registered prototype, complete ordered ownkeys/data descriptors/flags and transitive typed values. No selected message projection, inherited getter/stack/message access or String(error). Primitive/null/undefined thrown: exact primitive root.value, nodes=[]; primitives have no own descriptors. Unregistered Error prototype/accessor/function/symbol/Proxy/unsafe descriptor read yields explicit unknown (or unavailable OBSERVATION_FAULT when capture impossible) plus stickyFAIL. No new Error prototype accepted by implication.",
+        "allowedUnavailableEnvelope": true
+      }
+    },
+    "unavailable": {
+      "exactRequiredKeys": [
+        "t",
+        "reason"
+      ],
+      "tLiteral": "unavailable",
+      "reasonEnum": [
+        "THREW",
+        "OBSERVATION_FAULT"
+      ],
+      "allowedOnly": "HANDLER_RETURN_V1.returnValue on corresponding THREW/OBSERVATION_FAULT; ERROR_OWN_DESCRIPTORS_V1.exceptionOwnDescriptors only OBSERVATION_FAULT when capture impossible. Never gameplay/command, node properties or collection items.",
+      "acceptance": "Diagnostic only: unavailable is unknown/stickyFAIL, never PASS or restore1, never equivalent to null/undefined or existing explicit actor absence. THREW never passes even when error graph known."
+    },
+    "contextSelection": {
+      "request.graphs.A": "GAMEPLAY_FULL_V1",
+      "request.graphs.B": "GAMEPLAY_FULL_V1",
+      "request.graphs.L0": "GAMEPLAY_FULL_V1",
+      "request.graphs.L1": "GAMEPLAY_FULL_V1",
+      "commandReceipts.events.ENTRY.beforeGraph": "GAMEPLAY_FULL_V1",
+      "commandReceipts.events.EXIT.afterGraph": "GAMEPLAY_FULL_V1",
+      "commandReceipts.events.*.commandGraph": "COMMAND_VALUE_V1",
+      "commandReceipts.events.EXIT.returnValueGraph": "HANDLER_RETURN_V1",
+      "commandReceipts.events.EXIT.throwInfo.safeDescriptorGraph": "ERROR_OWN_DESCRIPTORS_V1; throwInfo=null on RETURNED, no error graph then"
+    },
+    "strictContextValidation": "Enclosing field selects required profile; exact envelope keys encoding/profile/roots/nodes, literal encoding and profile; exact rootCount/names/order and complete node references. Unknown/missing/duplicate/extra/crossprofile roots reject; no autodetect/fallback/optional gameplay. Same complete lossless codec/prototype/descriptor/depth/node/size/unknown gates. Each graph fresh local node IDs; all within-graph crossroot sharing/cycles preserved, no crossgraph/process pointer identity assertion."
+  },
+  "boot": {
+    "schemaLiteral": "T17_SAVE_BOOT_V1",
+    "required": [
+      "schema",
+      "campaignNonce",
+      "caseNonce",
+      "sourceManifestSHA",
+      "seed",
+      "caseID",
+      "profileName",
+      "noNet",
+      "principal",
+      "sourceDerivedCaps",
+      "originArchives",
+      "loadArchive"
+    ],
+    "fieldRules": {
+      "noNet": "true",
+      "principal": "1",
+      "sourceDerivedCaps": "exact deep object equal to policies.campaign: integer caps plus exact rule strings; missing, extra or different cap/rule rejects boot",
+      "originArchives": "origin exact five name+checkpoint pairs; load empty array",
+      "loadArchive": "origin null; load exact {checkpoint,archiveName,actualArchiveSHA,expectedS,originCaseEvidenceSHA} after original verified"
+    }
+  },
+  "ack": {
+    "schemaLiteral": "T17_SAVE_TX_ACK_V1",
+    "required": [
+      "schema",
+      "campaignNonce",
+      "caseNonce",
+      "sourceManifestSHA",
+      "seed",
+      "caseID",
+      "checkpoint",
+      "phase",
+      "transactionOrdinal",
+      "archiveName",
+      "S",
+      "requestActualBytes",
+      "requestActualSHA",
+      "originArchive",
+      "roundtripArchive",
+      "actualNativeCount",
+      "guardsDigest",
+      "hoststageDecision",
+      "hostDeadlineDisplayUTC"
+    ],
+    "fieldRules": {
+      "hoststageDecision": "literal ARCHIVE_VERIFIED; never case PASS",
+      "requestActualSHA": "host actual persisted raw UTF8 hash authority; GUI only validates its format and value binding, no claim independent GUI byte hash",
+      "originArchive": "exact {bytes,sha256,metadataEntry:{bytes,sha256},simulationEntry:{bytes,sha256}}",
+      "roundtripArchive": "origin null; load corresponding same shape",
+      "actualNativeCount": "literal integer0 only after actual bytezero decode; never prefilled before read",
+      "guardsDigest": "actual independent guard artifact SHA",
+      "hostDeadlineDisplayUTC": "display only; all deadline enforcement host monotonic"
+    }
+  },
+  "publication": "GUI request native WriteJSON one attempt in unique fresh directory, nonexclusive/non-atomic acknowledged. Host waits READY and verifies raw actual path, then tmp O_EXCL, full readback/fsync, link final no-replace and retain tmp; exact two hardlinked files expected.",
+  "policies": {
+    "campaign": {
+      "absoluteHostSeconds": 600,
+      "maxSerialCases": 6,
+      "caseAbsoluteHostSeconds": 90,
+      "casePrelaunchSeconds": 30,
+      "startupFromPopenSeconds": 10,
+      "caseStopNewWorkSeconds": 80,
+      "caseCleanupDeadlineSeconds": 90,
+      "archiveTransactionHostSeconds": 5,
+      "campaignEngineAndCaseCutoffSeconds": 540,
+      "campaignFinalReadbackDeadlineSeconds": 600,
+      "minimumRemainingToStartCaseSeconds": 90,
+      "caseDeadlineRule": "min(caseStart+90,campaignStart+540); no new case without full90 remaining before540; all clocks monotonic, no reset",
+      "newWorkDeadlineRule": "min(caseStart+80,campaignStart+540); Popen must also precede caseStart+30; startup deadline=min(Popen+10,caseStart+40)",
+      "finalReserveRule": "540..600 only final actualdisk inventory/readback/seal, no engine/commands/Save"
+    },
+    "vfs": {
+      "caseRootTemplate": "moddata/t17-save/{campaignNonce}/{seed}/{caseID}/",
+      "physicalRootTemplate": "isolatedApp/Contents/Resources/data/mods/user/moddata/t17-save/{campaignNonce}/{seed}/{caseID}/",
+      "checkpointDirectoryTemplate": "{caseRoot}/{checkpoint}/",
+      "bootFilename": "boot.json",
+      "originFiles": [
+        "origin-request.json",
+        "origin-host-ack.tmp",
+        "origin-host-ack.json"
+      ],
+      "loadFiles": [
+        "load-request.json",
+        "load-host-ack.tmp",
+        "load-host-ack.json"
+      ],
+      "hostDecisionLiteral": "ARCHIVE_VERIFIED",
+      "sourceException": "only exactcase boot/request/tmp/ack data files, each bounded and bound by actual bytes/SHA; never whole usertree exclusion"
+    },
+    "stance": {
+      "templateDefault": "passive",
+      "originSetupRuntimeStance": "none",
+      "originSetupApi": "SwitchToStance",
+      "originSetupCallsPerRole": 1,
+      "ownershipResetDefault": "passive",
+      "rerunSetupOnLoad": false
+    }
+  },
+  "profileBinding": {
+    "profileLiteral": "T17_SAVE_SIX_V1",
+    "nativeImmutableSource": "deepfrozen simulation global InitAttributes, available through official GuiInterface.GetInitAttributes",
+    "initSettingsKey": "T17SaveReceiptBinding",
+    "bindingKeys": {
+      "profile": "literal T17_SAVE_SIX_V1",
+      "campaignNonce": "existing boot campaignNonce 64lowerhex",
+      "sourceManifestSHA": "existing boot sourceManifestSHA 64lowerhex; source code identity independently verified by host fullguards, not native self-hash",
+      "seed": "actual seed42/7 matching InitAttributes.settings.Seed"
+    },
+    "originConstruction": "fixed StartGame attrs derive binding from verified immutable boot before engineStart; native freezes InitAttributes; no later setter/lazy binding",
+    "loadConstruction": "original saved metadata initAttributes binding retained unchanged; fresh boot must match it; never inject load caseNonce into simulation or change loaded attrs",
+    "caseIdentity": "caseNonce/caseID and actual PID/source/profile association remain GUI/host external authority; not claimed independently checked inside simulation. Engine.GuiInterfaceCall reaches only current live Game/simulation context; helper ledger is fresh per process and never deserialized."
+  },
+  "commandReceipts": {
+    "purpose": "Native after-handler dispatch receipt only, never acceptance or live replay ACK",
+    "method": "ReadSaveCommandReceipts",
+    "exposure": "NEW opt-in GuiInterface.prototype.ReadSaveCommandReceipts plus exposedFunctions entry; delegates exported pure reader",
+    "export": "Engine.RegisterGlobal(\"T17ReadSaveCommandReceipts\", readonlyReader) from same helper lexical scope as private wrapper writer; no exported append/clear/bind/set API",
+    "wrapperFile": "simulation/helpers/ZZZZZT17SaveCommandWitness.js",
+    "fixtureCommandRegistrationPrecedes": "simulation/helpers/ZZZZAT17SaveFixtureCommands.js (after existing ZZZT17SubmarineCommands, before witness)",
+    "guiInterfaceFile": "simulation/components/ZZZZZT17SaveGuiReceiptInterface.js after official GuiInterface registration; exports no component or persistent fields",
+    "limits": {
+      "maxDispatchesPerProcess": 32,
+      "maxNativeEventsPerProcess": 64,
+      "maxEventsPerRead": 2,
+      "maxReadRequestCanonicalASCIIBytes": 8192,
+      "maxReadReplyCanonicalASCIIBytes": 16777216,
+      "maxStickyFaultRecords": 64,
+      "canonicalByteMeaning": "JSON.stringify of freshly built data-only ASCII envelope (strings represented UTF16 codeunits in typed graphs), not claimed native clone-buffer size; overflow => explicit terminal read/writer fault, never truncated healthy prefix"
+    },
+    "request": {
+      "schemaLiteral": "T17_SAVE_COMMAND_RECEIPT_READ_V1",
+      "required": [
+        "schema",
+        "profile",
+        "campaignNonce",
+        "sourceManifestSHA",
+        "seed",
+        "expectedPrincipal",
+        "expectedSendOrdinal",
+        "fromEventSeq",
+        "maxEvents"
+      ],
+      "rules": {
+        "profile/campaignNonce/sourceManifestSHA/seed": "must exactly match immutable native InitAttributes binding, never echo-and-trust",
+        "expectedPrincipal": "1or2, must equal actual native ScriptCall viewed-player argument; GUI also requires genuine GetPlayerID==expectedPrincipal immediately before and after query",
+        "expectedSendOrdinal": "integer1..32 for current outgoing command, GUI-only correlation value, never written to native command or ledger; reader does not filter by it",
+        "fromEventSeq": "integer1..65, <=nativeHighWater+1; zero/negative/futuregap rejected",
+        "maxEvents": "literal2; complete contiguous range up to two available events, never filter by player/cmd/type"
+      }
+    },
+    "response": {
+      "schemaLiteral": "T17_SAVE_COMMAND_RECEIPT_RANGE_V1",
+      "required": [
+        "schema",
+        "readStatus",
+        "reasonCodes",
+        "binding",
+        "nativeQueryCaller",
+        "requestEcho",
+        "ledger",
+        "events",
+        "inFlightDispatchSeq",
+        "stickyFaults"
+      ],
+      "rules": {
+        "readStatus": "OK/WAITING/PENDING/CONTEXT_REJECTED/BAD_RANGE/INCOMPLETE/STICKY_FAULT/READ_FAULT",
+        "reasonCodes": "fixed enum literals, no dynamic error stringification",
+        "binding": "native-derived profile/campaignNonce/sourceManifestSHA/seed or null on context failure; no fabricated native caseNonce/PID",
+        "nativeQueryCaller": "actual ScriptCall player integer; never relabel as actual native principal without GUIGetPlayerID + receipt.player checks",
+        "requestEcho": "exact requested expectedPrincipal/expectedSendOrdinal/fromEventSeq/maxEvents, correlation labels not native identity proof",
+        "ledger": "{highWaterEventSeq,highWaterDispatchSeq,rangeFrom,rangeEnd,hasMore}; fresh clone, counts derived from writer-owned closure only; null on rejected context",
+        "events": "all native events in requested contiguous range, length0..2, exact order; missing range when highWater says present => INCOMPLETE terminal",
+        "stickyFaults": "full bounded writer fault list, never cleared/consumed; any nonempty/overflow => noPASS",
+        "inFlightDispatchSeq": "null or active writer dispatch, PENDING only while original invocation active; unmatched entry with no active original => INCOMPLETE terminal"
+      }
+    },
+    "eventCommon": {
+      "required": [
+        "eventSeq",
+        "dispatchSeq",
+        "phase",
+        "handlerKey",
+        "actualPlayer",
+        "applicationT",
+        "binding",
+        "commandGraph"
+      ],
+      "rules": {
+        "eventSeq": "strictly increasing1..64, append-only across ENTRY/EXIT, never reset per query",
+        "dispatchSeq": "strictly increasing1..32 allocated at ENTRY, same on corresponding EXIT",
+        "phase": "ENTRY/EXIT",
+        "actualPlayer": "original native ProcessCommand/g_Commands player argument copied unchanged; not read-request field",
+        "applicationT": "actual IID_Timer.GetTime at wrapper boundary; ENTRY andEXIT must equal planned native applicationT before MT_Update",
+        "binding": "native-derived immutable profile/seed/campaignNonce/sourceManifestSHA, no caseNonce fiction",
+        "commandGraph": "Full COMMAND_VALUE_V1 envelope, exact single command root, complete originalcmd without additions/coercion"
+      }
+    },
+    "entryAdditionalRequired": [
+      "beforeGraph"
+    ],
+    "exitAdditionalRequired": [
+      "termination",
+      "returnJSValueType",
+      "returnValueGraph",
+      "throwInfo",
+      "afterGraph"
+    ],
+    "exitRules": {
+      "termination": "RETURNED/THREW/OBSERVATION_FAULT",
+      "returnJSValueType": "exact typeof plus typedGraph null/undefined distinction; RETURNED does not mean ACCEPTED",
+      "returnValueGraph": "Full HANDLER_RETURN_V1 envelope, exact returnValue root; known undefined is {t:undefined}; THREW/OBSERVATION_FAULT restricted diagnostic unavailable and noPASS",
+      "throwInfo": "null on RETURNED; otherwise exact {thrownType,safeDescriptorGraph,sameOriginalObjectRethrown}. safeDescriptorGraph full ERROR_OWN_DESCRIPTORS_V1 envelope exact exceptionOwnDescriptors root. thrownType exact typeof; same original thrown object/value forwarded. Observation-only error without actual handler throw uses unavailable OBSERVATION_FAULT and sameOriginalObjectRethrown=false, stickyFAIL. No getter/coercion.",
+      "beforeGraph/afterGraph": "Full GAMEPLAY_FULL_V1 envelopes, all40 roots and unchanged full original coverage; synchronous handler boundaries, rejected-command equality retained; unknown stickyFAIL"
+    },
+    "writerSemantics": [
+      "one native entry then one exit per handler, preserve original this/arguments/oneReflect.apply/return/same exception object",
+      "capture/encode/raw emit failures must not suppress original invocation or replace outcome; writer stickyfail and rawmissing/incomplete fail independently",
+      "all mutations only external private lexical ledger/highwaters/faults/inFlight; none in component ownfields/timers/metadata/savegraph",
+      "commit immutable plain typed event copies, no freezing or exporting live command/component references",
+      "overflow is terminal explicitfault, no ringbuffer/drop/truncatedhealthy answer; all receivedraw remains preserved during cleanup"
+    ],
+    "readerSemantics": [
+      "pure descriptor-safe read of native immutable binding + external ledger; no Init/bind/querycounter/cachewrite/clear/consume/sort/mutation",
+      "GuiInterface prototype adds method/exposedFunctions at source-load phase only, queries never modify prototype/component fields",
+      "return fresh data-only clone of full requested range; official native cross-compartment clone prevents GUI mutations affecting ledger",
+      "exact same request can return same prefix repeatedly without consuming; GUI handles its own contiguous cursor",
+      "invalid/unknown/context/range/encoding faults fail closed; reader does not mutate writer faults, GUI/host failures remain sticky"
+    ],
+    "guiConsumer": [
+      "GUI per fresh process cursor0/sendOrdinal0, no cursor stored simulation/metadata; just one unique outbound command at a time",
+      "before send allocate next sendOrdinal, record expected {dispatchSeq,ENTRYseq,EXITseq,player,exactcmd,applicationT}; ordinal never inserted in original native command",
+      "while current native principal remains expected, query from cursor+1/maxEvents2 once per onTick using genuine GetPlayerID before/after",
+      "validate each event contiguous, phase alternation, same dispatchSeq and exactcmd/player/plannedT/binding; advance only GUI cursor/cache for validated ENTRY/EXIT, not native ledger; missing WAITING/PENDING may poll within unchanged case/semantic schedule deadlines",
+      "restore1 only after complete matching EXIT termination RETURNED and zero sticky/unknown/incomplete. Any throw/gap/duplicate/unexpected event/contextfault/changed prefix => stickyFAIL stop laterwork, noPASS",
+      "RETURNED proves handler completion only. Required rejection before/after fullgraph/native state gates and successful action/HP/timer/motion/owner/Complete gates remain independently mandatory; void return never acceptance",
+      "after exit restore native1 and viewcaller1 by original policy, keep GUI sent+receipt transcript; final host verifies native replay + external dispatch raw + GUI sent bijection after case stop"
+    ],
+    "replayRole": "Host-only final three-way complete player/exactcmd/order/application-turn gate; no GUI live replay flush dependency, no per-command fileACK or alternate channel",
+    "unchangedScope": "original cases/samples/deadlines/600/90/30/80 budgets, VFS boot/request/archiveACK file allowlist, fullgraph/count0/native semantics unchanged",
+    "reasonCodeEnum": [
+      "NO_EVENTS_YET",
+      "ORIGINAL_ACTIVE",
+      "BAD_SCHEMA",
+      "UNKNOWN_KEY",
+      "BAD_TYPE",
+      "BAD_SIZE",
+      "BAD_PROFILE",
+      "BAD_CAMPAIGN",
+      "BAD_SOURCE",
+      "BAD_SEED",
+      "BAD_CALLER",
+      "BAD_RANGE",
+      "MISSING_EVENT",
+      "UNMATCHED_ENTRY",
+      "WRITER_FAULT",
+      "WRITER_OVERFLOW",
+      "ENCODER_UNKNOWN",
+      "READ_ENCODING_FAULT"
+    ],
+    "rangeFormula": "valid context: highWaterEventSeq=last committed event; rangeFrom=fromEventSeq; events every seq from fromEventSeq through min(highWater,fromEventSeq+1); rangeEnd=last returned seq or fromEventSeq-1 when empty; hasMore=rangeEnd<highWater; no hidden gaps",
+    "statusPrecedence": "CONTEXT_REJECTED/BAD_RANGE on invalid request/context; READ_FAULT on encoding; STICKY_FAULT on any writerfault; INCOMPLETE on committed gap/unmatched inactive entry; PENDING only original active; WAITING if no available events; otherwise OK. Only complete RETURNED pair with emptyfaults can permit restore.",
+    "typedRules": "Exact keys/types; no duplicates/unknown/coercion. Each graph matches typedGraph.contextSelection exact profile/count/names/order and common lossless codec/descriptor/prototype/reference/depth/node/size rules. No optional gameplay roots. Unavailable restricted diagnostic only, stickyFAIL.",
+    "faultRecordSchema": {
+      "required": [
+        "faultSeq",
+        "dispatchSeq",
+        "phase",
+        "reasonCode"
+      ],
+      "faultSeq": "integer1..64",
+      "dispatchSeq": "null or integer1..32",
+      "phase": "ENTRY/EXIT/EMIT/OVERFLOW",
+      "reasonCode": "reasonCodeEnum; no unknown string",
+      "overflow": "writer sticky overflow flag, preserve availablefaults; no healthy truncated response"
+    }
+  }
+}

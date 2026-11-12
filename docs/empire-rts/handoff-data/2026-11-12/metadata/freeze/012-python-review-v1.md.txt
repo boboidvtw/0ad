@@ -1,0 +1,42 @@
+<!-- Purpose: independent complete metadata Python/API source review. Date: 2026-10-22. -->
+# Metadata Python/API review v1
+
+**APPROVE_SOURCE_ONLY — 無 blocking findings。** Reviewer `/root/raw_python_review` 非作者。Manifest SHA `85f93c30ba9484b2cce4129e0ec930b7f85449ef7d5e363da94ae8814a4b4d30`；19/19 bindings實核長度與SHA一致。完整module160行、tests121行、CONTRACT、ASSESSMENT、before/source/RED/current evidence與primary源碼相容依據均審查；完整逐檔實核與新增證據hash見 `python-review-v1-input.json`，機器結論見 `python-review-v1.json`。
+
+Source SHA `96d9e51e6280b1998410d7a591eaf65c11dfd11bc68c3816255201bac30bfd43`；tests SHA `14d2a562a726ee8f06171f0a5298356060d4417fbd10e1637b41247a4046075e`。核可範圍是 strict raw JSON＋full metadata value comparator；不是metadata authenticity、expected controls來源、absence future schedule、整合runner或native acceptance。
+
+## 全範圍判斷
+
+- Pinned SavedGame.cpp:75及89-122建立time、engine_version、playerID、mods、initAttributes、gui、description；native覆加camera六欄。Official session.js:584-589 getSavedGameData回groups，Mod.cpp:184-203給enabled mods data。Comparator沒有猜runtime version/mod，也沒有重建simulation；primary snapshots只有source-compatible authority，不是本輪engine測值。
+- `_decode`先限exact bytes及16MiB，再strictUTF8；BOM、trailing/invalid JSON由strict decoder拒絕。Lexer只對字串外containers計深度，256cap在recursive parse前檢查。Object pairs hook對所有nested objects及解碼後key equality拒duplicates。parse hooks拒NaN/Infinity/overflow；int先確認finite binary64，保留-0；內部int/float comparison統一用binary64 bits，bool獨立，因此JS Number1與1.0可等、-0與+0不可等。
+- `_schema`對actual七欄與expected六欄exact檢查，expected含time必拒；native頂層型別完整核對，principal必literal integer1，拒bool/float/string。Caller interval是exact int、nonnegative、ordered、≤2^53−1；actual time finite、integral、nonnegative且inclusive window內。沒有讀current clock或把兩次native time強迫相等。
+- `_same`逐完整nested graph比較，object鍵order不影響、array順序/長度精確、string無Unicode normalization、unknown nested fields不能偷偷忽略。唯獨native time預先獨立驗證，其他六個完整欄位都比較；不挑camera/seed白名單或只比successflag。Any mismatch拒絕，不normalize/retry/fallback。
+- Pure API無filesystem/network/subprocess/engine，raw inputs不變；immutable result保留actual/expected完整bytes與各SHA、timestamp，status MATCH_METADATA_VALUES_ONLY。runtime_bound/native_verified兩旗預設false且init=False，屬普通API不可當runtime capability。Rejection stable reason；caller仍持有原raw，拒絕時的外部持久化由caller負責。MemoryError/control exceptions並未被假裝成semantic rejection，caller須監督UNKNOWN。
+- 16MiB與depth256是encoded input和nesting cap，不等於完整Python物件數/heap peak或hard CPU deadline證明。Parser與pending traversal仍配置decoded graph/list；不推論全host resource bounds已通過。Source契約已明確此限制，非本slice偷漏的native gate。
+
+## Tests 與獨立 controls
+
+ImportRED保留。初次14group有4FAIL源於actual/expected shallow alias；before manifests/source/tests/log全留，module與current完全同SHA，tests唯一修正是pair使用獨立json decode建立nested actual controls。原FAIL不是current acceptance。Current14normal及14optimized PASS與2compile-only結果已讀；沒有重跑舊DONE suite。`git diff -- '*.py'`已執行，兩來源檔是untracked，故以完整檔案檢查；ruff/mypy/pylint/black/bandit不可用，未安裝亦未宣稱static tools PASS。
+
+新增 `python-focused-v1/probe.py` 十二個獨立model controls全PASS；各bytes案例的actual.raw/expected.raw與完整results/log已保留：
+
+1. binary64下9007199254740992與9007199254740993語意可等。
+2. 負underflow與-0保持相同bits。
+3. expected-side escaped-key duplicate拒絕。
+4. expected-side overflow拒絕。
+5. expected-side BOM拒絕。
+6. expected bytearray拒絕。
+7. UTF8 supplementary字元與JSON UTF16 escape pair相等。
+8. NFC/NFD字串不normalize救相等。
+9. nested bool/number不可混同。
+10. 兩邊同有futureSchedule只回values-only match，runtime_bound/native_verified仍false。
+11. exact256 container depth可解析。
+12. 257 container depth拒絕。
+
+第10項刻意確認本API能力界線，不是future schedule gate PASS。Comparator不可能從兩份相同任意blob驗證真正creator/provenance；expected必由caller獨立source-lock並綁actual engine/mod/init/GUI creator/camera及principal。Future schedules/counters absence需獨立closure與實值證據，尚未完成。
+
+## OPEN 界線與保全
+
+Actual expected-controls producer/provenance、GUI immutable ACK/freshload、metadata creator/getter/prototype/serialization purity、absence future schedules/counters、full simulation.dat/queue/40roots equality、actual engine save/roundtrip、full host runner/current整合reviews、resource budgets/hard deadlines/result persistence/drain/reap、original/copy/profile/runtime inventories與source locks、獨立fresh guard均OPEN。Engine/copy/guard/attempt仍NOT_RUN/NOT_CREATED；此核可不消耗任何seed/retry，也不能升格T17/T18或原FAIL原因。
+
+僅新增三份Python review檔與自有focused目錄；source/tests/manifest、全部原RED/FAIL/raw/seals/attempts未動，無C++/commit/push/delete/external/paid操作。

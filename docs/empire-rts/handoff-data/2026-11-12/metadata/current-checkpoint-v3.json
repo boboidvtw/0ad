@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "createdUTC": "2026-11-05T19:07:20.339283+00:00",
+  "status": "R07_FULL_THREE_WAY_DESIGN_REVIEW_IN_PROGRESS",
+  "priorCheckpoint": "current-checkpoint-v2.json",
+  "designManifest": {
+    "path": "work/t17-metadata-controls-design-20261105/design-manifest-v1.json",
+    "sha256": "e73e6c48bd2a7ea31742aef7ad4b1744e6f28dbed799c39b28b25a3f9079b93a",
+    "bindings": 85,
+    "snapshotBytes": 1447275
+  },
+  "rootDataReadback": "85 current+snapshots bytes/SHA MATCH; not review approval",
+  "formalReviews": {
+    "CODE": {
+      "task": "/root/r07_design_code_review",
+      "status": "FULL_REVIEW_IN_PROGRESS_NO_APPROVAL",
+      "progress": "work/t17-metadata-controls-design-20261105/design-review-CODE-progress-v3.json",
+      "progressSHA256": "397eef4562b47ce5d7832226702542be714bb8b609b964c40c07b716d3c4c48c",
+      "reportPath": "work/t17-metadata-controls-design-20261105/design-review-CODE-v1.json"
+    },
+    "Python": {
+      "task": "/root/r07_design_python_review",
+      "status": "FULL_REVIEW_IN_PROGRESS_NO_APPROVAL",
+      "progress": "work/t17-metadata-controls-design-20261105/design-review-Python-progress-v1.json",
+      "progressSHA256": "6f5caa2dbe3174e19ac08c01172aa66589ddeb1e83d26eb1fe6d2cb7d5da40fe",
+      "reportPath": "work/t17-metadata-controls-design-20261105/design-review-Python-v1.json"
+    },
+    "JSAPI": {
+      "task": "/root/r07_design_jsapi_review",
+      "status": "FULL_REVIEW_IN_PROGRESS_NO_APPROVAL",
+      "progress": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v2.json",
+      "progressSHA256": "b1b4e820c3667726ef39ba77887c44fe97aaf762a92313a844b757f8d9a89ce2",
+      "reportPath": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-v1.json"
+    }
+  },
+  "completedInvestigations": [
+    "native-design-investigation-v1.json",
+    "host-design-investigation-v1.json"
+  ],
+  "rootCorrection": "ROOT-CAUSALITY-CORRECTION-v1.json",
+  "allThreeDesignApproved": false,
+  "implementationAdmitted": false,
+  "nativeAdmitted": false,
+  "guardRefreshApproved": false,
+  "formalCases": "THREE_NOT_RUN",
+  "next": "Resume only these same three exact metadata review tasks/settings from their latest versioned progress on live allowed quota; no replacement reviewer/model workaround. Inspect actual full reports then root validates complete reasoning/coverage before any source assignment.",
+  "quotaErrorsPreservedIn": "current-checkpoint-v2.json",
+  "automation": "0ad-t14 ACTIVE every5h target currentchat, unchanged cadence",
+  "boundary": "No old reviews/helpers/cases rerun; no C++/commit/push/delete/externalmessages/paid/new schedules"
+}

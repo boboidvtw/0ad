@@ -1,0 +1,690 @@
+{
+  "schema": 1,
+  "createdClientDate": "2026-10-25",
+  "reviewer": "current_code_review",
+  "verdict": "APPROVE_SOURCE_ONLY",
+  "scope": "FRESH_COMPLETE_GUI_TOP_LEVEL_MAP_SCRIPT_CALLER_SOURCE_REVIEW",
+  "reviewedManifest": {
+    "path": "work/t17-save-session-transaction-preparation/map-script-fix/manifest.json",
+    "sha256": "06a9cd6b7f8651d03daf5d57103d0aacc3025af0c92ab9c97b053d09ba0f1c9a",
+    "bindings": 98,
+    "artifacts": 55,
+    "referenceInputs": 43,
+    "status": "ALL98_BYTES_SHA_MATCH"
+  },
+  "sourceSHA256": {
+    "tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885",
+    "tools/epoch-rts/test-t17-save-map-script.cjs": "7fd6f56f68d3c418ada4aac7406a5b034c28298066be01763ee1eab49af8f139",
+    "tools/epoch-rts/t17-save-harness/gui/pregame/mainmenu.js": "7f6de02d91282d62f1de03274a770241c801fbc7bbbb5719c15fff8bdc7052b7",
+    "tools/epoch-rts/t17-save-harness/gui/pregame/t17_save_upstream_mainmenu.js": "48672defb66d9520033c47468c3b39b9abca23495cb64c97ba1769ea2a3cd2c1",
+    "tools/epoch-rts/t17-save-harness/gui/session/session.xml": "dd4855d1ccde6fdc75fc40fca9d51475ef36c9d25e4a43bae5046150b482cad6",
+    "tools/epoch-rts/t17-save-harness/gui/t17_save/typed_graph_gui.js": "eb6303d734b85b714aaaa3c6179f27f2987a50dc86954d9b40e324bc714ed5c8",
+    "tools/epoch-rts/test-t17-save-session-transaction.cjs": "4d340138621bf2c61c05f3fa4e9749147bd48a71ed0c847acced055f017a661b"
+  },
+  "findings": [],
+  "severityCounts": {
+    "CRITICAL": 0,
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 0
+  },
+  "reviewAreas": [
+    {
+      "area": "Complete current transaction",
+      "status": "PASS_SOURCE_ONLY",
+      "detail": "Read entire current297-line transaction body including unchanged boot/keys/binding/context/fullgraph/view/facts/creator dispatch/receipt FIFO/prearm/transaction/ACK/branches/camera/init/tick/wrappers. Embedded WIRE and PREARM parsed and exactdeepmatched original wirev4 and7c07 additive authority; full graph codec adapter and prototype catalog remain GUIvalidation-only, not admission selfauthentication. Exact removal of added31bytes restores beforeSHA65713fd5. All other owned files and18-suite bytes MATCH previous89e reference bindings; old approval not silently inherited."
+    },
+    {
+      "area": "Native and official map producer",
+      "status": "PASS_LITERAL_CALLER_REPAIR_ONLY",
+      "detail": "Official settings randomGetData reads map.json; MapCache supplies data, Map.updateMapMetadata reads settings.Script and Map.toInitAttributes writes TOPLEVEL script; GameSettings aggregates/finalizes andlaunchGame forwardsattrs. Native Game.cpp random branch consumes attrs.script/settings, World forwards scriptFile, MapReader adds maps/random/ to nonemptybasename. New literal is exactlyfixturejson Script and selects proper sourcecontract argument rather than settings-only or doubleprefix. Native MapGenerator.cpp primarybody remains unavailable/Insufficientdata; no claim actual C++ execution or fullRMS selection."
+    },
+    {
+      "area": "Pregame actual ESM lifecycle",
+      "status": "PASS_SOURCE_MODEL_BOUNDARY",
+      "detail": "Read complete ownedwrapper and exactupstream init. Static imports codec+transaction, calls originalinit viaReflect.apply(this,args), returns exact originalPromise, live getHotloadData reexport; onTick priorreceiver/args/return thenonce boot/start, consumedbeforeattempt, BOOT_BLOCK newline. New test actuallylinks those ESMmodules and exercises ReadBoot/StartFromBoot for42/7, validates completeattrs/player1/storeReplaytrue/loadingattrs, once route. Five UI-only imports explicitSyntheticModule/nativeEngine methods stubbed; model notfullUI/native loader proof."
+    },
+    {
+      "area": "New test quality and preserved RED",
+      "status": "PASS_SOURCE_MODEL_ONLY",
+      "detail": "Full new8109byte test read. Three groups: actualESMbootstrap exactattributes for42/7; unmodified officialMap methods directcall source-created state; missing/settings-only/wrong/doubleprefix/empty negative projections. Projection regex asserts actualnativefield/prefix strings, notexecution ofCPP, nor substitute for officialmapnativeclosure. OriginalRED missing attrs.scriptundefined retained; current3groupsPASS+2syntax logs/experimentalwarning retained. Old18suite notrerun; no repetitive reviewer run or unresolved concrete hypothesis requiring a fresh control."
+    },
+    {
+      "area": "Once scheduling and prearm/receipts",
+      "status": "PASS_OTHER_PATHS_SOURCE_ONLY",
+      "detail": "Bootweakset once startup, origin5save7commands, fivefixedloadbranches, principals1/2 heldthrough completecontiguousENTRY/RETURNED EXIT, all40graph/actualTimer/binding/command checks, rejectionfullbeforeafter equality, no addedcmdfields; restore1onlycompletepair. Immutableonce armintent/requestreadback/permitfullbinding/exactdecimal5e9correlation, legitimatewindow, noGUIclockauthority, fullACK/endpointbeforeResume, failureemit terminal. Originalfixed schedule unchanged; no retry/nativeapproval."
+    },
+    {
+      "area": "Save/metadata/camera boundary",
+      "status": "PASS_SOURCE_WITH_HOST_INTEGRATION_OPEN",
+      "detail": "Original SaveGame/getSavedGameData call untouched, rawcamera getterbaseline vsnominalorigininput kept, noresetonload, scheduler/nonce/steps remain lexical notsavedGUI. Host independent expectedinitAttributes MUST now include exacttop-levelscript alongwithexistingcontrols, never actualmetadata-asexpected. That hostintegration explicitlyNOT_IMPLEMENTED; sourceproducerrepair is notmetadataaccepted. Nativeprincipal/queue0/archive/fullgraphs/restore guard authenticity remainsseparate."
+    },
+    {
+      "area": "Session XML and first pause semantics",
+      "status": "PASS_LIMITED_WRAPPED_INIT",
+      "detail": "Originalscriptdirectories preserved plus threefinalexplicitdependencies, transactionlast; non-sessionfilepaths avoiddirectorydoubleload. Wrapper init firstnativeaction SetPaused is confinedto wrappedinit. Officialsession global loading already has nativecalls before wrapperinstallation; no global-script-loadingfirstnativecall/noMutation claim. NativeStartSavedGame/page/global/upstreaminit/loadingSimUpdate/queue sideeffects remainfullsource/runtimegateOPEN; oldstubinit models do notproveentireload."
+    },
+    {
+      "area": "History and actual closure",
+      "status": "OPEN_RETAINED",
+      "detail": "Old89e map-start applicabilitywithdrawal remainsunchanged; newsourceonlyreview fixes boundedproducerfield without resurrectingoldwholemapstartapproval. AllactualeffectiveVFS/writers/dynamicglobals/intrinsics/loadregistration/freshrealm/TriggerScripts/nativebinary/mapgenbody/Admissionclone/typedchildren/restore/fullhost/runtimeguards/startup5s/fullpipeline remainOPEN orNOTRUN. Engine/attempt/guard notcreated; designapproval/modelPASS not native authentication."
+    }
+  ],
+  "verification": {
+    "authorNewSourceModelGroups": 3,
+    "authorChangedNewSyntax": 2,
+    "preservedRED": "missing top-level script actualundefined",
+    "old18SourceUnchanged": true,
+    "old18SuiteRerun": false,
+    "newTestsFullRead": true,
+    "reviewerTestsRun": 0,
+    "reversePatchExactBefore": true,
+    "embeddedWireAndPrearmDeepMatch": true,
+    "nativeSourceProjection": "SOURCE_DERIVED_CONTRACT_NOT_CPP_EXECUTION",
+    "uiDependencies": "FIVE_EXPLICIT_SYNTHETIC_IMPORTS",
+    "engineRun": false,
+    "sourceOrOldEvidenceModified": false,
+    "deleteCommitNetworkFetch": false
+  },
+  "old89eApplicability": "WITHDRAWN_PRESERVED_NOT_RETROACTIVELY_REAPPROVED",
+  "hostExpectedMetadataInitControls": "NOT_IMPLEMENTED_INTEGRATION_OPEN_INDEPENDENT_PRECOMMIT_REQUIRED",
+  "missingMapGeneratorPrimary": "INSUFFICIENT_DATA_NOT_FETCHED",
+  "firstPauseScope": "FIRST_NATIVE_ACTION_OF_WRAPPED_SESSION_INIT_ONLY_NOT_GUI_GLOBAL_LOADING",
+  "actualSourceClosure": "OPEN_FULL_LOADER_WRITERS_ADMISSION_CLONE_RESTORE_RUNTIME_GUARDS",
+  "fullHostPipeline": "OPEN",
+  "nativeVerified": false,
+  "archiveVerified": false,
+  "caseComplete": false,
+  "engineAuthority": false,
+  "exactBindingChecks": [
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/CONTRACT.md",
+      "sha256": "c795225a7ea63b2e3dabba0a698fa2f88d050b38d62006732a9bff0ecb583375",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/SOURCEPROOF.md",
+      "sha256": "049f464afdb86f35486d11a393dd56f5240e9aa6b17acb7352d1437bc559c46e",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/before/tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js",
+      "sha256": "65713fd54def4325f0b6cad32504cb386248572a1e0732b2bb1aa48f6a02db14",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/before-mapping.json",
+      "sha256": "cedb527cd1867f59ed07c6180d7ffd5c266e277fd3f43c63b5d7239c1575f254",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/checkpoint.json",
+      "sha256": "0709522ecd07f567323ee6d292ba32034873fa7c0ea044bbd6cf69b3864494be",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/tools/epoch-rts/t17-save-harness/gui/t17_save/command_creators.js",
+      "sha256": "689ae8db68126b76c521e22e4925eeb4f94e2bdc68403110ed054f862fd5fd65",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/tools/epoch-rts/t17-save-harness/maps/random/epoch_t17_save_six.js",
+      "sha256": "9736a6ee035bce491a1b29d818b7589381ed5257bbbb498f6a22f59969a57209",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/tools/epoch-rts/t17-save-harness/maps/random/epoch_t17_save_six.json",
+      "sha256": "09a0c65a4d3c9532e12414d6d9f0d8b5565c115f467b9304b2502f90d2a7476f",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/tools/epoch-rts/t17-save-harness/simulation/helpers/ZZZZT17SaveTypedGraph.js",
+      "sha256": "f2d8d3869039b137f6746444a43cae0bd745288725b45ac4de2449e1f0531557",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/GUI-RMS-PRODUCER-GAP.md",
+      "sha256": "052e041bf07061e1aac7005d13d35556bd8bb807d781b56227548936e7900105",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/OPEN-obligations.json",
+      "sha256": "c5ecae7618e204fc52c9e3785f51ae33a548b28c35071a0988d285e571297754",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/manifest.json",
+      "sha256": "6fec187562f1c4390468bc015262f07e5282996919864fc5f509d9fb35c0064f",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/native-callgraph.json",
+      "sha256": "3cc23d185289f03784f8492c140aeabe1b9cdbbd1f98b1b21f1f2fa16c7c1c5e",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gamesettings/GameSettings.js",
+      "sha256": "ab2291fdfccc0ebbb810fb78dffb6da0cbe46c13e20bf9eb2a949e263e44e2b0",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gamesettings/attributes/Map.js",
+      "sha256": "fe0de95e3307fdd9d7fafd425d8122ed0e827acbaca25feb85cc9f5078239b7c",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gui/common/settings.js",
+      "sha256": "cb934430ed04d64016212a34754254672df95f3ba1bb19deac3048d3e99bab49",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gui/gamesetup/Controllers/GameSettingsController.js",
+      "sha256": "7406731a0c37af7169bc8554f655f99509fbe87cb65b0dfb65f828b1b9aa926c",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gui/maps/MapCache.js",
+      "sha256": "51a871abdd0bbe3fd3174aa9bff579198c0719728cee9a3bbf1edf3777f484e7",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/graphics/MapReader.cpp",
+      "sha256": "a7505e5b56defd8253726c866854ba3f69d3155caf985336bf64d34c0e1d350b",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/ps/Game.cpp",
+      "sha256": "766c220c7b8568d26ad04bcde19eeddfdc9fdd6539e56dba9fbf8d472a6e4a8a",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/ps/World.cpp",
+      "sha256": "fbd8f9147930f1f231492117299a880ad84755e6881c9d4ddd4a80b32c274363",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md",
+      "sha256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/source-registry.json",
+      "sha256": "3e6278f49bfe22d5298e8539497819fc14406319d695fe975a6e0e091995674b",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/wire-schema.json",
+      "sha256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/CONTRACT.md",
+      "sha256": "bb06a3abcf09479266ee2a5f7668b86ff8beb9de7139e220d60be36c45e7134d",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/SOURCEPROOF.md",
+      "sha256": "9cfaeefcc433818e8098bae9dd3aa91271b6e51befb2b56c40fab89d3d56c1d9",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/attempt-07.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/attempt-07.stdout.log",
+      "sha256": "ca123b4c07fdb3afbe2dc4692fe272aae1186d8770cda43b0a2665071b8bed53",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/code-review-v1.json",
+      "sha256": "07a0c9c5ff1c5abceafffcdb96242c90f14f93bc05487c1e1eab70a091f12c2b",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/code-review-v1.md",
+      "sha256": "8c7c9cfd130910dac5c733c137a2d2a675a163a869b404dd06bf423e0c1b16ee",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/js-api-review-v1.json",
+      "sha256": "c575ffd5f2cb8356056fc7e1b261bef51f128b1f292a85e456a924708d580a17",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/js-api-review-v1.md",
+      "sha256": "318eb1b1859d10bef8887d5cc69e029b82aaee08c9700ba4952945c4148cdddb",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/manifest.json",
+      "sha256": "89e1048d75d9a2bb5961e7c6d47b6e86df386bb9c7413ef64df9f31b451bff09",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/map-start-applicability-withdrawal.json",
+      "sha256": "d65c7f506c4b67293b27f41ae795125f5da4540ccc1fea975a304b16fab50fec",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-client-implementation/proof-matrix.json",
+      "sha256": "25adf54d1f20aae06c6e167a02c25fefcb31e0eedd5129423c41c3511c2e7356",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/SPEC.json",
+      "sha256": "2271dfdee03523a3438527bfbb8a480de6757fff8925d9d09fc5c51ea61f4009",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/SPEC.md",
+      "sha256": "bbde20a000d4e3e5bdaed90073c1a9d3a886048d3e9602d46af3ed665c93410e",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/WIRE-EXTENSION.json",
+      "sha256": "05ee5b55406a5d88af2331782afd9ef18452e374572fbb843b8c2c9c67747baf",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/code-design-review-v1.json",
+      "sha256": "42384e8486999f79cf54e2e2fc102fdd5dc01235b1092ed540be61e324466634",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/js-api-design-review-v1.json",
+      "sha256": "041858593dba7b11b6e112e64ce26fe08f40447ccc341e6fb572092f7d740630",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/context/work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/manifest.json",
+      "sha256": "7c07a7de8e959ecd2711a29e892eaa3a34669a80a7420ab5dbe51bc627d76ee5",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/exact-source-diff.patch",
+      "sha256": "fa7b1a2d99e08048646436d0d3079d1fdb140ab2829c5acf394a23b9589bd531",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/frozen-source/tools/epoch-rts/t17-save-harness/gui/pregame/mainmenu.js",
+      "sha256": "7f6de02d91282d62f1de03274a770241c801fbc7bbbb5719c15fff8bdc7052b7",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/frozen-source/tools/epoch-rts/t17-save-harness/gui/pregame/t17_save_upstream_mainmenu.js",
+      "sha256": "48672defb66d9520033c47468c3b39b9abca23495cb64c97ba1769ea2a3cd2c1",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/frozen-source/tools/epoch-rts/t17-save-harness/gui/session/session.xml",
+      "sha256": "dd4855d1ccde6fdc75fc40fca9d51475ef36c9d25e4a43bae5046150b482cad6",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/frozen-source/tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js",
+      "sha256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/frozen-source/tools/epoch-rts/t17-save-harness/gui/t17_save/typed_graph_gui.js",
+      "sha256": "eb6303d734b85b714aaaa3c6179f27f2987a50dc86954d9b40e324bc714ed5c8",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/frozen-source/tools/epoch-rts/test-t17-save-map-script.cjs",
+      "sha256": "7fd6f56f68d3c418ada4aac7406a5b034c28298066be01763ee1eab49af8f139",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/frozen-source/tools/epoch-rts/test-t17-save-session-transaction.cjs",
+      "sha256": "4d340138621bf2c61c05f3fa4e9749147bd48a71ed0c847acced055f017a661b",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/green.stderr.log",
+      "sha256": "a67a59a2a55d20c0f942466d65816966da768ab7795feda2459225f7ca6a73e5",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/green.stdout.log",
+      "sha256": "1c60d829e129e7e44f412e5e0bcebc9b2388e5ce128751da99fc53424835d226",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/red.stderr.log",
+      "sha256": "d2af839c6baeaa5a04d9af63c416ab350a25f66d90873c80afeccd38d36fd10b",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/red.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/source-context-mapping.json",
+      "sha256": "e35a4294adf92e250b654438dc4f163248cd6728eb7b65f53549c00ee2b5ef9b",
+      "status": "MATCH"
+    },
+    {
+      "section": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/map-script-fix/syntax.json",
+      "sha256": "28d66d6e8d921977bc936e42a39e47a8d6e19d6a81d5e6f2dfc24b641925e34b",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js",
+      "sha256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "tools/epoch-rts/t17-save-harness/gui/t17_save/typed_graph_gui.js",
+      "sha256": "eb6303d734b85b714aaaa3c6179f27f2987a50dc86954d9b40e324bc714ed5c8",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "tools/epoch-rts/t17-save-harness/gui/pregame/mainmenu.js",
+      "sha256": "7f6de02d91282d62f1de03274a770241c801fbc7bbbb5719c15fff8bdc7052b7",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "tools/epoch-rts/t17-save-harness/gui/pregame/t17_save_upstream_mainmenu.js",
+      "sha256": "48672defb66d9520033c47468c3b39b9abca23495cb64c97ba1769ea2a3cd2c1",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "tools/epoch-rts/t17-save-harness/gui/session/session.xml",
+      "sha256": "dd4855d1ccde6fdc75fc40fca9d51475ef36c9d25e4a43bae5046150b482cad6",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "tools/epoch-rts/test-t17-save-session-transaction.cjs",
+      "sha256": "4d340138621bf2c61c05f3fa4e9749147bd48a71ed0c847acced055f017a661b",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "tools/epoch-rts/test-t17-save-map-script.cjs",
+      "sha256": "7fd6f56f68d3c418ada4aac7406a5b034c28298066be01763ee1eab49af8f139",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "tools/epoch-rts/t17-save-harness/gui/t17_save/command_creators.js",
+      "sha256": "689ae8db68126b76c521e22e4925eeb4f94e2bdc68403110ed054f862fd5fd65",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "tools/epoch-rts/t17-save-harness/simulation/helpers/ZZZZT17SaveTypedGraph.js",
+      "sha256": "f2d8d3869039b137f6746444a43cae0bd745288725b45ac4de2449e1f0531557",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "tools/epoch-rts/t17-save-harness/maps/random/epoch_t17_save_six.json",
+      "sha256": "09a0c65a4d3c9532e12414d6d9f0d8b5565c115f467b9304b2502f90d2a7476f",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "tools/epoch-rts/t17-save-harness/maps/random/epoch_t17_save_six.js",
+      "sha256": "9736a6ee035bce491a1b29d818b7589381ed5257bbbb498f6a22f59969a57209",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/manifest.json",
+      "sha256": "6fec187562f1c4390468bc015262f07e5282996919864fc5f509d9fb35c0064f",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/native-callgraph.json",
+      "sha256": "3cc23d185289f03784f8492c140aeabe1b9cdbbd1f98b1b21f1f2fa16c7c1c5e",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/GUI-RMS-PRODUCER-GAP.md",
+      "sha256": "052e041bf07061e1aac7005d13d35556bd8bb807d781b56227548936e7900105",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/OPEN-obligations.json",
+      "sha256": "c5ecae7618e204fc52c9e3785f51ae33a548b28c35071a0988d285e571297754",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/ps/Game.cpp",
+      "sha256": "766c220c7b8568d26ad04bcde19eeddfdc9fdd6539e56dba9fbf8d472a6e4a8a",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/ps/World.cpp",
+      "sha256": "fbd8f9147930f1f231492117299a880ad84755e6881c9d4ddd4a80b32c274363",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/graphics/MapReader.cpp",
+      "sha256": "a7505e5b56defd8253726c866854ba3f69d3155caf985336bf64d34c0e1d350b",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gamesettings/attributes/Map.js",
+      "sha256": "fe0de95e3307fdd9d7fafd425d8122ed0e827acbaca25feb85cc9f5078239b7c",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gamesettings/GameSettings.js",
+      "sha256": "ab2291fdfccc0ebbb810fb78dffb6da0cbe46c13e20bf9eb2a949e263e44e2b0",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gui/maps/MapCache.js",
+      "sha256": "51a871abdd0bbe3fd3174aa9bff579198c0719728cee9a3bbf1edf3777f484e7",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gui/common/settings.js",
+      "sha256": "cb934430ed04d64016212a34754254672df95f3ba1bb19deac3048d3e99bab49",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/official-public/gui/gamesetup/Controllers/GameSettingsController.js",
+      "sha256": "7406731a0c37af7169bc8554f655f99509fbe87cb65b0dfb65f828b1b9aa926c",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/CONTRACT.md",
+      "sha256": "bb06a3abcf09479266ee2a5f7668b86ff8beb9de7139e220d60be36c45e7134d",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/SOURCEPROOF.md",
+      "sha256": "9cfaeefcc433818e8098bae9dd3aa91271b6e51befb2b56c40fab89d3d56c1d9",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/proof-matrix.json",
+      "sha256": "25adf54d1f20aae06c6e167a02c25fefcb31e0eedd5129423c41c3511c2e7356",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/attempt-07.stdout.log",
+      "sha256": "ca123b4c07fdb3afbe2dc4692fe272aae1186d8770cda43b0a2665071b8bed53",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/attempt-07.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/manifest.json",
+      "sha256": "89e1048d75d9a2bb5961e7c6d47b6e86df386bb9c7413ef64df9f31b451bff09",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/code-review-v1.json",
+      "sha256": "07a0c9c5ff1c5abceafffcdb96242c90f14f93bc05487c1e1eab70a091f12c2b",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/code-review-v1.md",
+      "sha256": "8c7c9cfd130910dac5c733c137a2d2a675a163a869b404dd06bf423e0c1b16ee",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/js-api-review-v1.json",
+      "sha256": "c575ffd5f2cb8356056fc7e1b261bef51f128b1f292a85e456a924708d580a17",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/js-api-review-v1.md",
+      "sha256": "318eb1b1859d10bef8887d5cc69e029b82aaee08c9700ba4952945c4148cdddb",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-session-transaction-preparation/prearm-client-implementation/map-start-applicability-withdrawal.json",
+      "sha256": "d65c7f506c4b67293b27f41ae795125f5da4540ccc1fea975a304b16fab50fec",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md",
+      "sha256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/wire-schema.json",
+      "sha256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/source-registry.json",
+      "sha256": "3e6278f49bfe22d5298e8539497819fc14406319d695fe975a6e0e091995674b",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/SPEC.json",
+      "sha256": "2271dfdee03523a3438527bfbb8a480de6757fff8925d9d09fc5c51ea61f4009",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/SPEC.md",
+      "sha256": "bbde20a000d4e3e5bdaed90073c1a9d3a886048d3e9602d46af3ed665c93410e",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/WIRE-EXTENSION.json",
+      "sha256": "05ee5b55406a5d88af2331782afd9ef18452e374572fbb843b8c2c9c67747baf",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/manifest.json",
+      "sha256": "7c07a7de8e959ecd2711a29e892eaa3a34669a80a7420ab5dbe51bc627d76ee5",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/code-design-review-v1.json",
+      "sha256": "42384e8486999f79cf54e2e2fc102fdd5dc01235b1092ed540be61e324466634",
+      "status": "MATCH"
+    },
+    {
+      "section": "referenceInputs",
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/js-api-design-review-v1.json",
+      "sha256": "041858593dba7b11b6e112e64ce26fe08f40447ccc341e6fb572092f7d740630",
+      "status": "MATCH"
+    }
+  ],
+  "writes": "Only map-script-fix/code-review-v1.json and.md; no newcounterexample necessary."
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "purpose": "Independent fresh full CODE DESIGN review of the exact prearm v2 design; no source or native acceptance",
+  "reviewer": {
+    "task": "/root/prearm_code_review",
+    "independentOfAuthor": true,
+    "role": "CODE DESIGN"
+  },
+  "createdUTC": "2026-10-23T00:01:18.538947+00:00",
+  "manifest": {
+    "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/manifest.json",
+    "sha256": "7c07a7de8e959ecd2711a29e892eaa3a34669a80a7420ab5dbe51bc627d76ee5",
+    "verifiedBindings": 23,
+    "mismatches": []
+  },
+  "verdict": "APPROVE_DESIGN_ONLY",
+  "findings": [],
+  "severityCounts": {
+    "CRITICAL": 0,
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 0
+  },
+  "coverage": [
+    {
+      "area": "Integrity, scope and authority",
+      "assessment": "Actual bytes/length/SHA checked for all17 artifacts and6 reference inputs. Read current SPEC.md/json, WIRE-EXTENSION and timeline, checkpoint/revision/mapping and relevant complete pinned API implementations. Read base integrated SPEC and wire design, source-registry graph coverage obligations and existing CODE/JS design findings as context. This is a full review of this amendment and retained obligations, not a reapproval of all underlying product source or old completed suites."
+    },
+    {
+      "area": "Origin start lower bound",
+      "assessment": "GUI creates once immutable intent only at the preceding200ms lattice, with native principal/viewcaller1 and no outstanding command, without pause/command/simulation writes. Host validates actual request and reserves immutable monotonic t_arm before permit publication. Legal-window GUI validates permit before Pause, establishing t_arm<=Pause without assuming stdout flush or wallclock alignment. Late/missing/mutated/unmatched permit, skipped window or unknown context fails without rearm or Save."
+    },
+    {
+      "area": "Load start lower bound and first action",
+      "assessment": "Host creates intent from immutable original archive/boot plan rather than inventing native observations; reserves t_arm/D and publishes permit before single Popen. Remaining full guards/reservation/fresh guard/startup/StartSavedGame/loading all consume the same D. Session first native action stays SetPaused(true,false), then upstream init, matching permit validation, first fullL0 and unique roundtripSave/L1. No warmquery, later deadline reservation, guard omission or additional load allowed."
+    },
+    {
+      "area": "Complete5second upper bound",
+      "assessment": "Same host monotonic integer clock computes D=t_arm+5000000000ns without reset. Permit IO, Pause/A-or-L0/Save/B-or-L1/request, original host archive/metadata/count0/fullgraph verification, finalACK publication, GUI fullACK/S/principal/pause/all40root verification and complete raw endpoint receipt are covered. Host complete GUI_ACK_VERIFIED receive timestamp strictly<D causally upper-bounds prior GUI verification despite arbitrary buffering. Missing/late endpoint cannot pass. v2 corrects the sole old <= endpoint string to <; exact-D is terminalfailure across machine wire/SPEC/timeline."
+    },
+    {
+      "area": "Host clock versus GUI epoch",
+      "assessment": "Pinned JSI_Debug::GetMicroseconds explicitly returns JS_Now epoch microseconds. Design correctly rejects it as hostmonotonic authority and does not compare GUIepoch with hostns. Permit canonical decimalns are correlation/format only; independent host private ledger/currentclock/actualraw remain authoritative. Blocking IO/late scheduling hardbound remains NOT_PROVEN; late operations preserve evidence and FAIL/UNKNOWN, never a claimed magical cancel guarantee."
+    },
+    {
+      "area": "Immutable channel, exact paths, nonces and publication",
+      "assessment": "Only boot transactionArms and exact phase arm-request/permit.tmp/permit.json additions. One request plus one logical permit, retained hardlinktmp intentionally counted as third physicalpath. Existing case roots and exact exceptions remain; no whole-tree exclusions. Nonces fixed prelaunch, phase/checkpoint/ordinal/source/campaign/case exact bound. Native GUI WriteJSON remains explicitly void/nonexclusive/non-atomic with once latch/value readback and host actual strict raw authority. Host uses private0700/0600, O_EXCL/O_NOFOLLOW, fullwrite/fsync/close/reopen, no-replace hardlink, same dev/ino, dirsync/finalreadback within D; errors/mutation/duplicates sticky and no unlink/overwrite/retry."
+    },
+    {
+      "area": "Unchanged complete acceptance and budgets",
+      "assessment": "Independently deep-compared SPEC.finalWireUnchanged request,ack,typedGraph,commandReceipts and policiesCampaign with exact basewirev4; all five match.600campaign/6x90/prelaunch30/startup10/stop80/cleanup90/enginecutoff540/final600/tx5/seed42 then conditional7/retry0 retained, earlier deadline wins. Original all40 ordered gameplay roots, full typed prefixes, A/B/L0/L1 exact comparisons, metadata/noFutureCommands, true count0, original callbacks/commands/principal/replay/native/visual/rawpostclose/sourceprofile/freshguard gates remain. No new engine/Save/branch/archive/control accepted."
+    },
+    {
+      "area": "Pinned native API compatibility",
+      "assessment": "Complete pinned VFS source supports GUI moddata read/write restrictions but supplies no nativeexclusive WriteJSON or host monotonic API; design acknowledges those limits. SetPaused mutates real game pause, GetPlayerID reads actual gameprincipal; SaveGame is void and logs failure, so archive evidence remains mandatory. StartSavedGame enforces no game/network, loads original metadata/state and sets playerID before StartGame; amendment does not replace this route with invented loadCLI or bypass native initialization."
+    }
+  ],
+  "implementationObligations": [
+    "New channel is unimplemented. Full5second proof stays BLOCK_DEADLINE_PROOF until separately frozen implementation, necessary regressions and fresh complete independent CODE plus JS/API source reviews exist.",
+    "GUI emits endpoint after actual full verification and before resume. Host receipt is the conservative acceptance endpoint, not a GUI-observable extra ACK or permission to introduce another transport. Host may assess receive after GUI emission/resume; no immediate stdout-flush assumption is licensed.",
+    "Actual strict parser/path/inode/sameclock/once/readback/watch/raw receiver/timeout cleanup logic, source-runtime inventories, original/copy/profile guards and independent fresh guard remain open. An implementation cannot authenticate deadline freshness from permit text alone.",
+    "Conservative full load prefix may not fit5seconds. Infeasibility must preserve BLOCK/FAIL/NOT_RUN, never move t_arm later, omit guards, add warmup or retry. Native feasibility has not been measured."
+  ],
+  "boundaries": {
+    "sourceApproval": false,
+    "engineAuthority": false,
+    "newChannelImplemented": false,
+    "native": "NOT_RUN",
+    "testsModelsProofEngineExecuted": false,
+    "sourceChanged": false,
+    "oldDesignRawSealsChanged": false,
+    "gitCommitPushDeleteExternal": false,
+    "writesOnly": [
+      "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/code-design-review-v1.json",
+      "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/code-design-review-v1.md"
+    ]
+  }
+}

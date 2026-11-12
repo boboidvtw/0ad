@@ -1,0 +1,227 @@
+<!-- Purpose: Fully integrated fourth bounded source-design repair after formal 3f53 dual BLOCK; no implementation, parser, tests, proof or engine. Created: 2026-10-19. -->
+# T17 NEW 六actor save 設計：typed-root-fix
+
+**本次只完成設計／來源registry修訂，待兩份全新獨立完整CODE＋JS/API審查。** 原7611／0883設計、全部正式BLOCK報告和所有原FAIL／STOP／raw／seals保持原bytes。沒有code/harness/runner/decoder實作、tests、proof或engine，不能將source設計升格nativePASS。
+
+本SPEC.md是單一整合敘述，不再附帶衝突的舊規則。**wire-schema.json v4是唯一current機器權威**：wire欄位／型別／unknown拒絕、nonce與path、budget caps及stance policy全在該檔；SPEC.json只以JSON pointer引用相同policy，不另留舊cutoff或另一ACK schema。source-registry.json是來源名冊／getter／prototype權威。實作若發現三者不一致先BLOCK修設計，禁止自行選較寬鬆值。
+
+## R1 scope、固定budget與once邊界
+
+唯一問題是原六role潛艇lifecycle／pending transition／hidden attack cancellation／owner cancellation的保存及freshload還原，不是任何已耗用GUI／physics／protocol重跑。每seed一origin、五個freshload；origin五個checkpoint各唯一Save，load各首次唯一roundtripSave，共10archives／6processes。42then7，seed7只在same-source完整seed42 origin＋五load全部PASS後才能啟動；retry0、engine嚴格序列。每程序absoluteTimer.time≤32000ms，loaded S不歸零，不多第六load／originarchive／replay control。
+
+| 時間cap | 現行規範（全部host同一monotonic來源） |
+| --- | --- |
+| Campaign | 從第一case資料準備／fullguard前T0起absolute600秒；engine及case work截止T0+540，540..600只finalpersistedreadback/inventory/seal。 |
+| Case | 六case各從actualC起absolute90；deadline=min(C+90,T0+540)。沒有完整90秒剩餘不開始新case，保STOP/NOTRUN。caseStart／deadline各記入exclusive ledger，不能重設campaign。 |
+| Prelaunch | C+30以前完成case boot／loadarchivecopy／actualprofilebaseline、兩次完整verify（reservation前後）及獨立guard；未完成不可Popen。 |
+| Startup | 單次Popen之後10秒，且不晚C+40；正式noGame/noNet/principal／profile／S讀回。沒有startup retry，不等待到階段邊界才工作。 |
+| 工作 | 不晚C+80且不晚global engine截止；每次pause-save-hostverify-GUIACK最多5host秒。origin5×5＋14sim秒=39秒僅來源預算候選，不是量測保證。 |
+| Cleanup | Case剩餘80..90最多10秒只stop/drain/reap＋原rawpostclose全bytesreadback／backup比對，不能開始新command/save/branch。 |
+
+Campaign之前只允在另有界準備範圍完成source/test/reviews/helper build、六份新隔離appcopies與immutable baseline inventories；不能先run engine／guard再啟動campaign時計。每case的boot實值（含load原archive實SHA）、loadarchivecopy及全部launchguards在case prelaunch cap內，不藏在外面。不可取消blocking IO的hardbound仍NOT_PROVEN；超界保存FAIL/UNKNOWN，不挪cap救PASS。
+
+保存紀錄（非current規範）：原author DRAFT120秒／Attack5500從未run且不是人類固定runtime門檻；現行事前候選600秒及Attack5600不升格舊值PASS、不runtime延時／四捨五入。所有NEW值要過本exact-current兩review才實作。
+
+## R2 source stack、精確六actor與合法stance setup
+
+固定stack：public→epoch_rts→epoch_t16_harness→NEW epoch_t17_save_harness。**不載**t17-harness、t17-gui-harness、t17-gui-native-harness原mods，避免自動建立舊EpochSubmarineFixture system。NEWpackage逐byte收錄六個必要T17/controller/interface/helper/template/productstatus/GUI檔，origin SHA與destination全列source-registry；不改產品原檔。t16 simulation全樹沒有SystemComponent registration，其EpochNativeDeathObserver僅available constructor，無六template reference／實例。
+
+map epoch_t17_save_six：192、兩epoch humans／noAI／endless；map sourceground-12、水20、shallow tile x125..140/z65..85 sourceheight-2，預期native地8／shallow18／水20，仍須nativegetter真實核實。camera固定position325/120/150、rotationX0.6/Y0、zoom110；Y0/zoom110為新明列候選，非舊native量測。position／rotation／zoom均用真實official APIs回讀。
+
+| Creation order / role | NEW template → exact parent（units/epoch_rts/） | Owner | x,z | Native預期與來源trait |
+| --- | --- | --- | --- | --- |
+| 1 submarine | t17_save_submarine→t17_submarine | 1 | 300,300 | SURFACED/submarine、depth4、clearance1 |
+| 2 cannon | t17_save_cannon→t16_cannon | 2 | 240,300 | SURFACED/surface |
+| 3 torpedo | t17_save_torpedo→t16_torpedo | 2 | 360,300 | SURFACED/surface |
+| 4 asw | t17_save_asw→t16_asw | 2 | 360,360 | SURFACED/surface |
+| 5 detector | t17_save_detector→t16_detector | 2 | 300,360 | SURFACED/surface、living detector60m |
+| 6 shallow | t17_save_shallow→t17_submarine | 1 | 520,300 | SURFACED/submarine、nativeground18、depth不足 |
+
+六者HP2000、DeathTypevanish、Vision100、initial yaw0/offset0／水面Y20。NEWtemplates加EpochSaveActorEvents（其Role欄位明列六role enum），**XML DefaultStance固定passive**。actual Schema明允passive，但不允none；runtime g_EpochNavalStances.none存在不會讓XML合法，不改Schema或關validator。
+
+Origin-only每role一個完整setup步，creation order如表：
+
+1. AddEntity驗normal merged template，必返回有效ID；完整native AddComponent Init和PostCreate／OnCreate自然先完成。ActorEvents.Init僅以template.Role與native this.entity暫定綁定role/ID，不查尚未完整初始化的其他components；保存真實早期events時不捏造缺失訊息。AddEntity完整返回後核provisionalID==returnedID並finalize immutable mapping，不猜ID或重寫已有eventprefix；若AddEntity中途失敗保partial並停止。
+2. 只在setup0 JumpTo／SetYRotation／SetOwner。保原ownership／visibility／FSM及native消息effects；不能稱setup純getter。
+3. 取得實際IID_UnitAI，先確認IsInWorld與required接口，再**只一次SwitchToStance("none")**，記actual before/after完整state、Timer graph和可觀察nativeevents；完成後才建立下一role。不是普通networkcommand，明列test-only origin setup API，不包裝成player命令。
+4. 全六完成後保完整setup inventory／actualstance=none、initialHP/pos/ownership／Timer／eventprefix；**不清timer、不清queue、不重設FSM/heldPosition/rangequery**。load絕不再AddEntity／setup／SwitchToStance。
+
+來源細節必保留：Init:3485-3501本來SetStance(passive)並PostUnitStanceChanged；OnCreate:3655-3662進INDIVIDUAL.IDLE，IDLE.enter:1646自然StartTimer(100)。SwitchToStance:5977-5991讀Position、SetHeldPosition、SetStance(none)再SetupRangeQueries，SetStance:5966發UnitStanceChanged。初始Init訊息可能在ActorEvents元件建成前發生，不能發明已捕獲；OnCreate和後續setup實際可觀察prefix按真實順序保存。新observer要OnUnitStanceChanged，不能漏掉setup switch效果。
+
+13200真ownership→2及16000→1觸發既有OnOwnershipChanged:3674-3711，自然清orders／workOrders、FSM／rangequeries處理並SetStance(template.DefaultStance=passive)。**不暗中恢復none或重做setup**；將這個原生passive reset納入snapshot、event及舊attack不得復活的gates。passive可能自然改變FSM／rangequery、移動或受攻擊反應，不能假稱與none無差；所有原acceptance（無舊attack復活、固定HP/orders/position與nativeLOS條件、無未授權自主攻擊、完整Timer/actor/events）照保，若自然行為違反就原一次case FAIL，不能再Switch none、清order或刪欄位救PASS。native Timer含自然idle/update/attack timers，與CommandQueue local vector不同；queue0只能讀實際serializer count，不能因setup沒送networkcommand或Timer空而假定。
+
+Template merge registry現在逐層套ParamNode的merge-only：父無節點時整個layer subtree略過；civ/athen的Builder merge在ship父無Builder，故六role皆沒有Builder。既有components source數量35/34/34/34/35/35；各再加NEW ActorEvents後36/35/35/35/36/36。gaia3、player1/2各10；15native system、13official script systems再加NEW Scenario。loaded constructor存在不等於實例。全部45個special XML attributes（含nestedtokens/op、Footprintreplace、UnitAI/Formationsdisable）及merge trace見registry，filtered實際0；不靠寬鬆availability掩蓋錯誤。
+
+## R3 native principal、時間authority與完整固定流程
+
+只在**單機、無NetServer/NetClient、storeReplay=true**的opt-in fixture使用真native hotseat切換；不以controlAllUnits、cheat、payload.player或SetViewedPlayer代替owner。exact primary：JSInterface_Game.cpp:64-79/178-181是真GetPlayerID/SetPlayerID；Game.cpp:363-379同時更新native player/view及TurnManager.SetPlayerID；LocalTurnManager.cpp:34-37在send時把m_PlayerId複製到AddCommand；TurnManager.cpp:228-231保存SimulationCommand(player,data)，後續principal切換不重標舊command；Commands.js ProcessCommand先按player FilterEntityList。
+
+每條普通command的唯一流程：
+
+1. 無outstanding command，nativeGetPlayerID必1；以Engine.SetPlayerID(expectedOwner)切1或2，立即Engine.GetPlayerID()==expectedOwner。nativeSetPlayerID同時設view；用NEW readonly GuiInterface query回傳其**native ScriptCall收到的player**驗view相同（JSInterface_Simulation.cpp:62），這是test-only querycaller證據，不把view當principal。
+2. GUI bookkeeping g_ViewedPlayer同步expectedOwner，並保持no cheat/no observer；這個GUI變數不是權威。raw保存beforeNativeID、Set值、afterNativeID、nativeViewQueryCaller、完整command／sendOrdinal。
+3. 單次Engine.PostNetworkCommand；以本節ReadSaveCommandReceipts即時query等到唯一匹配native ENTRY＋RETURNED EXIT，actualplayer==expectedOwner、exactcmd與實際applicationT完全相同。GUI不等host replay檔或raw liveflush。保持principal直到該完整receipt到達且無outstanding件，不能先restore。
+4. exact native完整receipt核實後Engine.SetPlayerID(1)，GetPlayerID==1、readonly context querycaller==1、GUIbookkeeping1，再允許下一條或Save。切換只影響native session/TurnManager身份，沒有改entity ownership；test-only owner events另分明確handler。
+5. 每個A/B/L0/L1、Save／ACK／resume都固定native principal1/view querycaller1；metadata.playerID必1，fresh StartSavedGame還原1並立刻readback。sourceClosure禁止save同步區間切principal。
+
+host在case final持久化後核native replay／外部dispatch／GUI sent三者逐筆bijection、next-turnactual times，任何owner不同FAIL；這是final gate，不是GUI即時restore的依賴。noNet與controlAll=false由nativeentry與playerownfields source/profilegate確認，未知不能靠UI猜。
+
+SP primary DEFAULT_TURN_LENGTH200/COMMAND_DELAY_SP1；LocalTurnManager把send排current+1，TurnManager增turn後FlushTurn，之後Timer.OnUpdate才time+=200。候選GUIpostT→native commandpreT→GUIpostT+200必由raw/replay實核；payloadplayer／view／sendtime都不能代actualnative application。每次單一entity、一個outstanding command，sourceclosure排除其他direct ProcessCommand callers；每次命令維持expectednativeprincipal至完整native receipt與exactpayload一致，才restore1；host final另核replay。任一漏T／不同T立即FAIL，不重發／改deadline。
+
+### R3a 唯一即時native dispatch receipt與context binding
+
+本節只補兩份正式7611 BLOCK指出的GUI即時橋接；完整wire keys、型別、caps與錯誤狀態唯一權威為wire-schema.json#/commandReceipts及#/profileBinding。沒有每command ACK檔／另一VFS channel，不把host replay當即時資料源。
+
+Native helper `simulation/helpers/ZZZZZT17SaveCommandWitness.js`在既有ZZZT17SubmarineCommands及NEW `ZZZZAT17SaveFixtureCommands.js`完成g_Commands註冊之後安裝全部fixture實際handler wrappers。wrapper外部lexical append-only ledger私有；只以`Engine.RegisterGlobal("T17ReadSaveCommandReceipts", readonlyReader)`匯出pure reader，沒有append/reset/bind API。NEW `simulation/components/ZZZZZT17SaveGuiReceiptInterface.js`在official GuiInterface constructor registration後，於prototype安裝`ReadSaveCommandReceipts`並加exposedFunctions入口；不註冊新component、不新增component ownfields或metadata。未有NEW程式，此處是source相容設計而非實作證明。
+
+official GuiInterface.ScriptCall只把native **viewedPlayer**傳給method（JSInterface_Simulation.cpp:45-64），不是獨立authenticated principal。GUI在每次send/query前後均須Engine.GetPlayerID()==expectedOwner；query的native caller亦須相同；原wrapper收到ProcessCommand的actualPlayer才是該命令native principal。三者交叉核，禁止把request.expectedPrincipal或view單獨升格authority。sourceclosure需禁止尚未完成receipt前其他SetPlayerID／SetViewedPlayer／direct ProcessCommand路徑。
+
+固定profile/seed/sourceManifestSHA/campaignNonce由official deep-frozen **InitAttributes.settings.T17SaveReceiptBinding**讀取，不lazy初始化、不從query寫入／信任echo。origin固定StartGame attrs在host/GUI核boot後帶入；load保留原archive initattrs，fresh boot必匹配這個穩定binding，不能為freshload改simulation值。sourceManifestSHA是semantic binding，實際code bytes由host完整source guard核，不假稱native self-hash。caseNonce/caseID/PID只由當次fresh GUI boot與host case ledger綁定；simulation不能獨立證明freshcaseNonce，不能偽填native核可。query指向當前g_Game的GuiInterface，加fresh process/profile/boot/oldarchive guards形成case關聯；缺任一關聯即BLOCK。
+
+每process最多32dispatch、64ENTRY/EXIT、64stickyfault，reader每次至多2個完整連續events，request/reply canonical ASCII cap8192/16777216bytes。typed字串用UTF16 codeunits表示，byte cap指fresh data-only ASCII envelope，不假稱native structured-clone byte size。超限terminalfault，不能截斷、ring overwrite或丟未知欄位救PASS。command ordinal只存在GUI；原cmd不注入sendOrdinal/player/nonce等欄位。
+
+GUI每次只一outstanding；send前分配本GUI sendOrdinal及預期native dispatchSeq／兩eventSeq、expectedPlayer、完整exactcmd、plannedapplicationT。`ReadSaveCommandReceipts` request含profile/campaign/source/seed、expectedPrincipal/sendOrdinal、fromEventSeq=GUIcursor+1、maxEvents=2。native回native-derived binding/caller/highwaters/完整contiguous range/inFlight及全部bounded stickyfault；expectedSendOrdinal是echo correlation label，不能當native觀測。讀取不filter player/cmd/type，不能藏unexpected事件。
+
+每條native ENTRY保存actualPlayer、handlerKey、actualTimerTime、完整originalcommand graph及pure BEFORE；EXIT保存相同dispatch identity、RETURNED/THREW/OBSERVATION_FAULT、exacttypeof＋完整return typed graph／safe error descriptors、pure AFTER。不觸發error.toString/getter。wrapper以原this/完整args一次Reflect.apply，回原value或throw同一物件；encoder／emit故障只記external stickyFAIL，不攔原handler或替代outcome。before/after仍FlushTurn內、MT_Update前；全requiredgraph/原生eventprefix條件不降。RETURNED（含void）只證handler完成，拒絕或接受仍由原fullgraph/native state/HP/orders gates決定。
+
+GUI驗contiguous ENTRY後可把immutable copy暫存GUI pending cache並前進GUIcursor，但outstanding保持；下次只讀下一seq，匹配EXIT完成才restore1。reader不consume/clear/排序/加querycounter/cachewrite或lazybind；重讀同range可得同prefix。WAITING/PENDING只能在原case及語意deadline內onTick poll一次；無active原handler的孤ENTRY是INCOMPLETE terminal。duplicate/gap/unexpectedcmd/player/T/throw/unknown/stickyfault/overflow均不得PASS；沒有回執不能猜成功／重送／加時。cursor僅GUI memory，fresh process0；native外部ledger由新script realm自然空，不從save恢復或query重設。
+
+host final逐筆核GUI sent／原native external dispatch ENTRY+EXIT／native replay三方bijection與actualT，並驗full原raw disk持久化；GUI receipt不是final replay或raw gate替代。ReadSaveGraph、metadata、A-QO-B／L0-QL-L1與receiptreader的descriptor/getter/prototype closure一併實作審查；新reader不得送命令、寫Timer/queue/actor/scenario或造成serialize mutation。
+
+Origin五個唯一存點：
+
+| Native application / observation T | 唯一動作或gate |
+| --- | --- |
+| setup0 | 六actor如表；只setup可JumpTo／SetOwner／origin-only SwitchToStance none，保全部自然setup effects，不呼叫舊fixture。新場景一次完成，load不重做。 |
+| 2000..2100 | surfaced Save；native200ms下預期實際S=2000，實際值須落原固定窗。 |
+| 3000 | owner1對submarine唯一mode SUBMERGED；native token/start/owner＋deadline5000。 |
+| 4000..4100 | pendingDive Save；remaining900..1000、原timer ID／Map entry保持。 |
+| first due5000 | controller Complete須由下方lateprototype invocation witness證恰一次、offset-4/Y16，不能rearm。 |
+| 5600（NEW候選） | owner2 torpedo普通fresh Attack submarine；此刺激取代未凍結舊5500，不改舊證據。 |
+| 6000 | owner2 detector普通Walk(300,420)，不能teleport。 |
+| 8000 | detector普通Stop；actual distance≥61，若未達即FAIL；不等待到成功。 |
+| 9000..9100 | deepHidden Save；nativeLOS hidden、舊torpedoAttack已cancel。 |
+| 10000 | owner1 submarine mode SURFACED，deadline12000。 |
+| 11000..11100 | pendingSurface Save；remaining900..1000。 |
+| first due12000 | Complete恰一次、offset0/Y20。 |
+| 13000 | owner1 submarine fresh mode SUBMERGED，deadline15000。 |
+| 13200 | 固定test-only native owner→2，必觸發取消、無pending。 |
+| 14000..14100 | ownerCanceled Save；原deadline15000前後不可復活。origin第五archive驗證ACK後不再跑任何新case。 |
+
+每次Save前GUI未來schedule僅GUI memory，沒有未來普通commands in-flight；origin繼續其GUI schedule，archive metadata不得保存future schedule。native scenario coordinator／event ledger可保存**真正已存在**必要test事件，但禁止把origin未來普通命令搬進Timer或coordinator後假稱GUI memory。新的owner13200事件透過當時唯一GUI test-only命令而非預存future action；loaded branches不會重播origin未來事件。
+
+Load五分支固定後續：
+
+每branch先完成L0／首次roundtripSave／L1／host核實，再解除pause。起點Timer.time仍原S；所有下列T是absolute simMs。GUI僅啟用選定branch，不能InitGame/rearm／重建entity／恢復origin future commands。
+
+| Branch | 事前固定後續候選與停止T |
+| --- | --- |
+| surfaced | S後第一個可達send/apply lattice2200：shallow mode SUBMERGED唯一拒絕，before/after graph不變；3000/4000/5000三interval無未知attack/timer，T5200完成。 |
+| pendingDive | 5000前不能Complete；first due5000須invocation witness證恰一次、同timer/token且無重複timer；6000/7000/8000保持；T8200完成。 |
+| deepHidden | S=9000後10000/11000/12000三完整interval HP/orders不變；12000 detector Walk回(300,360)，18000固定Stop，actual distance≤60且nativeLOS visible；至18200前舊Attack仍不恢復；18200唯一fresh torpedoAttack，固定18400..20200觀察至少一次nativedamage、前18200絕不容許傷害；T21000完成。Walk速度17／轉速1.5等source提供幾何可行性候選，實際path/轉向/傷害窗未量測，不是保證。 |
+| pendingSurface | first due12000須invocation witness證恰一次、offset0/Y20、no oldorder/timer；13000/14000/15000保持，T15200完成。 |
+| ownerCanceled | load後owner1的單次舊command於14200拒絕且graph不變；15000前後原deadline不可復活；16000 test-only native owner回1，16200唯一fresh owner1 Attack cannon；固定16400..18200 nativedamage窗口，前16200無舊attack傷害；22000固定test-only Health.Reduce(100000) lethal，23000/24000/25000無resurrection／timer，T25200完成。Health.Reduce→RegisterHealthChanged→HandleDeath→Destroy的實際event順序須與source和nativeledger吻合；不SetHP/Heal。若獨立review認為此lethal刺激不符原native-lifecycle語意，先BLOCK修設計，不能執行後刪death gate。 |
+
+上述是完整事前候選，非原DRAFT已核定或native成功。每個時間均200ms lattice；12000/16000等GUI送出T與nativeapplyT使用前述pre/post映射，任何不符FAIL。死亡不是第六load。更動這些候選須在freeze／attempt之前完成審查，不能runtime延伸窗。
+
+ownerCanceled原始Save時的stance應保真ownership reset後passive，不拿origin setup none覆蓋；其後16000回owner1亦如此。death fixture Health.Reduce(100000)不是完整combat管線證明；它只驗真HealthChanged→HandleDeath→Destroy流程／cancel lifecycle。所有窗口是事前source候選，實際movement/damage/event順序未知；unknown／逾窗FAIL，不追加case。
+
+## R4 完整typed graph、pure closure、rejection與Complete invocation
+
+NEW system `EpochSaveScenario`只保存immutable setup mapping與真正native actor event prefix；application dispatch／Complete invocation witness完全外部、非serialized closure＋raw；前者由R3a pure range reader即時回GUI。NEW actor observer只在真正health/ownership/destroy事件append persistent event prefix；拒絕命令不得append人工dispatch事件。`ReadSaveGraph(player, request)`純getter：不計query counter、不append event、不SetPaused、不GetSimulationState隱含GUI cache重置、不寫controller／Timer／UnitAI／queue。test-only GuiInterface入口明確只在本fixtureprofile與只讀schema工作，產品owner/LOS-filtered API不變；不要公開到產品UI。
+
+Graph根固定包括：
+
+- Timer所有own properties（含id/time/turnLength）、完整ordered timers Map每id→entity/IID/functionName/time/repeatTime/data，未知data保留，不能只controller timers。
+- 六actor對應controller/NavalState/UnitAI/Attack所有own fields；用OwnPropertyDescriptors／Reflect.ownKeys先核descriptor，拒accessor，typed遞迴保存而非JSON stringify；controller null/undefined/token/timer/target/startedAt/ownerAtStart/lastReason/depth/clearance不省略。
+- six entityID/template/owner/HP/alive/inWorld；Position.IsInWorld後才GetPosition/GetPosition2D/GetPreviousPosition/GetRotation/IsHeightRelative/GetHeightOffset/CanFloat；Terrain.GetGroundLevel／WaterManager.GetWaterLevel、RangeManager.GetLosVisibility per1/2與detector health/owner/radius；native getter未提供的cache/internal標UNKNOWN並BLOCK必要coverage。
+- PlayerManager/player entity資料與外交full script ownfields、scenario固定mapping與原生事件ledger prefix；nativeSerialize local CommandQueue vector由host另補QO/QL actual-count evidence，不在getter偽填[]。
+- events：Serialize／Deserialize／OnDeserialized不得寫已保存event ledger；freshload Deserialized等只向外部raw發觀察，由GUI／host維護external transcript，不從graph刪除原events救相等。
+
+typed transport採明確node table：每object先配置ID再遞迴；保Map/Set順序、cycles／共享references、array length＋各ownkey/holes/extras、undefined/null、-0、IEEE754非finite、UTF16字串codeunits和primitive型別、typedarray/buffer rawbits/共享view。prototype用凍結registry identity；unknown prototype/function/symbol/accessor不能猜、轉字串或丟棄，保unknown原因並BLOCK。必須實查required graph會否出現這些值；本設計**未宣稱現有UnitAI等all-ownfield已可完全encode**。跨save/load的自訂prototype／closure狀態不可假等同。
+
+A/B/L0/L1比較不epsilon、不sort/no-drop。現行source-registry已列完整source-resolved roster、既有getter transitives／prototype與field mapping；這個來源清單已提供。C++ compatibility source仍不代替official runtime；尚未存在的NEWobserver／graphhelper／transaction實作，其pure closure及actual native instance/value conformance仍須實作後review，不能稱已完成。
+
+固定required graph roots=Timer full own/map＋六role controller/NavalState/UnitAI/Attack full own＋nativeWorld/getter values＋PlayerManager/playerDiplomacy full own＋EpochSaveScenario immutable role mapping與**真正原生actor event prefix**。NEW EpochSaveActorEvents元件自身完整own fields（只entity/template）也列registry。每個field只要持久存在於required roots就全保，不刪歷史、不默排bookkeeping。
+
+**application witness和Complete witness不寫任何component ownfield、Timer或scenario ledger**。它們在NEW test-only module closure保存外部sequence/count並輸出raw；不將closure掛component／metadata、不新增serializedtimer。GUI/host另外保存sent/apply/request/readback transcript。因此拒絕命令可同時有外部APPLY_ENTRY/EXIT記錄，且required graph全部不變，沒有序列化ledger被偷偷刪除。
+
+拒絕觀察的exact boundary：native g_Commands wrapper最外層entry（nativeProcessCommand已filter owner，但尚未delegatehandler）同步pure fullgraph BEFORE→原handler一次→pure fullgraph AFTER→raw外部EXIT；仍在FlushTurn、MT_Update前。比較同TimerS所有required fields及原native eventprefix，容許外部兩個witness records，**不容許任何persistentevent append**。若真的觸發Health/Ownership/Destroy等事件，保留並FAIL，不剝除event讓graph相同。queue vector以實讀0baseline＋整分支noPush/Flush-reentry source closure證保持相等；缺closure則UNKNOWN，不能偽填[]或額外Save拿數據。
+
+A/B/L0/L1仍**全requiredgraph精確相等**，不允預期suffix例外；freshload Deserialized只external記錄，不append persistentactor events。new observer若其Init/Deserialize意外產persistent事件即FAIL，不能刪後通過。
+
+
+### R4a Exact typed graph context profiles
+
+wire-schema.json v4 typedGraph.profiles/contextSelection is the sole authority. Every envelope has exactly encoding/profile/roots/nodes; encoding stays T17_SAVE_FULL_GRAPH_V1. The finite profile enum separates common lossless nodes/values from exact required root layouts. A/B/L0/L1 and receipt beforeGraph/afterGraph require GAMEPLAY_FULL_V1, with all40 ordered roots: Timer; six roles in creationorder each controller/navalState/UnitAI/Attack/ActorEvents; nativeWorld; PlayerManager; player0/1/2 each Player/Diplomacy; Scenario. Exact names are in wire and registry. This expands the existing grouped roster without reducing fields/order or the original absence rules. No optional gameplay roots.
+
+commandGraph requires COMMAND_VALUE_V1, exactly one command root containing the complete original native command object. returnValueGraph requires HANDLER_RETURN_V1, exactly one returnValue root; RETURNED undefined is a known {t:"undefined"} value inside that root, with nodes=[] when no references. safeDescriptorGraph requires ERROR_OWN_DESCRIPTORS_V1, exactly one exceptionOwnDescriptors root holding the actual thrown object's full own-descriptor node/reference graph; primitive/null/undefined throws retain their exact primitive typed value (no own descriptors). No inherited getter/stack/message access, selected error projection or side-effect coercion is permitted. Unknown error prototype/accessor/function/symbol/Proxy remains unknown/stickyFAIL, with no automatic prototype exemption.
+
+THREW/OBSERVATION_FAULT return uses exactly {t:"unavailable",reason:"THREW" or "OBSERVATION_FAULT"}. Impossible safe-error capture permits only unavailable OBSERVATION_FAULT at its error root. These tags are diagnostic only, disallowed in gameplay/command/node properties/collection items and always prevent PASS/restore1. Normal undefined/null and existing actor absence are different. RETURNED has throwInfo=null, no invented error graph. Strict consumers select profile from the enclosing field and reject missing/extra/duplicate/unknown/crossprofile roots, wrong count/order or envelope keys. Common node-table, cycles/alias, Map/Set order, holes/extras, buffer/view rawbits, -0/nonfinite, UTF16 and complete descriptor rules remain unchanged. Each graph has local node IDs and preserves every within-graph crossroot alias; no crossgraph pointer identity is asserted.
+
+source-backed可審候選，不升格原GUI NOT_PROVEN。Simulation2::LoadDefaultScripts先interfaces→helpers→components；新`simulation/components/ZZZZT17SaveCompleteWitness.js`在Controller constructor已經RegisterComponentType（提供globalconstructor）之後載入，且在任何originAddEntity／loadDeserialize之前。凍結實際sortedloader表，檢constructor global、prototype descriptor exactly data/function/writable/configurable及原Complete來源SHA；重裝或不合即BLOCK。
+
+wrapper只改本NEW fixture進程中的prototype.Complete觀測入口，**不改產品磁碟檔案或component ownfields**，不改timer.functionName/deadline/data，不rearm/取消/調Complete，不直接觸發回呼。原Complete在所有原路徑只由timer string dispatch被查到，另以全source call-site inventory與native Timer raw資料證實；有其他caller也照實計數並FAILunexpectedcall，而不是無視。
+
+每次wrapper進入，外部closure count++並保entry（role/entity、actualTimerTime、saved timerID/token/owner/mode、actualthis與args descriptor）；以相同this、完全原arguments、一次Reflect.apply原function。保存其原returnvalue；若原throw，記錄原exception reference，後續仍throw同一物件，**不吞、不換、不重新new error**；stack多一層testwrapper不得叫原stackbyte相同。after-record只證回傳/throw，不以stable state當invocationcount。
+
+任何before/after raw encoder／emit錯誤都捕獲到外部sticky-failure，不得攔掉原function呼叫、替代return/throw；host缺entry/exit或diagnostic立即FAIL。外部fault記錄不能可靠寫出時，同樣因missing transcriptFAIL，絕不當PASS。encoder只可讀已核plainargs/token與originalreturn（Complete目前原return undefined）；unknown/accessor仍記unknown，不呼叫可能有副作用轉型。
+
+origin期待submarine的5000 Dive和12000 Surface各一entry/exit，13000 pending被owner13200 cancel，15000**零**entry。pendingDive freshload只期待5000一次；pendingSurface freshload只期待12000一次；每freshprocess外部counter從0開始、不從save恢復，並不是重置simulationtimer。所有其他actor/unexpecteddeadline invokes保留FAIL。沒有wrapper實碼／model/native證據前exactcount狀態仍NOT_PROVEN。
+
+host從origin／roundtrip完整simulation.dat byte0讀：ASCII RNG/U32 nextID/U32 systemCount，逐actualname以完整TemplateManager schema、實際numAIs=0之AIManager schema、完整CinemaManager paths/nodes/targets/queue schema消耗，抵達唯一system CommandQueue後讀U32 numCommands。無component byte-size frame，嚴禁magic掃描、猜offset、skip未知component。實讀0才產完整vector[]及countOffset/raw4bytes/span；非0立即UNKNOWN/BLOCK、不猜ScriptVal、不清queue。actual numAIs非0／unknownprefix亦BLOCK。此候選沒有假定空queue。
+
+QO/QL只證queue Serialize read瞬間；要推出A=B=L0=L1的完整空vector，必須exact-current source closure證明A→QO→B及L0→QL→L1無任何Push/Flush/Post/間接queue寫，含metadata/query/customSerialize/nested prototype/GUI wrappers。前次audit目前sources未找到confirmed實際非AI寫queue serializer，但futurecode未存在；一般反例仍防止把sameS當無mutation。zero-entry decoder不恢復原native cache／network pending；network sent/apply ledger另gate。
+
+這些要求的完整source field/getter/prototype／absence mapping在source-registry.md/json。ownAssignmentNames僅sourcecatalog，不作讀值白名單；required all-ownkeys無法編碼時保unknown並BLOCK。除originsetup與真nativeevents/ordinarycommands外，A-QO-B／L0-QL-L1同步區間不得有任何Push/Flush/Post／setter／customcallback間接queue寫。新方法尚未實作，不可宣稱其purity已證。
+
+## R5 官方VFS ACK、pause/save/archive交易與freshload入口
+
+只用真實Engine.WriteJSONFile／FileExists／ReadJSONFile（GUI moddata path restriction），user mod root掛WATCH；ReloadChangedFiles從mainloop在pausedgame外執行，會invalidate/repopulate。這支持資料channel候選，但nativewatch送達／pausedGUIpoll延遲仍NOT_PROVEN。沒有虛構HostAck API，也不用壁鐘等待當成功。
+
+**wire-schema.json是本節所有wire keys/types/caps/path唯一機器權威。** case root=`moddata/t17-save/{campaignNonce}/{seed}/{caseID}/`；physicalroot在該isolatedApp Resources/data/mods/user相同後綴。campaignNonce/caseNonce皆64lowerhex，caseNonce綁payload；checkpoint子目錄如wire政策。固定只有case boot、對應phase request、host tmp與finalACK資料例外，不排整個user tree，不碰原app或原profiles。
+
+| File角色 | 寫入／可見性／完整性 |
+| --- | --- |
+| boot.json | host在caseprelaunch一次O_EXCL/noFollow，≤8192bytes，含固定source/nonce/seed/case/principal1/caps；load含原archive實SHA／S。實bytes/hash進兩次fullguard baseline後immutable。 |
+| origin-request.json／load-request.json | GUI唯一freshdir、FileExists false、module一次attempt latch、一次Native WriteJSON；≤16MiB。該native API**非exclusive非atomic、回void**；不聲稱其自帶成功／安全保證，不重寫重試。 |
+| origin-host-ack.tmp／load-host-ack.tmp | host驗request／archive後O_EXCL/noFollow，≤16384bytes；完整write/fsync/close/actualrawreadback。tmp保留，.tmp watcher被忽略是source行為，不是成功證據。 |
+| origin-host-ack.json／load-host-ack.json | host以link(tmp,final)原子no-replace發佈，EEXISTFAIL；保留兩路徑預期same dev/ino，postpublish actualbytes/hash再核並記directorysync結果。不rename覆蓋／unlink。nativewatch可見性仍實測gate。 |
+
+request schema T17_SAVE_TX_REQUEST_V1完整declared keys/type及typedgraph以wire檔為準，unknown／duplicate／invalidUTF8／trailingjunk／depth256／nodes65536／size超限拒絕。request裡callOrder只包含WriteJSON前已觀察完成的pause/A或L0/save/B或L1。GUI WriteJSON返回後FileExists+ReadJSONFile逐欄比完整expected typedvalues，成功才外部emit REQUEST_READY記REQUEST_WRITTEN／REQUEST_VALUE_READBACK。host等READY（receivedbackup已先存）才O_NOFOLLOW從實際request原path讀完整rawUTF8bytes＋actualsize/SHA，並與GUIexpectedwire語意和caseledger交叉核；GUI不假稱知道native StringifyJSON的actual-bytehash。
+
+ACK schema T17_SAVE_TX_ACK_V1固定hoststageDecision=**ARCHIVE_VERIFIED**，不是casePASS。requestActualSHA權威是host對實際disk bytes算，GUI對此只驗hex型別與host/data identity binding，不假稱獨立算出相同hash；GUI必驗nonce/source/seed/case/checkpoint/phase/ordinal/archiveName/S與已READYexpectedvalues。host保存ACKrawbytes/hash和全部actualarchive／entryhash、actualnativecount0、guardsDigest與monotonicdeadline。ACK flag不能取代host原資料，也不能取代最終rawpostclose gate。
+
+origin transaction：固定窗內readiness→SetPaused(true,false)→IsPaused/principal1/nativeviewcaller1/actualS→pureA→唯一官方SaveGame(exactname,description,getSavedGameData())→pureB。A/B全graph/S相等才寫request；host驗新archive唯一non-symlink、ZIP恰metadata.json/simulation.dat各一次且CRC/fullbytes、metadata engine/mod/init/seed/playerID1／無future schedule、byte0 actualcount0與fullgraph，再回ACK。GUI收到並核ARCHIVE_VERIFIED後重驗paused/S/identity再resume；沒有ACK或失敗就保持pause到同cap cleanup，不補Save／延窗。
+
+freshload：host在此case prelaunch把已驗origin archive**完整原bytes**copy到freshApp唯一saves/name.0adsave並核相同SHA，boot亦綁原SHA。官方Engine.StartSavedGame(name)守無Game/NetServer/NetClient，metadata playerID1須原生restore並GetPlayerID實讀。session prehook首動作SetPaused→upstreaminit→pureL0→首次唯一roundtripSave→pureL1→request→host比較原／roundtrip完整未normalize simulation.dat逐byte相等、兩個actual count0與A/B/L0/L1全graph→ACK→只啟用對應branchGUI schedule、resume。差一byte就存firstoffset/原bytesFAIL，不sort/drop/counter-normalize。
+
+精確NEW GUI source route：
+
+- 將官方mainmenu ESM原bytes保存到gui/pregame/t17_save_upstream_mainmenu.js（SHA映射），NEW gui/pregame/mainmenu.js wrapper保原init的this/args/Promise及live getHotloadData export。原page_pregame.xml→pregame/mainmenu.xml仍載這個module；after同步upstreaminit，在真正mainMenuPage.onTick一次啟動boot，保／委派既有onTick，不awaitUI終身Promise。
+- origin只用官方Engine.StartGame(fixedattrs,1,true)，load只Engine.StartSavedGame(exactname)，不造-load CLI。save初期／後期都不進network game。
+- NEW gui/session/session.xml只對官方preimage加最後一個script file=gui/t17_save/session_transaction.js（在原所有scriptdirectories之後，且新file不位於gui/session directory），避免load兩次；init/onTick/onSimulationUpdate完整preserve upstream receiver/args/return。source/loader次序和XMLdiff需implementationreview，不可假定。
+- 官方saved ReallyStartGame跳InitGame，但仍Deserialized後、Interpolate(0,0)後才loading.reallyStartGame SwitchGuiPage到session。prehook不能抑制／重播它們；native首次getter安全和zeroAdvance仍NOTRUN，fullgraph／rawbyte gates必捕捉任何drift。load絕不重建actor／重arm timer／Switch stance／清queue。
+
+## R6 實際raw持久化、profile來源fences及停止
+
+已耗用ownerGUI42真實原raw0bytes、receivedbackup27309bytes；其write/flush telemetry及rawIntegrityOK不構成磁碟PASS。原因仍Insufficient data；不推論舊SQLite原因，不動舊sealedcase或補寫修原raw。
+
+future runner必需：
+
+- 原raw路徑只在freshprivatecase以O_CREAT|O_EXCL|O_NOFOLLOW建立，記absolute path/diridentity/real parent、openflags、fd、fstat(dev,ino,mode,nlink,size)及lstat path同dev/ino/regular/no-symlink；目錄0700/檔0600。
+- 完整received chunks在判讀／原raw寫入之前保全：原bytes、chunk seq、length、monotonic times、incremental SHA和total；backup本身也必實際持久化並讀回驗證。shortwrite不可假作一次全write；每次actualwritten return／完整write-loop／fd-position／fstat實size均記，負/short/exception sticky FAIL/UNKNOWN。
+- 建立、每個write邊界及finalflush前後都核fd→path dev/ino，postflush/fsync實size須與累計actualwrites相符；no source code成功flag取代fstat。flush/fsync/close errors完整保留，不以closeoutOK升格。
+- cleanup/drain/reap後關閉原fd，從**原path重新O_NOFOLLOW開讀**，fstat與記錄的dev/ino和regularidentity一致，讀完整actual disk bytes，length＋SHA逐byte等於完整receivedbackup，backup原檔亦實讀核。若raw原path失蹤/空/size不同/inode換/bytes不同，formal FAIL／UNKNOWN且保firstfailure及矛盾原件。
+- checkpoint ACK只是archive交易核實、**不是raw/case PASS**；raw-prefix readback可做附加observations，完整case/campaign PASS必等postclose原raw檔全文驗證。任何latebytes、partialmarker、未知native suffix、diagnostic仍stickyFAIL。
+- 不補寫raw、不重建原路徑、不用derivedbackup升原raw PASS。可以另存明確derivedbytes作分析但不是原持久化證據。blocking IO的hard deadline仍NOT_PROVEN，實際超時即保存UNKNOWN/stopnewwork。
+
+每個case獨立app/userdata/config/cache/saves/replays/logs；sourcebundle／originalapp完整inventory及original五profile樹保全，不讓new data ACK例外影響其他路徑。fullsource/runtime/profile/boot/archive actualbinding與獨立freshguard在Popen前同caseclock內完成。firstFAIL/UNKNOWN立即停止後續branch／seed7，保存全部已收raw／partialarchives／events／seals及remaining STOP/NOTRUN；不修原件、不換名、無fallbackchannel或額外case。
+
+## R7 本次source registry、設計修補與下一界線
+
+source-registry.json/md保完整六role/payer/gaia/system source roster、conditionalmerge trace和45specialXML inventory、nativegettertransitivecalls、typedown/descriptors/prototypes、previousposition current-height語意、destroy後explicitabsence／原roleID保留，以及每個NEWfile/method的noMutation責任。Builder availableconstructor和actualinstance明確分開；gaia是special/players/gaia，不是template_gaia worldobject。source-resolvedcomponent集合不是native已量測；actual不同仍BLOCK，不能偷偷加Builder／減coverage。
+
+未完成的真gate：新設計需兩fresh full reviews；之後才可實作NEW Scenario／ActorEvents／graphencoder／command+Completeexternalwitness／pure receiptreader／GUI hooks／strictconsumer／byte0count0decoder／rawrunner。未有程式的closure、coldgetter安全、actualroster/ownkeys/prototypes、nativeprincipal/sendapply/replay、Completeinvocations、VFSACK／raw持久化、zeroAdvance/roundtrip、fixedmovement/damage/death／600/90budget皆NOTRUN/NOTPROVEN。每個unknown按原gate擋住，不因source設計完善就有runtimePASS。
+
+這次只在typed-root-fix/寫設計與source引用；originalDRAFT／0883／7611設計及全部正式reports保持bytes，sourcecopy只primary資料，不修改產品、原Schema、harness或runner。沒有JS／decoder／test／proof／helper／engine、appcopy、lock、guard或attempt。完成作者修訂不等同解除任何獨立BLOCK。

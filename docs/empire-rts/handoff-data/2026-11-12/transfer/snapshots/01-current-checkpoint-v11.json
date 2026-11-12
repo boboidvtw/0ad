@@ -1,0 +1,170 @@
+{
+  "schema": 1,
+  "createdUTC": "2026-11-12T06:27:19.499252+00:00",
+  "status": "ROOT_INDEPENDENT_CONTENT_REVIEW_PROGRESS_DESIGN_REPORTS_PENDING",
+  "priorCheckpoint": "current-checkpoint-v10.json",
+  "childThread": "01a1c8d0-ce47-7a13-8800-a59b935f0ce0",
+  "transferReceipt": "work/t14-t18-session-transfer-20261111/child-readback.json",
+  "manifestSHA256": "e73e6c48bd2a7ea31742aef7ad4b1744e6f28dbed799c39b28b25a3f9079b93a",
+  "designIntegrityReadback": "work/t14-t18-session-transfer-20261111/design-integrity-readback-v1.json",
+  "all170IntegrityChecksMatch": true,
+  "latestProgress": {
+    "CODE": {
+      "path": "work/t17-metadata-controls-design-20261105/design-review-CODE-progress-v10.json",
+      "sha256": "1adef648232cda736def5646d7c0c63c4cfb993ce15d7f601fc8aacb281bb128",
+      "counts": {
+        "full": 69,
+        "partial": 0,
+        "unread": 16
+      },
+      "reviewStatus": "IN_PROGRESS_NOT_APPROVAL",
+      "formalJSONExists": false,
+      "formalMDExists": false,
+      "next": "Unread: 15,17,18,22,23,24,45,48,53,54,61,70,71,72,73,82"
+    },
+    "Python": {
+      "path": "work/t17-metadata-controls-design-20261105/design-review-Python-progress-v6.json",
+      "sha256": "30c2148bb69996da155da3f36d5595311f541e6f94e2fa6a1668f459b22c5b9a",
+      "counts": {
+        "full": 78,
+        "partial": 1,
+        "unread": 6
+      },
+      "reviewStatus": "IN_PROGRESS_NO_VERDICT",
+      "formalJSONExists": false,
+      "formalMDExists": false,
+      "next": "070 source-registry.json chars105000..end then071-073,082-084; full reasoning still pending."
+    },
+    "JSAPI": {
+      "path": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v13.json",
+      "sha256": "915170fd02fc43a9af506925aee3a6f3209ae84bd5fea6dca21172119d8aca24",
+      "counts": {
+        "full": 68,
+        "partial": 1,
+        "unread": 16
+      },
+      "reviewStatus": "IN_PROGRESS_NOT_APPROVAL",
+      "formalJSONExists": false,
+      "formalMDExists": false,
+      "next": [
+        13,
+        14,
+        15,
+        17,
+        18,
+        24,
+        48,
+        49,
+        57,
+        61,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        82
+      ]
+    }
+  },
+  "quotaObserved": {
+    "ordinaryUsageAllowed": true,
+    "primaryUsedPercent": 0,
+    "weeklyUsedPercent": 27,
+    "credits": 0,
+    "resetCredits": 0
+  },
+  "allThreeDesignApproved": false,
+  "implementationAdmitted": false,
+  "rootIndependentFull85ContentReviewComplete": false,
+  "guardRefreshApproved": false,
+  "formalCases": "THREE_NOT_RUN",
+  "automationObserved": {
+    "id": "0ad-t14",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=5",
+    "targetThread": "01a1c8d0-ce47-7a13-8800-a59b935f0ce0",
+    "modifiedByChild": false,
+    "migrationReadback": "work/t14-t18-session-transfer-20261111/migration-readback.json",
+    "observation": "Read actual existing automation file; parent completed migration; no new schedule created"
+  },
+  "rootReadThisSession": [
+    "Nov11 handoff/transfer anchor",
+    "Nov6 handoff",
+    "Nov5 assessment/checkpoint",
+    "R06 crosswalk",
+    "DESIGN-v1",
+    "RAW-STAGE-v1",
+    "FUTURE-TEST-PLAN-v1",
+    "Latest three role progress status/coverage/provisional reasoning; no formal reports exist"
+  ],
+  "rootHistoricalReading": "Full canonical and remaining historical contracts still required before dependent implementation; no implementation performed",
+  "next": "Continue unread manifest contents and canonical/historical contracts; inspect original three formal reports only when available; never borrow their coverage. Full root review plus three formal approvals required before separate source assignment.",
+  "boundaries": "All prior FAIL/STOP/UNKNOWN/raw/seals retained. No author-code imports/compiles/tests/helpers/profile/producer/probe/fixtures/guard/attempt/engine; no C++/commit/push/delete/external messages/paid/reset/credits/model change/new schedule.",
+  "rootIndependentReviewProgress": "work/t17-metadata-controls-design-20261105/root-independent-read-progress-v5.json",
+  "rootIndependentCoverage": {
+    "full": 64,
+    "partial": 0,
+    "unread": 21
+  },
+  "gitObserved": {
+    "head": "d5133455c3dffba7d2d3f2465f75b82532ebcd3d",
+    "branch": "codex/t14-t18-closeout-20261104",
+    "indexEmpty": true
+  },
+  "originalReviewersAvailableInThisChat": false,
+  "originalReviewersAvailabilityEvidence": "collaboration.list_agents returned only /root; no cross-chat manipulation attempted",
+  "heartbeatInputUTC": "2026-11-12T06:26:04.144Z",
+  "latestRootSourceObservation": {
+    "topic": "Camera updates and restore height adjustment",
+    "evidenceIndices": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      34,
+      46
+    ],
+    "assessment": "Full GameView.cpp Update calls camera Update(deltaRealTime), gated by touch/focus/cinema and without a pause check in this body. CameraController Update responds to hotkeys/mouse/follow/zoom/height and can mutate controls. SetCamera also calls FocusHeight(false), which may adjust Y with constraints enabled. Getter bodies use GetValue, not smoothed presentation values. Therefore simulation pause or nominal setter values alone do not establish unchanged saved-camera controls. Same synchronous callback/nonreentrancy plus source/runtime/input/serializer closure and fresh getter lineage remain mandatory. This is a source observation, not an observed native mismatch or new formal DESIGN blocker."
+  },
+  "originalFormalReportsObserved": "CODE/Python/JSAPI JSON+MD all absent; original progress versions10/6/13 unchanged",
+  "latestRootSourceObservations": [
+    {
+      "topic": "Full prearm authority and metadata capture composition",
+      "evidenceIndices": [
+        60,
+        61,
+        62,
+        63,
+        65,
+        66,
+        74,
+        75
+      ],
+      "assessment": "Complete normative prearm SPEC and original full design reports preserve one immutable D=t_arm+5000000000ns, before permit publication and before load Popen, and complete GUI_ACK_VERIFIED receipt strictly before D and outer cutoffs. New metadata raw/control/expected persistence must compose inside this same interval; no new timestamp from received controls can restart the deadline. Old prearm approvals do not approve new85 metadata design or actual native feasibility."
+    },
+    {
+      "topic": "Historical correction and still-open obligations",
+      "evidenceIndices": [
+        3,
+        51,
+        52,
+        74,
+        77,
+        83,
+        84
+      ],
+      "assessment": "Historical R06 preimages assert host commit/readback before Save. Current corrected crosswalk explicitly separates source causal capture before Save from host control/expected durability before current actual-metadata semantic read. Preserve historical text as a preimage, not current authority. All11 technical obligations remain OPEN; R06 document completion and project count14/19 bounded DONE do not close gameplay or native acceptance."
+    }
+  ],
+  "priorAutomationObservation": {
+    "id": "0ad-t14",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=5",
+    "targetThread": "01a1ab0d-bce1-7f31-b9a9-33be9aaf3f6a",
+    "modifiedByChild": false,
+    "transferResponsibility": "Parent reads child receipt and migrates existing id; child must not create duplicate"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "owner": "/root/scenario_author",
+  "createdClientDate": "2026-10-25",
+  "updatedClientDate": "2026-10-26",
+  "status": "DONE_BOUNDED_READONLY_SOURCE_PLAN_ONLY",
+  "scope": "Six non-time metadatafield producer/getter/precommit/callorder; no runner implementation",
+  "deliverables": [
+    "FIELD-MATRIX.md",
+    "HOST-API-DRAFT.md",
+    "FUTURE-SCHEDULE-ABSENCE.md",
+    "OPEN-obligations.json",
+    "primary-bindings.json",
+    "official-bindings.json",
+    "context-bindings.json"
+  ],
+  "criticalFinding": "Replay.StartGame adds/replaces nested timestamp/engine_version/mods before RegisterInit for origin/load; none may be dropped/normalized bycomparator. Replaystart not flushed untilTurn; load immediatepreSave rawavailability unproved.",
+  "currentGUIMapScript": "Approved06a9/ec8c top-level script is part of expectedstaticbase",
+  "sourceEditsOutsideOwnedDirectory": false,
+  "implementation": false,
+  "testsModelsEngineGuards": "NOT_RUN",
+  "comparator85f93": "UNCHANGED_NO_DONE_RERUN",
+  "nativeControlsProducer": "OPEN_NOT_IMPLEMENTED_NOT_VOUCHED",
+  "actualRuntimeEngineModsCamera": "OPEN_UNMEASURED",
+  "next": "Root may use this exact plan to authorize bounded nativecontrolproducer/caller/raw/precommit design and fresh reviews. Untilthen comparisoncontrolprovenance remainsOPEN; no actualmetadata bootstrap and no fullrunner expansion."
+}

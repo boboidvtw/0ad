@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "purpose": "Bounded R07 native metadata source investigation; created 2026-11-06 Asia/Taipei",
+  "actor": "/root/r07_native_design",
+  "status": "SOURCE_CANDIDATE_IDENTIFIED_PROVENANCE_AND_INTEGRATION_OPEN",
+  "formalThreePartyDesignApproval": false,
+  "implementationAdmission": false,
+  "report": "work/t17-metadata-controls-design-20261105/native-design-investigation-v1.md",
+  "contextManifest": {
+    "path": "work/t17-metadata-controls-design-20261105/context-manifest-v1.json",
+    "sha256ReadNow": "f3ca2c1e38538f8a80921f7fa1c53898004231e4fac0b10e949a43ada649c02a",
+    "all74IndependentlyReadOrAuditedByThisActor": false
+  },
+  "authorityInterpretation": {
+    "originalHostApi": "HOST-API-DRAFT.md:10 requires controls established by source causality before Save; host commit/readback and reception ordering must be proved. It does not explicitly require host disk commit/readback to precede Save.",
+    "originalAbsence": "FUTURE-SCHEDULE-ABSENCE.md:12 requires independent precommitted controls before each Save, without naming host disk as the mandatory preSave location.",
+    "derivedCrosswalk": "METADATA-CONTROLS-CROSSWALK-2026-11-05.md:33 says host commit/readback before Save. This is stronger than the sealed original wording and must not silently create a new original-contract gate.",
+    "correction": "Earlier native-progress-v1.json and initial unsubmitted MD overread the derived wording as a mandatory original host-before-Save barrier. That interpretation is withdrawn, not converted into a formal failure or erased from history. Root may preserve preimage and align the derived crosswalk with the original contract.",
+    "candidateConformance": "Genuine source-owned GUI capture and immutable encode before Save, followed by host persisted full readback and expected Materialize before any actual archive metadata read, is a source-design candidate compatible with the original independent/precommitted obligation. Complete source/caller/realm/body/raw causality remains OPEN; labels/freeze/hash do not establish provenance."
+  },
+  "candidateFlow": [
+    "Host Prepare immutable static plan before launch: case/phase/checkpoint/ordinal, description, expected runtime/mod identity, full base init/settings, ten groups, verified-origin control lineage. Bind actual PID only after real Popen, not by invented prelaunch value.",
+    "Keep prelaunch load t_arm, session FIRST native pause, upstream restore and first full L0 exactly. After A/L0 and before the unique Save, source-owned readonly caller captures real GetEngineInfo, GetPlayerID brackets, full GetInitAttributes through native bridge, and camera six values. No turn/wait/warmquery or L0 replacement.",
+    "Validate fixed base and all known transformations, reject unknown keys/writers, validate full mods/order and groups. Snapshot into external data-only lexical storage and encode/freeze before Save; never freeze live native/game objects or hang controls on serialized roots.",
+    "Emit the complete preSave capture body/sequence through the existing raw stdout transcript, then immediately execute the original unique Save/B-or-L1/request. Do not depend on timely stdout flush or host acknowledgement before Save.",
+    "Host may receive buffered controls after Save but must preserve raw/received backup and actual PID/source/case/phase sequence, persist and full-readback controls, Bind/Materialize independently, and only then open/parse actual archive metadata. Missing/late/malformed/unknown/body ordering failure is fail-closed without actualmetadata fallback or second Save.",
+    "New raw record framing and byte caps need exact source design and fresh review; any change to a fixed raw schema is prospective unapproved amendment. No record, wire change, source implementation or execution is deployed by this investigation."
+  ],
+  "sourceEvidence": [
+    {
+      "id": "ORIGINAL_PRECOMMIT_WORDING",
+      "refs": ["work/t17-save-metadata-expected-controls-preparation/source-plan-v1/HOST-API-DRAFT.md:8-12", "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FUTURE-SCHEDULE-ABSENCE.md:12", "docs/empire-rts/METADATA-CONTROLS-CROSSWALK-2026-11-05.md:33"]
+    },
+    {
+      "id": "GET_ENGINE_INFO",
+      "refs": ["work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_Mod.cpp:35-42", "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_Mod.cpp:113-129", "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Mod.cpp:184-203", "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/SavedGame.cpp:83-96"],
+      "conclusion": "Same native version/mod producer, complete four-field records and enabled order; no runtime value or selected five-mod inventory measured."
+    },
+    {
+      "id": "GET_INIT_ATTRIBUTES",
+      "refs": ["work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/simulation/components/GuiInterface.js:202-205", "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/simulation/components/GuiInterface.js:2066", "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/simulation2/scripting/JSInterface_Simulation.cpp:46-64", "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/simulation2/Simulation2.cpp:843-859"],
+      "conclusion": "Official JS simulation getter with genuine native bridge/clone is a candidate independent fullattrs source; not a dedicated native C++ getter or authenticated principal. Writers/global/method/prototype/clone closure remains OPEN."
+    },
+    {
+      "id": "REPLAY_AND_FRESHLOAD",
+      "refs": ["work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Replay.cpp:71-101", "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_SavedGame.cpp:91-115", "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Game.cpp:382-387"],
+      "conclusion": "Each fresh load rewrites nested timestamp/version/mods. Start raw line has no explicit flush; Turn flush cannot be introduced. Getter candidate avoids depending on replay disk visibility, but availability/body/timing is not measured."
+    },
+    {
+      "id": "CAMERA_GETVALUE_LOW",
+      "refs": ["work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/CameraController.cpp:418-449", "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/scripting/JSInterface_GameView.cpp:76-114", "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/scripting/JSInterface_GameView.cpp:147-154", "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/scriptinterface/ScriptConversions.cpp:194-197", "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/maths/Fixed.h:151-174", "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/gui/session/session.js:591-607"],
+      "conclusion": "Exact GetValue native float -> JS NumberValue -> JSON; fixed setter and load restore may quantize. Never GetSmoothedValue, nominal0.6, epsilon, rounding or actualmetadata-derived replacement."
+    },
+    {
+      "id": "SAME_CALLBACK_AND_STRONGER_BARRIER",
+      "refs": ["tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js:167-184", "tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js:260-265", "tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js:284-289", "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/SPEC.md:20-32"],
+      "conclusion": "Current same callback has unique Save before request and host ACK, no synchronous host commit fence. A new waiting/token/sideband fence would require prospective unapproved amendment. This blocks only the stronger derived host-before-Save interpretation, not the original source-preSave/host-preActualRead candidate."
+    }
+  ],
+  "obligations": [
+    {"id":"ENGINE_INFO_RUNTIME","status":"OPEN","remaining":"Actual binary/runtime five-mod selection/order/full records and guarded native capture."},
+    {"id":"PRINCIPAL_CAPTURE","status":"OPEN","remaining":"Actual GetPlayerID before/after returns with case/PID/phase/source causal raw."},
+    {"id":"FULL_INITATTRS_PRODUCER","status":"OPEN","remaining":"Full startup/map/settings/trigger/global/method/prototype/native-clone writer closure and capture."},
+    {"id":"LOAD_NESTED_TIMESTAMP","status":"OPEN","remaining":"Exact per-freshload producer value from independent native-bridge capture, never origin/outer interval."},
+    {"id":"REPLAY_START_AVAILABILITY","status":"OPEN","remaining":"Replay flush gap retained; getter alternative not implemented or measured."},
+    {"id":"CAMERA_CONTROL","status":"OPEN","remaining":"GetValue float JSON/load-fixed mapping identified; actual values/nonmutation/raw lineage not verified."},
+    {"id":"GROUPS_INPUT_CLOSURE","status":"OPEN","remaining":"Ten-empty-group constructors known; human/hotkey/update/restore/prototype/toJSON/clone closure absent."},
+    {"id":"STATIC_DESCRIPTION_HOST_FACTORY","status":"OPEN","remaining":"Literal derivation known; immutable host factory and once-caller raw integration unimplemented."},
+    {"id":"PRECOMMIT_TRANSPORT","status":"OPEN","remaining":"Source preSave body/immutable encode and host preActualRead persistence candidate requires exact raw framing, guarded caller/body execution, full readback and phase correlation."},
+    {"id":"FUTURE_SCHEDULE_ABSENCE","status":"OPEN","remaining":"Full producer/mutator/serializer plus graph/queue/native closure; equality does not imply absence, legitimate gameplay Timer retained."},
+    {"id":"FULL_NATIVE_PIPELINE","status":"OPEN","remaining":"Entire host/runtime/source/profile locks/freshguards/original budgets/raw/archives/Save/load/count0/40roots pipeline NOT_RUN."}
+  ],
+  "obligationsClosed": 0,
+  "strongerBarrierRequiredByOriginalSealedWording": false,
+  "sourceCandidateApprovedOrProven": false,
+  "withinOriginalFiveSeconds": "INSUFFICIENT_DATA_NO_EXTENSION",
+  "preservedConstraints": ["prelaunch load t_arm", "session FIRST native pause", "L0 zero Advance", "unique Save", "no warmturn/flush/wait/multiSave", "no actualmetadata expected bootstrap", "no C++", "original six context keys and ACK", "all old FAIL/STOP/NOT_RUN/seals", "afb3339b guard", "three formal cases NOT_RUN", "24 consumed helpers"],
+  "readCoverage": {
+    "completeDocuments": ["source-plan-v1 CONTRACT/FIELD-MATRIX/HOST-API-DRAFT/FUTURE-SCHEDULE-ABSENCE/OPEN-obligations/manifest", "METADATA-CONTROLS-CROSSWALK-2026-11-05.md", "prearm-deadline-amendment-v2/SPEC.md", "typed-root-fix/SPEC.md", "source-plan-v1-review-js-v1/review.md and review.json all759lines"],
+    "gui": "Current functional text lines1-4 and7-297 including PREARM line8 read. Giant embedded WIRE line5 not fully reviewed; no full schema-review claim.",
+    "completePrimaryFiles": ["JSInterface_Mod.cpp", "JSInterface_SavedGame.cpp", "context native-loader-closure JSInterface_Simulation.cpp"],
+    "otherPrimaryFiles": "Exact ranges listed in accompanying MD only, not full transitive closure.",
+    "notReadOrClosed": ["all74contextbindings independently", "complete startup/map/settings/trigger writers", "full getter hooks/global replacement/nativeclone transitives", "full groups/human/hotkeys/update/prototype/toJSON", "all SerializeState callbacks", "full hostrunner/watch/VFS transport"],
+    "hashesReadNow": {
+      "sourcePlanManifest":"17eb3663cc51be04f880be2d2045bbbc1d5fe8fcf461cc2a82191ed9aa85e599",
+      "oldJSReview":"ccc2ef605452c2748626eb7305a72de5dc976636f0042d1b96395101b62315fe",
+      "currentGUI":"ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885",
+      "prearmSPEC":"bbde20a000d4e3e5bdaed90073c1a9d3a886048d3e9602d46af3ed665c93410e",
+      "typedRootSPEC":"ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b"
+    }
+  },
+  "executions": {"projectCode":false,"tests":false,"helpers":false,"import":false,"compile":false,"syntheticProof":false,"producer":false,"Popen":false,"engine":false,"resourceProbe":false,"guard":false,"attempt":false,"copyruntime":false,"network":false,"commit":false,"push":false,"delete":false},
+  "writes": "Only assigned native-design-investigation-v1.json/.md and native-progress-vN.json. No source, crosswalk, original controls, guard actor, other actors files or unrelated dirty work modified."
+}

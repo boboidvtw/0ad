@@ -1,0 +1,288 @@
+{
+  "schema": 1,
+  "dateClient": "2026-10-23",
+  "reviewer": "/root/scenario_js_review",
+  "verdict": "APPROVE_DESIGN_ONLY",
+  "scope": "ADDITIVE_HOST_MONOTONIC_FULL5S_PREARM_CONTRACT_ONLY_NOT_SOURCE_OR_NATIVE",
+  "manifestSHA256": "7c07a7de8e959ecd2711a29e892eaa3a34669a80a7420ab5dbe51bc627d76ee5",
+  "findingCounts": {
+    "CRITICAL": 0,
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 0
+  },
+  "findings": [],
+  "all23BindingsMatch": true,
+  "bindingAudit": [
+    {
+      "group": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/SPEC.json",
+      "bytes": 35505,
+      "sha256": "2271dfdee03523a3438527bfbb8a480de6757fff8925d9d09fc5c51ea61f4009",
+      "actualSHA256": "2271dfdee03523a3438527bfbb8a480de6757fff8925d9d09fc5c51ea61f4009",
+      "actualBytes": 35505,
+      "match": true
+    },
+    {
+      "group": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/SPEC.md",
+      "bytes": 6167,
+      "sha256": "bbde20a000d4e3e5bdaed90073c1a9d3a886048d3e9602d46af3ed665c93410e",
+      "actualSHA256": "bbde20a000d4e3e5bdaed90073c1a9d3a886048d3e9602d46af3ed665c93410e",
+      "actualBytes": 6167,
+      "match": true
+    },
+    {
+      "group": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/WIRE-EXTENSION.json",
+      "bytes": 5731,
+      "sha256": "05ee5b55406a5d88af2331782afd9ef18452e374572fbb843b8c2c9c67747baf",
+      "actualSHA256": "05ee5b55406a5d88af2331782afd9ef18452e374572fbb843b8c2c9c67747baf",
+      "actualBytes": 5731,
+      "match": true
+    },
+    {
+      "group": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/before/work/t17-save-admission-source-audit/refs/pinned-head/source/ps/scripting/JSInterface_VFS.cpp",
+      "bytes": 10217,
+      "sha256": "a2a53f27ea33dfd9883b6e6a0dfeeef0176275045785124498276c6971e747f4",
+      "actualSHA256": "a2a53f27ea33dfd9883b6e6a0dfeeef0176275045785124498276c6971e747f4",
+      "actualBytes": 10217,
+      "match": true
+    },
+    {
+      "group": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/before/work/t17-save-network-preparation/save-source-design-20261018/schema-fix/primaryrefs/primary-head/source/ps/scripting/JSInterface_Game.cpp",
+      "bytes": 4759,
+      "sha256": "ac71e18e4361f079de5295535014c4b9263a61b11c0f389fa27061c86139b7bc",
+      "actualSHA256": "ac71e18e4361f079de5295535014c4b9263a61b11c0f389fa27061c86139b7bc",
+      "actualBytes": 4759,
+      "match": true
+    },
+    {
+      "group": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/before/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md",
+      "bytes": 41941,
+      "sha256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b",
+      "actualSHA256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b",
+      "actualBytes": 41941,
+      "match": true
+    },
+    {
+      "group": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/before/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/code-review.json",
+      "bytes": 20162,
+      "sha256": "c25a6e9ac8e6c24bba5be10115119ff80c36b8b16ea81b2eaac763edf4e427cb",
+      "actualSHA256": "c25a6e9ac8e6c24bba5be10115119ff80c36b8b16ea81b2eaac763edf4e427cb",
+      "actualBytes": 20162,
+      "match": true
+    },
+    {
+      "group": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/before/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/js-api-review.json",
+      "bytes": 16383,
+      "sha256": "3b16e62ff2e2e93c2a67ea0f26ef1124a0a064f706154120d1a4173f68fcca84",
+      "actualSHA256": "3b16e62ff2e2e93c2a67ea0f26ef1124a0a064f706154120d1a4173f68fcca84",
+      "actualBytes": 16383,
+      "match": true
+    },
+    {
+      "group": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/before/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/manifest.json",
+      "bytes": 95073,
+      "sha256": "d33403ef9359bf0092ab55740114a0bc81104738c52fb31b982199f7a3ce4d43",
+      "actualSHA256": "d33403ef9359bf0092ab55740114a0bc81104738c52fb31b982199f7a3ce4d43",
+      "actualBytes": 95073,
+      "match": true
+    },
+    {
+      "group": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/before/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/source-registry.json",
+      "bytes": 247916,
+      "sha256": "3e6278f49bfe22d5298e8539497819fc14406319d695fe975a6e0e091995674b",
+      "actualSHA256": "3e6278f49bfe22d5298e8539497819fc14406319d695fe975a6e0e091995674b",
+      "actualBytes": 247916,
+      "match": true
+    },
+    {
+      "group": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/before/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/wire-schema.json",
+      "bytes": 28262,
+      "sha256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+      "actualSHA256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+      "actualBytes": 28262,
+      "match": true
+    },
+    {
+      "group": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/before-mapping.json",
+      "bytes": 4102,
+      "sha256": "b3369b9df463180e82db352c7b11cb0e18c08c75cca647d52d7176cc9b9de84f",
+      "actualSHA256": "b3369b9df463180e82db352c7b11cb0e18c08c75cca647d52d7176cc9b9de84f",
+      "actualBytes": 4102,
+      "match": true
+    },
+    {
+      "group": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/checkpoint.json",
+      "bytes": 596,
+      "sha256": "ce0b04f98d537642fd0618780e571cf9725485ae50e55e0fb722ada4285ce3e6",
+      "actualSHA256": "ce0b04f98d537642fd0618780e571cf9725485ae50e55e0fb722ada4285ce3e6",
+      "actualBytes": 596,
+      "match": true
+    },
+    {
+      "group": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/primaryrefs/pinned-head/source/ps/scripting/JSInterface_Debug.cpp",
+      "bytes": 3282,
+      "sha256": "5fde0a1afb41ea58185a08566699228fd0533d862dc10d28da7a809c5f57a13c",
+      "actualSHA256": "5fde0a1afb41ea58185a08566699228fd0533d862dc10d28da7a809c5f57a13c",
+      "actualBytes": 3282,
+      "match": true
+    },
+    {
+      "group": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/primaryrefs/pinned-head/source/ps/scripting/JSInterface_SavedGame.cpp",
+      "bytes": 4664,
+      "sha256": "59716fec2776d0e6e9fa2f3ddecbab0abcda7379b81c2de779282487d360a42a",
+      "actualSHA256": "59716fec2776d0e6e9fa2f3ddecbab0abcda7379b81c2de779282487d360a42a",
+      "actualBytes": 4664,
+      "match": true
+    },
+    {
+      "group": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/timeline.json",
+      "bytes": 1639,
+      "sha256": "0c18f3ccfe551cdbf6a9986336ec1dccafab396b08fed8de1699c44805b393f4",
+      "actualSHA256": "0c18f3ccfe551cdbf6a9986336ec1dccafab396b08fed8de1699c44805b393f4",
+      "actualBytes": 1639,
+      "match": true
+    },
+    {
+      "group": "artifacts",
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/revision.json",
+      "bytes": 654,
+      "sha256": "fabfac84ec6976d89e333f7a3ce405f5911fd1b14f0db5ca8d3c3b26e512aa07",
+      "actualSHA256": "fabfac84ec6976d89e333f7a3ce405f5911fd1b14f0db5ca8d3c3b26e512aa07",
+      "actualBytes": 654,
+      "match": true
+    },
+    {
+      "group": "referenceInputs",
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/manifest.json",
+      "bytes": 95073,
+      "sha256": "d33403ef9359bf0092ab55740114a0bc81104738c52fb31b982199f7a3ce4d43",
+      "actualSHA256": "d33403ef9359bf0092ab55740114a0bc81104738c52fb31b982199f7a3ce4d43",
+      "actualBytes": 95073,
+      "match": true
+    },
+    {
+      "group": "referenceInputs",
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md",
+      "bytes": 41941,
+      "sha256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b",
+      "actualSHA256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b",
+      "actualBytes": 41941,
+      "match": true
+    },
+    {
+      "group": "referenceInputs",
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/wire-schema.json",
+      "bytes": 28262,
+      "sha256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+      "actualSHA256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+      "actualBytes": 28262,
+      "match": true
+    },
+    {
+      "group": "referenceInputs",
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/source-registry.json",
+      "bytes": 247916,
+      "sha256": "3e6278f49bfe22d5298e8539497819fc14406319d695fe975a6e0e091995674b",
+      "actualSHA256": "3e6278f49bfe22d5298e8539497819fc14406319d695fe975a6e0e091995674b",
+      "actualBytes": 247916,
+      "match": true
+    },
+    {
+      "group": "referenceInputs",
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/code-review.json",
+      "bytes": 20162,
+      "sha256": "c25a6e9ac8e6c24bba5be10115119ff80c36b8b16ea81b2eaac763edf4e427cb",
+      "actualSHA256": "c25a6e9ac8e6c24bba5be10115119ff80c36b8b16ea81b2eaac763edf4e427cb",
+      "actualBytes": 20162,
+      "match": true
+    },
+    {
+      "group": "referenceInputs",
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/js-api-review.json",
+      "bytes": 16383,
+      "sha256": "3b16e62ff2e2e93c2a67ea0f26ef1124a0a064f706154120d1a4173f68fcca84",
+      "actualSHA256": "3b16e62ff2e2e93c2a67ea0f26ef1124a0a064f706154120d1a4173f68fcca84",
+      "actualBytes": 16383,
+      "match": true
+    }
+  ],
+  "deepBaseEqualityChecks": {
+    "request": true,
+    "ack": true,
+    "typedGraph": true,
+    "commandReceipts": true,
+    "policiesCampaign": true,
+    "originalVFS": true,
+    "newPathsSpecVsExtension": true
+  },
+  "fullIndependentCoverage": [
+    {
+      "area": "Full exact scope",
+      "result": "完整SPEC.json35505bytes/md、WIRE-EXTENSION、timeline/revision/checkpoint、舊d334SPEC/wire/registry/雙review、pinnedDebug/SavedGame/Game/VFS及beforemappings實讀。23actualbytes/length/SHA bindings全MATCH。此獨立JS/API review不以CODE42384核可代替；前版ace606僅歷史，不核舊GUI WIP。"
+    },
+    {
+      "area": "Base wire/policy preservation",
+      "result": "機器深等值比對finalWireUnchanged.request/ack/typedGraph/commandReceipts/policiesCampaign全true；原VFSdeeptrue，SPECpaths和WIREexactNewAllowlistdeeptrue。原requiredkeys/types/rootprofiles/contextselection/caps/status/receipts/principal與all40roots未刪改。Boot僅加transactionArms，新phasearm兩logicalrecords+retainedtmp三physicalpaths，原finalrequest與ARCHIVE_VERIFIEDACK維持。"
+    },
+    {
+      "area": "Whole5s start lower bound",
+      "result": "同一hostmonotonic整數t_arm在permit發佈之前一次reserve，D=t_arm+5000000000ns不可移動或重設。OriginGUI先見完整validatedpermit才Pause，因此t_arm<=actualPause；load在Popen前reserve/permit，因此t_arm<Popen<firstsessionPause。REQUEST_READY/延遲TX_BEGIN都不能作回溯起點，不假設stdout即時。"
+    },
+    {
+      "area": "Strict endpoint upper bound",
+      "result": "GUI完整驗oldACK值、原pausedS、principal/viewcaller、pause與full40graph後、resume前發GUI_ACK_VERIFIED；完整baseACK/arm/case/phase/ordinal/nonce身份在raw中，host完整recordreceive時間必嚴格<D且<outerworkcutoffs。因果關係validated<=emit<=hostreceive可保守界定GUI核ACK在D之前；buffered/late/missing只FAIL或UNKNOWN，不移起點。這是host最終證據gate，不虛構GUI已有hostreceiptACK或即時flush。"
+    },
+    {
+      "area": "Origin schedule and simulation windows",
+      "result": "GUI固定literal armintent只在checkpointstart-200的前一200mslattice、priorreceipt/ACK完成、無outstandingcmd且nativeprincipal/viewcaller1；arm只寫資料不Pause/Save/command/simstate。permit核驗及真正Pause仍原合法S窗2000..2100/4000..4100/9000..9100/11000..11100/14000..14100；latepermit/超窗即FAILSTOP，沒有rearm/延窗/第二Save。"
+    },
+    {
+      "area": "Load first pause and guard/startup timing",
+      "result": "Loadintent由host依immutableboot/originalarchiveplan建立，不偽nativecaller/S；t_arm在Popen前，permit發佈/全部remainingfullguards/reservation/independentfreshguard/Popen/nativeStartSavedGame/deserialize/Interpolate/GUIstartup全吃同D。Sessionfirstnativeaction仍SetPaused(true,false)，不能先poll/getter/upstreaminit；其後原upstreaminit、permitboot重核、FIRSTfullL0直接唯一roundtripSave/L1，不warmquery替代。原Popen<C+30、startupmin(Popen+10,C+40)與D較早者勝；5s不夠仍BLOCK/FAIL/NOT_RUN，不能skipguard/warmup/extraload/retry。"
+    },
+    {
+      "area": "Exact channel/nonce/file semantics",
+      "result": "Bootorigin5/checkpointorder及load1原archivecheckpoint、onceprecommitteddistinct64hexarmNonce；commoncampaign/case/source/seed/phase/ordinal全部exactbind。Hostrequestactualbytes/SHA權威，GUI不假獨立bytehash。僅phase-arm-request/permit.tmp/permit.json exactpath，無whole-tree例外。GUIWriteJSONvoid/nonexclusive只稱onceattempt+fullvaluereadback，hostactualrawstrictparse/length/SHA/inode驗。"
+    },
+    {
+      "area": "Atomic publication and failures",
+      "result": "Hostloadintent/permittmp O_EXCL/O_NOFOLLOW/private0700/0600、fullwrite/fstat/fdpath/fsync/close/reopenfullbytesSHA、hardlinkfinal noreplace、retain tmp/finalsame devino、dirsync/finalactualreadback，全在D內。Partiallink/shortwrite/close/read/fsync/clockback/unavailable/overflow/noncepathmismatch/duplicate/mutation/afterdeadline保partials且stickyFAILUNKNOWN，不renameoverwrite/unlink/fallback/rearm。TRANSACTION_ARMED只phaseauthorization，從非archive或casePASS。"
+    },
+    {
+      "area": "Pinned API compatibility",
+      "result": "JSInterface_Debug.GetMicroseconds36-38明確JS_Now epoch，不能當hostmonotonic；Game.SetPaused115-135直接pausedstate且sendMessage=false不靠netmessage；SavedGame.Save44-49是void且nativefailurelog，成功必另驗actualarchive/metadata/count0/graph，不能return自證；StartSavedGame78ff要求無Game/NetServer/NetClient且載原archive；VFSWriteJSON244-265是void/CreateFile而非OEXCL，GUIonce/nonexclusive界線正確。無新假nativeclock/API。"
+    },
+    {
+      "area": "Outer budgets and authority",
+      "result": "D之外同時嚴守campaign600、6serialcases、case90/prelaunch30/newwork80/cleanup90/cutoff540/final600；full5originarchives+5freshloads+5roundtrips/42thenconditional7/retry0/一次engine及所有commands/windows/death/HP/LOS/Complete/fullprefix/queue0/metadata/noFuture/rootroundtrip/raw/visual/sourceguards保留。Host獨立watchdog到D停止newwork；OS/IO/kill不能及時完成明列UNKNOWNFAIL，沒有神奇hardbound或latePASS。"
+    },
+    {
+      "area": "Current unimplemented status",
+      "result": "Newchannel/source/hostrunner/actualclock/path/watch/fullpipeline均未實作或未量測；本設計未跑tests/models/proof/engine。原deadlineproof仍BLOCK；雙design核可後只能另boundedtests/sourcefreeze/freshfullsource雙審。本APPROVE_DESIGN_ONLY不核source/native或保證load能在5s達成。"
+    }
+  ],
+  "newChannelImplemented": false,
+  "currentDeadlineProof": "BLOCK_UNIMPLEMENTED_FULL5S_HOSTRUNNER_AND_CHANNEL",
+  "actualNativeClockPathWatchPhasePipeline": "OPEN_NOT_RUN",
+  "engine": "NOT_RUN",
+  "sourceWrites": false,
+  "testsModelsProofRun": false,
+  "originalFAILandGates": "PRESERVED",
+  "next": "Separate authorized source/test implementation freeze then fresh complete independent source CODE+JS/API; runtime infeasibility stays BLOCK/FAIL/NOT_RUN"
+}
