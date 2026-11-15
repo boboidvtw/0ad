@@ -1,13 +1,15 @@
 <!-- Purpose: 跨時代 RTS 目標、架構與可驗收路線；Created: 2026-09-06. -->
 # 開發計畫
 
+> **2026-11-15 起以 [重設計畫](RESET-PLAN-2026-11-15.md) 與 [STATUS](STATUS.md) 為準。** 下方 T14–T18 的流程描述屬於歷史紀錄，已凍結。
+
 ## 2026-11-15 收工 / Session closeout
 
-[詳細說明](SESSION-CLOSEOUT-2026-11-15-T14-T18.md) · [後續作業](reference_t14_t18_next_steps_20261115.md) · [資料與SHA索引](handoff-data/2026-11-15/README.md)。Python/JSAPI兩正式DESIGN-only核可已落盤；CODE原actor回報完成但唯讀使正式檔缺，三方正式核可與implementation仍未准入。新root本人3/85、前root85只繼承。原FAIL/STOP/UNKNOWN、guard刷新待具體決策、3casesNOT_RUN、24helpers耗用、11義務OPEN保留；沒有實作/tests/engine或release。僅本次文件資料commit/push，原dirty與ACTIVE每5h排程保留。
+[詳細說明](archive/SESSION-CLOSEOUT-2026-11-15-T14-T18.md) · [後續作業](archive/reference_t14_t18_next_steps_20261115.md) · [資料與SHA索引](archive/handoff-data/2026-11-15/README.md)。Python/JSAPI兩正式DESIGN-only核可已落盤；CODE原actor回報完成但唯讀使正式檔缺，三方正式核可與implementation仍未准入。新root本人3/85、前root85只繼承。原FAIL/STOP/UNKNOWN、guard刷新待具體決策、3casesNOT_RUN、24helpers耗用、11義務OPEN保留；沒有實作/tests/engine或release。僅本次文件資料commit/push，原dirty與ACTIVE每5h排程保留。
 
 Two formal design-only approvals are archived; CODE formal delivery remains blocked by its reported read-only environment. This is an archival documentation/data update, not runtime acceptance or a game release.
 
-更新日期：2026-11-05。最新盤點：19項主任務，14項限定DONE、5項未完成；[完整評估與18工作包](PROJECT-ASSESSMENT-2026-11-05.md)優先於下列歷史進度。三SOURCE核可已完成，readiness STOP／一次guard刷新待具體決策；不等native核可。
+更新日期：2026-11-05。最新盤點：19項主任務，14項限定DONE、5項未完成；[完整評估與18工作包](archive/PROJECT-ASSESSMENT-2026-11-05.md)優先於下列歷史進度。三SOURCE核可已完成，readiness STOP／一次guard刷新待具體決策；不等native核可。
 
 歷史里程碑摘要（2026-10-08）：M1、M2 最小流程驗收完成；T03–T07 已完成限定原型驗收，T08 [潛艇調查](evidence/t08-validation.md)完成，完整潛艇延後；[T09決策](t09-engine-decision.md)已完成：維持R28、暫不改C++，M3限定可行性階段完成；[T10靜態匯入](evidence/t10-validation.md)已完成，[T11原創低面數切片](evidence/t11-validation.md)完成限定驗收，M4 DONE（樣板範圍），T12、T13已限定DONE；T14已取得[限定效能基線](evidence/t14-validation.md)，不限FPS效能門檻未通過；[600單位60fps診斷](evidence/t14-diagnosis-validation.md)通過，完整效能維持PARTIAL。完整攻擊檢查／潛艇／精確空戰另列T16–T18 TODO。飛行限制與證據見 [T07報告](evidence/t07-validation.md)。M2 限定標準資源脚本玩家與固定防守對手，不代表通用 AI 完成。專案入口：[README](../../README.md)；執行狀態：[進度追蹤](progress.md)。
 
@@ -110,7 +112,7 @@ M3 的飛行場景至少驗證：起飛、移動、降落、返航目標有效�
 
 只移除runner的seed42限制兩行；76 Python一般/-O、5份JS mock、CLI限制、seed42 raw重解析及本場直接raw核算通過，27場歷史hash與T13 129檔不變。現行來源改看[seed7 manifest174檔](evidence/t14-match-seed7-source-manifest.json)，原match174及更早來源表保留歷史。
 
-兩地圖seed通過只補跨seed覆蓋，不是同條件重複性；原不限FPS與200重複性FAIL仍在，T14仍PARTIAL。雙AI/大混戰/長壓/多人/跨硬體/返航/精確空戰/潛艇仍NOT RUN。下一步先立同seed重複性或雙AI負載契約。HEAD726a3ae、index空、無commit/push/排程/遺留引擎，詳見[最新交接](SESSION-HANDOFF-2026-10-03-T14.md)。
+兩地圖seed通過只補跨seed覆蓋，不是同條件重複性；原不限FPS與200重複性FAIL仍在，T14仍PARTIAL。雙AI/大混戰/長壓/多人/跨硬體/返航/精確空戰/潛艇仍NOT RUN。下一步先立同seed重複性或雙AI負載契約。HEAD726a3ae、index空、無commit/push/排程/遺留引擎，詳見[最新交接](archive/SESSION-HANDOFF-2026-10-03-T14.md)。
 
 ### 2026-10-03 — T14 完整局重複性事前契約
 
@@ -126,7 +128,7 @@ M3 的飛行場景至少驗證：起飛、移動、降落、返航目標有效�
 
 準備階段誤列HP曲線且過早啟動，人工停止45.501133秒attempt保留FAIL（engine exit0但缺完成payload、runner exit1），無效能結論。勘誤/原契約/hash在正式R1前封存，所有門檻/工具/負載未改，正式3樣本無重跑；舊seed42/7不納樣本。17項match Python普通/-O及JS mock、歷史/新raw重解析與另一代理直接raw核算PASS；174/126來源、T13 129、原285檔hash/30raw資料夾相符。新repeatability manifest174檔與工具來源內容不變，原證據保留歷史。
 
-整體T14仍PARTIAL；原不限FPS/200重複性FAIL不變，雙AI/大混戰/長壓/多人/跨硬體/返航/精確空戰/潛艇NOT RUN。下一步優先評估既有雙AI限定契約，不直接擴跑、不改AI/C++。HEAD726a3ae/index空、無commit/push/刪檔/排程；引擎及runner已退出。[最新交接](SESSION-HANDOFF-2026-10-03-T14.md)。
+整體T14仍PARTIAL；原不限FPS/200重複性FAIL不變，雙AI/大混戰/長壓/多人/跨硬體/返航/精確空戰/潛艇NOT RUN。下一步優先評估既有雙AI限定契約，不直接擴跑、不改AI/C++。HEAD726a3ae/index空、無commit/push/刪檔/排程；引擎及runner已退出。[最新交接](archive/SESSION-HANDOFF-2026-10-03-T14.md)。
 
 ### 2026-10-03 — T14 雙AI限定契約先行
 
@@ -176,7 +178,7 @@ Git/index/191現行來源/T13 129/官方R28雙hash/codesign與engine缺席核對
 
 17共同ATTACKING快照；Unit loss300/253、P1存活0/P2 47，逐ID/HP/owner/template与300−alive官方loss等式核對。觀測同時攻擊峰值223，不冒稱600同時攻擊/120秒持續交戰。純士兵無ConquestCritical，官方endless/VictoryConditions[]、末state均active，正式勝負NOT RUN；不是雙AI/混合大戰。camera起終(384,158.231185913,220)/rotation(.8500061035,0)/zoom180一致，bounds50–200。
 
-109 Python一般/-O各PASS、8JS mocks、4CLI拒絕、37歷史raw精確重解析、契約/語言/整合reviewPASS。200現行來源（原191+9、原集合僅runner改）/measured128，原manifest/FAIL/profiles/主Mod/AI/C++不變。新raw work/t14-performance/20261004T013433364110Z-battle-42，現行source見evidence/t14-battle-source-manifest.json；HEAD726a3ae/index空、engine/runner退出、無commit/push/刪除/背景或排程。T14整體PARTIAL，原不限FPS/200重複性FAIL仍在；混合兵種/AI戰鬥長壓/熱/多人跨硬體/精確空戰/潛艇仍NOT RUN。下一步先盤點既有混合兵種活動與原生武器的限定負載可行性，事前契約後才測。[最新交接](SESSION-HANDOFF-2026-10-04-T14.md)。
+109 Python一般/-O各PASS、8JS mocks、4CLI拒絕、37歷史raw精確重解析、契約/語言/整合reviewPASS。200現行來源（原191+9、原集合僅runner改）/measured128，原manifest/FAIL/profiles/主Mod/AI/C++不變。新raw work/t14-performance/20261004T013433364110Z-battle-42，現行source見evidence/t14-battle-source-manifest.json；HEAD726a3ae/index空、engine/runner退出、無commit/push/刪除/背景或排程。T14整體PARTIAL，原不限FPS/200重複性FAIL仍在；混合兵種/AI戰鬥長壓/熱/多人跨硬體/精確空戰/潛艇仍NOT RUN。下一步先盤點既有混合兵種活動與原生武器的限定負載可行性，事前契約後才測。[最新交接](archive/SESSION-HANDOFF-2026-10-04-T14.md)。
 
 本battle獨立代理未import正式parser，直接raw核算667chunks/4810frames/兩窗口/HP及分類損失/首次耗盡/控制與來源PASS、issues空。419既有檔hash、T13 129/主Mod集合、200現行來源相符；38 raw資料夾保留，HEAD/index/182鏈結/engine及runner退出核對PASS，見work/t14-battle-sources/independent-raw-audit.json與closeout-audit.json。無commit/push/背景工作/排程。
 
@@ -196,7 +198,7 @@ Git/index/191現行來源/T13 129/官方R28雙hash/codesign與engine缺席核對
 
 121 Python一般/-O各PASS、9JS mocks、4CLI拒絕、38歷史raw封存/現行runner精確重解析PASS。另發現舊smoke缺effectiveConfig，兩版parser都拒絕且原stored passed:true未改，見historical-reparse-cli.json。主代理分離實作、未import正式parser直接核算2253chunks/5667frames/兩窗口及真實FAIL/64慢幀PASS，非獨立代理審查。209現行來源（原200+9、原集合只runner改）/measured128，431歷史raw/evidence/profiles與T13 129/主Mod集合保留，39 raw資料夾。新raw work/t14-performance/20261004T092355508923Z-mixed-42。
 
-整體T14 PARTIAL、既有限定PASS/FAIL不改，混合性能目前FAIL（不是NOT RUN）。下一步先離線診斷新場第一分鐘，根因Insufficient data；任何新量測需另立單一變因/可觀測契約，不直接擴矩陣或救原FAIL。AI/戰鬥長壓、雙AI跨seed/重複性、熱/頻率、多人跨硬體、正式混合勝負、精確空戰/返航/潛艇仍NOT RUN。HEAD726a3ae/index空、engine/runner退出；無commit/push/刪除/背景工作/排程。[最新交接](SESSION-HANDOFF-2026-10-04-T14-MIXED.md)。
+整體T14 PARTIAL、既有限定PASS/FAIL不改，混合性能目前FAIL（不是NOT RUN）。下一步先離線診斷新場第一分鐘，根因Insufficient data；任何新量測需另立單一變因/可觀測契約，不直接擴矩陣或救原FAIL。AI/戰鬥長壓、雙AI跨seed/重複性、熱/頻率、多人跨硬體、正式混合勝負、精確空戰/返航/潛艇仍NOT RUN。HEAD726a3ae/index空、engine/runner退出；無commit/push/刪除/背景工作/排程。[最新交接](archive/SESSION-HANDOFF-2026-10-04-T14-MIXED.md)。
 
 
 ### 2026-10-04 — T14 mixed FAIL 離線診斷與profiler待執行契約
@@ -205,7 +207,7 @@ Git/index/191現行來源/T13 129/官方R28雙hash/codesign與engine缺席核對
 
 第1窗累積sim-wall差3.805966秒，末4.242832秒；後段局部性能較好但未追回整體落後，P2近戰已耗盡，原兩窗口FAIL不改。早段活動/存活與慢幀分布只是關聯，缺逐區段native trace、逐frame sim advance與GUI/OS epoch anchor，simulation/render/Projectile/observer/frequency/OS根因仍Insufficient data。新增全部bins/快照對齊JSON與時間軸圖；現行209來源、443原raw/evidence/profiles、T13 129與39raw資料夾保留。
 
-另寫[t14-mixed-profile待執行契約](t14-mixed-profile.md)：1場相同fixture/控制/原120秒或耗盡stop，唯一新增profiling/marker/GET觀測處置，主要trace0–20秒、約1秒讀ring/有界保存、sequence与epoch/native bracket、完整frame/region驗證，profiler樣本不作no-profiler性能PASS或paired因果歸因。GUI-profiler2 binding仍NOT VERIFIED，未達前置不得啟動；profiler runtime NOT RUN。本turn已完成離線限定工作，mixed FAIL/T14 PARTIAL保留；下一步先核官方R28 binding與觀測/工具契約。HEAD726a3ae/index空、engine/runner退出，未commit/push/刪檔/背景或排程。[最新離線交接](SESSION-HANDOFF-2026-10-04-T14-MIXED-DIAGNOSIS.md)。
+另寫[t14-mixed-profile待執行契約](t14-mixed-profile.md)：1場相同fixture/控制/原120秒或耗盡stop，唯一新增profiling/marker/GET觀測處置，主要trace0–20秒、約1秒讀ring/有界保存、sequence与epoch/native bracket、完整frame/region驗證，profiler樣本不作no-profiler性能PASS或paired因果歸因。GUI-profiler2 binding仍NOT VERIFIED，未達前置不得啟動；profiler runtime NOT RUN。本turn已完成離線限定工作，mixed FAIL/T14 PARTIAL保留；下一步先核官方R28 binding與觀測/工具契約。HEAD726a3ae/index空、engine/runner退出，未commit/push/刪檔/背景或排程。[最新離線交接](archive/SESSION-HANDOFF-2026-10-04-T14-MIXED-DIAGNOSIS.md)。
 
 
 ### 2026-10-04 — T14 mixed 原生 CPU 診斷取證限定PASS
@@ -220,14 +222,14 @@ Git/index/191現行來源/T13 129/官方R28雙hash/codesign與engine缺席核對
 
 154 Python一般／-O各PASS、10JS、8CLI拒絕、39歷史raw精確重解析、獨立不import正式parser直接raw核算與逐ID／HP／weapon／owner／loss帳PASS。現行220來源（原209全未改＋11新檔）／measured122，首220來源另保存；446份先前raw/evidence/profiles、首場11、T13 129／主Mod集合與41raw資料夾相符。HEAD726a3ae／index空，engine／runner／本機HTTP退出，無commit／push／刪檔／背景或排程。
 
-下一步先離線縮小simulation update／CMessageUpdate／destruction queue候選与缺少的觀測；若需新量測另立單一變因／對照／樣本／局部門檻契約，不重跑已完成矩陣，不改C++／AI／武器或擴空戰／潛艇。[最新交接](SESSION-HANDOFF-2026-10-04-T14-PROFILE.md)。
+下一步先離線縮小simulation update／CMessageUpdate／destruction queue候選与缺少的觀測；若需新量測另立單一變因／對照／樣本／局部門檻契約，不重跑已完成矩陣，不改C++／AI／武器或擴空戰／潛艇。[最新交接](archive/SESSION-HANDOFF-2026-10-04-T14-PROFILE.md)。
 
 
 ### 2026-10-05 — T14 simulation／cleanup離線分解限定PASS
 
 依[t14-sim-diagnosis事前契約](t14-sim-diagnosis.md)，只讀17份既有main query，無新engine／runtime、無產品220來源或AI／C++／武器變更。93turn直接子wall聯集／未覆蓋wall與所有慢parent保留，獨立raw核算不import主要helper／正式parser，PASS。全部93次最長label分布Update67／Motion9／Flush17；17次>50ms simulation中Flush13／Update4。1171 generic Flush依ancestor分為frame93／sim update93／interpolate985，不全算simulation cleanup。未覆蓋wall p950.276005／max3.458997ms不是CPU-exclusive／wait／GC／GPU。
 
-官方固定R28 C++與實際public.zip來源核對支持broadcast、Timer／Attack／Health與Destroy／Deinit路徑，沒有逐handler／queue大小／entity／component觀測；死亡／corpse與統計可在入queue前發生，不全歸Flush。這是定位候選，不是根因或修復PASS。原mixed FAIL與T14 PARTIAL保留；新runtime、修復驗收、熱頻率／GPU仍NOT RUN。詳[validation](evidence/t14-sim-diagnosis-validation.md)與[最新交接](SESSION-HANDOFF-2026-10-05-T14-SIM-DIAGNOSIS.md)。下一步先評估Mod層只增加觀測的可行性，再事前約定單一變因／樣本／對照／擾動／局部gate／stop與retry。
+官方固定R28 C++與實際public.zip來源核對支持broadcast、Timer／Attack／Health與Destroy／Deinit路徑，沒有逐handler／queue大小／entity／component觀測；死亡／corpse與統計可在入queue前發生，不全歸Flush。這是定位候選，不是根因或修復PASS。原mixed FAIL與T14 PARTIAL保留；新runtime、修復驗收、熱頻率／GPU仍NOT RUN。詳[validation](evidence/t14-sim-diagnosis-validation.md)與[最新交接](archive/SESSION-HANDOFF-2026-10-05-T14-SIM-DIAGNOSIS.md)。下一步先評估Mod層只增加觀測的可行性，再事前約定單一變因／樣本／對照／擾動／局部gate／stop與retry。
 
 
 ### 2026-10-05 — T14 Timer／Health細分原生取證限定PASS
@@ -238,7 +240,7 @@ Git/index/191現行來源/T13 129/官方R28雙hash/codesign與engine缺席核對
 
 16main＋2overview／60,737,663bytes，1004markers／1003連續frame／92strictturn各1Timer，Death／Corpse各70call。Timer p9535.086／max46.872ms，Death p950.189／max1.320999，Corpse p950.127／max1.163998。18慢sim update中Flush12／Update6；最大frame818turn66 parent75.681／Flush52.053999、同turnTimer18.460001／四Death union.272998／四Corpse union.243998ms，嵌套不相加；不把清理長尾叫corpse成本／queue量或唯一根因。70call與wall15.045390／sim14.0快照loss41時間區间不同。首末frame跨marker、wholemax250.856含載入，全部保留。
 
-獨立代理無import正式parser／runner／helper，直接raw核全call／turn／5秒bins／union／intersection／最大case、22逐ID／HP／owner／weapon／官方loss、全interval與兩窗PASS。詳[validation](evidence/t14-fine-profile-validation.md)與[新交接](SESSION-HANDOFF-2026-10-05-T14-FINE-PROFILE.md)。原mixed FAIL／T14 PARTIAL保留；根因Insufficient data、改善／overhead／熱頻率／GPU／正式勝負NOT RUN。下一步先離線核Timer子callback與JS Destroy／Deinit可觀測範圍，另立最小單一變因契約才量測，不擴矩陣、不改C++／AI。無commit／push／刪檔／背景／排程。
+獨立代理無import正式parser／runner／helper，直接raw核全call／turn／5秒bins／union／intersection／最大case、22逐ID／HP／owner／weapon／官方loss、全interval與兩窗PASS。詳[validation](evidence/t14-fine-profile-validation.md)與[新交接](archive/SESSION-HANDOFF-2026-10-05-T14-FINE-PROFILE.md)。原mixed FAIL／T14 PARTIAL保留；根因Insufficient data、改善／overhead／熱頻率／GPU／正式勝負NOT RUN。下一步先離線核Timer子callback與JS Destroy／Deinit可觀測範圍，另立最小單一變因契約才量測，不擴矩陣、不改C++／AI。無commit／push／刪檔／背景／排程。
 
 
 ### 2026-10-05 — T14 Timer子區段／Destroy離線分解限定PASS
@@ -247,7 +249,7 @@ Git/index/191現行來源/T13 129/官方R28雙hash/codesign與engine缺席核對
 
 官方固定R28／實際public來源112檔核對；83頂層JS僅6個OnDestroy、無JS Deinit／GlobalDestroy，兩初始template只匹配UnitAI.OnDestroy。搜尋label兩site範圍不同且缺entity／state／site attrs，不是純native查詢或全部方法call。UnitMotion Deinit空、StopMoving／RangeManager DestroyActiveQuery不直接搜尋；Ownership Destroy可同步ownership訊息dispatch，但UnitAI轉INVALID不進有條件FSM重設，不指定listener因果。細分搜尋方法entity／state是下一個最小候選，僅包OnDestroy不足完整覆蓋，人工Deinit不做。
 
-詳[validation](evidence/t14-callback-diagnosis-validation.md)、[results](evidence/t14-callback-diagnosis-results.json)與[新交接](SESSION-HANDOFF-2026-10-05-T14-CALLBACK-DIAGNOSIS.md)。原mixed FAIL／T14 PARTIAL不變、根因Insufficient data、修復／overhead／新方法scope NOT RUN。641先前資料／42raw／231source／T13 129／前批76evidence保留；下次量測先單一變因契約／mock／審查／source lock。無commit／push／刪檔／背景／排程，結束核退出。
+詳[validation](evidence/t14-callback-diagnosis-validation.md)、[results](evidence/t14-callback-diagnosis-results.json)與[新交接](archive/SESSION-HANDOFF-2026-10-05-T14-CALLBACK-DIAGNOSIS.md)。原mixed FAIL／T14 PARTIAL不變、根因Insufficient data、修復／overhead／新方法scope NOT RUN。641先前資料／42raw／231source／T13 129／前批76evidence保留；下次量測先單一變因契約／mock／審查／source lock。無commit／push／刪檔／背景／排程，結束核退出。
 
 
 ### 2026-10-05 - T14 search-method diagnostic IN_PROGRESS
@@ -263,7 +265,7 @@ Prospective [contract](t14-search-profile.md) written before tools or runtime. E
 
 16main＋2overview／70,473,117bytes；1037markers／1036連續選定frames／93strictturn，全部query1180完整frame掃描。7914方法call／600entity：Timer5765／simFlush2148／Motion1，全部entry state WALKINGANDFIGHTING，scope聯集1963.541900ms；5309舊label各含1方法，另2605未標記方法、371marker外方法與149GUI邊界不確定call保留。最大Flush55.284001ms内152call／152entity聯集48.145009ms（seat122／30、近／遠13／139），最大Timer46.660999ms内134call／134entity聯集39.513992ms；全17慢sim及30慢GUI是不同集合、nested不相加。根因／trigger／queue Insufficient data，修復／overhead／正式勝負NOT RUN。
 
-來源代理草稿因usage限制由主代理補完，另一code-review代理審查並直接raw標準庫一般/-O獨立核算PASS一致，無import正式parser／runner／helper；POST-RUNTIME APPROVE。詳[validation](evidence/t14-search-profile-validation.md)、[results](evidence/t14-search-profile-results.json)、[新交接](SESSION-HANDOFF-2026-10-05-T14-SEARCH-PROFILE.md)。收尾核243／原231／T13 129／callback151／644先前資料與43raw／退出；無commit／push／刪檔／背景／排程。下一步優先離線核同場entity／ancestry與官方UnitAI／FSM可能dispatch路徑；新scope另立契約，不直接改AI、C++或擴矩陣。
+來源代理草稿因usage限制由主代理補完，另一code-review代理審查並直接raw標準庫一般/-O獨立核算PASS一致，無import正式parser／runner／helper；POST-RUNTIME APPROVE。詳[validation](evidence/t14-search-profile-validation.md)、[results](evidence/t14-search-profile-results.json)、[新交接](archive/SESSION-HANDOFF-2026-10-05-T14-SEARCH-PROFILE.md)。收尾核243／原231／T13 129／callback151／644先前資料與43raw／退出；無commit／push／刪檔／背景／排程。下一步優先離線核同場entity／ancestry與官方UnitAI／FSM可能dispatch路徑；新scope另立契約，不直接改AI、C++或擴矩陣。
 
 
 ### 2026-10-05 — T14 搜尋觸發路徑離線分析 IN_PROGRESS
@@ -272,7 +274,7 @@ Prospective [contract](t14-search-profile.md) written before tools or runtime. E
 
 ### 2026-10-05 — T14 搜尋觸發路徑離線分析限定 PASS
 
-按事前契約完成全部93turn／7914方法／2148 Flush call、同entity時序與官方來源核算；新runtime0／產品修改0。44turn有Death與Flush搜尋、49turn兩者皆無，71 Death皆在Flush前且Flush搜尋交集0；共現不是因果。全parent只有Timer兩例：348先搜尋後Death、288先Death後搜尋再Flush。官方排隊清理來源支持後者可能，未證實callback／即時HP。Resistance.OnOwnershipChanged為Flush候選NOT RUN，根因Insufficient data。首次離線集合誤比FAIL及修正前helper／review／來源均保留；一般／-O與獨立核算最新版本PASS、重審APPROVE。原mixed FAIL／T14 PARTIAL不變。產品243／前場measured126、674保留資料、search90／T13 129、43raw及退出以closeout和新離線source manifest核對。[證據](evidence/t14-search-trigger-diagnosis-validation.md) · [最新交接](SESSION-HANDOFF-2026-10-05-T14-SEARCH-TRIGGER-DIAGNOSIS.md)。無commit／push／刪檔／背景／排程。
+按事前契約完成全部93turn／7914方法／2148 Flush call、同entity時序與官方來源核算；新runtime0／產品修改0。44turn有Death與Flush搜尋、49turn兩者皆無，71 Death皆在Flush前且Flush搜尋交集0；共現不是因果。全parent只有Timer兩例：348先搜尋後Death、288先Death後搜尋再Flush。官方排隊清理來源支持後者可能，未證實callback／即時HP。Resistance.OnOwnershipChanged為Flush候選NOT RUN，根因Insufficient data。首次離線集合誤比FAIL及修正前helper／review／來源均保留；一般／-O與獨立核算最新版本PASS、重審APPROVE。原mixed FAIL／T14 PARTIAL不變。產品243／前場measured126、674保留資料、search90／T13 129、43raw及退出以closeout和新離線source manifest核對。[證據](evidence/t14-search-trigger-diagnosis-validation.md) · [最新交接](archive/SESSION-HANDOFF-2026-10-05-T14-SEARCH-TRIGGER-DIAGNOSIS.md)。無commit／push／刪檔／背景／排程。
 
 
 ### 2026-10-05 — T14 Resistance ownership 單場觀測 IN_PROGRESS
@@ -284,34 +286,34 @@ Prospective [contract](t14-search-profile.md) written before tools or runtime. E
 
 依[事前契約](t14-resistance-profile.md)完成一個有效官方R28場，產品玩法改動0／新增13隔離檔、產品256／measured128。93strictturn／7914search，2148 Flush搜尋全部實際巢狀於invalid-owner Resistance.OnOwnershipChanged；71strict handler（70有search）、600creation／74全部invalid，transfer/unknown0只是觀測。Timer5765/motion1無此handler ancestry；71同target Death在handler前，包含關係不證Attack caller/reason、唯一根因、Timer288或修復/overhead。最大Flush54.127997ms內4handler／152search；全70慢幀/17慢sim/trace32慢GUI保留，性能投影全局與第一窗FAIL、第二窗混合活動FAIL；原mixed FAIL/T14 PARTIAL不變。
 
-首場hash前置未阻止shell launch的主代理流程FAIL已停止，22份raw/舊審查保留，measurement_valid:false/PARTIAL；重審/回歸/重鎖/獨立guard後唯一retry PASS，attempts2/valid1，無第三場。74Python一般/-O與JS/CLI/clock、正式raw重解析及獨立stdlib每call/turn/Death/最大例PASS；獨立audit首次集合誤比FAIL保留。舊243/674/search90/T13 129/離線81/82及全部45raw保留，退出/hash以closeout與lock核對。無commit/push/刪除/背景/排程。[證據](evidence/t14-resistance-profile-validation.md) · [最新交接](SESSION-HANDOFF-2026-10-05-T14-RESISTANCE-PROFILE.md)。下一步先離線评估target↔search与官方Attack/FSM，再决定不同單一observer契約，不直接擴量測或修玩法。
+首場hash前置未阻止shell launch的主代理流程FAIL已停止，22份raw/舊審查保留，measurement_valid:false/PARTIAL；重審/回歸/重鎖/獨立guard後唯一retry PASS，attempts2/valid1，無第三場。74Python一般/-O與JS/CLI/clock、正式raw重解析及獨立stdlib每call/turn/Death/最大例PASS；獨立audit首次集合誤比FAIL保留。舊243/674/search90/T13 129/離線81/82及全部45raw保留，退出/hash以closeout與lock核對。無commit/push/刪除/背景/排程。[證據](evidence/t14-resistance-profile-validation.md) · [最新交接](archive/SESSION-HANDOFF-2026-10-05-T14-RESISTANCE-PROFILE.md)。下一步先離線评估target↔search与官方Attack/FSM，再决定不同單一observer契約，不直接擴量測或修玩法。
 
 
 ### 2026-10-06 — T14 Resistance target→搜尋分布離線診斷限定 PASS
 
 按[事前契約](t14-resistance-diagnosis.md)直接raw核全部1128frame/674handler/8196search及strict93turn；2148巢狀Flush搜尋/403entity（1838Slinger/310Melee），同handler同entity重複0、同turn跨handler同entity重複0。最大handler107call=107entity、最大turn152=152，341entity跨不同turn再搜尋不能當冗餘。官方方法查詢/filter/preferences/order有同步sideeffects，nativeResetActiveQuery的舊PROFILE未出現在profiler2；方法內FindObjectVariation18844call/21.038910ms不代表GPU或全部未標記CPU。沒有安全去重/合併或唯一根因證據。
 
-新增runtime0/產品修改0；主一般/-O、另一flat-stack raw逐handler/turn/entity/labels/union獨立核算、6合成一般/-O PASS。256/128/T13_129/674/809/45raw保留，前批142於前置match；3個舊mutable progress/plan/journal checkpoint先逐byte存prior-state後授權更新，歷史manifest不覆寫。原mixed FAIL/所有FAIL/前批流程FAIL与唯一retry用完/T14 PARTIAL保留。下一步先核方法內成本Mod層觀測可行性；StopAttacking只補鏈，不因caller未知自動新場。新observer/修復/overhead/正式勝負NOT RUN。退出/ports/hash以本批closeout/lock為準；無commit/push/刪除/背景/排程。[證據](evidence/t14-resistance-diagnosis-validation.md) · [最新交接](SESSION-HANDOFF-2026-10-06-T14-RESISTANCE-DIAGNOSIS.md)。
+新增runtime0/產品修改0；主一般/-O、另一flat-stack raw逐handler/turn/entity/labels/union獨立核算、6合成一般/-O PASS。256/128/T13_129/674/809/45raw保留，前批142於前置match；3個舊mutable progress/plan/journal checkpoint先逐byte存prior-state後授權更新，歷史manifest不覆寫。原mixed FAIL/所有FAIL/前批流程FAIL与唯一retry用完/T14 PARTIAL保留。下一步先核方法內成本Mod層觀測可行性；StopAttacking只補鏈，不因caller未知自動新場。新observer/修復/overhead/正式勝負NOT RUN。退出/ports/hash以本批closeout/lock為準；無commit/push/刪除/背景/排程。[證據](evidence/t14-resistance-diagnosis-validation.md) · [最新交接](archive/SESSION-HANDOFF-2026-10-06-T14-RESISTANCE-DIAGNOSIS.md)。
 
 
 ### 2026-10-06 — T14 Query Mod 層來源可行性限定 PASS
 
-按[事前契約](t14-query-observability.md)核固定R28 binding/loader來源：native ResetActiveQuery 的Wrap預設READONLY/PERMANENT，原prototype原地替換且保留descriptor候選REJECTED；own shadow/Proxy/global QueryInterface不能直接當原descriptor/身份等價。來源推論不冒充runtime descriptor/loader實測；新observer/成本拆分/修復/overhead/正式勝負NOT RUN。新runtime0/產品修改0；原mixed FAIL與T14 PARTIAL保留。下一步僅核既有legacy profiler的來源歸屬與粒度，不混用repo根profile.txt，缺資料保持Insufficient data。[證據](evidence/t14-query-observability-validation.md) · [最新交接](SESSION-HANDOFF-2026-10-06-T14-QUERY-OBSERVABILITY.md)。
+按[事前契約](t14-query-observability.md)核固定R28 binding/loader來源：native ResetActiveQuery 的Wrap預設READONLY/PERMANENT，原prototype原地替換且保留descriptor候選REJECTED；own shadow/Proxy/global QueryInterface不能直接當原descriptor/身份等價。來源推論不冒充runtime descriptor/loader實測；新observer/成本拆分/修復/overhead/正式勝負NOT RUN。新runtime0/產品修改0；原mixed FAIL與T14 PARTIAL保留。下一步僅核既有legacy profiler的來源歸屬與粒度，不混用repo根profile.txt，缺資料保持Insufficient data。[證據](evidence/t14-query-observability-validation.md) · [最新交接](archive/SESSION-HANDOFF-2026-10-06-T14-QUERY-OBSERVABILITY.md)。
 
 
 
 ### 2026-10-08 — T14 Query來源／legacy查核與回歸限定 PASS
 
-延續[事前契約](t14-query-observability.md)及Oct8事前補充，原prototype nativequery wrapper因readonly/permanent來源flags不符合保留descriptor，候選REJECTED；原生descriptor/loader NOT RUN。既有有效raw27檔無legacyprofile，根profile.txt224snapshot/77query列宣告Sep26且本場root_profiles_unchanged:true，不能配成本場逐callquery。JS wrapper回歸与Python9一般/9-O PASS；新增runtime0/產品修改0。精確query成本／根因仍Insufficient data，修復/overhead/正式勝負NOT RUN，所有FAIL／T14 PARTIAL保留。來源/文件獨立review、產品256/measured128/T13_129/674/809/raw45及R28/退出/鎖見closeout；無commit/push/刪檔/背景/排程。[證據](evidence/t14-query-observability-validation.md) · [最新交接](SESSION-HANDOFF-2026-10-08-T14-QUERY-OBSERVABILITY.md)。本批source/legacy查核完成，未來observer须不同具体問題與新契約，不重跑已排除候選。
+延續[事前契約](t14-query-observability.md)及Oct8事前補充，原prototype nativequery wrapper因readonly/permanent來源flags不符合保留descriptor，候選REJECTED；原生descriptor/loader NOT RUN。既有有效raw27檔無legacyprofile，根profile.txt224snapshot/77query列宣告Sep26且本場root_profiles_unchanged:true，不能配成本場逐callquery。JS wrapper回歸与Python9一般/9-O PASS；新增runtime0/產品修改0。精確query成本／根因仍Insufficient data，修復/overhead/正式勝負NOT RUN，所有FAIL／T14 PARTIAL保留。來源/文件獨立review、產品256/measured128/T13_129/674/809/raw45及R28/退出/鎖見closeout；無commit/push/刪檔/背景/排程。[證據](evidence/t14-query-observability-validation.md) · [最新交接](archive/SESSION-HANDOFF-2026-10-08-T14-QUERY-OBSERVABILITY.md)。本批source/legacy查核完成，未來observer须不同具体問題與新契約，不重跑已排除候選。
 
 ### 2026-10-08 — T14 CanAttack 單場有效遊戲／完整capture FAIL，診斷 PARTIAL
 
-按[事前契約](t14-canattack-profile.md)新增14隔離工具/單CanAttack wrapper，44項來源/code review APPROVE、JS/14parser一般-O/既有9一般-O/clock6/CLI9 PASS，360source-lock與單独guardPASS後另一call才跑1場。raw20261008T005749621540Z：exit0/errors0/measurement_validtrue/control與early四組活動有效，但964marker缺426完整frame marker、fine coverage mismatch，planned CanAttack診斷PARTIAL；原result/28raw/FAIL不改寫，無retry。獨立raw一般/O相同，469304CanAttack/3346Search/614Resistance只是640完整frame可見子集合，不能算全段或接受包含gate。官方4MiB ring/current snapshot與密集event/poll缺口相容，非唯一cause或overhead證明。全局p99 77.529/simwall.930512、首窗性能FAIL與尾窗mixed活動FAIL及148慢GUI全留；133vs0/loss167/300/endless不是勝利。新270/measured130，原256/128/T13_129/674/809/old80/原45raw保留，加新1共46；T14仍PARTIAL/原mixed FAIL不補過，repair/overhead/勝負NOT RUN。下一步僅先核低eventdensity/method聚合設計，另立契約，不重跑密集方案救PASS。[證據](evidence/t14-canattack-profile-validation.md) · [最新交接](SESSION-HANDOFF-2026-10-08-T14-CANATTACK-PROFILE.md)。無commit/push/刪檔/背景/排程；退出/來源鎖見work closeout。
+按[事前契約](t14-canattack-profile.md)新增14隔離工具/單CanAttack wrapper，44項來源/code review APPROVE、JS/14parser一般-O/既有9一般-O/clock6/CLI9 PASS，360source-lock與單独guardPASS後另一call才跑1場。raw20261008T005749621540Z：exit0/errors0/measurement_validtrue/control與early四組活動有效，但964marker缺426完整frame marker、fine coverage mismatch，planned CanAttack診斷PARTIAL；原result/28raw/FAIL不改寫，無retry。獨立raw一般/O相同，469304CanAttack/3346Search/614Resistance只是640完整frame可見子集合，不能算全段或接受包含gate。官方4MiB ring/current snapshot與密集event/poll缺口相容，非唯一cause或overhead證明。全局p99 77.529/simwall.930512、首窗性能FAIL與尾窗mixed活動FAIL及148慢GUI全留；133vs0/loss167/300/endless不是勝利。新270/measured130，原256/128/T13_129/674/809/old80/原45raw保留，加新1共46；T14仍PARTIAL/原mixed FAIL不補過，repair/overhead/勝負NOT RUN。下一步僅先核低eventdensity/method聚合設計，另立契約，不重跑密集方案救PASS。[證據](evidence/t14-canattack-profile-validation.md) · [最新交接](archive/SESSION-HANDOFF-2026-10-08-T14-CANATTACK-PROFILE.md)。無commit/push/刪檔/背景/排程；退出/來源鎖見work closeout。
 
 
 ### 2026-10-08 — T14 CanAttack 低事件密度候選離線評估
 
-完成[不同觀測設計的source評估](t14-canattack-aggregate-assessment.md)，新增runtime0/retry0/產品工具修改0。live核270產品/431seal/432lock/28raw/809歷史hash、官方R28雙hash/codesign、HEAD726a3ae/index空及46raw/六ports/退出相符。固定R28 Git object的6來源（5既有逐byte相同）支持GetMicroseconds=JS_Now epoch、GUI註冊Debug；所核Simulation路徑未建立該API正證，timed aggregation NOT READY。HTTP403失敗留存、改讀既有固定object，未runtime retry。優先count-only method ledger新問題，保留每method/actor/target/kind/unknown/noninitial/throw與非boolean return帳，但不保留逐call時序/時間，不補前場完整CanAttack貢獻；容量/完整出口/實作/tests/runtime仍NOT RUN。原VALID GAME/CAPTURE FAIL/DIAGNOSIS PARTIAL/所有性能活動FAIL/T14 PARTIAL保留。下一步先新計數契約/容量出口/gates/tests/獨立review/lock/另一call guard，再選是否量測。三tracking prior-state逐byte保留，最終審查/收尾见work；無commit/push/刪檔/背景/排程。[validation](evidence/t14-canattack-aggregate-assessment-validation.md) · [最新交接](SESSION-HANDOFF-2026-10-08-T14-CANATTACK-AGGREGATE.md)。
+完成[不同觀測設計的source評估](t14-canattack-aggregate-assessment.md)，新增runtime0/retry0/產品工具修改0。live核270產品/431seal/432lock/28raw/809歷史hash、官方R28雙hash/codesign、HEAD726a3ae/index空及46raw/六ports/退出相符。固定R28 Git object的6來源（5既有逐byte相同）支持GetMicroseconds=JS_Now epoch、GUI註冊Debug；所核Simulation路徑未建立該API正證，timed aggregation NOT READY。HTTP403失敗留存、改讀既有固定object，未runtime retry。優先count-only method ledger新問題，保留每method/actor/target/kind/unknown/noninitial/throw與非boolean return帳，但不保留逐call時序/時間，不補前場完整CanAttack貢獻；容量/完整出口/實作/tests/runtime仍NOT RUN。原VALID GAME/CAPTURE FAIL/DIAGNOSIS PARTIAL/所有性能活動FAIL/T14 PARTIAL保留。下一步先新計數契約/容量出口/gates/tests/獨立review/lock/另一call guard，再選是否量測。三tracking prior-state逐byte保留，最終審查/收尾见work；無commit/push/刪檔/背景/排程。[validation](evidence/t14-canattack-aggregate-assessment-validation.md) · [最新交接](archive/SESSION-HANDOFF-2026-10-08-T14-CANATTACK-AGGREGATE.md)。
 
 ### 2026-10-08 — T14 CanAttack count-only 新契約／隔離工具已審，量測前 checkpoint
 
@@ -319,31 +321,31 @@ Prospective [contract](t14-search-profile.md) written before tools or runtime. E
 
 ### 2026-10-08 — T14 CanAttack count-only 唯一 attempt：遊戲契約／capture FAIL
 
-[新契約](t14-canattack-count.md)的隔離工具/tests/review29/468source-lock與獨立guard PASS 後另一call啟動1場，retry0。新raw20261008T110801722750Z：engine exit0但OOM與simulation ERROR，runner1、measurement_valid/game_contract_valid false，COUNT/GUI completion全部缺失；本場不是VALID GAME，診斷PARTIAL。16main＋1overview/70,863,772bytes、974完整frame/2不完整、expected865marker中864complete-frame；6794method-summary/1,422,763CanAttack entered僅native子集合，不能當全場/target返回分布。獨立raw一般/-O相同，48可見慢marker interval全留。全場性能活動/ledger為Insufficient data，原mixed/所有FAIL及T14 PARTIAL保留。原270未改，284產品/本場129measured；總raw47、26新raw全封存。序列化cap不是heap保證，唯一根因/安全修復/overhead/正式勝負未成立；下一步僅先離線核heap/GC/出口與不同觀測界線，不重跑已失敗設計。HEAD/index/退出/HTTP/歷史hash見work closeout；無commit/push/刪檔/背景/排程。[validation](evidence/t14-canattack-count-validation.md) · [交接](SESSION-HANDOFF-2026-10-08-T14-CANATTACK-COUNT.md)。
+[新契約](t14-canattack-count.md)的隔離工具/tests/review29/468source-lock與獨立guard PASS 後另一call啟動1場，retry0。新raw20261008T110801722750Z：engine exit0但OOM與simulation ERROR，runner1、measurement_valid/game_contract_valid false，COUNT/GUI completion全部缺失；本場不是VALID GAME，診斷PARTIAL。16main＋1overview/70,863,772bytes、974完整frame/2不完整、expected865marker中864complete-frame；6794method-summary/1,422,763CanAttack entered僅native子集合，不能當全場/target返回分布。獨立raw一般/-O相同，48可見慢marker interval全留。全場性能活動/ledger為Insufficient data，原mixed/所有FAIL及T14 PARTIAL保留。原270未改，284產品/本場129measured；總raw47、26新raw全封存。序列化cap不是heap保證，唯一根因/安全修復/overhead/正式勝負未成立；下一步僅先離線核heap/GC/出口與不同觀測界線，不重跑已失敗設計。HEAD/index/退出/HTTP/歷史hash見work closeout；無commit/push/刪檔/背景/排程。[validation](evidence/t14-canattack-count-validation.md) · [交接](archive/SESSION-HANDOFF-2026-10-08-T14-CANATTACK-COUNT.md)。
 
 ### 2026-10-09 — T14 CanAttack heap／GC／出口來源離線評估
 
-依[限定source scope](t14-canattack-memory-assessment.md)核固定R28 17來源：主context384MiB/growth12MiB、GUI/simulation共用，default16/2不是主設定；GC不evict仍可達ledger。完整方法/bucket/key留存與末尾128MiB序列化cap/12000chunk不形成live heap界線；clone/print/JSON另有在途資料，print非durableACK、simulation readonlyVFS無WriteJSONFile。优先完整delta shards離線可行性，保留unknown/noninitial/parent/return/throw/phase，不丟ID/合併gameplaycalls。新observerNOT READY，實作/tests/runtimeNOT RUN；本批runtime0/productchange0/284產品/47raw。OOM唯一根因/量化overhead/安全修復未證；原countgame/captureFAIL、densevalidgame/captureFAIL及所有歷史FAIL與T14PARTIAL保留。來源/審查/歷史hash/退出以workcloseout/seal為準。無commit/push/刪檔/背景/排程。[validation](evidence/t14-canattack-memory-assessment-validation.md) · [交接](SESSION-HANDOFF-2026-10-09-T14-CANATTACK-MEMORY.md)。
+依[限定source scope](t14-canattack-memory-assessment.md)核固定R28 17來源：主context384MiB/growth12MiB、GUI/simulation共用，default16/2不是主設定；GC不evict仍可達ledger。完整方法/bucket/key留存與末尾128MiB序列化cap/12000chunk不形成live heap界線；clone/print/JSON另有在途資料，print非durableACK、simulation readonlyVFS無WriteJSONFile。优先完整delta shards離線可行性，保留unknown/noninitial/parent/return/throw/phase，不丟ID/合併gameplaycalls。新observerNOT READY，實作/tests/runtimeNOT RUN；本批runtime0/productchange0/284產品/47raw。OOM唯一根因/量化overhead/安全修復未證；原countgame/captureFAIL、densevalidgame/captureFAIL及所有歷史FAIL與T14PARTIAL保留。來源/審查/歷史hash/退出以workcloseout/seal為準。無commit/push/刪檔/背景/排程。[validation](evidence/t14-canattack-memory-assessment-validation.md) · [交接](archive/SESSION-HANDOFF-2026-10-09-T14-CANATTACK-MEMORY.md)。
 
 ### 2026-10-09 — T14 CanAttack delta：隔離工具與靜態驗證完成，審查／啟動前檢查進行中
 
-依[新delta事前契約](t14-canattack-delta.md)實作14隔離工具，原284不改、現298產品。固定buffer67976bytes（shard2048/1536flush、method/call stack128），完整增量CRC32 stream，不留整場Map/methodlist；SQLite逐塊索引、metadata逐行讀避免full log RAM。JS3/Python18普通-O/runner16普通-O/clock6/舊JS7與舊Py8普通-O/實際JS→Python2007call5method2012record/精確storage proof PASS。review初步3項（parser65536行長/完整newline、method連續ID、runner累積rawbytes）已修；最終code review/lock/獨立guard未完成前不launch，runtime仍NOT RUN、1新delta条件/retry0。前588/284完整hashsame、raw仍47；old dense/count兩FAIL與T14PARTIAL/所有性能活動FAIL保留。quota中止通知不冒稱審查完成，heartbeat已實際恢复本chat。用戶本次明確授權hourly自動接續，automation0ad-t14 ACTIVE；無credit購買/reset券、無commit/push/刪檔/背景engine。[交接](SESSION-HANDOFF-2026-10-09-T14-CANATTACK-DELTA.md)。
+依[新delta事前契約](t14-canattack-delta.md)實作14隔離工具，原284不改、現298產品。固定buffer67976bytes（shard2048/1536flush、method/call stack128），完整增量CRC32 stream，不留整場Map/methodlist；SQLite逐塊索引、metadata逐行讀避免full log RAM。JS3/Python18普通-O/runner16普通-O/clock6/舊JS7與舊Py8普通-O/實際JS→Python2007call5method2012record/精確storage proof PASS。review初步3項（parser65536行長/完整newline、method連續ID、runner累積rawbytes）已修；最終code review/lock/獨立guard未完成前不launch，runtime仍NOT RUN、1新delta条件/retry0。前588/284完整hashsame、raw仍47；old dense/count兩FAIL與T14PARTIAL/所有性能活動FAIL保留。quota中止通知不冒稱審查完成，heartbeat已實際恢复本chat。用戶本次明確授權hourly自動接續，automation0ad-t14 ACTIVE；無credit購買/reset券、無commit/push/刪檔/背景engine。[交接](archive/SESSION-HANDOFF-2026-10-09-T14-CANATTACK-DELTA.md)。
 
 ### 2026-10-09 — T14 CanAttack delta：有效遊戲／完整離線 ledger PASS，首次 runner FAIL
 
-新14隔離工具經review44／11proof／654source-lock／獨立guard後唯一量測，retry0。engine0無ERROR/WARNING、game/native捕獲gates PASS；首次runner SQLite/storage failure仍FAIL/PARTIAL，原部分DB/journal/result保留。相同reviewed code/caps以同raw離線重建與native分析PASS：5,277,402 CanAttack（true5,260,535/false16,867）、32,218methods、5,277,253keys、CRCacfc3828/SHAe851242f…；strict native1,460,757非phase1總數。獨立全5,277,253key核實相符，審後helper APPROVE／26fixtures一般-O及最終raw一般-O完全一致PASS。110.096GUI秒/98.8sim/5365interval，p99100.786/.897399全場性能FAIL，首窗性能FAIL活動PASS，尾性能PASS混合活動FAIL，190slow frames全留。末133Slinger vs0非正式勝利。原284不改、298產品/130measured、48raw全留。首次SQLite根因Insufficient data、overhead/安全修復/正式勝負NOT RUN；T14PARTIAL，禁止runtime retry與擴測。無commit/push/刪檔/C++/AI/玩法修改。hourly automation0ad-t14只續作未完驗證，不啟動額外場。[validation](evidence/t14-canattack-delta-validation.md) · [results](evidence/t14-canattack-delta-results.json) · [交接](SESSION-HANDOFF-2026-10-09-T14-CANATTACK-DELTA.md)。
+新14隔離工具經review44／11proof／654source-lock／獨立guard後唯一量測，retry0。engine0無ERROR/WARNING、game/native捕獲gates PASS；首次runner SQLite/storage failure仍FAIL/PARTIAL，原部分DB/journal/result保留。相同reviewed code/caps以同raw離線重建與native分析PASS：5,277,402 CanAttack（true5,260,535/false16,867）、32,218methods、5,277,253keys、CRCacfc3828/SHAe851242f…；strict native1,460,757非phase1總數。獨立全5,277,253key核實相符，審後helper APPROVE／26fixtures一般-O及最終raw一般-O完全一致PASS。110.096GUI秒/98.8sim/5365interval，p99100.786/.897399全場性能FAIL，首窗性能FAIL活動PASS，尾性能PASS混合活動FAIL，190slow frames全留。末133Slinger vs0非正式勝利。原284不改、298產品/130measured、48raw全留。首次SQLite根因Insufficient data、overhead/安全修復/正式勝負NOT RUN；T14PARTIAL，禁止runtime retry與擴測。無commit/push/刪檔/C++/AI/玩法修改。hourly automation0ad-t14只續作未完驗證，不啟動額外場。[validation](evidence/t14-canattack-delta-validation.md) · [results](evidence/t14-canattack-delta-results.json) · [交接](archive/SESSION-HANDOFF-2026-10-09-T14-CANATTACK-DELTA.md)。
 
 ### 2026-10-09 — T14 CanAttack offline replay：自主離線工具實作中
 
-用戶要求自動接續做到完成。依[新離線契約](t14-canattack-offline-replay.md)新增3隔離Python檔，保留原298工具、原29raw/原runnerFAIL、原914seal與48raw；先前source/raw逐hash預檢PASS，tracking3檔在本批prior-state封存。新入口不啟動engine或HTTP，只以同raw重算完整game/native/ledger gates與stage/cause/sqlitecode/errno診斷；不能追回原丟失cause或宣稱修復性能/玩法。tests-first實作與獨立code/source review進行中；review/source-lock前不做完整新offline pipeline。新增engine0/retry0，T14PARTIAL保持。既有automation0ad-t14實際live頻率每5小時（不是每小時）；本次保留頻率更新續作prompt，額度不足由下次排程續作，不買credits/reset券。無commit/push/刪檔/外部訊息。[最新交接](SESSION-HANDOFF-2026-10-09-T14-CANATTACK-OFFLINE-REPLAY.md)。
+用戶要求自動接續做到完成。依[新離線契約](t14-canattack-offline-replay.md)新增3隔離Python檔，保留原298工具、原29raw/原runnerFAIL、原914seal與48raw；先前source/raw逐hash預檢PASS，tracking3檔在本批prior-state封存。新入口不啟動engine或HTTP，只以同raw重算完整game/native/ledger gates與stage/cause/sqlitecode/errno診斷；不能追回原丟失cause或宣稱修復性能/玩法。tests-first實作與獨立code/source review進行中；review/source-lock前不做完整新offline pipeline。新增engine0/retry0，T14PARTIAL保持。既有automation0ad-t14實際live頻率每5小時（不是每小時）；本次保留頻率更新續作prompt，額度不足由下次排程續作，不買credits/reset券。無commit/push/刪檔/外部訊息。[最新交接](archive/SESSION-HANDOFF-2026-10-09-T14-CANATTACK-OFFLINE-REPLAY.md)。
 
 ### 2026-10-09 — T14 CanAttack offline replay 有界 DONE／整體T14 PARTIAL
 
-新增3隔離Python工具，原298不改/現301；18tests一般-O與獨立18一般-O PASS，review17 APPROVE/source-lock152後唯一完整同raw pipeline exit0/PASS（offline1/retry0，engine0/HTTP0）。game/control/native/Fine/Search/Resistance/clock/ledger原gates全重算PASS；DB344,211,456bytes/SHA898b2e45…與前批獨立逐key稽核的完整DBbyte identical，全場5,277,402calls/32,218methods與strict1,460,757一致。cause chain4×4096/sqlitecode/errno/stage、post-source failclosed、exclusive output/attempt guard測試PASS；不能追回原SQLitecause/修復首次runner。原914seal/29raw/48raw/190slowframes与性能FAIL、尾活動FAIL、首次runnerFAIL/T14PARTIAL保持。無新engine、C++/AI/玩法、commit/push/delete。live automation0ad-t14每5小時ACTIVE，頻率未改；此有界目標完成後安靜保持，不擴測或重跑。額度不足已有真排程恢復機會，不買credits/reset券。[validation](evidence/t14-canattack-offline-replay-validation.md) · [results](evidence/t14-canattack-offline-replay-results.json) · [交接](SESSION-HANDOFF-2026-10-09-T14-CANATTACK-OFFLINE-REPLAY.md)。
+新增3隔離Python工具，原298不改/現301；18tests一般-O與獨立18一般-O PASS，review17 APPROVE/source-lock152後唯一完整同raw pipeline exit0/PASS（offline1/retry0，engine0/HTTP0）。game/control/native/Fine/Search/Resistance/clock/ledger原gates全重算PASS；DB344,211,456bytes/SHA898b2e45…與前批獨立逐key稽核的完整DBbyte identical，全場5,277,402calls/32,218methods與strict1,460,757一致。cause chain4×4096/sqlitecode/errno/stage、post-source failclosed、exclusive output/attempt guard測試PASS；不能追回原SQLitecause/修復首次runner。原914seal/29raw/48raw/190slowframes与性能FAIL、尾活動FAIL、首次runnerFAIL/T14PARTIAL保持。無新engine、C++/AI/玩法、commit/push/delete。live automation0ad-t14每5小時ACTIVE，頻率未改；此有界目標完成後安靜保持，不擴測或重跑。額度不足已有真排程恢復機會，不買credits/reset券。[validation](evidence/t14-canattack-offline-replay-validation.md) · [results](evidence/t14-canattack-offline-replay-results.json) · [交接](archive/SESSION-HANDOFF-2026-10-09-T14-CANATTACK-OFFLINE-REPLAY.md)。
 
 ### 2026-10-10 — T14 live storage 診斷邊界 source-only 評估
 
-新session核舊1114seal逐hash/size相符、HEAD726a3ae/index空、48raw/attempt1與八ports關閉。固定7inputs，原parser保留cause但live runner只持久化str，原class/code/errno已丟；_connect在主體try外、finally close潛在覆蓋僅source可能，未證實為原場原因。沒有可證唯一SQLitecause的剩餘證據，Insufficient data；不重跑已DONE observer/replay或擴測。產品修改0/engine0/HTTP0/完整offline0/SQLite開啟與recovery0，tests NOT RUN（source/docs-only）；獨立review與最終封存見work/t14-live-storage-assessment。三tracking舊版先逐byte封存，原1114seal不改。原runner/性能/尾活動FAIL與190slowframes/T14 PARTIAL保留，overhead/安全玩法修復/正式勝負/live診斷修正NOT RUN。下一個實作候選須新有界synthetic failure preservation契約，無新量測授權。無commit/push/delete/新排程；排程移轉由前session負責，本批未確認其完成。[評估](t14-live-storage-assessment.md) · [validation](evidence/t14-live-storage-assessment-validation.md) · [交接](SESSION-HANDOFF-2026-10-10-T14-LIVE-STORAGE-ASSESSMENT.md)。
+新session核舊1114seal逐hash/size相符、HEAD726a3ae/index空、48raw/attempt1與八ports關閉。固定7inputs，原parser保留cause但live runner只持久化str，原class/code/errno已丟；_connect在主體try外、finally close潛在覆蓋僅source可能，未證實為原場原因。沒有可證唯一SQLitecause的剩餘證據，Insufficient data；不重跑已DONE observer/replay或擴測。產品修改0/engine0/HTTP0/完整offline0/SQLite開啟與recovery0，tests NOT RUN（source/docs-only）；獨立review與最終封存見work/t14-live-storage-assessment。三tracking舊版先逐byte封存，原1114seal不改。原runner/性能/尾活動FAIL與190slowframes/T14 PARTIAL保留，overhead/安全玩法修復/正式勝負/live診斷修正NOT RUN。下一個實作候選須新有界synthetic failure preservation契約，無新量測授權。無commit/push/delete/新排程；排程移轉由前session負責，本批未確認其完成。[評估](t14-live-storage-assessment.md) · [validation](evidence/t14-live-storage-assessment-validation.md) · [交接](archive/SESSION-HANDOFF-2026-10-10-T14-LIVE-STORAGE-ASSESSMENT.md)。
 
 ### 2026-10-10 — T14 storage failure 合成候選準備中
 
@@ -351,7 +353,7 @@ Prospective [contract](t14-search-profile.md) written before tools or runtime. E
 
 ### 2026-10-10 — T14 storage failure preservation 合成候選有界 DONE
 
-新增3隔離工具，原301逐hash不改/現304；22unit tests一般/-O與兩獨立review一般/-O PASS、code/Python APPROVE、312source-lock及獨立guard17 PASS後另一call執行6 fake-resourceCLI，各一次/retry0，actual exits0/1/1/1/1/1與所有diagnostic assertions/readback PASS。connect/body/close/report-write與body+close主次failure各自保存，partial/原sentinel拒覆寫證據完整保留；初次Python BLOCK/2resolved findings與所有準備logs/fixtures/reviews留存。這是隔離candidate proof，未接入live runner，live integration NOT RUN；新增engine0/HTTP0/SQLiteconnect0/完整offline0。原18/1114seal與tracking替代/48raw/唯一delta與offline attempts保留，最終docsreview/closeout/seal見work/t14-storage-failure-proof。首次runner/性能/尾活動FAIL、190slowframes/T14PARTIAL保持；原SQLite唯一cause Insufficient data，overhead/安全玩法修復/正式勝負NOT RUN。不把synthetic FULL/IO或既有檔案拒覆寫當原runtime原因。無commit/push/delete/外部訊息/新排程，完成本有界項目後不額外量測。[契約](t14-storage-failure-proof.md) · [validation](evidence/t14-storage-failure-proof-validation.md) · [交接](SESSION-HANDOFF-2026-10-10-T14-STORAGE-FAILURE-PROOF.md)。本批收尾盤點helper誤把總控attempt-record算入fixture共7而FAIL，preservation.json原檔保留；精確核六scenario檔名+1總控後preservation-final.json PASS，原source/raw/6proof未失敗且未重跑。
+新增3隔離工具，原301逐hash不改/現304；22unit tests一般/-O與兩獨立review一般/-O PASS、code/Python APPROVE、312source-lock及獨立guard17 PASS後另一call執行6 fake-resourceCLI，各一次/retry0，actual exits0/1/1/1/1/1與所有diagnostic assertions/readback PASS。connect/body/close/report-write與body+close主次failure各自保存，partial/原sentinel拒覆寫證據完整保留；初次Python BLOCK/2resolved findings與所有準備logs/fixtures/reviews留存。這是隔離candidate proof，未接入live runner，live integration NOT RUN；新增engine0/HTTP0/SQLiteconnect0/完整offline0。原18/1114seal與tracking替代/48raw/唯一delta與offline attempts保留，最終docsreview/closeout/seal見work/t14-storage-failure-proof。首次runner/性能/尾活動FAIL、190slowframes/T14PARTIAL保持；原SQLite唯一cause Insufficient data，overhead/安全玩法修復/正式勝負NOT RUN。不把synthetic FULL/IO或既有檔案拒覆寫當原runtime原因。無commit/push/delete/外部訊息/新排程，完成本有界項目後不額外量測。[契約](t14-storage-failure-proof.md) · [validation](evidence/t14-storage-failure-proof-validation.md) · [交接](archive/SESSION-HANDOFF-2026-10-10-T14-STORAGE-FAILURE-PROOF.md)。本批收尾盤點helper誤把總控attempt-record算入fixture共7而FAIL，preservation.json原檔保留；精確核六scenario檔名+1總控後preservation-final.json PASS，原source/raw/6proof未失敗且未重跑。
 
 ### 2026-10-10 — T14 storage parser integration 新契約／實作中
 
@@ -359,7 +361,7 @@ Prospective [contract](t14-search-profile.md) written before tools or runtime. E
 
 ### 2026-10-10 — T14 storage parser integration 有界 DONE／整體PARTIAL
 
-[契約](t14-storage-parser-integration.md)新增3隔離candidate/固定8fixture CLI/tests，原304逐hash保留／新scope307。原parser核心31AST與5初始化SQL一致，保留18原mutationtests；33tests一般/-O及兩獨立review33一般/-O PASS，code/Python APPROVE。cleanup/cancellation與nested acceptance初次BLOCK修正並保留，compact report不重輸全methods、完整keys仍SQLite。339source-lock／獨立guard14 PASS後另一call正式8CLI各1/retry0，actual exits0/1/1/1/1/1/1/1；stage/cause/sqlitecode/errno/close exactlyonce/partial/sentinel/readback皆PASS。初guard盤點包含21範圍外既有工具而BLOCK原檔保留，最終精確304+3與21工具HEAD一致，未放寬gate或重跑proof。原669/18/1114用明列tracking prior-state全hashPASS，原48raw/已消耗delta及offline/6fakeproof保持。新增engine0/HTTP0/原raw解析0/完整offline0；隔離parser層DONE、live engine runner integration NOT RUN，原runner/性能/尾活動FAIL、190slowframes/T14 PARTIAL保持，原SQLitecause Insufficient data，overhead/安全玩法修復/正式勝負NOT RUN。額度中斷後由既有0ad-t14 heartbeat本chat恢復，每5小時不變；不買credits/reset券、不commit/push/delete/外部訊息。完成本項目後安靜，不加量測。[validation](evidence/t14-storage-parser-integration-validation.md) · [results](evidence/t14-storage-parser-integration-results.json) · [交接](SESSION-HANDOFF-2026-10-10-T14-STORAGE-PARSER-INTEGRATION.md)。
+[契約](t14-storage-parser-integration.md)新增3隔離candidate/固定8fixture CLI/tests，原304逐hash保留／新scope307。原parser核心31AST與5初始化SQL一致，保留18原mutationtests；33tests一般/-O及兩獨立review33一般/-O PASS，code/Python APPROVE。cleanup/cancellation與nested acceptance初次BLOCK修正並保留，compact report不重輸全methods、完整keys仍SQLite。339source-lock／獨立guard14 PASS後另一call正式8CLI各1/retry0，actual exits0/1/1/1/1/1/1/1；stage/cause/sqlitecode/errno/close exactlyonce/partial/sentinel/readback皆PASS。初guard盤點包含21範圍外既有工具而BLOCK原檔保留，最終精確304+3與21工具HEAD一致，未放寬gate或重跑proof。原669/18/1114用明列tracking prior-state全hashPASS，原48raw/已消耗delta及offline/6fakeproof保持。新增engine0/HTTP0/原raw解析0/完整offline0；隔離parser層DONE、live engine runner integration NOT RUN，原runner/性能/尾活動FAIL、190slowframes/T14 PARTIAL保持，原SQLitecause Insufficient data，overhead/安全玩法修復/正式勝負NOT RUN。額度中斷後由既有0ad-t14 heartbeat本chat恢復，每5小時不變；不買credits/reset券、不commit/push/delete/外部訊息。完成本項目後安靜，不加量測。[validation](evidence/t14-storage-parser-integration-validation.md) · [results](evidence/t14-storage-parser-integration-results.json) · [交接](archive/SESSION-HANDOFF-2026-10-10-T14-STORAGE-PARSER-INTEGRATION.md)。
 
 ### 2026-10-11 — T14 storage runner analysis/result 隔離整合實作中
 
@@ -367,17 +369,17 @@ Prospective [contract](t14-search-profile.md) written before tools or runtime. E
 
 ### 2026-10-11 — T14 runner analysis/result wiring 有界DONE／T14 PARTIAL
 
-[t14-storage-runner-integration.md](t14-storage-runner-integration.md)新增4隔離產品，原307不改/scope311。analysis入口無engine/HTTP能力，原7gates AST一致/gamecontract與clocks函式 body AST一致、完整ledger到delta、同步analyst順序保持。32一般/-O與兩獨立reviews32一般/-O PASS/APPROVE，初始context/report JSON兩BLOCK修正且保留。338source-lock/獨立guard17後另call正式8syntheticwiringCLI各1/retry0，exits0/1/1/1/1/1/1/1與readback/cause/cleanup/ledger/SQLitepartial/sentinelPASS。原4991/669/18/1114全hashPASS，初guard rawparents範圍誤算BLOCK保留，從sealed原47＋consumed1精確核48，不重跑proof。新engine0/HTTP0/原raw解析0/完整offline0；live engine integration NOT RUN，原runner/性能/尾活動FAIL/190slowframes/T14 PARTIAL與SQLitecause Insufficient data保持，overhead/安全玩法修復/勝負NOT RUN。scope外21既有工具HEADbyte一致。既有heartbeat本chat每5小時頻率不變，額度不足等待恢复，不買credits/reset券、不commit/push/delete/外部訊息。完成本有界項目保持安靜不加量測。[validation](evidence/t14-storage-runner-integration-validation.md) · [results](evidence/t14-storage-runner-integration-results.json) · [交接](SESSION-HANDOFF-2026-10-11-T14-STORAGE-RUNNER-INTEGRATION.md)。
+[t14-storage-runner-integration.md](t14-storage-runner-integration.md)新增4隔離產品，原307不改/scope311。analysis入口無engine/HTTP能力，原7gates AST一致/gamecontract與clocks函式 body AST一致、完整ledger到delta、同步analyst順序保持。32一般/-O與兩獨立reviews32一般/-O PASS/APPROVE，初始context/report JSON兩BLOCK修正且保留。338source-lock/獨立guard17後另call正式8syntheticwiringCLI各1/retry0，exits0/1/1/1/1/1/1/1與readback/cause/cleanup/ledger/SQLitepartial/sentinelPASS。原4991/669/18/1114全hashPASS，初guard rawparents範圍誤算BLOCK保留，從sealed原47＋consumed1精確核48，不重跑proof。新engine0/HTTP0/原raw解析0/完整offline0；live engine integration NOT RUN，原runner/性能/尾活動FAIL/190slowframes/T14 PARTIAL與SQLitecause Insufficient data保持，overhead/安全玩法修復/勝負NOT RUN。scope外21既有工具HEADbyte一致。既有heartbeat本chat每5小時頻率不變，額度不足等待恢复，不買credits/reset券、不commit/push/delete/外部訊息。完成本有界項目保持安靜不加量測。[validation](evidence/t14-storage-runner-integration-validation.md) · [results](evidence/t14-storage-runner-integration-results.json) · [交接](archive/SESSION-HANDOFF-2026-10-11-T14-STORAGE-RUNNER-INTEGRATION.md)。
 
 
 ### 2026-10-11 — T14 live integration 缺口離線盤點 DONE／整體 PARTIAL
 
-依[新source/docs-only契約與評估](t14-live-integration-gap-assessment.md)核舊7207seal/338source-lock逐hash/bytesPASS、sealed47+delta1與raw48目錄集合相同、runner8+1attempt仍已消耗；讀回歷史reviews/tests/proofs，不重跑。固定6source證實原live runner尚未採用lifecycle，adapter預設真analysts但suppliedcontext未接live producer，synthetic CLI16MiB/scope與固定synthetic報告不能作live入口。未選定必要的新runtime問題，最小live producer/context/完整evidence/output整合DEFERRED；本批盤點已完成，安靜保持不加proof/量測。產品修改0/engine0/HTTP0/SQLiteconnect0/rawparse0/offline0/syntheticproof0/tests0，tests NOT RUN；原runner/性能/尾活動FAIL、190slowframes、SQLitecause Insufficient data與T14 PARTIAL保持，live/overhead/玩法修復/勝負NOT RUN。三tracking先逐byte存本批prior-state，7207精確替代；舊4991/669/18/1114替代不變，舊seal不改。本批closeout/postseal見work/t14-live-integration-gap-assessment；未新增獨立review。既有heartbeat移轉由前chat負責，本批無可用工具未驗證／未改動，不建重複，不買credits/reset券，不commit/push/delete/外部訊息。[results](evidence/t14-live-integration-gap-assessment-results.json) · [validation](evidence/t14-live-integration-gap-assessment-validation.md) · [最新交接](SESSION-HANDOFF-2026-10-11-T14-LIVE-INTEGRATION-GAPS.md)。
+依[新source/docs-only契約與評估](t14-live-integration-gap-assessment.md)核舊7207seal/338source-lock逐hash/bytesPASS、sealed47+delta1與raw48目錄集合相同、runner8+1attempt仍已消耗；讀回歷史reviews/tests/proofs，不重跑。固定6source證實原live runner尚未採用lifecycle，adapter預設真analysts但suppliedcontext未接live producer，synthetic CLI16MiB/scope與固定synthetic報告不能作live入口。未選定必要的新runtime問題，最小live producer/context/完整evidence/output整合DEFERRED；本批盤點已完成，安靜保持不加proof/量測。產品修改0/engine0/HTTP0/SQLiteconnect0/rawparse0/offline0/syntheticproof0/tests0，tests NOT RUN；原runner/性能/尾活動FAIL、190slowframes、SQLitecause Insufficient data與T14 PARTIAL保持，live/overhead/玩法修復/勝負NOT RUN。三tracking先逐byte存本批prior-state，7207精確替代；舊4991/669/18/1114替代不變，舊seal不改。本批closeout/postseal見work/t14-live-integration-gap-assessment；未新增獨立review。既有heartbeat移轉由前chat負責，本批無可用工具未驗證／未改動，不建重複，不買credits/reset券，不commit/push/delete/外部訊息。[results](evidence/t14-live-integration-gap-assessment-results.json) · [validation](evidence/t14-live-integration-gap-assessment-validation.md) · [最新交接](archive/SESSION-HANDOFF-2026-10-11-T14-LIVE-INTEGRATION-GAPS.md)。
 
 
 ### 2026-10-11 — 使用者明確擴大自主範圍：T14–T18
 
-用戶確認全部包含T15發行準備、T16攻擊檢查、T17潛艇、T18精確彈道，按依賴自主執行不逐步詢問。[執行計畫](AUTONOMOUS-EXECUTION-T14-T18-2026-10-11.md)先T16→T17，T18/T15獨立靜態準備；Mod-first、各新engine事前契約/review/lock/guard，舊T14attempt/raw/FAIL不重跑／不补過。T16 IN_PROGRESS（source/contract），T17 TODO，T18/T15 PREPARATION，T14仍PARTIAL；尚無本批engine與玩法驗收。三tracking先存work/t16-attack-contract/prior-state，前29seal用本批替代，旧7207等替代不變。无commit/push/delete/外部發布/C++/credits/reset券。automation工具缺席且UI平台拒绝，未讀回／修改既有0ad-t14，無自動quota恢復執行保證。
+用戶確認全部包含T15發行準備、T16攻擊檢查、T17潛艇、T18精確彈道，按依賴自主執行不逐步詢問。[執行計畫](archive/AUTONOMOUS-EXECUTION-T14-T18-2026-10-11.md)先T16→T17，T18/T15獨立靜態準備；Mod-first、各新engine事前契約/review/lock/guard，舊T14attempt/raw/FAIL不重跑／不补過。T16 IN_PROGRESS（source/contract），T17 TODO，T18/T15 PREPARATION，T14仍PARTIAL；尚無本批engine與玩法驗收。三tracking先存work/t16-attack-contract/prior-state，前29seal用本批替代，旧7207等替代不變。无commit/push/delete/外部發布/C++/credits/reset券。automation工具缺席且UI平台拒绝，未讀回／修改既有0ad-t14，無自動quota恢復執行保證。
 
 ### 2026-10-12 - Authorized T14-T18 quota-resume checkpoint
 
@@ -441,7 +443,7 @@ Current fourtracking preimages post-t17-native42-prior-state. Existing P382/read
 
 ## 2026-10-14 resumed source-review checkpoint
 
-Current continuation: [2026-10-14 handoff](SESSION-HANDOFF-2026-10-14-T14-T18.md). Tracking preimages: work/t14-t18-session-transfer-20261013/resume-01a13576/tracking-before-20261014. Original consumed attempts/seals unchanged. GUI33 normal/-O PASS and latest CODE/Python APPROVE bind18470c76e07c2cb08f36c27ce276c82c21da74c8116095be83108fac51a112e0; actual isolatedGUI42 app copy prepared, native/capture/guard/attempt NOT RUN. K17 normal/-O PASS; final freeze and independent re-review pending. T14/T15/T16/T17 PARTIAL,T18 IN_PROGRESS. Actual ordinaryAllowed=true after existing5h heartbeat, no credits/reset/duplicate automation. No commit/push/delete/C++/external operations.
+Current continuation: [2026-10-14 handoff](archive/SESSION-HANDOFF-2026-10-14-T14-T18.md). Tracking preimages: work/t14-t18-session-transfer-20261013/resume-01a13576/tracking-before-20261014. Original consumed attempts/seals unchanged. GUI33 normal/-O PASS and latest CODE/Python APPROVE bind18470c76e07c2cb08f36c27ce276c82c21da74c8116095be83108fac51a112e0; actual isolatedGUI42 app copy prepared, native/capture/guard/attempt NOT RUN. K17 normal/-O PASS; final freeze and independent re-review pending. T14/T15/T16/T17 PARTIAL,T18 IN_PROGRESS. Actual ordinaryAllowed=true after existing5h heartbeat, no credits/reset/duplicate automation. No commit/push/delete/C++/external operations.
 
 
 ## 2026-10-14 GUI42 formal FAIL and K host review
@@ -593,7 +595,7 @@ Next author save_api_feasibility owns NEW fixture-base mod.json/map/sixXML/regis
 
 ## 2026-10-21 來源切片審查與事件契約更正
 
-最新交接：[SESSION-HANDOFF-2026-10-21-T14-T18.md](SESSION-HANDOFF-2026-10-21-T14-T18.md)；結構 checkpoint：work/t14-t18-resume-20261021/current-state.json。Queue prefix 8bfea、typed graph 3e866、fixture base 6b13、archive container 2474 均取得各自 current CODE＋language/API 來源審查核可；來源模型 PASS 不代表原生存檔／零 Advance／roundtrip／視覺驗收。Admission audit 4a08 為 conditional，完整實際 producer/noProxy closure OPEN。
+最新交接：[SESSION-HANDOFF-2026-10-21-T14-T18.md](archive/SESSION-HANDOFF-2026-10-21-T14-T18.md)；結構 checkpoint：work/t14-t18-resume-20261021/current-state.json。Queue prefix 8bfea、typed graph 3e866、fixture base 6b13、archive container 2474 均取得各自 current CODE＋language/API 來源審查核可；來源模型 PASS 不代表原生存檔／零 Advance／roundtrip／視覺驗收。Admission audit 4a08 為 conditional，完整實際 producer/noProxy closure OPEN。
 
 Scenario 首個 freeze 7aa9 因遺漏 registry 要求的 UnitAIStateChanged、UnitAIOrderDataChanged，CODE correction 9b986 與 JS/API 均 BLOCK 1 MEDIUM；原 CODE APPROVE 已撤回並原樣保留，禁止當 current approval。作者正在獨立 event-coverage-amendment 目錄統一六類真事件契約；先取得新契約雙審，再改實作與必要 regression。既有四個 DONE 切片不重跑。Save engine/copy/lock/guard/attempt 尚未建立或執行。
 
@@ -860,7 +862,7 @@ Exactd69d source不變。JSAPI完整APPROVE_SOURCE_ONLY JSON439600/bb06b9e1、MD
 
 ## 2026-11-05 使用者要求整體盤點／GitHub更新後按計劃接續
 
-五項未完成任務T14–T18保持PARTIAL；18個工作包是計劃粒度，無新增案例授權。先更新文件與文字證據，GitHub採獨立codex/t14-t18-assessment-20261105分支；發布後做R06 metadata跨計劃對照。R01一次guard例外仍待同一具體決策，R02/R03不得提前執行。詳[評估](PROJECT-ASSESSMENT-2026-11-05.md)。
+五項未完成任務T14–T18保持PARTIAL；18個工作包是計劃粒度，無新增案例授權。先更新文件與文字證據，GitHub採獨立codex/t14-t18-assessment-20261105分支；發布後做R06 metadata跨計劃對照。R01一次guard例外仍待同一具體決策，R02/R03不得提前執行。詳[評估](archive/PROJECT-ASSESSMENT-2026-11-05.md)。
 
 ## 2026-11-06 R07獨立來源調查完成／新metadata設計三方審查中
 

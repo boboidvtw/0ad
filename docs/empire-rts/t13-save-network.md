@@ -21,4 +21,4 @@ N01採兩位人類席位與正常指令fixture；可重用既有T06標準資源�
 
 2026-09-28驗收範圍修訂：使用者明確接受「載入狀態完全還原、AI功能續局通過、雙客戶端同步通過」，並保留不保證讀檔後逐步重現的限制。官方athen/Petra對照也出現終局時間不同；這是限制證據，不宣稱已定位上游根因，也不改寫AI來強迫相同時間。
 
-最終證據：[驗證紀錄](evidence/t13-validation.md)、[結果與hash](evidence/t13-results.json)、[新session交接](SESSION-HANDOFF-2026-09-28-T13.md)。T13已納入本機提交（識別以本次收尾紀錄所在commit為準，父提交46045f8），未push；T14未開工。
+最終證據：[驗證紀錄](evidence/t13-validation.md)、[結果與hash](evidence/t13-results.json)、[新session交接](archive/SESSION-HANDOFF-2026-09-28-T13.md)。T13已納入本機提交（識別以本次收尾紀錄所在commit為準，父提交46045f8），未push；T14未開工。
