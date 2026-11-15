@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "createdUTC": "2026-11-12T10:11:23.170033+00:00",
+  "status": "PUSHED_REMOTE_COMMIT_MATCH",
+  "repository": "boboidvtw/0ad",
+  "branch": "codex/t14-t18-checkpoint-20261112",
+  "commit": "fca88c4926574fc6403b0834a78744a504185763",
+  "tree": "01c3889f7fdabdd28d22d2597941712e820b0342",
+  "parent": "fb4564363de4fd43aa72f768962487a5f4790ffd",
+  "remoteRefs": {
+    "refs/heads/codex/t14-t18-assessment-20261105": "fb4564363de4fd43aa72f768962487a5f4790ffd",
+    "refs/heads/codex/t14-t18-checkpoint-20261112": "fca88c4926574fc6403b0834a78744a504185763",
+    "refs/heads/codex/t14-t18-closeout-20261104": "d5133455c3dffba7d2d3f2465f75b82532ebcd3d",
+    "refs/heads/master": "8d5ee7b4e54f224a231d481557d151d75a015503"
+  },
+  "changedFiles": 146,
+  "exportedPackageIndexedFilesVerifiedInCommit": 136,
+  "exportedPackageBytes": 2771455,
+  "sourceCheckoutHeadPreserved": true,
+  "sourceCheckoutBranchPreserved": true,
+  "sourceCheckoutIndexEmpty": true,
+  "otherTrackedDirtyHashesPreserved": true,
+  "preExistingUntrackedEntriesPreserved": 357,
+  "newUntrackedEntries": [
+    "docs/empire-rts/handoff-data/2026-11-12/"
+  ],
+  "scope": "Documentation and archived text evidence only",
+  "runtimeTests": "NOT_RUN",
+  "allThreeDesignApproved": false,
+  "implementationAdmitted": false,
+  "guardRefreshApproved": false,
+  "formalCases": "THREE_NOT_RUN",
+  "commitURL": "https://github.com/boboidvtw/0ad/commit/fca88c4926574fc6403b0834a78744a504185763",
+  "branchURL": "https://github.com/boboidvtw/0ad/tree/codex/t14-t18-checkpoint-20261112",
+  "note": "Receipt remains local to avoid recursive self-inclusion; no PR, merge, force push or master update."
+}

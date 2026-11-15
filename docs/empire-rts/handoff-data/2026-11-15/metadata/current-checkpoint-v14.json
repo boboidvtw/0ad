@@ -1,0 +1,312 @@
+{
+  "schema": 1,
+  "createdUTC": "2026-11-12T11:53:05.667089+00:00",
+  "status": "ROOT_PERSONAL_READING_PROGRESS_ORIGINAL_DESIGN_REPORTS_ABSENT",
+  "priorCheckpoint": "current-checkpoint-v13.json",
+  "childThread": "01a1cf0e-d06d-7750-9e95-e1189d33c1a2",
+  "transferReceipt": "work/t14-t18-session-transfer-20261112/child-readback.json",
+  "manifestSHA256": "e73e6c48bd2a7ea31742aef7ad4b1744e6f28dbed799c39b28b25a3f9079b93a",
+  "designIntegrityReadback": "work/t17-metadata-controls-design-20261105/root-design-integrity-readback-20261112-v1.json",
+  "all170IntegrityChecksMatch": true,
+  "latestProgress": {
+    "CODE": {
+      "path": "work/t17-metadata-controls-design-20261105/design-review-CODE-progress-v10.json",
+      "sha256": "1adef648232cda736def5646d7c0c63c4cfb993ce15d7f601fc8aacb281bb128",
+      "counts": {
+        "full": 69,
+        "partial": 0,
+        "unread": 16
+      },
+      "reviewStatus": "IN_PROGRESS_NOT_APPROVAL",
+      "formalJSONExists": false,
+      "formalMDExists": false,
+      "next": "Unread: 15,17,18,22,23,24,45,48,53,54,61,70,71,72,73,82"
+    },
+    "Python": {
+      "path": "work/t17-metadata-controls-design-20261105/design-review-Python-progress-v6.json",
+      "sha256": "30c2148bb69996da155da3f36d5595311f541e6f94e2fa6a1668f459b22c5b9a",
+      "counts": {
+        "full": 78,
+        "partial": 1,
+        "unread": 6
+      },
+      "reviewStatus": "IN_PROGRESS_NO_VERDICT",
+      "formalJSONExists": false,
+      "formalMDExists": false,
+      "next": "070 source-registry.json chars105000..end then071-073,082-084; full reasoning still pending."
+    },
+    "JSAPI": {
+      "path": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v13.json",
+      "sha256": "915170fd02fc43a9af506925aee3a6f3209ae84bd5fea6dca21172119d8aca24",
+      "counts": {
+        "full": 68,
+        "partial": 1,
+        "unread": 16
+      },
+      "reviewStatus": "IN_PROGRESS_NOT_APPROVAL",
+      "formalJSONExists": false,
+      "formalMDExists": false,
+      "next": [
+        13,
+        14,
+        15,
+        17,
+        18,
+        24,
+        48,
+        49,
+        57,
+        61,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        82
+      ]
+    }
+  },
+  "quotaObserved": {
+    "ordinaryUsageAllowed": true,
+    "primaryUsedPercent": 2,
+    "weeklyUsedPercent": 38,
+    "credits": 0,
+    "resetCredits": 0,
+    "note": "Live at this user continuation start; no paid/reset/model change"
+  },
+  "allThreeDesignApproved": false,
+  "implementationAdmitted": false,
+  "rootIndependentFull85ContentReviewComplete": false,
+  "guardRefreshApproved": false,
+  "formalCases": "THREE_NOT_RUN",
+  "automationObserved": {
+    "id": "0ad-t14",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=5",
+    "targetThread": "01a1cf0e-d06d-7750-9e95-e1189d33c1a2",
+    "configSHA256": "cb178857b23a799416f39762b149e3f15cacb0d73a5004813d54a665460b17b5",
+    "modifiedByChild": false,
+    "note": "Read actual local configuration fields; existing heartbeat reused, no new schedule or change. Machine/app execution and quota availability still required; no immediate-resume guarantee."
+  },
+  "rootReadThisSession": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    13,
+    14,
+    15,
+    17,
+    18,
+    39,
+    42,
+    45,
+    48,
+    49,
+    51,
+    53,
+    55,
+    56,
+    58,
+    59,
+    60,
+    68,
+    69,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    78,
+    79,
+    80,
+    81,
+    82
+  ],
+  "rootHistoricalReading": "Canonical JSON previously fully read; original120-second CONTRACT-DRAFT now fully recovered, currentd334 SPEC and wirev4 and full oldCODE/JS design reports read. Other applicable historical contracts and personal85 coverage still incomplete. No old design approval transferred to metadata.",
+  "next": "Historical union unread only24 GuiInterface.js and70 source-registry.json. Personal remaining45 UNREAD plus index24 PARTIAL still require completion before root personal85 claim. Continue text source review, no tests/imports/guard/engine; formal e73e DESIGN reports from original3 remain required and absent.",
+  "boundaries": "All prior FAIL/STOP/UNKNOWN/raw/seals retained. No author-code imports/compiles/tests/helpers/profile/producer/probe/fixtures/guard/attempt/engine; no C++/commit/push/delete/external messages/paid/reset/credits/model change/new schedule.",
+  "rootIndependentReviewProgress": "work/t17-metadata-controls-design-20261105/root-independent-read-progress-v8.json",
+  "rootIndependentCoverage": {
+    "full": 83,
+    "partial": 0,
+    "unread": 2
+  },
+  "gitObserved": {
+    "head": "d5133455c3dffba7d2d3f2465f75b82532ebcd3d",
+    "branch": "codex/t14-t18-closeout-20261104",
+    "indexEmpty": true
+  },
+  "originalReviewersAvailableInThisChat": false,
+  "originalReviewersAvailabilityEvidence": "Current heartbeat live collaboration.list_agents returned only /root; no cross-chat manipulation, replacement or role/model workaround",
+  "heartbeatInputUTC": null,
+  "latestRootSourceObservation": {
+    "topic": "First pause is wrapper-scoped, not entire GUI global loading",
+    "evidenceIndices": [
+      6,
+      15,
+      17,
+      18,
+      55
+    ],
+    "assessment": "Original full CODE/JS map-script source reviews explicitly constrain first native pause to wrapped session init; GUI global/loading may call native earlier and upstream init/restore has effects. Current wrapper forwards original this/args/returns and calls SetPaused first inside wrapper. Keep this exact scope; do not claim no native GUI startup calls precede wrapped init or complete startup nonmutation. MapGenerator body availability and full realm/native/source/runtime/profile/caller closure remain OPEN."
+  },
+  "originalFormalReportsObserved": "CODE/Python/JSAPI JSON+MD all absent; original progress versions10/6/13 unchanged",
+  "latestRootSourceObservations": [
+    {
+      "topic": "Full transaction capture insertion and unchanged firstL0",
+      "evidenceIndices": [
+        6,
+        55,
+        74,
+        75
+      ],
+      "assessment": "Entire transaction including embedded WIRE/PREARM now personally read. Current source has no metadata-controls capture. Load initialize obtains first graph once and passes the same initialRead into transaction; beforeSave reads context, checkpointGate, ordinal/name and emits SAVE_CALL then cameraSame before sole Save. Proposed capture must preserve that firstL0, once Save and caller/readonly/no-reentry/mutation closure; never replace L0 or treat an emitted payload as proof of producer execution. Existing SAVE_RETURN remains only order.push; no independent raw emit."
+    },
+    {
+      "topic": "First pause is wrapper-scoped, not entire GUI global loading",
+      "evidenceIndices": [
+        6,
+        15,
+        17,
+        18,
+        55
+      ],
+      "assessment": "Original full CODE/JS map-script source reviews explicitly constrain first native pause to wrapped session init; GUI global/loading may call native earlier and upstream init/restore has effects. Current wrapper forwards original this/args/returns and calls SetPaused first inside wrapper. Keep this exact scope; do not claim no native GUI startup calls precede wrapped init or complete startup nonmutation. MapGenerator body availability and full realm/native/source/runtime/profile/caller closure remain OPEN."
+    },
+    {
+      "topic": "Metadata comparator and current GUI equality are distinct",
+      "evidenceIndices": [
+        6,
+        7,
+        55,
+        56
+      ],
+      "assessment": "Full metadata comparator _decode preserves JSON -0, rejects nonfinite/duplicates and enforces exact int1 principal and6/7 top keys; nested numbers use binary64 bit equality, arrays keep order, dictionaries compare key/value sets. GUI same uses ASCII JSON.stringify and deepSame uses Object.is for primitive values. These are different numeric/serialization contracts; do not reuse GUI baseline or generic parser as exact metadata controls comparison. Full native float-to-wire encoding semantics and independent provenance remain required; comparator always runtime_bound=false/native_verified=false."
+    },
+    {
+      "topic": "Old metadata plan approval and camera LOW personally read",
+      "evidenceIndices": [
+        49,
+        1,
+        3,
+        74
+      ],
+      "assessment": "Entire ccc2ef60 old singleJS review approves only17eb/48 read-only source plan, not e73e/85 producer or implementation. It explicitly retains all11 OPEN obligations, freshload Replay rewrites, unflushed start line, independent expected provenance and source/native noMutation. LOW001 identifies GetValue rather than GetSmoothedValue; preserve original plan/report and use current prospective design wording. Old map-script source approvals remain bounded caller repair only; no test/helper/review suite rerun."
+    }
+  ],
+  "priorAutomationObservation": {
+    "id": "0ad-t14",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=5",
+    "targetThread": "01a1ab0d-bce1-7f31-b9a9-33be9aaf3f6a",
+    "modifiedByChild": false,
+    "transferResponsibility": "Parent reads child receipt and migrates existing id; child must not create duplicate"
+  },
+  "rootIndependentCoverageMeaning": "Historical cross-session union only; no personal full85 claim",
+  "rootPersonalCoverage": {
+    "full": 39,
+    "partial": 1,
+    "unread": 45
+  },
+  "rootPersonalFullIndices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    13,
+    14,
+    15,
+    17,
+    18,
+    39,
+    42,
+    45,
+    48,
+    49,
+    51,
+    53,
+    55,
+    56,
+    58,
+    59,
+    60,
+    68,
+    69,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    78,
+    79,
+    80,
+    81,
+    82
+  ],
+  "rootPersonalFull85ContentReviewComplete": false,
+  "rootReadThisHeartbeat": [],
+  "formalReportsObservedThisHeartbeat": {
+    "CODE": {
+      "json": false,
+      "md": false
+    },
+    "Python": {
+      "json": false,
+      "md": false
+    },
+    "JSAPI": {
+      "json": false,
+      "md": false
+    }
+  },
+  "full170IntegrityRecheckedThisHeartbeat": false,
+  "selected14IntegrityChecksMatchThisHeartbeat": false,
+  "latestUserAuthorizedPublication": {
+    "receipt": "work/t14-t18-github-checkpoint-20261112/push-receipt.json",
+    "receiptSHA256": "9ddc07921f1733f8a39204a9117e339d3e065334a413e18e733592efc3f66524",
+    "commit": "fca88c4926574fc6403b0834a78744a504185763",
+    "observedLocallyOnlyThisHeartbeat": true,
+    "newPushAuthorizedByHeartbeat": false,
+    "newCommitOrPushPerformed": false
+  },
+  "continuationTrigger": "User explicitly requests finishing task and automatic continuation once quota sufficient",
+  "rootReadThisTurn": [
+    6,
+    7,
+    15,
+    17,
+    18,
+    49,
+    55,
+    56
+  ],
+  "formalReportsObservedThisTurn": {
+    "CODE": {
+      "json": false,
+      "md": false
+    },
+    "Python": {
+      "json": false,
+      "md": false
+    },
+    "JSAPI": {
+      "json": false,
+      "md": false
+    }
+  },
+  "selected16IntegrityChecksMatchThisTurn": true
+}

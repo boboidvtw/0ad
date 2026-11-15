@@ -1,6 +1,12 @@
 <!-- Purpose: current dependency-based continuation after project assessment. Date: 2026-11-05 Asia/Taipei. -->
 # T14–T18 後續作業（最新）
 
+## 2026-11-15 收工 / Session closeout
+
+[詳細說明](SESSION-CLOSEOUT-2026-11-15-T14-T18.md) · [後續作業](reference_t14_t18_next_steps_20261115.md) · [資料與SHA索引](handoff-data/2026-11-15/README.md)。Python/JSAPI兩正式DESIGN-only核可已落盤；CODE原actor回報完成但唯讀使正式檔缺，三方正式核可與implementation仍未准入。新root本人3/85、前root85只繼承。原FAIL/STOP/UNKNOWN、guard刷新待具體決策、3casesNOT_RUN、24helpers耗用、11義務OPEN保留；沒有實作/tests/engine或release。僅本次文件資料commit/push，原dirty與ACTIVE每5h排程保留。
+
+Two formal design-only approvals are archived; CODE formal delivery remains blocked by its reported read-only environment. This is an archival documentation/data update, not runtime acceptance or a game release.
+
 先讀[整體成果評估與18工作包](PROJECT-ASSESSMENT-2026-11-05.md)、[機器計劃](handoff-data/2026-11-05/ASSESSMENT.json)、[最新SOURCE／STOP交接](SESSION-HANDOFF-2026-11-05-SOURCE-APPROVED-READINESS-STOP.md)。Nov4收工資料保持歷史，當時Python缺正式報告的NEXT已由目前三方SOURCE核可取代；不得重跑review/helpers／已DONE案例。
 
 主任務19項中14項限定DONE，5項未完成；詳細工作包18個，非18正式cases。先完成文件與資料更新／GitHub讀回，再做R06 metadata六欄／11義務跨計劃對照。其餘按依賴推進；沒有必要可行獨立工作時保持待決策，不以合成proof製造進度。

@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "createdUTC": "2026-11-14T03:15:49.922714+00:00",
+  "status": "SAME_THREE_TASKS_DISPATCHED_AWAITING_EXECUTION_EVIDENCE",
+  "liveUsage": {
+    "ordinaryUsageAllowed": true,
+    "primaryUsedPercent": 46,
+    "weeklyUsedPercent": 63
+  },
+  "priorState": "All three errored with usage-limit try again at 5:12 PM; retained diagnosis unchanged",
+  "roles": {
+    "CODE": {
+      "baselineProgress": "design-review-CODE-progress-v11.json",
+      "sha256": "136b4800f716f8b5a76e123b39f5634bfcd86f076232c4f8114da5119e88db7c",
+      "formalJSONExists": false,
+      "formalMDExists": false
+    },
+    "Python": {
+      "baselineProgress": "design-review-Python-progress-v7.json",
+      "sha256": "a0f6fbc753e28f1173a9b077541ae519c271245c57b3e33e0e8fa92f944da70c",
+      "formalJSONExists": false,
+      "formalMDExists": false
+    },
+    "JSAPI": {
+      "baselineProgress": "design-review-JSAPI-progress-v13.json",
+      "sha256": "915170fd02fc43a9af506925aee3a6f3209ae84bd5fea6dca21172119d8aca24",
+      "formalJSONExists": false,
+      "formalMDExists": false
+    }
+  },
+  "noReplacement": true,
+  "scheduleModified": false,
+  "allThreeDesignApproved": false,
+  "implementationAdmitted": false
+}

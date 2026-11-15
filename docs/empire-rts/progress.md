@@ -1,6 +1,12 @@
 <!-- Purpose: 任務狀態與證據的唯一主表；Created: 2026-09-06. -->
 # 進度追蹤
 
+## 2026-11-15 收工 / Session closeout
+
+[詳細說明](SESSION-CLOSEOUT-2026-11-15-T14-T18.md) · [後續作業](reference_t14_t18_next_steps_20261115.md) · [資料與SHA索引](handoff-data/2026-11-15/README.md)。Python/JSAPI兩正式DESIGN-only核可已落盤；CODE原actor回報完成但唯讀使正式檔缺，三方正式核可與implementation仍未准入。新root本人3/85、前root85只繼承。原FAIL/STOP/UNKNOWN、guard刷新待具體決策、3casesNOT_RUN、24helpers耗用、11義務OPEN保留；沒有實作/tests/engine或release。僅本次文件資料commit/push，原dirty與ACTIVE每5h排程保留。
+
+Two formal design-only approvals are archived; CODE formal delivery remains blocked by its reported read-only environment. This is an archival documentation/data update, not runtime acceptance or a game release.
+
 最新總覽（2026-11-05）：**19項主任務／14項限定DONE／5項未完成**；詳[成果評估與18工作包](PROJECT-ASSESSMENT-2026-11-05.md)。SOURCE-v2三方核可已完成；readiness STOP、guard刷新待決策，三案例NOT_RUN。歷史段落保留原當時結論。
 
 ### 2026-10-10 — T14 storage failure preservation 合成候選有界 DONE

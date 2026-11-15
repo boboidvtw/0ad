@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "purpose": "Diagnose stalled original metadata DESIGN reviewers; read-only inspection, no execution or authorization changes",
+  "observedAtUTC": "2026-11-14T03:14:10.582Z",
+  "status": "BLOCKED_ORIGINAL_REVIEWERS_FAILED_NO_RESUME_AFTER_HEARTBEAT_TRANSFER",
+  "agents": [
+    {
+      "role": "CODE",
+      "threadId": "01a1ad19-e86c-72e1-aede-da700df4e484",
+      "runtimeStatus": {
+        "type": "systemError"
+      },
+      "lastTurn": [
+        {
+          "status": "failed",
+          "error": {
+            "message": "You’ve hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/settings/usage to purchase more credits or try again at 5:12 PM.",
+            "additionalDetails": null
+          },
+          "startedAt": 1794370436,
+          "completedAt": 1794370505
+        }
+      ]
+    },
+    {
+      "role": "Python",
+      "threadId": "01a1ad1a-1fe3-70f1-a10f-bc4706515125",
+      "runtimeStatus": {
+        "type": "systemError"
+      },
+      "lastTurn": [
+        {
+          "status": "failed",
+          "error": {
+            "message": "You’ve hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/settings/usage to purchase more credits or try again at 5:12 PM.",
+            "additionalDetails": null
+          },
+          "startedAt": 1794370441,
+          "completedAt": 1794370504
+        }
+      ]
+    },
+    {
+      "role": "JSAPI",
+      "threadId": "01a1ad1a-585f-7dd2-8495-4f700a5037f7",
+      "runtimeStatus": {
+        "type": "systemError"
+      },
+      "lastTurn": [
+        {
+          "status": "failed",
+          "error": {
+            "message": "You’ve hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/settings/usage to purchase more credits or try again at 5:12 PM.",
+            "additionalDetails": null
+          },
+          "startedAt": 1794370445,
+          "completedAt": 1794370503
+        }
+      ]
+    }
+  ],
+  "originalParentThread": "01a1ab0d-bce1-7f31-b9a9-33be9aaf3f6a",
+  "originalParentObservedStatus": "idle",
+  "heartbeat": {
+    "id": "0ad-t14",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=5",
+    "targetThread": "01a1d802-8dc0-7b70-9bdc-f3c2f963d8f0",
+    "modified": false
+  },
+  "liveUsage": {
+    "ordinaryUsageAllowed": true,
+    "primaryUsedPercent": 37,
+    "weeklyUsedPercent": 61
+  },
+  "findings": [
+    "Original three reviewers last failed on 2026-11-11 around 12:15 Asia/Taipei with usage-limit errors; current runtime status systemError.",
+    "Heartbeat target was migrated to a different root chat; this does not constitute evidence of resumed reviewer execution.",
+    "Latest CODE v10, Python v6, JSAPI v13 progress files date to the same failure period; all six formal reports remain absent.",
+    "Current quota availability does not prove failed reviewers were restarted. Passive report polling has no active producer in observed state."
+  ],
+  "repairProposal": "Explicitly authorize a message to original parent chat to inspect and resume these SAME three existing reviewer tasks/settings from their saved progress. No replacement roles/models, signatures or gate weakening. If original identities cannot resume, report concrete failure and prepare a separately authorized recovery contract.",
+  "actionsPerformed": "Read only plus this diagnostic record. No thread messages, new agents, schedule edits, imports/tests/guard/engine or publication.",
+  "allThreeDesignApproved": false,
+  "implementationAdmitted": false,
+  "guardRefreshApproved": false
+}

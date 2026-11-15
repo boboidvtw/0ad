@@ -1,0 +1,2194 @@
+{
+  "schema": 1,
+  "reviewerRole": "JSAPI",
+  "inputManifestSHA256": "e73e6c48bd2a7ea31742aef7ad4b1744e6f28dbed799c39b28b25a3f9079b93a",
+  "status": "IN_PROGRESS_NOT_APPROVAL",
+  "createdUTC": "2026-11-14T08:36:45.366452+00:00",
+  "manifestRead": "FULL",
+  "manifestBytes": 30214,
+  "bindingCount": 85,
+  "bindings": [
+    {
+      "index": 0,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/CONTRACT.md",
+      "bytes": 1015,
+      "sha256": "0c1555dc923ac8e631944390273dc497f478fdb828929696217ee5d9705ebbd8",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/000-CONTRACT.md",
+      "currentBytes": 1015,
+      "currentSHA256": "0c1555dc923ac8e631944390273dc497f478fdb828929696217ee5d9705ebbd8",
+      "snapshotBytes": 1015,
+      "snapshotSHA256": "0c1555dc923ac8e631944390273dc497f478fdb828929696217ee5d9705ebbd8",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          6
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          1015
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 1,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FIELD-MATRIX.md",
+      "bytes": 9024,
+      "sha256": "46c39e138d5000490411bd00761770af199827504d7e3d404a05bce524d2ed59",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/001-FIELD-MATRIX.md",
+      "currentBytes": 9024,
+      "currentSHA256": "46c39e138d5000490411bd00761770af199827504d7e3d404a05bce524d2ed59",
+      "snapshotBytes": 9024,
+      "snapshotSHA256": "46c39e138d5000490411bd00761770af199827504d7e3d404a05bce524d2ed59",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          37
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          9024
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 2,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FUTURE-SCHEDULE-ABSENCE.md",
+      "bytes": 2980,
+      "sha256": "ebc80f289f848639200f3f46cab489a07d5b18fb5765ef6bcaa561ca57a48fa1",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/002-FUTURE-SCHEDULE-ABSENCE.md",
+      "currentBytes": 2980,
+      "currentSHA256": "ebc80f289f848639200f3f46cab489a07d5b18fb5765ef6bcaa561ca57a48fa1",
+      "snapshotBytes": 2980,
+      "snapshotSHA256": "ebc80f289f848639200f3f46cab489a07d5b18fb5765ef6bcaa561ca57a48fa1",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          15
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          2980
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 3,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/HOST-API-DRAFT.md",
+      "bytes": 5202,
+      "sha256": "b7cb74ad399938c3445325b9d98f1323559078b9555e156f870e5356aa3091d5",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/003-HOST-API-DRAFT.md",
+      "currentBytes": 5202,
+      "currentSHA256": "b7cb74ad399938c3445325b9d98f1323559078b9555e156f870e5356aa3091d5",
+      "snapshotBytes": 5202,
+      "snapshotSHA256": "b7cb74ad399938c3445325b9d98f1323559078b9555e156f870e5356aa3091d5",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          28
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          5202
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 4,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/OPEN-obligations.json",
+      "bytes": 2839,
+      "sha256": "b699853bc8fc25b095556fc4b0e86b9343d0bc80c55efd3f01538e8694f28426",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/004-OPEN-obligations.json",
+      "currentBytes": 2839,
+      "currentSHA256": "b699853bc8fc25b095556fc4b0e86b9343d0bc80c55efd3f01538e8694f28426",
+      "snapshotBytes": 2839,
+      "snapshotSHA256": "b699853bc8fc25b095556fc4b0e86b9343d0bc80c55efd3f01538e8694f28426",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          67
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          2839
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 5,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/checkpoint.json",
+      "bytes": 1376,
+      "sha256": "e72cf3b68a5c00e49ad4536cb6f734ec2fb4b569d7411c54c81ede249a382091",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/005-checkpoint.json",
+      "currentBytes": 1376,
+      "currentSHA256": "e72cf3b68a5c00e49ad4536cb6f734ec2fb4b569d7411c54c81ede249a382091",
+      "snapshotBytes": 1376,
+      "snapshotSHA256": "e72cf3b68a5c00e49ad4536cb6f734ec2fb4b569d7411c54c81ede249a382091",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          26
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          1376
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 6,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js",
+      "bytes": 69380,
+      "sha256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/006-session_transaction.js",
+      "currentBytes": 69380,
+      "currentSHA256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885",
+      "snapshotBytes": 69380,
+      "snapshotSHA256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          297
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          69380
+        ]
+      ],
+      "readMethod": "Personally read entire source including full embedded WIRE/PREARM/prototypes in contiguous bytes0:24000,24000:48000,48000:69380.55 identicalSHA reuse of6."
+    },
+    {
+      "index": 7,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/tools/epoch-rts/t17_save_metadata.py",
+      "bytes": 5818,
+      "sha256": "96d9e51e6280b1998410d7a591eaf65c11dfd11bc68c3816255201bac30bfd43",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/007-t17_save_metadata.py",
+      "currentBytes": 5818,
+      "currentSHA256": "96d9e51e6280b1998410d7a591eaf65c11dfd11bc68c3816255201bac30bfd43",
+      "snapshotBytes": 5818,
+      "snapshotSHA256": "96d9e51e6280b1998410d7a591eaf65c11dfd11bc68c3816255201bac30bfd43",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          160
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          5818
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 8,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-allocation-consumer-integration-preparation/native-loader-closure/primaryrefs/source/simulation2/scripting/JSInterface_Simulation.cpp",
+      "bytes": 8060,
+      "sha256": "b9dfa717c7317c9f5731c6ed9fd4c4c4b4be12b430f9903bde5a19127932ce40",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/008-JSInterface_Simulation.cpp",
+      "currentBytes": 8060,
+      "currentSHA256": "b9dfa717c7317c9f5731c6ed9fd4c4c4b4be12b430f9903bde5a19127932ce40",
+      "snapshotBytes": 8060,
+      "snapshotSHA256": "b9dfa717c7317c9f5731c6ed9fd4c4c4b4be12b430f9903bde5a19127932ce40",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          224
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          8060
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 9,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/code-review-v1.md",
+      "bytes": 6732,
+      "sha256": "49b761dbbe8ad1d14c0ddc817c95fcb8be6d5a90f1d65f23d31bff0e4923fde6",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/009-code-review-v1.md",
+      "currentBytes": 6732,
+      "currentSHA256": "49b761dbbe8ad1d14c0ddc817c95fcb8be6d5a90f1d65f23d31bff0e4923fde6",
+      "snapshotBytes": 6732,
+      "snapshotSHA256": "49b761dbbe8ad1d14c0ddc817c95fcb8be6d5a90f1d65f23d31bff0e4923fde6",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          59
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          6732
+        ]
+      ],
+      "readMethod": "Reviewer personally read full output; truncated batch gaps reread (CameraController lines600-end; Fixed whole file). Current/snapshot identical bytes verified."
+    },
+    {
+      "index": 10,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/completion-source-only.json",
+      "bytes": 1756,
+      "sha256": "4167dc102b3075f50e6d45c96e50c15b3ca4e524c3ccbca7fdfe7e61ddf64e28",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/010-completion-source-only.json",
+      "currentBytes": 1756,
+      "currentSHA256": "4167dc102b3075f50e6d45c96e50c15b3ca4e524c3ccbca7fdfe7e61ddf64e28",
+      "snapshotBytes": 1756,
+      "snapshotSHA256": "4167dc102b3075f50e6d45c96e50c15b3ca4e524c3ccbca7fdfe7e61ddf64e28",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          44
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          1756
+        ]
+      ],
+      "readMethod": "Reviewer personally read full output; truncated batch gaps reread (CameraController lines600-end; Fixed whole file). Current/snapshot identical bytes verified."
+    },
+    {
+      "index": 11,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/manifest.json",
+      "bytes": 4534,
+      "sha256": "85f93c30ba9484b2cce4129e0ec930b7f85449ef7d5e363da94ae8814a4b4d30",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/011-manifest.json",
+      "currentBytes": 4534,
+      "currentSHA256": "85f93c30ba9484b2cce4129e0ec930b7f85449ef7d5e363da94ae8814a4b4d30",
+      "snapshotBytes": 4534,
+      "snapshotSHA256": "85f93c30ba9484b2cce4129e0ec930b7f85449ef7d5e363da94ae8814a4b4d30",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          114
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          4534
+        ]
+      ],
+      "readMethod": "Reviewer personally read full output; truncated batch gaps reread (CameraController lines600-end; Fixed whole file). Current/snapshot identical bytes verified."
+    },
+    {
+      "index": 12,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-metadata-preparation/python-review-v1.md",
+      "bytes": 5646,
+      "sha256": "8d8a6b9b8f1c43788ac91a652aa11afa8231a58c758452d68a2a1be7795b7dff",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/012-python-review-v1.md",
+      "currentBytes": 5646,
+      "currentSHA256": "8d8a6b9b8f1c43788ac91a652aa11afa8231a58c758452d68a2a1be7795b7dff",
+      "snapshotBytes": 5646,
+      "snapshotSHA256": "8d8a6b9b8f1c43788ac91a652aa11afa8231a58c758452d68a2a1be7795b7dff",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          42
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          5646
+        ]
+      ],
+      "readMethod": "Reviewer personally read full output; truncated batch gaps reread (CameraController lines600-end; Fixed whole file). Current/snapshot identical bytes verified."
+    },
+    {
+      "index": 13,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md",
+      "bytes": 41941,
+      "sha256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/013-SPEC.md",
+      "currentBytes": 41941,
+      "currentSHA256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b",
+      "snapshotBytes": 41941,
+      "snapshotSHA256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          227
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          41941
+        ]
+      ],
+      "readMethod": "Personally read contiguous bytes0:23999+23999:end.68 identicalSHA reuseof13; current/snapshot verified."
+    },
+    {
+      "index": 14,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/wire-schema.json",
+      "bytes": 28262,
+      "sha256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/014-wire-schema.json",
+      "currentBytes": 28262,
+      "currentSHA256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+      "snapshotBytes": 28262,
+      "snapshotSHA256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          538
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          28262
+        ]
+      ],
+      "readMethod": "Personally read full untruncated14;69 sameSHA reuse. Current/snapshot hashes verified."
+    },
+    {
+      "index": 15,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/code-review-v1.json",
+      "bytes": 36970,
+      "sha256": "bb2bdb8bbd8e295ef8a396f601a894acb4bd84df68850581e7832bead78cea5b",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/015-code-review-v1.json",
+      "currentBytes": 36970,
+      "currentSHA256": "bb2bdb8bbd8e295ef8a396f601a894acb4bd84df68850581e7832bead78cea5b",
+      "snapshotBytes": 36970,
+      "snapshotSHA256": "bb2bdb8bbd8e295ef8a396f601a894acb4bd84df68850581e7832bead78cea5b",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          690
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          36970
+        ]
+      ],
+      "readMethod": "Personally read full untruncated contents; current/snapshot verified."
+    },
+    {
+      "index": 16,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/completion-source-only.json",
+      "bytes": 1537,
+      "sha256": "a296be8ebc5e142b8cdc578d9990417c27866639bee70dba6d75a413e72c0431",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/016-completion-source-only.json",
+      "currentBytes": 1537,
+      "currentSHA256": "a296be8ebc5e142b8cdc578d9990417c27866639bee70dba6d75a413e72c0431",
+      "snapshotBytes": 1537,
+      "snapshotSHA256": "a296be8ebc5e142b8cdc578d9990417c27866639bee70dba6d75a413e72c0431",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          35
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          1537
+        ]
+      ],
+      "readMethod": "Reviewer personally read full output; truncated batch gaps reread (CameraController lines600-end; Fixed whole file). Current/snapshot identical bytes verified."
+    },
+    {
+      "index": 17,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/js-api-review-v1.json",
+      "bytes": 60034,
+      "sha256": "071cc8318e875f70e1d3500cfa032f5146e4fd04090d0bbc76cee0773141f832",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/017-js-api-review-v1.json",
+      "currentBytes": 60034,
+      "currentSHA256": "071cc8318e875f70e1d3500cfa032f5146e4fd04090d0bbc76cee0773141f832",
+      "snapshotBytes": 60034,
+      "snapshotSHA256": "071cc8318e875f70e1d3500cfa032f5146e4fd04090d0bbc76cee0773141f832",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          1152
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          60034
+        ]
+      ],
+      "readMethod": "Personally read contiguous bytes0:27984+27984:end, full untruncated contents; current/snapshot verified."
+    },
+    {
+      "index": 18,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context/work/t17-save-session-transaction-preparation/map-script-fix/manifest.json",
+      "bytes": 27089,
+      "sha256": "06a9cd6b7f8651d03daf5d57103d0aacc3025af0c92ab9c97b053d09ba0f1c9a",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/018-manifest.json",
+      "currentBytes": 27089,
+      "currentSHA256": "06a9cd6b7f8651d03daf5d57103d0aacc3025af0c92ab9c97b053d09ba0f1c9a",
+      "snapshotBytes": 27089,
+      "snapshotSHA256": "06a9cd6b7f8651d03daf5d57103d0aacc3025af0c92ab9c97b053d09ba0f1c9a",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          552
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          27089
+        ]
+      ],
+      "readMethod": "Personally read full untruncated contents; current/snapshot verified."
+    },
+    {
+      "index": 19,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/context-bindings.json",
+      "bytes": 4844,
+      "sha256": "591322503804584305793e9f69ae5e063954bbffcecebdcb9c495653989c34b1",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/019-context-bindings.json",
+      "currentBytes": 4844,
+      "currentSHA256": "591322503804584305793e9f69ae5e063954bbffcecebdcb9c495653989c34b1",
+      "snapshotBytes": 4844,
+      "snapshotSHA256": "591322503804584305793e9f69ae5e063954bbffcecebdcb9c495653989c34b1",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          80
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          4844
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 20,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/official-bindings.json",
+      "bytes": 886,
+      "sha256": "5ca0aacaadc5b442df61f06b531a1235b8685ccc785124f5d2d52b145065cace",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/020-official-bindings.json",
+      "currentBytes": 886,
+      "currentSHA256": "5ca0aacaadc5b442df61f06b531a1235b8685ccc785124f5d2d52b145065cace",
+      "snapshotBytes": 886,
+      "snapshotSHA256": "5ca0aacaadc5b442df61f06b531a1235b8685ccc785124f5d2d52b145065cace",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          886
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 21,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primary-bindings.json",
+      "bytes": 8005,
+      "sha256": "d426f3d161bb5c65deef3fffbb81352342aeb5bc099af577c9b3b10656ce46b4",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/021-primary-bindings.json",
+      "currentBytes": 8005,
+      "currentSHA256": "d426f3d161bb5c65deef3fffbb81352342aeb5bc099af577c9b3b10656ce46b4",
+      "snapshotBytes": 8005,
+      "snapshotSHA256": "d426f3d161bb5c65deef3fffbb81352342aeb5bc099af577c9b3b10656ce46b4",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          209
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          8005
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 22,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/gui/session/selection.js",
+      "bytes": 14510,
+      "sha256": "55d296bddff20db103bf81f6a61a5c7f435ebfab0cb89fdd5f2206a6c7c7d049",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/022-selection.js",
+      "currentBytes": 14510,
+      "currentSHA256": "55d296bddff20db103bf81f6a61a5c7f435ebfab0cb89fdd5f2206a6c7c7d049",
+      "snapshotBytes": 14510,
+      "snapshotSHA256": "55d296bddff20db103bf81f6a61a5c7f435ebfab0cb89fdd5f2206a6c7c7d049",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          589
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          14510
+        ]
+      ],
+      "readMethod": "Personally read full untruncated contents; identical current SHA verified."
+    },
+    {
+      "index": 23,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/gui/session/session.js",
+      "bytes": 25386,
+      "sha256": "04649d5ef27fe135adcdec6e85df07296d4bb085cce2df5b9ef3feaf61a9750e",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/023-session.js",
+      "currentBytes": 25386,
+      "currentSHA256": "04649d5ef27fe135adcdec6e85df07296d4bb085cce2df5b9ef3feaf61a9750e",
+      "snapshotBytes": 25386,
+      "snapshotSHA256": "04649d5ef27fe135adcdec6e85df07296d4bb085cce2df5b9ef3feaf61a9750e",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          889
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          25386
+        ]
+      ],
+      "readMethod": "Personally read full untruncated contents; identical current SHA verified."
+    },
+    {
+      "index": 24,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/official-public/simulation/components/GuiInterface.js",
+      "bytes": 73967,
+      "sha256": "9eaf481d5c965cc4df0cbe1fd51d2db81af162cea26c50fc67484633dd867b40",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/024-GuiInterface.js",
+      "currentBytes": 73967,
+      "currentSHA256": "9eaf481d5c965cc4df0cbe1fd51d2db81af162cea26c50fc67484633dd867b40",
+      "snapshotBytes": 73967,
+      "snapshotSHA256": "9eaf481d5c965cc4df0cbe1fd51d2db81af162cea26c50fc67484633dd867b40",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          2136
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          73967
+        ]
+      ],
+      "readMethod": "Personally read entire untruncated contents;24 in four contiguous chunks, identical current SHA verified."
+    },
+    {
+      "index": 25,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/Camera.cpp",
+      "bytes": 14760,
+      "sha256": "612b86c16a0bd62189a07ea5d767e7b0411a61e5f3edb58f24244bf6a5cbd0ae",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/025-Camera.cpp",
+      "currentBytes": 14760,
+      "currentSHA256": "612b86c16a0bd62189a07ea5d767e7b0411a61e5f3edb58f24244bf6a5cbd0ae",
+      "snapshotBytes": 14760,
+      "snapshotSHA256": "612b86c16a0bd62189a07ea5d767e7b0411a61e5f3edb58f24244bf6a5cbd0ae",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          456
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          14760
+        ]
+      ],
+      "readMethod": "Reviewer personally read full output; truncated batch gaps reread (CameraController lines600-end; Fixed whole file). Current/snapshot identical bytes verified."
+    },
+    {
+      "index": 26,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/Camera.h",
+      "bytes": 4549,
+      "sha256": "d3da9c24b67686586a84b0f76e2199d6d04ff03fae6f5e239fcb9e170084f4f9",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/026-Camera.h",
+      "currentBytes": 4549,
+      "currentSHA256": "d3da9c24b67686586a84b0f76e2199d6d04ff03fae6f5e239fcb9e170084f4f9",
+      "snapshotBytes": 4549,
+      "snapshotSHA256": "d3da9c24b67686586a84b0f76e2199d6d04ff03fae6f5e239fcb9e170084f4f9",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          134
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          4549
+        ]
+      ],
+      "readMethod": "Reviewer personally read full output; truncated batch gaps reread (CameraController lines600-end; Fixed whole file). Current/snapshot identical bytes verified."
+    },
+    {
+      "index": 27,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/CameraController.cpp",
+      "bytes": 22474,
+      "sha256": "025e6176b09730bc22f70bb9f8b14f2563e2b0852e84a00ed71ea3a97ff23d6d",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/027-CameraController.cpp",
+      "currentBytes": 22474,
+      "currentSHA256": "025e6176b09730bc22f70bb9f8b14f2563e2b0852e84a00ed71ea3a97ff23d6d",
+      "snapshotBytes": 22474,
+      "snapshotSHA256": "025e6176b09730bc22f70bb9f8b14f2563e2b0852e84a00ed71ea3a97ff23d6d",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          701
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          22474
+        ]
+      ],
+      "readMethod": "Reviewer personally read full output; truncated batch gaps reread (CameraController lines600-end; Fixed whole file). Current/snapshot identical bytes verified."
+    },
+    {
+      "index": 28,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/CameraController.h",
+      "bytes": 3573,
+      "sha256": "4d75277bde51e38c9c7220a49bc9026256531c1c06399dac8fd0fbca77a7bedf",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/028-CameraController.h",
+      "currentBytes": 3573,
+      "currentSHA256": "4d75277bde51e38c9c7220a49bc9026256531c1c06399dac8fd0fbca77a7bedf",
+      "snapshotBytes": 3573,
+      "snapshotSHA256": "4d75277bde51e38c9c7220a49bc9026256531c1c06399dac8fd0fbca77a7bedf",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          123
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          3573
+        ]
+      ],
+      "readMethod": "Reviewer personally read full output; truncated batch gaps reread (CameraController lines600-end; Fixed whole file). Current/snapshot identical bytes verified."
+    },
+    {
+      "index": 29,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/GameView.cpp",
+      "bytes": 10458,
+      "sha256": "707449873cae736f9413dc0aa743bd9575c32a9821e2f1a2c22bf0143a06f51c",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/029-GameView.cpp",
+      "currentBytes": 10458,
+      "currentSHA256": "707449873cae736f9413dc0aa743bd9575c32a9821e2f1a2c22bf0143a06f51c",
+      "snapshotBytes": 10458,
+      "snapshotSHA256": "707449873cae736f9413dc0aa743bd9575c32a9821e2f1a2c22bf0143a06f51c",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          407
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          10458
+        ]
+      ],
+      "readMethod": "Reviewer personally read full output; truncated batch gaps reread (CameraController lines600-end; Fixed whole file). Current/snapshot identical bytes verified."
+    },
+    {
+      "index": 30,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/GameView.h",
+      "bytes": 3102,
+      "sha256": "6290324c12a10a09dc65a09ae174f45fe3c6a8e172a7a035c512dd420525dc23",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/030-GameView.h",
+      "currentBytes": 3102,
+      "currentSHA256": "6290324c12a10a09dc65a09ae174f45fe3c6a8e172a7a035c512dd420525dc23",
+      "snapshotBytes": 3102,
+      "snapshotSHA256": "6290324c12a10a09dc65a09ae174f45fe3c6a8e172a7a035c512dd420525dc23",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          102
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          3102
+        ]
+      ],
+      "readMethod": "Reviewer personally read full output; truncated batch gaps reread (CameraController lines600-end; Fixed whole file). Current/snapshot identical bytes verified."
+    },
+    {
+      "index": 31,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/scripting/JSInterface_GameView.cpp",
+      "bytes": 6184,
+      "sha256": "6503fba660c6d38f2392b9e96557dd4d4d8a52871bd27f4399ec5cccd68fe64b",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/031-JSInterface_GameView.cpp",
+      "currentBytes": 6184,
+      "currentSHA256": "6503fba660c6d38f2392b9e96557dd4d4d8a52871bd27f4399ec5cccd68fe64b",
+      "snapshotBytes": 6184,
+      "snapshotSHA256": "6503fba660c6d38f2392b9e96557dd4d4d8a52871bd27f4399ec5cccd68fe64b",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          211
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          6184
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 32,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/maths/Fixed.h",
+      "bytes": 12193,
+      "sha256": "a79e050e2d47e44203d51fcd192527363b8169684343373259153431ae3543ea",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/032-Fixed.h",
+      "currentBytes": 12193,
+      "currentSHA256": "a79e050e2d47e44203d51fcd192527363b8169684343373259153431ae3543ea",
+      "snapshotBytes": 12193,
+      "snapshotSHA256": "a79e050e2d47e44203d51fcd192527363b8169684343373259153431ae3543ea",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          400
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          12193
+        ]
+      ],
+      "readMethod": "Reviewer personally read full output; truncated batch gaps reread (CameraController lines600-end; Fixed whole file). Current/snapshot identical bytes verified."
+    },
+    {
+      "index": 33,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Game.cpp",
+      "bytes": 13301,
+      "sha256": "766c220c7b8568d26ad04bcde19eeddfdc9fdd6539e56dba9fbf8d472a6e4a8a",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/033-Game.cpp",
+      "currentBytes": 13301,
+      "currentSHA256": "766c220c7b8568d26ad04bcde19eeddfdc9fdd6539e56dba9fbf8d472a6e4a8a",
+      "snapshotBytes": 13301,
+      "snapshotSHA256": "766c220c7b8568d26ad04bcde19eeddfdc9fdd6539e56dba9fbf8d472a6e4a8a",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          477
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          13301
+        ]
+      ],
+      "readMethod": "Reviewer personally read full output; truncated batch gaps reread (CameraController lines600-end; Fixed whole file). Current/snapshot identical bytes verified."
+    },
+    {
+      "index": 34,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Globals.cpp",
+      "bytes": 2497,
+      "sha256": "b774643b17b636ac84dfca6d91ef83474771128bb25991a24ae4543f37a087f7",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/034-Globals.cpp",
+      "currentBytes": 2497,
+      "currentSHA256": "b774643b17b636ac84dfca6d91ef83474771128bb25991a24ae4543f37a087f7",
+      "snapshotBytes": 2497,
+      "snapshotSHA256": "b774643b17b636ac84dfca6d91ef83474771128bb25991a24ae4543f37a087f7",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          97
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          2497
+        ]
+      ],
+      "readMethod": "Reviewer personally read full output; truncated batch gaps reread (CameraController lines600-end; Fixed whole file). Current/snapshot identical bytes verified."
+    },
+    {
+      "index": 35,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Mod.cpp",
+      "bytes": 10443,
+      "sha256": "c8252d851566ac8a4065420f2c9a1f3cd1f5b592fc4efbecace93bfb5c00fcab",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/035-Mod.cpp",
+      "currentBytes": 10443,
+      "currentSHA256": "c8252d851566ac8a4065420f2c9a1f3cd1f5b592fc4efbecace93bfb5c00fcab",
+      "snapshotBytes": 10443,
+      "snapshotSHA256": "c8252d851566ac8a4065420f2c9a1f3cd1f5b592fc4efbecace93bfb5c00fcab",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          378
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          10443
+        ]
+      ],
+      "readMethod": "Reviewer personally read full output; truncated batch gaps reread (CameraController lines600-end; Fixed whole file). Current/snapshot identical bytes verified."
+    },
+    {
+      "index": 36,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Mod.h",
+      "bytes": 3765,
+      "sha256": "3c1ad042624f0bf355afde8f9dcd6b893f9e7e58c6226da1ace2b1d1c18ae7c9",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/036-Mod.h",
+      "currentBytes": 3765,
+      "currentSHA256": "3c1ad042624f0bf355afde8f9dcd6b893f9e7e58c6226da1ace2b1d1c18ae7c9",
+      "snapshotBytes": 3765,
+      "snapshotSHA256": "3c1ad042624f0bf355afde8f9dcd6b893f9e7e58c6226da1ace2b1d1c18ae7c9",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          110
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          3765
+        ]
+      ],
+      "readMethod": "Reviewer personally read full output; truncated batch gaps reread (CameraController lines600-end; Fixed whole file). Current/snapshot identical bytes verified."
+    },
+    {
+      "index": 37,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Pyrogenesis.h",
+      "bytes": 1175,
+      "sha256": "13e88bd20b945638cd4634f3760ed7fcd5464ef3efbbe38259f5b7b68d479dcc",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/037-Pyrogenesis.h",
+      "currentBytes": 1175,
+      "currentSHA256": "13e88bd20b945638cd4634f3760ed7fcd5464ef3efbbe38259f5b7b68d479dcc",
+      "snapshotBytes": 1175,
+      "snapshotSHA256": "13e88bd20b945638cd4634f3760ed7fcd5464ef3efbbe38259f5b7b68d479dcc",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          37
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          1175
+        ]
+      ],
+      "readMethod": "Reviewer personally read full output; truncated batch gaps reread (CameraController lines600-end; Fixed whole file). Current/snapshot identical bytes verified."
+    },
+    {
+      "index": 38,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Replay.cpp",
+      "bytes": 10344,
+      "sha256": "18d01f424d0ea6627dd92b004e70d108d0286124719cdcd188b5e79f9f3546ad",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/038-Replay.cpp",
+      "currentBytes": 10344,
+      "currentSHA256": "18d01f424d0ea6627dd92b004e70d108d0286124719cdcd188b5e79f9f3546ad",
+      "snapshotBytes": 10344,
+      "snapshotSHA256": "18d01f424d0ea6627dd92b004e70d108d0286124719cdcd188b5e79f9f3546ad",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          349
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          10344
+        ]
+      ],
+      "readMethod": "Reviewer personally read full output; truncated batch gaps reread (CameraController lines600-end; Fixed whole file). Current/snapshot identical bytes verified."
+    },
+    {
+      "index": 39,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/SavedGame.cpp",
+      "bytes": 10000,
+      "sha256": "6fa08d0a0f57b386484bc328ec95b41e73120b9358aeb48afc7d216f662d5267",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/039-SavedGame.cpp",
+      "currentBytes": 10000,
+      "currentSHA256": "6fa08d0a0f57b386484bc328ec95b41e73120b9358aeb48afc7d216f662d5267",
+      "snapshotBytes": 10000,
+      "snapshotSHA256": "6fa08d0a0f57b386484bc328ec95b41e73120b9358aeb48afc7d216f662d5267",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          305
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          10000
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 40,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_Game.cpp",
+      "bytes": 4759,
+      "sha256": "ac71e18e4361f079de5295535014c4b9263a61b11c0f389fa27061c86139b7bc",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/040-JSInterface_Game.cpp",
+      "currentBytes": 4759,
+      "currentSHA256": "ac71e18e4361f079de5295535014c4b9263a61b11c0f389fa27061c86139b7bc",
+      "snapshotBytes": 4759,
+      "snapshotSHA256": "ac71e18e4361f079de5295535014c4b9263a61b11c0f389fa27061c86139b7bc",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          193
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          4759
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 41,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_Mod.cpp",
+      "bytes": 5679,
+      "sha256": "5a916c62580cd26d41fba808a0c81529ccd2dee5b9697f6434a5c4af4fa72eb0",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/041-JSInterface_Mod.cpp",
+      "currentBytes": 5679,
+      "currentSHA256": "5a916c62580cd26d41fba808a0c81529ccd2dee5b9697f6434a5c4af4fa72eb0",
+      "snapshotBytes": 5679,
+      "snapshotSHA256": "5a916c62580cd26d41fba808a0c81529ccd2dee5b9697f6434a5c4af4fa72eb0",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          184
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          5679
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 42,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/scripting/JSInterface_SavedGame.cpp",
+      "bytes": 4664,
+      "sha256": "59716fec2776d0e6e9fa2f3ddecbab0abcda7379b81c2de779282487d360a42a",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/042-JSInterface_SavedGame.cpp",
+      "currentBytes": 4664,
+      "currentSHA256": "59716fec2776d0e6e9fa2f3ddecbab0abcda7379b81c2de779282487d360a42a",
+      "snapshotBytes": 4664,
+      "snapshotSHA256": "59716fec2776d0e6e9fa2f3ddecbab0abcda7379b81c2de779282487d360a42a",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          136
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          4664
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 43,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/scriptinterface/ScriptConversions.cpp",
+      "bytes": 9827,
+      "sha256": "7342f0a5ce4f99ca242a4d699572cec836d394aa0077db7f6720c4a413da07c6",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/043-ScriptConversions.cpp",
+      "currentBytes": 9827,
+      "currentSHA256": "7342f0a5ce4f99ca242a4d699572cec836d394aa0077db7f6720c4a413da07c6",
+      "snapshotBytes": 9827,
+      "snapshotSHA256": "7342f0a5ce4f99ca242a4d699572cec836d394aa0077db7f6720c4a413da07c6",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          330
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          9827
+        ]
+      ],
+      "readMethod": "Reviewer personally read full output; truncated batch gaps reread (CameraController lines600-end; Fixed whole file). Current/snapshot identical bytes verified."
+    },
+    {
+      "index": 44,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/scriptinterface/ScriptConversions.h",
+      "bytes": 4622,
+      "sha256": "e97e4a6769b8ab74e75c973ccd8fae510e2189a3067a3b8577f36d7929745ffe",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/044-ScriptConversions.h",
+      "currentBytes": 4622,
+      "currentSHA256": "e97e4a6769b8ab74e75c973ccd8fae510e2189a3067a3b8577f36d7929745ffe",
+      "snapshotBytes": 4622,
+      "snapshotSHA256": "e97e4a6769b8ab74e75c973ccd8fae510e2189a3067a3b8577f36d7929745ffe",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          157
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          4622
+        ]
+      ],
+      "readMethod": "Reviewer personally read full output; truncated batch gaps reread (CameraController lines600-end; Fixed whole file). Current/snapshot identical bytes verified."
+    },
+    {
+      "index": 45,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/simulation2/Simulation2.cpp",
+      "bytes": 31497,
+      "sha256": "78260ac802da5569bbf19abca7de69297788aa458f1551553b7fdf8593e096ed",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/045-Simulation2.cpp",
+      "currentBytes": 31497,
+      "currentSHA256": "78260ac802da5569bbf19abca7de69297788aa458f1551553b7fdf8593e096ed",
+      "snapshotBytes": 31497,
+      "snapshotSHA256": "78260ac802da5569bbf19abca7de69297788aa458f1551553b7fdf8593e096ed",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          995
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          31497
+        ]
+      ],
+      "readMethod": "Reviewer personally read full output; truncated batch gaps reread (CameraController lines600-end; Fixed whole file). Current/snapshot identical bytes verified."
+    },
+    {
+      "index": 46,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/simulation2/helpers/Position.h",
+      "bytes": 1316,
+      "sha256": "342921a030bc603efb4c2158c4c7c7fe2f3b7bed3d470964cd795f48be1094c0",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/046-Position.h",
+      "currentBytes": 1316,
+      "currentSHA256": "342921a030bc603efb4c2158c4c7c7fe2f3b7bed3d470964cd795f48be1094c0",
+      "snapshotBytes": 1316,
+      "snapshotSHA256": "342921a030bc603efb4c2158c4c7c7fe2f3b7bed3d470964cd795f48be1094c0",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          43
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          1316
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 47,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/simulation2/system/Entity.h",
+      "bytes": 3303,
+      "sha256": "4bc98f0256b8173e9ddccb6e971e43bd4c20e4a96ae77d646c78b87e67c5e062",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/047-Entity.h",
+      "currentBytes": 3303,
+      "currentSHA256": "4bc98f0256b8173e9ddccb6e971e43bd4c20e4a96ae77d646c78b87e67c5e062",
+      "snapshotBytes": 3303,
+      "snapshotSHA256": "4bc98f0256b8173e9ddccb6e971e43bd4c20e4a96ae77d646c78b87e67c5e062",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          96
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          3303
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 48,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/manifest.json",
+      "bytes": 12729,
+      "sha256": "17eb3663cc51be04f880be2d2045bbbc1d5fe8fcf461cc2a82191ed9aa85e599",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/048-manifest.json",
+      "currentBytes": 12729,
+      "currentSHA256": "17eb3663cc51be04f880be2d2045bbbc1d5fe8fcf461cc2a82191ed9aa85e599",
+      "snapshotBytes": 12729,
+      "snapshotSHA256": "17eb3663cc51be04f880be2d2045bbbc1d5fe8fcf461cc2a82191ed9aa85e599",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          255
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          12729
+        ]
+      ],
+      "readMethod": "Personally read entire untruncated contents;24 in four contiguous chunks, identical current SHA verified."
+    },
+    {
+      "index": 49,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1-review-js-v1/review.json",
+      "bytes": 48313,
+      "sha256": "ccc2ef605452c2748626eb7305a72de5dc976636f0042d1b96395101b62315fe",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/049-review.json",
+      "currentBytes": 48313,
+      "currentSHA256": "ccc2ef605452c2748626eb7305a72de5dc976636f0042d1b96395101b62315fe",
+      "snapshotBytes": 48313,
+      "snapshotSHA256": "ccc2ef605452c2748626eb7305a72de5dc976636f0042d1b96395101b62315fe",
+      "bindingVerified": true,
+      "readStatus": "UNREAD",
+      "readRanges": []
+    },
+    {
+      "index": 50,
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1-review-js-v1/review.md",
+      "bytes": 3216,
+      "sha256": "4ec61b9d59353c6afccb21bdf96f6fb76d6b04a17a66f7ce207fd8d7569d26f7",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/050-review.md",
+      "currentBytes": 3216,
+      "currentSHA256": "4ec61b9d59353c6afccb21bdf96f6fb76d6b04a17a66f7ce207fd8d7569d26f7",
+      "snapshotBytes": 3216,
+      "snapshotSHA256": "4ec61b9d59353c6afccb21bdf96f6fb76d6b04a17a66f7ce207fd8d7569d26f7",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          3216
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 51,
+      "path": "docs/empire-rts/METADATA-CONTROLS-CROSSWALK-2026-11-05.md",
+      "bytes": 5600,
+      "sha256": "7870cb6f94937d493c228af1d24ada0a4f8b0784602806955e10d5952fe2b951",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/051-METADATA-CONTROLS-CROSSWALK-2026-11-05.md",
+      "currentBytes": 5600,
+      "currentSHA256": "7870cb6f94937d493c228af1d24ada0a4f8b0784602806955e10d5952fe2b951",
+      "snapshotBytes": 5600,
+      "snapshotSHA256": "7870cb6f94937d493c228af1d24ada0a4f8b0784602806955e10d5952fe2b951",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          51
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          5600
+        ]
+      ],
+      "readMethod": "Personally read complete untruncated snapshot contents, identical current SHA verified."
+    },
+    {
+      "index": 52,
+      "path": "docs/empire-rts/handoff-data/2026-11-05/METADATA-CROSSWALK.json",
+      "bytes": 9887,
+      "sha256": "ff7570e2ec7dfa81c4770235c6f4c8a8856ad4d4797b4a060913402dd8f11034",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/052-METADATA-CROSSWALK.json",
+      "currentBytes": 9887,
+      "currentSHA256": "ff7570e2ec7dfa81c4770235c6f4c8a8856ad4d4797b4a060913402dd8f11034",
+      "snapshotBytes": 9887,
+      "snapshotSHA256": "ff7570e2ec7dfa81c4770235c6f4c8a8856ad4d4797b4a060913402dd8f11034",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          231
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          9887
+        ]
+      ],
+      "readMethod": "Personally read complete untruncated snapshot contents, identical current SHA verified."
+    },
+    {
+      "index": 53,
+      "path": "docs/empire-rts/PROJECT-ASSESSMENT-2026-11-05.md",
+      "bytes": 11805,
+      "sha256": "922a2439c6fb13f86f6bca4289f673ccc3581435423358d9a47f8e0ae2bdb54c",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/053-PROJECT-ASSESSMENT-2026-11-05.md",
+      "currentBytes": 11805,
+      "currentSHA256": "922a2439c6fb13f86f6bca4289f673ccc3581435423358d9a47f8e0ae2bdb54c",
+      "snapshotBytes": 11805,
+      "snapshotSHA256": "922a2439c6fb13f86f6bca4289f673ccc3581435423358d9a47f8e0ae2bdb54c",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          85
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          11805
+        ]
+      ],
+      "readMethod": "Personally read complete untruncated snapshot contents, identical current SHA verified."
+    },
+    {
+      "index": 54,
+      "path": "docs/empire-rts/handoff-data/2026-11-05/ASSESSMENT.json",
+      "bytes": 17288,
+      "sha256": "531d43cf61d36dd768fa78a81a4951d2a8df9e9b776a603cca077d5b63e17ab5",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/054-ASSESSMENT.json",
+      "currentBytes": 17288,
+      "currentSHA256": "531d43cf61d36dd768fa78a81a4951d2a8df9e9b776a603cca077d5b63e17ab5",
+      "snapshotBytes": 17288,
+      "snapshotSHA256": "531d43cf61d36dd768fa78a81a4951d2a8df9e9b776a603cca077d5b63e17ab5",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          374
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          17288
+        ]
+      ],
+      "readMethod": "Personally read complete untruncated snapshot contents, identical current SHA verified."
+    },
+    {
+      "index": 55,
+      "path": "tools/epoch-rts/t17-save-harness/gui/t17_save/session_transaction.js",
+      "bytes": 69380,
+      "sha256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/055-session_transaction.js",
+      "currentBytes": 69380,
+      "currentSHA256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885",
+      "snapshotBytes": 69380,
+      "snapshotSHA256": "ec8c8a23d79b7f6e4fce11230b4a6f25a5c89861d2518a3a3de0b3522408e885",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          297
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          69380
+        ]
+      ],
+      "readMethod": "Personally read entire source including full embedded WIRE/PREARM/prototypes in contiguous bytes0:24000,24000:48000,48000:69380.55 identicalSHA reuse of6.",
+      "sameSHAReadReuseOfBindingIndex": 6
+    },
+    {
+      "index": 56,
+      "path": "tools/epoch-rts/t17_save_metadata.py",
+      "bytes": 5818,
+      "sha256": "96d9e51e6280b1998410d7a591eaf65c11dfd11bc68c3816255201bac30bfd43",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/056-t17_save_metadata.py",
+      "currentBytes": 5818,
+      "currentSHA256": "96d9e51e6280b1998410d7a591eaf65c11dfd11bc68c3816255201bac30bfd43",
+      "snapshotBytes": 5818,
+      "snapshotSHA256": "96d9e51e6280b1998410d7a591eaf65c11dfd11bc68c3816255201bac30bfd43",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          160
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          5818
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified.",
+      "sameSHAReadReuseOfBindingIndex": 7
+    },
+    {
+      "index": 57,
+      "path": "tools/epoch-rts/t17_save_prearm.py",
+      "bytes": 36753,
+      "sha256": "4a892751fb9bf8924bb96b05c23695d1def1cca7e9fae070e48e2618ea1d62bd",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/057-t17_save_prearm.py",
+      "currentBytes": 36753,
+      "currentSHA256": "4a892751fb9bf8924bb96b05c23695d1def1cca7e9fae070e48e2618ea1d62bd",
+      "snapshotBytes": 36753,
+      "snapshotSHA256": "4a892751fb9bf8924bb96b05c23695d1def1cca7e9fae070e48e2618ea1d62bd",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          735
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          36753
+        ]
+      ],
+      "readMethod": "Personally read full untruncated source; no import/execution. Current/snapshot SHA verified."
+    },
+    {
+      "index": 58,
+      "path": "work/t17-save-host-prearm-preparation/source-scope-v1/SCOPE-RATIONALE.md",
+      "bytes": 2490,
+      "sha256": "3e800200307b62ad5285680fc0f65d340034c9c4ca335f0528d48939fc51c76e",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/058-SCOPE-RATIONALE.md",
+      "currentBytes": 2490,
+      "currentSHA256": "3e800200307b62ad5285680fc0f65d340034c9c4ca335f0528d48939fc51c76e",
+      "snapshotBytes": 2490,
+      "snapshotSHA256": "3e800200307b62ad5285680fc0f65d340034c9c4ca335f0528d48939fc51c76e",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          2490
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 59,
+      "path": "work/t17-save-host-prearm-preparation/source-scope-v1/completion-source-scope-only.json",
+      "bytes": 1627,
+      "sha256": "14a0630ddc1ee54b3a1df2a55621026504741d4a468a1f834e64303533aead65",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/059-completion-source-scope-only.json",
+      "currentBytes": 1627,
+      "currentSHA256": "14a0630ddc1ee54b3a1df2a55621026504741d4a468a1f834e64303533aead65",
+      "snapshotBytes": 1627,
+      "snapshotSHA256": "14a0630ddc1ee54b3a1df2a55621026504741d4a468a1f834e64303533aead65",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          40
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          1627
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 60,
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/SPEC.md",
+      "bytes": 6167,
+      "sha256": "bbde20a000d4e3e5bdaed90073c1a9d3a886048d3e9602d46af3ed665c93410e",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/060-SPEC.md",
+      "currentBytes": 6167,
+      "currentSHA256": "bbde20a000d4e3e5bdaed90073c1a9d3a886048d3e9602d46af3ed665c93410e",
+      "snapshotBytes": 6167,
+      "snapshotSHA256": "bbde20a000d4e3e5bdaed90073c1a9d3a886048d3e9602d46af3ed665c93410e",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          40
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          6167
+        ]
+      ],
+      "readMethod": "Reviewer personally read full output; truncated batch gaps reread (CameraController lines600-end; Fixed whole file). Current/snapshot identical bytes verified."
+    },
+    {
+      "index": 61,
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/SPEC.json",
+      "bytes": 35505,
+      "sha256": "2271dfdee03523a3438527bfbb8a480de6757fff8925d9d09fc5c51ea61f4009",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/061-SPEC.json",
+      "currentBytes": 35505,
+      "currentSHA256": "2271dfdee03523a3438527bfbb8a480de6757fff8925d9d09fc5c51ea61f4009",
+      "snapshotBytes": 35505,
+      "snapshotSHA256": "2271dfdee03523a3438527bfbb8a480de6757fff8925d9d09fc5c51ea61f4009",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          650
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          35505
+        ]
+      ],
+      "readMethod": "Personally read entire untruncated contents; identical current SHA verified."
+    },
+    {
+      "index": 62,
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/WIRE-EXTENSION.json",
+      "bytes": 5731,
+      "sha256": "05ee5b55406a5d88af2331782afd9ef18452e374572fbb843b8c2c9c67747baf",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/062-WIRE-EXTENSION.json",
+      "currentBytes": 5731,
+      "currentSHA256": "05ee5b55406a5d88af2331782afd9ef18452e374572fbb843b8c2c9c67747baf",
+      "snapshotBytes": 5731,
+      "snapshotSHA256": "05ee5b55406a5d88af2331782afd9ef18452e374572fbb843b8c2c9c67747baf",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          147
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          5731
+        ]
+      ],
+      "readMethod": "Personally read complete untruncated contents, identical current SHA verified."
+    },
+    {
+      "index": 63,
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/timeline.json",
+      "bytes": 1639,
+      "sha256": "0c18f3ccfe551cdbf6a9986336ec1dccafab396b08fed8de1699c44805b393f4",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/063-timeline.json",
+      "currentBytes": 1639,
+      "currentSHA256": "0c18f3ccfe551cdbf6a9986336ec1dccafab396b08fed8de1699c44805b393f4",
+      "snapshotBytes": 1639,
+      "snapshotSHA256": "0c18f3ccfe551cdbf6a9986336ec1dccafab396b08fed8de1699c44805b393f4",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          40
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          1639
+        ]
+      ],
+      "readMethod": "Reviewer personally read full output; truncated batch gaps reread (CameraController lines600-end; Fixed whole file). Current/snapshot identical bytes verified."
+    },
+    {
+      "index": 64,
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/manifest.json",
+      "bytes": 6579,
+      "sha256": "7c07a7de8e959ecd2711a29e892eaa3a34669a80a7420ab5dbe51bc627d76ee5",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/064-manifest.json",
+      "currentBytes": 6579,
+      "currentSHA256": "7c07a7de8e959ecd2711a29e892eaa3a34669a80a7420ab5dbe51bc627d76ee5",
+      "snapshotBytes": 6579,
+      "snapshotSHA256": "7c07a7de8e959ecd2711a29e892eaa3a34669a80a7420ab5dbe51bc627d76ee5",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          133
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          6579
+        ]
+      ],
+      "readMethod": "Personally read complete untruncated contents, identical current SHA verified."
+    },
+    {
+      "index": 65,
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/code-design-review-v1.json",
+      "bytes": 7362,
+      "sha256": "42384e8486999f79cf54e2e2fc102fdd5dc01235b1092ed540be61e324466634",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/065-code-design-review-v1.json",
+      "currentBytes": 7362,
+      "currentSHA256": "42384e8486999f79cf54e2e2fc102fdd5dc01235b1092ed540be61e324466634",
+      "snapshotBytes": 7362,
+      "snapshotSHA256": "42384e8486999f79cf54e2e2fc102fdd5dc01235b1092ed540be61e324466634",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          78
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          7362
+        ]
+      ],
+      "readMethod": "Personally read complete untruncated contents, identical current SHA verified."
+    },
+    {
+      "index": 66,
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/js-api-design-review-v1.json",
+      "bytes": 16482,
+      "sha256": "041858593dba7b11b6e112e64ce26fe08f40447ccc341e6fb572092f7d740630",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/066-js-api-design-review-v1.json",
+      "currentBytes": 16482,
+      "currentSHA256": "041858593dba7b11b6e112e64ce26fe08f40447ccc341e6fb572092f7d740630",
+      "snapshotBytes": 16482,
+      "snapshotSHA256": "041858593dba7b11b6e112e64ce26fe08f40447ccc341e6fb572092f7d740630",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          288
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          16482
+        ]
+      ],
+      "readMethod": "Personally read full untruncated contents; identical current SHA verified."
+    },
+    {
+      "index": 67,
+      "path": "work/t17-save-session-transaction-preparation/prearm-deadline-amendment-v2/completion-design-only.json",
+      "bytes": 991,
+      "sha256": "ac8aa276c96afe5c6c2eec7b829d8ac9556b1cc159d5f051bec466ea436ab690",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/067-completion-design-only.json",
+      "currentBytes": 991,
+      "currentSHA256": "ac8aa276c96afe5c6c2eec7b829d8ac9556b1cc159d5f051bec466ea436ab690",
+      "snapshotBytes": 991,
+      "snapshotSHA256": "ac8aa276c96afe5c6c2eec7b829d8ac9556b1cc159d5f051bec466ea436ab690",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          991
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 68,
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/SPEC.md",
+      "bytes": 41941,
+      "sha256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/068-SPEC.md",
+      "currentBytes": 41941,
+      "currentSHA256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b",
+      "snapshotBytes": 41941,
+      "snapshotSHA256": "ccaf88f75461745a82d4aba67622d38cb30cf94b522d02d025ff70fac142903b",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          227
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          41941
+        ]
+      ],
+      "readMethod": "Personally read contiguous bytes0:23999+23999:end.68 identicalSHA reuseof13; current/snapshot verified.",
+      "sameSHAReadReuseOfBindingIndex": 13
+    },
+    {
+      "index": 69,
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/wire-schema.json",
+      "bytes": 28262,
+      "sha256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/069-wire-schema.json",
+      "currentBytes": 28262,
+      "currentSHA256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+      "snapshotBytes": 28262,
+      "snapshotSHA256": "412e813bae6ae3de4d35fe7fd58a8e4d1306993b7966ccf7a4c6cbdc7ad189de",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          538
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          28262
+        ]
+      ],
+      "readMethod": "Personally read full untruncated14;69 sameSHA reuse. Current/snapshot hashes verified.",
+      "sameSHAReadReuseOfBindingIndex": 14
+    },
+    {
+      "index": 70,
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/source-registry.json",
+      "bytes": 247916,
+      "sha256": "3e6278f49bfe22d5298e8539497819fc14406319d695fe975a6e0e091995674b",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/070-source-registry.json",
+      "currentBytes": 247916,
+      "currentSHA256": "3e6278f49bfe22d5298e8539497819fc14406319d695fe975a6e0e091995674b",
+      "snapshotBytes": 247916,
+      "snapshotSHA256": "3e6278f49bfe22d5298e8539497819fc14406319d695fe975a6e0e091995674b",
+      "bindingVerified": true,
+      "readStatus": "UNREAD",
+      "readRanges": []
+    },
+    {
+      "index": 71,
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/source-registry.md",
+      "bytes": 23583,
+      "sha256": "5ff62cf4c16b584827f583b54f2ada09f69f665fce70168a4593c6ca82aa469b",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/071-source-registry.md",
+      "currentBytes": 23583,
+      "currentSHA256": "5ff62cf4c16b584827f583b54f2ada09f69f665fce70168a4593c6ca82aa469b",
+      "snapshotBytes": 23583,
+      "snapshotSHA256": "5ff62cf4c16b584827f583b54f2ada09f69f665fce70168a4593c6ca82aa469b",
+      "bindingVerified": true,
+      "readStatus": "UNREAD",
+      "readRanges": []
+    },
+    {
+      "index": 72,
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/code-review.json",
+      "bytes": 20162,
+      "sha256": "c25a6e9ac8e6c24bba5be10115119ff80c36b8b16ea81b2eaac763edf4e427cb",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/072-code-review.json",
+      "currentBytes": 20162,
+      "currentSHA256": "c25a6e9ac8e6c24bba5be10115119ff80c36b8b16ea81b2eaac763edf4e427cb",
+      "snapshotBytes": 20162,
+      "snapshotSHA256": "c25a6e9ac8e6c24bba5be10115119ff80c36b8b16ea81b2eaac763edf4e427cb",
+      "bindingVerified": true,
+      "readStatus": "UNREAD",
+      "readRanges": []
+    },
+    {
+      "index": 73,
+      "path": "work/t17-save-network-preparation/save-source-design-20261018/typed-root-fix/js-api-review.json",
+      "bytes": 16383,
+      "sha256": "3b16e62ff2e2e93c2a67ea0f26ef1124a0a064f706154120d1a4173f68fcca84",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/073-js-api-review.json",
+      "currentBytes": 16383,
+      "currentSHA256": "3b16e62ff2e2e93c2a67ea0f26ef1124a0a064f706154120d1a4173f68fcca84",
+      "snapshotBytes": 16383,
+      "snapshotSHA256": "3b16e62ff2e2e93c2a67ea0f26ef1124a0a064f706154120d1a4173f68fcca84",
+      "bindingVerified": true,
+      "readStatus": "UNREAD",
+      "readRanges": []
+    },
+    {
+      "index": 74,
+      "path": "work/t17-metadata-controls-design-20261105/DESIGN-v1.md",
+      "bytes": 14580,
+      "sha256": "d190ebf684348feba069fed69f8a92587fda378bc1fd7a9a5391c8867e1b1284",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/074-DESIGN-v1.md",
+      "currentBytes": 14580,
+      "currentSHA256": "d190ebf684348feba069fed69f8a92587fda378bc1fd7a9a5391c8867e1b1284",
+      "snapshotBytes": 14580,
+      "snapshotSHA256": "d190ebf684348feba069fed69f8a92587fda378bc1fd7a9a5391c8867e1b1284",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          83
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          14580
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 75,
+      "path": "work/t17-metadata-controls-design-20261105/RAW-STAGE-v1.json",
+      "bytes": 2266,
+      "sha256": "b641b520ab8ebb5a3273a63947edc776c3c671c21896152caefeaba6c71e9681",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/075-RAW-STAGE-v1.json",
+      "currentBytes": 2266,
+      "currentSHA256": "b641b520ab8ebb5a3273a63947edc776c3c671c21896152caefeaba6c71e9681",
+      "snapshotBytes": 2266,
+      "snapshotSHA256": "b641b520ab8ebb5a3273a63947edc776c3c671c21896152caefeaba6c71e9681",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          91
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          2266
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 76,
+      "path": "work/t17-metadata-controls-design-20261105/FUTURE-TEST-PLAN-v1.json",
+      "bytes": 1401,
+      "sha256": "20374b2ee6154a67386f35f16874c90ce5da355732abdb96ee0e505f18121608",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/076-FUTURE-TEST-PLAN-v1.json",
+      "currentBytes": 1401,
+      "currentSHA256": "20374b2ee6154a67386f35f16874c90ce5da355732abdb96ee0e505f18121608",
+      "snapshotBytes": 1401,
+      "snapshotSHA256": "20374b2ee6154a67386f35f16874c90ce5da355732abdb96ee0e505f18121608",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          28
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          1401
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 77,
+      "path": "work/t17-metadata-controls-design-20261105/ROOT-CAUSALITY-CORRECTION-v1.json",
+      "bytes": 621,
+      "sha256": "2c284dacef98520457e7ce45ce2833f60621c2fc3b6a1ee6cb551a042fca1cd3",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/077-ROOT-CAUSALITY-CORRECTION-v1.json",
+      "currentBytes": 621,
+      "currentSHA256": "2c284dacef98520457e7ce45ce2833f60621c2fc3b6a1ee6cb551a042fca1cd3",
+      "snapshotBytes": 621,
+      "snapshotSHA256": "2c284dacef98520457e7ce45ce2833f60621c2fc3b6a1ee6cb551a042fca1cd3",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          621
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 78,
+      "path": "work/t17-metadata-controls-design-20261105/host-design-investigation-v1.json",
+      "bytes": 9773,
+      "sha256": "9c51cda36c3f0a3263775d0bb060b0c0b172c6ab5264d9b8e3412143854e8a90",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/078-host-design-investigation-v1.json",
+      "currentBytes": 9773,
+      "currentSHA256": "9c51cda36c3f0a3263775d0bb060b0c0b172c6ab5264d9b8e3412143854e8a90",
+      "snapshotBytes": 9773,
+      "snapshotSHA256": "9c51cda36c3f0a3263775d0bb060b0c0b172c6ab5264d9b8e3412143854e8a90",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          89
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          9773
+        ]
+      ],
+      "readMethod": "Personally read complete untruncated contents, identical current SHA verified."
+    },
+    {
+      "index": 79,
+      "path": "work/t17-metadata-controls-design-20261105/host-design-investigation-v1.md",
+      "bytes": 17105,
+      "sha256": "da798cc2c6a9337adadb1e1437f6e02de7eace56cdd4b032e6742a274f4486a4",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/079-host-design-investigation-v1.md",
+      "currentBytes": 17105,
+      "currentSHA256": "da798cc2c6a9337adadb1e1437f6e02de7eace56cdd4b032e6742a274f4486a4",
+      "snapshotBytes": 17105,
+      "snapshotSHA256": "da798cc2c6a9337adadb1e1437f6e02de7eace56cdd4b032e6742a274f4486a4",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          98
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          17105
+        ]
+      ],
+      "readMethod": "Personally read complete untruncated contents, identical current SHA verified."
+    },
+    {
+      "index": 80,
+      "path": "work/t17-metadata-controls-design-20261105/native-design-investigation-v1.json",
+      "bytes": 12866,
+      "sha256": "f3f3c735cfab0af0faf93fde164815477e579ccb05d60296f13133b5d75e2ee8",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/080-native-design-investigation-v1.json",
+      "currentBytes": 12866,
+      "currentSHA256": "f3f3c735cfab0af0faf93fde164815477e579ccb05d60296f13133b5d75e2ee8",
+      "snapshotBytes": 12866,
+      "snapshotSHA256": "f3f3c735cfab0af0faf93fde164815477e579ccb05d60296f13133b5d75e2ee8",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          94
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          12866
+        ]
+      ],
+      "readMethod": "Personally read complete untruncated contents, identical current SHA verified."
+    },
+    {
+      "index": 81,
+      "path": "work/t17-metadata-controls-design-20261105/native-design-investigation-v1.md",
+      "bytes": 20319,
+      "sha256": "45c5bb6941a008ee54790ad4191a77cdfb9bda2a393c8769defc9a7de8267aba",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/081-native-design-investigation-v1.md",
+      "currentBytes": 20319,
+      "currentSHA256": "45c5bb6941a008ee54790ad4191a77cdfb9bda2a393c8769defc9a7de8267aba",
+      "snapshotBytes": 20319,
+      "snapshotSHA256": "45c5bb6941a008ee54790ad4191a77cdfb9bda2a393c8769defc9a7de8267aba",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          110
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          20319
+        ]
+      ],
+      "readMethod": "Reviewer personally read complete tool output; current/snapshot identical bytes verified."
+    },
+    {
+      "index": 82,
+      "path": "work/t17-metadata-controls-design-20261105/context-manifest-v1.json",
+      "bytes": 28197,
+      "sha256": "f3ca2c1e38538f8a80921f7fa1c53898004231e4fac0b10e949a43ada649c02a",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/082-context-manifest-v1.json",
+      "currentBytes": 28197,
+      "currentSHA256": "f3ca2c1e38538f8a80921f7fa1c53898004231e4fac0b10e949a43ada649c02a",
+      "snapshotBytes": 28197,
+      "snapshotSHA256": "f3ca2c1e38538f8a80921f7fa1c53898004231e4fac0b10e949a43ada649c02a",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          537
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          28197
+        ]
+      ],
+      "readMethod": "Personally read entire untruncated contents, current/snapshot SHA verified. Historical catalog mappings are not recursively reapproved."
+    },
+    {
+      "index": 83,
+      "path": "work/t17-metadata-controls-design-20261105/before-r06-causality-correction/docs/empire-rts/METADATA-CONTROLS-CROSSWALK-2026-11-05.md",
+      "bytes": 4882,
+      "sha256": "5397dcd51de5e0811e93253db256462c068eef22e36455899abf66296c1d5c15",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/083-METADATA-CONTROLS-CROSSWALK-2026-11-05.md",
+      "currentBytes": 4882,
+      "currentSHA256": "5397dcd51de5e0811e93253db256462c068eef22e36455899abf66296c1d5c15",
+      "snapshotBytes": 4882,
+      "snapshotSHA256": "5397dcd51de5e0811e93253db256462c068eef22e36455899abf66296c1d5c15",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          47
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          4882
+        ]
+      ],
+      "readMethod": "Personally read complete untruncated snapshot contents, identical current SHA verified."
+    },
+    {
+      "index": 84,
+      "path": "work/t17-metadata-controls-design-20261105/before-r06-causality-correction/docs/empire-rts/handoff-data/2026-11-05/METADATA-CROSSWALK.json",
+      "bytes": 9378,
+      "sha256": "10960a9b2d4d7a02c40335e53df4065a5971ed41c2ce21b580fa4dce4b47e5db",
+      "snapshot": "work/t17-metadata-controls-design-20261105/design-freeze-v1/084-METADATA-CROSSWALK.json",
+      "currentBytes": 9378,
+      "currentSHA256": "10960a9b2d4d7a02c40335e53df4065a5971ed41c2ce21b580fa4dce4b47e5db",
+      "snapshotBytes": 9378,
+      "snapshotSHA256": "10960a9b2d4d7a02c40335e53df4065a5971ed41c2ce21b580fa4dce4b47e5db",
+      "bindingVerified": true,
+      "readStatus": "FULL",
+      "readRanges": [
+        [
+          1,
+          225
+        ]
+      ],
+      "readByteRanges": [
+        [
+          0,
+          9378
+        ]
+      ],
+      "readMethod": "Personally read complete untruncated snapshot contents, identical current SHA verified."
+    }
+  ],
+  "exactPendingIndices": [
+    49,
+    70,
+    71,
+    72,
+    73
+  ],
+  "limits": [
+    "Read-only hashing/static inspection only. No imports of author code, tests, helpers, producers, native engine, guard, fixtures, network, git mutation."
+  ],
+  "previousProgress": "design-review-JSAPI-progress-v25.json",
+  "fullReadCount": 80,
+  "partialReadCount": 0,
+  "unreadCount": 5,
+  "preliminaryReasoning": [
+    "Original HOST-API:10 requires source causal pre-Save capture and host ordering proof, not literal host disk commit before Save; R06 correction is textually supported.",
+    "Native GetPlayerID returns int or -1 when no game; native GetEngineInfo constructs full four-key ordered mods with engine_version and deep freeze. Frozen result does not prove caller/body/provenance.",
+    "GuiInterfaceCall uses actual viewed player, simulation realm invocation and clone back; literal principal and payload principal cannot replace that boundary.",
+    "SaveGame returns void; GUI metadata structured clone precedes SavedGames::Save; SerializeState precedes attrs/mods/player/camera metadata collection. Paused same callback does not prove absence of serializer/prototype/group/camera mutations.",
+    "Design keeps complete init transformations OPEN as future SOURCE admission gate, does not learn unknown getter keys into expected; this is not by itself a design blocker.",
+    "No substantive design blocker established yet in personally read subset. Full binding content review is still pending and no approval is issued."
+  ],
+  "quotaHistory": {
+    "retainedParentReportedError": "Previous 7:58AM usage-limit error, raw bytes unavailable to this actor; preserved as reported, no reconstructed error.",
+    "parentReadback20261106Taipei1253": "ordinaryUsageAllowed true; primary0%used; weekly93%used; credits/reset0; same task/settings; no workaround",
+    "parentReported1135": "Parent instructs preserve prior 11:35AM usage error; raw error not visible here, not reconstructed; same task/settings retained."
+  },
+  "resumeEvent": "2026-11-14 parent authorized SAME JSAPI task/settings; parent live allowance primary46% weekly63%; no reset or replacement."
+}

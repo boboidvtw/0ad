@@ -1,0 +1,487 @@
+{
+  "schema": 1,
+  "purpose": "Initial child transfer readback only; stop for parent validation and existing heartbeat migration",
+  "createdUTC": "2026-11-14T03:04:32.454362+00:00",
+  "childThread": "01a1d802-8dc0-7b70-9bdc-f3c2f963d8f0",
+  "parentThread": "01a1cf0e-d06d-7750-9e95-e1189d33c1a2",
+  "repo": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad",
+  "anchorPath": "work/t14-t18-session-transfer-20261114/current-state.json",
+  "anchorSHA256": "6b09447aafafe0c341288d6a9afa4a6e01219b8f1672fce6a1d3351f4996d05f",
+  "checks": [
+    {
+      "bindingIndex": 0,
+      "kind": "original",
+      "path": "docs/empire-rts/SESSION-HANDOFF-2026-11-14-TRANSFER-T14-T18.md",
+      "expectedBytes": 4886,
+      "actualBytes": 4886,
+      "expectedSHA256": "0a70e7df9387f5d69762a6c5f2a0e7bac1549e8c2af0d25b6a7b8abb91eac2fa",
+      "actualSHA256": "0a70e7df9387f5d69762a6c5f2a0e7bac1549e8c2af0d25b6a7b8abb91eac2fa",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 0,
+      "kind": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261114/snapshots/00-SESSION-HANDOFF-2026-11-14-TRANSFER-T14-T18.md",
+      "expectedBytes": 4886,
+      "actualBytes": 4886,
+      "expectedSHA256": "0a70e7df9387f5d69762a6c5f2a0e7bac1549e8c2af0d25b6a7b8abb91eac2fa",
+      "actualSHA256": "0a70e7df9387f5d69762a6c5f2a0e7bac1549e8c2af0d25b6a7b8abb91eac2fa",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 1,
+      "kind": "original",
+      "path": "work/t17-metadata-controls-design-20261105/current-checkpoint-v17.json",
+      "expectedBytes": 19920,
+      "actualBytes": 19920,
+      "expectedSHA256": "7480235698a94b637c821799ae7d4013443fa28fc12ec49983a37cdbb3a1fd1c",
+      "actualSHA256": "7480235698a94b637c821799ae7d4013443fa28fc12ec49983a37cdbb3a1fd1c",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 1,
+      "kind": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261114/snapshots/01-current-checkpoint-v17.json",
+      "expectedBytes": 19920,
+      "actualBytes": 19920,
+      "expectedSHA256": "7480235698a94b637c821799ae7d4013443fa28fc12ec49983a37cdbb3a1fd1c",
+      "actualSHA256": "7480235698a94b637c821799ae7d4013443fa28fc12ec49983a37cdbb3a1fd1c",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 2,
+      "kind": "original",
+      "path": "work/t17-metadata-controls-design-20261105/root-independent-read-progress-v11.json",
+      "expectedBytes": 157851,
+      "actualBytes": 157851,
+      "expectedSHA256": "49d06ea54517202aeb53fcbe30389072fa720108489bd7e94838370ea4d52c1c",
+      "actualSHA256": "49d06ea54517202aeb53fcbe30389072fa720108489bd7e94838370ea4d52c1c",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 2,
+      "kind": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261114/snapshots/02-root-independent-read-progress-v11.json",
+      "expectedBytes": 157851,
+      "actualBytes": 157851,
+      "expectedSHA256": "49d06ea54517202aeb53fcbe30389072fa720108489bd7e94838370ea4d52c1c",
+      "actualSHA256": "49d06ea54517202aeb53fcbe30389072fa720108489bd7e94838370ea4d52c1c",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 3,
+      "kind": "original",
+      "path": "work/t17-metadata-controls-design-20261105/ROOT-READING-JOURNAL-20261112-v1.md",
+      "expectedBytes": 1895,
+      "actualBytes": 1895,
+      "expectedSHA256": "2847e3cb030315ec623588e801a0d482436ef213300acec69881c2252de90a7d",
+      "actualSHA256": "2847e3cb030315ec623588e801a0d482436ef213300acec69881c2252de90a7d",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 3,
+      "kind": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261114/snapshots/03-ROOT-READING-JOURNAL-20261112-v1.md",
+      "expectedBytes": 1895,
+      "actualBytes": 1895,
+      "expectedSHA256": "2847e3cb030315ec623588e801a0d482436ef213300acec69881c2252de90a7d",
+      "actualSHA256": "2847e3cb030315ec623588e801a0d482436ef213300acec69881c2252de90a7d",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 4,
+      "kind": "original",
+      "path": "work/t17-metadata-controls-design-20261105/design-manifest-v1.json",
+      "expectedBytes": 30214,
+      "actualBytes": 30214,
+      "expectedSHA256": "e73e6c48bd2a7ea31742aef7ad4b1744e6f28dbed799c39b28b25a3f9079b93a",
+      "actualSHA256": "e73e6c48bd2a7ea31742aef7ad4b1744e6f28dbed799c39b28b25a3f9079b93a",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 4,
+      "kind": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261114/snapshots/04-design-manifest-v1.json",
+      "expectedBytes": 30214,
+      "actualBytes": 30214,
+      "expectedSHA256": "e73e6c48bd2a7ea31742aef7ad4b1744e6f28dbed799c39b28b25a3f9079b93a",
+      "actualSHA256": "e73e6c48bd2a7ea31742aef7ad4b1744e6f28dbed799c39b28b25a3f9079b93a",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 5,
+      "kind": "original",
+      "path": "work/t17-metadata-controls-design-20261105/design-review-CODE-progress-v10.json",
+      "expectedBytes": 90656,
+      "actualBytes": 90656,
+      "expectedSHA256": "1adef648232cda736def5646d7c0c63c4cfb993ce15d7f601fc8aacb281bb128",
+      "actualSHA256": "1adef648232cda736def5646d7c0c63c4cfb993ce15d7f601fc8aacb281bb128",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 5,
+      "kind": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261114/snapshots/05-design-review-CODE-progress-v10.json",
+      "expectedBytes": 90656,
+      "actualBytes": 90656,
+      "expectedSHA256": "1adef648232cda736def5646d7c0c63c4cfb993ce15d7f601fc8aacb281bb128",
+      "actualSHA256": "1adef648232cda736def5646d7c0c63c4cfb993ce15d7f601fc8aacb281bb128",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 6,
+      "kind": "original",
+      "path": "work/t17-metadata-controls-design-20261105/design-review-Python-progress-v6.json",
+      "expectedBytes": 71698,
+      "actualBytes": 71698,
+      "expectedSHA256": "30c2148bb69996da155da3f36d5595311f541e6f94e2fa6a1668f459b22c5b9a",
+      "actualSHA256": "30c2148bb69996da155da3f36d5595311f541e6f94e2fa6a1668f459b22c5b9a",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 6,
+      "kind": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261114/snapshots/06-design-review-Python-progress-v6.json",
+      "expectedBytes": 71698,
+      "actualBytes": 71698,
+      "expectedSHA256": "30c2148bb69996da155da3f36d5595311f541e6f94e2fa6a1668f459b22c5b9a",
+      "actualSHA256": "30c2148bb69996da155da3f36d5595311f541e6f94e2fa6a1668f459b22c5b9a",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 7,
+      "kind": "original",
+      "path": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v13.json",
+      "expectedBytes": 79319,
+      "actualBytes": 79319,
+      "expectedSHA256": "915170fd02fc43a9af506925aee3a6f3209ae84bd5fea6dca21172119d8aca24",
+      "actualSHA256": "915170fd02fc43a9af506925aee3a6f3209ae84bd5fea6dca21172119d8aca24",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 7,
+      "kind": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261114/snapshots/07-design-review-JSAPI-progress-v13.json",
+      "expectedBytes": 79319,
+      "actualBytes": 79319,
+      "expectedSHA256": "915170fd02fc43a9af506925aee3a6f3209ae84bd5fea6dca21172119d8aca24",
+      "actualSHA256": "915170fd02fc43a9af506925aee3a6f3209ae84bd5fea6dca21172119d8aca24",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 8,
+      "kind": "original",
+      "path": "docs/empire-rts/SESSION-HANDOFF-2026-11-06-METADATA-DESIGN-REVIEW.md",
+      "expectedBytes": 3422,
+      "actualBytes": 3422,
+      "expectedSHA256": "0a22134dde6f7fd85a6205ada553e2df65d987379cc9fef7d173f35d0d83c329",
+      "actualSHA256": "0a22134dde6f7fd85a6205ada553e2df65d987379cc9fef7d173f35d0d83c329",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 8,
+      "kind": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261114/snapshots/08-SESSION-HANDOFF-2026-11-06-METADATA-DESIGN-REVIEW.md",
+      "expectedBytes": 3422,
+      "actualBytes": 3422,
+      "expectedSHA256": "0a22134dde6f7fd85a6205ada553e2df65d987379cc9fef7d173f35d0d83c329",
+      "actualSHA256": "0a22134dde6f7fd85a6205ada553e2df65d987379cc9fef7d173f35d0d83c329",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 9,
+      "kind": "original",
+      "path": "docs/empire-rts/PROJECT-ASSESSMENT-2026-11-05.md",
+      "expectedBytes": 11805,
+      "actualBytes": 11805,
+      "expectedSHA256": "922a2439c6fb13f86f6bca4289f673ccc3581435423358d9a47f8e0ae2bdb54c",
+      "actualSHA256": "922a2439c6fb13f86f6bca4289f673ccc3581435423358d9a47f8e0ae2bdb54c",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 9,
+      "kind": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261114/snapshots/09-PROJECT-ASSESSMENT-2026-11-05.md",
+      "expectedBytes": 11805,
+      "actualBytes": 11805,
+      "expectedSHA256": "922a2439c6fb13f86f6bca4289f673ccc3581435423358d9a47f8e0ae2bdb54c",
+      "actualSHA256": "922a2439c6fb13f86f6bca4289f673ccc3581435423358d9a47f8e0ae2bdb54c",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 10,
+      "kind": "original",
+      "path": "docs/empire-rts/handoff-data/2026-11-05/ASSESSMENT.json",
+      "expectedBytes": 17288,
+      "actualBytes": 17288,
+      "expectedSHA256": "531d43cf61d36dd768fa78a81a4951d2a8df9e9b776a603cca077d5b63e17ab5",
+      "actualSHA256": "531d43cf61d36dd768fa78a81a4951d2a8df9e9b776a603cca077d5b63e17ab5",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 10,
+      "kind": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261114/snapshots/10-ASSESSMENT.json",
+      "expectedBytes": 17288,
+      "actualBytes": 17288,
+      "expectedSHA256": "531d43cf61d36dd768fa78a81a4951d2a8df9e9b776a603cca077d5b63e17ab5",
+      "actualSHA256": "531d43cf61d36dd768fa78a81a4951d2a8df9e9b776a603cca077d5b63e17ab5",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 11,
+      "kind": "original",
+      "path": "docs/empire-rts/METADATA-CONTROLS-CROSSWALK-2026-11-05.md",
+      "expectedBytes": 5600,
+      "actualBytes": 5600,
+      "expectedSHA256": "7870cb6f94937d493c228af1d24ada0a4f8b0784602806955e10d5952fe2b951",
+      "actualSHA256": "7870cb6f94937d493c228af1d24ada0a4f8b0784602806955e10d5952fe2b951",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 11,
+      "kind": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261114/snapshots/11-METADATA-CONTROLS-CROSSWALK-2026-11-05.md",
+      "expectedBytes": 5600,
+      "actualBytes": 5600,
+      "expectedSHA256": "7870cb6f94937d493c228af1d24ada0a4f8b0784602806955e10d5952fe2b951",
+      "actualSHA256": "7870cb6f94937d493c228af1d24ada0a4f8b0784602806955e10d5952fe2b951",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 12,
+      "kind": "original",
+      "path": "docs/empire-rts/handoff-data/2026-11-05/METADATA-CROSSWALK.json",
+      "expectedBytes": 9887,
+      "actualBytes": 9887,
+      "expectedSHA256": "ff7570e2ec7dfa81c4770235c6f4c8a8856ad4d4797b4a060913402dd8f11034",
+      "actualSHA256": "ff7570e2ec7dfa81c4770235c6f4c8a8856ad4d4797b4a060913402dd8f11034",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 12,
+      "kind": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261114/snapshots/12-METADATA-CROSSWALK.json",
+      "expectedBytes": 9887,
+      "actualBytes": 9887,
+      "expectedSHA256": "ff7570e2ec7dfa81c4770235c6f4c8a8856ad4d4797b4a060913402dd8f11034",
+      "actualSHA256": "ff7570e2ec7dfa81c4770235c6f4c8a8856ad4d4797b4a060913402dd8f11034",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 13,
+      "kind": "original",
+      "path": "work/t14-t18-session-transfer-20261026/current-checkpoint.json",
+      "expectedBytes": 57977,
+      "actualBytes": 57977,
+      "expectedSHA256": "07044bf45ebb5fdbe42afbebc9e9ade4cba03fd5c385f21af7f987f91de05ff8",
+      "actualSHA256": "07044bf45ebb5fdbe42afbebc9e9ade4cba03fd5c385f21af7f987f91de05ff8",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 13,
+      "kind": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261114/snapshots/13-current-checkpoint.json",
+      "expectedBytes": 57977,
+      "actualBytes": 57977,
+      "expectedSHA256": "07044bf45ebb5fdbe42afbebc9e9ade4cba03fd5c385f21af7f987f91de05ff8",
+      "actualSHA256": "07044bf45ebb5fdbe42afbebc9e9ade4cba03fd5c385f21af7f987f91de05ff8",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 14,
+      "kind": "original",
+      "path": "work/t14-t18-session-transfer-20261112/child-readback.json",
+      "expectedBytes": 30623,
+      "actualBytes": 30623,
+      "expectedSHA256": "3f68c3fc88f19fcc6828a44bfe5a05cd1823a4bb2ae1296cdc1d3ad6f36aba1e",
+      "actualSHA256": "3f68c3fc88f19fcc6828a44bfe5a05cd1823a4bb2ae1296cdc1d3ad6f36aba1e",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 14,
+      "kind": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261114/snapshots/14-child-readback.json",
+      "expectedBytes": 30623,
+      "actualBytes": 30623,
+      "expectedSHA256": "3f68c3fc88f19fcc6828a44bfe5a05cd1823a4bb2ae1296cdc1d3ad6f36aba1e",
+      "actualSHA256": "3f68c3fc88f19fcc6828a44bfe5a05cd1823a4bb2ae1296cdc1d3ad6f36aba1e",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 15,
+      "kind": "original",
+      "path": "work/t14-t18-session-transfer-20261112/migration-readback.json",
+      "expectedBytes": 1064,
+      "actualBytes": 1064,
+      "expectedSHA256": "b3dd720fa15ce81b5b9f7268570eeb7f3eae8e80b6ba7d899ae1183340abd488",
+      "actualSHA256": "b3dd720fa15ce81b5b9f7268570eeb7f3eae8e80b6ba7d899ae1183340abd488",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 15,
+      "kind": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261114/snapshots/15-migration-readback.json",
+      "expectedBytes": 1064,
+      "actualBytes": 1064,
+      "expectedSHA256": "b3dd720fa15ce81b5b9f7268570eeb7f3eae8e80b6ba7d899ae1183340abd488",
+      "actualSHA256": "b3dd720fa15ce81b5b9f7268570eeb7f3eae8e80b6ba7d899ae1183340abd488",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 16,
+      "kind": "original",
+      "path": "work/t14-t18-github-checkpoint-20261112/push-receipt.json",
+      "expectedBytes": 1663,
+      "actualBytes": 1663,
+      "expectedSHA256": "9ddc07921f1733f8a39204a9117e339d3e065334a413e18e733592efc3f66524",
+      "actualSHA256": "9ddc07921f1733f8a39204a9117e339d3e065334a413e18e733592efc3f66524",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 16,
+      "kind": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261114/snapshots/16-push-receipt.json",
+      "expectedBytes": 1663,
+      "actualBytes": 1663,
+      "expectedSHA256": "9ddc07921f1733f8a39204a9117e339d3e065334a413e18e733592efc3f66524",
+      "actualSHA256": "9ddc07921f1733f8a39204a9117e339d3e065334a413e18e733592efc3f66524",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 17,
+      "kind": "original",
+      "path": "docs/empire-rts/AUTONOMOUS-EXECUTION-T14-T18-2026-10-11.md",
+      "expectedBytes": 4420,
+      "actualBytes": 4420,
+      "expectedSHA256": "ca5cc725d177366fa3593f1eb3cc47dede4c183435ce2e0a7fb17cc21b862f52",
+      "actualSHA256": "ca5cc725d177366fa3593f1eb3cc47dede4c183435ce2e0a7fb17cc21b862f52",
+      "exactPairBytesEqual": true,
+      "match": true
+    },
+    {
+      "bindingIndex": 17,
+      "kind": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261114/snapshots/17-AUTONOMOUS-EXECUTION-T14-T18-2026-10-11.md",
+      "expectedBytes": 4420,
+      "actualBytes": 4420,
+      "expectedSHA256": "ca5cc725d177366fa3593f1eb3cc47dede4c183435ce2e0a7fb17cc21b862f52",
+      "actualSHA256": "ca5cc725d177366fa3593f1eb3cc47dede4c183435ce2e0a7fb17cc21b862f52",
+      "exactPairBytesEqual": true,
+      "match": true
+    }
+  ],
+  "checkCount": 36,
+  "all36ChecksMatch": true,
+  "git": {
+    "toplevel": "/Users/liyungchih/Documents/Codex/2026-09-06/new-chat/work/0ad",
+    "head": "d5133455c3dffba7d2d3f2465f75b82532ebcd3d",
+    "branch": "codex/t14-t18-closeout-20261104",
+    "indexEmpty": true,
+    "defaultPorcelainRowsBefore": 364,
+    "allUntrackedPorcelainRowsBefore": 794,
+    "statusBeforeSHA256": "4965be8d37c130170a5bcf16b2d846560ef55e48490c1dd73bce00ac8be16ad1",
+    "note": "364 default rows and 794 all-untracked rows reflect different untracked enumeration; pre-existing changes preserved."
+  },
+  "status": "MATCH_CHILD_READBACK_AWAITING_PARENT_VALIDATION_AND_HEARTBEAT_MIGRATION",
+  "readingAttribution": {
+    "readerThread": "01a1d802-8dc0-7b70-9bdc-f3c2f963d8f0",
+    "personallyReadFullThisSession": [
+      "docs/empire-rts/SESSION-HANDOFF-2026-11-14-TRANSFER-T14-T18.md",
+      "work/t14-t18-session-transfer-20261114/current-state.json",
+      "work/t17-metadata-controls-design-20261105/current-checkpoint-v17.json",
+      "docs/empire-rts/SESSION-HANDOFF-2026-11-06-METADATA-DESIGN-REVIEW.md"
+    ],
+    "inheritedParentThread": "01a1cf0e-d06d-7750-9e95-e1189d33c1a2",
+    "inheritedParentPersonalFull85": 85,
+    "childPersonalFull85Claim": false,
+    "childPersonalFullManifestBindings": 0,
+    "method": "All 36 files read as bytes for integrity only; hashing is not semantic review. Parent 85/85 and historical reading remain inherited. Other structured extracts/path searches do not establish personal full reading."
+  },
+  "usageLiveAtSessionStart": {
+    "ordinaryUsageAllowed": true,
+    "primaryUsedPercent": 14,
+    "weeklyUsedPercent": 58,
+    "creditsBalance": "0",
+    "resetCreditUsed": false
+  },
+  "formalReports": [
+    {
+      "path": "work/t17-metadata-controls-design-20261105/design-review-CODE-v1.json",
+      "exists": false
+    },
+    {
+      "path": "work/t17-metadata-controls-design-20261105/design-review-CODE-v1.md",
+      "exists": false
+    },
+    {
+      "path": "work/t17-metadata-controls-design-20261105/design-review-Python-v1.json",
+      "exists": false
+    },
+    {
+      "path": "work/t17-metadata-controls-design-20261105/design-review-Python-v1.md",
+      "exists": false
+    },
+    {
+      "path": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-v1.json",
+      "exists": false
+    },
+    {
+      "path": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-v1.md",
+      "exists": false
+    }
+  ],
+  "allThreeDesignApproved": false,
+  "implementationAdmitted": false,
+  "guardRefreshApproved": false,
+  "formalCases": "THREE_NOT_RUN",
+  "originalReviewers": "No cross-chat control assumed; no replacement agents/models or root signatures.",
+  "automation": {
+    "id": "0ad-t14",
+    "observedConfigSHA256": "cb178857b23a799416f39762b149e3f15cacb0d73a5004813d54a665460b17b5",
+    "expectedBeforeSHA256": "cb178857b23a799416f39762b149e3f15cacb0d73a5004813d54a665460b17b5",
+    "hashMatch": true,
+    "modifiedByChild": false,
+    "migrationResponsibility": "Parent after validating this receipt; no new schedule"
+  },
+  "preservedBoundaries": [
+    "All FAIL/STOP/UNKNOWN/raw/seals and consumed attempts retained",
+    "No authored code imports/compile/tests/helpers/profile/producer/probe/fixture/guard/attempt/engine",
+    "No commit/push/delete/C++/external messages/paid/reset/credits/model changes/new schedules"
+  ],
+  "next": "STOP. Parent validates this receipt and migrates existing 0ad-t14; await authorized continuation."
+}

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "createdUTC": "2026-11-14T03:05:43.241991+00:00",
+  "status": "MATCH_EXISTING_HEARTBEAT_MIGRATED",
+  "automationId": "0ad-t14",
+  "targetThreadId": "01a1d802-8dc0-7b70-9bdc-f3c2f963d8f0",
+  "statusObserved": "ACTIVE",
+  "rruleObserved": "FREQ=HOURLY;INTERVAL=5",
+  "changedFields": [
+    "prompt",
+    "target_thread_id",
+    "updated_at"
+  ],
+  "originalPromptPrefixPreserved": true,
+  "allOtherFieldsPreserved": true,
+  "newScheduleCreated": false,
+  "beforeSHA256": "cb178857b23a799416f39762b149e3f15cacb0d73a5004813d54a665460b17b5",
+  "afterSHA256": "1eb72e2c3c067d2276ace52971b1a10a4736e614d818653149bdbf9f362f1513",
+  "childReadbackSHA256": "d86eeb8e2a0e514e95b3499ec37daeee1e5979c71db20f4cb79e6c985f16a2d5",
+  "anchorSHA256": "6b09447aafafe0c341288d6a9afa4a6e01219b8f1672fce6a1d3351f4996d05f",
+  "parentValidation": "work/t14-t18-session-transfer-20261114/parent-child-validation.json",
+  "gitHEAD": "d5133455c3dffba7d2d3f2465f75b82532ebcd3d",
+  "indexEmpty": true,
+  "allThreeDesignApproved": false,
+  "implementationAdmitted": false,
+  "guardRefreshApproved": false,
+  "formalCases": "THREE_NOT_RUN",
+  "next": "New child authorized to resume only permitted unfinished work and quiet waiting; no substitute reviews or blocked execution."
+}

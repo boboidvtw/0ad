@@ -1,6 +1,12 @@
 <!-- Purpose: 本 Fork 的專案入口；Created: 2026-09-06. -->
 # 跨時代 RTS 改造計畫
 
+## 2026-11-15 收工 / Session closeout
+
+[詳細說明](docs/empire-rts/SESSION-CLOSEOUT-2026-11-15-T14-T18.md) · [後續作業](docs/empire-rts/reference_t14_t18_next_steps_20261115.md) · [資料與SHA索引](docs/empire-rts/handoff-data/2026-11-15/README.md)。Python/JSAPI兩正式DESIGN-only核可已落盤；CODE原actor回報完成但唯讀使正式檔缺，三方正式核可與implementation仍未准入。新root本人3/85、前root85只繼承。原FAIL/STOP/UNKNOWN、guard刷新待具體決策、3casesNOT_RUN、24helpers耗用、11義務OPEN保留；沒有實作/tests/engine或release。僅本次文件資料commit/push，原dirty與ACTIVE每5h排程保留。
+
+Two formal design-only approvals are archived; CODE formal delivery remains blocked by its reported read-only environment. This is an archival documentation/data update, not runtime acceptance or a game release.
+
 本 Fork 計畫以 **0 A.D. / Pyrogenesis 為基礎，製作受《Empire Earth》（世紀爭霸）跨時代玩法啟發的原創 RTS 全面改造 Mod（Total Conversion）**。目前第一階段已建立 Mod、測試地圖與自訂單位，引擎測試、實際畫面、選取／移動與正常退出驗收均已通過。T04 已加入青銅經濟與生產，T05 鐵器研究、鍛造科技與繁中 HUD 已完成引擎及畫面驗收；上游既有功能不代表改造功能已完成。
 
 開發原則：先做 Mod 與小型可玩原型，驗證海陸空特殊機制；只有在證據顯示 Mod 層無法滿足需求時，才局部修改引擎。美術先以暫用素材驗證，再替換成輪廓清楚、略帶風格化的原創 3D 資產。

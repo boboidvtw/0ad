@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "dateAsiaTaipei": "2026-11-15",
+  "status": "PARTIAL_TWO_FORMAL_DESIGN_APPROVALS_CODE_FORMAL_DELIVERY_BLOCKED",
+  "manifestSHA256": "e73e6c48bd2a7ea31742aef7ad4b1744e6f28dbed799c39b28b25a3f9079b93a",
+  "formalReports": {
+    "CODE": {
+      "jsonExists": false,
+      "mdExists": false,
+      "verdict": null,
+      "jsonSHA256": null,
+      "mdSHA256": null
+    },
+    "Python": {
+      "jsonExists": true,
+      "mdExists": true,
+      "verdict": "APPROVE_DESIGN_ONLY",
+      "jsonSHA256": "fa715b9570b57f9be85316713f43360056498025f6445c3666b5fcf7b7b60b40",
+      "mdSHA256": "801412bbbcb4dd9c656f43ac2bc1f151b1772ed402e1311afcff5d8e979cc7e4"
+    },
+    "JSAPI": {
+      "jsonExists": true,
+      "mdExists": true,
+      "verdict": "APPROVE_DESIGN_ONLY",
+      "jsonSHA256": "03e0df2234dc78683c759adea10744c4b25947cdc22e0988b685010cf4abccca",
+      "mdSHA256": "5b01fc6a00a2b4ae6e515eb85843ca38cae84c226c8dd82994e0a6eee37171b1"
+    }
+  },
+  "rootReadingAttribution": {
+    "inheritedParentPersonalFull85": 85,
+    "parentThread": "01a1cf0e-d06d-7750-9e95-e1189d33c1a2",
+    "currentRootPersonalFullIndices": [
+      74,
+      75,
+      76
+    ],
+    "currentRootPersonalFullCount": 3,
+    "rootFull85ContentReviewComplete": false
+  },
+  "allThreeDesignApproved": false,
+  "implementationAdmitted": false,
+  "guardRefreshApproved": false,
+  "formalCases": "THREE_NOT_RUN",
+  "technicalObligationsClosed": 0,
+  "automation": {
+    "id": "0ad-t14",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=5",
+    "target_thread_id": "01a1d802-8dc0-7b70-9bdc-f3c2f963d8f0",
+    "configSHA256": "1eb72e2c3c067d2276ace52971b1a10a4736e614d818653149bdbf9f362f1513",
+    "modifiedByCloseout": false
+  },
+  "gitPublication": {
+    "base": "fca88c4926574fc6403b0834a78744a504185763",
+    "branch": "codex/t14-t18-closeout-20261115",
+    "scope": "documentation and text evidence only; no release"
+  },
+  "remainingTasks": {
+    "topLevelTotal": 19,
+    "boundedDone": 14,
+    "incomplete": 5,
+    "plannedWorkPackages": 18,
+    "documentOnlyDone": 1,
+    "remainingWorkPackages": 17
+  },
+  "runtimeTestsThisSession": "NOT_RUN",
+  "safeToDeleteOriginalWorkspace": false,
+  "codeDeliveryBlocker": "Original CODE reports full85/read verdict via chat only; original actor and parent reported read-only environment. No formal report is reconstructed or signed by current root."
+}

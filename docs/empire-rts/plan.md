@@ -1,6 +1,12 @@
 <!-- Purpose: 跨時代 RTS 目標、架構與可驗收路線；Created: 2026-09-06. -->
 # 開發計畫
 
+## 2026-11-15 收工 / Session closeout
+
+[詳細說明](SESSION-CLOSEOUT-2026-11-15-T14-T18.md) · [後續作業](reference_t14_t18_next_steps_20261115.md) · [資料與SHA索引](handoff-data/2026-11-15/README.md)。Python/JSAPI兩正式DESIGN-only核可已落盤；CODE原actor回報完成但唯讀使正式檔缺，三方正式核可與implementation仍未准入。新root本人3/85、前root85只繼承。原FAIL/STOP/UNKNOWN、guard刷新待具體決策、3casesNOT_RUN、24helpers耗用、11義務OPEN保留；沒有實作/tests/engine或release。僅本次文件資料commit/push，原dirty與ACTIVE每5h排程保留。
+
+Two formal design-only approvals are archived; CODE formal delivery remains blocked by its reported read-only environment. This is an archival documentation/data update, not runtime acceptance or a game release.
+
 更新日期：2026-11-05。最新盤點：19項主任務，14項限定DONE、5項未完成；[完整評估與18工作包](PROJECT-ASSESSMENT-2026-11-05.md)優先於下列歷史進度。三SOURCE核可已完成，readiness STOP／一次guard刷新待具體決策；不等native核可。
 
 歷史里程碑摘要（2026-10-08）：M1、M2 最小流程驗收完成；T03–T07 已完成限定原型驗收，T08 [潛艇調查](evidence/t08-validation.md)完成，完整潛艇延後；[T09決策](t09-engine-decision.md)已完成：維持R28、暫不改C++，M3限定可行性階段完成；[T10靜態匯入](evidence/t10-validation.md)已完成，[T11原創低面數切片](evidence/t11-validation.md)完成限定驗收，M4 DONE（樣板範圍），T12、T13已限定DONE；T14已取得[限定效能基線](evidence/t14-validation.md)，不限FPS效能門檻未通過；[600單位60fps診斷](evidence/t14-diagnosis-validation.md)通過，完整效能維持PARTIAL。完整攻擊檢查／潛艇／精確空戰另列T16–T18 TODO。飛行限制與證據見 [T07報告](evidence/t07-validation.md)。M2 限定標準資源脚本玩家與固定防守對手，不代表通用 AI 完成。專案入口：[README](../../README.md)；執行狀態：[進度追蹤](progress.md)。

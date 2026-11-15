@@ -1,0 +1,374 @@
+{
+  "schema": 1,
+  "purpose": "Evidence-based project assessment and dependency plan, 2026-11-05; no gameplay percentage",
+  "asOfClientDate": "2026-11-05",
+  "counting": {
+    "topLevelTotal": 19,
+    "boundedDone": 14,
+    "incomplete": 5,
+    "incompleteIDs": [
+      "T14",
+      "T15",
+      "T16",
+      "T17",
+      "T18"
+    ],
+    "planningWorkPackages": 18,
+    "remainingWorkPackagesAtPlanCreation": 18,
+    "notAnEstimateOfCaseCount": true,
+    "notCompletionPercentage": true,
+    "longTermContentUnspecified": true,
+    "completedPlanningWorkPackages": 1,
+    "remainingWorkPackagesCurrent": 17
+  },
+  "topLevelTasks": [
+    {
+      "id": "T00",
+      "title": "M0 目標、方案與追蹤文件",
+      "status": "DONE",
+      "dependencies": "無",
+      "evidence": "[plan](plan.md)、[art-direction](art-direction.md)、本表與 [journal](journal.md) 已建立；使用者於 2026-09-06 確認方向並要求寫入 repo"
+    },
+    {
+      "id": "T01",
+      "title": "M1 固定可運行基線",
+      "status": "DONE",
+      "dependencies": "T00",
+      "evidence": "官方 R28 ARM64、SHA-256 已核對；實際引擎模擬成功。[基線](baseline.md)、[驗收](evidence/m1-validation.md)"
+    },
+    {
+      "id": "T02",
+      "title": "M1 獨立 Mod 與測試地圖",
+      "status": "DONE",
+      "dependencies": "T01",
+      "evidence": "地圖／自訂模板載入、兩個 seed 模擬、Pioneer 畫面／選取／移動與正常退出通過；0 錯誤／0 警告，附截圖。[驗收](evidence/m1-validation.md)"
+    },
+    {
+      "id": "T03",
+      "title": "M2 定稿兩時代最小規則",
+      "status": "DONE",
+      "dependencies": "T00",
+      "evidence": "[規則](m2-rules.md)、[驗收案例與靜態檢查](m2-acceptance.md)；數值及依賴已定稿，尚未實作或對局平衡"
+    },
+    {
+      "id": "T04",
+      "title": "M2 採集、建造與訓練",
+      "status": "DONE",
+      "dependencies": "T02、T03",
+      "evidence": "兩 seed 各 177 引擎檢查、GUI 與 M1 回歸通過；[證據與實測範圍](evidence/t04-validation.md)"
+    },
+    {
+      "id": "T05",
+      "title": "M2 時代升級、科技與 HUD",
+      "status": "DONE",
+      "dependencies": "T04",
+      "evidence": "引擎兩 seed 各 77 項 PASS；解鎖單位、鍛造研究及三類不足提示 GUI 通過；[證據](evidence/t05-validation.md)"
+    },
+    {
+      "id": "T06",
+      "title": "M2 作戰與整局流程",
+      "status": "DONE",
+      "dependencies": "T05",
+      "evidence": "C01–C05、兩 seed 引擎／標準資源整局與重播通過；原始 1× 視窗及勝利／摘要畫面，見 [T06 報告](evidence/t06-validation.md)"
+    },
+    {
+      "id": "T07",
+      "title": "M3 飛機、機場、防空原型",
+      "status": "DONE",
+      "dependencies": "T02",
+      "evidence": "F00–F07原型範圍、各36項引擎與重播、GUI及M2回歸；[證據與限制](evidence/t07-validation.md)"
+    },
+    {
+      "id": "T08",
+      "title": "M3 潛艇與水下規則調查",
+      "status": "DONE",
+      "dependencies": "T02",
+      "evidence": "[規則／延後範圍](t08-submarine-feasibility.md)、[R28探針與GUI證據](evidence/t08-validation.md)；限定調查，非完整潛艇"
+    },
+    {
+      "id": "T09",
+      "title": "M3 引擎修改決策",
+      "status": "DONE",
+      "dependencies": "T07、T08",
+      "evidence": "[方案比較、延後範圍及重開門檻](t09-engine-decision.md)、[來源核對](evidence/t09-decision-audit.json)；未新增玩法或Build驗收"
+    },
+    {
+      "id": "T10",
+      "title": "M4 暫用素材與匯入樣板",
+      "status": "DONE",
+      "dependencies": "T01、T03",
+      "evidence": "[靜態房屋匯入](t10-asset-import.md)、[兩seed各13項／GUI／工具驗收](evidence/t10-validation.md)；非正式美術或人物動畫"
+    },
+    {
+      "id": "T11",
+      "title": "M4 原創美術垂直切片",
+      "status": "DONE",
+      "dependencies": "T06、T10",
+      "evidence": "[最小範圍](t11-art-slice.md)、[126項／重播／GUI](evidence/t11-validation.md)；限定低面數工人、長矛兵、房屋、3圖示，非正式全套美術"
+    },
+    {
+      "id": "T12",
+      "title": "M5 AI 兩時代經營與進攻",
+      "status": "DONE",
+      "dependencies": "T06",
+      "evidence": "[限定契約](t12-ai-acceptance.md)、[38項／兩重播／GUI／工具與回歸](evidence/t12-validation.md)、[收尾交接](SESSION-HANDOFF-2026-09-27-T12.md)；僅R28兩seed對固定防守，非通用AI；本機提交，未push"
+    },
+    {
+      "id": "T13",
+      "title": "M5 存讀檔與多人同步",
+      "status": "DONE",
+      "dependencies": "T06",
+      "evidence": "[限定契約](t13-save-network.md)、[兩seed六次讀檔／雙端native hash／GUI與工具](evidence/t13-validation.md)、[交接](SESSION-HANDOFF-2026-09-28-T13.md)；不保證讀檔逐步重現，僅loopback；本機提交、未push"
+    },
+    {
+      "id": "T14",
+      "title": "M5 效能基線與回歸",
+      "status": "PARTIAL",
+      "dependencies": "T06",
+      "evidence": "[契約](t14-performance.md)、[七場實測](evidence/t14-validation.md)、[交接](SESSION-HANDOFF-2026-10-04-T14.md)；資料完整性／來源回歸PASS；[FPS對照與原生profiler](evidence/t14-diagnosis-validation.md)支持600單位cap60緩解，不限FPS未達0.95；[AI片段四場PASS](evidence/t14-workload-validation.md)；[64架飛行兩片段PASS](evidence/t14-flight-validation.md)，另[即時防空兩片段PASS](evidence/t14-aa-validation.md)；[對地攻擊兩片段PASS](evidence/t14-strike-validation.md)，[seed42完整局PASS](evidence/t14-match-validation.md)及[地圖seed7完整局PASS](evidence/t14-match-seed7-validation.md)，潛艇／大混戰仍NOT RUN；[同條件3場重複性PASS](evidence/t14-match-repeatability-validation.md)，45窗口與14共同分鐘離散度通過，舊FAIL仍保留；[雙AI單seed完整局PASS](evidence/t14-dual-validation.md)，25分鐘窗口達標/短尾觀測；[600單位30分鐘性能/RSS PASS](evidence/t14-soak-validation.md)，30窗達標/首場camera FAIL保留/熱NOT RUN，[初始600士兵地面交戰PASS](evidence/t14-battle-validation.md)，兩窗達標/23慢幀保留/正式勝負NOT RUN，[混合600交戰FAIL](evidence/t14-mixed-validation.md)、[CPU診斷取證PASS](evidence/t14-mixed-profile-validation.md)、該批歷史220來源/原FAIL保留；整體PARTIAL"
+    },
+    {
+      "id": "T15",
+      "title": "M6 擴充內容與發行規格",
+      "status": "PARTIAL",
+      "dependencies": "T09、T11–T14",
+      "evidence": "本機可重現封包DONE；候選42正式FAIL保持；新離線reader完整28checks及路徑宣告讀回DONE，freshness NOT PROVEN；GUI／存讀檔／多人尚待驗收"
+    },
+    {
+      "id": "T16",
+      "title": "特殊機制後續：專用攻擊檢查驗證",
+      "status": "PARTIAL",
+      "dependencies": "T09",
+      "evidence": "原海戰42 FAIL完成36/221；新死亡42完整121原生checks PASS但固定位置gate FAIL；兩場耗用retry0與封存保留，seed7停止"
+    },
+    {
+      "id": "T17",
+      "title": "特殊機制後續：潛艇最小垂直切片",
+      "status": "PARTIAL",
+      "dependencies": "T16",
+      "evidence": "New controller native42 formal runner FAIL; 145 native checks pass only observed, strict suffix parser failure retained; seed7 STOPPED. GUI/save/network pending"
+    },
+    {
+      "id": "T18",
+      "title": "特殊機制後續：精確彈道與停機位",
+      "status": "PARTIAL",
+      "dependencies": "T09",
+      "evidence": "精確彈道兩seed各55requests／275turn／31HIT22MISS2REJECTED正式PASS、非圖像有界DONE；K地形修正11source／21mocks與CODE／JS核可；200s獨立native fixture準備中，GUI6source／19tests待review",
+      "recordedBeforeAssessmentStatus": "IN_PROGRESS",
+      "assessmentNote": "Normalizes old IN_PROGRESS row; consumed formal FAILs and nonvisual bounded DONE retained."
+    }
+  ],
+  "workPackages": [
+    {
+      "id": "R01",
+      "parent": "T17",
+      "title": "一次 guard 重取樣明確決策",
+      "status": "PENDING_USER_DECISION",
+      "dependsOn": [],
+      "acceptance": "原 guard、STOP、preimages 完整保留；僅原具體方案獲明確一次例外才可刷新；換 session／一般接續不代替例外。"
+    },
+    {
+      "id": "R02",
+      "parent": "T17",
+      "title": "原門檻 readiness 與 distinct admission",
+      "status": "BLOCKED_DEPENDENCY",
+      "dependsOn": [
+        "R01"
+      ],
+      "acceptance": "同一已授權獨立 actor 可用；原 d69d/fd1948、113+53、runtime/resources/owner/absent-root 由各 actor 實讀；age≤60s、remaining≥120s、TTL120–600；任一 UNKNOWN 即停。"
+    },
+    {
+      "id": "R03",
+      "parent": "T17",
+      "title": "F01／F02-R／F02-W 三個固定負向案例",
+      "status": "NOT_RUN",
+      "dependsOn": [
+        "R02"
+      ],
+      "acceptance": "原 v1/execution-v1、原 IDs/order/caps/retry0/seedfalse；另一次 root call；保存完整 outer exit/raw/FD-generation/partial/first-error；unexpected 即停後續。僅 injected-errno／手寫協定 models。"
+    },
+    {
+      "id": "R04",
+      "parent": "T17",
+      "title": "剩餘 coverage 與 limits 的具體驗收契約",
+      "status": "NEEDS_BOUNDED_CONTRACT",
+      "dependsOn": [
+        "R03"
+      ],
+      "acceptance": "以已完成 coverage reconciliation 為基礎，只處理未證的 sparse ZIP64、size/retention/RSS 等必要缺項；先確認哪些需實體量測，不能憑空新增 RSS 上限／stress 或重跑已 DONE tests。"
+    },
+    {
+      "id": "R05",
+      "parent": "T17",
+      "title": "完整 producer／五 mod inventory 與 caller 來源閉合",
+      "status": "SOURCE_GAPS_OPEN",
+      "dependsOn": [
+        "R03"
+      ],
+      "acceptance": "補足 actual producer/noProxy/full40、writer/export/intrinsic/child/native caller/clone/restore/consumer 與官方 archive 等原必要 gates；source-only 與 binary runtime compatibility 分開；未閉合不可 official capture。"
+    },
+    {
+      "id": "R06",
+      "parent": "T17",
+      "title": "metadata 六欄與十一項缺口的跨計劃對照",
+      "status": "DONE_READ_ONLY_TRACEABILITY_ONLY",
+      "dependsOn": [],
+      "acceptance": "對既有 source-plan、唯一 JS DESIGN review、目前 host/control 契約作新執行計劃 crosswalk；指出 GetValue 修正、精確來源與待審／待實作／待量測；只完成對照，不重做舊 review 或升核可。",
+      "evidence": "METADATA-CROSSWALK.json",
+      "technicalObligationsClosed": 0
+    },
+    {
+      "id": "R07",
+      "parent": "T17",
+      "title": "metadata 獨立 expected controls 設計／實作核可",
+      "status": "READY_FOR_PROSPECTIVE_DESIGN_AND_REQUIRED_INDEPENDENT_REVIEW",
+      "dependsOn": [
+        "R06"
+      ],
+      "acceptance": "先完成必要完整設計審查，再限定實作、全來源審查；六欄、native getter、full initattrs mutation closure、precommit timing 與 future absence 必須獨立；禁止 actual metadata bootstrap。"
+    },
+    {
+      "id": "R08",
+      "parent": "T17",
+      "title": "save host 完整來源與真實 consumer 閉合",
+      "status": "BLOCKED_DEPENDENCY",
+      "dependsOn": [
+        "R05",
+        "R07"
+      ],
+      "acceptance": "原 host full freeze BLOCK 不因 SOURCE_SCOPE 核可清除；producer/caller/realm/transport、loader、來源/runtime/original-copy/profile inventory locks 全部有明確證據。"
+    },
+    {
+      "id": "R09",
+      "parent": "T17",
+      "title": "新 save/load 契約及原生分支驗收",
+      "status": "NOT_RUN",
+      "dependsOn": [
+        "R08"
+      ],
+      "acceptance": "按原六 family／origin+fresh-load 分支與600/6×90/30/80/cleanup90等實際完整契約，42完整PASS才conditional7、retry0；L0零Advance、不得 warmturn/flush/多存檔或由actual值建立expected。"
+    },
+    {
+      "id": "R10",
+      "parent": "T17",
+      "title": "owner/LOS GUI 與正常命令剩餘驗收",
+      "status": "NOT_RUN",
+      "dependsOn": [
+        "R08"
+      ],
+      "acceptance": "原 ownerGUI42 FAIL、zeroPNG、stdout0/backup27309 mismatch、seed7 STOP 不改；必要不同 GUI 問題先有新具體契約／完整審查與guard；不得重拍舊耗用場次。"
+    },
+    {
+      "id": "R11",
+      "parent": "T17",
+      "title": "新機制本機雙端同步驗收",
+      "status": "NOT_RUN",
+      "dependsOn": [
+        "R09"
+      ],
+      "acceptance": "兩個實際獨立 app/data/log/profile roots；正常網路命令、同turn native state/hash/events、無OOS；固定port/budget/seed/stop/retry先契約化；不得沿用T13 PASS。"
+    },
+    {
+      "id": "R12",
+      "parent": "T16",
+      "title": "專用攻擊檢查尚缺原生驗收",
+      "status": "PARTIAL_REQUIRES_DISTINCT_SCOPE",
+      "dependsOn": [],
+      "acceptance": "原海戰42 36/221 FAIL、death42 121checks觀察但位置gate FAIL／seed7 STOP永久保留；先釐清仍缺 criterion、是否存在真正不同必要問題與新授權，無自動重跑原矩陣。"
+    },
+    {
+      "id": "R13",
+      "parent": "T17",
+      "title": "潛艇完整垂直切片整合收尾",
+      "status": "BLOCKED_DEPENDENCY",
+      "dependsOn": [
+        "R09",
+        "R10",
+        "R11",
+        "R12"
+      ],
+      "acceptance": "mode/2秒切換/深淺水/自動偵測/撤銷/所有權外交／正常命令與GUI及受影響回歸逐criterion合併；原 controller42 formal FAIL/145 observed 非正式PASS不改。"
+    },
+    {
+      "id": "R14",
+      "parent": "T18",
+      "title": "多機停機預約／排序／避碰剩餘驗收",
+      "status": "PARTIAL_REQUIRES_DISTINCT_SCOPE",
+      "dependsOn": [],
+      "acceptance": "K42 malformed raw FAIL／seed7 STOP不改；必要新問題須先約geometry/physical/native motion與transport完整證據、budget/stop/retry與獨立review/guard；不重跑K42。"
+    },
+    {
+      "id": "R15",
+      "parent": "T18",
+      "title": "精確彈道 GUI 與共同 save/network 整合",
+      "status": "PARTIAL_REQUIRES_DISTINCT_SCOPE",
+      "dependsOn": [
+        "R09",
+        "R11"
+      ],
+      "acceptance": "原兩seed非圖像55requests/275turn/31HIT22MISS2REJECTED已DONE不重跑；GUI42/installation-drift/protocol42 FAIL保留，剩餘visual與serialization/network各自依新必要契約驗收。"
+    },
+    {
+      "id": "R16",
+      "parent": "T14",
+      "title": "必要新功能負載 live integration／效能回歸",
+      "status": "DEFERRED_UNTIL_CONCRETE_WORKLOAD",
+      "dependsOn": [
+        "R13",
+        "R14",
+        "R15"
+      ],
+      "acceptance": "只在新功能產生必要不同workload時建具體契約，可信producer/context/lifecycle及global/per-window gates分開；overhead須有效對照；原mixed/尾活動FAIL、190slowframes、SQLite Insufficient data不變。"
+    },
+    {
+      "id": "R17",
+      "parent": "T15",
+      "title": "本機兩時代候選剩餘安裝／runtime驗收",
+      "status": "PARTIAL_REQUIRES_DISTINCT_SCOPE",
+      "dependsOn": [],
+      "acceptance": "已完成可重現包／159 package checks／51 reader checks不重跑；原candidate42 FAIL、28 observed非正式PASS、freshness未證保留；只處理不同必要未驗收的安裝/GUI/save/network與closure，不重跑原Duel42。T16–18 sandbox不默默混入core。"
+    },
+    {
+      "id": "R18",
+      "parent": "T15",
+      "title": "本機交付整合與最終證據／限制收尾",
+      "status": "BLOCKED_DEPENDENCY",
+      "dependsOn": [
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R17"
+      ],
+      "acceptance": "清楚分開兩時代core與特殊sandbox；逐檔payload/依賴/授權/安裝隔離與必要驗收有證據；T14 PARTIAL時不能稱完整品質發行DONE；公開遊戲發行仍需另授權。"
+    }
+  ],
+  "currentGate": {
+    "allThreeSourceApproved": true,
+    "orchestration": "APPROVE_LIMITED_ORCHESTRATION_SOURCE_ONLY",
+    "readiness": "EXPIRED_GUARD_STOP",
+    "guardRefreshApproved": false,
+    "formalCases": "THREE_NOT_RUN",
+    "stageCAdmitted": false
+  },
+  "evidenceMethod": "Read current task table, canonical and exact latest receipts/validation documents. Historical acceptance summarized, not rerun or independently re-certified.",
+  "publication": {
+    "targetRepository": "boboidvtw/0ad",
+    "targetBranch": "codex/t14-t18-assessment-20261105",
+    "masterUpdate": false,
+    "scope": "Project documentation and selected text evidence only; game binaries/private automation config/raw archives excluded"
+  },
+  "limitations": [
+    "T00-T13 DONE is original bounded scope only",
+    "Original FAIL/STOP/UNKNOWN/raw/seals and consumed attempts retained",
+    "No automatic guard refresh or retry",
+    "No C++ or game-code changes; no engine, paid/reset, new schedule or external messages"
+  ],
+  "executionAfterInitialPublication": {
+    "commit": "fc289bd2bb09ab8d752f738d67ec14d2cce2b21a",
+    "R06": "DONE_READ_ONLY_TRACEABILITY_ONLY",
+    "technicalObligationsClosed": 0,
+    "R07": "NEXT_REQUIRED_DESIGN_REVIEW_NO_IMPLEMENTATION_ADMISSION",
+    "R01": "PENDING_SAME_EXPLICIT_USER_DECISION"
+  }
+}

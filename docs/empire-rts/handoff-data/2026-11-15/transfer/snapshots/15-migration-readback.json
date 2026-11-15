@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "createdUTC": "2026-11-12T09:21:48.728873+00:00",
+  "status": "MATCH_EXISTING_HEARTBEAT_MIGRATED",
+  "automationId": "0ad-t14",
+  "targetThread": "01a1cf0e-d06d-7750-9e95-e1189d33c1a2",
+  "automationStatus": "ACTIVE",
+  "rrule": "FREQ=HOURLY;INTERVAL=5",
+  "automationSHA256": "cb178857b23a799416f39762b149e3f15cacb0d73a5004813d54a665460b17b5",
+  "childReadbackSHA256": "3f68c3fc88f19fcc6828a44bfe5a05cd1823a4bb2ae1296cdc1d3ad6f36aba1e",
+  "anchorSHA256": "ad73fa9b88a98db7a82b43b3faed272e99caff18ff8799fc8daaf3fb6fe535bd",
+  "all30ChildRowsVerified": true,
+  "git": {
+    "head": "d5133455c3dffba7d2d3f2465f75b82532ebcd3d",
+    "branch": "codex/t14-t18-closeout-20261104",
+    "indexEmpty": true
+  },
+  "originalPromptPreservedAsPrefix": true,
+  "otherConfigurationPreserved": true,
+  "newScheduleCreated": false,
+  "implementationAdmitted": false,
+  "guardRefreshApproved": false,
+  "formalCases": "THREE_NOT_RUN",
+  "next": "Continue in destination chat; original triple DESIGN reports pending; prior root64 is inherited attribution only."
+}

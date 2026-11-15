@@ -1,0 +1,558 @@
+{
+  "schema": 1,
+  "scope": "Exact-byte selected text exports. FILES.json excludes itself, STATUS and package README to avoid recursive hashing. Full85 frozen text remains in inherited2026-11-12 package.",
+  "files": [
+    {
+      "source": "work/t14-t18-session-transfer-20261114/child-dispatch.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/child-dispatch.json",
+      "bytes": 359,
+      "sha256": "d90efec540f80c31771e47adf736fce3123816642d70e60999d400a5ac4a2a13"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/child-migration-confirmation.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/child-migration-confirmation.json",
+      "bytes": 3558,
+      "sha256": "cfd2a629511d0db527df52b33b0b6436d76bb8b76dd8c34b987c3ed926ba4905"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/child-readback.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/child-readback.json",
+      "bytes": 20306,
+      "sha256": "d86eeb8e2a0e514e95b3499ec37daeee1e5979c71db20f4cb79e6c985f16a2d5"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/current-state.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/current-state.json",
+      "bytes": 6574,
+      "sha256": "6b09447aafafe0c341288d6a9afa4a6e01219b8f1672fce6a1d3351f4996d05f"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/migration-readback.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/migration-readback.json",
+      "bytes": 1268,
+      "sha256": "975f4eda93b0572a0133082d2c61a24dba3a88466c10cb5d972ccfe91fd7b62b"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/original-parent-resume-dispatch-v1.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/original-parent-resume-dispatch-v1.json",
+      "bytes": 1208,
+      "sha256": "67ce906c4741e793a48e384297d5aa8dfffbd2b532173b25fd94a81caf1a8bd6"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/original-parent-resume-dispatch-v2.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/original-parent-resume-dispatch-v2.json",
+      "bytes": 762,
+      "sha256": "b3d2cdf76ad66d7c05450e9d1c5fa26d98dfc1e887ca1b15b2bc9b9484b9c528"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/original-parent-resume-result-v1.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/original-parent-resume-result-v1.json",
+      "bytes": 1811,
+      "sha256": "2c56a18bac27dfb3e790bca1b94c9f50cd1fa53b1f56d8b1040f43b2fc1354f5"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/original-reviewers-resume-receipt-v1.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/original-reviewers-resume-receipt-v1.json",
+      "bytes": 1962,
+      "sha256": "9ee507f746b9b57aeb5a15de6f5175c5c82041db177cb7d88d8fdeb4a06db712"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/parent-child-validation.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/parent-child-validation.json",
+      "bytes": 455,
+      "sha256": "d966b549ccdbfceee32f8aae8e49f02afc75d958b3cc6dbcfa318dd08f8f86b4"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/snapshots/00-SESSION-HANDOFF-2026-11-14-TRANSFER-T14-T18.md",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/snapshots/00-SESSION-HANDOFF-2026-11-14-TRANSFER-T14-T18.md",
+      "bytes": 4886,
+      "sha256": "0a70e7df9387f5d69762a6c5f2a0e7bac1549e8c2af0d25b6a7b8abb91eac2fa"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/snapshots/01-current-checkpoint-v17.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/snapshots/01-current-checkpoint-v17.json",
+      "bytes": 19920,
+      "sha256": "7480235698a94b637c821799ae7d4013443fa28fc12ec49983a37cdbb3a1fd1c"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/snapshots/02-root-independent-read-progress-v11.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/snapshots/02-root-independent-read-progress-v11.json",
+      "bytes": 157851,
+      "sha256": "49d06ea54517202aeb53fcbe30389072fa720108489bd7e94838370ea4d52c1c"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/snapshots/03-ROOT-READING-JOURNAL-20261112-v1.md",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/snapshots/03-ROOT-READING-JOURNAL-20261112-v1.md",
+      "bytes": 1895,
+      "sha256": "2847e3cb030315ec623588e801a0d482436ef213300acec69881c2252de90a7d"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/snapshots/04-design-manifest-v1.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/snapshots/04-design-manifest-v1.json",
+      "bytes": 30214,
+      "sha256": "e73e6c48bd2a7ea31742aef7ad4b1744e6f28dbed799c39b28b25a3f9079b93a"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/snapshots/05-design-review-CODE-progress-v10.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/snapshots/05-design-review-CODE-progress-v10.json",
+      "bytes": 90656,
+      "sha256": "1adef648232cda736def5646d7c0c63c4cfb993ce15d7f601fc8aacb281bb128"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/snapshots/06-design-review-Python-progress-v6.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/snapshots/06-design-review-Python-progress-v6.json",
+      "bytes": 71698,
+      "sha256": "30c2148bb69996da155da3f36d5595311f541e6f94e2fa6a1668f459b22c5b9a"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/snapshots/07-design-review-JSAPI-progress-v13.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/snapshots/07-design-review-JSAPI-progress-v13.json",
+      "bytes": 79319,
+      "sha256": "915170fd02fc43a9af506925aee3a6f3209ae84bd5fea6dca21172119d8aca24"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/snapshots/08-SESSION-HANDOFF-2026-11-06-METADATA-DESIGN-REVIEW.md",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/snapshots/08-SESSION-HANDOFF-2026-11-06-METADATA-DESIGN-REVIEW.md",
+      "bytes": 3422,
+      "sha256": "0a22134dde6f7fd85a6205ada553e2df65d987379cc9fef7d173f35d0d83c329"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/snapshots/09-PROJECT-ASSESSMENT-2026-11-05.md",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/snapshots/09-PROJECT-ASSESSMENT-2026-11-05.md",
+      "bytes": 11805,
+      "sha256": "922a2439c6fb13f86f6bca4289f673ccc3581435423358d9a47f8e0ae2bdb54c"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/snapshots/10-ASSESSMENT.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/snapshots/10-ASSESSMENT.json",
+      "bytes": 17288,
+      "sha256": "531d43cf61d36dd768fa78a81a4951d2a8df9e9b776a603cca077d5b63e17ab5"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/snapshots/11-METADATA-CONTROLS-CROSSWALK-2026-11-05.md",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/snapshots/11-METADATA-CONTROLS-CROSSWALK-2026-11-05.md",
+      "bytes": 5600,
+      "sha256": "7870cb6f94937d493c228af1d24ada0a4f8b0784602806955e10d5952fe2b951"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/snapshots/12-METADATA-CROSSWALK.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/snapshots/12-METADATA-CROSSWALK.json",
+      "bytes": 9887,
+      "sha256": "ff7570e2ec7dfa81c4770235c6f4c8a8856ad4d4797b4a060913402dd8f11034"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/snapshots/13-current-checkpoint.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/snapshots/13-current-checkpoint.json",
+      "bytes": 57977,
+      "sha256": "07044bf45ebb5fdbe42afbebc9e9ade4cba03fd5c385f21af7f987f91de05ff8"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/snapshots/14-child-readback.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/snapshots/14-child-readback.json",
+      "bytes": 30623,
+      "sha256": "3f68c3fc88f19fcc6828a44bfe5a05cd1823a4bb2ae1296cdc1d3ad6f36aba1e"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/snapshots/15-migration-readback.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/snapshots/15-migration-readback.json",
+      "bytes": 1064,
+      "sha256": "b3dd720fa15ce81b5b9f7268570eeb7f3eae8e80b6ba7d899ae1183340abd488"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/snapshots/16-push-receipt.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/snapshots/16-push-receipt.json",
+      "bytes": 1663,
+      "sha256": "9ddc07921f1733f8a39204a9117e339d3e065334a413e18e733592efc3f66524"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/snapshots/17-AUTONOMOUS-EXECUTION-T14-T18-2026-10-11.md",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/snapshots/17-AUTONOMOUS-EXECUTION-T14-T18-2026-10-11.md",
+      "bytes": 4420,
+      "sha256": "ca5cc725d177366fa3593f1eb3cc47dede4c183435ce2e0a7fb17cc21b862f52"
+    },
+    {
+      "source": "work/t14-t18-session-transfer-20261114/stalled-review-diagnosis-v1.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/transfer/stalled-review-diagnosis-v1.json",
+      "bytes": 3618,
+      "sha256": "43c2bead0344ab11c19af3f3d930ed9cfa32fa40cf2e9f3c500584008a9936df"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/current-checkpoint-v13.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/current-checkpoint-v13.json",
+      "bytes": 10526,
+      "sha256": "071aebdaa1d6f2b7fb9f06979d5b1c97f251b2b89e240b42ab76ca861aa67c68"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/current-checkpoint-v14.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/current-checkpoint-v14.json",
+      "bytes": 11028,
+      "sha256": "d200e9d21b25dc8038bffea88510c6cee834dae7542a2f479cdca22c6538dee7"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/current-checkpoint-v15.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/current-checkpoint-v15.json",
+      "bytes": 10347,
+      "sha256": "e5921de54694e7f8a13351fd0d79342173702abfd928361d0cd2a864efb449fa"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/current-checkpoint-v16.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/current-checkpoint-v16.json",
+      "bytes": 14596,
+      "sha256": "d27e0f384ada8ec79b0dc132a1f169640f97f318cf61c5c6ed10bf4bdaed26ec"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/current-checkpoint-v17.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/current-checkpoint-v17.json",
+      "bytes": 19920,
+      "sha256": "7480235698a94b637c821799ae7d4013443fa28fc12ec49983a37cdbb3a1fd1c"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/current-checkpoint-v18.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/current-checkpoint-v18.json",
+      "bytes": 38009,
+      "sha256": "f27d5685a7eb3fa4ac481e08dee2903765499c7d61e5dd64e5e56ee69029d710"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-CODE-progress-v11.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-CODE-progress-v11.json",
+      "bytes": 91559,
+      "sha256": "136b4800f716f8b5a76e123b39f5634bfcd86f076232c4f8114da5119e88db7c"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-CODE-progress-v12.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-CODE-progress-v12.json",
+      "bytes": 91678,
+      "sha256": "5451e5f694673a1570c11ea10a8ed124219a019894ce6330330963d3cfa89899"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-CODE-progress-v13.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-CODE-progress-v13.json",
+      "bytes": 91802,
+      "sha256": "137c787d19d84eb9a59f2b715db5568f7d69ef24c0270502758ac54d6dec333f"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-CODE-progress-v14.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-CODE-progress-v14.json",
+      "bytes": 92113,
+      "sha256": "168acbfe22fa3a29f597faf6f26d92e52b142d210a993955b7e6dd6572be0347"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-CODE-progress-v15.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-CODE-progress-v15.json",
+      "bytes": 92289,
+      "sha256": "0e4c265cab59cf91b2c760dfe1e5e2e1564ac6c93330b62e139c18446453a960"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-CODE-progress-v16.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-CODE-progress-v16.json",
+      "bytes": 92661,
+      "sha256": "465fc1422c6bc0fbcba3c382dee6869a0761f18892eb9e562ea68119b0696d5a"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-CODE-progress-v17.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-CODE-progress-v17.json",
+      "bytes": 92832,
+      "sha256": "d11e23d9659565a2d335e7f2c82df0b7bda7771a34e7d261671cf3430abbf12a"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-CODE-progress-v18.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-CODE-progress-v18.json",
+      "bytes": 93182,
+      "sha256": "b4b4c89782eb9b03f2ce3a2362ec3fe072e155ea30f0d81cc43c55fae7640fc6"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-CODE-progress-v19.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-CODE-progress-v19.json",
+      "bytes": 93391,
+      "sha256": "d2cc6f7aeded1479a26f59e15a7ceb3d3bf1ce7099855c0532238464648e2017"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-CODE-progress-v20.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-CODE-progress-v20.json",
+      "bytes": 93617,
+      "sha256": "07c892dcbae16789946a4dda13f875a65cac56c791a60284f29e2a8dfe432226"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-CODE-progress-v21.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-CODE-progress-v21.json",
+      "bytes": 93848,
+      "sha256": "dab168596e3f11b4bd06deda093764fae59564debb3b17957bd1457954e27888"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-CODE-progress-v22.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-CODE-progress-v22.json",
+      "bytes": 94128,
+      "sha256": "1568772fbd76dc38eb6cc2a6b432398bd56f8627bb1892220b58e3b480a12011"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-CODE-progress-v23.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-CODE-progress-v23.json",
+      "bytes": 94201,
+      "sha256": "68b8ced157210bbe9fbe803686d7a30bbe214ca19f860b78a30aadfc7fa7ecb9"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v14.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v14.json",
+      "bytes": 79531,
+      "sha256": "fdbd16e57607edb75ad6a6046c6f22104593fdef31ff3dd3306822fd7ec8ee82"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v15.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v15.json",
+      "bytes": 79468,
+      "sha256": "250246435788f2633aa61d6aa897ffb09bc3205980ef5c2e3ef04c6669056f35"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v16.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v16.json",
+      "bytes": 79805,
+      "sha256": "52f45cda5148e57e76b26652170a2eb65b0f99059eed60cb847afe58e27479d5"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v17.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v17.json",
+      "bytes": 80325,
+      "sha256": "f209af413d8d611bc82cdc4bca2e3035fb4c9dbc1e054c52eef61b8875f1da73"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v18.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v18.json",
+      "bytes": 80761,
+      "sha256": "7772f29f2d8de25475c89c4aab3a974df0899a61ff2dfb992c48493e95bae6af"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v19.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v19.json",
+      "bytes": 80879,
+      "sha256": "3891af453190368f525b724ea2e3613db7f98a68b5ec6515b2d6e8ddf8e429c3"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v20.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v20.json",
+      "bytes": 81166,
+      "sha256": "be120909823faf783bf5ba68c14ef254a36f1deee8c037e28570be3dd49ce9d5"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v21.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v21.json",
+      "bytes": 81409,
+      "sha256": "cae1f8a72181b5da73c9695da9d7855a6b8491e3951c467798e6b6ce7acffdcf"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v22.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v22.json",
+      "bytes": 81637,
+      "sha256": "f3584ad2ca4b15e9810000a3180bf3bd2746eddbb0e6b57396d77b751f4b381f"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v23.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v23.json",
+      "bytes": 81858,
+      "sha256": "fe91e5f3e93bd1de0a3f2888e984165f4b6f2b198e32ac41ffd0578ad7b88d5a"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v24.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v24.json",
+      "bytes": 82187,
+      "sha256": "123d5f0c8c794b46563c95f7c02560aee123c0193845e3f1b34b3cd2f79fbced"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v25.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v25.json",
+      "bytes": 82273,
+      "sha256": "eb8092015fb01c1fbf7472a777c2b917d400f334d9c784692e287d13be9f2e8b"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v26.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v26.json",
+      "bytes": 82494,
+      "sha256": "7b6a49092c4761b3c589c836c73eaa7175fdd393f0b257f82028e5d4a9f8cd67"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v27.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v27.json",
+      "bytes": 82717,
+      "sha256": "3c9a87d6bb09b13c514e2d2dbb347a8c6103b80813714c696686745c062b7017"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v28.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v28.json",
+      "bytes": 82940,
+      "sha256": "0134a9c801b6bd29e94338149e7b4c764c3991333be599f0c44d16ec95ad4241"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v29.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v29.json",
+      "bytes": 83163,
+      "sha256": "d9320e85ac7f63579608e7d962f09b65d69d3ae9a6053087d9356b73a5680203"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v30.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v30.json",
+      "bytes": 83336,
+      "sha256": "20bca217635d7de75073aa1806ab90594be2646cf802aef41f6dfc81bd1edd08"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v31.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v31.json",
+      "bytes": 83400,
+      "sha256": "4c11a82be7d11a191382dbe44b3a09941493ca533d0bc9be57835cc606b3788b"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v32.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v32.json",
+      "bytes": 83581,
+      "sha256": "11d0fed3d86d4b4f27cb8c4d108a8f62a5f9526c4cb2ca97b80085e52fe4c853"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v33.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v33.json",
+      "bytes": 83570,
+      "sha256": "afec67b5f5d7fda9fb4a2e2dfb97358fbf1682297b15c8b6a199b9ea3af7be90"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v34.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v34.json",
+      "bytes": 83573,
+      "sha256": "3313c37f360602f68abcb6b4d90c3db53a98328720d7b6a643749c59560f5c21"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v35.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v35.json",
+      "bytes": 83573,
+      "sha256": "69050164e09fbe4f238f36463192cff2f91b300f34211b75235508c3d18c9763"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v36.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v36.json",
+      "bytes": 83573,
+      "sha256": "8de11caf8cf9f77b0c444af0b739832a38676d6d044385f047bda86c6ad80413"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v37.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v37.json",
+      "bytes": 83575,
+      "sha256": "b5f00e8de51c6640d3ea59ac4860261acf34e220edb1a35bfb533f718855e676"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v38.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v38.json",
+      "bytes": 83575,
+      "sha256": "9eb9b9f4407b0c7bfdab988551b30624feb2c380b401f0e36fb66a7f0ae9ae76"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v39.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v39.json",
+      "bytes": 83809,
+      "sha256": "359a1da9c0c396ae72919f27bd1755d9f0c119c4b0cbefd9f72b1f1a7d43d458"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v40.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-progress-v40.json",
+      "bytes": 83503,
+      "sha256": "7a9701e8b43780ae30d97509a0e3b48579674df22c2964183c50c8721bba0b8b"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-Python-progress-v10.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-Python-progress-v10.json",
+      "bytes": 73048,
+      "sha256": "f80571f47e6d8173dc0be3b8e278a00aef0dc3d6838fd9cdc6a0741aced34aef"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-Python-progress-v11.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-Python-progress-v11.json",
+      "bytes": 73513,
+      "sha256": "5322cb29d2ac2c9465b35923270e5bf128e3d86fa23e783d354ae63596021f6f"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-Python-progress-v7.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-Python-progress-v7.json",
+      "bytes": 71946,
+      "sha256": "a0f6fbc753e28f1173a9b077541ae519c271245c57b3e33e0e8fa92f944da70c"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-Python-progress-v8.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-Python-progress-v8.json",
+      "bytes": 71962,
+      "sha256": "fedbd0756c0637a344c1d689118ef42d1faa5178b342b1fbfdd5a700808669e0"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-Python-progress-v9.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-Python-progress-v9.json",
+      "bytes": 72969,
+      "sha256": "353f2e3dda08148d4012fe3a3d4bb909e3ee4738437af9460495e69683e62fb4"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/root-independent-read-progress-v10.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/root-independent-read-progress-v10.json",
+      "bytes": 152429,
+      "sha256": "74e01463def45b3937236c830e0cde3603ee0cd0d377d3773dfd8760b4dd44d7"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/root-independent-read-progress-v11.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/root-independent-read-progress-v11.json",
+      "bytes": 157851,
+      "sha256": "49d06ea54517202aeb53fcbe30389072fa720108489bd7e94838370ea4d52c1c"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/root-independent-read-progress-v7.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/root-independent-read-progress-v7.json",
+      "bytes": 97855,
+      "sha256": "a57b11c605f753919c5493fb9e5f62517847c5373bf7157908796fe1f6a441e6"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/root-independent-read-progress-v8.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/root-independent-read-progress-v8.json",
+      "bytes": 104923,
+      "sha256": "36fe26acfb6a19f02721a97cd4efd5c2f84efcd4c1e21bb313a6fc5f1aaa6d2b"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/root-independent-read-progress-v9.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/root-independent-read-progress-v9.json",
+      "bytes": 110001,
+      "sha256": "155fdd079f495ae42b6e584d3586353d5bc625254ff73c6b9163ef5b6fea84f5"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-manifest-v1.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-manifest-v1.json",
+      "bytes": 30214,
+      "sha256": "e73e6c48bd2a7ea31742aef7ad4b1744e6f28dbed799c39b28b25a3f9079b93a"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/ROOT-READING-JOURNAL-20261112-v1.md",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/ROOT-READING-JOURNAL-20261112-v1.md",
+      "bytes": 1895,
+      "sha256": "2847e3cb030315ec623588e801a0d482436ef213300acec69881c2252de90a7d"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-Python-v1.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-Python-v1.json",
+      "bytes": 90862,
+      "sha256": "fa715b9570b57f9be85316713f43360056498025f6445c3666b5fcf7b7b60b40"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-Python-v1.md",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-Python-v1.md",
+      "bytes": 16142,
+      "sha256": "801412bbbcb4dd9c656f43ac2bc1f151b1772ed402e1311afcff5d8e979cc7e4"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-v1.json",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-v1.json",
+      "bytes": 106800,
+      "sha256": "03e0df2234dc78683c759adea10744c4b25947cdc22e0988b685010cf4abccca"
+    },
+    {
+      "source": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-v1.md",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/metadata/design-review-JSAPI-v1.md",
+      "bytes": 36497,
+      "sha256": "5b01fc6a00a2b4ae6e515eb85843ca38cae84c226c8dd82994e0a6eee37171b1"
+    },
+    {
+      "source": "docs/empire-rts/SESSION-HANDOFF-2026-11-14-TRANSFER-T14-T18.md",
+      "exported": "docs/empire-rts/handoff-data/2026-11-15/SESSION-HANDOFF-2026-11-14-TRANSFER-T14-T18.md",
+      "bytes": 4886,
+      "sha256": "0a70e7df9387f5d69762a6c5f2a0e7bac1549e8c2af0d25b6a7b8abb91eac2fa"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "createdUTC": "2026-11-14T03:05:16.051912+00:00",
+  "status": "MATCH",
+  "childReadbackSHA256": "d86eeb8e2a0e514e95b3499ec37daeee1e5979c71db20f4cb79e6c985f16a2d5",
+  "childThread": "01a1d802-8dc0-7b70-9bdc-f3c2f963d8f0",
+  "verifiedChecks": 36,
+  "originalSnapshotPairsReverifiedByParent": 18,
+  "childTurnCompletedObserved": true,
+  "allThreeDesignApproved": false,
+  "implementationAdmitted": false,
+  "guardRefreshApproved": false
+}

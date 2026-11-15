@@ -1,0 +1,288 @@
+{
+  "schema": 1,
+  "createdUTC": "2026-11-12T09:20:40.735212+00:00",
+  "childThread": "01a1cf0e-d06d-7750-9e95-e1189d33c1a2",
+  "parentThread": "01a1c8d0-ce47-7a13-8800-a59b935f0ce0",
+  "anchorPath": "work/t14-t18-session-transfer-20261112/current-state.json",
+  "anchorSHA256": "ad73fa9b88a98db7a82b43b3faed272e99caff18ff8799fc8daaf3fb6fe535bd",
+  "checks": [
+    {
+      "role": "original",
+      "path": "docs/empire-rts/SESSION-HANDOFF-2026-11-12-TRANSFER-T14-T18.md",
+      "bytes": 3644,
+      "sha256": "123215b82063d7b0a86acbe727b2c66ba198ddea7c72dcbcde01cb38d5125fc4",
+      "expectedBytes": 3644,
+      "expectedSHA256": "123215b82063d7b0a86acbe727b2c66ba198ddea7c72dcbcde01cb38d5125fc4",
+      "status": "MATCH"
+    },
+    {
+      "role": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261112/snapshots/00-SESSION-HANDOFF-2026-11-12-TRANSFER-T14-T18.md",
+      "bytes": 3644,
+      "sha256": "123215b82063d7b0a86acbe727b2c66ba198ddea7c72dcbcde01cb38d5125fc4",
+      "expectedBytes": 3644,
+      "expectedSHA256": "123215b82063d7b0a86acbe727b2c66ba198ddea7c72dcbcde01cb38d5125fc4",
+      "status": "MATCH"
+    },
+    {
+      "role": "original",
+      "path": "work/t17-metadata-controls-design-20261105/current-checkpoint-v11.json",
+      "bytes": 7343,
+      "sha256": "f736ca24ab2eb63c683afd1c88328abdf628ddd2ca09e2afb1d398a52d4575de",
+      "expectedBytes": 7343,
+      "expectedSHA256": "f736ca24ab2eb63c683afd1c88328abdf628ddd2ca09e2afb1d398a52d4575de",
+      "status": "MATCH"
+    },
+    {
+      "role": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261112/snapshots/01-current-checkpoint-v11.json",
+      "bytes": 7343,
+      "sha256": "f736ca24ab2eb63c683afd1c88328abdf628ddd2ca09e2afb1d398a52d4575de",
+      "expectedBytes": 7343,
+      "expectedSHA256": "f736ca24ab2eb63c683afd1c88328abdf628ddd2ca09e2afb1d398a52d4575de",
+      "status": "MATCH"
+    },
+    {
+      "role": "original",
+      "path": "work/t17-metadata-controls-design-20261105/root-independent-read-progress-v5.json",
+      "bytes": 63249,
+      "sha256": "a11a7514d2444a9d316dc19dea926974739c0a6c2644e15fbbcb02594cd9937e",
+      "expectedBytes": 63249,
+      "expectedSHA256": "a11a7514d2444a9d316dc19dea926974739c0a6c2644e15fbbcb02594cd9937e",
+      "status": "MATCH"
+    },
+    {
+      "role": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261112/snapshots/02-root-independent-read-progress-v5.json",
+      "bytes": 63249,
+      "sha256": "a11a7514d2444a9d316dc19dea926974739c0a6c2644e15fbbcb02594cd9937e",
+      "expectedBytes": 63249,
+      "expectedSHA256": "a11a7514d2444a9d316dc19dea926974739c0a6c2644e15fbbcb02594cd9937e",
+      "status": "MATCH"
+    },
+    {
+      "role": "original",
+      "path": "work/t17-metadata-controls-design-20261105/design-manifest-v1.json",
+      "bytes": 30214,
+      "sha256": "e73e6c48bd2a7ea31742aef7ad4b1744e6f28dbed799c39b28b25a3f9079b93a",
+      "expectedBytes": 30214,
+      "expectedSHA256": "e73e6c48bd2a7ea31742aef7ad4b1744e6f28dbed799c39b28b25a3f9079b93a",
+      "status": "MATCH"
+    },
+    {
+      "role": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261112/snapshots/03-design-manifest-v1.json",
+      "bytes": 30214,
+      "sha256": "e73e6c48bd2a7ea31742aef7ad4b1744e6f28dbed799c39b28b25a3f9079b93a",
+      "expectedBytes": 30214,
+      "expectedSHA256": "e73e6c48bd2a7ea31742aef7ad4b1744e6f28dbed799c39b28b25a3f9079b93a",
+      "status": "MATCH"
+    },
+    {
+      "role": "original",
+      "path": "work/t17-metadata-controls-design-20261105/design-review-CODE-progress-v10.json",
+      "bytes": 90656,
+      "sha256": "1adef648232cda736def5646d7c0c63c4cfb993ce15d7f601fc8aacb281bb128",
+      "expectedBytes": 90656,
+      "expectedSHA256": "1adef648232cda736def5646d7c0c63c4cfb993ce15d7f601fc8aacb281bb128",
+      "status": "MATCH"
+    },
+    {
+      "role": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261112/snapshots/04-design-review-CODE-progress-v10.json",
+      "bytes": 90656,
+      "sha256": "1adef648232cda736def5646d7c0c63c4cfb993ce15d7f601fc8aacb281bb128",
+      "expectedBytes": 90656,
+      "expectedSHA256": "1adef648232cda736def5646d7c0c63c4cfb993ce15d7f601fc8aacb281bb128",
+      "status": "MATCH"
+    },
+    {
+      "role": "original",
+      "path": "work/t17-metadata-controls-design-20261105/design-review-Python-progress-v6.json",
+      "bytes": 71698,
+      "sha256": "30c2148bb69996da155da3f36d5595311f541e6f94e2fa6a1668f459b22c5b9a",
+      "expectedBytes": 71698,
+      "expectedSHA256": "30c2148bb69996da155da3f36d5595311f541e6f94e2fa6a1668f459b22c5b9a",
+      "status": "MATCH"
+    },
+    {
+      "role": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261112/snapshots/05-design-review-Python-progress-v6.json",
+      "bytes": 71698,
+      "sha256": "30c2148bb69996da155da3f36d5595311f541e6f94e2fa6a1668f459b22c5b9a",
+      "expectedBytes": 71698,
+      "expectedSHA256": "30c2148bb69996da155da3f36d5595311f541e6f94e2fa6a1668f459b22c5b9a",
+      "status": "MATCH"
+    },
+    {
+      "role": "original",
+      "path": "work/t17-metadata-controls-design-20261105/design-review-JSAPI-progress-v13.json",
+      "bytes": 79319,
+      "sha256": "915170fd02fc43a9af506925aee3a6f3209ae84bd5fea6dca21172119d8aca24",
+      "expectedBytes": 79319,
+      "expectedSHA256": "915170fd02fc43a9af506925aee3a6f3209ae84bd5fea6dca21172119d8aca24",
+      "status": "MATCH"
+    },
+    {
+      "role": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261112/snapshots/06-design-review-JSAPI-progress-v13.json",
+      "bytes": 79319,
+      "sha256": "915170fd02fc43a9af506925aee3a6f3209ae84bd5fea6dca21172119d8aca24",
+      "expectedBytes": 79319,
+      "expectedSHA256": "915170fd02fc43a9af506925aee3a6f3209ae84bd5fea6dca21172119d8aca24",
+      "status": "MATCH"
+    },
+    {
+      "role": "original",
+      "path": "docs/empire-rts/SESSION-HANDOFF-2026-11-06-METADATA-DESIGN-REVIEW.md",
+      "bytes": 3422,
+      "sha256": "0a22134dde6f7fd85a6205ada553e2df65d987379cc9fef7d173f35d0d83c329",
+      "expectedBytes": 3422,
+      "expectedSHA256": "0a22134dde6f7fd85a6205ada553e2df65d987379cc9fef7d173f35d0d83c329",
+      "status": "MATCH"
+    },
+    {
+      "role": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261112/snapshots/07-SESSION-HANDOFF-2026-11-06-METADATA-DESIGN-REVIEW.md",
+      "bytes": 3422,
+      "sha256": "0a22134dde6f7fd85a6205ada553e2df65d987379cc9fef7d173f35d0d83c329",
+      "expectedBytes": 3422,
+      "expectedSHA256": "0a22134dde6f7fd85a6205ada553e2df65d987379cc9fef7d173f35d0d83c329",
+      "status": "MATCH"
+    },
+    {
+      "role": "original",
+      "path": "docs/empire-rts/PROJECT-ASSESSMENT-2026-11-05.md",
+      "bytes": 11805,
+      "sha256": "922a2439c6fb13f86f6bca4289f673ccc3581435423358d9a47f8e0ae2bdb54c",
+      "expectedBytes": 11805,
+      "expectedSHA256": "922a2439c6fb13f86f6bca4289f673ccc3581435423358d9a47f8e0ae2bdb54c",
+      "status": "MATCH"
+    },
+    {
+      "role": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261112/snapshots/08-PROJECT-ASSESSMENT-2026-11-05.md",
+      "bytes": 11805,
+      "sha256": "922a2439c6fb13f86f6bca4289f673ccc3581435423358d9a47f8e0ae2bdb54c",
+      "expectedBytes": 11805,
+      "expectedSHA256": "922a2439c6fb13f86f6bca4289f673ccc3581435423358d9a47f8e0ae2bdb54c",
+      "status": "MATCH"
+    },
+    {
+      "role": "original",
+      "path": "docs/empire-rts/METADATA-CONTROLS-CROSSWALK-2026-11-05.md",
+      "bytes": 5600,
+      "sha256": "7870cb6f94937d493c228af1d24ada0a4f8b0784602806955e10d5952fe2b951",
+      "expectedBytes": 5600,
+      "expectedSHA256": "7870cb6f94937d493c228af1d24ada0a4f8b0784602806955e10d5952fe2b951",
+      "status": "MATCH"
+    },
+    {
+      "role": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261112/snapshots/09-METADATA-CONTROLS-CROSSWALK-2026-11-05.md",
+      "bytes": 5600,
+      "sha256": "7870cb6f94937d493c228af1d24ada0a4f8b0784602806955e10d5952fe2b951",
+      "expectedBytes": 5600,
+      "expectedSHA256": "7870cb6f94937d493c228af1d24ada0a4f8b0784602806955e10d5952fe2b951",
+      "status": "MATCH"
+    },
+    {
+      "role": "original",
+      "path": "work/t14-t18-assessment-20261105/current-checkpoint.json",
+      "bytes": 2684,
+      "sha256": "fd66f1d187fb04ec71a497788193fc3e6826ef6a2bc1f3a98d5d33707957b19a",
+      "expectedBytes": 2684,
+      "expectedSHA256": "fd66f1d187fb04ec71a497788193fc3e6826ef6a2bc1f3a98d5d33707957b19a",
+      "status": "MATCH"
+    },
+    {
+      "role": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261112/snapshots/10-current-checkpoint.json",
+      "bytes": 2684,
+      "sha256": "fd66f1d187fb04ec71a497788193fc3e6826ef6a2bc1f3a98d5d33707957b19a",
+      "expectedBytes": 2684,
+      "expectedSHA256": "fd66f1d187fb04ec71a497788193fc3e6826ef6a2bc1f3a98d5d33707957b19a",
+      "status": "MATCH"
+    },
+    {
+      "role": "original",
+      "path": "work/t14-t18-session-transfer-20261026/current-checkpoint.json",
+      "bytes": 57977,
+      "sha256": "07044bf45ebb5fdbe42afbebc9e9ade4cba03fd5c385f21af7f987f91de05ff8",
+      "expectedBytes": 57977,
+      "expectedSHA256": "07044bf45ebb5fdbe42afbebc9e9ade4cba03fd5c385f21af7f987f91de05ff8",
+      "status": "MATCH"
+    },
+    {
+      "role": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261112/snapshots/11-current-checkpoint.json",
+      "bytes": 57977,
+      "sha256": "07044bf45ebb5fdbe42afbebc9e9ade4cba03fd5c385f21af7f987f91de05ff8",
+      "expectedBytes": 57977,
+      "expectedSHA256": "07044bf45ebb5fdbe42afbebc9e9ade4cba03fd5c385f21af7f987f91de05ff8",
+      "status": "MATCH"
+    },
+    {
+      "role": "original",
+      "path": "work/t17-metadata-controls-design-20261105/DESIGN-v1.md",
+      "bytes": 14580,
+      "sha256": "d190ebf684348feba069fed69f8a92587fda378bc1fd7a9a5391c8867e1b1284",
+      "expectedBytes": 14580,
+      "expectedSHA256": "d190ebf684348feba069fed69f8a92587fda378bc1fd7a9a5391c8867e1b1284",
+      "status": "MATCH"
+    },
+    {
+      "role": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261112/snapshots/12-DESIGN-v1.md",
+      "bytes": 14580,
+      "sha256": "d190ebf684348feba069fed69f8a92587fda378bc1fd7a9a5391c8867e1b1284",
+      "expectedBytes": 14580,
+      "expectedSHA256": "d190ebf684348feba069fed69f8a92587fda378bc1fd7a9a5391c8867e1b1284",
+      "status": "MATCH"
+    },
+    {
+      "role": "original",
+      "path": "work/t17-metadata-controls-design-20261105/RAW-STAGE-v1.json",
+      "bytes": 2266,
+      "sha256": "b641b520ab8ebb5a3273a63947edc776c3c671c21896152caefeaba6c71e9681",
+      "expectedBytes": 2266,
+      "expectedSHA256": "b641b520ab8ebb5a3273a63947edc776c3c671c21896152caefeaba6c71e9681",
+      "status": "MATCH"
+    },
+    {
+      "role": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261112/snapshots/13-RAW-STAGE-v1.json",
+      "bytes": 2266,
+      "sha256": "b641b520ab8ebb5a3273a63947edc776c3c671c21896152caefeaba6c71e9681",
+      "expectedBytes": 2266,
+      "expectedSHA256": "b641b520ab8ebb5a3273a63947edc776c3c671c21896152caefeaba6c71e9681",
+      "status": "MATCH"
+    },
+    {
+      "role": "original",
+      "path": "work/t17-metadata-controls-design-20261105/FUTURE-TEST-PLAN-v1.json",
+      "bytes": 1401,
+      "sha256": "20374b2ee6154a67386f35f16874c90ce5da355732abdb96ee0e505f18121608",
+      "expectedBytes": 1401,
+      "expectedSHA256": "20374b2ee6154a67386f35f16874c90ce5da355732abdb96ee0e505f18121608",
+      "status": "MATCH"
+    },
+    {
+      "role": "snapshot",
+      "path": "work/t14-t18-session-transfer-20261112/snapshots/14-FUTURE-TEST-PLAN-v1.json",
+      "bytes": 1401,
+      "sha256": "20374b2ee6154a67386f35f16874c90ce5da355732abdb96ee0e505f18121608",
+      "expectedBytes": 1401,
+      "expectedSHA256": "20374b2ee6154a67386f35f16874c90ce5da355732abdb96ee0e505f18121608",
+      "status": "MATCH"
+    }
+  ],
+  "git": {
+    "head": "d5133455c3dffba7d2d3f2465f75b82532ebcd3d",
+    "branch": "codex/t14-t18-closeout-20261104",
+    "indexEmpty": true,
+    "statusPorcelain": "M README.md\n M docs/empire-rts/journal.md\n M docs/empire-rts/plan.md\n M docs/empire-rts/progress.md\n M docs/empire-rts/reference_t14_t18_next_steps.md\n?? docs/empire-rts/METADATA-CONTROLS-CROSSWALK-2026-11-05.md\n?? docs/empire-rts/PROJECT-ASSESSMENT-2026-11-05.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-11-05-SOURCE-APPROVED-READINESS-STOP.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-11-06-METADATA-DESIGN-REVIEW.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-11-11-TRANSFER-T14-T18.md\n?? docs/empire-rts/SESSION-HANDOFF-2026-11-12-TRANSFER-T14-T18.md\n?? docs/empire-rts/SESSION-RESUME-2026-11-04-CURRENT-T14-T18.md\n?? docs/empire-rts/evidence/t14-600-warmup.png\n?? docs/empire-rts/evidence/t14-aa-results.json\n?? docs/empire-rts/evidence/t14-aa-source-manifest.json\n?? docs/empire-rts/evidence/t14-aa-validation.md\n?? docs/empire-rts/evidence/t14-battle-results.json\n?? docs/empire-rts/evidence/t14-battle-source-manifest.json\n?? docs/empire-rts/evidence/t14-battle-validation.md\n?? docs/empire-rts/evidence/t14-callback-diagnosis-results.json\n?? docs/empire-rts/evidence/t14-callback-diagnosis-source-manifest.json\n?? docs/empire-rts/evidence/t14-callback-diagnosis-validation.md\n?? docs/empire-rts/evidence/t14-canattack-aggregate-assessment-results.json\n?? docs/empire-rts/evidence/t14-canattack-aggregate-assessment-validation.md\n?? docs/empire-rts/evidence/t14-canattack-count-results.json\n?? docs/empire-rts/evidence/t14-canattack-count-validation.md\n?? docs/empire-rts/evidence/t14-canattack-delta-results.json\n?? docs/empire-rts/evidence/t14-canattack-delta-validation.md\n?? docs/empire-rts/evidence/t14-canattack-memory-assessment-results.json\n?? docs/empire-rts/evidence/t14-canattack-memory-assessment-validation.md\n?? docs/empire-rts/evidence/t14-canattack-offline-replay-results.json\n?? docs/empire-rts/evidence/t14-canattack-offline-replay-validation.md\n?? docs/empire-rts/evidence/t14-canattack-profile-results.json\n?? docs/empire-rts/evidence/t14-canattack-profile-source-manifest.json\n?? docs/empire-rts/evidence/t14-canattack-profile-validation.md\n?? docs/empire-rts/evidence/t14-diagnosis-results.json\n?? docs/empire-rts/evidence/t14-diagnosis-source-manifest.json\n?? docs/empire-rts/evidence/t14-diagnosis-validation.md\n?? docs/empire-rts/evidence/t14-dual-results.json\n?? docs/empire-rts/evidence/t14-dual-source-manifest.json\n?? docs/empire-rts/evidence/t14-dual-validation.md\n?? docs/empire-rts/evidence/t14-economy-seed7.png\n?? docs/empire-rts/evidence/t14-fine-profile-results.json\n?? docs/empire-rts/evidence/t14-fine-profile-source-manifest.json\n?? docs/empire-rts/evidence/t14-fine-profile-validation.md\n?? docs/empire-rts/evidence/t14-flight-results.json\n?? docs/empire-rts/evidence/t14-flight-source-manifest.json\n?? docs/empire-rts/evidence/t14-flight-validation.md\n?? docs/empire-rts/evidence/t14-live-integration-gap-assessment-results.json\n?? docs/empire-rts/evidence/t14-live-integration-gap-assessment-validation.md\n?? docs/empire-rts/evidence/t14-live-storage-assessment-results.json\n?? docs/empire-rts/evidence/t14-live-storage-assessment-validation.md\n?? docs/empire-rts/evidence/t14-match-repeatability-results.json\n?? docs/empire-rts/evidence/t14-match-repeatability-source-manifest.json\n?? docs/empire-rts/evidence/t14-match-repeatability-validation.md\n?? docs/empire-rts/evidence/t14-match-results.json\n?? docs/empire-rts/evidence/t14-match-seed7-results.json\n?? docs/empire-rts/evidence/t14-match-seed7-source-manifest.json\n?? docs/empire-rts/evidence/t14-match-seed7-validation.md\n?? docs/empire-rts/evidence/t14-match-source-manifest.json\n?? docs/empire-rts/evidence/t14-match-validation.md\n?? docs/empire-rts/evidence/t14-mixed-diagnosis-results.json\n?? docs/empire-rts/evidence/t14-mixed-diagnosis-timeline.png\n?? docs/empire-rts/evidence/t14-mixed-diagnosis-validation.md\n?? docs/empire-rts/evidence/t14-mixed-profile-attempt1-source-manifest.json\n?? docs/empire-rts/evidence/t14-mixed-profile-results.json\n?? docs/empire-rts/evidence/t14-mixed-profile-source-manifest.json\n?? docs/empire-rts/evidence/t14-mixed-profile-validation.md\n?? docs/empire-rts/evidence/t14-mixed-results.json\n?? docs/empire-rts/evidence/t14-mixed-source-manifest.json\n?? docs/empire-rts/evidence/t14-mixed-validation.md\n?? docs/empire-rts/evidence/t14-query-observability-results.json\n?? docs/empire-rts/evidence/t14-query-observability-source-manifest.json\n?? docs/empire-rts/evidence/t14-query-observability-validation.md\n?? docs/empire-rts/evidence/t14-resistance-diagnosis-results.json\n?? docs/empire-rts/evidence/t14-resistance-diagnosis-source-manifest.json\n?? docs/empire-rts/evidence/t14-resistance-diagnosis-validation.md\n?? docs/empire-rts/evidence/t14-resistance-profile-results.json\n?? docs/empire-rts/evidence/t14-resistance-profile-source-manifest.json\n?? docs/empire-rts/evidence/t14-resistance-profile-validation.md\n?? docs/empire-rts/evidence/t14-results.json\n?? docs/empire-rts/evidence/t14-search-profile-results.json\n?? docs/empire-rts/evidence/t14-search-profile-source-manifest.json\n?? docs/empire-rts/evidence/t14-search-profile-validation.md\n?? docs/empire-rts/evidence/t14-search-trigger-diagnosis-results.json\n?? docs/empire-rts/evidence/t14-search-trigger-diagnosis-source-manifest.json\n?? docs/empire-rts/evidence/t14-search-trigger-diagnosis-validation.md\n?? docs/empire-rts/evidence/t14-sim-diagnosis-results.json\n?? docs/empire-rts/evidence/t14-sim-diagnosis-source-manifest.json\n?? docs/empire-rts/evidence/t14-sim-diagnosis-validation.md\n?? docs/empire-rts/evidence/t14-soak-results.json\n?? docs/empire-rts/evidence/t14-soak-source-manifest.json\n?? docs/empire-rts/evidence/t14-soak-validation.md\n?? docs/empire-rts/evidence/t14-source-manifest.json\n?? docs/empire-rts/evidence/t14-storage-failure-proof-results.json\n?? docs/empire-rts/evidence/t14-storage-failure-proof-validation.md\n?? docs/empire-rts/evidence/t14-storage-parser-integration-results.json\n?? docs/empire-rts/evidence/t14-storage-parser-integration-validation.md\n?? docs/empire-rts/evidence/t14-storage-runner-integration-results.json\n?? docs/empire-rts/evidence/t14-storage-runner-integration-validation.md\n?? docs/empire-rts/evidence/t14-strike-results.json\n?? docs/empire-rts/evidence/t14-strike-source-manifest.json\n?? docs/empire-rts/evidence/t14-strike-validation.md\n?? docs/empire-rts/evidence/t14-validation.md\n?? docs/empire-rts/evidence/t14-workload-results.json\n?? docs/empire-rts/evidence/t14-workload-source-manifest.json\n?? docs/empire-rts/evidence/t14-workload-validation.md\n?? docs/empire-rts/evidence/t15-local-package-validation.md\n?? docs/empire-rts/evidence/t17-controller-native42-validation.md\n?? docs/empire-rts/evidence/t17-owner-gui-native42-validation.md\n?? docs/empire-rts/evidence/t18-output-protocol-native42-validation.md\n?? docs/empire-rts/evidence/t18-parking-native42-validation.md\n?? docs/empire-rts/evidence/t18-precision-gui-native42-validation.md\n?? docs/empire-rts/evidence/t18-precision-native-validation.md\n?? docs/empire-rts/handoff-data/2026-11-05/\n?? docs/empire-rts/t14-aa.md\n?? docs/empire-rts/t14-battle.md\n?? docs/empire-rts/t14-callback-diagnosis.md\n?? docs/empire-rts/t14-canattack-aggregate-assessment.md\n?? docs/empire-rts/t14-canattack-count.md\n?? docs/empire-rts/t14-canattack-delta.md\n?? docs/empire-rts/t14-canattack-memory-assessment.md\n?? docs/empire-rts/t14-canattack-offline-replay.md\n?? docs/empire-rts/t14-canattack-profile.md\n?? docs/empire-rts/t14-diagnosis.md\n?? docs/empire-rts/t14-dual.md\n?? docs/empire-rts/t14-fine-profile.md\n?? docs/empire-rts/t14-flight.md\n?? docs/empire-rts/t14-live-integration-gap-assessment.md\n?? docs/empire-rts/t14-live-storage-assessment.md\n?? docs/empire-rts/t14-match-repeatability.md\n?? docs/empire-rts/t14-match-seed7.md\n?? docs/empire-rts/t14-match.md\n?? docs/empire-rts/t14-mixed-diagnosis.md\n?? docs/empire-rts/t14-mixed-profile.md\n?? docs/empire-rts/t14-mixed.md\n?? docs/empire-rts/t14-performance.md\n?? docs/empire-rts/t14-query-observability.md\n?? docs/empire-rts/t14-resistance-diagnosis.md\n?? docs/empire-rts/t14-resistance-profile.md\n?? docs/empire-rts/t14-search-profile.md\n?? docs/empire-rts/t14-search-trigger-diagnosis.md\n?? docs/empire-rts/t14-sim-diagnosis.md\n?? docs/empire-rts/t14-soak.md\n?? docs/empire-rts/t14-storage-failure-proof.md\n?? docs/empire-rts/t14-storage-parser-integration.md\n?? docs/empire-rts/t14-storage-runner-integration.md\n?? docs/empire-rts/t14-strike.md\n?? docs/empire-rts/t14-workloads.md\n?? docs/empire-rts/t15-candidate-runtime-contract.md\n?? docs/empire-rts/t15-candidate-runtime-native-path-assessment.md\n?? docs/empire-rts/t15-local-package-contract-2026-10-12.md\n?? docs/empire-rts/t15-native-transport-contract.md\n?? docs/empire-rts/t15-native-transport-offline-contract.md\n?? docs/empire-rts/t15-release-preparation.md\n?? docs/empire-rts/t16-attack-check.md\n?? docs/empire-rts/t16-fixture-schedule.md\n?? docs/empire-rts/t16-native-death-contract.md\n?? docs/empire-rts/t16-runtime-applicability.md\n?? docs/empire-rts/t16-runtime-runner.md\n?? docs/empire-rts/t17-save-network-assessment.md\n?? docs/empire-rts/t17-submarine-controller-contract.md\n?? docs/empire-rts/t17-submarine-fixture-contract.md\n?? docs/empire-rts/t17-submarine-runtime-contract.md\n?? docs/empire-rts/t18-native-output-protocol-contract.md\n?? docs/empire-rts/t18-parking-implementation-contract.md\n?? docs/empire-rts/t18-parking-native-fixture-contract.md\n?? docs/empire-rts/t18-parking-native-runtime-contract.md\n?? docs/empire-rts/t18-parking-obstruction-api-assessment.md\n?? docs/empire-rts/t18-precision-fixture-contract.md\n?? docs/empire-rts/t18-precision-gui-contract.md\n?? docs/empire-rts/t18-precision-gui-runtime-contract.md\n?? docs/empire-rts/t18-precision-implementation.md\n?? docs/empire-rts/t18-precision-parking.md\n?? docs/empire-rts/t18-precision-runtime-contract.md\n?? docs/empire-rts/t18-window-capture-contract.md\n?? profile.txt\n?? profile2.jsonp\n?? tools/epoch-rts/t14-aa-harness/\n?? tools/epoch-rts/t14-battle-harness/\n?? tools/epoch-rts/t14-canattack-count-harness/\n?? tools/epoch-rts/t14-canattack-count-macos.py\n?? tools/epoch-rts/t14-canattack-delta-harness/\n?? tools/epoch-rts/t14-canattack-delta-macos.py\n?? tools/epoch-rts/t14-canattack-offline-replay.py\n?? tools/epoch-rts/t14-canattack-profile-harness/\n?? tools/epoch-rts/t14-canattack-profile-macos.py\n?? tools/epoch-rts/t14-dual-harness/\n?? tools/epoch-rts/t14-fine-profile-harness/\n?? tools/epoch-rts/t14-fine-profile-macos.py\n?? tools/epoch-rts/t14-flight-harness/\n?? tools/epoch-rts/t14-harness/\n?? tools/epoch-rts/t14-macos.py\n?? tools/epoch-rts/t14-match-harness/\n?? tools/epoch-rts/t14-mixed-harness/\n?? tools/epoch-rts/t14-mixed-profile-harness/\n?? tools/epoch-rts/t14-profile-macos.py\n?? tools/epoch-rts/t14-resistance-profile-harness/\n?? tools/epoch-rts/t14-resistance-profile-macos.py\n?? tools/epoch-rts/t14-search-profile-harness/\n?? tools/epoch-rts/t14-search-profile-macos.py\n?? tools/epoch-rts/t14-soak-harness/\n?? tools/epoch-rts/t14-storage-failure-proof.py\n?? tools/epoch-rts/t14-storage-parser-integration-proof.py\n?? tools/epoch-rts/t14-storage-runner-integration-proof.py\n?? tools/epoch-rts/t14-storage-runner-integration.py\n?? tools/epoch-rts/t14-strike-harness/\n?? tools/epoch-rts/t14-workload-harness/\n?? tools/epoch-rts/t14_aa.py\n?? tools/epoch-rts/t14_battle.py\n?? tools/epoch-rts/t14_canattack_count.py\n?? tools/epoch-rts/t14_canattack_delta.py\n?? tools/epoch-rts/t14_canattack_offline_replay.py\n?? tools/epoch-rts/t14_canattack_profile.py\n?? tools/epoch-rts/t14_dual.py\n?? tools/epoch-rts/t14_fine_profile.py\n?? tools/epoch-rts/t14_flight.py\n?? tools/epoch-rts/t14_match.py\n?? tools/epoch-rts/t14_mixed.py\n?? tools/epoch-rts/t14_mixed_profile.py\n?? tools/epoch-rts/t14_profile.py\n?? tools/epoch-rts/t14_resistance_profile.py\n?? tools/epoch-rts/t14_search_profile.py\n?? tools/epoch-rts/t14_soak.py\n?? tools/epoch-rts/t14_storage_failure.py\n?? tools/epoch-rts/t14_storage_parser_integration.py\n?? tools/epoch-rts/t14_storage_runner_integration.py\n?? tools/epoch-rts/t14_strike.py\n?? tools/epoch-rts/t14_workload.py\n?? tools/epoch-rts/t15-candidate-runtime.py\n?? tools/epoch-rts/t15-package.py\n?? tools/epoch-rts/t15-runtime-harness/\n?? tools/epoch-rts/t15_candidate_runtime.py\n?? tools/epoch-rts/t15_native_transport.py\n?? tools/epoch-rts/t15_package.py\n?? tools/epoch-rts/t16-harness/\n?? tools/epoch-rts/t16-macos.py\n?? tools/epoch-rts/t16-native-death.py\n?? tools/epoch-rts/t16_native_death.py\n?? tools/epoch-rts/t16_runtime.py\n?? tools/epoch-rts/t17-gui-harness/\n?? tools/epoch-rts/t17-gui-native-harness/\n?? tools/epoch-rts/t17-gui-native.py\n?? tools/epoch-rts/t17-harness/\n?? tools/epoch-rts/t17-save-allocation-witness/\n?? tools/epoch-rts/t17-save-five-mod-analysis-schema.json\n?? tools/epoch-rts/t17-save-five-mod-capture.py\n?? tools/epoch-rts/t17-save-five-mod-source-inventory-v2.cjs\n?? tools/epoch-rts/t17-save-five-mod-source-inventory.cjs\n?? tools/epoch-rts/t17-save-harness/\n?? tools/epoch-rts/t17-submarine.py\n?? tools/epoch-rts/t17_gui_native_runtime.py\n?? tools/epoch-rts/t17_save_archive.py\n?? tools/epoch-rts/t17_save_metadata.py\n?? tools/epoch-rts/t17_save_prearm.py\n?? tools/epoch-rts/t17_save_queue_prefix.py\n?? tools/epoch-rts/t17_save_raw_capture.py\n?? tools/epoch-rts/t17_submarine_runtime.py\n?? tools/epoch-rts/t18-harness/\n?? tools/epoch-rts/t18-output-protocol-harness/\n?? tools/epoch-rts/t18-output-protocol.py\n?? tools/epoch-rts/t18-parking-harness/\n?? tools/epoch-rts/t18-parking.py\n?? tools/epoch-rts/t18-precision-gui-harness/\n?? tools/epoch-rts/t18-precision-gui.py\n?? tools/epoch-rts/t18-precision.py\n?? tools/epoch-rts/t18-window-capture.swift\n?? tools/epoch-rts/t18_output_protocol.py\n?? tools/epoch-rts/t18_parking_runtime.py\n?? tools/epoch-rts/t18_precision_gui_runtime.py\n?? tools/epoch-rts/t18_precision_runtime.py\n?? tools/epoch-rts/test-t14-aa.cjs\n?? tools/epoch-rts/test-t14-aa.py\n?? tools/epoch-rts/test-t14-battle.cjs\n?? tools/epoch-rts/test-t14-battle.py\n?? tools/epoch-rts/test-t14-canattack-count-runner.py\n?? tools/epoch-rts/test-t14-canattack-count.cjs\n?? tools/epoch-rts/test-t14-canattack-count.py\n?? tools/epoch-rts/test-t14-canattack-delta-runner.py\n?? tools/epoch-rts/test-t14-canattack-delta.cjs\n?? tools/epoch-rts/test-t14-canattack-delta.py\n?? tools/epoch-rts/test-t14-canattack-offline-replay.py\n?? tools/epoch-rts/test-t14-canattack-profile.cjs\n?? tools/epoch-rts/test-t14-canattack-profile.py\n?? tools/epoch-rts/test-t14-dual.cjs\n?? tools/epoch-rts/test-t14-dual.py\n?? tools/epoch-rts/test-t14-fine-profile.cjs\n?? tools/epoch-rts/test-t14-fine-profile.py\n?? tools/epoch-rts/test-t14-flight.cjs\n?? tools/epoch-rts/test-t14-flight.py\n?? tools/epoch-rts/test-t14-match.cjs\n?? tools/epoch-rts/test-t14-match.py\n?? tools/epoch-rts/test-t14-mixed-profile.cjs\n?? tools/epoch-rts/test-t14-mixed-profile.py\n?? tools/epoch-rts/test-t14-mixed.cjs\n?? tools/epoch-rts/test-t14-mixed.py\n?? tools/epoch-rts/test-t14-profile-runner.py\n?? tools/epoch-rts/test-t14-resistance-profile.cjs\n?? tools/epoch-rts/test-t14-resistance-profile.py\n?? tools/epoch-rts/test-t14-search-profile.cjs\n?? tools/epoch-rts/test-t14-search-profile.py\n?? tools/epoch-rts/test-t14-soak.cjs\n?? tools/epoch-rts/test-t14-soak.py\n?? tools/epoch-rts/test-t14-storage-failure.py\n?? tools/epoch-rts/test-t14-storage-parser-integration.py\n?? tools/epoch-rts/test-t14-storage-runner-integration.py\n?? tools/epoch-rts/test-t14-strike.cjs\n?? tools/epoch-rts/test-t14-strike.py\n?? tools/epoch-rts/test-t14-tools.py\n?? tools/epoch-rts/test-t14-workload.cjs\n?? tools/epoch-rts/test-t15-candidate-fixture.cjs\n?? tools/epoch-rts/test-t15-candidate-runtime.py\n?? tools/epoch-rts/test-t15-native-transport.py\n?? tools/epoch-rts/test-t15-package.py\n?? tools/epoch-rts/test-t16-attack.cjs\n?? tools/epoch-rts/test-t16-fixture.cjs\n?? tools/epoch-rts/test-t16-native-death.cjs\n?? tools/epoch-rts/test-t16-native-death.py\n?? tools/epoch-rts/test-t16-runner.py\n?? tools/epoch-rts/test-t17-fixture.cjs\n?? tools/epoch-rts/test-t17-gui-driver.cjs\n?? tools/epoch-rts/test-t17-gui-fixture.cjs\n?? tools/epoch-rts/test-t17-gui-native.py\n?? tools/epoch-rts/test-t17-gui.cjs\n?? tools/epoch-rts/test-t17-save-admission.cjs\n?? tools/epoch-rts/test-t17-save-allocation-consumer.cjs\n?? tools/epoch-rts/test-t17-save-allocation-witness.cjs\n?? tools/epoch-rts/test-t17-save-archive.py\n?? tools/epoch-rts/test-t17-save-command-creators.cjs\n?? tools/epoch-rts/test-t17-save-command-witness.cjs\n?? tools/epoch-rts/test-t17-save-complete-witness.cjs\n?? tools/epoch-rts/test-t17-save-five-mod-bridge.cjs\n?? tools/epoch-rts/test-t17-save-five-mod-capture.py\n?? tools/epoch-rts/test-t17-save-five-mod-preservation-bridge.py\n?? tools/epoch-rts/test-t17-save-five-mod-required-fault-controls-helpers.py\n?? tools/epoch-rts/test-t17-save-five-mod-required-fault-controls.py\n?? tools/epoch-rts/test-t17-save-five-mod-source-inventory-v2.cjs\n?? tools/epoch-rts/test-t17-save-five-mod-source-inventory.cjs\n?? tools/epoch-rts/test-t17-save-fixture-base.py\n?? tools/epoch-rts/test-t17-save-fixture-commands.cjs\n?? tools/epoch-rts/test-t17-save-graph.cjs\n?? tools/epoch-rts/test-t17-save-map-script.cjs\n?? tools/epoch-rts/test-t17-save-metadata.py\n?? tools/epoch-rts/test-t17-save-prearm.py\n?? tools/epoch-rts/test-t17-save-producer-witness.cjs\n?? tools/epoch-rts/test-t17-save-queue-prefix.py\n?? tools/epoch-rts/test-t17-save-raw-capture.py\n?? tools/epoch-rts/test-t17-save-scenario.cjs\n?? tools/epoch-rts/test-t17-save-session-transaction.cjs\n?? tools/epoch-rts/test-t17-save-typed-graph.cjs\n?? tools/epoch-rts/test-t17-submarine-runtime.py\n?? tools/epoch-rts/test-t17-submarine.cjs\n?? tools/epoch-rts/test-t18-fixture.cjs\n?? tools/epoch-rts/test-t18-output-protocol.cjs\n?? tools/epoch-rts/test-t18-output-protocol.py\n?? tools/epoch-rts/test-t18-parking-fixture.cjs\n?? tools/epoch-rts/test-t18-parking-runtime.py\n?? tools/epoch-rts/test-t18-parking.cjs\n?? tools/epoch-rts/test-t18-precision-gui-runtime.py\n?? tools/epoch-rts/test-t18-precision-gui.cjs\n?? tools/epoch-rts/test-t18-precision-runtime.py\n?? tools/epoch-rts/test-t18-precision.cjs"
+  },
+  "status": "MATCH",
+  "readingAttribution": "Binding bytes read and hash verified by child; prior root 64/85 full source reading remains inherited, not personal reading. No approval implied."
+}

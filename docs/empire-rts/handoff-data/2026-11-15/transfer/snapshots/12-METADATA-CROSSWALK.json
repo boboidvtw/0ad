@@ -1,0 +1,231 @@
+{
+  "schema": 1,
+  "purpose": "R06 planning crosswalk only, no new design approval or implementation",
+  "createdUTC": "2026-11-05T09:52:03.919817+00:00",
+  "status": "DONE_READ_ONLY_TRACEABILITY_ONLY",
+  "fieldCount": 6,
+  "openTechnicalObligationCount": 11,
+  "fieldObligations": {
+    "engine_version": [
+      "ENGINE_INFO_RUNTIME",
+      "PRECOMMIT_TRANSPORT"
+    ],
+    "playerID": [
+      "PRINCIPAL_CAPTURE",
+      "PRECOMMIT_TRANSPORT"
+    ],
+    "mods": [
+      "ENGINE_INFO_RUNTIME",
+      "PRECOMMIT_TRANSPORT"
+    ],
+    "initAttributes": [
+      "FULL_INITATTRS_PRODUCER",
+      "LOAD_NESTED_TIMESTAMP",
+      "REPLAY_START_AVAILABILITY",
+      "FUTURE_SCHEDULE_ABSENCE",
+      "PRECOMMIT_TRANSPORT"
+    ],
+    "gui": [
+      "CAMERA_CONTROL",
+      "GROUPS_INPUT_CLOSURE",
+      "FUTURE_SCHEDULE_ABSENCE",
+      "PRECOMMIT_TRANSPORT"
+    ],
+    "description": [
+      "STATIC_DESCRIPTION_HOST_FACTORY",
+      "PRECOMMIT_TRANSPORT"
+    ]
+  },
+  "obligations": [
+    {
+      "id": "ENGINE_INFO_RUNTIME",
+      "status": "OPEN",
+      "fields": [
+        "engine_version",
+        "mods"
+      ],
+      "nextWorkPackage": "R07",
+      "gap": "No actual source-owned engineinfo getter capture or fixed compiledengine_version/runtimefive-moddata/order yet; static source declaration is not actualruntime.",
+      "nextRequiredEvidence": "鎖實際binary／五mod選擇與完整order／四欄records，規格化同一guarded native GetEngineInfo caller與preSave持久化。"
+    },
+    {
+      "id": "PRINCIPAL_CAPTURE",
+      "status": "OPEN",
+      "fields": [
+        "playerID"
+      ],
+      "nextWorkPackage": "R07",
+      "gap": "Literal1 known; actual host nativeGetPlayerID boundary correlation/provenance unimplemented; nativeviewcaller cannot substitute.",
+      "nextRequiredEvidence": "preSave實際native GetPlayerID前後邊界及returned receipt綁case/PID/phase；literal1與payload.viewplayer分開。"
+    },
+    {
+      "id": "FULL_INITATTRS_PRODUCER",
+      "status": "OPEN",
+      "fields": [
+        "initAttributes"
+      ],
+      "nextWorkPackage": "R05/R07/R08",
+      "gap": "GUIliteral plus Replay3 is known, but complete startup/settings mutation closure and guarded fullnativegetter capture not implemented/vouched.",
+      "nextRequiredEvidence": "完整source-owned boot/map/settings/trigger/native clone getter／所有writer閉合；未知key不得從actual學入expected。"
+    },
+    {
+      "id": "LOAD_NESTED_TIMESTAMP",
+      "status": "OPEN",
+      "fields": [
+        "initAttributes"
+      ],
+      "nextWorkPackage": "R07/R09",
+      "gap": "Native StartSavedGame uses ReplayLogger again; fresh nestedtimestamp must independently equal actualproducer output, not copied/dropped fromoriginalmetadata.",
+      "nextRequiredEvidence": "每個fresh load自己的Replay startup control；timestamp精確值，不用origin值或outer-time interval替代。"
+    },
+    {
+      "id": "REPLAY_START_AVAILABILITY",
+      "status": "OPEN",
+      "fields": [
+        "initAttributes"
+      ],
+      "nextWorkPackage": "R07/R09",
+      "gap": "StartGame startline not flushed; immediatefreshloadpreSave availability unproved. No warmturn/flush/retry/extraSave allowed.",
+      "nextRequiredEvidence": "優先規格化真正source-vouched GetInitAttributes候選與因果順序；replay可得性仍Insufficient data，禁warmturn/flush/wait/額外Save。"
+    },
+    {
+      "id": "CAMERA_CONTROL",
+      "status": "OPEN",
+      "fields": [
+        "gui"
+      ],
+      "nextWorkPackage": "R07/R09",
+      "gap": "Nativefixed setter/float getters sourceknown; exact origin/loadrawcontrol lineage/timing/nonmutation/JSONnumber mapping unmeasured.",
+      "nextRequiredEvidence": "新待審設計明列GetValue()→native float→JSON精確值；source getters與Save對應、setter fixed量化／load restore、preSave全程無mutation與rawlineage。"
+    },
+    {
+      "id": "GROUPS_INPUT_CLOSURE",
+      "status": "OPEN",
+      "fields": [
+        "gui"
+      ],
+      "nextWorkPackage": "R05/R07/R08",
+      "gap": "10emptygroups sourcefixed; actualnohuman/groupmutation/unsafeprototype/toJSON effects not guarded inthisplan.",
+      "nextRequiredEvidence": "10組groups/ents exact empty來源、human/controlgroup/prototype/toJSON/clone/mutation完整控制；非空actual不得投影。"
+    },
+    {
+      "id": "STATIC_DESCRIPTION_HOST_FACTORY",
+      "status": "OPEN",
+      "fields": [
+        "description"
+      ],
+      "nextWorkPackage": "R07",
+      "gap": "Exactliteral derivation known; independenthostfactory/caller/oncephasecontrol not implemented.",
+      "nextRequiredEvidence": "host immutable case phase/checkpoint/ordinal只derive description literal；source API拒actual/archive metadata作輸入。"
+    },
+    {
+      "id": "PRECOMMIT_TRANSPORT",
+      "status": "OPEN",
+      "fields": [
+        "engine_version",
+        "playerID",
+        "mods",
+        "initAttributes",
+        "gui",
+        "description"
+      ],
+      "nextWorkPackage": "R07/R08",
+      "gap": "No newcapture/wire/contextscheme deployed. Existing6keycontext andfinalACK unchanged; realpreSavecapture/hostimmutablecommit timing/caller/sourceguard remainOPEN.",
+      "nextRequiredEvidence": "獨立controls由source因果鏈在Save前建立；同PID/caller/realm及raw順序須證。Host先持久化controls與固定expected，再讀actual metadata；不另推定host落盤必先Save。"
+    },
+    {
+      "id": "FUTURE_SCHEDULE_ABSENCE",
+      "status": "OPEN",
+      "fields": [
+        "initAttributes",
+        "gui"
+      ],
+      "nextWorkPackage": "R05/R07/R08",
+      "gap": "Fullvaluecompare cannot prove absence when expected contains samefuturefields. Completeproducer/mutator closure + independentcontrols +actualvalues required.",
+      "nextRequiredEvidence": "完整producer/mutator/serializer closure與graph/queue/native證據；full equality不等absence，合法gameplay Timer不可刪。"
+    },
+    {
+      "id": "FULL_NATIVE_PIPELINE",
+      "status": "OPEN",
+      "fields": [
+        "ALL_SIX_RUNTIME"
+      ],
+      "nextWorkPackage": "R08/R09/R11",
+      "gap": "Noengine/copy/guard/archive/newSave/metadata/nativecollection/comparatorrerun/modeltest; allactualruntime/budget/load5s/wholepipeline obligations NOT_RUN.",
+      "nextRequiredEvidence": "完整host/current source/runtime/original-copy/profile locks與原budget/freshguard；原生save/load/network實際證據另驗。"
+    }
+  ],
+  "originalPlanArtifactCount": 48,
+  "all48ByteBindingsMATCH": true,
+  "review": "Existing single JS DESIGN approval only; full three-way current implementation design not approved",
+  "cameraCorrection": {
+    "id": "JS-DESIGN-LOW-001",
+    "requiredGetter": "GetValue",
+    "forbiddenSubstitute": "GetSmoothedValue",
+    "originalSealedPlanModified": false
+  },
+  "sources": [
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/manifest.json",
+      "bytes": 12729,
+      "sha256": "17eb3663cc51be04f880be2d2045bbbc1d5fe8fcf461cc2a82191ed9aa85e599"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/CONTRACT.md",
+      "bytes": 1015,
+      "sha256": "0c1555dc923ac8e631944390273dc497f478fdb828929696217ee5d9705ebbd8"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FIELD-MATRIX.md",
+      "bytes": 9024,
+      "sha256": "46c39e138d5000490411bd00761770af199827504d7e3d404a05bce524d2ed59"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/HOST-API-DRAFT.md",
+      "bytes": 5202,
+      "sha256": "b7cb74ad399938c3445325b9d98f1323559078b9555e156f870e5356aa3091d5"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/FUTURE-SCHEDULE-ABSENCE.md",
+      "bytes": 2980,
+      "sha256": "ebc80f289f848639200f3f46cab489a07d5b18fb5765ef6bcaa561ca57a48fa1"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/OPEN-obligations.json",
+      "bytes": 2839,
+      "sha256": "b699853bc8fc25b095556fc4b0e86b9343d0bc80c55efd3f01538e8694f28426"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1-review-js-v1/review.json",
+      "bytes": 48313,
+      "sha256": "ccc2ef605452c2748626eb7305a72de5dc976636f0042d1b96395101b62315fe"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/graphics/CameraController.cpp",
+      "bytes": 22474,
+      "sha256": "025e6176b09730bc22f70bb9f8b14f2563e2b0852e84a00ed71ea3a97ff23d6d"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/Replay.cpp",
+      "bytes": 10344,
+      "sha256": "18d01f424d0ea6627dd92b004e70d108d0286124719cdcd188b5e79f9f3546ad"
+    },
+    {
+      "path": "work/t17-save-metadata-expected-controls-preparation/source-plan-v1/primaryrefs/source/ps/SavedGame.cpp",
+      "bytes": 10000,
+      "sha256": "6fa08d0a0f57b386484bc328ec95b41e73120b9358aeb48afc7d216f662d5267"
+    }
+  ],
+  "runtime": "NOT_RUN",
+  "tests": "NOT_RUN_NO_DONE_RERUN",
+  "producerImport": false,
+  "guardResampled": false,
+  "technicalObligationsClosed": 0,
+  "next": "R07 prospective bounded design and full independent review before any metadata implementation. R01 guard decision remains pending on separate branch.",
+  "wordingCorrection20261106": {
+    "reason": "Prior root-derived wording improperly combined source preSave capture with host durable commit timing",
+    "sourceAuthority": "HOST-API-DRAFT.md:10 and FUTURE-SCHEDULE-ABSENCE.md:12",
+    "correctedOrder": "source capture beforeSave; host control/expected commit before current actual-metadata semantic read; no host-beforeSave disk requirement inferred",
+    "implementationAdmitted": false
+  }
+}
