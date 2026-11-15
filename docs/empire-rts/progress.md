@@ -113,7 +113,8 @@ T07防空仍採即時傷害；精確空中彈道、停機位／跑道／建築�
 - IN_PROGRESS：已開始；記錄正在做什麼。
 - PARTIAL：部分成果可驗證，但未滿足全部驗收。
 - BLOCKED：記錄具體阻礙、已嘗試方法、解除條件與可繼續的獨立工作。
-- DONE：全部必要驗收有實際證據，並有對應檔案／commit 和測試紀錄。
+- DONE：全部必要驗收有實際證據，並有對應檔案／commit 和測試紀錄。2026-11-15 起依[重設計畫第 3 節](RESET-PLAN-2026-11-15.md)的完成定義判斷。
+- DROPPED：決定不做或暫緩；成果保留，寫明原因與重新考慮的條件。
 
 不用未經定義的整體完成百分比。任務數量或 Build 成功不代表遊戲完成。標為 DONE 時，證據至少包含版本、環境、操作或檢查方式、實際結果；涉及畫面的功能附截圖或錄影。
 
@@ -137,11 +138,11 @@ T07防空仍採即時傷害；精確空中彈道、停機位／跑道／建築�
 | T11 | M4 原創美術垂直切片 | DONE | T06、T10 | Amy | [最小範圍](t11-art-slice.md)、[126項／重播／GUI](evidence/t11-validation.md)；限定低面數工人、長矛兵、房屋、3圖示，非正式全套美術 |
 | T12 | M5 AI 兩時代經營與進攻 | DONE | T06 | Amy | [限定契約](t12-ai-acceptance.md)、[38項／兩重播／GUI／工具與回歸](evidence/t12-validation.md)、[收尾交接](archive/SESSION-HANDOFF-2026-09-27-T12.md)；僅R28兩seed對固定防守，非通用AI；本機提交，未push |
 | T13 | M5 存讀檔與多人同步 | DONE | T06 | Amy | [限定契約](t13-save-network.md)、[兩seed六次讀檔／雙端native hash／GUI與工具](evidence/t13-validation.md)、[交接](archive/SESSION-HANDOFF-2026-09-28-T13.md)；不保證讀檔逐步重現，僅loopback；本機提交、未push |
-| T14 | M5 效能基線與回歸 | PARTIAL | T06 | Amy | [契約](t14-performance.md)、[七場實測](evidence/t14-validation.md)、[交接](archive/SESSION-HANDOFF-2026-10-04-T14.md)；資料完整性／來源回歸PASS；[FPS對照與原生profiler](evidence/t14-diagnosis-validation.md)支持600單位cap60緩解，不限FPS未達0.95；[AI片段四場PASS](evidence/t14-workload-validation.md)；[64架飛行兩片段PASS](evidence/t14-flight-validation.md)，另[即時防空兩片段PASS](evidence/t14-aa-validation.md)；[對地攻擊兩片段PASS](evidence/t14-strike-validation.md)，[seed42完整局PASS](evidence/t14-match-validation.md)及[地圖seed7完整局PASS](evidence/t14-match-seed7-validation.md)，潛艇／大混戰仍NOT RUN；[同條件3場重複性PASS](evidence/t14-match-repeatability-validation.md)，45窗口與14共同分鐘離散度通過，舊FAIL仍保留；[雙AI單seed完整局PASS](evidence/t14-dual-validation.md)，25分鐘窗口達標/短尾觀測；[600單位30分鐘性能/RSS PASS](evidence/t14-soak-validation.md)，30窗達標/首場camera FAIL保留/熱NOT RUN，[初始600士兵地面交戰PASS](evidence/t14-battle-validation.md)，兩窗達標/23慢幀保留/正式勝負NOT RUN，[混合600交戰FAIL](evidence/t14-mixed-validation.md)、[CPU診斷取證PASS](evidence/t14-mixed-profile-validation.md)、該批歷史220來源/原FAIL保留；整體PARTIAL |
-| T15 | M6 擴充內容與發行規格 | PARTIAL | T09、T11–T14 | Amy | 本機可重現封包及離線reader限定DONE；candidate42 formal FAIL與freshness未證保留；安裝／GUI／save/network及交付closure待驗，見[新計劃](archive/PROJECT-ASSESSMENT-2026-11-05.md)。 |
-| T16 | 特殊機制後續：專用攻擊檢查驗證 | PARTIAL | T09 | Amy | 原海戰42 36/221 FAIL；death42 121原生checks為觀察且固定位置gate FAIL；耗用retry0／seed7 STOP保留，缺項先定不同必要契約，不重跑原案例。 |
-| T17 | 特殊機制後續：潛艇最小垂直切片 | PARTIAL | T16 | Amy | controller42／ownerGUI42正式FAIL與seed7 STOP保留；capture joint SOURCE及tiny bridge有界DONE；fault SOURCE-v2三方正式核可、sampler v5限定來源核可；readiness過期STOP／一次guard決策待回，三負向cases NOT_RUN；save/network/fullhost仍OPEN。 |
-| T18 | 特殊機制後續：精確彈道與停機位 | PARTIAL | T09 | Amy | PARTIAL：精確彈道兩seed非圖像55requests／275turn／31HIT22MISS2REJECTED有界DONE；GUI42／K42／protocol42 formal FAIL與耗用attempt保留；parking／visual／save/network整合仍OPEN。 |
+| T14 | M5 效能基線與回歸 | DONE | T06 | Amy | 2026-11-15 依[重設計畫](RESET-PLAN-2026-11-15.md)縮小範圍結案：七場基線、600 單位 cap60 兩場、AI 片段四場 PASS。**已知限制**：不限 FPS 未達 0.95 門檻；混合交戰尾段 FAIL；SQLite storage 失敗原因不明。效能回歸測試移到 Backlog B1。T14–T18 的契約與證據檔（`t14-*.md`、`evidence/t14-*`～`t18-*`）從未 commit 進 repo，下方數字取自 2026-11-05 評估（[archive](archive/PROJECT-ASSESSMENT-2026-11-05.md)），原列全文見 commit `aa69884` |
+| T15 | M6 擴充內容與發行規格 | DROPPED | — | — | 2026-11-15 結案：本機封包與離線 reader 成果保留；candidate42 FAIL 記為已知限制。安裝包與發行改由 M7.4／M7.5 依新完成定義重做。 |
+| T16 | 特殊機制後續：專用攻擊檢查驗證 | DROPPED | — | — | 2026-11-15 結案：隔離元件與測試保留；海戰 36/221、death 位置 gate FAIL 記為已知限制。M8 選海戰方向時再開（Backlog B2）。 |
+| T17 | 特殊機制後續：潛艇最小垂直切片 | DROPPED | — | — | 2026-11-15 暫緩（見 [decisions](decisions.md)）：controller／GUI／save 來源切片與 tiny bridge 保留；controller42、ownerGUI42 FAIL 與 R01–R13 依賴鏈結案。Backlog B3。 |
+| T18 | 特殊機制後續：精確彈道與停機位 | DONE | T09 | Amy | 2026-11-15 縮小範圍為精確彈道結案：兩 seed 非圖像 55 requests／275 turn，31 命中、22 未中、2 拒絕。**已知限制**：GUI42、K42、protocol42 FAIL；停機位、畫面、save／network 未做，移到 Backlog B4（空軍）。 |
 
 ## 里程碑狀態
 
@@ -152,8 +153,10 @@ T07防空仍採即時傷害；精確空中彈道、停機位／跑道／建築�
 | M2 兩時代可玩流程 | DONE | T03–T06 完成；限定標準資源脚本玩家對固定防守，非通用 AI |
 | M3 特殊機制可行性 | DONE | 僅T07限定原型、T08調查、T09決策；完整特殊機制T16–T18仍TODO，未改C++ |
 | M4 美術垂直切片 | DONE | T10靜態匯入、T11原創低面數樣板及最小動作／圖示通過；完整人物／建築／正式HUD與效能未完成 |
-| M5 穩定性與對戰 | IN_PROGRESS | T12限定AI DONE；T13限定DONE，T14 PARTIAL |
-| M6 擴充與發行準備 | IN_PROGRESS | T15本機包限定完成；整體交付及T16–T18必要整合未完成，沒有發布日期承諾 |
+| M5 穩定性與對戰 | DONE | T12、T13 限定 DONE；T14 縮小範圍 DONE（已知限制見主表） |
+| M6 擴充與發行準備 | DROPPED | 2026-11-15 由 M7 取代；T15–T17 結案，T18 縮小範圍 DONE |
+| M7 可分享的試玩版 v0.4 | TODO | 見 [STATUS](STATUS.md) 的 M7.1–M7.6 |
+| M8 內容擴充（第三時代／空軍／手感三選一） | TODO | 等 M7 試玩回饋再定 |
 
 ## 尚待定稿
 

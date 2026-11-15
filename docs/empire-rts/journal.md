@@ -1,6 +1,14 @@
 <!-- Purpose: 可追溯決策與工作檢查點；Created: 2026-09-06. -->
 # 決策與工作紀錄
 
+## 2026-11-15 — 重設計畫 Phase 0、Phase 1
+
+- 決策：本人核可[重設計畫](RESET-PLAN-2026-11-15.md)，Q1–Q4 全部照建議（見 [decisions](decisions.md)）。
+- Phase 0：`master` fast-forward 到 `f244cdd`；73 項交接與評估檔原封不動移到 `archive/`；新增 STATUS、decisions；README 改寫（commit `aa69884`）。`0ad-t14` 排程本機找不到，交給本人；LFS 因本機沒裝 `git-lfs` 暫緩。
+- Phase 1：progress 主表 T14、T18 縮小範圍改為 DONE，T15–T17 改為 DROPPED，已知限制寫在各列；M5 DONE、M6 DROPPED，新增 M7、M8。
+- 發現：T14–T18 的契約與證據檔從未 commit，plan、progress、journal 約 275 個舊連結原本就失效。本次沒有修，記為已知限制。
+- 驗證：只改文件，沒有跑遊戲；改動前後的斷連結數相同，新檔沒有斷連結。
+
 ## 2026-11-15 收工 / Session closeout
 
 [詳細說明](archive/SESSION-CLOSEOUT-2026-11-15-T14-T18.md) · [後續作業](archive/reference_t14_t18_next_steps_20261115.md) · [資料與SHA索引](archive/handoff-data/2026-11-15/README.md)。Python/JSAPI兩正式DESIGN-only核可已落盤；CODE原actor回報完成但唯讀使正式檔缺，三方正式核可與implementation仍未准入。新root本人3/85、前root85只繼承。原FAIL/STOP/UNKNOWN、guard刷新待具體決策、3casesNOT_RUN、24helpers耗用、11義務OPEN保留；沒有實作/tests/engine或release。僅本次文件資料commit/push，原dirty與ACTIVE每5h排程保留。
