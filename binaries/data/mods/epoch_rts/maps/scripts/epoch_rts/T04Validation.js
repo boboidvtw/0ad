@@ -84,7 +84,7 @@ const centrePos = Q(centre, IID_Position).GetPosition2D();
 		this.EpochCheck("E11.noLeakedUnit." + id, !!(t.Auras || t.Promotion || t.Looter || t.Attack.Capture || t.Attack.Slaughter || (id != "pioneer" && (t.Builder || t.ResourceGatherer))), false);
 		this.EpochCheck("E11.noCriticalUnit." + id, GetIdentityClasses(t.Identity).includes("ConquestCritical"), false);
 	}
-	for (const [id, hp, seconds, w, s] of [["house", 300, 25, 50, 0], ["storehouse", 400, 30, 100, 0], ["barracks", 600, 50, 150, 50], ["field", 200, 30, 60, 0], ["forge", 500, 50, 150, 100], ["civil_centre", 1000, 50, 0, 0]])
+	for (const [id, hp, seconds, w, s] of [["house", 300, 25, 50, 0], ["storehouse", 400, 30, 100, 0], ["barracks", 600, 50, 150, 50], ["field", 200, 30, 60, 0], ["forge", 500, 50, 150, 100], ["civil_centre", 2000, 50, 0, 0]])
 	{
 		const t = tm.GetTemplate("structures/epoch_rts/" + id);
 		this.EpochCheck("E04.template." + id, [+t.Health.Max, +t.Cost.BuildTime, +t.Cost.Resources.wood, +t.Cost.Resources.stone], [hp, seconds, w, s]);
