@@ -61,6 +61,10 @@ if [[ "$mode" == "duel" || "$mode" == "research-demo" ]]; then
         -autostart-seed=42 -autostart-civ=1:epoch -autostart-civ=2:epoch
         -autostart-player=1 -autostart-playername=EpochTester)
 fi
+if [[ "$mode" == "duel" ]]; then
+    # M7.1: player 2 is the T12 epoch_petra AI at normal difficulty (3), as validated in T12.
+    args+=(-autostart-aiseed=42 -autostart-ai=2:epoch_petra -autostart-aidiff=2:3)
+fi
 if [[ "$mode" == "research-demo" ]]; then
     args+=(-conf=pauseonfocusloss:false)
 fi

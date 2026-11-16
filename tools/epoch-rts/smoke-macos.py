@@ -32,7 +32,7 @@ def read_suite(text):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--app", required=True, type=pathlib.Path)
-    parser.add_argument("--scenario", choices=["m1", "duel", "t04", "t05"], default="m1")
+    parser.add_argument("--scenario", choices=["m1", "duel", "duel-ai", "t04", "t05"], default="m1")
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--output", type=pathlib.Path, default=pathlib.Path("work/epoch-rts-smoke"))
     args = parser.parse_args()
@@ -53,21 +53,26 @@ def main():
     output = args.output / f"{stamp}-seed-{args.seed}"
     output.mkdir(parents=True, exist_ok=False)
     log_path = output / "engine.log"
-    scenario = {"m1": "epoch_frontier", "duel": "epoch_frontier_duel", "t04": "epoch_frontier_validation", "t05": "epoch_frontier_research_validation"}[args.scenario]
+    ai_game = args.scenario == "duel-ai"
+    scenario = {"m1": "epoch_frontier", "duel": "epoch_frontier_duel", "duel-ai": "epoch_frontier_duel", "t04": "epoch_frontier_validation", "t05": "epoch_frontier_research_validation"}[args.scenario]
     civ = "athen" if args.scenario == "m1" else "epoch"
     command = [str(binary), "-mod=mod", "-mod=public", "-mod=epoch_rts",
                f"-autostart=random/{scenario}", "-autostart-players=2", "-autostart-size=192",
                f"-autostart-seed={args.seed}", f"-autostart-civ=1:{civ}", f"-autostart-civ=2:{civ}",
-               "-autostart-nonvisual", "-autostart-disable-replay"]
+               "-autostart-nonvisual"]
+    # duel-ai plays a whole game against an idle player 1; the replay metadata holds the outcome.
+    command += [f"-autostart-aiseed={args.seed}", "-autostart-ai=2:epoch_petra", "-autostart-aidiff=2:3"] if ai_game else ["-autostart-disable-replay"]
+    replays = pathlib.Path.home() / "Library/Application Support/0ad/replays/0.28.0"
+    before = set(replays.glob("*/metadata.json"))
     reached_limit = False
     with log_path.open("x") as handle:
         process = subprocess.Popen(command, stdout=handle, stderr=subprocess.STDOUT)
         try:
-            deadline = time.monotonic() + 60
+            deadline = time.monotonic() + (300 if ai_game else 60)
             while process.poll() is None and time.monotonic() < deadline:
                 text = log_path.read_text(errors="replace")
                 turns = re.findall(r"Turn (\d+) \(", text)
-                if (read_suite(text) is not None if args.scenario in ("t04", "t05") else turns and int(turns[-1]) >= 100):
+                if not ai_game and (read_suite(text) is not None if args.scenario in ("t04", "t05") else turns and int(turns[-1]) >= 100):
                     reached_limit = True
                     break
                 time.sleep(0.1)
@@ -89,13 +94,21 @@ def main():
     marker = ("Epoch RTS M1: Frontier ready;" if args.scenario == "m1" else "Epoch RTS T04: Duel ready;") in text
     suite = read_suite(text)
     suite_passed = args.scenario not in ("t04", "t05") or bool(suite and suite.get("passed") is True and suite["checks"] and all(check.get("passed") is True for check in suite["checks"]))
+    outcome = None
+    if ai_game:
+        new = sorted(set(replays.glob("*/metadata.json")) - before)
+        if len(new) == 1:
+            meta = json.loads(new[0].read_text())
+            outcome = {"seconds": meta["timeElapsed"] / 1000,
+                       "states": [player.get("state") for player in meta["playerStates"][1:]]}
+        reached_limit = process.returncode == 0 and outcome is not None and outcome["states"] == ["defeated", "won"]
     mod_version = json.loads((repo / "binaries/data/mods/epoch_rts/mod.json").read_text())["version"]
     report = {
         "runtime": "0.28.0", "mod": f"epoch_rts {mod_version}", "seed": args.seed,
         "map": f"random/{scenario}", "suite": suite, "size": 192, "players": 2,
         "map_ready_marker": marker, "last_turn": int(turns[-1]) if turns else None,
         "stopped_after_turn_limit": reached_limit and args.scenario not in ("t04", "t05"),
-        "stop_condition": "suite result" if args.scenario in ("t04", "t05") else "at least 100 turns", "exit_code": process.returncode,
+        "stop_condition": "suite result" if args.scenario in ("t04", "t05") else "AI wins the game" if ai_game else "at least 100 turns", "ai_outcome": outcome, "exit_code": process.returncode,
         "errors_or_warnings": errors, "engine_html_error_or_warning": html_errors,
         "visual_verified": False,
         "passed": (reached_limit and marker and suite_passed and not errors and not html_errors

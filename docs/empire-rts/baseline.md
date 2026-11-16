@@ -73,6 +73,13 @@ EPOCH_RTS_0AD_APP='/path/to/0 A.D..app' tools/epoch-rts/launch-macos.sh duel
 
 兩位 Frontier Union 玩家，192 tiles；正常開局有 6 工人、2 長矛兵與唯一市中心。可採集、建造、訓練；市中心研究鐵器時代後，解鎖鐵刃步兵與鍛造所。鍛造所提供鍛造兵器。duel 以繁中語系啟動，使用官方 R28 內建字型。
 
+M7.1 起，`duel` 的玩家 2 是 T12 的 `epoch_petra` AI（正常難度 3、AI seed 42），勝利條件沿用 R28 預設的征服。AI 只在這張地圖、這個難度驗證過。自動檢查（AI 對不動的玩家 1 打完一整局，玩家 2 勝利才算通過，每局約 1–2 分鐘實際時間）：
+
+```bash
+python3 tools/epoch-rts/smoke-macos.py --app '/path/to/0 A.D..app' --scenario duel-ai --seed 42
+python3 tools/epoch-rts/smoke-macos.py --app '/path/to/0 A.D..app' --scenario duel-ai --seed 7
+```
+
 關閉所有 0 A.D. 實例後執行整合檢查：
 
 ```bash
