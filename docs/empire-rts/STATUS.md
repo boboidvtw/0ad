@@ -20,7 +20,7 @@
 |---|---|---|
 | P0 | 重設計畫 Phase 0：止血 | DONE（0.1 排程待本人處理、0.5 LFS 暫緩） |
 | P1 | Phase 1：progress.md 的 T14–T18 改為 DONE／DROPPED＋已知限制 | DONE |
-| M7.1 | `epoch_frontier_duel` 接上 T12 AI，本人玩一局 | DOING：`launch-macos.sh duel` 已讓玩家 2 由 `epoch_petra`（難度 3）操作；`smoke-macos.py --scenario duel-ai` seed 42／7 都是 AI 打贏不動的玩家 1（897／909 秒，無錯誤）。待本人玩一局 |
+| M7.1 | `epoch_frontier_duel` 接上 T12 AI，本人玩一局 | DONE（2026-11-16）：`launch-macos.sh duel` 玩家 2 為 `epoch_petra`（難度 3）；`smoke-macos.py --scenario duel-ai` seed 42／7 AI 勝（897／909 秒，無錯誤）；本人實玩一局 1068 秒（約 18 分）由 AI 獲勝，無錯誤 |
 | M7.2 | 最小平衡，一局 10–20 分鐘 | TODO |
 | M7.3 | 遊戲內繁中開場說明 | TODO |
 | M7.4 | `.pyromod` 安裝包＋乾淨帳號安裝測試 | TODO |
