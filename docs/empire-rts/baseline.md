@@ -63,7 +63,7 @@ python3 tools/epoch-rts/smoke-macos.py --app '/path/to/0 A.D..app' --seed 7
 
 每次結果會保存在新的 `work/epoch-rts-smoke/時間-seed/` 目錄。`result.json` 區分引擎測試與畫面驗證；`visual_verified` 永遠為 false。若已有遊戲程序，測試會停止，避免日誌互相覆寫。詳細日誌只留本機；提交證據前需排除使用者路徑與設定。
 
-## 兩時代原型（epoch_rts 0.3.0）
+## 兩時代原型（epoch_rts 0.4.0）
 
 沿用上述官方 R28 runtime 與 Mod 安裝方式。進入新的 Frontier Duel：
 
@@ -81,6 +81,13 @@ python3 tools/epoch-rts/smoke-macos.py --app '/path/to/0 A.D..app' --scenario du
 ```
 
 M7.3 起，`duel` 開局時在畫面上方顯示一頁開場說明（目標、採集、房屋人口、兵營、鐵器時代條件與花費、鍛造所），使用 R28 內建的教學面板，按 Ctrl+P 隱藏或顯示。文字寫在 `maps/scripts/epoch_rts/FrontierDuel.js`，繁中翻譯在 `l10n/zh_TW.epoch.po`；非繁中語系顯示英文。截圖：[evidence/m7.3-opening-guide.jpg](evidence/m7.3-opening-guide.jpg)。
+
+M7.4 起，玩家試玩包由下面指令產生（版本取自 `mod.json`）。只打包 git 追蹤的檔案，地圖只含 Frontier 與 Frontier Duel，驗證用地圖不打包；固定時間戳，同一個 commit 產生的雜湊相同。安裝步驟見 [INSTALL.md](INSTALL.md)。
+
+```bash
+python3 tools/epoch-rts/package-mod.py          # 輸出 work/dist/epoch_rts-<版本>.pyromod 與 .sha256
+python3 tools/epoch-rts/test-package-mod.py
+```
 
 關閉所有 0 A.D. 實例後執行整合檢查：
 

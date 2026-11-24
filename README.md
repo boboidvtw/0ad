@@ -14,6 +14,7 @@
 
 | 文件 | 用途 |
 | --- | --- |
+| [安裝與遊玩](docs/empire-rts/INSTALL.md) | 試玩包 `.pyromod` 的安裝、開局、解除安裝（給玩家） |
 | [STATUS](docs/empire-rts/STATUS.md) | 現況與下一步（最先讀這份） |
 | [重設計畫](docs/empire-rts/RESET-PLAN-2026-11-15.md) | 工作規則、完成定義、M7／M8 路線 |
 | [定案紀錄](docs/empire-rts/decisions.md) | 長期有效的決策 |

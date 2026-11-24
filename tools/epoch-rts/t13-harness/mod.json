@@ -1,1 +1,1 @@
-{"name":"epoch_t13_harness","version":"0.1.0","label":"T13 validation only","description":"Opt-in native save/load and loopback validation harness; not gameplay.","dependencies":["0ad=0.28.0","epoch_rts=0.3.0"]}
+{"name":"epoch_t13_harness","version":"0.1.0","label":"T13 validation only","description":"Opt-in native save/load and loopback validation harness; not gameplay.","dependencies":["0ad=0.28.0","epoch_rts=0.4.0"]}
