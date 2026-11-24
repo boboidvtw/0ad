@@ -113,3 +113,24 @@ msgstr "投石兵：遠程戰鬥單位，不能採集或建造。"
 
 msgid "Iron Swordsman: Combat unit. Cannot gather or build."
 msgstr "鐵刃步兵：鐵器時代步兵，不能採集或建造。"
+
+msgid "Goal: destroy every enemy unit and building. The AI attacks after it reaches Iron Age."
+msgstr "目標：消滅敵方所有單位與建築。敵方 AI 進入鐵器時代後才會進攻。"
+
+msgid "1. Select Pioneers and right-click trees, berries, stone or metal to gather."
+msgstr "1. 選取拓荒工人，右鍵點樹木、莓果叢、石礦或金屬礦開始採集。"
+
+msgid "2. Population starts at 20. Each House adds 10 (50 wood). Keep building Houses."
+msgstr "2. 人口上限一開始是 20，每棟房屋 +10（木材 50）。記得持續蓋房屋。"
+
+msgid "3. Build a Barracks (150 wood, 50 stone) to train Spearmen and Slingers."
+msgstr "3. 蓋兵營（木材 150、石材 50）訓練長矛兵與投石兵。"
+
+msgid "4. With a completed Barracks, research Iron Age at the Civic Center (400 food, 200 wood, 100 metal)."
+msgstr "4. 兵營完工後，在市中心研究鐵器時代（食物 400、木材 200、金屬 100）。"
+
+msgid "5. Iron Age unlocks Iron Swordsmen and the Forge. Research Forged Weapons at the Forge."
+msgstr "5. 鐵器時代解鎖鐵刃步兵與鍛造所，可在鍛造所研究鍛造兵器。"
+
+msgid "Press Ctrl+P to hide or show this guide."
+msgstr "按 Ctrl+P 隱藏或顯示這份說明。"

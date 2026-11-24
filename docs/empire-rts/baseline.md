@@ -80,6 +80,8 @@ python3 tools/epoch-rts/smoke-macos.py --app '/path/to/0 A.D..app' --scenario du
 python3 tools/epoch-rts/smoke-macos.py --app '/path/to/0 A.D..app' --scenario duel-ai --seed 7
 ```
 
+M7.3 起，`duel` 開局時在畫面上方顯示一頁開場說明（目標、採集、房屋人口、兵營、鐵器時代條件與花費、鍛造所），使用 R28 內建的教學面板，按 Ctrl+P 隱藏或顯示。文字寫在 `maps/scripts/epoch_rts/FrontierDuel.js`，繁中翻譯在 `l10n/zh_TW.epoch.po`；非繁中語系顯示英文。截圖：[evidence/m7.3-opening-guide.jpg](evidence/m7.3-opening-guide.jpg)。
+
 關閉所有 0 A.D. 實例後執行整合檢查：
 
 ```bash
