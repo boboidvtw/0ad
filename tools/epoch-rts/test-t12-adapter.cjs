@@ -7,7 +7,8 @@ const vm = require('node:vm');
 let updates = 0;
 function upstreamUpdate() { ++updates; }
 function PetraBot() {
-    this.HQ = {attackManager: {update: upstreamUpdate, upcomingAttacks: {Attack: []}}};
+    this.HQ = {attackManager: {update: upstreamUpdate, upcomingAttacks: {Attack: []}},
+        researchManager: {Config: {Economy: {popPhase2: 38, workPhase3: 65, workPhase4: 80}, priorities: {majorTech: 200}}}};
 }
 PetraBot.prototype.CustomInit = function() {};
 const context = {PetraBot, filters: {byClasses: classes => classes},
@@ -80,4 +81,46 @@ assert.equal(updates, 2);
 assert.equal(unregistered, 4, 'Re-adaptation must not unregister active collections');
 assert.equal(registered, 4);
 assert.equal(other.HQ.attackManager.update, upstreamUpdate);
-console.log('PASS: instance isolation, phase mapping, Bronze gate, collection lifecycle, build orders, idempotence; mocked API, not engine acceptance');
+// Petra's thresholds follow the age's place on the ladder, not its index in the chain: a Bronze
+// start must reach Iron at popPhase2, as the two-age game did, instead of waiting for workPhase4.
+function phaseQueues() {
+    const plans = [];
+    const queue = (queued = false) => ({hasQueuedUnits: () => queued, addPlan: p => plans.push(p)});
+    return {plans, queues: {majorTech: queue(), civilCentre: queue(), wonder: queue()}};
+}
+function phaseState(current, population, workers) {
+    return {...gs, currentPhase: () => current, getPhaseName: i => gs.phases[i - 1]?.name, hasResearchers: () => true,
+        ai: {HQ: {getAccountedPopulation: () => population, getAccountedWorkers: () => workers},
+            queueManager: {changePriority() {}}, Config: {priorities: {majorTech: 200}}}};
+}
+context.ResearchPlan = function(state, name) { this.name = name; };
+const research = bot.HQ.researchManager;
+const nextAge = (current, population, workers) => {
+    const {plans, queues} = phaseQueues();
+    const s = phaseState(current, population, workers);
+    s.ai.HQ.phasing = 0;
+    research.checkPhase(s, queues);
+    return plans[0]?.name;
+};
+assert.equal(nextAge(4, 37, 37), undefined, 'Iron waits for popPhase2');
+assert.equal(nextAge(4, 38, 30), 'phase_epoch_iron', 'Bronze start: Iron at popPhase2, not workPhase4');
+assert.equal(nextAge(1, 38, 30), 'phase_epoch_stone', 'Prehistoric start: Stone at popPhase2');
+assert.equal(nextAge(5, 90, 65), undefined, 'Dark Age waits for more than workPhase3 workers');
+assert.equal(nextAge(5, 90, 66), 'phase_epoch_dark');
+assert.equal(nextAge(6, 90, 80), undefined, 'Middle Ages and later wait for workPhase4');
+assert.equal(nextAge(6, 90, 81), 'phase_epoch_medieval');
+assert.equal(nextAge(16, 200, 200), undefined, 'no age after Space');
+// Petra's Attack queue has priority 90 and majorTech 700, so ages after Iron Age kept the attack
+// army from training and AI games ran past 20 minutes. Those ages now queue below the army.
+const priorityFor = (current, population, workers) => {
+    const {queues} = phaseQueues();
+    const s = phaseState(current, population, workers);
+    let set;
+    s.ai.queueManager.changePriority = (queue, value) => { set = [queue, value]; };
+    research.checkPhase(s, queues);
+    return set;
+};
+assert.deepEqual(priorityFor(4, 38, 30), ['majorTech', 200], 'Iron Age keeps the configured priority');
+assert.deepEqual(priorityFor(5, 90, 66), ['majorTech', 50], 'Dark Age queues below the Attack queue (90)');
+assert.deepEqual(priorityFor(12, 90, 81), ['majorTech', 50], 'later ages too');
+console.log('PASS: instance isolation, phase mapping, Bronze gate, ladder-based phase thresholds, collection lifecycle, build orders, idempotence; mocked API, not engine acceptance');
