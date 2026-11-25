@@ -20,7 +20,7 @@
     <GenericName>Siege Workshop</GenericName>
     <SpecificName>Siege Workshop</SpecificName>
     <SelectionGroupName>structures/epoch_rts/siege_workshop</SelectionGroupName>
-    <Classes datatype="tokens" replace="">Structure SiegeWorkshop</Classes>
+    <Classes datatype="tokens" replace="">Structure SiegeWorkshop Arsenal</Classes>
     <VisibleClasses datatype="tokens" replace="">SiegeWorkshop</VisibleClasses>
     <Tooltip>Siege Workshop</Tooltip>
     <Undeletable>false</Undeletable>

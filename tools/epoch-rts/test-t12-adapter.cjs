@@ -21,7 +21,7 @@ const source = fs.readFileSync(path.join(__dirname,
 vm.runInContext(source.replace(/^import .*;\n/gm, '').replace('export function', 'function'), context);
 function state(civ, disabledTechnologies = {}) {
     return {playerData: {disabledTechnologies}, getPlayerCiv: () => civ, applyCiv: name => name.replace('{civ}', civ),
-        getTemplate: name => ({_template: {requirements: [name]}}), currentPhase: () => 1};
+        getTemplate: name => ({_template: {requirements: [name]}}), currentPhase: () => 1, ai: {playedTurn: 1}};
 }
 const other = new PetraBot(), otherState = state('athen');
 const bot = new context.EpochPetraBot({}), gs = state('epoch');
@@ -81,6 +81,58 @@ assert.equal(updates, 2);
 assert.equal(unregistered, 4, 'Re-adaptation must not unregister active collections');
 assert.equal(registered, 4);
 assert.equal(other.HQ.attackManager.update, upstreamUpdate);
+// Petra builds its siege trainer as structures/{civ}/arsenal; Epoch's is the Siege Workshop.
+assert.equal(gs.applyCiv('structures/{civ}/arsenal'), 'structures/epoch_rts/siege_workshop');
+assert.equal(gs.applyCiv('structures/{civ}/stable'), 'structures/epoch_rts/stable');
+// Siege that Petra already added must survive the class adaptation (it used to be dropped).
+const siegeUnits = {unregister() { throw new Error('Siege collection must stay registered'); }};
+const sieged = plan(true);
+sieged.unit.Siege = siegeUnits;
+sieged.unitStat.Siege = {classes: ['Siege+Melee'], targetSize: 2};
+sieged.buildOrders = [[0, ['Siege+Melee'], siegeUnits, sieged.unitStat.Siege, 'Siege']];
+manager.upcomingAttacks.Attack = [sieged];
+manager.update(gs, {}, {});
+assert.equal(sieged.unit.Siege, siegeUnits);
+assert.equal(sieged.unitStat.Siege.targetSize, 2);
+assert.equal(JSON.stringify(sieged.buildOrders.map(o => o[4])), '["MeleeInfantry","RangedInfantry","Siege"]');
+// Cavalry joins unexecuted attacks once a Horseman or Knight can be trained (after a Stable),
+// and is checked again later because Petra drops a build order it cannot train.
+const added = [];
+const cavalryPlan = {...plan(true), state: 'unexecuted', epochClasses: true,
+    unitStat: {MeleeInfantry: {targetSize: 10}}, unit: {MeleeInfantry: {length: 4}},
+    addBuildOrder(state, name, stat) { added.push([name, stat]); this.unitStat[name] = stat; this.unit[name] = {length: 0}; }};
+let trainable;
+const cavalryState = {...gs, currentPhase: () => 6, ai: {playedTurn: 5,
+    HQ: {findBestTrainableUnit: (state, classes) => (classes.join() == 'Cavalry+Swordsman' ? trainable : undefined)}}};
+manager.upcomingAttacks.Attack = [cavalryPlan];
+manager.update(cavalryState, {}, {});
+assert.equal(added.length, 0, 'no cavalry without a trainer');
+trainable = 'units/epoch_rts/horseman';
+cavalryState.ai.playedTurn = 6;
+manager.update(cavalryState, {}, {});
+assert.equal(added.length, 0, 'cavalry checks run every 5 turns');
+cavalryState.ai.playedTurn = 10;
+manager.update(cavalryState, {}, {});
+assert.equal(added.length, 1);
+assert.equal(added[0][0], 'Cavalry');
+assert.equal(JSON.stringify(added[0][1].classes), '["Cavalry+Swordsman"]');
+assert.equal(added[0][1].minSize, 0, 'cavalry never holds back an attack');
+cavalryState.ai.playedTurn = 15;
+manager.update(cavalryState, {}, {});
+assert.equal(added.length, 1, 'cavalry is added once');
+// Petra starts an attack only when every category reaches its target, so once the infantry is
+// full the plan settles for the cavalry it already has instead of waiting for more.
+cavalryPlan.unit.Cavalry.length = 2;
+manager.update(cavalryState, {}, {});
+assert.equal(cavalryPlan.unitStat.Cavalry.targetSize, 6, 'infantry still gathering: cavalry target kept');
+cavalryPlan.unit.MeleeInfantry.length = 10;
+manager.update(cavalryState, {}, {});
+assert.equal(cavalryPlan.unitStat.Cavalry.targetSize, 2, 'infantry full: cavalry does not hold the attack back');
+const started = {...cavalryPlan, state: 'walking', unitStat: {MeleeInfantry: {targetSize: 10}}};
+manager.upcomingAttacks.Attack = [started];
+cavalryState.ai.playedTurn = 20;
+manager.update(cavalryState, {}, {});
+assert.equal(added.length, 1, 'no cavalry for an attack already under way');
 // Petra's thresholds follow the age's place on the ladder, not its index in the chain: a Bronze
 // start must reach Iron at popPhase2, as the two-age game did, instead of waiting for workPhase4.
 function phaseQueues() {
@@ -123,4 +175,4 @@ const priorityFor = (current, population, workers) => {
 assert.deepEqual(priorityFor(4, 38, 30), ['majorTech', 200], 'Iron Age keeps the configured priority');
 assert.deepEqual(priorityFor(5, 90, 66), ['majorTech', 50], 'Dark Age queues below the Attack queue (90)');
 assert.deepEqual(priorityFor(12, 90, 81), ['majorTech', 50], 'later ages too');
-console.log('PASS: instance isolation, phase mapping, Bronze gate, ladder-based phase thresholds, collection lifecycle, build orders, idempotence; mocked API, not engine acceptance');
+console.log('PASS: instance isolation, phase mapping, Bronze gate, ladder-based phase thresholds, collection lifecycle, build orders, siege kept, cavalry added, arsenal mapping, idempotence; mocked API, not engine acceptance');

@@ -17,7 +17,9 @@ EpochPetraBot.prototype.CustomInit = function(gameState)
     // Override only this AI's GameState, leaving public Petra and other players intact.
     gameState.applyCiv = function(name)
     {
-        return name.replace(/\{civ\}/g, 'epoch_rts');
+        // Petra builds its siege trainer as structures/{civ}/arsenal; Epoch's is the Siege
+        // Workshop, which also carries the Arsenal class so Petra counts it.
+        return name.replace(/\{civ\}/g, 'epoch_rts').replace(/^structures\/epoch_rts\/arsenal$/, 'structures/epoch_rts/siege_workshop');
     };
     // The CC offers only the next age (supersedes chain). Petra needs an ordered phase chain,
     // including the automatically researched first age (globalscripts/EpochAges.js). Ages after
@@ -44,13 +46,23 @@ EpochPetraBot.prototype.CustomInit = function(gameState)
         for (const plans of Object.values(this.upcomingAttacks))
             for (const plan of plans)
             {
-                if (plan.epochClasses || !plan.unitStat.MeleeInfantry)
+                if (plan.epochClasses)
+                {
+                    epochAddCavalry(state, plan);
                     continue;
-                // This civ has combat-only melee infantry and slingers, no cavalry,
-                // citizen-soldier workers, champions or siege. Reuse Petra plans
-                // with actual M2 classes instead of changing simulation identities.
-                for (const collection of Object.values(plan.unit))
-                    collection.unregister();
+                }
+                if (!plan.unitStat.MeleeInfantry)
+                    continue;
+                // Petra's infantry categories ask for CitizenSoldier and Champion classes this
+                // civ does not have. Reuse Petra plans with actual Epoch classes instead of
+                // changing simulation identities. Siege that Petra already added (rams and
+                // bombards carry the public Siege+Melee / Siege+Ranged classes) is kept;
+                // cavalry is added by epochAddCavalry once it can be trained.
+                const siege = plan.unitStat.Siege && {stat: plan.unitStat.Siege, units: plan.unit.Siege,
+                    order: plan.buildOrders.find(order => order[4] == 'Siege')};
+                for (const [category, collection] of Object.entries(plan.unit))
+                    if (!siege || category != 'Siege')
+                        collection.unregister();
                 plan.unitStat = {
                     MeleeInfantry: {...plan.unitStat.MeleeInfantry, classes: ['Infantry+Swordsman']},
                     RangedInfantry: {...plan.unitStat.RangedInfantry, classes: ['Infantry+Slinger']}
@@ -64,6 +76,13 @@ EpochPetraBot.prototype.CustomInit = function(gameState)
                     plan.unit[category] = units;
                     if (plan.canBuildUnits)
                         plan.buildOrders.push([0, spec.classes, units, spec, category]);
+                }
+                if (siege)
+                {
+                    plan.unitStat.Siege = siege.stat;
+                    plan.unit.Siege = siege.units;
+                    if (siege.order)
+                        plan.buildOrders.push(siege.order);
                 }
                 plan.epochClasses = true;
             }
@@ -101,4 +120,31 @@ function epochCheckPhase(gameState, queues)
     const priority = current > epochIronIndex ? epochLateAgePriority : gameState.ai.Config.priorities.majorTech;
     gameState.ai.queueManager.changePriority('majorTech', priority);
     queues.majorTech.addPlan(new ResearchPlan(gameState, nextPhaseName, true));
+}
+
+// Horseman (Dark Age, Stable) and Knight (Middle Ages) carry Cavalry+Swordsman but not Petra's
+// FastMoving+CitizenSoldier. Add them to attacks still gathering units once one can be trained.
+// Petra deletes a build order it cannot train, so this is checked again every 5 turns.
+// Petra starts an attack only when every category reaches its target, so cavalry must not hold
+// one back: once the other categories are full, the plan settles for the cavalry it already has.
+const epochCavalryClasses = ['Cavalry+Swordsman'];
+const epochCavalryInterests = [['strength', 1]];
+function epochAddCavalry(gameState, plan)
+{
+    if (plan.state != 'unexecuted' || !plan.canBuildUnits)
+        return;
+    const cavalry = plan.unitStat.Cavalry;
+    if (cavalry)
+    {
+        const othersFull = Object.entries(plan.unitStat).every(([category, stat]) =>
+            category == 'Cavalry' || plan.unit[category].length >= stat.targetSize);
+        if (othersFull && plan.unit.Cavalry.length < cavalry.targetSize)
+            cavalry.targetSize = plan.unit.Cavalry.length;
+        return;
+    }
+    if (gameState.ai.playedTurn % 5 ||
+        !gameState.ai.HQ.findBestTrainableUnit(gameState, epochCavalryClasses, epochCavalryInterests))
+        return;
+    plan.addBuildOrder(gameState, 'Cavalry', {'priority': 1, 'minSize': 0, 'targetSize': 6, 'batchSize': 2,
+        'classes': epochCavalryClasses, 'interests': epochCavalryInterests});
 }
