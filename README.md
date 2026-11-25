@@ -5,7 +5,7 @@
 
 ## 目前位置（2026-11-15）
 
-- **能玩的部分**：一個文明、青銅→鐵器→黑暗時代→中世紀→文藝復興五個時代，採集、建造、訓練、研究、作戰到分出勝負都能跑完整局；有繁中 HUD、限定範圍的 Petra AI 對手、存讀檔與本機雙端連線。
+- **能玩的部分**：一個文明、史前→太空共 16 個時代（比照世紀爭霸，開局與結束時代可在對戰設定選），採集、建造、訓練、研究、作戰到分出勝負都能跑完整局；有繁中 HUD、限定範圍的 Petra AI 對手、存讀檔與本機雙端連線。
 - **原型**：飛機、機場、防空、精確彈道、潛艇可行性調查、原創低面數美術樣板。
 - **T14–T18**：已依[重設計畫](docs/empire-rts/RESET-PLAN-2026-11-15.md)結案：T14、T18 縮小範圍 DONE，T15–T17 DROPPED；成果保留，未通過的項目改記為已知限制。
 - **下一步**：M7「可分享的試玩版 v0.4」。現況與待辦以 [STATUS.md](docs/empire-rts/STATUS.md) 為準。
@@ -20,7 +20,7 @@
 | [定案紀錄](docs/empire-rts/decisions.md) | 長期有效的決策 |
 | [開發計畫](docs/empire-rts/plan.md) | 目標、範圍、技術決策、里程碑 |
 | [兩時代玩法規格](docs/empire-rts/m2-rules.md) | 青銅→鐵器規則、數值與解鎖條件 |
-| [時代階梯](docs/empire-rts/age-ladder.md) | 五時代（比照世紀爭霸）的升級條件、花費、新單位與建築 |
+| [時代階梯](docs/empire-rts/age-ladder.md) | 16 個時代（比照世紀爭霸）的升級條件、花費、加成、開局／結束時代設定 |
 | [進度主表](docs/empire-rts/progress.md) | T00–T18 任務狀態與證據 |
 | [工作紀錄](docs/empire-rts/journal.md) | 歷次變更與驗證 |
 | [執行與重現測試](docs/empire-rts/baseline.md) | R28 安裝、啟動、smoke test |
