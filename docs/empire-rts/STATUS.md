@@ -1,7 +1,7 @@
 <!-- Purpose: 專案現況與下一步的唯一入口（≤80 行）；Created: 2026-11-15. -->
 # STATUS
 
-更新：2026-11-15（Phase 0、Phase 1 完成）
+更新：2026-11-25（多時代階梯 A1 完成）
 
 ## 現況
 
@@ -26,6 +26,7 @@
 | M7.4 | `.pyromod` 安裝包＋乾淨帳號安裝測試 | DONE（2026-11-24，以模擬乾淨安裝結案，見 decisions.md；選單操作留給 M7.6 試玩者實測）：`package-mod.py` 產生 `epoch_rts-0.4.0.pyromod`（66 檔、壓縮後約 90 KB、可重現），`mod.json` 升為 0.4.0；安裝說明 [INSTALL.md](INSTALL.md)。2026-11-24 模擬乾淨安裝（暫時移開本機 0ad 使用者資料與快取）：`open` 該檔由 R28 自動安裝，安裝後的 zip 雜湊與包相同；從安裝後的 zip 以 duel＋epoch_petra 跑完整局，AI 917.4 秒勝、0 錯誤 0 警告；繁中開場說明正常顯示。未驗證：真正的新 macOS 帳號、Finder 雙擊、Mod Selection 與對戰設定的選單操作（合成點擊對全螢幕遊戲無效） |
 | M7.5 | GitHub Release v0.4.0 | DONE（2026-11-25）：[Release v0.4.0](https://github.com/boboidvtw/0ad/releases/tag/v0.4.0)（tag `v0.4.0` → `cacbcfd`），附 `epoch_rts-0.4.0.pyromod`（90,058 bytes）與 `.sha256`；GitHub 回報的資產 digest 與本機建置相同（`823a18dc…7ca64`），重新下載後 `shasum -c` 通過。說明與已知限制見 [release-notes-v0.4.0.md](release-notes-v0.4.0.md)。2026-11-25 本人同意後開啟 repo Issues，Release notes、INSTALL.md 與試玩包的回報方式改為 Issues（保留「回報給提供連結的人」作備案） |
 | M7.6 | 1–3 人試玩＋回饋整理 | IN PROGRESS（2026-11-25）：試玩包 [m7.6-playtest-kit.md](m7.6-playtest-kit.md)（邀請訊息、5 題問卷、對應決策）與回饋整理頁 [m7.6-feedback.md](m7.6-feedback.md) 已備好；等本人找人並傳出邀請，目前 0 人 |
+| A1 | 多時代階梯（本人 2026-11-25 指示，比照世紀爭霸） | DONE（2026-11-25）：時代 2→5，青銅→鐵器→黑暗時代→中世紀→文藝復興，每級要上一時代的建築（兵營／鍛造所／馬廄／攻城工坊）＋逐級變貴的資源；新增馬廄、攻城工坊、騎兵、騎士、攻城槌、射石砲。規格 [age-ladder.md](age-ladder.md)。`smoke-macos.py --scenario ages` 87 項、t04 183 項、t05 77 項、duel，seed 42／7 全過；duel-ai 兩場 AI 勝 1084／1045 秒（原 917／935），AI 自行升到中世紀；截圖 `evidence/age-ladder-renaissance.jpg`。未做：平衡、真人試玩、AI 用騎兵與攻城武器進攻 |
 
 ## 已知限制（摘要）
 
