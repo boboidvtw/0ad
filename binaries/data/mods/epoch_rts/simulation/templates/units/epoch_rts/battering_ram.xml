@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Purpose: Epoch ladder (Dark Age to Renaissance) content using public temporary art. Created: 2026-11-25. -->
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<Entity parent="units/athen/siege_ram">
+  <Cost replace="">
+    <Population>3</Population>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>300</wood>
+      <stone>0</stone>
+      <metal>100</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>400</Max>
+  </Health>
+  <Identity>
+    <Civ>epoch</Civ>
+    <GenericName>Battering Ram</GenericName>
+    <SpecificName>Battering Ram</SpecificName>
+    <SelectionGroupName>units/epoch_rts/battering_ram</SelectionGroupName>
+    <Tooltip>Battering Ram: Siege unit. Attacks buildings only.</Tooltip>
+    <Requirements replace="">
+      <Techs datatype="tokens">phase_epoch_medieval</Techs>
+      <Tooltip>Requires Middle Ages.</Tooltip>
+    </Requirements>
+  </Identity>
+  <Loot disable="" />
+  <Looter disable="" />
+  <Auras disable="" />
+  <Promotion disable="" />
+  <GarrisonHolder disable="" />
+  <Garrisonable disable="" />
+</Entity>

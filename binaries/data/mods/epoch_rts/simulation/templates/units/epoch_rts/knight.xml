@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Purpose: Epoch ladder (Dark Age to Renaissance) content using public temporary art. Created: 2026-11-25. -->
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<Entity parent="units/rome/champion_cavalry">
+  <Cost replace="">
+    <Population>1</Population>
+    <BuildTime>40</BuildTime>
+    <Resources>
+      <food>150</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>100</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>260</Max>
+  </Health>
+  <Identity>
+    <Civ>epoch</Civ>
+    <Lang>greek</Lang>
+    <GenericName>Knight</GenericName>
+    <SpecificName>Knight</SpecificName>
+    <SelectionGroupName>units/epoch_rts/knight</SelectionGroupName>
+    <Classes datatype="tokens" replace="">Unit Organic Soldier Cavalry Melee Swordsman Knight</Classes>
+    <VisibleClasses datatype="tokens" replace="">Soldier Cavalry Swordsman Knight</VisibleClasses>
+    <Tooltip>Knight: Heavily armored cavalry. Cannot gather or build.</Tooltip>
+    <Requirements replace="">
+      <Techs datatype="tokens">phase_epoch_medieval</Techs>
+      <Tooltip>Requires Middle Ages.</Tooltip>
+    </Requirements>
+  </Identity>
+  <Auras disable="" />
+  <Promotion disable="" />
+  <Loot disable="" />
+  <Looter disable="" />
+  <TreasureCollector disable="" />
+  <Garrisonable disable="" />
+  <Resistance>
+    <Entity>
+      <Damage replace="">
+        <Hack>5</Hack>
+        <Pierce>5</Pierce>
+        <Crush>0</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>15</WalkSpeed>
+  </UnitMotion>
+  <Attack replace="">
+    <Melee>
+      <AttackName>Melee</AttackName>
+      <Damage replace="">
+        <Hack>16</Hack>
+        <Pierce>0</Pierce>
+        <Crush>0</Crush>
+      </Damage>
+      <MaxRange>4</MaxRange>
+      <PrepareTime>500</PrepareTime>
+      <RepeatTime>1250</RepeatTime>
+    </Melee>
+  </Attack>
+  <Builder disable="" />
+  <ResourceGatherer disable="" />
+</Entity>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Purpose: Epoch ladder (Dark Age to Renaissance) content using public temporary art. Created: 2026-11-25. -->
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<Entity parent="units/epoch_rts/bombard_packed">
+  <Footprint>
+    <Square width="6.0" depth="12.0"/>
+  </Footprint>
+  <Identity>
+    <Icon>units/hele/siege_lithobolos.png</Icon>
+    <SelectionGroupName>units/epoch_rts/bombard_unpacked</SelectionGroupName>
+  </Identity>
+  <Pack>
+    <Entity>units/epoch_rts/bombard_packed</Entity>
+    <State>unpacked</State>
+  </Pack>
+  <UnitMotion>
+    <WalkSpeed>0.001</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/hellenes/siege_lithobolos_med.xml</Actor>
+  </VisualActor>
+</Entity>

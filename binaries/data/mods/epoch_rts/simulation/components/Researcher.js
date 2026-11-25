@@ -1,5 +1,5 @@
 // Derived from Wildfire Games R28 Researcher.js, GPL-2.0-or-later.
-// Purpose: Recheck queued Iron Age prerequisites before first research work. Created: 2026-09-08.
+// Purpose: Recheck queued epoch age prerequisites before first research work. Created: 2026-09-08; all ages 2026-11-25.
 function Researcher() {}
 
 Researcher.prototype.Schema =
@@ -29,6 +29,15 @@ Researcher.prototype.Schema =
 			Resources.BuildSchema("nonNegativeDecimal", ["time"]) +
 		"</element>" +
 	"</optional>";
+
+// Every epoch age needs a completed building of the previous age; recheck it when work starts.
+// Keys double as the list of ages guarded here. Messages are msgids in l10n/zh_TW.epoch.po.
+Researcher.prototype.EpochAgeCancelMessages = {
+    "phase_epoch_iron": "Iron Age research cancelled: a completed Barracks is required. Resources refunded.",
+    "phase_epoch_dark": "Dark Age research cancelled: a completed Forge is required. Resources refunded.",
+    "phase_epoch_medieval": "Middle Ages research cancelled: a completed Stable is required. Resources refunded.",
+    "phase_epoch_renaissance": "Renaissance research cancelled: a completed Siege Workshop is required. Resources refunded."
+};
 
 /**
  * This object represents a technology being researched.
@@ -85,7 +94,8 @@ Researcher.prototype.Item.prototype.Progress = function(allocatedTime)
 {
     // Epoch's prerequisite must hold when work actually begins, not only on enqueue.
     // CanResearch cannot be used here: this technology is already queued.
-    if (!this.started && this.templateName == "phase_epoch_iron")
+    const cancelMessage = Researcher.prototype.EpochAgeCancelMessages[this.templateName];
+    if (!this.started && cancelMessage)
     {
         const manager = QueryPlayerIDInterface(this.player, IID_TechnologyManager);
         const civ = QueryPlayerIDInterface(this.player, IID_Identity).GetCiv();
@@ -95,7 +105,7 @@ Researcher.prototype.Item.prototype.Progress = function(allocatedTime)
             this.Finish();
             Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface).PushNotification({
                 "type": "text", "players": [this.player],
-                "message": "Iron Age research cancelled: a completed Barracks is required. Resources refunded.",
+                "message": cancelMessage,
                 "translateMessage": true
             });
             return 0;

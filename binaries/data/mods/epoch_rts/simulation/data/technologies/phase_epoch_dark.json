@@ -1,0 +1,31 @@
+{
+  "genericName": "Dark Age",
+  "supersedes": "phase_epoch_iron",
+  "requirements": {
+    "all": [
+      {
+        "civ": "epoch"
+      },
+      {
+        "tech": "phase_epoch_iron"
+      },
+      {
+        "entity": {
+          "class": "Forge",
+          "number": 1
+        }
+      }
+    ]
+  },
+  "cost": {
+    "food": 600,
+    "wood": 300,
+    "metal": 200
+  },
+  "researchTime": 75,
+  "icon": "town_phase.png",
+  "tooltip": "Unlock the Stable and Horsemen.",
+  "requirementsTooltip": "Requires a completed Forge and Iron Age.",
+  "description": "Advance to Dark Age. Unlock the Stable and Horsemen.",
+  "soundComplete": "interface/alarm/alarm_phase.xml"
+}

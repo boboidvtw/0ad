@@ -134,3 +134,111 @@ msgstr "5. 鐵器時代解鎖鐵刃步兵與鍛造所，可在鍛造所研究鍛
 
 msgid "Press Ctrl+P to hide or show this guide."
 msgstr "按 Ctrl+P 隱藏或顯示這份說明。"
+
+msgid "Dark Age"
+msgstr "黑暗時代"
+
+msgid "Middle Ages"
+msgstr "中世紀"
+
+msgid "Renaissance"
+msgstr "文藝復興"
+
+msgid "Stable"
+msgstr "馬廄"
+
+msgid "Siege Workshop"
+msgstr "攻城工坊"
+
+msgid "Horseman"
+msgstr "騎兵"
+
+msgid "Knight"
+msgstr "騎士"
+
+msgid "Battering Ram"
+msgstr "攻城槌"
+
+msgid "Bombard"
+msgstr "射石砲"
+
+msgid "Requires Dark Age."
+msgstr "需要黑暗時代。"
+
+msgid "Requires Middle Ages."
+msgstr "需要中世紀。"
+
+msgid "Requires Renaissance."
+msgstr "需要文藝復興。"
+
+msgid "Requires a completed Forge"
+msgstr "需要已完工鍛造所"
+
+msgid "Requires a completed Stable"
+msgstr "需要已完工馬廄"
+
+msgid "Requires a completed Siege Workshop"
+msgstr "需要已完工攻城工坊"
+
+msgid "Dark Age research available"
+msgstr "可研究黑暗時代"
+
+msgid "Middle Ages research available"
+msgstr "可研究中世紀"
+
+msgid "Renaissance research available"
+msgstr "可研究文藝復興"
+
+msgid "All ages reached"
+msgstr "已達最終時代"
+
+msgid "Unlock the Stable and Horsemen."
+msgstr "解鎖馬廄與騎兵。"
+
+msgid "Requires a completed Forge and Iron Age."
+msgstr "需要鐵器時代與一棟已完工鍛造所。"
+
+msgid "Advance to Dark Age. Unlock the Stable and Horsemen."
+msgstr "進入黑暗時代，解鎖馬廄與騎兵。"
+
+msgid "Unlock the Siege Workshop, Battering Rams and Knights."
+msgstr "解鎖攻城工坊、攻城槌與騎士。"
+
+msgid "Requires a completed Stable and Dark Age."
+msgstr "需要黑暗時代與一棟已完工馬廄。"
+
+msgid "Advance to Middle Ages. Unlock the Siege Workshop, Battering Rams and Knights."
+msgstr "進入中世紀，解鎖攻城工坊、攻城槌與騎士。"
+
+msgid "Unlock Bombards at the Siege Workshop."
+msgstr "解鎖攻城工坊的射石砲。"
+
+msgid "Requires a completed Siege Workshop and Middle Ages."
+msgstr "需要中世紀與一棟已完工攻城工坊。"
+
+msgid "Advance to Renaissance. Unlock Bombards at the Siege Workshop."
+msgstr "進入文藝復興，解鎖攻城工坊的射石砲。"
+
+msgid "Dark Age research cancelled: a completed Forge is required. Resources refunded."
+msgstr "黑暗時代研究已取消：需要已完工鍛造所，資源已退還。"
+
+msgid "Middle Ages research cancelled: a completed Stable is required. Resources refunded."
+msgstr "中世紀研究已取消：需要已完工馬廄，資源已退還。"
+
+msgid "Renaissance research cancelled: a completed Siege Workshop is required. Resources refunded."
+msgstr "文藝復興研究已取消：需要已完工攻城工坊，資源已退還。"
+
+msgid "Horseman: Fast mounted combat unit. Cannot gather or build."
+msgstr "騎兵：快速的騎乘戰鬥單位，不能採集或建造。"
+
+msgid "Knight: Heavily armored cavalry. Cannot gather or build."
+msgstr "騎士：重裝騎兵，不能採集或建造。"
+
+msgid "Battering Ram: Siege unit. Attacks buildings only."
+msgstr "攻城槌：攻城單位，只能攻擊建築。"
+
+msgid "Bombard: Long-range siege unit. Must unpack before firing."
+msgstr "射石砲：遠程攻城單位，開火前要先展開。"
+
+msgid "6. Keep advancing at the Civic Center: Dark Age needs a Forge, Middle Ages a Stable, Renaissance a Siege Workshop. Each age costs more."
+msgstr "6. 繼續在市中心升級時代：黑暗時代需要鍛造所，中世紀需要馬廄，文藝復興需要攻城工坊，每個時代都比前一個貴。"

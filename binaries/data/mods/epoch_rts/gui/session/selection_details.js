@@ -318,10 +318,13 @@ function displaySingle(entState)
 		if (g_ViewedPlayer == -1 || playerState.isMutualAlly[g_ViewedPlayer])
 		{
 			const epoch = playerState.civ == "epoch";
-            const epochIron = epoch && g_SimState.players[entState.player].researchedTechs.has("phase_epoch_iron");
-            const civPhase = epoch ? (epochIron ? "town" : "village") : g_SimState.players[entState.player].phase;
+            // Five epoch ages share the three public emblems: Bronze village; Iron and Dark town; later city.
+            const epochAge = epoch && ["phase_epoch_renaissance", "phase_epoch_medieval", "phase_epoch_dark", "phase_epoch_iron"]
+                .find(tech => g_SimState.players[entState.player].researchedTechs.has(tech)) || "phase_epoch_bronze";
+            const epochEmblem = { "phase_epoch_bronze": "village", "phase_epoch_iron": "town", "phase_epoch_dark": "town" }[epochAge] || "city";
+            const civPhase = epoch ? epochEmblem : g_SimState.players[entState.player].phase;
 			civPhaseEmblems = "session/panel_phase_emblems_" + civPhase + ".png";
-			const civPhaseData = (epoch ? GetTechnologyData(epochIron ? "phase_epoch_iron" : "phase_epoch_bronze", "epoch") :
+			const civPhaseData = (epoch ? GetTechnologyData(epochAge, "epoch") :
                 GetTechnologyData("phase_" + civPhase + "_" + playerState.civ, playerState.civ)) ||
 				GetTechnologyData("phase_" + civPhase, playerState.civ);
 			civilizationTooltip += " — " + getEntityNames(civPhaseData);

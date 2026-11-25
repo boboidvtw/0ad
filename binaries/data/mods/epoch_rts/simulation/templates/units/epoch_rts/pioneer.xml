@@ -59,7 +59,7 @@
   </Attack>
   <Builder replace="">
     <Rate>1</Rate>
-    <Entities datatype="tokens">structures/epoch_rts/house structures/epoch_rts/storehouse structures/epoch_rts/barracks structures/epoch_rts/field structures/epoch_rts/forge</Entities>
+    <Entities datatype="tokens">structures/epoch_rts/house structures/epoch_rts/storehouse structures/epoch_rts/barracks structures/epoch_rts/field structures/epoch_rts/forge structures/epoch_rts/stable structures/epoch_rts/siege_workshop</Entities>
   </Builder>
   <ResourceGatherer>
     <Rates replace="">

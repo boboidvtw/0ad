@@ -1,0 +1,32 @@
+{
+  "genericName": "Middle Ages",
+  "supersedes": "phase_epoch_dark",
+  "requirements": {
+    "all": [
+      {
+        "civ": "epoch"
+      },
+      {
+        "tech": "phase_epoch_dark"
+      },
+      {
+        "entity": {
+          "class": "Stable",
+          "number": 1
+        }
+      }
+    ]
+  },
+  "cost": {
+    "food": 800,
+    "wood": 400,
+    "stone": 200,
+    "metal": 300
+  },
+  "researchTime": 90,
+  "icon": "city_phase.png",
+  "tooltip": "Unlock the Siege Workshop, Battering Rams and Knights.",
+  "requirementsTooltip": "Requires a completed Stable and Dark Age.",
+  "description": "Advance to Middle Ages. Unlock the Siege Workshop, Battering Rams and Knights.",
+  "soundComplete": "interface/alarm/alarm_phase.xml"
+}

@@ -18,9 +18,11 @@ EpochPetraBot.prototype.CustomInit = function(gameState)
     {
         return name.replace(/\{civ\}/g, 'epoch_rts');
     };
-    // The M2 CC offers only the next age. Petra needs an ordered phase chain,
-    // including the automatically researched starting age.
-    gameState.phases = ['phase_epoch_bronze', 'phase_epoch_iron'].map(name => ({
+    // The CC offers only the next age (supersedes chain). Petra needs an ordered phase chain,
+    // including the automatically researched starting age. Each age's building requirement
+    // (Barracks, Forge, Stable, SiegeWorkshop) is met by Petra's generic phase-up builder.
+    gameState.phases = ['phase_epoch_bronze', 'phase_epoch_iron', 'phase_epoch_dark',
+        'phase_epoch_medieval', 'phase_epoch_renaissance'].map(name => ({
         name,
         requirements: GetTechnologyBasicDataHelper(gameState.getTemplate(name)._template, 'epoch').reqs
     }));
@@ -29,7 +31,7 @@ EpochPetraBot.prototype.CustomInit = function(gameState)
     const upstreamUpdate = manager.update;
     manager.update = function(state, queues, events)
     {
-        // Bounded two-age doctrine: defense remains active, offensive armies start in Iron Age.
+        // Bounded doctrine: defense remains active, offensive armies start in Iron Age.
         if (state.currentPhase() < 2)
             return;
         upstreamUpdate.call(this, state, queues, events);

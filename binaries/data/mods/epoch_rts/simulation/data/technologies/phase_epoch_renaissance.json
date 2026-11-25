@@ -1,0 +1,32 @@
+{
+  "genericName": "Renaissance",
+  "supersedes": "phase_epoch_medieval",
+  "requirements": {
+    "all": [
+      {
+        "civ": "epoch"
+      },
+      {
+        "tech": "phase_epoch_medieval"
+      },
+      {
+        "entity": {
+          "class": "SiegeWorkshop",
+          "number": 1
+        }
+      }
+    ]
+  },
+  "cost": {
+    "food": 1000,
+    "wood": 500,
+    "stone": 300,
+    "metal": 500
+  },
+  "researchTime": 105,
+  "icon": "city_phase.png",
+  "tooltip": "Unlock Bombards at the Siege Workshop.",
+  "requirementsTooltip": "Requires a completed Siege Workshop and Middle Ages.",
+  "description": "Advance to Renaissance. Unlock Bombards at the Siege Workshop.",
+  "soundComplete": "interface/alarm/alarm_phase.xml"
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Purpose: Epoch ladder (Dark Age to Renaissance) content using public temporary art. Created: 2026-11-25. -->
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<Entity parent="units/athen/siege_lithobolos_packed">
+  <Cost replace="">
+    <Population>3</Population>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>250</wood>
+      <stone>100</stone>
+      <metal>200</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>300</Max>
+  </Health>
+  <Identity>
+    <Civ>epoch</Civ>
+    <GenericName>Bombard</GenericName>
+    <SpecificName>Bombard</SpecificName>
+    <SelectionGroupName>units/epoch_rts/bombard_packed</SelectionGroupName>
+    <Tooltip>Bombard: Long-range siege unit. Must unpack before firing.</Tooltip>
+    <Requirements replace="">
+      <Techs datatype="tokens">phase_epoch_renaissance</Techs>
+      <Tooltip>Requires Renaissance.</Tooltip>
+    </Requirements>
+  </Identity>
+  <Loot disable="" />
+  <Looter disable="" />
+  <Auras disable="" />
+  <Promotion disable="" />
+  <GarrisonHolder disable="" />
+  <Garrisonable disable="" />
+  <Pack>
+    <Entity>units/epoch_rts/bombard_unpacked</Entity>
+    <State>packed</State>
+  </Pack>
+</Entity>
