@@ -25,7 +25,7 @@
 | M7.3 | 遊戲內繁中開場說明 | DONE（2026-11-24）：`duel` 開局在 R28 教學面板顯示一頁繁中說明（目標、採集、房屋 +10 人口、兵營、市中心研究鐵器時代的條件與花費、鍛造所），Ctrl+P 可隱藏／顯示，實測兩個方向都有效；截圖 `evidence/m7.3-opening-guide.jpg`。`smoke-macos.py` duel seed 7／42 與 duel-ai seed 42（917 秒 AI 勝）皆通過，無錯誤 |
 | M7.4 | `.pyromod` 安裝包＋乾淨帳號安裝測試 | DONE（2026-11-24，以模擬乾淨安裝結案，見 decisions.md；選單操作留給 M7.6 試玩者實測）：`package-mod.py` 產生 `epoch_rts-0.4.0.pyromod`（66 檔、壓縮後約 90 KB、可重現），`mod.json` 升為 0.4.0；安裝說明 [INSTALL.md](INSTALL.md)。2026-11-24 模擬乾淨安裝（暫時移開本機 0ad 使用者資料與快取）：`open` 該檔由 R28 自動安裝，安裝後的 zip 雜湊與包相同；從安裝後的 zip 以 duel＋epoch_petra 跑完整局，AI 917.4 秒勝、0 錯誤 0 警告；繁中開場說明正常顯示。未驗證：真正的新 macOS 帳號、Finder 雙擊、Mod Selection 與對戰設定的選單操作（合成點擊對全螢幕遊戲無效） |
 | M7.5 | GitHub Release v0.4.0 | DONE（2026-11-25）：[Release v0.4.0](https://github.com/boboidvtw/0ad/releases/tag/v0.4.0)（tag `v0.4.0` → `cacbcfd`），附 `epoch_rts-0.4.0.pyromod`（90,058 bytes）與 `.sha256`；GitHub 回報的資產 digest 與本機建置相同（`823a18dc…7ca64`），重新下載後 `shasum -c` 通過。說明與已知限制見 [release-notes-v0.4.0.md](release-notes-v0.4.0.md)。repo 的 Issues 是關閉的，回報管道暫定為「回報給提供連結的人」 |
-| M7.6 | 1–3 人試玩＋回饋整理 | TODO |
+| M7.6 | 1–3 人試玩＋回饋整理 | IN PROGRESS（2026-11-25）：試玩包 [m7.6-playtest-kit.md](m7.6-playtest-kit.md)（邀請訊息、5 題問卷、對應決策）與回饋整理頁 [m7.6-feedback.md](m7.6-feedback.md) 已備好；等本人找人並傳出邀請，目前 0 人 |
 
 ## 已知限制（摘要）
 
