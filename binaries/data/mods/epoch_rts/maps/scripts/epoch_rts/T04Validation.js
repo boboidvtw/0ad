@@ -74,7 +74,7 @@ const centrePos = Q(centre, IID_Position).GetPosition2D();
 		}
 		this.EpochCheck("E02.resources." + p, [counts.wood >= 30, counts.food >= 5, counts.stone >= 1, counts.metal >= 1], [true, true, true, true]);
 	}
-	this.EpochCheck("E11.builderWhitelist", Q(worker, IID_Builder).GetEntitiesList(), ["house", "storehouse", "barracks", "field", "forge"].map(id => "structures/epoch_rts/" + id));
+	this.EpochCheck("E11.builderWhitelist", Q(worker, IID_Builder).GetEntitiesList(), ["house", "storehouse", "barracks", "field", "forge", "stable", "siege_workshop"].map(id => "structures/epoch_rts/" + id));
 	for (const [id, hp, seconds, cost, speed] of [
 		["pioneer", 40, 15, [50, 0, 0, 0], 9], ["spearman", 100, 20, [60, 20, 0, 0], 8],
 		["slinger", 60, 25, [40, 40, 0, 0], 9], ["iron_swordsman", 140, 30, [80, 0, 0, 40], 9]])
@@ -89,7 +89,7 @@ const centrePos = Q(centre, IID_Position).GetPosition2D();
 		const t = tm.GetTemplate("structures/epoch_rts/" + id);
 		this.EpochCheck("E04.template." + id, [+t.Health.Max, +t.Cost.BuildTime, +t.Cost.Resources.wood, +t.Cost.Resources.stone], [hp, seconds, w, s]);
 		this.EpochCheck("E11.noLeakedBuilding." + id, !!(t.Attack || t.Capturable || t.GarrisonHolder || t.TerritoryDecay || t.Auras || t.Looter), false);
-		this.EpochCheck("E11.researchWhitelist." + id, t.Researcher?.Technologies?._string || "", id == "civil_centre" ? "phase_epoch_iron" : id == "forge" ? "epoch_forged_weapons" : "");
+		this.EpochCheck("E11.researchWhitelist." + id, t.Researcher?.Technologies?._string || "", id == "civil_centre" ? "phase_epoch_iron phase_epoch_dark phase_epoch_medieval phase_epoch_renaissance" : id == "forge" ? "epoch_forged_weapons" : "");
         this.EpochCheck("E11.critical." + id, GetIdentityClasses(t.Identity).includes("ConquestCritical"), id == "civil_centre");
 	}
 	this.EpochCheck("E03.rates", Q(worker, IID_ResourceGatherer).GetGatherRates(), { "food.fruit": 1, "food.grain": 0.5, "wood.tree": 0.7, "stone.rock": 0.35, "metal.ore": 0.35 });

@@ -27,8 +27,10 @@ bot.CustomInit(gs);
 assert.equal(gs.applyCiv('structures/{civ}/civil_centre'), 'structures/epoch_rts/civil_centre');
 assert.equal(otherState.applyCiv('structures/{civ}/civil_centre'), 'structures/athen/civil_centre');
 assert.equal(other.HQ.attackManager.update, upstreamUpdate);
-assert.equal(JSON.stringify(gs.phases.map(p => p.name)), JSON.stringify(['phase_epoch_bronze', 'phase_epoch_iron']));
+assert.equal(JSON.stringify(gs.phases.map(p => p.name)), JSON.stringify(['phase_epoch_bronze', 'phase_epoch_iron',
+    'phase_epoch_dark', 'phase_epoch_medieval', 'phase_epoch_renaissance']));
 assert.equal(gs.phases[1].requirements[0], 'phase_epoch_iron');
+assert.equal(gs.phases[4].requirements[0], 'phase_epoch_renaissance');
 const manager = bot.HQ.attackManager;
 manager.update(gs, {}, {});
 assert.equal(updates, 0, 'Bronze must not update offensive manager');
