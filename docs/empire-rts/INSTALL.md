@@ -57,4 +57,4 @@
 - 4K 螢幕全螢幕時介面字很小，可在 Settings → Options 調整介面縮放（GUI scale）。
 - 建築與部分單位暫用 0 A.D. 原版的希臘、羅馬素材，不代表最終美術。
 - 兩個 AI 互打通常要 25–35 分鐘才分出勝負；這只影響 AI 對 AI，不影響你對 AI。
-- 回報問題時，請附上 `~/Library/Application Support/0ad/logs/mainlog.html`。
+- 回報問題：到 <https://github.com/boboidvtw/0ad/issues> 開新問題，附上 `~/Library/Application Support/0ad/logs/mainlog.html` 裡的錯誤訊息（Issues 是公開的，請先刪掉使用者名稱與路徑）。
