@@ -1,0 +1,33 @@
+{
+  "genericName": "Digital Age",
+  "supersedes": "phase_epoch_atomic_modern",
+  "requirements": {
+    "all": [
+      {
+        "civ": "epoch"
+      },
+      {
+        "tech": "phase_epoch_atomic_modern"
+      }
+    ]
+  },
+  "cost": {
+    "food": 2200,
+    "wood": 1100,
+    "stone": 900,
+    "metal": 1100
+  },
+  "researchTime": 120,
+  "icon": "city_phase.png",
+  "tooltip": "Units train 10% faster.",
+  "requirementsTooltip": "Requires Atomic Age – Modern.",
+  "description": "Advance to Digital Age. Units train 10% faster.",
+  "modifications": [
+    {
+      "value": "Cost/BuildTime",
+      "multiply": 0.9,
+      "affects": "Unit"
+    }
+  ],
+  "soundComplete": "interface/alarm/alarm_phase.xml"
+}

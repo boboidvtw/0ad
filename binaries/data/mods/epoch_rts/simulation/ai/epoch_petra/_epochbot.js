@@ -19,20 +19,24 @@ EpochPetraBot.prototype.CustomInit = function(gameState)
         return name.replace(/\{civ\}/g, 'epoch_rts');
     };
     // The CC offers only the next age (supersedes chain). Petra needs an ordered phase chain,
-    // including the automatically researched starting age. Each age's building requirement
-    // (Barracks, Forge, Stable, SiegeWorkshop) is met by Petra's generic phase-up builder.
-    gameState.phases = ['phase_epoch_bronze', 'phase_epoch_iron', 'phase_epoch_dark',
-        'phase_epoch_medieval', 'phase_epoch_renaissance'].map(name => ({
-        name,
-        requirements: GetTechnologyBasicDataHelper(gameState.getTemplate(name)._template, 'epoch').reqs
+    // including the automatically researched first age (globalscripts/EpochAges.js). Ages after
+    // the game's End Age are disabled, so the chain stops there. Building requirements (Storehouse,
+    // Field, Barracks, Forge, Stable, SiegeWorkshop) are met by Petra's generic phase-up builder.
+    const disabled = gameState.playerData?.disabledTechnologies || {};
+    const lastAge = g_EpochAges.findIndex(age => disabled[age.tech]);
+    gameState.phases = g_EpochAges.slice(0, lastAge == -1 ? undefined : lastAge).map(age => ({
+        name: age.tech,
+        requirements: GetTechnologyBasicDataHelper(gameState.getTemplate(age.tech)._template, 'epoch').reqs
     }));
+    // Offensive armies start in Iron Age, or in the End Age when the game ends before Iron Age.
+    const attackPhase = Math.min(EpochAgeIndex('iron'), gameState.phases.length - 1) + 1;
     PetraBot.prototype.CustomInit.call(this, gameState);
     const manager = this.HQ.attackManager;
     const upstreamUpdate = manager.update;
     manager.update = function(state, queues, events)
     {
-        // Bounded doctrine: defense remains active, offensive armies start in Iron Age.
-        if (state.currentPhase() < 2)
+        // Bounded doctrine: defense remains active until the attack phase.
+        if (state.currentPhase() < attackPhase)
             return;
         upstreamUpdate.call(this, state, queues, events);
         for (const plans of Object.values(this.upcomingAttacks))

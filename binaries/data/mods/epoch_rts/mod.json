@@ -2,7 +2,7 @@
   "name": "epoch_rts",
   "version": "0.4.0",
   "label": "Epoch RTS \u2014 Frontier Prototype",
-  "description": "Original multi-age RTS prototype: grow a Frontier Union settlement from Bronze Age through Iron Age, Dark Age and Middle Ages to Renaissance, and play 1v1 against the Epoch Petra AI on the Frontier Duel map.",
+  "description": "Original multi-age RTS prototype inspired by cross-era RTS games: grow a Frontier Union settlement through 16 ages, from Prehistoric to Space Age, with selectable start and end ages, and play 1v1 against the Epoch Petra AI on the Frontier Duel map.",
   "dependencies": [
     "0ad=0.28.0"
   ]

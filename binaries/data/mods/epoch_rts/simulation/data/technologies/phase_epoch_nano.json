@@ -1,0 +1,33 @@
+{
+  "genericName": "Nano Age",
+  "supersedes": "phase_epoch_digital",
+  "requirements": {
+    "all": [
+      {
+        "civ": "epoch"
+      },
+      {
+        "tech": "phase_epoch_digital"
+      }
+    ]
+  },
+  "cost": {
+    "food": 2400,
+    "wood": 1200,
+    "stone": 1000,
+    "metal": 1200
+  },
+  "researchTime": 120,
+  "icon": "city_phase.png",
+  "tooltip": "Soldiers gain +10% health.",
+  "requirementsTooltip": "Requires Digital Age.",
+  "description": "Advance to Nano Age. Soldiers gain +10% health.",
+  "modifications": [
+    {
+      "value": "Health/Max",
+      "multiply": 1.1,
+      "affects": "Soldier"
+    }
+  ],
+  "soundComplete": "interface/alarm/alarm_phase.xml"
+}

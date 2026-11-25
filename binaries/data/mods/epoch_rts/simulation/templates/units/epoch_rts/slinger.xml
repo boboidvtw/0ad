@@ -24,7 +24,10 @@
     <Classes datatype="tokens" replace="">Unit Organic Human Soldier Infantry Slinger</Classes>
     <VisibleClasses datatype="tokens" replace="">Soldier Infantry Slinger</VisibleClasses>
     <Tooltip>Slinger: Combat unit. Cannot gather or build.</Tooltip>
-    <Requirements replace="" />
+    <Requirements replace="">
+      <Techs datatype="tokens">phase_epoch_stone</Techs>
+      <Tooltip>Requires Stone Age.</Tooltip>
+    </Requirements>
   </Identity>
   <Auras disable="" />
   <Promotion disable="" />

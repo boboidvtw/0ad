@@ -1,0 +1,38 @@
+{
+  "genericName": "Atomic Age – WWI",
+  "supersedes": "phase_epoch_industrial",
+  "requirements": {
+    "all": [
+      {
+        "civ": "epoch"
+      },
+      {
+        "tech": "phase_epoch_industrial"
+      }
+    ]
+  },
+  "cost": {
+    "food": 1600,
+    "wood": 800,
+    "stone": 600,
+    "metal": 800
+  },
+  "researchTime": 120,
+  "icon": "city_phase.png",
+  "tooltip": "Soldiers deal +10% damage.",
+  "requirementsTooltip": "Requires Industrial Age.",
+  "description": "Advance to Atomic Age – WWI. Soldiers deal +10% damage.",
+  "modifications": [
+    {
+      "value": "Attack/Melee/Damage/Hack",
+      "multiply": 1.1,
+      "affects": "Soldier"
+    },
+    {
+      "value": "Attack/Ranged/Damage/Pierce",
+      "multiply": 1.1,
+      "affects": "Soldier"
+    }
+  ],
+  "soundComplete": "interface/alarm/alarm_phase.xml"
+}

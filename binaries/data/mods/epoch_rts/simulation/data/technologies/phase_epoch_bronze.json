@@ -1,8 +1,31 @@
 {
   "genericName": "Bronze Age",
-  "autoResearch": true,
+  "supersedes": "phase_epoch_copper",
   "requirements": {
-    "civ": "epoch"
+    "all": [
+      {
+        "civ": "epoch"
+      },
+      {
+        "tech": "phase_epoch_copper"
+      },
+      {
+        "entity": {
+          "class": "Field",
+          "number": 1
+        }
+      }
+    ]
   },
-  "icon": "village_phase.png"
+  "cost": {
+    "food": 300,
+    "wood": 150,
+    "stone": 50
+  },
+  "researchTime": 50,
+  "icon": "village_phase.png",
+  "tooltip": "A step toward Iron Age; no new content.",
+  "requirementsTooltip": "Requires a completed Field and Copper Age.",
+  "description": "Advance to Bronze Age, the usual starting age. No new content.",
+  "soundComplete": "interface/alarm/alarm_phase.xml"
 }

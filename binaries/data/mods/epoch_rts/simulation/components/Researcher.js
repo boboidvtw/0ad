@@ -30,14 +30,10 @@ Researcher.prototype.Schema =
 		"</element>" +
 	"</optional>";
 
-// Every epoch age needs a completed building of the previous age; recheck it when work starts.
-// Keys double as the list of ages guarded here. Messages are msgids in l10n/zh_TW.epoch.po.
-Researcher.prototype.EpochAgeCancelMessages = {
-    "phase_epoch_iron": "Iron Age research cancelled: a completed Barracks is required. Resources refunded.",
-    "phase_epoch_dark": "Dark Age research cancelled: a completed Forge is required. Resources refunded.",
-    "phase_epoch_medieval": "Middle Ages research cancelled: a completed Stable is required. Resources refunded.",
-    "phase_epoch_renaissance": "Renaissance research cancelled: a completed Siege Workshop is required. Resources refunded."
-};
+// Every epoch age with a building requirement rechecks it when work starts (table in globalscripts/EpochAges.js).
+// Messages are msgids in l10n/zh_TW.epoch.po.
+Researcher.prototype.EpochAgeCancelMessages = Object.fromEntries(
+    g_EpochAges.filter(age => age.cancel).map(age => [age.tech, age.cancel]));
 
 /**
  * This object represents a technology being researched.

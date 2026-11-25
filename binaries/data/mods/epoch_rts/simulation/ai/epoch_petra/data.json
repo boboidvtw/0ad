@@ -1,6 +1,6 @@
 {
   "name": "Epoch Petra (experimental)",
-  "description": "R28 Petra adapter for the Epoch five-age prototype (Bronze to Renaissance). Validated on Frontier Duel at normal difficulty only.",
+  "description": "R28 Petra adapter for the Epoch 16-age prototype (Prehistoric to Space, honoring the start and end age settings). Validated on Frontier Duel at normal difficulty only.",
   "constructor": "EpochPetraBot",
   "filename": "_epochbot.js",
   "useShared": true

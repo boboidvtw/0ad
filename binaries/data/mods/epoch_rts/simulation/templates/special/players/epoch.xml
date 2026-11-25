@@ -8,4 +8,5 @@
     <History>An original faction with symmetric prototype rules.</History>
     <Icon>emblems/emblem_athenians.png</Icon>
   </Identity>
+  <EpochAges />
 </Entity>

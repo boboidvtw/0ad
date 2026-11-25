@@ -1,5 +1,6 @@
 {
   "genericName": "Iron Age",
+  "supersedes": "phase_epoch_bronze",
   "requirements": {
     "all": [
       {

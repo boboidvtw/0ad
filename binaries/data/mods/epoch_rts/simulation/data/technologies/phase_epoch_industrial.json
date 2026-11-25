@@ -1,0 +1,33 @@
+{
+  "genericName": "Industrial Age",
+  "supersedes": "phase_epoch_imperial",
+  "requirements": {
+    "all": [
+      {
+        "civ": "epoch"
+      },
+      {
+        "tech": "phase_epoch_imperial"
+      }
+    ]
+  },
+  "cost": {
+    "food": 1400,
+    "wood": 700,
+    "stone": 500,
+    "metal": 700
+  },
+  "researchTime": 120,
+  "icon": "city_phase.png",
+  "tooltip": "Workers gather 15% faster.",
+  "requirementsTooltip": "Requires Imperial Age.",
+  "description": "Advance to Industrial Age. Workers gather 15% faster.",
+  "modifications": [
+    {
+      "value": "ResourceGatherer/BaseSpeed",
+      "multiply": 1.15,
+      "affects": "Worker"
+    }
+  ],
+  "soundComplete": "interface/alarm/alarm_phase.xml"
+}

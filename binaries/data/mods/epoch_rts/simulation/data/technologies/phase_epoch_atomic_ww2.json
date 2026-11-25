@@ -1,0 +1,33 @@
+{
+  "genericName": "Atomic Age – WWII",
+  "supersedes": "phase_epoch_atomic_ww1",
+  "requirements": {
+    "all": [
+      {
+        "civ": "epoch"
+      },
+      {
+        "tech": "phase_epoch_atomic_ww1"
+      }
+    ]
+  },
+  "cost": {
+    "food": 1800,
+    "wood": 900,
+    "stone": 700,
+    "metal": 900
+  },
+  "researchTime": 120,
+  "icon": "city_phase.png",
+  "tooltip": "Buildings gain +20% health.",
+  "requirementsTooltip": "Requires Atomic Age – WWI.",
+  "description": "Advance to Atomic Age – WWII. Buildings gain +20% health.",
+  "modifications": [
+    {
+      "value": "Health/Max",
+      "multiply": 1.2,
+      "affects": "Structure"
+    }
+  ],
+  "soundComplete": "interface/alarm/alarm_phase.xml"
+}

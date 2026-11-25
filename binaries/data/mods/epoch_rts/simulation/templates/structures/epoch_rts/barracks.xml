@@ -24,7 +24,10 @@
     <VisibleClasses datatype="tokens" replace="">Barracks</VisibleClasses>
     <Tooltip>Barracks</Tooltip>
     <Undeletable>false</Undeletable>
-    <Requirements replace="" />
+    <Requirements replace="">
+      <Techs datatype="tokens">phase_epoch_stone</Techs>
+      <Tooltip>Requires Stone Age.</Tooltip>
+    </Requirements>
   </Identity>
   <Capturable disable="" />
   <TerritoryDecay disable="" />

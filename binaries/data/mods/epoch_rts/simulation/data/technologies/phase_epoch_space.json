@@ -1,0 +1,38 @@
+{
+  "genericName": "Space Age",
+  "supersedes": "phase_epoch_nano",
+  "requirements": {
+    "all": [
+      {
+        "civ": "epoch"
+      },
+      {
+        "tech": "phase_epoch_nano"
+      }
+    ]
+  },
+  "cost": {
+    "food": 2600,
+    "wood": 1300,
+    "stone": 1100,
+    "metal": 1300
+  },
+  "researchTime": 120,
+  "icon": "city_phase.png",
+  "tooltip": "Soldiers deal +10% damage.",
+  "requirementsTooltip": "Requires Nano Age.",
+  "description": "Advance to Space Age. Soldiers deal +10% damage.",
+  "modifications": [
+    {
+      "value": "Attack/Melee/Damage/Hack",
+      "multiply": 1.1,
+      "affects": "Soldier"
+    },
+    {
+      "value": "Attack/Ranged/Damage/Pierce",
+      "multiply": 1.1,
+      "affects": "Soldier"
+    }
+  ],
+  "soundComplete": "interface/alarm/alarm_phase.xml"
+}

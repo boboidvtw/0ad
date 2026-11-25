@@ -1,0 +1,30 @@
+{
+  "genericName": "Copper Age",
+  "supersedes": "phase_epoch_stone",
+  "requirements": {
+    "all": [
+      {
+        "civ": "epoch"
+      },
+      {
+        "tech": "phase_epoch_stone"
+      },
+      {
+        "entity": {
+          "class": "Barracks",
+          "number": 1
+        }
+      }
+    ]
+  },
+  "cost": {
+    "food": 200,
+    "wood": 100
+  },
+  "researchTime": 40,
+  "icon": "village_phase.png",
+  "tooltip": "Unlock Spearmen.",
+  "requirementsTooltip": "Requires a completed Barracks and Stone Age.",
+  "description": "Advance to Copper Age. Unlock Spearmen.",
+  "soundComplete": "interface/alarm/alarm_phase.xml"
+}

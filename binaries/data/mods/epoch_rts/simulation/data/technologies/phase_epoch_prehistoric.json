@@ -1,0 +1,8 @@
+{
+  "genericName": "Prehistoric Age",
+  "autoResearch": true,
+  "requirements": {
+    "civ": "epoch"
+  },
+  "icon": "village_phase.png"
+}

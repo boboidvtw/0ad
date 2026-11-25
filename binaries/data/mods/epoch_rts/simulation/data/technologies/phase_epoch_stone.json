@@ -1,0 +1,30 @@
+{
+  "genericName": "Stone Age",
+  "supersedes": "phase_epoch_prehistoric",
+  "requirements": {
+    "all": [
+      {
+        "civ": "epoch"
+      },
+      {
+        "tech": "phase_epoch_prehistoric"
+      },
+      {
+        "entity": {
+          "class": "Storehouse",
+          "number": 1
+        }
+      }
+    ]
+  },
+  "cost": {
+    "food": 100,
+    "wood": 50
+  },
+  "researchTime": 30,
+  "icon": "village_phase.png",
+  "tooltip": "Unlock the Barracks and Slingers.",
+  "requirementsTooltip": "Requires a completed Storehouse and Prehistoric Age.",
+  "description": "Advance to Stone Age. Unlock the Barracks and Slingers.",
+  "soundComplete": "interface/alarm/alarm_phase.xml"
+}

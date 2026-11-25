@@ -242,3 +242,173 @@ msgstr "射石砲：遠程攻城單位，開火前要先展開。"
 
 msgid "6. Keep advancing at the Civic Center: Dark Age needs a Forge, Middle Ages a Stable, Renaissance a Siege Workshop. Each age costs more."
 msgstr "6. 繼續在市中心升級時代：黑暗時代需要鍛造所，中世紀需要馬廄，文藝復興需要攻城工坊，每個時代都比前一個貴。"
+
+msgid "Prehistoric Age"
+msgstr "史前時代"
+
+msgid "Stone Age"
+msgstr "石器時代"
+
+msgid "Copper Age"
+msgstr "銅器時代"
+
+msgid "Imperial Age"
+msgstr "帝國時代"
+
+msgid "Industrial Age"
+msgstr "工業時代"
+
+msgid "Atomic Age – WWI"
+msgstr "原子時代－一戰"
+
+msgid "Atomic Age – WWII"
+msgstr "原子時代－二戰"
+
+msgid "Atomic Age – Modern"
+msgstr "原子時代－現代"
+
+msgid "Digital Age"
+msgstr "數位時代"
+
+msgid "Nano Age"
+msgstr "奈米時代"
+
+msgid "Space Age"
+msgstr "太空時代"
+
+
+msgid "Unlock the Barracks and Slingers."
+msgstr "解鎖兵營與投石兵。"
+
+msgid "Unlock Spearmen."
+msgstr "解鎖長矛兵。"
+
+msgid "Requires a completed Storehouse and Prehistoric Age."
+msgstr "需要史前時代與一棟已完工倉庫。"
+
+
+
+
+
+
+msgid "Soldiers gain +10% health."
+msgstr "士兵生命值 +10%。"
+
+msgid "Workers gather 15% faster."
+msgstr "工人採集速度 +15%。"
+
+msgid "Soldiers deal +10% damage."
+msgstr "士兵傷害 +10%。"
+
+msgid "Buildings gain +20% health."
+msgstr "建築生命值 +20%。"
+
+msgid "Soldiers move 10% faster."
+msgstr "士兵移動速度 +10%。"
+
+msgid "Units train 10% faster."
+msgstr "單位訓練時間 -10%。"
+
+msgid "Requires Imperial Age."
+msgstr "需要帝國時代。"
+
+msgid "Requires Industrial Age."
+msgstr "需要工業時代。"
+
+msgid "Requires Atomic Age – WWI."
+msgstr "需要原子時代－一戰。"
+
+msgid "Requires Atomic Age – WWII."
+msgstr "需要原子時代－二戰。"
+
+msgid "Requires Atomic Age – Modern."
+msgstr "需要原子時代－現代。"
+
+msgid "Requires Digital Age."
+msgstr "需要數位時代。"
+
+msgid "Requires Nano Age."
+msgstr "需要奈米時代。"
+
+msgid "Requires Stone Age."
+msgstr "需要石器時代。"
+
+msgid "Requires Copper Age."
+msgstr "需要銅器時代。"
+
+msgid "Requires Bronze Age."
+msgstr "需要青銅時代。"
+
+msgid "Advance to Imperial Age. Soldiers gain +10% health."
+msgstr "進入帝國時代，士兵生命值 +10%。"
+
+msgid "Advance to Industrial Age. Workers gather 15% faster."
+msgstr "進入工業時代，工人採集速度 +15%。"
+
+msgid "Advance to Atomic Age – WWI. Soldiers deal +10% damage."
+msgstr "進入原子時代－一戰，士兵傷害 +10%。"
+
+msgid "Advance to Atomic Age – WWII. Buildings gain +20% health."
+msgstr "進入原子時代－二戰，建築生命值 +20%。"
+
+msgid "Advance to Atomic Age – Modern. Soldiers move 10% faster."
+msgstr "進入原子時代－現代，士兵移動速度 +10%。"
+
+msgid "Advance to Digital Age. Units train 10% faster."
+msgstr "進入數位時代，單位訓練時間 -10%。"
+
+msgid "Advance to Nano Age. Soldiers gain +10% health."
+msgstr "進入奈米時代，士兵生命值 +10%。"
+
+msgid "Advance to Space Age. Soldiers deal +10% damage."
+msgstr "進入太空時代，士兵傷害 +10%。"
+
+msgid "Stone Age research cancelled: a completed Storehouse is required. Resources refunded."
+msgstr "石器時代研究已取消：需要已完工倉庫，資源已退還。"
+
+
+
+msgid "Final age reached"
+msgstr "已達最終時代"
+
+msgid "%(age)s needs a completed %(building)s"
+msgstr "%(age)s需要已完工%(building)s"
+
+msgid "%(age)s research available"
+msgstr "可研究%(age)s"
+
+msgid "Start Age"
+msgstr "開局時代"
+
+msgid "End Age"
+msgstr "結束時代"
+
+msgid "Epoch RTS: the age every Frontier Union player starts in. Earlier ages are granted at once."
+msgstr "Epoch RTS：拓荒聯盟玩家的開局時代，之前的時代會直接取得。"
+
+msgid "Epoch RTS: the last age Frontier Union players can research."
+msgstr "Epoch RTS：拓荒聯盟玩家能研究的最後一個時代。"
+
+msgid "Advance to Stone Age. Unlock the Barracks and Slingers."
+msgstr "進入石器時代，解鎖兵營與投石兵。"
+
+msgid "Requires a completed Barracks and Stone Age."
+msgstr "需要石器時代與一棟已完工兵營。"
+
+msgid "Advance to Copper Age. Unlock Spearmen."
+msgstr "進入銅器時代，解鎖長矛兵。"
+
+msgid "A step toward Iron Age; no new content."
+msgstr "通往鐵器時代的一步，沒有新內容。"
+
+msgid "Requires a completed Field and Copper Age."
+msgstr "需要銅器時代與一塊已完工農田。"
+
+msgid "Advance to Bronze Age, the usual starting age. No new content."
+msgstr "進入青銅時代（一般對局的開局時代），沒有新內容。"
+
+msgid "Copper Age research cancelled: a completed Barracks is required. Resources refunded."
+msgstr "銅器時代研究已取消：需要已完工兵營，資源已退還。"
+
+msgid "Bronze Age research cancelled: a completed Field is required. Resources refunded."
+msgstr "青銅時代研究已取消：需要已完工農田，資源已退還。"

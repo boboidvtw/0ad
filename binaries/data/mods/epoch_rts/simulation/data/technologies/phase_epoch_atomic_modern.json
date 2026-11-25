@@ -1,0 +1,33 @@
+{
+  "genericName": "Atomic Age – Modern",
+  "supersedes": "phase_epoch_atomic_ww2",
+  "requirements": {
+    "all": [
+      {
+        "civ": "epoch"
+      },
+      {
+        "tech": "phase_epoch_atomic_ww2"
+      }
+    ]
+  },
+  "cost": {
+    "food": 2000,
+    "wood": 1000,
+    "stone": 800,
+    "metal": 1000
+  },
+  "researchTime": 120,
+  "icon": "city_phase.png",
+  "tooltip": "Soldiers move 10% faster.",
+  "requirementsTooltip": "Requires Atomic Age – WWII.",
+  "description": "Advance to Atomic Age – Modern. Soldiers move 10% faster.",
+  "modifications": [
+    {
+      "value": "UnitMotion/WalkSpeed",
+      "multiply": 1.1,
+      "affects": "Soldier"
+    }
+  ],
+  "soundComplete": "interface/alarm/alarm_phase.xml"
+}

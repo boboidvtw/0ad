@@ -24,7 +24,10 @@
     <Classes datatype="tokens" replace="">Unit Organic Human Soldier Infantry Spearman EpochMelee</Classes>
     <VisibleClasses datatype="tokens" replace="">Soldier Infantry Spearman</VisibleClasses>
     <Tooltip>Spearman: Combat unit. Cannot gather or build.</Tooltip>
-    <Requirements replace="" />
+    <Requirements replace="">
+      <Techs datatype="tokens">phase_epoch_copper</Techs>
+      <Tooltip>Requires Copper Age.</Tooltip>
+    </Requirements>
   </Identity>
   <Auras disable="" />
   <Promotion disable="" />

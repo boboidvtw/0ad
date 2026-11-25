@@ -36,7 +36,7 @@
   <Looter disable="" />
   <Auras disable="" />
   <Researcher replace="">
-    <Technologies datatype="tokens">phase_epoch_iron phase_epoch_dark phase_epoch_medieval phase_epoch_renaissance</Technologies>
+    <Technologies datatype="tokens">phase_epoch_stone phase_epoch_copper phase_epoch_bronze phase_epoch_iron phase_epoch_dark phase_epoch_medieval phase_epoch_renaissance phase_epoch_imperial phase_epoch_industrial phase_epoch_atomic_ww1 phase_epoch_atomic_ww2 phase_epoch_atomic_modern phase_epoch_digital phase_epoch_nano phase_epoch_space</Technologies>
   </Researcher>
   <Resistance>
     <Entity>

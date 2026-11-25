@@ -1,0 +1,33 @@
+{
+  "genericName": "Imperial Age",
+  "supersedes": "phase_epoch_renaissance",
+  "requirements": {
+    "all": [
+      {
+        "civ": "epoch"
+      },
+      {
+        "tech": "phase_epoch_renaissance"
+      }
+    ]
+  },
+  "cost": {
+    "food": 1200,
+    "wood": 600,
+    "stone": 400,
+    "metal": 600
+  },
+  "researchTime": 120,
+  "icon": "city_phase.png",
+  "tooltip": "Soldiers gain +10% health.",
+  "requirementsTooltip": "Requires Renaissance.",
+  "description": "Advance to Imperial Age. Soldiers gain +10% health.",
+  "modifications": [
+    {
+      "value": "Health/Max",
+      "multiply": 1.1,
+      "affects": "Soldier"
+    }
+  ],
+  "soundComplete": "interface/alarm/alarm_phase.xml"
+}
