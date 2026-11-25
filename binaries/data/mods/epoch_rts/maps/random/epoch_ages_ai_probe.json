@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "Name": "Epoch RTS \u2014 Prehistoric start AI probe",
+    "Script": "epoch_frontier_duel.js",
+    "Description": "Frontier Duel starting in Prehistoric Age, for AI age-ladder probes; not a normal match.",
+    "CircularMap": true,
+    "Keywords": [
+      "demo"
+    ],
+    "SupportedBiomes": [],
+    "PlayerData": [
+      {
+        "Civ": "epoch"
+      },
+      {
+        "Civ": "epoch"
+      }
+    ],
+    "PopulationCap": 100,
+    "TriggerScripts": [
+      "scripts/epoch_rts/FrontierDuel.js",
+      "scripts/epoch_rts/AgesAIProbe.js"
+    ],
+    "EpochStartAge": "prehistoric"
+  }
+}

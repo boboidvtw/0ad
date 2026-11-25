@@ -1,0 +1,27 @@
+{
+  "settings": {
+    "Name": "Epoch RTS \u2014 age ladder early range validation",
+    "Script": "epoch_frontier_duel.js",
+    "Description": "Prehistoric start, Renaissance end age fixtures; not a normal match.",
+    "CircularMap": true,
+    "Keywords": [
+      "demo"
+    ],
+    "SupportedBiomes": [],
+    "PlayerData": [
+      {
+        "Civ": "epoch"
+      },
+      {
+        "Civ": "epoch"
+      }
+    ],
+    "PopulationCap": 100,
+    "TriggerScripts": [
+      "scripts/epoch_rts/FrontierDuel.js",
+      "scripts/epoch_rts/AgeLadderValidation.js"
+    ],
+    "EpochStartAge": "prehistoric",
+    "EpochEndAge": "renaissance"
+  }
+}

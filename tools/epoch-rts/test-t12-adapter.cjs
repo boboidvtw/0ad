@@ -13,11 +13,13 @@ PetraBot.prototype.CustomInit = function() {};
 const context = {PetraBot, filters: {byClasses: classes => classes},
     GetTechnologyBasicDataHelper: template => ({reqs: template.requirements})};
 vm.createContext(context);
+vm.runInContext(fs.readFileSync(path.join(__dirname,
+    '../../binaries/data/mods/epoch_rts/globalscripts/EpochAges.js'), 'utf8'), context);
 const source = fs.readFileSync(path.join(__dirname,
     '../../binaries/data/mods/epoch_rts/simulation/ai/epoch_petra/_epochbot.js'), 'utf8');
 vm.runInContext(source.replace(/^import .*;\n/gm, '').replace('export function', 'function'), context);
-function state(civ) {
-    return {getPlayerCiv: () => civ, applyCiv: name => name.replace('{civ}', civ),
+function state(civ, disabledTechnologies = {}) {
+    return {playerData: {disabledTechnologies}, getPlayerCiv: () => civ, applyCiv: name => name.replace('{civ}', civ),
         getTemplate: name => ({_template: {requirements: [name]}}), currentPhase: () => 1};
 }
 const other = new PetraBot(), otherState = state('athen');
@@ -27,11 +29,27 @@ bot.CustomInit(gs);
 assert.equal(gs.applyCiv('structures/{civ}/civil_centre'), 'structures/epoch_rts/civil_centre');
 assert.equal(otherState.applyCiv('structures/{civ}/civil_centre'), 'structures/athen/civil_centre');
 assert.equal(other.HQ.attackManager.update, upstreamUpdate);
-assert.equal(JSON.stringify(gs.phases.map(p => p.name)), JSON.stringify(['phase_epoch_bronze', 'phase_epoch_iron',
-    'phase_epoch_dark', 'phase_epoch_medieval', 'phase_epoch_renaissance']));
-assert.equal(gs.phases[1].requirements[0], 'phase_epoch_iron');
-assert.equal(gs.phases[4].requirements[0], 'phase_epoch_renaissance');
+const allAges = ['prehistoric', 'stone', 'copper', 'bronze', 'iron', 'dark', 'medieval', 'renaissance',
+    'imperial', 'industrial', 'atomic_ww1', 'atomic_ww2', 'atomic_modern', 'digital', 'nano', 'space'].map(k => 'phase_epoch_' + k);
+assert.equal(JSON.stringify(gs.phases.map(p => p.name)), JSON.stringify(allAges));
+assert.equal(gs.phases[4].requirements[0], 'phase_epoch_iron');
+assert.equal(gs.phases[15].requirements[0], 'phase_epoch_space');
+// An End Age of Copper disables Bronze onward; the chain stops and attacks start in the End Age.
+const capped = new context.EpochPetraBot({}), cappedState = state('epoch', {phase_epoch_bronze: true, phase_epoch_iron: true});
+capped.CustomInit(cappedState);
+assert.equal(JSON.stringify(cappedState.phases.map(p => p.name)), JSON.stringify(allAges.slice(0, 3)));
+capped.HQ.attackManager.upcomingAttacks = {};
+cappedState.currentPhase = () => 2;
+const cappedUpstream = updates;
+capped.HQ.attackManager.update(cappedState, {}, {});
+assert.equal(updates, cappedUpstream, 'Stone must not attack when the End Age is Copper');
+cappedState.currentPhase = () => 3;
+capped.HQ.attackManager.update(cappedState, {}, {});
+assert.equal(updates, cappedUpstream + 1, 'End Age Copper attacks from Copper');
+updates = cappedUpstream;
 const manager = bot.HQ.attackManager;
+manager.update(gs, {}, {});
+gs.currentPhase = () => 4;
 manager.update(gs, {}, {});
 assert.equal(updates, 0, 'Bronze must not update offensive manager');
 let unregistered = 0, registered = 0;
@@ -44,7 +62,7 @@ function plan(canBuildUnits) {
 }
 const training = plan(true), noTraining = plan(false), raid = {unitStat: {FastMoving: {}}};
 manager.upcomingAttacks.Attack.push(training, noTraining, raid);
-gs.currentPhase = () => 2;
+gs.currentPhase = () => 5;
 manager.update(gs, {}, {});
 assert.equal(updates, 1);
 assert.equal(unregistered, 4);

@@ -89,7 +89,7 @@ const centrePos = Q(centre, IID_Position).GetPosition2D();
 		const t = tm.GetTemplate("structures/epoch_rts/" + id);
 		this.EpochCheck("E04.template." + id, [+t.Health.Max, +t.Cost.BuildTime, +t.Cost.Resources.wood, +t.Cost.Resources.stone], [hp, seconds, w, s]);
 		this.EpochCheck("E11.noLeakedBuilding." + id, !!(t.Attack || t.Capturable || t.GarrisonHolder || t.TerritoryDecay || t.Auras || t.Looter), false);
-		this.EpochCheck("E11.researchWhitelist." + id, t.Researcher?.Technologies?._string || "", id == "civil_centre" ? "phase_epoch_iron phase_epoch_dark phase_epoch_medieval phase_epoch_renaissance" : id == "forge" ? "epoch_forged_weapons" : "");
+		this.EpochCheck("E11.researchWhitelist." + id, t.Researcher?.Technologies?._string || "", id == "civil_centre" ? "phase_epoch_stone phase_epoch_copper phase_epoch_bronze phase_epoch_iron phase_epoch_dark phase_epoch_medieval phase_epoch_renaissance phase_epoch_imperial phase_epoch_industrial phase_epoch_atomic_ww1 phase_epoch_atomic_ww2 phase_epoch_atomic_modern phase_epoch_digital phase_epoch_nano phase_epoch_space" : id == "forge" ? "epoch_forged_weapons" : "");
         this.EpochCheck("E11.critical." + id, GetIdentityClasses(t.Identity).includes("ConquestCritical"), id == "civil_centre");
 	}
 	this.EpochCheck("E03.rates", Q(worker, IID_ResourceGatherer).GetGatherRates(), { "food.fruit": 1, "food.grain": 0.5, "wood.tree": 0.7, "stone.rock": 0.35, "metal.ore": 0.35 });
