@@ -8,7 +8,7 @@
 | 項目 | 說明 |
 | --- | --- |
 | 0 A.D. **Release 28（0.28.0）** | 從官方網站 <https://play0ad.com/download/> 下載。其他版本無法載入這個 Mod |
-| `epoch_rts-0.4.0.pyromod` | 試玩包本體（約 400 KB） |
+| `epoch_rts-0.4.0.pyromod` | 試玩包本體（約 90 KB） |
 | `epoch_rts-0.4.0.pyromod.sha256` | 選用：檢查下載是否完整 |
 
 只在 macOS（Apple Silicon）上驗證過。Windows／Linux 的 R28 理論上可用，但沒測過。

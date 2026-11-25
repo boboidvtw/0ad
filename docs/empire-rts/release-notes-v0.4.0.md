@@ -9,7 +9,7 @@
 
 | 檔案 | 說明 |
 | --- | --- |
-| `epoch_rts-0.4.0.pyromod` | 試玩包本體（66 個檔案，約 400 KB） |
+| `epoch_rts-0.4.0.pyromod` | 試玩包本體（66 個檔案，約 90 KB） |
 | `epoch_rts-0.4.0.pyromod.sha256` | 檢查用雜湊 |
 
 SHA-256：`823a18dcec6fb7f4abae8663d92d61ef00cf07be6e316020c8e3e8d57fa7ca64`
