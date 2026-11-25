@@ -52,7 +52,7 @@ SHA-256：`823a18dcec6fb7f4abae8663d92d61ef00cf07be6e316020c8e3e8d57fa7ca64`
 
 ## 回報問題
 
-請開 [GitHub Issue](https://github.com/boboidvtw/0ad/issues)，附上 `~/Library/Application Support/0ad/logs/mainlog.html`，並說明你卡在哪一步。
+請回報給提供你這個下載連結的人，附上 `~/Library/Application Support/0ad/logs/mainlog.html`，並說明你卡在哪一步。
 
 ## 授權
 
