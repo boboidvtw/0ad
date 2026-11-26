@@ -57,7 +57,7 @@
 - 結束時代不會早於開局時代，選錯會自動拉齊。
 - 地圖 JSON 的 `settings` 可以預設這兩個值，例如驗證地圖 `epoch_frontier_ages_early_validation.json`。
 - 實作：`gamesettings/attributes/EpochAges.js`（設定）、`gui/gamesetup/.../Dropdowns/EpochAges.js`（下拉選單）、`simulation/components/EpochAges.js`（套用到玩家）。
-- 預設是青銅開局，所以既有地圖和舊測試的開局狀態不變。從史前開局時，起始的 2 名長矛兵仍會出現，只是要到青銅時代才能再訓練。
+- 預設是青銅開局，所以既有地圖和舊測試的開局狀態不變。從史前開局時，起始的 2 名長矛兵仍會出現，只是要到銅器時代才能再訓練。
 
 ## 新內容數值
 
