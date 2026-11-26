@@ -1,7 +1,7 @@
 <!-- Purpose: 專案現況與下一步的唯一入口（≤80 行）；Created: 2026-11-15. -->
 # STATUS
 
-更新：2026-11-27（A2：開局／結束時代選單實機點選通過）
+更新：2026-11-27（R2：Release v0.5.0）
 
 ## 現況
 
@@ -25,11 +25,12 @@
 | M7.3 | 遊戲內繁中開場說明 | DONE（2026-11-24）：`duel` 開局在 R28 教學面板顯示一頁繁中說明（目標、採集、房屋 +10 人口、兵營、市中心研究鐵器時代的條件與花費、鍛造所），Ctrl+P 可隱藏／顯示，實測兩個方向都有效；截圖 `evidence/m7.3-opening-guide.jpg`。`smoke-macos.py` duel seed 7／42 與 duel-ai seed 42（917 秒 AI 勝）皆通過，無錯誤 |
 | M7.4 | `.pyromod` 安裝包＋乾淨帳號安裝測試 | DONE（2026-11-24，以模擬乾淨安裝結案，見 decisions.md；選單操作留給 M7.6 試玩者實測）：`package-mod.py` 產生 `epoch_rts-0.4.0.pyromod`（66 檔、壓縮後約 90 KB、可重現），`mod.json` 升為 0.4.0；安裝說明 [INSTALL.md](INSTALL.md)。2026-11-24 模擬乾淨安裝（暫時移開本機 0ad 使用者資料與快取）：`open` 該檔由 R28 自動安裝，安裝後的 zip 雜湊與包相同；從安裝後的 zip 以 duel＋epoch_petra 跑完整局，AI 917.4 秒勝、0 錯誤 0 警告；繁中開場說明正常顯示。未驗證：真正的新 macOS 帳號、Finder 雙擊、Mod Selection 與對戰設定的選單操作（合成點擊對全螢幕遊戲無效） |
 | M7.5 | GitHub Release v0.4.0 | DONE（2026-11-25）：[Release v0.4.0](https://github.com/boboidvtw/0ad/releases/tag/v0.4.0)（tag `v0.4.0` → `cacbcfd`），附 `epoch_rts-0.4.0.pyromod`（90,058 bytes）與 `.sha256`；GitHub 回報的資產 digest 與本機建置相同（`823a18dc…7ca64`），重新下載後 `shasum -c` 通過。說明與已知限制見 [release-notes-v0.4.0.md](release-notes-v0.4.0.md)。2026-11-25 本人同意後開啟 repo Issues，Release notes、INSTALL.md 與試玩包的回報方式改為 Issues（保留「回報給提供連結的人」作備案） |
-| M7.6 | 1–3 人試玩＋回饋整理 | IN PROGRESS（2026-11-25）：試玩包 [m7.6-playtest-kit.md](m7.6-playtest-kit.md)（邀請訊息、5 題問卷、對應決策）與回饋整理頁 [m7.6-feedback.md](m7.6-feedback.md) 已備好；等本人找人並傳出邀請，目前 0 人 |
+| M7.6 | 1–3 人試玩＋回饋整理 | IN PROGRESS（2026-11-25；2026-11-27 試玩包改發 v0.5.0，問卷 Q2 加問升到哪個時代與 AI 騎兵／攻城感受）：試玩包 [m7.6-playtest-kit.md](m7.6-playtest-kit.md)（邀請訊息、5 題問卷、對應決策）與回饋整理頁 [m7.6-feedback.md](m7.6-feedback.md) 已備好；等本人找人並傳出邀請，目前 0 人 |
 | A1 | 多時代階梯（本人 2026-11-25 指示，比照世紀爭霸） | DONE（2026-11-25）：時代 2→5，青銅→鐵器→黑暗時代→中世紀→文藝復興，每級要上一時代的建築（兵營／鍛造所／馬廄／攻城工坊）＋逐級變貴的資源；新增馬廄、攻城工坊、騎兵、騎士、攻城槌、射石砲。規格 [age-ladder.md](age-ladder.md)。`smoke-macos.py --scenario ages` 87 項、t04 183 項、t05 77 項、duel，seed 42／7 全過；duel-ai 兩場 AI 勝 1084／1045 秒（原 917／935），AI 自行升到中世紀；截圖 `evidence/age-ladder-renaissance.jpg`。未做：平衡、真人試玩、AI 用騎兵與攻城武器進攻 |
 | A2 | 十六時代＋開局／結束時代（本人 2026-11-25 選方案 A） | DONE（2026-11-25）：世紀爭霸 15 時代＋鐵器＝16 個，史前→太空；帝國以後只給數值加成。對戰設定新增「開局時代」「結束時代」（預設青銅→太空，既有地圖開局不變）。全部時代由 `globalscripts/EpochAges.js` 一份表驅動。規格 [age-ladder.md](age-ladder.md)。ages 185 項、ages-early 48 項、t04 183、t05 77、duel，seed 42／7 全過；AI 結果見 commit 訊息。2026-11-27 本人實機點選：對戰設定的 Start Age／End Age 下拉選單正常，史前開局、結束時代文藝復興可開局遊玩，log 無 mod 錯誤（僅本機預設輸出為 HDMI 電視時的 OpenAL 音效錯誤，與 mod 無關）。未做：舊單位淘汰 |
 | A3 | 平衡：對局回到 20 分內（本人 2026-11-25 指示） | DONE（2026-11-25）：根因是 Petra 把鐵器以後的時代研究排在攻擊部隊前面（優先度 700 對 90），第一波部隊湊不滿。`epoch_petra` 改為：升級門檻看時代在階梯上的位置、鐵器以後的時代優先度 50（排在軍隊後面）。duel-ai 5 個 seed（1／7／13／42／99）AI 勝 982／1153／1109／1099／1020 秒，全部 < 1200 秒（原 seed 42／7：1260／1227）；時代數值不變。試過降價黑暗～文藝復興（seed 7 反而 1252 秒）、進攻中暫停升級（沒觸發），都沒採用。細節見 [age-ladder.md](age-ladder.md) 的 AI 一節。未做：真人對局時長、AI 對 AI |
 | A4 | AI 進攻編入騎兵與攻城武器（本人 2026-11-25 指示） | DONE（2026-11-25）：`epoch_petra` 在攻擊計畫裡加入騎兵類別（Cavalry+Swordsman，最多 6 名，不拖住出發），保留 Petra 自己加的攻城類別，並讓 Petra 會主動蓋攻城工坊（arsenal 對應到 siege_workshop）。duel-ai 5 個 seed AI 勝 961／1021／1100／1106／1126 秒，仍在 20 分內；但第一波通常在騎兵、攻城武器出來前就打贏，只有 seed 7 第一波帶了 4 名騎兵。AI 對 AI 長局的後續波次有騎兵＋攻城武器實際出發（6 名騎兵＋1 台攻城武器）。細節見 [age-ladder.md](age-ladder.md) 的 AI 一節。未做：真人對局觀察、騎兵與攻城武器的平衡 |
+| R2 | GitHub Release v0.5.0（16 時代試玩版） | DONE（2026-11-27）：[Release v0.5.0](https://github.com/boboidvtw/0ad/releases/tag/v0.5.0)（tag `v0.5.0` → `891210a`），附 `epoch_rts-0.5.0.pyromod`（92 檔、112,334 bytes）與 `.sha256`；GitHub 資產 digest 與本機建置相同（`9532e719…2df4666`），重新下載後 `shasum -c` 通過，tag 上重建雜湊相同。發布前回歸：t04 183、t05 77、ages 185、ages-early 48、duel（seed 42／7）全過，duel-ai seed 42／7 AI 勝 1106／1126 秒、無錯誤。說明見 [release-notes-v0.5.0.md](release-notes-v0.5.0.md)。未驗證：從 v0.4.0 升級安裝（INSTALL.md 先請試玩者刪舊資料夾） |
 
 ## 已知限制（摘要）
 
